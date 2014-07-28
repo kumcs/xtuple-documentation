@@ -1,13 +1,6 @@
 <?js
 var data = obj;
 var self = this;
-var defaultObjectClass = '';
-
-// Check if the default value is an object, if so, apply code highlighting
-if (data.defaultvalue && data.defaultvaluetype === 'object') {
-    data.defaultvalue = "<pre class=\"prettyprint\"><code>" + data.defaultvalue + "</code></pre>";
-    defaultObjectClass = ' class="object-value"';
-}
 ?>
 <dl class="details">
     <?js
@@ -15,7 +8,7 @@ if (data.defaultvalue && data.defaultvaluetype === 'object') {
         if (properties && properties.length && properties.forEach) { 
     ?>
         
-        <h5 class="subsection-title">Properties:</h5>
+        <h3>Properties:</h3>
         
         <dl><?js= this.partial('properties.tmpl', properties) ?></dl>
         
@@ -66,16 +59,7 @@ if (data.defaultvalue && data.defaultvaluetype === 'object') {
     
     <?js if (data.defaultvalue) {?>
     <dt class="tag-default">Default Value:</dt>
-    <dd class="tag-default"><ul class="dummy">
-            <li<?js= defaultObjectClass ?>><?js= data.defaultvalue ?></li>
-        </ul></dd>
-    <?js } ?>
-    
-    <?js if (data.meta) {?>
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <?js= self.linkto(meta.filename) ?>, <?js= self.linkto(meta.filename, 'line ' + meta.lineno, null, 'line' + meta.lineno) ?>
-    </li></ul></dd>
+    <dd class="tag-default"><ul class="dummy"><li><?js= data.defaultvalue ?></li></ul></dd>
     <?js } ?>
     
     <?js if (data.tutorials && tutorials.length) {?>
