@@ -1,8 +1,7 @@
-Release Notes
-xTuple ERP
-Version 4.5.0 Final
-June 9, 2014
-----------------------------------
+Release Notes  
+xTuple ERP  
+Version 4.5.0 Final  
+June 9, 2014  
 
 These are the release notes for the 4.5.0 Final Release. Thanks
 to all who contributed to make this release possible. 
