@@ -34,28 +34,28 @@ or install package.
 
 To be verbose about all of this:
 
-postbooks-upgrade-450.gz will:
-upgrade a PostBooks database from anywhere >= 4.4.0 to 4.5.0
+    postbooks-upgrade-450.gz will:
+    upgrade a PostBooks database from anywhere >= 4.4.0 to 4.5.0
 
-manufacturing-upgrade-450.gz will:
-upgrade the standard/dist (i.e., inventory code) to 4.5.0
-upgrade the manufacturing code to 4.5.0
+    manufacturing-upgrade-450.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.5.0
+    upgrade the manufacturing code to 4.5.0
 
-manufacturing-install-450.gz will:
-do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.5.0
-upgrade the standard/dist (i.e., inventory code) to 4.5.0
-do a one-time install of tables, etc. for manufacturing at 4.5.0
-upgrade the manufacturing code to 4.5.0
+    manufacturing-install-450.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.5.0
+    upgrade the standard/dist (i.e., inventory code) to 4.5.0
+    do a one-time install of tables, etc. for manufacturing at 4.5.0
+    upgrade the manufacturing code to 4.5.0
 
-distribution-upgrade-450.gz will:
-upgrade the standard/ist (i.e., inventory code) to 4.5.0
-upgrade the distribution (i.e., xwd code) to 4.5.0
+    distribution-upgrade-450.gz will:
+    upgrade the standard/ist (i.e., inventory code) to 4.5.0
+    upgrade the distribution (i.e., xwd code) to 4.5.0
 
-distribution-install-450.gz will:
-do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.5.0
-upgrade the standard/dist (i.e., inventory code) to 4.5.0
-do a one-time install of tables etc for distribution at 4.5.0
-upgrade the distribution (i.e., xwd code) to 4.5.0
+    distribution-install-450.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.5.0
+    upgrade the standard/dist (i.e., inventory code) to 4.5.0
+    do a one-time install of tables etc for distribution at 4.5.0
+    upgrade the distribution (i.e., xwd code) to 4.5.0
 
 PLEASE NOTE: Other packages, such as Advanced Commissions and Fixed 
 Assets, are currently remaining on their own release schedule and should 
