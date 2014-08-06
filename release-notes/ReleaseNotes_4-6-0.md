@@ -1,7 +1,12 @@
 ## xTuple Release Notes  
 ##### Version 4.6.0 Final * August 5, 2014  
 
+These are the release notes for the 4.6.0 Final Release. Thanks to all who contributed to make this release possible.
+
 ### Features and bugfixes
+
+The following features and bug fixes have been added to the application since the 4.5.0 release. 
+Additional detail for each item listed below may be found on our [community website](http://www.xtuple.org).
 
 ##### Web/Mobile Application
 
