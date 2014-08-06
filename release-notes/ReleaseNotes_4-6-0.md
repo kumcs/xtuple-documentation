@@ -11,18 +11,6 @@ Additional detail for each item listed below may be found on our [community webs
 
 ##### Web/Mobile Application
 
-- Fixed 
-  issue #[21966](http://www.xtuple.org/xtincident/view/bugs/21966) 
-  _Sales Analysis appears when bi extension is not enabled_ 
-- Fixed 
-  issue #[24104](http://www.xtuple.org/xtincident/view/bugs/24104) 
-  _npm extension bugs_ 
-- Fixed 
-  issue #[24202](http://www.xtuple.org/xtincident/view/bugs/24202) 
-  _Web Client Broken in Chrome latest!_ 
-- Fixed 
-  issue #[23966](http://www.xtuple.org/xtincident/view/bugs/23966) 
-  _notify popup disappears on window resize_ 
 - Implemented 
   issue #[22996](http://www.xtuple.org/xtincident/view/bugs/22996) 
   _signature capture_ 
@@ -39,9 +27,27 @@ Additional detail for each item listed below may be found on our [community webs
 - Implemented 
   issue #[23962](http://www.xtuple.org/xtincident/view/bugs/23962) 
   _css in extensions_ 
+- Fixed 
+  issue #[21966](http://www.xtuple.org/xtincident/view/bugs/21966) 
+  _Sales Analysis appears when bi extension is not enabled_ 
+- Fixed 
+  issue #[24104](http://www.xtuple.org/xtincident/view/bugs/24104) 
+  _npm extension bugs_ 
+- Fixed 
+  issue #[24202](http://www.xtuple.org/xtincident/view/bugs/24202) 
+  _Web Client Broken in Chrome latest!_ 
+- Fixed 
+  issue #[23966](http://www.xtuple.org/xtincident/view/bugs/23966) 
+  _notify popup disappears on window resize_ 
 
 
 ##### Desktop Application
+- Implemented 
+  issue #[23878](http://www.xtuple.org/xtincident/view/bugs/23878) 
+  _combine bank rec functions_ 
+- Implemented 
+  issue #[23254](http://www.xtuple.org/xtincident/view/bugs/23254) 
+  _Add the ability to enter an alternate exchange rate on a Cash Receipt_ 
 - Fixed 
   issue #[20422](http://www.xtuple.org/xtincident/view/bugs/20422) 
   _*Observation:- 'Reason' list is not available on 'Lost Sale' screen for the cancellation of a sales  order line item_
@@ -87,12 +93,6 @@ Additional detail for each item listed below may be found on our [community webs
 - Fixed 
   issue #[24269](http://www.xtuple.org/xtincident/view/bugs/24269) 
   _quick item entry itemsite selection_ 
-- Implemented 
-  issue #[23878](http://www.xtuple.org/xtincident/view/bugs/23878) 
-  _combine bank rec functions_ 
-- Implemented 
-  issue #[23254](http://www.xtuple.org/xtincident/view/bugs/23254) 
-  _Add the ability to enter an alternate exchange rate on a Cash Receipt_ 
 
 
 ### Deployment Notes
