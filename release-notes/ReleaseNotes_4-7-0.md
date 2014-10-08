@@ -1,4 +1,4 @@
- Fixed
+- Fixed
   issue #[18683](http://www.xtuple.org/xtincident/view/bugs/18683)
   _Login password field needs to support mixed case_
 - Fixed
