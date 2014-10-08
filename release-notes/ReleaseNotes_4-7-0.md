@@ -57,7 +57,7 @@ Additional detail for each item listed below may be found on our [community webs
   issue #[24607](http://www.xtuple.org/xtincident/view/bugs/24607)
   _*Error Message when saving an Item Source_
 
-  ##### Desktop Application
+##### Desktop Application
 
 - Implemented
   issue #[14699](http://www.xtuple.org/xtincident/view/bugs/14699)
@@ -189,8 +189,7 @@ Additional detail for each item listed below may be found on our [community webs
   issue #[24691](http://www.xtuple.org/xtincident/view/bugs/24691)
   _*Unable to install xTuple 4.7.0 packages on a postbooks database_
 
-
-  ### Deployment Notes
+### Deployment Notes
 
 We've lately revised the
 naming conventions and the behavior of our core updater packages.
