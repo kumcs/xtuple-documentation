@@ -83,6 +83,27 @@ Additional detail for each item listed below may be found on our [community webs
 - Implemented
   issue #[24665](http://www.xtuple.org/xtincident/view/bugs/24665)
   _Move time & attendance into its own package_
+- Implemented
+  issue #[23255](http://www.xtuple.org/xtincident/view/bugs/23255)
+  _Add support for automated bank reconciliation_
+- Fixed
+  issue #[24469](http://www.xtuple.org/xtincident/view/bugs/24469)
+  _xt.lock problems persisting_
+- Fixed
+  issue #[24471](http://www.xtuple.org/xtincident/view/bugs/24471)
+  _*Cash receipt additions to the xtupleapi.dtd_
+- Fixed
+  issue #[24560](http://www.xtuple.org/xtincident/view/bugs/24560)
+  _*Error Message in Cash Receipt_
+- Fixed
+  issue #[24592](http://www.xtuple.org/xtincident/view/bugs/24592)
+  _*BOM with no BOM head record_
+- Fixed
+  issue #[24613](http://www.xtuple.org/xtincident/view/bugs/24613)
+  _*User is unable to reserve quantity for an MLC item through manual reservation by location_
+- Fixed
+  issue #[24618](http://www.xtuple.org/xtincident/view/bugs/24618)
+  _*Changed date range default in inventory history tab of item availability_
 - Fixed
   issue #[15908](http://www.xtuple.org/xtincident/view/bugs/15908)
   _*Selecting to Change the Quantity UOM of a sales order item doesn't update the linked Work Order quantity_
