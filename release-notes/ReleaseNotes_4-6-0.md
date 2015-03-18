@@ -14,7 +14,7 @@ Additional detail for each item listed below may be found on our [community webs
 - Implemented 
   issue #[22996](http://www.xtuple.org/xtincident/view/bugs/22996) 
   _signature capture_ 
-  [![Signature Capture](https://i.vimeocdn.com/video/483976760_600x336.jpg)](http://player.vimeo.com/video/102056940)
+  [![Signature Capture](https://i.vimeocdn.com/video/483976760_600x336.jpg)](http://xtupleuniversity.com/signature-capture)
 - Implemented 
   issue #[23796](http://www.xtuple.org/xtincident/view/bugs/23796) 
   _Export grid list to csv_ 
