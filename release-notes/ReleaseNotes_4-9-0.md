@@ -5,6 +5,11 @@ These are the release notes for the 4.9.0 Release Candidate.
 Thanks to all who contributed to make this release possible.
 For more information about [deploying this release](#deployment-notes), please see below.
 
+**Note:** You will need the PL/v8 extension to PostgreSQL to upgrade and use
+this release.  See our
+[github wiki](https://github.com/xtuple/xtuple/wiki/Installing-PLv8)
+for more information.
+
 ### Features and bug fixes
 
 The following features and bug fixes have been added to the application since the 4.9.0Beta release (see below).
