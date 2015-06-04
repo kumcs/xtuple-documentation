@@ -1,8 +1,123 @@
 ## xTuple Release Notes
+##### Version 4.9.0RC * June 5, 2015
+
+These are the release notes for the 4.9.0 Release Candidate.
+Thanks to all who contributed to make this release possible.
+For more information about [deploying this release](#deployment-notes), please see below.
+
+### Features and bug fixes
+
+The following features and bug fixes have been added to the application since the 4.9.0Beta release (see below).
+
+- Fixed
+  issue #[19160](http://www.xtuple.org/xtincident/view/bugs/19160)
+  _*OnHand qty changing if we modified a transaction dated prior to the freeze_
+- Fixed
+  issue #[21311](http://www.xtuple.org/xtincident/view/bugs/21311)
+  _Activity Report is missing Order information_
+- Implemented
+  issue #[23905](http://www.xtuple.org/xtincident/view/bugs/23905)
+  _*prompt user on startup if no current fiscal or accounting period_
+- Implemented
+  issue #[24508](http://www.xtuple.org/xtincident/view/bugs/24508)
+  _*Missing Info in Reference Guide_
+- Fixed
+  issue #[24663](http://www.xtuple.org/xtincident/view/bugs/24663)
+  _When creating a BOM system allows Job costed Parts to be added to BOM_
+- Implemented
+  issue #[24892](http://www.xtuple.org/xtincident/view/bugs/24892)
+  _*multiple item sites available with Advance item search_
+- Implemented
+  issue #[25151](http://www.xtuple.org/xtincident/view/bugs/25151)
+  _In Quickstart Database Default Company and Business Unit to Off (unchecked)_
+- Fixed
+  issue #[25392](http://www.xtuple.org/xtincident/view/bugs/25392)
+  _Disable ability to manually update trial balance_
+- Implemented
+  issue #[25433](http://www.xtuple.org/xtincident/view/bugs/25433)
+  _Add readme file to client zips_
+- Fixed
+  issue #[25477](http://www.xtuple.org/xtincident/view/bugs/25477)
+  _Catch missing curl.exe error for credit card processing_
+- Fixed
+  issue #[25511](http://www.xtuple.org/xtincident/view/bugs/25511)
+  _*Text overlap observed in 'Sales setup' screen_
+- Fixed
+  issue #[25553](http://www.xtuple.org/xtincident/view/bugs/25553)
+  _Incredible Shrinking Windows_
+- Fixed
+  issue #[25665](http://www.xtuple.org/xtincident/view/bugs/25665)
+  _*Work order material return_
+- Fixed
+  issue #[25685](http://www.xtuple.org/xtincident/view/bugs/25685)
+  _*Sales history report errors_
+- Fixed
+  issue #[25701](http://www.xtuple.org/xtincident/view/bugs/25701)
+  _Bank account screen refers to checks, not payments_
+- Fixed
+  issue #[25711](http://www.xtuple.org/xtincident/view/bugs/25711)
+  _*api.quote references wrong sequence for quote number_
+- Fixed
+  issue #[25719](http://www.xtuple.org/xtincident/view/bugs/25719)
+  _*Unable to edit the customer data from Customer Workbench screen_
+- Fixed
+  issue #[25725](http://www.xtuple.org/xtincident/view/bugs/25725)
+  _*Sales Reservations are not Released When Backorders are Disallowed_
+- Fixed
+  issue #[25727](http://www.xtuple.org/xtincident/view/bugs/25727)
+  _Sales rep not cleared when ship to cleared_
+- Fixed
+  issue #[25728](http://www.xtuple.org/xtincident/view/bugs/25728)
+  _Able to delete UOM conversion with history_
+- Fixed
+  issue #[25729](http://www.xtuple.org/xtincident/view/bugs/25729)
+  _Cannot make a UOM conversion inactive for future orders once there is history_
+- Implemented
+  issue #[25741](http://www.xtuple.org/xtincident/view/bugs/25741)
+  _allow extensions to add their own characteristic associations_
+- Fixed
+  issue #[25765](http://www.xtuple.org/xtincident/view/bugs/25765)
+  _*Payment can be applied to closed SOs_
+- Fixed
+  issue #[25769](http://www.xtuple.org/xtincident/view/bugs/25769)
+  _*User is allowed to edit/delete the item source price in view mode of an 'Item source'_
+- Fixed
+  issue #[25777](http://www.xtuple.org/xtincident/view/bugs/25777)
+  _*Unable to convert quote into sales order_
+- Fixed
+  issue #[25827](http://www.xtuple.org/xtincident/view/bugs/25827)
+  _Routing throughput calculations are incorrect for alternate production units_
+- Fixed
+  issue #[25834](http://www.xtuple.org/xtincident/view/bugs/25834)
+  _*Coping an Item allows a user to add an inactive item to a BOM_
+- Fixed
+  issue #[25836](http://www.xtuple.org/xtincident/view/bugs/25836)
+  _Bank Reconciliation uses insufficient decimal places for alternate currencies_
+- Fixed
+  issue #[25838](http://www.xtuple.org/xtincident/view/bugs/25838)
+  _New unassigned account should default to liability type_
+- Implemented
+  issue #[25850](http://www.xtuple.org/xtincident/view/bugs/25850)
+  _Add Vendor Number column to Item Sources List screen_
+- Implemented
+  issue #[25851](http://www.xtuple.org/xtincident/view/bugs/25851)
+  _Add description to Role and User screens_
+- Fixed
+  issue #[25871](http://www.xtuple.org/xtincident/view/bugs/25871)
+  _*City and Postal Code do not appear on reports if no State selected_
+- Fixed
+  issue #[25897](http://www.xtuple.org/xtincident/view/bugs/25897)
+  _Scheduled date does not save in closed sales orders_
+- Fixed
+  issue #[22242](http://www.xtuple.org/xtincident/view/bugs/22242)
+  _Add support to print Work Order travellers_
+- Fixed
+  issue #[25852](http://www.xtuple.org/xtincident/view/bugs/25852)
+  _Changes to workflow_inheritsource function has broken Quality extension_
+
 ##### Version 4.9.0Beta * May 5, 2015
 
-These are the release notes for the 4.9.0 Beta Release. Thanks to all who contributed to make this release possible.
-For more information about [deploying this release](#deployment-notes), please see below.
+These are the release notes for the 4.9.0 Beta Release.
 
 ### Features and bug fixes
 
