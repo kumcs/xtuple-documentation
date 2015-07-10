@@ -6,10 +6,12 @@ to all who contributed to make this release possible.  For more
 information about [deploying this release](#deployment-notes),
 please see below.
 
-**Note:** You will need the PL/v8 extension to PostgreSQL to upgrade
+**Note:** You will need the plv8 extension to PostgreSQL to upgrade
 and use this release.  See our
 [github wiki](https://github.com/xtuple/xtuple/wiki/Installing-PLv8) for
-more information.
+more information on how to install plv8 and a
+[blog post](https://www.xtuple.org/blog/gmoskowitz/enabling-technologies-plv8-49)
+describing plv8 and why we introduced this new dependency.
 
 ### Features and bug fixes
 
