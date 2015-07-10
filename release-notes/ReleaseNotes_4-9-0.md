@@ -24,48 +24,6 @@ old issues have been marked as Fixed or Implemented. Much of this
 is the result of reviewing the open bug and feature lists for work
 that had already been done while addressing other issues.
 
-#### Mobile Web Application
-
-- Fixed
-  issue #[24980](http://www.xtuple.org/xtincident/view/bugs/24980)
-  _*After shipping an order it sits on the 'Ship Shipment' screen_
-- Implemented
-  issue #[25438](http://www.xtuple.org/xtincident/view/bugs/25438)
-  _Add a checkbox in Setup to enable workflow trigger functionality_
-- Fixed
-  issue #[25924](http://www.xtuple.org/xtincident/view/bugs/25924)
-  _Print on Save fails_
-- Fixed
-  issue #[26001](http://www.xtuple.org/xtincident/view/bugs/26001)
-  _Don't create workflow in mobile if TriggerWorkflow enabled_
-- Fixed
-  issue #[26014](http://www.xtuple.org/xtincident/view/bugs/26014)
-  _Transaction list item's status reads "O" instead of "F"_
-- Implemented
-  issue #[26015](http://www.xtuple.org/xtincident/view/bugs/26015)
-  _Ship Order tap from Activity List goes to Issue to Shipping list - should go to Ship Order workspace_
-- Fixed
-  issue #[26016](http://www.xtuple.org/xtincident/view/bugs/26016)
-  _Printing (route) error on print: "isError: true"_
-- Implemented
-  issue #[26017](http://www.xtuple.org/xtincident/view/bugs/26017)
-  _First panel often gets in the way of UI flow. Look into "auto collapse" as a patch for this bad mobile UI design_
-- Fixed
-  issue #[26018](http://www.xtuple.org/xtincident/view/bugs/26018)
-  _Print to printer failing on malformed rptrender print params_
-- Implemented
-  issue #[26025](http://www.xtuple.org/xtincident/view/bugs/26025)
-  _Disable multi select on small mobile device lists_
-- Fixed
-  issue #[26027](http://www.xtuple.org/xtincident/view/bugs/26027)
-  _Transaction list captureBarcode bugs_
-- Fixed
-  issue #[26033](http://www.xtuple.org/xtincident/view/bugs/26033)
-  _Post Receipt does not close workflow item_
-- Fixed
-  issue #[26100](http://www.xtuple.org/xtincident/view/bugs/26100)
-  _Enter Receipt - scanning/receiving does not update status from "In Truck" to "Fulfilled"_
-
 #### Desktop Application
 
 - Fixed
@@ -236,6 +194,48 @@ that had already been done while addressing other issues.
 - Implemented
   issue #[4201](http://www.xtuple.org/xtincident/view/bugs/4201)
   _Vendor Maintenance_
+
+#### Mobile Web Application
+
+- Fixed
+  issue #[24980](http://www.xtuple.org/xtincident/view/bugs/24980)
+  _*After shipping an order it sits on the 'Ship Shipment' screen_
+- Implemented
+  issue #[25438](http://www.xtuple.org/xtincident/view/bugs/25438)
+  _Add a checkbox in Setup to enable workflow trigger functionality_
+- Fixed
+  issue #[25924](http://www.xtuple.org/xtincident/view/bugs/25924)
+  _Print on Save fails_
+- Fixed
+  issue #[26001](http://www.xtuple.org/xtincident/view/bugs/26001)
+  _Don't create workflow in mobile if TriggerWorkflow enabled_
+- Fixed
+  issue #[26014](http://www.xtuple.org/xtincident/view/bugs/26014)
+  _Transaction list item's status reads "O" instead of "F"_
+- Implemented
+  issue #[26015](http://www.xtuple.org/xtincident/view/bugs/26015)
+  _Ship Order tap from Activity List goes to Issue to Shipping list - should go to Ship Order workspace_
+- Fixed
+  issue #[26016](http://www.xtuple.org/xtincident/view/bugs/26016)
+  _Printing (route) error on print: "isError: true"_
+- Implemented
+  issue #[26017](http://www.xtuple.org/xtincident/view/bugs/26017)
+  _First panel often gets in the way of UI flow. Look into "auto collapse" as a patch for this bad mobile UI design_
+- Fixed
+  issue #[26018](http://www.xtuple.org/xtincident/view/bugs/26018)
+  _Print to printer failing on malformed rptrender print params_
+- Implemented
+  issue #[26025](http://www.xtuple.org/xtincident/view/bugs/26025)
+  _Disable multi select on small mobile device lists_
+- Fixed
+  issue #[26027](http://www.xtuple.org/xtincident/view/bugs/26027)
+  _Transaction list captureBarcode bugs_
+- Fixed
+  issue #[26033](http://www.xtuple.org/xtincident/view/bugs/26033)
+  _Post Receipt does not close workflow item_
+- Fixed
+  issue #[26100](http://www.xtuple.org/xtincident/view/bugs/26100)
+  _Enter Receipt - scanning/receiving does not update status from "In Truck" to "Fulfilled"_
 
 ## Version 4.9.0RC * June 5, 2015
 
