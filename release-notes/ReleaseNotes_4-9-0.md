@@ -16,6 +16,12 @@ more information.
 The following features and bug fixes have been added to the application
 since the 4.9.0RC release (see below).
 
+The primary theme of this release is improvement to Mobile Inventory
+and to general desktop client quality. Note that a number of very
+old issues have been marked as Fixed or Implemented. Much of this
+is the result of reviewing the open bug and feature lists for work
+that had already been done while addressing other issues.
+
 #### Mobile Web Application
 
 - Fixed
