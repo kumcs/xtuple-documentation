@@ -1,5 +1,243 @@
-## xTuple Release Notes
-##### Version 4.9.0RC * June 5, 2015
+# xTuple Release Notes
+## Version 4.9.0 * July 13, 2015
+
+These are the release notes for the 4.9.0 xTuple ERP release.  Thanks
+to all who contributed to make this release possible.  For more
+information about [deploying this release](#deployment-notes),
+please see below.
+
+**Note:** You will need the plv8 extension to PostgreSQL to upgrade
+and use this release.  See our
+[github wiki](https://github.com/xtuple/xtuple/wiki/Installing-PLv8) for
+more information on how to install plv8 and a
+[blog post](https://www.xtuple.org/blog/gmoskowitz/enabling-technologies-plv8-49)
+describing plv8 and why we introduced this new dependency.
+
+### Features and bug fixes
+
+The following features and bug fixes have been added to the application
+since the 4.9.0RC release (see below).
+
+The primary theme of this release is improvement to Mobile Inventory
+and to general desktop client quality. Note that a number of very
+old issues have been marked as Fixed or Implemented. Much of this
+is the result of reviewing the open bug and feature lists for work
+that had already been done while addressing other issues.
+
+#### Desktop Application
+
+- Fixed
+  issue #[13368](http://www.xtuple.org/xtincident/view/bugs/13368)
+  _*Inconsistent behavior is observed for RA with disposition set to 'Service'_
+- Fixed
+  issue #[15457](http://www.xtuple.org/xtincident/view/bugs/15457)
+  _*Special characters import-export_
+- No Change Required
+  issue #[17206](http://www.xtuple.org/xtincident/view/bugs/17206)
+  _installer tries to run postgresql-9.1.2-1-linux-x64.run on 64-bit linux machines but can't_
+- No Change Required
+  issue #[17568](http://www.xtuple.org/xtincident/view/bugs/17568)
+  _*xTuple Installer: It is not possible to re-install PostgreSQL component using xTuple installer_
+- Implemented
+  issue #[17857](http://www.xtuple.org/xtincident/view/bugs/17857)
+  _Installer version of issue 17842 - force country/state agreement_
+- No Change Required
+  issue #[19124](http://www.xtuple.org/xtincident/view/bugs/19124)
+  _*Observation: Selecting to uninstall the xTuple components using xTuple uninstaller doesn't uninstall the PostgreSQL_
+- Fixed
+  issue #[24727](http://www.xtuple.org/xtincident/view/bugs/24727)
+  _audit sources for blind inserts_
+- Fixed
+  issue #[24866](http://www.xtuple.org/xtincident/view/bugs/24866)
+  _Lot/Serial Document Links not visible on linked Document_
+- Fixed
+  issue #[25825](http://www.xtuple.org/xtincident/view/bugs/25825)
+  _Distribution:It is not possible to delete a recurring enabled TO-DO_
+- Fixed
+  issue #[25889](http://www.xtuple.org/xtincident/view/bugs/25889)
+  _*Insufficient Privileges dialog is displayed on selecting to click on 'Wo Schedule By Class Code'_
+- Fixed
+  issue #[25903](http://www.xtuple.org/xtincident/view/bugs/25903)
+  _Focus on Misc. Distribution screen changes, not ideal for multiple order entries_
+- Fixed
+  issue #[25905](http://www.xtuple.org/xtincident/view/bugs/25905)
+  _Clicking on the history tab and item availability tab in the Item Workbench queries all history, all items_
+- Duplicate
+  issue #[25926](http://www.xtuple.org/xtincident/view/bugs/25926)
+  _*Sales History costs off by a factor of unit convesrsion_
+- Fixed
+  issue #[25933](http://www.xtuple.org/xtincident/view/bugs/25933)
+  _NEW.cohead_shiptoname Is set to default ship to when using Free Form_
+- Fixed
+  issue #[25944](http://www.xtuple.org/xtincident/view/bugs/25944)
+  _AR out of balance when the exchange rate is changed and then the CD is applied_
+- Fixed
+  issue #[25952](http://www.xtuple.org/xtincident/view/bugs/25952)
+  _*Sales Order Item Focus in 4.9.0RC_
+- Implemented
+  issue #[25954](http://www.xtuple.org/xtincident/view/bugs/25954)
+  _4.9.0 install: Installing PLv8 returns ./install_plv8.sh: line 37: PGVER: command not found_
+- Fixed
+  issue #[25962](http://www.xtuple.org/xtincident/view/bugs/25962)
+  _Post Operations not Working for Work Orders in Edit Mode_
+- Fixed
+  issue #[25970](http://www.xtuple.org/xtincident/view/bugs/25970)
+  _PO line item freight miscalculated causing PO Liability to be unbalanced_
+- Fixed
+  issue #[26021](http://www.xtuple.org/xtincident/view/bugs/26021)
+  _*Inserting image in header and saving to database generates an error._
+- Fixed
+  issue #[26028](http://www.xtuple.org/xtincident/view/bugs/26028)
+  _*DB log error is displayed on selecting to query 'Partially Shipped Orders' screen irrelevantly_
+- Fixed
+  issue #[26064](http://www.xtuple.org/xtincident/view/bugs/26064)
+  _*image upload fails on macs_
+- Fixed
+  issue #[26091](http://www.xtuple.org/xtincident/view/bugs/26091)
+  _Selecting a Reg Mgmt DocType with a Documents Tab Attach crashes the Qt Client_
+- Fixed
+  issue #[26132](http://www.xtuple.org/xtincident/view/bugs/26132)
+  _comment-source associations are broken_
+- Duplicate
+  issue #[4121](http://www.xtuple.org/xtincident/view/bugs/4121)
+  _Post PO_
+- Implemented
+  issue #[4126](http://www.xtuple.org/xtincident/view/bugs/4126)
+  _Purchase Requisition for non-inventory items (and unscheduled inventory items)_
+- Duplicate
+  issue #[4127](http://www.xtuple.org/xtincident/view/bugs/4127)
+  _Purchase Requisition for non-inventory items (and unscheduled inventory items)_
+- Implemented
+  issue #[4128](http://www.xtuple.org/xtincident/view/bugs/4128)
+  _Prior Period Adjustments_
+- No Change Required
+  issue #[4131](http://www.xtuple.org/xtincident/view/bugs/4131)
+  _Reject Codes_
+- Duplicate
+  issue #[4133](http://www.xtuple.org/xtincident/view/bugs/4133)
+  _Copy PO_
+- Implemented
+  issue #[4134](http://www.xtuple.org/xtincident/view/bugs/4134)
+  _Print PO_
+- Implemented
+  issue #[4137](http://www.xtuple.org/xtincident/view/bugs/4137)
+  _Terms Code_
+- Implemented
+  issue #[4138](http://www.xtuple.org/xtincident/view/bugs/4138)
+  _Vendor Search_
+- Implemented
+  issue #[4143](http://www.xtuple.org/xtincident/view/bugs/4143)
+  _Vendor Maintenance_
+- Implemented
+  issue #[4144](http://www.xtuple.org/xtincident/view/bugs/4144)
+  _Report_
+- Implemented
+  issue #[4145](http://www.xtuple.org/xtincident/view/bugs/4145)
+  _Adjustment Types_
+- Implemented
+  issue #[4149](http://www.xtuple.org/xtincident/view/bugs/4149)
+  _Unposted Transactions_
+- Implemented
+  issue #[4150](http://www.xtuple.org/xtincident/view/bugs/4150)
+  _Trial Balance_
+- Implemented
+  issue #[4152](http://www.xtuple.org/xtincident/view/bugs/4152)
+  _Out of Balance Posting_
+- No Change Required
+  issue #[4155](http://www.xtuple.org/xtincident/view/bugs/4155)
+  _Sub-system posting_
+- No Change Required
+  issue #[4158](http://www.xtuple.org/xtincident/view/bugs/4158)
+  _Journal Entries_
+- No Change Required
+  issue #[4159](http://www.xtuple.org/xtincident/view/bugs/4159)
+  _Journal Entries_
+- Implemented
+  issue #[4162](http://www.xtuple.org/xtincident/view/bugs/4162)
+  _RMA Processing_
+- Duplicate
+  issue #[4166](http://www.xtuple.org/xtincident/view/bugs/4166)
+  _Customer Deposit_
+- No Change Required
+  issue #[4167](http://www.xtuple.org/xtincident/view/bugs/4167)
+  _Cash Receipts_
+- Implemented
+  issue #[4168](http://www.xtuple.org/xtincident/view/bugs/4168)
+  _Cash Receipts_
+- Implemented
+  issue #[4169](http://www.xtuple.org/xtincident/view/bugs/4169)
+  _Cash Receipts_
+- Implemented
+  issue #[4170](http://www.xtuple.org/xtincident/view/bugs/4170)
+  _Invoice Entry_
+- Implemented
+  issue #[4171](http://www.xtuple.org/xtincident/view/bugs/4171)
+  _Invoice Creation_
+- Implemented
+  issue #[4176](http://www.xtuple.org/xtincident/view/bugs/4176)
+  _Manual/Miscellaneous Payment Processing_
+- Implemented
+  issue #[4178](http://www.xtuple.org/xtincident/view/bugs/4178)
+  _Payment Processing_
+- Implemented
+  issue #[4183](http://www.xtuple.org/xtincident/view/bugs/4183)
+  _Post Vouchers_
+- Duplicate
+  issue #[4195](http://www.xtuple.org/xtincident/view/bugs/4195)
+  _Edit posted POs_
+- Duplicate
+  issue #[4196](http://www.xtuple.org/xtincident/view/bugs/4196)
+  _Edit posted POs_
+- Implemented
+  issue #[4199](http://www.xtuple.org/xtincident/view/bugs/4199)
+  _Vendor Maintenance_
+- Implemented
+  issue #[4201](http://www.xtuple.org/xtincident/view/bugs/4201)
+  _Vendor Maintenance_
+
+#### Mobile Web Application
+
+- Fixed
+  issue #[24980](http://www.xtuple.org/xtincident/view/bugs/24980)
+  _*After shipping an order it sits on the 'Ship Shipment' screen_
+- Implemented
+  issue #[25438](http://www.xtuple.org/xtincident/view/bugs/25438)
+  _Add a checkbox in Setup to enable workflow trigger functionality_
+- Fixed
+  issue #[25924](http://www.xtuple.org/xtincident/view/bugs/25924)
+  _Print on Save fails_
+- Fixed
+  issue #[26001](http://www.xtuple.org/xtincident/view/bugs/26001)
+  _Don't create workflow in mobile if TriggerWorkflow enabled_
+- Fixed
+  issue #[26014](http://www.xtuple.org/xtincident/view/bugs/26014)
+  _Transaction list item's status reads "O" instead of "F"_
+- Implemented
+  issue #[26015](http://www.xtuple.org/xtincident/view/bugs/26015)
+  _Ship Order tap from Activity List goes to Issue to Shipping list - should go to Ship Order workspace_
+- Fixed
+  issue #[26016](http://www.xtuple.org/xtincident/view/bugs/26016)
+  _Printing (route) error on print: "isError: true"_
+- Implemented
+  issue #[26017](http://www.xtuple.org/xtincident/view/bugs/26017)
+  _First panel often gets in the way of UI flow. Look into "auto collapse" as a patch for this bad mobile UI design_
+- Fixed
+  issue #[26018](http://www.xtuple.org/xtincident/view/bugs/26018)
+  _Print to printer failing on malformed rptrender print params_
+- Implemented
+  issue #[26025](http://www.xtuple.org/xtincident/view/bugs/26025)
+  _Disable multi select on small mobile device lists_
+- Fixed
+  issue #[26027](http://www.xtuple.org/xtincident/view/bugs/26027)
+  _Transaction list captureBarcode bugs_
+- Fixed
+  issue #[26033](http://www.xtuple.org/xtincident/view/bugs/26033)
+  _Post Receipt does not close workflow item_
+- Fixed
+  issue #[26100](http://www.xtuple.org/xtincident/view/bugs/26100)
+  _Enter Receipt - scanning/receiving does not update status from "In Truck" to "Fulfilled"_
+
+## Version 4.9.0RC * June 5, 2015
 
 These are the release notes for the 4.9.0 Release Candidate.
 Thanks to all who contributed to make this release possible.
@@ -120,7 +358,7 @@ The following features and bug fixes have been added to the application since th
   issue #[25852](http://www.xtuple.org/xtincident/view/bugs/25852)
   _Changes to workflow_inheritsource function has broken Quality extension_
 
-##### Version 4.9.0Beta * May 5, 2015
+## Version 4.9.0Beta * May 5, 2015
 
 These are the release notes for the 4.9.0 Beta Release.
 
@@ -129,7 +367,7 @@ These are the release notes for the 4.9.0 Beta Release.
 The following features and bug fixes have been added to the application since the 4.8.1 release.
 Additional detail for each item listed below may be found on our [community website](http://www.xtuple.org).
 
-##### Mobile Web Application
+#### Mobile Web Application
 
 xtuple.org issues:
 
@@ -225,7 +463,7 @@ GitHub issues:
   _support UPC-A barcode formatting_
 
 
-##### Desktop Application
+#### Desktop Application
 
 - Implemented
   issue #[4876](http://www.xtuple.org/xtincident/view/bugs/4876)
@@ -612,7 +850,7 @@ GitHub issues:
   issue #[25760](http://www.xtuple.org/xtincident/view/bugs/25760)
   _* Linux: Unable to  Log In into xTuple Qt 4 build_
 
-### Deployment Notes
+## Deployment Notes
 
 We've lately revised the
 naming conventions and the behavior of our core updater packages.
