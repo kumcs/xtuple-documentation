@@ -1,5 +1,5 @@
 ### xTuple Release Notes
-##### Version 4.8.1 Patch Release * January 23, 2014
+##### Version 4.8.1 Patch Release * January 23, 2015
 
 These are the release notes for the 4.8.1 Final Release. Thanks to all who contributed to make this release possible.
 For more information about [deploying this release](#deployment-notes), please see below.
