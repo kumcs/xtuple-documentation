@@ -121,7 +121,7 @@ core updater packages. Our overall goal is to simplify the process
 of installing and upgrading xTuple ERP databases.
 
 Just as was true for the 4.4.1 release, you will only need to apply
-one updater package to upgrade to 4.9.0--that is, assuming you are
+one updater package to upgrade to the latest release--that is, assuming you are
 already running on at least 4.4.0. The new updater packages are
 designed to bring you all the way up to their version, no matter
 what version (>= 4.4.0!) that you're on.
@@ -143,34 +143,34 @@ or install package.
 
 To be verbose about all of this:
 
-    postbooks-upgrade-490.gz will:
-    upgrade a PostBooks database from anywhere >= 4.4.0 to 4.9.0
+    postbooks-upgrade-491.gz will:
+    upgrade a PostBooks database from anywhere >= 4.4.0 to 4.9.1
 
-    distribution-upgrade-490.gz will:
-    upgrade the standard/dist (i.e., inventory code) to 4.9.0
-    upgrade the distribution (i.e., xwd code) to 4.9.0
+    distribution-upgrade-491.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.9.1
+    upgrade the distribution (i.e., xwd code) to 4.9.1
 
-    distribution-install-490.gz will:
-    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.0
-    do a one-time install of tables, etc. for distribution at 4.9.0
+    distribution-install-491.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.1
+    do a one-time install of tables, etc. for distribution at 4.9.1
 
-    manufacturing-upgrade-490.gz will:
-    upgrade the standard/dist (i.e., inventory code) to 4.9.0
-    upgrade the manufacturing code to 4.9.0
+    manufacturing-upgrade-491.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.9.1
+    upgrade the manufacturing code to 4.9.1
 
-    manufacturing-install-490.gz will:
-    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.0
-    do a one-time install of tables, etc. for manufacturing at 4.9.0
+    manufacturing-install-491.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.1
+    do a one-time install of tables, etc. for manufacturing at 4.9.1
 
-    enterprise-upgrade-490.gz will:
-    upgrade the standard/dist (i.e., inventory code) to 4.9.0
-    upgrade the distribution (i.e., xwd code) to 4.9.0
-    upgrade the manufacturing code to 4.9.0
+    enterprise-upgrade-491.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.9.1
+    upgrade the distribution (i.e., xwd code) to 4.9.1
+    upgrade the manufacturing code to 4.9.1
 
-    enterprise-install-490.gz will:
-    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.0
-    do a one-time install of tables, etc. for distribution at 4.9.0
-    do a one-time install of tables, etc. for manufacturing at 4.9.0
+    enterprise-install-491.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.1
+    do a one-time install of tables, etc. for distribution at 4.9.1
+    do a one-time install of tables, etc. for manufacturing at 4.9.1
 
 PLEASE NOTE: Other packages, such as Advanced Commissions and Fixed
 Assets, are currently remaining on their own release schedule and should
