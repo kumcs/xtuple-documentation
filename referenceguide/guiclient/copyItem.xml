@@ -15,7 +15,7 @@
     </listitem>
     <listitem>
       <para>a Job Order Builder which allows you to add, remove and/or change
-      Bill of Material and Bill of Operation lines.</para>
+      Bill of Material and Routing lines.</para>
     </listitem>
   </itemizedlist>
   <para>To make a copy of an Item, select the "Copy Item" option. The
@@ -58,10 +58,9 @@
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
-      <term>Copy Bill of Operations</term>
+      <term>Copy Routing</term>
       <listitem>
-        <para>Select if you want to copy the source Item's Bill of
-        Operations.</para>
+        <para>Select if you want to copy the source Item's Routing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -130,8 +129,8 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add or remove standard Operations, select the "Bill of Operations"
-  tab. The following will be displayed:</para>
+  <para>To add or remove standard Operations, select the "Routing" tab. The
+  following will be displayed:</para>
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/copyItem_BOO.png" />
@@ -141,31 +140,30 @@
     <varlistentry>
       <term>Available Standard Operations</term>
       <listitem>
-        <para>By default the display lists the source Item's Bill of
-        Operations. Select the Operations that you wish to include in the
-        target Item's Bill of Operations.</para>
+        <para>By default the display lists the source Item's Routing. Select
+        the Operations that you wish to include in the target Item's
+        Routing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>ADD -&gt;</term>
       <listitem>
         <para>Clicking the ADD-&gt; button will add selected Operations from
-        the list in the left pane to the "Bill of Operations" list on the
-        right.</para>
+        the list in the left pane to the "Routings" list on the right.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>REMOVE -&gt;</term>
       <listitem>
-        <para>To remove Operations from the source Item's Bill of Operations,
-        highlight the relevant Operations in the "Bill of Operations" list and
-        click the REMOVE -&gt; button.</para>
+        <para>To remove Operations from the source Item's Routing, highlight
+        the relevant Operations in the "Routings" list and click the REMOVE
+        -&gt; button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Bill of Operations</term>
+      <term>Routings</term>
       <listitem>
-        <para>Display lists the target Item's Bill of Operations.</para>
+        <para>Display lists the target Item's Routing.</para>
       </listitem>
     </varlistentry>
   </variablelist>
