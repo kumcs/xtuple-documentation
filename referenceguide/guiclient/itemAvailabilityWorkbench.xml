@@ -125,17 +125,17 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term id="Para678035">QOH</term>
+      <term>Available QOH</term>
       <listitem>
-        <para>Displays the Quantity on Hand for the specified Item.</para>
+        <para>Quantity available immediately to satisfy Work Order and Sales
+        Order demand.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term id="Para678036">Order Multiple</term>
+      <term>Netable QOH</term>
       <listitem>
-        <para>Displays the Order Multiple, which specifies the increments the
-        Item must be ordered in. The Order Multiple is maintained in the Item
-        Site master.</para>
+        <para>Quantity that is allowed to be used for Inventory planning
+        purposes (i.e., MRP).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -151,6 +151,14 @@
       <listitem>
         <para>Indicates the quantity level that MRP Planned Replenishment
         Orders will order up to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term id="Para678036">Order Multiple</term>
+      <listitem>
+        <para>Displays the Order Multiple, which specifies the increments the
+        Item must be ordered in. The Order Multiple is maintained in the Item
+        Site master.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -432,6 +440,12 @@
   <para>When displaying Inventory history for the Item, you are presented with
   the following options:</para>
   <variablelist>
+    <varlistentry>
+      <term>Filter</term>
+      <listitem>
+        <para>Refine your search using the available filter options.</para>
+      </listitem>
+    </varlistentry>
     <varlistentry>
       <term id="Para678148">Inventory History</term>
       <listitem>
