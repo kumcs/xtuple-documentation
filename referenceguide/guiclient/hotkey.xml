@@ -7,6 +7,12 @@
       <primary>hot keys</primary>
       <secondary>creating new</secondary>
     </indexterm>Hot Key</title>
+  <para>Hot Keys are designed to create user-defined shortcuts, by linking
+  particular screens with keyboard keystrokes. For example, you might link the
+  F1 key to the Customer list. Using this Hot Key, you could open the Customer
+  list by simply selecting F1. You may create up to 42 Hot Keys using the
+  available keystroke options. The Hot Keys you create will also be displayed
+  as Shortcuts on the xTuple desktop.</para>
   <para>To create a new Hot Key, select the NEW button. The following screen
   will appear:</para>
   <para><screenshot>
@@ -19,21 +25,24 @@
     </screenshot></para>
   <para>When creating a new Hot Key, you are presented with the following
   options:</para>
+  <note>
+    <para>Hot Keys also appear as Shortcuts on the xTuple desktop.</para>
+  </note>
   <variablelist>
     <varlistentry>
       <term>Keystroke</term>
       <listitem>
         <para>Select a keyboard keystroke from the list of available
-        keystrokes. The list will include all keystrokes which may linked to a
-        specific action. Only one action at a time may be assigned to a single
-        keystroke. For multiple actions, multiple keystrokes must be
-        used.</para>
+        keystrokes. The list includes F1-F9, CTRL+B-Z (with some exceptions),
+        and CTRL+0-9. Each screen (or action) in the available list may be
+        assigned only once, to a single keystroke.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Actions</term>
       <listitem>
-        <para>Display lists actions you may associate with keystrokes.</para>
+        <para>Display lists the screens which may be associated with
+        keystrokes.</para>
       </listitem>
     </varlistentry>
   </variablelist>
