@@ -359,16 +359,18 @@
           <term>Desktop</term>
           <listitem>
             <para>This option is available to the free-floating mode only.
-            Menu options will vary and will correspond to whichever of the
-            various xTuple desktops (i.e., CRM, Sales, etc.) is currently
-            being used. Using this feature, you can specify which desktop
-            widgets you want to turn ON/OFF.</para>
+            Menu options will vary, depending on which of the various xTuple
+            desktops (i.e., CRM, Sales, etc.) is currently being used. Using
+            this menu feature, you can specify which desktop widgets you want
+            to turn ON/OFF.</para>
           </listitem>
         </varlistentry>
       </variablelist>
       <section>
         <title>CRM Desktop</title>
-        <para></para>
+        <para>The CRM desktop makes it easy for users to locate CRM records
+        they either "own" or are assigned to. The desktop also provides
+        graphical links to commonly used CRM module screens.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -377,11 +379,42 @@
               <caption>CRM Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
+        <para>When using the CRM desktop, you are presented with the following
+        widgets:</para>
+        <tip>
+          <para>To open a record, double click on it or use the right-click
+          menu.</para>
+        </tip>
+        <variablelist>
+          <varlistentry>
+            <term>My Contacts</term>
+            <listitem>
+              <para>Displays all Contact records you are the owner of.
+              Ownership is defined on the source Contact record.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>My Accounts</term>
+            <listitem>
+              <para>Displays all Contact records you are the owner of.
+              Ownership is defined on the source CRM Account.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>To Do</term>
+            <listitem>
+              <para>Displays To-Do items you either own or are assigned to.
+              Ownership and assignment are defined on the To-Do item
+              records.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </section>
       <section>
         <title>Sales Desktop</title>
-        <para></para>
+        <para>The Sales desktop provides an easy means for quickly accessing
+        basic sales information. The desktop also provides graphical links to
+        commonly used Sales module screens.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -390,11 +423,46 @@
               <caption>Sales Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
+        <para>When using the Sales desktop, you are presented with the
+        following widgets:</para>
+        <tip>
+          <para>If you close a desktop widget by mistake, you can reopen it
+          from <guimenuitem>Window &gt; Desktop &gt;
+          Widget</guimenuitem>.</para>
+        </tip>
+        <variablelist>
+          <varlistentry>
+            <term>Sales Activities</term>
+            <listitem>
+              <para>Displays summarized information about currently open
+              Quotes and Sales Orders.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Sales History</term>
+            <listitem>
+              <para>Displays either sales or booking history, depending on
+              your preference. Click on the gear icon to toggle between
+              bookings and sales―and to specify the time period you want the
+              widget to use.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Sales Orders</term>
+            <listitem>
+              <para>Displays detailed information about open Sales
+              Orders.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </section>
       <section>
         <title>Accounting Desktop</title>
-        <para></para>
+        <para>The Accounting desktop offers a quick view into basic accounting
+        information, including current balances for Payables, Receivables,
+        Bank Accounts, and any other Accounts you choose to monitor. The
+        desktop also provides graphical links to commonly used Accounting
+        module screens.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -403,11 +471,50 @@
               <caption>Accounting Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
+        <para>When using the Accounting desktop, you are presented with the
+        following widgets:</para>
+        <tip>
+          <para>Using your mouse, you can pull desktop widgets away from the
+          desktop, so that they act as free-floating windows.</para>
+        </tip>
+        <variablelist>
+          <varlistentry>
+            <term>Bank Accounts</term>
+            <listitem>
+              <para>Displays the current balances for your Bank
+              Accounts.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Payables</term>
+            <listitem>
+              <para>Displays current aging information for your
+              Payables.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Receivables</term>
+            <listitem>
+              <para>Displays current aging information for your
+              Receivables.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Monitored Accounts</term>
+            <listitem>
+              <para>Displays current balance information for any Accounts you
+              choose to monitor in the desktop. Click on the gear icon to
+              identify which Account(s) you want to add or remove from the
+              list.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </section>
       <section>
         <title>Manufacture Desktop</title>
-        <para></para>
+        <para>The Manufacture desktop provides quick insight into your current
+        manufacturing activities. The desktop also provides graphical links to
+        commonly used Manufacture module screens.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -416,11 +523,43 @@
               <caption>Manufacture Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
+        <para>When using the Manufacture desktop, you are presented with the
+        following widgets:</para>
+        <para><tip>
+            <para>You can rearrange the location of desktop widgets by
+            dragging them and repositioning them with your mouse.</para>
+          </tip></para>
+        <para><variablelist>
+            <varlistentry>
+              <term>Manufacture Activities</term>
+              <listitem>
+                <para>Displays summarized information about currently open
+                Work Orders.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Manufacture History</term>
+              <listitem>
+                <para>Displays information about receipts from manufacturing,
+                using a grouping order and time frame of your choosing. Click
+                on the gear icon to specify the grouping order and time period
+                you want the widget to use.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Work Orders</term>
+              <listitem>
+                <para>Displays the Work Order schedule for all open Work
+                Orders.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist></para>
       </section>
       <section>
         <title>Social Desktop</title>
-        <para></para>
+        <para>The Social desktop allows you to view ongoing user activity,
+        while at the same time giving you the ability to send messages to
+        users within the system.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -429,11 +568,54 @@
               <caption>Social Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
+        <para>When using the Social desktop, you are presented with the
+        following widgets:</para>
+        <para><tip>
+            <para>If a desktop widget is in free-floating mode, you can
+            re-attach it to the desktop by dragging it with your mouse and
+            then docking it to the desktop at your preferred position.</para>
+          </tip></para>
+        <para><variablelist>
+            <varlistentry>
+              <term>Comment Console</term>
+              <listitem>
+                <para>Displays Comment summaries from a variety of users and
+                Comment sources, depending on the preferences you choose.
+                Click on the gear icon to specify the Comment parameters you
+                want to include in the display. Keep in mind that, while you
+                may specify a date range, the maximum range is limited to
+                seven days for performance reasons.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Send Message</term>
+              <listitem>
+                <para>Enter a User name and message, then click the SEND
+                button to send the message to the User.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Message History</term>
+              <listitem>
+                <para>Displays a complete list of messages you've sent or
+                received.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Users Online</term>
+              <listitem>
+                <para>Displays the names of Users who are currently logged
+                into the system.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist></para>
       </section>
       <section>
         <title>Maintenance Desktop</title>
-        <para></para>
+        <para>The Maintenance desktop provides detailed information about the
+        extension packages currently installed in your database. The desktop
+        also provides graphical links to commonly used Maintenance
+        screens.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
@@ -442,20 +624,34 @@
               <caption>Maintenance Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
+        <para>When using the Maintenance desktop, you are presented with the
+        following widgets:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Extensions</term>
+            <listitem>
+              <para>Displays a list of the extension packages currently
+              installed in your database, along with detailed information
+              about both the database schema and client-side code associated
+              with each package. To view underlying schema and client-side
+              code information, click on the arrow located to the left of the
+              extension name.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </section>
       <section>
         <title>Asset Management Desktop</title>
-        <para></para>
+        <para>The Asset Management desktop provides graphical links to
+        commonly used Asset Management screens.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/INTRO_crmDesktop.png" />
+                <imagedata fileref="images/INTRO_assetDesktop.png" />
               </imageobject>
-              <caption>CRM Desktop</caption>
+              <caption>Asset Management Desktop</caption>
             </mediaobject>
           </screenshot></para>
-        <para></para>
       </section>
     </section>
     <section id="Section474320">
