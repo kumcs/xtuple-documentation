@@ -140,46 +140,6 @@
               complex Bills of Materials.</para>
             </listitem>
           </varlistentry>
-          <varlistentry role="manufacturing">
-            <term><indexterm significance="normal">
-                <primary>breeder items</primary>
-                <secondary>as item type</secondary>
-              </indexterm>Breeder</term>
-            <listitem>
-              <para>A logical Item from which Co-Products and By-Products are
-              produced. An example use for a Breeder Item is the screening of
-              raw gravel to produce different sizes of gravel. The Breeder
-              Item's Bill of Materials (BOM) defines the inputs—in this case
-              raw gravel—and the outputs are defined on its Breeder BOM (i.e.,
-              Small, Medium and Large gravel). A Work Order is created for the
-              Breeder Item, but this Item is never stocked or produced; again,
-              it is a logical Item. Instead, raw gravel is consumed by the
-              Breeder's Work Order, along with labor, and the resulting
-              quantities of Co-Products and By-Products are recorded.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry role="manufacturing">
-            <term><indexterm significance="normal">
-                <primary>co-products</primary>
-                <secondary>as item type</secondary>
-              </indexterm>Co-Product</term>
-            <listitem>
-              <para>Co-Products are Items that you keep and which absorb
-              Costs. They are produced during a manufacturing process. See
-              "Breeder" Item Type above.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry role="manufacturing">
-            <term><indexterm significance="normal">
-                <primary>by-products</primary>
-                <secondary>as item type</secondary>
-              </indexterm>By-Product</term>
-            <listitem>
-              <para>By-Products are things that you throw away and incur Costs
-              doing so during a manufacturing process. See "Breeder" Item Type
-              above.</para>
-            </listitem>
-          </varlistentry>
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>reference</primary>
@@ -285,6 +245,46 @@
                 inheritance for Kit Items here: <xref
                 linkend="configureIM" />.</para>
               </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>breeder items</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Breeder</term>
+            <listitem>
+              <para>A logical Item from which Co-Products and By-Products are
+              produced. An example use for a Breeder Item is the screening of
+              raw gravel to produce different sizes of gravel. The Breeder
+              Item's Bill of Materials (BOM) defines the inputs—in this case
+              raw gravel—and the outputs are defined on its Breeder BOM (i.e.,
+              Small, Medium and Large gravel). A Work Order is created for the
+              Breeder Item, but this Item is never stocked or produced; again,
+              it is a logical Item. Instead, raw gravel is consumed by the
+              Breeder's Work Order, along with labor, and the resulting
+              quantities of Co-Products and By-Products are recorded.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>co-products</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Co-Product</term>
+            <listitem>
+              <para>Co-Products are Items that you keep and which absorb
+              Costs. They are produced during a manufacturing process. See
+              "Breeder" Item Type above.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>by-products</primary>
+                <secondary>as item type</secondary>
+              </indexterm>By-Product</term>
+            <listitem>
+              <para>By-Products are things that you throw away and incur Costs
+              doing so during a manufacturing process. See "Breeder" Item Type
+              above.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -538,20 +538,19 @@
   </variablelist>
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
-    <varlistentry role="manufacturing">
-      <term>OPERATIONS</term>
-      <listitem>
-        <para>Select to open the Bill of Operations (BOO) for the specified
-        Item. If no BOO exists, you will have the option to create a new
-        BOO.</para>
-      </listitem>
-    </varlistentry>
     <varlistentry>
       <term>MATERIALS</term>
       <listitem>
         <para>Select to open the Bill of Materials (BOM) for the specified
         Item. If no BOM exists, you will have the option to create a new
         BOO.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term>ROUTING</term>
+      <listitem>
+        <para>Select to open the Routing for the specified Item. If no Routing
+        exists, you will have the option to create a new Routing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -739,6 +738,13 @@
   </screenshot>
   <para>When defining an alternate Item UOM, you are presented with the
   following options:</para>
+  <tip>
+    <para>By default, the Available Types list will be empty—until you specify
+    either a source or per UOM. Once a source or per UOM is selected, the
+    Available Types list will be populated with the available options. An Item
+    may have multiple selling UOMs but only one of each of the other
+    types.</para>
+  </tip>
   <variablelist>
     <varlistentry>
       <term>Source UOM</term>
@@ -757,15 +763,6 @@
         </variablelist>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <variablelist>
-    <tip>
-      <para>By default, the Available Types list will be empty—until you
-      specify either a source or per UOM. Once a source or per UOM is
-      selected, the Available Types list will be populated with the available
-      options. An Item may have multiple selling UOMs but only one of each of
-      the other types.</para>
-    </tip>
     <varlistentry>
       <term>Per UOM</term>
       <listitem>
@@ -790,6 +787,12 @@
         fractional quantities. If not selected, transaction quantities using
         this alternate Item UOM may not be maintained in fractional
         quantities.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Specify whether the conversion is active or not.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
