@@ -72,6 +72,16 @@
       </listitem>
     </varlistentry>
   </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>PRINT LABEL</term>
+      <listitem>
+        <para>Select to print a bar-coded label containing Lot/Serial
+        information.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
   <para>To create a new Lot/Serial Characteristic, select the NEW button. The
   following screen will appear:</para>
   <para><screenshot>
@@ -153,7 +163,15 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To associate documents with a Lot/Serial record, select the
-  "Documents" tab.</para>
+  "Documents" tab. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/lotSerial_documentsTab.png" />
+        </imageobject>
+        <caption>Lot/Serial Documents</caption>
+      </mediaobject>
+    </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="lotSerialRegistration.xml" xpointer="element(/1)"
