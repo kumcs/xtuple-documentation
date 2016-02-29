@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="catConfig">
+  <title><indexterm significance="normal">
+      <primary>vendor catalogs</primary>
+      <secondary>conversion of</secondary>
+    </indexterm>Vendor Catalog Conversion</title>
+  <para>To create a new Characteristic, select the NEW button. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catConfig.png" />
+        </imageobject>
+        <caption>Create New Characteristic</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new Characteristic, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+      <listitem>
+        <para>Enter a unique name to identify the Characteristic.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Type</term>
+      <listitem>
+        <para>Specify one of the following Characteristic Type options:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Text</term>
+            <listitem>
+              <para>Select if you want the Characteristic to be a text string.
+              Text type Characteristics have access to the input mask and
+              validator options.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>List</term>
+            <listitem>
+              <para>Select if you want the Characteristic to present a list of
+              possible values. If selected, you will have the option to enter
+              possible Characteristic values and their preferred sort
+              order.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Date</term>
+            <listitem>
+              <para>Select if you want the Characteristic to be a date string.
+              The formatting of date type Characteristics conforms to the
+              Locale setting for the logged in user.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order</term>
+      <listitem>
+        <para>Specify the sort order for the Characteristic. This option is
+        useful whenever you present multiple Characteristics in a given
+        context. For example, if you have five Contact Characteristics
+        defined, the sort order will determine which Characteristic appears at
+        the top of the sort order when a Contact record is being entered or
+        edited.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Include in searches</term>
+      <listitem>
+        <para>Select to indicate you want the Characteristic to be included in
+        searches related to records where the Characteristic is used. Not
+        selecting this option means the Characteristic will not be included in
+        searches. This feature exists to help improve potential performance
+        penalties incurred when multiple Characteristics are included in
+        search criteria. If you use multiple Characteristics to define certain
+        records (e.g., Items, Customers, etc.), you can improve search
+        performance by choosing to only include in searches those
+        Characteristics which you are most likely to search on.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Allow unique characteristic assignment only</term>
+      <listitem>
+        <para>Select if you want to restrict use of the Characteristic to only
+        once per object association. For example, if want to make sure a
+        Contact characteristic is used only once per Contact record, then you
+        should select this option.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Use the "Description" tab to enter a brief description of the
+        Characteristic.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>
