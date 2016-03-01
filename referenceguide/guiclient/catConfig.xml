@@ -7,98 +7,225 @@
       <primary>vendor catalogs</primary>
       <secondary>conversion of</secondary>
     </indexterm>Vendor Catalog Conversion</title>
-  <para>To create a new Characteristic, select the NEW button. The following
-  screen will appear:</para>
+  <para>Each External Vendor Catalog conversion specifies the default values
+  you want to assign to Vendor Items when they are converted to become
+  Inventory Items in xTuple. Conversions may vary from Provider to Provider,
+  depending on the nature of the Catalog and your own particular needs.</para>
+  <para>To create a new Vendor Catalog conversion, select the NEW button. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/catConfig.png" />
         </imageobject>
-        <caption>Create New Characteristic</caption>
+        <caption>Create New Vendor Catalog Conversion</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Characteristic, you are presented with the
-  following options:</para>
+  <para>When creating a new Vendor Catalog conversion, you are presented with
+  the following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Name</term>
+      <term>Provider</term>
       <listitem>
-        <para>Enter a unique name to identify the Characteristic.</para>
+        <para>Enter the Provider code (e.g., TSE, TSP) in the first field and
+        the name of the Provider in the second field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Type</term>
+      <term>Item</term>
       <listitem>
-        <para>Specify one of the following Characteristic Type options:</para>
+        <para>Specify the following default Item information you want
+        converted Items to assume in xTuple:</para>
         <variablelist>
           <varlistentry>
-            <term>Text</term>
+            <term>Inventory UOM</term>
             <listitem>
-              <para>Select if you want the Characteristic to be a text string.
-              Text type Characteristics have access to the input mask and
-              validator options.</para>
+              <para>Specify the default Inventory Unit of Measure you want to
+              assign to converted Items (e.g., EA).</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>List</term>
+            <term>Class Code</term>
             <listitem>
-              <para>Select if you want the Characteristic to present a list of
-              possible values. If selected, you will have the option to enter
-              possible Characteristic values and their preferred sort
-              order.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Date</term>
-            <listitem>
-              <para>Select if you want the Characteristic to be a date string.
-              The formatting of date type Characteristics conforms to the
-              Locale setting for the logged in user.</para>
+              <para>Specify the default Class Code you want to assign to
+              converted Items.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Order</term>
+      <term>Create Item Sites</term>
       <listitem>
-        <para>Specify the sort order for the Characteristic. This option is
-        useful whenever you present multiple Characteristics in a given
-        context. For example, if you have five Contact Characteristics
-        defined, the sort order will determine which Characteristic appears at
-        the top of the sort order when a Contact record is being entered or
-        edited.</para>
+        <para>Specify the following default Item Site information:</para>
+        <variablelist>
+          <varlistentry>
+            <term>All Sites</term>
+            <listitem>
+              <para>Select if you want to create Item Sites for converted
+              Items in all Sites.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Selected</term>
+            <listitem>
+              <para>Specify the Site where you want Item Sites for converted
+              Items to reside.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Include in searches</term>
+      <term>Vendor</term>
       <listitem>
-        <para>Select to indicate you want the Characteristic to be included in
-        searches related to records where the Characteristic is used. Not
-        selecting this option means the Characteristic will not be included in
-        searches. This feature exists to help improve potential performance
-        penalties incurred when multiple Characteristics are included in
-        search criteria. If you use multiple Characteristics to define certain
-        records (e.g., Items, Customers, etc.), you can improve search
-        performance by choosing to only include in searches those
-        Characteristics which you are most likely to search on.</para>
+        <para>Specify the following default Vendor information to be used if
+        Vendor records from the Catalog don't already exist in xTuple and need
+        to be created:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Vendor Type</term>
+            <listitem>
+              <para>Specify the default Vendor Type you want to assign to any
+              Vendor records that need to be created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Terms</term>
+            <listitem>
+              <para>Specify the default Vendor Terms you want to assign to any
+              Vendor records that need to be created.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Allow unique characteristic assignment only</term>
+      <term>Tax</term>
       <listitem>
-        <para>Select if you want to restrict use of the Characteristic to only
-        once per object association. For example, if want to make sure a
-        Contact characteristic is used only once per Contact record, then you
-        should select this option.</para>
+        <para>Specify the following Tax information for newly-created Vendor
+        and Item records:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Tax Zone</term>
+            <listitem>
+              <para>Specify the default Tax Zone you want to assign to any
+              Vendor records that need to be created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Tax Type</term>
+            <listitem>
+              <para>Specify the default Tax Type you want to assign to
+              converted Items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Description</term>
+      <term>Inventory Control</term>
       <listitem>
-        <para>Use the "Description" tab to enter a brief description of the
-        Characteristic.</para>
+        <para>Specify the following default Inventory Control information you
+        want converted Items to assume:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Cost Method</term>
+            <listitem>
+              <para>Specify the default Item costing method you want to assign
+              to converted Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Control Method</term>
+            <listitem>
+              <para>Specify the default Inventory control method you want to
+              assign to converted Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Planner Code</term>
+            <listitem>
+              <para>Specify the default Planner Code you want to assign to
+              converted Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Cost Category</term>
+            <listitem>
+              <para>Specify the default Cost Category you want to assign to
+              converted Items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Settings</term>
+      <listitem>
+        <para>Specify the following additional Inventory settings:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Stocked</term>
+            <listitem>
+              <para>Select to make creating a Purchase Order or Purchase
+              Request optional when entering Sales Orders for converted
+              Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Allow Automatic ABC Updates</term>
+            <listitem>
+              <para>Select to make ABC updates automatic for converted
+              Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>ABC Class</term>
+            <listitem>
+              <para>Specify the default ABC Class for converted Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Cycl. Cnt. Freq</term>
+            <listitem>
+              <para>Specify the default Cycle Count frequency for converted
+              Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Event Fence</term>
+            <listitem>
+              <para>Specify the default Event Fence for converted
+              Items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
+  <para></para>
+  <para></para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catConfig_restrictedLocations.png" />
+        </imageobject>
+        <caption>Locations</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para></para>
+  <para></para>
+  <para></para>
+  <para></para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catConfig_planningTab.png" />
+        </imageobject>
+        <caption>Planning</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para></para>
+  <para></para>
 </section>
