@@ -58,6 +58,10 @@
       <term>Create Item Sites</term>
       <listitem>
         <para>Specify the following default Item Site information:</para>
+        <note>
+          <para>For more information about Item Site settings, please see
+          <xref linkend="itemSite" />.</para>
+        </note>
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
@@ -82,6 +86,10 @@
         <para>Specify the following default Vendor information to be used if
         Vendor records from the Catalog don't already exist in xTuple and need
         to be created:</para>
+        <note>
+          <para>For more information about Vendor records, please see <xref
+          linkend="vendor" />.</para>
+        </note>
         <variablelist>
           <varlistentry>
             <term>Vendor Type</term>
@@ -204,28 +212,156 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para></para>
-  <para></para>
+  <para>To define Location control information for converted Items, select the
+  "Location" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/catConfig_restrictedLocations.png" />
         </imageobject>
-        <caption>Locations</caption>
+        <caption>Location Settings</caption>
       </mediaobject>
     </screenshot></para>
-  <para></para>
-  <para></para>
-  <para></para>
-  <para></para>
+  <para>When defining Location control information for converted Items, you
+  are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Multiple Location Control</term>
+      <listitem>
+        <para>This is an optional setting which allows Items to be stored in
+        multiple Locations in a single Site. If selected, converted Items will
+        use multiple Location control (MLC).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Use Default Location</term>
+      <listitem>
+        <para>If MLC is enabled, you will also have the option to store
+        converted Items in a default Location. Choose from the following
+        default Location options:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Location</term>
+            <listitem>
+              <para>Select if you want to specify default receiving, stocking,
+              and issuing Locations for the converted Items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>User-Defined</term>
+            <listitem>
+              <para>Select if you want to specify a user-defined default
+              Location for the converted Items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To define the settings the Material Requirements Planning (MRP) system
+  will use to plan for converted Items, select the "Planning" tab. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/catConfig_planningTab.png" />
         </imageobject>
-        <caption>Planning</caption>
+        <caption>Planning Settings</caption>
       </mediaobject>
     </screenshot></para>
-  <para></para>
-  <para></para>
+  <para>When defining the Planning settings for converted Items, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Enforce Order Parameters</term>
+      <listitem>
+        <para>Select to define the following parameters MRP will use when
+        planning for converted Items:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Reorder Level</term>
+            <listitem>
+              <para>Specify the level Inventory availability must fall to
+              before triggering a planned replenishment order.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Order Up To</term>
+            <listitem>
+              <para>Specify the quantity Planned Orders should replenish up
+              to.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Minimum Order</term>
+            <listitem>
+              <para>Specify the minimum Planned Order quantity.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Maximum Order</term>
+            <listitem>
+              <para>Specify the maximum Planned Order quantity.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Order Multiple</term>
+            <listitem>
+              <para>Specify the multiple to be used for Planned Orders (e.g.,
+              order in multiples of 10, 100, etc.).</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Enforce on Manual Orders</term>
+            <listitem>
+              <para>Select to also enforce the specified order parameters when
+              entering manual orders, such as Sales Orders.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Scheduling</term>
+      <listitem>
+        <para>The following additional scheduling options can be defined for
+        converted Items:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Planning System</term>
+            <listitem>
+              <para>Specify which planning system the converted Items should
+              belong to by default (i.e., MRP, MPS).</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Safety Stock</term>
+            <listitem>
+              <para>Specify the Safety Stock quantity you want to always have
+              available on hand.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Group Planned Orders Every</term>
+            <listitem>
+              <para>Specify the group setting for Planned Orders.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Lead Time</term>
+            <listitem>
+              <para>Specify the Item Site lead time.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>First Group</term>
+            <listitem>
+              <para>Select to include a special first group when grouping
+              Planned Orders with MRP.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
 </section>
