@@ -41,6 +41,13 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Operation Type</term>
+      <listitem>
+        <para>Select an Operation Type to categorize the Standard
+        Operation.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Tool Reference</term>
       <listitem>
         <para>Use this field to briefly describe any tooling required for the
@@ -55,25 +62,23 @@
           <secondary>in operations</secondary>
         </indexterm>Production UOM</term>
       <listitem>
-        <para>Specify the Unit of Measure to use for the Production
-        UOM&mdash;or enter a free-form UOM. Specify a UOM to be used
-        optionally when Work Order Operations are posted for the specified
-        Operation. Operations may be posted using either the Inventory or
-        Production UOM. In addition, different Operations in a single Bill of
-        Operations may use different Production UOMs. For example, if you are
-        producing soup, you might mix the soup in one Operation using UOM =
-        BATCH. But when canning the soup, the canning Operation might use UOM
-        = CAN. If you post Operations using the Production UOM, the
-        Inventory/Production UOM ratio normalizes the posting so that the
-        Inventory impact is recorded using the Inventory UOM.</para>
+        <para>Specify the Unit of Measure to use for the Production UOM—or
+        enter a free-form UOM. Specify a UOM to be used optionally when Work
+        Order Operations are posted for the specified Operation. Operations
+        may be posted using either the Inventory or Production UOM. In
+        addition, different Operations in a single Bill of Operations may use
+        different Production UOMs. For example, if you are producing soup, you
+        might mix the soup in one Operation using UOM = BATCH. But when
+        canning the soup, the canning Operation might use UOM = CAN. If you
+        post Operations using the Production UOM, the Inventory/Production UOM
+        ratio normalizes the posting so that the Inventory impact is recorded
+        using the Inventory UOM.</para>
+        <note>
+          <para>When posting Work Order Operations, you are given the option
+          to post Operations using Production UOMs or Inventory UOMs.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <note>
-    <para>When posting Work Order Operations, you are given the option to post
-    Operations using Production UOMs or Inventory UOMs.</para>
-  </note>
-  <variablelist>
     <varlistentry>
       <term>Inventory/Production UOM Ratio</term>
       <listitem>
@@ -90,16 +95,14 @@
         <para>Select to activate fields for standard times below. Standard
         times will be associated with the Standard Operation if
         selected.</para>
+        <note>
+          <para>Labor and overhead Costs associated with setup and run times
+          must be reported if they are to be tracked in the G/L and elsewhere.
+          To report setup and run times, select the appropriate boxes in the
+          Operation screen.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <note>
-    <para>Labor and overhead Costs associated with setup and run times must be
-    reported if they are to be tracked in the G/L and elsewhere. To report
-    setup and run times, select the appropriate boxes in the Operation
-    screen.</para>
-  </note>
-  <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>setup time</primary>
