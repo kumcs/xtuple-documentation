@@ -137,16 +137,6 @@
         Material Requirements are scrapped from a Work Order.</para>
       </listitem>
     </varlistentry>
-    <varlistentry role="manufacturing">
-      <term>Labor and Overhead Costs</term>
-      <listitem>
-        <para>Overhead Costs: Identify a General Ledger (G/L) Account to
-        distribute labor and overhead Costs to. This is a Liability Account.
-        It will be debited and/or credited with labor and overhead Costs when
-        Work Orders are in-process or posted. The sense of the transaction
-        record depends on the circumstances of the transaction.</para>
-      </listitem>
-    </varlistentry>
     <varlistentry>
       <term>P/O Liability Clearing</term>
       <listitem>
@@ -166,7 +156,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Line Freight Expense</term>
+      <term>Line Item Freight Expense</term>
       <listitem>
         <para>Identify a General Ledger (G/L) Account to distribute Purchase
         Order or Transfer Order Line Item freight expenses to. This is an
@@ -184,6 +174,16 @@
         Transfer Orders. It will be credited when Transfer Orders receipts
         having freight charges are posted. It should be debited when the
         Freight (or other Vendor) is paid by Miscellaneous Check.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term>Labor and Overhead Costs</term>
+      <listitem>
+        <para>Overhead Costs: Identify a General Ledger (G/L) Account to
+        distribute labor and overhead Costs to. This is a Liability Account.
+        It will be debited and/or credited with labor and overhead Costs when
+        Work Orders are in-process or posted. The sense of the transaction
+        record depends on the circumstances of the transaction.</para>
       </listitem>
     </varlistentry>
   </variablelist>
