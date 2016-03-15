@@ -61,21 +61,23 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Site</term>
+      <term>Expired By</term>
       <listitem>
-        <para>Specify one of the following Site options:</para>
+        <para>Specify one of the following expiration types to include in the
+        display:</para>
         <variablelist>
           <varlistentry>
-            <term>All Sites</term>
+            <term>Perishability</term>
             <listitem>
-              <para>Select to display expired Inventory for all Sites.</para>
+              <para>Select if you want to include Inventory which expired
+              because its perishable date passed.</para>
             </listitem>
           </varlistentry>
-          <varlistentry role="standard">
-            <term>Selected</term>
+          <varlistentry>
+            <term>Warranty</term>
             <listitem>
-              <para>Specify Site whose expired Inventory you want to
-              display.</para>
+              <para>Select if you want to include Inventory which expired
+              because its warranty date passed.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -94,23 +96,21 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Expired By</term>
+      <term>Site</term>
       <listitem>
-        <para>Specify one of the following expiration types to include in the
-        display:</para>
+        <para>Specify one of the following Site options:</para>
         <variablelist>
           <varlistentry>
-            <term>Perishability</term>
+            <term>All Sites</term>
             <listitem>
-              <para>Select if you want to include Inventory which expired
-              because its perishable date passed.</para>
+              <para>Select to display expired Inventory for all Sites.</para>
             </listitem>
           </varlistentry>
-          <varlistentry>
-            <term>Warranty</term>
+          <varlistentry role="standard">
+            <term>Selected</term>
             <listitem>
-              <para>Select if you want to include Inventory which expired
-              because its warranty date passed.</para>
+              <para>Specify Site whose expired Inventory you want to
+              display.</para>
             </listitem>
           </varlistentry>
         </variablelist>
