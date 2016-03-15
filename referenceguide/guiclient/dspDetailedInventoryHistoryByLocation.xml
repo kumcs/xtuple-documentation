@@ -50,18 +50,20 @@
         <para>Indicates whether the Location is Restricted or not.</para>
       </listitem>
     </varlistentry>
-    <varlistentry role="standard">
-      <term>All Sites</term>
+    <varlistentry>
+      <term>Start Date</term>
       <listitem>
-        <para>Select to display detailed Inventory history by Location for all
-        Sites.</para>
+        <para>Inventory transactions conducted on and after this date will be
+        displayed. Start date and end date must be entered for calculation to
+        proceed.</para>
       </listitem>
     </varlistentry>
-    <varlistentry role="standard">
-      <term>Selected</term>
+    <varlistentry>
+      <term>End Date</term>
       <listitem>
-        <para>Specify Site whose detailed Inventory history by Location you
-        want to display.</para>
+        <para>Inventory transactions conducted on and before this date will be
+        displayed. Start date and end date must be entered for calculation to
+        proceed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -116,28 +118,18 @@
         </variablelist>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <note>
-    <para>The system prefixes Order Numbers with letters indicating the Order
-    type. For example, Work Orders are prefixed with "WO", Purchase Orders
-    with "PO", and Sales Orders with "SO". These letters are for display
-    purposes only and are not considered part of the Order Number.</para>
-  </note>
-  <variablelist>
-    <varlistentry>
-      <term>Start Date</term>
+    <varlistentry role="standard">
+      <term>All Sites</term>
       <listitem>
-        <para>Inventory transactions conducted on and after this date will be
-        displayed. Start date and end date must be entered for calculation to
-        proceed.</para>
+        <para>Select to display detailed Inventory history by Location for all
+        Sites.</para>
       </listitem>
     </varlistentry>
-    <varlistentry>
-      <term>End Date</term>
+    <varlistentry role="standard">
+      <term>Selected</term>
       <listitem>
-        <para>Inventory transactions conducted on and before this date will be
-        displayed. Start date and end date must be entered for calculation to
-        proceed.</para>
+        <para>Specify Site whose detailed Inventory history by Location you
+        want to display.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -145,6 +137,13 @@
       <listitem>
         <para>Display lists detailed Inventory history by Location, using the
         specified parameters.</para>
+        <note>
+          <para>The system prefixes Order Numbers with letters indicating the
+          Order type. For example, Work Orders are prefixed with "WO",
+          Purchase Orders with "PO", and Sales Orders with "SO". These letters
+          are for display purposes only and are not considered part of the
+          Order Number.</para>
+        </note>
       </listitem>
     </varlistentry>
   </variablelist>
