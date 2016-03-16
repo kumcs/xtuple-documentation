@@ -11,10 +11,16 @@
       <secondary>configuration for</secondary>
     </indexterm>Credit Card</title>
   <para>The system supports several Credit Card verification services,
-  including YourPay, Authorize.Net, and CyberSource. The recording of Credit
-  Card transactions is also supported, even if an approved verification
-  service is not being used. To configure your system to process Credit Cards,
-  select the "Credit Card" option. The following screen will appear:</para>
+  including YourPay (now First Data), Authorize.Net, and CyberSource. The
+  recording of Credit Card transactions is also supported, even if an approved
+  verification service is not being used. </para>
+  <para><tip>
+      <para>Once you've confirmed with your bank which payment gateway you
+      want to use, contact the gateway to set up a merchant account. The
+      merchant account details are needed before you can configure xTuple to
+      use payment gateways.</para>
+    </tip>To configure your system to process Credit Cards, select the "Credit
+  Card" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -82,7 +88,7 @@
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>YourPay</term>
+            <term>YourPay (now First Data)</term>
             <listitem>
               <para>Select if you will be using the YourPay payment gateway
               for handling Credit Card transactions. Specific YourPay options
@@ -262,11 +268,11 @@
   </variablelist>
   <para>Fraud detection methods vary depending on the payment gateway used.
   Authorize.Net requires fraud settings to be configured on the gateway
-  server. Other services, like YourPay, send fraud detection results back to
-  the client software and require the client to decide whether to accept the
-  transaction or void it. To configure client-side fraud detections settings,
-  if required, select the "Fraud Detection" tab. The following screen will
-  appear:</para>
+  server. Other services, like YourPay (now First Data), send fraud detection
+  results back to the client software and require the client to decide whether
+  to accept the transaction or void it. To configure client-side fraud
+  detections settings, if required, select the "Fraud Detection" tab. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -542,7 +548,8 @@
   configuration, select the "Service Options" tab. The options will vary
   depending on the payment gateway being used. For example, the CyberSource
   and External methods do not require service options to be entered. However,
-  if YourPay is being used, the following screen will appear:</para>
+  if YourPay (now First Data) is being used, the following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -551,8 +558,14 @@
         <caption>YourPay Service Options</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When establishing the service option settings for your YourPay
-  configuration, you are presented with the following options:</para>
+  <para>When establishing the service option settings for your YourPay (now
+  First Data) configuration, you are presented with the following
+  options:</para>
+  <note>
+    <para>Please be advised that <ulink
+    url="https://www.firstdata.com/yourpay/">YourPay is now called First
+    Data</ulink>.</para>
+  </note>
   <variablelist>
     <varlistentry>
       <term>Link Shield</term>
