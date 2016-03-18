@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="saleTypes">
+  <title><indexterm significance="normal">
+      <primary>sale types</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Sale Types</title>
+  <para>Sale Types are used to distinguish one kind of sale from another, for
+  reporting purposes. They also impact sales accounting, as they appear as one
+  of the Account Assignment options on the Sales Assignments screen. To access
+  the master list of Sale Types, select the "Sale Types" option. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/saleTypes.png" />
+        </imageobject>
+        <caption>Sale Types Master List</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Sale Types screen displays information on all existing Sale Types,
+  including Sale Type Code, active status, default status, and
+  description.</para>
+  <xi:include href="saleType.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>
