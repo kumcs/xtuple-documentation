@@ -55,6 +55,21 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Freight</term>
+      <listitem>
+        <para>Enter the amount of any Freight charges that are not being
+        recorded at the Line Item level.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Freight Exp. Category</term>
+      <listitem>
+        <para>Specify the Expense Category you want to assign header level
+        Freight charges to. If you are tracking Freight expenses at the Line
+        Item level, </para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Amount Distributed</term>
       <listitem>
         <para>Displays sum of all Line Item distributions for specified
@@ -125,6 +140,14 @@
         <para>Specify the Tax Zone which has jurisdiction over the
         transaction. By default, the Tax Zone specified on the selected
         Purchase Order will be used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Tax</term>
+      <listitem>
+        <para>Displays the total amount of Tax to be charged on the Voucher.
+        To get a detailed view of the Tax calculation, click on the Tax link
+        using your mouse.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -249,8 +272,16 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate documents with a Voucher, select the "Documents"
-  tab.</para>
+  <para>To associate documents with a Voucher, select the "Documents" tab. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/voucher_documentsTab.png" />
+        </imageobject>
+        <caption>Add Documents to Voucher</caption>
+      </mediaobject>
+    </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="voucherItem.xml" xpointer="element(/1)"
