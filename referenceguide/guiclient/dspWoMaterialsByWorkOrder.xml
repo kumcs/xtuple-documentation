@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspWoMaterialsByWorkOrder">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>work orders</primary>
       <secondary>material requirements by</secondary>
     </indexterm> <indexterm significance="normal">
@@ -13,17 +13,14 @@
   <para>To view Work Order Material Requirements by Work Order, select the
   "W/O Material Requirements by Work Order" option. The following screen will
   appear:</para>
-  <para>
-<screenshot>
+  <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspWoMaterialsByWorkOrder.png"/>
+          <imagedata fileref="images/dspWoMaterialsByWorkOrder.png" />
         </imageobject>
-        <caption>Work Order Material Requirements by Work
-        Order</caption>
+        <caption>Work Order Material Requirements by Work Order</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
   <para>When displaying Work Order Material Requirements by Work Order, you
   are presented with the following options:</para>
   <variablelist>
@@ -62,6 +59,13 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates Work Order method is either assembly or
+        disassembly.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Material Requirements</term>
       <listitem>
         <para>Display lists Work Order Material Requirements by Work Order,
@@ -72,7 +76,7 @@
     </varlistentry>
   </variablelist>
   <note>
-  <para>The "Delete Requirement" option is only available if the component
-  Item is not required by the Work Order.</para>
+    <para>The "Delete Requirement" option is only available if the component
+    Item is not required by the Work Order.</para>
   </note>
 </section>

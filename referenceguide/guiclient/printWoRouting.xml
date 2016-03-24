@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="printWoRouting" role="manufacturing">
   <title>Print Routing</title>
   <para>A Routing is a list showing the Work Order Operations for a specified
   Work Order. To print a Work Order Routing, select the "Print Routing"
   option. The following screen will appear:</para>
-  <para>
-<screenshot>
+  <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/printWoRouting.png"/>
+          <imagedata fileref="images/printWoRouting.png" />
         </imageobject>
         <caption>Print Work Order Routing</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
   <para>When printing a Work Order Routing, you are presented with the
   following options:</para>
   <variablelist>
@@ -51,6 +50,13 @@
       <listitem>
         <para>Displays Work Order Status automatically when Work Order Number
         is entered into "Work Order #" field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates Work Order method is either assembly or
+        disassembly.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
