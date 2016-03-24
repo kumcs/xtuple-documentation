@@ -133,14 +133,12 @@
       <listitem>
         <para>Enter the name of the user who performed the production
         run.</para>
+        <note>
+          <para>If the "Backflush Operations" option is not selected, the
+          setup and run time options will be disabled.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <note>
-    <para>If the "Backflush Operations" option is not selected, the setup and
-    run time options will be disabled.</para>
-  </note>
-  <variablelist>
     <varlistentry>
       <term>Close Work Order after Posting</term>
       <listitem>
@@ -163,14 +161,20 @@
         Specify the Site you want to transfer production to.</para>
       </listitem>
     </varlistentry>
+    <varlistentry>
+      <term>Scrap on Post</term>
+      <listitem>
+        <para>Select to open the "Scrap Work Order Material" screen
+        automatically when posting production.</para>
+      </listitem>
+    </varlistentry>
   </variablelist>
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
     <varlistentry>
-      <term>SCRAP</term>
+      <term>POST</term>
       <listitem>
-        <para>Select to open the "Scrap Work Order Material"
-        screen.</para>
+        <para>Select to post production for the Work Order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
