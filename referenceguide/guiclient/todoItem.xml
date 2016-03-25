@@ -194,17 +194,8 @@
     </imageobject>
     <caption>To-Do Item Alarms</caption>
   </mediaobject>
-  <para>When creating reminder Alarms for To-Do Items, you are presented with
-  the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Alarms</term>
-      <listitem>
-        <para>Displays a list of Alarms you can create to send reminders to
-        various users associated with an Event or system message.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/alarmMaint.xml" xpointer="alarmMaint"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Comments to a To-Do Item, select the "Comments" tab. The
   following screen will appear:</para>
   <mediaobject>
@@ -227,7 +218,5 @@
   <para>To view Email associated with a To-Do Item, select the "Email" tab.
   The following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="../widgets/alarmMaint.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

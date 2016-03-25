@@ -61,9 +61,16 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Account</term>
+      <term>CRM Account</term>
       <listitem>
         <para>Specify the Account the Incident is associated with.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Owner</term>
+      <listitem>
+        <para>Specify the User who owns the Incident. By default, the User who
+        creates an Incident becomes the owner of it.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -402,31 +409,18 @@
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view the alarms associated with an Incident, select the "Alarms"
-  tab. The following screen will appear:</para>
+  <para>To view Alarms associated with an Incident, select the "Alarms" tab.
+  The following screen will appear:</para>
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/incident_alarmTab.png" />
     </imageobject>
     <caption>Incident Alarms</caption>
   </mediaobject>
-  <para>Upon selecting Alarms you are presented with the following
-  options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Alarms</term>
-      <listitem>
-        <para>Displays a list of Alarms you can create to send reminders to
-        various users associated with an event or system message.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/alarmMaint.xml" xpointer="alarmMaint"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To view Email associated with an Incident, select the "Email" tab. The
   following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="../widgets/alarmMaint.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="../widgets/alarmMaint.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

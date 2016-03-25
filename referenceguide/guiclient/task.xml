@@ -225,17 +225,8 @@
       <caption>Create New Alarm</caption>
     </mediaobject>
   </screenshot>
-  <para>When adding an Alarm, you are presented with the following
-  options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Alarms</term>
-      <listitem>
-        <para>Displays a list of Alarms you can create to send reminders to
-        various users associated with an event or system message.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/alarmMaint.xml" xpointer="alarmMaint"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Comments to a Task, select the "Comments" tab. The following
   screen will appear:</para>
   <mediaobject>
@@ -245,7 +236,5 @@
     <caption>Alarm Comments</caption>
   </mediaobject>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <xi:include href="../widgets/alarmMaint.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
