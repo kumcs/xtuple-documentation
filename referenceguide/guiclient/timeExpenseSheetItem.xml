@@ -4,27 +4,29 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="timeExpenseSheetItem" role="xtte">
   <title><indexterm significance="normal">
-      <primary>worksheets</primary>
+      <primary>time and expense sheets</primary>
       <secondary>management of</secondary>
-    </indexterm>Worksheet Item</title>
-  <para>The Worksheet Item screen is where Employees record their actual time
-  or expenses related to a Project. To add a time or expense entry, select the
-  NEW button on the Worksheet screen. The following screen will appear:</para>
+    </indexterm>Time and Expense Sheet Item</title>
+  <para>The Time and Expense Sheet Item screen is where Employees record their
+  actual time or expenses related to a Project. To add a time or expense
+  entry, select the NEW button on the Time and Expense Sheet screen. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/timeExpenseSheetItem.png" />
         </imageobject>
-        <caption>Worksheet Item</caption>
+        <caption>Time and Expense Sheet Item</caption>
       </mediaobject>
     </screenshot></para>
   <para>When adding a time or expense entry, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Worksheet</term>
+      <term>Sheet</term>
       <listitem>
-        <para>Displays the system-generated number of the Worksheet.</para>
+        <para>Displays the system-generated number of the Time and Expense
+        Sheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -37,7 +39,7 @@
     <varlistentry>
       <term>Week Of</term>
       <listitem>
-        <para>Displays the date for the parent Worksheet.</para>
+        <para>Displays the date for the parent Time and Expense Sheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -101,8 +103,8 @@
     <varlistentry>
       <term>Employee</term>
       <listitem>
-        <para>Displays the name of the Employee indicated on the parent
-        Worksheet.</para>
+        <para>Displays the name of the Employee indicated on the parent Time
+        and Expense Sheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -155,8 +157,8 @@
       <term>Hourly Cost</term>
       <listitem>
         <para>For time entries, displays the Employee's hourly rate (or cost),
-        as distinguished from the billable rate charged to the Customer.
-        </para>
+        as distinguished from the billable rate charged to the
+        Customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -164,6 +166,13 @@
       <listitem>
         <para>For time entries, displays the total cost for the Employee's
         time spent on the task, based on the Employee's hourly rate.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Prepaid (not reimbursable)</term>
+      <listitem>
+        <para>For expense entries, select if the item has already been paid
+        for, making it ineligible for reimbursement.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -213,7 +222,7 @@
             <term>Employee</term>
             <listitem>
               <para>Displays the following information for the Employee
-              associated with the Worksheet:<variablelist>
+              associated with the Time and Expense Sheet:<variablelist>
                   <varlistentry>
                     <term>Day Total</term>
                     <listitem>
@@ -222,10 +231,10 @@
                     </listitem>
                   </varlistentry>
                   <varlistentry>
-                    <term>Worksheet Total</term>
+                    <term>Sheet Total</term>
                     <listitem>
                       <para>Displays the Employee's total hours on the parent
-                      Worksheet.</para>
+                      Time and Expense Sheet.</para>
                     </listitem>
                   </varlistentry>
                 </variablelist></para>
@@ -259,7 +268,7 @@
         <imageobject>
           <imagedata fileref="images/timeExpenseSheetItem_tabNotes.png" />
         </imageobject>
-        <caption>Worksheet Item Notes</caption>
+        <caption>Time and Expense Sheet Item Notes</caption>
       </mediaobject>
     </screenshot></para>
   <para>The "Notes" tab provides a text area where you can add miscellaneous
