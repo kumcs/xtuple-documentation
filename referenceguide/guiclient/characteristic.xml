@@ -100,10 +100,11 @@
         options by selecting the relevant check boxes. The Characteristic will
         then be available for use in the specified screen(s). The follow
         Characteristic assignments options are supported: Account, Address,
-        Contact, Customer, Employee, Incident, Invoice, Invoice Item, Item,
-        Item Group, Lot/Serial, Opportunity, Project, Project Task, Purchase
-        Order, Purchase Order Item, Purchase Request, Quote, Quote Item, Sales
-        Order, Sales Order Item, Vendor, Voucher, Work Order.</para>
+        Contact, Customer, Employee, Fixed Asset, Incident, Invoice, Invoice
+        Item, Item, Item Group, Lot/Serial, Maintenance Order, Opportunity,
+        Project, Project Task, Purchase Order, Purchase Order Item, Purchase
+        Request, Quote, Quote Item, Sales Order, Sales Order Item, Vendor,
+        Voucher, Work Order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -223,7 +224,7 @@
                         </listitem>
                       </varlistentry>
                       <varlistentry>
-                        <term>www\S?(\.com|net|org)</term>
+                        <term>(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})</term>
                         <listitem>
                           <para>Select this validator to require users to
                           enter a website address (e.g., <ulink
