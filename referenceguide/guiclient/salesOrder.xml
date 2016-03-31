@@ -444,17 +444,13 @@
     </varlistentry>
   </variablelist>
   <para>The following buttons are unique to this screen:</para>
-  <para role="xtconnect"><note>
-      <para>If the Customer specified on the Sales Order has an EDI Profile
-      attached, you may encounter an EDI processing interface when printing
-      the Sales Order.</para>
-    </note></para>
   <variablelist>
     <varlistentry>
       <term>CLEAR</term>
       <listitem>
-        <para>Select to clear the current Sales Order screen without closing
-        the screen.</para>
+        <para>Select to refresh the Sales Order screen so that you can enter a
+        new Sales Order. Using the CLEAR button does not erase or in any way
+        change the information on the Sales Order you are clearing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -470,6 +466,11 @@
         <para>Select to display extra information related to the Sales Order.
         To hide the extra information, simply select the MORE button
         again.</para>
+        <para role="xtconnect"><note>
+            <para>If the Customer specified on the Sales Order has an EDI
+            Profile attached, you may encounter an EDI processing interface
+            when printing the Sales Order.</para>
+          </note></para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -799,18 +800,6 @@
   </variablelist>
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
-    <varlistentry>
-      <term>CLEAR</term>
-      <listitem>
-        <para>Select to clear the contents of the current Sales Order and open
-        a fresh, new Sales Order for Order entry. The Order Number of the
-        Order being cleared will display next to the CLEAR button.</para>
-        <note>
-          <para>Selecting the CLEAR button on the Sales Order header does not
-          delete any information which has been saved previously.</para>
-        </note>
-      </listitem>
-    </varlistentry>
     <varlistentry role="standard">
       <term>FAVORITES</term>
       <listitem>

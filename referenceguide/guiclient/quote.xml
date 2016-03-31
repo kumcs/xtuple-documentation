@@ -157,16 +157,13 @@
       <listitem>
         <para>Specify the Sales Type. Sales account assignments by Sales Type
         are available.</para>
+        <note>
+          <para>If the Sales Order setup setting "Display Sales Order Line
+          Items Tab by Default" is checked, the "Line Items" tab will be
+          displayed on the opening window for Quote entry.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <para>For additional Header Information, make sure that the "Header
-  Information" tab is selected.<note>
-      <para>If the Sales Order setup setting "Display Sales Order Line Items
-      Tab by Default" is checked, the "Line Items" tab will be displayed on
-      the opening window for Quote entry.</para>
-    </note></para>
-  <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>quotes</primary>
@@ -349,6 +346,25 @@
             </listitem>
           </varlistentry>
         </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>CLEAR</term>
+      <listitem>
+        <para>Select to refresh the Quote screen so that you can enter a new
+        Quote. Using the CLEAR button does not erase or in any way change the
+        information on the Quote you are clearing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>MORE</term>
+      <listitem>
+        <para>Select to display extra information related to the Sales Order.
+        To hide the extra information, simply select the MORE button
+        again.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -686,6 +702,10 @@
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <para>To view Email associated with a Quote, select the "Email" tab. The
+  following screen will appear:</para>
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="quoteItem.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
