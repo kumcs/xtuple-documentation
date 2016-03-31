@@ -333,9 +333,10 @@
         Item availability for dependencies.</para>
         <variablelist>
           <varlistentry>
-            <term>On Hand</term>
+            <term>Available QOH</term>
             <listitem>
-              <para>Displays the current Quantity on Hand value.</para>
+              <para>Displays the current Available Quantity on Hand (QOH)
+              value.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -375,6 +376,19 @@
               <para>Displays the available quantity. Available quantity is
               determined using the following formula: Unallocated Qty. + On
               Order Qty. = Available Qty.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="standard">
+            <term>Reserved</term>
+            <listitem>
+              <para>Displays the item quantity already reserved.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="standard">
+            <term>Reservable</term>
+            <listitem>
+              <para>Displays the available item quantity remaining to be
+              reserved.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -493,6 +507,12 @@
       <term>Order #</term>
       <listitem>
         <para>The number of the newly created Work Order is displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Line #</term>
+      <listitem>
+        <para>Displays the Line Item Number for the Work Order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>

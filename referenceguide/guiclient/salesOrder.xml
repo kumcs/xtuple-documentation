@@ -219,16 +219,13 @@
       <listitem>
         <para>Specify the Sales Type. Sales account assignments by Sales Type
         are available.</para>
+        <note>
+          <para>If the Sales Order setup setting "Display Sales Order Line
+          Items Tab by Default" is checked, the "Line Items" tab will be
+          displayed on the opening window for Sales Order entry.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <para>For additional Header Information, make sure that the "Header
-  Information" tab is selected.<note>
-      <para>If the Sales Order setup setting "Display Sales Order Line Items
-      Tab by Default" is checked, the "Line Items" tab will be displayed on
-      the opening window for Sales Order entry.</para>
-    </note></para>
-  <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>sales orders</primary>
@@ -572,7 +569,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Allocated Credit</term>
+      <term>Allocated CM/Invoice</term>
       <listitem>
         <para>Displays the monetary value of any Credit Memos and/or Credit
         Card charges which have been specifically allocated to the Sales
@@ -1180,13 +1177,6 @@
       <term>Order Total</term>
       <listitem>
         <para>Displays the Sales Order total.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Amount Applied</term>
-      <listitem>
-        <para>Displays the amount of Cash that has been applied to the
-        specified Customer's Invoice(s).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
