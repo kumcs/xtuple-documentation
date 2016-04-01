@@ -19,7 +19,7 @@
     </screenshot></para>
   <variablelist>
     <varlistentry>
-      <term>Memo #</term>
+      <term>Return #</term>
       <listitem>
         <para>Next available Return Number will automatically display, unless
         your system requires you to enter Return Numbers manually.</para>
@@ -40,7 +40,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Memo Date</term>
+      <term>Return Date</term>
       <listitem>
         <para>Enter a date representing the date when you want the Return to
         be distributed. When a Return is posted, it is posted effective as of
@@ -56,16 +56,14 @@
       <term>Status</term>
       <listitem>
         <para>Indicates whether Return is posted or unposted.</para>
+        <tip>
+          <para>The quickest way to fill in the Return screen may be to select
+          the Invoice you intend to credit using the "Apply To" feature. If
+          you use this feature, most of the fields in the Return screen will
+          automatically populate with the needed Customer information.</para>
+        </tip>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <tip>
-    <para>The quickest way to fill in the Return screen may be to select the
-    Invoice you intend to credit using the "Apply To" feature. If you use this
-    feature, most of the fields in the Return screen will automatically
-    populate with the needed Customer information.</para>
-  </tip>
-  <variablelist>
     <varlistentry>
       <term>Sales Rep.</term>
       <listitem>
@@ -74,6 +72,16 @@
         the field—except if you have selected an Invoice to apply the Return
         to. In that case, the Sales Representative credited with the Invoice
         will be selected.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Commission</term>
+      <listitem>
+        <para>By default, the commission percentage recorded on the Customer
+        master will be automatically entered in this field. If for some reason
+        you select a non-default Sales Representative at Return entry, the
+        commission rate will not change. To adjust the commission rate, you
+        must make the change manually.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -86,16 +94,6 @@
         for the specified Ship-To Address will be entered here by default.
         Otherwise, the primary Tax Zone for the Customer will be
         entered.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Commission</term>
-      <listitem>
-        <para>By default, the commission percentage recorded on the Customer
-        master will be automatically entered in this field. If for some reason
-        you select a non-default Sales Representative at Return entry, the
-        commission rate will not change. To adjust the commission rate, you
-        must make the change manually.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -129,8 +127,18 @@
         Numbers when the Return is posted.</para>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <variablelist>
+    <varlistentry>
+      <term>Sale Type</term>
+      <listitem>
+        <para>Specify the Sale Type.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Shipping Zone</term>
+      <listitem>
+        <para>Specify the Shipping Zone.</para>
+      </listitem>
+    </varlistentry>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>returns</primary>
@@ -148,14 +156,12 @@
         sign ("$"), the Customer's credit Status is "On Credit Warning." A red
         dollar sign ("$") indicates the Customer's credit Status is "On Credit
         Hold."</para>
+        <note>
+          <para>Returns may be entered for inactive Customers. The same does
+          not hold true for Sales Orders.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <note>
-    <para>Returns may be entered for inactive Customers. The same does not
-    hold true for Sales Orders.</para>
-  </note>
-  <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>returns</primary>
@@ -188,7 +194,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Ship-To #</term>
+      <term>Ship-From #</term>
       <listitem>
         <para>Enter the number of the preferred Ship-To Address. Customers may
         maintain multiple Ship-To Addresses. If the Customer master for the
@@ -197,13 +203,19 @@
         allowed, then the Ship-To Address must be entered using the browse
         button located to the right of the field. The lookup feature leads to
         a searchable Ship-To Addresses list.</para>
+        <tip>
+          <para>Make sure the Ship-To Address on the Return matches the
+          Ship-To Address on the Customer's Pricing Schedule. If they don"t
+          match, you won"t be able to issue credit for exclusively sold
+          Items.</para>
+        </tip>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>returns</primary>
           <secondary>ship-to details for</secondary>
-        </indexterm>Ship-To Name</term>
+        </indexterm>Ship-From Name</term>
       <listitem>
         <para>Displays the name for the specified Ship-To.</para>
       </listitem>
@@ -219,27 +231,6 @@
         creating Addresses, see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <variablelist>
-    <varlistentry>
-      <term>Ship-To #</term>
-      <listitem>
-        <para>Enter the number of the preferred Ship-To Address.</para>
-        <para>Customers may maintain multiple Ship-To Addresses. If Pricing
-        Schedules by Ship-To are maintained for the Customer, the Ship-To
-        Address must match the Pricing Schedule to successfully issue credit
-        for Items linked exclusively to the Pricing Schedule. The browse
-        button located to the right of the field leads to a searchable Ship-To
-        Addresses list.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <tip>
-    <para>Make sure the Ship-To Address on the Return matches the Ship-To
-    Address on the Customer's Pricing Schedule. If they don"t match, you won"t
-    be able to issue credit for exclusively sold Items.</para>
-  </tip>
-  <variablelist>
     <varlistentry>
       <term>Cust. PO #</term>
       <listitem>
@@ -275,15 +266,13 @@
         <para>Display lists Sales Order Line Item quantities that have been
         returned and selected for credit. Line Items are added to a Return
         using the NEW ITEM button.</para>
+        <tip>
+          <para>Before creating a new Return Line Item, be sure to specify an
+          Invoice to apply the Return to. The "Apply To" feature is found on
+          the Return header screen.</para>
+        </tip>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <tip>
-    <para>Before creating a new Return Line Item, be sure to specify an
-    Invoice to apply the Return to. The "Apply To" feature is found on the
-    Return header screen.</para>
-  </tip>
-  <variablelist>
     <varlistentry>
       <term>Subtotal</term>
       <listitem>
@@ -294,7 +283,7 @@
       <term><indexterm significance="normal">
           <primary>returns</primary>
           <secondary>charges related to</secondary>
-        </indexterm>Misc. Charge Amount</term>
+        </indexterm>Misc. Charge</term>
       <listitem>
         <para>Enter the amount of the miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
@@ -362,16 +351,20 @@
         report.</para>
       </listitem>
     </varlistentry>
-    <varlistentry>
-      <term>Documents</term>
-      <listitem>
-        <para>To associate documents with a Return, select the "Documents"
-        tab.</para>
-        <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
-      </listitem>
-    </varlistentry>
   </variablelist>
+  <para>To associate documents with a Return, select the "Documents" tab. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/creditMemo_documentsTab.png" />
+        </imageobject>
+        <caption>Return Documents</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <para></para>
   <xi:include href="creditMemoItem.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
