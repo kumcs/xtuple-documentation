@@ -4,8 +4,12 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspBillingSelections">
   <title>Billing Approvals</title>
-  <para>To edit Orders selected for billing and to create Invoices for these
-  Orders, select the "Billing Approvals" option. The following screen will
+  <para>When you convert an Order selected for billing to an Invoice, you
+  create an unposted Invoice. Unposted Invoices must in turn be posted to
+  generate associated General Ledger (G/L) transaction records. You can
+  reverse the process of Invoice creation by deleting the unposted Invoice. To
+  edit Orders selected for billing and to create Invoices for these Orders,
+  select the "Billing Approvals" option. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -32,13 +36,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <note>
-    <para>When you convert an Order selected for billing to an Invoice, you
-    create an unposted Invoice. Unposted Invoices must in turn be posted to
-    generate associated General Ledger (G/L) transaction records. You can
-    reverse the process of Invoice creation by deleting the unposted
-    Invoice.</para>
-  </note>
   <variablelist>
     <varlistentry>
       <term>CREATE INVOICE</term>
