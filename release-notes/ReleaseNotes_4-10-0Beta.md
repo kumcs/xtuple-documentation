@@ -6,6 +6,31 @@ Thanks to all who contributed to make this release possible, including
 a number of feature sponsors.
 See below for more information about [deploying this release](#deployment-notes).
 
+A large number of features and bug fixes have been added to the
+application since the 4.9.3 release. Our focus has been in improving
+the desktop client with the following themes:
+
+- Lay the groundwork for an ERP dashboards extension
+- Implement Feature Mob 2 features
+- Update technology infrastructure
+- Improve desktop application performance
+
+Of particular interest are the following features:
+
+- Improved support for VAT, particularly with regard to
+  purchasing and tax reporting
+- Introduction of a simplified sales order entry window
+- Introduction of List Price Schedules
+- Increased availability of the Documents tab
+- Password reset policies
+
+The technology upgrades include Qt 5 for updated web and JavaScript
+features, bug fixes, and performance improvements; PostgreSQL 9.3
+for internal features; and ossp-uuid for standardized UUID assignment
+and performance. We have increased scripting access to a number of
+Qt 5 classes as well, including networking and web technologies,
+JavaScript, and serial port control.
+
 **Note:** You will need PostgreSQL 9.3 or 9.4 to use this release
 with the following two PostgreSQL extensions:
 
@@ -23,31 +48,6 @@ with the following two PostgreSQL extensions:
   for details.
 
 These need to be installed on the database server, not client machines.
-
-### Features and bug fixes
-
-A large number of features and bug fixes have been added to the
-application since the 4.9.3 release. Our focus has been in improving
-the desktop client with the following themes:
-
-- Implement Feature Mob 2 features
-- Update technology infrastructure
-- Increase script access to Qt networking and web technologies classes
-- Improve desktop application performance
-
-Of particular interest are the following features:
-
-- Improved support for VAT, particularly with regard to
-  purchasing and tax reporting
-- Introduction of a simplified sales order entry window
-- Introduction of List Price Schedules
-- Increased availability of the Documents tab
-- Password reset policies
-
-The technology upgrades include Qt 5 for updated web and
-JavaScript features, bug fixes, and performance improvements;
-PostgreSQL 9.3 for internal features; and ossp-uuid for
-standardized UUID assignment and performance.
 
 #### Features
 
