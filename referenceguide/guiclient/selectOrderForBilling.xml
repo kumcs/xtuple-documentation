@@ -144,18 +144,10 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Sales Tax</term>
-      <listitem>
-        <para>Displays the amount of Tax that will be added to the Sales
-        Order, as defined by the specified Tax Code. To get a detailed view of
-        the Tax calculation, click on the Tax link using your mouse.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
       <term><indexterm significance="normal">
           <primary>billing</primary>
           <secondary>related charges for</secondary>
-        </indexterm>Misc. Charge Amount</term>
+        </indexterm>Misc. Amount</term>
       <listitem>
         <para>Enter the amount of the miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
@@ -192,6 +184,14 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Tax</term>
+      <listitem>
+        <para>Displays the amount of Tax that will be added to the Sales
+        Order, as defined by the specified Tax Code. To get a detailed view of
+        the Tax calculation, click on the Tax link using your mouse.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Total</term>
       <listitem>
         <para>Displays the total amount of all uninvoiced Sales Orders.</para>
@@ -209,10 +209,10 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>SELECT BALANCE</term>
+      <term>APPROVE BALANCE</term>
       <listitem>
-        <para>Highlight a Line Item, then select this button to transfer the
-        full balance to Billing.</para>
+        <para>Highlight a Line Item, then select this button to approve the
+        full balance for billing.</para>
       </listitem>
     </varlistentry>
   </variablelist>
