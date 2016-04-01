@@ -1,10 +1,12 @@
 # xTuple Release Notes
-## Version 4.10.0Beta * April, 2016
+## Version 4.10.0Beta - April, 2016
 
 These are the release notes for the 4.10.0Beta xTuple ERP release.
 Thanks to all who contributed to make this release possible, including
 a number of feature sponsors.
 See below for more information about [deploying this release](#deployment-notes).
+
+### Summary
 
 A large number of features and bug fixes have been added to the
 application since the 4.9.3 release. Our focus has been in improving
@@ -31,16 +33,16 @@ and performance. We have increased scripting access to a number of
 Qt 5 classes as well, including networking and web technologies,
 JavaScript, and serial port control.
 
-**Note:** You will need PostgreSQL 9.3 or 9.4 to use this release
+**Note:** You will need PostgreSQL 9.3 or 9.4 to use this release,
 with the following two PostgreSQL extensions:
 
-- plv8 
+- plv8 -
   See our
   [github wiki](https://github.com/xtuple/xtuple/wiki/Installing-PLv8) for
   more information on how to install plv8 and a
   [blog post](https://www.xtuple.org/blog/gmoskowitz/enabling-technologies-plv8-49)
   describing plv8 and why we introduced this new dependency.
-- ossp-uuid
+- ossp-uuid -
   If you built PostgreSQL from source code, might have to
   rebuild it. Make sure to include the `--with-ossp-uuid` option for
   the `configure` command. See
@@ -49,7 +51,7 @@ with the following two PostgreSQL extensions:
 
 These need to be installed on the database server, not client machines.
 
-#### Features
+### Features
 
 - Implemented issue #[3569](http://www.xtuple.org/xtincident/view/bugs/3569)
   _Routing - Unable to Modify Instructions_
@@ -177,7 +179,7 @@ These need to be installed on the database server, not client machines.
 - Implemented issue #[27418](http://www.xtuple.org/xtincident/view/bugs/27418)
   _Update Reorder Levels MetaSQL returns transit sites for update_
 
-#### Bug fixes
+### Bug fixes
 
 - Fixed issue #[10570](http://www.xtuple.org/xtincident/view/bugs/10570)
   _Sales Order Line Item UOM does not Update to match the Pricing
@@ -339,6 +341,8 @@ These need to be installed on the database server, not client machines.
   message' in 'Project Types' screen_
 - Fixed issue #[26654](http://www.xtuple.org/xtincident/view/bugs/26654)
   _*User is not able to select 'Project Types' in Project screen_
+- Fixed issue #[26675](http://www.xtuple.org/xtincident/view/bugs/26675)
+  _Random contact on PO shipto_
 - Fixed issue #[26692](http://www.xtuple.org/xtincident/view/bugs/26692)
   _*User is able to create duplicate Pricing Schedule Assignments_
 - Fixed issue #[26716](http://www.xtuple.org/xtincident/view/bugs/26716)
@@ -591,8 +595,6 @@ These need to be installed on the database server, not client machines.
   _User defined costs doubled when posting production_
 - Fixed issue #[27728](http://www.xtuple.org/xtincident/view/bugs/27728)
   _project Type is not populating when Project window opened_
-- Fixed issue $[26675](http://www.xtuple.org/xtincident/view/bugs/26675)
-  _Random contact on PO shipto_
 
 
 ## Deployment Notes
