@@ -58,6 +58,13 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Reason Code</term>
+      <listitem>
+        <para>Specify the reason for the Return Authorization. Reason Codes
+        are used to explain why a Customer return is being authorized.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term><indexterm significance="normal">
           <primary>sales representatives</primary>
           <secondary>commissions for</secondary>
@@ -98,10 +105,12 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Reason Code</term>
+      <term>Shipping Zone</term>
       <listitem>
-        <para>Specify the reason for the Return Authorization. Reason Codes
-        are used to explain why a Customer return is being authorized.</para>
+        <para>Specify the Shipping Zone associated with the Return
+        Authorization. The Shipping Zone for the specified Ship-To Address
+        will be entered here by default. Otherwise, the primary Shipping Zone
+        for the Customer will be entered.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -693,6 +702,20 @@
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To associate documents with a Return Authorization Item, select the
   "Documents" tab.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/returnAuthorization_documentsPage.png" />
+        </imageobject>
+        <caption>Return Authorization Documents</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <para>To view Email associated with the Return Authorization, select the
+  "Email" tab. The following screen will appear:</para>
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="returnAuthorizationItem.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
