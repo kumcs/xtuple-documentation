@@ -63,21 +63,27 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term id="Para567244">Used in A/P</term>
+      <term id="Para567244">Used in Payables</term>
       <listitem>
         <para>Select if billing Terms are used for Accounts Payable.</para>
+        <note>
+          <para id="Para567246">Payables billing Terms may be applied and
+          Discounts taken when selecting a posted Voucher for payment.</para>
+        </note>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <note>
-    <para id="Para567246">Payables billing Terms may be applied and Discounts
-    taken when selecting a posted Voucher for payment.</para>
-  </note>
-  <variablelist>
     <varlistentry>
-      <term id="Para567247">Used in A/R</term>
+      <term id="Para567247">Used in Receivables</term>
       <listitem>
         <para>Select if billing Terms are used for Accounts Receivable.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Allow Finance Charge</term>
+      <listitem>
+        <para>Select if you want Invoices using these Terms to be assessed a
+        Finance Charge when they are late. If not selected, late Invoices
+        using the Terms will not be assessed a Finance Charge.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
