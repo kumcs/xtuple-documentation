@@ -114,52 +114,52 @@
     </note>The following buttons are unique to this screen:</para>
   <variablelist>
     <varlistentry>
-      <term>SELECT</term>
+      <term>APPROVE</term>
       <listitem>
         <para>Highlight an open payable and then click this button to manually
-        review and select the Item for payment. This option brings you to the
-        individual Select Payment screen, where you will find the full range
+        review and approve the Item for payment. This option brings you to the
+        individual Approve Payment screen, where you will find the full range
         of payment options.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>SELECT LINE</term>
+      <term>APPROVE LINE</term>
       <listitem>
         <para>Highlight an open payable and then click this button to
-        automatically select the open item for payment. Any available Terms
+        automatically approve the open item for payment. Any available Terms
         Discount will also be applied automatically.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>CLEAR SELECTION</term>
+      <term>CLEAR APPROVAL</term>
       <listitem>
         <para>Highlight an open payable and then select this button to clear
-        the selected payment. This option effectively reverses the action of
-        the SELECT option.</para>
+        the approved payment. This option effectively reverses the action of
+        the APPROVE option.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>SELECT ALL DUE</term>
+      <term>APPROVE ALL DUE</term>
       <listitem>
-        <para>Select this button to select for payment all open Payables whose
-        Payment Date is due or past due and whose Currency is the same as the
-        Bank Account's Currency.</para>
+        <para>Select this button to approve for payment all open Payables
+        whose Payment Date is due or past due and whose Currency is the same
+        as the Bank Account's Currency.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>SELECT ALL DISCOUNTS</term>
+      <term>APPROVE ALL DISCOUNTS</term>
       <listitem>
-        <para>Select this option to automatically select all open Payables
+        <para>Select this option to automatically approve all open Payables
         which are eligible for a Terms Discount and whose Currency is the same
         as the Bank Account's Currency. The Terms Discount will be applied
-        automatically to all selected open items.</para>
+        automatically to all approved open items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>CLEAR SELECTIONS</term>
+      <term>CLEAR APPROVALS</term>
       <listitem>
-        <para>Select this button to clear all selected payments due. This
-        option effectively reverses the action of the SELECT ALL DUE
+        <para>Select this button to clear all approved payments due. This
+        option effectively reverses the action of the APPROVE ALL DUE
         option.</para>
       </listitem>
     </varlistentry>
@@ -274,9 +274,15 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>PRINT</term>
+      <term>PRINT/WRITTEN/PAID</term>
       <listitem>
-        <para>Select to print a copy of the list displayed on the
+        <para>Select from one of the following options. If a selected Payment
+        has already been written and/or paid, you will have the ability to
+        mark the Payment as such on the Print Payment screen. The options
+        presented here will be limited if the specified Bank Account does not
+        require Payments to be printed. Also, if the Bank Account is
+        configured to use Electronic Funds Transfer (EFT), you will be
+        presented with the option to create an EFT file on the Print Payment
         screen.</para>
         <variablelist>
           <varlistentry>
@@ -314,7 +320,8 @@
           <varlistentry>
             <term>EDIT LIST</term>
             <listitem>
-              <para>Provides the option to select printer.</para>
+              <para>Prints a copy of the pending Payment Run for
+              review.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -326,12 +333,19 @@
           <secondary>posting of</secondary>
         </indexterm>POST</term>
       <listitem>
-        <para>Highlight a Payment in the list of Payments and then select this
-        button to post the Payment. If the specified Bank Account requires
-        printing, the Payment must be printed before it can be posted. If
-        printing is not required, the Payment may be posted immediately. See
-        the "Printed" column in the display to determine a Payment's printed
-        status. The following additional option is provided:<variablelist>
+        <para>Select from the following context-sensitive posting
+        options:<variablelist>
+            <varlistentry>
+              <term>SELECTED PAYMENT</term>
+              <listitem>
+                <para>Highlight a Payment in the list of Payments and then
+                select this button to post the Payment. If the specified Bank
+                Account requires printing, the Payment must be printed before
+                it can be posted. If printing is not required, the Payment may
+                be posted immediately. See the "Printed" column in the display
+                to determine a Payment's printed status.</para>
+              </listitem>
+            </varlistentry>
             <varlistentry>
               <term>POST ALL</term>
               <listitem>
@@ -340,6 +354,13 @@
               </listitem>
             </varlistentry>
           </variablelist></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>NEW</term>
+      <listitem>
+        <para>Select to create a new Miscellaneous Payment. Once saved, the
+        Payment will appear in the Payment Run.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
