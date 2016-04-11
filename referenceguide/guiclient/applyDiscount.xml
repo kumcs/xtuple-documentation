@@ -27,7 +27,7 @@
   following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Vendor #</term>
+      <term>Vendor</term>
       <listitem>
         <para>Displays the name of the Vendor who is owed payment.</para>
       </listitem>
@@ -83,6 +83,14 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Total Discountable Owed</term>
+      <listitem>
+        <para>Displays the total amount due of Voucher Line Items marked as
+        discountable. If Line Items are not marked as discountable, they will
+        not appear in this total.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Discounts Applied</term>
       <listitem>
         <para>Displays the amount of any Discounts previously applied to the
@@ -104,7 +112,7 @@
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
     <varlistentry>
-      <term>APPLY</term>
+      <term>OK</term>
       <listitem>
         <para>Select to apply the entered discount amount to the selected
         Document.</para>
