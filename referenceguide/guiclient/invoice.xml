@@ -119,7 +119,8 @@
       <listitem>
         <para>Specify the Sales Representative for the Invoice. By default,
         the Customer's designated Sales Representative will appear in the
-        field.</para>
+        field. This field will be hidden if the Enhanced Commissions package
+        is in use.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -129,7 +130,8 @@
         master will be automatically entered in this field. If for some reason
         you select a non-default Sales Representative at Order entry, the
         commission rate will not change. To adjust the commission rate, you
-        must make the change manually.</para>
+        must make the change manually. This field will be hidden if the
+        Enhanced Commissions package is in use.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -291,17 +293,6 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Freight Weight</term>
-      <listitem>
-        <para>Displays the combined weight of all Sales Order Line Items.
-        Freight weight represents the sum of an Item's product weight and
-        packaging weight, both of which are defined on the Item master. The
-        per unit freight weight multiplied by the quantity per gives you the
-        Line Item freight weight. The sum of all Line Item freight weights is
-        the combined weight for the Order.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
       <term>Subtotal</term>
       <listitem>
         <para>Displays the subtotal for the Invoice Line Items.</para>
@@ -354,6 +345,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
+  <xi:include href="../widgets/allocateARCreditMemo.xml"
+              xpointer="allocateARCMs"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>Invoice Characteristics are user-defined definitions which may be used
   to provide additional layers of description about Invoices. These
   descriptions are static and not processed by the system, but are useful for
@@ -408,11 +402,20 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <xi:include href="../widgets/allocateARCreditMemo.xml"
-              xpointer="allocateARCMs"
+  <para>To associate documents with an Invoice, select the "Documents" tab.
+  The following will be displayed:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/invoice_documentsTab.png" />
+        </imageobject>
+        <caption>Invoice Documents</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para id="invoiceAdvancedTab">To create recurring Invoices, select the
-  "Advanced" tab. The following screen will appear:</para>
+  <para>To create recurring Invoices, select the "Advanced" tab. The following
+  screen will appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
