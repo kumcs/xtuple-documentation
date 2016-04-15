@@ -43,8 +43,6 @@
         </tip>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <variablelist>
     <varlistentry>
       <term>Debits</term>
       <listitem>
@@ -114,42 +112,17 @@
         can change the color for the following Document Types using the Locale
         settings: Customer Deposit (Alternate) and Credit Memo
         (Emphasis).</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>The following buttons are unique to this screen:</para>
-  <variablelist>
-    <varlistentry>
-      <term>PRINT STATEMENT</term>
-      <listitem>
-        <para>Select to print a statement for the specified Customer. This
-        option is only available when displaying information for individual
-        Customers.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <variablelist>
-    <varlistentry>
-      <term>APPLY</term>
-      <listitem id="arWorkBenchAPPLYCM1">
-        <para>Highlight a Credit Memo in the list and then select this button
-        to apply the Credit Memo to an open Receivables amount, as described
-        in <xref linkend="unappliedARCreditMemos" />.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>REFUND</term>
-      <listitem>
-        <para>Highlight a Credit Memo which was created from a Credit Card
-        transaction to refund the transaction amount. This option only works
-        for Credit Memos specifically created from Credit Card
-        transactions.</para>
         <note>
+          <para>You can refund Credit Card charges using the right-click menu.
+          This option only works for Credit Memos specifically created from
+          Credit Card transactions.</para>
+        </note>
+        <tip>
           <para>If you are using the Authorize.Net payment gateway, refunds
           must be processed at least one day after the original charge.
           Authorize.Net does not allow you to refund a transaction that was
           charged on the same day.</para>
-        </note>
+        </tip>
       </listitem>
     </varlistentry>
   </variablelist>
