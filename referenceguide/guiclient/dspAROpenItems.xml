@@ -45,7 +45,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Date Rate</term>
+      <term>Date Range</term>
       <listitem>
         <para>Specify the following date range options:</para>
         <variablelist>
@@ -167,15 +167,23 @@
         parameters. The right-click menu includes many options, including the
         ability to enter Cash Receipts and Incidents linked to the receivable.
         You can also void posted Invoices and Returns from the right-click
-        menu―as long as they are unapplied.</para>
-        <tip>
-          <para>To change the color for the following Document Types, adjust
-          your Locale settings: Customer Deposit (Alternate) and Credit Memo
-          (Emphasis).</para>
-        </tip>
+        menu―as long as they are unapplied. To change the color for the
+        following Document Types, adjust your Locale settings: Customer
+        Deposit (Alternate) and Credit Memo (Emphasis).</para>
       </listitem>
     </varlistentry>
   </variablelist>
+  <note>
+    <para>You can refund Credit Card charges using the right-click menu. This
+    option only works for Credit Memos specifically created from Credit Card
+    transactions.</para>
+  </note>
+  <tip>
+    <para>If you are using the Authorize.Net payment gateway, refunds must be
+    processed at least one day after the original charge. Authorize.Net does
+    not allow you to refund a transaction that was charged on the same
+    day.</para>
+  </tip>
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
     <varlistentry>
@@ -202,42 +210,6 @@
             </listitem>
           </varlistentry>
         </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>PRINT</term>
-      <listitem>
-        <para>The PRINT button next to the Receivables list prints the
-        document selected in the list. If the Customer specified on the
-        document has an EDI Profile attached, you may encounter an EDI
-        processing interface when printing it.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>APPLY</term>
-      <listitem>
-        <para>Apply the selected document to other open receivables if the
-        selected document is a Credit Memo or a Customer Deposit.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>POST</term>
-      <listitem>
-        <para>Post the selected document if it is a Debit Memo or
-        Invoice.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>REFUND</term>
-      <listitem>
-        <para>Refund the balance on the selected document if it was paid with
-        a credit card.</para>
-        <note>
-          <para>If you are using the Authorize.Net payment gateway, refunds
-          must be processed at least one day after the original charge.
-          Authorize.Net does not allow you to refund a transaction that was
-          charged on the same day.</para>
-        </note>
       </listitem>
     </varlistentry>
   </variablelist>
