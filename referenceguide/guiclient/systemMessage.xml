@@ -53,16 +53,14 @@
       <term>Posted by</term>
       <listitem>
         <para>Displays username of user who posted System Message.</para>
+        <tip>
+          <para>Hitting the TAB key in the "Scheduled" field will
+          automatically cause a scheduled date of "ASAP" to be entered in the
+          field. With an ASAP scheduled date, a System Message will be
+          delivered as soon as server resources allow.</para>
+        </tip>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <tip>
-    <para>Hitting the TAB key in the "Scheduled" field will automatically
-    cause a scheduled date of "ASAP" to be entered in the field. With an ASAP
-    scheduled date, a System Message will be delivered as soon as server
-    resources allow.</para>
-  </tip>
-  <variablelist>
     <varlistentry>
       <term>Scheduled</term>
       <listitem>
@@ -74,9 +72,9 @@
       <term>At</term>
       <listitem>
         <para>Enter a standard time format (e.g., "HH:MM:SS").</para>
-        <para>Specify the time of day&mdash;including the hour, minute, and
-        second&mdash;when you want to begin broadcasting the System Message to
-        all users who log in to the application.</para>
+        <para>Specify the time of day—including the hour, minute, and
+        second—when you want to begin broadcasting the System Message to all
+        users who log in to the application.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -91,9 +89,9 @@
       <listitem>
         <para>Enter a standard time format (e.g., "HH:MM:SS") for when the
         defined System Message is will expire.</para>
-        <para>Specify the time of day&mdash;including the hour, minute, and
-        second&mdash;when you want to stop broadcasting the System Message to
-        all users who log in to the application.</para>
+        <para>Specify the time of day—including the hour, minute, and
+        second—when you want to stop broadcasting the System Message to all
+        users who log in to the application.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -102,6 +100,16 @@
         <para>This is a scrolling text field with word-wrapping for entering a
         System Message. System Message are broadcast to all users when they
         log in to the application.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>REPLY</term>
+      <listitem>
+        <para>Select to reply to the System Message. The reply will be sent to
+        the User who initiated the System Message.</para>
       </listitem>
     </varlistentry>
   </variablelist>
