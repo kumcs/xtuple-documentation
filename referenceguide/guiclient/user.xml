@@ -44,6 +44,12 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>ACCOUNT</term>
+      <listitem>
+        <para>Select to open the User Account's CRM Account.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Active</term>
       <listitem>
         <para>Select to mark the User Account as Active. Not selecting marks
@@ -97,20 +103,6 @@
         <para>Verify the accuracy of the User Account's password by retyping
         it in this field. Again, individual keystrokes will be replaced by
         asterisks (*) to protect the password from being viewed.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Dept.</term>
-      <listitem>
-        <para>Select a Department to associate with the specified User
-        Account. This is an optional setting.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry role="manufacturing">
-      <term>Shift</term>
-      <listitem>
-        <para>Select a Shift to associate with the specified User Account.
-        This is an optional setting.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -206,6 +198,29 @@
           option is not used. Legacy User Accounts may continue logging in as
           before this feature was implemented.</para>
         </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>May use the full application</term>
+      <listitem>
+        <para>Select if the User Account should have access to all screens in
+        the application, restricted only by their assigned privileges.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>May only use Simple Sales Order</term>
+      <listitem>
+        <para>Select if you want the User Account to have access only to the
+        Simple Sales Order—and to no other screens. The Simple Sales Order
+        must be enabled for this option to apply. If selected, the Simple
+        Sales Order will be the only screen the User will have access to when
+        they log in to the database. The log in screen for this User Account
+        will be the same as for all User Accounts. However, once logged in,
+        the User Account will only be able to see and use the Simple Sales
+        Order. This option will override any other privileges which may have
+        been assigned previously to the User Account. For more information
+        about the Simple Sales Order, please see <xref
+        linkend="salesOrderSimple" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
@@ -364,15 +379,6 @@
       <listitem>
         <para>Select this button to automatically remove all granted
         privileges from the granted privileges column.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>The following buttons are unique to this screen:</para>
-  <variablelist>
-    <varlistentry>
-      <term>ACCOUNT</term>
-      <listitem>
-        <para>Select to open the User Account's CRM Account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
