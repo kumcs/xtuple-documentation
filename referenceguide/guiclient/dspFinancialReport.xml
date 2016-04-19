@@ -39,18 +39,6 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Report Type</term>
-      <listitem>
-        <para>Displays the report type for the Financial Report you select:
-        Balance Sheet, Income Statement, Cash Flow, or Ad Hoc.</para>
-        <note>
-          <para>The options available on the screen will vary, depending on
-          the report type selected. For example, column layouts are not
-          available for Ad Hoc reports.</para>
-        </note>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
       <term>Column Layout</term>
       <listitem>
         <para>Select the column layout you want the Financial Report to use.
@@ -66,25 +54,36 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Report Type</term>
+      <listitem>
+        <para>Displays the report type for the Financial Report you select:
+        Balance Sheet, Income Statement, Cash Flow, or Ad Hoc.</para>
+        <note>
+          <para>The options available on the screen will vary, depending on
+          the report type selected. For example, column layouts are not
+          available for Ad Hoc reports.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Periods</term>
       <listitem>
         <para>Specify the Accounting Period(s) whose details you want to
         display. For Financial Reports created using one of the standard
         report types (i.e., Balance Sheet, Income Statement, or Cash Flow),
-        you can only select a single Accounting Period&mdash;unless you are
-        running a Trend Report, in which case multiple Periods may be chosen.
-        Ad Hoc reports may always use either single or multiple Periods. To
-        select an individual Period, highlight the Period using your mouse
-        button. The Period is now selected. To select a sequence of Periods,
-        highlight the first in the sequence using your mouse button. Then,
-        holding down the SHIFT key on your keyboard, highlight the last Period
-        in the sequence. The entire sequence is now selected. To select
-        Periods that are out of sequence (e.g., January, April, July,
-        October), highlight the first Period in the group. Then, holding down
-        the CTRL key on your keyboard, highlight the next Period you want to
-        select. Continue highlighting Periods with the CTRL key depressed
-        until all desired Periods are selected. The entire group is now
-        selected.</para>
+        you can only select a single Accounting Period—unless you are running
+        a Trend Report, in which case multiple Periods may be chosen. Ad Hoc
+        reports may always use either single or multiple Periods. To select an
+        individual Period, highlight the Period using your mouse button. The
+        Period is now selected. To select a sequence of Periods, highlight the
+        first in the sequence using your mouse button. Then, holding down the
+        SHIFT key on your keyboard, highlight the last Period in the sequence.
+        The entire sequence is now selected. To select Periods that are out of
+        sequence (e.g., January, April, July, October), highlight the first
+        Period in the group. Then, holding down the CTRL key on your keyboard,
+        highlight the next Period you want to select. Continue highlighting
+        Periods with the CTRL key depressed until all desired Periods are
+        selected. The entire group is now selected.</para>
         <tip>
           <para>You can export the generated financial data in tab-delimited
           format using the "Export Contents" option from the right-click
@@ -218,10 +217,10 @@
       <listitem>
         <para>Select to generate a Financial Report which groups information
         across multiple time periods. This option may be used regardless of
-        report type&mdash;and if used for one of the standard report types
-        (i.e., Balance Sheet, Income Statement, or Cash Flow), the column
-        layout option will be disabled. If selected, the following options
-        will be available:</para>
+        report type—and if used for one of the standard report types (i.e.,
+        Balance Sheet, Income Statement, or Cash Flow), the column layout
+        option will be disabled. If selected, the following options will be
+        available:</para>
         <variablelist>
           <varlistentry>
             <term>Month</term>
@@ -383,10 +382,10 @@
       <listitem>
         <para>Select to generate a Financial Report which groups information
         across multiple time periods. This option may be used regardless of
-        report type&mdash;and if used for one of the standard report types
-        (i.e., Balance Sheet, Income Statement, or Cash Flow), the column
-        layout option will be disabled. If selected, the following options
-        will be available:</para>
+        report type—and if used for one of the standard report types (i.e.,
+        Balance Sheet, Income Statement, or Cash Flow), the column layout
+        option will be disabled. If selected, the following options will be
+        available:</para>
         <variablelist>
           <varlistentry>
             <term>Month</term>
@@ -424,13 +423,13 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Options</term>
+      <term>Show</term>
       <listitem>
         <para>You may optionally select one or both of the following
         options:</para>
         <variablelist>
           <varlistentry>
-            <term>Show Account Numbers</term>
+            <term>Account Numbers</term>
             <listitem>
               <para>Select to include Account Numbers for each row in the
               Group/Account Name column. If not selected, only Account
@@ -438,7 +437,7 @@
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Show Accounts with Zero Amounts</term>
+            <term>Zero Amounts</term>
             <listitem>
               <para>Select to include Accounts with zero amounts for each row
               in the Group/Account Name column. If not selected, only Accounts
@@ -481,8 +480,8 @@
         trend report and then print the trend report and see the notes listed
         at the bottom. The Notes entered here do not conflict with Notes
         entered on the Financial Report definition itself. Those Notes will
-        also be printed at the bottom of the Financial Report&mdash;regardless
-        of the reporting periods selected.</para>
+        also be printed at the bottom of the Financial Report—regardless of
+        the reporting periods selected.</para>
       </listitem>
     </varlistentry>
   </variablelist>
