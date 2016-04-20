@@ -41,34 +41,41 @@
   following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Database and File</term>
+      <term>Save (Database)</term>
       <listitem>
         <para>Saves the MetaSQL Statement into the Database you are currently
-        connected to and to a file.</para>
+        connected to, with the option of also saving the statement to a
+        file.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>File Only</term>
+      <term>Save (File)</term>
       <listitem>
         <para>Saves the MetaSQL Statement to a file.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Cancel</term>
+      <term>Save As (Database or File)</term>
       <listitem>
-        <para>Cancels the save operation.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Database Only</term>
-      <listitem>
-        <para>Saves the MetaSQL Statement into the Database you are currently
-        connected to.</para>
+        <para>Allows you to save the MetaSQL Statement with a different name
+        to either the Database your are currently connected to or to a
+        file.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>After defining the save options, you are presented with the following
-  options:</para>
+  <para>If you are saving the MetaSQL Statement to the database using
+  alternate information (i.e., Save As), the following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/metasqlSave.png" />
+        </imageobject>
+        <caption>Save As MetaSQL Optioins</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When saving a MetaSQL Statement to the database using alternate
+  information, you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Schema</term>
