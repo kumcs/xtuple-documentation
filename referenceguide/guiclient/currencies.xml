@@ -15,12 +15,12 @@
   to define two or more Currencies on the master list of Currencies. Once two
   Currencies are defined, you will see multi-currency support integrated
   throughout the application. If you prefer not to use multi-currency at your
-  site, then simply define a base Currency only&mdash;and no secondary
+  site, then simply define a base Currency only—and no secondary
   Currencies.</para>
   <caution>
     <para>You must define a base Currency, even if you do not plan to use
     multi-currency. System administrators must ensure that a base Currency is
-    defined&mdash;and that it is defined accurately.</para>
+    defined—and that it is defined accurately.</para>
   </caution>
   <para>The base Currency is the Currency used for all General Ledger (G/L)
   transactions. Only one base Currency may be defined per each database. Any
@@ -51,7 +51,9 @@
   </tip>
   <para>The Currencies master list displays information on all Currencies,
   including base Currency indicator, Currency name, Currency symbol, and
-  Currency abbreviation.</para>
+  Currency abbreviation. The screen also includes a Comment console where
+  changelog comments may be posted whenever Exchange Rates are updated, if
+  your system is configured to log Exchange Rate updates.</para>
   <xi:include href="currency.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
