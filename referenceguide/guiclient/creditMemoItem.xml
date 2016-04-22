@@ -4,51 +4,53 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="creditMemoItem">
   <title><indexterm significance="normal">
-      <primary>returns</primary>
+      <primary>sales credits</primary>
       <secondary>adding line items to</secondary>
-    </indexterm>Return Item</title>
-  <para>To create a new Return Line Item, select the NEW button. The following
-  screen will appear:</para>
+    </indexterm>Sales Credit Item</title>
+  <para>To create a new Sales Credit Line Item, select the NEW button. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/creditMemoItem.png" />
         </imageobject>
-        <caption>Create New Return Line Item</caption>
+        <caption>Create New Sales Credit Line Item</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Return Line Item, you are presented with the
+  <para>When creating a new Sales Credit Line Item, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Return #</term>
+      <term>Sales Credit #</term>
       <listitem>
-        <para>Displays the Return number for the current Return.</para>
+        <para>Displays the Sales Credit number for the current Sales
+        Credit.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Line #</term>
       <listitem>
-        <para>Displays the line number assigned to the Return Item.</para>
+        <para>Displays the line number assigned to the Sales Credit
+        Item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Type</term>
       <listitem>
-        <para>Indicate the Item Type for the Return Line Item, by selecting
-        one of the following options:</para>
+        <para>Indicate the Item Type for the Sales Credit Line Item, by
+        selecting one of the following options:</para>
         <variablelist>
           <varlistentry>
             <term>Item</term>
             <listitem>
               <para>The lookup feature located to the right of the field leads
-              to a searchable list of Inventory Items. If the Return is being
-              applied to a particular Invoice―and your Sales module is
-              configured to restrict Returns to Items appearing on their
+              to a searchable list of Inventory Items. If the Sales Credit is
+              being applied to a particular Invoice―and your Sales module is
+              configured to restrict Sales Credits to Items appearing on their
               apply-to document―then the Item list will show only Items on the
               original Invoice. The ITEM/ALIAS SEARCH button can also be used
-              to help locate Return Items. Once an Item Number is entered, the
-              Inventory Unit of Measure and Item description will
+              to help locate Sales Credit Items. Once an Item Number is
+              entered, the Inventory Unit of Measure and Item description will
               automatically appear. Additionally, you may also specify the
               Item's receiving Site. Commercial editions of xTuple allow Items
               to be received into multiple Sites.</para>
@@ -75,8 +77,8 @@
         <para>Specify the reason why an adjustment is being made to a
         Customer's account.</para>
         <para><note>
-            <para>By default, the Reason Code on the Return header will be
-            used at the Line Item level. However, you may change the Reason
+            <para>By default, the Reason Code on the Sales Credit header will
+            be used at the Line Item level. However, you may change the Reason
             Code for individual Line Items.</para>
           </note></para>
       </listitem>
@@ -95,18 +97,18 @@
     <varlistentry>
       <term>Qty. Returned</term>
       <listitem>
-        <para>Enter the quantity of the Item returned for credit. If the
-        Return was created from a Return Authorization, the quantity returned
-        will be zero on the Return Item screen. Return Authorization returns
-        are handled separately, outside of the normal sales Return Inventory
-        handling process.</para>
+        <para>Enter the quantity of the Item returned for credit. If the Sales
+        Credit was created from a Return Authorization, the quantity returned
+        will be zero on the Sales Credit Item screen. Return Authorization
+        returns are handled separately, outside of the normal Sales Credit
+        Inventory handling process.</para>
         <variablelist>
           <varlistentry>
             <term>Update Inventory</term>
             <listitem>
               <para>Select if you want the quantity returned to be added back
-              into Inventory when you post the Return. If not selected, your
-              Inventory will not be updated.</para>
+              into Inventory when you post the Sales Credit. If not selected,
+              your Inventory will not be updated.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -147,19 +149,19 @@
     </varlistentry>
     <varlistentry>
       <term><indexterm significance="normal">
-          <primary>returns</primary>
+          <primary>sales credits</primary>
           <secondary>pricing of</secondary>
         </indexterm>Net Unit Price</term>
       <listitem>
         <para>Specify the Net Unit Price to assign the quantity being
-        credited. If the Return is being applied to a specific Invoice, then
-        the system will automatically enter the Item's Net Unit Price as it
-        appeared on the referring Invoice. If no Invoice is being applied-to,
-        then the system will choose the lower of the following two Prices: A)
-        The most-specific Pricing Schedule Assignment or B) any Sale in effect
-        at the time of Order entry. The specificity of Pricing Schedule
-        Assignments is determined in the following descending order: By
-        Customer Ship-To Address (most specific), by Customer, by Customer
+        credited. If the Sales Credit is being applied to a specific Invoice,
+        then the system will automatically enter the Item's Net Unit Price as
+        it appeared on the referring Invoice. If no Invoice is being
+        applied-to, then the system will choose the lower of the following two
+        Prices: A) The most-specific Pricing Schedule Assignment or B) any
+        Sale in effect at the time of Order entry. The specificity of Pricing
+        Schedule Assignments is determined in the following descending order:
+        By Customer Ship-To Address (most specific), by Customer, by Customer
         Type, by Customer Type pattern, by all Customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
         <para>If your Pricing Schedule has multiple Units of Measure (UOM) on
@@ -190,8 +192,9 @@
     <varlistentry>
       <term>Extended Price</term>
       <listitem>
-        <para>Displays the Extended Price. The Extended Price for a Return
-        Item is based on the quantity credited multiplied by the Price.</para>
+        <para>Displays the Extended Price. The Extended Price for a Sales
+        Credit Item is based on the quantity credited multiplied by the
+        Price.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -214,7 +217,7 @@
     </varlistentry>
     <varlistentry>
       <term><indexterm significance="normal">
-          <primary>returns</primary>
+          <primary>sales credits</primary>
           <secondary>discount pricing for</secondary>
         </indexterm>List Discount %</term>
       <listitem>
@@ -226,15 +229,15 @@
     <varlistentry>
       <term>Tax Type</term>
       <listitem>
-        <para>Specify the Tax Type for the Return Item.</para>
+        <para>Specify the Tax Type for the Sales Credit Item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Displays the amount of Tax to be charged for the Return Line
-        Item quantity. To get a detailed view of the Tax calculation, click on
-        the Tax link using your mouse.</para>
+        <para>Displays the amount of Tax to be charged for the Sales Credit
+        Line Item quantity. To get a detailed view of the Tax calculation,
+        click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -245,7 +248,7 @@
       <imageobject>
         <imagedata fileref="images/creditMemoItem_notes.png" />
       </imageobject>
-      <caption>Create New Return Line Item Notes</caption>
+      <caption>Create New Sales Credit Line Item Notes</caption>
     </mediaobject>
   </screenshot>
   <variablelist>
@@ -253,7 +256,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the Return Item.</para>
+        Notes related to the Sales Credit Item.</para>
       </listitem>
     </varlistentry>
   </variablelist>

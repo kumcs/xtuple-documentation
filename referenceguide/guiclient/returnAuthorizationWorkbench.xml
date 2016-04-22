@@ -131,14 +131,14 @@
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Return</term>
+      <term>Sales Credit</term>
       <listitem>
-        <para>Select to include Customer returns eligible for a Return in the
-        display.</para>
+        <para>Select to include Customer returns eligible for a Sales Credit
+        in the display.</para>
         <note>
           <para>Customer returns handled by Return Authorizations are handled
-          outside the normal Return Inventory handling process. By default,
-          Return Line Items created from a Return Authorization will show a
+          outside the normal Sales Credit Inventory handling process. By
+          default, returns created from a Return Authorization will show a
           quantity returned value equal to zero.</para>
         </note>
       </listitem>
@@ -165,19 +165,20 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Post Returns Immediately</term>
+      <term>Post Sales Credits Immediately</term>
       <listitem>
-        <para>Select if you want processed Returns to be posted immediately
-        after they are created. If processing a payment or credit card, this
-        option is not available as the Return must automatically post in order
-        to process a payment or credit card against it.</para>
+        <para>Select if you want processed Sales Credits to be posted
+        immediately after they are created. If processing a payment or credit
+        card, this option is not available as the Sales Credit must
+        automatically post in order to process a payment or credit card
+        against it.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Print Return</term>
+      <term>Print Sales Credit</term>
       <listitem>
-        <para>Select if you want Returns to be printed when you select the
-        PROCESS button.</para>
+        <para>Select if you want Sales Credits to be printed when you select
+        the PROCESS button.</para>
         <para><tip>
             <para>Some of the processing required for a Return Authorization
             (e.g., posting Receipts) may be handled on the Return
@@ -193,14 +194,15 @@
       <term>PROCESS</term>
       <listitem>
         <para>Highlight a Return Authorization and then select this button to
-        create a Return for the selected Item. The Return will be added to the
-        list of unposted Returns in an unprinted state. However, you may print
-        the Return as you process it by selecting the "Print Return" option.
-        If you select the "Post Returns Immediately" option, then the Return
-        will be posted as soon as it is created.</para>
+        create a Return for the selected Item. The Sales Credit will be added
+        to the list of unposted Sales Credits in an unprinted state. However,
+        you may print the Sales Credit as you process it by selecting the
+        "Print Sales Credit" option. If you select the "Post Sales Credits
+        Immediately" option, then the Sales Credit will be posted as soon as
+        it is created.</para>
         <note>
-          <para>If the Customer specified on the Return has an EDI Profile
-          attached, you may encounter an EDI processing interface when
+          <para>If the Customer specified on the Sales Credit has an EDI
+          Profile attached, you may encounter an EDI processing interface when
           printing it.</para>
         </note>
       </listitem>

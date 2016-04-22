@@ -176,55 +176,56 @@
     </varlistentry>
     <varlistentry>
       <term><indexterm significance="normal">
-          <primary>returns</primary>
+          <primary>sales credits</primary>
           <secondary>numbering of</secondary>
-        </indexterm>Return # Generation</term>
+        </indexterm>Sales Credit # Generation</term>
       <listitem>
-        <para>Select one of the available Return Number generation
+        <para>Select one of the available Sales Credit Number generation
         methods:</para>
         <variablelist>
           <varlistentry>
             <term>Manual</term>
             <listitem>
-              <para>Return Numbers must be entered manually whenever you
-              create a new Return.</para>
+              <para>Sales Credit Numbers must be entered manually whenever you
+              create a new Sales Credit.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Automatic, Use Return #'s</term>
+            <term>Automatic, Use Sales Credit #'s</term>
             <listitem>
-              <para>Return Numbers will be automatically incremented by 1 each
-              time you issue a new Return. These automatically-generated
-              numbers may not be edited. They are read-only.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Automatic, Use Return #'s, Allow Override</term>
-            <listitem>
-              <para>Return Numbers will be automatically generated and
-              incremented, as under the "Automatic" option described above.
-              However, this option also allows you to manually override the
-              Return Number at the time of Return creation.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Automatic, Use S/O #'s</term>
-            <listitem>
-              <para>Return Numbers will be automatically incremented by 1 each
-              time a new Return is created, using the same number generation
-              method specified for the creation of Sales Order Numbers. These
+              <para>Sales Credit Numbers will be automatically incremented by
+              1 each time you issue a new Sales Credit. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
+            <term>Automatic, Use Sales Credit #'s, Allow Override</term>
+            <listitem>
+              <para>Sales Credit Numbers will be automatically generated and
+              incremented, as under the "Automatic" option described above.
+              However, this option also allows you to manually override the
+              Sales Credit Number at the time of Sales Credit creation.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Automatic, Use S/O #'s</term>
+            <listitem>
+              <para>Sales Credit Numbers will be automatically incremented by
+              1 each time a new Sales Credit is created, using the same number
+              generation method specified for the creation of Sales Order
+              Numbers. These automatically-generated numbers may not be
+              edited. They are read-only.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
             <term>Next #</term>
             <listitem>
-              <para>The next sequentially available Return Number will display
-              here. You may change the number—creating a new basis for the
-              next Return Number—by typing the new number into this field. Any
-              changes you make here will be reflected the next time you issue
-              a new Return.</para>
+              <para>The next sequentially available Sales Credit Number will
+              display here. You may change the number—creating a new basis for
+              the next Sales Credit Number—by typing the new number into this
+              field. Any changes you make here will be reflected the next time
+              you issue a new Sales Credit.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -467,41 +468,43 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Return Control</term>
+      <term>Sales Credit Control</term>
       <listitem>
-        <para>Select from the following Return control options:</para>
+        <para>Select from the following Sales Credit control options:</para>
         <variablelist>
           <varlistentry>
-            <term>Restrict Returns to Items that appear on their Apply-To
-            Document</term>
+            <term>Restrict Sales Credits to Items that appear on their
+            Apply-To Document</term>
             <listitem>
-              <para>Select if you want to restrict Return Items to their
-              Apply-To Document. Selecting this option narrows the Return Item
-              selection process to only those Items which appeared on the
-              Invoice the Return is being applied to. If not selected, a sold
-              Item master list will appear instead when selecting Return Items
-              for Returns applied to a specific Invoice. This setting has no
-              bearing on unapplied Returns.</para>
+              <para>Select if you want to restrict Sales Credit Items to their
+              Apply-To Document. Selecting this option narrows the Sales
+              Credit Item selection process to only those Items which appeared
+              on the Invoice the Sales Credit is being applied to. If not
+              selected, a sold Item master list will appear instead when
+              selecting Sales Credit Items for Sales Credits applied to a
+              specific Invoice. This setting has no bearing on unapplied Sales
+              Credits.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Allocate Returns to New Sales Order on Save</term>
+            <term>Allocate Sales Credits to New Sales Order on Save</term>
             <listitem>
-              <para>Select to have open Returns for a Customer automatically
-              allocated to any new Sales Orders entered for that Customer.
-              This functionality helps reduce Customer credit balances by
-              ensuring that Customer credits are consumed when new Sales
-              Orders are entered. Any available, open Returns are eligible for
-              allocation. The allocation of available Returns occurs only
-              once—when a Sales Order is saved for the first time. Subsequent
-              saves will not result in additional allocations. Returns which
-              have been allocated to a Sales Order are applied at the point
-              when the Invoice resulting from the Sales Order is posted. Once
-              the full balance of a Return has been applied, the Return is
-              then closed. The printed Invoice the Customer receives will
-              indicate whether Returns have been applied. In addition, the
-              total due from the Customer will be automatically adjusted to
-              reflect any applied credits.</para>
+              <para>Select to have open Sales Credits for a Customer
+              automatically allocated to any new Sales Orders entered for that
+              Customer. This functionality helps reduce Customer credit
+              balances by ensuring that Customer credits are consumed when new
+              Sales Orders are entered. Any available, open Sales Credits are
+              eligible for allocation. The allocation of available Sales
+              Credits occurs only once—when a Sales Order is saved for the
+              first time. Subsequent saves will not result in additional
+              allocations. Sales Credits which have been allocated to a Sales
+              Order are applied at the point when the Invoice resulting from
+              the Sales Order is posted. Once the full balance of a Sales
+              Credit has been applied, the Sales Credit is then closed. The
+              printed Invoice the Customer receives will indicate whether
+              Sales Credits have been applied. In addition, the total due from
+              the Customer will be automatically adjusted to reflect any
+              applied credits.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -631,7 +634,7 @@
       <term>Freight Pricing</term>
       <listitem>
         <para>Specify how you want freight charges to be handled when shipping
-        Orders and Returns:</para>
+        Orders and Sales Credits:</para>
         <variablelist>
           <varlistentry>
             <term>Use calculated Freight values by default</term>
@@ -640,8 +643,8 @@
               against Pricing Schedules to determine the actual freight for a
               given Shipment based on shipping quantities and weight rather
               than assuming all freight should be billed. If not selected, the
-              freight amount on an Order or Return will be billed on every
-              Shipment.</para>
+              freight amount on an Order or Sales Credit will be billed on
+              every Shipment.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -795,9 +798,9 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Default Return Copies</term>
+      <term>Default Sales Credit Copies</term>
       <listitem>
-        <para>Indicate how you want credit memo copies to print.</para>
+        <para>Indicate how you want Sales Credit copies to print.</para>
         <variablelist>
           <varlistentry>
             <term># of Copies</term>
