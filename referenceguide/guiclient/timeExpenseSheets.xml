@@ -4,21 +4,21 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="timeExpenseSheets" role="xtte">
   <title><indexterm significance="normal">
-      <primary>time and expense sheets</primary>
+      <primary>worksheets</primary>
       <secondary>management of</secondary>
-    </indexterm>Time and Expense Sheets</title>
-  <para>Time and Expense Sheets are documents used to capture time and
-  expenses for Employees and Contractors. When Time and Expense Sheets are
-  created, they appear on this workbench screen where managers can review and
-  approve them all in one place.</para>
+    </indexterm>Worksheets</title>
+  <para>Worksheets are documents used to capture time and expenses for
+  Employees and Contractors. When Worksheets are created, they appear on this
+  workbench screen where managers can review and approve them all in one
+  place.</para>
   <note>
-    <para>For more information on using Time and Expense Sheets to help manage
-    projects, please see the eBook <ulink
+    <para>For more information on using Worksheets to help manage projects,
+    please see the eBook <ulink
     url="https://www.xtuple.org/sites/default/files/prodguide/project/index.html">Managing
     Projects with xTuple</ulink>.</para>
   </note>
-  <para>The following set up information will help ensure your Time and
-  Expense Sheets are complete when you process them:</para>
+  <para>The following set up information will help ensure your Worksheets are
+  complete when you process them:</para>
   <variablelist>
     <varlistentry>
       <term>Employees</term>
@@ -50,37 +50,45 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To review Time and Expense Sheets, select the "Time and Expense
-  Sheets" option. The following screen will appear:</para>
+  <para>To review Worksheets, select the "Worksheets" option. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/timeExpenseSheets.png" />
         </imageobject>
-        <caption>Time and Expense Sheets</caption>
+        <caption>Worksheets</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When reviewing Time and Expense Sheets, you are presented with the
-  following options:</para>
+  <para>When reviewing Worksheets, you are presented with the following
+  options:</para>
   <variablelist>
     <varlistentry>
       <term>Employees</term>
       <listitem>
-        <para>Specify which Employee Time and Expense Sheets you want to
-        include in the display, using the specified date range:</para>
+        <para>Specify which Employee Worksheets you want to include in the
+        display, using the specified date range:</para>
         <variablelist>
           <varlistentry>
             <term>All</term>
             <listitem>
-              <para>Select to include Time and Expense Sheets for all
-              Employees in the display.</para>
+              <para>Select to include Worksheets for all Employees in the
+              display.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Selected</term>
             <listitem>
-              <para>Select to include a specific Employee's Time and Expense
-              Sheets in the display.</para>
+              <para>Select to include a specific Employee's Worksheets in the
+              display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Direct Reports</term>
+            <listitem>
+              <para>Select to include Employee Worksheets for a specific
+              Manager in the display. Managers are linked to Employees on the
+              Employee record.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -89,21 +97,21 @@
     <varlistentry>
       <term>Week of</term>
       <listitem>
-        <para>Specify a date range for the Time and Expense Sheets you want to
+        <para>Specify a date range for the Worksheets you want to
         review:</para>
         <variablelist>
           <varlistentry>
             <term>Start Date</term>
             <listitem>
-              <para>Time and Expense Sheets dated on and after this date will
-              be included in the display.</para>
+              <para>Worksheets dated on and after this date will be included
+              in the display.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>End Date</term>
             <listitem>
-              <para>Time and Expense Sheets dated on and before this date will
-              be included in the display.</para>
+              <para>Worksheets dated on and before this date will be included
+              in the display.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -112,55 +120,52 @@
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Specify which Time and Expense Sheet statuses you want to
-        include in the display:</para>
+        <para>Specify which Worksheet statuses you want to include in the
+        display:</para>
         <variablelist>
           <varlistentry>
             <term>Open</term>
             <listitem>
-              <para>Select to include open Time and Expense Sheets in the
-              display.</para>
+              <para>Select to include open Worksheets in the display.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Approved</term>
             <listitem>
-              <para>Select to include approved Time and Expense Sheets in the
+              <para>Select to include approved Worksheets in the
               display.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Closed</term>
             <listitem>
-              <para>Select to include closed Time and Expense Sheets in the
-              display.</para>
+              <para>Select to include closed Worksheets in the display.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Time and Expense Sheets</term>
+      <term>Worksheets</term>
       <listitem>
-        <para>Display will list Time and Expense Sheets based on the specified
-        parameters. By right-clicking on a Time and Expense Sheet, you can
-        perform several actions, including edit, print, delete, and
-        approve.</para>
+        <para>Display will list Worksheets based on the specified parameters.
+        By right-clicking on a Worksheet, you can perform several actions,
+        including edit, print, delete, and approve.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>When Processing</term>
       <listitem>
         <para>Select one or more of the following options to be performed
-        automatically when processing Time and Expense Sheets:</para>
+        automatically when processing Worksheets:</para>
         <variablelist>
           <varlistentry>
             <term>Invoice</term>
             <listitem>
               <para>Select to generate an Invoice to bill the specified
               Customer for their billable time and/or expense entries on the
-              selected Time and Expense Sheet(s). This option only applies to
-              billable entries.</para>
+              selected Worksheet(s). This option only applies to billable
+              entries.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -189,25 +194,22 @@
     <varlistentry>
       <term>NEW</term>
       <listitem>
-        <para>Select this button to create a new Time and Expense
-        Sheet.</para>
+        <para>Select this button to create a new Worksheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>APPROVE</term>
       <listitem>
-        <para>Highlight one or multiple open Time and Expense Sheets and then
-        select this button to approve the highlighted Time and Expense
-        Sheets.</para>
+        <para>Highlight one or multiple open Worksheets and then select this
+        button to approve the highlighted Worksheets.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>PROCESS</term>
       <listitem>
-        <para>Highlight one or multiple open Time and Expense Sheets and then
-        select this button to process the highlighted Time and Expense Sheets,
-        using the processing instructions indicated at the bottom of the
-        screen.</para>
+        <para>Highlight one or multiple open Worksheets and then select this
+        button to process the highlighted Worksheets, using the processing
+        instructions indicated at the bottom of the screen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
