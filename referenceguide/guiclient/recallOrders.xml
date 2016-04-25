@@ -7,9 +7,9 @@
       <primary>shipping</primary>
       <secondary>recalling orders to</secondary>
     </indexterm>Recall Orders to Shipping</title>
-  <para>If a Sales Order or Transfer Order has been shipped in error&mdash;or
-  if changes need to be made to an Order prior to final billing&mdash;you may
-  recall the Order to Shipping. However, once an Invoice has been posted (or a
+  <para>If a Sales Order or Transfer Order has been shipped in error—or if
+  changes need to be made to an Order prior to final billing—you may recall
+  the Order to Shipping. However, once an Invoice has been posted (or a
   Transfer Order has been closed), it may no longer be recalled to shipping.
   To recall Orders to Shipping, select the "Recall Orders to Shipping" option.
   The following screen will appear:</para>
@@ -25,20 +25,18 @@
   following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Show Invoiced Orders</term>
+      <term>Show Invoiced</term>
       <listitem>
-        <para>Select to include Invoiced Orders in the display. When selected,
-        any unposted Invoices will be shown. The list will not include posted
-        Invoices. This option is only enabled for users assigned the
-        "RecallInvoicedShipment" privilege. Users with that privilege have the
-        ability to recall to Shipping Orders which have already been invoiced.
-        Non-privileged users may not recall invoiced Orders to Shipping. An
-        Order is considered "invoiced" after an Invoice has been created from
-        a billing selection. In some cases, it may be desirable to completely
-        back out an Invoice using the following steps:</para>
+        <para>Select to include Invoiced Orders in the display. By default,
+        only unposted Invoices will be shown. However, you can see all
+        Invoices―unposted <emphasis>and</emphasis> posted―if you have the
+        "RecallInvoicedShipment" privilege. An Order is considered "invoiced"
+        after an Invoice has been created from a billing selection. In some
+        cases, it may be desirable to completely back out an Invoice using the
+        following steps:</para>
         <orderedlist>
           <listitem>
-            <para>Delete Invoice</para>
+            <para>Void or delete Invoice</para>
           </listitem>
           <listitem>
             <para>Cancel billing selection</para>
@@ -50,6 +48,28 @@
             <para>Return stock to Inventory</para>
           </listitem>
         </orderedlist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer #</term>
+      <listitem>
+        <para>Enter the Customer Number of the Customer whose orders you want
+        to recall to Shipping. A Customer Number is required if the "Show
+        Invoiced" option is selected.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Orders shipped on or after this date will be included in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Orders shipped on or before this date will be included in the
+        display.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
