@@ -46,16 +46,25 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Only Show Zero Cost Items</term>
+      <term>Only Show Zero Standard Cost Items</term>
       <listitem>
-        <para>Select to include only Items with zero Cost in the display. Use
-        this option to identify Items having no Costs associated with them.
-        The zero Costs view can be helpful when trying to determine why no
-        General Ledger (G/L) transactions are being generated when certain
-        Items are involved. Items must have Standard Costs associated with
-        them if transactions involving them are to be recorded in the G/L. If
-        an Item has no Standard Cost, no G/L records for that Item will be
-        created.</para>
+        <para>Select to include only Items with zero Standard Cost in the
+        display. The zero Standard Costs view can be helpful when trying to
+        determine why no General Ledger (G/L) transactions are being generated
+        when certain Items are involved. Items must have Standard Costs
+        associated with them if transactions involving them are to be recorded
+        in the G/L. If an Item has no Standard Cost, no G/L records for that
+        Item will be created.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Only Show Zero Last Actual Items</term>
+      <listitem>
+        <para>Select to include only Items whose last Actual Cost equals zero.
+        This option can help you quickly identify purchased Items with costing
+        problems. If the last Actual Cost for an Item equals zero, the
+        Standard Cost will inherit this zero cost when Actual Costs are
+        posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -75,6 +84,54 @@
       <term>Show Inactive Items</term>
       <listitem>
         <para>Select to include inactive Items in the display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Types</term>
+      <listitem>
+        <para>Specify which of the following Item Types you want to include in
+        the display:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Purchased</term>
+            <listitem>
+              <para>Select to include Purchased Items in the display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Manufactured</term>
+            <listitem>
+              <para>Select to include Manufactured Items in the
+              display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Outside Service</term>
+            <listitem>
+              <para>Select to include Outside Service Items in the
+              display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Costing</term>
+            <listitem>
+              <para>Select to include Costing Items in the display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Planning</term>
+            <listitem>
+              <para>Select to include Planning Items in the display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>All Others</term>
+            <listitem>
+              <para>Select to include all other Item Types not otherwise
+              listed in the display (e.g., Service Items, etc.). </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
