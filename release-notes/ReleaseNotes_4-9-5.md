@@ -13,6 +13,10 @@ more information on how to install plv8 and a
 [blog post](https://www.xtuple.org/blog/gmoskowitz/enabling-technologies-plv8-49)
 describing plv8 and why we introduced this new dependency.
 
+### Feature
+- Implemented in REST API
+  _Add dispatch function/service to save credit cards over the REST API._
+
 ### Bug fixes
 
 The xTuple ERP 4.9.5 release fixes a few bugs in the xTuple ERP desktop
@@ -20,19 +24,17 @@ application. In addition there are minor changes to the REST API to
 support upcoming xTupleCommerce changes.
 
 - Fixed
-  issue #[26654](http://www.xtuple.org/xtincident/view/bugs/26654) _*User is not able to select 'Project Types' in Project screen_
+  issue #[26654](http://www.xtuple.org/xtincident/view/bugs/26654) _User is not able to select 'Project Types' in Project screen_
 - Fixed
-  issue #[27434](http://www.xtuple.org/xtincident/view/bugs/27434) _*ACH block count incorrect_
+  issue #[27434](http://www.xtuple.org/xtincident/view/bugs/27434) _ACH block count incorrect_
 - Fixed
-  issue #[27643](http://www.xtuple.org/xtincident/view/bugs/27643) _*Authorize.net transaction ID issue_
+  issue #[27643](http://www.xtuple.org/xtincident/view/bugs/27643) _Authorize.net transaction ID issue_
 - Fixed
   issue #[27728](http://www.xtuple.org/xtincident/view/bugs/27728) _project Type is not populating when Project window opened_
 - Fixed
   issue #[27840](http://www.xtuple.org/xtincident/view/bugs/27840) _Attached incident appears to be duplicate but isn't_
-- Implemented
-  _Add dispatch function/service to save credit cards over the REST API._
-- Fixed
-  _Remove shipto_id requirement from favorites. (REST API)_
+- Fixed in REST API
+  _Remove shipto_id requirement from favorites._
 
 
 ## Deployment Notes
@@ -64,34 +66,34 @@ or install package.
 
 To be verbose about all of this:
 
-    postbooks-upgrade-491.gz will:
-    upgrade a PostBooks database from anywhere >= 4.4.0 to 4.9.1
+    postbooks-upgrade-495.gz will:
+    upgrade a PostBooks database from anywhere >= 4.4.0 to 4.9.5
 
-    distribution-upgrade-491.gz will:
-    upgrade the standard/dist (i.e., inventory code) to 4.9.1
-    upgrade the distribution (i.e., xwd code) to 4.9.1
+    distribution-upgrade-495.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.9.5
+    upgrade the distribution (i.e., xwd code) to 4.9.5
 
-    distribution-install-491.gz will:
-    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.1
-    do a one-time install of tables, etc. for distribution at 4.9.1
+    distribution-install-495.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.5
+    do a one-time install of tables, etc. for distribution at 4.9.5
 
-    manufacturing-upgrade-491.gz will:
-    upgrade the standard/dist (i.e., inventory code) to 4.9.1
-    upgrade the manufacturing code to 4.9.1
+    manufacturing-upgrade-495.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.9.5
+    upgrade the manufacturing code to 4.9.5
 
-    manufacturing-install-491.gz will:
-    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.1
-    do a one-time install of tables, etc. for manufacturing at 4.9.1
+    manufacturing-install-495.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.5
+    do a one-time install of tables, etc. for manufacturing at 4.9.5
 
-    enterprise-upgrade-491.gz will:
-    upgrade the standard/dist (i.e., inventory code) to 4.9.1
-    upgrade the distribution (i.e., xwd code) to 4.9.1
-    upgrade the manufacturing code to 4.9.1
+    enterprise-upgrade-495.gz will:
+    upgrade the standard/dist (i.e., inventory code) to 4.9.5
+    upgrade the distribution (i.e., xwd code) to 4.9.5
+    upgrade the manufacturing code to 4.9.5
 
-    enterprise-install-491.gz will:
-    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.1
-    do a one-time install of tables, etc. for distribution at 4.9.1
-    do a one-time install of tables, etc. for manufacturing at 4.9.1
+    enterprise-install-495.gz will:
+    do a one-time install of tables, etc. for standard (i.e., inventory code) at 4.9.5
+    do a one-time install of tables, etc. for distribution at 4.9.5
+    do a one-time install of tables, etc. for manufacturing at 4.9.5
 
 PLEASE NOTE: Other packages, such as Advanced Commissions and Fixed
 Assets, are currently remaining on their own release schedule and should
