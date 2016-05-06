@@ -45,15 +45,23 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>Standard Currency information for most Countries is provided by
-    default as part of <xref linkend="countries" />. Simply select this
-    information by Country when setting up multiple Currencies.</para>
+    <para>Currency information for most Countries can be found as part of the
+    Country set up. For more information, please see <xref
+    linkend="countries" />.</para>
   </tip>
   <para>The Currencies master list displays information on all Currencies,
   including base Currency indicator, Currency name, Currency symbol, and
-  Currency abbreviation. The screen also includes a Comment console where
-  changelog comments may be posted whenever Exchange Rates are updated, if
-  your system is configured to log Exchange Rate updates.</para>
+  Currency abbreviation. Beneath the list of Currencies, you will find another
+  list showing Exchange Rate Comments. Whenever the Exchange Rate for a
+  Currency is updated, the change will be recorded here as a Comment. You may
+  also add your own manual comments, by Currency.</para>
+  <note>
+    <para>To add Comments, you must first select a Currency from the list of
+    Currencies. Exchange Rate Comments are linked to the Currency they relate
+    to.</para>
+  </note>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="currency.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
