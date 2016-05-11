@@ -82,33 +82,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new Lot/Serial Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentLotSerial.png" />
-        </imageobject>
-        <caption>Create New Lot/Serial Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Item or Lot/Serial
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Displays the default Value associated with the Characteristic,
-        but permits you to specify an alternate Value.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>You have the ability to register Lot/Serial Numbers—whether for
   warranty or other purposes. To register a Lot/Serial Number, select the
   "Register" tab. The following screen will appear:</para>

@@ -50,39 +50,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new Customer Type Characteristic, select the NEW button.
-  The following screen will appear:</para>
-  <screenshot>
-    <mediaobject>
-      <imageobject>
-        <imagedata fileref="images/characteristicAssignmentCustomerType.png" />
-      </imageobject>
-      <caption><para>Create New Customer Type Characteristic</para></caption>
-    </mediaobject>
-  </screenshot>
-  <para>When creating a new Customer Type Characteristic, you are presented
-  with the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Customer
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a description of the Customer Type Characteristic.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Default</term>
-      <listitem>
-        <para>Select if the Characteristic is the default Characteristic for
-        the Customer Type.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

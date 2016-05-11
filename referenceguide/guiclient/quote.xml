@@ -627,23 +627,9 @@
     </imageobject>
     <caption><para>Quote Characteristics</para></caption>
   </mediaobject>
-  <para>When creating a new Quote Characteristic, you are presented with the
-  following options:<variablelist>
-      <varlistentry>
-        <term>Characteristic</term>
-        <listitem>
-          <para>Select a Characteristic from the list of Characteristics
-          designated as being available for use as Quote
-          Characteristics.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Value</term>
-        <listitem>
-          <para>Enter a description for the Quote Characteristic.</para>
-        </listitem>
-      </varlistentry>
-    </variablelist></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Comments related to a Quote, select the "Comments" tab. The
   following screen will appear:</para>
   <para><screenshot>

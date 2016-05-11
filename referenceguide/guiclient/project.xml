@@ -331,44 +331,9 @@
       </imageobject>
       <caption><para>Project Characteristics</para></caption>
     </mediaobject></para>
-  <para>When adding Characteristics to a Project, you are presented with the
-  following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Display lists the Characteristic name and Value of
-        Characteristics related to the Project.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>To create a new Project Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="images/characteristicAssignmentProject.png" />
-    </imageobject>
-    <caption><para>Create New Project Characteristic</para></caption>
-  </mediaobject>
-  <para>When creating a new Project Characteristic, you are presented with the
-  following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Project
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a value to associate with the Project
-        Characteristic.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Comments related to a Project, select the "Comments" tab. The
   following screen will appear:</para>
   <para><screenshot>

@@ -984,7 +984,7 @@
     </indexterm>Customer Characteristics are user-defined definitions which
   may be used to provide additional layers of description about Customers. For
   example, Customer Characteristics might be used to specify "Order
-  Preferences" or "Buying Season". These constitute static descriptions which
+  Preferences" or "Buying Season." These constitute static descriptions which
   are not processed by the system, but are useful for informational purposes.
   To enter Characteristics associated with a Customer, select the
   "Characteristics" tab. The following screen will appear:</para>
@@ -995,62 +995,21 @@
         </imageobject>
         <caption>Customer Characteristics</caption>
       </mediaobject>
-    </screenshot><tip>
-      <para>If the Customer Type a Customer belongs to has a Characteristic
-      Profile (i.e., template) defined, then every Customer in that Customer
-      Type will be presented with a range of pre-defined Characteristics. You
-      can select or add values for each Characteristic by right-clicking on a
-      Characteristic in the list.</para>
-    </tip></para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Display lists the Characteristics related to the
-        Customer.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <note>
-    <para>If Characteristic Profiles are enabled for the Customer Type, you
-    will not see buttons on the right-side of the screen. Values may be
-    selected or added by right-clicking on a Characteristic in the
-    list.</para>
-  </note>
+    </screenshot></para>
+  <para>If the Customer Type a Customer belongs to has a Characteristic
+  Profile (i.e., template) defined, then every Customer in that Customer Type
+  will be presented with a range of pre-defined Characteristics. You can
+  select or add values for each Characteristic by right-clicking on a
+  Characteristic in the list.</para>
   <tip>
     <para>If you do not see buttons on the right side of the Customer
     Characteristics screen, this means Characteristic Profiles are being used
     for the Customer Type the Customer belongs to. These buttons will only
     appear if Customer Type Characteristic Profiles are not being used.</para>
   </tip>
-  <para>To create a new Customer Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentCustomer.png" />
-        </imageobject>
-        <caption>Create New Customer Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <para>When creating a new Customer Characteristic, you are presented with
-  the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Customer
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a description of the Customer Characteristic.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>Every Customer record is linked to a CRM Account. To view information
   related to the Customer's CRM Account, select the "CRM" tab. The following
   screen will appear:</para>

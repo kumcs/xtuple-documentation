@@ -98,42 +98,9 @@
         <caption>Address Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Display lists the Characteristics related to the Address.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>To create a new Address Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentAddress.png" />
-        </imageobject>
-        <caption>Create New Address Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <para>When creating a new Address Characteristic, you are presented with the
-  following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Address
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a value to associate with the Characteristic.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To locate where in the application the Address is used, select the
   "Uses of the Address" tab. The following screen will appear:</para>
   <para><screenshot>

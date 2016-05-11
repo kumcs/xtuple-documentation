@@ -376,32 +376,9 @@
         <caption>Purchase Order Line Item Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When selecting or editing Characteristics for a Purchase Order Line
-  Item, you are presented with the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Name</term>
-      <listitem>
-        <para>Displays the name of any Item Characteristics associated with
-        the Item. Characteristics defined as Item Characteristics may be
-        associated with Items on the Item master.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Displays the default Value associated with an Item
-        Characteristic, but permits you to specify an alternate Value. When
-        associating Characteristic Values with a Purchase Order Item, you have
-        four options: 1) Select the default Value; 2) select an alternate
-        pre-defined Value; 3) manually enter a new Value in place of the
-        pre-defined Value; or 4) make no selection. Making no selection means
-        the Characteristics will not be associated with the Purchase Order
-        Item—except in the case of Characteristics inherited from Sales
-        Orders, by way of Purchase Requests.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para role="standard">When ordering purchased Items, you have the option to
   specify which Revision of the Item's Bill of Materials and Bill of
   Operations you want to buy. By default, the active Revision will be used. To

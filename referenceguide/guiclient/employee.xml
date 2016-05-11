@@ -247,45 +247,9 @@
         <caption>Employee Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When associating Characteristics with an Employee, you are presented
-  with the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Displays the Characteristics related to the Employee.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>To create a new Employee Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentEmployee.png" />
-        </imageobject>
-        <caption>Create New Employee Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <para>When creating a new Employee Characteristic, you are presented with
-  the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Employee
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a value to associate with the Employee
-        Characteristic.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To associate group memberships with an Employee, select the "Group
   Membership" tab. The following screen will appear:</para>
   <para><screenshot>

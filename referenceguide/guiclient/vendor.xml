@@ -494,23 +494,9 @@
     </imageobject>
     <caption><para>Vendor Characteristics</para></caption>
   </mediaobject>
-  <para>When creating a new Vendor Characteristic, you are presented with the
-  following options:<variablelist>
-      <varlistentry>
-        <term>Characteristic</term>
-        <listitem>
-          <para>Select a Characteristic from the list of Characteristics
-          designated as being available for use as Vendor
-          Characteristics.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Value</term>
-        <listitem>
-          <para>Enter a description for the Vendor Characteristic.</para>
-        </listitem>
-      </varlistentry>
-    </variablelist></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To <indexterm significance="normal">
       <primary>documents</primary>
       <secondary>vendors associated with</secondary>

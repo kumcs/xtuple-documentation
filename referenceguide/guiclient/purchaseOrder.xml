@@ -329,24 +329,9 @@
     </imageobject>
     <caption><para>Purchase Order Characteristics</para></caption>
   </mediaobject>
-  <para>When creating a new Purchase Order Characteristic, you are presented
-  with the following options:<variablelist>
-      <varlistentry>
-        <term>Characteristic</term>
-        <listitem>
-          <para>Select a Characteristic from the list of Characteristics
-          designated as being available for use as Purchase Order
-          Characteristics.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Value</term>
-        <listitem>
-          <para>Enter a description for the Purchase Order
-          Characteristic.</para>
-        </listitem>
-      </varlistentry>
-    </variablelist></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Notes to a Purchase Order, select the "Notes" tab at the top of
   the "Purchase Order" screen. The following screen will appear:</para>
   <para><screenshot>

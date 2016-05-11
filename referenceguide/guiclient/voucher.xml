@@ -66,7 +66,7 @@
       <listitem>
         <para>Specify the Expense Category you want to assign header level
         Freight charges to. If you are tracking Freight expenses at the Line
-        Item level, </para>
+        Item level,</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -233,23 +233,9 @@
     </imageobject>
     <caption><para>Voucher Characteristics</para></caption>
   </mediaobject>
-  <para>When creating a new Voucher Characteristic, you are presented with the
-  following options:<variablelist>
-      <varlistentry>
-        <term>Characteristic</term>
-        <listitem>
-          <para>Select a Characteristic from the list of Characteristics
-          designated as being available for use as Voucher
-          Characteristics.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Value</term>
-        <listitem>
-          <para>Enter a description for the Voucher Characteristic.</para>
-        </listitem>
-      </varlistentry>
-    </variablelist></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Notes to a Voucher, select the "Notes" tab. The following
   screen will appear:</para>
   <para><screenshot>

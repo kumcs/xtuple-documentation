@@ -985,33 +985,25 @@
   <para>Sales Order Characteristics are user-defined definitions which may be
   used to provide additional layers of description about Sales Orders. These
   descriptions are static and not processed by the system, but are useful for
-  informational purposes. To enter Characteristics associated with a ales
-  Order, select the "Characteristics" tab. The following will be
-  displayed:</para>
+  informational purposes.</para>
+  <tip>
+    <para>For configured Items, an additional pricing field will be available
+    on the Item Characteristic screen. This pricing information will be passed
+    to Sales Order Line Items when particular configurations are sold. The
+    Price for configured Items may vary depending on the Characteristics
+    selected at Sales Order entry time.</para>
+  </tip>
+  <para>To enter Characteristics associated with a Sales Order, select the
+  "Characteristics" tab. The following will be displayed:</para>
   <para><mediaobject>
       <imageobject>
         <imagedata fileref="images/salesOrder_characteristics.png" />
       </imageobject>
       <caption><para>Sales Order Characteristics</para></caption>
-    </mediaobject>When creating new Sales Order Characteristic, you are
-  presented with the following options:<variablelist>
-      <varlistentry>
-        <term>Characteristic</term>
-        <listitem>
-          <para>Select a Characteristic from the list of Characteristics
-          designated as being available for use as Sales Order
-          Characteristics. In the Distribution Edition, a Characteristic will
-          automatically be created identifying the current user entering the
-          Order as the Inside Sales Rep.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Value</term>
-        <listitem>
-          <para>Enter a description for the Sales Order Characteristic.</para>
-        </listitem>
-      </varlistentry>
-    </variablelist></para>
+    </mediaobject></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add Comments related to a Sales Order, select the "Comments" tab.
   The following will be displayed:</para>
   <para><screenshot>

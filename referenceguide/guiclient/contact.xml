@@ -197,42 +197,9 @@
     <para>Use Contact Characteristics, for example, to record and remember a
     Contact's birthday—or similar personal information.</para>
   </tip>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Display lists the Characteristics related to the Contact.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>To create a new Contact Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentContact.png" />
-        </imageobject>
-        <caption>Create New Contact Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <para>When creating a new Contact Characteristic, you are presented with the
-  following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Contact
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a value to associate with the Characteristic.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To locate where in the application the Contact is used, select the
   "Uses of the Contact" tab. The following screen will appear:</para>
   <para><screenshot>

@@ -780,9 +780,11 @@
   Request or a Work Order, the Characteristics defined here will be inherited
   by those subsequent Orders.</para>
   <tip>
-    <para>You can link Characteristics and Values to an Item by using the Item
-    master. Once entered, these Characteristics and Values will be available
-    to users entering Sales Order Line Items.</para>
+    <para>For configured Items, an additional pricing field will be available
+    on the Item Characteristic screen. This pricing information will be passed
+    to Sales Order Line Items when particular configurations are sold. The
+    Price for configured Items may vary depending on the Characteristics
+    selected at Sales Order entry time.</para>
   </tip>
   <para>To associate Characteristics with a Sales Order Line Item, select the
   "Item Characteristics" tab at the bottom of the screen, as shown
@@ -795,12 +797,6 @@
         <caption>Sales Order Line Item Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-  <note>
-    <para>Characteristics for configured Items (i.e., Job or Reference Items)
-    also have List Prices associated with them. When configured Item
-    Characteristics are added to a Sales Order Item, the overall Net Unit
-    Price of the Item increases.</para>
-  </note>
   <para>When selecting or editing Characteristics for a Sales Order Line Item,
   you are presented with the following options:</para>
   <variablelist>

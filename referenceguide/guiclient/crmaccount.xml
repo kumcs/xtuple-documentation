@@ -283,45 +283,9 @@
         <caption>Account Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When associating Characteristics with an Account, you are presented
-  with the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Displays the Characteristics related to the Account.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>To create a new Account Characteristic, select the NEW button. The
-  following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentCRM.png" />
-        </imageobject>
-        <caption>Create New Account Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <para>When creating a new Account Characteristic, you are presented with the
-  following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Account
-        Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a value to associate with the Account
-        Characteristic.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To enter or associate To-Dos, Opportunities, or Incidents with an
   Account, select the "Activities" tab. The following screen will
   appear:</para>

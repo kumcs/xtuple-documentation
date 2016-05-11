@@ -593,60 +593,16 @@
       <caption>Item Characteristics</caption>
     </mediaobject>
   </screenshot>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristics</term>
-      <listitem>
-        <para>Display lists the Characteristic name and Value of Item
-        Characteristics related to the Item.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para id="configItemChar">To create a new Item Characteristic, select the
-  NEW button. The following screen will appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/characteristicAssignmentItem.png" />
-        </imageobject>
-        <caption>Create New Item Characteristic</caption>
-      </mediaobject>
-    </screenshot></para>
-  <variablelist>
-    <varlistentry>
-      <term>Characteristic</term>
-      <listitem>
-        <para>Select a Characteristic from the list of Characteristics
-        designated as being available for use as Item Characteristics.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Enter a value to associate with the Item Characteristic.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>List Price</term>
-      <listitem>
-        <para>This field will be available only for configured Items (i.e.,
-        Job or Reference Items). Characteristics are used to store pricing
-        information for the options available on configured Items. That
-        pricing by Characteristic is then passed to Sales Order Line Items
-        when particular configurations are sold. The Price for configured
-        Items may vary depending on the Characteristics selected at Sales
-        Order entry time.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Default</term>
-      <listitem>
-        <para>Select if the Value entered is the default Value for the
-        specified Characteristic. The default Value will be presented
-        initially wherever Item Characteristics are used.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <para id="configItemChar"><tip>
+      <para>For configured Items, an additional pricing field will be
+      available on the Item Characteristic screen. This pricing information
+      will be passed to Sales Order Line Items when particular configurations
+      are sold. The Price for configured Items may vary depending on the
+      Characteristics selected at Sales Order entry time.</para>
+    </tip></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>For visibility into Costs and Bill of Materials associated with
   Items—and to perform routine Cost and BOM maintenance—select the "Cost" tab.
   The following screen will appear:</para>

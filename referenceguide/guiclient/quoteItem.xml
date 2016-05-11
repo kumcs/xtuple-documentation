@@ -637,9 +637,11 @@
   Request or a Work Order, the Characteristics defined here will be inherited
   by those subsequent Orders.</para>
   <tip>
-    <para>You can link Characteristics and Values to an Item by using the Item
-    master. Once entered, these Characteristics and Values will be available
-    to users entering Sales Order Line Items.</para>
+    <para>For configured Items, an additional pricing field will be available
+    on the Item Characteristic screen. This pricing information will be passed
+    to Sales Order Line Items when particular configurations are sold. The
+    Price for configured Items may vary depending on the Characteristics
+    selected at Sales Order entry time.</para>
   </tip>
   <para>To associate Characteristics with a Quote Line Item, select the "Item
   Characteristics" tab at the bottom of the screen, as shown below:</para>
@@ -651,45 +653,9 @@
         <caption>Quote Line Item Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When selecting or editing Characteristics for a Quote Line Item, you
-  are presented with the following options:</para>
-  <variablelist>
-    <varlistentry>
-      <term>Name</term>
-      <listitem>
-        <para>Displays the name of any Item Characteristics associated with
-        the Item. Characteristics defined as Item Characteristics may be
-        associated with Items on the Item master.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Value</term>
-      <listitem>
-        <para>Displays the default Value associated with an Item
-        Characteristic, but permits you to specify an alternate Value. When
-        associating Characteristic Values with a Quote Line Item, you have
-        four options: 1) Select the default Value; 2) select an alternate
-        pre-defined Value; 3) manually enter a new Value in place of the
-        pre-defined Value; or 4) make no selection. Making no selection means
-        the Characteristics will not be associated with the Quote Line
-        Item.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Base Price</term>
-      <listitem>
-        <para>If the Quote Item is a configured Item (i.e., Job or Reference
-        Item), the "Base Price" option will be shown. Characteristics
-        associated with configured Items may have additional List Prices
-        associated with them. As a result, when Characteristics are added to a
-        Quote Item, the overall Price of the Item may increase. The Base Price
-        shows the Price before any Characteristic List Prices have been added
-        to the Net Unit Price. To learn more about adding price
-        Characteristics to configured Items, see <xref
-        linkend="configItemChar" />.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To view Costs or adjust Tax information for a Quote Line Item, select
   the "Detail" tab at the bottom of the screen, as shown below:</para>
   <para><screenshot>
