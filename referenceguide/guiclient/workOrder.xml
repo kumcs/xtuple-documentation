@@ -295,8 +295,20 @@
     master. Once entered, these Characteristics and Values will be available
     to users entering Sales Order Line Items.</para>
   </tip>
-  <para>To associate Characteristics with a Work Order Item, select the
-  "Characteristics" tab at the bottom of the screen, as shown below:</para>
+  <para>To associate Characteristics with a Work Order, select the
+  "Characteristics" tab. As you can see in the following screenshot, there are
+  two types of Characteristics available:</para>
+  <orderedlist>
+    <listitem>
+      <para><emphasis role="bold">Work Order Item Characteristics</emphasis>:
+      Inherited from Item Characteristics</para>
+    </listitem>
+    <listitem>
+      <para><emphasis role="bold">Work Order Characteristics</emphasis>: Ad
+      hoc Characteristics which may be associated manually with a Work
+      Order</para>
+    </listitem>
+  </orderedlist>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -304,11 +316,11 @@
         </imageobject>
         <caption>Work Order Characteristics</caption>
       </mediaobject>
-    </screenshot>When specifying Characteristics for a Work Order Item, you
-  are presented with the following options:</para>
+    </screenshot>When specifying Work Order Item Characteristics, you are
+  presented with the following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Name</term>
+      <term>Work Order Item Characteristics</term>
       <listitem>
         <para>Displays the name of any Item Characteristics associated with
         the Item. Characteristics defined as Item Characteristics may be
@@ -326,6 +338,42 @@
         pre-defined Value; or 4) make no selection. Making no selection means
         the Characteristics will not be associated with the Work Order
         Item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To create a new Work Order Characteristic, select the NEW button from
+  the Work Order Characteristics list. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/characteristicAssignmentWorkOrder.png" />
+        </imageobject>
+        <caption>Create New Work Order Characteristic</caption>
+      </mediaobject>
+    </screenshot></para>
+  <variablelist>
+    <varlistentry>
+      <term>Characteristic</term>
+      <listitem>
+        <para>Select a Characteristic from the list of Characteristics
+        designated as being available for use as Work Order
+        Characteristics.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Value</term>
+      <listitem>
+        <para>Enter a value to associate with the Work Order
+        Characteristic.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Default</term>
+      <listitem>
+        <para>Select if the Value entered is the default Value for the
+        specified Characteristic. The default Value will be presented
+        initially wherever Incident Characteristics are used.</para>
       </listitem>
     </varlistentry>
   </variablelist>
