@@ -10,10 +10,12 @@ See below for more information about [deploying this release](#deployment-notes)
 ### Summary
 
 A large number of features and bug fixes have been added to the
-application since the 4.9.3 release. Our focus has been in improving
+application since the 4.9.5 release. Our focus has been in improving
 the desktop client with the following themes:
 
-- Lay the groundwork for an ERP dashboards extension
+- Lay the groundwork for an ERP dashboards extension.
+  Version 1.0.0Beta2 of the dashboards extension is available
+  for commercial customers.
 - Implement Feature Mob 2 features
 - Update technology infrastructure
 - Improve desktop application performance
