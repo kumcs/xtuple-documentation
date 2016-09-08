@@ -110,6 +110,8 @@ These need to be installed on the database server, not client machines.
   _ 'Credit Card Processing Error' is displayed on selecting to charge a Foreign customer's sales order_
 - Fixed issue #[26139](http://www.xtuple.org/xtincident/view/bugs/26139)
   _Misc receipts accounting treatment causes issues_
+- Fixed issue #[26442](http://www.xtuple.org/xtincident/view/bugs/26442)
+  _api discovery documentation link points to wrong url_
 - Fixed issue #[26684](http://www.xtuple.org/xtincident/view/bugs/26684)
   _Need better way to correct aborted check printing_
 - Fixed issue #[26716](http://www.xtuple.org/xtincident/view/bugs/26716)
