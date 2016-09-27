@@ -14,7 +14,7 @@
   alternative to the regular Sales Order entry screen and may be used in
   conjunction with it. Because the simple Sales Order is optional, it must be
   specifically enabled in the Sales module configuration before it can be
-  used. </para>
+  used.</para>
   <para>To create a new simple Sales Order, select the "New Simple" option.
   The following screen will appear:</para>
   <para><screenshot>
@@ -44,6 +44,22 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Specify the supplied from Site for the Order. By default, the
+        logged in User's preferred Site will be used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Tax Zone</term>
+      <listitem>
+        <para>Specify the Tax Zone for the Order. If the default Customer (or
+        other specified Customer) does not have a default Ship-to Address and
+        associated Tax Zone, then the Tax Zone for the Site will be
+        used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Customer</term>
       <listitem>
         <para>Specify the Customer associated with the Sales Order. By
@@ -61,7 +77,7 @@
       <term>Ship To</term>
       <listitem>
         <para>Enter the number of the preferred Ship-To Address. Customers may
-        maintain multiple Ship-To Addresses. </para>
+        maintain multiple Ship-To Addresses.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
