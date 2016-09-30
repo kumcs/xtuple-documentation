@@ -61,5 +61,28 @@
           day.</para>
         </listitem>
       </varlistentry>
+      <varlistentry>
+        <term>Look ahead from first demand for Order Grouping</term>
+        <listitem>
+          <para>Select this option to modify the default behavior of the
+          Planned Order grouping feature found on the Planning tab of the Item
+          Site screen. If selected, the following logic will be used:</para>
+          <orderedlist>
+            <listitem>
+              <para>Start First Group when part is first due</para>
+            </listitem>
+            <listitem>
+              <para>End First Group = Start First Group + Group
+              Duration</para>
+            </listitem>
+            <listitem>
+              <para>Start Second Group = End First Group + 1 day</para>
+            </listitem>
+          </orderedlist>
+          <informalexample>
+            <para>If not selected, the default behavior will be used.</para>
+          </informalexample>
+        </listitem>
+      </varlistentry>
     </variablelist></para>
 </section>
