@@ -93,6 +93,34 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>EXTRACT WIDGETS</term>
+      <listitem>
+        <para>Select one of the following available options to extract widget
+        nodes from the selected Script's XML source. Either option should
+        insert <literal>var _foo = mywindow.findChild("_foo");</literal> for
+        the widgets in the screen. The information will appear above the main
+        text of the Script.</para>
+        <variablelist>
+          <varlistentry>
+            <term>INCLUDING LABELS</term>
+            <listitem>
+              <para>Selecting this option should include
+              <literal>XLabel</literal> and <literal>QLabel</literal> widgets.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>EXCLUDING LABELS</term>
+            <listitem>
+              <para>Selecting this option should exclude
+              <literal>XLabel</literal> and <literal>QLabel</literal> widgets.
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>IMPORT SCRIPT</term>
       <listitem>
         <para>Select to import a script from your local file system into the
