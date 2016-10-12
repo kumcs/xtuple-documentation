@@ -3,32 +3,32 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section>
   <title>Ledger Control</title>
-  <para>The Ledger control screen shows a summary of the General Ledger and
-  Sub Ledger amounts, as well as the difference between them.</para>
-  <para>The following screenshot shows the "Ledger Control" screen:</para>
+  <para>The Ledger Control report is designed to help you validate your
+  accounting during the month-end closing process. The report provides a
+  summarized overview of the key ledger control points, comparing the
+  difference between Ledger and Sub Ledger amounts. This information can help
+  you identify (at a high level) areas in the accounting system that require
+  further investigation. To learn more about how to use the Ledger Control
+  report as a starting point for further action, please see the <ulink
+  url="https://xtupleuniversity.xtuple.com/library/articles/validating-your-ledger-accounts">Validating
+  your ledger control accounts</ulink> article.</para>
+  <para>To access the Ledger Control report, select the "Ledger Control"
+  option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/ledgerControl.png" />
         </imageobject>
-        <caption>Ledger Control</caption>
+        <caption>Ledger Control Report</caption>
       </mediaobject>
     </screenshot></para>
-  <para>Upon opening the Ledger Control window, you are presented with the
-  following options: </para>
-  <variablelist>
-    <varlistentry>
-      <term>Close</term>
-      <listitem>
-        <para>Closes the Ledger Control window</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Query</term>
-      <listitem>
-        <para>Collects and shows the different Ledgers in the ERP and their
-        amounts.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <para>As you can see in the screenshot, the report groups the Ledger control
+  points into six core categories: Payables, Uninvoiced Receipts, Receivables,
+  Inventory, WIP, and Shipping Assets. Within each category, the report shows
+  the difference between summarized Ledger and Sub Ledger activity. The goal,
+  of course, is to show a difference of $0 for each category. If the
+  difference does not equal to $0, that means you have work to do analyzing
+  the reason(s) for the difference and taking action to correct it. Keep in
+  mind that these figures are summarized. In most, if not all, cases, the
+  information shown is drawn from multiple accounts and document types.</para>
 </section>
