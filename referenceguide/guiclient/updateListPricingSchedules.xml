@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="updateListPricingSchedules">
+  <title><indexterm significance="normal">
+      <primary>list pricing schedules</primary>
+      <secondary>updating</secondary>
+    </indexterm>Update List Pricing Schedules</title>
+  <para>This utility is designed to update Item Prices found within List
+  Pricing Schedules. Using this screen, you can update Item Prices by Product
+  Category, Item Group, or by Item—all without having to open the individual
+  List Pricing Schedules themselves to make the changes. To update List
+  Pricing Schedules, select the "Update List Pricing Schedules" option. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/updateListPricingSchedules.png" />
+        </imageobject>
+        <caption>Update List Pricing Schedules</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When updating Item Prices found within List Pricing Schedules, you are
+  presented with the following options:</para>
+  <note>
+    <para>This pricing utility updates Item Prices found on List Pricing
+    Schedules only. It is not designed to update List Prices or discount
+    percentages.</para>
+  </note>
+  <variablelist>
+    <varlistentry>
+      <term>Update By</term>
+      <listitem>
+        <para>Specify which Item Prices found within existing List Pricing
+        Schedules you want to update:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Product Category</term>
+            <listitem>
+              <para>Select to update Item Prices by Product Category. If Items
+              appear on a selected List Pricing Schedule and fall within the
+              chosen Product Category, then the Item Prices for those Items
+              will be updated by the specified amount.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Item Group</term>
+            <listitem>
+              <para>Select to update Item Prices by Item Group. If Items
+              appear on a selected List Pricing Schedule and fall within the
+              chosen Item Group, then the Item Prices for those Items will be
+              updated by the specified amount.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Item</term>
+            <listitem>
+              <para>Select to update Item Prices by Item. If the Item appears
+              on a selected List Pricing Schedule, then the Item Price for
+              that Item will be updated by the specified amount.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Nominal</term>
+      <listitem>
+        <para>Select if you want to update nominal List Pricing Schedule
+        Items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Discount</term>
+      <listitem>
+        <para>Select if you want to update discount List Pricing Schedule
+        Items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Markup</term>
+      <listitem>
+        <para>Select if you want to update markup List Pricing Schedule
+        Items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Current</term>
+      <listitem>
+        <para>Select to include current List Pricing Schedules in the list of
+        available List Pricing Schedules. If not selected, current List
+        Pricing Schedules will not be included.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Expired</term>
+      <listitem>
+        <para>Select to include expired List Pricing Schedules in the list of
+        available List Pricing Schedules. If not selected, expired List
+        Pricing Schedules will not be included.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Future</term>
+      <listitem>
+        <para>Select to include future List Pricing Schedules in the list of
+        available List Pricing Schedules. If not selected, future List Pricing
+        Schedules will not be included.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Available</term>
+      <listitem>
+        <para>Display will list available List Pricing Schedules, based on the
+        parameters you specified. Use the &gt; or &gt;&gt; buttons to move one
+        or all of the available List Pricing Schedules into the selected List
+        Pricing Schedules list. List Pricing Schedules appearing in the
+        selected list will be updated when the utility is run.</para>
+        <tip>
+          <para>You may select multiple List Pricing Schedules to move back
+          and forth by highlighting them using your mouse—or a combination of
+          your mouse and either the SHIFT or CTRL keys.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Display will list List Pricing Schedules which have been
+        selected for updating. Use the &lt; or &lt;&lt; buttons to remove one
+        or all of the available List Pricing Schedules from the selected List
+        Pricing Schedules list. List Pricing Schedules appearing in the
+        selected list will be updated when the utility is run.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Update Prices by</term>
+      <listitem>
+        <para>Enter a positive or negative value to indicate how much you want
+        to update your Item Prices by. The value represents either a
+        percentage or fixed amount update, based on the following
+        selection:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Percent</term>
+            <listitem>
+              <para>Select to update Item Prices by a percentage
+              amount.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Fixed Amount</term>
+            <listitem>
+              <para>Select to update Item Prices by a fixed amount.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Also Update Characteristic Prices</term>
+      <listitem>
+        <para>Select to also update Prices associated with Item
+        Characteristics for Items in the specified Product Category
+        range.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>UPDATE</term>
+      <listitem>
+        <para>Updates Item Prices, using the specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

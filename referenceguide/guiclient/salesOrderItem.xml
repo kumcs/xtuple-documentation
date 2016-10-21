@@ -197,7 +197,12 @@
         a global conversion ratio here. Global conversions have the label
         <literal>Global</literal> appended to them. If a Line Item has no
         Selling UOM defined, then the Inventory UOM will be used here by
-        default.</para>
+        default.<tip>
+            <para>When Sales Orders are entered, the system will search for
+            Quantity Break matches between the Sales Order Item and any
+            relevant Pricing Schedule. If duplicate Quantity Breaks are found,
+            the lowest Price for the given quantity will be used.</para>
+          </tip></para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -207,20 +212,40 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Cust Discount %</term>
+      <term>List Price</term>
       <listitem>
-        <para>Specify here any additional discount you want to apply to the
-        Sales Order Item. This additional discount is applied on top of the
-        Net Unit Price. In other words, the Customer Discount is applied after
-        any available Pricing Schedules, Quantity Breaks, etc. have been
-        calculated and the Net Unit Price for the Sales Order Item is
-        determined.</para>
-        <tip>
-          <para>When Sales Orders are entered, the system will search for
-          Quantity Break matches between the Sales Order Item and any relevant
-          Pricing Schedule. If duplicate Quantity Breaks are found, the lowest
-          Price for the given quantity will be used.</para>
-        </tip>
+        <para>Displays either the List Price found on the Item master or the
+        alternate List Price, if alternate List Pricing is being used. To
+        learn more about how alternate List Pricing works, please see the
+        <ulink
+        url="https://xtupleuniversity.xtuple.com/library/articles/alternate-list-pricing">Alternate
+        List Pricing article</ulink> at xTupleU.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Discount %</term>
+      <listitem>
+        <para>If standard List Pricing is being used, this field will display
+        the default discount percentage (if any) for the specified Customer,
+        as defined on the Customer master. On the other hand, if alternate
+        List Pricing is being used, the field will display the percentage
+        difference between the alternate List Price and the Net Unit Price.
+        You also have the option to manually override the discount
+        percentage.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Price</term>
+      <listitem>
+        <para>Displays the best applicable price from all available Pricing
+        Schedules.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Discount %</term>
+      <listitem>
+        <para>Displays the percentage difference between the Customer Price
+        and the Net Unit Price.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -229,24 +254,14 @@
           <secondary>line item pricing for</secondary>
         </indexterm>Net Unit Price</term>
       <listitem>
-        <para>Displays the Unit Price for the Sales Order Item. By default,
-        the system will choose the lower of the following two Prices: A) The
-        most-specific Pricing Schedule Assignment or B) any Sale in effect at
-        the time of Order entry. The specificity of Pricing Schedule
-        Assignments is determined in the following descending order: By
+        <para>Displays either the List Price minus the Customer Discount or
+        the Price from any applicable Pricing Schedule or Sale. If a Pricing
+        Schedule is in effect, the <emphasis>most specific</emphasis> Pricing
+        Schedule Assignment will be used. The specificity of Pricing Schedule
+        Assignments is determined in the following descending order: by
         Customer Ship-To Address (most specific), by Customer, by Customer
         Type, by Customer Type pattern, by all Customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
-        <para>If your Pricing Schedule has multiple Units of Measure (UOM) on
-        it (or if several Pricing Schedules share the same level of Price
-        specificity, but they have different UOMs) then the UOM which matches
-        the selected UOM will be chosen—that is, as long as the quantity break
-        does not exceed the quantity being priced. If no entry matches the UOM
-        with a quantity break less than the quantity being priced, then the
-        lowest value Price for any UOM will be chosen. To make sure a specific
-        UOM is always chosen at the desired level of Price specificity, then
-        your Pricing Schedules should include at least one UOM with a quantity
-        break of 0.</para>
         <tip>
           <para>The system can be configured to prevent users from editing the
           Net Unit Price. If your system is configured that way, the Net Unit
@@ -266,6 +281,20 @@
         here. Global conversions have the label <literal>Global</literal>
         appended to them. If no Selling UOMs are defined, then the Inventory
         UOM will be used here by default.</para>
+        <itemizedlist>
+          <listitem>
+            <para>If your Pricing Schedule has multiple UOMs on it (or if
+            several Pricing Schedules share the same level of Price
+            specificity, but they have different UOMs) then the UOM which
+            matches the selected UOM will be chosen—that is, as long as the
+            quantity break does not exceed the quantity being priced. If no
+            entry matches the UOM with a quantity break less than the quantity
+            being priced, then the lowest value Price for any UOM will be
+            chosen. To make sure a specific UOM is always chosen at the
+            desired level of Price specificity, then your Pricing Schedules
+            should include at least one UOM with a quantity break of 0.</para>
+          </listitem>
+        </itemizedlist>
       </listitem>
     </varlistentry>
     <varlistentry>

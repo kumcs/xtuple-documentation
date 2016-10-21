@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="listPricingScheduleAssignments">
+  <title><indexterm significance="normal">
+      <primary>list pricing</primary>
+      <secondary>assigning schedules for</secondary>
+    </indexterm>List Pricing Schedule Assignments</title>
+  <para>In order for List Pricing Schedules to take effect at Sales Order
+  entry, the List Pricing Schedules must be linked—or assigned—to specific
+  Customers or Customer Types. To assign List Pricing Schedules to Customers,
+  select the "List Pricing Schedule Assignments" option. The following screen
+  will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/listPricingScheduleAssignments.png" />
+        </imageobject>
+        <caption>List Pricing Schedule Assignments</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When assigning List Pricing Schedules to Customers, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Pricing Schedule Assignments</term>
+      <listitem>
+        <para>Display lists any and all List Pricing Schedule
+        Assignments.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="listPricingScheduleAssignment.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

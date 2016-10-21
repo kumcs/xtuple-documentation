@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="listPricingSchedules">
+  <title><indexterm significance="normal">
+      <primary>list pricing schedules</primary>
+      <secondary>master list of</secondary>
+    </indexterm>List Pricing Schedules</title>
+  <para>A List Pricing Schedule is used to modify the standard List Price for
+  an Item, creating an alternate List Price. List Pricing Schedules may be
+  assigned to individual Customers or to groups of Customers by Customer Type.
+  To learn more about how alternate List Pricing works, please see the <ulink
+  url="https://xtupleuniversity.xtuple.com/library/articles/alternate-list-pricing">Alternate
+  List Pricing article</ulink> at xTupleU.</para>
+  <para>To access the master list of List Pricing Schedules, select the "List
+  Pricing Schedules" option. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/listPricingSchedules.png" />
+        </imageobject>
+        <caption>List Pricing Schedules Master List</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>At the top of the screen is a "Search for" field. To search for a List
+  Pricing Schedule, begin typing in the search field. As you type, the list
+  will automatically scroll toward the List Pricing Schedule you are typing.
+  You can also search for List Pricing Schedules manually by scrolling through
+  the list. The following filters can also be applied to your search:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Show Expired Pricing Schedules</term>
+      <listitem>
+        <para>Select to display expired List Pricing Schedules.</para>
+        <note>
+          <para>The effectivity and expiration dates for List Pricing
+          Schedules correspond to the created date for Sales Orders. Changes
+          to Line Item quantities or scheduled dates for already-created Sales
+          Orders can also cause List Pricing Schedule effectivity to be
+          recalculated as of the date the changes occur.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Future Pricing Schedules</term>
+      <listitem>
+        <para>Select to display future List Pricing Schedules.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Pricing Schedules</term>
+      <listitem>
+        <para>Display lists Item Pricing Schedules.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>DELETE EXPIRED</term>
+      <listitem>
+        <para>Select to delete expired List Pricing Schedules.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="listPricingSchedule.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>
