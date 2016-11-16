@@ -9,8 +9,9 @@
       information related to the context where they are used. You can add as
       many (or as few) Dashboard Panes as you need. The type, source data, and
       width of the Panes are user-definable.</para>
-      <para>To create new a Dashboard Pane, select the ADD button. The
-      following screen will appear:</para>
+      <para>To create new a Dashboard Pane, select the ADD button located
+      toward the bottom of the Dashboard window. The following screen will
+      appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
@@ -37,21 +38,28 @@
         <varlistentry>
           <term>Datasource</term>
           <listitem>
-            <para></para>
-            <para>For more information, please see <xref
+            <para>Specify which Datasource you want to use as the source for
+            the Dashboard Pane. The Dashboards package includes several stock
+            Datasources. You may also create custom Datasources on your own.
+            For more information, please see <xref
             linkend="dashboardDatasources" />.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Chart Type</term>
           <listitem>
-            <para></para>
+            <para>Specify which Chart Type you want the Dashboard Pane to use.
+            The Chart Type options will be limited to the types specified on
+            the selected Datasource definition.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Layout Grid Width</term>
           <listitem>
-            <para></para>
+            <para>Specify how many Panes you want displayed in a row on the
+            Dashboard, from as few as one to as many as three across. The
+            layout grid width options will be limited to the layout options
+            specified on the selected Datasource definition.</para>
           </listitem>
         </varlistentry>
       </variablelist>
