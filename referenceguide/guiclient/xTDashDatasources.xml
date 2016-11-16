@@ -13,43 +13,61 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="../widgets/images/dashboardPane.png" />
+          <imagedata fileref="images/xTDashDatasources.png" />
         </imageobject>
-        <caption>Add New Dashboard Pane</caption>
+        <caption>Dashboards Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Dashboard Pane, you are presented with the
-  following options:</para>
+  <para></para>
+  <para></para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/xTDashDatasourcesServerTab.png" />
+        </imageobject>
+        <caption>Dashboards Server Options</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para></para>
   <variablelist>
     <varlistentry>
-      <term>Pane Title</term>
-      <listitem>
-        <para>Enter a title to identify the Pane.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Pane Description</term>
-      <listitem>
-        <para>Enter a brief description to describe the Pane.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Datasource</term>
+      <term>Server Hostname</term>
       <listitem>
         <para></para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Chart Type</term>
+      <term>HTTP Server Port</term>
       <listitem>
         <para></para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Layout Grid Width</term>
+      <term>WebSocket Server Port</term>
+      <listitem>
+        <para></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Server API Key</term>
+      <listitem>
+        <para></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Server SSL Key</term>
+      <listitem>
+        <para></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Server SSL Certificate</term>
       <listitem>
         <para></para>
       </listitem>
     </varlistentry>
   </variablelist>
+  <para></para>
+  <xi:include href="xTDashDatasource.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

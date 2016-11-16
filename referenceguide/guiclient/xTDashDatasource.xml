@@ -13,42 +13,301 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="../widgets/images/dashboardPane.png" />
+          <imagedata fileref="images/xTDashDatasource.png" />
         </imageobject>
-        <caption>Add New Dashboard Pane</caption>
+        <caption>Dashboard Datasource</caption>
       </mediaobject>
     </screenshot></para>
   <para>When creating a new Dashboard Pane, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
-      <term>Pane Title</term>
+      <term>Title</term>
       <listitem>
         <para>Enter a title to identify the Pane.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Pane Description</term>
+      <term>Description</term>
       <listitem>
         <para>Enter a brief description to describe the Pane.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Datasource</term>
+      <term>Type</term>
+      <listitem>
+        <para></para>
+        <variablelist>
+          <varlistentry>
+            <term>MetaSQL</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>qryitem</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>URL</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>MetaSQL Datasource Settings</term>
+      <listitem>
+        <para></para>
+        <variablelist>
+          <varlistentry>
+            <term>Group</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Name</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Query Datasource Settings</term>
+      <listitem>
+        <para></para>
+        <variablelist>
+          <varlistentry>
+            <term>Head</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Item</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>URL Datasource Settings</term>
+      <listitem>
+        <para></para>
+        <variablelist>
+          <varlistentry>
+            <term>URL</term>
+            <listitem>
+              <para></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Chart Options</term>
+      <listitem>
+        <para></para>
+        <variablelist>
+          <varlistentry>
+            <term>Chart Types</term>
+            <listitem>
+              <para></para>
+              <para>The following buttons are unique to this screen:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>ADD-&gt;</term>
+                  <listitem>
+                    <para>Highlight a specific source in the available sources
+                    column, then select this button to transfer the source to
+                    the granted sources column. Double-clicking on an
+                    available source will also transfer it to the granted
+                    sources column.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>&lt;-REVOKE</term>
+                  <listitem>
+                    <para>Highlight a specific source in the granted sources
+                    column, then select this button to remove the source from
+                    the granted sources column. Double-clicking on a granted v
+                    will also remove it from the granted sources
+                    column.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceLayoutGridsTab.png" />
+                    </imageobject>
+                    <caption>Chart Options Layout Grid Tab</caption>
+                  </mediaobject>
+                </screenshot></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Layout Grids</term>
+            <listitem>
+              <para></para>
+              <para>The following buttons are unique to this screen:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>ADD-&gt;</term>
+                  <listitem>
+                    <para>Highlight a specific source in the available sources
+                    column, then select this button to transfer the source to
+                    the granted sources column. Double-clicking on an
+                    available source will also transfer it to the granted
+                    sources column.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>&lt;-REVOKE</term>
+                  <listitem>
+                    <para>Highlight a specific source in the granted sources
+                    column, then select this button to remove the source from
+                    the granted sources column. Double-clicking on a granted v
+                    will also remove it from the granted sources
+                    column.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
       <listitem>
         <para></para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Chart Type</term>
+      <term>Public Access</term>
       <listitem>
         <para></para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Layout Grid Width</term>
+      <term>Private Access Settings</term>
       <listitem>
         <para></para>
+        <variablelist>
+          <varlistentry>
+            <term>Privileges</term>
+            <listitem>
+              <para></para>
+              <para>The following buttons are unique to this screen:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>ADD-&gt;</term>
+                  <listitem>
+                    <para>Highlight a specific source in the available sources
+                    column, then select this button to transfer the source to
+                    the granted sources column. Double-clicking on an
+                    available source will also transfer it to the granted
+                    sources column.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>&lt;-REVOKE</term>
+                  <listitem>
+                    <para>Highlight a specific source in the granted sources
+                    column, then select this button to remove the source from
+                    the granted sources column. Double-clicking on a granted v
+                    will also remove it from the granted sources
+                    column.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceUsersTab.png" />
+                    </imageobject>
+                    <caption>Private Access Settings Users Tab</caption>
+                  </mediaobject>
+                </screenshot></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Users</term>
+            <listitem>
+              <para></para>
+              <para>The following buttons are unique to this screen:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>ADD-&gt;</term>
+                  <listitem>
+                    <para>Highlight a specific source in the available sources
+                    column, then select this button to transfer the source to
+                    the granted sources column. Double-clicking on an
+                    available source will also transfer it to the granted
+                    sources column.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>&lt;-REVOKE</term>
+                  <listitem>
+                    <para>Highlight a specific source in the granted sources
+                    column, then select this button to remove the source from
+                    the granted sources column. Double-clicking on a granted v
+                    will also remove it from the granted sources
+                    column.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceRolesTab.png" />
+                    </imageobject>
+                    <caption>Private Access Settings Roles Tab</caption>
+                  </mediaobject>
+                </screenshot></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Roles</term>
+            <listitem>
+              <para></para>
+              <para>The following buttons are unique to this screen:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>ADD-&gt;</term>
+                  <listitem>
+                    <para>Highlight a specific source in the available sources
+                    column, then select this button to transfer the source to
+                    the granted sources column. Double-clicking on an
+                    available source will also transfer it to the granted
+                    sources column.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>&lt;-REVOKE</term>
+                  <listitem>
+                    <para>Highlight a specific source in the granted sources
+                    column, then select this button to remove the source from
+                    the granted sources column. Double-clicking on a granted v
+                    will also remove it from the granted sources
+                    column.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
