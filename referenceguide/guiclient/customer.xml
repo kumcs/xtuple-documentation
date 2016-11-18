@@ -1223,16 +1223,75 @@
   The following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view Dashboards associated with the Customer, select the
-  "Dashboards" tab. The following screen will appear:</para>
+  <para><indexterm significance="normal">
+      <primary>dashboards</primary>
+      <secondary>for customers</secondary>
+    </indexterm>To view the Dashboard associated with the Customer, select the
+  "Dashboard" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata />
+          <imagedata fileref="images/customer_dashboardTab.png" />
         </imageobject>
         <caption>Customer Workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
+  <para>The Customer Dashboard includes the following pre-loaded Dashboard
+  Panes, which you can either remove or supplement with additional Panes at
+  any time:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Percent of Credit Limit</term>
+      <listitem>
+        <para>Displays how much of the Customer's credit limit has been
+        consumed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Balance Summary</term>
+      <listitem>
+        <para>Displays information indicating Customer balances for several
+        indicators.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sales Summary</term>
+      <listitem>
+        <para>Displays time-phased sales summary information for the
+        Customer.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Sales Rolling 12</term>
+      <listitem>
+        <para>Displays the Customer's rolling sales information for the last
+        12 months from the current date, or the first of the current
+        month.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sales By Month</term>
+      <listitem>
+        <para>Displays an historical view of the Customer's summarized sales
+        by month.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Percent Item Sales Rolling 12</term>
+      <listitem>
+        <para>Displays rolling Item sales information for the last 12 months
+        from the current date, or the first of the current month.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Bucket Count</term>
+      <listitem>
+        <para>Displays orders grouped into order-size buckets, making it
+        possible for you to see where your Customer order totals are
+        concentrated (e.g., you sell mostly small orders under $100).</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
   <xi:include href="../widgets/dashboardPanel.xml" xpointer="dashboardsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

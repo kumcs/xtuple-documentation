@@ -475,16 +475,30 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view Dashboards associated with your Payables, select the
-  "Dashboards" tab. The following screen will appear:</para>
+  <para><indexterm significance="normal">
+      <primary>dashboards</primary>
+      <secondary>for payables</secondary>
+    </indexterm>To view the Dashboard associated with your Payables, select
+  the "Dashboard" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata />
+          <imagedata fileref="images/apWorkBench_dashboard.png" />
         </imageobject>
         <caption>Payables Workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
+  <para>The Payables Dashboard includes the following pre-loaded Dashboard
+  Panes, which you can either remove or supplement with additional Panes at
+  any time:</para>
+  <variablelist>
+    <varlistentry>
+      <term>AP Balances</term>
+      <listitem>
+        <para>Displays the Vendor's Payable balance.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
   <xi:include href="../widgets/dashboardPanel.xml" xpointer="dashboardsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

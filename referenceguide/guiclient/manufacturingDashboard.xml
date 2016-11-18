@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="manufacturingDashboard">
+  <title><indexterm significance="normal">
+      <primary>dashboards</primary>
+      <secondary>for manufacturing</secondary>
+    </indexterm>Manufacturing Dashboard</title>
+  <para>To view the Manufacturing Dashboard, select the "Dashboard" option.
+  The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/manufacturingDashboard.png" />
+        </imageobject>
+        <caption>Manufacturing Dashboard</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Manufacturing Dashboard includes the following pre-loaded
+  Dashboard Panes, which you can either remove or supplement with additional
+  Panes at any time:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Work Orders Due</term>
+      <listitem>
+        <para>Displays your Work Orders due this month.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Work Order Items Due</term>
+      <listitem>
+        <para>Displays your Work Order Items due this month.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Work Center Loading</term>
+      <listitem>
+        <para>Displays your Work Center days capacity loading.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/dashboardPanel.xml" xpointer="dashboardsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

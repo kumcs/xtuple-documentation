@@ -231,16 +231,36 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view Dashboards associated with your Receivables, select the
-  "Dashboards" tab. The following screen will appear:</para>
+  <para><indexterm significance="normal">
+      <primary>dashboards</primary>
+      <secondary>for receivables</secondary>
+    </indexterm>To view the Dashboard associated with your Receivables, select
+  the "Dashboard" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata />
+          <imagedata fileref="images/arWorkBench_dashboardTab.png" />
         </imageobject>
         <caption>Receivables Workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
+  <para>The Receivables Dashboard includes the following pre-loaded Dashboard
+  Panes, which you can either remove or supplement with additional Panes at
+  any time:</para>
+  <variablelist>
+    <varlistentry>
+      <term>AR Customer Balances</term>
+      <listitem>
+        <para>Displays the Customer's Receivable balances.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>AR Sales By Month</term>
+      <listitem>
+        <para>Displays Customer sales by month.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
   <xi:include href="../widgets/dashboardPanel.xml" xpointer="dashboardsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
