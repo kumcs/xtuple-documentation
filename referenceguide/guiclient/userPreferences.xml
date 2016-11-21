@@ -257,7 +257,15 @@
           <varlistentry>
             <term>Limit</term>
             <listitem>
-              <para></para>
+              <para>Define how much data the application will attempt to
+              export when right-clicking on lists and choosing the "Export As"
+              or "Copy to Clipboard" options. Setting this limit can help
+              prevent application crashes. For example, if you set the limit
+              to 0.5 GB, then load a list where the total data from all the
+              column headers and cells is greater than 0.5 GB, the exporting
+              process will throw a warning letting you know you've exceeded
+              your limit. If the limit is set to 0, this will be interpreted
+              to mean there is no limit.</para>
             </listitem>
           </varlistentry>
         </variablelist>
