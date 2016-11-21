@@ -2,33 +2,42 @@
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<section id="dashboardDatasources">
-  <title>Dashboard Datasources</title>
-  <para>Dashboards consist of a series of Panes featuring graphical
-  information related to the context where they are used. You can add as many
-  (or as few) Dashboard Panes as you need. The type, source data, and width of
-  the Panes are user-definable.</para>
-  <para>To create new a Dashboard Pane, select the ADD button. The following
-  screen will appear:</para>
+<section id="dashboardDatasources" role="standard">
+  <title>Datasources</title>
+  <para>All Dashboards get their source data and formatting from Datasources.
+  Datasources are required to provide the information to populate the Charts,
+  but they are also used to define axis labels, color requirements and other
+  presentation aspects of the Charts.</para>
+  <para>To view the list of available Datasources, select the "Datasources"
+  option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/xTDashDatasources.png" />
         </imageobject>
-        <caption>Dashboards Master List</caption>
+        <caption>Dashboard Datasources Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para></para>
-  <para></para>
+  <para>The Datasources list displays information on all existing Datasources,
+  including Datasource title, description, type, and public, active and system
+  statuses.</para>
+  <warning>
+    <para>Many of the Dashboards are marked as <emphasis>system</emphasis>
+    Dashboards. You should be careful not to edit these, copying their
+    information to your own versions instead.</para>
+  </warning>
+  <para>To view the server side settings for your Datasources, select the
+  "Server" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/xTDashDatasourcesServerTab.png" />
         </imageobject>
-        <caption>Dashboards Server Options</caption>
+        <caption>Dashboard Server Options</caption>
       </mediaobject>
     </screenshot></para>
-  <para></para>
+  <para>When defining your Dashboard server settings, you are presented with
+  the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Server Hostname</term>
@@ -55,7 +64,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Server SSL Key</term>
+      <term>Server SSL Key (Generate a Self Signed SSL Certificate)</term>
       <listitem>
         <para></para>
       </listitem>
@@ -67,7 +76,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para></para>
   <xi:include href="xTDashDatasource.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

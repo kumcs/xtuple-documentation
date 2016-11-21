@@ -2,13 +2,9 @@
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<section>
+<section role="standard">
   <title>Dashboard Datasource</title>
-  <para>Dashboards consist of a series of Panes featuring graphical
-  information related to the context where they are used. You can add as many
-  (or as few) Dashboard Panes as you need. The type, source data, and width of
-  the Panes are user-definable.</para>
-  <para>To create new a Dashboard Pane, select the ADD button. The following
+  <para>To create new a Datasource, select the NEW button. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -18,96 +14,81 @@
         <caption>Dashboard Datasource</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Dashboard Pane, you are presented with the
-  following options:</para>
+  <para>When creating a new Datasource, you are presented with the following
+  options:</para>
   <variablelist>
     <varlistentry>
       <term>Title</term>
       <listitem>
-        <para>Enter a title to identify the Pane.</para>
+        <para>Enter a title to identify the Datasource.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>Enter a brief description to describe the Pane.</para>
+        <para>Enter a brief description to describe the Datasource.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Type</term>
       <listitem>
-        <para></para>
+        <para>The type indicates how the Datasource will retrieve the data
+        used to populate the Charts. The following choices are available:
+        MetaSQL, Query Item, or URL. Depending on which type you choose, the
+        related on-screen options will change, as follows:</para>
         <variablelist>
           <varlistentry>
-            <term>MetaSQL</term>
+            <term>MetaSQL Datasource Settings</term>
             <listitem>
-              <para></para>
+              <para>Specify the following parameters:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>Group</term>
+                  <listitem>
+                    <para></para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Name</term>
+                  <listitem>
+                    <para></para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>qryitem</term>
+            <term>Query Item Datasource Settings</term>
             <listitem>
-              <para></para>
+              <para>Specify the following parameters:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>Head</term>
+                  <listitem>
+                    <para></para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Item</term>
+                  <listitem>
+                    <para></para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>URL</term>
+            <term>URL Datasource Settings</term>
             <listitem>
-              <para></para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>MetaSQL Datasource Settings</term>
-      <listitem>
-        <para></para>
-        <variablelist>
-          <varlistentry>
-            <term>Group</term>
-            <listitem>
-              <para></para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Name</term>
-            <listitem>
-              <para></para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Query Datasource Settings</term>
-      <listitem>
-        <para></para>
-        <variablelist>
-          <varlistentry>
-            <term>Head</term>
-            <listitem>
-              <para></para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Item</term>
-            <listitem>
-              <para></para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>URL Datasource Settings</term>
-      <listitem>
-        <para></para>
-        <variablelist>
-          <varlistentry>
-            <term>URL</term>
-            <listitem>
-              <para></para>
+              <para>Specify the following parameters:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>URL</term>
+                  <listitem>
+                    <para></para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -116,72 +97,36 @@
     <varlistentry>
       <term>Chart Options</term>
       <listitem>
-        <para></para>
+        <para>Specify the Chart display options you want to make available
+        when Dashboard Panes are created using the Datasource.</para>
         <variablelist>
           <varlistentry>
             <term>Chart Types</term>
             <listitem>
-              <para></para>
-              <para>The following buttons are unique to this screen:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>ADD-&gt;</term>
-                  <listitem>
-                    <para>Highlight a specific source in the available sources
-                    column, then select this button to transfer the source to
-                    the granted sources column. Double-clicking on an
-                    available source will also transfer it to the granted
-                    sources column.</para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>&lt;-REVOKE</term>
-                  <listitem>
-                    <para>Highlight a specific source in the granted sources
-                    column, then select this button to remove the source from
-                    the granted sources column. Double-clicking on a granted v
-                    will also remove it from the granted sources
-                    column.</para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
-              <para><screenshot>
-                  <mediaobject>
-                    <imageobject>
-                      <imagedata fileref="images/xTDashDatasourceLayoutGridsTab.png" />
-                    </imageobject>
-                    <caption>Chart Options Layout Grid Tab</caption>
-                  </mediaobject>
-                </screenshot></para>
+              <para>Data can be displayed in a number of different graphical
+              formats. The following options are available: bar, line, spline,
+              step, area, area spline, area step, scatter, pie, donut, and
+              gauge. To make a Chart type available for the Datasource, simply
+              add the Chart type(s) to the "Granted Types" column.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Layout Grids</term>
             <listitem>
-              <para></para>
-              <para>The following buttons are unique to this screen:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>ADD-&gt;</term>
-                  <listitem>
-                    <para>Highlight a specific source in the available sources
-                    column, then select this button to transfer the source to
-                    the granted sources column. Double-clicking on an
-                    available source will also transfer it to the granted
-                    sources column.</para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>&lt;-REVOKE</term>
-                  <listitem>
-                    <para>Highlight a specific source in the granted sources
-                    column, then select this button to remove the source from
-                    the granted sources column. Double-clicking on a granted v
-                    will also remove it from the granted sources
-                    column.</para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
+              <para>Dashboard Panes can be created to display in varying
+              widths per row. Each Dashboard row can contain either one, two,
+              or three Panes across, depending on the options allowed by the
+              Datasource. To specify the grid layout options available for the
+              Datasource, simply add the layout grid(s) to the "Granted Layout
+              Grids" column, as shown in the following screenshot:</para>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceLayoutGridsTab.png" />
+                    </imageobject>
+                    <caption>Chart Options Layout Grids Tab</caption>
+                  </mediaobject>
+                </screenshot></para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -190,47 +135,42 @@
     <varlistentry>
       <term>Active</term>
       <listitem>
-        <para></para>
+        <para>Select to indicate the the Datasource is active. If not
+        selected, the Datasource will be considered inactive.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Public Access</term>
       <listitem>
-        <para></para>
+        <para>Select to indicate the Datasource should be available to all
+        Users. If not selected, the Datasource will be considered private and
+        will require Users to have the appropriate privileges to access
+        it.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Private Access Settings</term>
       <listitem>
-        <para></para>
+        <para>If the Datasource is private (i.e., not public), then you will
+        need to specify how Users will gain access to the information.</para>
         <variablelist>
           <varlistentry>
             <term>Privileges</term>
             <listitem>
-              <para></para>
-              <para>The following buttons are unique to this screen:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>ADD-&gt;</term>
-                  <listitem>
-                    <para>Highlight a specific source in the available sources
-                    column, then select this button to transfer the source to
-                    the granted sources column. Double-clicking on an
-                    available source will also transfer it to the granted
-                    sources column.</para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>&lt;-REVOKE</term>
-                  <listitem>
-                    <para>Highlight a specific source in the granted sources
-                    column, then select this button to remove the source from
-                    the granted sources column. Double-clicking on a granted v
-                    will also remove it from the granted sources
-                    column.</para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
+              <para>Control access using system privileges. Any Users having
+              the specified privilege(s) will be able to use the Datasource
+              when adding Dashboard Panes. To specify the desired system
+              privileges, simply add the privilege(s) to the "Granted
+              Privileges" column.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Users</term>
+            <listitem>
+              <para>Control access by User. Any User who has been granted
+              access will have access to the Datasource. To give access to
+              Users, simply add the User(s) to the "Granted Users" column, as
+              shown in the following screenshot:</para>
               <para><screenshot>
                   <mediaobject>
                     <imageobject>
@@ -242,32 +182,12 @@
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Users</term>
+            <term>Roles</term>
             <listitem>
-              <para></para>
-              <para>The following buttons are unique to this screen:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>ADD-&gt;</term>
-                  <listitem>
-                    <para>Highlight a specific source in the available sources
-                    column, then select this button to transfer the source to
-                    the granted sources column. Double-clicking on an
-                    available source will also transfer it to the granted
-                    sources column.</para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>&lt;-REVOKE</term>
-                  <listitem>
-                    <para>Highlight a specific source in the granted sources
-                    column, then select this button to remove the source from
-                    the granted sources column. Double-clicking on a granted v
-                    will also remove it from the granted sources
-                    column.</para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
+              <para>Control access by Role. Any Users assigned to the
+              specified Role(s) will have access to the Datasource. To grant
+              access by Role, simply add the Role(s) to the "Granted Roles"
+              column, as shown in the following screenshot:</para>
               <para><screenshot>
                   <mediaobject>
                     <imageobject>
@@ -278,36 +198,28 @@
                 </screenshot></para>
             </listitem>
           </varlistentry>
-          <varlistentry>
-            <term>Roles</term>
-            <listitem>
-              <para></para>
-              <para>The following buttons are unique to this screen:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>ADD-&gt;</term>
-                  <listitem>
-                    <para>Highlight a specific source in the available sources
-                    column, then select this button to transfer the source to
-                    the granted sources column. Double-clicking on an
-                    available source will also transfer it to the granted
-                    sources column.</para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>&lt;-REVOKE</term>
-                  <listitem>
-                    <para>Highlight a specific source in the granted sources
-                    column, then select this button to remove the source from
-                    the granted sources column. Double-clicking on a granted v
-                    will also remove it from the granted sources
-                    column.</para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
-            </listitem>
-          </varlistentry>
         </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>ADD-&gt;</term>
+      <listitem>
+        <para>Highlight a specific source in the available sources column,
+        then select this button to transfer the source to the granted sources
+        column. Double-clicking on an available source will also transfer it
+        to the granted sources column.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>&lt;-REVOKE</term>
+      <listitem>
+        <para>Highlight a specific source in the granted sources column, then
+        select this button to remove the source from the granted sources
+        column. Double-clicking on a granted v will also remove it from the
+        granted sources column.</para>
       </listitem>
     </varlistentry>
   </variablelist>
