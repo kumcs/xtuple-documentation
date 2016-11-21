@@ -40,55 +40,28 @@
           <varlistentry>
             <term>MetaSQL Datasource Settings</term>
             <listitem>
-              <para>Specify the following parameters:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>Group</term>
-                  <listitem>
-                    <para></para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>Name</term>
-                  <listitem>
-                    <para></para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
+              <para>In most cases, Datasources will be generated from
+              previously written MetaSQL queries. This is the most common
+              type. Choose the Group and Name of an existing MetaSQL query to
+              define that as the source.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Query Item Datasource Settings</term>
             <listitem>
-              <para>Specify the following parameters:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>Head</term>
-                  <listitem>
-                    <para></para>
-                  </listitem>
-                </varlistentry>
-                <varlistentry>
-                  <term>Item</term>
-                  <listitem>
-                    <para></para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
+              <para>Query Sets are defined in the import/export area of
+              xTuple. To use one of these Query Sets as a Datasource, choose
+              the Head name and Item.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>URL Datasource Settings</term>
             <listitem>
-              <para>Specify the following parameters:</para>
-              <variablelist>
-                <varlistentry>
-                  <term>URL</term>
-                  <listitem>
-                    <para></para>
-                  </listitem>
-                </varlistentry>
-              </variablelist>
+              <para>The URL Datasource will allow the Datasource data and
+              formatting to be downloaded from an external web source/service.
+              This will allow information external to xTuple to be included in
+              Dashboards. <emphasis role="bold">This feature has not been
+              implemented yet</emphasis>.</para>
             </listitem>
           </varlistentry>
         </variablelist>

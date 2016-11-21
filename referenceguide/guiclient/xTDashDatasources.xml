@@ -36,43 +36,57 @@
         <caption>Dashboard Server Options</caption>
       </mediaobject>
     </screenshot></para>
+  <para>Server settings define the internal web server that is used to present
+  the Dashboard Charts. It is technically feasible to use these settings to
+  view Dashboards in an external browser or other software. However, if you
+  only intend to view Dashboards inside your xTuple client, you can just leave
+  the settings as they are.</para>
   <para>When defining your Dashboard server settings, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Server Hostname</term>
       <listitem>
-        <para></para>
+        <para>This is the network address of the web server. This is typically
+        <literal>127.0.0.1</literal> for an internal (local) address―or you
+        could enter the IP address of the PC/server running the xTuple
+        client.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>HTTP Server Port</term>
       <listitem>
-        <para></para>
+        <para>Defaults to 3000. Typically no change is required, unless there
+        is a conflict with other software.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>WebSocket Server Port</term>
       <listitem>
-        <para></para>
+        <para>Defaults to 3030. Typically no change is required, unless there
+        is a conflict with other software.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Server API Key</term>
       <listitem>
-        <para></para>
+        <para>Randomly generated key. This does not require changing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Server SSL Key (Generate a Self Signed SSL Certificate)</term>
       <listitem>
-        <para></para>
+        <para>Use the default key unless you wish to make the Dashboards
+        externally available and want to provide a suitably secure SSL
+        key.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Server SSL Certificate</term>
       <listitem>
-        <para></para>
+        <para>Use the default key unless you wish to make the Dashboards
+        externally available and want to provide a suitably secure (and
+        signed) Server Certificate.</para>
       </listitem>
     </varlistentry>
   </variablelist>
