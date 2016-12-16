@@ -63,12 +63,14 @@
   <tip>
     <para>The primary path for marking Purchase Order Line Items as invoiced
     is on the Voucher Item screen. If received (or returned) quantity is
-    tagged as "Yes" on the Voucher Item screen&mdash;and the Voucher is then
-    posted&mdash;the quantity will no longer appear on the "Uninvoiced
-    Receipts and Returns" screen.</para>
+    tagged as "Yes" on the Voucher Item screen—and the Voucher is then
+    posted—the quantity will no longer appear on the "Uninvoiced Receipts and
+    Returns" screen.</para>
   </tip>
   <xi:include href="poLiabilityDistrib.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="correctPoReceipt.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="postPoReturnCreditMemo.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
