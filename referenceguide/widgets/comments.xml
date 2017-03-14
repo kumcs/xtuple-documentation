@@ -4,89 +4,109 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section>
   <title>Comments</title>
+
   <para id="commentsWidget"><informalexample>
-      <para>When adding or reviewing Comments, you are presented with the
+      <para>When adding or reviewing comments, you are presented with the
       following options:</para>
+
       <variablelist>
         <varlistentry>
           <term>Verbose Text</term>
+
           <listitem>
-            <para>Select to display all Comments in the list in an expanded
-            view which includes the entire text of each Comment. To edit a
-            Comment, simply select the "Edit" link next to the Comment. That
-            link will not be shown for Changelog Comments, which can't be
-            edited. If the "Verbose Text" option is not selected, the Comment
-            list will display only header level information for each
-            Comment.</para>
+            <para>Select to display all comments in the list in an expanded
+            view which includes the entire text of each comment. To edit a
+            comment, simply select the <guibutton>EDIT</guibutton> link next
+            to the comment. That link will not be shown for ChangeLog
+            comments, which can't be edited. If the <guimenuitem>Verbose
+            Text</guimenuitem> option is not selected, the comment list will
+            display only header level information for each comment.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Comments</term>
+
           <listitem>
-            <para>Display lists Comments related to the record.</para>
+            <para>Display lists comments related to the record.</para>
           </listitem>
         </varlistentry>
       </variablelist>
+
       <para>The following buttons are available:</para>
+
       <variablelist>
         <varlistentry>
           <term>NEW</term>
+
           <listitem>
-            <para>Opens screen for creating a new Comment.</para>
+            <para>Opens screen for creating a new comment.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>VIEW</term>
+
           <listitem>
-            <para>Highlight a Comment and then select this button to reach a
-            read-only view of the "Edit" screen.</para>
+            <para>Highlight a comment and then select this button to reach a
+            read-only view of the Edit screen.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>EDIT</term>
+
           <listitem>
-            <para>Enables you to edit highlighted Comments—as long as the
-            Comments are not "ChangeLog" Comments. ChangeLog Comments are
-            system-generated and may not be edited. The edit screen is the
-            same as that for creating a new Comment—except that when editing,
-            the fields will contain Comment information. Double-clicking on a
-            Comment will also bring you to the editing screen.</para>
+            <para>Enables you to edit highlighted comments—as long as the
+            comments are not ChangeLog comments. ChangeLog comments are
+            system-generated and may not be edited. The Edit screen is the
+            same as that for creating a new comment—except that when editing,
+            the fields will contain comment information. Double-clicking on a
+            comment will also bring you to the editing screen.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>To enter a new Comment, select the NEW button. The following
-      screen will appear:</para>
+
+      <para>To enter a new comment, select the <guibutton>NEW</guibutton>
+      button. The following screen will appear:</para>
+
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/comment.png" />
+              <imagedata fileref="images/comment.png"/>
             </imageobject>
+
             <caption>Create New Comment</caption>
           </mediaobject>
         </screenshot></para>
+
       <variablelist>
         <varlistentry>
           <term>Comment Type</term>
+
           <listitem>
-            <para>Select a Comment Type from the drop-down list to classify
-            the Comment. This is a required step. Comment Types may be
-            system-defined (i.e., "ChangeLog" and "General") or user-defined,
-            as described in <xref linkend="commentTypes" />. Once you have
-            specified a Comment Type, begin typing your Comment in the main
+            <para>Select a comment type from the drop-down list to classify
+            the comment. This is a required step. Comment types may be
+            system-defined (i.e., ChangeLog and General) or user-defined, as
+            described in <xref linkend="commentTypes"/>. Once you have
+            specified a comment type, begin typing your comment in the main
             text area. The text area features word-wrapping and scroll-bar
-            support for longer Comments.</para>
+            support for longer comments.</para>
           </listitem>
         </varlistentry>
       </variablelist>
+
       <para>The following buttons are unique to this screen:</para>
+
       <variablelist>
         <varlistentry>
           <term>MORE</term>
+
           <listitem>
-            <para>Select to show the complete list (i.e., "thread") of
-            Comments associated with the record. To hide the list, simply
-            select the SHOW MORE button again. The Comment thread will show
-            the most recent Comment first.</para>
+            <para>Select to show the complete list (i.e., thread) of comments
+            associated with the record. To hide the list, simply select the
+            <guibutton>SHOW MORE</guibutton> button again. The comment thread
+            will show the most recent comment first.</para>
           </listitem>
         </varlistentry>
       </variablelist>
