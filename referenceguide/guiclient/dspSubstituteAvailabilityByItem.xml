@@ -19,7 +19,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspSubstituteAvailabilityByItem.png" />
+          <imagedata fileref="images/dspSubstituteAvailabilityByItem.png"/>
         </imageobject>
 
         <caption>Substitute Availability by Root Item</caption>
@@ -108,9 +108,9 @@
       <term>Normalize to Parent UOM</term>
 
       <listitem>
-        <para>Select to adjust the Quantity on Hand of substitute Items so
-        these quantities meet requirements for substitution. The adjusted
-        Quantity on Hand is determined by the Item substitution ratio.</para>
+        <para>Select to adjust the quantity on hand (QOH) of substitute Items
+        so these quantities meet requirements for substitution. The adjusted
+        QOH is determined by the Item substitution ratio.</para>
       </listitem>
     </varlistentry>
 
@@ -120,11 +120,10 @@
       <listitem>
         <para>Display lists substitute Availability by Item, using the
         specified parameters. If "Normalize to Parent UOM" option is selected,
-        the substitute Item's Quantity on Hand is adjusted to reflect the
-        substitution ratio. If Planned Availability displays in the color
-        orange, this means the actual or projected Quantity on Hand is at or
-        below the Reorder Level. If the color is red, the current or projected
-        Quantity on Hand is below 0.</para>
+        the substitute Item's QOH is adjusted to reflect the substitution
+        ratio. If Planned Availability displays in the color orange, this
+        means the actual or projected QOH is at or below the Reorder Level. If
+        the color is red, the current or projected QOH is below 0.</para>
       </listitem>
     </varlistentry>
   </variablelist>
