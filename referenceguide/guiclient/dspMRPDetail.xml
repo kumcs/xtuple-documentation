@@ -4,17 +4,21 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspMRPDetail" role="standard">
   <title>MRP Detail</title>
+
   <para>To display a time-phased view of Material Requirements Planning (MRP)
   detail, select the "MRP Detail" option. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspMRPDetail.png" />
+          <imagedata fileref="images/dspMRPDetail.png"/>
         </imageobject>
+
         <caption>MRP Detail</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Only firm Planned Orders will be included in the MRP Detail display.
     If a Planned Order is not firmed, it will not be recognized. This
@@ -23,56 +27,72 @@
     underlying MRP Items must be firmed (or released) before the MRP Detail
     display will recognize them.</para>
   </note>
+
   <para>When displaying MRP detail, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Sites</term>
+
       <listitem>
         <para>Select to display MRP detail for all Sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify Site whose MRP detail you want to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Planner Codes</term>
+
       <listitem>
         <para>Select to display MRP detail for all Planner Codes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify Planner Code whose MRP detail you want to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a Planner Code pattern to select a range of Planner Codes.
         Refine your search using Regular Expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Calendar</term>
+
       <listitem>
         <para>Select the Calendar you want to use for the report. Associated
         Calendar periods will be displayed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>When setting up a planning Calendar, be sure to include dates that
     are past due in the first period of the Calendar.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>Name/Selected Periods</term>
+
       <listitem>
         <para>Select as many periods as you want to display. Selected periods
         correspond to Calendar specified in the "Calendar" field. Select
@@ -89,8 +109,10 @@
         selected. The entire group is now selected.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Sites</term>
+
       <listitem>
         <para>Display lists Items matching the specified parameters. When you
         have selected a Calendar type and corresponding Calendar period(s),
@@ -99,26 +121,31 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>To refresh the MRP Detail display, double-click on the Item Site
     whose detail you want to refresh.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>MRP Detail</term>
+
       <listitem>
         <para>Display lists MRP detail for the Item you selected in the "Site
         Items" display above.</para>
-        <para>MRP detail will include the following rows: projected Quantity
-        on Hand (based on Allocations and Orders for specified future
-        periods); Allocations (demand from Sales Orders); Orders (based on
-        Work Orders or Purchase Orders); Availability (based on current
-        Allocations and Orders); Firmed Allocations (firmed planned
-        requirements); Firmed Orders (firm Planned Orders); and firmed
-        Availability (based on Availability and firm Planned Orders).</para>
+
+        <para>MRP detail will include the following rows: Projected QOH (based
+        on Allocations and Orders for specified future periods); Allocations
+        (demand from Sales Orders); Orders (based on Work Orders or Purchase
+        Orders); Availability (based on current Allocations and Orders);
+        Firmed Allocations (firmed planned requirements); Firmed Orders (firm
+        Planned Orders); and Firmed Availability (based on Availability and
+        firm Planned Orders).</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>You will only be able to view Allocations if Allocations are showing
     a positive value in the period where you right-click your mouse.
