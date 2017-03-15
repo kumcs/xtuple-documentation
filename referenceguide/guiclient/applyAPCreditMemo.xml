@@ -5,101 +5,129 @@
 <section id="applyAPCreditMemo">
   <title><indexterm significance="normal">
       <primary>credit memos</primary>
+
       <secondary>applying unapplied</secondary>
     </indexterm>Apply Payables Credit Memo</title>
-  <para>To apply a Credit Memo amount, select the APPLY button. The following
-  screen will appear:</para>
+
+  <para>To apply a credit memo amount, select the <guibutton>APPLY</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/applyAPCreditMemo.png" />
+          <imagedata fileref="images/applyAPCreditMemo.png"/>
         </imageobject>
+
         <caption>Apply Payables Credit Memo</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
-    <para>Credit Memo amounts may be applied to either open Vouchers or open
-    miscellaneous Debit Memos.</para>
+    <para>Credit memo amounts may be applied to either open vouchers or open
+    miscellaneous debit memos.</para>
   </note>
-  <para>When applying a Credit Memo amount, you are presented with the
+
+  <para>When applying a credit memo amount, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Vendor #</term>
+
       <listitem>
-        <para>Displays the Vendor number of the Vendor associated with the
-        unapplied Credit Memo amount. The Vendor name will also
+        <para>Displays the vendor number of the vendor associated with the
+        unapplied credit memo amount. The vendor name will also
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Available to Apply</term>
+
       <listitem>
-        <para>Displays the Credit Memo amount which is available to be
+        <para>Displays the credit memo amount which is available to be
         applied.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Applied</term>
+
       <listitem>
-        <para>Displays the amount of the Credit Memo applied to the specified
-        Document.</para>
+        <para>Displays the amount of the credit memo applied to the specified
+        document.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Balance</term>
+
       <listitem>
-        <para>Displays the amount of the Credit Memo remaining to be applied,
+        <para>Displays the amount of the credit memo remaining to be applied,
         if any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Document #</term>
+
       <listitem>
-        <para>Displays the Credit Memo Number.</para>
+        <para>Displays the credit memo number.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Distribution Date</term>
+
       <listitem>
-        <para>Displays the date the Credit Memo applied amount was
+        <para>Displays the date the credit memo applied amount was
         applied.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Items</term>
+
       <listitem>
-        <para>Display lists open Payables for the specified Customer.</para>
+        <para>Display lists open payables for the specified customer.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>APPLY TO BALANCE</term>
+
       <listitem>
-        <para>Select to apply the available balance to any open Payables
-        which have not been applied-to yet. Open items having a pre-existing
+        <para>Select to apply the available balance to any open payables which
+        have not been applied-to yet. Open items having a pre-existing
         application will be skipped. When making the application, if the
         applied balance exceeds the amount due on an open payable, the
-        remaining balance will be applied to the next open amount. </para>
+        remaining balance will be applied to the next open amount.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>APPLY</term>
+
       <listitem>
-        <para>Highlight an Item and then select this button to apply an amount
-        to the Item.</para>
+        <para>Highlight an item and then select this button to apply an amount
+        to the item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>CLEAR APPLICATION</term>
+
       <listitem>
-        <para>Highlight an Item and then select this button to remove any
-        amount applied toward the Item.</para>
+        <para>Highlight an item and then select this button to remove any
+        amount applied toward the item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="apCreditMemoApplication.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
