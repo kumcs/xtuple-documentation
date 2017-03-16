@@ -2,7 +2,7 @@
 
 ## Version 4.10.1 - March, 2017
 
-These are the release notes for the 4.10.1 xTupl ERP release.
+These are the release notes for the 4.10.1 xTuple ERP patch release.
 Thanks to all who contributed to make this release possible. See below for more information about
 [deploying this release](#deployment-notes).
 
