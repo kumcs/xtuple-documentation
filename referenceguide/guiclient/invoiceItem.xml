@@ -5,159 +5,193 @@
 <section id="invoiceItem">
   <title><indexterm significance="normal">
       <primary>invoices</primary>
+
       <secondary>adding line items to</secondary>
     </indexterm>Invoice Item</title>
-  <para>To add a new Invoice Line Item, select the NEW button. The following
-  screen will appear:</para>
+
+  <para>To add a new invoice line item, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invoiceItem.png" />
+          <imagedata fileref="images/invoiceItem.png"/>
         </imageobject>
+
         <caption>Create Invoice Line Item</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Invoice Line Item, you are presented with the
+
+  <para>When creating a new invoice line item, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Invoice #</term>
+
       <listitem>
-        <para>Displays the Invoice Number specified in the "Invoice"
+        <para>Displays the invoice number specified in the Invoice
         screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line #</term>
+
       <listitem>
-        <para>Displays the Line Item Number for the current Line Item.</para>
+        <para>Displays the line item number for the current line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Type</term>
+
       <listitem>
-        <para>Indicate the Item Type for the Invoice Line Item, by selecting
+        <para>Indicate the item type for the invoice line item, by selecting
         one of the following options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Item</term>
+
             <listitem>
               <para>The lookup feature located to the right of the field leads
-              to a searchable list of Inventory Items. The list will contain
-              sold Items available for purchase by the specified Customer. The
-              list of available Items may vary from Customer to Customer,
-              depending on how Pricing Schedules are implemented at your site.
-              Once an Item Number is entered, the Inventory Unit of Measure
-              and Item description will automatically appear. Additionally,
-              you may also specify the Item's supplying Site. Items may be
-              supplied from multiple Sites. Sites designated as "Sold from"
-              Sites in the Item Site master for an Item are considered
-              "Supplying Sites" on this screen. By default, the Item Site with
-              the highest Ranking will be selected as the supplying Site. If
-              more than one Item Site share a Ranking of "1", the default
-              supplying Site will be selected in alphabetical order. Item
-              Sites are ranked using the Ranking mechanism on the Item Site
-              master.</para>
+              to a searchable list of inventory items. The list will contain
+              sold items available for purchase by the specified customer. The
+              list of available items may vary from customer to customer,
+              depending on how pricing schedules are implemented at your site.
+              Once an item number is entered, the inventory unit of measure
+              (UOM) and item description will automatically appear.
+              Additionally, you may also specify the item's supplying site.
+              Items may be supplied from multiple sites. Sites designated as
+              sold from sites in the item site master for an item are
+              considered "Supplying Sites" on this screen. By default, the
+              item site with the highest ranking will be selected as the
+              supplying site. If more than one item site share a Ranking of
+              "1," the default supplying site will be selected in alphabetical
+              order. Item sites are ranked using the ranking mechanism on the
+              item site master.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Miscellaneous</term>
+
             <listitem>
               <para>Enter a name and description for the miscellaneous,
-              non-Inventory Item you are billing the Customer for. The name
+              non-inventory item you are billing the customer for. The name
               and description fields are free-form, meaning they accept
-              unlimited alphanumeric characters. You must also select a Sales
-              Category. Sales Categories are used to identify the General
-              Ledger (G/L) Accounts to be used when non-Inventory Sales
+              unlimited alphanumeric characters. You must also select a sales
+              category. Sales categories are used to identify the general
+              ledger (G/L) accounts to be used when non-inventory sales
               transactions take place.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Alternate Revenue Account</term>
+
       <listitem>
-        <para>Specify an alternate Account to be used as the Revenue Account.
-        This account will be used instead of the typical Accounts pre-defined
-        in the Receivables Assignments. For example, you might use this
-        alternate Account in the scenario where you are doing business with
-        Customers who are part of the same buyer's group (i.e., Customer
-        Group).</para>
+        <para>Specify an alternate account to be used as the revenue account.
+        This account will be used instead of the typical accounts pre-defined
+        in the receivables assignments. For example, you might use this
+        alternate account in the scenario where you are doing business with
+        customers who are part of the same buyer's group (i.e., customer
+        group).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Customer P/N</term>
+
       <listitem>
-        <para>If applicable, enter a Customer Part Number to further identify
-        the Item you are billing the Customer for. In the case of Inventory
-        Items, the Customer Part Number will display automatically if you
-        enter an Item Alias in the Item Number field. To enter an Item Alias,
-        place the cursor in the Item Number field and then use the keyboard
-        shortcut "CTRL + A". After you have entered a valid Item Alias, hit
-        the TAB key. A list of Items that use the specified Item Alias will be
-        displayed. Select the desired Item from the list. The Item Alias will
-        display as the Customer Part Number. Item Aliases are defined on the
-        Item master.</para>
+        <para>If applicable, enter a customer part number to further identify
+        the item you are billing the customer for. In the case of inventory
+        items, the customer part number will display automatically if you
+        enter an item alias in the <guilabel>Item Number</guilabel> field. To
+        enter an item alias, place the cursor in the <guilabel>Item
+        Number</guilabel> field and then use the keyboard shortcut "CTRL + A."
+        After you have entered a valid item alias, hit the TAB key. A list of
+        items that use the specified item alias will be displayed. Select the
+        desired item from the list. The item alias will display as the
+        customer part number. Item aliases are defined on the item
+        master.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
-        <para>Enter the quantity of the Item you are billing for. The quantity
-        ordered for Inventory Items is measured in the Item's Inventory
+        <para>Enter the quantity of the item you are billing for. The quantity
+        ordered for inventory items is measured in the item's inventory
         UOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
-    <para>The Quantity Ordered for Inventory Items is based on the Inventory
-    UOM. But the Price is based on the Price UOM. Whenever these two UOMs are
-    not identical, the Extended Price for a Line Item will be based on the
+    <para>The quantity ordered for inventory items is based on the inventory
+    UOM. But the price is based on the price UOM. Whenever these two UOMs are
+    not identical, the extended price for a line item will be based on the
     following formula:</para>
+
     <informalexample>
       <para><literal>(Qty. Ordered) x (Price/Inv. Ratio) x (Net Unit
       Price)</literal></para>
     </informalexample>
-    <para>If for some reason the Prices don"t look correct, check the Item
-    master for the Line Item in question. It may be that the Inventory and
-    Price UOMs do not exist in a 1:1 relationship.</para>
+
+    <para>If for some reason the prices don't look correct, check the item
+    master for the line item in question. It may be that the inventory and
+    price UOMs do not exist in a 1:1 relationship.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Qty. Billed</term>
+
       <listitem>
-        <para>Specify the quantity of ordered Items you are billing
+        <para>Specify the quantity of ordered items you are billing
         for.</para>
+
         <variablelist>
           <varlistentry>
             <term>Update Inventory</term>
+
             <listitem>
               <para>Select if you want the quantity billed to be removed from
-              Inventory when you post the Invoice. If not selected, your
-              Inventory will not be updated.</para>
+              inventory when you post the invoice. If not selected, your
+              inventory will not be updated.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. UOM</term>
+
       <listitem>
-        <para>Specify the Unit of Measure (UOM) to be used when selling the
-        Line Item. Sold Items may be assigned multiple Selling UOMs. These
-        alternate UOMs may be defined on the Item master. You may also select
+        <para>Specify the unit of measure (UOM) to be used when selling the
+        line item. Sold items may be assigned multiple selling UOMs. These
+        alternate UOMs may be defined on the item master. You may also select
         a global conversion ratio here. Global conversions have the label
-        <literal>Global</literal> appended to them. If a Line Item has no
-        Selling UOM defined, then the Inventory UOM will be used here by
+        <literal>Global</literal> appended to them. If a line item has no
+        selling UOM defined, then the inventory UOM will be used here by
         default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>invoices</primary>
+
           <secondary>line item pricing for</secondary>
         </indexterm>Net Unit Price</term>
+
       <listitem>
         <para>Displays the Unit Price for the Invoice Item. By default, the
         system will choose the lower of the following two Prices: A) The
@@ -167,12 +201,14 @@
         Customer Ship-To Address (most specific), by Customer, by Customer
         Type, by Customer Type pattern, by all Customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
+
         <note>
           <para>For Inventory Items having assigned Pricing Schedules, the Net
           Unit Price will be automatically calculated using the information
           provided above. For miscellaneous Items, the Net Unit Price must be
           entered manually.</para>
         </note>
+
         <para>If your Pricing Schedule has multiple Units of Measure (UOM) on
         it (or if several Pricing Schedules share the same level of Price
         specificity, but they have different UOMs) then the UOM which matches
@@ -183,6 +219,7 @@
         UOM is always chosen at the desired level of Price specificity, then
         your Pricing Schedules should include at least one UOM with a quantity
         break of 0.</para>
+
         <tip>
           <para>The system can be configured to prevent users from editing the
           Net Unit Price. If your system is configured that way, the Net Unit
@@ -190,8 +227,10 @@
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pricing UOM</term>
+
       <listitem>
         <para>The Price Unit of Measure is the same as the Selling UOM. If an
         Item has Selling UOMs defined, then the Item may be sold and priced in
@@ -201,8 +240,10 @@
         UOM will be used here by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Extended Price</term>
+
       <listitem>
         <para>Displays the Extended Price. The Extended Price for a Line Item
         is based on the quantity ordered multiplied by the Net Unit
@@ -210,25 +251,32 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view Costing and Tax information related to the Invoice Item,
   select the "Detail" tab. You will be presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Unit Cost (Inv. UOM)</term>
+
       <listitem>
         <para>Displays the Standard Cost per unit in the Item's Inventory Unit
         of Measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>List Price</term>
+
       <listitem>
         <para>Displays the Item's List Price per Inventory UOM.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Customer Price</term>
+
       <listitem>
         <para>Displays the Price (per Inventory UOM) given to the specified
         Customer for the specified Item. Special Customer Prices can be set
@@ -236,21 +284,27 @@
         Schedule.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax</term>
+
       <listitem>
         <para>The following Tax-related information is available:</para>
+
         <variablelist>
           <varlistentry>
             <term>Type</term>
+
             <listitem>
               <para>Specify the Tax Type for the Invoice Item. If the Item
               master does not have a Tax Type for the Invoice's Tax Authority,
               then no Tax will be charged.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Tax</term>
+
             <listitem>
               <para>Displays the amount of Tax to be charged for the Invoice
               Line Item quantity. To get a detailed view of the Tax
@@ -261,23 +315,29 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add Notes to an Invoice Line Item, select the "Notes" tab at the
   bottom of the screen. If the Invoice was created from a Sales Order, any
   Sales Order Line Item Notes will be transferred to the Invoice. The
   following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invoiceItem_tab.png" />
+          <imagedata fileref="images/invoiceItem_tab.png"/>
         </imageobject>
+
         <caption>Invoice Line Item Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When entering Invoice Line Item Notes, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         general Notes related to the Invoice Item.</para>

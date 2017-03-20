@@ -4,59 +4,73 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section>
   <title>Dashboards Widget</title>
+
   <para id="dashboardsWidget" role="standard"><informalexample>
-      <para>Dashboard Panes are used to contain Charts, which are populated
-      using Datasources. To create a new Dashboard Pane, select the ADD button
-      located toward the bottom of the Dashboard window. The following screen
-      will appear:</para>
+      <para>Dashboard panes are used to contain charts, which are populated
+      using datasources. To create a new dashboard pane, select the
+      <guibutton>ADD</guibutton> button located toward the bottom of the
+      Dashboard window. The following screen will appear:</para>
+
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/dashboardPane.png" />
+              <imagedata fileref="images/dashboardPane.png"/>
             </imageobject>
+
             <caption>Add New Dashboard Pane</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When creating a new Dashboard Pane, you are presented with the
+
+      <para>When creating a new dashboard pane, you are presented with the
       following options:</para>
+
       <variablelist>
         <varlistentry>
           <term>Pane Title</term>
+
           <listitem>
-            <para>Enter a title to identify the Pane.</para>
+            <para>Enter a title to identify the pane.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Pane Description</term>
+
           <listitem>
-            <para>Enter a brief description to describe the Pane.</para>
+            <para>Enter a brief description to describe the pane.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Datasource</term>
+
           <listitem>
-            <para>Specify which Datasource you want to use as the source for
-            the Dashboard Pane's Chart. The Dashboards package includes
-            several stock Datasources. You may also create custom Datasources
+            <para>Specify which datasource you want to use as the source for
+            the dashboard pane's chart. The dashboards package includes
+            several stock datasources. You may also create custom datasources
             on your own. For more information, please see <xref
-            linkend="dashboardDatasources" />.</para>
+            linkend="dashboardDatasources"/>.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Chart Type</term>
+
           <listitem>
-            <para>Specify which Chart Type you want the Dashboard Pane to
-            display. The Chart Type options will be limited to the types
-            specified on the selected Datasource definition.</para>
+            <para>Specify which chart type you want the Dashboard Pane to
+            display. The chart type options will be limited to the types
+            specified on the selected datasource definition.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Layout Grid Width</term>
+
           <listitem>
-            <para>Specify how many Panes you want displayed in a row on the
-            Dashboard, from as few as one to as many as three across. The
+            <para>Specify how many panes you want displayed in a row on the
+            dashboard, from as few as one to as many as three across. The
             layout grid width options will be limited to the layout options
-            specified on the selected Datasource definition.</para>
+            specified on the selected datasource definition.</para>
           </listitem>
         </varlistentry>
       </variablelist>

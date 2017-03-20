@@ -5,43 +5,55 @@
 <section id="printPurchaseOrder">
   <title><indexterm significance="normal">
       <primary>purchase orders</primary>
+
       <secondary>printing of</secondary>
     </indexterm>Print Purchase Order</title>
-  <para>To print a Purchase Order, select the "Print Purchase Order" option.
-  The following screen will appear:</para>
+
+  <para>To print a purchase order, select the <guimenu>Print Purchase
+  Order</guimenu> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/printPurchaseOrder.png" />
+          <imagedata fileref="images/printPurchaseOrder.png"/>
         </imageobject>
+
         <caption>Print Purchase Order</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When printing a Purchase Order, you are presented with the following
+
+  <para>When printing a purchase order, you are presented with the following
   options:</para>
+
   <para role="xtconnect"><note>
-      <para>If the Vendor specified on the Purchase Order has an EDI Profile
+      <para>If the vendor specified on the purchase order has an EDI profile
       attached, you may encounter an EDI processing interface when printing
-      the Purchase Order.</para>
+      the purchase order.</para>
     </note></para>
+
   <variablelist>
     <varlistentry>
       <term>Order #</term>
+
       <listitem>
-        <para>Enter the Purchase Order Number of the Purchase Order you want
+        <para>Enter the purchase order number of the purchase order you want
         to print.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Copies</term>
+
       <listitem>
         <para>Indicate the following copy information:</para>
+
         <variablelist>
           <varlistentry>
             <term># of Copies</term>
+
             <listitem>
               <para>Specify the number of copies you want to print. To add a
-              Watermark or show/hide Prices on the printed Form, double-click
+              watermark or show/hide prices on the printed form, double-click
               on a copy line.</para>
             </listitem>
           </varlistentry>
@@ -49,6 +61,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="../widgets/watermarks.xml" xpointer="watermarksWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

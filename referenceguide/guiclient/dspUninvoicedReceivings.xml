@@ -5,72 +5,92 @@
 <section id="dspUninvoicedReceivings">
   <title><indexterm significance="normal">
       <primary>receipts</primary>
+
       <secondary>uninvoiced</secondary>
     </indexterm>Uninvoiced Receipts and Returns</title>
-  <para>To view uninvoiced Receipts and Returns, select the "Uninvoiced
-  Receipts and Returns" option. The following screen will appear:</para>
+
+  <para>To view uninvoiced receipts and returns, select the
+  <guimenu>Uninvoiced Receipts and Returns</guimenu> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspUninvoicedReceivings.png" />
+          <imagedata fileref="images/dspUninvoicedReceivings.png"/>
         </imageobject>
+
         <caption>Uninvoiced Receipts and Returns</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When displaying uninvoiced Receipts and Returns, you are presented
+
+  <para>When displaying uninvoiced receipts and returns, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
-        <para>Select to display uninvoiced Receipts and Returns for all Sites.
-        You must select this option to include non-Inventory Receipt
-        information in the display. Because non-Inventory Items, by
-        definition, do not have Item Sites, you cannot report on them by
-        individual Site(s).</para>
+        <para>Select to display uninvoiced receipts and returns for all sites.
+        You must select this option to include non-inventory receipt
+        information in the display. Because non-inventory items, by
+        definition, do not have item sites, you cannot report on them by
+        individual site(s).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
-        <para>Specify Site whose uninvoiced Receipts and Returns you want to
+        <para>Specify site whose uninvoiced receipts and returns you want to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Purchasing Agents</term>
+
       <listitem>
-        <para>Select to display uninvoiced Receipts and Returns for all
-        Purchasing Agents.</para>
+        <para>Select to display uninvoiced receipts and returns for all
+        purchasing agents.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
-        <para>Specify Purchasing Agent whose uninvoiced Receipts and Returns
-        you want to display. Users may be designated as Purchasing Agents at
+        <para>Specify purchasing agent whose uninvoiced receipts and returns
+        you want to display. Users may be designated as purchasing agents at
         the system level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Purchase Order Receipts</term>
+
       <listitem>
-        <para>Display lists uninvoiced Receipts and Returns, using the
+        <para>Display lists uninvoiced receipts and returns, using the
         specified parameters.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>The primary path for marking Purchase Order Line Items as invoiced
+    <para>The primary path for marking purchase order line items as invoiced
     is on the Voucher Item screen. If received (or returned) quantity is
-    tagged as "Yes" on the Voucher Item screen—and the Voucher is then
-    posted—the quantity will no longer appear on the "Uninvoiced Receipts and
-    Returns" screen.</para>
+    tagged as "Yes" on the Voucher Item screen—and the voucher is then
+    posted—the quantity will no longer appear on the Uninvoiced Receipts and
+    Returns screen.</para>
   </tip>
+
   <xi:include href="poLiabilityDistrib.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="correctPoReceipt.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="postPoReturnCreditMemo.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

@@ -5,176 +5,228 @@
 <section id="correctPoReceipt">
   <title><indexterm significance="normal">
       <primary>receipts</primary>
+
       <secondary>correction of</secondary>
     </indexterm>Correct P/O Receipt</title>
-  <para>To make corrections to a Purchase Order Receipt, select the "Correct
-  Receiving" option from the right-click menu. The following screen will
-  appear:</para>
+
+  <para>To make corrections to a purchase order receipt, select the
+  <guilabel>Correct Receiving</guilabel> option from the right-click menu. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/correctPoReceipt.png" />
+          <imagedata fileref="images/correctPoReceipt.png"/>
         </imageobject>
+
         <caption>Correct Purchase Order Receipt</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When correcting a Purchase Order Receipt, you are presented with the
+
+  <para>When correcting a purchase order receipt, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Order Type</term>
+
       <listitem>
-        <para>Display the type of order received (e.g., Purchase Order,
-        Transfer Order).</para>
+        <para>Display the type of order received (e.g., purchase order,
+        transfer order).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order Number</term>
+
       <listitem>
-        <para>Displays the Order Number of the selected order.</para>
+        <para>Displays the order number of the selected order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line #</term>
+
       <listitem>
-        <para>Displays the selected Line Item Number from the specified
+        <para>Displays the selected line item number from the specified
         order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
-        <para>Displays Item Number associated with the specified Line Item
-        Number.</para>
+        <para>Displays item number associated with the specified line item
+        number.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
-        <para>Inventory Unit of Measure.</para>
+        <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vend. Item Number</term>
+
       <listitem>
-        <para>Displays the Item Number the Vendor uses.</para>
+        <para>Displays the item number the vendor uses.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor Item Description</term>
+
       <listitem>
-        <para>Displays the description for the Vendor Item Number.</para>
+        <para>Displays the description for the vendor item number.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. to Receive in Inv. UOM</term>
+
       <listitem>
-        <para>Displays the quantity received in its Inventory Unit of
-        Measure.</para>
+        <para>Displays the quantity received in its inventory unit of
+        measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor UOM Ratio</term>
+
       <listitem>
-        <para>Displays the ratio between your Inventory Unit of Measure and
-        the Vendor's UOM. For example, if you store an Item in single units,
-        but a Vendor sells you the Item in cases of 12, then the ratio would
-        be 12—or 12:1. When a Vendor ratio is specified, the system allows you
-        to purchase Items using the Vendor's UOM; however, when the Items are
-        received, the system will automatically convert the Inventory to your
-        Inventory UOM.</para>
+        <para>Displays the ratio between your inventory unit of measure and
+        the vendor's UOM. For example, if you store an item in single units,
+        but a vendor sells you the item in cases of 12, then the ratio would
+        be 12—or 12:1. When a vendor ratio is specified, the system allows you
+        to purchase items using the vendor's UOM; however, when the items are
+        received, the system will automatically convert the inventory to your
+        inventory UOM.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Correct Qty. to</term>
+
       <listitem>
         <para>Enter the quantity you want to correct the received quantity to.
-        This correction will create adjusting General Ledger entries when the
-        CORRECT button is selected.</para>
+        This correction will create adjusting general ledger entries when the
+        <guibutton>CORRECT</guibutton> button is selected.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor UOM</term>
+
       <listitem>
-        <para>Displays the Unit of Measure the Vendor uses for the specified
-        Item.</para>
+        <para>Displays the unit of measure the vendor uses for the specified
+        item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
-        <para>Displays the original Line Item quantity ordered.</para>
+        <para>Displays the original line item quantity ordered.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Received</term>
+
       <listitem>
-        <para>Displays the total Line Item quantity received to date.</para>
+        <para>Displays the total line item quantity received to date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Returned</term>
+
       <listitem>
-        <para>Displays the total Line Item quantity returned to date.</para>
+        <para>Displays the total line item quantity returned to date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Unit Purchase Cost</term>
+
       <listitem>
-        <para>Displays the per unit cost for the Line Item.</para>
+        <para>Displays the per unit cost for the line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Extended Purchase Cost</term>
+
       <listitem>
-        <para>Displays the extended cost for the Line Item quantity.</para>
+        <para>Displays the extended cost for the line item quantity.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>freight</primary>
+
           <secondary>correcting for purchasing</secondary>
         </indexterm>Correct Freight to</term>
+
       <listitem>
-        <para>Enter the amount you want to correct the Line Item freight to.
-        This correction will create adjusting General Ledger entries when the
-        CORRECT button is selected.</para>
+        <para>Enter the amount you want to correct the line item freight to.
+        This correction will create adjusting general ledger entries when the
+        <guibutton>CORRECT</guibutton> button is selected.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due Date</term>
+
       <listitem>
-        <para>Displays the date when the Line Item is due.</para>
+        <para>Displays the date when the line item is due.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Date Received</term>
+
       <listitem>
-        <para>Displays the date when the Line Item was received.</para>
+        <para>Displays the date when the line item was received.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
-        <para>Select the "Notes" tab to reach a scrolling text field with
-        word-wrapping for entering Notes related to the correction.</para>
+        <para>Select the <guimenuitem>Notes</guimenuitem> tab to reach a
+        scrolling text field with word-wrapping for entering notes related to
+        the correction.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>OK</term>
+
       <listitem>
         <para>Select to post the correction. This action will result in
-        adjusting General Ledger transactions.</para>
+        adjusting general ledger transactions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Print Label</term>
+
       <listitem>
         <para>Select to print a receiving label at the time when you select
-        the OK button.</para>
+        the <guibutton>OK</guibutton> button.</para>
       </listitem>
     </varlistentry>
   </variablelist>

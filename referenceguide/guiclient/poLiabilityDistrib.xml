@@ -4,54 +4,67 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="poLiabilityDistrib">
   <title>P/O Liability Distribution</title>
-  <para>To mark a Line Item Receipt as invoiced, highlight the Receipt and
-  then select the "Mark as Invoiced" option from the right-click menu. The
-  following screen will appear:</para>
+
+  <para>To mark a line item receipt as invoiced, highlight the receipt and
+  then select the <guilabel>Mark as Invoiced </guilabel>option from the
+  right-click menu. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/poLiabilityDistrib.png" />
+          <imagedata fileref="images/poLiabilityDistrib.png"/>
         </imageobject>
+
         <caption>Mark Receipt as Invoiced</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When marking a Line Item Receipt as invoiced, you are presented with
+
+  <para>When marking a line item receipt as invoiced, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Account</term>
+
       <listitem>
-        <para>Select the Account you want to use opposite the P/O Liability
-        Clearing Account. When this transaction is posted, the P/O Liability
-        Clearing Account will be debited with the distribution amount—and the
-        Account you specify will be credited. In this way, you will be sure to
-        clear P/O Liability when marking Receipts as invoiced outside of the
+        <para>Select the account you want to use opposite the P/O liability
+        clearing account. When this transaction is posted, the P/O liability
+        clearing account will be debited with the distribution amount—and the
+        account you specify will be credited. In this way, you will be sure to
+        clear P/O liability when marking receipts as invoiced outside of the
         typical vouchering process flow.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Distribution Date</term>
+
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
-        General Ledger. By default, the current day's day will be entered
+        general ledger. By default, the current day's day will be entered
         here.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Amount to Distribute</term>
+
       <listitem>
-        <para>Displays the Line Item Receipt amount to be distributed to the
-        General Ledger when the transaction is posted.</para>
+        <para>Displays the line item receipt amount to be distributed to the
+        general ledger when the transaction is posted.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>POST</term>
+
       <listitem>
         <para>Select to post the distribution, using the specified
-        Account.</para>
+        account.</para>
       </listitem>
     </varlistentry>
   </variablelist>

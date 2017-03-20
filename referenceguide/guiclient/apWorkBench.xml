@@ -7,498 +7,624 @@
       <primary>payables workbench</primary>
     </indexterm><indexterm significance="normal">
       <primary>accounts payable</primary>
+
       <secondary>information about</secondary>
     </indexterm><indexterm significance="normal">
       <primary>workbenches</primary>
+
       <secondary>for payables</secondary>
     </indexterm> Payables Workbench</title>
+
   <para>The Payables Workbench groups together in one location a range of
-  current Payables information, giving you the option to sort this information
-  by individual Vendor—or by all Vendors or smaller subsets of Vendors. To
-  access the Payables Workbench, select the "Workbench" option. The following
-  screen will appear:<screenshot>
+  current payables information, giving you the option to sort this information
+  by individual vendor—or by all vendors or smaller subsets of vendors. To
+  access the payables workbench, select the <guimenu>Workbench</guimenu>
+  option. The following screen will appear:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench.png" />
+          <imagedata fileref="images/apWorkBench.png"/>
         </imageobject>
+
         <caption>Unposted Vouchers</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The "Vouchers" tab displays information on all unposted Vouchers,
-  including Voucher Number, Purchase Order Number, Vendor Number/Vendor name,
-  Vendor Invoice Number, and distribution date. Users with the appropriate
-  privilege will also see the G/L distribution date column.</para>
+
+  <para>The <guimenuitem>Vouchers</guimenuitem> tab displays information on
+  all unposted vouchers, including voucher number, purchase order number,
+  vendor number/vendor name, vendor invoice number, and distribution date.
+  Users with the appropriate privilege will also see the <guilabel>G/L
+  Distribution Date</guilabel> column.</para>
+
   <note>
-    <para>Actual Costs for purchased Items will be automatically updated when
-    Vouchers are posted if there are differences between current Actual Costs
-    and the vouchered Costs for the Items in question. Please keep in mind
-    that Actual Costs only will be updated at posting. For new Costs to be
-    recognized as Standard Costs, Actual Costs must be posted to
-    Standard.</para>
+    <para>Actual costs for purchased items will be automatically updated when
+    vouchers are posted if there are differences between current actual costs
+    and the vouchered costs for the items in question. Please keep in mind
+    that actual costs only will be updated at posting. For new costs to be
+    recognized as standard costs, actual costs must be posted to
+    standard.</para>
   </note>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>NEW MISC.</term>
+
       <listitem>
-        <para>Opens screen for creating a new Miscellaneous Voucher.</para>
+        <para>Opens screen for creating a new miscellaneous voucher.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>If you have a Purchase Order Voucher that was corrupted by, for
+    <para>If you have a purchase order voucher that was corrupted by, for
     example, a sudden power outage, you can clear the record by running the
     Post Vouchers screen. In most cases, this action will remove the corrupted
-    record and allow you to voucher the Purchase Order with a fresh
-    Voucher.</para>
+    record and allow you to voucher the purchase order with a fresh
+    voucher.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>POST</term>
+
       <listitem>
-        <para>Highlight one—or multiple—Vouchers, then select this button to
-        post the selected Voucher(s). By default, Vouchers post to the General
+        <para>Highlight one—or multiple—vouchers, then select this button to
+        post the selected voucher(s). By default, vouchers post to the General
         Ledger (G/L) on their distribution date. However, users with the
         appropriate privilege may change the G/L distribution date to an
-        alternate date during the Voucher posting process. If used, Vouchers
+        alternate date during the voucher posting process. If used, vouchers
         will post on the alternate date. The ability privileged users have to
         change the distribution date applies to the posting of both individual
-        and also batches of Vouchers from this screen.</para>
+        and also batches of vouchers from this screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Print Journal after Post</term>
+
       <listitem>
-        <para>Select if you want to print a copy of the Payables Journal after
-        the selected Vouchers are posted.</para>
+        <para>Select if you want to print a copy of the payables journal after
+        the selected vouchers are posted.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>You may select multiple Vouchers for posting by highlighting them
+    <para>You may select multiple vouchers for posting by highlighting them
     using your mouse—or a combination of your mouse and either the SHIFT or
     CTRL keys.</para>
   </tip>
-  <para>To view the list of open Payables, select the "Payables" tab. The
-  following screen will appear:</para>
+
+  <para>To view the list of open payables, select the
+  <guimenuitem>Payables</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench_payablesTab.png" />
+          <imagedata fileref="images/apWorkBench_payablesTab.png"/>
         </imageobject>
+
         <caption>Open Payables</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When viewing the list of open Payables, you are presented with the
+
+  <para>When viewing the list of open payables, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Due Date</term>
+
       <listitem>
-        <para>Specify date parameters to query open Payables.</para>
+        <para>Specify date parameters to query open payables.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Open Items</term>
+
       <listitem>
-        <para>Display lists open Payables. If a Document is past due or on
-        hold, the line for that Document will display in red type.</para>
+        <para>Display lists open payables. If a document is past due or on
+        hold, the line for that document will display in red type.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para><note>
       <para>Open items may be placed on hold—or reopened— using the
       right-click menu on this screen. When on hold, open items may not be
       selected for payment. Also note that vouchers which have applications
       against them cannot be voided.</para>
     </note>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>APPROVE</term>
+
       <listitem>
         <para>Highlight an open payable and then click this button to manually
-        review and approve the Item for payment. This option brings you to the
+        review and approve the item for payment. This option brings you to the
         individual Approve Payment screen, where you will find the full range
         of payment options.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>APPROVE LINE</term>
+
       <listitem>
         <para>Highlight an open payable and then click this button to
-        automatically approve the open item for payment. Any available Terms
-        Discount will also be applied automatically.</para>
+        automatically approve the open item for payment. Any available terms
+        discount will also be applied automatically.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>CLEAR APPROVAL</term>
+
       <listitem>
         <para>Highlight an open payable and then select this button to clear
         the approved payment. This option effectively reverses the action of
-        the APPROVE option.</para>
+        the <guibutton>APPROVE</guibutton> option.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>APPROVE ALL DUE</term>
+
       <listitem>
-        <para>Select this button to approve for payment all open Payables
-        whose Payment Date is due or past due and whose Currency is the same
-        as the Bank Account's Currency.</para>
+        <para>Select this button to approve for payment all open payables
+        whose payment date is due or past due and whose currency is the same
+        as the bank account's currency.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>APPROVE ALL DISCOUNTS</term>
+
       <listitem>
-        <para>Select this option to automatically approve all open Payables
-        which are eligible for a Terms Discount and whose Currency is the same
-        as the Bank Account's Currency. The Terms Discount will be applied
+        <para>Select this option to automatically approve all open payables
+        which are eligible for a terms discount and whose currency is the same
+        as the bank account's currency. The terms discount will be applied
         automatically to all approved open items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>CLEAR APPROVALS</term>
+
       <listitem>
         <para>Select this button to clear all approved payments due. This
-        option effectively reverses the action of the APPROVE ALL DUE
-        option.</para>
+        option effectively reverses the action of the <guibutton>APPROVE ALL
+        DUE</guibutton> option.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>APPLY ALL CREDITS</term>
+
       <listitem>
         <para>When selected, the application will start with the oldest open
-        and unapplied Credit Memo (based on its due date) and apply it to the
-        oldest open items (i.e., Vouchers and Debit Memos) until the credit is
+        and unapplied credit memo (based on its due date) and apply it to the
+        oldest open items (i.e., vouchers and debit memos) until the credit is
         fully applied—or until there are no more open items for the credit to
         be applied against. This process continues applying all available
-        Credit Memos based on their due date.</para>
+        credit memos based on their due date.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view Credits associated with the Vendor(s), select the "Credits"
-  tab. The following screen will appear:</para>
+
+  <para>To view credits associated with the vendor(s), select the
+  <guimenuitem>Credits</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench_creditsTab.png" />
+          <imagedata fileref="images/apWorkBench_creditsTab.png"/>
         </imageobject>
+
         <caption>Unapplied Credits</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When displaying Credits associated with the Vendor(s), you are
+
+  <para>When displaying credits associated with the vendor(s), you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Unapplied Accounts Payable Credit Memos</term>
+
       <listitem>
-        <para>Displays the list of unapplied Credit Memos associated with the
-        specified Vendor.</para>
+        <para>Displays the list of unapplied credit memos associated with the
+        specified vendor.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>APPLY</term>
+
       <listitem>
-        <para>Highlight an unapplied Credit Memo and then select this button
+        <para>Highlight an unapplied credit memo and then select this button
         to apply an amount.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view the list of selected payments for the specified Vendor(s),
-  select the "List Selected Payments" option. The following screen will
-  appear:</para>
+
+  <para>To view the list of selected payments for the specified vendor(s),
+  select the <guimenuitem>List Selected Payments</guimenuitem> option. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench_selectionsTab.png" />
+          <imagedata fileref="images/apWorkBench_selectionsTab.png"/>
         </imageobject>
+
         <caption>Payment Approvals</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The "Payment Approvals" screen displays information on all existing
-  selected payments, including Bank Account to be paid from, Vendor name,
-  Document Type, Document Number, Invoice Number, Purchase Order Number,
-  amount selected for payment, Currency, and running total.</para>
+
+  <para>The Payment Approvals screen displays information on all existing
+  selected payments, including bank account to be paid from, vendor name,
+  document type, document number, invoice number, purchase order number,
+  amount selected for payment, currency, and running total.</para>
+
   <tip>
-    <para>If you need to void a posted Voucher, you can do this from the
-    right-click menu. Voiding a Voucher reverses all ledger transactions
-    created by the original Voucher. Only open Vouchers may be voided.
+    <para>If you need to void a posted voucher, you can do this from the
+    right-click menu. Voiding a voucher reverses all ledger transactions
+    created by the original voucher. Only open vouchers may be voided.
     Vouchers with apply-to records cannot be voided. You will be given the
-    option to specify a void date when voiding a Voucher. Apply-to records
+    option to specify a void date when voiding a voucher. Apply-to records
     will also be reversed on the void date you specify.</para>
   </tip>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>CLEAR APPROVAL</term>
+
       <listitem>
-        <para>Highlight an approved Payment and then select this button to
-        clear the approval. Because an Item that has been cleared is no longer
-        approved for payment, this option removes the Item from the master
-        list of approved Payments.</para>
+        <para>Highlight an approved payment and then select this button to
+        clear the approval. Because an item that has been cleared is no longer
+        approved for payment, this option removes the item from the master
+        list of approved payments.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view the Payment Run, select the "Payments" tab. The following
-  screen will appear:</para>
+
+  <para>To view the payment run, select the
+  <guimenuitem>Payments</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench_checkRunTab.png" />
+          <imagedata fileref="images/apWorkBench_checkRunTab.png"/>
         </imageobject>
+
         <caption>Payment Run</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When displaying the Payment Run, you are presented with the following
+
+  <para>When displaying the payment run, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Bank Account</term>
+
       <listitem>
-        <para>Specify the Bank Account whose Payment Run you want to
+        <para>Specify the bank account whose payment run you want to
         view.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Payments</term>
+
       <listitem>
-        <para>Display lists details for Payments included in the Payment Run.
-        This display is a nested list, with a plus ("+") sign located to the
-        far left of the display next to each Payment. By clicking your mouse
-        on a plus sign, you reveal lower levels of information related to the
-        Payment.</para>
+        <para>Display lists details for payments included in the payment run.
+        This display is a nested list, with a plus (+) sign located to the far
+        left of the display next to each payment. By clicking your mouse on a
+        plus sign, you reveal lower levels of information related to the
+        payment.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>PREPARE</term>
+
       <listitem>
-        <para>Select to prepare a Payment Run. For more information on
-        preparing Payment Runs, see <xref linkend="prepareCheckRun" />.</para>
+        <para>Select to prepare a payment run. For more information on
+        preparing payment runs, see <xref linkend="prepareCheckRun"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>PRINT/WRITTEN/PAID</term>
+
       <listitem>
-        <para>Select from one of the following options. If a selected Payment
+        <para>Select from one of the following options. If a selected payment
         has already been written and/or paid, you will have the ability to
-        mark the Payment as such on the Print Payment screen. The options
-        presented here will be limited if the specified Bank Account does not
-        require Payments to be printed. Also, if the Bank Account is
-        configured to use Electronic Funds Transfer (EFT), you will be
+        mark the payment as such on the Print Payment screen. The options
+        presented here will be limited if the specified bank account does not
+        require payments to be printed. Also, if the bank account is
+        configured to use electronic funds transfer (EFT), you will be
         presented with the option to create an EFT file on the Print Payment
         screen.</para>
+
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>payments</primary>
+
                 <secondary>printing individual</secondary>
               </indexterm>SELECTED PAYMENT</term>
+
             <listitem>
-              <para>Highlight a Payment in the list of Payments and then
-              select this button to print the Payment. Only Bank Accounts
-              which require printing will have Payments to print.</para>
+              <para>Highlight a payment in the list of payments and then
+              select this button to print the payment. Only bank accounts
+              which require printing will have payments to print.</para>
+
               <tip>
-                <para>If Payments being printed contain reference lines which
+                <para>If payments being printed contain reference lines which
                 spill over and exceed one standard page, then consider using
-                the report definition CheckMultiPage.xml. This Payment Form is
-                designed to support multiple pages for one Payment
+                the report definition CheckMultiPage.xml. This payment form is
+                designed to support multiple pages for one payment
                 number.</para>
               </tip>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>payment runs</primary>
+
                 <secondary>printing of</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>payment</primary>
+
                 <secondary>printing multiple</secondary>
               </indexterm>PAYMENT RUN</term>
+
             <listitem>
-              <para>Select to print the Payment Run, using the specified Bank
-              Account. For more information on printing Payment Runs, see the
-              <xref linkend="printChecks" /> section.</para>
+              <para>Select to print the payment run, using the specified bank
+              account. For more information on printing payment runs, see the
+              <xref linkend="printChecks"/> section.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>EDIT LIST</term>
+
             <listitem>
-              <para>Prints a copy of the pending Payment Run for
+              <para>Prints a copy of the pending payment run for
               review.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>payments</primary>
+
           <secondary>posting of</secondary>
         </indexterm>POST</term>
+
       <listitem>
         <para>Select from the following context-sensitive posting
         options:<variablelist>
             <varlistentry>
               <term>SELECTED PAYMENT</term>
+
               <listitem>
-                <para>Highlight a Payment in the list of Payments and then
-                select this button to post the Payment. If the specified Bank
-                Account requires printing, the Payment must be printed before
-                it can be posted. If printing is not required, the Payment may
-                be posted immediately. See the "Printed" column in the display
-                to determine a Payment's printed status.</para>
+                <para>Highlight a payment in the list of payments and then
+                select this button to post the payment. If the specified bank
+                account requires printing, the payment must be printed before
+                it can be posted. If printing is not required, the payment may
+                be posted immediately. See the <guilabel>Printed</guilabel>
+                column in the display to determine a payment's printed
+                status.</para>
               </listitem>
             </varlistentry>
+
             <varlistentry>
               <term>POST ALL</term>
+
               <listitem>
-                <para>Select to post all Payments available for
+                <para>Select to post all payments available for
                 posting.</para>
               </listitem>
             </varlistentry>
           </variablelist></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>NEW</term>
+
       <listitem>
-        <para>Select to create a new Miscellaneous Payment. Once saved, the
-        Payment will appear in the Payment Run.</para>
+        <para>Select to create a new miscellaneous payment. Once saved, the
+        payment will appear in the payment run.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>payments</primary>
+
           <secondary>voiding of</secondary>
         </indexterm>VOID</term>
+
       <listitem>
-        <para>Highlight a Payment in the list of Payments and then select this
-        button to void the Payment. Voided Payments may not be printed or
-        posted. When a Payment is voided, the payable amount will be reopened
-        on the Select Payments screen. In other words, if a Payment for
+        <para>Highlight a payment in the list of payments and then select this
+        button to void the payment. Voided payments may not be printed or
+        posted. When a payment is voided, the payable amount will be reopened
+        on the Select Payments screen. In other words, if a payment for
         $100.00 is voided, that amount will once again be made available for
         payment on the Select Payments screen. The reopened amount will again
-        be associated with the referring payable Document (i.e., Voucher or
-        Debit Memo).</para>
+        be associated with the referring payable document (i.e., voucher or
+        debit memo).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>EDIT</term>
+
       <listitem>
-        <para>Highlight a miscellaneous Payment and then select this button to
-        edit the Payment. Only unprinted miscellaneous Payments may be
+        <para>Highlight a miscellaneous payment and then select this button to
+        edit the payment. Only unprinted miscellaneous payments may be
         edited.</para>
+
         <note>
-          <para>Only unprinted miscellaneous Payments may be edited. Regular
-          Payments may not be edited.</para>
+          <para>Only unprinted miscellaneous payments may be edited. Regular
+          payments may not be edited.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>DELETE</term>
+
       <listitem>
-        <para>Highlight a voided Payment in the list of Payments and then
-        select this button to delete the Payment. Only voided Payments may be
+        <para>Highlight a voided payment in the list of payments and then
+        select this button to delete the payment. Only voided payments may be
         deleted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>payments</primary>
+
           <secondary>replacing in payment run</secondary>
         </indexterm><indexterm significance="normal">
           <primary>payment runs</primary>
+
           <secondary>replacing payments in</secondary>
         </indexterm>REPLACE</term>
+
       <listitem>
-        <para>Highlight a voided Payment in the list of Payments and then
-        select this button to replace the Payment. Payments must be voided
-        before they can be replaced. When a voided Payment is replaced, the
+        <para>Highlight a voided payment in the list of payments and then
+        select this button to replace the payment. Payments must be voided
+        before they can be replaced. When a voided payment is replaced, the
         payable amount displayed on the Select Payments screen will be
-        removed. In other words, if a voided Payment for $500.00 is replaced,
+        removed. In other words, if a voided payment for $500.00 is replaced,
         that amount will no longer be available for payment on the Select
         Payments screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>REPLACE ALL</term>
+
       <listitem>
-        <para>Select this button to replace all Payments shown in the list of
-        Payments. Payments must be voided before they can be replaced.</para>
+        <para>Select this button to replace all payments shown in the list of
+        payments. Payments must be voided before they can be replaced.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view Accounts Payable (A/P) history by Vendor, select the "A/P
-  History" tab. The following screen will appear:</para>
+
+  <para>To view accounts payable (A/P) history by vendor, select the
+  <guimenuitem>A/P History</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench_apHistory.png" />
+          <imagedata fileref="images/apWorkBench_apHistory.png"/>
         </imageobject>
+
         <caption>A/P History by Vendor</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
-    <para>You must select a single Vendor to view A/P history on this screen.
-    Viewing A/P history by all Vendors is not supported.</para>
+    <para>You must select a single vendor to view A/P history on this screen.
+    Viewing A/P history by all vendors is not supported.</para>
   </note>
-  <para>When viewing A/P history by Vendor, you are presented with the
+
+  <para>When viewing A/P history by vendor, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Start Date</term>
+
       <listitem>
         <para>Vendor activity entered on and after this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>End Date</term>
+
       <listitem>
         <para>Vendor activity entered on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Find Vend. Invoice#</term>
+
       <listitem>
-        <para>To search for an Invoice in the Vendor History display, begin
-        typing an Invoice Number into this field. As you type, the list will
-        automatically scroll toward the Invoice Number you are typing. You can
-        also search for Invoices manually by scrolling through the
+        <para>To search for an invoice in the Vendor History display, begin
+        typing an invoice number into this field. As you type, the list will
+        automatically scroll toward the invoice number you are typing. You can
+        also search for invoices manually by scrolling through the
         list.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para role="standard"><indexterm significance="normal">
       <primary>dashboards</primary>
+
       <secondary>for payables</secondary>
-    </indexterm>To view the Dashboard associated with your Payables, select
-  the "Dashboard" tab. The following screen will appear:</para>
+    </indexterm>To view the dashboard associated with your payables, select
+  the <guimenuitem>Dashboard</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apWorkBench_dashboard.png" />
+          <imagedata fileref="images/apWorkBench_dashboard.png"/>
         </imageobject>
+
         <caption>Payables Workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
-  <para role="standard">The Payables Dashboard includes the following
-  pre-loaded Dashboard Panes, which you can either remove or supplement with
-  additional Panes at any time:</para>
+
+  <para role="standard">The payables dashboard includes the following
+  pre-loaded dashboard panes, which you can either remove or supplement with
+  additional panes at any time:</para>
+
   <para role="standard"><variablelist>
       <varlistentry>
         <term>AP Balances</term>
+
         <listitem>
-          <para>Displays the Vendor's Payable balance.</para>
+          <para>Displays the vendor's payable balance.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
+
   <xi:include href="../widgets/dashboardPane.xml" xpointer="dashboardsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
