@@ -44,16 +44,16 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[28800](http://www.xtuple.org/xtincident/view/bugs/28800) _Lot Serial Characteristics Issue_
 - Fixed issue #[28839](http://www.xtuple.org/xtincident/view/bugs/28839) _Sub. type code displaying incorrect value on COA_
 - Fixed issue #[28868](http://www.xtuple.org/xtincident/view/bugs/28868) _Cash receipt in differing currency does not work correctly_
+- Fixed issue #[28896](http://www.xtuple.org/xtincident/view/bugs/28896) _Unable to release a work order in distribution empty database._
 - Fixed issue #[28899](http://www.xtuple.org/xtincident/view/bugs/28899) _Able to select Standard cost although turned off in Inventory Setup_
 - Fixed issue #[28903](http://www.xtuple.org/xtincident/view/bugs/28903) _Workflow activities not displayed in 'Workflow Activities' screen for purchase order when it is released at time of creation_
 - Fixed issue #[28905](http://www.xtuple.org/xtincident/view/bugs/28905) _'Cannot save work order' dialog is displayed while trying to open any work order which has priority set to other than '1'._
 - Fixed issue #[28906](http://www.xtuple.org/xtincident/view/bugs/28906) _‘One or more items cant be issued due to insufficient inventory’ dialog is displayed on issuing materials with enough QoH_
 - Fixed issue #[28907](http://www.xtuple.org/xtincident/view/bugs/28907) _Able to issue materials even though QOH of the regular type item is zero._
 - Fixed issue #[28908](http://www.xtuple.org/xtincident/view/bugs/28908) _No warning message is displayed when issuing average costing item having qoh as zero._
-- Fixed issue #[28952](http://www.xtuple.org/xtincident/view/bugs/28952) _Mac version of 4.10.0 final desktop client is unsigned_
-- Fixed issue #[29022](http://www.xtuple.org/xtincident/view/bugs/29022) _“On Order” item availability is incorrect when creating a new SO line_
 - Fixed issue #[29058](http://www.xtuple.org/xtincident/view/bugs/29058) _Checks not printing after 4.10 upgrade_
 - Fixed issue #[29076](http://www.xtuple.org/xtincident/view/bugs/29076) _Item characteristics duplicated when quote converted_
+- Fixed issue #[29133](http://www.xtuple.org/xtincident/view/bugs/29133) _Db log error is displayed on releasing purchase order in distribution empty database_
 - Fixed issue #[29137](http://www.xtuple.org/xtincident/view/bugs/29137) _Reports defs' grade > 0 for core report def aftern migration and in ref DB_
 - Fixed issue #[29173](http://www.xtuple.org/xtincident/view/bugs/29173) _GL Transactions report_
 - Fixed issue #[29226](http://www.xtuple.org/xtincident/view/bugs/29226) _Mistake on postcashreceipt function_
