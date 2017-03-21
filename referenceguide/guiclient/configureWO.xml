@@ -78,7 +78,7 @@
         Requirements and Work Order Operations are created for a Work Order.
         If this option is selected, all parent Work Order Items will be
         exploded by default. Child Work Orders will also be exploded by
-        default, if the Bill of Materials for the parent Item specifies that
+        default, if the Bill of Materials for the parent item specifies that
         child Work Orders should be created when the parent Work Order is
         exploded. If this option is not selected, Work Orders will need to be
         exploded manually.</para>
@@ -234,14 +234,14 @@
         <note>
           <para>The default method specified here will be used when creating
           Work Orders for Average cost Job Items, unless the default is being
-          overridden at the Item Site level. The method may also be changed
+          overridden at the item site level. The method may also be changed
           manually at the Work Order header level.</para>
         </note>
         <variablelist>
           <varlistentry>
             <term>To Date</term>
             <listitem>
-              <para>When Work Orders for Average Cost or Job Items are
+              <para>When Work Orders for Average Cost or job items are
               shipped, all of the WIP costs accumulated to date will be
               charged to Cost of Sales.</para>
             </listitem>
@@ -249,10 +249,10 @@
           <varlistentry>
             <term>Proportional</term>
             <listitem>
-              <para>When Work Orders for Average Cost or Job Items are
+              <para>When Work Orders for Average Cost or job items are
               shipped, a value up to the proportional value of the total
               quantity shipped will be charged to Cost of Sales. For example,
-              if 3 Items are to be shipped on a Job Work Order and all the
+              if 3 items are to be shipped on a Job Work Order and all the
               material has been issued—and if only 1 of the 3 is shipped—then
               1/3 of the value charged to WIP at that point will be charged to
               Cost of Sales.</para>

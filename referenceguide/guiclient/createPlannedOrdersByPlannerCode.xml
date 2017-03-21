@@ -8,13 +8,13 @@
   Requirements Planning (MRP) system. This utility creates Planned
   Replenishment Orders to meet existing Sales Order and Work Order demand.
   Replenishment Orders will be created whenever a Planned Availability for an
-  Item Site falls below its Reorder Level. The quantity of the Replenishment
+  item site falls below its Reorder Level. The quantity of the Replenishment
   Order will be enough to restore Planned Availability back to the Reorder
   Level—or to the Order Up To (OUT) Level, if the OUT Level is greater.</para>
   <note>
     <para>Running MRP by Planner Code may be used to generate Planned Orders
-    for both parent-level manufactured Items and also lower level purchased
-    Items. Only Items designated as MRP Items will be affected by an MRP run.
+    for both parent-level manufactured items and also lower level purchased
+    items. Only items designated as MRP items will be affected by an MRP run.
     Unposted Purchase Orders and Purchase Requests are considered as valid
     sources of supply when MRP is run.</para>
   </note>
@@ -70,13 +70,13 @@
       <term>All Sites</term>
       <listitem>
         <para>Select to create Planned Replenishment Orders by Planner Code
-        for all Sites.</para>
+        for all sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Site Planned Replenishment Orders should be created
+        <para>Specify site Planned Replenishment Orders should be created
         for.</para>
       </listitem>
     </varlistentry>

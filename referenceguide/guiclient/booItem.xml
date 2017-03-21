@@ -26,7 +26,7 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays Item Number specified in "Routing" screen.</para>
+        <para>Displays item number specified in "Routing" screen.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -114,7 +114,7 @@
               <para>The system enables you to specify when an operation can be
               used in a Bill of Materials. For example, the company's
               engineering department may be working on a new design for an
-              existing Item—but that new design will not be available for use
+              existing item—but that new design will not be available for use
               until a given date in the future. In this case, you can specify
               the "effective" date when the component will be available for
               use.</para>
@@ -127,8 +127,8 @@
               is planned to be obsoleted from (i.e., no longer used in) a Bill
               of Materials. As mentioned above, the company's engineering
               department may be working on a new design for an existing
-              Item—but that new design will not be available for use until a
-              given date in the future. In this case, the old component Item
+              item—but that new design will not be available for use until a
+              given date in the future. In this case, the old component item
               must be marked for "expiration" on a given date. This expiration
               date will most likely coincide with the effective date of the
               replacement part. Setting this parameter will instruct the
@@ -139,8 +139,8 @@
         </variablelist>
         <note>
           <para>Standard Operations are intended as initial templates used to
-          set up Routing Items. Any changes made to a Standard Operation will
-          not automatically ripple throughout all your Routing Items that use
+          set up Routing items. Any changes made to a Standard Operation will
+          not automatically ripple throughout all your Routing items that use
           the Standard Operation.</para>
         </note>
       </listitem>
@@ -198,12 +198,12 @@
         associated with run time to be tracked in the G/L and elsewhere. If
         not selected, these Costs will not be reported.</para>
         <note>
-          <para>When Operations are posted, Inventory transaction records will
+          <para>When Operations are posted, inventory transaction records will
           be posted to the General Ledger if at least one of the Operations in
           the list of Work Order Operations has either or both of the
-          Inventory handling options selected. If Items are backflushed at an
+          inventory handling options selected. If items are backflushed at an
           Operation, select the "Auto. Issue Components" option. If finished
-          Items are received into Inventory at an Operation, select the
+          items are received into inventory at an Operation, select the
           "Receive Inventory" option.</para>
         </note>
       </listitem>
@@ -215,7 +215,7 @@
         typical run-time period. The value entered here is equivalent to a run
         size, batch size, or Economic Order Quantity (EOQ) for this particular
         Operation. Because Work Order Operations roll into the Actual and
-        Standard Costs for manufactured Items, you should specify a per
+        Standard Costs for manufactured items, you should specify a per
         quantity which accurately reflects your normal batch size for the
         Operation. Specifying a standard batch size helps ensure your
         Operations Costs are evenly distributed. The following equation
@@ -285,7 +285,7 @@
         canning the soup, the canning Operation might use UOM = CAN.</para>
         <note>
           <para>When posting Work Order Operations, you are given the option
-          to post Operations using Production UOMs or Inventory UOMs.</para>
+          to post Operations using Production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -299,13 +299,13 @@
     <varlistentry>
       <term>Receive Inventory at this Operation</term>
       <listitem>
-        <para>Select to indicate that the manufactured Item should be received
-        into Inventory at this Operation. The manufactured Item will be
-        received into Inventory via a Receive from Manufacturing (RM)
+        <para>Select to indicate that the manufactured item should be received
+        into inventory at this Operation. The manufactured item will be
+        received into inventory via a Receive from Manufacturing (RM)
         transaction, when the Operation is posted.</para>
         <note>
           <para>The "Receive Inventory" option may only be selected once per
-          Routing. Finished Items may only be received into Inventory once in
+          Routing. Finished items may only be received into inventory once in
           the Operations sequence.</para>
         </note>
       </listitem>
@@ -315,8 +315,8 @@
       <listitem>
         <para>Issue Components at this Operation: Select to automatically
         issue components used at this Operation. This setting will only affect
-        component Items whose issue method is either "Pull" or "Mixed".
-        Component Items using the "Push" issue method must be issued to Work
+        component items whose issue method is either "Pull" or "Mixed".
+        Component items using the "Push" issue method must be issued to Work
         Orders using a specific material issue transaction.</para>
       </listitem>
     </varlistentry>
@@ -340,13 +340,13 @@
         </indexterm>WIP Location</term>
       <listitem>
         <para>Select a work-in-process (WIP) Location. This is an optional
-        selection which may be used for tracking the Site Locations of
-        finished goods Inventory as it moves through the manufacturing
+        selection which may be used for tracking the site Locations of
+        finished goods inventory as it moves through the manufacturing
         process. The feature applies only to top-level, Multiple Location
-        Control (MLC) Items whose production is posted through Work Order
+        Control (MLC) items whose production is posted through Work Order
         Operations posting. If you choose to track finished MLC goods using
         this feature, then the WIP Location entered here is the Location where
-        Inventory will be located when the preceding Operation for the Work
+        inventory will be located when the preceding Operation for the Work
         Order is posted. A proceeding Operation must exist for the Location
         entered here to be used. If you do not wish to track WIP Locations for
         finished MLC goods, then you can ignore this option.</para>
@@ -358,18 +358,18 @@
           <secondary>at operation level</secondary>
         </indexterm>Throughput</term>
       <listitem>
-        <para>Indicates the number of units, in the given Item's Inventory
+        <para>Indicates the number of units, in the given item's inventory
         UOM, that can be produced in a minute—and also the number of minutes
-        that are required to produce 1 unit, expressed in the given Item's
-        Inventory UOM.</para>
+        that are required to produce 1 unit, expressed in the given item's
+        inventory UOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Bill of Materials (BOM) Items may be associated with Operations—either
+  <para>Bill of Materials (BOM) items may be associated with Operations—either
   materials, tools, or finished goods themselves. In an effort to help manage
   this relationship, the Operation screen includes the ability to both modify
   the source BOM and also modify the links between the Operation and component
-  Items. To view components associated with an Operation, select the
+  items. To view components associated with an Operation, select the
   "Materials" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -421,13 +421,13 @@
       <term>EXPIRE</term>
       <listitem>
         <para>Highlight a component and then select this button to expire the
-        Item from the Bill of Materials.</para>
+        item from the Bill of Materials.</para>
         <tip>
           <para><indexterm significance="normal">
               <primary>bills of materials</primary>
               <secondary>deleting items from</secondary>
             </indexterm>If your site is configured to allow the deletion of
-          BOM Items, you will see a "Delete" option in the right-click menu on
+          BOM items, you will see a "Delete" option in the right-click menu on
           this screen.</para>
         </tip>
       </listitem>
@@ -442,7 +442,7 @@
       <term>DETACH</term>
       <listitem>
         <para>Highlight a component and then select this button to break the
-        link between the Item and the Operation.</para>
+        link between the item and the Operation.</para>
       </listitem>
     </varlistentry>
   </variablelist>

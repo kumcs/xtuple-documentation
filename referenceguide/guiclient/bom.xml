@@ -23,7 +23,7 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the Item Number of the manufactured Item you want to
+        <para>Enter the item number of the manufactured item you want to
         create a Bill of Materials for.</para>
       </listitem>
     </varlistentry>
@@ -94,7 +94,7 @@
                 <para>The active Revision becomes inactive when a pending or
                 substitute Revision is activated. To activate a pending or
                 substitute Revision, right-click on the magnifying glass next
-                to the Item number and select "Activate". Inactive Revisions
+                to the item number and select "Activate". Inactive Revisions
                 cannot be modified.</para>
               </tip>
             </listitem>
@@ -105,9 +105,9 @@
               <para>This is a Revision that has never been used, but is under
               development or consideration. You may store multiple pending
               Revisions. When a pending Revision is entered in the "Revision"
-              field, an option to activate the Item will dynamically appear in
+              field, an option to activate the item will dynamically appear in
               the context menu after you right-click on the magnifying glass
-              next to the Item number. Select "Activate" from this context
+              next to the item number. Select "Activate" from this context
               menu to convert a pending Revision to the active
               Revision.</para>
             </listitem>
@@ -154,16 +154,16 @@
       <term>Batch Size</term>
       <listitem>
         <para>The batch size is used to determine per unit setup cost when
-        costing Manufactured Items which have Bills of Operations. For
+        costing manufactured items which have Bills of Operations. For
         example, if you have $100 in setup costs and a batch size of 100, then
         your per unit setup cost would be $1. Batch size also impacts material
-        costs when component Items are specified as using fixed quantities on
+        costs when component items are specified as using fixed quantities on
         a Bill of Materials (BOM). For example, let's say you have a BOM
         component listed as having a fixed quantity of 10 and the batch size
-        for the Manufactured Item is 100. Dividing the batch size by the fixed
+        for the manufactured item is 100. Dividing the batch size by the fixed
         qty. (100/10) gives you a material requirement of 10 component items.
         This material requirement is added to the qty. per requirement for the
-        component Item, thus having an impact on the material cost of the
+        component item, thus having an impact on the material cost of the
         assembly.</para>
       </listitem>
     </varlistentry>
@@ -172,7 +172,7 @@
     <varlistentry>
       <term>Bill of Materials</term>
       <listitem>
-        <para>Display lists component Items for the Bill of Materials. Some
+        <para>Display lists component items for the Bill of Materials. Some
         line items may be color-coded for ease of use. Manufactured
         subcomponents will display in green text, expired components will be
         red, and future components will be blue.</para>
@@ -181,30 +181,30 @@
     <varlistentry>
       <term>Pick List Items</term>
       <listitem>
-        <para>Displays the total number of component Items which are also Pick
-        List Items. Items may be marked as Pick List Items on the Item
+        <para>Displays the total number of component items which are also Pick
+        List items. Items may be marked as Pick List items on the Item
         master.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Non-Pick List Items</term>
       <listitem>
-        <para>Displays the total number of component Items which are not Pick
-        List Items.</para>
+        <para>Displays the total number of component items which are not Pick
+        List items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Totals</term>
       <listitem>
-        <para>Displays the total number of component Items.</para>
+        <para>Displays the total number of component items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Current Std. Material Cost</term>
       <listitem>
-        <para>Displays the current Standard Cost for the component Items. The
+        <para>Displays the current Standard Cost for the component items. The
         displayed Cost includes all Standard Costs associated with the
-        component Items. Any non-material Costs associated with manufactured
+        component items. Any non-material Costs associated with manufactured
         subcomponents (e.g., Labor and Overhead) would also be included in
         this total.</para>
       </listitem>
@@ -212,9 +212,9 @@
     <varlistentry>
       <term>Current Act. Material Cost</term>
       <listitem>
-        <para>Displays the current Actual Cost for the component Items. The
+        <para>Displays the current Actual Cost for the component items. The
         displayed Cost includes all Actual Costs associated with the component
-        Items. Any non-material Costs associated with manufactured
+        items. Any non-material Costs associated with manufactured
         subcomponents (e.g., Labor and Overhead) would also be included in
         this total.</para>
       </listitem>
@@ -222,9 +222,9 @@
     <varlistentry>
       <term>Maximum Desired Cost</term>
       <listitem>
-        <para>Displays the maximum desired Cost for the component Items. The
+        <para>Displays the maximum desired Cost for the component items. The
         maximum desired Cost is defined on the Item master. It provides a
-        visual guide to help determine whether component Item Costs—either
+        visual guide to help determine whether component item Costs—either
         Standard or Actual—have exceeded the maximum desired Cost.</para>
       </listitem>
     </varlistentry>
@@ -263,13 +263,13 @@
       <term>EXPIRE</term>
       <listitem id="bomEXPIRE">
         <para>Highlight a component and then select this button to expire the
-        Item from the Bill of Materials.</para>
+        item from the Bill of Materials.</para>
         <tip>
           <para><indexterm significance="normal">
               <primary>bills of materials</primary>
               <secondary>deleting items from</secondary>
             </indexterm>If your site is configured to allow the deletion of
-          BOM Items, you will see a "Delete" option in the right-click menu on
+          BOM items, you will see a "Delete" option in the right-click menu on
           this screen.</para>
         </tip>
       </listitem>
@@ -277,7 +277,7 @@
     <varlistentry>
       <term>MOVE UP</term>
       <listitem id="bomMOVEUP">
-        <para>Highlight a component Item and then select this button to move
+        <para>Highlight a component item and then select this button to move
         the component up the Bill of Materials list. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
@@ -285,7 +285,7 @@
     <varlistentry>
       <term>MOVE DOWN</term>
       <listitem id="bomMOVEDOWN">
-        <para>Highlight a component Item and then select this button to move
+        <para>Highlight a component item and then select this button to move
         the component down the Bill of Materials list. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>

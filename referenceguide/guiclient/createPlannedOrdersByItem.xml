@@ -7,19 +7,19 @@
   <para>When you run MRP by Item, you are running the Material Requirements
   Planning (MRP) system. This utility creates Planned Replenishment Orders to
   meet existing Sales Order and Work Order demand. Replenishment Orders will
-  be created whenever a Planned Availability for an Item Site falls below its
+  be created whenever a Planned Availability for an item site falls below its
   Reorder Level. The quantity of the Replenishment Order will be enough to
   restore Planned Availability back to the Reorder Level—or to the Order Up To
   (OUT) Level, if the OUT Level is greater.</para>
   <tip>
-    <para>When running MRP by Item for manufactured Items, the system
+    <para>When running MRP by Item for manufactured items, the system
     generates Planned Work Orders only. If you want to also generate Planned
     Orders for purchased requirements, you should run MRP by Planner Code.
-    Only Items designated as MRP Items will be affected by an MRP run.
+    Only items designated as MRP items will be affected by an MRP run.
     Unposted Purchase Orders and Purchase Requests are considered as valid
     sources of supply when MRP is run.</para>
   </tip>
-  <para>To run MRP for an individual Item, select the "Run MRP by Item"
+  <para>To run MRP for an individual item, select the "Run MRP by Item"
   option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -42,7 +42,7 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the Item Number of the Item you want to create a Planned
+        <para>Enter the item number of the item you want to create a Planned
         Order for. The lookup feature located to the right of the field leads
         to a searchable list of make and buy items.</para>
       </listitem>
@@ -56,7 +56,7 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Specify Site Planned Replenishment Orders should be created
+        <para>Specify site Planned Replenishment Orders should be created
         for.</para>
       </listitem>
     </varlistentry>
@@ -75,7 +75,7 @@
       <term>Explode Children</term>
       <listitem>
         <para>Select to perform a multi-level explosion to identify dependent
-        demand for the specified Item. This functionality will create Planned
+        demand for the specified item. This functionality will create Planned
         Orders for any child demand, if necessary. The functionality mirrors
         the same feature available at the Planner Code level, which is
         available when running MRP by Planner Code.</para>
@@ -119,7 +119,7 @@
     <varlistentry>
       <term>CREATE</term>
       <listitem>
-        <para>Creates Planned Replenishment Orders by Item, using the
+        <para>Creates Planned Replenishment Orders by item, using the
         specified parameters.</para>
       </listitem>
     </varlistentry>

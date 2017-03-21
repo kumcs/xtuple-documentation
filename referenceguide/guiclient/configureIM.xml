@@ -43,7 +43,7 @@
             <listitem>
               <para>Select a value between 0 and 999 using the arrow buttons
               located to the right of the field. Indicates the Event Fence
-              value that will appear by default whenever a new Item Site is
+              value that will appear by default whenever a new item site is
               created. The value is measured in days.</para>
             </listitem>
           </varlistentry>
@@ -55,7 +55,7 @@
       <term>Post Item Site Changes to the Change Log</term>
 
       <listitem>
-        <para>Select to post to the Change Log any changes made to Item Site
+        <para>Select to post to the Change Log any changes made to item site
         masters.</para>
       </listitem>
     </varlistentry>
@@ -73,10 +73,10 @@
       <term>Enable Multiple Sites</term>
 
       <listitem>
-        <para>Select to allow more than one Site to be entered in the system.
-        If multiple Sites are not enabled, your system will be single Site
-        only. Users will be prevented from creating more than one Site. If
-        your system has multiple Sites defined, this option will be
+        <para>Select to allow more than one site to be entered in the system.
+        If multiple sites are not enabled, your system will be single site
+        only. Users will be prevented from creating more than one site. If
+        your system has multiple sites defined, this option will be
         hidden.</para>
       </listitem>
     </varlistentry>
@@ -85,7 +85,7 @@
       <term>Transfer Order # Generation</term>
 
       <listitem>
-        <para>If multiple Sites are enabled, select one of the available
+        <para>If multiple sites are enabled, select one of the available
         Transfer Order Number generation methods:</para>
 
         <variablelist>
@@ -140,8 +140,8 @@
       <term>Default Transit Site</term>
 
       <listitem>
-        <para>If multiple Sites are enabled, specify the default Transit Site.
-        The specified Site will be pre-selected by default whenever Transfer
+        <para>If multiple sites are enabled, specify the default Transit site.
+        The specified site will be pre-selected by default whenever Transfer
         Orders are entered.</para>
       </listitem>
     </varlistentry>
@@ -151,10 +151,10 @@
 
       <listitem>
         <para>Select to enable Lot/Serial tracking capability in the system.
-        If not selected, users will be prevented from creating Item Sites
+        If not selected, users will be prevented from creating item sites
         having either the Lot or Serial control method. Without the ability to
-        create Lot/Serial Item Sites, the Lot/Serial tracking capability is
-        disabled. If your system has Lot/Serial Item Sites defined, this
+        create Lot/Serial item sites, the Lot/Serial tracking capability is
+        disabled. If your system has Lot/Serial item sites defined, this
         option will be hidden.</para>
       </listitem>
     </varlistentry>
@@ -164,7 +164,7 @@
 
       <listitem>
         <para>Select to add an "As Of" date option to the quantity on hand
-        (QOH) report so that Inventory quantities and values can be determined
+        (QOH) report so that inventory quantities and values can be determined
         for any given date. If not selected, inventory values shown in the QOH
         report will always reflect current values.</para>
 
@@ -180,7 +180,7 @@
       <term>Prevent Negative Qty. Inventory</term>
 
       <listitem>
-        <para>Select if you want to prevent Inventory transactions from
+        <para>Select if you want to prevent inventory transactions from
         causing the QOH for item sites to go negative. If not selected,
         inventory transactions will be allowed to drive QOH negative.</para>
       </listitem>
@@ -192,10 +192,10 @@
 
       <listitem>
         <para>Select if you want to allow users to set or change the default
-        Location for Multiple Location Control (MLC) Items while in the
-        process of conducting transactions involving MLC Items. If not
+        Location for Multiple Location Control (MLC) items while in the
+        process of conducting transactions involving MLC items. If not
         selected, the default Location will have to be set or changed on the
-        Item Site record for each Item.</para>
+        item site record for each item.</para>
       </listitem>
     </varlistentry>
 
@@ -204,7 +204,7 @@
 
       <listitem>
         <para>Select any or all of the available methods to value inventory
-        transactions for an Item Site. If any Item Sites exist for a
+        transactions for an item site. If any item sites exist for a
         particular Cost Method, that Cost Method is disabled to prevent
         unselecting.</para>
 
@@ -213,9 +213,9 @@
             <term>Average</term>
 
             <listitem>
-              <para>Cost distributions for an Item Site is based on an average
-              of all costs accumulated for the Item Site. The QOH of Item
-              Sites defined with this Cost Method will not be allowed to go
+              <para>Cost distributions for an item site is based on an average
+              of all costs accumulated for the item site. The QOH of item
+              sites defined with this Cost Method will not be allowed to go
               negative.</para>
             </listitem>
           </varlistentry>
@@ -224,8 +224,8 @@
             <term>Standard</term>
 
             <listitem>
-              <para>Cost distributions for an Item Site is based on the
-              Standard Cost posted for the Item.</para>
+              <para>Cost distributions for an item site is based on the
+              Standard Cost posted for the item.</para>
             </listitem>
           </varlistentry>
 
@@ -233,9 +233,9 @@
             <term>Job</term>
 
             <listitem>
-              <para>Cost distributions for an Item Site is based on actual
+              <para>Cost distributions for an item site is based on actual
               accumulation of costs on a Work Order. This Cost Method is used
-              exclusively by Items with Type of "Job".</para>
+              exclusively by items with Type of "Job".</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -246,7 +246,7 @@
       <term>When Posting a Count Tag for Avg. Cost Items</term>
 
       <listitem>
-        <para>Specify how you want the Inventory value of Average Costed Items
+        <para>Specify how you want the inventory value of Average Costed items
         to be handled when posting Count Tags:</para>
 
         <variablelist>
@@ -256,7 +256,7 @@
             <listitem>
               <para>Select if you want to use the Item's Standard Cost when
               posting Count Tags. This option assumes you are maintaining
-              Standard Costs for your Average Cost Items.</para>
+              Standard Costs for your Average Cost items.</para>
             </listitem>
           </varlistentry>
 
@@ -265,7 +265,7 @@
 
             <listitem>
               <para>Select to use the Item's Average Cost when posting Count
-              Tags. If no prior Average Cost exists, the Inventory value of a
+              Tags. If no prior Average Cost exists, the inventory value of a
               posted Count Tag will be $0.</para>
             </listitem>
           </varlistentry>
@@ -276,7 +276,7 @@
             <listitem>
               <para>Select to use the Item's Actual Cost if no Average Cost
               exists when posting Count Tags. This option provides an
-              alternate method for valuing Inventory in the scenario where no
+              alternate method for valuing inventory in the scenario where no
               prior Average Cost exists and also when Standard Costs are not
               in use.</para>
             </listitem>
@@ -308,8 +308,8 @@
               <para>Select to post excess Count Tag quantity to an Item's
               default location if the Item's Count Tag quantity exceeds its
               Count Slip quantity. Applies only if a default location has been
-              defined for the Item. Default locations are defined for an Item
-              in the Item Site record.</para>
+              defined for the item. Default locations are defined for an item
+              in the item site record.</para>
             </listitem>
           </varlistentry>
 
@@ -322,8 +322,8 @@
 
               <note>
                 <para>By default, the system allows only one unposted Count
-                Tag per Item Site. If an unposted Count Tag already exists for
-                an Item Site, then an additional duplicate Count Tag may not
+                Tag per item site. If an unposted Count Tag already exists for
+                an item site, then an additional duplicate Count Tag may not
                 be added.</para>
               </note>
             </listitem>
@@ -354,12 +354,12 @@
           </varlistentry>
 
           <varlistentry>
-            <term>No Unposted Slip # Duplications within a Site</term>
+            <term>No Unposted Slip # Duplications within a site</term>
 
             <listitem>
               <para>Prevents duplicate "Unposted" Count Slip numbers from
-              existing within a given Site. However, duplicate "Unposted"
-              Count Slip numbers may exist within multiple Sites.</para>
+              existing within a given site. However, duplicate "Unposted"
+              Count Slip numbers may exist within multiple sites.</para>
             </listitem>
           </varlistentry>
 
@@ -368,17 +368,17 @@
 
             <listitem>
               <para>Prevents duplicate "Unposted" Count Slip numbers from
-              existing within multiple Sites.</para>
+              existing within multiple sites.</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>No Slip # Duplications within a Site</term>
+            <term>No Slip # Duplications within a site</term>
 
             <listitem>
               <para>Prevents duplicate Count Slip numbers from existing within
-              a given Site. However, duplicate Count Slip numbers may exist
-              within multiple Sites.</para>
+              a given site. However, duplicate Count Slip numbers may exist
+              within multiple sites.</para>
             </listitem>
           </varlistentry>
 
@@ -387,7 +387,7 @@
 
             <listitem>
               <para>Prevents duplicate Count Slip Numbers from existing within
-              multiple Sites.</para>
+              multiple sites.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -400,8 +400,8 @@
 
       <listitem>
         <para>Select this option to enable cost overrides for Average costed
-        Items at the point when inventory is received. If not selected, any
-        unposted or uninvoiced Receipts or PO Returns against Items previously
+        items at the point when inventory is received. If not selected, any
+        unposted or uninvoiced Receipts or PO Returns against items previously
         received at an override cost value could be negatively
         affected.</para>
       </listitem>
@@ -438,7 +438,7 @@
 
       <listitem>
         <para>Enter the next Shipment Number to be used. The system assigns
-        Shipment Numbers to Sales Order Line Item quantities when stock is
+        Shipment Numbers to Sales Order line item quantities when stock is
         issued to Shipping. All stock at Shipping for an individual Sales
         Order is assigned the same Shipment Number. If no stock is already at
         Shipping, then a new Shipment Number will be used.</para>
@@ -449,7 +449,7 @@
       <term>Kit Components Inherit COS from Kit Parent</term>
 
       <listitem>
-        <para>Select if you want the components of Kit Items to inherit the
+        <para>Select if you want the components of Kit items to inherit the
         same Cost of Sales (COS) Account used by the parent Kit Item. If not
         selected, the Kit components will use the COS Accounts defined in
         their respective Sales Account Assignments.</para>
@@ -462,7 +462,7 @@
       <listitem>
         <para>Select to ensure the maximum receiving quantity does not exceed
         the quantity ordered. If selected, the system will prevent users from
-        receiving more Purchase Order Line Item quantity than the quantity
+        receiving more Purchase Order line item quantity than the quantity
         ordered. Not selecting this option means users will be allowed to
         receive quantity in excess of the quantity ordered.</para>
       </listitem>
@@ -498,7 +498,7 @@
       <listitem>
         <para>If selected, Purchase Price Variances (PPV) will be recorded
         when Purchase Order Receipts are posted. This option applies to
-        Standard costed Items. If not selected, then the default system
+        Standard costed items. If not selected, then the default system
         behavior will be in effect—that is, PPV will be recorded when Vouchers
         are posted. It's technically possible (although unlikely) for PPV be
         recorded both at receipt and at Voucher time. This situation would
@@ -537,9 +537,9 @@
 
       <listitem>
         <para>Select if you want the Actual Cost for a Purchase Order Item to
-        be updated when that Item is received. This feature complements and
+        be updated when that item is received. This feature complements and
         does not replace the standard process, whereby a received Item's
-        Actual Cost is updated at the point when a Voucher for that Item is
+        Actual Cost is updated at the point when a Voucher for that item is
         posted.</para>
       </listitem>
     </varlistentry>

@@ -358,7 +358,7 @@
         before their Sales Orders are saved. This credit check compares the
         Customer's credit limit to the sum of their open Sales Orders and open
         Receivables. If the Customer is found to be over their credit limit,
-        the Sales Order cannot be saved―except by users with the override
+        the Sales Order cannot be saved?except by users with the override
         privilege. If this option is not selected, normal credit checking will
         occur during the shipping phase.</para>
       </listitem>
@@ -375,7 +375,7 @@
             <term>Allow ASAP Schedule Dates</term>
 
             <listitem>
-              <para>Selecting this option will cause Sales Order Line Items to
+              <para>Selecting this option will cause Sales Order line items to
               default to the current date if no schedule date is
               entered.</para>
 
@@ -437,7 +437,7 @@
         system-wide. This feature allows for the hard allocation of quantity
         to Sales Orders. When this feature is selected, the "Issue Stock to
         Shipping" screen will enforce and disable the option to require
-        sufficient Inventory. If not selected, the Sales Order reservation
+        sufficient inventory. If not selected, the Sales Order reservation
         options will be hidden from view.</para>
 
         <variablelist>
@@ -473,7 +473,7 @@
             <term>Lowest Quantity First</term>
 
             <listitem>
-              <para>Locations for the Item will be sorted ascending by
+              <para>Locations for the item will be sorted ascending by
               quantity. Reservations will start with the Location with the
               lowest quantity and continue until the quantity required is
               fully reserved or there is insufficient quantity on hand
@@ -485,7 +485,7 @@
             <term>Highest Quantity First</term>
 
             <listitem>
-              <para>Locations for the Item will be sorted descending by
+              <para>Locations for the item will be sorted descending by
               quantity. Reservations will start with the Location with the
               highest quantity and continue until the quantity required is
               fully reserved or there is insufficient QOH.</para>
@@ -496,7 +496,7 @@
             <term>Alpha by Location Name</term>
 
             <listitem>
-              <para>Locations for the Item will be sorted ascending
+              <para>Locations for the item will be sorted ascending
               alphabetically by the Location Name. Reservations will start
               with the first Location and continue until the quantity required
               is fully reserved or there is insufficient QOH.</para>
@@ -539,7 +539,7 @@
             <term>Firm Sales Orders when added to Packing List Batch</term>
 
             <listitem>
-              <para>Select to make Sales Order Line Items firm when the Sales
+              <para>Select to make Sales Order line items firm when the Sales
               Order they are on is added to the Packing List batch.</para>
             </listitem>
           </varlistentry>
@@ -562,7 +562,7 @@
 
             <listitem>
               <para>Select if you want the "Approve for Billing" option to be
-              selected by default whenever you ship Sales Order Line Items.
+              selected by default whenever you ship Sales Order line items.
               Selecting this option reduces steps in the billing process.
               Specifically, if an Order is selected for billing when it is
               shipped, you do not then have to take the extra step of
@@ -583,13 +583,13 @@
 
         <variablelist>
           <varlistentry>
-            <term>Restrict Sales Credits to Items that appear on their
+            <term>Restrict Sales Credits to items that appear on their
             Apply-To Document</term>
 
             <listitem>
               <para>Select if you want to restrict Sales Credit Items to their
               Apply-To Document. Selecting this option narrows the Sales
-              Credit Item selection process to only those Items which appeared
+              Credit item selection process to only those items which appeared
               on the Invoice the Sales Credit is being applied to. If not
               selected, a sold Item master list will appear instead when
               selecting Sales Credit Items for Sales Credits applied to a
@@ -705,9 +705,9 @@
               <para>Check this option to allow pricing discounts for select
               customers. This option instructs the system to verify whether
               any Pricing Discounts have been established for a Customer,
-              prior to calculating the Line Item Price for of an Item within a
+              prior to calculating the line item Price for of an item within a
               Sales Order. If this option is unchecked, then the system will
-              apply the full List Price for an Item within a Sales
+              apply the full List Price for an item within a Sales
               Order.</para>
             </listitem>
           </varlistentry>
@@ -717,7 +717,7 @@
 
             <listitem>
               <para>Select to prevent all users from overriding the Sales
-              Price when entering Sales Order Line Items. This is a
+              Price when entering Sales Order line items. This is a
               system-wide setting, affecting all users. Do not select this
               option if you want to selectively prevent users from overriding
               Sales Prices. Individual users may be granted the ability to
@@ -741,7 +741,7 @@
             <term>Item Precedence Over Product Category Pricing</term>
 
             <listitem>
-              <para>If selected, Item specific Price Schedule pricing takes
+              <para>If selected, item-specific Price Schedule pricing takes
               precedence over Product Category pricing. Leave unchecked if the
               lowest overall price should be selected.</para>
             </listitem>
@@ -764,9 +764,9 @@
             <term>Use Wholesale Price as Unit Cost for Markups</term>
 
             <listitem>
-              <para>If selected, the Item wholesale price is used as basis for
+              <para>If selected, the item wholesale price is used as basis for
               markup pricing. Leave unchecked to use the standard or average
-              cost against the Item or Item Site cost.</para>
+              cost against the item or item site cost.</para>
             </listitem>
           </varlistentry>
 
@@ -796,7 +796,7 @@
             <term>Use calculated Freight values by default</term>
 
             <listitem>
-              <para>If selected, Items issued to Shipping will be checked
+              <para>If selected, items issued to Shipping will be checked
               against Pricing Schedules to determine the actual freight for a
               given Shipment based on shipping quantities and weight rather
               than assuming all freight should be billed. If not selected, the
@@ -823,11 +823,11 @@
 
       <listitem>
         <para>Select one of the following as your preferred response when
-        users change Sales Order Line Item quantities:</para>
+        users change Sales Order line item quantities:</para>
 
         <note>
-          <para>The Sales Order Line Item pricing options apply only when
-          editing Line Item quantity.</para>
+          <para>The Sales Order line item pricing options apply only when
+          editing line item quantity.</para>
         </note>
 
         <variablelist>
@@ -836,7 +836,7 @@
 
             <listitem>
               <para>If selected, the system will automatically update the Net
-              Unit Price for the Line Item, adjusting to accommodate the
+              Unit Price for the line item, adjusting to accommodate the
               newly-entered quantity.</para>
             </listitem>
           </varlistentry>
@@ -846,7 +846,7 @@
 
             <listitem>
               <para>If selected, the Net Unit Price will not be changed when
-              Line Item quantity is changed on EDIT—and users will not be
+              line item quantity is changed on EDIT—and users will not be
               prompted to consider changing the Price.</para>
             </listitem>
           </varlistentry>
@@ -866,9 +866,9 @@
 
                   <listitem>
                     <para>Select if you want Price update warnings to be
-                    ignored when Line Items being edited are already
+                    ignored when line items being edited are already
                     discounted. Also, if Sales Order header changes cause
-                    Prices to be updated, any discounted Line Items will not
+                    Prices to be updated, any discounted line items will not
                     be updated.</para>
                   </listitem>
                 </varlistentry>
@@ -883,7 +883,7 @@
       <term>Price Effective Date</term>
 
       <listitem>
-        <para>Specify one of the following options for when Item Prices should
+        <para>Specify one of the following options for when item Prices should
         be effective as of:</para>
 
         <variablelist>
@@ -1087,7 +1087,7 @@
       <term>Preferred Selling Site</term>
 
       <listitem>
-        <para>Specify a preferred selling Site to be used whenever new
+        <para>Specify a preferred selling site to be used whenever new
         Customers are created.</para>
       </listitem>
     </varlistentry>
@@ -1232,8 +1232,8 @@
 
               <listitem>
                 <para>Select if, by default, you want to issue credit to
-                Customers for authorized Line Items and quantities. No return
-                is required or expected. Return Authorization Line Items will
+                Customers for authorized line items and quantities. No return
+                is required or expected. Return Authorization line items will
                 close when an associated Credit Memo is posted.</para>
               </listitem>
             </varlistentry>
@@ -1244,7 +1244,7 @@
               <listitem>
                 <para>Select if, by default, you want to authorize returns
                 from Customers. Return Authorization Items will close when an
-                associated Credit Memo is posted, or when all Items on a line
+                associated Credit Memo is posted, or when all items on a line
                 have been returned, whichever comes last.</para>
               </listitem>
             </varlistentry>
@@ -1253,14 +1253,14 @@
               <term>Replace</term>
 
               <listitem>
-                <para>Select if, by default, you want to replace Items
+                <para>Select if, by default, you want to replace items
                 returned by Customers. Authorized quantities will be added as
                 additional order quantity to an associated Sales Order line,
                 which in turn should be reopened if closed. Return
-                Authorization Items will close when all Items on the line have
-                been returned or all authorized Items on the line have been
+                Authorization items will close when all items on the line have
+                been returned or all authorized items on the line have been
                 shipped, whichever comes last. No money should be involved
-                when invoicing replacement Items.</para>
+                when invoicing replacement items.</para>
               </listitem>
             </varlistentry>
 
@@ -1269,11 +1269,11 @@
 
               <listitem>
                 <para>Select if, by default, you want to repair or service
-                Items returned by Customers. Service or repair items will
+                items returned by Customers. Service or repair items will
                 first be received by a Return Authorization. Then a new Sales
                 Order with linked Work Order(s) will be created to track work
                 and shipping on the repair or service. The new Sales Order
-                will be on RMA Hold until Items have been received by the
+                will be on RMA Hold until items have been received by the
                 Return Authorization.</para>
               </listitem>
             </varlistentry>
@@ -1283,10 +1283,10 @@
 
               <listitem>
                 <para>Select if, by default, you want to authorize the
-                substitution of Items returned by Customers. Under this
+                substitution of items returned by Customers. Under this
                 option, when an original Sales Order is imported into the
-                Return Authorization, the Return Authorization Line Items will
-                default to the Return disposition. Any new Line Items added
+                Return Authorization, the Return Authorization Line items will
+                default to the Return disposition. Any new line items added
                 beyond the original ones will have a default disposition of
                 Ship.</para>
               </listitem>
@@ -1388,7 +1388,7 @@
         <term>Close Return Authorization when Crediting</term>
 
         <listitem>
-          <para>If selected, Return Authorization Line Items will be closed
+          <para>If selected, Return Authorization line items will be closed
           automatically when a Return credit is created and posted.</para>
         </listitem>
       </varlistentry>
@@ -1450,9 +1450,9 @@
       <term>Require Sufficient Inventory to Ship</term>
 
       <listitem>
-        <para>Select to ensure you have enough QOH in stock of a Line Item
+        <para>Select to ensure you have enough QOH in stock of a line item
         prior to shipping. If selected, this option will prevent you from
-        shipping a Line Item if doing so would force QOH for the Item Site to
+        shipping a line item if doing so would force QOH for the item site to
         fall below zero. Not selecting this option means shipping may drive
         QOH negative.</para>
       </listitem>

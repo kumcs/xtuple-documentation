@@ -17,7 +17,7 @@
       <secondary>count tags created by</secondary>
     </indexterm>Create Count Tags by Planner Code</title>
 
-  <para>Count Tags are used to spearhead Inventory counts. They are created
+  <para>Count Tags are used to spearhead inventory counts. They are created
   manually and on-demand, and they are not tied to any particular cycle or
   frequency, as Cycle Count Tags are. To create Count Tags by Planner Code,
   select the "Create Count Tags by Planner Code" option. The following screen
@@ -37,8 +37,8 @@
   following options:</para>
 
   <tip>
-    <para>By default, the system allows only one unposted Count Tag per Item
-    Site. To view all unposted Count Tags in your system, see the Count Tag
+    <para>By default, the system allows only one unposted Count Tag per item
+    site. To view all unposted Count Tags in your system, see the Count Tag
     Edit List.</para>
   </tip>
 
@@ -72,7 +72,7 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specify Site the Count Tags are to be created for.</para>
+        <para>Specify site the Count Tags are to be created for.</para>
       </listitem>
     </varlistentry>
 
@@ -100,20 +100,20 @@
         </indexterm>Freeze Inventory</term>
 
       <listitem>
-        <para>Select to freeze Inventory. The quantity on hand (QOH) value is
-        not updated when a transaction is posted against a frozen Item Site.
-        Instead, Inventory transactions are pooled and then posted later when
-        the Item Site is unfrozen—or thawed. The QOH is later updated when the
-        Item Site is thawed.</para>
+        <para>Select to freeze inventory. The quantity on hand (QOH) value is
+        not updated when a transaction is posted against a frozen item site.
+        Instead, inventory transactions are pooled and then posted later when
+        the item site is unfrozen—or thawed. The QOH is later updated when the
+        item site is thawed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>When an Item Site is frozen, any Inventory transactions entered
-    against that Item Site will not update the system-wide QOH until after the
-    Item Site is thawed and its Count Tag posted. If an Item Site is frozen
-    when a Count Tag is created, both the Inventory count and the
+    <para>When an item site is frozen, any inventory transactions entered
+    against that item site will not update the system-wide QOH until after the
+    item site is thawed and its Count Tag posted. If an item site is frozen
+    when a Count Tag is created, both the inventory count and the
     corresponding General Ledger (G/L) transactions will use the Count Tag
     created (i.e., frozen) date when the Count Tag is posted.</para>
   </note>
@@ -123,8 +123,8 @@
       <term>Ignore Zero Balance Item Sites</term>
 
       <listitem>
-        <para>Select to ignore Item Sites which have a QOH balance of zero. If
-        selected, Count Tags will not be created for any Item Site having a
+        <para>Select to ignore item sites which have a QOH balance of zero. If
+        selected, Count Tags will not be created for any item site having a
         QOH balance of zero.</para>
       </listitem>
     </varlistentry>
@@ -133,11 +133,11 @@
       <term>Only for Specified Location</term>
 
       <listitem>
-        <para>Select if you want to create Count Tags for an individual Site
-        Location. If selected, you will have the option to specify which Site
+        <para>Select if you want to create Count Tags for an individual site
+        Location. If selected, you will have the option to specify which site
         Location you want to have Count Tags created for. This option enables
-        you to count individual Site Locations separately, without having to
-        post counts for an entire Site all at once.</para>
+        you to count individual site Locations separately, without having to
+        post counts for an entire site all at once.</para>
       </listitem>
     </varlistentry>
 
@@ -156,7 +156,7 @@
         <para>This is a scrolling text field with word-wrapping for entering
         Notes related to the Count Tag. Use the Notes field to enter any
         instructions or other Notes that need to reach and be read by the
-        Inventory counters.</para>
+        inventory counters.</para>
       </listitem>
     </varlistentry>
   </variablelist>

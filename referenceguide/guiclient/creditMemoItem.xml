@@ -7,7 +7,7 @@
       <primary>sales credits</primary>
       <secondary>adding line items to</secondary>
     </indexterm>Sales Credit Item</title>
-  <para>To create a new Sales Credit Line Item, select the NEW button. The
+  <para>To create a new Sales Credit line item, select the NEW button. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -17,7 +17,7 @@
         <caption>Create New Sales Credit Line Item</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Sales Credit Line Item, you are presented with the
+  <para>When creating a new Sales Credit line item, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -37,34 +37,34 @@
     <varlistentry>
       <term>Item Type</term>
       <listitem>
-        <para>Indicate the Item Type for the Sales Credit Line Item, by
+        <para>Indicate the item type for the Sales Credit line item, by
         selecting one of the following options:</para>
         <variablelist>
           <varlistentry>
             <term>Item</term>
             <listitem>
               <para>The lookup feature located to the right of the field leads
-              to a searchable list of Inventory Items. If the Sales Credit is
-              being applied to a particular Invoice―and your Sales module is
-              configured to restrict Sales Credits to Items appearing on their
-              apply-to document―then the Item list will show only Items on the
+              to a searchable list of inventory items. If the Sales Credit is
+              being applied to a particular Invoice?and your Sales module is
+              configured to restrict Sales Credits to items appearing on their
+              apply-to document?then the Item List will show only items on the
               original Invoice. The ITEM/ALIAS SEARCH button can also be used
-              to help locate Sales Credit Items. Once an Item Number is
-              entered, the Inventory Unit of Measure and Item description will
+              to help locate Sales Credit Items. Once an item number is
+              entered, the inventory Unit of Measure and item description will
               automatically appear. Additionally, you may also specify the
-              Item's receiving Site. Commercial editions of xTuple allow Items
-              to be received into multiple Sites.</para>
+              Item's receiving site. Commercial editions of xTuple allow items
+              to be received into multiple sites.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Miscellaneous</term>
             <listitem>
               <para>Enter a name and description for the miscellaneous,
-              non-Inventory Item you are billing the Customer for. The name
+              non-inventory item you are billing the Customer for. The name
               and description fields are free-form, meaning they accept
               unlimited alphanumeric characters. You must also select a Sales
               Category. Sales Categories are used to identify the General
-              Ledger (G/L) Accounts to be used when non-Inventory Sales
+              Ledger (G/L) Accounts to be used when non-inventory Sales
               transactions take place.</para>
             </listitem>
           </varlistentry>
@@ -78,8 +78,8 @@
         Customer's account.</para>
         <para><note>
             <para>By default, the Reason Code on the Sales Credit header will
-            be used at the Line Item level. However, you may change the Reason
-            Code for individual Line Items.</para>
+            be used at the line item level. However, you may change the Reason
+            Code for individual line items.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -97,18 +97,18 @@
     <varlistentry>
       <term>Qty. Returned</term>
       <listitem>
-        <para>Enter the quantity of the Item returned for credit. If the Sales
+        <para>Enter the quantity of the item returned for credit. If the Sales
         Credit was created from a Return Authorization, the quantity returned
         will be zero on the Sales Credit Item screen. Return Authorization
         returns are handled separately, outside of the normal Sales Credit
-        Inventory handling process.</para>
+        inventory handling process.</para>
         <variablelist>
           <varlistentry>
             <term>Update Inventory</term>
             <listitem>
               <para>Select if you want the quantity returned to be added back
-              into Inventory when you post the Sales Credit. If not selected,
-              your Inventory will not be updated.</para>
+              into inventory when you post the Sales Credit. If not selected,
+              your inventory will not be updated.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -117,7 +117,7 @@
     <varlistentry>
       <term>Qty. To Credit</term>
       <listitem>
-        <para>Enter the quantity of the Item you plan to give the Customer
+        <para>Enter the quantity of the item you plan to give the Customer
         credit for. The quantity entered here may equal the quantity returned.
         However, you have the flexibility to credit the Customer for a
         quantity different from the returned quantity. The quantity credited
@@ -136,7 +136,7 @@
     <varlistentry>
       <term>Qty. Shipped</term>
       <listitem>
-        <para>Displays the quantity of the Item shipped to date.</para>
+        <para>Displays the quantity of the item shipped to date.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -212,7 +212,7 @@
     <varlistentry>
       <term>Sale Price</term>
       <listitem>
-        <para>Displays the sold Price for the Item at the time of sale.</para>
+        <para>Displays the sold Price for the item at the time of sale.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -236,7 +236,7 @@
       <term>Tax</term>
       <listitem>
         <para>Displays the amount of Tax to be charged for the Sales Credit
-        Line Item quantity. To get a detailed view of the Tax calculation,
+        line item quantity. To get a detailed view of the Tax calculation,
         click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>

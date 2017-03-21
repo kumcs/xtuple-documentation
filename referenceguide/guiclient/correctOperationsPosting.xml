@@ -34,14 +34,14 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Displays Site code automatically when Work Order Number is
+        <para>Displays site code automatically when Work Order Number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays Item Number automatically when Work Order Number is
+        <para>Displays item number automatically when Work Order Number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -69,7 +69,7 @@
       <term>Operation</term>
       <listitem>
         <para>Select the individual Work Order Operation you want to post from
-        the list of Work Order Operations for the specified Item. After
+        the list of Work Order Operations for the specified item. After
         selecting an Operation, specify details for that Operation. To correct
         Operations posting for another Operation, simply select that Operation
         from the sequential list.</para>
@@ -83,15 +83,15 @@
           <varlistentry>
             <term>Ordered</term>
             <listitem>
-              <para>Indicates the quantity of material, measures in the Item's
-              Inventory UOM, that the selected Work Order is due to
+              <para>Indicates the quantity of material, measures in the item's
+              inventory UOM, that the selected Work Order is due to
               produce.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Received</term>
             <listitem>
-              <para>Indicates the quantity, measured in the Item's Inventory
+              <para>Indicates the quantity, measured in the item's inventory
               UOM, that has been completed by this Operation.</para>
             </listitem>
           </varlistentry>
@@ -124,21 +124,21 @@
             <term>Post in Production UOMs</term>
             <listitem>
               <para>Select to post the corrected quantity in Production Units
-              of Measure. Operations may be posted using either the Inventory
+              of Measure. Operations may be posted using either the inventory
               or Production UOM. In addition, different Operations in a single
               Bill of Operations may use different Production UOMs. For
               example, if you are producing soup, you might mix the soup in
               one Operation using UOM = BATCH. But when canning the soup, the
               canning Operation might use UOM = CAN. If you post Operations
-              using the Production UOM, the Inventory/Production UOM ratio
+              using the Production UOM, the inventory/Production UOM ratio
               defined at the Operation level normalizes the posting so that
-              the Inventory impact is recorded using the Inventory UOM.</para>
+              the inventory impact is recorded using the inventory UOM.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Post in Inventory UOMs</term>
             <listitem>
-              <para>Select to post the corrected quantity in Inventory Units
+              <para>Select to post the corrected quantity in inventory Units
               of Measure.</para>
             </listitem>
           </varlistentry>
@@ -186,7 +186,7 @@
       <term>Correct Standard Run Time</term>
       <listitem>
         <para>Select to correct the standard run time for specified
-        Item.</para>
+        item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -239,7 +239,7 @@
       <listitem>
         <para>Components: Select to return components to the Work Order
         Material Requirements. Option will only be enabled when Work Order
-        Material Requirements are linked to a selected Operation. Only Items
+        Material Requirements are linked to a selected Operation. Only items
         whose issue method is "Pull" or "Mixed" will be displayed.</para>
       </listitem>
     </varlistentry>
@@ -249,9 +249,9 @@
           <secondary>correcting operations posting</secondary>
         </indexterm>Correct Inventory</term>
       <listitem>
-        <para>Select of you wish to remove any Inventory issued to stock by
+        <para>Select of you wish to remove any inventory issued to stock by
         the selected Operation. Enabled if the selected Operation is tagged to
-        receive Inventory.</para>
+        receive inventory.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -261,10 +261,10 @@
           <varlistentry role="standard">
             <term>Preferred Selling Site</term>
             <listitem>
-              <para>Specify the preferred selling Site for the Ship-To
+              <para>Specify the preferred selling site for the Ship-To
               Address. If no default Ship-To Address exists, Sales Orders
               entered for the Customer will try to match this setting with the
-              Site selection at the Sales Order header level.</para>
+              site selection at the Sales Order header level.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -426,13 +426,13 @@
         </indexterm>Accepts Backorders</term>
       <listitem>
         <para>Select to indicate whether the Customer accepts Backorders. A
-        backorder is defined as an unshipped Line Item on a shipped Sales
-        Order. For example, if a Customer orders three Line Items, but only
-        one of the Line Items is shipped, the remaining two Line Items would
+        backorder is defined as an unshipped line item on a shipped Sales
+        Order. For example, if a Customer orders three line items, but only
+        one of the line items is shipped, the remaining two line items would
         be on backorder. Not selecting this option indicates the Customer does
         not accept backorders or partial shipments.</para>
         <tip>
-          <para>Sales Orders having unshipped Line Items on backorder will be
+          <para>Sales Orders having unshipped line items on backorder will be
           closed at billing (i.e., when an Invoice is created) if the Customer
           in question is flagged to not accept backorders.</para>
         </tip>
@@ -451,15 +451,15 @@
             <listitem>
               <para>Accepts Partial Shipments: Select to indicate whether the
               Customer accepts partial shipments. A partial shipment is
-              defined as a shipped Order having a Line Item whose full
+              defined as a shipped Order having a line item whose full
               quantity is not included in the shipment. For example, if
-              Customer ABC orders 20 units of Item XYZ, but only 10 units are
-              shipped, that partial Line Item quantity ("10") would constitute
-              a partial shipment of the ordered Item. Not selecting this
+              Customer ABC orders 20 units of item XYZ, but only 10 units are
+              shipped, that partial line item quantity ("10") would constitute
+              a partial shipment of the ordered item. Not selecting this
               option indicates the Customer does not accept partial
               shipments.</para>
               <tip>
-                <para>Partially-shipped Line Items will be closed at billing
+                <para>Partially-shipped line items will be closed at billing
                 (i.e., when an Invoice is created) if the Customer in question
                 is flagged to not accept partial shipments.</para>
               </tip>
@@ -491,16 +491,16 @@
     <varlistentry role="standard">
       <term>Preferred Selling Site</term>
       <listitem>
-        <para>Specify the preferred selling Site, if any. This is an optional
-        setting. If a preferred Site is selected, then this Site will be used
+        <para>Specify the preferred selling site, if any. This is an optional
+        setting. If a preferred site is selected, then this site will be used
         when entering Sales Orders for the Customer. At Sales Order entry, the
-        preferred Site will be the default Shipping Site for the Sales
-        Order—as well as the default selling Site for Sales Order
-        Items.</para>
+        preferred site will be the default Shipping site for the Sales
+        Order—as well as the default selling site for Sales Order
+        items.</para>
         <note>
-          <para>If there are no Item Sites matching the preferred Site at the
-          point of Sales Order Line Item entry, the highest-ranked selling
-          Site will be used instead.</para>
+          <para>If there are no item sites matching the preferred site at the
+          point of Sales Order line item entry, the highest-ranked selling
+          site will be used instead.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -535,8 +535,8 @@
       <listitem>
         <para>Enter the default discount—if any—which the Customer should
         receive. Customer discounts are applied to the List Price for a sold
-        Item, if the List Price is being used. The discount does not get used
-        if a Pricing Schedule Price applies to the Item.</para>
+        item, if the List Price is being used. The discount does not get used
+        if a Pricing Schedule Price applies to the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1123,7 +1123,7 @@
         <xref linkend="dspAROpenItems" />.</para>
         <tip>
           <para>You can void posted Invoices and Returns on the open
-          receivables screen―as long as they are unapplied.</para>
+          receivables screen?as long as they are unapplied.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -1279,7 +1279,7 @@
       <varlistentry>
         <term>Percent Item Sales Rolling 12</term>
         <listitem>
-          <para>Displays rolling Item sales information for the last 12 months
+          <para>Displays rolling item sales information for the last 12 months
           from the current date, or the first of the current month.</para>
         </listitem>
       </varlistentry>

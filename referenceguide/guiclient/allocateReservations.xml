@@ -18,11 +18,11 @@
     <guilabel>Enable Sales Reservations</guilabel> in Sales Setup.</para>
   </note>
 
-  <para>The Allocate Reservations utility enables you to allocate Inventory to
+  <para>The Allocate Reservations utility enables you to allocate inventory to
   batches of open Sales Orders. This can be a more efficient method for
-  quickly making hard Inventory allocations, as compared to allocating
-  Inventory one-at-a-time at the individual Sales Order Line Item level. You
-  can allocate Inventory to batches of Sales Orders using the following
+  quickly making hard inventory allocations, as compared to allocating
+  inventory one-at-a-time at the individual Sales Order line item level. You
+  can allocate inventory to batches of Sales Orders using the following
   screen:</para>
 
   <screenshot>
@@ -36,12 +36,12 @@
   </screenshot>
 
   <note>
-    <para>Only Sales Order Line Items that can be completely reserved using
+    <para>Only Sales Order line items that can be completely reserved using
     actual quantity on hand (QOH) will be affected when this utility is run.
-    If a Line Item cannot be completely reserved, it will be skipped.</para>
+    If a line item cannot be completely reserved, it will be skipped.</para>
   </note>
 
-  <para>When allocating Inventory to batches of open Sales Orders, you are
+  <para>When allocating inventory to batches of open Sales Orders, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -49,7 +49,7 @@
       <term>Selected Customer</term>
 
       <listitem>
-        <para>Select to allocate Inventory to an individual Customer's open
+        <para>Select to allocate inventory to an individual Customer's open
         Sales Orders.</para>
 
         <variablelist>
@@ -58,7 +58,7 @@
 
             <listitem>
               <para>Specify the Customer Number of the Customer whose open
-              Sales Orders you want to allocate Inventory to. The browse
+              Sales Orders you want to allocate inventory to. The browse
               button located to the right of the field leads to a searchable
               Customers list. You may also access this list using the keyboard
               shortcut "CTRL + L". Once a Customer Number is entered, the
@@ -80,7 +80,7 @@
 
       <listitem>
         <para>Specify the Customer Ship-To Address whose open Sales Orders you
-        want to allocate Inventory to. This is an optional setting which may
+        want to allocate inventory to. This is an optional setting which may
         be used in conjunction with the "Selected Customer" setting. The
         Ship-To option gives you the added flexibility of being able to assign
         multiple Pricing Schedules to a single Customer based on separate
@@ -113,7 +113,7 @@
 
       <listitem>
         <para>Open Sales Orders having a due date on and after this date will
-        have Inventory allocated to them. Start date and end date must be
+        have inventory allocated to them. Start date and end date must be
         entered for calculation to proceed.</para>
       </listitem>
     </varlistentry>
@@ -123,7 +123,7 @@
 
       <listitem>
         <para>Open Sales Orders having a due date on and before this date will
-        have Inventory allocated to them. Start date and end date must be
+        have inventory allocated to them. Start date and end date must be
         entered for calculation to proceed.</para>
       </listitem>
     </varlistentry>
