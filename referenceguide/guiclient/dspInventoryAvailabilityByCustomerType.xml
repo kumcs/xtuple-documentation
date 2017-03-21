@@ -19,7 +19,7 @@
   by Customer Type report consolidates several useful functions in one
   location.</para>
 
-  <para>To view Inventory Availability by Customer Type, select the "Inventory
+  <para>To view inventory Availability by Customer Type, select the "Inventory
   Availability by Customer Type" option. The following screen will
   appear:</para>
 
@@ -33,7 +33,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When displaying Inventory Availability by Customer Type, you are
+  <para>When displaying inventory Availability by Customer Type, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -41,7 +41,7 @@
       <term>All Customer Types</term>
 
       <listitem>
-        <para>Select to display Inventory Availability for all Customer
+        <para>Select to display inventory Availability for all Customer
         Types.</para>
       </listitem>
     </varlistentry>
@@ -50,7 +50,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify Customer Type whose Inventory Availability you want to
+        <para>Specify Customer Type whose inventory Availability you want to
         display.</para>
       </listitem>
     </varlistentry>
@@ -68,8 +68,8 @@
       <term>Only Show Shortages</term>
 
       <listitem>
-        <para>Select to only show Inventory shortages in display. A shortage
-        describes Inventory quantity whose Availability is negative.</para>
+        <para>Select to only show inventory shortages in display. A shortage
+        describes inventory quantity whose Availability is negative.</para>
       </listitem>
     </varlistentry>
 
@@ -77,7 +77,7 @@
       <term>Only Show Available to Ship</term>
 
       <listitem>
-        <para>Select to include only Inventory that is available to
+        <para>Select to include only inventory that is available to
         ship.</para>
       </listitem>
     </varlistentry>
@@ -91,14 +91,14 @@
 
       <listitem>
         <para>Select to show Sales Order Reservations (if any) for the Sales
-        Order Items included in the display. When selected, the "This
+        Order items included in the display. When selected, the "This
         Availability" column will dynamically change to "This Reservation" and
-        the quantity reserved for each Sales Order Item (if any) will be
+        the quantity reserved for each Sales Order item (if any) will be
         shown. This option will not be visible if Sales Order reservations are
         not enabled at your site.</para>
 
         <tip>
-          <para>To manipulate Sales Order Reservations by Line Item, use the
+          <para>To manipulate Sales Order Reservations by line item, use the
           right-click options found on this screen.</para>
         </tip>
       </listitem>
@@ -108,9 +108,9 @@
       <term>Show W/O Supply</term>
 
       <listitem>
-        <para>Select to include current Work Orders for the Sales Order Items
+        <para>Select to include current Work Orders for the Sales Order items
         shown in the display. If current Work Orders exist, they will appear
-        nested below each relevant Sales Order Item.</para>
+        nested below each relevant Sales Order item.</para>
       </listitem>
     </varlistentry>
 
@@ -118,7 +118,7 @@
       <term>Availability</term>
 
       <listitem>
-        <para>Display lists Inventory Availability by Customer Type, using the
+        <para>Display lists inventory Availability by Customer Type, using the
         specified parameters. If an available quantity value displays in the
         color orange, this means the actual or projected quantity on hand
         (QOH) is at or below the Reorder Level. If the color is red, the
@@ -129,12 +129,12 @@
 
   <note>
     <para>The display features additional color-coding to help easily identify
-    the Sales Order Reservation status of individual Orders and also Line
-    Items. The following color conventions are used:</para>
+    the Sales Order Reservation status of individual Orders and also line
+    items. The following color conventions are used:</para>
 
     <itemizedlist>
       <listitem>
-        <para>Green (Line Item level): Line Item quantity is
+        <para>Green (line item level): Line item quantity is
         fully-reserved.</para>
       </listitem>
 
@@ -144,11 +144,11 @@
       </listitem>
 
       <listitem>
-        <para>Blue: Line Item quantity is partially-reserved.</para>
+        <para>Blue: Line item quantity is partially-reserved.</para>
       </listitem>
 
       <listitem>
-        <para>Black: Line Item has no Sales Order reservations.</para>
+        <para>Black: Line item has no Sales Order reservations.</para>
       </listitem>
     </itemizedlist>
   </note>

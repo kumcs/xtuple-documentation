@@ -13,10 +13,10 @@
       <secondary>expiration of</secondary>
     </indexterm>Expired Inventory</title>
 
-  <para>Item Sites marked as perishable may have quantity on hand (QOH) that
+  <para>Item sites marked as perishable may have quantity on hand (QOH) that
   expires on a specified date. Typically, these are Lot/Serial Number
-  controlled Item Sites. If such inventory has expired, you may view Inventory
-  details using this display. To view expired Inventory, select the "Expired
+  controlled item sites. If such inventory has expired, you may view inventory
+  details using this display. To view expired inventory, select the "Expired
   Inventory" option. The following screen will appear:</para>
 
   <para><screenshot>
@@ -30,12 +30,12 @@
     </screenshot></para>
 
   <note>
-    <para>Expired Inventory will be displayed in red type, to alert users to
-    the expired status of the Item. This typographical feature appears in
+    <para>Expired inventory will be displayed in red type, to alert users to
+    the expired status of the item. This typographical feature appears in
     other Inventory displays, as well.</para>
   </note>
 
-  <para>When displaying expired Inventory, you are presented with the
+  <para>When displaying expired inventory, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -50,7 +50,7 @@
             <term>All Class Codes</term>
 
             <listitem>
-              <para>Select to display expired Inventory for all Class
+              <para>Select to display expired inventory for all Class
               Codes.</para>
             </listitem>
           </varlistentry>
@@ -59,7 +59,7 @@
             <term>Selected</term>
 
             <listitem>
-              <para>Specify Class Code whose expired Inventory you want to
+              <para>Specify Class Code whose expired inventory you want to
               display.</para>
             </listitem>
           </varlistentry>
@@ -88,7 +88,7 @@
             <term>Perishability</term>
 
             <listitem>
-              <para>Select if you want to include Inventory which expired
+              <para>Select if you want to include inventory which expired
               because its perishable date passed.</para>
             </listitem>
           </varlistentry>
@@ -97,7 +97,7 @@
             <term>Warranty</term>
 
             <listitem>
-              <para>Select if you want to include Inventory which expired
+              <para>Select if you want to include inventory which expired
               because its warranty date passed.</para>
             </listitem>
           </varlistentry>
@@ -110,12 +110,12 @@
 
       <listitem>
         <para>Select a number of days using the arrow buttons, or manually
-        enter a value between 999 and -999. Specify which expired Items to
+        enter a value between 999 and -999. Specify which expired items to
         include in the display using the threshold parameter. Threshold days
         are measured from the current day. To view all currently expired
-        Inventory, set the parameter to "0". To display Inventory due to
+        inventory, set the parameter to "0". To display inventory due to
         expire in the future, enter a positive value. Enter a negative value
-        to display Inventory that expired prior to the current day.</para>
+        to display inventory that expired prior to the current day.</para>
       </listitem>
     </varlistentry>
 
@@ -123,14 +123,14 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specify one of the following Site options:</para>
+        <para>Specify one of the following site options:</para>
 
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
 
             <listitem>
-              <para>Select to display expired Inventory for all Sites.</para>
+              <para>Select to display expired inventory for all sites.</para>
             </listitem>
           </varlistentry>
 
@@ -138,7 +138,7 @@
             <term>Selected</term>
 
             <listitem>
-              <para>Specify Site whose expired Inventory you want to
+              <para>Specify site whose expired inventory you want to
               display.</para>
             </listitem>
           </varlistentry>
@@ -150,7 +150,7 @@
       <term>Show Inventory Value</term>
 
       <listitem>
-        <para>Select to include the Inventory value of expired Inventory in
+        <para>Select to include the inventory value of expired inventory in
         the display. Then specify one of the following costing options:</para>
 
         <variablelist>
@@ -158,11 +158,11 @@
             <term>Use Posted Costs</term>
 
             <listitem>
-              <para>Select to show Inventory value based on the costing method
-              defined for the Item Site. Item Sites may use the following
-              costing methods, depending on the Item Type: Standard, Average,
-              Job (i.e., Job Items), and None (i.e., Reference Items and any
-              Items having a control method = None).</para>
+              <para>Select to show inventory value based on the costing method
+              defined for the item site. Item sites may use the following
+              costing methods, depending on the item type: Standard, Average,
+              Job (i.e., Job items), and None (i.e., Reference items and any
+              items having a control method = None).</para>
             </listitem>
           </varlistentry>
 
@@ -170,7 +170,7 @@
             <term>Use Standard Costs</term>
 
             <listitem>
-              <para>Select to show Inventory value based on Standard
+              <para>Select to show inventory value based on Standard
               Costs.</para>
             </listitem>
           </varlistentry>
@@ -179,7 +179,7 @@
             <term>Use Actual Costs</term>
 
             <listitem>
-              <para>Select to show Inventory value based on Actual
+              <para>Select to show inventory value based on Actual
               Costs.</para>
             </listitem>
           </varlistentry>
@@ -191,7 +191,7 @@
       <term>Expired Inventory</term>
 
       <listitem>
-        <para>Display lists expired Inventory, using the specified parameters.
+        <para>Display lists expired inventory, using the specified parameters.
         If the "Show Inventory Value" box is selected, the display will also
         show unit Cost and value.</para>
       </listitem>
