@@ -5,41 +5,50 @@
 <section id="unpostedInvoices">
   <title><indexterm significance="normal">
       <primary>invoices</primary>
+
       <secondary>unposted list of</secondary>
     </indexterm>List Unposted Invoices</title>
-  <para>To edit or post Sales Orders that have been selected for billing and
-  are ready to be invoiced, select the "Unposted Invoices" option. The
-  following screen will appear:</para>
+
+  <para>To edit or post sales orders that have been selected for billing and
+  are ready to be invoiced, select the <guimenu>Unposted Invoices</guimenu>
+  option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/unpostedInvoices.png" />
+          <imagedata fileref="images/unpostedInvoices.png"/>
         </imageobject>
+
         <caption>Unposted Invoices</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
-    <para>Deleting an Invoice effectively reverses the transaction which
-    created it. In other words, when you delete an Invoice the source Sales
-    Order will be returned to the Billing Selections list. From there, you
-    have the ability to either A) cancel the Billing Selection or B) re-create
-    the Invoice.</para>
+    <para>Deleting an invoice effectively reverses the transaction which
+    created it. In other words, when you delete an invoice the source sales
+    order will be returned to the Billing Selections list. From there, you
+    have the ability to either A) cancel the billing selection or B) re-create
+    the invoice.</para>
   </tip>
-  <para>The Unposted Invoices list displays information on all Invoices
+
+  <para>The Unposted Invoices list displays information on all invoices
   available for posting. Users with the appropriate privilege will also see
   the G/L distribution date column. To view the list of already-posted
-  recurring Invoices, see <xref linkend="dspRecurringInvoices" />.</para>
+  recurring invoices, see <xref linkend="dspRecurringInvoices"/>.</para>
+
   <para role="xtconnect"><note>
-      <para>If the Customer specified on the Invoice has an EDI Profile
+      <para>If the customer specified on the invoice has an EDI profile
       attached, you may encounter an EDI processing interface when printing
-      Invoices.</para>
+      invoices.</para>
     </note></para>
+
   <variablelist>
     <varlistentry>
       <term>Print Journal</term>
+
       <listitem>
-        <para>Select to print the G/L Series Journal in addition to posting
-        the Invoices.</para>
+        <para>Select to print the G/L series journal in addition to posting
+        the invoices.</para>
       </listitem>
     </varlistentry>
   </variablelist>

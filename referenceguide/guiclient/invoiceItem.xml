@@ -175,10 +175,10 @@
       <term>Qty. UOM</term>
 
       <listitem>
-        <para>Specify the unit of measure (UOM) to be used when selling the
-        line item. Sold items may be assigned multiple selling UOMs. These
-        alternate UOMs may be defined on the item master. You may also select
-        a global conversion ratio here. Global conversions have the label
+        <para>Specify the UOM to be used when selling the line item. Sold
+        items may be assigned multiple selling UOMs. These alternate UOMs may
+        be defined on the item master. You may also select a global conversion
+        ratio here. Global conversions have the label
         <literal>Global</literal> appended to them. If a line item has no
         selling UOM defined, then the inventory UOM will be used here by
         default.</para>
@@ -193,37 +193,38 @@
         </indexterm>Net Unit Price</term>
 
       <listitem>
-        <para>Displays the Unit Price for the Invoice Item. By default, the
-        system will choose the lower of the following two Prices: A) The
-        most-specific Pricing Schedule Assignment or B) any Sale in effect at
-        the time of Order entry. The specificity of Pricing Schedule
-        Assignments is determined in the following descending order: By
-        Customer Ship-To Address (most specific), by Customer, by Customer
-        Type, by Customer Type pattern, by all Customers. The lookup feature
+        <para>Displays the unit price for the invoice item. By default, the
+        system will choose the lower of the following two prices: A) The
+        most-specific pricing schedule assignment or B) any sale in effect at
+        the time of order entry. The specificity of pricing schedule
+        assignments is determined in the following descending order: by
+        customer ship-to address (most specific), by customer, by customer
+        type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
 
         <note>
-          <para>For Inventory Items having assigned Pricing Schedules, the Net
-          Unit Price will be automatically calculated using the information
-          provided above. For miscellaneous Items, the Net Unit Price must be
+          <para>For inventory items having assigned pricing schedules, the net
+          unit price will be automatically calculated using the information
+          provided above. For miscellaneous items, the net unit price must be
           entered manually.</para>
         </note>
 
-        <para>If your Pricing Schedule has multiple Units of Measure (UOM) on
-        it (or if several Pricing Schedules share the same level of Price
-        specificity, but they have different UOMs) then the UOM which matches
-        the selected UOM will be chosen—that is, as long as the quantity break
-        does not exceed the quantity being priced. If no entry matches the UOM
-        with a quantity break less than the quantity being priced, then the
-        lowest value Price for any UOM will be chosen. To make sure a specific
-        UOM is always chosen at the desired level of Price specificity, then
-        your Pricing Schedules should include at least one UOM with a quantity
-        break of 0.</para>
+        <para>If your pricing schedule has multiple UOM on it (or if several
+        pricing schedules share the same level of price specificity, but they
+        have different UOMs) then the UOM which matches the selected UOM will
+        be chosen—that is, as long as the quantity break does not exceed the
+        quantity being priced. If no entry matches the UOM with a quantity
+        break less than the quantity being priced, then the lowest value price
+        for any UOM will be chosen. To make sure a specific UOM is always
+        chosen at the desired level of price specificity, then your pricing
+        schedules should include at least one UOM with a quantity break of
+        zero.</para>
 
         <tip>
           <para>The system can be configured to prevent users from editing the
-          Net Unit Price. If your system is configured that way, the Net Unit
-          Price field will not be editable.</para>
+          net unit price. If your system is configured that way, the
+          <guilabel>Net Unit Price</guilabel> field will not be
+          editable.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -232,12 +233,12 @@
       <term>Pricing UOM</term>
 
       <listitem>
-        <para>The Price Unit of Measure is the same as the Selling UOM. If an
-        Item has Selling UOMs defined, then the Item may be sold and priced in
-        these alternate UOMs. You may also select a global conversion ratio
-        here. Global conversions have the label <literal>Global</literal>
-        appended to them. If no Selling UOMs are defined, then the Inventory
-        UOM will be used here by default.</para>
+        <para>The price UOM is the same as the selling UOM. If an item has
+        selling UOMs defined, then the item may be sold and priced in these
+        alternate UOMs. You may also select a global conversion ratio here.
+        Global conversions have the label <literal>Global</literal> appended
+        to them. If no selling UOMs are defined, then the inventory UOM will
+        be used here by default.</para>
       </listitem>
     </varlistentry>
 
@@ -245,24 +246,24 @@
       <term>Extended Price</term>
 
       <listitem>
-        <para>Displays the Extended Price. The Extended Price for a Line Item
-        is based on the quantity ordered multiplied by the Net Unit
-        Price.</para>
+        <para>Displays the extended price. The extended price for a line item
+        is based on the quantity ordered multiplied by the net unit
+        price.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To view Costing and Tax information related to the Invoice Item,
-  select the "Detail" tab. You will be presented with the following
-  options:</para>
+  <para>To view costing and tax information related to the invoice item,
+  select the <guimenuitem>Detail</guimenuitem> tab. You will be presented with
+  the following options:</para>
 
   <variablelist>
     <varlistentry>
       <term>Unit Cost (Inv. UOM)</term>
 
       <listitem>
-        <para>Displays the Standard Cost per unit in the Item's Inventory Unit
-        of Measure.</para>
+        <para>Displays the standard cost per unit in the item's inventory
+        UOM.</para>
       </listitem>
     </varlistentry>
 
@@ -270,7 +271,7 @@
       <term>List Price</term>
 
       <listitem>
-        <para>Displays the Item's List Price per Inventory UOM.</para>
+        <para>Displays the item's list price per inventory UOM.</para>
       </listitem>
     </varlistentry>
 
@@ -278,10 +279,10 @@
       <term>Customer Price</term>
 
       <listitem>
-        <para>Displays the Price (per Inventory UOM) given to the specified
-        Customer for the specified Item. Special Customer Prices can be set
-        for individual Customers or Customer Groups by using a Pricing
-        Schedule.</para>
+        <para>Displays the price (per inventory UOM) given to the specified
+        customer for the specified item. Special customer prices can be set
+        for individual customers or customer groups by using a pricing
+        schedule.</para>
       </listitem>
     </varlistentry>
 
@@ -289,16 +290,16 @@
       <term>Tax</term>
 
       <listitem>
-        <para>The following Tax-related information is available:</para>
+        <para>The following tax-related information is available:</para>
 
         <variablelist>
           <varlistentry>
             <term>Type</term>
 
             <listitem>
-              <para>Specify the Tax Type for the Invoice Item. If the Item
-              master does not have a Tax Type for the Invoice's Tax Authority,
-              then no Tax will be charged.</para>
+              <para>Specify the tax type for the invoice item. If the item
+              master does not have a tax type for the invoice's tax authority,
+              then no tax will be charged.</para>
             </listitem>
           </varlistentry>
 
@@ -306,9 +307,10 @@
             <term>Tax</term>
 
             <listitem>
-              <para>Displays the amount of Tax to be charged for the Invoice
-              Line Item quantity. To get a detailed view of the Tax
-              calculation, click on the Tax link using your mouse.</para>
+              <para>Displays the amount of tax to be charged for the invoice
+              line item quantity. To get a detailed view of the tax
+              calculation, click on the <guibutton>Tax</guibutton> link using
+              your mouse.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -316,10 +318,10 @@
     </varlistentry>
   </variablelist>
 
-  <para>To add Notes to an Invoice Line Item, select the "Notes" tab at the
-  bottom of the screen. If the Invoice was created from a Sales Order, any
-  Sales Order Line Item Notes will be transferred to the Invoice. The
-  following screen will appear:</para>
+  <para>To add notes to an invoice line item, select the
+  <guimenuitem>Notes</guimenuitem> tab at the bottom of the screen. If the
+  invoice was created from a sales order, any sales order line item notes will
+  be transferred to the invoice. The following screen will appear:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -331,7 +333,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When entering Invoice Line Item Notes, you are presented with the
+  <para>When entering invoice line item notes, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -340,7 +342,7 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Invoice Item.</para>
+        general notes related to the invoice item.</para>
       </listitem>
     </varlistentry>
   </variablelist>

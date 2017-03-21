@@ -4,193 +4,241 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section role="xtconnect">
   <title>Send Document Electronically</title>
+
   <para id="submitEDIWidget"><informalexample>
       <para>When sending a document electronically, you may be presented with
       one of two screens, depending on whether the document will be sent by
-      Email or by FTP. If you do not see either screen, that suggests the EDI
-      Profile has been set to disable review before sending and will
+      email or by FTP. If you do not see either screen, that suggests the EDI
+      profile has been set to disable review before sending and will
       automatically be sent to the xTuple Connect Batch Manager.</para>
+
       <para><note>
-          <para>Customers Vendors are set up to receive electronic deliveries
-          of information using the "Transmission" tab on the Customer
-          master.</para>
+          <para>Customers vendors are set up to receive electronic deliveries
+          of information using the <guimenuitem>Transmission</guimenuitem> tab
+          on the customer master.</para>
         </note></para>
-      <para>If the document will be sent by Email, the following screen will
+
+      <para>If the document will be sent by email, the following screen will
       appear. Please note, the document type will vary depending on the
-      context. In this example, an Invoice document is being sent:</para>
+      context. In this example, an invoice document is being sent:</para>
+
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/submitEDI_email.png" />
+          <imagedata fileref="images/submitEDI_email.png"/>
         </imageobject>
+
         <caption><para>Review EDI Before Sending by Email</para></caption>
       </mediaobject>
+
       <para>The fields at the top of the window show basic information about
       the EDI that will be sent:</para>
+
       <variablelist>
         <varlistentry>
           <term>Document Type/Number</term>
+
           <listitem>
             <para>The type of document and document number will vary depending
-            on the context. The following document types are supported: Quote,
-            Sales Order, Invoice, Purchase Order.</para>
+            on the context. The following document types are supported: quote,
+            sales order, invoice, purchase order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>EDI Type</term>
+
           <listitem>
-            <para>Displays whether the EDI will be sent by Email or
+            <para>Displays whether the EDI will be sent by email or
             FTP.</para>
           </listitem>
         </varlistentry>
       </variablelist>
+
       <para>The information in the following fields will be populated from the
-      EDI Profile. If you have the "EditEDIBeforeSending" privilege, you will
+      EDI profile. If you have the "EditEDIBeforeSending" privilege, you will
       be allowed to edit the contents of these fields. You are presented with
-      the following Email-specific options:</para>
+      the following email-specific options:</para>
+
       <variablelist>
         <varlistentry>
           <term>To</term>
+
           <listitem>
-            <para>This is the Email address of the primary intended recipient
-            of the Email. You can add Email addresses from a <link
+            <para>This is the email address of the primary intended recipient
+            of the email. You can add email addresses from a <link
             linkend="submitEDI-contactSearch">searchable list</link> of your
-            CRM Contacts by clicking on the TO button.</para>
+            CRM contacts by clicking on the <guibutton>TO</guibutton>
+            button.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Cc</term>
+
           <listitem>
-            <para>This is the carbon copy (i.e., Cc:) Email address—a copy of
-            the Email will be sent to this address. You can add Email
+            <para>This is the carbon copy (i.e., Cc:) email address—a copy of
+            the email will be sent to this address. You can add email
             addresses from a <link
             linkend="submitEDI-contactSearch">searchable list</link> of your
-            CRM Contacts by clicking on the CC button.</para>
+            CRM contacts by clicking on the <guibutton>CC</guibutton>
+            button.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Bcc</term>
+
           <listitem>
-            <para>This is the blind carbon copy (i.e., Bcc:) Email address—a
-            copy of the Email will be sent to this address but none of the
-            recipients will see this address. You can add Email addresses from
+            <para>This is the blind carbon copy (i.e., Bcc:) email address—a
+            copy of the email will be sent to this address but none of the
+            recipients will see this address. You can add email addresses from
             a <link linkend="submitEDI-contactSearch">searchable list</link>
-            of your CRM Contacts by clicking on the BCC button.</para>
+            of your CRM contacts by clicking on the <guibutton>BCC</guibutton>
+            button.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reply To</term>
+
           <listitem>
             <para>This is the reply-to address that will be set on the
-            outgoing Email message. This controls the Email address used when
-            someone replies to the Email sent by xTuple ERP.</para>
+            outgoing email message. This controls the email address used when
+            someone replies to the email sent by xTuple ERP.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Subject</term>
+
           <listitem>
             <para>This is the subject line that will be used for this
-            Email.</para>
+            email.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>From</term>
+
           <listitem>
-            <para>This is the Email address of the person sending the Email.
+            <para>This is the email address of the person sending the email.
             It can be set to the address of the user running the application
             or a generic address (e.g. "sales@xtuple.com"). If it is left
             blank on this screen, the xTuple Connect Batch Manager will fill
-            in the Email address of the user running the application at the
+            in the email address of the user running the application at the
             time the EDI was prepared.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Message Body</term>
+
           <listitem>
-            <para>This is the body of the Email message that will be sent.
+            <para>This is the body of the email message that will be sent.
             This is a scrolling text field with word-wrapping.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Send Email as HTML</term>
+
           <listitem>
-            <para>Select if you want the body of the Email to be sent as HTML.
-            If not selected, the Email will be sent as plain text.</para>
+            <para>Select if you want the body of the email to be sent as HTML.
+            If not selected, the email will be sent as plain text.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Attachment Options</term>
+
           <listitem>
-            <para>Use the Attachment Options to control the contents and
-            format of the file attached to this Email. The following options
+            <para>Use the attachment options to control the contents and
+            format of the file attached to this email. The following options
             are available, depending on the settings in the EDI
-            Profile:</para>
+            profile:</para>
+
             <variablelist>
               <varlistentry>
                 <term>No Attachment</term>
+
                 <listitem>
-                  <para>No file will be attached to the Email.</para>
+                  <para>No file will be attached to the email.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>Report</term>
+
                 <listitem>
-                  <para>The named report will be run by the Batch Manager and
-                  attached to the Email as a .PDF file.</para>
+                  <para>The named report will be run by the batch manager and
+                  attached to the email as a .PDF file.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>Form</term>
+
                 <listitem>
-                  <para>If the document is a Sales Order or an Invoice, the
-                  Customer Form Assignment will be used. That report will be
-                  run by the Batch Manager and attached to the Email as a .PDF
+                  <para>If the document is a sales order or an invoice, the
+                  customer form assignment will be used. That report will be
+                  run by the batch manager and attached to the email as a .PDF
                   file.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>Delimited Text</term>
+
                 <listitem>
-                  <para>The Query Set defined in the EDI Forms for the EDI
-                  Profile will be run. The results will be used to build a
+                  <para>The query set defined in the EDI forms for the EDI
+                  profile will be run. The results will be used to build a
                   file with the fields delimited by the character selected in
-                  the drop-down list that appears when "Delimited Text" is
-                  selected.</para>
+                  the drop-down list that appears when "<guilabel>Delimited
+                  Text</guilabel>" is selected.</para>
+
                   <para>Pre-defined characters include the comma (",") and
-                  tab. If you need to change the delimiter, select "[ not
-                  delimited ]" from the drop-down menu, then replace that text
-                  with your own single character. Normally, however, this
-                  should be left to the value specified in the EDI
-                  Profile.</para>
+                  tab. If you need to change the delimiter, select
+                  "<guilabel>[ not delimited ]</guilabel>" from the drop-down
+                  menu, then replace that text with your own single character.
+                  Normally, however, this should be left to the value
+                  specified in the EDI profile.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>HTML</term>
+
                 <listitem>
-                  <para>The Query Set defined in the EDI Forms for the EDI
-                  Profile will be run. The results will be used to build an
+                  <para>The query set defined in the EDI forms for the EDI
+                  profile will be run. The results will be used to build an
                   HTML file. Each query will start a new HTML table.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>XML</term>
+
                 <listitem>
-                  <para>The Query Set defined in the EDI Forms for the EDI
-                  Profile will be run. The results will be used to build an
+                  <para>The query set defined in the EDI forms for the EDI
+                  profile will be run. The results will be used to build an
                   XML file. Each row of output will be represented by an XML
                   element named for the query that generated it and will
                   contain child elements for the individual fields. Each field
                   of output will be represented by an element with the name of
                   the query result column and will contain the value of that
                   field as the text of the element.</para>
+
                   <para>The resulting XML can be transformed to another format
                   by selecting from the list of XSLT mappings that appears
                   when "XML" is selected.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>Include Header Lines</term>
+
                 <listitem>
-                  <para>For Delimited Text, this will insert a line before
+                  <para>For delimited text, this will insert a line before
                   each query showing the query result column names separated
                   by the delimiting character. For HTML, this will insert a
                   row at the beginning of each query's results showing the
@@ -198,22 +246,26 @@
                   output.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>Output File</term>
+
                 <listitem>
-                  <para>This is the name that will be given to the Email
-                  attachment. For Forms and Reports it should end with a
+                  <para>This is the name that will be given to the email
+                  attachment. For forms and reports it should end with a
                   ".pdf" suffix. For comma-delimited files the output file
                   should end with ".csv". Tab-delimited files should have a
                   ".tsv" suffix.</para>
                 </listitem>
               </varlistentry>
+
               <varlistentry>
                 <term>PREVIEW</term>
+
                 <listitem>
                   <para>This brings up a preview window to show what the
-                  attachment will look like when generated by the Batch
-                  Manager. It can show either reports or delimited text
+                  attachment will look like when generated by the batch
+                  manager. It can show either reports or delimited text
                   files.</para>
                 </listitem>
               </varlistentry>
@@ -221,106 +273,138 @@
           </listitem>
         </varlistentry>
       </variablelist>
+
       <para>The following buttons are unique to this screen:</para>
+
       <variablelist>
         <varlistentry>
           <term>OK</term>
+
           <listitem>
-            <para>Select to submit the requested action to the Batch Manager
-            for processing. If the EDI will be sent by Email, there must be at
-            least one Email address in either the To, Cc, or Bcc
+            <para>Select to submit the requested action to the batch manager
+            for processing. If the EDI will be sent by email, there must be at
+            least one email address in either the <guilabel>To</guilabel>,
+            <guilabel>Cc</guilabel>, or <guilabel>Bcc</guilabel>
             fields.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para id="submitEDI-contactSearch">To search for Email addresses from
-      within your CRM Contacts, select either the TO, CC, or BCC buttons. The
+
+      <para id="submitEDI-contactSearch">To search for email addresses from
+      within your CRM contacts, select either the <guibutton>TO</guibutton>,
+      <guibutton>CC</guibutton>, or <guibutton>BCC</guibutton> buttons. The
       following screen will appear:</para>
+
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/submitEDI_contacts.png" />
+          <imagedata fileref="images/submitEDI_contacts.png"/>
         </imageobject>
+
         <caption><para>Search for Email Contacts</para></caption>
       </mediaobject>
-      <para>When searching for Email Contacts, you are presented with the
+
+      <para>When searching for email contacts, you are presented with the
       following options:</para>
+
       <variablelist>
         <varlistentry>
           <term>Search for</term>
+
           <listitem>
             <para>Enter a string of letters or a full name to search for
-            matches in your CRM Contacts list. The Contacts list will be empty
+            matches in your CRM contacts list. The contacts list will be empty
             by default until you begin entering letters to search and match
             for.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Contacts</term>
+
           <listitem>
             <para>Display will be empty at first but will populate with CRM
-            Contact records as soon as letters are entered in the search
-            field.</para>
+            contact records as soon as letters are entered in the
+            <guilabel>Search</guilabel> field.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>SELECT</term>
+
           <listitem>
-            <para>Highlight a Contact and then use the SELECT button to choose
-            the Contact record. The selected Contact's Email address (assuming
-            it exists) will be added to the outbound Email, in the address
-            field you specify.</para>
+            <para>Highlight a contact and then use the
+            <guibutton>SELECT</guibutton> button to choose the contact record.
+            The selected contact's email address (assuming it exists) will be
+            added to the outbound email, in the address field you
+            specify.</para>
           </listitem>
         </varlistentry>
       </variablelist>
+
       <para>If the document will be sent by FTP, the following screen will
       appear:</para>
+
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/submitEDI_ftp.png" />
+          <imagedata fileref="images/submitEDI_ftp.png"/>
         </imageobject>
+
         <caption><para>Review EDI Before Sending by FTP</para></caption>
       </mediaobject>
+
       <para>While the FTP attachment options will be the same as for sending
-      Email, the transmission options will be different. Get the values for
-      these from the EDI recipient (either your Vendor or Customer, depending
+      email, the transmission options will be different. Get the values for
+      these from the EDI recipient (either your vendor or customer, depending
       on the document type). See the xTuple Connect Product Guide for
       suggestions on how to store these data.</para>
+
       <para>When entering FTP information, you are presented with the
       following options:</para>
+
       <variablelist>
         <varlistentry>
           <term>Server</term>
+
           <listitem>
             <para>This is the host name or Internet address of the FTP server
             to send the document to.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Login Name</term>
+
           <listitem>
             <para>This is the user name required to log in to the FTP
             server.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Password</term>
+
           <listitem>
             <para>This is the password required to log in to the FTP
             server.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Directory</term>
+
           <listitem>
             <para>This is the directory in which the recipient wants you to
             put the EDI message on the FTP server.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>If both the "Login Name" and "Password" fields are empty, the
-      xTuple Connect Batch Manager will attempt an anonymous FTP, using the
-      name "anonymous" for the "Login Name" and the Email address of the user
-      submitting the EDI for the "Password".</para>
+
+      <para>If both the <guilabel>Login Name</guilabel> and
+      <guilabel>Password</guilabel> fields are empty, the xTuple Connect Batch
+      Manager will attempt an anonymous FTP, using the name "anonymous" for
+      the login name and the email address of the user submitting the EDI for
+      the password.</para>
     </informalexample></para>
-  <para></para>
+
+  <para/>
 </section>
