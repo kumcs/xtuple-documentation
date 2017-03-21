@@ -5,56 +5,73 @@
 <section id="dspInvoiceRegister">
   <title><indexterm significance="normal">
       <primary>invoices</primary>
+
       <secondary>register of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>registers</primary>
+
       <secondary>for invoices</secondary>
     </indexterm>Invoice Register</title>
-  <para>To view daily Invoice and Credit Memo transactions, select the
-  "Invoice Register" option. The following screen will appear:</para>
+
+  <para>To view daily invoice and credit memo transactions, select the
+  <guimenuitem>Invoice Register</guimenuitem> option. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspInvoiceRegister.png" />
+          <imagedata fileref="images/dspInvoiceRegister.png"/>
         </imageobject>
+
         <caption>Invoice Register</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When displaying the Invoice Register, you are presented with the
+
+  <para>When displaying the invoice register, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Accounts</term>
+
       <listitem>
-        <para>Select to display Invoice and Credit Memo transactions for all
-        G/L Accounts.</para>
+        <para>Select to display invoice and credit memo transactions for all
+        G/L accounts.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected Account</term>
+
       <listitem>
-        <para>Specify G/L Account whose Invoice and Credit Memo transactions
+        <para>Specify G/L account whose invoice and credit memo transactions
         you want to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Start Date</term>
+
       <listitem>
-        <para>Invoices and Credit Memos posted on and after this date will be
+        <para>Invoices and credit memos posted on and after this date will be
         displayed. This is a required field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>End Date</term>
+
       <listitem>
-        <para>Invoices and Credit Memos posted on and before this date will be
+        <para>Invoices and credit memos posted on and before this date will be
         displayed. This is a required field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Transactions</term>
+
       <listitem>
-        <para>Display lists daily Invoice and Credit Memo transactions based
+        <para>Display lists daily invoice and credit memo transactions based
         on the specified parameters. This display is a nested list, with a
         plus ("+") sign located to the far left of the display next to each
         date. By clicking your mouse on a plus sign, you reveal lower levels
@@ -64,8 +81,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>If a Ship-To Address was used for an Invoice, the Ship-To Address
-    will appear in the Reference column of the Transactions display.</para>
+    <para>If a ship-to address was used for an invoice, the ship-to address
+    will appear in the <guilabel>Reference</guilabel> column of the
+    <guilabel>Transactions</guilabel> display.</para>
   </tip>
 </section>
