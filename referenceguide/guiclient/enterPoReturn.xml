@@ -10,7 +10,7 @@
       <primary>shipping</primary>
       <secondary>entering of returns</secondary>
     </indexterm>Purchase Order Return</title>
-  <para>Purchase Order Returns are used in the event that Purchase Order Items
+  <para>Purchase Order Returns are used in the event that Purchase Order items
   need to be returned to a Vendor, as shown in the following
   screen:<screenshot>
       <mediaobject>
@@ -26,9 +26,9 @@
     For more information, please see <xref
     linkend="postPoReturnCreditMemo" />.</para>
     <para>This option is available when returning against closed Purchase
-    Order Line Items. Closed Purchase Orders will be reopened automatically in
+    Order line items. Closed Purchase Orders will be reopened automatically in
     this scenario to allow for future Receipts. If the option is not used—or
-    if a Line Item is not closed at the time of a Return—then the Return may
+    if a line item is not closed at the time of a Return—then the Return may
     be processed normally from the "Uninvoiced Receipts and Returns" screen.
     </para>
   </tip>
@@ -38,7 +38,7 @@
     <varlistentry>
       <term>Order #</term>
       <listitem>
-        <para>Enter the Order Number of the Order whose Line Item(s) you want
+        <para>Enter the Order Number of the Order whose line item(s) you want
         to return.</para>
       </listitem>
     </varlistentry>
@@ -77,7 +77,7 @@
     <varlistentry>
       <term>Purchase Order Items</term>
       <listitem>
-        <para>Display lists Purchase Order Line Items available for
+        <para>Display lists Purchase Order line items available for
         return.</para>
       </listitem>
     </varlistentry>
@@ -87,11 +87,11 @@
     <varlistentry>
       <term>POST</term>
       <listitem>
-        <para>Highlight a Line Item, then select this button to remove the
-        returned Line Item quantity from Inventory. For privileged users, an
+        <para>Highlight a line item, then select this button to remove the
+        returned line item quantity from inventory. For privileged users, an
         Payables Credit Memo may be generated in the amount of the Return when
         the Return is posted. This option is available when returning against
-        closed Line Items. If used, the Line Item will be automatically
+        closed line items. If used, the line item will be automatically
         reopened to allow for future Receipts. Also, a Return report will be
         printed if the "Print Return Report" option is selected.</para>
       </listitem>
@@ -99,20 +99,20 @@
     <varlistentry>
       <term>ENTER RETURN</term>
       <listitem>
-        <para>Highlight a Line Item, then select this button to initiate a
-        Return. Double-clicking on a Purchase Order Line Item will also bring
+        <para>Highlight a line item, then select this button to initiate a
+        Return. Double-clicking on a Purchase Order line item will also bring
         you to the Return Item screen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
-    <para>If an Item you are returning is a <indexterm significance="normal">
+    <para>If an item you are returning is a <indexterm significance="normal">
         <primary>multiple location control</primary>
         <secondary>impact on receiving</secondary>
       </indexterm> <indexterm significance="normal">
         <primary>receiving</primary>
         <secondary>MLC impact on</secondary>
-      </indexterm>Multiple Location Control (MLC) Item, you will be prompted
+      </indexterm>Multiple Location Control (MLC) item, you will be prompted
     to specify the Location you want to issue the stock from.</para>
   </note>
   <xi:include href="enterPoitemReturn.xml" xpointer="element(/1)"

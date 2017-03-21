@@ -26,7 +26,7 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the Item Number of the manufactured Item you want to
+        <para>Enter the item number of the manufactured item you want to
         create a Work Order for.</para>
       </listitem>
     </varlistentry>
@@ -39,20 +39,20 @@
     <varlistentry>
       <term>Active</term>
       <listitem>
-        <para>Identifies whether the Item is currently active.</para>
+        <para>Identifies whether the item is currently active.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Default</term>
       <listitem>
         <para>Select this option to distinguish an Item Source from other Item
-        Sources for the same Item Number. If selected, the default Item Source
+        Sources for the same item number. If selected, the default Item Source
         will be selected automatically when releasing Purchase Requests or
         creating drop shipments. If no default Item Source is specified, users
         will be asked to select Item Sources from a list of available Item
         Sources when releasing Purchase Requests or creating drop shipments.
         When this option is selected and saved, any other Item Sources for the
-        Item flagged as the default will be unchecked.</para>
+        item flagged as the default will be unchecked.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -62,44 +62,44 @@
         </indexterm>Vendor</term>
       <listitem>
         <para>Enter the Vendor Number of the Vendor who is the source for the
-        specified Item.</para>
+        specified item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Vendor Item Number</term>
       <listitem>
-        <para>Enter the Item Number the Vendor uses to identify the
-        Item.</para>
+        <para>Enter the item number the Vendor uses to identify the
+        item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Vendor UOM</term>
       <listitem>
         <para>Select the Unit of Measure the Vendor uses for the specified
-        Item.</para>
+        item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Inventory/Vendor UOM Ratio</term>
       <listitem>
-        <para>Specify the ratio between Inventory and Vendor Units of Measure
-        (UOM). For example, if you store an Item in single units, but a Vendor
-        sells you the Item in cases of 12, then you would enter "12" here to
+        <para>Specify the ratio between inventory and Vendor Units of Measure
+        (UOM). For example, if you store an item in single units, but a Vendor
+        sells you the item in cases of 12, then you would enter "12" here to
         represent the 12:1 Inv./Vend. ratio. If the ratio is 1:1, then enter
         "1" here. When an Inv./Vend. ratio is specified, the system allows you
-        to purchase Items using the Vendor's UOM; however, when the Items are
-        received, the system will automatically convert the Inventory to your
-        Inventory UOM. This same conversion logic flows throughout the
-        system—whether you are viewing Inventory availability or running
-        Material Requirements Planning (MRP). Your Inventory will always be
-        represented in your Inventory UOM, regardless of the Vendor UOMs
+        to purchase items using the Vendor's UOM; however, when the items are
+        received, the system will automatically convert the inventory to your
+        inventory UOM. This same conversion logic flows throughout the
+        system—whether you are viewing inventory availability or running
+        Material Requirements Planning (MRP). Your inventory will always be
+        represented in your inventory UOM, regardless of the Vendor UOMs
         specified on any open Purchase Orders.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Bar Code</term>
       <listitem>
-        <para>Enter the Bar Code for the Item</para>
+        <para>Enter the Bar Code for the item.</para>
         <note>
           <para>Standard bar code formats supported by the system include the
           following: Code 3of9, Code 3of9 Extended, Code 128, UPC-A, UPC-E,
@@ -143,7 +143,7 @@
             <listitem>
               <para>Enter the blanket order quantity that will be used to
               track released and received Purchase Order quantities for the
-              Item under the Contract.</para>
+              item under the Contract.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -152,8 +152,8 @@
     <varlistentry>
       <term>Minimum Order</term>
       <listitem>
-        <para>Indicate the minimum Order allowed for the specified Item. A
-        warning message will be shown if a Purchase Order Line Item falls
+        <para>Indicate the minimum Order allowed for the specified item. A
+        warning message will be shown if a Purchase Order line item falls
         below the minimum Order value entered here.</para>
       </listitem>
     </varlistentry>
@@ -161,8 +161,8 @@
       <term>Order Multiple</term>
       <listitem>
         <para>Value entered indicates the quantity multiple that Orders for
-        this Item must use. A warning message will be shown if a Purchase
-        Order Line Item does not conform to the Order multiple entered
+        this item must use. A warning message will be shown if a Purchase
+        Order line item does not conform to the Order multiple entered
         here.</para>
       </listitem>
     </varlistentry>
@@ -184,7 +184,7 @@
         <para>Specify the Vendor's rank using the arrow buttons, or manually
         enter a value up to a maximum of 9. The ranking of a Vendor is used to
         identify the relative merits of Item Sources when releasing Purchase
-        Requests. If a purchased Item has multiple Item Sources, you may
+        Requests. If a purchased item has multiple Item Sources, you may
         select from a list of available Item Sources when releasing a Purchase
         Request. The Item Sources will be listed in descending order by Vendor
         ranking.</para>
@@ -196,9 +196,9 @@
           <secondary>lead times for</secondary>
         </indexterm>Lead Time</term>
       <listitem>
-        <para>Specify the lead time for the Vendor Item using the arrow
+        <para>Specify the lead time for the Vendor item using the arrow
         buttons, or manually enter a value up to a maximum of 99. Specifies
-        the Lead Time the Vendor requires to supply the specified Item,
+        the Lead Time the Vendor requires to supply the specified item,
         measured in days.</para>
       </listitem>
     </varlistentry>
@@ -287,7 +287,7 @@
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Name of the Manufacturer who creates the Item.</para>
+        <para>Name of the Manufacturer who creates the item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -295,14 +295,14 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Item Number used by Manufacturer who creates the Item.</para>
+        <para>Item number used by Manufacturer who creates the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
         <para>Description used by the Manufacturer who creates the
-        Item.</para>
+        item.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -9,7 +9,7 @@
     </indexterm>Print Packing List</title>
   <para>To print a Packing List or Sales Order Pick List, select the "Print
   Packing List" option. If the order has a Shipment Number, the Packing List
-  form should be used. If there is no Shipment Number—that is, if no Line Item
+  form should be used. If there is no Shipment Number—that is, if no line item
   quantity has been issued to shipping—then the Sales Order Pick List form
   should be used. Both forms are defined under <guimenuitem>Sales &gt; Master
   Information &gt; Customer Form Assignments</guimenuitem>.</para>
@@ -31,13 +31,13 @@
           <varlistentry>
             <term>All Sites</term>
             <listitem>
-              <para>Select to include Packing Lists for all Sites.</para>
+              <para>Select to include Packing Lists for all sites.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Selected</term>
             <listitem>
-              <para>Specify the Site you want to print Packing Lists
+              <para>Specify the site you want to print Packing Lists
               for.</para>
             </listitem>
           </varlistentry>
@@ -85,7 +85,7 @@
         <note>
           <para>A Sales Order Pick List will be printed if the Sales Order
           does not yet have a Shipment Number associated with it—that is, if
-          no Line Item quantity has been issued to shipping. If stock has been
+          no line item quantity has been issued to shipping. If stock has been
           issued to Shipping, then the Packing List report definition will be
           used.</para>
           <para>The system includes two alternate Sales Order Pick List report
@@ -98,8 +98,8 @@
               <para>PickingListNoClosedLines.xml</para>
             </listitem>
           </itemizedlist>
-          <para>The first includes already closed Sales Order Line Items in
-          the report; the other excludes closed Line Items.</para>
+          <para>The first includes already closed Sales Order line items in
+          the report; the other excludes closed line items.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -115,7 +115,7 @@
       <term>Shipment #</term>
       <listitem>
         <para>Specify the Shipment Number you want to print a Packing List
-        for. Shipment Numbers are assigned to Orders when Line Item quantity
+        for. Shipment Numbers are assigned to Orders when line item quantity
         is issued to Shipping. A single Order may have multiple Shipments
         associated with it. If no stock has ever been issued to Shipping for
         an Order, then no Shipment Number will be associated with it.</para>

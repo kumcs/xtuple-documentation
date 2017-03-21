@@ -17,7 +17,7 @@
       <secondary>as inventory transaction</secondary>
     </indexterm>Material Receipt</title>
 
-  <para>To record the receipt of materials into Inventory, select the
+  <para>To record the receipt of materials into inventory, select the
   "Material Receipt" option. The following screen will appear:</para>
 
   <para><screenshot>
@@ -31,7 +31,7 @@
     </screenshot></para>
 
   <note>
-    <para>If an Item is Lot/Serial Number controlled, you will be given the
+    <para>If an item is Lot/Serial Number controlled, you will be given the
     opportunity to assign a Lot/Serial Number to incoming material during the
     receiving process.</para>
   </note>
@@ -53,8 +53,8 @@
       <term>Item Number</term>
 
       <listitem>
-        <para>Enter the Item Number of the material you are receiving into
-        Inventory.</para>
+        <para>Enter the item number of the material you are receiving into
+        inventory.</para>
       </listitem>
     </varlistentry>
 
@@ -70,7 +70,7 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specify Site where material is being received.</para>
+        <para>Specify site where material is being received.</para>
       </listitem>
     </varlistentry>
 
@@ -78,7 +78,7 @@
       <term>Receipt Qty.</term>
 
       <listitem>
-        <para>Record the quantity of the Item being received. The Item's
+        <para>Record the quantity of the item being received. The item's
         quantity on hand (QOH) before and after the material receipt will also
         be displayed. Non-netable QOH is not included in these values. If the
         material is issued directly to a Work Order, the before and after
@@ -93,7 +93,7 @@
         <para>Check to issue material immediately to a Work Order. Any Work
         Order Material Requirements having an issue method of either "Mixed"
         or "Push" may be issued to a Work Order using this option. Because
-        "Pull" Items are issued to Work Orders using a material backflush,
+        "Pull" items are issued to Work Orders using a material backflush,
         they may not be issued from this screen.</para>
       </listitem>
     </varlistentry>
@@ -117,7 +117,7 @@
         <para>Enter the Work Order Number of the Work Order you want to issue
         the received materials to. The lookup feature located to the right of
         the field leads to a searchable Work Orders list. The list will
-        include Work Orders whose supplying Site matches the Site the
+        include Work Orders whose supplying site matches the site the
         materials are being received into.</para>
       </listitem>
     </varlistentry>
@@ -126,8 +126,8 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specifies supplying Site for the Work Order's parent
-        Item.</para>
+        <para>Specifies supplying site for the Work Order's parent
+        item.</para>
       </listitem>
     </varlistentry>
 
@@ -135,7 +135,7 @@
       <term>Item Number</term>
 
       <listitem>
-        <para>Displays Item Number for the Work Order's parent Item.</para>
+        <para>Displays item number for the Work Order's parent item.</para>
       </listitem>
     </varlistentry>
 
@@ -171,8 +171,8 @@
 
       <listitem>
         <para>The Cost tab will be visible only if Average Costing is enabled
-        on the Configure Inventory screen. The Cost tab will be enabled only
-        if Average Costing is the Cost Method selected for the Item Site being
+        on the Configure inventory screen. The Cost tab will be enabled only
+        if Average Costing is the Cost Method selected for the item site being
         adjusted. If Adjust Value is checked then the transaction will affect
         the value of perpetual inventory using the following Costs:</para>
 

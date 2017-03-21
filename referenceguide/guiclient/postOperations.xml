@@ -39,14 +39,14 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Displays Site code automatically when Work Order Number is
+        <para>Displays site code automatically when Work Order Number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays Item Number automatically when Work Order Number is
+        <para>Displays item number automatically when Work Order Number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -59,8 +59,8 @@
   </variablelist>
   <note>
     <para>If your site combines Operations posting with WIP Location tracking
-    for Multiple Location Control (MLC) Items, then you may be prompted to
-    relocate Inventory during the Operations posting process.</para>
+    for Multiple Location Control (MLC) items, then you may be prompted to
+    relocate inventory during the Operations posting process.</para>
   </note>
   <variablelist>
     <varlistentry>
@@ -81,7 +81,7 @@
       <term>Operation</term>
       <listitem>
         <para>Select the individual Operation you want to post from the list
-        of Work Order Operations for the specified Item. After selecting an
+        of Work Order Operations for the specified item. After selecting an
         Operation, specify details for that Operation. To post Operations for
         another Operation, simply select that Operation from the sequential
         list.</para>
@@ -96,15 +96,15 @@
           <varlistentry>
             <term>Ordered</term>
             <listitem>
-              <para>Indicates the quantity of material, measures in the Item's
-              Inventory UOM, that the selected Work Order is due to
+              <para>Indicates the quantity of material, measures in the item's
+              inventory UOM, that the selected Work Order is due to
               produce.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Received</term>
             <listitem>
-              <para>Indicates the quantity, measured in the Item's Inventory
+              <para>Indicates the quantity, measured in the item's inventory
               UOM, that has been completed by this Operation.</para>
             </listitem>
           </varlistentry>
@@ -136,21 +136,21 @@
               </indexterm>Production UOMs</term>
             <listitem>
               <para>Select to post the Operations quantity in Production Units
-              of Measure. Operations may be posted using either the Inventory
+              of Measure. Operations may be posted using either the inventory
               or Production UOM. In addition, different Operations in a single
               Bill of Operations may use different Production UOMs. For
               example, if you are producing soup, you might mix the soup in
               one Operation using UOM = BATCH. But when canning the soup, the
               canning Operation might use UOM = CAN. If you post Operations
-              using the Production UOM, the Inventory/Production UOM ratio
+              using the Production UOM, the inventory/Production UOM ratio
               defined at the Operation level normalizes the posting so that
-              the Inventory impact is recorded using the Inventory UOM.</para>
+              the inventory impact is recorded using the inventory UOM.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Inventory UOMs</term>
             <listitem>
-              <para>Select to post the Operations quantity in Inventory Units
+              <para>Select to post the Operations quantity in inventory Units
               of Measure.</para>
             </listitem>
           </varlistentry>
@@ -222,7 +222,7 @@
     <varlistentry>
       <term>Post Standard Run Time</term>
       <listitem>
-        <para>Select to post the standard run time for specified Item,
+        <para>Select to post the standard run time for specified item,
         measured in minutes. Typically, standard times will not be used if
         Operations are being posted using the Shop Floor Workbench. Instead,
         labor times will be calculated based on clock-in and clock-out times.
@@ -269,24 +269,24 @@
         <para>Indicates that linked component materials will be issued
         automatically (i.e., backflushed) when the specified Operation is
         posted. Option will be enabled only if component materials are linked
-        to the specified Operation within the parent Item's Bill of Materials.
+        to the specified Operation within the parent item's Bill of Materials.
         If such linkages exist, only components with "Pull" or "Mixed" issue
         methods will be displayed. Components having the "Push" issue method
         will not appear in the list, as these must be issued manually to a
         Work Order. If this option is selected, the General Ledger will show
-        the component materials being removed from Inventory when this
+        the component materials being removed from inventory when this
         Operation is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Receive Inventory</term>
       <listitem>
-        <para>Indicates that finished goods will be received into Inventory
+        <para>Indicates that finished goods will be received into inventory
         when the specified Operation is posted. Enabled only when the selected
         Operation is the receiving Operation for the selected Work Order. Only
         one Work Order Operation may have this flag set. If this option is
         selected, the General Ledger will show the finished goods being
-        received into Inventory when the Operation is posted.</para>
+        received into inventory when the Operation is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>

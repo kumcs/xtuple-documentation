@@ -254,7 +254,7 @@
             <term>Use Standard Cost</term>
 
             <listitem>
-              <para>Select if you want to use the Item's Standard Cost when
+              <para>Select if you want to use the item's Standard Cost when
               posting Count Tags. This option assumes you are maintaining
               Standard Costs for your Average Cost items.</para>
             </listitem>
@@ -264,7 +264,7 @@
             <term>Use Average Cost</term>
 
             <listitem>
-              <para>Select to use the Item's Average Cost when posting Count
+              <para>Select to use the item's Average Cost when posting Count
               Tags. If no prior Average Cost exists, the inventory value of a
               posted Count Tag will be $0.</para>
             </listitem>
@@ -274,7 +274,7 @@
             <term>Use Actual Cost if no Average Cost</term>
 
             <listitem>
-              <para>Select to use the Item's Actual Cost if no Average Cost
+              <para>Select to use the item's Actual Cost if no Average Cost
               exists when posting Count Tags. This option provides an
               alternate method for valuing inventory in the scenario where no
               prior Average Cost exists and also when Standard Costs are not
@@ -305,8 +305,8 @@
             <term>Post Difference to Default Location, if any</term>
 
             <listitem>
-              <para>Select to post excess Count Tag quantity to an Item's
-              default location if the Item's Count Tag quantity exceeds its
+              <para>Select to post excess Count Tag quantity to an item's
+              default location if the item's Count Tag quantity exceeds its
               Count Slip quantity. Applies only if a default location has been
               defined for the item. Default locations are defined for an item
               in the item site record.</para>
@@ -318,7 +318,7 @@
 
             <listitem>
               <para>Select to prevent Count Tag quantity from being posted if
-              it exceeds the Item's Count Slip quantity.</para>
+              it exceeds the item's Count Slip quantity.</para>
 
               <note>
                 <para>By default, the system allows only one unposted Count
@@ -505,7 +505,7 @@
         occur if and only if the vouchered cost is different from the Purchase
         Order cost. For the PPV to be recorded twice, the following conditions
         would have to exist: First, there would have to be a difference
-        between Purchase Order price and an Item's Standard Cost, and, second,
+        between Purchase Order price and an item's Standard Cost, and, second,
         there would also have to be a difference between the Purchase Order
         price and the vouchered price.</para>
       </listitem>
@@ -533,12 +533,12 @@
     </varlistentry>
 
     <varlistentry role="distribution">
-      <term>Update Item's Actual Cost on Receipt</term>
+      <term>Update item's Actual Cost on Receipt</term>
 
       <listitem>
         <para>Select if you want the Actual Cost for a Purchase Order Item to
         be updated when that item is received. This feature complements and
-        does not replace the standard process, whereby a received Item's
+        does not replace the standard process, whereby a received item's
         Actual Cost is updated at the point when a Voucher for that item is
         posted.</para>
       </listitem>
