@@ -5,50 +5,63 @@
 <section id="unappliedARCreditMemos">
   <title><indexterm significance="normal">
       <primary>credit memos</primary>
+
       <secondary>list of unapplied</secondary>
     </indexterm>List Unapplied Credit Memos</title>
-  <para>Whenever a Credit Memo amount has not been applied to a specific
-  Invoice or Debit Memo&mdash;either in whole or in part&mdash;that Credit
-  Memo will appear on the list of unapplied Credit Memos. Both miscellaneous
-  Receivables Credit Memos and unapplied Credit Memos generated from the Billing
-  section may appear on the list.</para>
+
+  <para>Whenever a credit memo amount has not been applied to a specific
+  invoice or debit memo—either in whole or in part—that credit memo will
+  appear on the list of unapplied credit memos. Both miscellaneous receivables
+  credit memos and unapplied credit memos generated from the billing section
+  may appear on the list.</para>
+
   <note>
-    <para>A newly-entered miscellaneous Credit Memo is an unapplied Credit
-    Memo by default. However, Credit Memos generated from the Billing section
-    may or may not be unapplied&mdash;depending on circumstances. For example,
-    if a Sales Order Credit Memo is applied to a specific Invoice when the Credit
-    Memo is created, then that Credit Memo is applied and will not appear on
-    the list of unapplied Credit Memos. However, if a Sales Order Credit Memo is not
-    applied when it is created, it will subsequently appear on the unapplied
-    list.</para>
+    <para>A newly-entered miscellaneous credit memo is an unapplied credit
+    memo by default. However, credit memos generated from the billing section
+    may or may not be unapplied—depending on circumstances. For example, if a
+    sales order credit memo is applied to a specific invoice when the credit
+    memo is created, then that credit memo is applied and will not appear on
+    the list of unapplied credit memos. However, if a sales order credit memo
+    is not applied when it is created, it will subsequently appear on the
+    unapplied list.</para>
   </note>
-  <para>To access the master list of unapplied Credit Memos, select the "List
-  Unapplied Credit Memos" option. The following screen will appear:</para>
+
+  <para>To access the master list of unapplied credit memos, select the
+  <guimenu>List Unapplied Credit Memos</guimenu> option. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/unappliedARCreditMemos.png" />
+          <imagedata fileref="images/unappliedARCreditMemos.png"/>
         </imageobject>
+
         <caption>Unapplied Credit Memos Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The master list of unapplied Credit Memos displays basic information
-  on all existing unapplied Credit Memos, including Document Number, Customer
-  name, Document amount, applied amount, and amount available to apply.</para>
+
+  <para>The master list of unapplied credit memos displays basic information
+  on all existing unapplied credit memos, including document number, customer
+  name, document amount, applied amount, and amount available to apply.</para>
+
   <note>
-    <para>Once the full amount of a Credit Memo has been applied, the Credit
-    Memo will be removed from the unapplied Credit Memos list.</para>
+    <para>Once the full amount of a credit memo has been applied, the credit
+    memo will be removed from the unapplied credit memos list.</para>
   </note>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>APPLY</term>
+
       <listitem>
-        <para>Highlight an unapplied Credit Memo and then select this button
+        <para>Highlight an unapplied credit memo and then select this button
         to apply an amount.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="applyARCreditMemo.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
