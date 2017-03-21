@@ -4,71 +4,89 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="printStatementsByCustomerType">
   <title>Print Statements by Customer Type</title>
-  <para>Customer Statements show past due information for open Receivables. To
-  print Customer Statements by Customer Type, select the "Print Statements by
-  Customer Type" option.</para>
+
+  <para>Customer statements show past due information for open receivables. To
+  print customer statements by customer type, select the <guimenu>Print
+  Statements by Customer Type</guimenu> option.</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/printStatementsByCustomerType.png" />
+          <imagedata fileref="images/printStatementsByCustomerType.png"/>
         </imageobject>
+
         <caption>Print Statements by Customer Type</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When printing Customer Statements by Customer Type, you are presented
+
+  <para>When printing customer statements by customer type, you are presented
   with the following options:</para>
+
   <para role="xtconnect"><tip>
-      <para>If some Customers have EDI Profiles attached, you may encounter an
-      EDI processing interface when printing particular Customer
-      Statements.</para>
+      <para>If some customers have EDI profiles attached, you may encounter an
+      EDI processing interface when printing particular customer
+      statements.</para>
     </tip></para>
+
   <variablelist>
     <varlistentry>
       <term>All Customer Types</term>
+
       <listitem>
-        <para>Select to print Customer Statements for all Customer
-        Types.</para>
+        <para>Select to print customer statements for all customer
+        types.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
-        <para>Specify the Customer Type you want to print Customer Statements
+        <para>Specify the customer type you want to print customer statements
         for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
-        <para>Enter a Customer Type pattern to select a range of Customer
-        Types. Refine your search using Regular Expressions.</para>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>As of</term>
+
       <listitem>
         <para>Specify the point-in-time date you want the statement to be
         relative to.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Grace Period</term>
+
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
-        value up to a maximum of 990. The Grace Period extends backwards in
+        value up to a maximum of 990. The grace period extends backwards in
         time from the current day, covering the number of days specified here.
-        If the due dates for a Customer's open Receivables fall within the Grace
-        Period, a Statement will not be printed for that Customer. Statements
-        will only be printed for Customers having overdue balances&mdash;that
-        is, open Receivables which fall outside the Grace Period.</para>
+        If the due dates for a customer's open receivables fall within the
+        grace period, a statement will not be printed for that customer.
+        Statements will only be printed for customers having overdue
+        balances—that is, open receivables which fall outside the grace
+        period.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only Print Customers with Past Due Amounts</term>
+
       <listitem>
-        <para>Select if you only want to print Statements for Customers who
-        have past due amounts. If not selected, you will get Statements for
-        all Customers.</para>
+        <para>Select if you only want to print statements for customers who
+        have past due amounts. If not selected, you will get statements for
+        all customers.</para>
       </listitem>
     </varlistentry>
   </variablelist>

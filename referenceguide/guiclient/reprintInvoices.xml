@@ -5,87 +5,109 @@
 <section id="reprintInvoices">
   <title><indexterm significance="normal">
       <primary>invoices</primary>
+
       <secondary>re-printing of</secondary>
     </indexterm>Re-Print Invoices</title>
-  <para>To print an Invoice that was previously printed, select the "Re-Print
-  Invoices" option. The following screen will appear:</para>
+
+  <para>To print an invoice that was previously printed, select the
+  <guimenu>Re-Print Invoices</guimenu> option. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/reprintInvoices.png" />
+          <imagedata fileref="images/reprintInvoices.png"/>
         </imageobject>
+
         <caption>Re-Print Invoices</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When re-printing an Invoice, you are presented with the following
+
+  <para>When re-printing an invoice, you are presented with the following
   options:</para>
+
   <para role="xtconnect"><note>
-      <para>If the Customer specified on a Credit Memo has an EDI Profile
+      <para>If the customer specified on a credit memo has an EDI profile
       attached, you may encounter an EDI processing interface when printing
       it.</para>
     </note></para>
+
   <variablelist>
     <varlistentry>
       <term>Search for Invoice Number</term>
+
       <listitem>
-        <para>Enter an Invoice Number or Regular Expression. This field may be
+        <para>Enter an invoice number or regular expression. This field may be
         used independently or in conjunction with the date fields.</para>
+
         <tip>
-          <para>The "Invoice Number" field supports pattern matching with
-          Regular Expressions.</para>
+          <para>The <guilabel>Invoice Number</guilabel> field supports pattern
+          matching with regular expressions.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only include Invoices with Balance</term>
+
       <listitem>
         <para>Select to include only those invoices having an open balance due
         in the display. If not selected, all invoices in the specified date
         range will be shown.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Start Date</term>
+
       <listitem>
         <para>Invoices posted on and after this date will be displayed, unless
         the list is intentionally limited by information entered in the
-        "Search for Invoice Number" field.</para>
+        <guilabel>Search for Invoice Number</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>End Date</term>
+
       <listitem>
         <para>Invoices posted on and before this date will be displayed,
         unless the list is intentionally limited by information entered in the
-        "Search for Invoice Number" field.</para>
+        <guilabel>Search for Invoice Number</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Select Documents to reprint</term>
+
       <listitem>
-        <para>Display lists previously printed Invoices. Highlight the
-        individual Invoice or group of Invoices you want to re-print using
-        your mouse button. To select a sequence of Invoices, highlight the
+        <para>Display lists previously printed invoices. Highlight the
+        individual invoice or group of invoices you want to re-print using
+        your mouse button. To select a sequence of invoices, highlight the
         first in the sequence using your mouse button. Then, holding down the
-        SHIFT key on your keyboard, highlight the last Invoice in the
-        sequence. The entire sequence is now selected. To select Invoices that
-        are out of sequence, highlight the first Invoice in the group. Then,
-        holding down the CTRL key on your keyboard, highlight the next Invoice
-        you want to select. Continue highlighting Invoices with the CTRL key
-        depressed until all desired Invoices are selected. The entire group is
+        SHIFT key on your keyboard, highlight the last invoice in the
+        sequence. The entire sequence is now selected. To select invoices that
+        are out of sequence, highlight the first invoice in the group. Then,
+        holding down the CTRL key on your keyboard, highlight the next invoice
+        you want to select. Continue highlighting invoices with the CTRL key
+        depressed until all desired invoices are selected. The entire group is
         now ready for re-printing.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Copies</term>
+
       <listitem>
-        <para>Specify details for the Invoice copies you want to print:</para>
+        <para>Specify details for the invoice copies you want to print:</para>
+
         <variablelist>
           <varlistentry>
             <term># of Copies</term>
+
             <listitem>
               <para>Specify the number of copies you want to print. To add a
-              Watermark or show/hide Prices on the printed Form, double-click
+              watermark or show/hide prices on the printed form, double-click
               on a copy line.</para>
             </listitem>
           </varlistentry>
@@ -93,6 +115,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="../widgets/watermarks.xml" xpointer="watermarksWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
