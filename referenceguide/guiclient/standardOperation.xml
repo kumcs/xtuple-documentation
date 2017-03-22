@@ -72,17 +72,17 @@
         <para>Specify the Unit of Measure to use for the Production UOM—or
         enter a free-form UOM. Specify a UOM to be used optionally when Work
         Order Operations are posted for the specified Operation. Operations
-        may be posted using either the Inventory or Production UOM. In
+        may be posted using either the inventory or Production UOM. In
         addition, different Operations in a single Bill of Operations may use
         different Production UOMs. For example, if you are producing soup, you
         might mix the soup in one Operation using UOM = BATCH. But when
         canning the soup, the canning Operation might use UOM = CAN. If you
-        post Operations using the Production UOM, the Inventory/Production UOM
-        ratio normalizes the posting so that the Inventory impact is recorded
-        using the Inventory UOM.</para>
+        post Operations using the Production UOM, the inventory/Production UOM
+        ratio normalizes the posting so that the inventory impact is recorded
+        using the inventory UOM.</para>
         <note>
           <para>When posting Work Order Operations, you are given the option
-          to post Operations using Production UOMs or Inventory UOMs.</para>
+          to post Operations using Production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -90,9 +90,9 @@
       <term>Inventory/Production UOM Ratio</term>
       <listitem>
         <para>When Work Order Operations are posted using the Production UOM,
-        the Inventory/Production UOM ratio normalizes the posting so that the
-        Inventory impact is recorded in the Inventory UOM. The ratio is set up
-        in the same way as the Capacity/Inventory UOM ratio described in <xref
+        the inventory/Production UOM ratio normalizes the posting so that the
+        inventory impact is recorded in the inventory UOM. The ratio is set up
+        in the same way as the Capacity/inventory UOM ratio described in <xref
         linkend="item" />.</para>
       </listitem>
     </varlistentry>
@@ -154,7 +154,7 @@
         typical run-time period. The value entered here is equivalent to a run
         size, batch size, or Economic Order Quantity (EOQ) for this particular
         Operation. Because Work Order Operations roll into the Actual and
-        Standard Costs for manufactured Items, you should specify a per
+        Standard Costs for manufactured items, you should specify a per
         quantity which accurately reflects your normal batch size for the
         Operation. Specifying a standard batch size helps ensure your
         Operations Costs are evenly distributed.</para>

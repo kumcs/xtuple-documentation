@@ -9,7 +9,7 @@
       <secondary>adding line items to</secondary>
     </indexterm>Return Authorization Item</title>
 
-  <para>To add a new Return Authorization Line Item, select the NEW button.
+  <para>To add a new Return Authorization line item, select the NEW button.
   The following screen will appear:</para>
 
   <para><screenshot>
@@ -22,7 +22,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating a new Return Authorization Line Item, you are presented
+  <para>When creating a new Return Authorization line item, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -39,7 +39,7 @@
       <term>Line #</term>
 
       <listitem>
-        <para>Displays the Line Item Number for the current Line Item.</para>
+        <para>Displays the line item number for the current line item.</para>
       </listitem>
     </varlistentry>
 
@@ -47,10 +47,10 @@
       <term>Original Order #</term>
 
       <listitem>
-        <para>Displays the original Sales Order Number if the Line Item has
+        <para>Displays the original Sales Order Number if the line item has
         been imported into the Return Authorization. Importing Return
-        Authorization Line Items from an original Sales Order is optional
-        only. When Line Items are imported, the original quantities and
+        Authorization line items from an original Sales Order is optional
+        only. When line items are imported, the original quantities and
         pricing information are imported also.</para>
 
         <variablelist>
@@ -58,7 +58,7 @@
             <term>Line #</term>
 
             <listitem>
-              <para>Displays the original Sales Order Line Item Number.</para>
+              <para>Displays the original Sales Order line item number.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -79,7 +79,7 @@
             <term>Line #</term>
 
             <listitem>
-              <para>Displays the Line Item Number for the new Sales
+              <para>Displays the line item number for the new Sales
               Order.</para>
             </listitem>
           </varlistentry>
@@ -91,10 +91,10 @@
       <term>Disposition</term>
 
       <listitem>
-        <para>Line Item dispositions are defaulted conditionally based on the
+        <para>Line item dispositions are defaulted conditionally based on the
         Return Authorization's header-level disposition setting. However, you
         may manually over-ride the line level disposition when creating or
-        Return Authorization Line Items provided you do so before a quantity
+        Return Authorization line items provided you do so before a quantity
         has been authorized. The following options are available:</para>
 
         <variablelist>
@@ -103,7 +103,7 @@
 
             <listitem>
               <para>Select to authorize the issuing of credit for the
-              specified Item quantity at the specified Price. No return is
+              specified item quantity at the specified Price. No return is
               required or expected.</para>
             </listitem>
           </varlistentry>
@@ -112,7 +112,7 @@
             <term>Return</term>
 
             <listitem>
-              <para>Select to authorize the return of the specified Item
+              <para>Select to authorize the return of the specified item
               quantity at the specified Price.</para>
             </listitem>
           </varlistentry>
@@ -121,7 +121,7 @@
             <term>Replace</term>
 
             <listitem>
-              <para>Select to authorize the replacement of the specified Item
+              <para>Select to authorize the replacement of the specified item
               quantity.</para>
             </listitem>
           </varlistentry>
@@ -130,14 +130,14 @@
             <term>Service</term>
 
             <listitem>
-              <para>Select to authorize the servicing of an Item for the
+              <para>Select to authorize the servicing of an item for the
               specified quantity. This disposition is valid only for Job
-              Items. Price controls will be disabled for this disposition. A
+              items. Price controls will be disabled for this disposition. A
               new Sales Order with linked Work Order(s) will be created to
               track work and shipping on the repair or service. The billing
               for service or repair work should be handled on the new Sales
               Order. Service or repair items should first be received by the
-              Return Authorization. If the Job Item is Lot/Serial controlled,
+              Return Authorization. If the Job item is Lot/Serial controlled,
               you will be prompted to assign Lot/Serial numbers when the
               receipt is posted. This assignment of Lot/Serial Numbers can be
               simplified if you link authorized line items with existing
@@ -171,7 +171,7 @@
       <listitem>
         <para>Specify the reason for the Return Authorization. Reason codes
         are used to explain why a Customer return is being authorized. The
-        Line Item inherits the Reason Code from the header, but may be
+        line item inherits the Reason Code from the header, but may be
         overridden at the line level.</para>
       </listitem>
     </varlistentry>
@@ -180,19 +180,19 @@
       <term>Item Number</term>
 
       <listitem>
-        <para>Enter the Item Number of the Item you want to authorize. The
-        Items you may select will vary depending on the Line Item disposition.
-        For example, only Job Items may be selected for Line Items having the
-        Service disposition. Once an Item Number is entered, the Inventory
-        Unit of Measure and Item description will automatically appear.</para>
+        <para>Enter the item number of the item you want to authorize. The
+        items you may select will vary depending on the line item disposition.
+        For example, only Job items may be selected for line items having the
+        Service disposition. Once an item number is entered, the inventory
+        Unit of Measure and item description will automatically appear.</para>
 
-        <para>If a returned Item is an Average-Cost Item, is linked to a Sales
-        Order, and will result in an Inventory receipt, the Average Cost for
-        the Item on the Sales Order will be pulled into the return Line Item
+        <para>If a returned item is an Average-Cost item, is linked to a Sales
+        Order, and will result in an inventory receipt, the Average Cost for
+        the item on the Sales Order will be pulled into the return line item
         as the default value. If there is no Sales Order to reference, the
-        cost on the receipt will default to the Standard Cost for the Item. If
-        the Item Site is Average Cost, the Unit Cost will actually be editable
-        on the return Line Item, so you can manually or programmatically
+        cost on the receipt will default to the Standard Cost for the item. If
+        the item site is Average Cost, the Unit Cost will actually be editable
+        on the return line item, so you can manually or programmatically
         change the value to whatever makes sense for your business
         practice.</para>
       </listitem>
@@ -202,15 +202,15 @@
       <term>Customer P/N</term>
 
       <listitem>
-        <para>Displays the Customer Part Number (i.e., Item Alias) that
-        corresponds to the Item Number entered in the Item Number field. The
-        Customer Part Number will display only if you enter an Item Alias in
-        the Item Number field―or if an Alias was used on the original Sales
-        Order. To enter an Item Alias, place the cursor in the Item Number
+        <para>Displays the Customer Part Number (i.e., item Alias) that
+        corresponds to the item number entered in the Item Number field. The
+        Customer Part Number will display only if you enter an item Alias in
+        the Item Number field?or if an Alias was used on the original Sales
+        Order. To enter an item Alias, place the cursor in the Item Number
         field and then use the keyboard shortcut "CTRL + A". After you have
-        entered a valid Item Alias, hit the TAB key. A list of Items that use
-        the specified Item Alias will be displayed. Select the desired Item
-        from the list. The Item Alias will display as the Customer Part
+        entered a valid item Alias, hit the TAB key. A list of items that use
+        the specified item Alias will be displayed. Select the desired item
+        from the list. The item Alias will display as the Customer Part
         Number. Item Aliases are defined on the Item master.</para>
       </listitem>
     </varlistentry>
@@ -227,7 +227,7 @@
         </indexterm>Recv. Site</term>
 
       <listitem>
-        <para>Specify the Site where you want the returned Item quantity to be
+        <para>Specify the site where you want the returned item quantity to be
         received.</para>
       </listitem>
     </varlistentry>
@@ -244,9 +244,9 @@
         </indexterm>Ship Site</term>
 
       <listitem>
-        <para>Specify the Site where you want authorized Return Authorization
+        <para>Specify the site where you want authorized Return Authorization
         quantity to be shipped from. This option is only available for Line
-        Items having a disposition which requires creation of a new Sales
+        items having a disposition which requires creation of a new Sales
         Order (i.e., Replace, Service, Ship).</para>
       </listitem>
     </varlistentry>
@@ -257,7 +257,7 @@
       <term>Qty. Auth.</term>
 
       <listitem>
-        <para>Enter the quantity of the specified Item you want to
+        <para>Enter the quantity of the specified item you want to
         authorize.</para>
 
         <note>
@@ -274,11 +274,11 @@
 
       <listitem>
         <para>Specify the Unit of Measure (UOM) to be used when selling the
-        Line Item. Sold Items may be assigned multiple Selling UOMs. These
+        line item. Sold items may be assigned multiple Selling UOMs. These
         alternate UOMs may be defined on the Item master. You may also select
         a global conversion ratio here. Global conversions have the label
-        <literal>Global</literal> appended to them. If a Line Item has no
-        Selling UOM defined, then the Inventory UOM will be used here by
+        <literal>Global</literal> appended to them. If a line item has no
+        Selling UOM defined, then the inventory UOM will be used here by
         default.</para>
       </listitem>
     </varlistentry>
@@ -287,8 +287,8 @@
       <term>Qty. Sold</term>
 
       <listitem>
-        <para>Displays the Line Item quantity sold on the original Sales Order
-        line if the Line Item was imported from an original Sales
+        <para>Displays the line item quantity sold on the original Sales Order
+        line if the line item was imported from an original Sales
         Order.</para>
       </listitem>
     </varlistentry>
@@ -298,7 +298,7 @@
 
       <listitem>
         <para>Displays the quantity received against the Return Authorization
-        Line Item to date, if any.</para>
+        line item to date, if any.</para>
       </listitem>
     </varlistentry>
 
@@ -306,8 +306,8 @@
       <term>Qty. Shipped</term>
 
       <listitem>
-        <para>Displays the Return Authorization Line Item quantity shipped to
-        date, if any. This value applies to Line Items having a corresponding
+        <para>Displays the Return Authorization line item quantity shipped to
+        date, if any. This value applies to line items having a corresponding
         line on a new Sales Order.</para>
       </listitem>
     </varlistentry>
@@ -317,7 +317,7 @@
 
       <listitem>
         <para>If the Return Authorizations involves giving a Customer credit
-        for the Line Item, then you may specify the following options:</para>
+        for the line item, then you may specify the following options:</para>
 
         <variablelist>
           <varlistentry>
@@ -338,7 +338,7 @@
               </indexterm>Net Unit Price</term>
 
             <listitem>
-              <para>Displays the Net Unit Price for the Sales Order Item. This
+              <para>Displays the Net Unit Price for the Sales Order item. This
               information will be imported automatically for Return
               Authorizations linked to an original Sales Order if header
               disposition was Credit or Return when the order was imported. If
@@ -366,7 +366,7 @@
 
               <note>
                 <para>The Price controls will be automatically disabled for
-                Line Items if a credit method has not been specified or for
+                line items if a credit method has not been specified or for
                 line items having the following dispositions: Service and
                 Ship.</para>
               </note>
@@ -378,9 +378,9 @@
 
             <listitem>
               <para>The Price Unit of Measure is the same as the Selling UOM.
-              If an Item has Selling UOMs defined, then you will be able to
-              select from between the Inventory UOM and any defined Selling
-              UOMs. If no Selling UOMs have been defined, then the Inventory
+              If an item has Selling UOMs defined, then you will be able to
+              select from between the inventory UOM and any defined Selling
+              UOMs. If no Selling UOMs have been defined, then the inventory
               UOM will be used here by default.</para>
             </listitem>
           </varlistentry>
@@ -390,7 +390,7 @@
 
             <listitem>
               <para>Displays the Extended Price. The Extended Price for a Line
-              Item is based on the quantity ordered multiplied by the Net Unit
+              item is based on the quantity ordered multiplied by the Net Unit
               Price.</para>
             </listitem>
           </varlistentry>
@@ -402,7 +402,7 @@
       <term>Sale</term>
 
       <listitem>
-        <para>If the Return Authorizations involves re-selling the Line Item
+        <para>If the Return Authorizations involves re-selling the line item
         to the Customer, then you may specify the following options:</para>
 
         <variablelist>
@@ -422,7 +422,7 @@
               </indexterm>Net Unit Price</term>
 
             <listitem>
-              <para>Displays the Net Unit Price for the Sales Order Item. This
+              <para>Displays the Net Unit Price for the Sales Order item. This
               information will be imported automatically for Return
               Authorizations linked to an original Sales Order if header
               disposition was Credit or Return when the order was imported. If
@@ -450,7 +450,7 @@
 
               <note>
                 <para>The Price controls will be automatically disabled for
-                Line Items if a credit method has not been specified or for
+                line items if a credit method has not been specified or for
                 line items having the following dispositions: Service and
                 Ship.</para>
               </note>
@@ -462,9 +462,9 @@
 
             <listitem>
               <para>The Price Unit of Measure is the same as the Selling UOM.
-              If an Item has Selling UOMs defined, then you will be able to
-              select from between the Inventory UOM and any defined Selling
-              UOMs. If no Selling UOMs have been defined, then the Inventory
+              If an item has Selling UOMs defined, then you will be able to
+              select from between the inventory UOM and any defined Selling
+              UOMs. If no Selling UOMs have been defined, then the inventory
               UOM will be used here by default.</para>
             </listitem>
           </varlistentry>
@@ -474,7 +474,7 @@
 
             <listitem>
               <para>Displays the Extended Price. The Extended Price for a Line
-              Item is based on the quantity ordered multiplied by the Net Unit
+              item is based on the quantity ordered multiplied by the Net Unit
               Price.</para>
             </listitem>
           </varlistentry>
@@ -498,8 +498,8 @@
       <term>Scheduled Date</term>
 
       <listitem>
-        <para>The scheduled date is the date when the Line Item quantity
-        should be shipped. The user who enters the Line Item is responsible
+        <para>The scheduled date is the date when the line item quantity
+        should be shipped. The user who enters the line item is responsible
         for determining the scheduled date. After entering the scheduled date,
         hit the TAB key on your keyboard to display values in the remaining
         display only fields.</para>
@@ -512,17 +512,17 @@
       <term>Warranty</term>
 
       <listitem>
-        <para>Select if the Line Item is a warranty Item. If selected, the
-        Cost of Warranty Account will be used when shipping the Line Item,
+        <para>Select if the line item is a warranty item. If selected, the
+        Cost of Warranty Account will be used when shipping the line item,
         instead of the Cost of Sales Account. It will also be used when
-        receiving warranty Items through a Return Authorization, instead of
+        receiving warranty items through a Return Authorization, instead of
         the Cost of Returns Account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <para>When entering Return Authorizations you have the ability to view
-  current availability for Line Items. You may also create replenishment
+  current availability for line items. You may also create replenishment
   Orders if they are needed.</para>
 
   <variablelist>
@@ -530,7 +530,7 @@
       <term>Show Availability</term>
 
       <listitem>
-        <para>Select if you want to display Item availability
+        <para>Select if you want to display item availability
         information.</para>
       </listitem>
     </varlistentry>
@@ -543,7 +543,7 @@
         </indexterm>Availability</term>
 
       <listitem>
-        <para>If showing Item availability, the following information will be
+        <para>If showing item availability, the following information will be
         shown:</para>
 
         <variablelist>
@@ -561,12 +561,12 @@
 
             <listitem>
               <para>Displays the quantity allocated to current Sales Orders
-              and/or Work Orders in the system. An Item is considered
-              allocated to a Sales Order if a Sales Order Line Item exists for
-              the Item—and that Line Item has not yet been issued to Shipping.
-              An Item is considered allocated to a Work Order if the Item is a
+              and/or Work Orders in the system. An item is considered
+              allocated to a Sales Order if a Sales Order line item exists for
+              the item—and that line item has not yet been issued to Shipping.
+              An item is considered allocated to a Work Order if the item is a
               material requirement—and the material has not yet been issued to
-              the Work Order. Once the current Line Item is saved, the
+              the Work Order. Once the current line item is saved, the
               "Allocated" value will increase by the quantity ordered.</para>
             </listitem>
           </varlistentry>
@@ -585,9 +585,9 @@
             <term>On Order</term>
 
             <listitem>
-              <para>If the Line Item is a manufactured Item, the quantity
+              <para>If the line item is a manufactured item, the quantity
               ordered by current Work Orders will be displayed. If the Line
-              Item is a purchased Item, the quantity ordered by current
+              item is a purchased item, the quantity ordered by current
               Purchase Orders will be displayed.</para>
             </listitem>
           </varlistentry>
@@ -606,8 +606,8 @@
             <term>Lead Time</term>
 
             <listitem>
-              <para>Displays the Item Site Lead Time for the specified Line
-              Item.</para>
+              <para>Displays the item site Lead Time for the specified line
+              item.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -616,7 +616,7 @@
           <para>The "Show Availability" feature can be turned on or off by
           default at the system level. If the feature is turned on, the
           Availability totals will display only after a Scheduled Date has
-          been entered for the Line Item.</para>
+          been entered for the line item.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -633,16 +633,16 @@
         </indexterm> Create Work Order</term>
 
       <listitem>
-        <para>If the Line Item is a manufactured Item, select this option to
+        <para>If the line item is a manufactured item, select this option to
         automatically create a Work Order for the specified quantity. For
-        make-to-order manufactured Items, this option will be selected
+        make-to-order manufactured items, this option will be selected
         automatically. A Work Order will be created to meet the Return
-        Authorization demand once you save the Line Item to the Order. An Item
+        Authorization demand once you save the line item to the Order. An item
         is designated as make-to-order if the "Create W/Os to meet Sales
         Demand" flag on the Item Site master is selected. A Work Order created
-        automatically from a Return Authorization Line Item will assume the
+        automatically from a Return Authorization line item will assume the
         same Order Number as the new Sales Order the Return Authorization Line
-        Item is associated with—even if that Order Number has already been
+        item is associated with—even if that Order Number has already been
         used by a previous Work Order.</para>
       </listitem>
     </varlistentry>
@@ -651,7 +651,7 @@
       <term>W/O Qty.</term>
 
       <listitem>
-        <para>The quantity ordered by the Line Item will display here.</para>
+        <para>The quantity ordered by the line item will display here.</para>
       </listitem>
     </varlistentry>
 
@@ -659,7 +659,7 @@
       <term>W/O Due Date</term>
 
       <listitem>
-        <para>By default, the scheduled date of the Line Item will display
+        <para>By default, the scheduled date of the line item will display
         here.</para>
       </listitem>
     </varlistentry>
@@ -673,9 +673,9 @@
     </varlistentry>
   </variablelist>
 
-  <para>For Lot/Serial Items, you have the option to authorize only specific
+  <para>For Lot/Serial items, you have the option to authorize only specific
   Lot/Serial quantities. The "Lot/Serial" tab will only be enabled for
-  Lot/Serial Items. To authorize specific Lot/Serial quantities, select the
+  Lot/Serial items. To authorize specific Lot/Serial quantities, select the
   "Lot/Serial" tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -713,7 +713,7 @@
   </variablelist>
 
   <para>To view Costs or adjust Tax information for a Return Authorization
-  Line Item, select the "Detail" tab at the bottom of the screen, as shown
+  line item, select the "Detail" tab at the bottom of the screen, as shown
   below:</para>
 
   <para><screenshot>
@@ -727,7 +727,7 @@
     </screenshot></para>
 
   <para>When viewing Costs or adjusting Tax information for a Return
-  Authorization Line Item, you are presented with the following
+  Authorization line item, you are presented with the following
   options:</para>
 
   <variablelist>
@@ -735,7 +735,7 @@
       <term>Unit Cost (Inv. UOM)</term>
 
       <listitem>
-        <para>Displays the Standard Cost per unit based on the Inventory Unit
+        <para>Displays the Standard Cost per unit based on the inventory Unit
         of Measure.</para>
       </listitem>
     </varlistentry>
@@ -757,7 +757,7 @@
 
       <listitem>
         <para>Displays the percentage discount off the List Price. Indicates
-        the difference between the List Price for an Item and the Net Unit
+        the difference between the List Price for an item and the Net Unit
         Price as a percentage. This is the margin between the Net Unit Price
         and the List Price.</para>
       </listitem>
@@ -770,14 +770,14 @@
 
       <listitem>
         <para>The following Tax options are available, should you need to
-        override the Tax Selection settings for the Line Item:</para>
+        override the Tax Selection settings for the line item:</para>
 
         <variablelist>
           <varlistentry>
             <term>Tax Type</term>
 
             <listitem>
-              <para>Specify the Tax Type for the Line Item. If the Item master
+              <para>Specify the Tax Type for the line item. If the Item master
               does not have a Tax Type for the Return Authorization's Tax
               Authority, then no Tax will be charged.</para>
             </listitem>
@@ -789,7 +789,7 @@
             <term>Tax</term>
 
             <listitem>
-              <para>Displays the amount of Tax to be charged for the Line Item
+              <para>Displays the amount of Tax to be charged for the line item
               quantity. To get a detailed view of the Tax calculation, click
               on the Tax link using your mouse.</para>
             </listitem>
@@ -799,7 +799,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To enter Notes related to a Return Authorization Line Item, select the
+  <para>To enter Notes related to a Return Authorization line item, select the
   "Notes" tab at the bottom of the screen, as shown below:</para>
 
   <para><screenshot>
@@ -808,11 +808,11 @@
           <imagedata fileref="images/returnAuthorizationItem_comments.png"/>
         </imageobject>
 
-        <caption>Return Authorization Line Item Notes</caption>
+        <caption>Return Authorization line item Notes</caption>
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes related to a Return Authorization Line Item, you are
+  <para>When adding Notes related to a Return Authorization line item, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -821,20 +821,20 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Return Authorization Line Item.</para>
+        general Notes related to the Return Authorization line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <tip>
-    <para>If a Return Authorization Item is marked to create a Work Order, the
+    <para>If a Return Authorization item is marked to create a Work Order, the
     Production Notes for the created Work Order will contain the Sales Order
-    Number, the Customer Name, and any additional Sales Order Line Item
+    Number, the Customer Name, and any additional Sales Order line item
     Notes.</para>
   </tip>
 
   <para>To define an alternate Cost of Sales Account for a Return
-  Authorization Line Item, select the "Accounting" tab at the bottom of the
+  Authorization line item, select the "Accounting" tab at the bottom of the
   screen, as shown below:</para>
 
   <para><screenshot>
@@ -848,7 +848,7 @@
     </screenshot></para>
 
   <para>When defining an alternate Cost of Sales Account for a Return
-  Authorization Line Item, you are presented with the following
+  Authorization line item, you are presented with the following
   options:</para>
 
   <variablelist>
@@ -863,7 +863,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To add Comments to a Return Authorization Line Item, select the
+  <para>To add Comments to a Return Authorization line item, select the
   "Comments" tab. The following screen will appear:</para>
 
   <para><screenshot>

@@ -9,7 +9,7 @@
       <secondary>adding line items to</secondary>
     </indexterm>Transfer Order Item</title>
 
-  <para>To add a new Transfer Order Line Item, select the NEW button. The
+  <para>To add a new Transfer Order line item, select the NEW button. The
   following screen will appear:</para>
 
   <para><screenshot>
@@ -22,7 +22,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating a new Transfer Order Line Item, you are presented with
+  <para>When creating a new Transfer Order line item, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -39,7 +39,7 @@
       <term>Line #</term>
 
       <listitem>
-        <para>Displays the Line Item Number for the current Line Item.</para>
+        <para>Displays the Line item number for the current line item.</para>
       </listitem>
     </varlistentry>
 
@@ -47,12 +47,12 @@
       <term>Item Number</term>
 
       <listitem>
-        <para>Enter the Item Number of the Item you want to sell. The Item
-        list will contain Items having valid Item Sites in the From (i.e.,
-        Source) Site.</para>
+        <para>Enter the item number of the item you want to sell. The item
+        list will contain items having valid item sites in the From (i.e.,
+        Source) site.</para>
 
         <note>
-          <para>Because Kit Items are non-stock Items, they may not be added
+          <para>Because Kit items are non-stock items, they may not be added
           to Transfer Orders.</para>
         </note>
       </listitem>
@@ -70,7 +70,7 @@
         </indexterm>From Site</term>
 
       <listitem>
-        <para>Displays the Source Site specified on the Transfer Order header
+        <para>Displays the Source site specified on the Transfer Order header
         screen.</para>
       </listitem>
     </varlistentry>
@@ -79,7 +79,7 @@
       <term>Qty. Ordered</term>
 
       <listitem>
-        <para>Enter the quantity of the specified Item to be
+        <para>Enter the quantity of the specified item to be
         transferred.</para>
       </listitem>
     </varlistentry>
@@ -89,7 +89,7 @@
 
       <listitem>
         <para>Shipped to Date: Displays the total quantity shipped of the
-        specified Line Item to date.</para>
+        specified line item to date.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -107,7 +107,7 @@
       <term>Line Item Freight</term>
 
       <listitem>
-        <para>Enter the amount of freight charges for the entire Line Item
+        <para>Enter the amount of freight charges for the entire line item
         quantity.</para>
       </listitem>
     </varlistentry>
@@ -117,8 +117,8 @@
 
       <listitem>
         <para>Displays the amount of Tax to be charged for the Transfer Order
-        Line Item quantity. Sales Tax is calculated at the Transfer Order Line
-        Item level. To get a detailed view of the Tax calculation, click on
+        line item quantity. Sales Tax is calculated at the Transfer Order Line
+        item level. To get a detailed view of the Tax calculation, click on
         the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
@@ -127,8 +127,8 @@
       <term>Scheduled Date</term>
 
       <listitem>
-        <para>The scheduled date is the date when the Line Item should be
-        Shipped. The user who enters the Line Item is responsible for
+        <para>The scheduled date is the date when the line item should be
+        Shipped. The user who enters the line item is responsible for
         determining the scheduled date. After entering the scheduled date, hit
         the TAB key on your keyboard to display values in the remaining
         display only fields.</para>
@@ -137,7 +137,7 @@
   </variablelist>
 
   <note>
-    <para>The Transfer Order Item having the earliest scheduled date will
+    <para>The Transfer Order item having the earliest scheduled date will
     determine the ship date for the Transfer Order.</para>
   </note>
 
@@ -159,7 +159,7 @@
       <term>PREVIOUS</term>
 
       <listitem>
-        <para>Select to view previous Line Items associated with the Transfer
+        <para>Select to view previous line items associated with the Transfer
         Order.</para>
       </listitem>
     </varlistentry>
@@ -168,9 +168,9 @@
       <term>CANCEL ITEM</term>
 
       <listitem>
-        <para>Select to cancel the current Transfer Order Line Item. Records
-        of canceled Line Items will be retained for informational purposes. To
-        view canceled Line Items associated with a Transfer Order, select the
+        <para>Select to cancel the current Transfer Order line item. Records
+        of canceled line items will be retained for informational purposes. To
+        view canceled line items associated with a Transfer Order, select the
         "Show Canceled Line Items" option on the Transfer Order header's "Line
         Items tab.</para>
       </listitem>
@@ -178,10 +178,10 @@
   </variablelist>
 
   <note>
-    <para>If there is no Item Site for the Item in the Destination Site, you
+    <para>If there is no item site for the item in the destination site, you
     will automatically be presented with an Item Site screen. Simply enter the
-    required information to create an Item Site in the Destination Site. An
-    Item Site must exist in the Destination Site before material can be
+    required information to create an item site in the destination site. An
+    item site must exist in the Destination site before material can be
     received successfully.</para>
   </note>
 
@@ -195,7 +195,7 @@
 
       <listitem>
         <para>Select to display Availability Supply information for the
-        Transfer Order Item in the following categories:</para>
+        Transfer Order item in the following categories:</para>
       </listitem>
     </varlistentry>
 
@@ -219,13 +219,13 @@
 
             <listitem>
               <para>Displays the quantity allocated to current Sales Orders,
-              Transfer Orders, and/or Work Orders in the system. An Item is
+              Transfer Orders, and/or Work Orders in the system. An item is
               considered allocated to a Sales Order/Transfer Order if a
-              Transfer Order Line Item exists for the Item—and that Line Item
-              has not yet been issued to Shipping. An Item is considered
-              allocated to a Work Order if the Item is a material
+              Transfer Order line item exists for the item—and that line item
+              has not yet been issued to Shipping. An item is considered
+              allocated to a Work Order if the item is a material
               requirement—and the material has not yet been issued to the Work
-              Order. Once the current Transfer Order Line Item is saved, the
+              Order. Once the current Transfer Order line item is saved, the
               "Allocated" value will increase by the quantity ordered.</para>
             </listitem>
           </varlistentry>
@@ -244,9 +244,9 @@
             <term>On Order</term>
 
             <listitem>
-              <para>If the Transfer Order Item is a manufactured Item, the
+              <para>If the Transfer Order item is a manufactured item, the
               quantity ordered by current Work Orders will be displayed. If
-              the Transfer Order Item is a purchased Item, the quantity
+              the Transfer Order item is a purchased item, the quantity
               ordered by current Purchase Orders will be displayed.</para>
             </listitem>
           </varlistentry>
@@ -269,19 +269,19 @@
 
       <listitem>
         <para>Select option to review any components dependent on manufactured
-        line Item.</para>
+        line item.</para>
 
         <variablelist>
           <varlistentry>
             <term>Show Dependencies as Indented BOM</term>
 
             <listitem>
-              <para>Displays components Items associated with sold
-              manufactured Item in a nested list with a plus ("+") sign
+              <para>Displays components items associated with sold
+              manufactured item in a nested list with a plus ("+") sign
               located to the far left of the screen next to each line that may
               be expanded to lower levels. By clicking your mouse on a plus
-              sign, you reveal lower levels of information related to the Line
-              Item.</para>
+              sign, you reveal lower levels of information related to the line
+              item.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -289,8 +289,8 @@
     </varlistentry>
   </variablelist>
 
-  <para>When selecting or editing Characteristics for a Transfer Order Line
-  Item, you are presented with the following options:</para>
+  <para>When selecting or editing Characteristics for a Transfer Order line
+  item, you are presented with the following options:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -305,9 +305,9 @@
         <term>Name</term>
 
         <listitem>
-          <para>Displays the name of any Item Characteristics associated with
-          the Item. Characteristics defined as Item Characteristics may be
-          associated with Items on the Item master.</para>
+          <para>Displays the name of any item Characteristics associated with
+          the item. Characteristics defined as item Characteristics may be
+          associated with items on the Item master.</para>
         </listitem>
       </varlistentry>
 
@@ -315,23 +315,23 @@
         <term>Value</term>
 
         <listitem>
-          <para>Displays the default Value associated with an Item
+          <para>Displays the default Value associated with an item
           Characteristic, but permits you to specify an alternate Value. When
-          associating Characteristic Values with a Transfer Order Line Item,
+          associating Characteristic Values with a Transfer Order line item,
           you have four options: 1) Select the default Value; 2) select an
           alternate pre-defined Value from the list; 3) manually enter a new
           Value in place of the pre-defined Value; or 4) make no selection.
           Making no selection means the Characteristics will not be associated
-          with the Transfer Order Line Item.</para>
+          with the Transfer Order line item.</para>
         </listitem>
       </varlistentry>
     </variablelist><tip>
-      <para>You can link Characteristics and Values to an Item by using the
+      <para>You can link Characteristics and Values to an item by using the
       Item master. Once entered, these Characteristics and Values will be
-      available to users entering Transfer Order Line Items.</para>
+      available to users entering Transfer Order line items.</para>
     </tip></para>
 
-  <para>To enter Notes related to a Transfer Order Line Item, select the
+  <para>To enter Notes related to a Transfer Order line item, select the
   "Notes" tab at the bottom of the screen, as shown below:</para>
 
   <para><screenshot>
@@ -344,7 +344,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes to a Transfer Order Line Item, you are presented
+  <para>When adding Notes to a Transfer Order line item, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -353,12 +353,12 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Transfer Order Line Item.</para>
+        general Notes related to the Transfer Order line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To add Comments related to a Transfer Order Line Item, select the
+  <para>To add Comments related to a Transfer Order line item, select the
   "Comments" tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -372,9 +372,9 @@
     </screenshot></para>
 
   <note>
-    <para>Whenever Transfer Order Line Items are created or their quantities
+    <para>Whenever Transfer Order line items are created or their quantities
     are changed, the system will automatically generate a Comment, which will
-    appear in the list of Line Item Comments.</para>
+    appear in the list of line item Comments.</para>
   </note>
 
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"

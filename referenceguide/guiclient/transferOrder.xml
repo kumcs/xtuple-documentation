@@ -9,11 +9,11 @@
       <secondary>creating new</secondary>
     </indexterm>New Transfer Order</title>
 
-  <para>Transfer Orders are used to move Inventory between Sites. They are
-  distinct from Inter-Site Transfers in three primary ways: 1) you can add
-  multiple Items to a single Transfer Order and transfer all the Items at
-  once; 2) all Transfer Order transfers involve a Transit Site, for tracking
-  Inventory while it is "in transit"; and 3) there are reports (i.e.,
+  <para>Transfer Orders are used to move inventory between sites. They are
+  distinct from Inter-site Transfers in three primary ways: 1) you can add
+  multiple items to a single Transfer Order and transfer all the items at
+  once; 2) all Transfer Order transfers involve a Transit site, for tracking
+  inventory while it is "in transit"; and 3) there are reports (i.e.,
   paperwork) associated with Transfer Orders. To enter a new Transfer Order,
   select the "New Transfer Order" option. The following screen will
   appear:</para>
@@ -57,10 +57,10 @@
       <listitem>
         <para>Displays the Order's earliest scheduled date. The scheduled date
         corresponds to the earliest scheduled date for an included Transfer
-        Order Item. Because Transfer Orders may contain multiple Transfer
-        Order Items, the scheduled date indicates the most recent scheduled
+        Order item. Because Transfer Orders may contain multiple Transfer
+        Order items, the scheduled date indicates the most recent scheduled
         date. No scheduled date will display in the "Scheduled Date" field
-        until a Transfer Order Line Item has been created and a scheduled date
+        until a Transfer Order line item has been created and a scheduled date
         assigned to it.</para>
       </listitem>
     </varlistentry>
@@ -126,10 +126,10 @@
       <term>Ship Complete</term>
 
       <listitem>
-        <para>Select to require that all Transfer Order Line Item quantities
+        <para>Select to require that all Transfer Order line item quantities
         be issued to Shipping before the Order is shipped. This feature is
         designed to prevent partial shipments. If selected, users will be
-        prevented from shipping the Order unless all Line Item quantities have
+        prevented from shipping the Order unless all line item quantities have
         been issued to Shipping. If not selected, partial shipments for the
         Order will be allowed.</para>
 
@@ -154,7 +154,7 @@
       <term>Ship From</term>
 
       <listitem>
-        <para>Specify the following details related to the Site the order is
+        <para>Specify the following details related to the site the order is
         being shipped from:</para>
 
         <variablelist>
@@ -162,7 +162,7 @@
             <term>Site</term>
 
             <listitem>
-              <para>Select a source Site from the available options.</para>
+              <para>Select a source site from the available options.</para>
             </listitem>
           </varlistentry>
 
@@ -171,7 +171,7 @@
 
             <listitem>
               <para>Displays the default Address for the specified ship-from
-              Site. You may manually override the displayed Address
+              site. You may manually override the displayed Address
               information in the fields below—or use the lookup feature to
               select another Address. If a new Address is manually entered
               here, that Address will be added automatically to the master
@@ -185,7 +185,7 @@
 
             <listitem>
               <para>Displays the default Contact for the specified ship-from
-              Site. You may manually override the displayed Contact
+              site. You may manually override the displayed Contact
               information in the fields below—or use the lookup feature to
               select another Contact. If a new Contact is manually entered
               here, that Contact will be added automatically to the master
@@ -201,7 +201,7 @@
       <term>Ship-To</term>
 
       <listitem>
-        <para>Specify the following details related to the Site the order is
+        <para>Specify the following details related to the site the order is
         being shipped to:</para>
 
         <variablelist>
@@ -209,7 +209,7 @@
             <term>Site</term>
 
             <listitem>
-              <para>Select a destination Site from the available
+              <para>Select a destination site from the available
               options.</para>
             </listitem>
           </varlistentry>
@@ -219,7 +219,7 @@
 
             <listitem>
               <para>Displays the default Address for the specified ship-to
-              Site. You may manually override the displayed Address
+              site. You may manually override the displayed Address
               information in the fields below—or use the lookup feature to
               select another Address. If a new Address is manually entered
               here, that Address will be added automatically to the master
@@ -233,7 +233,7 @@
 
             <listitem>
               <para>Displays the default Contact for the specified ship-to
-              Site. You may manually override the displayed Contact
+              site. You may manually override the displayed Contact
               information in the fields below—or use the lookup feature to
               select another Contact. If a new Contact is manually entered
               here, that Contact will be added automatically to the master
@@ -282,7 +282,7 @@
       <primary>transfer orders</primary>
 
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify Transfer Order Line Items, select the
+    </indexterm>To create or modify Transfer Order line items, select the
   "Line Items" tab at the top of the "Transfer Order" screen. The following
   screen will appear:</para>
 
@@ -296,7 +296,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating or modifying Transfer Order Line Items, you are
+  <para>When creating or modifying Transfer Order line items, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -304,13 +304,13 @@
       <term>Line Items</term>
 
       <listitem>
-        <para>Display lists Line Items for this Transfer Order.</para>
+        <para>Display lists line items for this Transfer Order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>Transfer Order Line Items may exist in any of the following
+    <para>Transfer Order line items may exist in any of the following
     statuses:</para>
 
     <para>"U" = Unreleased</para>
@@ -327,9 +327,9 @@
       <term>Show Canceled Line Items</term>
 
       <listitem>
-        <para>Select to include in the Line Items display Transfer Order Line
-        Items which have been specifically canceled. Displaying canceled Line
-        Items can provide useful Order history information.</para>
+        <para>Select to include in the line items display Transfer Order line
+        items which have been specifically canceled. Displaying canceled line
+        items can provide useful Order history information.</para>
       </listitem>
     </varlistentry>
 
@@ -338,10 +338,10 @@
 
       <listitem>
         <para>Select to ensure you have enough quantity on hand (QOH) of a
-        Line Item prior to issuing Stock to Shipping. If selected, this option
-        will prevent you from issuing Line Item quantity to Shipping if doing
-        so would force QOH for the Item Site to fall below zero. Not selecting
-        this option means issuing Stock to Shipping may drive Item Site QOH
+        line item prior to issuing Stock to Shipping. If selected, this option
+        will prevent you from issuing line item quantity to Shipping if doing
+        so would force QOH for the item site to fall below zero. Not selecting
+        this option means issuing Stock to Shipping may drive item site QOH
         negative.</para>
       </listitem>
     </varlistentry>
@@ -350,11 +350,11 @@
       <term>Freight Weight</term>
 
       <listitem>
-        <para>Displays the combined weight of all Transfer Order Line Items.
-        Freight weight represents the sum of an Item's product weight and
+        <para>Displays the combined weight of all Transfer Order line items.
+        Freight weight represents the sum of an item's product weight and
         packaging weight, both of which are defined on the Item master. The
         per unit freight weight multiplied by the quantity per gives you the
-        Line Item freight weight. The sum of all Line Item freight weights is
+        line item freight weight. The sum of all line item freight weights is
         the combined weight for the Order.</para>
       </listitem>
     </varlistentry>
@@ -371,9 +371,9 @@
         </indexterm>Line Item Freight Subtotal</term>
 
       <listitem>
-        <para>Displays the subtotal for all Line Item Freight. Freight charges
-        may be added when entering or editing a Transfer Order Line
-        Item.</para>
+        <para>Displays the subtotal for all line item Freight. Freight charges
+        may be added when entering or editing a Transfer Order line
+        item.</para>
       </listitem>
     </varlistentry>
 
@@ -382,8 +382,8 @@
 
       <listitem>
         <para>Displays the total amount of Tax to be charged on the Transfer
-        Order. Sales Tax is calculated at the Transfer Order Line Item level.
-        The Tax amount displayed here represents the total for all Line Item
+        Order. Sales Tax is calculated at the Transfer Order line item level.
+        The Tax amount displayed here represents the total for all line item
         Tax amounts. To get a detailed view of the Tax calculation, click on
         the Tax link using your mouse.</para>
       </listitem>
@@ -399,8 +399,8 @@
   </variablelist>
 
   <note>
-    <para>Any Transfer Order Line Item may be shipped—even if the Item or Item
-    Site in question becomes inactive after the Sales Order has been
+    <para>Any Transfer Order line item may be shipped—even if the item or item
+    site in question becomes inactive after the Sales Order has been
     created.</para>
   </note>
 
@@ -428,10 +428,10 @@
       <term>CLOSE</term>
 
       <listitem id="transferOrderCLOSE">
-        <para>Highlight a Transfer Order Line Item and then select this to
-        close the Transfer Order Line Item. If the highlighted Line Item is
+        <para>Highlight a Transfer Order line item and then select this to
+        close the Transfer Order line item. If the highlighted line item is
         already closed, the label will revert to an OPEN, which may be used to
-        open the closed Line Item.</para>
+        open the closed line item.</para>
       </listitem>
     </varlistentry>
 
@@ -443,14 +443,14 @@
         </indexterm>ISSUE STOCK</term>
 
       <listitem>
-        <para>Highlight a Transfer Order Line Item and then select this button
+        <para>Highlight a Transfer Order line item and then select this button
         to issue quantity to Shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <tip>
-    <para>You may select multiple Line Items for issuing to Shipping by
+    <para>You may select multiple line items for issuing to Shipping by
     highlighting them using your mouse—or a combination of your mouse and
     either the SHIFT or CTRL keys.</para>
   </tip>
@@ -460,8 +460,8 @@
       <term>ISSUE LINE BAL.</term>
 
       <listitem>
-        <para>Highlight a Transfer Order Line Item and then select this button
-        to issue the balance of the Line Item quantity to Shipping.</para>
+        <para>Highlight a Transfer Order line item and then select this button
+        to issue the balance of the line item quantity to Shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -512,9 +512,9 @@
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <para>Shipping Notes are drawn from the Shipping Comments (if any)
-  associated with Transit Sites. The Notes may vary depending on the Transit
-  Site being used. These Notes provide a mechanism for transferring
-  information about Transit Sites to the Transfer Order. To view Transfer
+  associated with Transit sites. The Notes may vary depending on the Transit
+  site being used. These Notes provide a mechanism for transferring
+  information about Transit sites to the Transfer Order. To view Transfer
   Order Shipping Notes, select the "Shipping Notes" tab at the top of the
   "Transfer Order" screen. The following screen will appear:</para>
 
@@ -559,10 +559,10 @@
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>If you want to speed up your data entry of Transfer Order Line Items,
+  <para>If you want to speed up your data entry of Transfer Order line items,
   you can use the Quick Entry interface. This screen allows you to enter
-  multiple Line Items in one session. It also simplifies the process by
-  presenting only the minimum required fields. To enter Line Items using the
+  multiple line items in one session. It also simplifies the process by
+  presenting only the minimum required fields. To enter line items using the
   Quick Entry interface, select the "Quick Entry" tab at the top of the
   "Transfer Order" screen. The following screen will appear:</para>
 
@@ -577,12 +577,12 @@
     </screenshot></para>
 
   <tip>
-    <para>To get started entering Line Items, place your cursor in the "Item"
+    <para>To get started entering line items, place your cursor in the "Item"
     field. You can then move from field-to-field using the TAB button on your
     keyboard.</para>
   </tip>
 
-  <para>When entering Transfer Order Line Items using the Quick Entry
+  <para>When entering Transfer Order line items using the Quick Entry
   interface, you are presented with the following options:</para>
 
   <variablelist>
@@ -590,8 +590,8 @@
       <term>Item</term>
 
       <listitem>
-        <para>Enter an Inventory Item Number. This field is used for entering
-        Items stored in Inventory.</para>
+        <para>Enter an inventory item number. This field is used for entering
+        items stored in inventory.</para>
       </listitem>
     </varlistentry>
 
@@ -635,7 +635,7 @@
       <term>SAVE QUICK ENTRIES</term>
 
       <listitem>
-        <para>Select to save all the Line Items entered using the Quick Entry
+        <para>Select to save all the line items entered using the Quick Entry
         interface.</para>
       </listitem>
     </varlistentry>
@@ -644,8 +644,8 @@
       <term>DELETE QUICK ENTRY</term>
 
       <listitem>
-        <para>Highlight a Line Item and then select this button to remove the
-        Item from the list.</para>
+        <para>Highlight a line item and then select this button to remove the
+        item from the list.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -13,7 +13,7 @@
       <secondary>updating for item sites</secondary>
     </indexterm>Update Item Site Lead Times</title>
 
-  <para>To update the Lead Times associated with Item Sites, select the "Item
+  <para>To update the Lead Times associated with item sites, select the "Item
   Site Lead Times" option. The following screen will appear:</para>
 
   <para><screenshot>
@@ -26,7 +26,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When updating Item Site Lead Times, you are presented with the
+  <para>When updating item site Lead Times, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -34,7 +34,7 @@
       <term>All Sites</term>
 
       <listitem>
-        <para>Select to update Item Site Lead Times for all Sites.</para>
+        <para>Select to update item site Lead Times for all sites.</para>
       </listitem>
     </varlistentry>
 
@@ -42,7 +42,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify Site where Item Site Lead Times are to be
+        <para>Specify site where item site Lead Times are to be
         updated.</para>
       </listitem>
     </varlistentry>
@@ -51,7 +51,7 @@
       <term>All Class Codes</term>
 
       <listitem>
-        <para>Select to update Item Site Lead Times for all Class
+        <para>Select to update item site Lead Times for all Class
         Codes.</para>
       </listitem>
     </varlistentry>
@@ -60,7 +60,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify Class Code whose Item Site Lead Times you want to
+        <para>Specify Class Code whose item site Lead Times you want to
         update.</para>
       </listitem>
     </varlistentry>
@@ -80,7 +80,7 @@
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
         value up to a maximum of 99. Value entered specifies the number of
-        days you want to pad Item Site Lead times by.</para>
+        days you want to pad item site Lead times by.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -92,20 +92,20 @@
       <term>UPDATE</term>
 
       <listitem>
-        <para>Updates the Item Site Lead Times, using the specified
-        parameters. Item Sites are updated in item type and Bill of Material
-        level sequence so that the lead times of lower level Items are
-        calculated before the lead times of dependent Items.</para>
+        <para>Updates the item site Lead Times, using the specified
+        parameters. Item sites are updated in item type and Bill of Material
+        level sequence so that the lead times of lower level items are
+        calculated before the lead times of dependent items.</para>
 
         <para>The following formulas describe how Lead Times for different
-        Item Types are handled:</para>
+        item types are handled:</para>
 
         <itemizedlist>
           <listitem>
             <para><emphasis role="bold">Manufactured Items:</emphasis> The
-            utility first scans the Bill of Materials for the Item and finds
-            the component Item having the longest lead time. It then scans the
-            Bill of Operations for the Item and finds the Operation having the
+            utility first scans the Bill of Materials for the item and finds
+            the component item having the longest lead time. It then scans the
+            Bill of Operations for the item and finds the Operation having the
             latest execution day. Finally it performs the following
             calculation:</para>
 

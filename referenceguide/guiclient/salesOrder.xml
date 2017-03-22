@@ -58,8 +58,8 @@
       <listitem>
         <para>Displays the Order's earliest scheduled date. The scheduled date
         corresponds to the earliest scheduled date for an included Sales Order
-        Item. If there are no existing Line Items, the date entered here will
-        become the default schedule date for the first one. If Line Items do
+        item. If there are no existing line items, the date entered here will
+        become the default schedule date for the first one. If line items do
         exist and the date is changed, you will be asked whether you want all
         editable lines to change. If the change affects pricing, you will be
         asked whether you want Prices to be updated as well. If hidden, this
@@ -120,8 +120,8 @@
 
         <tip>
           <para>A valid Customer Number must be entered in the "Customer #"
-          field before Line Items can be added to a Sales Order. If no valid
-          Customer Number is entered, you will not be able to add Line Items
+          field before line items can be added to a Sales Order. If no valid
+          Customer Number is entered, you will not be able to add line items
           to the Sales Order. Additionally, Sales Orders may only be entered
           for active Customers.</para>
         </tip>
@@ -245,7 +245,7 @@
             <listitem>
               <para>This hold type is set automatically when a Sales Order is
               created from a Return Authorization and the disposition requires
-              Inventory to be received before the replacement Order can be
+              inventory to be received before the replacement Order can be
               shipped.</para>
             </listitem>
           </varlistentry>
@@ -257,9 +257,9 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specify the shipping Site associated with the Sales Order. The
-        Site selected here acts as the default free on board (FOB) location. A
-        Site may be designated as a shipping Site on the Site master. This
+        <para>Specify the shipping site associated with the Sales Order. The
+        site selected here acts as the default free on board (FOB) location. A
+        site may be designated as a shipping site on the Site master. This
         field can be viewed upon selecting the MORE button.</para>
       </listitem>
     </varlistentry>
@@ -304,8 +304,8 @@
         </indexterm>Sales Rep.</term>
 
       <listitem>
-        <para>Specify the Sales Representative―or Outside Rep, in the
-        Distribution Edition―associated with the Order. Sales Representatives
+        <para>Specify the Sales Representative?or Outside Rep, in the
+        Distribution Edition?associated with the Order. Sales Representatives
         are linked to a Customer on the Customer master—either by a default
         setting or through the assignment of Ship-To Addresses. Each Ship-To
         Address may have a different Sales Representative associated with it.
@@ -436,10 +436,10 @@
       <term>Ship Complete</term>
 
       <listitem>
-        <para>Select to require that all Sales Order Line Item quantities be
+        <para>Select to require that all Sales Order line item quantities be
         issued to Shipping before the Order is shipped. This feature is
         designed to prevent partial shipments. If selected, users will be
-        prevented from shipping the Order unless all Line Item quantities have
+        prevented from shipping the Order unless all line item quantities have
         been issued to Shipping. If not selected, partial shipments for the
         Order will be allowed.</para>
       </listitem>
@@ -583,7 +583,7 @@
       <primary>sales orders</primary>
 
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify Sales Order Line Items, select the "Line
+    </indexterm>To create or modify Sales Order line items, select the "Line
   Items" tab at on the "Sales Order" screen. The following will be
   displayed:</para>
 
@@ -597,7 +597,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating or modifying Sales Order Line Items, you are presented
+  <para>When creating or modifying Sales Order line items, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -605,23 +605,23 @@
       <term>Line Items</term>
 
       <listitem>
-        <para>Display lists Line Items for this Sales Order. A valid Customer
-        Number must be entered in the "Customer #" field before Line Items can
+        <para>Display lists line items for this Sales Order. A valid Customer
+        Number must be entered in the "Customer #" field before line items can
         be added to the Order. The Shipping-related columns will not be
         visible if the system is configured to hide Shipping options at Sales
         Order entry. However, if the Shipping options are enabled, the Line
-        Items may display in different colors, depending on their scheduling.
-        If the Scheduled Date for an unshipped Line Item is in the future, the
+        items may display in different colors, depending on their scheduling.
+        If the Scheduled Date for an unshipped line item is in the future, the
         date will display in green text. If the Scheduled Date for an
-        unshipped Line Item is not in the future, the date will display in red
-        text. Once shipped, all Line Items revert to black text. For Kit
-        Items, the Kit components will be given sub line numbers which will be
-        displayed in an indented view. If a Line Item is firmed, that means it
-        cannot be edited. Firmed Line Items must be softened before they can
+        unshipped line item is not in the future, the date will display in red
+        text. Once shipped, all line items revert to black text. For Kit
+        items, the Kit components will be given sub line numbers which will be
+        displayed in an indented view. If a line item is firmed, that means it
+        cannot be edited. Firmed line items must be softened before they can
         be edited.</para>
 
         <note>
-          <para>Sales Order Line Items may exist in any of the following
+          <para>Sales Order line items may exist in any of the following
           statuses:</para>
 
           <itemizedlist>
@@ -668,11 +668,11 @@
 
       <listitem>
         <para>Select to ensure you have enough quantity on hand (QOH) in stock
-        of a Line Item prior to issuing Stock to Shipping. If selected, this
-        option will prevent you from issuing Line Item quantity to Shipping if
-        doing so would force QOH for the Item Site to fall below zero. Not
-        selecting this option means issuing Stock to Shipping may drive Item
-        Site QOH negative. This option will not be visible if the system is
+        of a line item prior to issuing Stock to Shipping. If selected, this
+        option will prevent you from issuing line item quantity to Shipping if
+        doing so would force QOH for the item site to fall below zero. Not
+        selecting this option means issuing Stock to Shipping may drive item
+        site QOH negative. This option will not be visible if the system is
         configured to hide Shipping options at Sales Order entry.</para>
       </listitem>
     </varlistentry>
@@ -681,9 +681,9 @@
       <term>Show Canceled Line Items</term>
 
       <listitem>
-        <para>Select to include in the Line Items display Sales Order Line
-        Items which have been specifically canceled. Displaying canceled Line
-        Items can provide useful Customer and Order history
+        <para>Select to include in the line items display Sales Order line
+        items which have been specifically canceled. Displaying canceled line
+        items can provide useful Customer and Order history
         information.</para>
       </listitem>
     </varlistentry>
@@ -753,11 +753,11 @@
       <term>Freight Weight</term>
 
       <listitem>
-        <para>Displays the combined weight of all Sales Order Line Items.
-        Freight weight represents the sum of an Item's product weight and
+        <para>Displays the combined weight of all Sales Order line items.
+        Freight weight represents the sum of an item's product weight and
         packaging weight, both of which are defined on the Item master. The
         per unit freight weight multiplied by the quantity per gives you the
-        Line Item freight weight. The sum of all Line Item freight weights is
+        line item freight weight. The sum of all line item freight weights is
         the combined weight for the Order.</para>
       </listitem>
     </varlistentry>
@@ -769,7 +769,7 @@
         <para>Displays the total profit margin for the Order. The profit
         margin is based on the following formula:</para>
 
-        <para>Order Subtotal - Total Standard Costs for all Line Items</para>
+        <para>Order Subtotal - Total Standard Costs for all line items</para>
       </listitem>
     </varlistentry>
 
@@ -785,9 +785,9 @@
       <term>At Shipping</term>
 
       <listitem>
-        <para>Displays the monetary value of Sales Order Line Items at
+        <para>Displays the monetary value of Sales Order line items at
         Shipping. The shipment value represents the total of the extended
-        prices for all Items included in the Shipment. The amount does not
+        prices for all items included in the Shipment. The amount does not
         include freight or Tax. This displayed information will not be visible
         if the system is configured to hide Shipping options at Sales Order
         entry.</para>
@@ -798,7 +798,7 @@
       <term>Subtotal</term>
 
       <listitem>
-        <para>Displays the subtotal for the Sales Order Line Items.</para>
+        <para>Displays the subtotal for the Sales Order line items.</para>
       </listitem>
     </varlistentry>
 
@@ -836,7 +836,7 @@
         <para>Manually enter the amount of freight charges to be added to the
         specified Order, unless the freight amount is automatically
         calculated. The freight amount displayed here represents the total for
-        all Line Items. To get a detailed view of the freight calculation,
+        all line items. To get a detailed view of the freight calculation,
         click on the Freight link using your mouse. Freight charges may be
         entered during the creation or modification of a Sales Order—or at the
         time of shipment. The system can be configured to automatically
@@ -857,8 +857,8 @@
 
       <listitem>
         <para>Displays the total amount of Tax to be charged on the Sales
-        Order. Sales Tax is calculated at the Sales Order Line Item level. The
-        Tax amount displayed here represents the total for all Line Item Tax
+        Order. Sales Tax is calculated at the Sales Order line item level. The
+        Tax amount displayed here represents the total for all line item Tax
         amounts. To get a detailed view of the Tax calculation, click on the
         Tax link using your mouse.</para>
       </listitem>
@@ -894,8 +894,8 @@
       <term>Quick Item Entry</term>
 
       <listitem>
-        <para>Distribution Edition users will have the option to enter Line
-        Items quickly on this screen, without having to first open the Sales
+        <para>Distribution Edition users will have the option to enter line
+        items quickly on this screen, without having to first open the Sales
         Order Item screen:</para>
 
         <para><variablelist>
@@ -903,12 +903,12 @@
               <term>Item Number</term>
 
               <listitem>
-                <para>Enter the Item Number of the Item you want to sell. The
-                Item list will contain sold Items available for sale to the
-                specified Customer. The list of available Items may vary from
+                <para>Enter the item number of the item you want to sell. The
+                item list will contain sold items available for sale to the
+                specified Customer. The list of available items may vary from
                 Customer to Customer, depending on how Pricing Schedules are
-                implemented at your site. Once an Item Number is entered, the
-                Inventory Unit of Measure and Item description will
+                implemented at your site. Once an item number is entered, the
+                inventory Unit of Measure and item description will
                 automatically appear.</para>
               </listitem>
             </varlistentry>
@@ -917,15 +917,15 @@
               <term>Site</term>
 
               <listitem>
-                <para>Specify the Site the Sales Order Item is sold from.
-                Items may be supplied to Sales Orders from multiple Item
-                Sites. After an Item Number is entered above, the system
-                checks for available Item Sites for the Item. Any Item Sites
+                <para>Specify the site the Sales Order item is sold from.
+                items may be supplied to Sales Orders from multiple item
+                sites. After an item number is entered above, the system
+                checks for available item sites for the item. Any item sites
                 having the "Sold from" flag set on them will be selectable
-                from this Site list. By default, the Item Site having the
-                highest Ranking will be selected as the first available Site.
-                If more than one Item Site share a Ranking of "1," the Sites
-                will be sorted in alphabetical order. Item Site Rankings are
+                from this site list. By default, the item site having the
+                highest Ranking will be selected as the first available site.
+                If more than one item site share a Ranking of "1," the sites
+                will be sorted in alphabetical order. Item site Rankings are
                 set on the Item Site master.</para>
               </listitem>
             </varlistentry>
@@ -934,7 +934,7 @@
               <term>Qty. Ordered</term>
 
               <listitem>
-                <para>Enter the quantity of the specified Item being ordered.
+                <para>Enter the quantity of the specified item being ordered.
                 The quantity will be set to "1" by default.</para>
               </listitem>
             </varlistentry>
@@ -943,8 +943,8 @@
               <term>Scheduled Date</term>
 
               <listitem>
-                <para>The scheduled date is the date when the Line Item
-                quantity should be shipped. The user who enters the Line Item
+                <para>The scheduled date is the date when the line item
+                quantity should be shipped. The user who enters the line item
                 is responsible for determining the scheduled date. After
                 entering the scheduled date, hit the TAB key on your keyboard
                 to display values in the remaining display only fields.</para>
@@ -955,7 +955,7 @@
               <term>Net Unit Price</term>
 
               <listitem>
-                <para>Displays the Unit Price for the Sales Order Item. By
+                <para>Displays the Unit Price for the Sales Order item. By
                 default, the system will choose the lower of the following two
                 Prices: A) The most-specific Pricing Schedule Assignment or B)
                 any Sale in effect at the time of Order entry. The specificity
@@ -971,7 +971,7 @@
               <term>ADD ITEM</term>
 
               <listitem>
-                <para>Select to add another Line Item to the Order.</para>
+                <para>Select to add another line item to the Order.</para>
               </listitem>
             </varlistentry>
           </variablelist></para>
@@ -987,9 +987,9 @@
 
       <listitem>
         <para>Select this button to bring up an interactive screen showing a
-        list of Items the Customer has purchased in the past. On the Favorites
-        screen you'll have the option to add one or multiple Items from the
-        Customer's traditional favorite Items.</para>
+        list of items the Customer has purchased in the past. On the Favorites
+        screen you'll have the option to add one or multiple items from the
+        Customer's traditional favorite items.</para>
       </listitem>
     </varlistentry>
 
@@ -997,11 +997,11 @@
       <term>CLOSE</term>
 
       <listitem id="salesOrderCLOSE1">
-        <para>Highlight a Sales Order Line Item and then select this button to
-        close the Sales Order Line Item. If the highlighted Line Item is
+        <para>Highlight a Sales Order line item and then select this button to
+        close the Sales Order line item. If the highlighted line item is
         already closed, this button will revert to an OPEN button, which may
-        be used to open the closed Line Item. Closing the Sales Order Line
-        Item will remove all existing reservations.</para>
+        be used to open the closed line item. Closing the Sales Order line
+        item will remove all existing reservations.</para>
       </listitem>
     </varlistentry>
 
@@ -1009,8 +1009,8 @@
       <term>MOVE UP</term>
 
       <listitem>
-        <para>Highlight a Sales Order Line Item and then select this button to
-        move the Line Item up the list of Line Items. Sequence numbers are
+        <para>Highlight a Sales Order line item and then select this button to
+        move the line item up the list of line items. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
@@ -1019,8 +1019,8 @@
       <term>MOVE DOWN</term>
 
       <listitem>
-        <para>Highlight a Sales Order Line Item and then select this button to
-        move the Line Item down the list of Line Items. Sequence numbers are
+        <para>Highlight a Sales Order line item and then select this button to
+        move the line item down the list of line items. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
@@ -1029,10 +1029,10 @@
       <term>SMOOTH MARGIN</term>
 
       <listitem>
-        <para>Highlight one or multiple Sales Order Line Items and then select
+        <para>Highlight one or multiple Sales Order line items and then select
         this button to reach the margin smoothing screen. On the Smooth Margin
         screen you will be given the option to smooth the margin for the
-        selected Items by a percentage you determine.</para>
+        selected items by a percentage you determine.</para>
       </listitem>
     </varlistentry>
 
@@ -1040,10 +1040,10 @@
       <term>RESERVE STOCK</term>
 
       <listitem>
-        <para>Highlight a Sales Order Line Item and then select this button to
-        reserve Inventory quantity for the Line Item.<note>
-            <para>In order to manually reserve or unreserve stock for a Line
-            Item, the Sales Configuration option "Allow Manual Reservations"
+        <para>Highlight a Sales Order line item and then select this button to
+        reserve inventory quantity for the line item.<note>
+            <para>In order to manually reserve or unreserve stock for a line
+            item, the Sales Configuration option "Allow Manual Reservations"
             must be selected.</para>
           </note></para>
       </listitem>
@@ -1053,8 +1053,8 @@
       <term>RES. LINE BAL.</term>
 
       <listitem>
-        <para>Highlight a Sales Order Line Item and then select this button to
-        reserve Inventory quantity for the remaining Line Item balance.</para>
+        <para>Highlight a Sales Order line item and then select this button to
+        reserve inventory quantity for the remaining line item balance.</para>
       </listitem>
     </varlistentry>
 
@@ -1066,13 +1066,13 @@
         </indexterm>ISSUE STOCK</term>
 
       <listitem id="salesOrderISSUE1STOCK">
-        <para>Highlight a Sales Order Line Item and then select this button to
+        <para>Highlight a Sales Order line item and then select this button to
         issue quantity to Shipping. This button will not be visible if the
         system is configured to hide Shipping options at Sales Order
         entry.</para>
 
         <tip>
-          <para>You may select multiple Line Items for issuing to Shipping by
+          <para>You may select multiple line items for issuing to Shipping by
           highlighting them using your mouse—or a combination of your mouse
           and either the SHIFT or CTRL keys.</para>
         </tip>
@@ -1083,8 +1083,8 @@
       <term>ISSUE LINE BAL.</term>
 
       <listitem>
-        <para>Highlight a Sales Order Line Item and then select this button to
-        issue the balance of the Line Item quantity to Shipping. This button
+        <para>Highlight a Sales Order line item and then select this button to
+        issue the balance of the line item quantity to Shipping. This button
         will not be visible if the system is configured to hide Shipping
         options at Sales Order entry.</para>
 
@@ -1101,7 +1101,7 @@
       <listitem>
         <para>Select this button to issue all material available to fill the
         current Sales Order. Only stock that is available to be issued to
-        Shipping will be issued. If an Item is on backorder, that stock will
+        Shipping will be issued. If an item is on backorder, that stock will
         have to be issued at a future point.</para>
       </listitem>
     </varlistentry>
@@ -1110,7 +1110,7 @@
       <term>SHIP ORDER</term>
 
       <listitem>
-        <para>Highlight a Sales Order Line Item and then select this button to
+        <para>Highlight a Sales Order line item and then select this button to
         ship the Order. This button will not be visible if the system is
         configured to hide Shipping options at Sales Order entry.</para>
       </listitem>
@@ -1122,7 +1122,7 @@
       <listitem>
         <para>Select this button to issue all material available and then ship
         the Sales Order, all in one step. Only stock that is available to be
-        issued to Shipping will be issued. If an Item is on backorder, that
+        issued to Shipping will be issued. If an item is on backorder, that
         stock will have to be issued at a future point.</para>
       </listitem>
     </varlistentry>
@@ -1211,10 +1211,10 @@
   informational purposes.</para>
 
   <tip>
-    <para>For configured Items, an additional pricing field will be available
+    <para>For configured items, an additional pricing field will be available
     on the Item Characteristic screen. This pricing information will be passed
-    to Sales Order Line Items when particular configurations are sold. The
-    Price for configured Items may vary depending on the Characteristics
+    to Sales Order line items when particular configurations are sold. The
+    Price for configured items may vary depending on the Characteristics
     selected at Sales Order entry time.</para>
   </tip>
 

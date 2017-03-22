@@ -120,7 +120,7 @@
         Authorization. If your system is configured to use a default
         disposition, then that value will be shown.</para>
         <note>
-          <para>The disposition of individual Line Items will be determined
+          <para>The disposition of individual line items will be determined
           conditionally based on the settings made at the Return Authorization
           header level.</para>
         </note>
@@ -131,7 +131,7 @@
               <para>Select to authorize the issuing of credit to the specified
               Customer. No return is required or expected; as a result, the
               Credit/Ship timetable option will be disabled for this
-              disposition method. Return Authorization Line Items will close
+              disposition method. Return Authorization line items will close
               when an associated Credit Memo is posted.</para>
             </listitem>
           </varlistentry>
@@ -139,19 +139,19 @@
             <term>Return</term>
             <listitem>
               <para>Select to authorize returns from the specified Customer.
-              Return Authorization Items will close when an associated Credit
-              Memo is posted, or when all Items on a line have been returned,
+              Return Authorization items will close when an associated Credit
+              Memo is posted, or when all items on a line have been returned,
               whichever comes last.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Replace</term>
             <listitem>
-              <para>Select to authorize the replacement of Items returned by
+              <para>Select to authorize the replacement of items returned by
               the specified Customer. Authorized quantities will be added as
               additional order quantity to a new associated Sales Order.
-              Return Authorization Items will close when all Items on the line
-              have been returned or all authorized Items on the line have been
+              Return Authorization items will close when all items on the line
+              have been returned or all authorized items on the line have been
               shipped, whichever comes last. Any money to be credited to the
               customer is set on the Return Authorization line; any money to
               be billed to the customer is set at the new sales order
@@ -161,13 +161,13 @@
           <varlistentry>
             <term>Service</term>
             <listitem>
-              <para>Select to authorize the repair or service of Items
+              <para>Select to authorize the repair or service of items
               returned by the specified Customer. To isolate costing
-              implications, only Job Items may be selected. A new Sales Order
+              implications, only Job items may be selected. A new Sales Order
               with linked Work Order(s) will be created to track work and
               shipping on the repair or service. Service or repair items
               should first be received by the Return Authorization. If the Job
-              Item is Lot/Serial controlled, you will be prompted to assign
+              item is Lot/Serial controlled, you will be prompted to assign
               Lot/Serial numbers when the receipt is posted. This assignment
               of Lot/Serial Numbers can be simplified if you link authorized
               line items with existing Lot/Serial Numbers at the line item
@@ -182,11 +182,11 @@
           <varlistentry>
             <term>Substitute</term>
             <listitem>
-              <para>Select to authorize the substitution of Items returned by
+              <para>Select to authorize the substitution of items returned by
               the specified Customer. Under this option, when an original
               Sales Order is imported into the Return Authorization, the
-              Return Authorization Line Items will default to the Return
-              disposition. Any new Line Items added beyond the original ones
+              Return Authorization line items will default to the Return
+              disposition. Any new line items added beyond the original ones
               will have a default disposition of Ship.</para>
             </listitem>
           </varlistentry>
@@ -225,7 +225,7 @@
             <listitem>
               <para>Select if you will not be issuing credit to the Customer.
               If you select this option, you will be unable to add pricing
-              information at the Return Authorization Line Item level.</para>
+              information at the Return Authorization line item level.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -256,7 +256,7 @@
               Credit Memo will be posted when the refund is processed—and the
               refund charges will be applied to it. If the timing of the
               credit is immediately, then you may issue the refund directly
-              from the Line Items tab of the Return Authorization.</para>
+              from the line items tab of the Return Authorization.</para>
               <note>
                 <para>The Credit Card functionality must be enabled at your
                 site for the Credit Card method to function properly.</para>
@@ -275,13 +275,13 @@
     <varlistentry>
       <term>Recv. Site</term>
       <listitem>
-        <para>Specify the receiving Site.</para>
+        <para>Specify the receiving site.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Ship Site</term>
       <listitem>
-        <para>Specify the shipping Site.</para>
+        <para>Specify the shipping site.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -300,7 +300,7 @@
       <listitem>
         <para>You have the option to select an original Sales Order for all
         disposition types. When an original Sales Order is selected, all Line
-        Items from the original Order will be imported into the Return
+        items from the original Order will be imported into the Return
         Authorization automatically. For dispositions Credit and Return this
         feature imports the original pricing and billing information. When a
         Sales Order number is selected, the Customer Number and address
@@ -319,7 +319,7 @@
         <para>For Return Authorizations having either Replace, Service, or
         Substitute dispositions, the system will automatically generate a new
         Sales order for shipping purposes when the line item is received and
-        posted. Authorized Line Item quantities are added automatically to the
+        posted. Authorized line item quantities are added automatically to the
         new Sales Order, enabling you to ship the quantity at the appropriate
         time.</para>
       </listitem>
@@ -354,9 +354,9 @@
   </variablelist>
   <tip>
     <para>A valid Customer Number must be entered in the "Customer #" field
-    before Line Items can be added to a Return Authorization for all
+    before line items can be added to a Return Authorization for all
     disposition types except Return. If no valid Customer Number is entered,
-    you will not be able to add Line Items to the Return Authorization.
+    you will not be able to add line items to the Return Authorization.
     Additionally, Return Authorizations may only be entered for active
     Customers.</para>
   </tip>
@@ -458,7 +458,7 @@
   <para><indexterm significance="normal">
       <primary>return authorizations</primary>
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify Return Authorization Line Items, select
+    </indexterm>To create or modify Return Authorization line items, select
   the "Line Items" tab at the top of the "Return Authorization" screen. The
   following screen will appear:</para>
   <para><screenshot>
@@ -469,16 +469,16 @@
         <caption>Return Authorization Line Items</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating or modifying Return Authorization Line Items, you are
+  <para>When creating or modifying Return Authorization line items, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Line Items</term>
       <listitem>
-        <para>Display lists Line Items for this Return Authorization. A valid
+        <para>Display lists line items for this Return Authorization. A valid
         Customer Number must be entered in the "Customer #" field before Line
-        Items can be added to the Return Authorization for all Dispositions
-        except Return. For Kit Items, the Kit components will be given sub
+        items can be added to the Return Authorization for all Dispositions
+        except Return. For Kit items, the Kit components will be given sub
         line numbers which will be displayed in an indented view.</para>
       </listitem>
     </varlistentry>
@@ -510,8 +510,8 @@
     <varlistentry>
       <term>Subtotal</term>
       <listitem>
-        <para>Displays the subtotal for the Return Authorization Line
-        Items.</para>
+        <para>Displays the subtotal for the Return Authorization line
+        items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -541,7 +541,7 @@
         <para>Manually enter the amount of freight charge to be credited on
         the specified Return Authorization, unless the freight amount is
         automatically calculated. The freight amount displayed here represents
-        the total for all Line Items. To get a detailed view of the freight
+        the total for all line items. To get a detailed view of the freight
         calculation, click on the Freight link using your mouse. Freight
         charges may be entered during the creation or modification of a Return
         Authorization—or at the time of shipment. The system can be configured
@@ -560,7 +560,7 @@
       <listitem>
         <para>Displays the total amount of Tax to be charged on the Return
         Authorization. The Tax amount displayed here represents the total for
-        all Line Item Tax amounts. To get a detailed view of the Tax
+        all line item Tax amounts. To get a detailed view of the Tax
         calculation, click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
@@ -593,34 +593,34 @@
     <varlistentry>
       <term>AUTHORIZE LINE</term>
       <listitem>
-        <para>Highlight a Return Authorization Line Item and then select this
-        button to authorize the Line Item quantity. This option is available
+        <para>Highlight a Return Authorization line item and then select this
+        button to authorize the line item quantity. This option is available
         only when an imported original Sales Order is being used—and then, the
-        original Line Item quantity must be shipped before it may be
+        original line item quantity must be shipped before it may be
         authorized.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>CLEAR AUTHORIZATION</term>
       <listitem>
-        <para>Highlight a Return Authorization Line Item and then select this
-        button to change the authorization quantity to zero for the Line
-        Item.</para>
+        <para>Highlight a Return Authorization line item and then select this
+        button to change the authorization quantity to zero for the line
+        item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>AUTHORIZE ALL</term>
       <listitem>
         <para>Select to authorize the full quantity for all unauthorized Line
-        Items. This option is available only when an imported original Sales
-        Order is being used—and then, the original Line Item quantity must be
+        items. This option is available only when an imported original Sales
+        Order is being used—and then, the original line item quantity must be
         shipped before it may be authorized.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>ENTER RECEIPT</term>
       <listitem>
-        <para>Highlight an authorized Return Authorization Line Item and then
+        <para>Highlight an authorized Return Authorization line item and then
         select this button to receive the authorized quantity. The received
         quantity will be saved for subsequent posting.</para>
       </listitem>
@@ -628,7 +628,7 @@
     <varlistentry>
       <term>RECEIVE ALL</term>
       <listitem>
-        <para>Select to automatically receive all authorized Line Item
+        <para>Select to automatically receive all authorized line item
         quantity. The received quantities will be saved for subsequent
         posting.</para>
       </listitem>
@@ -700,7 +700,7 @@
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To associate documents with a Return Authorization Item, select the
+  <para>To associate documents with a Return Authorization item, select the
   "Documents" tab.</para>
   <para><screenshot>
       <mediaobject>

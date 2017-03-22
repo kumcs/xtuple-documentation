@@ -292,15 +292,15 @@
   <para>Many of the available privileges govern User Accounts' ability to
   either view or edit information. In some cases, however, it may be possible
   to perform editing tasks on screens where only view privileges have been
-  granted. Take Item Sites, for example. Item Sites exist as their own objects
-  with their own privileges independent of Items. When you edit an Item Site,
-  you are not editing the Item itself, but an object associated with the Item.
-  By contrast, when you edit Item notes, Item transformations, or Item
+  granted. Take item sites, for example. Item sites exist as their own objects
+  with their own privileges independent of items. When you edit an item site,
+  you are not editing the item itself, but an object associated with the item.
+  By contrast, when you edit item notes, item transformations, or item
   aliases, you are editing things which belong exclusively and intrinsically
-  to Item records. On the Item screen, there is an option to view/edit Item
-  Sites for the Item. Let's imagine a User Account has privileges to edit Item
-  Sites but to only view Items. Following this example, xTuple would allow the
-  User Account to edit Item Sites from the Item record, even when in view
+  to item records. On the Item screen, there is an option to view/edit item
+  sites for the item. Let's imagine a User Account has privileges to edit item
+  sites but to only view items. Following this example, xTuple would allow the
+  User Account to edit item sites from the Item record, even when in view
   mode.</para>
   <para>Here are some examples of independent objects which may be editable
   from a parent window, even in view mode:</para>
@@ -450,13 +450,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para role="standard">Multiple Site installations have the option of
+  <para role="standard">Multiple site installations have the option of
   defining User Account site security. User Account site security provides a
-  method for restricting a User Account to a single or multiple Sites. All of
+  method for restricting a User Account to a single or multiple sites. All of
   the screens in the application will honor this restriction. On the multiple
   site documents, such as Purchase Orders and Sales Orders, the User Account
-  will be able to view restricted Sites, however, they will not be able to
-  edit restricted Sites. To add User Account site security to a User Account
+  will be able to view restricted sites, however, they will not be able to
+  edit restricted sites. To add User Account site security to a User Account
   profile, select the "Sites" tab, as shown in the following screen:</para>
   <para role="standard"><mediaobject>
       <imageobject>
@@ -471,34 +471,34 @@
         <term>Grant Access to all Sites</term>
         <listitem>
           <para>Select this option if the User Account has full unrestricted
-          access to all Sites defined in the application.</para>
+          access to all sites defined in the application.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term>Grand Access only to Selected Sites</term>
+        <term>Grant Access only to Selected Sites</term>
         <listitem>
           <para>Select this option if the User Account has restricted access
-          to the Sites defined in the application.</para>
+          to the sites defined in the application.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Available Sites</term>
         <listitem>
-          <para>Select an available Site from the list. To grant access
-          privileges to a User Account, highlight an available Site and then
-          click the ADD button. The highlighted Site will be added to the User
-          Account's list of granted Sites. Double-clicking on a Site will also
+          <para>Select an available site from the list. To grant access
+          privileges to a User Account, highlight an available site and then
+          click the ADD button. The highlighted site will be added to the User
+          Account's list of granted sites. Double-clicking on a site will also
           move it to the granted Sites column.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Granted Sites</term>
         <listitem>
-          <para>Displays granted Sites for the specified User Account. To
-          remove a granted Site from the User Account, highlight a granted
-          Site and then click the REVOKE button. The highlighted Site will be
-          removed from the User Account's list of granted Sites.
-          Double-clicking on a Site will also remove it from the granted Sites
+          <para>Displays granted sites for the specified User Account. To
+          remove a granted site from the User Account, highlight a granted
+          site and then click the REVOKE button. The highlighted site will be
+          removed from the User Account's list of granted sites.
+          Double-clicking on a site will also remove it from the granted Sites
           column.</para>
         </listitem>
       </varlistentry>
@@ -509,18 +509,18 @@
       <varlistentry>
         <term>ADD-&gt;</term>
         <listitem>
-          <para>Highlight a specific Site in the available Sites column, then
-          select this button to transfer the Site to the granted Sites column.
-          Double-clicking on an available Site will also transfer it to the
+          <para>Highlight a specific site in the available Sites column, then
+          select this button to transfer the site to the granted Sites column.
+          Double-clicking on an available site will also transfer it to the
           granted Sites column.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>&lt;-REVOKE</term>
         <listitem>
-          <para>Highlight a specific Site in the granted Sites column, then
-          select this button to remove the Site from the granted Sites column.
-          Double-clicking on a granted Site will also remove it from the
+          <para>Highlight a specific site in the granted Sites column, then
+          select this button to remove the site from the granted Sites column.
+          Double-clicking on a granted site will also remove it from the
           granted Sites column.</para>
         </listitem>
       </varlistentry>

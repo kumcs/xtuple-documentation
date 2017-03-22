@@ -7,8 +7,8 @@
   <para>When you run MPS by Planner Code, you are running the Master
   Production Scheduling (MPS) system. This utility creates firm Planned Orders
   to meet forecasted demand (i.e., from Production Plans) and also actual
-  demand (i.e., from Sales Orders) for MPS Items. An Item is defined as an MPS
-  Item on its Item master.</para>
+  demand (i.e., from Sales Orders) for MPS items. An item is defined as an MPS
+  item on its Item master.</para>
   <para>By default, Planned Orders created by the MPS planning system will be
   firm when they are generated. This establishes them as a legitimate source
   of demand within the wider planning system. The firm-by-default nature of
@@ -20,8 +20,8 @@
   <orderedlist continuation="restarts" inheritnum="ignore">
     <listitem>
       <para>Actual demand quantity (i.e., from Sales Orders) will be used if
-      the planned date for a Production Plan Item falls within the Demand Time
-      Fence for that Item; forecasted demand is ignored within the Time
+      the planned date for a Production Plan item falls within the Demand Time
+      Fence for that item; forecasted demand is ignored within the Time
       Fence</para>
     </listitem>
     <listitem>
@@ -46,7 +46,7 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Only Items designated as MPS Items will have Planned Orders created
+    <para>Only items designated as MPS items will have Planned Orders created
     for them when MPS is run. By default, MPS generates firm Planned
     Orders.</para>
   </note>
@@ -78,13 +78,13 @@
       <term>All Sites</term>
       <listitem>
         <para>Select to create firm Planned Orders by Planner Code for all
-        Sites.</para>
+        sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Site firm Planned Order by Planner Code should be
+        <para>Specify site firm Planned Order by Planner Code should be
         created for.</para>
       </listitem>
     </varlistentry>
@@ -93,7 +93,7 @@
       <listitem>
         <para>Specify how far into the future the MPS run should look for
         demand. The forecast will be ignored if the planned date for a
-        Production Plan Item falls within the Demand Time Fence for that Item.
+        Production Plan item falls within the Demand Time Fence for that item.
         Outside the Demand Time Fence, the greater of actual or forecasted
         demand will be used.</para>
       </listitem>

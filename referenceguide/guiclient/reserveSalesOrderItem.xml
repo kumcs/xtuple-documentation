@@ -10,8 +10,8 @@
       <primary>inventory</primary>
       <secondary>reserving to sales orders</secondary>
     </indexterm>Reserve Stock to Order</title>
-  <para>The system gives you the ability to reserve Inventory quantity to
-  particular Sales Order Line Items. You can reserve Inventory to Sales Orders
+  <para>The system gives you the ability to reserve inventory quantity to
+  particular Sales Order line items. You can reserve inventory to Sales Orders
   using the following screen:</para>
   <screenshot>
     <mediaobject>
@@ -21,69 +21,69 @@
       <caption>Reserve Stock to Order</caption>
     </mediaobject>
   </screenshot>
-  <para>When reserving Inventory quantity to a Sales Order Line Item, you are
+  <para>When reserving inventory quantity to a Sales Order line item, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Sales Order #</term>
       <listitem>
-        <para>Parent Sales Order the Line Item belongs to.</para>
+        <para>Parent Sales Order the line item belongs to.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Line #</term>
       <listitem>
-        <para>Line Item Number for the Sales Order Item.</para>
+        <para>Line item number for the Sales Order item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Item Number for the Sales Order Item.</para>
+        <para>Item number for the Sales Order item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Sales Order Item Unit of Measure.</para>
+        <para>Sales Order item Unit of Measure.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Site the Sales Order Item is sold from.</para>
+        <para>Site the Sales Order item is sold from.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Balance Due</term>
       <listitem>
-        <para>Remaining Line Item quantity which has not yet been
+        <para>Remaining line item quantity which has not yet been
         shipped.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Qty. at Shipping</term>
       <listitem>
-        <para>Line Item quantity currently at Shipping.</para>
+        <para>Line item quantity currently at Shipping.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Unreserved Qty</term>
       <listitem>
-        <para>Total Line Item quantity currently not reserved.</para>
+        <para>Total line item quantity currently not reserved.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Qty. Reserved</term>
       <listitem>
-        <para>Total Line Item quantity currently reserved for this Sales Order
-        Item.</para>
+        <para>Total line item quantity currently reserved for this Sales Order
+        item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Availability</term>
       <listitem>
-        <para>The following Availability information for the sold-from Site
+        <para>The following Availability information for the sold-from site
         will be displayed:</para>
         <variablelist>
           <varlistentry>
@@ -96,15 +96,15 @@
           <varlistentry>
             <term>Reserved</term>
             <listitem>
-              <para>Total quantity of reservations for the specified Item in
-              sold-from Site.</para>
+              <para>Total quantity of reservations for the specified item in
+              sold-from site.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Unreserved</term>
             <listitem>
               <para>Total quantity available to be reserved for the specified
-              Item in sold-from Site.</para>
+              item in sold-from site.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -113,11 +113,11 @@
     <varlistentry>
       <term>To Reserve</term>
       <listitem>
-        <para>Enter the quantity of Inventory you would like to reserve to the
-        specified Line Item.</para>
+        <para>Enter the quantity of inventory you would like to reserve to the
+        specified line item.</para>
         <tip>
-          <para>You may only reserve quantity to the Line Item if there is
-          available QOH for the Item. Also, you may not reserve more than the
+          <para>You may only reserve quantity to the line item if there is
+          available QOH for the item. Also, you may not reserve more than the
           balance due.</para>
         </tip>
       </listitem>
@@ -125,7 +125,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Sales Order Item Unit of Measure.</para>
+        <para>Sales Order item Unit of Measure.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -135,7 +135,7 @@
       <term>RESERVE</term>
       <listitem>
         <para>Reserves the indicated quantity to the specified Sales Order
-        Item.</para>
+        item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
