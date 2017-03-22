@@ -4,199 +4,249 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="financialLayoutSpecial">
   <title>Financial Report Special</title>
-  <para>The Financial Reporting Engine (FRE) supports the addition of a
-  limited number of Special items, which may be used to extend your reporting
-  capabilities. A Special item can function as the child of a Top-Level or
-  other Group. <indexterm significance="normal">
+
+  <para>The financial reporting engine (FRE) supports the addition of a
+  limited number of special items, which may be used to extend your reporting
+  capabilities. A special item can function as the child of a top-level or
+  other group. <indexterm significance="normal">
       <primary>financial reports</primary>
+
       <secondary>adding special items to</secondary>
-    </indexterm>To add a new Special item to a Financial Report, select the
-  ADD SPECIAL button. The following screen will appear:</para>
+    </indexterm>To add a new special item to a financial report, select the
+  <guibutton>ADD SPECIAL</guibutton> button. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/financialLayoutSpecial.png" />
+          <imagedata fileref="images/financialLayoutSpecial.png"/>
         </imageobject>
+
         <caption>Add Financial Report Special Item</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding a Special item to a Financial Report, you are presented
+
+  <para>When adding a special item to a financial report, you are presented
   with the following options:</para>
+
   <note>
-    <para>Because Ad Hoc reports are not required to conform to the three
-    standard statement formats, the "Column Layouts" tab is not available for
-    Ad Hoc reports. Column layouts may only be used by Financial Reports which
-    conform to these standard formats.</para>
+    <para>Because ad hoc reports are not required to conform to the three
+    standard statement formats, the <guimenuitem>Column Layouts</guimenuitem>
+    tab is not available for ad hoc reports. Column layouts may only be used
+    by financial reports which conform to these standard formats.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
-        <para>Enter a name to identify the Special item.</para>
+        <para>Enter a name to identify the special item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Type</term>
+
       <listitem>
-        <para>Select one of the Special item types from the following
+        <para>Select one of the special item types from the following
         options:</para>
+
         <variablelist>
           <varlistentry>
             <term>A/R Open Items</term>
+
             <listitem>
-              <para>Select to include the open Receivables balance for the
-              specified Accounting Period(s) in the Financial Report.</para>
+              <para>Select to include the open receivables balance for the
+              specified accounting period(s) in the financial report.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>A/P Open Items</term>
+
             <listitem>
-              <para>Select to include the open Payables balance for the
-              specified Accounting Period(s) in the Financial Report.</para>
+              <para>Select to include the open payables balance for the
+              specified accounting period(s) in the financial report.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Beginning Balance</term>
+
       <listitem>
-        <para>Select to include the Special item's beginning balance when the
-        Financial Report is generated. If selected, you also have the option
+        <para>Select to include the special item's beginning balance when the
+        financial report is generated. If selected, you also have the option
         to show the beginning balance as a percentage of the group total. Not
-        selecting means the Special item's beginning balance will not be
+        selecting means the special item's beginning balance will not be
         shown.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Ending Balance</term>
+
       <listitem>
-        <para>Select to include the Special item's ending balance when the
-        Financial Report is generated. If selected, you also have the option
+        <para>Select to include the special item's ending balance when the
+        financial report is generated. If selected, you also have the option
         to show the ending balance as a percentage of the group total. Not
-        selecting means the Special item's ending balance will not be
+        selecting means the special item's ending balance will not be
         shown.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Debit/Credit</term>
+
       <listitem>
-        <para>Select to include the Special item's Debit/Credit balance when
-        the Financial Report is generated. If selected, you also have the
-        option to show Debits and Credits as a percentage of the group total.
-        Not selecting means the Special item's Debit/Credit balance will not
+        <para>Select to include the special item's debit/credit balance when
+        the financial report is generated. If selected, you also have the
+        option to show debits and credits as a percentage of the group total.
+        Not selecting means the special item's debit/credit balance will not
         be shown.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Budget</term>
+
       <listitem>
-        <para>Select to include the Special item's Budget balance when the
-        Financial Report is generated. If selected, you also have the option
-        to show Budgets as a percentage of the group total. Not selecting
-        means the Special item's Budget balance will not be shown.</para>
+        <para>Select to include the special item's budget balance when the
+        financial report is generated. If selected, you also have the option
+        to show budgets as a percentage of the group total. Not selecting
+        means the special item's budget balance will not be shown.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Difference</term>
+
       <listitem>
-        <para>Select to include the difference between Debits and Credits for
-        the Special item when the Financial Report is generated. If selected,
+        <para>Select to include the difference between debits and credits for
+        the special item when the financial report is generated. If selected,
         you also have the option to show the difference as a percentage of the
-        group total. Not selecting means the Account's difference balance will
+        group total. Not selecting means the account's difference balance will
         not be shown.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Use Group for % Total calculation</term>
+
       <listitem>
         <para>Indicate which group to use if percentage of group total
         calculations are specified. By default, the system will use the parent
         group for these calculations. The parent group is understood to be the
         group within which the Special item is immediately located. If you
         prefer to determine percentage of total calculations using a different
-        group than the parent group. All groups defined for the Financial
-        Report will be available for selection.</para>
+        group than the parent group. All groups defined for the financial
+        report will be available for selection.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Operation</term>
+
       <listitem>
-        <para>Specify how the Special item should operate in relation to the
-        group specified under the "Use Group" option:</para>
+        <para>Specify how the special item should operate in relation to the
+        group specified under the <guilabel>Use Group</guilabel>
+        option:</para>
+
         <variablelist>
           <varlistentry>
             <term>Add to Group Total</term>
+
             <listitem>
-              <para>Select if you want the Special item to be added to the
+              <para>Select if you want the special item to be added to the
               specified group's total. If selected, a "+" will appear next to
-              the group as it appears in the Financial Report.</para>
+              the group as it appears in the financial report.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Subtract from Group Total</term>
+
             <listitem>
-              <para>Select if you want the Special item to be subtracted from
+              <para>Select if you want the special item to be subtracted from
               the specified group's total. If selected, a "-" will appear next
-              to the group as it appears in the Financial Report.</para>
+              to the group as it appears in the financial report.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Custom Column</term>
+
       <listitem>
-        <para>Select to enable Special item information to be included in a
-        Custom column when the Financial Report is generated.</para>
+        <para>Select to enable special item information to be included in a
+        custom column when the financial report is generated.</para>
+
         <variablelist>
           <varlistentry>
             <term>Show % of Group Total</term>
+
             <listitem>
-              <para>Select to show the Custom column information as a
+              <para>Select to show the custom column information as a
               percentage of the group total.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Beginning Balance</term>
+
             <listitem>
-              <para>Select to include the beginning balance for the Special
-              item in the Custom column.</para>
+              <para>Select to include the beginning balance for the special
+              item in the custom column.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Ending Balance</term>
+
             <listitem>
-              <para>Select to include the ending balance for the Special item
-              in the Custom column.</para>
+              <para>Select to include the ending balance for the special item
+              in the custom column.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Debits</term>
+
             <listitem>
-              <para>Select to include the Debit balance for the Special item
-              in the Custom column.</para>
+              <para>Select to include the debit balance for the special item
+              in the custom column.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Credits</term>
+
             <listitem>
-              <para>Select to include the Credit balance for the Special item
-              in the Custom column.</para>
+              <para>Select to include the credit balance for the special item
+              in the custom column.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Budget</term>
+
             <listitem>
-              <para>Select to include the Budget balance for the Special item
-              in the Custom column.</para>
+              <para>Select to include the budget balance for the special item
+              in the custom column.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Difference</term>
+
             <listitem>
-              <para>Select to include the difference between Debits and
-              Credits for the Special item in the Custom column.</para>
+              <para>Select to include the difference between debits and
+              credits for the special item in the custom column.</para>
             </listitem>
           </varlistentry>
         </variablelist>

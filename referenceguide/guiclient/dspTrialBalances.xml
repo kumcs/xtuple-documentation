@@ -5,89 +5,110 @@
 <section id="dspTrialBalances">
   <title><indexterm significance="normal">
       <primary>trial balances</primary>
+
       <secondary>reporting on</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>financial reports</primary>
+
       <secondary>trial balances</secondary>
     </indexterm>View Trial Balances</title>
-  <para>The "Trial Balances" screen provides a mechanism for viewing the
-  detailed financial information which underlies xTuple Financial Reports. The
-  sequence of events is as follows: Transactions are posted to the General
-  Ledger, these transactions update the Trial Balance, and Financial Reports
-  use the Trial Balance when calculating their results.</para>
+
+  <para>The Trial Balances screen provides a mechanism for viewing the
+  detailed financial information which underlies xTuple financial reports. The
+  sequence of events is as follows: transactions are posted to the general
+  ledger, these transactions update the trial balance, and financial reports
+  use the trial balance when calculating their results.</para>
+
   <para>Here are some tips for using this screen:</para>
+
   <itemizedlist>
     <listitem>
       <para>Use the right-click menu to view the underlying G/L transactions
-      which support the Trial Balance values.</para>
+      which support the trial balance values.</para>
     </listitem>
+
     <listitem>
       <para>If G/L transactions are not posted, they will not appear in the
-      Trial Balance. G/L transactions may be unposted if they were posted into
-      a non-existent Accounting Period.</para>
+      trial balance. G/L transactions may be unposted if they were posted into
+      a non-existent accounting period.</para>
     </listitem>
+
     <listitem>
-      <para>Trial Balances will be automatically forward-updated unless your
-      system is configured to manually forward-update Trial Balances. Ending
-      balances cannot be forward-updated into future Periods. For more
-      information see <xref linkend="configureGL" />.</para>
+      <para>Trial balances will be automatically forward-updated unless your
+      system is configured to manually forward-update trial balances. Ending
+      balances cannot be forward-updated into future periods. For more
+      information see <xref linkend="configureGL"/>.</para>
     </listitem>
+
     <listitem>
       <para>Ending balances will display in orange type if either of the
       following conditions is true: 1) The ending balance has not been
       forward-updated, or 2) the ending balance has been forward-updated, but
       the account in question has no activity during the specified
-      Period.</para>
+      period.</para>
     </listitem>
+
     <listitem>
-      <para>For Fiscal Year closings, the system will automatically reset the
-      beginning balances for Revenue and Expense Accounts to $0 at the start
-      of a new Fiscal Year. However, for the Year-End Equity Account, the
-      beginning balance for the first Period of the Fiscal Year will be equal
+      <para>For fiscal year closings, the system will automatically reset the
+      beginning balances for revenue and expense accounts to $0 at the start
+      of a new fiscal year. However, for the year-end equity account, the
+      beginning balance for the first period of the fiscal year will be equal
       to the ending balance for the previous year.</para>
     </listitem>
+
     <listitem>
-      <para>A "CR" may display after the following columns: Beg. Bal.,
-      Difference, and End. Bal. The "CR" indicates the balance is a Credit
-      balance. If no "CR" appears, then the balance is a Debit balance.</para>
+      <para>A "CR" may display after the following columns: <guilabel>Beg.
+      Bal.</guilabel>, <guilabel>Difference</guilabel>, and <guilabel>End.
+      Bal</guilabel>. The "CR" indicates the balance is a credit balance. If
+      no "CR" appears, then the balance is a debit balance.</para>
     </listitem>
+
     <listitem>
-      <para>The Trial Balance query builder includes an option for displaying
-      Accounts having a zero balance. If not selected, zero-balance Trial
-      Balances will be hidden—unless a specific Account is specified, in which
+      <para>The trial balance query builder includes an option for displaying
+      accounts having a zero balance. If not selected, zero-balance trial
+      balances will be hidden—unless a specific account is specified, in which
       case the balance will be shown regardless of whether it is zero.</para>
     </listitem>
+
     <listitem>
-      <para>Also included is an option for showing Accounts with a Project
-      Number as the last segment. If the "Show Project Detail" option is not
-      used, balances will roll up into the parent Account total.</para>
+      <para>Also included is an option for showing accounts with a project
+      number as the last segment. If the <guilabel>Show Project
+      Detail</guilabel> option is not used, balances will roll up into the
+      parent account total.</para>
     </listitem>
+
     <listitem>
-      <para>If you are synchronizing the Trial Balances of multiple external
-      Companies, you may get a warning message if Exchange Rates covering the
-      imported Accounting Periods were changed after the fact. For more
-      information, please see <xref linkend="syncCompanies" />.</para>
+      <para>If you are synchronizing the trial balances of multiple external
+      companies, you may get a warning message if exchange rates covering the
+      imported accounting periods were changed after the fact. For more
+      information, please see <xref linkend="syncCompanies"/>.</para>
     </listitem>
+
     <listitem>
-      <para>The option "Exclude Child Accounts" is available on the "G/L
-      Transactions" screen whenever you are drilling down to view G/L
-      transaction details. This option is used to show or hide the child
-      transactions which may be associated with a G/L Account when Project
-      Accounting is enabled.</para>
+      <para>The option <guilabel>Exclude Child Accounts</guilabel> is
+      available on the G/L Transactions screen whenever you are drilling down
+      to view G/L transaction details. This option is used to show or hide the
+      child transactions which may be associated with a G/L account when
+      <guilabel>Project Accounting</guilabel> is enabled.</para>
     </listitem>
   </itemizedlist>
-  <para>The following screenshot shows the "Trial Balances" screen:</para>
+
+  <para>The following screenshot shows the Trial Balances screen:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspTrialBalances.png" />
+          <imagedata fileref="images/dspTrialBalances.png"/>
         </imageobject>
+
         <caption>View Trial Balances</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The default filter on the "Trial Balances" screen shows all Trial
-  Balances for the current Accounting Period. You can build your own search
+
+  <para>The default filter on the Trial Balances screen shows all trial
+  balances for the current accounting period. You can build your own search
   criteria using the following options:</para>
+
   <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
