@@ -4,69 +4,88 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="bankAdjustment">
   <title>Bank Adjustment</title>
+
   <para><indexterm significance="normal">
       <primary>adjustments</primary>
+
       <secondary>entering for bank accounts</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bank adjustments</primary>
+
       <secondary>entering new</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bank accounts</primary>
+
       <secondary>adjusting balances for</secondary>
-    </indexterm>Bank Adjustments may be entered to record Deposits or
-  Payments. Use the Bank Adjustment functionality to enter Bank Interest, Bank
-  Fees, miscellaneous deposits, etc. To enter a Bank Adjustment, select the
-  "Bank Adjustment" option. The following screen will appear:</para>
+    </indexterm>Bank adjustments may be entered to record deposits or
+  payments. Use the bank adjustment functionality to enter bank interest, bank
+  fees, miscellaneous deposits, etc. To enter a bank adjustment, select the
+  <guimenuitem>Bank Adjustment</guimenuitem> option. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/bankAdjustment.png" />
+          <imagedata fileref="images/bankAdjustment.png"/>
         </imageobject>
+
         <caption>Enter Bank Adjustment</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When entering a Bank Adjustment, you are presented with the following
+
+  <para>When entering a bank adjustment, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Bank Account</term>
+
       <listitem>
-        <para>Specify the Bank Account you want to enter a Bank Adjustment
+        <para>Specify the bank account you want to enter a bank adjustment
         for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Adjustment Type</term>
+
       <listitem>
-        <para>Specify the type of Adjustment from the options in the drop-down
+        <para>Specify the type of adjustment from the options in the drop-down
         list.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Date</term>
+
       <listitem>
-        <para>Specify the effective date of the Bank Adjustment. The date
+        <para>Specify the effective date of the bank adjustment. The date
         entered must fall within a valid accounting period.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Document #</term>
+
       <listitem>
-        <para>Creates a user-defined reference for the Bank Adjustment. The
-        Document reference will be posted with the General Ledger (G/L)
-        transaction record when the Bank Adjustment is generated. This field
+        <para>Creates a user-defined reference for the bank adjustment. The
+        document reference will be posted with the general ledger (G/L)
+        transaction record when the bank adjustment is generated. This field
         may be used for internal tracking and auditing purposes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Amount</term>
+
       <listitem>
-        <para>Specify the monetary value of the Bank Adjustment.</para>
+        <para>Specify the monetary value of the bank adjustment.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>Bank Adjustments, when marked as "Cleared," may also be posted when
-    a Bank Account is reconciled.</para>
+    <para>Bank adjustments, when marked as "Cleared," may also be posted when
+    a bank account is reconciled.</para>
   </tip>
 </section>
