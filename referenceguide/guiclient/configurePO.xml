@@ -26,14 +26,14 @@
           <secondary>numbering of</secondary>
         </indexterm>Order # Generation</term>
       <listitem>
-        <para>Specify one of the available Purchase Order Number generation
+        <para>Specify one of the available purchase order number generation
         methods:</para>
         <variablelist>
           <varlistentry>
             <term>Automatic</term>
             <listitem>
-              <para>Purchase Order Numbers will be automatically incremented
-              by 1 each time a new Purchase Order is created. These
+              <para>Purchase order numbers will be automatically incremented
+              by one each time a new purchase order is created. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
             </listitem>
@@ -41,28 +41,28 @@
           <varlistentry>
             <term>Manual</term>
             <listitem>
-              <para>Purchase Order Numbers must be entered manually whenever
-              you create a new Purchase Order.</para>
+              <para>Purchase order numbers must be entered manually whenever
+              you create a new purchase order.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Automatic, Allow Override</term>
             <listitem>
-              <para>Purchase Order Numbers will be automatically generated and
+              <para>Purchase order numbers will be automatically generated and
               incremented, as under the "Automatic" option described above.
               However, this option also allows you to manually override the
-              Purchase Order Number at the time of Purchase Order
+              purchase order number at the time of purchase order
               creation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Next #</term>
             <listitem>
-              <para>The next sequentially available Purchase Order Number will
+              <para>The next sequentially available purchase order number will
               display here. You may change the number—creating a new basis for
-              the next Purchase Order Number—by typing the new number into
+              the next purchase order number—by typing the new number into
               this field. Any changes you make here will be reflected the next
-              time a new Purchase Order is created in the Purchase
+              time a new purchase order is created in the Purchase
               module.</para>
             </listitem>
           </varlistentry>
@@ -97,14 +97,14 @@
           <secondary>numbering of</secondary>
         </indexterm>Purchase Request # Generation</term>
       <listitem>
-        <para>Select one of the available Purchase Request Number generation
+        <para>Select one of the available purchase request number generation
         methods:</para>
         <variablelist>
           <varlistentry>
             <term>Automatic</term>
             <listitem>
-              <para>Purchase Request Numbers will be automatically incremented
-              by 1 each time a new Purchase Request is created. These
+              <para>Purchase request numbers will be automatically incremented
+              by 1 each time a new purchase request is created. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
             </listitem>
@@ -112,28 +112,28 @@
           <varlistentry>
             <term>Manual</term>
             <listitem>
-              <para>Purchase Request Numbers must be entered manually whenever
-              you create a new Purchase Order.</para>
+              <para>Purchase request numbers must be entered manually whenever
+              you create a new purchase order.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Automatic, Allow Override</term>
             <listitem>
-              <para>Purchase Request Numbers will be automatically generated
+              <para>Purchase request numbers will be automatically generated
               and incremented, as under the "Automatic" option described
               above. However, this option also allows you to manually override
-              the Purchase Request Number at the time of Purchase Request
+              the purchase request number at the time of purchase request
               creation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Next #</term>
             <listitem>
-              <para>The next sequentially available Purchase Request Number
+              <para>The next sequentially available purchase request number
               will display here. You may change the number—creating a new
-              basis for the next Purchase Request Number—by typing the new
+              basis for the next purchase request number—by typing the new
               number into this field. Any changes you make here will be
-              reflected the next time you issue a new Purchase Request within
+              reflected the next time you issue a new purchase request within
               the Purchase module.</para>
             </listitem>
           </varlistentry>
@@ -179,8 +179,8 @@
           <varlistentry>
             <term>Ship Via</term>
             <listitem>
-              <para>Specify the default Ship Via to be used for Purchase
-              Orders.</para>
+              <para>Specify the default Ship Via to be used for purchase
+              orders.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -189,8 +189,8 @@
     <varlistentry>
       <term>Post Purchase Order Changes to the Change Log</term>
       <listitem>
-        <para>Select to post to the Change Log any changes made to Purchase
-        Orders.</para>
+        <para>Select to post to the Change Log any changes made to purchase
+        orders.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -201,25 +201,25 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Use Earliest Avail. as Due Date for Purchase Order Item</term>
+      <term>Use Earliest Avail. as Due Date for purchase order item</term>
       <listitem>
         <para>Select to use Item Source Earliest Available dates as the
-        default due date when entering manual Purchase Order line items. If
+        default due date when entering manual purchase order line items. If
         not selected, the due date field will be left blank when entering
-        Purchase Order line items—requiring users to enter the date manually.
+        purchase order line items—requiring users to enter the date manually.
         Earliest Available dates are determined by adding Item Source Lead
         Times to the current date.</para>
         <note>
-          <para>The "Use Earliest Avail." option applies only to Purchase
-          Orders entered manually. This option does not impact the scheduling
-          of POs generated from MRP Planned Orders.</para>
+          <para>The "Use Earliest Avail." option applies only to purchase
+          orders entered manually. This option does not impact the scheduling
+          of POs generated from MRP planned orders.</para>
         </note>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Prevent Purchase Order Items when no Std. Cost Exists</term>
       <listitem>
-        <para>Select if you want to prevent users from entering Purchase Order
+        <para>Select if you want to prevent users from entering purchase order
         line items for items which have no Standard Cost. If selected, users
         will be shown a message stating the problem. The solution is to add
         Standard Cost to the item(s) in question.</para>
@@ -228,24 +228,24 @@
     <varlistentry>
       <term>Check Print Purchase Order on Save by Default</term>
       <listitem>
-        <para>Select to prompt users to print Purchase Orders whenever
-        Purchase Orders are saved. If selected, users will be presented with a
-        Purchase Order print screen whenever a Purchase Order is saved. To
+        <para>Select to prompt users to print purchase orders whenever
+        purchase orders are saved. If selected, users will be presented with a
+        purchase order print screen whenever a purchase order is saved. To
         bypass this feature, do not select this option.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Copy Purchase Request notes to Purchase Order Item notes</term>
       <listitem>
-        <para>Select if you want notes entered on a Purchase Request to
-        transfer to the corresponding Purchase Order.</para>
+        <para>Select if you want notes entered on a purchase request to
+        transfer to the corresponding purchase order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Require Tax on Purchase Orders</term>
       <listitem>
-        <para>Select if you want to require that Tax be added to all Purchase
-        Orders. If not selected, Tax will not be required.</para>
+        <para>Select if you want to require that Tax be added to all purchase
+        orders. If not selected, Tax will not be required.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="standard">

@@ -5,18 +5,18 @@
 <section id="createPlannedOrdersByItem">
   <title>Run MRP by Item</title>
   <para>When you run MRP by Item, you are running the Material Requirements
-  Planning (MRP) system. This utility creates Planned Replenishment Orders to
-  meet existing Sales Order and Work Order demand. Replenishment Orders will
-  be created whenever a Planned Availability for an item site falls below its
-  Reorder Level. The quantity of the Replenishment Order will be enough to
-  restore Planned Availability back to the Reorder Level—or to the Order Up To
+  Planning (MRP) system. This utility creates planned replenishment orders to
+  meet existing sales order and work order demand. Replenishment orders will
+  be created whenever a planned availability for an item site falls below its
+  Reorder Level. The quantity of the Replenishment order will be enough to
+  restore planned availability back to the Reorder Level—or to the order Up To
   (OUT) Level, if the OUT Level is greater.</para>
   <tip>
     <para>When running MRP by Item for manufactured items, the system
-    generates Planned Work Orders only. If you want to also generate Planned
-    Orders for purchased requirements, you should run MRP by Planner Code.
+    generates planned work orders only. If you want to also generate planned
+    orders for purchased requirements, you should run MRP by Planner Code.
     Only items designated as MRP items will be affected by an MRP run.
-    Unposted Purchase Orders and Purchase Requests are considered as valid
+    Unposted purchase orders and purchase requests are considered as valid
     sources of supply when MRP is run.</para>
   </tip>
   <para>To run MRP for an individual item, select the "Run MRP by Item"
@@ -30,9 +30,9 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>The system deletes any non-firmed Planned Orders when MRP is run. If
-    demand for the deleted Planned Orders still exists, the Orders will be
-    replaced by new Replenishment Orders having new Planned Order Numbers.
+    <para>The system deletes any non-firmed planned orders when MRP is run. If
+    demand for the deleted planned orders still exists, the orders will be
+    replaced by new Replenishment orders having new planned order numbers.
     Order quantities will also be updated if demand levels have changed since
     MRP was last run.</para>
   </note>
@@ -42,8 +42,8 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the item number of the item you want to create a Planned
-        Order for. The lookup feature located to the right of the field leads
+        <para>Enter the item number of the item you want to create a planned
+        order for. The lookup feature located to the right of the field leads
         to a searchable list of make and buy items.</para>
       </listitem>
     </varlistentry>
@@ -56,7 +56,7 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Specify site Planned Replenishment Orders should be created
+        <para>Specify site planned replenishment orders should be created
         for.</para>
       </listitem>
     </varlistentry>
@@ -75,8 +75,8 @@
       <term>Explode Children</term>
       <listitem>
         <para>Select to perform a multi-level explosion to identify dependent
-        demand for the specified item. This functionality will create Planned
-        Orders for any child demand, if necessary. The functionality mirrors
+        demand for the specified item. This functionality will create planned
+        orders for any child demand, if necessary. The functionality mirrors
         the same feature available at the Planner Code level, which is
         available when running MRP by Planner Code.</para>
       </listitem>
@@ -87,12 +87,12 @@
           <secondary>deletion of</secondary>
         </indexterm>Delete Existing Firmed MRP Orders</term>
       <listitem>
-        <para>Select to delete existing Firmed Orders. A firm Planned Order is
-        a Planned Order that has been solidified in the schedule. By default,
-        firm Planned Orders are not deleted when MRP is run. Selecting this
-        option overrides that default behavior. If firm Planned Orders are
+        <para>Select to delete existing Firmed orders. A firm planned order is
+        a planned order that has been solidified in the schedule. By default,
+        firm planned orders are not deleted when MRP is run. Selecting this
+        option overrides that default behavior. If firm planned orders are
         deleted when MRP is run, they will automatically be replaced by soft
-        (i.e., non-firmed) Planned Orders, assuming the demand for the
+        (i.e., non-firmed) planned orders, assuming the demand for the
         requirements still exists.</para>
       </listitem>
     </varlistentry>
@@ -103,7 +103,7 @@
         purposes, you should always select this option when running MRP. Not
         only will this option create MRP Exceptions for you—it will also force
         MRP to recognize those exceptions and adjust its calculations when
-        creating Planned Orders. The end result will be Planned Orders that
+        creating planned orders. The end result will be planned orders that
         are netted against the known exceptions. Planner Code options related
         to exceptions handling may also impact your results. If you do not
         select this option—and you are using the MRP Exceptions feature
@@ -119,7 +119,7 @@
     <varlistentry>
       <term>CREATE</term>
       <listitem>
-        <para>Creates Planned Replenishment Orders by item, using the
+        <para>Creates planned replenishment orders by item, using the
         specified parameters.</para>
       </listitem>
     </varlistentry>

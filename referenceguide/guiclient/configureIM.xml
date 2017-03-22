@@ -86,15 +86,15 @@
 
       <listitem>
         <para>If multiple sites are enabled, select one of the available
-        Transfer Order Number generation methods:</para>
+        transfer order number generation methods:</para>
 
         <variablelist>
           <varlistentry>
             <term>Automatic</term>
 
             <listitem>
-              <para>Transfer Order Numbers will be automatically incremented
-              by 1 each time a new Transfer Order is created. These
+              <para>Transfer order numbers will be automatically incremented
+              by 1 each time a new transfer order is created. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
             </listitem>
@@ -104,8 +104,8 @@
             <term>Manual</term>
 
             <listitem>
-              <para>Transfer Order Numbers must be entered manually whenever
-              you create a new Transfer Order.</para>
+              <para>Transfer order numbers must be entered manually whenever
+              you create a new transfer order.</para>
             </listitem>
           </varlistentry>
 
@@ -113,10 +113,10 @@
             <term>Automatic, Allow Override</term>
 
             <listitem>
-              <para>Transfer Order Numbers will be automatically generated and
+              <para>Transfer order numbers will be automatically generated and
               incremented, as under the "Automatic" option described above.
               However, this option also allows you to manually override the
-              Transfer Order Number at the time of Transfer Order
+              transfer order number at the time of transfer order
               creation.</para>
             </listitem>
           </varlistentry>
@@ -128,11 +128,11 @@
       <term>Next #</term>
 
       <listitem>
-        <para>The next sequentially available Transfer Order Number will
+        <para>The next sequentially available transfer order number will
         display here. You may change the number—creating a new basis for the
-        next Transfer Order Number—by typing the new number into this field.
+        next transfer order number—by typing the new number into this field.
         Any changes you make here will be reflected the next time a new
-        Transfer Order is created.</para>
+        transfer order is created.</para>
       </listitem>
     </varlistentry>
 
@@ -141,8 +141,8 @@
 
       <listitem>
         <para>If multiple sites are enabled, specify the default Transit site.
-        The specified site will be pre-selected by default whenever Transfer
-        Orders are entered.</para>
+        The specified site will be pre-selected by default whenever transfer
+        orders are entered.</para>
       </listitem>
     </varlistentry>
 
@@ -234,7 +234,7 @@
 
             <listitem>
               <para>Cost distributions for an item site is based on actual
-              accumulation of costs on a Work Order. This Cost Method is used
+              accumulation of costs on a work order. This Cost Method is used
               exclusively by items with Type of "Job".</para>
             </listitem>
           </varlistentry>
@@ -438,9 +438,9 @@
 
       <listitem>
         <para>Enter the next Shipment Number to be used. The system assigns
-        Shipment Numbers to Sales Order line item quantities when stock is
-        issued to Shipping. All stock at Shipping for an individual Sales
-        Order is assigned the same Shipment Number. If no stock is already at
+        Shipment Numbers to sales order line item quantities when stock is
+        issued to Shipping. All stock at Shipping for an individual sales
+        order is assigned the same Shipment Number. If no stock is already at
         Shipping, then a new Shipment Number will be used.</para>
       </listitem>
     </varlistentry>
@@ -450,9 +450,9 @@
 
       <listitem>
         <para>Select if you want the components of Kit items to inherit the
-        same Cost of Sales (COS) Account used by the parent Kit Item. If not
+        same Cost of sales (COS) Account used by the parent Kit Item. If not
         selected, the Kit components will use the COS Accounts defined in
-        their respective Sales Account Assignments.</para>
+        their respective sales Account Assignments.</para>
       </listitem>
     </varlistentry>
 
@@ -462,7 +462,7 @@
       <listitem>
         <para>Select to ensure the maximum receiving quantity does not exceed
         the quantity ordered. If selected, the system will prevent users from
-        receiving more Purchase Order line item quantity than the quantity
+        receiving more purchase order line item quantity than the quantity
         ordered. Not selecting this option means users will be allowed to
         receive quantity in excess of the quantity ordered.</para>
       </listitem>
@@ -496,17 +496,17 @@
       <term>Record Purchase Price Variance on Receipt</term>
 
       <listitem>
-        <para>If selected, Purchase Price Variances (PPV) will be recorded
-        when Purchase Order Receipts are posted. This option applies to
+        <para>If selected, purchase Price Variances (PPV) will be recorded
+        when purchase order Receipts are posted. This option applies to
         Standard costed items. If not selected, then the default system
         behavior will be in effect—that is, PPV will be recorded when Vouchers
         are posted. It's technically possible (although unlikely) for PPV be
         recorded both at receipt and at Voucher time. This situation would
-        occur if and only if the vouchered cost is different from the Purchase
-        Order cost. For the PPV to be recorded twice, the following conditions
+        occur if and only if the vouchered cost is different from the purchase
+        order cost. For the PPV to be recorded twice, the following conditions
         would have to exist: First, there would have to be a difference
-        between Purchase Order price and an item's Standard Cost, and, second,
-        there would also have to be a difference between the Purchase Order
+        between purchase order price and an item's Standard Cost, and, second,
+        there would also have to be a difference between the purchase order
         price and the vouchered price.</para>
       </listitem>
     </varlistentry>
@@ -536,7 +536,7 @@
       <term>Update item's Actual Cost on Receipt</term>
 
       <listitem>
-        <para>Select if you want the Actual Cost for a Purchase Order Item to
+        <para>Select if you want the Actual Cost for a purchase order item to
         be updated when that item is received. This feature complements and
         does not replace the standard process, whereby a received item's
         Actual Cost is updated at the point when a Voucher for that item is
@@ -548,9 +548,9 @@
       <term>Add Eligible S/O's to Packing List Batch on Receipt</term>
 
       <listitem>
-        <para>Select if you want Sales Orders linked to Purchase Orders to be
+        <para>Select if you want sales orders linked to purchase orders to be
         automatically added to the Packing List Batch when line items on the
-        Purchase Order are received.</para>
+        purchase order are received.</para>
       </listitem>
     </varlistentry>
   </variablelist>

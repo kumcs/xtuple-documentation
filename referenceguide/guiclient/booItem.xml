@@ -59,7 +59,7 @@
     <varlistentry>
       <term>Work Center</term>
       <listitem>
-        <para>Specify Work Center to be used for the specified
+        <para>Specify work center to be used for the specified
         Operation.</para>
       </listitem>
     </varlistentry>
@@ -85,12 +85,12 @@
         </indexterm>Execution Day</term>
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
-        value up to a maximum of 99. This feature enables you to schedule Work
-        Order Materials with Work Order Operations. For example, let's say we
+        value up to a maximum of 99. This feature enables you to schedule work
+        order Materials with work order Operations. For example, let's say we
         have an Operation with an Execution Day = 5. This means the Operation
-        is scheduled to begin five days after the start date of the Work
-        Order. Components scheduled with this Operation are due the day before
-        the Operation starts—that is, on day four after the Work Order start
+        is scheduled to begin five days after the start date of the work
+        order. Components scheduled with this Operation are due the day before
+        the Operation starts—that is, on day four after the work order start
         date—to ensure they will be available when the Operation is scheduled
         to begin. If this option is not selected, then the component
         scheduling will be governed by the start and due dates set on the Work
@@ -152,7 +152,7 @@
         </indexterm>Setup Time (min)</term>
       <listitem>
         <para>Amount entered represents the number of minutes required to set
-        up the Work Center for the Operation.</para>
+        up the work center for the Operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -200,7 +200,7 @@
         <note>
           <para>When Operations are posted, inventory transaction records will
           be posted to the General Ledger if at least one of the Operations in
-          the list of Work Order Operations has either or both of the
+          the list of work order Operations has either or both of the
           inventory handling options selected. If items are backflushed at an
           Operation, select the "Auto. Issue Components" option. If finished
           items are received into inventory at an Operation, select the
@@ -213,8 +213,8 @@
       <listitem>
         <para>Specify the standard quantity that will be produced during a
         typical run-time period. The value entered here is equivalent to a run
-        size, batch size, or Economic Order Quantity (EOQ) for this particular
-        Operation. Because Work Order Operations roll into the Actual and
+        size, batch size, or economic order quantity (EOQ) for this particular
+        Operation. Because work order Operations roll into the Actual and
         Standard Costs for manufactured items, you should specify a per
         quantity which accurately reflects your normal batch size for the
         Operation. Specifying a standard batch size helps ensure your
@@ -278,13 +278,13 @@
         </indexterm>Production UOM</term>
       <listitem>
         <para>Select a Unit of Measure (UOM)—or enter a free-form UOM. Specify
-        a UOM to be used optionally when Work Order Operations are posted for
+        a UOM to be used optionally when work order Operations are posted for
         the specified Operation. Different Operations in a single Routing may
         use different Production UOMs. For example, if you are producing soup,
         you might mix the soup in one Operation using UOM = BATCH. But when
         canning the soup, the canning Operation might use UOM = CAN.</para>
         <note>
-          <para>When posting Work Order Operations, you are given the option
+          <para>When posting work order Operations, you are given the option
           to post Operations using Production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
@@ -293,7 +293,7 @@
       <term>Production/Inventory Ratio</term>
       <listitem>
         <para>This is the ratio that normalizes quantities to create a
-        Production UOM for use when posting Work Order Operations.</para>
+        Production UOM for use when posting work order Operations.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -316,8 +316,8 @@
         <para>Issue Components at this Operation: Select to automatically
         issue components used at this Operation. This setting will only affect
         component items whose issue method is either "Pull" or "Mixed".
-        Component items using the "Push" issue method must be issued to Work
-        Orders using a specific material issue transaction.</para>
+        Component items using the "Push" issue method must be issued to work
+        orders using a specific material issue transaction.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -343,11 +343,11 @@
         selection which may be used for tracking the site Locations of
         finished goods inventory as it moves through the manufacturing
         process. The feature applies only to top-level, Multiple Location
-        Control (MLC) items whose production is posted through Work Order
+        Control (MLC) items whose production is posted through work order
         Operations posting. If you choose to track finished MLC goods using
         this feature, then the WIP Location entered here is the Location where
-        inventory will be located when the preceding Operation for the Work
-        Order is posted. A proceeding Operation must exist for the Location
+        inventory will be located when the preceding Operation for the work
+        order is posted. A proceeding Operation must exist for the Location
         entered here to be used. If you do not wish to track WIP Locations for
         finished MLC goods, then you can ignore this option.</para>
       </listitem>

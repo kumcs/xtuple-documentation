@@ -90,19 +90,19 @@
     <varlistentry>
       <term>Create Child W/O at Parent W/O Explosion</term>
       <listitem>
-        <para>Select to create Work Orders for manufactured components when
+        <para>Select to create work orders for manufactured components when
         their parent items are exploded. This option applies only to
         manufactured items appearing as components on a Bill of Materials. If
-        selected, a Work Order will automatically be created for the
+        selected, a work order will automatically be created for the
         manufactured component when the parent item is exploded. The impact on
-        Work Order numbers will be visible. For example, a "-1" will be
-        appended to the parent level Work Order and a "-2" to the child level
-        Work Order—as in, #1061-1 and #1061-2. If this option is not selected,
-        a child Work Order will not be created when the parent item is
+        work order numbers will be visible. For example, a "-1" will be
+        appended to the parent level work order and a "-2" to the child level
+        work order—as in, #1061-1 and #1061-2. If this option is not selected,
+        a child work order will not be created when the parent item is
         exploded.</para>
         <note>
           <para>The "Create Child W/O at Parent W/O Explosion" option will
-          cause the creation of lower level Work Orders BOTH at Work Order
+          cause the creation of lower level work orders BOTH at work order
           explosion and also during the explosion that takes place during
           Master Production Scheduling (MPS) and Material Requirements
           Planning (MRP) runs.</para>
@@ -113,8 +113,8 @@
       <term>Issue Child W/O to Parent W/O at Receipt</term>
       <listitem>
         <para>Select to have the completed item (i.e., subassembly) issued to
-        the parent Work Order at the point when production for the child Work
-        Order is posted.</para>
+        the parent work order at the point when production for the child work
+        order is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -122,7 +122,7 @@
       <listitem>
         <para>Use this option to specify a "flat" quantity of material
         required that is independent of the total quantity produced on a batch
-        or Work Order. For example, tooling items added to a Bill of Materials
+        or work order. For example, tooling items added to a Bill of Materials
         generally have a fixed quantity regardless of the total quantity of
         finished goods produced. Batch size does have an impact on the costing
         for fixed quantity items, however. For example, if the parent item's
@@ -149,7 +149,7 @@
       <term>Issue UOM</term>
       <listitem>
         <para>Specify the Unit of Measure (UOM) you want to use when issuing
-        item quantity to Work Orders. You may also select a global conversion
+        item quantity to work orders. You may also select a global conversion
         ratio here. Global conversions have the label
         <literal>Global</literal> appended to them. Unless you specify an
         alternate UOM, the inventory UOM will be used by default.</para>
@@ -163,8 +163,8 @@
         field.</para>
         <tip>
           <para>Using the "Create Child W/O at Parent W/O Explosion" option
-          can greatly simplify the processing of Work Orders. If this option
-          is not selected, child Work Orders will need to be created
+          can greatly simplify the processing of work orders. If this option
+          is not selected, child work orders will need to be created
           independently.</para>
         </tip>
       </listitem>
@@ -207,24 +207,24 @@
           <varlistentry>
             <term>Push</term>
             <listitem>
-              <para>Select if you want the component item to be issued to Work
-              Orders by a specific material issue transaction. Because a
+              <para>Select if you want the component item to be issued to work
+              orders by a specific material issue transaction. Because a
               specific material issue transaction must be used, "Push" items
               enable you to monitor material usage variances. Standard issue
-              quantities are not automatically backflushed to Work Orders, as
+              quantities are not automatically backflushed to work orders, as
               is true for "Pull" items. If a component item uses the "Push"
-              issue method, you must manually issue quantities to Work
-              Orders.</para>
+              issue method, you must manually issue quantities to work
+              orders.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Pull</term>
             <listitem>
-              <para>Select if you want the component item to be issued to Work
-              Orders by a material backflush. "Pull" items are automatically
-              issued to Work Orders when Work Order Production is posted.
+              <para>Select if you want the component item to be issued to work
+              orders by a material backflush. "Pull" items are automatically
+              issued to work orders when work order Production is posted.
               Using the "Pull" issue method saves time, since materials do not
-              need to be manually issued to Work Orders by a specific material
+              need to be manually issued to work orders by a specific material
               issue transaction.</para>
             </listitem>
           </varlistentry>
@@ -235,7 +235,7 @@
               the issue method applied to it initially—that is, either "Pull"
               or "Push." Assigning the "Mixed" issue method to a component
               item gives you the flexibility of deciding on a
-              Work-Order-by-Work-Order basis whether you want to assign the
+              work order by work order basis whether you want to assign the
               "Pull" or "Push" method to the component item.</para>
             </listitem>
           </varlistentry>
@@ -259,8 +259,8 @@
         specified component item.</para>
         <note>
           <para>BOM-defined Substitutions are the only Substitutes which may
-          be implemented during Work Order processing. To substitute a
-          component item on a Work Order, use the "Substitute" option found on
+          be implemented during work order processing. To substitute a
+          component item on a work order, use the "Substitute" option found on
           the right-click menu of the Maintain Work Order Material
           Requirements screen.</para>
         </note>
@@ -276,9 +276,9 @@
         effects. First, when posting Operations, components that are linked to
         a given Operation will be backflushed if the issue method for the
         components is either "Pull" or "Mixed" and the Operation is set to
-        Auto Issue components. Secondly, Work Order paperwork, such as
-        Routings, will show the relationship between linked Work Order
-        Material Requirements and Work Order Operations.</para>
+        Auto Issue components. Secondly, work order paperwork, such as
+        Routings, will show the relationship between linked work order
+        Material Requirements and work order Operations.</para>
         <tip>
           <para>If an Operation is expired, the link between the Operation and
           the component item will be removed.</para>
@@ -288,14 +288,14 @@
     <varlistentry role="manufacturing">
       <term>Schedule w/ W/O Operation</term>
       <listitem>
-        <para>Select to indicate that this component is not due until the Work
-        Order Operation that will consume it is scheduled to begin. The
+        <para>Select to indicate that this component is not due until the work
+        order Operation that will consume it is scheduled to begin. The
         scheduling of Operations is handled by the Execution Day indicator on
         the Bill of Operations item screen. For example, let's say we have an
         Operation with an Execution Day = 5. This means the Operation is
-        scheduled to begin five days after the start date of the Work Order.
+        scheduled to begin five days after the start date of the work order.
         Components scheduled with this Operation are due the day before the
-        Operation starts—that is, on day four after the Work Order start
+        Operation starts—that is, on day four after the work order start
         date—to ensure they will be available when the Operation is scheduled
         to begin. If this option is not selected, then the component
         scheduling will be governed by the start and due dates set on the Work
@@ -475,7 +475,7 @@
   </variablelist>
   <para>To <indexterm significance="normal">
       <primary>bills of materials</primary>
-      <secondary>linking to BOOs</secondary>
+      <secondary>linking to routings</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bills of operations</primary>
       <secondary>linking to BOMs</secondary>
@@ -541,9 +541,9 @@
   "Flat" and "Glossy". At the BOM item level, you can specify whether the BOM
   item goes with "Flat" or "Glossy". If you choose "Glossy" to associate with
   the BOM item, then that means the BOM item will be included as a material
-  requirement whenever Orders call for the "Glossy" version of the parent
+  requirement whenever orders call for the "Glossy" version of the parent
   item. If no Characteristic association is made at the BOM item level, then
-  the BOM item will always appear on Work Orders—regardless of the
+  the BOM item will always appear on work orders—regardless of the
   parent-level configuration selection. To associate Characteristics with a
   BOM item, select the "Configuration" tab. The following screen will
   appear:</para>
@@ -571,7 +571,7 @@
         Characteristics are item Characteristics defined on the Item master
         for the parent item on the Bill of Materials. Linking parent
         Characteristics to child BOM items means the child item will be
-        included as a material requirement whenever Orders call for the same
+        included as a material requirement whenever orders call for the same
         parent item Characteristic.</para>
       </listitem>
     </varlistentry>
