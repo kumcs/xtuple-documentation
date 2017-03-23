@@ -17,7 +17,7 @@
       <secondary>issuing in batch mode</secondary>
     </indexterm>Issue W/O Material Batch</title>
 
-  <para>To issue Work Order Material Requirement items simultaneously in a
+  <para>To issue work order Material Requirement items simultaneously in a
   batch, select the "Issue W/O Material Batch" option. The following screen
   will appear:</para>
 
@@ -33,12 +33,12 @@
 
   <note>
     <para>Unless your system is configured to allow material issues to
-    exploded Work Orders, you may only issue materials to released or
-    in-process Work Orders. For more information about issuing to exploded
-    Work Orders, please see <xref linkend="AllowIssue"/>.</para>
+    exploded work orders, you may only issue materials to released or
+    in-process work orders. For more information about issuing to exploded
+    work orders, please see <xref linkend="AllowIssue"/>.</para>
   </note>
 
-  <para>When issuing Work Order Material Requirement items in a batch, you are
+  <para>When issuing work order Material Requirement items in a batch, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -55,7 +55,7 @@
       <term>Work Order #</term>
 
       <listitem>
-        <para>Enter the Work Order Number of the Work Order whose component
+        <para>Enter the work order number of the work order whose component
         items you want to issue in a batch.</para>
       </listitem>
     </varlistentry>
@@ -64,7 +64,7 @@
       <term>Site</term>
 
       <listitem>
-        <para>Displays site code automatically when Work Order Number is
+        <para>Displays site code automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -73,7 +73,7 @@
       <term>Item Number</term>
 
       <listitem>
-        <para>Displays Work Order item number automatically when Work Order
+        <para>Displays work order item number automatically when work order
         Number is entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -90,7 +90,7 @@
       <term>Status</term>
 
       <listitem>
-        <para>Displays Work Order Status automatically when Work Order Number
+        <para>Displays work order status automatically when work order number
         is entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -99,8 +99,8 @@
       <term>Method</term>
 
       <listitem>
-        <para>Indicates whether selected Work Order is an Assembly or
-        Disassembly Work Order.</para>
+        <para>Indicates whether selected work order is an Assembly or
+        Disassembly work order.</para>
       </listitem>
     </varlistentry>
 
@@ -109,7 +109,7 @@
 
       <listitem>
         <para>Select to indicate that non-Pick List items should also be
-        issued to the Work Order. Items are defined as Pick List items on the
+        issued to the work order. Items are defined as Pick List items on the
         Item master screen.</para>
       </listitem>
     </varlistentry>
@@ -118,7 +118,7 @@
       <term>W/O Material Requirements</term>
 
       <listitem>
-        <para>Display lists Work Order Material Requirements. The display is
+        <para>Display lists work order Material Requirements. The display is
         color-coded for ease of use. If an item's issue method is "Pull," then
         that item—and the entire row it sits on—will appear in blue type. The
         blue type indicates that the batch issue utility will not affect these
@@ -126,7 +126,7 @@
         However, if an item's issue method is "Push," then that item—and the
         row it sits on—will appear in black type. Rows with black type are
         affected by the batch issue utility. One other color may also appear.
-        If the quantity required by the Work Order exceeds the quantity on
+        If the quantity required by the work order exceeds the quantity on
         hand (QOH)—meaning there is an inventory shortage—the value in the
         "Short" column will display in red.</para>
       </listitem>
@@ -134,7 +134,7 @@
   </variablelist>
 
   <note>
-    <para>If you are issuing Lot/Serial items to a Work Order, these cannot be
+    <para>If you are issuing Lot/Serial items to a work order, these cannot be
     issued automatically from a default Location. You must individually select
     and then distribute the desired Lot/Serial quantity.</para>
   </note>

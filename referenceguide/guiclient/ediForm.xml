@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
@@ -33,8 +33,8 @@
         <para>Select the type of document the Form will be used for. The
         following Document Types are supported: A/P Memo, A/R Memo, A/R
         Statement, Credit Memo/Return, Incident, Invoice, MetaSQL Statement,
-        Packing List, Pick List, Purchase Order, Query Set, Quote, and Sales
-        Order.</para>
+        Packing List, Pick List, purchase order, Query Set, Quote, and sales
+        order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -85,11 +85,11 @@
         queries using MetaSQL, please see the Report Writer User Guide.</para>
         <para>Tokens defined in this Query can also be used on the EDI Profile
         screen. For example, the query in the example above also retrieves the
-        Sales Rep's name and email address. The Message Body on the EDI
+        sales rep's name and email address. The Message Body on the EDI
         Profile window could be changed to end with the token
         "&lt;/salesrep_name&gt;" and the From address could be set to
         "&lt;/usr_email&gt;". If you do this, Invoice emails will always be
-        signed with the name of the Sales Rep and sent from the Sales Rep's
+        signed with the name of the sales rep and sent from the sales rep's
         email address if s/he is also defined as a User and Employee.</para>
       </listitem>
     </varlistentry>

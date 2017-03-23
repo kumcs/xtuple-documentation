@@ -10,9 +10,9 @@
       <primary>sales quotes</primary>
       <see>quotes</see>
     </indexterm> New Quote</title>
-  <para>A Quote is a statement issued to a Customer or Prospect indicating
-  pricing and sales Terms for specified quantities of sold Items. Quotes are
-  often precursors to Sales Orders. To create a Quote, select the "New Quote"
+  <para>A quote is a statement issued to a Customer or Prospect indicating
+  pricing and sales Terms for specified quantities of sold items. Quotes are
+  often precursors to sales orders. To create a quote, select the "New Quote"
   option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -23,18 +23,18 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>Be sure to close all Sales Order windows before exiting the system.
-    This will prevent the creation of orphaned Sales Order records.</para>
+    <para>Be sure to close all sales order windows before exiting the system.
+    This will prevent the creation of orphaned sales order records.</para>
   </tip>
-  <para>When creating a new Quote, you are presented with the following
+  <para>When creating a new quote, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
       <term>Order #</term>
       <listitem>
-        <para>Next available Quote Number will automatically display, unless
-        your system requires you to enter Quote Numbers manually. Default
-        values and input parameters for Quote Numbers are configurable at the
+        <para>Next available quote number will automatically display, unless
+        your system requires you to enter quote numbers manually. Default
+        values and input parameters for quote numbers are configurable at the
         system level.</para>
       </listitem>
     </varlistentry>
@@ -47,10 +47,10 @@
     <varlistentry>
       <term>Scheduled Date</term>
       <listitem>
-        <para>Displays the Order's earliest scheduled date. The scheduled date
-        corresponds to the earliest scheduled date for an included Quote Item.
-        If there are no existing Line Items, the date entered here will become
-        the default schedule date for the first one. If Line Items do exist
+        <para>Displays the order's earliest scheduled date. The scheduled date
+        corresponds to the earliest scheduled date for an included quote item.
+        If there are no existing line items, the date entered here will become
+        the default schedule date for the first one. If line items do exist
         and the date is changed, you will be asked whether you want all
         editable lines to change. If the change affects pricing, you will be
         asked whether you want Prices to be updated as well. If hidden, this
@@ -75,7 +75,7 @@
     <varlistentry>
       <term>Print on Save</term>
       <listitem>
-        <para>Select to automatically print the Quote when it is saved.</para>
+        <para>Select to automatically print the quote when it is saved.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -84,7 +84,7 @@
         <para>Enter the Customer Number of the Customer (or Prospect) to be
         billed for the sale. The lookup feature located to the right of the
         field leads to a searchable Customers list. The lookup feature will be
-        disabled if the Quote is entered for a Prospect. You may also access
+        disabled if the quote is entered for a Prospect. You may also access
         the Customer list using the keyboard shortcut "CTRL + L". Once a
         Customer Number is entered, the Customer name and billing address will
         display. Select the "?" or "$" symbol to view Customer information for
@@ -96,9 +96,9 @@
         record by selecting the "+" button.</para>
         <tip>
           <para>A valid Customer Number must be entered in the "Customer #"
-          field before Line Items can be added to a Quote. If no valid
-          Customer Number is entered, you will not be able to add Line Items
-          to the Quote. Additionally, Quotes may only be entered for active
+          field before line items can be added to a quote. If no valid
+          Customer Number is entered, you will not be able to add line items
+          to the quote. Additionally, quotes may only be entered for active
           Customers.</para>
         </tip>
         <note>
@@ -134,11 +134,11 @@
     <varlistentry>
       <term>Cust. PO #</term>
       <listitem>
-        <para>PO #: Enter a Customer Purchase Order Number, as needed.</para>
+        <para>PO #: Enter a Customer purchase order number, as needed.</para>
         <note>
-          <para>You will be required to enter a Customer Purchase Order Number
+          <para>You will be required to enter a Customer purchase order number
           for Customers who require them. If required, duplicate numbers will
-          only be allowed if the Customer uses blanket Purchase Orders. All
+          only be allowed if the Customer uses blanket purchase orders. All
           Customer requirements are specified on the Customer master.</para>
         </note>
       </listitem>
@@ -146,21 +146,21 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Specify the shipping Site associated with the Quote. The Site
-        selected here acts as the default free on board (FOB) location. A Site
-        may be designated as a shipping Site on the Site master. This field
+        <para>Specify the shipping site associated with the quote. The site
+        selected here acts as the default free on board (FOB) location. A site
+        may be designated as a shipping site on the Site master. This field
         can be viewed upon selecting the MORE button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Sale Type</term>
       <listitem>
-        <para>Specify the Sales Type. Sales account assignments by Sales Type
+        <para>Specify the Sales Type. Sales account assignments by sales Type
         are available.</para>
         <note>
           <para>If the Sales Order setup setting "Display Sales Order Line
           Items Tab by Default" is checked, the "Line Items" tab will be
-          displayed on the opening window for Quote entry.</para>
+          displayed on the opening window for quote entry.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -170,7 +170,7 @@
           <secondary>setting terms for</secondary>
         </indexterm>Terms</term>
       <listitem>
-        <para>Specify the billing Terms associated with the Order. By default,
+        <para>Specify the billing Terms associated with the order. By default,
         the Customer's standard billing Terms will appear in the field.</para>
       </listitem>
     </varlistentry>
@@ -183,20 +183,20 @@
           <secondary>commissions on</secondary>
         </indexterm>Sales Rep.</term>
       <listitem>
-        <para>Specify the Sales Representative―or Outside Rep, in the
-        Distribution Edition―associated with the Quote. Sales Representatives
+        <para>Specify the sales representative?or Outside Rep, in the
+        Distribution Edition?associated with the quote. Sales representatives
         are linked to a Customer on the Customer master—either by a default
         setting or through the assignment of Ship-To Addresses. Each Ship-To
-        Address may have a different Sales Representative associated with it.
-        Consequently, the name of the Sales Representative appearing on the
+        Address may have a different sales representative associated with it.
+        Consequently, the name of the sales representative appearing on the
         Quote header will be the same as specified for the Ship-To Address
         being used. If you are using the Enhanced Commissions package, the
-        Sales Rep information is moved to a separate tab.</para>
+        sales rep information is moved to a separate tab.</para>
         <note>
-          <para>When creating a new Quote, only active Sales Reps will be
-          available for selection. For future changes to an existing Quote,
-          all Sales Reps (active and inactive) will be listed to ensure that
-          the original Sales Rep will still appear.</para>
+          <para>When creating a new quote, only active sales reps will be
+          available for selection. For future changes to an existing quote,
+          all sales reps (active and inactive) will be listed to ensure that
+          the original sales rep will still appear.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -205,7 +205,7 @@
       <listitem>
         <para>By default, the commission percentage recorded on the Customer
         master will be automatically entered in this field. If for some reason
-        you select a non-default Sales Representative at Order entry, the
+        you select a non-default sales representative at order entry, the
         commission rate will not change. To adjust the commission rate, you
         must make the change manually. This field can be viewed by selecting
         the MORE button.</para>
@@ -217,7 +217,7 @@
           <secondary>for quotes</secondary>
         </indexterm>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone associated with the Quote. The Tax Zone for
+        <para>Specify the Tax Zone associated with the quote. The Tax Zone for
         the specified Ship-To Address will be entered here by default.
         Otherwise, the primary Tax Zone for the Customer will be entered. This
         field can be viewed upon selecting the MORE button.</para>
@@ -226,9 +226,9 @@
     <varlistentry>
       <term>F.O.B.</term>
       <listitem>
-        <para>Enter free on board (FOB) Terms for the Order. By default, FOB.
+        <para>Enter free on board (FOB) Terms for the order. By default, FOB.
         Terms entered on the Shipping Site master will appear in this field.
-        The default Terms may be changed during Order entry—and also at later
+        The default Terms may be changed during order entry—and also at later
         stages during the billing cycle.</para>
       </listitem>
     </varlistentry>
@@ -256,18 +256,18 @@
     <varlistentry>
       <term>Quote Status</term>
       <listitem>
-        <para>Displays the current status of the Quote. There are two possible
+        <para>Displays the current status of the quote. There are two possible
         values: open and converted. Quotes get the converted status after they
-        have been converted to Sales Orders. If your Sales module is
-        configured to show Quotes after they have been converted, you may view
-        historical Quotes from the Customer Workbench. Converted Quotes will
-        not be visible on the list of open Quotes.</para>
+        have been converted to sales orders. If your Sales module is
+        configured to show quotes after they have been converted, you may view
+        historical quotes from the Customer Workbench. Converted quotes will
+        not be visible on the list of open quotes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Expire</term>
       <listitem>
-        <para>Enter the date when the Quote expires, if any.</para>
+        <para>Enter the date when the quote expires, if any.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -355,14 +355,14 @@
       <term>CLEAR</term>
       <listitem>
         <para>Select to refresh the Quote screen so that you can enter a new
-        Quote. Using the CLEAR button does not erase or in any way change the
-        information on the Quote you are clearing.</para>
+        quote. Using the CLEAR button does not erase or in any way change the
+        information on the quote you are clearing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>MORE</term>
       <listitem>
-        <para>Select to display extra information related to the Sales Order.
+        <para>Select to display extra information related to the sales order.
         To hide the extra information, simply select the MORE button
         again.</para>
       </listitem>
@@ -371,7 +371,7 @@
   <para><indexterm significance="normal">
       <primary>quotes</primary>
       <secondary>creating line items for</secondary>
-    </indexterm>To create or modify Quote Line Items, select the "Line Items"
+    </indexterm>To create or modify quote line items, select the "Line Items"
   tab at the top of the "New Quote" screen. The following screen will
   appear:</para>
   <para><screenshot>
@@ -383,19 +383,19 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>The system will allow you to enter Quotes for Items which do not
-    have Item Sites. However, Item Sites must be defined before a Quote can be
-    converted to a Sales Order.</para>
+    <para>The system will allow you to enter quotes for items which do not
+    have item sites. However, item sites must be defined before a quote can be
+    converted to a sales order.</para>
   </tip>
-  <para>When creating or modifying Quote Line Items, you are presented with
+  <para>When creating or modifying quote line items, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Line Items</term>
       <listitem>
-        <para>Display lists Line Items for this Quote. A valid Customer Number
-        must be entered in the "Customer #" field before Line Items can be
-        added to the Order.</para>
+        <para>Display lists line items for this quote. A valid Customer Number
+        must be entered in the "Customer #" field before line items can be
+        added to the order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -414,18 +414,18 @@
     <varlistentry>
       <term>Freight Weight</term>
       <listitem>
-        <para>Displays the combined weight of all Quote Line Items. Freight
-        weight represents the sum of an Item's product weight and packaging
+        <para>Displays the combined weight of all quote line items. Freight
+        weight represents the sum of an item's product weight and packaging
         weight, both of which are defined on the Item master. The per unit
-        freight weight multiplied by the quantity per gives you the Line Item
-        freight weight. The sum of all Line Item freight weights is the
-        combined weight for the Quote.</para>
+        freight weight multiplied by the quantity per gives you the line item
+        freight weight. The sum of all line item freight weights is the
+        combined weight for the quote.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Margin</term>
       <listitem>
-        <para>Displays the total profit margin for the Quote. The profit
+        <para>Displays the total profit margin for the quote. The profit
         margin is based on the following formula:</para>
         <para>Quote Subtotal - Total Standard Costs for all Line Items</para>
       </listitem>
@@ -433,13 +433,13 @@
     <varlistentry>
       <term>Margin %</term>
       <listitem>
-        <para>Displays the profit margin percentage for the Order.</para>
+        <para>Displays the profit margin percentage for the order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Subtotal</term>
       <listitem>
-        <para>Displays the subtotal for the Quote Line Items.</para>
+        <para>Displays the subtotal for the quote line items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -455,7 +455,7 @@
   </variablelist>
   <tip>
     <para>If you do not use Miscellaneous Charges at your site, you can hide
-    these fields so they are not visible when entering Sales Orders. To do so,
+    these fields so they are not visible when entering sales orders. To do so,
     simply select the "Hide Misc. Charges" option in the system-level
     configuration.</para>
   </tip>
@@ -470,25 +470,25 @@
         </indexterm>Freight</term>
       <listitem>
         <para>Enter the amount of freight charge to be added to the specified
-        Order. Freight charges may be entered during the creation or
-        modification of a Quote—or at the time of shipment.</para>
+        order. Freight charges may be entered during the creation or
+        modification of a quote—or at the time of shipment.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tax</term>
       <listitem>
         <para>Displays the amount of Tax that will be added to the Sales
-        Order, as defined by the specified Tax Code. To get a detailed view of
+        order, as defined by the specified Tax Code. To get a detailed view of
         the Tax calculation, click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Total</term>
       <listitem>
-        <para>Displays the total amount of the Quote.</para>
+        <para>Displays the total amount of the quote.</para>
         <note>
-          <para>Any Quote Line Item may be shipped—even if the Item or Item
-          Site in question becomes inactive after the Quote has been
+          <para>Any quote line item may be shipped—even if the item or item
+          site in question becomes inactive after the quote has been
           created.</para>
         </note>
       </listitem>
@@ -496,49 +496,49 @@
     <varlistentry role="distribution">
       <term>Quick Item Entry</term>
       <listitem>
-        <para>Distribution Edition users will have the option to enter Line
-        Items quickly on this screen, without having to first open the Sales
+        <para>Distribution Edition users will have the option to enter line
+        items quickly on this screen, without having to first open the Sales
         Order Item screen:</para>
         <para><variablelist>
             <varlistentry>
               <term>Item Number</term>
               <listitem>
-                <para>Enter the Item Number of the Item you want to sell. The
-                Item list will contain sold Items available for sale to the
-                specified Customer. The list of available Items may vary from
+                <para>Enter the item number of the item you want to sell. The
+                item list will contain sold items available for sale to the
+                specified Customer. The list of available items may vary from
                 Customer to Customer, depending on how Pricing Schedules are
-                implemented at your site. Once an Item Number is entered, the
-                Inventory Unit of Measure and Item description will
+                implemented at your site. Once an item number is entered, the
+                inventory Unit of Measure and item description will
                 automatically appear.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
               <term>Site</term>
               <listitem>
-                <para>Specify the Site the Sales Order Item is sold from.
-                Items may be supplied to Sales Orders from multiple Item
-                Sites. After an Item Number is entered above, the system
-                checks for available Item Sites for the Item. Any Item Sites
+                <para>Specify the site the sales order item is sold from.
+                Items may be supplied to sales orders from multiple item
+                sites. After an item number is entered above, the system
+                checks for available item sites for the item. Any item sites
                 having the "Sold from" flag set on them will be selectable
-                from this Site list. By default, the Item Site having the
-                highest Ranking will be selected as the first available Site.
-                If more than one Item Site share a Ranking of "1," the Sites
-                will be sorted in alphabetical order. Item Site Rankings are
+                from this site list. By default, the item site having the
+                highest Ranking will be selected as the first available site.
+                If more than one item site share a Ranking of "1," the sites
+                will be sorted in alphabetical order. Item site Rankings are
                 set on the Item Site master.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
               <term>Qty. Ordered</term>
               <listitem>
-                <para>Enter the quantity of the specified Item being ordered.
+                <para>Enter the quantity of the specified item being ordered.
                 The quantity will be set to "1" by default.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
               <term>Scheduled Date</term>
               <listitem>
-                <para>The scheduled date is the date when the Line Item
-                quantity should be shipped. The user who enters the Line Item
+                <para>The scheduled date is the date when the line item
+                quantity should be shipped. The user who enters the line item
                 is responsible for determining the scheduled date. After
                 entering the scheduled date, hit the TAB key on your keyboard
                 to display values in the remaining display only fields.</para>
@@ -547,10 +547,10 @@
             <varlistentry>
               <term>Net Unit Price</term>
               <listitem>
-                <para>Displays the Unit Price for the Sales Order Item. By
+                <para>Displays the Unit Price for the sales order item. By
                 default, the system will choose the lower of the following two
                 Prices: A) The most-specific Pricing Schedule Assignment or B)
-                any Sale in effect at the time of Order entry. The specificity
+                any Sale in effect at the time of order entry. The specificity
                 of Pricing Schedule Assignments is determined in the following
                 descending order: By Customer Ship-To Address (most specific),
                 by Customer, by Customer Type, by Customer Type pattern, by
@@ -561,14 +561,14 @@
             <varlistentry>
               <term>ADD ITEM</term>
               <listitem>
-                <para>Select to add another Line Item to the Order.</para>
+                <para>Select to add another line item to the order.</para>
               </listitem>
             </varlistentry>
           </variablelist></para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To define or maintain relationships for Quotes, select the
+  <para>To define or maintain relationships for quotes, select the
   "Relationships" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -578,48 +578,48 @@
         <caption>Quote Relationships</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When defining relationships for Quotes, you are presented with the
+  <para>When defining relationships for quotes, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Project #</term>
       <listitem>
         <para>If your site is configured to use Projects, select a Project
-        Number to associate with the Quote. If a Sales Order is created from a
-        converted Quote—and the Quote had a Project Number associated with
-        it—then the Project Number from the originating Quote will
+        Number to associate with the quote. If a sales order is created from a
+        converted quote—and the quote had a Project Number associated with
+        it—then the Project Number from the originating quote will
         automatically be entered here. Once a Project Number is associated
-        with a Sales Order, any Work Orders or Purchase Orders created by the
-        Sales Order demand will automatically be linked to the same Project
-        Number as the Sales Order. In this way, Sales Orders, Work Orders, and
-        Purchase Orders may be linked to the same Project.</para>
+        with a sales order, any work orders or purchase orders created by the
+        sales order demand will automatically be linked to the same Project
+        Number as the sales order. In this way, sales orders, work orders, and
+        purchase orders may be linked to the same Project.</para>
         <para role="xtprjaccnt">If you have the xTuple Project Accounting
-        package installed—and you link a Project to the Quote—transactions
-        related to the Sales Order will include the Project Number as the
+        package installed—and you link a Project to the quote—transactions
+        related to the sales order will include the Project Number as the
         final segment of affected G/L Account Numbers. Account Numbers related
         to the following transactions will include the Project Number as the
         final segment: Issue to Shipping, Return Stock, Ship Shipment, Recall
         Shipment, and Post Invoice.</para>
         <tip>
           <para>If your site is configured to create Projects automatically
-          whenever new Sales Orders or Quotes are entered, the Projects
-          generated in this way will assume the number of the Sales Order or
-          Quote which caused their creation.</para>
+          whenever new sales orders or quotes are entered, the Projects
+          generated in this way will assume the number of the sales order or
+          quote which caused their creation.</para>
         </tip>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Opportunity</term>
       <listitem>
-        <para>Select an Opportunity to associate with the Quote, using the
+        <para>Select an Opportunity to associate with the quote, using the
         lookup feature located to the right of the field.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>Quote Characteristics are user-defined definitions which may be used
-  to provide additional layers of description about Quotes. These descriptions
+  to provide additional layers of description about quotes. These descriptions
   are static and not processed by the system, but are useful for informational
-  purposes. To enter Characteristics associated with a Quote, select the
+  purposes. To enter Characteristics associated with a quote, select the
   "Characteristics" tab. The following screen will appear:</para>
   <mediaobject>
     <imageobject>
@@ -630,20 +630,20 @@
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add Comments related to a Quote, select the "Comments" tab. The
+  <para>To add Comments related to a quote, select the "Comments" tab. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quote_comments.png" />
         </imageobject>
-        <caption>Quote Comments</caption>
+        <caption>quote Comments</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>Order Notes added to a Quote are used for internal purposes only. To
-  add Order Notes to a Quote, select the "Order Notes" tab at the top of the
+  <para>Order Notes added to a quote are used for internal purposes only. To
+  add order Notes to a quote, select the "Order Notes" tab at the top of the
   "New Quote" screen. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -653,14 +653,14 @@
         <caption>Quote Notes</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding Order Notes to a Quote, you are presented with the
+  <para>When adding order Notes to a quote, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Order Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Quote. These Notes are for internal use
+        general Notes related to the quote. These Notes are for internal use
         only.</para>
       </listitem>
     </varlistentry>
@@ -668,16 +668,16 @@
       <term>Shipping Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        shipping Notes related to the Quote. These Notes are for internal use
+        shipping Notes related to the quote. These Notes are for internal use
         only. Shipping Notes are drawn from the Customer master—specifically
         from the "Shipping Notes" tab on the Ship-To Address master. The Notes
-        may vary depending on the Ship-To Address specified for the Quote.
+        may vary depending on the Ship-To Address specified for the quote.
         These Notes provide a mechanism for transferring shipping information
-        from the Customer master to the Quote.</para>
+        from the Customer master to the quote.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate documents with a Quote, select the "Documents" tab. The
+  <para>To associate documents with a quote, select the "Documents" tab. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -689,7 +689,7 @@
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view Email associated with a Quote, select the "Email" tab. The
+  <para>To view Email associated with a quote, select the "Email" tab. The
   following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />

@@ -10,10 +10,10 @@
       <primary>work orders</primary>
       <secondary>explosion of</secondary>
     </indexterm>Explode Work Order</title>
-  <para>When a Work Order is exploded, Work Order Material Requirements and
-  Work Order Operations are created for the Work Order in question, using the
+  <para>When a work order is exploded, work order Material Requirements and
+  work order Operations are created for the work order in question, using the
   Bill of Materials and Bill of Operations for the parent item. To manually
-  explode a Work Order, select the "Explode Work Order" option. The following
+  explode a work order, select the "Explode Work Order" option. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -24,32 +24,32 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Work Orders can be exploded either manually or automatically by
+    <para>Work orders can be exploded either manually or automatically by
     default. The default setting is configured at the system level.</para>
   </note>
-  <para>When manually exploding a Work Order, you are presented with the
+  <para>When manually exploding a work order, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Enter the Work Order Number of the Work Order you want to
+        <para>Enter the work order number of the work order you want to
         explode. The lookup feature located to the right of the field leads to
-        a searchable Work Order list featuring open Work Orders ready for
+        a searchable work order list featuring open work orders ready for
         explosion.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Displays site code automatically when Work Order Number is
+        <para>Displays site code automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays item number automatically when Work Order Number is
+        <para>Displays item number automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -62,13 +62,13 @@
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Displays Work Order Status automatically when Work Order Number
+        <para>Displays work order status automatically when work order number
         is entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
-    <para>Default Work Order explosion levels can be configured at the system
+    <para>Default work order explosion levels can be configured at the system
     level.</para>
   </note>
   <variablelist>
@@ -78,15 +78,15 @@
           <secondary>explosion levels for</secondary>
         </indexterm>Level</term>
       <listitem>
-        <para>Select one of the following Work Order explosion levels:</para>
+        <para>Select one of the following work order explosion levels:</para>
         <variablelist>
           <varlistentry>
             <term>Single Level Explosion</term>
             <listitem>
-              <para>During a single-level explosion, Work Order Material
-              Requirements and Work Order Operations are created for the
+              <para>During a single-level explosion, work order Material
+              Requirements and work order Operations are created for the
               parent item&mdash;but not for any manufactured components of the
-              parent item. The Work Orders for manufactured components must be
+              parent item. The work orders for manufactured components must be
               exploded manually.</para>
             </listitem>
           </varlistentry>
@@ -94,8 +94,8 @@
             <term>Multiple Level Explosion</term>
             <listitem>
               <para>In a multiple-level explosion, any manufactured components
-              of the parent item are identified and Work Orders are created
-              for them. Then, Work Order Material Requirements and Work Order
+              of the parent item are identified and work orders are created
+              for them. Then, work order Material Requirements and work order
               Operations are created for both the parent item and the
               manufactured components.</para>
             </listitem>
@@ -109,7 +109,7 @@
     <varlistentry>
       <term>EXPLODE</term>
       <listitem>
-        <para>Explodes the selected Work Order.</para>
+        <para>Explodes the selected work order.</para>
       </listitem>
     </varlistentry>
   </variablelist>

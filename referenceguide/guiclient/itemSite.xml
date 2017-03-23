@@ -69,7 +69,7 @@
 
       <listitem>
         <para>Select if the item can be manufactured at the specified site.
-        Planned Work Orders from the Material Requirements Planning (MRP)
+        Planned work orders from the Material Requirements Planning (MRP)
         system can only be created for item sites having this option selected.
         This option is not available for purchased or outside process items if
         job costing is selected.</para>
@@ -79,12 +79,12 @@
             <term>Create Work Orders linked to Sales Orders</term>
 
             <listitem>
-              <para>Select to create Work Orders whenever Sales Orders demand
+              <para>Select to create work orders whenever sales orders demand
               quantities from the item site. This option pertains to
               manufactured items. If you select this option, you are
-              indicating that you want Work Orders to be generated for the
-              item in question whenever quantities are demanded by a Sales
-              Order. To ensure the "Create Work Order" flag is always enabled
+              indicating that you want work orders to be generated for the
+              item in question whenever quantities are demanded by a sales
+              order. To ensure the "Create Work Order" flag is always enabled
               on the Sales Order Line Item screen, set the "Stocked" option on
               the Item Site screen to "False." When the "Stocked" option is
               "True," the "Create Work Order" flag will be available but
@@ -92,8 +92,8 @@
               screen.</para>
 
               <note>
-                <para>Work Orders created, as specified above, to meet Sales
-                Order demand will be created regardless of an item's
+                <para>Work orders created, as specified above, to meet sales
+                order demand will be created regardless of an item's
                 Availability—and also regardless of whether Material
                 Requirements Planning (MRP) is being run in parallel.</para>
               </note>
@@ -114,19 +114,19 @@
 
         <variablelist>
           <varlistentry>
-            <term>Create Purchase Requests for Work Order requirements</term>
+            <term>Create purchase requests for work order requirements</term>
 
             <listitem>
-              <para>Select to create Purchase Requests whenever Work Orders
+              <para>Select to create purchase requests whenever work orders
               demand quantities from the item site. This option pertains to
               purchased and outside-process items. If you select this option,
-              you are indicating that you want Purchase Requests to be
+              you are indicating that you want purchase requests to be
               automatically generated for the item in question whenever
-              quantities are demanded by Work Orders.</para>
+              quantities are demanded by work orders.</para>
 
               <note>
-                <para>Purchase Requests created to meet Work Order or Sales
-                Order demand will be created regardless of item
+                <para>Purchase requests created to meet work order or sales
+                order demand will be created regardless of item
                 Availability—and also regardless of whether Material
                 Requirements Planning (MRP) is being run in parallel.</para>
               </note>
@@ -137,12 +137,12 @@
             <term>Create Purchase Requests for Sales Orders</term>
 
             <listitem>
-              <para>Select to create Purchase Requests whenever Sales Orders
+              <para>Select to create purchase requests whenever sales orders
               demand quantities from the item site. This option pertains to
               purchased and outside-process items. If you select this option,
-              you are indicating that you want Purchase Requests to be
+              you are indicating that you want purchase requests to be
               automatically generated for the item in question whenever
-              quantities are demanded by Sales Orders. This option and the
+              quantities are demanded by sales orders. This option and the
               "Create Purchase Orders linked to Sales Orders" option are
               mutually exclusive.</para>
             </listitem>
@@ -156,11 +156,11 @@
               </indexterm>Create Purchase Orders linked to Sales Orders</term>
 
             <listitem>
-              <para>Select to create Purchase Orders linked to Sales Orders.
+              <para>Select to create purchase orders linked to sales orders.
               You must have at least one Item Source defined for the item to
-              use this option. Linking Purchase Orders to Sales Order creates
+              use this option. Linking purchase orders to sales order creates
               the basic foundation for drop shipment functionality. This
-              option and the "Create Purchase Requests for Sales Orders"
+              option and the "Create Purchase Requests for sales orders"
               option are mutually exclusive. If your site is configured to use
               drop shipping, the following additional option will also be
               available:</para>
@@ -171,10 +171,10 @@
 
                     <listitem>
                       <para>If selected, the "Drop Ship" flag will always be
-                      turned ON when Sales Order line items are created for
+                      turned ON when sales order line items are created for
                       drop ship items. Do not select this option if you want
                       users to manually select the "Drop Ship" flag when
-                      entering Sales Orders. This option will only be visible
+                      entering sales orders. This option will only be visible
                       if your site is configured to use drop shipping.</para>
                     </listitem>
                   </varlistentry>
@@ -190,8 +190,8 @@
 
       <listitem>
         <para>Select if item is sold from specified site. If selected, "Sold
-        from" means that Sales Orders line items may request to Ship from the
-        site. When adding Sales Order line items to a Sales Order, a "Sold
+        from" means that sales orders line items may request to Ship from the
+        site. When adding sales order line items to a sales order, a "Sold
         from" site appears as the "Supplying" site.</para>
 
         <variablelist>
@@ -213,8 +213,8 @@
             <listitem>
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 10. Value entered specifies the order
-              in which item sites will be chosen during Sales Order and Sales
-              Quote creation. If an item is located in more than one "Sold
+              in which item sites will be chosen during sales order and sales
+              quote creation. If an item is located in more than one "Sold
               from" site, the item site with the highest ranking will be
               chosen first. If two item sites happen to share the same
               ranking, selection will be based on alphabetical order. The
@@ -380,23 +380,23 @@
 
             <listitem>
               <para>Cost distributions are based on actual accumulation of
-              costs on a Work Order. This Cost Method should be used for
+              costs on a work order. This Cost Method should be used for
               manufactured items which you want to handle as Job items. Job
               items are specifically for make-to-order or service (i.e.,
               repair) scenarios where simplified production is required. Job
               items cannot be maintained in inventory. Job items also have no
               concept of Standard Cost or Cost variances. All Costs for Job
-              items are Actual. The Work Orders which create Job items can
-              only be created via a Sales Order. The Costs for Job item Work
-              Orders are accumulated to WIP, and then transferred directly to
+              items are Actual. The work orders which create Job items can
+              only be created via a sales order. The Costs for Job item work
+              orders are accumulated to WIP, and then transferred directly to
               Cost of Sales when the job is shipped. Production for a Job item
-              Work Order is posted when the linked Sales Order item is issued
-              to Shipping. BOM and BOO items may be assigned to Job items;
+              work order is posted when the linked sales order item is issued
+              to Shipping. BOM and routing items may be assigned to Job items;
               however, they will not roll up to a Standard Cost for Job items.
               Job items may be configured. This means you can add List Prices
               to any Job item Characteristics. These Characteristic Prices are
-              then added to the Base Price of Sales Order items when the
-              Characteristic is selected at Sales Order entry.</para>
+              then added to the Base Price of sales order items when the
+              Characteristic is selected at sales order entry.</para>
 
               <note>
                 <para>Job cost items must have a control method of Regular,
@@ -494,11 +494,11 @@
               should be issued. If an Event affecting the item site occurs
               within the Event Fence, then the system will issue a
               notification. Consider the case of a manufactured item whose
-              Event Fence is set to five (5) days. Assume that a Work Order
+              Event Fence is set to five days. Assume that a work order
               exists for this item and that the scheduled start date for that
-              Work Order is three (3) days from the current date. If someone
-              were to change the quantity of that Work Order, the Event
-              "WoQtyChanged" would be triggered. And because the Work Order
+              work order is three days from the current date. If someone
+              were to change the quantity of that work order, the Event
+              "WoQtyChanged" would be triggered. And because the work order
               start date falls within the Event Fence for the item site, an
               Event notification would be issued.</para>
             </listitem>
@@ -511,7 +511,7 @@
       <term>Over-ride Work Order Item Cost Recognition Default</term>
 
       <listitem>
-        <para>The Work Order item Cost recognition default is set globally at
+        <para>The work order item Cost recognition default is set globally at
         the system level. For more information, please see <xref
         linkend="configureWOCostDefaults"/>. However, it is possible to
         override the global default by specifying one of the following options
@@ -528,7 +528,7 @@
             <term>To Date</term>
 
             <listitem>
-              <para>When Work Orders for Average Cost or Job items are
+              <para>When work orders for Average Cost or Job items are
               shipped, all of the WIP costs accumulated to date will be
               charged to Cost of Sales.</para>
             </listitem>
@@ -538,10 +538,10 @@
             <term>Proportional</term>
 
             <listitem>
-              <para>When Work Orders for Average Cost or Job items are
+              <para>When work orders for Average Cost or Job items are
               shipped, a value up to the proportional value of the total
               quantity shipped will be charged to Cost of Sales. For example,
-              if three items are to be shipped on a Job Work Order and all the
+              if three items are to be shipped on a Job work order and all the
               material has been issued—and if only 1 of the 3 is shipped—then
               1/3 of the value charged to WIP at that point will be charged to
               Cost of Sales.</para>
@@ -649,8 +649,8 @@
                   <term>Receive</term>
 
                   <listitem>
-                    <para>Used for production Work Order receipts, Purchase
-                    Order receipts, Return Authorization receipts and
+                    <para>Used for production work order receipts, purchase
+                    order receipts, Return Authorization receipts and
                     miscellaneous inventory receipts.</para>
                   </listitem>
                 </varlistentry>
@@ -669,7 +669,7 @@
                   <term>W/O Issue</term>
 
                   <listitem>
-                    <para>Used for Work Order material issues and
+                    <para>Used for work order material issues and
                     backflushing.</para>
                   </listitem>
                 </varlistentry>
@@ -724,9 +724,9 @@
 
       <listitem>
         <para>Select to require the use of work-in-process (WIP) Locations
-        when posting Work Order Operations for Multiple Location Control (MLC)
+        when posting work order Operations for Multiple Location Control (MLC)
         finished goods. WIP Locations are an optional feature which may be
-        defined on the Bill of Operations (BOO) for manufactured MLC items.
+        defined on the routing for manufactured MLC items.
         The feature enables you to track finished goods inventory as it moves
         through the manufacturing process. If your site does not combine
         Multiple Location Control with Operations posting, then this option
@@ -794,18 +794,18 @@
         </indexterm>Enforce Order Parameters</term>
 
       <listitem>
-        <para>Select to enforce Order Parameters. If this option is selected,
-        then Material Requirements Planning (MRP) will follow the Order
-        Parameters defined below when generating Planned Replenishment Orders.
+        <para>Select to enforce order Parameters. If this option is selected,
+        then Material Requirements Planning (MRP) will follow the order
+        Parameters defined below when generating planned replenishment orders.
         Parameters you define will be saved if this option is turned ON/OFF.
-        If you want to enforce Order Parameters on manual Orders as well,
+        If you want to enforce order Parameters on manual orders as well,
         select the "on Manual Orders" option.</para>
 
         <note>
           <para>Running Material Requirements Planning (MRP) on your system
-          consists entirely of running the Create Planned Replenishment Orders
-          screens—either by item or by Planner Code. As MRP runs, the Planned
-          Replenishment Orders are generated automatically.</para>
+          consists entirely of running the Create planned replenishment Orders
+          screens—either by item or by Planner Code. As MRP runs, the planned
+          replenishment orders are generated automatically.</para>
         </note>
 
         <variablelist>
@@ -813,21 +813,21 @@
             <term>Reorder Level</term>
 
             <listitem>
-              <para>The Reorder Level specifies when a Planned Replenishment
-              Order should be created for an item site. If Planned
-              Availability minus Safety Stock falls below the Reorder Level,
-              then a Replenishment Order will be created when Material
-              Requirements Planning (MRP) is run. The Replenishment Order
+              <para>The Reorder Level specifies when a planned replenishment
+              order should be created for an item site. If planned
+              availability minus Safety Stock falls below the Reorder Level,
+              then a Replenishment order will be created when Material
+              Requirements Planning (MRP) is run. The Replenishment order
               quantity will be equal to the quantity required to return
-              Planned Availability to either the Reorder Level or the Order Up
+              planned availability to either the Reorder Level or the order Up
               To quantity—whichever is greater.</para>
 
               <note>
-                <para>Planned Availability differs from QOH. The difference is
-                that Planned Availability considers both QOH and also the
-                time-phased demands placed on inventory by Sales Orders and
-                Work Orders. MRP uses Planned Availability when calculating
-                which item sites require Planned Replenishment Orders.</para>
+                <para>Planned availability differs from QOH. The difference is
+                that planned availability considers both QOH and also the
+                time-phased demands placed on inventory by sales orders and
+                work orders. MRP uses planned availability when calculating
+                which item sites require planned replenishment orders.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -836,18 +836,18 @@
             <term>Order Up To</term>
 
             <listitem>
-              <para>The Order Up To (OUT) Level indicates the level of Planned
-              Availability an item site should be replenished up to when
+              <para>The order Up To (OUT) Level indicates the level of planned
+              availability an item site should be replenished up to when
               Material Requirements Planning (MRP) is run. In cases where the
-              Reorder Level for an item site exceeds the Order Up To Level,
+              Reorder Level for an item site exceeds the order Up To Level,
               MRP will replenish the item site up to the Reorder Level.</para>
 
               <tip>
-                <para>Setting the Order Up To Level to "0" removes any
-                restrictions on maximum Order quantities. Removing quantity
+                <para>Setting the order Up To Level to "0" removes any
+                restrictions on maximum order quantities. Removing quantity
                 restrictions can be an effective strategy to help ensure that
-                all Order demands are satisfied when MRP is run. Order demands
-                may not be met if Order Up To Levels are set below the demand
+                all order demands are satisfied when MRP is run. Order demands
+                may not be met if order Up To Levels are set below the demand
                 threshold.</para>
               </tip>
             </listitem>
@@ -858,9 +858,9 @@
 
             <listitem>
               <para>Value entered indicates the minimum quantity that may be
-              entered for a Planned Replenishment Order when MRP is run. If
+              entered for a planned replenishment order when MRP is run. If
               the "on Manual Orders" option is selected above,
-              manually-created Work Orders will recognize the Minimum Order
+              manually-created work orders will recognize the Minimum order
               value.</para>
             </listitem>
           </varlistentry>
@@ -870,13 +870,13 @@
 
             <listitem>
               <para>This is a special setting which regulates the maximum
-              quantity for Planned Replenishment Orders when MRP is run. The
-              setting does not apply to manual Orders, but to Planned Orders
-              only. When a maximum Order quantity is specified, MRP will
-              ignore Order multiples and minimum Order specifications—focusing
-              instead solely on the maximum Order setting. For example, if the
-              maximum Order quantity is set to 10 and there is demand for 17,
-              then Planned Orders of 10 and 7 would be generated when MRP is
+              quantity for planned replenishment Orders when MRP is run. The
+              setting does not apply to manual Orders, but to planned orders
+              only. When a maximum order quantity is specified, MRP will
+              ignore order multiples and minimum order specifications—focusing
+              instead solely on the maximum order setting. For example, if the
+              maximum order quantity is set to 10 and there is demand for 17,
+              then planned orders of 10 and 7 would be generated when MRP is
               run.</para>
 
               <tip>
@@ -894,9 +894,9 @@
 
             <listitem>
               <para>Value entered indicates the quantity multiple that should
-              be used for Planned Replenishment Orders when MRP is run. If the
+              be used for planned replenishment orders when MRP is run. If the
               "on Manual Orders" option is selected above, manually-created
-              Work Orders will recognize the Order Multiple value.</para>
+              work orders will recognize the order Multiple value.</para>
             </listitem>
           </varlistentry>
 
@@ -904,13 +904,13 @@
             <term>Enforce on Manual Orders</term>
 
             <listitem>
-              <para>Select to enforce Order Parameters on manually-created
-              Work Orders. If this option is selected, Order Parameters will
-              also be enforced whenever Work Orders are manually created. This
+              <para>Select to enforce order Parameters on manually-created
+              work orders. If this option is selected, order Parameters will
+              also be enforced whenever work orders are manually created. This
               option applies only to the following two parameters: Minimum
-              Order and Order Multiple. The other Order Parameters listed
-              below do not apply to manually-created Work Orders. For manual
-              Purchase Orders, the Minimum Order and Order Multiple parameters
+              Order and Order Multiple. The other order Parameters listed
+              below do not apply to manually-created work orders. For manual
+              purchase orders, the Minimum Order and Order Multiple parameters
               are determined on a Vendor-by-Vendor basis, using Item Source
               masters.</para>
             </listitem>
@@ -934,8 +934,8 @@
               <para>Specify which of the following planning systems you want
               the item site to be considered by. Keep in mind that the choice
               of planning system is exclusive. That is, MPS will not create
-              Planned Orders for MRP items when it is run. Likewise, the MRP
-              system will not create Planned Orders for MPS items when it is
+              planned orders for MRP items when it is run. Likewise, the MRP
+              system will not create planned orders for MPS items when it is
               run.</para>
 
               <variablelist>
@@ -944,7 +944,7 @@
 
                   <listitem>
                     <para>Select if you want the Material Requirements
-                    Planning (MRP) system to create Planned Orders for the
+                    Planning (MRP) system to create planned orders for the
                     Item when MRP is run.</para>
                   </listitem>
                 </varlistentry>
@@ -954,7 +954,7 @@
 
                   <listitem>
                     <para>Select if you want the Master Production Scheduling
-                    (MPS) system to create Planned Orders for the Item when
+                    (MPS) system to create planned orders for the item when
                     MPS is run.</para>
                   </listitem>
                 </varlistentry>
@@ -977,12 +977,12 @@
             <listitem>
               <para>Specify the quantity of Stock for the item you want to
               keep in inventory to protect against unplanned, unforeseeable
-              trends in your Order forecasts. When Material Requirements
+              trends in your order forecasts. When Material Requirements
               Planning (MRP) is run, the system considers the Safety Stock
-              value when determining whether to create Planned Replenishment
-              Orders. If Planned Availability minus Safety Stock is below the
-              Reorder Level, then Planned Orders will be created. If not below
-              the Reorder Level, then no Planned Orders will be created. The
+              value when determining whether to create planned replenishment
+              orders. If planned availability minus Safety Stock is below the
+              Reorder Level, then planned orders will be created. If not below
+              the Reorder Level, then no planned orders will be created. The
               system's calculation effectively creates a buffer inventory (if
               needed) to handle unexpected fluctuations in demand. If you do
               not want to use the Safety Stock functionality, set the Safety
@@ -995,20 +995,20 @@
 
             <listitem>
               <para>Specify the length of a period—measured in days—within
-              which MPS or MRP Planned Orders will be grouped together (i.e,
+              which MPS or MRP planned orders will be grouped together (i.e,
               consolidated) to meet demand for the period. The minimum
               possible number of days is one. This functionality serves to
-              limit the total number of Planned Orders, thereby simplifying
+              limit the total number of planned orders, thereby simplifying
               order processing. For example, to consolidate demand for an item
               site into 30-day buckets, set the value to "30." When MRP is
               run, the system will automatically consolidate all demand
-              falling within the 30-day horizon into a single Planned Purchase
-              Order or Planned Work Order. The grouping of Planned Orders
+              falling within the 30-day horizon into a single planned purchase
+              order or planned work order. The grouping of planned orders
               moves forward in time, meaning the system will create as many
               buckets as will fit within the cutoff date specified when MRP is
               run.</para>
 
-              <para>The initial grouping of Planned Orders is handled
+              <para>The initial grouping of planned orders is handled
               differently than subsequent buckets. The following formula
               specifies how the date range for the initial group is
               determined:</para>
@@ -1054,7 +1054,7 @@
               planning Lead Time. The procurement Lead Time for purchased
               items is determined on a Vendor-by-Vendor basis, using Item
               Source masters. Material Requirements Planning (MRP) will
-              consider Lead Times when calculating Planned Order start dates
+              consider Lead Times when calculating planned order start dates
               when MRP is run.</para>
             </listitem>
           </varlistentry>
@@ -1068,8 +1068,8 @@
               999. The Demand Time Fence (also known as the demand fence) is
               used by the Master Production Scheduling (MPS) system to
               evaluate when forecasted demand (i.e., from Production Plans)
-              should be used in place of actual demand (i.e., from Sales
-              Orders)—and vice versa. Measured in days, the Demand Time Fence
+              should be used in place of actual demand (i.e., from sales
+              orders)—and vice versa. Measured in days, the Demand Time Fence
               is the period of time extending from the current day to the
               number of days into the future as specified in this field. The
               Demand Time Fence option applies only to those items which
@@ -1078,7 +1078,7 @@
               Forecast will be ignored. If demand falls outside the Demand
               Time Fence, then the larger of actual or forecasted demand will
               be used. MPS responds to the demand it locates by creating firm
-              Planned Orders for the required quantities.</para>
+              planned orders for the required quantities.</para>
             </listitem>
           </varlistentry>
 
@@ -1086,18 +1086,18 @@
             <term>Create Planned Transfer Orders</term>
 
             <listitem>
-              <para>Select if you want the item site to have Planned Transfer
-              Orders created for it when the Material Requirements Planning
-              (MRP) system is run. If selected, MRP will only create Planned
-              Transfer Orders for the item site. Planned Purchase Orders or
-              Planned Work Orders will not be created.</para>
+              <para>Select if you want the item site to have planned transfer
+              orders created for it when the Material Requirements Planning
+              (MRP) system is run. If selected, MRP will only create planned
+              transfer orders for the item site. Planned purchase orders or
+              planned work orders will not be created.</para>
 
               <variablelist>
                 <varlistentry>
                   <term>Supplied from Site</term>
 
                   <listitem>
-                    <para>Specify which site you want Planned Transfer Orders
+                    <para>Specify which site you want planned transfer orders
                     to be supplied from when MRP is run. The site you select
                     must have a corresponding item site for the specified
                     item.</para>

@@ -7,7 +7,7 @@
       <primary>receiving</primary>
       <secondary>entering receipts</secondary>
     </indexterm>Enter Receipt</title>
-  <para>To receive Orders into inventory, select the "Enter Receipt" option.
+  <para>To receive orders into inventory, select the "Enter Receipt" option.
   The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -17,17 +17,17 @@
         <caption>Enter Order Receipts</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When receiving an Order, you are presented with the following
+  <para>When receiving an order, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
       <term>Order #</term>
       <listitem>
-        <para>Enter the Order Number of the Purchase Order, Transfer Order or
+        <para>Enter the order number of the purchase order, transfer order or
         Return Authorization whose line item(s) you want to receive into
         inventory. The lookup feature located to the right of the field leads
-        to a searchable list of Purchase Orders available for receiving. This
-        option will be disabled if a Transfer Order is specified.</para>
+        to a searchable list of purchase orders available for receiving. This
+        option will be disabled if a transfer order is specified.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="standard">
@@ -35,8 +35,8 @@
       <listitem>
         <para>If your system is configured to use drop shipping, this
         informational, read-only field will be displayed. It will be selected
-        if the Purchase Order entered is a drop ship Order. When receipts for
-        drop ship items are posted, the linked Sales Order items will be
+        if the purchase order entered is a drop ship order. When receipts for
+        drop ship items are posted, the linked sales order items will be
         automatically shipped.</para>
       </listitem>
     </varlistentry>
@@ -55,13 +55,13 @@
     <varlistentry>
       <term>Order Line Items</term>
       <listitem>
-        <para>Display lists Order line items available for receipt
+        <para>Display lists order line items available for receipt
         confirmation.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
-    <para>Before a Purchase Order can be received successfully, Payables Account
+    <para>Before a purchase order can be received successfully, Payables Account
     Assignments for the specified Vendor must be in place.</para>
   </tip>
   <variablelist>
@@ -69,7 +69,7 @@
       <term>Receive Items using bar code:</term>
       <listitem>
         <para>This is an optional field which allows you to receive inventory
-        using a Bar Code scanner. Enter a Bar Code for a Purchase Order Line
+        using a Bar Code scanner. Enter a Bar Code for a purchase order line
         item using a Bar Code scanner&mdash;or manually enter the Bar Code.
         The Bar Code for an item is stored on the Item master. Once the code
         is entered, specify a quantity and then select the FIND button to
@@ -124,7 +124,7 @@
         <para>Highlight a line item, then select this button to reach the
         Receipt detail screen. Double-clicking on a line item will also bring
         you to the Receipt entry screen. This option will be disabled if a
-        Transfer Order is specified.</para>
+        transfer order is specified.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -149,7 +149,7 @@
       <term>FIND</term>
       <listitem>
         <para>Compares the Bar Code entered in the "Receive Items using bar
-        code" field with the Bar Codes for the listed Purchase Order line
+        code" field with the Bar Codes for the listed purchase order line
         items, then receives the quantity specified in the "Qty." field. The
         FIND button may be selected using your mouse&mdash;or by hitting the
         ENTER key, which corresponds to the FIND button. Because the FIND

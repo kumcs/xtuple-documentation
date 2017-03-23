@@ -4,9 +4,9 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="postOperations" role="manufacturing">
   <title>Post Operation</title>
-  <para>Work Order progress can be posted in terms of materials used or
+  <para>Work order progress can be posted in terms of materials used or
   Operations completed. When you post Operations, you are using the
-  Operations-driven process for reporting progress. To post Work Order
+  Operations-driven process for reporting progress. To post work order
   Operations, select the "Post Operations" option. The following screen will
   appear:</para>
   <para><screenshot>
@@ -17,7 +17,7 @@
         <caption>Post Work Order Operations</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When posting a Work Order's Operations, you are presented with the
+  <para>When posting a work order's Operations, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -30,8 +30,8 @@
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Enter the Work Order Number of the Work Order whose Operations
-        you want to post. You may also scan into this field a Work Order
+        <para>Enter the work order number of the work order whose Operations
+        you want to post. You may also scan into this field a work order
         Operation barcode as defined for the Shop Floor Workbench
         screen.</para>
       </listitem>
@@ -39,14 +39,14 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Displays site code automatically when Work Order Number is
+        <para>Displays site code automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays item number automatically when Work Order Number is
+        <para>Displays item number automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -66,22 +66,22 @@
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Displays Work Order Status automatically when Work Order Number
+        <para>Displays work order status automatically when work order number
         is entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected Work Order is an Assembly or
-        Disassembly Work Order.</para>
+        <para>Indicates whether selected work order is an Assembly or
+        Disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Operation</term>
       <listitem>
         <para>Select the individual Operation you want to post from the list
-        of Work Order Operations for the specified item. After selecting an
+        of work order Operations for the specified item. After selecting an
         Operation, specify details for that Operation. To post Operations for
         another Operation, simply select that Operation from the sequential
         list.</para>
@@ -97,7 +97,7 @@
             <term>Ordered</term>
             <listitem>
               <para>Indicates the quantity of material, measures in the item's
-              inventory UOM, that the selected Work Order is due to
+              inventory UOM, that the selected work order is due to
               produce.</para>
             </listitem>
           </varlistentry>
@@ -215,7 +215,7 @@
       <listitem>
         <para>Select to mark Operation as complete. An Operation may not be
         marked as "Complete" until all users are clocked-out of the Operation.
-        Users clock-in to and clock-out of Work Orders using the Shop Floor
+        Users clock-in to and clock-out of work orders using the Shop Floor
         Workbench.</para>
       </listitem>
     </varlistentry>
@@ -249,7 +249,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To review and take action on materials associated with the Work Order
+  <para>To review and take action on materials associated with the work order
   Operations, select the "Materials" tab. The following screen will
   appear:</para>
   <para><screenshot>
@@ -260,8 +260,8 @@
         <caption>Materials Related to Work Order Operations</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When reviewing and taking action on materials associated with a Work
-  Order, you are presented with the following options:</para>
+  <para>When reviewing and taking action on materials associated with a work
+  order, you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Issue Components</term>
@@ -273,7 +273,7 @@
         If such linkages exist, only components with "Pull" or "Mixed" issue
         methods will be displayed. Components having the "Push" issue method
         will not appear in the list, as these must be issued manually to a
-        Work Order. If this option is selected, the General Ledger will show
+        work order. If this option is selected, the General Ledger will show
         the component materials being removed from inventory when this
         Operation is posted.</para>
       </listitem>
@@ -283,8 +283,8 @@
       <listitem>
         <para>Indicates that finished goods will be received into inventory
         when the specified Operation is posted. Enabled only when the selected
-        Operation is the receiving Operation for the selected Work Order. Only
-        one Work Order Operation may have this flag set. If this option is
+        Operation is the receiving Operation for the selected work order. Only
+        one work order Operation may have this flag set. If this option is
         selected, the General Ledger will show the finished goods being
         received into inventory when the Operation is posted.</para>
       </listitem>
@@ -299,7 +299,7 @@
     <varlistentry>
       <term>Close Work Order</term>
       <listitem>
-        <para>Select this option to close the Work Order. The option will be
+        <para>Select this option to close the work order. The option will be
         selected automatically at the point when you are posting all quantity
         complete.</para>
       </listitem>

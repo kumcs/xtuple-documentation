@@ -35,9 +35,9 @@
         the item will be unavailable for use. To activate an inactive item,
         simply open the Item master and mark the item as active.</para>
         <note>
-          <para>An inactive item may still be used in a Sales Order, Work
-          Order, or Purchase Order if the item was de-activated after the
-          Order was created.</para>
+          <para>An inactive item may still be used in a sales order, work
+          order, or purchase order if the item was de-activated after the
+          order was created.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -102,9 +102,9 @@
                 <secondary>as item type</secondary>
               </indexterm>Purchased</term>
             <listitem>
-              <para>Select if the item is an item you purchase. A Purchase
-              Order is the normal supply order. However, you may enter a Work
-              Order for this Item Type.</para>
+              <para>Select if the item is an item you purchase. A purchase
+              order is the normal supply order. However, you may enter a work
+              order for this Item Type.</para>
             </listitem>
           </varlistentry>
           <varlistentry id="manufacturedItemType">
@@ -116,9 +116,9 @@
                 <secondary>as manufactured items</secondary>
               </indexterm>Manufactured</term>
             <listitem>
-              <para>Select if the item is an item you make. A Work Order is
-              the normal supply order. However, you may also enter a Purchase
-              Order for this Item Type. Job items are considered to be
+              <para>Select if the item is an item you make. A work order is
+              the normal supply order. However, you may also enter a purchase
+              order for this Item Type. Job items are considered to be
               manufactured items. Use the Job costing option at the item site
               level to distinguish Job items from regular manufactured items.
               For more information about the Job costing option, please see
@@ -133,7 +133,7 @@
             <listitem>
               <para>A transient subassembly containing component items
               commonly used together during a manufacturing process. Phantom
-              items require a Bill of Materials, but not separate Work Orders.
+              items require a Bill of Materials, but not separate work orders.
               Since they are not stock items, Material Requirements Planning
               (MRP) logic blows through phantom items and only plans for their
               component items. Phantom items should be used to simplify
@@ -152,8 +152,8 @@
               doesn't manufacture or purchase them. Reference items may be
               configured. This means you can add List Prices to any Reference
               item Characteristics. These Characteristic Prices are then added
-              to the Base Price of Sales Order items when the Characteristic
-              is selected at Sales Order entry.</para>
+              to the Base Price of sales order items when the Characteristic
+              is selected at sales order entry.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -176,11 +176,11 @@
               </indexterm>Tooling</term>
             <listitem>
               <para>A material resource used in the manufacturing process that
-              is returned upon completion of a Work Order—for example, a
+              is returned upon completion of a work order—for example, a
               reusable mold, apparatus, fixture, or tool. It may be included
               on a Bill of Materials for an item, usually specifying a fixed
               quantity. Tooling items can be purchased, manufactured, or sold.
-              A manufactured tool can have a BOO, a BOM, and a Work Order. As
+              A manufactured tool can have a routing, a BOM, and a work order. As
               with other material items, tools can be tracked as serialized
               items. The cost of a tooling item is not included in the overall
               cost of the parent item where it is used.</para>
@@ -226,11 +226,11 @@
               </indexterm>Kit</term>
             <listitem>
               <para>Kit items automatically explode their Bill of Material
-              (BOM) components on to Sales Orders for shipping. When Kit items
-              appear on Sales Orders and Return Authorizations, sub line
+              (BOM) components on to sales orders for shipping. When Kit items
+              appear on sales orders and Return Authorizations, sub line
               numbers are generated for Kit components because Kit children
               are sub line items of the parent line item. Kit components are
-              displayed as an indented tree on the Sales Order or Return
+              displayed as an indented tree on the sales order or Return
               Authorization—and they are view-only. Also, Kit components will
               appear on the Pick List report. Kit components may be issued to
               Shipping, whereas the parent Kit item may not be. The automatic
@@ -258,10 +258,10 @@
               raw gravel to produce different sizes of gravel. The Breeder
               item's Bill of Materials (BOM) defines the inputs—in this case
               raw gravel—and the outputs are defined on its Breeder BOM (i.e.,
-              Small, Medium and Large gravel). A Work Order is created for the
+              Small, Medium and Large gravel). A work order is created for the
               Breeder item, but this item is never stocked or produced; again,
               it is a logical item. Instead, raw gravel is consumed by the
-              Breeder's Work Order, along with labor, and the resulting
+              Breeder's work order, along with labor, and the resulting
               quantities of Co-Products and By-Products are recorded.</para>
             </listitem>
           </varlistentry>
@@ -295,7 +295,7 @@
       <listitem>
         <para>This is an optional field to be used for entering the maximum
         Cost desired for the item. If used, you will be warned whenever
-        entering Purchase Orders if the Purchased cost exceeds the maximum
+        entering purchase orders if the purchased cost exceeds the maximum
         desired cost value.</para>
       </listitem>
     </varlistentry>
@@ -329,8 +329,8 @@
       <term>Pick List</term>
       <listitem>
         <para>Select if you want the item to be included on Pick Lists when
-        the item is used. Pick Lists are printed lists showing the Work Order
-        Material Requirements for a specified Work Order. You may decide not
+        the item is used. Pick Lists are printed lists showing the work order
+        Material Requirements for a specified work order. You may decide not
         to include an item on Pick Lists if the item is insignificant or if it
         is not stored in a stock room but, for example, in a Work Center
         instead.</para>
@@ -356,7 +356,7 @@
       <term>Configured</term>
       <listitem>
         <para>If the item is a Manufactured or Reference item, then you will
-        have the option to configure the item for Assemble to Order (ATO)
+        have the option to configure the item for Assemble to order (ATO)
         scenarios. This option will be disabled for all other Item Types. To
         learn more about product configuration, see our <ulink
         url="http://www.xtuple.org/AssembleToOrderConfigurator">ATO
@@ -516,8 +516,8 @@
             <term>Extended Description</term>
             <listitem>
               <para>The Extended Description field is for entering descriptive
-              item information, which may be printed on Sales and/or
-              Purchasing documents. You would add the Extended Description to
+              item information, which may be printed on sales and/or
+              purchasing documents. You would add the Extended Description to
               printed documents using the report writer. The report writer
               enables you to customize Forms to include data stored in the
               database. To enter an Extended Description of an item, select
@@ -543,7 +543,7 @@
       <listitem>
         <para>Select to open the Bill of Materials (BOM) for the specified
         item. If no BOM exists, you will have the option to create a new
-        BOO.</para>
+        routing.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
@@ -568,11 +568,11 @@
   application, but are useful for informational purposes. For configured items
   (i.e., Job or Reference items), Characteristics are used to store pricing
   information for the options available on configured items. That pricing by
-  Characteristic is then passed to Sales Order line items when particular
+  Characteristic is then passed to sales order line items when particular
   configurations are sold.</para>
   <tip>
-    <para>Item Characteristics can be associated with Sales Order, Purchase
-    Order, and Work Order items.</para>
+    <para>Item Characteristics can be associated with sales order, purchase
+    order, and work order items.</para>
   </tip>
   <para>To enter <indexterm significance="normal">
       <primary>characteristics</primary>
@@ -596,9 +596,9 @@
   <para id="configItemChar"><tip>
       <para>For configured items, an additional pricing field will be
       available on the item Characteristic screen. This pricing information
-      will be passed to Sales Order line items when particular configurations
+      will be passed to sales order line items when particular configurations
       are sold. The Price for configured items may vary depending on the
-      Characteristics selected at Sales Order entry time.</para>
+      Characteristics selected at sales order entry time.</para>
     </tip></para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
@@ -769,13 +769,13 @@
             <listitem>
               <para>The Alt. Capacity UOM should be used to provide an
               alternate UOM for viewing inventory details. For example, a
-              Sales Manager may be satisfied looking at a group of items
+              sales manager may be satisfied looking at a group of items
               normalized to their selling or inventory UOM, but a Production
               Manager may need to look at the same items normalized to a
               Production UOM—say, Cubic Feet (CuFt).</para>
               <note>
                 <para>The Alternate Capacity UOM has no impact on Bills of
-                Materials. It is used solely for Capacity Planning and Sales
+                Materials. It is used solely for Capacity Planning and sales
                 Analysis purposes.</para>
               </note>
             </listitem>
@@ -810,7 +810,7 @@
               when creating Bill of Materials (BOM) items. On the BOM item
               screen, you have the ability to select an issue UOM. This issue
               UOM is used whenever the specified component item is issued to a
-              Work Order. If you define a Material Issue UOM on the Item
+              work order. If you define a Material Issue UOM on the Item
               master, then that UOM will be available for selection whenever
               the item is used in a BOM.</para>
             </listitem>
@@ -834,7 +834,7 @@
               Pricing Schedules—will reflect the Selling UOM (CASE24). An item
               may also have multiple Selling UOMs, for example SIX-PACK,
               CASE24, PALLET, etc. You specify the Selling UOM you want to use
-              at Sales Order entry time.</para>
+              at sales order entry time.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1032,7 +1032,7 @@
       <term>Associated Account</term>
       <listitem>
         <para>You have the option to link a CRM Account to the item Alias. If
-        linked, the Alias will only be used on Quotes and Sales Orders related
+        linked, the Alias will only be used on Quotes and sales orders related
         to the specified Customer. If no Customer is specified, the Alias will
         be displayed for all Customers you sell the item to.</para>
       </listitem>
@@ -1064,7 +1064,7 @@
         <para>This is a scrolling text field with word-wrapping for entering
         Comments related to the item Alias. This field may be useful for
         explaining why an item Alias was created (e.g., "Customer XYZ, Inc.
-        refers to this item Alias whenever they place an Order.").</para>
+        refers to this item Alias whenever they place an order.").</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1088,7 +1088,7 @@
           <para>There is a difference between item Substitutes and
           Substitutions defined in a Bill of Materials (BOM). The difference
           is that BOM-defined Substitutions may be implemented on the fly
-          during Work Order processing—item Substitutes cannot be.</para>
+          during work order processing—item Substitutes cannot be.</para>
         </note>
       </listitem>
     </varlistentry>

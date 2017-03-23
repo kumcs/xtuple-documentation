@@ -6,7 +6,7 @@
   <title>New Production Plan</title>
   <para>Production Plans are used for loading sales Forecasts into the system.
   These Forecasts are then accounted for when the Master Production Scheduling
-  (MPS) system is run. Firm Planned Orders may be created for items listed on
+  (MPS) system is run. Firm planned orders may be created for items listed on
   Production Plans as the result of an MPS run. To create a new Production
   Plan, select the NEW button. The following screen will appear:</para>
   <para><screenshot>
@@ -37,7 +37,7 @@
       <listitem>
         <para>Specify the Site where the forecasted quantity would be located.
         By specifying a Site you indicate the specific item site which the MPS
-        planning system should create Planned Orders for, if required.</para>
+        planning system should create planned orders for, if required.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -93,7 +93,7 @@
               setting, MPS may release more, but never less, than the quantity
               dictated in a Cumulative MPS Schedule. Inside the Demand Time
               Fence, Cumulative Schedules are ignored—and only actual demand
-              is considered. Outside the Demand Time Fence, Planned Orders for
+              is considered. Outside the Demand Time Fence, planned orders for
               Cumulative Schedules are created per the greater of schedule
               quantity or net actual demand. The system interprets "net actual
               demand" to mean that it will use, for a given period, the larger
@@ -141,7 +141,7 @@
     <varlistentry>
       <term>Planned Items</term>
       <listitem>
-        <para>Displays the current list of Planned items associated with the
+        <para>Displays the current list of planned items associated with the
         Production Plan.</para>
       </listitem>
     </varlistentry>
@@ -152,7 +152,7 @@
       <term>CHG. STATUS</term>
       <listitem>
         <para>Use this button to toggle between the Active and Inactive Status
-        for the selected Planned Item.</para>
+        for the selected planned item.</para>
       </listitem>
     </varlistentry>
   </variablelist>

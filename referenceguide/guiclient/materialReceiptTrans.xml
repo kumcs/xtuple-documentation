@@ -81,7 +81,7 @@
         <para>Record the quantity of the item being received. The item's
         quantity on hand (QOH) before and after the material receipt will also
         be displayed. Non-netable QOH is not included in these values. If the
-        material is issued directly to a Work Order, the before and after
+        material is issued directly to a work order, the before and after
         display will be bypassed.</para>
       </listitem>
     </varlistentry>
@@ -90,20 +90,20 @@
       <term>Immediate Issue to Work Order</term>
 
       <listitem>
-        <para>Check to issue material immediately to a Work Order. Any Work
-        Order Material Requirements having an issue method of either "Mixed"
-        or "Push" may be issued to a Work Order using this option. Because
-        "Pull" items are issued to Work Orders using a material backflush,
+        <para>Check to issue material immediately to a work order. Any work
+        order Material Requirements having an issue method of either "Mixed"
+        or "Push" may be issued to a work order using this option. Because
+        "Pull" items are issued to work orders using a material backflush,
         they may not be issued from this screen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>The full quantity being received will be issued to the Work Order if
+    <para>The full quantity being received will be issued to the work order if
     the "Immediate Issue" option is selected. This means the quantity issued
-    may exceed or fall short of the Work Order Material Requirement quantity.
-    In such cases, adjustments at the Work Order level may have to be made to
+    may exceed or fall short of the work order Material Requirement quantity.
+    In such cases, adjustments at the work order level may have to be made to
     bring the issued quantity into alignment with the required quantity. To
     avoid having to manage discrepancies, do not select this option. Instead,
     consider issuing materials manually.</para>
@@ -114,10 +114,10 @@
       <term>Work Order #</term>
 
       <listitem>
-        <para>Enter the Work Order Number of the Work Order you want to issue
+        <para>Enter the work order number of the work order you want to issue
         the received materials to. The lookup feature located to the right of
-        the field leads to a searchable Work Orders list. The list will
-        include Work Orders whose supplying site matches the site the
+        the field leads to a searchable work orders list. The list will
+        include work orders whose supplying site matches the site the
         materials are being received into.</para>
       </listitem>
     </varlistentry>
@@ -126,7 +126,7 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specifies supplying site for the Work Order's parent
+        <para>Specifies supplying site for the work order's parent
         item.</para>
       </listitem>
     </varlistentry>
@@ -135,7 +135,7 @@
       <term>Item Number</term>
 
       <listitem>
-        <para>Displays item number for the Work Order's parent item.</para>
+        <para>Displays item number for the work order's parent item.</para>
       </listitem>
     </varlistentry>
 
@@ -151,7 +151,7 @@
       <term>Status</term>
 
       <listitem>
-        <para>Displays the Status of the selected Work Order.</para>
+        <para>Displays the Status of the selected work order.</para>
       </listitem>
     </varlistentry>
 
