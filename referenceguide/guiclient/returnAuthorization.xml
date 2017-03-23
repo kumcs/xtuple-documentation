@@ -149,7 +149,7 @@
             <listitem>
               <para>Select to authorize the replacement of items returned by
               the specified Customer. Authorized quantities will be added as
-              additional order quantity to a new associated Sales Order.
+              additional order quantity to a new associated sales order.
               Return Authorization items will close when all items on the line
               have been returned or all authorized items on the line have been
               shipped, whichever comes last. Any money to be credited to the
@@ -163,7 +163,7 @@
             <listitem>
               <para>Select to authorize the repair or service of items
               returned by the specified Customer. To isolate costing
-              implications, only Job items may be selected. A new Sales Order
+              implications, only Job items may be selected. A new sales order
               with linked Work Order(s) will be created to track work and
               shipping on the repair or service. Service or repair items
               should first be received by the Return Authorization. If the Job
@@ -175,7 +175,7 @@
               linkend="returnAuthItemLotSerial" />.</para>
               <note>
                 <para>Money to be billed for service or repair should be set
-                at the New Sales Order.</para>
+                at the new sales order.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -184,7 +184,7 @@
             <listitem>
               <para>Select to authorize the substitution of items returned by
               the specified Customer. Under this option, when an original
-              Sales Order is imported into the Return Authorization, the
+              sales order is imported into the Return Authorization, the
               Return Authorization line items will default to the Return
               disposition. Any new line items added beyond the original ones
               will have a default disposition of Ship.</para>
@@ -208,7 +208,7 @@
           <varlistentry>
             <term>Upon Receipt</term>
             <listitem>
-              <para>Select to issue credit or ship new associated Sales Order
+              <para>Select to issue credit or ship new associated sales order
               items only after you have received the returned goods.</para>
             </listitem>
           </varlistentry>
@@ -298,17 +298,17 @@
     <varlistentry>
       <term>Original Order #</term>
       <listitem>
-        <para>You have the option to select an original Sales Order for all
-        disposition types. When an original Sales Order is selected, all Line
+        <para>You have the option to select an original sales order for all
+        disposition types. When an original sales order is selected, all Line
         items from the original Order will be imported into the Return
         Authorization automatically. For dispositions Credit and Return this
         feature imports the original pricing and billing information. When a
-        Sales Order number is selected, the Customer Number and address
+        sales order number is selected, the Customer Number and address
         information will be populated and disabled. If the Customer is
-        selected first, only Sales Orders for that customer will appear on the
+        selected first, only sales orders for that customer will appear on the
         search list.</para>
         <note>
-          <para>A Sales Order may be linked to only one open Return
+          <para>A sales order may be linked to only one open Return
           Authorization at a time.</para>
         </note>
       </listitem>
@@ -320,7 +320,7 @@
         Substitute dispositions, the system will automatically generate a new
         Sales order for shipping purposes when the line item is received and
         posted. Authorized line item quantities are added automatically to the
-        new Sales Order, enabling you to ship the quantity at the appropriate
+        new sales order, enabling you to ship the quantity at the appropriate
         time.</para>
       </listitem>
     </varlistentry>
@@ -595,7 +595,7 @@
       <listitem>
         <para>Highlight a Return Authorization line item and then select this
         button to authorize the line item quantity. This option is available
-        only when an imported original Sales Order is being used—and then, the
+        only when an imported original sales order is being used—and then, the
         original line item quantity must be shipped before it may be
         authorized.</para>
       </listitem>

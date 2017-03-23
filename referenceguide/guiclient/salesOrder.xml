@@ -9,8 +9,8 @@
       <secondary>creating new</secondary>
     </indexterm>New Sales Order</title>
 
-  <para>Creating a new Sales Order requires a detailed mix of Customer, Sales
-  Representative, and Shipping information. To access the Sales Order area,
+  <para>Creating a new sales order requires a detailed mix of Customer, Sales
+  Representative, and Shipping information. To access the sales order area,
   select the "New Sales Order" option. The following screen will
   appear:</para>
 
@@ -25,11 +25,11 @@
     </screenshot></para>
 
   <tip>
-    <para>Be sure to close all Sales Order windows before exiting the system.
-    This will prevent the creation of orphaned Sales Order records.</para>
+    <para>Be sure to close all sales order windows before exiting the system.
+    This will prevent the creation of orphaned sales order records.</para>
   </tip>
 
-  <para>When creating a new Sales Order, you are presented with the following
+  <para>When creating a new sales order, you are presented with the following
   options:</para>
 
   <variablelist>
@@ -37,9 +37,9 @@
       <term>Order #</term>
 
       <listitem>
-        <para>Next available Sales Order Number will automatically display,
-        unless your system requires you to enter Sales Order Numbers manually.
-        Default values and input parameters for Sales Order Numbers are
+        <para>Next available sales order number will automatically display,
+        unless your system requires you to enter sales order numbers manually.
+        Default values and input parameters for sales order numbers are
         configurable at the system level.</para>
       </listitem>
     </varlistentry>
@@ -57,7 +57,7 @@
 
       <listitem>
         <para>Displays the Order's earliest scheduled date. The scheduled date
-        corresponds to the earliest scheduled date for an included Sales Order
+        corresponds to the earliest scheduled date for an included sales order
         item. If there are no existing line items, the date entered here will
         become the default schedule date for the first one. If line items do
         exist and the date is changed, you will be asked whether you want all
@@ -90,13 +90,13 @@
       <term>Print on Save</term>
 
       <listitem>
-        <para>Select to automatically print the Sales Order when it is
+        <para>Select to automatically print the sales order when it is
         saved.</para>
 
         <para role="xtconnect"><note>
-            <para>If the Customer specified on the Sales Order has an EDI
+            <para>If the Customer specified on the sales order has an EDI
             Profile attached, you may encounter an EDI processing interface
-            when printing the Sales Order.</para>
+            when printing the sales order.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -120,14 +120,14 @@
 
         <tip>
           <para>A valid Customer Number must be entered in the "Customer #"
-          field before line items can be added to a Sales Order. If no valid
+          field before line items can be added to a sales order. If no valid
           Customer Number is entered, you will not be able to add line items
-          to the Sales Order. Additionally, Sales Orders may only be entered
+          to the sales order. Additionally, sales orders may only be entered
           for active Customers.</para>
         </tip>
 
         <note>
-          <para>Sales Orders may not be entered for Customers whose credit
+          <para>Sales orders may not be entered for Customers whose credit
           status is either "On Credit Warning" or "On Credit Hold." Only users
           with special privileges may override these credit settings.</para>
         </note>
@@ -212,7 +212,7 @@
               type.</para>
 
               <note>
-                <para>If the Sales Order is paid in full, as in a counter
+                <para>If the sales order is paid in full, as in a counter
                 sales scenario for cash-only Customers, the order may be
                 issued to Shipping.</para>
               </note>
@@ -243,7 +243,7 @@
             <term>Return</term>
 
             <listitem>
-              <para>This hold type is set automatically when a Sales Order is
+              <para>This hold type is set automatically when a sales order is
               created from a Return Authorization and the disposition requires
               inventory to be received before the replacement Order can be
               shipped.</para>
@@ -257,7 +257,7 @@
       <term>Site</term>
 
       <listitem>
-        <para>Specify the shipping site associated with the Sales Order. The
+        <para>Specify the shipping site associated with the sales order. The
         site selected here acts as the default free on board (FOB) location. A
         site may be designated as a shipping site on the Site master. This
         field can be viewed upon selecting the MORE button.</para>
@@ -274,7 +274,7 @@
         <note>
           <para>If the Sales Order setup setting "Display Sales Order Line
           Items Tab by Default" is checked, the "Line Items" tab will be
-          displayed on the opening window for Sales Order entry.</para>
+          displayed on the opening window for sales order entry.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -315,7 +315,7 @@
         the Sales Rep information is moved to a separate tab.</para>
 
         <note>
-          <para>When creating a new Sales Order, only active Sales Reps will
+          <para>When creating a new sales order, only active Sales Reps will
           be available for selection. For future changes to an existing Sales
           Order, all Sales Reps (active and inactive) will be listed to ensure
           that the original Sales Rep will still appear.</para>
@@ -344,7 +344,7 @@
         </indexterm>Tax Zone</term>
 
       <listitem>
-        <para>Specify the Tax Zone associated with the Sales Order. The Tax
+        <para>Specify the Tax Zone associated with the sales order. The Tax
         Zone for the specified Ship-To Address will be entered here by
         default. Otherwise, the primary Tax Zone for the Customer will be
         entered. This field can be viewed upon selecting the MORE
@@ -391,7 +391,7 @@
 
         <note>
           <para>Shipping defaults specified on the Customer master will
-          transfer to the Sales Order header when a new Sales Order is entered
+          transfer to the Sales Order header when a new sales order is entered
           for a Customer.</para>
         </note>
       </listitem>
@@ -436,7 +436,7 @@
       <term>Ship Complete</term>
 
       <listitem>
-        <para>Select to require that all Sales Order line item quantities be
+        <para>Select to require that all sales order line item quantities be
         issued to Shipping before the Order is shipped. This feature is
         designed to prevent partial shipments. If selected, users will be
         prevented from shipping the Order unless all line item quantities have
@@ -548,8 +548,8 @@
 
       <listitem>
         <para>Select to refresh the Sales Order screen so that you can enter a
-        new Sales Order. Using the CLEAR button does not erase or in any way
-        change the information on the Sales Order you are clearing.</para>
+        new sales order. Using the CLEAR button does not erase or in any way
+        change the information on the sales order you are clearing.</para>
       </listitem>
     </varlistentry>
 
@@ -557,7 +557,7 @@
       <term>SAVE AND ADD TO PACKING LIST BATCH</term>
 
       <listitem>
-        <para>Creates the Sales Order, saves it, and adds it to the list of
+        <para>Creates the sales order, saves it, and adds it to the list of
         Orders available for printing on the Packing List Batch.</para>
       </listitem>
     </varlistentry>
@@ -566,14 +566,14 @@
       <term>MORE</term>
 
       <listitem>
-        <para>Select to display extra information related to the Sales Order.
+        <para>Select to display extra information related to the sales order.
         To hide the extra information, simply select the MORE button
         again.</para>
 
         <para role="xtconnect"><note>
-            <para>If the Customer specified on the Sales Order has an EDI
+            <para>If the Customer specified on the sales order has an EDI
             Profile attached, you may encounter an EDI processing interface
-            when printing the Sales Order.</para>
+            when printing the sales order.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -583,7 +583,7 @@
       <primary>sales orders</primary>
 
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify Sales Order line items, select the "Line
+    </indexterm>To create or modify sales order line items, select the "Line
   Items" tab at on the "Sales Order" screen. The following will be
   displayed:</para>
 
@@ -597,7 +597,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating or modifying Sales Order line items, you are presented
+  <para>When creating or modifying sales order line items, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -605,7 +605,7 @@
       <term>Line Items</term>
 
       <listitem>
-        <para>Display lists line items for this Sales Order. A valid Customer
+        <para>Display lists line items for this sales order. A valid Customer
         Number must be entered in the "Customer #" field before line items can
         be added to the Order. The Shipping-related columns will not be
         visible if the system is configured to hide Shipping options at Sales
@@ -621,7 +621,7 @@
         be edited.</para>
 
         <note>
-          <para>Sales Order line items may exist in any of the following
+          <para>Sales order line items may exist in any of the following
           statuses:</para>
 
           <itemizedlist>
@@ -673,7 +673,7 @@
         doing so would force QOH for the item site to fall below zero. Not
         selecting this option means issuing Stock to Shipping may drive item
         site QOH negative. This option will not be visible if the system is
-        configured to hide Shipping options at Sales Order entry.</para>
+        configured to hide Shipping options at sales order entry.</para>
       </listitem>
     </varlistentry>
 
@@ -681,7 +681,7 @@
       <term>Show Canceled Line Items</term>
 
       <listitem>
-        <para>Select to include in the line items display Sales Order line
+        <para>Select to include in the line items display sales order line
         items which have been specifically canceled. Displaying canceled line
         items can provide useful Customer and Order history
         information.</para>
@@ -712,7 +712,7 @@
         <para>Displays the monetary value of any Credit Memos and/or Credit
         Card charges which have been specifically allocated to the Sales
         Order. If your system is configured to automatically allocate open
-        Credit Memo balances to new Sales Orders, then the monetary value of
+        Credit Memo balances to new sales orders, then the monetary value of
         these allocated Credit Memos—plus any Credit Card charges applied to
         the Order—will display here. You can also select the "Allocated
         Credit" link to manually allocate Credit Memos to the Sales
@@ -720,7 +720,7 @@
 
         <note>
           <para>The automatic allocation of available Credit Memos occurs only
-          once—when a Sales Order is saved for the first time. After that
+          once—when a sales order is saved for the first time. After that
           first save, any additional allocations will need to be applied
           manually.</para>
         </note>
@@ -753,7 +753,7 @@
       <term>Freight Weight</term>
 
       <listitem>
-        <para>Displays the combined weight of all Sales Order line items.
+        <para>Displays the combined weight of all sales order line items.
         Freight weight represents the sum of an item's product weight and
         packaging weight, both of which are defined on the Item master. The
         per unit freight weight multiplied by the quantity per gives you the
@@ -785,11 +785,11 @@
       <term>At Shipping</term>
 
       <listitem>
-        <para>Displays the monetary value of Sales Order line items at
+        <para>Displays the monetary value of sales order line items at
         Shipping. The shipment value represents the total of the extended
         prices for all items included in the Shipment. The amount does not
         include freight or Tax. This displayed information will not be visible
-        if the system is configured to hide Shipping options at Sales Order
+        if the system is configured to hide Shipping options at sales order
         entry.</para>
       </listitem>
     </varlistentry>
@@ -798,7 +798,7 @@
       <term>Subtotal</term>
 
       <listitem>
-        <para>Displays the subtotal for the Sales Order line items.</para>
+        <para>Displays the subtotal for the sales order line items.</para>
       </listitem>
     </varlistentry>
 
@@ -838,7 +838,7 @@
         calculated. The freight amount displayed here represents the total for
         all line items. To get a detailed view of the freight calculation,
         click on the Freight link using your mouse. Freight charges may be
-        entered during the creation or modification of a Sales Order—or at the
+        entered during the creation or modification of a sales order—or at the
         time of shipment. The system can be configured to automatically
         calculate freight amounts per quantity and Shipment. To learn more
         about freight configuration, see <xref
@@ -857,7 +857,7 @@
 
       <listitem>
         <para>Displays the total amount of Tax to be charged on the Sales
-        Order. Sales Tax is calculated at the Sales Order line item level. The
+        Order. Sales Tax is calculated at the sales order line item level. The
         Tax amount displayed here represents the total for all line item Tax
         amounts. To get a detailed view of the Tax calculation, click on the
         Tax link using your mouse.</para>
@@ -868,10 +868,10 @@
       <term>Total</term>
 
       <listitem>
-        <para>Displays the total amount of the Sales Order.</para>
+        <para>Displays the total amount of the sales order.</para>
 
         <tip>
-          <para>If the Sales Order is paid in full, the order can be shipped
+          <para>If the sales order is paid in full, the order can be shipped
           even though the Customer may be on credit hold. This is to
           accommodate cash Customers who do not typically have a credit
           limit.</para>
@@ -883,7 +883,7 @@
       <term>Balance</term>
 
       <listitem>
-        <para>Displays the projected total due for the Sales Order. The
+        <para>Displays the projected total due for the sales order. The
         outstanding balance represents the amount the Customer would owe if
         all allocated and outstanding Credit Memos and Credit Card
         pre-authorizations were applied to the Order.</para>
@@ -917,8 +917,8 @@
               <term>Site</term>
 
               <listitem>
-                <para>Specify the site the Sales Order item is sold from.
-                items may be supplied to Sales Orders from multiple item
+                <para>Specify the site the sales order item is sold from.
+                items may be supplied to sales orders from multiple item
                 sites. After an item number is entered above, the system
                 checks for available item sites for the item. Any item sites
                 having the "Sold from" flag set on them will be selectable
@@ -955,7 +955,7 @@
               <term>Net Unit Price</term>
 
               <listitem>
-                <para>Displays the Unit Price for the Sales Order item. By
+                <para>Displays the Unit Price for the sales order item. By
                 default, the system will choose the lower of the following two
                 Prices: A) The most-specific Pricing Schedule Assignment or B)
                 any Sale in effect at the time of Order entry. The specificity
@@ -997,10 +997,10 @@
       <term>CLOSE</term>
 
       <listitem id="salesOrderCLOSE1">
-        <para>Highlight a Sales Order line item and then select this button to
-        close the Sales Order line item. If the highlighted line item is
+        <para>Highlight a sales order line item and then select this button to
+        close the sales order line item. If the highlighted line item is
         already closed, this button will revert to an OPEN button, which may
-        be used to open the closed line item. Closing the Sales Order line
+        be used to open the closed line item. Closing the sales order line
         item will remove all existing reservations.</para>
       </listitem>
     </varlistentry>
@@ -1009,7 +1009,7 @@
       <term>MOVE UP</term>
 
       <listitem>
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         move the line item up the list of line items. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
@@ -1019,7 +1019,7 @@
       <term>MOVE DOWN</term>
 
       <listitem>
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         move the line item down the list of line items. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
@@ -1029,7 +1029,7 @@
       <term>SMOOTH MARGIN</term>
 
       <listitem>
-        <para>Highlight one or multiple Sales Order line items and then select
+        <para>Highlight one or multiple sales order line items and then select
         this button to reach the margin smoothing screen. On the Smooth Margin
         screen you will be given the option to smooth the margin for the
         selected items by a percentage you determine.</para>
@@ -1040,7 +1040,7 @@
       <term>RESERVE STOCK</term>
 
       <listitem>
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         reserve inventory quantity for the line item.<note>
             <para>In order to manually reserve or unreserve stock for a line
             item, the Sales Configuration option "Allow Manual Reservations"
@@ -1053,7 +1053,7 @@
       <term>RES. LINE BAL.</term>
 
       <listitem>
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         reserve inventory quantity for the remaining line item balance.</para>
       </listitem>
     </varlistentry>
@@ -1066,9 +1066,9 @@
         </indexterm>ISSUE STOCK</term>
 
       <listitem id="salesOrderISSUE1STOCK">
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         issue quantity to Shipping. This button will not be visible if the
-        system is configured to hide Shipping options at Sales Order
+        system is configured to hide Shipping options at sales order
         entry.</para>
 
         <tip>
@@ -1083,14 +1083,14 @@
       <term>ISSUE LINE BAL.</term>
 
       <listitem>
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         issue the balance of the line item quantity to Shipping. This button
         will not be visible if the system is configured to hide Shipping
-        options at Sales Order entry.</para>
+        options at sales order entry.</para>
 
         <note>
           <para>The Shipping-related options will not be visible if the system
-          is configured to hide Shipping options at Sales Order entry.</para>
+          is configured to hide Shipping options at sales order entry.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -1100,7 +1100,7 @@
 
       <listitem>
         <para>Select this button to issue all material available to fill the
-        current Sales Order. Only stock that is available to be issued to
+        current sales order. Only stock that is available to be issued to
         Shipping will be issued. If an item is on backorder, that stock will
         have to be issued at a future point.</para>
       </listitem>
@@ -1110,9 +1110,9 @@
       <term>SHIP ORDER</term>
 
       <listitem>
-        <para>Highlight a Sales Order line item and then select this button to
+        <para>Highlight a sales order line item and then select this button to
         ship the Order. This button will not be visible if the system is
-        configured to hide Shipping options at Sales Order entry.</para>
+        configured to hide Shipping options at sales order entry.</para>
       </listitem>
     </varlistentry>
 
@@ -1121,7 +1121,7 @@
 
       <listitem>
         <para>Select this button to issue all material available and then ship
-        the Sales Order, all in one step. Only stock that is available to be
+        the sales order, all in one step. Only stock that is available to be
         issued to Shipping will be issued. If an item is on backorder, that
         stock will have to be issued at a future point.</para>
       </listitem>
@@ -1132,7 +1132,7 @@
               xpointer="allocateARCMs"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>To define or maintain relationships for Sales Orders, select the
+  <para>To define or maintain relationships for sales orders, select the
   "Relationships" tab. The following will be displayed:</para>
 
   <para><screenshot>
@@ -1145,7 +1145,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When defining relationships for Sales Orders, you are presented with
+  <para>When defining relationships for sales orders, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -1154,18 +1154,18 @@
 
       <listitem>
         <para>If your system is configured to use Projects, select a Project
-        Number to associate with the Sales Order. If a Sales Order is created
+        Number to associate with the sales order. If a sales order is created
         from a converted Quote—and the Quote had a Project Number associated
         with it—then the Project Number from the originating Quote will
         automatically be entered here. Once a Project Number is associated
-        with a Sales Order, any Work Orders or Purchase Orders created by the
-        Sales Order demand will automatically be linked to the same Project
-        Number as the Sales Order. In this way, Sales Orders, Work Orders, and
+        with a sales order, any Work Orders or Purchase Orders created by the
+        sales order demand will automatically be linked to the same Project
+        Number as the sales order. In this way, sales orders, Work Orders, and
         Purchase Orders may be linked to the same Project.</para>
 
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a Project to the Sales
-        Order—transactions related to the Sales Order will include the Project
+        Order—transactions related to the sales order will include the Project
         Number as the final segment of affected G/L Account Numbers. Account
         Numbers related to the following transactions will include the Project
         Number as the final segment: Issue to Shipping, Return Stock, Ship
@@ -1173,8 +1173,8 @@
 
         <tip>
           <para>If your site is configured to create Projects automatically
-          whenever new Sales Orders or Quotes are entered, the Projects
-          generated in this way will assume the number of the Sales Order or
+          whenever new sales orders or Quotes are entered, the Projects
+          generated in this way will assume the number of the sales order or
           Quote which caused their creation.</para>
         </tip>
       </listitem>
@@ -1184,7 +1184,7 @@
       <term>Opportunity</term>
 
       <listitem>
-        <para>Select an Opportunity to associate with the Sales Order, using
+        <para>Select an Opportunity to associate with the sales order, using
         the lookup feature located to the right of the field.</para>
       </listitem>
     </varlistentry>
@@ -1193,11 +1193,11 @@
       <term>From Quote</term>
 
       <listitem>
-        <para>If a Sales Order was converted from a Quote, the originating
+        <para>If a sales order was converted from a Quote, the originating
         Quote Number will display here.</para>
 
         <para role="standard"><note>
-            <para>If the Sales Order was generated from a Return
+            <para>If the sales order was generated from a Return
             Authorization, the Return Authorization Number will display
             here.</para>
           </note></para>
@@ -1205,20 +1205,20 @@
     </varlistentry>
   </variablelist>
 
-  <para>Sales Order Characteristics are user-defined definitions which may be
-  used to provide additional layers of description about Sales Orders. These
+  <para>Sales order Characteristics are user-defined definitions which may be
+  used to provide additional layers of description about sales orders. These
   descriptions are static and not processed by the system, but are useful for
   informational purposes.</para>
 
   <tip>
     <para>For configured items, an additional pricing field will be available
     on the Item Characteristic screen. This pricing information will be passed
-    to Sales Order line items when particular configurations are sold. The
+    to sales order line items when particular configurations are sold. The
     Price for configured items may vary depending on the Characteristics
-    selected at Sales Order entry time.</para>
+    selected at sales order entry time.</para>
   </tip>
 
-  <para>To enter Characteristics associated with a Sales Order, select the
+  <para>To enter Characteristics associated with a sales order, select the
   "Characteristics" tab. The following will be displayed:</para>
 
   <para><mediaobject>
@@ -1233,7 +1233,7 @@
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>To add Comments related to a Sales Order, select the "Comments" tab.
+  <para>To add Comments related to a sales order, select the "Comments" tab.
   The following will be displayed:</para>
 
   <para><screenshot>
@@ -1249,9 +1249,9 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>Order Notes added to a Sales Order are used for internal purposes
-  only. If an Invoice results from the Sales Order, these Notes will be
-  transferred to the Invoice. To add Notes to a Sales Order, select the "Order
+  <para>Order Notes added to a sales order are used for internal purposes
+  only. If an Invoice results from the sales order, these Notes will be
+  transferred to the Invoice. To add Notes to a sales order, select the "Order
   Notes" tab on the "Sales Order" screen. The following will be
   displayed:</para>
 
@@ -1265,7 +1265,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes to a Sales Order, you are presented with the
+  <para>When adding Notes to a sales order, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -1274,7 +1274,7 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Sales Order. These Notes are for internal
+        general Notes related to the sales order. These Notes are for internal
         use only.</para>
       </listitem>
     </varlistentry>
@@ -1287,7 +1287,7 @@
         from the "Shipping Notes" tab on the Ship-To Address master. The Notes
         may vary depending on the Ship-To Address specified for the Order.
         These Notes provide a mechanism for transferring shipping information
-        from the Customer master to the Sales Order. Ultimately, Shipping
+        from the Customer master to the sales order. Ultimately, Shipping
         Notes may be printed on shipping paperwork. While Shipping Notes
         content may originate from the Customer master, you can edit the Notes
         to fit the requirements of an Order. Shipping Notes may be printed on
@@ -1296,7 +1296,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To associate documents with a Sales Order, select the "Documents" tab.
+  <para>To associate documents with a sales order, select the "Documents" tab.
   The following will be displayed:</para>
 
   <para><screenshot>
@@ -1320,7 +1320,7 @@
       <primary>sales orders</primary>
 
       <secondary>credit cards and</secondary>
-    </indexterm>To receive payments for the Sales Order, select the "Payment"
+    </indexterm>To receive payments for the sales order, select the "Payment"
   tab at the top of the "Sales Order" screen. To authorize or charge Customer
   Credit Cards, select the "Credit Card" tab in the window. The following
   screen will appear:</para>
@@ -1396,7 +1396,7 @@
         Cash Receipt are posted for the charge amount. The total due from the
         Customer will be automatically adjusted on the Invoice to reflect the
         amount of any Credit Card charges. If, by chance, you charge a
-        Customer's Credit Card but fail to save the Sales Order, the link
+        Customer's Credit Card but fail to save the sales order, the link
         between the Order and the charge will be broken; however, the
         transactions resulting from the charge will remain in the
         system.</para>
@@ -1433,7 +1433,7 @@
       </imageobject>
 
       <caption><para>Customer Cash Payment</para></caption>
-    </mediaobject>When posting cash to the Sales Order, you are presented with
+    </mediaobject>When posting cash to the sales order, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -1449,7 +1449,7 @@
       <term>Balance</term>
 
       <listitem>
-        <para>Displays the difference between the Sales Order total and any
+        <para>Displays the difference between the sales order total and any
         payments that have been applied.</para>
       </listitem>
     </varlistentry>
@@ -1459,7 +1459,7 @@
 
       <listitem>
         <para>Enter the cash payment amount that should be applied to the
-        Sales Order.</para>
+        sales order.</para>
       </listitem>
     </varlistentry>
 
@@ -1601,8 +1601,8 @@
       <term>Sales Order #</term>
 
       <listitem>
-        <para>Displays the Sales Order Number of the current Sales
-        Order.</para>
+        <para>Displays the sales order number of the current sales
+        order.</para>
       </listitem>
     </varlistentry>
 
@@ -1610,7 +1610,7 @@
       <term>Order Date</term>
 
       <listitem>
-        <para>Displays the Order Date of the current Sales Order.</para>
+        <para>Displays the Order Date of the current sales order.</para>
       </listitem>
     </varlistentry>
 
@@ -1636,7 +1636,7 @@
 
       <listitem>
         <para>Displays the Purchase Order Number associated with the specified
-        Sales Order.</para>
+        sales order.</para>
       </listitem>
     </varlistentry>
 
@@ -1644,12 +1644,12 @@
       <term>Shipments</term>
 
       <listitem>
-        <para>Display lists Shipments for the Sales Order.</para>
+        <para>Display lists Shipments for the sales order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To view Email associated with the Sales Order, select the "Email" tab.
+  <para>To view Email associated with the sales order, select the "Email" tab.
   The following screen will appear:</para>
 
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"

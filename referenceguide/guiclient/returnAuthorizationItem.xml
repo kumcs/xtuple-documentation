@@ -47,9 +47,9 @@
       <term>Original Order #</term>
 
       <listitem>
-        <para>Displays the original Sales Order Number if the line item has
+        <para>Displays the original sales order number if the line item has
         been imported into the Return Authorization. Importing Return
-        Authorization line items from an original Sales Order is optional
+        Authorization line items from an original sales order is optional
         only. When line items are imported, the original quantities and
         pricing information are imported also.</para>
 
@@ -58,7 +58,7 @@
             <term>Line #</term>
 
             <listitem>
-              <para>Displays the original Sales Order line item number.</para>
+              <para>Displays the original sales order line item number.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -69,8 +69,8 @@
       <term>New Order #</term>
 
       <listitem>
-        <para>Displays the Order Number for the new Sales Order created in
-        support of the Return Authorization, if applicable. New Sales Orders
+        <para>Displays the Order Number for the new sales order created in
+        support of the Return Authorization, if applicable. New sales orders
         will be automatically created for Return Authorizations having the
         following dispositions: Replace, Service, Ship.</para>
 
@@ -133,7 +133,7 @@
               <para>Select to authorize the servicing of an item for the
               specified quantity. This disposition is valid only for Job
               items. Price controls will be disabled for this disposition. A
-              new Sales Order with linked Work Order(s) will be created to
+              new sales order with linked Work Order(s) will be created to
               track work and shipping on the repair or service. The billing
               for service or repair work should be handled on the new Sales
               Order. Service or repair items should first be received by the
@@ -151,13 +151,13 @@
 
             <listitem>
               <para>Select to authorize a shipment of a specified quantity on
-              a new Sales Order. The Price controls will be disabled for this
-              disposition. A new corresponding Sales Order and line will be
+              a new sales order. The Price controls will be disabled for this
+              disposition. A new corresponding sales order and line will be
               created if one does not already exist. The billing should be
-              handled on the new Sales Order. When there are line items on the
+              handled on the new sales order. When there are line items on the
               Return Authorization having the disposition "Ship" and the
               timing is "Upon Receipt," then all the "Ship" disposition line
-              items will be created on the new Sales Order at the same time—at
+              items will be created on the new sales order at the same time—at
               the moment when the return is first received.</para>
             </listitem>
           </varlistentry>
@@ -188,8 +188,8 @@
 
         <para>If a returned item is an Average-Cost item, is linked to a Sales
         Order, and will result in an inventory receipt, the Average Cost for
-        the item on the Sales Order will be pulled into the return line item
-        as the default value. If there is no Sales Order to reference, the
+        the item on the sales order will be pulled into the return line item
+        as the default value. If there is no sales order to reference, the
         cost on the receipt will default to the Standard Cost for the item. If
         the item site is Average Cost, the Unit Cost will actually be editable
         on the return line item, so you can manually or programmatically
@@ -287,7 +287,7 @@
       <term>Qty. Sold</term>
 
       <listitem>
-        <para>Displays the line item quantity sold on the original Sales Order
+        <para>Displays the line item quantity sold on the original sales order
         line if the line item was imported from an original Sales
         Order.</para>
       </listitem>
@@ -308,7 +308,7 @@
       <listitem>
         <para>Displays the Return Authorization line item quantity shipped to
         date, if any. This value applies to line items having a corresponding
-        line on a new Sales Order.</para>
+        line on a new sales order.</para>
       </listitem>
     </varlistentry>
 
@@ -338,11 +338,11 @@
               </indexterm>Net Unit Price</term>
 
             <listitem>
-              <para>Displays the Net Unit Price for the Sales Order item. This
+              <para>Displays the Net Unit Price for the sales order item. This
               information will be imported automatically for Return
-              Authorizations linked to an original Sales Order if header
+              Authorizations linked to an original sales order if header
               disposition was Credit or Return when the order was imported. If
-              there is no linked Sales Order, then the system will choose the
+              there is no linked sales order, then the system will choose the
               lower of the following two Prices: A) The most-specific Pricing
               Schedule Assignment or B) any Sale in effect at the time of
               Order entry. The specificity of Pricing Schedule Assignments is
@@ -422,11 +422,11 @@
               </indexterm>Net Unit Price</term>
 
             <listitem>
-              <para>Displays the Net Unit Price for the Sales Order item. This
+              <para>Displays the Net Unit Price for the sales order item. This
               information will be imported automatically for Return
-              Authorizations linked to an original Sales Order if header
+              Authorizations linked to an original sales order if header
               disposition was Credit or Return when the order was imported. If
-              there is no linked Sales Order, then the system will choose the
+              there is no linked sales order, then the system will choose the
               lower of the following two Prices: A) The most-specific Pricing
               Schedule Assignment or B) any Sale in effect at the time of
               Order entry. The specificity of Pricing Schedule Assignments is
@@ -560,9 +560,9 @@
             <term>Allocated</term>
 
             <listitem>
-              <para>Displays the quantity allocated to current Sales Orders
+              <para>Displays the quantity allocated to current sales orders
               and/or Work Orders in the system. An item is considered
-              allocated to a Sales Order if a Sales Order line item exists for
+              allocated to a sales order if a sales order line item exists for
               the item—and that line item has not yet been issued to Shipping.
               An item is considered allocated to a Work Order if the item is a
               material requirement—and the material has not yet been issued to
@@ -641,7 +641,7 @@
         is designated as make-to-order if the "Create W/Os to meet Sales
         Demand" flag on the Item Site master is selected. A Work Order created
         automatically from a Return Authorization line item will assume the
-        same Order Number as the new Sales Order the Return Authorization Line
+        same Order Number as the new sales order the Return Authorization Line
         item is associated with—even if that Order Number has already been
         used by a previous Work Order.</para>
       </listitem>
@@ -828,8 +828,8 @@
 
   <tip>
     <para>If a Return Authorization item is marked to create a Work Order, the
-    Production Notes for the created Work Order will contain the Sales Order
-    Number, the Customer Name, and any additional Sales Order line item
+    Production Notes for the created Work Order will contain the sales order
+    Number, the Customer Name, and any additional sales order line item
     Notes.</para>
   </tip>
 
