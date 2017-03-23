@@ -5,206 +5,253 @@
 <section id="dspFinancialReport">
   <title><indexterm significance="normal">
       <primary>financial reports</primary>
+
       <secondary>viewing of</secondary>
     </indexterm>View Financial Report</title>
-  <para>Once a Financial Report has been created using the Financial Report
+
+  <para>Once a financial report has been created using the financial report
   layout tools, you may then generate it using time-phased information. To
-  view a Financial Report, select the "View Financial Report" option. The
-  following screen will appear:</para>
+  view a financial report, select the <guimenuitem>View Financial
+  Report</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspFinancialReport.png" />
+          <imagedata fileref="images/dspFinancialReport.png"/>
         </imageobject>
+
         <caption>View Financial Report</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When viewing a Financial Report, you are presented with the following
+
+  <para>When viewing a financial report, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry role="xtprjaccnt">
       <term>Project #</term>
+
       <listitem>
         <para>If you have the xTuple Project Accounting package installed,
-        enter a Project Number to display Financial Reports by Project.</para>
+        enter a project number to display financial reports by project.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Financial Report</term>
+
       <listitem>
-        <para>Specify the Financial Report you want to generate. The list will
-        include both system-defined Financial Reports (e.g., basic Income
-        Statement and basic Balance Sheet) and also any other reports you may
+        <para>Specify the financial report you want to generate. The list will
+        include both system-defined financial reports (e.g., basic income
+        statement and basic balance sheet) and also any other reports you may
         have created.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Column Layout</term>
+
       <listitem>
-        <para>Select the column layout you want the Financial Report to use.
-        This feature may not be used in conjunction with the "Trend Report"
-        option. When defining a Financial Report using one of the standard
-        report types (i.e., Balance Sheet, Income Statement, or Cash Flow),
-        you must define a column layout to specify the time buckets financial
-        information will be sorted into. A standard Financial Report may have
-        any number of column layouts defined for it. Each layout will be
-        linked to either a pre-defined report definition or a custom report
-        definition you create yourself. This option will be disabled for Ad
-        Hoc reports, which do not use column layouts.</para>
+        <para>Select the column layout you want the financial report to use.
+        This feature may not be used in conjunction with the <guilabel>Trend
+        Report</guilabel> option. When defining a financial report using one
+        of the standard report types (i.e., balance sheet, income statement,
+        or cash flow), you must define a column layout to specify the time
+        buckets financial information will be sorted into. A standard
+        financial report may have any number of column layouts defined for it.
+        Each layout will be linked to either a pre-defined report definition
+        or a custom report definition you create yourself. This option will be
+        disabled for ad hoc reports, which do not use column layouts.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Report Type</term>
+
       <listitem>
-        <para>Displays the report type for the Financial Report you select:
-        Balance Sheet, Income Statement, Cash Flow, or Ad Hoc.</para>
+        <para>Displays the report type for the financial report you select:
+        balance sheet, income statement, cash flow, or ad hoc.</para>
+
         <note>
           <para>The options available on the screen will vary, depending on
           the report type selected. For example, column layouts are not
-          available for Ad Hoc reports.</para>
+          available for ad hoc reports.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Periods</term>
+
       <listitem>
-        <para>Specify the Accounting Period(s) whose details you want to
-        display. For Financial Reports created using one of the standard
-        report types (i.e., Balance Sheet, Income Statement, or Cash Flow),
-        you can only select a single Accounting Period—unless you are running
-        a Trend Report, in which case multiple Periods may be chosen. Ad Hoc
-        reports may always use either single or multiple Periods. To select an
-        individual Period, highlight the Period using your mouse button. The
-        Period is now selected. To select a sequence of Periods, highlight the
+        <para>Specify the accounting period(s) whose details you want to
+        display. For financial reports created using one of the standard
+        report types (i.e., balance sheet, income statement, or cash flow),
+        you can only select a single accounting period—unless you are running
+        a trend report, in which case multiple periods may be chosen. Ad hoc
+        reports may always use either single or multiple periods. To select an
+        individual period, highlight the period using your mouse button. The
+        period is now selected. To select a sequence of periods, highlight the
         first in the sequence using your mouse button. Then, holding down the
-        SHIFT key on your keyboard, highlight the last Period in the sequence.
-        The entire sequence is now selected. To select Periods that are out of
+        SHIFT key on your keyboard, highlight the last period in the sequence.
+        The entire sequence is now selected. To select periods that are out of
         sequence (e.g., January, April, July, October), highlight the first
-        Period in the group. Then, holding down the CTRL key on your keyboard,
-        highlight the next Period you want to select. Continue highlighting
-        Periods with the CTRL key depressed until all desired Periods are
+        period in the group. Then, holding down the CTRL key on your keyboard,
+        highlight the next period you want to select. Continue highlighting
+        periods with the CTRL key depressed until all desired periods are
         selected. The entire group is now selected.</para>
+
         <tip>
           <para>You can export the generated financial data in tab-delimited
-          format using the "Export Contents" option from the right-click
-          menu.</para>
+          format using the <guilabel>Export Contents</guilabel> option from
+          the right-click menu.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Columns</term>
+
       <listitem>
-        <para>For Ad Hoc reports (which do not use column layouts), specify
-        the columns of information you want to include in the Financial
-        Report. To be successful, these selections must also match the Ad Hoc
+        <para>For ad Hhoc reports (which do not use column layouts), specify
+        the columns of information you want to include in the financial
+        report. To be successful, these selections must also match the ad hoc
         report layout. If a column is not selected, it will not be included in
-        the report. This option will be disabled for non-Ad Hoc reports, whose
+        the report. This option will be disabled for non-ad hoc reports, whose
         column choices are defined by column layouts.</para>
+
         <variablelist>
           <varlistentry>
             <term>Beg. Bal</term>
+
             <listitem>
               <para>Select to include a beginning balance column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Beg. Bal. %</term>
+
             <listitem>
               <para>Select to include a beginning balance percentage column in
               the report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Debits</term>
+
             <listitem>
-              <para>Select to include a Debits column in the report. An
+              <para>Select to include a debits column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Debits %</term>
+
             <listitem>
-              <para>Select to include a Debits percentage column in the
+              <para>Select to include a debits percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Credits</term>
+
             <listitem>
-              <para>Select to include a Credits column in the report. An
+              <para>Select to include a credits column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Credits %</term>
+
             <listitem>
-              <para>Select to include a Credits percentage column in the
+              <para>Select to include a credits percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>End. Bal.</term>
+
             <listitem>
               <para>Select to include an ending balance column in the report.
               An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>End. Bal. %</term>
+
             <listitem>
               <para>Select to include an ending balance percentage column in
               the report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Budget</term>
+
             <listitem>
-              <para>Select to include a Budget column in the report. An
+              <para>Select to include a budget column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Budget %</term>
+
             <listitem>
-              <para>Select to include a Budget percentage column in the
+              <para>Select to include a budget percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Difference</term>
+
             <listitem>
               <para>Select to include a column showing the difference between
-              Debits and credits in the report. An alternate label may also be
+              debits and credits in the report. An alternate label may also be
               used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Difference %</term>
+
             <listitem>
               <para>Select to include a difference percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Custom</term>
+
             <listitem>
-              <para>Select to include a Custom column in the report. An
+              <para>Select to include a custom column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Custom %</term>
+
             <listitem>
-              <para>Select to include a Custom column percentage column in the
+              <para>Select to include a custom column percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
@@ -212,164 +259,203 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Trend Report</term>
+
       <listitem>
-        <para>Select to generate a Financial Report which groups information
+        <para>Select to generate a financial report which groups information
         across multiple time periods. This option may be used regardless of
         report type—and if used for one of the standard report types (i.e.,
-        Balance Sheet, Income Statement, or Cash Flow), the column layout
+        balance sheet, income statement, or cash flow), the column layout
         option will be disabled. If selected, the following options will be
         available:</para>
+
         <variablelist>
           <varlistentry>
             <term>Month</term>
+
             <listitem>
               <para>If selected, you may group together any number of
-              Accounting Periods to include in your report. Use your mouse and
+              accounting periods to include in your report. Use your mouse and
               a combination of the SHIFT and CTRL keys to select multiple
-              Periods.</para>
+              periods.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Quarter</term>
+
             <listitem>
-              <para>If selected, you may group together any number of Quarters
+              <para>If selected, you may group together any number of quarters
               to include in your report. Use your mouse and a combination of
-              the SHIFT and CTRL keys to select multiple Quarters.</para>
+              the SHIFT and CTRL keys to select multiple quarters.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Year</term>
+
             <listitem>
-              <para>If selected, you may group together any number of Fiscal
-              Years to include in your report. Use your mouse and a
-              combination of the SHIFT and CTRL keys to select multiple Fiscal
-              Years.</para>
+              <para>If selected, you may group together any number of fiscal
+              years to include in your report. Use your mouse and a
+              combination of the SHIFT and CTRL keys to select multiple fiscal
+              years.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <tip>
-          <para>There is no relationship between the selected Periods in a
-          column layout and the Trend Report options available when viewing a
-          Financial Report. Trend Reporting ignores column layouts.</para>
+          <para>There is no relationship between the selected periods in a
+          column layout and the trend report options available when viewing a
+          financial report. Trend reporting ignores column layouts.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Columns</term>
+
       <listitem>
-        <para>For Ad Hoc reports (which do not use column layouts), specify
-        the columns of information you want to include in the Financial
-        Report. To be successful, these selections must also match the Ad Hoc
+        <para>For ad hoc reports (which do not use column layouts), specify
+        the columns of information you want to include in the financial
+        report. To be successful, these selections must also match the ad hoc
         report layout. If a column is not selected, it will not be included in
-        the report. This option will be disabled for non-Ad Hoc reports, whose
+        the report. This option will be disabled for non-ad hoc reports, whose
         column choices are defined by column layouts.</para>
+
         <variablelist>
           <varlistentry>
             <term>Beg. Bal</term>
+
             <listitem>
               <para>Select to include a beginning balance column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Beg. Bal. %</term>
+
             <listitem>
               <para>Select to include a beginning balance percentage column in
               the report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Debits</term>
+
             <listitem>
-              <para>Select to include a Debits column in the report. An
+              <para>Select to include a debits column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Debits %</term>
+
             <listitem>
-              <para>Select to include a Debits percentage column in the
+              <para>Select to include a debits percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Credits</term>
+
             <listitem>
-              <para>Select to include a Credits column in the report. An
+              <para>Select to include a credits column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Credits %</term>
+
             <listitem>
-              <para>Select to include a Credits percentage column in the
+              <para>Select to include a credits percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>End. Bal.</term>
+
             <listitem>
               <para>Select to include an ending balance column in the report.
               An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>End. Bal. %</term>
+
             <listitem>
               <para>Select to include an ending balance percentage column in
               the report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Budget</term>
+
             <listitem>
-              <para>Select to include a Budget column in the report. An
+              <para>Select to include a budget column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Budget %</term>
+
             <listitem>
-              <para>Select to include a Budget percentage column in the
+              <para>Select to include a budget percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Difference</term>
+
             <listitem>
               <para>Select to include a column showing the difference between
-              Debits and credits in the report. An alternate label may also be
+              debits and credits in the report. An alternate label may also be
               used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Difference %</term>
+
             <listitem>
               <para>Select to include a difference percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Custom</term>
+
             <listitem>
-              <para>Select to include a Custom column in the report. An
+              <para>Select to include a custom column in the report. An
               alternate label may also be used to identify this field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Custom %</term>
+
             <listitem>
-              <para>Select to include a Custom column percentage column in the
+              <para>Select to include a custom column percentage column in the
               report. An alternate label may also be used to identify this
               field.</para>
             </listitem>
@@ -377,44 +463,53 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Trend Report</term>
+
       <listitem>
-        <para>Select to generate a Financial Report which groups information
+        <para>Select to generate a financial report which groups information
         across multiple time periods. This option may be used regardless of
         report type—and if used for one of the standard report types (i.e.,
-        Balance Sheet, Income Statement, or Cash Flow), the column layout
+        balance Sheet, income statement, or cash flow), the column layout
         option will be disabled. If selected, the following options will be
         available:</para>
+
         <variablelist>
           <varlistentry>
             <term>Month</term>
+
             <listitem>
               <para>If selected, you may group together any number of
-              Accounting Periods to include in your report. Use your mouse and
+              accounting periods to include in your report. Use your mouse and
               a combination of the SHIFT and CTRL keys to select multiple
-              Periods.</para>
+              periods.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Quarter</term>
+
             <listitem>
-              <para>If selected, you may group together any number of Quarters
+              <para>If selected, you may group together any number of quarters
               to include in your report. Use your mouse and a combination of
-              the SHIFT and CTRL keys to select multiple Quarters.</para>
+              the SHIFT and CTRL keys to select multiple quarters.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Year</term>
+
             <listitem>
-              <para>If selected, you may group together any number of Fiscal
-              Years to include in your report. Use your mouse and a
-              combination of the SHIFT and CTRL keys to select multiple Fiscal
-              Years.</para>
+              <para>If selected, you may group together any number of fiscal
+              years to include in your report. Use your mouse and a
+              combination of the SHIFT and CTRL keys to select multiple fiscal
+              years.</para>
+
               <tip>
-                <para>There is no relationship between the selected Periods in
-                a column layout and the Trend Report options available when
-                viewing a Financial Report. Trend Reporting ignores column
+                <para>There is no relationship between the selected periods in
+                a column layout and the trend report options available when
+                viewing a financial report. Trend reporting ignores column
                 layouts.</para>
               </tip>
             </listitem>
@@ -422,66 +517,79 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show</term>
+
       <listitem>
         <para>You may optionally select one or both of the following
         options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Account Numbers</term>
+
             <listitem>
-              <para>Select to include Account Numbers for each row in the
-              Group/Account Name column. If not selected, only Account
-              descriptions will be shown.</para>
+              <para>Select to include account numbers for each row in the
+              <guilabel>Group</guilabel>/<guilabel>Account Name</guilabel>
+              column. If not selected, only account descriptions will be
+              shown.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Zero Amounts</term>
+
             <listitem>
-              <para>Select to include Accounts with zero amounts for each row
-              in the Group/Account Name column. If not selected, only Accounts
-              with non-zero amounts will be shown.</para>
+              <para>Select to include accounts with zero amounts for each row
+              in the <guilabel>Group</guilabel>/<guilabel>Account
+              Name</guilabel> column. If not selected, only accounts with
+              non-zero amounts will be shown.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Layout</term>
+
       <listitem>
-        <para>Display lists Financial Report details for the selected
-        Financial Report, using the specified parameters. This display is a
+        <para>Display lists financial report details for the selected
+        financial report, using the specified parameters. This display is a
         nested list, with a plus ("+") sign located to the far left of the
-        display next to each Financial Report Group that may be expanded to
+        display next to each financial report group that may be expanded to
         lower levels. By clicking your mouse on a plus sign, you reveal lower
         levels of information related to the group. From the layout, you can
-        right-click on individual Accounts to view the underlying G/L
+        right-click on individual accounts to view the underlying G/L
         transaction detail. The right-click feature is context-sensitive and
-        works only on rows that contain G/L Account Numbers and columns that
-        contain numbers for actual G/L Account total values.</para>
+        works only on rows that contain G/L account numbers and columns that
+        contain numbers for actual G/L account total values.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>NOTES</term>
+
       <listitem>
-        <para>Select to add Notes which will appear at the bottom of the
-        Financial Report when the Financial Report is printed. Notes entered
-        here must be associated with a specific Accounting Period. These Notes
-        are saved and remain associated with the Accounting Period. They will
-        be included whenever you print a Financial Report that includes the
-        Accounting Period. If the NOTES button is disabled, that means you
-        have not selected a single, specific Accounting Period to write the
-        Notes to. For example, you cannot write Notes on a trend report. You
-        can, however, write Notes on all the Accounting Periods covered by a
-        trend report and then print the trend report and see the notes listed
-        at the bottom. The Notes entered here do not conflict with Notes
-        entered on the Financial Report definition itself. Those Notes will
-        also be printed at the bottom of the Financial Report—regardless of
-        the reporting periods selected.</para>
+        <para>Select to add notes which will appear at the bottom of the
+        financial report when the financial report is printed. Notes entered
+        here must be associated with a specific accounting period. These notes
+        are saved and remain associated with the accounting period. They will
+        be included whenever you print a financial report that includes the
+        accounting period. If the <guibutton>NOTES</guibutton> button is
+        disabled, that means you have not selected a single, specific
+        accounting period to write the notes to. For example, you cannot write
+        notes on a trend report. You can, however, write notes on all the
+        accounting periods covered by a trend report and then print the trend
+        report and see the notes listed at the bottom. The notes entered here
+        do not conflict with notes entered on the financial report definition
+        itself. Those notes will also be printed at the bottom of the
+        financial report—regardless of the reporting periods selected.</para>
       </listitem>
     </varlistentry>
   </variablelist>
