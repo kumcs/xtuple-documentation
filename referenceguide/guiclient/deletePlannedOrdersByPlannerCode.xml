@@ -4,7 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="deletePlannedOrdersByPlannerCode">
   <title>Delete Planned Orders by Planner Code</title>
-  <para>To delete Planned Orders by Planner Code, select the "Delete Planned
+  <para>To delete planned orders by Planner Code, select the "Delete Planned
   Orders by Planner Code" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -15,22 +15,22 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Planned Orders that have been firmed in the system will not be
+    <para>Planned orders that have been firmed in the system will not be
     deleted when this utility is run.</para>
   </note>
-  <para>When deleting Planned Orders by Planner Code, you are presented with
+  <para>When deleting planned orders by Planner Code, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
       <listitem>
-        <para>Select to delete Planned Orders for all Planner Codes.</para>
+        <para>Select to delete planned orders for all Planner Codes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Planner Code whose Planned Orders you want to
+        <para>Specify Planner Code whose planned orders you want to
         delete.</para>
       </listitem>
     </varlistentry>
@@ -44,21 +44,21 @@
     <varlistentry>
       <term>All Sites</term>
       <listitem>
-        <para>Select to delete Planned Orders by Planner Code for all
+        <para>Select to delete planned orders by Planner Code for all
         sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify site whose Planned Orders by Planner Code you want to
+        <para>Specify site whose planned orders by Planner Code you want to
         delete.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Cutoff Date</term>
       <listitem>
-        <para>Any Planned Orders created on or before the cutoff date will be
+        <para>Any Planned orders created on or before the cutoff date will be
         deleted.</para>
       </listitem>
     </varlistentry>
@@ -68,51 +68,51 @@
           <secondary>deletion of</secondary>
         </indexterm>Delete Firmed Orders</term>
       <listitem>
-        <para>Select to delete existing Firmed Orders. A firm Planned Order is
-        a Planned Order that has been solidified in the schedule. Firm Planned
-        Orders will not be deleted unless this option is selected.</para>
+        <para>Select to delete existing Firmed orders. A firm planned order is
+        a planned order that has been solidified in the schedule. Firm planned
+        orders will not be deleted unless this option is selected.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Delete Child Orders</term>
       <listitem>
-        <para>Select to simultaneously delete child Orders for the parent
-        Planned Order. Child Planned Orders having a clearly defined
-        relationship to their parent Planned Order will be deleted.</para>
+        <para>Select to simultaneously delete child orders for the parent
+        planned order. Child planned orders having a clearly defined
+        relationship to their parent planned order will be deleted.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
     <para>In some cases, the "Delete Child Orders" option will not remove all
-    the records you may assume it should. To ensure all child Orders are
-    deleted after a parent Planned Order is deleted, re-run MRP by Planner
-    Code. Doing so will delete any remaining orphan Orders.</para>
+    the records you may assume it should. To ensure all child orders are
+    deleted after a parent planned order is deleted, re-run MRP by Planner
+    Code. Doing so will delete any remaining orphan orders.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term>Planning System</term>
       <listitem>
-        <para>Specify the planning system(s) whose Planned Orders you want to
+        <para>Specify the planning system(s) whose planned orders you want to
         delete:</para>
         <variablelist>
           <varlistentry>
             <term>MPS and MRP</term>
             <listitem>
-              <para>Select to delete Planned Orders from both the MPS and MRP
+              <para>Select to delete planned orders from both the MPS and MRP
               planning systems.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>MPS</term>
             <listitem>
-              <para>Select to delete Planned Orders from the MPS planning
+              <para>Select to delete planned orders from the MPS planning
               system only.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>MRP</term>
             <listitem>
-              <para>Select to delete Planned Orders from the MRP planning
+              <para>Select to delete planned orders from the MRP planning
               system only.</para>
             </listitem>
           </varlistentry>

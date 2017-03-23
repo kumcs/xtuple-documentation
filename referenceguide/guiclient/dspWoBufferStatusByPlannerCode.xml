@@ -4,14 +4,14 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspWoBufferStatusByPlannerCode" role="manufacturing">
   <title>Work Order Buffer Status by Planner Code</title>
-  <para>The Work Order buffer status displays provide information on your
+  <para>The work order buffer status displays provide information on your
   current stock and time buffer levels for those items having current Work
-  Orders. Stock buffers apply to make-to-stock items; whereas time buffers
+  orders. Stock buffers apply to make-to-stock items; whereas time buffers
   apply to items which are make-to-order. Keep in mind that buffer status
   information will only be displayed on days when the Constraint Management
   system is run. If you find your displays show no information, this probably
   means Constraint Management has not been run.</para>
-  <para>To view Work Order buffer status by Planner Code, select the "Work
+  <para>To view work order buffer status by Planner Code, select the "Work
   Order Buffer Status by Planner Code" option. The following screen will
   appear:</para>
   <para><screenshot>
@@ -26,23 +26,23 @@
     <para>When the buffer status for an item hits 66 or higher, the status
     number will become red. By highlighting items which are "red hot," the
     system is informing you which items should be acted on immediately. The
-    best remedy for red hot item sites is to expedite any associated Work
-    Orders or Purchase Orders.</para>
+    best remedy for red hot item sites is to expedite any associated work
+    orders or purchase orders.</para>
   </note>
-  <para>When displaying Work Order buffer status by Planner Code, you are
+  <para>When displaying work order buffer status by Planner Code, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
       <listitem>
-        <para>Select to display Work Order buffer statuses for all Planner
+        <para>Select to display work order buffer statuses for all Planner
         Codes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Planner Code whose Work Order buffer statuses you want
+        <para>Specify Planner Code whose work order buffer statuses you want
         to display.</para>
       </listitem>
     </varlistentry>
@@ -56,45 +56,45 @@
     <varlistentry>
       <term>All Sites</term>
       <listitem>
-        <para>Select to display Work Order buffer statuses for all
+        <para>Select to display work order buffer statuses for all
         sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify site whose Work Order buffer statuses you want to
+        <para>Specify site whose work order buffer statuses you want to
         display.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
-    <para>By default, the display will sort Work Orders by buffer status in
-    descending order. In other words, Work Orders with the highest buffer
-    status will appear at the top of the list; Work Orders with the lowest
+    <para>By default, the display will sort work orders by buffer status in
+    descending order. In other words, work orders with the highest buffer
+    status will appear at the top of the list; work orders with the lowest
     buffer status will appear at the bottom.</para>
   </note>
   <variablelist>
     <varlistentry>
       <term>Only Show Released and In-Process W/O"s</term>
       <listitem>
-        <para>Select to display only released and in-process Work Order
-        schedules. Selecting this option means only Work Orders whose Status
+        <para>Select to display only released and in-process work order
+        schedules. Selecting this option means only work orders whose status
         is released ("R") or in-process ("I") will be displayed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Only Show Top Level Work Orders</term>
       <listitem>
-        <para>Select to display only top level Work Orders. Top level Work
-        Orders are Work Orders that have not been created to meet the
-        component demands of a parent Work Order.</para>
+        <para>Select to display only top level work orders. Top level work
+        orders are work orders that have not been created to meet the
+        component demands of a parent work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Work Orders</term>
       <listitem>
-        <para>Display lists Work Order buffer statuses by Planner Code, using
+        <para>Display lists work order buffer statuses by Planner Code, using
         the specified parameters.</para>
       </listitem>
     </varlistentry>
