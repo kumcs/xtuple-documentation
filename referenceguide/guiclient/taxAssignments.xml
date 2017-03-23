@@ -9,24 +9,24 @@
       <secondary>master list of</secondary>
     </indexterm>Tax Assignments</title>
 
-  <para>Tax Assignments create a matrix used to find the Tax Codes to apply to
-  an Item given the Item's Tax Type and the Tax Zone with jurisdiction over
-  the transaction. Nested Tax Codes, whose calculations are based on other Tax
-  Codes are shown as indented. To access the master list of Tax Assignments,
-  select the "Tax Assignments" option. The following screen will
-  appear:</para>
+  <para>Tax assignments create a matrix used to find the tax codes to apply to
+  an item given the item's tax type and the tax zone with jurisdiction over
+  the transaction. Nested tax codes, whose calculations are based on other tax
+  codes are shown as indented. To access the master list of tax assignments,
+  select the <guimenuitem>Tax Assignments</guimenuitem> option. The following
+  screen will appear:</para>
 
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxAssignments.png" />
+          <imagedata fileref="images/taxAssignments.png"/>
         </imageobject>
 
         <caption>Tax Assignments Master List</caption>
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating a Tax Assignment, you are presented with the following
+  <para>When creating a tax assignment, you are presented with the following
   options:</para>
 
   <variablelist>
@@ -34,7 +34,7 @@
       <term>Show All Tax Zones</term>
 
       <listitem>
-        <para>Select to include all Tax Zones in the display.</para>
+        <para>Select to include all tax zones in the display.</para>
       </listitem>
     </varlistentry>
 
@@ -42,7 +42,7 @@
       <term>Show Specific Tax Zone</term>
 
       <listitem>
-        <para>Select to include a specific Tax Zone in the display.</para>
+        <para>Select to include a specific tax zone in the display.</para>
       </listitem>
     </varlistentry>
 
@@ -50,7 +50,7 @@
       <term>Show All Tax Types</term>
 
       <listitem>
-        <para>Select to include all Tax Types in the display.</para>
+        <para>Select to include all tax types in the display.</para>
       </listitem>
     </varlistentry>
 
@@ -58,7 +58,7 @@
       <term>Show Specific Tax Type</term>
 
       <listitem>
-        <para>Select to include a specific Tax Type in the display.</para>
+        <para>Select to include a specific tax type in the display.</para>
       </listitem>
     </varlistentry>
 
@@ -66,11 +66,12 @@
       <term>Tax Assignments</term>
 
       <listitem>
-        <para>Display lists Tax Assignments based on the specified
+        <para>Display lists tax assignments based on the specified
         parameters.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="taxAssignment.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

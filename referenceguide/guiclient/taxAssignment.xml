@@ -5,61 +5,77 @@
 <section id="taxAssignment">
   <title><indexterm significance="normal">
       <primary>tax assignments</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Tax Assignment</title>
-  <para>To create a new Tax Assignment, select the NEW button. The following
-  screen will appear:</para>
+
+  <para>To create a new tax assignment, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxAssignment.png" />
+          <imagedata fileref="images/taxAssignment.png"/>
         </imageobject>
+
         <caption>Create New Tax Assignment</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Tax Assignment, you are presented with the
+
+  <para>When creating a new tax assignment, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Tax Zone</term>
+
       <listitem>
-        <para>Specify the Tax Zone you want to associate with the Tax
-        Assignment. If you select the "Any" option, this means any defined Tax
-        Zone is a possible match.</para>
+        <para>Specify the tax zone you want to associate with the tax
+        assignment. If you select the <guilabel>Any</guilabel> option, this
+        means any defined tax zone is a possible match.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax Type</term>
+
       <listitem>
-        <para>Specify the Tax Type you want to associate with the Tax
-        Assignment. If you select the "Any" option, this means any defined Tax
-        Type is a possible match.</para>
+        <para>Specify the tax type you want to associate with the tax
+        assignment. If you select the <guilabel>Any</guilabel> option, this
+        means any defined tax type is a possible match.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax Code</term>
+
       <listitem>
-        <para>Use the ADD-&gt; and &lt;-REVOKE buttons to specify the Tax
-        Codes you want to associate with the Tax Assignment.</para>
+        <para>Use the <guibutton>ADD-&gt;</guibutton> and
+        <guibutton>&lt;-REVOKE</guibutton> buttons to specify the tax codes
+        you want to associate with the tax assignment.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Automatically Apply to AP/AR Memos</term>
+
       <listitem>
-        <para>Select if you want linked Tax Code rate(s) to be automatically
-        applied to miscellaneous Credit/Debit Memos. This feature is designed
-        primarily to support Value Added Tax (VAT) scenarios. If this option
-        is not selected, Tax will not be calculated automatically for
-        Memos.</para>
+        <para>Select if you want linked tax code rate(s) to be automatically
+        applied to miscellaneous credit/debit memos. This feature is designed
+        primarily to support value added tax (VAT) scenarios. If this option
+        is not selected, tax will not be calculated automatically for
+        memos.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Apply Reverse Charges</term>
+
       <listitem>
         <para>Select if you want reverse charges to be applied. This feature
-        is designed primarily to support Value Added Tax (VAT) scenarios. For
-        example, a VAT-registered company in the United Kingdom buys supplies
-        from a VAT-registered company in a different European country. In this
+        is designed primarily to support VAT scenarios. For example, a
+        VAT-registered company in the United Kingdom buys supplies from a
+        VAT-registered company in a different European country. In this
         scenario, a double entry has to be created for debit and credit so
         that VAT ends up being zero.</para>
       </listitem>

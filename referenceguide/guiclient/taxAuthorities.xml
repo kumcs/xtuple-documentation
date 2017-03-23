@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="taxAuthorities">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>tax authorities</primary>
+
       <secondary>master list of</secondary>
     </indexterm>Tax Authorities</title>
-  <para>Tax Authorities are any entities legally-authorized to collect
-  Taxes&mdash;for example, city, county, state, or federal government agencies. To
-  access the master list of Tax Authorities, select the "Tax Authorities"
-  option. The following screen will appear:</para>
-  <para>
-<screenshot>
+
+  <para>Tax authorities are any entities legally-authorized to collect
+  taxes—for example, city, county, state, or federal government agencies. To
+  access the master list of tax authorities, select the <guimenuitem>Tax
+  Authorities</guimenuitem> option. The following screen will appear:</para>
+
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/taxAuthorities.png"/>
         </imageobject>
+
         <caption>Tax Authorities Master List</caption>
       </mediaobject>
-    </screenshot>
-</para>
-  <para>The "Tax Authorities" screen displays information on all existing Tax
-  Authorities, including Tax Authority code and Tax Authority name.</para>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="taxAuthority.xml" xpointer="element(/1)"/>
+    </screenshot></para>
+
+  <para>The Tax Authorities screen displays information on all existing tax
+  authorities, including tax authority code and tax authority name.</para>
+
+  <xi:include href="taxAuthority.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

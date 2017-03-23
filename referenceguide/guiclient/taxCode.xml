@@ -5,180 +5,228 @@
 <section id="taxCode">
   <title><indexterm significance="normal">
       <primary>tax codes</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Tax Code</title>
-  <para>To create a new Tax Code, select the NEW button. The following screen
-  will appear:</para>
+
+  <para>To create a new tax code, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxCode.png" />
+          <imagedata fileref="images/taxCode.png"/>
         </imageobject>
+
         <caption>Create New Tax Code</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Tax Code, you are presented with the following
+
+  <para>When creating a new tax code, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Code</term>
+
       <listitem>
-        <para>Enter an identifying code for the Tax Code.</para>
+        <para>Enter an identifying code for the tax code.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Enter a description to identify the Tax Code.</para>
+        <para>Enter a description to identify the tax code.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Account</term>
+
       <listitem>
-        <para>Specify a valid General Ledger Account. This is a Liability
-        Account. It will be credited when Invoices are posted and debited when
-        Credit Memos are posted.<note>
-            <para>When cash based tax distribution is used, a Clearing Account
-            as well as a Distribution Account can be specified. Tax related
-            transactions are posted to the Clearing Account when cash related
+        <para>Specify a valid general ledger account. This is a liability
+        account. It will be credited when invoices are posted and debited when
+        credit memos are posted.<note>
+            <para>When cash based tax distribution is used, a clearing account
+            as well as a distribution account can be specified. Tax related
+            transactions are posted to the clearing account when cash related
             transactions are posted.</para>
           </note></para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Tax Class</term>
+
       <listitem>
-        <para>Select a valid Tax Class.</para>
+        <para>Select a valid tax class.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Calculation basis on</term>
+
       <listitem>
-        <para>Select a valid calculation basis. This list includes "Base
-        Price" and all other Tax Codes that share the same Tax Class. When
-        "Base Price" is selected the Tax Code may be assigned on the Tax
-        Assignment window, and the tax calculation will be based on the base
-        price amount to be taxed, plus any applicable cumulative taxes. When a
-        Tax Code is selected, then the Tax Code will be calculated against the
-        derived amount from the referenced Tax Code. This is a method used for
-        defining nested taxes or "a tax on a tax".</para>
+        <para>Select a valid calculation basis. This list includes
+        <guilabel>Base Price</guilabel> and all other tax codes that share the
+        same tax class. When <guilabel>Base Price</guilabel> is selected the
+        tax code may be assigned on the Tax Assignment window, and the tax
+        calculation will be based on the base price amount to be taxed, plus
+        any applicable cumulative taxes. When a tax code is selected, then the
+        tax code will be calculated against the derived amount from the
+        referenced tax code. This is a method used for defining nested taxes
+        or "a tax on a tax."</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax Authority</term>
+
       <listitem>
-        <para>Select a valid Tax Authority. This selection is required if you
-        want to generate Tax Returns for a specified Tax Authority. The link
-        between Tax Codes and Tax Authorities is the key driver behind the Tax
-        Return report.</para>
+        <para>Select a valid tax authority. This selection is required if you
+        want to generate tax returns for a specified tax authority. The link
+        between tax codes and tax authorities is the key driver behind the tax
+        return report.</para>
+
         <note>
-          <para>For transaction information to be included in the Tax Return
-          report, the Tax Authority must be linked to one or more Tax
-          Codes.</para>
+          <para>For transaction information to be included in the tax return
+          report, the tax authority must be linked to one or more tax
+          codes.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Auto Apply to Memos</term>
+
       <listitem>
-        <para>Select if you want the Tax Code rate to be automatically applied
-        to miscellaneous Credit/Debit Memos. This feature is designed
-        primarily to support Value Added Tax (VAT) scenarios. If this option
-        is not selected, Tax will not be calculated automatically for
-        Memos.</para>
+        <para>Select if you want the tax code rate to be automatically applied
+        to miscellaneous credit/debit memos. This feature is designed
+        primarily to support value added tax (VAT) scenarios. If this option
+        is not selected, tax will not be calculated automatically for
+        memos.</para>
+
         <variablelist>
           <varlistentry>
             <term>A/P Memos</term>
+
             <listitem>
-              <para>Select to have the Tax Code rate automatically applied to
-              miscellaneous Payables Credit/Debit Memos.</para>
+              <para>Select to have the tax code rate automatically applied to
+              miscellaneous payables credit/debit memos.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>A/R Memos</term>
+
             <listitem>
-              <para>Select to have the Tax Code rate automatically applied to
-              miscellaneous Receivables Credit/Debit Memos.</para>
+              <para>Select to have the tax code rate automatically applied to
+              miscellaneous receivables credit/debit memos.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>When defining or maintaining Tax Code Rates, you are presented with
+
+  <para>When defining or maintaining tax code rates, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>rates</primary>
+
           <secondary>for taxes</secondary>
         </indexterm><indexterm significance="normal">
           <primary>tax codes</primary>
+
           <secondary>rates for</secondary>
         </indexterm>Rates</term>
+
       <listitem>
-        <para>Display includes Rates for the specified Tax Code.</para>
+        <para>Display includes rates for the specified tax code.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>EXPIRE</term>
+
       <listitem>
-        <para>Highlight a Tax Code Rate and then select this button to expire
-        the Rate. The Effectivity End Date will be changed to the current
+        <para>Highlight a tax code rate and then select this button to expire
+        the rate. The effectivity end date will be changed to the current
         date.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To <indexterm significance="normal">
       <primary>tax codes</primary>
+
       <secondary>creating rates in</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>rates</primary>
+
       <secondary>creating new in tax code</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>tax code rates</primary>
+
       <secondary>creating new</secondary>
-    </indexterm>create a new Tax Code Rate, select the NEW button. The
-  following screen will appear:</para>
+    </indexterm>create a new tax code rate, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxCode_rate.png" />
+          <imagedata fileref="images/taxCode_rate.png"/>
         </imageobject>
+
         <caption>Create New Tax Code Rate</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Tax Code Rate, you are presented with the
+
+  <para>When creating a new tax code rate, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Effectivity Start Date</term>
+
       <listitem>
-        <para>Enter the date that this Tax Code Rate becomes effective.</para>
+        <para>Enter the date that this tax code rate becomes effective.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Effectivity End Date</term>
+
       <listitem>
-        <para>Enter the date that this Tax Code Rate is no longer
+        <para>Enter the date that this tax code rate is no longer
         effective.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Percentage</term>
+
       <listitem>
         <para>Enter the tax rate as a percentage.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Amount</term>
+
       <listitem>
         <para>Enter the additional flat rate amount.</para>
       </listitem>
