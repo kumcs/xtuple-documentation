@@ -133,11 +133,11 @@
             <listitem>
               <para>A transient subassembly containing component items
               commonly used together during a manufacturing process. Phantom
-              items require a Bill of Materials, but not separate work orders.
-              Since they are not stock items, Material Requirements Planning
+              items require a bill of materials, but not separate work orders.
+              Since they are not stock items, material requirements planning
               (MRP) logic blows through phantom items and only plans for their
               component items. Phantom items should be used to simplify
-              complex Bills of Materials.</para>
+              complex bills of materials.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -178,7 +178,7 @@
               <para>A material resource used in the manufacturing process that
               is returned upon completion of a work order—for example, a
               reusable mold, apparatus, fixture, or tool. It may be included
-              on a Bill of Materials for an item, usually specifying a fixed
+              on a bill of materials for an item, usually specifying a fixed
               quantity. Tooling items can be purchased, manufactured, or sold.
               A manufactured tool can have a routing, a BOM, and a work order. As
               with other material items, tools can be tracked as serialized
@@ -196,8 +196,8 @@
               is performed by someone outside your company. Outside Process
               items are treated by the system in much the same way as
               purchased items are. For example, Outside Process items will be
-              handled in the same way as purchased items are when Material
-              Requirements Planning (MRP) is run.</para>
+              handled in the same way as purchased items are when material
+              requirements planning (MRP) is run.</para>
             </listitem>
           </varlistentry>
           <varlistentry role="manufacturing">
@@ -206,7 +206,7 @@
                 <secondary>as item type</secondary>
               </indexterm>Planning</term>
             <listitem>
-              <para>An item whose Bill of Materials (BOM) groups together
+              <para>An item whose bill of materials (BOM) groups together
               other items so that a Production Plan may be defined for the
               Planning item—and then exploded down to the lower level items
               during a Master Production Scheduling (MPS) run. Planning items
@@ -225,7 +225,7 @@
                 <secondary>as item type</secondary>
               </indexterm>Kit</term>
             <listitem>
-              <para>Kit items automatically explode their Bill of Material
+              <para>Kit items automatically explode their bill of material
               (BOM) components on to sales orders for shipping. When Kit items
               appear on sales orders and Return Authorizations, sub line
               numbers are generated for Kit components because Kit children
@@ -254,14 +254,14 @@
               </indexterm>Breeder</term>
             <listitem>
               <para>A logical item from which Co-Products and By-Products are
-              produced. An example use for a Breeder item is the screening of
-              raw gravel to produce different sizes of gravel. The Breeder
-              item's Bill of Materials (BOM) defines the inputs—in this case
-              raw gravel—and the outputs are defined on its Breeder BOM (i.e.,
+              produced. An example use for a breeder item is the screening of
+              raw gravel to produce different sizes of gravel. The breeder
+              item's bill of materials (BOM) defines the inputs—in this case
+              raw gravel—and the outputs are defined on its breeder BOM (i.e.,
               Small, Medium and Large gravel). A work order is created for the
-              Breeder item, but this item is never stocked or produced; again,
+              breeder item, but this item is never stocked or produced; again,
               it is a logical item. Instead, raw gravel is consumed by the
-              Breeder's work order, along with labor, and the resulting
+              breeder's work order, along with labor, and the resulting
               quantities of Co-Products and By-Products are recorded.</para>
             </listitem>
           </varlistentry>
@@ -330,7 +330,7 @@
       <listitem>
         <para>Select if you want the item to be included on Pick Lists when
         the item is used. Pick Lists are printed lists showing the work order
-        Material Requirements for a specified work order. You may decide not
+        material requirements for a specified work order. You may decide not
         to include an item on Pick Lists if the item is insignificant or if it
         is not stored in a stock room but, for example, in a Work Center
         instead.</para>
@@ -541,7 +541,7 @@
     <varlistentry>
       <term>MATERIALS</term>
       <listitem>
-        <para>Select to open the Bill of Materials (BOM) for the specified
+        <para>Select to open the bill of materials (BOM) for the specified
         item. If no BOM exists, you will have the option to create a new
         routing.</para>
       </listitem>
@@ -603,7 +603,7 @@
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>For visibility into Costs and Bill of Materials associated with
+  <para>For visibility into Costs and bill of materials associated with
   items—and to perform routine Cost and BOM maintenance—select the "Cost" tab.
   The following screen will appear:</para>
   <screenshot>
@@ -627,8 +627,8 @@
     <varlistentry>
       <term>Materials</term>
       <listitem>
-        <para>Select this option to maintain the Bill of Materials. For more
-        detailed information on maintaining Bills of Materials, please see
+        <para>Select this option to maintain the bill of materials. For more
+        detailed information on maintaining bills of materials, please see
         <xref linkend="boms" />.</para>
       </listitem>
     </varlistentry>
@@ -774,8 +774,8 @@
               Manager may need to look at the same items normalized to a
               Production UOM—say, Cubic Feet (CuFt).</para>
               <note>
-                <para>The Alternate Capacity UOM has no impact on Bills of
-                Materials. It is used solely for Capacity Planning and sales
+                <para>The Alternate Capacity UOM has no impact on bills of
+                materials. It is used solely for Capacity Planning and sales
                 Analysis purposes.</para>
               </note>
             </listitem>
@@ -797,7 +797,7 @@
               will normalize the quantities of item A to EACH, allowing you to
               see the total quantity of item Bs.</para>
               <note>
-                <para>The Capacity UOM has no impact on Bills of Materials. It
+                <para>The Capacity UOM has no impact on bills of materials. It
                 is used solely for Capacity Planning and Sales Analysis
                 purposes.</para>
               </note>
@@ -806,11 +806,11 @@
           <varlistentry>
             <term>Material Issue</term>
             <listitem>
-              <para>The Material Issue UOM defines an alternate UOM for use
-              when creating Bill of Materials (BOM) items. On the BOM item
+              <para>The material issue UOM defines an alternate UOM for use
+              when creating bill of materials (BOM) items. On the BOM item
               screen, you have the ability to select an issue UOM. This issue
               UOM is used whenever the specified component item is issued to a
-              work order. If you define a Material Issue UOM on the Item
+              work order. If you define a material issue UOM on the Item
               master, then that UOM will be available for selection whenever
               the item is used in a BOM.</para>
             </listitem>
@@ -1086,7 +1086,7 @@
         </tip>
         <note>
           <para>There is a difference between item Substitutes and
-          Substitutions defined in a Bill of Materials (BOM). The difference
+          Substitutions defined in a bill of materials (BOM). The difference
           is that BOM-defined Substitutions may be implemented on the fly
           during work order processing—item Substitutes cannot be.</para>
         </note>

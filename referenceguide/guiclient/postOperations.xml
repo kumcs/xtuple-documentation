@@ -5,9 +5,9 @@
 <section id="postOperations" role="manufacturing">
   <title>Post Operation</title>
   <para>Work order progress can be posted in terms of materials used or
-  Operations completed. When you post Operations, you are using the
-  Operations-driven process for reporting progress. To post work order
-  Operations, select the "Post Operations" option. The following screen will
+  operations completed. When you post operations, you are using the
+  operations-driven process for reporting progress. To post work order
+  operations, select the "Post Operations" option. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -17,7 +17,7 @@
         <caption>Post Work Order Operations</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When posting a work order's Operations, you are presented with the
+  <para>When posting a work order's operations, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -30,9 +30,9 @@
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Enter the work order number of the work order whose Operations
+        <para>Enter the work order number of the work order whose operations
         you want to post. You may also scan into this field a work order
-        Operation barcode as defined for the Shop Floor Workbench
+        operation barcode as defined for the Shop Floor Workbench
         screen.</para>
       </listitem>
     </varlistentry>
@@ -58,9 +58,9 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>If your site combines Operations posting with WIP Location tracking
+    <para>If your site combines operations posting with WIP Location tracking
     for Multiple Location Control (MLC) items, then you may be prompted to
-    relocate inventory during the Operations posting process.</para>
+    relocate inventory during the operations posting process.</para>
   </note>
   <variablelist>
     <varlistentry>
@@ -80,17 +80,17 @@
     <varlistentry>
       <term>Operation</term>
       <listitem>
-        <para>Select the individual Operation you want to post from the list
-        of work order Operations for the specified item. After selecting an
-        Operation, specify details for that Operation. To post Operations for
-        another Operation, simply select that Operation from the sequential
+        <para>Select the individual operation you want to post from the list
+        of work order operations for the specified item. After selecting an
+        operation, specify details for that operation. To post operations for
+        another operation, simply select that operation from the sequential
         list.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Quantities</term>
       <listitem>
-        <para>Displays quantity information related to the Operation
+        <para>Displays quantity information related to the operation
         posting.</para>
         <variablelist>
           <varlistentry>
@@ -105,14 +105,14 @@
             <term>Received</term>
             <listitem>
               <para>Indicates the quantity, measured in the item's inventory
-              UOM, that has been completed by this Operation.</para>
+              UOM, that has been completed by this operation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Due</term>
             <listitem>
               <para>Indicates the quantity remaining to be produced by the
-              specified Operation.</para>
+              specified operation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -135,22 +135,22 @@
                 <secondary>posting options</secondary>
               </indexterm>Production UOMs</term>
             <listitem>
-              <para>Select to post the Operations quantity in Production Units
+              <para>Select to post the operations quantity in Production Units
               of Measure. Operations may be posted using either the inventory
-              or Production UOM. In addition, different Operations in a single
-              Bill of Operations may use different Production UOMs. For
+              or Production UOM. In addition, different operations in a single
+              routing may use different Production UOMs. For
               example, if you are producing soup, you might mix the soup in
-              one Operation using UOM = BATCH. But when canning the soup, the
-              canning Operation might use UOM = CAN. If you post Operations
+              one operation using UOM = BATCH. But when canning the soup, the
+              canning operation might use UOM = CAN. If you post operations
               using the Production UOM, the inventory/Production UOM ratio
-              defined at the Operation level normalizes the posting so that
+              defined at the operation level normalizes the posting so that
               the inventory impact is recorded using the inventory UOM.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Inventory UOMs</term>
             <listitem>
-              <para>Select to post the Operations quantity in inventory Units
+              <para>Select to post the operations quantity in inventory Units
               of Measure.</para>
             </listitem>
           </varlistentry>
@@ -160,7 +160,7 @@
     <varlistentry>
       <term>Work Center</term>
       <listitem>
-        <para>Enter the name of the Work Center where the Operations were
+        <para>Enter the name of the Work Center where the operations were
         performed.</para>
       </listitem>
     </varlistentry>
@@ -180,7 +180,7 @@
       <term>Post Standard Setup Time</term>
       <listitem>
         <para>Select to post standard setup time, measured in minutes.
-        Typically, standard times will not be used if Operations are being
+        Typically, standard times will not be used if operations are being
         posted using the Shop Floor Workbench. Instead, labor times will be
         calculated based on clock-in and clock-out times. Only users with
         privileges to override the Production Time Clock will be able to post
@@ -192,7 +192,7 @@
       <listitem>
         <para>Specify the actual amount of setup time that was required,
         measured in minutes. The amount of time entered will be posted. If you
-        are posting Operations from the Shop Floor Workbench, the setup time
+        are posting operations from the Shop Floor Workbench, the setup time
         entered will be automatically deducted from the run-time total.</para>
       </listitem>
     </varlistentry>
@@ -213,8 +213,8 @@
     <varlistentry>
       <term>Mark Operation as Complete</term>
       <listitem>
-        <para>Select to mark Operation as complete. An Operation may not be
-        marked as "Complete" until all users are clocked-out of the Operation.
+        <para>Select to mark operation as complete. An operation may not be
+        marked as "Complete" until all users are clocked-out of the operation.
         Users clock-in to and clock-out of work orders using the Shop Floor
         Workbench.</para>
       </listitem>
@@ -224,7 +224,7 @@
       <listitem>
         <para>Select to post the standard run time for specified item,
         measured in minutes. Typically, standard times will not be used if
-        Operations are being posted using the Shop Floor Workbench. Instead,
+        operations are being posted using the Shop Floor Workbench. Instead,
         labor times will be calculated based on clock-in and clock-out times.
         Only users with privileges to override the Production Time Clock will
         be able to post standard times.</para>
@@ -235,7 +235,7 @@
       <listitem>
         <para>Specify the actual amount of run time required, measured in
         minutes. The amount of time entered will be posted. If you are posting
-        Operations from the Shop Floor Workbench, run time will be
+        operations from the Shop Floor Workbench, run time will be
         automatically calculated based on the accumulated time elapsed between
         clock-ins and clock-outs.</para>
       </listitem>
@@ -250,7 +250,7 @@
     </varlistentry>
   </variablelist>
   <para>To review and take action on materials associated with the work order
-  Operations, select the "Materials" tab. The following screen will
+  operations, select the "Materials" tab. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -267,26 +267,26 @@
       <term>Issue Components</term>
       <listitem>
         <para>Indicates that linked component materials will be issued
-        automatically (i.e., backflushed) when the specified Operation is
+        automatically (i.e., backflushed) when the specified operation is
         posted. Option will be enabled only if component materials are linked
-        to the specified Operation within the parent item's Bill of Materials.
+        to the specified operation within the parent item's bill of materials.
         If such linkages exist, only components with "Pull" or "Mixed" issue
         methods will be displayed. Components having the "Push" issue method
         will not appear in the list, as these must be issued manually to a
         work order. If this option is selected, the General Ledger will show
         the component materials being removed from inventory when this
-        Operation is posted.</para>
+        operation is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Receive Inventory</term>
       <listitem>
         <para>Indicates that finished goods will be received into inventory
-        when the specified Operation is posted. Enabled only when the selected
-        Operation is the receiving Operation for the selected work order. Only
-        one work order Operation may have this flag set. If this option is
+        when the specified operation is posted. Enabled only when the selected
+        operation is the receiving operation for the selected work order. Only
+        one work order operation may have this flag set. If this option is
         selected, the General Ledger will show the finished goods being
-        received into inventory when the Operation is posted.</para>
+        received into inventory when the operation is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -310,7 +310,7 @@
     <varlistentry>
       <term>MORE</term>
       <listitem>
-        <para>Select to display extra information related to the Operation
+        <para>Select to display extra information related to the operation
         posting. To hide the extra information, simply select the MORE button
         again.</para>
       </listitem>

@@ -73,9 +73,9 @@
               automatically be created to fulfill, but not exceed, the greater
               of forecasted and actual demand. Inside the Demand Time Fence,
               MPS ignores the forecast and plans an amount based on actual
-              demand net of projected Availability. Outside of the Demand Time
+              demand net of projected availability. Outside of the Demand Time
               Fence, MPS uses the larger of actual demand or the forecast and
-              nets this against projected Availability.</para>
+              nets this against projected availability.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -98,7 +98,7 @@
               quantity or net actual demand. The system interprets "net actual
               demand" to mean that it will use, for a given period, the larger
               of A) Cumulative Schedule quantity or B) quantity required to
-              accommodate time-phased Availability (i.e., QOH + Qty. On Order
+              accommodate time-phased availability (i.e., QOH + Qty. On Order
               - Allocations).</para>
             </listitem>
           </varlistentry>
