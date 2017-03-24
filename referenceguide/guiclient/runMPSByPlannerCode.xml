@@ -5,16 +5,16 @@
 <section id="runMPSByPlannerCode">
   <title>Run MPS by Planner Code</title>
   <para>When you run MPS by Planner Code, you are running the Master
-  Production Scheduling (MPS) system. This utility creates firm Planned Orders
+  Production Scheduling (MPS) system. This utility creates firm planned orders
   to meet forecasted demand (i.e., from Production Plans) and also actual
   demand (i.e., from sales orders) for MPS items. An item is defined as an MPS
   item on its Item master.</para>
-  <para>By default, Planned Orders created by the MPS planning system will be
+  <para>By default, planned orders created by the MPS planning system will be
   firm when they are generated. This establishes them as a legitimate source
   of demand within the wider planning system. The firm-by-default nature of
-  MPS Orders distinguishes them from MRP Orders, which must be manually
+  MPS orders distinguishes them from MRP orders, which must be manually
   firmed.</para>
-  <para>The quantities for MPS Planned Orders will vary depending on the
+  <para>The quantities for MPS planned orders will vary depending on the
   source of demand. The following considerations are used to identify the
   appropriate demand:</para>
   <orderedlist continuation="restarts" inheritnum="ignore">
@@ -25,8 +25,8 @@
       Fence</para>
     </listitem>
     <listitem>
-      <para>Outside the Demand Time Fence, the system will create Planned
-      Orders for whichever demand source is greater—that is, actual demand or
+      <para>Outside the Demand Time Fence, the system will create planned
+      orders for whichever demand source is greater—that is, actual demand or
       forecasted demand</para>
     </listitem>
   </orderedlist>
@@ -46,9 +46,9 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Only items designated as MPS items will have Planned Orders created
-    for them when MPS is run. By default, MPS generates firm Planned
-    Orders.</para>
+    <para>Only items designated as MPS items will have planned orders created
+    for them when MPS is run. By default, MPS generates firm planned
+    orders.</para>
   </note>
   <para>When running MPS by Planner Code, you are presented with the following
   options:</para>
@@ -56,14 +56,14 @@
     <varlistentry>
       <term>All Planner Codes</term>
       <listitem>
-        <para>Select to create firm Planned Orders for all Planner
+        <para>Select to create firm planned orders for all Planner
         Codes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Planner Code you want to create firm Planned Orders
+        <para>Specify Planner Code you want to create firm planned orders
         for.</para>
       </listitem>
     </varlistentry>
@@ -77,14 +77,14 @@
     <varlistentry>
       <term>All Sites</term>
       <listitem>
-        <para>Select to create firm Planned Orders by Planner Code for all
+        <para>Select to create firm planned orders by Planner Code for all
         sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify site firm Planned Order by Planner Code should be
+        <para>Specify site firm planned order by Planner Code should be
         created for.</para>
       </listitem>
     </varlistentry>
@@ -111,7 +111,7 @@
     <varlistentry>
       <term>CREATE</term>
       <listitem>
-        <para>Creates firm Planned Orders by Planner Code, using the specified
+        <para>Creates firm planned orders by Planner Code, using the specified
         parameters.</para>
       </listitem>
     </varlistentry>

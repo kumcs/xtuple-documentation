@@ -222,7 +222,7 @@
     </varlistentry>
   </variablelist>
   <para role="standard">Transit sites are special sites used by Transfer
-  Orders. When Transfer Order inventory is shipped from the Source site, it is
+  Orders. When transfer order inventory is shipped from the Source site, it is
   moved to a Transit site. Inventory stays in the Transit site until it is
   received at the Destination site. If the site is to be used as a Transit
   site, select the "Transit Site" option. The following changes to the main
@@ -238,7 +238,7 @@
   <tip role="standard">
     <para>Be sure to define a default Transit site on your Inventory
     Configuration screen. This will make it easier to generate Transfer
-    Orders, as Transit sites are required for Transfer Orders.</para>
+    Orders, as Transit sites are required for transfer orders.</para>
   </tip>
   <para role="standard">When defining a site as a Transit site, you are
   presented with the following options:</para>
@@ -247,7 +247,7 @@
         <term>Default Ship Via</term>
         <listitem>
           <para>Specify a default Ship Via to be used by the Transit site. The
-          selected Ship Via will be used by default on the Transfer Order
+          selected Ship Via will be used by default on the transfer order
           header whenever the specified Transit site is used.</para>
         </listitem>
       </varlistentry>
@@ -260,7 +260,7 @@
           site is used.</para>
           <note>
             <para>The Shipping Form will be used when printing Packing Lists
-            for the Transfer Order.</para>
+            for the transfer order.</para>
           </note>
         </listitem>
       </varlistentry>
@@ -270,7 +270,7 @@
           <para>Specify a default Cost Category to be used by the Transit
           site. Associating a Cost Category with a Transit site makes it
           possible for the system to create item sites for Transit sites
-          automatically when Transfer Order Inventory is shipped. This greatly
+          automatically when transfer order inventory is shipped. This greatly
           simplifies the use of Transit sites, as item sites do not need to be
           created manually beforehand. The accounting for in-transit goods is
           handled by the default Cost Category associated with the Transit

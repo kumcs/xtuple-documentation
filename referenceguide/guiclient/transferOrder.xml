@@ -9,12 +9,12 @@
       <secondary>creating new</secondary>
     </indexterm>New Transfer Order</title>
 
-  <para>Transfer Orders are used to move inventory between sites. They are
+  <para>Transfer orders are used to move inventory between sites. They are
   distinct from Inter-site Transfers in three primary ways: 1) you can add
-  multiple items to a single Transfer Order and transfer all the items at
-  once; 2) all Transfer Order transfers involve a Transit site, for tracking
+  multiple items to a single transfer order and transfer all the items at
+  once; 2) all transfer order transfers involve a Transit site, for tracking
   inventory while it is "in transit"; and 3) there are reports (i.e.,
-  paperwork) associated with Transfer Orders. To enter a new Transfer Order,
+  paperwork) associated with transfer orders. To enter a new transfer order,
   select the "New Transfer Order" option. The following screen will
   appear:</para>
 
@@ -28,7 +28,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating a new Transfer Order, you are presented with the
+  <para>When creating a new transfer order, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -36,9 +36,9 @@
       <term>Order #</term>
 
       <listitem>
-        <para>Next available Transfer Order Number will automatically display,
-        unless your system requires you to enter Transfer Order Numbers
-        manually. Default values and input parameters for Transfer Order
+        <para>Next available transfer order number will automatically display,
+        unless your system requires you to enter transfer order numbers
+        manually. Default values and input parameters for transfer order
         Numbers are configurable at the system level.</para>
       </listitem>
     </varlistentry>
@@ -57,10 +57,10 @@
       <listitem>
         <para>Displays the Order's earliest scheduled date. The scheduled date
         corresponds to the earliest scheduled date for an included Transfer
-        Order item. Because Transfer Orders may contain multiple Transfer
+        Order item. Because transfer orders may contain multiple Transfer
         Order items, the scheduled date indicates the most recent scheduled
         date. No scheduled date will display in the "Scheduled Date" field
-        until a Transfer Order line item has been created and a scheduled date
+        until a transfer order line item has been created and a scheduled date
         assigned to it.</para>
       </listitem>
     </varlistentry>
@@ -87,11 +87,11 @@
       <term>Order Status</term>
 
       <listitem>
-        <para>Select the current status of the Transfer Order. Transfer Orders
+        <para>Select the current status of the transfer order. Transfer orders
         may be either Unreleased = "U", Open = "O" or Closed = "C". The
-        default status for a new Transfer Order is Unreleased. The
+        default status for a new transfer order is Unreleased. The
         ReleaseTransferOrders privilege is required to change the status to
-        Open. The Transfer Order must be released before shipping and
+        Open. The transfer order must be released before shipping and
         receiving transactions are allowed. Changing the order status will
         also make the appropriate status changes to the order line
         items.</para>
@@ -102,7 +102,7 @@
       <term>Agent</term>
 
       <listitem>
-        <para>Specify the Agent associated with the Transfer Order. By
+        <para>Specify the Agent associated with the transfer order. By
         default, the name of the logged-in user will be entered as Purchasing
         Agent-assuming that user is designated as a Purchasing Agent. If the
         user is not a Purchasing Agent, the first alphabetical name in the
@@ -118,7 +118,7 @@
         </indexterm>Tax Zone</term>
 
       <listitem>
-        <para>Specify the Tax Zone for this Transfer Order.</para>
+        <para>Specify the Tax Zone for this transfer order.</para>
       </listitem>
     </varlistentry>
 
@@ -126,7 +126,7 @@
       <term>Ship Complete</term>
 
       <listitem>
-        <para>Select to require that all Transfer Order line item quantities
+        <para>Select to require that all transfer order line item quantities
         be issued to Shipping before the Order is shipped. This feature is
         designed to prevent partial shipments. If selected, users will be
         prevented from shipping the Order unless all line item quantities have
@@ -134,7 +134,7 @@
         Order will be allowed.</para>
 
         <note>
-          <para>Transfer Orders may not be received before they have been
+          <para>Transfer orders may not be received before they have been
           shipped.</para>
         </note>
       </listitem>
@@ -144,9 +144,9 @@
       <term>Project #</term>
 
       <listitem>
-        <para>Select a Project Number to associate with the Transfer Order.
-        Projects may be used to link Transfer Orders with Work Orders, Sales
-        Orders, Purchase Orders, etc.</para>
+        <para>Select a Project Number to associate with the transfer order.
+        Projects may be used to link transfer orders with work orders, sales
+        orders, purchase orders, etc.</para>
       </listitem>
     </varlistentry>
 
@@ -249,7 +249,7 @@
       <term>Ship Via</term>
 
       <listitem>
-        <para>Specify the Ship Via associated with the Transfer Order. You may
+        <para>Specify the Ship Via associated with the transfer order. You may
         enter a free-form Ship Via simply by typing the name of the Ship Via
         into the field.</para>
       </listitem>
@@ -259,7 +259,7 @@
       <term>Shipping Form</term>
 
       <listitem>
-        <para>Specify the Shipping Form associated with the Transfer Order.
+        <para>Specify the Shipping Form associated with the transfer order.
         This field is optional.</para>
       </listitem>
     </varlistentry>
@@ -272,7 +272,7 @@
       <term>SAVE AND ADD TO PACKING LIST BATCH</term>
 
       <listitem>
-        <para>Creates the Transfer Order, saves it, and adds it to the list of
+        <para>Creates the transfer order, saves it, and adds it to the list of
         Orders available for printing on the Packing List Batch.</para>
       </listitem>
     </varlistentry>
@@ -282,7 +282,7 @@
       <primary>transfer orders</primary>
 
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify Transfer Order line items, select the
+    </indexterm>To create or modify transfer order line items, select the
   "Line Items" tab at the top of the "Transfer Order" screen. The following
   screen will appear:</para>
 
@@ -296,7 +296,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating or modifying Transfer Order line items, you are
+  <para>When creating or modifying transfer order line items, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -304,13 +304,13 @@
       <term>Line Items</term>
 
       <listitem>
-        <para>Display lists line items for this Transfer Order.</para>
+        <para>Display lists line items for this transfer order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>Transfer Order line items may exist in any of the following
+    <para>Transfer order line items may exist in any of the following
     statuses:</para>
 
     <para>"U" = Unreleased</para>
@@ -327,7 +327,7 @@
       <term>Show Canceled Line Items</term>
 
       <listitem>
-        <para>Select to include in the line items display Transfer Order line
+        <para>Select to include in the line items display transfer order line
         items which have been specifically canceled. Displaying canceled line
         items can provide useful Order history information.</para>
       </listitem>
@@ -350,7 +350,7 @@
       <term>Freight Weight</term>
 
       <listitem>
-        <para>Displays the combined weight of all Transfer Order line items.
+        <para>Displays the combined weight of all transfer order line items.
         Freight weight represents the sum of an item's product weight and
         packaging weight, both of which are defined on the Item master. The
         per unit freight weight multiplied by the quantity per gives you the
@@ -372,7 +372,7 @@
 
       <listitem>
         <para>Displays the subtotal for all line item Freight. Freight charges
-        may be added when entering or editing a Transfer Order line
+        may be added when entering or editing a transfer order line
         item.</para>
       </listitem>
     </varlistentry>
@@ -382,7 +382,7 @@
 
       <listitem>
         <para>Displays the total amount of Tax to be charged on the Transfer
-        Order. Sales Tax is calculated at the Transfer Order line item level.
+        Order. Sales Tax is calculated at the transfer order line item level.
         The Tax amount displayed here represents the total for all line item
         Tax amounts. To get a detailed view of the Tax calculation, click on
         the Tax link using your mouse.</para>
@@ -393,14 +393,14 @@
       <term>Total</term>
 
       <listitem>
-        <para>Displays the total amount of the Transfer Order.</para>
+        <para>Displays the total amount of the transfer order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>Any Transfer Order line item may be shipped—even if the item or item
-    site in question becomes inactive after the Sales Order has been
+    <para>Any transfer order line item may be shipped—even if the item or item
+    site in question becomes inactive after the sales order has been
     created.</para>
   </note>
 
@@ -411,15 +411,15 @@
       <term>CLEAR</term>
 
       <listitem>
-        <para>Select to clear the contents of the current Transfer Order and
-        open a fresh, new Transfer Order for Order entry. The Order Number of
+        <para>Select to clear the contents of the current transfer order and
+        open a fresh, new transfer order for Order entry. The Order Number of
         the Order being cleared will display next to the CLEAR button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>Selecting the CLEAR button on the Transfer Order header does not
+    <para>Selecting the CLEAR button on the transfer order header does not
     delete any information which has been saved previously.</para>
   </note>
 
@@ -428,8 +428,8 @@
       <term>CLOSE</term>
 
       <listitem id="transferOrderCLOSE">
-        <para>Highlight a Transfer Order line item and then select this to
-        close the Transfer Order line item. If the highlighted line item is
+        <para>Highlight a transfer order line item and then select this to
+        close the transfer order line item. If the highlighted line item is
         already closed, the label will revert to an OPEN, which may be used to
         open the closed line item.</para>
       </listitem>
@@ -443,7 +443,7 @@
         </indexterm>ISSUE STOCK</term>
 
       <listitem>
-        <para>Highlight a Transfer Order line item and then select this button
+        <para>Highlight a transfer order line item and then select this button
         to issue quantity to Shipping.</para>
       </listitem>
     </varlistentry>
@@ -460,14 +460,14 @@
       <term>ISSUE LINE BAL.</term>
 
       <listitem>
-        <para>Highlight a Transfer Order line item and then select this button
+        <para>Highlight a transfer order line item and then select this button
         to issue the balance of the line item quantity to Shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>Order Notes added to a Transfer Order are used for internal purposes
-  only. To add Notes to a Transfer Order, select the "Order Notes" tab at the
+  <para>Order Notes added to a transfer order are used for internal purposes
+  only. To add Notes to a transfer order, select the "Order Notes" tab at the
   top of the "Transfer Order" screen. The following screen will appear:</para>
 
   <para><screenshot>
@@ -480,7 +480,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes to a Transfer Order, you are presented with the
+  <para>When adding Notes to a transfer order, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -489,13 +489,13 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Transfer Order. These Notes are for
+        general Notes related to the transfer order. These Notes are for
         internal use only.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To add Comments related to a Transfer Order, select the "Comments"
+  <para>To add Comments related to a transfer order, select the "Comments"
   tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -512,9 +512,9 @@
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
   <para>Shipping Notes are drawn from the Shipping Comments (if any)
-  associated with Transit sites. The Notes may vary depending on the Transit
+  associated with transit sites. The Notes may vary depending on the Transit
   site being used. These Notes provide a mechanism for transferring
-  information about Transit sites to the Transfer Order. To view Transfer
+  information about Transit sites to the transfer order. To view Transfer
   Order Shipping Notes, select the "Shipping Notes" tab at the top of the
   "Transfer Order" screen. The following screen will appear:</para>
 
@@ -528,7 +528,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing or editing Shipping Notes for a Transfer Order, you are
+  <para>When viewing or editing Shipping Notes for a transfer order, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -543,7 +543,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To associate documents with a Transfer Order, select the "Documents"
+  <para>To associate documents with a transfer order, select the "Documents"
   tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -559,7 +559,7 @@
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>If you want to speed up your data entry of Transfer Order line items,
+  <para>If you want to speed up your data entry of transfer order line items,
   you can use the Quick Entry interface. This screen allows you to enter
   multiple line items in one session. It also simplifies the process by
   presenting only the minimum required fields. To enter line items using the
@@ -582,7 +582,7 @@
     keyboard.</para>
   </tip>
 
-  <para>When entering Transfer Order line items using the Quick Entry
+  <para>When entering transfer order line items using the Quick Entry
   interface, you are presented with the following options:</para>
 
   <variablelist>
@@ -650,7 +650,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To view Email associated with a Transfer Order, select the "Email"
+  <para>To view Email associated with a transfer order, select the "Email"
   tab. The following screen will appear:</para>
 
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"

@@ -101,10 +101,10 @@
               <primary>sales orders</primary>
 
               <secondary>job items and</secondary>
-            </indexterm>If the item is a Job item, a linked Work Order will
+            </indexterm>If the item is a Job item, a linked work order will
           automatically be created. Creating a sales order for Job items is
-          the only way to create a Job item Work Order. Production for Job
-          item Work Orders is posted automatically when the linked sales order
+          the only way to create a Job item work order. Production for Job
+          item work orders is posted automatically when the linked sales order
           item is linked to shipping.</para>
         </note>
 
@@ -403,7 +403,7 @@
       <listitem>
         <para>Select if the line item is a warranty item. If selected, the
         Cost of Warranty Account will be used when shipping the line item,
-        instead of the Cost of Sales Account. It will also be used when
+        instead of the Cost of sales Account. It will also be used when
         receiving warranty items through a Return Authorization, instead of
         the P/O Liability Clearing Account.</para>
       </listitem>
@@ -412,7 +412,7 @@
 
   <para>When entering sales orders you have the ability to view current supply
   considerations, including item availability and dependencies. You may also
-  create replenishment Orders (if they are needed) and change Work Order
+  create replenishment Orders (if they are needed) and change work order
   Materials and Operations.</para>
 
   <variablelist>
@@ -453,12 +453,12 @@
 
             <listitem>
               <para>Displays the quantity allocated to current sales orders
-              and/or Work Orders in the system. An item is considered
+              and/or work orders in the system. An item is considered
               allocated to a sales order if a sales order line item exists for
               the item—and that line item has not yet been issued to Shipping.
-              An item is considered allocated to a Work Order if the item is a
+              An item is considered allocated to a work order if the item is a
               material requirement—and the material has not yet been issued to
-              the Work Order. Once the current sales order line item is saved,
+              the work order. Once the current sales order line item is saved,
               the "Allocated" value will increase by the quantity
               ordered.</para>
             </listitem>
@@ -479,9 +479,9 @@
 
             <listitem>
               <para>If the sales order item is a manufactured item, the
-              quantity ordered by current Work Orders will be displayed. If
+              quantity ordered by current work orders will be displayed. If
               the sales order item is a purchased item, the quantity ordered
-              by current Purchase Orders will be displayed.</para>
+              by current purchase orders will be displayed.</para>
             </listitem>
           </varlistentry>
 
@@ -569,7 +569,7 @@
       <term>Supply Order</term>
 
       <listitem>
-        <para>If you wish to maintain Work Order materials and operations for
+        <para>If you wish to maintain work order materials and operations for
         a manufactured item, select the "Supply Order" option on the "Supply"
         tab. The following will be displayed:<mediaobject>
             <imageobject>
@@ -605,27 +605,27 @@
 
             <listitem>
               <para>If the line item is a manufactured item, select this
-              option to automatically create a Work Order for the specified
+              option to automatically create a work order for the specified
               quantity. For make-to-order manufactured items, this option will
               be selected automatically?as long as the item site's "Stocked"
-              flag is set to "False." The Work Order will be created once you
-              save the sales order line item. Work Orders created
+              flag is set to "False." The work order will be created once you
+              save the sales order line item. Work orders created
               automatically from a sales order will assume the same Order
               Number as the sales order—even if that Order Number has already
-              been used by a previous Work Order.</para>
+              been used by a previous work order.</para>
 
               <para>For purchased items, the following two different options
               may appear, depending on how the item site for the item is set
               up: "Create Purchase Request" or "Create Purchase Order." In
               either case, you will be given the option to override any item
-              Source Price(s) which are in place. Also, linked Purchase Orders
+              Source Price(s) which are in place. Also, linked purchase orders
               will be updated when sales order details are changed. If your
               site is configured to use drop shipping, an additional "Drop
-              Ship" flag will also be shown for linked Purchase Orders. The
-              drop ship function will search for an existing Purchase Order
+              Ship" flag will also be shown for linked purchase orders. The
+              drop ship function will search for an existing purchase order
               linked to the sales order with a matching Ship-To Address and
               add the line item to that Order—or create a new Order if none
-              exists. Drop ship Purchase Orders inherit the Ship-To Address
+              exists. Drop ship purchase orders inherit the Ship-To Address
               and Contact information from the sales order. Item Sources must
               be defined for drop ship items—including each component of a Kit
               item.</para>
@@ -637,7 +637,7 @@
 
               <note>
                 <para>When changing an existing sales order line item, you
-                will be asked for confirmation before the Work Order is
+                will be asked for confirmation before the work order is
                 rescheduled.</para>
               </note>
             </listitem>
@@ -650,7 +650,7 @@
       <term>Order #</term>
 
       <listitem>
-        <para>The number of the newly created Work Order is displayed.</para>
+        <para>The number of the newly created work order is displayed.</para>
       </listitem>
     </varlistentry>
 
@@ -658,7 +658,7 @@
       <term>Line #</term>
 
       <listitem>
-        <para>Displays the Line item number for the Work Order.</para>
+        <para>Displays the Line item number for the work order.</para>
       </listitem>
     </varlistentry>
 
@@ -666,7 +666,7 @@
       <term>Status</term>
 
       <listitem>
-        <para>The Work Order Status is displayed.</para>
+        <para>The work order status is displayed.</para>
       </listitem>
     </varlistentry>
 
@@ -678,7 +678,7 @@
         here. If the line item is a purchased item, purchase quantity
         information will appear instead. Whenever sales order line item
         quantity is changed, the change will also be reflected in any linked
-        Work Orders, Purchase Orders, or Purchase Requests.</para>
+        work orders, purchase orders, or purchase requests.</para>
       </listitem>
     </varlistentry>
 
@@ -704,11 +704,11 @@
         </indexterm>Supplying Site</term>
 
       <listitem>
-        <para>Specify the site a corresponding Work Order would be supplied
-        from. Work Orders may only be created for manufactured items having a
+        <para>Specify the site a corresponding work order would be supplied
+        from. Work orders may only be created for manufactured items having a
         supplying site. Sites designated as "Supplied at" sites in the Item
         Site master for an item are considered supplying sites. If no
-        supplying site exists for an item, a Work Order may not be created for
+        supplying site exists for an item, a work order may not be created for
         the item.</para>
       </listitem>
     </varlistentry>
@@ -718,7 +718,7 @@
 
       <listitem>
         <para>Display lists an exploded view of the Materials and Operations
-        for the Work Order.</para>
+        for the work order.</para>
       </listitem>
     </varlistentry>
 
@@ -726,7 +726,7 @@
       <term>NEW MATL.</term>
 
       <listitem>
-        <para>Select to add Materials to the BOM for the Work Order.</para>
+        <para>Select to add Materials to the BOM for the work order.</para>
       </listitem>
     </varlistentry>
 
@@ -734,7 +734,7 @@
       <term>NEW OPER.</term>
 
       <listitem>
-        <para>Select to add Operations to the BOO for this Order item.</para>
+        <para>Select to add Operations to the routing for this Order item.</para>
       </listitem>
     </varlistentry>
 
@@ -751,8 +751,8 @@
       <term>DELETE</term>
 
       <listitem>
-        <para>To remove Materials or Operations from the Work Order, highlight
-        the line in the exploded Work Order view and click the DELETE button.
+        <para>To remove Materials or Operations from the work order, highlight
+        the line in the exploded work order view and click the DELETE button.
         Repeat for every line that needs to be removed.</para>
       </listitem>
     </varlistentry>
@@ -796,7 +796,7 @@
 
       <listitem>
         <para>Select this option if the item should be automatically shipped
-        when the Purchase Order receipt is posted.</para>
+        when the purchase order receipt is posted.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -838,8 +838,8 @@
       <term>PREVIOUS</term>
 
       <listitem>
-        <para>Select to view previous line items associated with the Sales
-        Order.</para>
+        <para>Select to view previous line items associated with the sales
+        order.</para>
       </listitem>
     </varlistentry>
 
@@ -875,7 +875,7 @@
       <term>Start Date</term>
 
       <listitem>
-        <para>Purchase Orders entered on or after this date will be included
+        <para>Purchase orders entered on or after this date will be included
         in the display.</para>
       </listitem>
     </varlistentry>
@@ -884,7 +884,7 @@
       <term>End Date</term>
 
       <listitem>
-        <para>Purchase Orders entered on or before this date will be included
+        <para>Purchase orders entered on or before this date will be included
         in the display.</para>
       </listitem>
     </varlistentry>
@@ -910,7 +910,7 @@
       <term>Purchase Orders</term>
 
       <listitem>
-        <para>Display lists Purchase Orders for the item, using the specified
+        <para>Display lists purchase orders for the item, using the specified
         date range.</para>
       </listitem>
     </varlistentry>
@@ -962,8 +962,8 @@
       <term>Qty. per Order</term>
 
       <listitem>
-        <para>Displays the calculated average quantity per historical Sales
-        Order.</para>
+        <para>Displays the calculated average quantity per historical sales
+        order.</para>
       </listitem>
     </varlistentry>
 
@@ -996,8 +996,8 @@
 
   <para>If an item has Characteristics associated with it, you have the option
   of linking those Characteristics to a sales order line item. And, in the
-  case where sales order demand automatically generates either a Purchase
-  Request or a Work Order, the Characteristics defined here will be inherited
+  case where sales order demand automatically generates either a purchase
+  request or a work order, the Characteristics defined here will be inherited
   by those subsequent Orders.</para>
 
   <tip>
@@ -1070,13 +1070,13 @@
 
   <note>
     <para>During the creation of a new sales order for a configured item, the
-    Work Order is imploded and the Characteristics will remain enabled and may
-    be edited. When the SAVE button is clicked, the Work Order Characteristics
-    are updated and the Work Order is exploded. To edit the sales order item
-    for a configured item, the Work Order needs to be manually imploded first.
+    work order is imploded and the Characteristics will remain enabled and may
+    be edited. When the SAVE button is clicked, the work order Characteristics
+    are updated and the work order is exploded. To edit the sales order item
+    for a configured item, the work order needs to be manually imploded first.
     This will enable the Characteristics and allow editing. When the SAVE
-    button is clicked, the Work Order Characteristics will be updated and the
-    Work Order exploded.</para>
+    button is clicked, the work order Characteristics will be updated and the
+    work order exploded.</para>
   </note>
 
   <para>To view Costs or adjust Tax information for a sales order line item,
@@ -1190,8 +1190,8 @@
             <term>Tax</term>
 
             <listitem>
-              <para>Displays the amount of Tax to be charged for the Sales
-              Order line item quantity. To get a detailed view of the Tax
+              <para>Displays the amount of Tax to be charged for the sales
+              order line item quantity. To get a detailed view of the Tax
               calculation, click on the Tax link using your mouse.</para>
             </listitem>
           </varlistentry>
@@ -1228,8 +1228,8 @@
   </variablelist>
 
   <tip>
-    <para>If a sales order item is marked to create a Work Order, the
-    Production Notes for the created Work Order will contain the sales order
+    <para>If a sales order item is marked to create a work order, the
+    Production Notes for the created work order will contain the sales order
     number, the Customer Name, and any additional sales order line item
     Notes.</para>
   </tip>
@@ -1256,7 +1256,7 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>To define an alternate Cost of Sales Account for a sales order Line
+  <para>To define an alternate Cost of sales Account for a sales order Line
   item, select the "Accounting" tab at the bottom of the screen, as shown
   below:</para>
 
@@ -1279,9 +1279,9 @@
       <term>Alternate Cost of Sales Account</term>
 
       <listitem>
-        <para>Specify an alternate Account to be used for the Cost of Sales.
+        <para>Specify an alternate Account to be used for the Cost of sales.
         This Account will be used instead of the typical Account pre-defined
-        in the Sales Accounts Assignments.</para>
+        in the sales Accounts Assignments.</para>
       </listitem>
     </varlistentry>
 

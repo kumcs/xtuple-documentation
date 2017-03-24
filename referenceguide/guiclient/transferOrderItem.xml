@@ -9,7 +9,7 @@
       <secondary>adding line items to</secondary>
     </indexterm>Transfer Order Item</title>
 
-  <para>To add a new Transfer Order line item, select the NEW button. The
+  <para>To add a new transfer order line item, select the NEW button. The
   following screen will appear:</para>
 
   <para><screenshot>
@@ -22,7 +22,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating a new Transfer Order line item, you are presented with
+  <para>When creating a new transfer order line item, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -30,7 +30,7 @@
       <term>Order #</term>
 
       <listitem>
-        <para>Displays the Transfer Order Number specified on the Transfer
+        <para>Displays the transfer order number specified on the Transfer
         Order header screen.</para>
       </listitem>
     </varlistentry>
@@ -53,7 +53,7 @@
 
         <note>
           <para>Because Kit items are non-stock items, they may not be added
-          to Transfer Orders.</para>
+          to transfer orders.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -116,8 +116,8 @@
       <term>Tax</term>
 
       <listitem>
-        <para>Displays the amount of Tax to be charged for the Transfer Order
-        line item quantity. Sales Tax is calculated at the Transfer Order Line
+        <para>Displays the amount of Tax to be charged for the transfer order
+        line item quantity. Sales Tax is calculated at the transfer order Line
         item level. To get a detailed view of the Tax calculation, click on
         the Tax link using your mouse.</para>
       </listitem>
@@ -137,8 +137,8 @@
   </variablelist>
 
   <note>
-    <para>The Transfer Order item having the earliest scheduled date will
-    determine the ship date for the Transfer Order.</para>
+    <para>The transfer order item having the earliest scheduled date will
+    determine the ship date for the transfer order.</para>
   </note>
 
   <variablelist>
@@ -168,9 +168,9 @@
       <term>CANCEL ITEM</term>
 
       <listitem>
-        <para>Select to cancel the current Transfer Order line item. Records
+        <para>Select to cancel the current transfer order line item. Records
         of canceled line items will be retained for informational purposes. To
-        view canceled line items associated with a Transfer Order, select the
+        view canceled line items associated with a transfer order, select the
         "Show Canceled Line Items" option on the Transfer Order header's "Line
         Items tab.</para>
       </listitem>
@@ -195,7 +195,7 @@
 
       <listitem>
         <para>Select to display Availability Supply information for the
-        Transfer Order item in the following categories:</para>
+        transfer order item in the following categories:</para>
       </listitem>
     </varlistentry>
 
@@ -218,14 +218,14 @@
             <term>Allocated</term>
 
             <listitem>
-              <para>Displays the quantity allocated to current Sales Orders,
-              Transfer Orders, and/or Work Orders in the system. An item is
-              considered allocated to a Sales Order/Transfer Order if a
-              Transfer Order line item exists for the item—and that line item
+              <para>Displays the quantity allocated to current sales orders,
+              transfer orders, and/or work orders in the system. An item is
+              considered allocated to a sales order/transfer order if a
+              transfer order line item exists for the item—and that line item
               has not yet been issued to Shipping. An item is considered
-              allocated to a Work Order if the item is a material
-              requirement—and the material has not yet been issued to the Work
-              Order. Once the current Transfer Order line item is saved, the
+              allocated to a work order if the item is a material
+              requirement—and the material has not yet been issued to the work
+              order. Once the current transfer order line item is saved, the
               "Allocated" value will increase by the quantity ordered.</para>
             </listitem>
           </varlistentry>
@@ -244,10 +244,10 @@
             <term>On Order</term>
 
             <listitem>
-              <para>If the Transfer Order item is a manufactured item, the
-              quantity ordered by current Work Orders will be displayed. If
-              the Transfer Order item is a purchased item, the quantity
-              ordered by current Purchase Orders will be displayed.</para>
+              <para>If the transfer order item is a manufactured item, the
+              quantity ordered by current work orders will be displayed. If
+              the transfer order item is a purchased item, the quantity
+              ordered by current purchase orders will be displayed.</para>
             </listitem>
           </varlistentry>
 
@@ -289,7 +289,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>When selecting or editing Characteristics for a Transfer Order line
+  <para>When selecting or editing Characteristics for a transfer order line
   item, you are presented with the following options:</para>
 
   <para><screenshot>
@@ -317,21 +317,21 @@
         <listitem>
           <para>Displays the default Value associated with an item
           Characteristic, but permits you to specify an alternate Value. When
-          associating Characteristic Values with a Transfer Order line item,
+          associating Characteristic Values with a transfer order line item,
           you have four options: 1) Select the default Value; 2) select an
           alternate pre-defined Value from the list; 3) manually enter a new
           Value in place of the pre-defined Value; or 4) make no selection.
           Making no selection means the Characteristics will not be associated
-          with the Transfer Order line item.</para>
+          with the transfer order line item.</para>
         </listitem>
       </varlistentry>
     </variablelist><tip>
       <para>You can link Characteristics and Values to an item by using the
       Item master. Once entered, these Characteristics and Values will be
-      available to users entering Transfer Order line items.</para>
+      available to users entering transfer order line items.</para>
     </tip></para>
 
-  <para>To enter Notes related to a Transfer Order line item, select the
+  <para>To enter Notes related to a transfer order line item, select the
   "Notes" tab at the bottom of the screen, as shown below:</para>
 
   <para><screenshot>
@@ -344,7 +344,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes to a Transfer Order line item, you are presented
+  <para>When adding Notes to a transfer order line item, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -353,12 +353,12 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Transfer Order line item.</para>
+        general Notes related to the transfer order line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To add Comments related to a Transfer Order line item, select the
+  <para>To add Comments related to a transfer order line item, select the
   "Comments" tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -372,7 +372,7 @@
     </screenshot></para>
 
   <note>
-    <para>Whenever Transfer Order line items are created or their quantities
+    <para>Whenever transfer order line items are created or their quantities
     are changed, the system will automatically generate a Comment, which will
     appear in the list of line item Comments.</para>
   </note>

@@ -8,7 +8,7 @@
       <secondary>approve order for</secondary>
     </indexterm>Approve Order for Billing</title>
   <para>This utility enables you to manually enter billing details for
-  individual Sales Order line items. Both shipped Orders and unshipped Line
+  individual sales order line items. Both shipped Orders and unshipped Line
   items may be selected for billing in this manner. This individualized
   approach differs from the approach taken by the Select All Shipped Orders
   for Billing utility, which by default selects for billing the full line item
@@ -34,14 +34,14 @@
     <varlistentry>
       <term>Sales Order #</term>
       <listitem>
-        <para>Enter the Sales Order Number of the Sales Order you want to
+        <para>Enter the sales order number of the sales order you want to
         select for billing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Order Date</term>
       <listitem>
-        <para>Displays the original Sales Order date.</para>
+        <para>Displays the original sales order date.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -69,9 +69,9 @@
     <varlistentry>
       <term>P/O Number</term>
       <listitem>
-        <para>Displays purchase for the specified Sales Order. Indicates the
-        Customer Purchase Order Number assigned to the specified Sales
-        Order.</para>
+        <para>Displays purchase for the specified sales order. Indicates the
+        Customer purchase order number assigned to the specified sales
+        order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -86,7 +86,7 @@
           <secondary>for sales orders</secondary>
         </indexterm>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone associated with the Sales Order. The Tax
+        <para>Specify the Tax Zone associated with the sales order. The Tax
         Zone for the specified Ship-To Address will be entered here by
         default. Otherwise, the primary Tax Zone for the Customer will be
         entered.</para>
@@ -116,7 +116,7 @@
     <varlistentry>
       <term>Close all Open Items</term>
       <listitem>
-        <para>Select to close all open Sales Order line items.</para>
+        <para>Select to close all open sales order line items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -125,7 +125,7 @@
           <secondary>at line item level</secondary>
         </indexterm>Line Items</term>
       <listitem>
-        <para>Displays the Sales Order line items selected for billing.
+        <para>Displays the sales order line items selected for billing.
         Double-clicking on a line item—or highlighting it and selecting the
         EDIT SELECTION button—enables you to select a billing quantity for
         that Item.</para>
@@ -140,7 +140,7 @@
     <varlistentry>
       <term>Subtotal</term>
       <listitem>
-        <para>Displays the subtotal for the Sales Order line items.</para>
+        <para>Displays the subtotal for the sales order line items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -151,7 +151,7 @@
       <listitem>
         <para>Enter the amount of the miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
-        Sales Account and also enter a description of the charge.</para>
+        sales Account and also enter a description of the charge.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -163,7 +163,7 @@
     <varlistentry>
       <term>Misc. Charge Sales Account</term>
       <listitem>
-        <para>Enter a Sales Account to assign the miscellaneous charge
+        <para>Enter a sales Account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
@@ -172,7 +172,7 @@
       <listitem>
         <para>Enter the amount of freight charge to be added to the specified
         Order. The freight charge may be entered during the creation or
-        modification of a Sales Order—or at the time of shipment.</para>
+        modification of a sales order—or at the time of shipment.</para>
         <note>
           <para>The Payment Received field is an optional field which may be
           used to provide visibility into prepaid amounts. Because the field
@@ -186,15 +186,15 @@
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Displays the amount of Tax that will be added to the Sales
-        Order, as defined by the specified Tax Code. To get a detailed view of
+        <para>Displays the amount of Tax that will be added to the sales
+        order, as defined by the specified Tax Code. To get a detailed view of
         the Tax calculation, click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Total</term>
       <listitem>
-        <para>Displays the total amount of all uninvoiced Sales Orders.</para>
+        <para>Displays the total amount of all uninvoiced sales orders.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -204,7 +204,7 @@
       <term>EDIT ORDER</term>
       <listitem>
         <para>Brings you to the Sales Order screen, where you may edit the
-        specified Sales Order. The Sales Order screen is described at length
+        specified sales order. The Sales Order screen is described at length
         in <xref linkend="salesOrder" />.</para>
       </listitem>
     </varlistentry>
@@ -231,7 +231,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the Sales Order selected for billing. Notes entered
+        Notes related to the sales order selected for billing. Notes entered
         on this screen will follow the Order through the billing process. For
         example, you may view notes associated with a posted Invoice within
         the Invoice Information report.</para>

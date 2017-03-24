@@ -5,10 +5,10 @@
 <section id="woTimeClock" role="manufacturing">
   <title>Shop Floor Workbench</title>
   <para>The Shop Floor Workbench offers enhanced labor tracking and
-  streamlined Work Order processing for either Operations or Production
+  streamlined work order processing for either Operations or Production
   posting environments. Its built-in Time Clock functionality ensures precise
   run-time reporting, as Workbench users are required to clock-in to and
-  clock-out of Work Orders.</para>
+  clock-out of work orders.</para>
   <para>When posting Operations, users have the option to post either standard
   or specified times—and the run time recorded will vary depending on the
   option chosen. The standard times are drawn from the Bill of Operations item
@@ -16,7 +16,7 @@
   in/out times (i.e., "effort"). The specified effort for an Operation may be
   complicated by the fact that users can be clocked into more than one Work
   Order at a time. In this case, the users' effort will be spread across the
-  various Work Orders they have clocked into.</para>
+  various work orders they have clocked into.</para>
   <para><tip>
       <para>The clock-in requirement applies only to Shop Floor Workbench
       users. If you don't use the Workbench, no clock-in is required.</para>
@@ -96,8 +96,8 @@
       <term>User</term>
       <listitem>
         <para>Enter the name of the User wanting to clock-in or clock-out of a
-        Work Order. Once a username is entered, the display at the bottom of
-        the screen will show all the Work Orders the user is currently
+        work order. Once a username is entered, the display at the bottom of
+        the screen will show all the work orders the user is currently
         clocked-in to.</para>
         <tip>
           <para>At the system level, you can restrict a user's privileges so
@@ -109,11 +109,11 @@
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Enter the Work Order Number of the Work Order the user wants to
+        <para>Enter the work order number of the work order the user wants to
         clock-in to or clock-out of. Only released "R" and in-process "I" Work
         Orders may be processed using the Shop Floor Workbench.<note>
-            <para>A Work Order must be released "R" before users may clock-in
-            or clock out. The release of a Work Order occurs after the Work
+            <para>A work order must be released "R" before users may clock-in
+            or clock out. The release of a work order occurs after the Work
             Order has been exploded.</para>
           </note></para>
       </listitem>
@@ -121,14 +121,14 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Displays site code automatically when Work Order Number is
+        <para>Displays site code automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays item number automatically when Work Order Number is
+        <para>Displays item number automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -141,16 +141,16 @@
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Displays Work Order Status automatically when Work Order Number
+        <para>Displays work order status automatically when work order number
         is entered into "Work Order #" field. Only released "R" and in-process
-        "I" Work Orders may be processed using the Shop Floor
+        "I" work orders may be processed using the Shop Floor
         Workbench.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates Work Order method is either assembly or
+        <para>Indicates work order method is either assembly or
         disassembly.</para>
       </listitem>
     </varlistentry>
@@ -173,12 +173,12 @@
     <varlistentry>
       <term>CLOCK IN</term>
       <listitem>
-        <para>Select to clock-in to the specified Work Order. When a user
-        clocks-in to a Work Order, the run-time clock starts running from that
-        point. The clock stops when a user clocks-out of the Work Order. The
+        <para>Select to clock-in to the specified work order. When a user
+        clocks-in to a work order, the run-time clock starts running from that
+        point. The clock stops when a user clocks-out of the work order. The
         elapsed time—or "effort"—is used for labor reporting purposes. Users
-        may only clock-in to Work Orders they are not already clocked-in to.
-        However, users may clock-in to and clock-out of the same Work Order as
+        may only clock-in to work orders they are not already clocked-in to.
+        However, users may clock-in to and clock-out of the same work order as
         many times as necessary. Each clock-in starts the run-time Time Clock;
         each clock-out stops it.</para>
       </listitem>
@@ -186,12 +186,12 @@
     <varlistentry>
       <term>CLOCK OUT</term>
       <listitem>
-        <para>Select to clock-out of the specified Work Order. When selected,
-        the run-time clock stops for the specified Work Order. The time
+        <para>Select to clock-out of the specified work order. When selected,
+        the run-time clock stops for the specified work order. The time
         elapsed since the user last clocked-in is added to the run time total
-        for the Work Order. This run-time calculation is automatic and cannot
+        for the work order. This run-time calculation is automatic and cannot
         be overridden—except by users who have override privileges. Users may
-        only clock-out of Work Orders they are already clocked-in to. If the
+        only clock-out of work orders they are already clocked-in to. If the
         Workbench is configured for Operations-posting, the "Post Operations"
         screen will be presented immediately after the CLOCK OUT button is
         selected. By default, the "Scrap Work Order Material screen will

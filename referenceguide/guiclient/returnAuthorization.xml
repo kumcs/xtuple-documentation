@@ -73,12 +73,12 @@
           <secondary>commissions on</secondary>
         </indexterm>Sales Rep.</term>
       <listitem>
-        <para>Specify the Sales Representative associated with the Return
-        Authorization. Sales Representatives are linked to a Customer on the
+        <para>Specify the sales representative associated with the Return
+        Authorization. Sales representatives are linked to a Customer on the
         Customer master—either by a default setting or through the assignment
-        of Ship-To Addresses. Each Ship-To Address may have a different Sales
-        Representative associated with it. Consequently, the name of the Sales
-        Representative appearing on the Return Authorization header will be
+        of Ship-To Addresses. Each Ship-To Address may have a different sales
+        representative associated with it. Consequently, the name of the sales
+        representative appearing on the Return Authorization header will be
         the same as specified for the Ship-To Address being used.</para>
       </listitem>
     </varlistentry>
@@ -87,7 +87,7 @@
       <listitem>
         <para>By default, the commission percentage recorded on the Customer
         master will be automatically entered in this field. If for some reason
-        you select a non-default Sales Representative, the commission rate
+        you select a non-default sales representative, the commission rate
         will not change. To adjust the commission rate, you must make the
         change manually.</para>
       </listitem>
@@ -164,7 +164,7 @@
               <para>Select to authorize the repair or service of items
               returned by the specified Customer. To isolate costing
               implications, only Job items may be selected. A new sales order
-              with linked Work Order(s) will be created to track work and
+              with linked work order(s) will be created to track work and
               shipping on the repair or service. Service or repair items
               should first be received by the Return Authorization. If the Job
               item is Lot/Serial controlled, you will be prompted to assign
@@ -231,8 +231,8 @@
           <varlistentry>
             <term>Sales Credit</term>
             <listitem>
-              <para>Select to credit the return with a Sales Credit to the
-              Customer's account. If selected, a Sales Credit will be
+              <para>Select to credit the return with a sales credit to the
+              Customer's account. If selected, a sales credit will be
               automatically queued up for processing on the Return
               Authorizations Workbench.</para>
             </listitem>
@@ -243,7 +243,7 @@
               <para>Select to credit the return by sending the Customer a
               payment. If selected, a Customer payment will be queued up for
               processing on the Return Authorizations Workbench. When the
-              payment is processed, a Sales Credit will be created
+              payment is processed, a sales credit will be created
               automatically—and the payment will be applied to it.</para>
             </listitem>
           </varlistentry>
@@ -300,7 +300,7 @@
       <listitem>
         <para>You have the option to select an original sales order for all
         disposition types. When an original sales order is selected, all Line
-        items from the original Order will be imported into the Return
+        items from the original order will be imported into the Return
         Authorization automatically. For dispositions Credit and Return this
         feature imports the original pricing and billing information. When a
         sales order number is selected, the Customer Number and address
@@ -318,7 +318,7 @@
       <listitem>
         <para>For Return Authorizations having either Replace, Service, or
         Substitute dispositions, the system will automatically generate a new
-        Sales order for shipping purposes when the line item is received and
+        sales order for shipping purposes when the line item is received and
         posted. Authorized line item quantities are added automatically to the
         new sales order, enabling you to ship the quantity at the appropriate
         time.</para>
@@ -330,7 +330,7 @@
         <para>If your system is configured to you Projects, you will have the
         option to select a Project Number to associate with the Return
         Authorization. This enables you to link the Return Authorization with
-        other Orders linked to the same project. The browse button located to
+        other orders linked to the same project. The browse button located to
         the right of the field enables you to select from a list of available
         Projects.</para>
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
@@ -443,7 +443,7 @@
     <varlistentry>
       <term>Cust. PO #</term>
       <listitem>
-        <para>Enter a Customer Purchase Order Number, as needed.</para>
+        <para>Enter a Customer purchase order number, as needed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -519,7 +519,7 @@
       <listitem>
         <para>Enter the amount of any miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
-        Sales Account and also enter a description of the charge.</para>
+        sales Account and also enter a description of the charge.</para>
         <tip>
           <para>You may only enter miscellaneous charges on a Return
           Authorization only when a valid credit method is selected and a
@@ -550,7 +550,7 @@
         linkend="configureSO_freightPricing" />.</para>
         <note>
           <para>If you are manually entering freight, all freight charges will
-          be added to the initial Shipment for an Order. Any subsequent
+          be added to the initial Shipment for an order. Any subsequent
           backorder Shipments will not include freight.</para>
         </note>
       </listitem>
@@ -611,9 +611,9 @@
     <varlistentry>
       <term>AUTHORIZE ALL</term>
       <listitem>
-        <para>Select to authorize the full quantity for all unauthorized Line
-        items. This option is available only when an imported original Sales
-        Order is being used—and then, the original line item quantity must be
+        <para>Select to authorize the full quantity for all unauthorized line
+        items. This option is available only when an imported original sales
+        order is being used—and then, the original line item quantity must be
         shipped before it may be authorized.</para>
       </listitem>
     </varlistentry>

@@ -69,7 +69,7 @@
       <term>New Order #</term>
 
       <listitem>
-        <para>Displays the Order Number for the new sales order created in
+        <para>Displays the order number for the new sales order created in
         support of the Return Authorization, if applicable. New sales orders
         will be automatically created for Return Authorizations having the
         following dispositions: Replace, Service, Ship.</para>
@@ -79,8 +79,8 @@
             <term>Line #</term>
 
             <listitem>
-              <para>Displays the line item number for the new Sales
-              Order.</para>
+              <para>Displays the line item number for the new sales
+              order.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -133,10 +133,10 @@
               <para>Select to authorize the servicing of an item for the
               specified quantity. This disposition is valid only for Job
               items. Price controls will be disabled for this disposition. A
-              new sales order with linked Work Order(s) will be created to
+              new sales order with linked work order(s) will be created to
               track work and shipping on the repair or service. The billing
-              for service or repair work should be handled on the new Sales
-              Order. Service or repair items should first be received by the
+              for service or repair work should be handled on the new sales
+              order. Service or repair items should first be received by the
               Return Authorization. If the Job item is Lot/Serial controlled,
               you will be prompted to assign Lot/Serial numbers when the
               receipt is posted. This assignment of Lot/Serial Numbers can be
@@ -186,8 +186,8 @@
         Service disposition. Once an item number is entered, the inventory
         Unit of Measure and item description will automatically appear.</para>
 
-        <para>If a returned item is an Average-Cost item, is linked to a Sales
-        Order, and will result in an inventory receipt, the Average Cost for
+        <para>If a returned item is an Average-Cost item, is linked to a sales
+        order, and will result in an inventory receipt, the Average Cost for
         the item on the sales order will be pulled into the return line item
         as the default value. If there is no sales order to reference, the
         cost on the receipt will default to the Standard Cost for the item. If
@@ -205,8 +205,8 @@
         <para>Displays the Customer Part Number (i.e., item Alias) that
         corresponds to the item number entered in the Item Number field. The
         Customer Part Number will display only if you enter an item Alias in
-        the Item Number field?or if an Alias was used on the original Sales
-        Order. To enter an item Alias, place the cursor in the Item Number
+        the Item Number field?or if an Alias was used on the original sales
+        order. To enter an item Alias, place the cursor in the Item Number
         field and then use the keyboard shortcut "CTRL + A". After you have
         entered a valid item Alias, hit the TAB key. A list of items that use
         the specified item Alias will be displayed. Select the desired item
@@ -246,8 +246,8 @@
       <listitem>
         <para>Specify the site where you want authorized Return Authorization
         quantity to be shipped from. This option is only available for Line
-        items having a disposition which requires creation of a new Sales
-        Order (i.e., Replace, Service, Ship).</para>
+        items having a disposition which requires creation of a new sales
+        order (i.e., Replace, Service, Ship).</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -288,8 +288,8 @@
 
       <listitem>
         <para>Displays the line item quantity sold on the original sales order
-        line if the line item was imported from an original Sales
-        Order.</para>
+        line if the line item was imported from an original sales
+        order.</para>
       </listitem>
     </varlistentry>
 
@@ -326,7 +326,7 @@
             <listitem>
               <para>Enter the amount of any restock charge discount, if any.
               This field is only displayed when the Return Authorization is
-              being applied to an original Order.</para>
+              being applied to an original order.</para>
             </listitem>
           </varlistentry>
 
@@ -345,7 +345,7 @@
               there is no linked sales order, then the system will choose the
               lower of the following two Prices: A) The most-specific Pricing
               Schedule Assignment or B) any Sale in effect at the time of
-              Order entry. The specificity of Pricing Schedule Assignments is
+              order entry. The specificity of Pricing Schedule Assignments is
               determined in the following descending order: By Customer
               Ship-To Address (most specific), by Customer, by Customer Type,
               by Customer Type pattern, by all Customers. The lookup feature
@@ -429,7 +429,7 @@
               there is no linked sales order, then the system will choose the
               lower of the following two Prices: A) The most-specific Pricing
               Schedule Assignment or B) any Sale in effect at the time of
-              Order entry. The specificity of Pricing Schedule Assignments is
+              order entry. The specificity of Pricing Schedule Assignments is
               determined in the following descending order: By Customer
               Ship-To Address (most specific), by Customer, by Customer Type,
               by Customer Type pattern, by all Customers. The lookup feature
@@ -514,7 +514,7 @@
       <listitem>
         <para>Select if the line item is a warranty item. If selected, the
         Cost of Warranty Account will be used when shipping the line item,
-        instead of the Cost of Sales Account. It will also be used when
+        instead of the Cost of sales Account. It will also be used when
         receiving warranty items through a Return Authorization, instead of
         the Cost of Returns Account.</para>
       </listitem>
@@ -523,7 +523,7 @@
 
   <para>When entering Return Authorizations you have the ability to view
   current availability for line items. You may also create replenishment
-  Orders if they are needed.</para>
+  orders if they are needed.</para>
 
   <variablelist>
     <varlistentry>
@@ -561,12 +561,12 @@
 
             <listitem>
               <para>Displays the quantity allocated to current sales orders
-              and/or Work Orders in the system. An item is considered
+              and/or work orders in the system. An item is considered
               allocated to a sales order if a sales order line item exists for
               the item—and that line item has not yet been issued to Shipping.
-              An item is considered allocated to a Work Order if the item is a
+              An item is considered allocated to a work order if the item is a
               material requirement—and the material has not yet been issued to
-              the Work Order. Once the current line item is saved, the
+              the work order. Once the current line item is saved, the
               "Allocated" value will increase by the quantity ordered.</para>
             </listitem>
           </varlistentry>
@@ -586,9 +586,9 @@
 
             <listitem>
               <para>If the line item is a manufactured item, the quantity
-              ordered by current Work Orders will be displayed. If the Line
+              ordered by current work orders will be displayed. If the Line
               item is a purchased item, the quantity ordered by current
-              Purchase Orders will be displayed.</para>
+              purchase orders will be displayed.</para>
             </listitem>
           </varlistentry>
 
@@ -634,16 +634,16 @@
 
       <listitem>
         <para>If the line item is a manufactured item, select this option to
-        automatically create a Work Order for the specified quantity. For
+        automatically create a work order for the specified quantity. For
         make-to-order manufactured items, this option will be selected
-        automatically. A Work Order will be created to meet the Return
-        Authorization demand once you save the line item to the Order. An item
-        is designated as make-to-order if the "Create W/Os to meet Sales
-        Demand" flag on the Item Site master is selected. A Work Order created
+        automatically. A work order will be created to meet the Return
+        Authorization demand once you save the line item to the order. An item
+        is designated as make-to-order if the "Create W/Os to meet sales
+        Demand" flag on the Item Site master is selected. A work order created
         automatically from a Return Authorization line item will assume the
-        same Order Number as the new sales order the Return Authorization Line
-        item is associated with—even if that Order Number has already been
-        used by a previous Work Order.</para>
+        same order sumber as the new sales order the Return Authorization Line
+        item is associated with—even if that order number has already been
+        used by a previous work order.</para>
       </listitem>
     </varlistentry>
 
@@ -668,7 +668,7 @@
       <term>W/O Status</term>
 
       <listitem>
-        <para>Displays the current status of the Work Order.</para>
+        <para>Displays the current status of the work order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -827,13 +827,13 @@
   </variablelist>
 
   <tip>
-    <para>If a Return Authorization item is marked to create a Work Order, the
-    Production Notes for the created Work Order will contain the sales order
+    <para>If a Return Authorization item is marked to create a work order, the
+    Production Notes for the created work order will contain the sales order
     Number, the Customer Name, and any additional sales order line item
     Notes.</para>
   </tip>
 
-  <para>To define an alternate Cost of Sales Account for a Return
+  <para>To define an alternate Cost of sales Account for a Return
   Authorization line item, select the "Accounting" tab at the bottom of the
   screen, as shown below:</para>
 
@@ -847,18 +847,18 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When defining an alternate Cost of Sales Account for a Return
+  <para>When defining an alternate Cost of sales Account for a Return
   Authorization line item, you are presented with the following
   options:</para>
 
   <variablelist>
     <varlistentry>
-      <term>Alternate Cost of Sales Account</term>
+      <term>Alternate Cost of sales Account</term>
 
       <listitem>
         <para>Specify an alternate Account to be used for the Cost of Sales.
         The Account you specify will be used instead of the typical Account
-        pre-defined in the Sales Account Assignments.</para>
+        pre-defined in the sales Account Assignments.</para>
       </listitem>
     </varlistentry>
   </variablelist>

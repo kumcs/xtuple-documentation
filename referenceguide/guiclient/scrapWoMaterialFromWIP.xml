@@ -7,8 +7,8 @@
       <primary>scrap</primary>
       <secondary>from work order materials</secondary>
     </indexterm>Scrap Work Order Material</title>
-  <para>To scrap Work Order Materials which have been specifically issued to a
-  Work Order using a Material Issue transaction, select the "Scrap Work Order
+  <para>To scrap work order Materials which have been specifically issued to a
+  work order using a Material Issue transaction, select the "Scrap Work Order
   Material from Work Order" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -19,11 +19,11 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>You may only scrap Work Order Materials which have been specifically
-    issued to a Work Order. In other words, Material Requirements having the
+    <para>You may only scrap work order Materials which have been specifically
+    issued to a work order. In other words, Material Requirements having the
     Push issue method may be scrapped.</para>
   </tip>
-  <para>When scrapping Work Order Materials from a Work Order, you are
+  <para>When scrapping work order Materials from a work order, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -36,21 +36,21 @@
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Enter the Work Order Number of the Work Order whose materials
+        <para>Enter the work order number of the work order whose materials
         you want to scrap.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Displays site code automatically when Work Order Number is
+        <para>Displays site code automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays item number automatically when Work Order Number is
+        <para>Displays item number automatically when work order number is
         entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
@@ -63,15 +63,15 @@
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Displays Work Order Status automatically when Work Order Number
+        <para>Displays work order status automatically when work order number
         is entered into "Work Order #" field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected Work Order is an Assembly or
-        Disassembly Work Order.</para>
+        <para>Indicates whether selected work order is an Assembly or
+        Disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -87,7 +87,7 @@
               received into inventory—or before. Keep in mind that if you
               scrap top-level items prior to receiving them, material
               requirements for those items may or may not have been issued to
-              the Work Order yet. You should make any necessary adjustments to
+              the work order yet. You should make any necessary adjustments to
               account for those requirements. For example, you may need to
               issue the components—either manually or through a material
               backflush—and then scrap them retroactively.</para>
@@ -121,12 +121,12 @@
             <term>Component Item Number</term>
             <listitem>
               <para>Select one of the component items from the parent item's
-              Work Order Material Requirements will be listed.</para>
+              work order Material Requirements will be listed.</para>
               <note>
                 <para>You may scrap component items regardless of their issue
                 method. However, components must first be issued to a Work
                 Order before they can be scrapped from it. Components are
-                issued to Work Orders either manually or through a material
+                issued to work orders either manually or through a material
                 backflush.</para>
               </note>
             </listitem>
@@ -141,7 +141,7 @@
             <term>Qty. Per</term>
             <listitem>
               <para>Displays the component quantity per each specified on the
-              parent item's Work Order Material Requirements.</para>
+              parent item's work order Material Requirements.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -162,15 +162,15 @@
             <term>Qty. Required</term>
             <listitem>
               <para>Displays the component quantity required to fulfill the
-              Work Order Material Requirements.</para>
+              work order Material Requirements.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Qty. Issued</term>
             <listitem>
               <para>Displays the component quantity currently issued to the
-              Work Order. You may only scrap components which have already
-              been issued to a Work Order—either manually or through a
+              work order. You may only scrap components which have already
+              been issued to a work order—either manually or through a
               material backflush.</para>
             </listitem>
           </varlistentry>
@@ -180,8 +180,8 @@
               <para>Displays a running total of the component quantity already
               scrapped—if any.</para>
               <tip>
-                <para>You may not scrap the full quantity of a Work Order
-                Material Requirement from a Work Order.</para>
+                <para>You may not scrap the full quantity of a work order
+                Material Requirement from a work order.</para>
               </tip>
             </listitem>
           </varlistentry>
@@ -189,7 +189,7 @@
             <term>Qty.</term>
             <listitem>
               <para>Enter the quantity of the component item you want to scrap
-              from the Work Order.</para>
+              from the work order.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -202,7 +202,7 @@
       <term>POST</term>
       <listitem>
         <para>Scraps the specified quantity of the component item from the
-        Work Order.</para>
+        work order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
