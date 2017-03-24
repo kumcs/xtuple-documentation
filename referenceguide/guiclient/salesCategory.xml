@@ -5,66 +5,83 @@
 <section id="salesCategory">
   <title><indexterm significance="normal">
       <primary>sales account assignments</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Sales Category</title>
-  <para>To create a new Sales Category, select the NEW button. The following
-  screen will appear:</para>
+
+  <para>To create a new sales category, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesCategory.png" />
+          <imagedata fileref="images/salesCategory.png"/>
         </imageobject>
+
         <caption>Create New Sales Category</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Sales Category, you are presented with the
+
+  <para>When creating a new sales category, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Category</term>
+
       <listitem>
-        <para>Enter an identifying code for the Sales Category.</para>
+        <para>Enter an identifying code for the sales category.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Active</term>
+
       <listitem>
-        <para>Select if the Sales Category is currently active. Not selecting
-        means the Sales Category is inactive.</para>
+        <para>Select if the sales category is currently active. Not selecting
+        means the sales category is inactive.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Enter a description to identify the Sales Category.</para>
+        <para>Enter a description to identify the sales category.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Non-Inv. Sales Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Sales
-        Revenue to for non-Inventory Items. This is a Revenue Account. It will
-        be credited when Invoices for Non-Inventory goods are posted.</para>
+        <para>Identify a general ledger (G/L) account to distribute sales
+        revenue to for non-inventory items. This is a revenue account. It will
+        be credited when invoices for non-inventory goods are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Prepaid Account</term>
+
       <listitem>
-        <para>Specify a General Ledger (G/L) Account to use for handling
-        prepaid Receivables. This is a Revenue contra Account. If a Sales
-        Category is used when entering a Miscellaneous Receivables Credit
-        Memo, this Account will be debited when the Credit Memo is posted. If
-        used when entering a Miscellaneous Receivables Debit Memo, the Account
-        will be credited when the Debit Memos are posted.</para>
+        <para>Specify a G/L account to use for handling prepaid receivables.
+        This is a revenue contra account. If a sales category is used when
+        entering a miscellaneous receivables credit memo, this account will be
+        debited when the credit memo is posted. If used when entering a
+        miscellaneous receivables debit memo, the account will be credited
+        when the debit memos are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Receivables Account</term>
+
       <listitem>
-        <para>Specify a General Ledger (G/L) Account to use for handling
-        Customer deposits. This is an Asset Account. If a Sales Category is
-        used when applying a Cash Receipt to a Customer Invoice, this Account
-        will be credited when the Cash Receipt is posted.</para>
+        <para>Specify a G/L account to use for handling customer deposits.
+        This is an asset account. If a sales category is used when applying a
+        cash receipt to a customer invoice, this account will be credited when
+        the cash receipt is posted.</para>
       </listitem>
     </varlistentry>
   </variablelist>

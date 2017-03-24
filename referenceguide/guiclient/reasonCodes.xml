@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="reasonCodes">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>reason codes</primary>
+
       <secondary>master list of</secondary>
     </indexterm>Reason Codes</title>
-  <para>Reason Codes provide a means for explaining why a Customer is being
+
+  <para>Reason codes provide a means for explaining why a customer is being
   given sales credit. To access the master list of Reason Codes, select the
-  "Reason Codes" option. The following screen will appear:</para>
-  <para>
-<screenshot>
+  <guimenuitem>Reason Codes</guimenuitem> option. The following screen will
+  appear:</para>
+
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/reasonCodes.png"/>
         </imageobject>
+
         <caption>Reason Codes Master List</caption>
       </mediaobject>
-    </screenshot>
-</para>
-  <para>The "Reason Codes" screen displays information on all existing Reason
-  Codes, including Reason Code and Reason Code description.</para>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="reasonCode.xml" xpointer="element(/1)"/>
+    </screenshot></para>
+
+  <para>The Reason Codes screen displays information on all existing reason
+  codes, including reason code and reason code description.</para>
+
+  <xi:include href="reasonCode.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

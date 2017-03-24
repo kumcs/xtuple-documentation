@@ -5,92 +5,112 @@
 <section id="arAccountAssignment">
   <title><indexterm significance="normal">
       <primary>accounts receivable</primary>
+
       <secondary>creating new assignment for</secondary>
     </indexterm>Receivables Assignment</title>
-  <para>To create a new Receivables assignment, select the NEW button. The
-  following screen will appear:</para>
+
+  <para>To create a new receivables assignment, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/arAccountAssignment.png" />
+          <imagedata fileref="images/arAccountAssignment.png"/>
         </imageobject>
+
         <caption>Create New Receivables Assignment</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Receivables assignment, you are presented with the
+
+  <para>When creating a new receivables assignment, you are presented with the
   following options:</para>
+
   <note>
-    <para>By default, the screen will limit your Account Number choices to
-    only those Accounts having the correct Account Type for the chosen
+    <para>By default, the screen will limit your account number choices to
+    only those accounts having the correct account type for the chosen
     context. However, privileged users may override this default behavior by
-    manually entering any Account Number listed in the Chart of
-    Accounts.</para>
+    manually entering any account number listed in the chart of
+    accounts.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Selected Customer Type</term>
+
       <listitem>
-        <para>Specify the Customer Type you want to associate with the
-        Receivables assignment.</para>
+        <para>Specify the customer type you want to associate with the
+        receivables assignment.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Customer Type Pattern</term>
+
       <listitem>
-        <para>Enter a Customer Type pattern to select a range of Customer
-        Types. Refine your search using Regular Expressions.</para>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>A/R Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Receivables account. This is an Asset Account. For example, it will be
-        debited when Invoices are posted and credited when Cash Receipts are
+        <para>Identify a general ledger (G/L) account to assign as the default
+        receivables account. This is an asset account. For example, it will be
+        debited when invoices are posted and credited when cash receipts are
         posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Prepaid Receivables Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Receivables Prepaid Account. This is a Revenue contra Account. It will
-        be debited when Miscellaneous Receivables Credit Memos are posted and
-        credited when Miscellaneous Receivables Debit Memos are posted.</para>
+        <para>Identify a G/L account to assign as the default receivables
+        prepaid account. This is a revenue contra account. It will be debited
+        when miscellaneous receivables credit memos are posted and credited
+        when miscellaneous receivables debit memos are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Freight Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Freight Account. This is a Revenue Account. It will be credited when
-        Invoices are posted and debited when Sales Order Credit Memos are
-        posted.</para>
+        <para>Identify a G/L account to assign as the default freight account.
+        This is a revenue account. It will be credited when invoices are
+        posted and debited when sales order credit memos are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Deferred Revenue Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Deferred Revenue Account. This is a Liability Account. It is an
-        optional Account, as systems may be configured to ignore it when
-        handling Customer Deposits. When this Account is used, it will be
-        credited when unapplied Cash Receipts are posted and debited when the
-        Receivables Credit Memos resulting from unapplied Cash Receipts are
-        applied to open Receivables.</para>
+        <para>Identify a G/L account to assign as the default deferred revenue
+        account. This is a liability account. It is an optional account, as
+        systems may be configured to ignore it when handling customer
+        deposits. When this account is used, it will be credited when
+        unapplied cash receipts are posted and debited when the receivables
+        credit memos resulting from unapplied cash receipts are applied to
+        open receivables.</para>
+
         <note>
-          <para>You can disable the use of a Deferred Revenue Account for
-          handling Customer Deposits at the system level.</para>
+          <para>You can disable the use of a deferred revenue account for
+          handling customer deposits at the system level.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Discount Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Receivables Discount Account. This is a Revenue Account. It will be
-        debited when Cash Receipts are posted and the Invoice the Cash Receipt
-        is applied to is still within its discount Terms.</para>
+        <para>Identify a G/L account to assign as the default receivables
+        discount account. This is a revenue account. It will be debited when
+        cash receipts are posted and the invoice the cash receipt is applied
+        to is still within its discount terms.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -5,185 +5,224 @@
 <section id="costCategory">
   <title><indexterm significance="normal">
       <primary>cost categories</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Cost Category</title>
-  <para>To create a new Cost Category, select the NEW button. The following
-  screen will appear:</para>
+
+  <para>To create a new cost category, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/costCategory.png" />
+          <imagedata fileref="images/costCategory.png"/>
         </imageobject>
+
         <caption>Create New Cost Category</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Cost Category, you are presented with the
+
+  <para>When creating a new cost category, you are presented with the
   following options:</para>
+
   <note>
-    <para>By default, the screen will limit your Account Number choices to
-    only those Accounts having the correct Account Type for the chosen
+    <para>By default, the screen will limit your account number choices to
+    only those accounts having the correct account type for the chosen
     context. However, privileged users may override this default behavior by
-    manually entering any Account Number listed in the Chart of
-    Accounts.</para>
+    manually entering any account number listed in the chart of
+    accounts.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Category</term>
+
       <listitem>
-        <para>Enter the Cost Category name.</para>
+        <para>Enter the cost category name.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Enter a brief description of the Cost Category.</para>
+        <para>Enter a brief description of the cost category.</para>
+
         <tip>
-          <para>The Account Numbers assigned to Cost Categories should not all
-          be the Inventory Account. Instead, they should be individual
-          accounts selected specifically for each Cost-tracking purpose. This
-          will increase your visibility into your Inventory Costs and
+          <para>The account numbers assigned to cost categories should not all
+          be the inventory account. Instead, they should be individual
+          accounts selected specifically for each cost-tracking purpose. This
+          will increase your visibility into your inventory costs and
           valuation.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Inventory Asset</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Inventory
-        assets to. This is an Asset Account. It will be debited when Inventory
-        is received and credited whenever Inventory Items are removed from
-        Inventory.</para>
+        <para>Identify a general ledger (G/L) Account to distribute inventory
+        assets to. This is an asset account. It will be debited when inventory
+        is received and credited whenever inventory items are removed from
+        inventory.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Expense</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to be used for expensing
-        Purchase Receipts for Items having a control method of "None." This is
-        an Expense Account. It will be debited when non-Inventory Purchase
-        Receipts are posted.</para>
+        <para>Identify a G/L account to be used for expensing purchase
+        receipts for items having a control method of "None." This is an
+        expense account. It will be debited when non-inventory purchase
+        receipts are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>WIP Asset</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute
-        work-in-process (WIP) assets to. This is an Asset Account. It will be
-        credited and/or debited with labor, material, and <indexterm
-            significance="normal">
+        <para>Identify a G/L account to distribute work-in-process (WIP)
+        assets to. This is an asset account. It will be credited and/or
+        debited with labor, material, and <indexterm significance="normal">
             <primary>overhead</primary>
+
             <secondary>linking to wip assets</secondary>
-          </indexterm>overhead Costs while a Work Order is in-process. The
+          </indexterm>overhead costs while a work order is in-process. The
         sense of the transaction record depends on the circumstances of the
         transaction.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Inventory Cost Variance</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Inventory
-        Cost variances to. This is an Asset Account. It is used in several
-        scenarios: 1) If there is a difference between new Actual Cost and old
-        Standard Cost when posting Actual Costs to Standard; 2) during Work
-        Order processing if too many materials are issued to a Work Order, or
-        if a Work Order is closed without the full quantity being posted. The
+        <para>Identify a G/L account to distribute inventory cost variances
+        to. This is an asset account. It is used in several scenarios: 1) If
+        there is a difference between new actual cost and old standard cost
+        when posting actual costs to standard; 2) during work order processing
+        if too many materials are issued to a work order, or if a work order
+        is closed without the full quantity being posted. The sense of the
+        transaction record depends on the circumstances of the
+        transaction.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Transform Clearing</term>
+
+      <listitem>
+        <para>Identify a G/L account to distribute transform transactions to.
+        This is an asset account. It will be credited when a source item
+        quantity is transformed, and debited for an equal amount when the
+        target item quantity is received into inventory.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Purchase Price Variance</term>
+
+      <listitem>
+        <para>Identify a G/L account to distribute purchase price variances
+        to. This is an asset account. It will be credited or debited with the
+        value of any variance that may arise when a voucher is posted. The
         sense of the transaction record depends on the circumstances of the
         transaction.</para>
       </listitem>
     </varlistentry>
-    <varlistentry role="standard">
-      <term>Transform Clearing</term>
-      <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Transform
-        transactions to. This is an Asset Account. It will be credited when a
-        source Item quantity is transformed, and debited for an equal amount
-        when the target Item quantity is received into Inventory.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Purchase Price Variance</term>
-      <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute purchase
-        Price variances to. This is an Asset Account. It will be credited or
-        debited with the value of any variance that may arise when a Voucher
-        is posted. The sense of the transaction record depends on the
-        circumstances of the transaction.</para>
-      </listitem>
-    </varlistentry>
+
     <varlistentry>
       <term>Inventory Adjustment</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Inventory
-        adjustments to. This is an Expense Account. It will be credited or
-        debited with the value of any variance that may arise when a
-        Miscellaneous Adjustment transaction or Count Tag transaction is
-        posted against an Item. The sense of the transaction record depends on
-        the circumstances of the transaction.</para>
+        <para>Identify a G/L account to distribute inventory adjustments to.
+        This is an expense account. It will be credited or debited with the
+        value of any variance that may arise when a miscellaneous adjustment
+        transaction or count tag transaction is posted against an item. The
+        sense of the transaction record depends on the circumstances of the
+        transaction.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Inventory Scrap</term>
+
       <listitem>
-        <para>Identify a G/L Account to distribute Inventory Scrap to. This is
-        an Expense Account. It will be credited when a Scrap transaction is
-        posted against an Item.</para>
+        <para>Identify a G/L account to distribute inventory scrap to. This is
+        an expense account. It will be credited when a scrap transaction is
+        posted against an item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Manufacturing Scrap</term>
+
       <listitem>
-        <para>Identify a G/L Account to distribute Manufacturing Scrap to.
-        This is an Expense Account. It will be credited when Work Order
-        Material Requirements are scrapped from a Work Order.</para>
+        <para>Identify a G/L account to distribute manufacturing scrap to.
+        This is an expense account. It will be credited when work order
+        material requirements are scrapped from a work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>P/O Liability Clearing</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Purchase
-        Order liability clearing to. This is a Liability Account. It will be
-        credited when a Purchase Order Receipt is posted and debited when a
-        Voucher is posted.</para>
+        <para>Identify a G/L account to distribute purchase order liability
+        clearing to. This is a liability account. It will be credited when a
+        purchase order receipt is posted and debited when a voucher is
+        posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Shipping Asset</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute shipping
-        assets to. This is an Asset Account. It will be debited with the
-        Standard Cost of a Sales Order Item when the Item is issued to
-        Shipping and credited once the Item has been shipped.</para>
+        <para>Identify a G/L account to distribute shipping assets to. This is
+        an asset account. It will be debited with the standard cost of a sales
+        order item when the item is issued to shipping and credited once the
+        item has been shipped.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line Item Freight Expense</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Purchase
-        Order or Transfer Order Line Item freight expenses to. This is an
-        Expense Account. It will be debited when Purchase Order or Transfer
-        Order Line Items are received. The Account may be debited or credited
-        when correcting Purchase Order Receipts.</para>
+        <para>Identify a G/L account to distribute purchase order or transfer
+        order line item freight expenses to. This is an expense account. It
+        will be debited when purchase order or transfer order line items are
+        received. The account may be debited or credited when correcting
+        purchase order receipts.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Transfer Order Liability Clearing</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Transfer
-        Order Liability Clearing to. This is a Liability Account. It is used
-        for recognizing liability related to transportation costs related to
-        Transfer Orders. It will be credited when Transfer Orders receipts
-        having freight charges are posted. It should be debited when the
-        Freight (or other Vendor) is paid by Miscellaneous Check.</para>
+        <para>Identify a G/L account to distribute transfer order liability
+        clearing to. This is a liability account. It is used for recognizing
+        liability related to transportation costs related to transfer orders.
+        It will be credited when transfer orders receipts having freight
+        charges are posted. It should be debited when the freight (or other
+        vendor) is paid by miscellaneous check.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Labor and Overhead Costs</term>
+
       <listitem>
-        <para>Overhead Costs: Identify a General Ledger (G/L) Account to
-        distribute labor and overhead Costs to. This is a Liability Account.
-        It will be debited and/or credited with labor and overhead Costs when
-        Work Orders are in-process or posted. The sense of the transaction
-        record depends on the circumstances of the transaction.</para>
+        <para>Overhead costs: Identify a G/L account to distribute labor and
+        overhead costs to. This is a liability account. It will be debited
+        and/or credited with labor and overhead costs when work orders are
+        in-process or posted. The sense of the transaction record depends on
+        the circumstances of the transaction.</para>
       </listitem>
     </varlistentry>
   </variablelist>

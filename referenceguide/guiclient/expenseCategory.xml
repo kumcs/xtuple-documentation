@@ -5,79 +5,99 @@
 <section id="expenseCategory">
   <title><indexterm significance="normal">
       <primary>expense categories</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Expense Category</title>
-  <para>To create a new Expense Category, select the NEW button. The following
-  screen will appear:</para>
+
+  <para>To create a new expense category, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/expenseCategory.png" />
+          <imagedata fileref="images/expenseCategory.png"/>
         </imageobject>
+
         <caption>Create New Expense Category</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Expense Category, you are presented with the
+
+  <para>When creating a new expense category, you are presented with the
   following options:</para>
+
   <tip>
-    <para>The Account Numbers assigned to Cost Categories should not all be
-    the Inventory Account. Instead, they should be individual accounts
-    selected specifically for each Cost-tracking purpose. This will increase
-    your visibility into your Inventory Costs and valuation.</para>
+    <para>The account numbers assigned to cost categories should not all be
+    the inventory account. Instead, they should be individual accounts
+    selected specifically for each cost-tracking purpose. This will increase
+    your visibility into your inventory costs and valuation.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>Category</term>
+
       <listitem>
-        <para>Enter the Expense Category name.</para>
+        <para>Enter the expense category name.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Enter a brief description of the Expense Category.</para>
+        <para>Enter a brief description of the expense category.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Active</term>
+
       <listitem>
-        <para>Select to show the Expense Category as active. Not selecting
-        means the Expense Category will be considered inactive. To re-activate
-        an Expense Category, simply select this option.</para>
+        <para>Select to show the expense category as active. Not selecting
+        means the expense category will be considered inactive. To re-activate
+        an expense category, simply select this option.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Expense</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Purchasing
-        Expenses to. This is an Expense Account. It will be debited when
-        transactions using Expense Categories are posted.</para>
+        <para>Identify a general ledger (G/L) account to distribute purchasing
+        expenses to. This is an expense account. It will be debited when
+        transactions using expense categories are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Purchase Price Variance</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute purchase
-        Price variances to. This is an Asset Account. It will be credited or
-        debited with the value of any variance that may arise when a Voucher
-        is posted for non-Inventory Items.</para>
+        <para>Identify a G/L account to distribute purchase price variances
+        to. This is an asset account. It will be credited or debited with the
+        value of any variance that may arise when a voucher is posted for
+        non-inventory items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>P/O Liability Clearing</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Purchase
-        Order liability clearing to. This is a Liability Account. It will be
-        credited when non-Inventory Items are received, and debited when a
-        Voucher for these Items is posted.</para>
+        <para>Identify a G/L account to distribute purchase order liability
+        clearing to. This is a liability account. It will be credited when
+        non-inventory items are received, and debited when a voucher for these
+        items is posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>PO Line Freight Expense</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute Freight
-        Expense to. This is an Expense Account. It will be debited when Line
-        Freight Expenses are posted.</para>
+        <para>Identify a G/L account to distribute freight expense to. This is
+        an expense account. It will be debited when line freight expenses are
+        posted.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -5,73 +5,92 @@
 <section id="apAccountAssignment">
   <title><indexterm significance="normal">
       <primary>account assignments</primary>
+
       <secondary>creating new for payables</secondary>
     </indexterm>Payables Assignment</title>
-  <para>To create a new Payables assignment, select the NEW button. The
-  following screen will appear:</para>
+
+  <para>To create a new payables assignment, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apAccountAssignment.png" />
+          <imagedata fileref="images/apAccountAssignment.png"/>
         </imageobject>
+
         <caption>Create New Payables Assignment</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Payables assignment, you are presented with the
+
+  <para>When creating a new payables assignment, you are presented with the
   following options:</para>
+
   <note>
-    <para>By default, the screen will limit your Account Number choices to
-    only those Accounts having the correct Account Type for the chosen
+    <para>By default, the screen will limit your account number choices to
+    only those accounts having the correct account type for the chosen
     context. However, privileged users may override this default behavior by
-    manually entering any Account Number listed in the Chart of
-    Accounts.</para>
+    manually entering any account number listed in the chart of
+    accounts.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>All Vendor Types</term>
+
       <listitem>
-        <para>Select to assign the Payables Accounts to all Vendor Types.</para>
+        <para>Select to assign the payables accounts to all vendor
+        types.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected Vendor Type</term>
+
       <listitem>
-        <para>Specify Vendor Type you want to associate with the Payables
+        <para>Specify vendor type you want to associate with the payables
         assignment.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor Type Pattern</term>
+
       <listitem>
-        <para>Enter a Vendor Type pattern to select a range of Vendor Types.
-        Refine your search using Regular Expressions.</para>
+        <para>Enter a vendor type pattern to select a range of vendor types.
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Payables Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Payables Account. This is a Liability Account. It will be credited when
-        Vouchers are posted and debited when Checks are posted.</para>
+        <para>Identify a general ledger (G/L) account to assign as the default
+        payables account. This is a liability account. It will be credited
+        when vouchers are posted and debited when checks are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Prepaid Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to assign as the default
-        Payables Prepaid Account. This is an Asset Account. It should not be
-        confused with or used interchangeably with the default Payables Account.
-        The Prepaid Account will be credited when Miscellaneous Payables Credit
-        Memos are posted and debited when Miscellaneous Payables Debit Memos are
+        <para>Identify a G/L account to assign as the default payables prepaid
+        account. This is an asset account. It should not be confused with or
+        used interchangeably with the default payables account. The prepaid
+        account will be credited when miscellaneous payables credit memos are
+        posted and debited when miscellaneous payables debit memos are
         posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Discount Account</term>
+
       <listitem>
-        <para>Identify a General Ledger (G/L) Account to distribute purchasing
-        Discounts to. This is a Revenue Account. It will be credited when
-        purchasing Discounts are applied to selected Payments.</para>
+        <para>Identify a G/L account to distribute purchasing discounts to.
+        This is a revenue account. It will be credited when purchasing
+        discounts are applied to selected payments.</para>
       </listitem>
     </varlistentry>
   </variablelist>

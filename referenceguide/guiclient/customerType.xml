@@ -5,52 +5,66 @@
 <section id="customerType">
   <title><indexterm significance="normal">
       <primary>customer types</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Customer Type</title>
-  <para id="Para573436">To create a new Customer Type, select the NEW button.
-  The following screen will appear:</para>
+
+  <para id="Para573436">To create a new customer type, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para id="Para573440"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customerType.png" />
+          <imagedata fileref="images/customerType.png"/>
         </imageobject>
+
         <caption>Create New Customer Type</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
-    <para id="Para573443">Create your Customer Types using a logical,
-    hierarchical structure. This will make it easier to retrieve Customer Type
+    <para id="Para573443">Create your customer types using a logical,
+    hierarchical structure. This will make it easier to retrieve customer type
     information in the future.</para>
   </tip>
-  <para id="Para573447">When creating a new Customer Type, you are presented
+
+  <para id="Para573447">When creating a new customer type, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term id="Para573448">Code</term>
+
       <listitem>
-        <para>Enter a code number to identify the Customer Type.</para>
+        <para>Enter a code number to identify the customer type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term id="Para573449">Description</term>
+
       <listitem>
-        <para>Enter a description to identify the Customer Type.</para>
+        <para>Enter a description to identify the customer type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Enable Characteristics Profile</term>
+
       <listitem>
-        <para>Select to enforce the use of a Characteristics template for any
-        Customer assigned to the specified Customer Type. If Characteristics
-        Profiles are used, the full slate of Characteristics and corresponding
-        Values will be presented in the Characteristics Tab of the Customer
-        master for every Customer assigned to the Customer Type. If not
-        selected, the template approach will not be used—and users will have
-        the ability to create ad hoc Characteristics for Customers.</para>
+        <para>Select to enforce the use of a characteristics template for any
+        customer assigned to the specified customer type. If characteristics
+        profiles are used, the full slate of characteristics and corresponding
+        values will be presented in the
+        <guimenuitem>Characteristics</guimenuitem> tab of the customer master
+        for every customer assigned to the customer type. If not selected, the
+        template approach will not be used—and users will have the ability to
+        create ad hoc characteristics for customers.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

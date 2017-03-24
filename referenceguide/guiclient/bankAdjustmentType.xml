@@ -4,70 +4,89 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="bankAdjustmentType">
   <title>Bank Adjustment Type</title>
+
   <para><indexterm significance="normal">
       <primary>bank adjustment types</primary>
+
       <secondary>creating new</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bank accounts</primary>
+
       <secondary>adjustment types for</secondary>
-    </indexterm>To create a new Bank Adjustment Type, select the NEW button.
-  The following screen will appear:</para>
+    </indexterm>To create a new bank adjustment type, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/bankAdjustmentType.png" />
+          <imagedata fileref="images/bankAdjustmentType.png"/>
         </imageobject>
+
         <caption>Create New Bank Adjustment Type</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Bank Adjustment Type, you are presented with the
+
+  <para>When creating a new bank adjustment type, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
-        <para>Enter a name to describe the Bank Adjustment Type.</para>
+        <para>Enter a name to describe the bank adjustment type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Enter a description to further describe the Bank Adjustment
-        Type.</para>
+        <para>Enter a description to further describe the bank adjustment
+        type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Adj. Account</term>
+
       <listitem>
-        <para>Specify the Account to be used for the Bank Adjustment
-        Type.</para>
+        <para>Specify the account to be used for the bank adjustment
+        type.</para>
+
         <note>
-          <para>By default, the screen will limit your Account Number choices
-          to only those Accounts having the correct Account Type for the
+          <para>By default, the screen will limit your account number choices
+          to only those accounts having the correct account type for the
           chosen context. However, privileged users may override this default
-          behavior by manually entering any Account Number listed in the Chart
-          of Accounts.</para>
+          behavior by manually entering any account number listed in the chart
+          of accounts.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Type</term>
+
       <listitem>
-        <para>Define the sense of the Bank Adjustment Type by selecting one of
+        <para>Define the sense of the bank adjustment type by selecting one of
         the following:</para>
+
         <variablelist>
           <varlistentry>
             <term>Debit</term>
+
             <listitem>
-              <para>Select if the Bank Adjustment should increase your Bank
-              Account balance.</para>
+              <para>Select if the bank adjustment should increase your bank
+              account balance.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Credit</term>
+
             <listitem>
-              <para>Select if the Bank Adjustment should decrease your Bank
-              Account balance.</para>
+              <para>Select if the bank adjustment should decrease your bank
+              account balance.</para>
             </listitem>
           </varlistentry>
         </variablelist>

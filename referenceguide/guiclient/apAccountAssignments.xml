@@ -5,39 +5,50 @@
 <section id="apAccountAssignments">
   <title><indexterm significance="normal">
       <primary>account assignments</primary>
+
       <secondary>for payables</secondary>
     </indexterm>Payables Assignments</title>
-  <para>Payables assignments represent the default General Ledger (G/L)
-  Accounts used by the system when processing the following:</para>
+
+  <para>Payables assignments represent the default general ledger (G/L)
+  accounts used by the system when processing the following:</para>
+
   <itemizedlist>
     <listitem>
       <para>Vouchers</para>
     </listitem>
+
     <listitem>
-      <para>Payment Discounts</para>
+      <para>Payment discounts</para>
     </listitem>
+
     <listitem>
-      <para>Miscellaneous Payables Credit Memos</para>
+      <para>Miscellaneous payables credit memos</para>
     </listitem>
+
     <listitem>
-      <para>Miscellaneous Payables Debit Memos</para>
+      <para>Miscellaneous payables debit memos</para>
     </listitem>
   </itemizedlist>
-  <para>The Account assignments are made by Vendor Type. This means that
-  transactions involving a Vendor will follow the assignments established for
-  the Vendor Type—unless otherwise specified. To access the Payables
-  assignments master list, select the "Payables Assignments" option. The
-  following screen will appear:</para>
+
+  <para>The account assignments are made by vendor type. This means that
+  transactions involving a vendor will follow the assignments established for
+  the vendor type—unless otherwise specified. To access the payables
+  assignments master list, select the <guilabel>Payables
+  Assignments</guilabel> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apAccountAssignments_purchasing.png" />
+          <imagedata fileref="images/apAccountAssignments_purchasing.png"/>
         </imageobject>
+
         <caption>Payables Assignments Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The "Payables Assignments" screen displays information on all existing
-  Payables Account assignments.</para>
+
+  <para>The Payables Assignments screen displays information on all existing
+  payables account assignments.</para>
+
   <xi:include href="apAccountAssignment.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

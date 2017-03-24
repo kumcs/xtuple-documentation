@@ -5,64 +5,82 @@
 <section id="forwardUpdateAccounts">
   <title><indexterm significance="normal">
       <primary>trial balances</primary>
+
       <secondary>forward-updating of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>accounts</primary>
+
       <secondary>forward-updating of</secondary>
     </indexterm>Forward Update Accounts</title>
-  <para>The Forward Update utility forward-updates Account balances from the
-  first Accounting Period when an Account is used all the way forward to the
-  current Period. This utility is only available if your site is configured to
-  manually forward-update Trial Balances. If your site has automatic
+
+  <para>The Forward Update utility forward-updates account balances from the
+  first accounting period when an account is used all the way forward to the
+  current period. This utility is only available if your site is configured to
+  manually forward-update trial balances. If your site has automatic
   forward-updating turned on, then this utility will be hidden from view. To
-  manually forward-update multiple Accounts at one time, select the "Forward
-  Update Accounts" option. The following screen will appear:</para>
+  manually forward-update multiple accounts at one time, select the
+  <guimenuitem>Forward Update Accounts</guimenuitem> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/forwardUpdateAccounts.png"
-                     id="forwardUpdateAccounts.imagedata" />
+                     id="forwardUpdateAccounts.imagedata"/>
         </imageobject>
+
         <caption>Forward Update Utility</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
-    <para>When forward-updating Revenue and Expense Accounts, keep in mind
+    <para>When forward-updating revenue and expense accounts, keep in mind
     that the system will automatically reset the beginning balances for these
-    Account Types to $0 at the start of a new Fiscal Year.</para>
+    account types to $0 at the start of a new fiscal year.</para>
   </note>
-  <para>When forward-updating multiple Accounts, you are presented with the
+
+  <para>When forward-updating multiple accounts, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Accounts</term>
+
       <listitem>
-        <para>Select to forward-update all G/L Accounts.</para>
+        <para>Select to forward-update all G/L accounts.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected Account</term>
+
       <listitem>
-        <para>Specify the G/L Account whose Trial Balance you want to
+        <para>Specify the G/L account whose trial balance you want to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Account Type</term>
+
       <listitem>
-        <para>Specify the Account Type whose Accounts you want to
+        <para>Specify the account type whose accounts you want to
         forward-update.</para>
-        <para>The following selections are available: Asset, Liability,
-        Expense, Revenue, and Equity.</para>
+
+        <para>The following selections are available: asset, liability,
+        expense, revenue, and equity.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term>UPDATE</term>
+
       <listitem>
-        <para>Select to forward-update Accounts, using the specified
+        <para>Select to forward-update accounts, using the specified
         parameters.</para>
       </listitem>
     </varlistentry>
