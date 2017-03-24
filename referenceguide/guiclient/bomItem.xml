@@ -10,7 +10,7 @@
       <primary>components</primary>
       <secondary>adding to BOMs</secondary>
     </indexterm>Bill of Materials Item</title>
-  <para>To add new components to a Bill of Materials, select the NEW button.
+  <para>To add new components to a bill of materials, select the NEW button.
   The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -21,17 +21,17 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>Bill of Materials component items must have an item site defined to
+    <para>Bill of materials component items must have an item site defined to
     be valid.</para>
   </tip>
-  <para>When adding a new component item to a Bill of Materials, you are
+  <para>When adding a new component item to a bill of materials, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the item number of the item you want to add to the Bill of
-        Materials.</para>
+        <para>Enter the item number of the item you want to add to the bill of
+        materials.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -61,7 +61,7 @@
             <term>Effective</term>
             <listitem>
               <para>The system enables you to specify when a component can be
-              used in a Bill of Materials. For example, the company's
+              used in a bill of materials. For example, the company's
               engineering department may be working on a new design for an
               existing item—but that new design will not be available for use
               until a given date in the future. In this case, you can specify
@@ -73,8 +73,8 @@
             <term>Expires</term>
             <listitem>
               <para>The system also enables you to specify when a component is
-              planned to be obsoleted from (i.e., no longer used in) a Bill of
-              Materials. As mentioned above, the company's engineering
+              planned to be obsoleted from (i.e., no longer used in) a bill of
+              materials. As mentioned above, the company's engineering
               department may be working on a new design for an existing
               item—but that new design will not be available for use until a
               given date in the future. In this case, the old component item
@@ -92,7 +92,7 @@
       <listitem>
         <para>Select to create work orders for manufactured components when
         their parent items are exploded. This option applies only to
-        manufactured items appearing as components on a Bill of Materials. If
+        manufactured items appearing as components on a bill of materials. If
         selected, a work order will automatically be created for the
         manufactured component when the parent item is exploded. The impact on
         work order numbers will be visible. For example, a "-1" will be
@@ -104,7 +104,7 @@
           <para>The "Create Child W/O at Parent W/O Explosion" option will
           cause the creation of lower level work orders BOTH at work order
           explosion and also during the explosion that takes place during
-          Master Production Scheduling (MPS) and Material Requirements
+          Master Production Scheduling (MPS) and material requirements
           Planning (MRP) runs.</para>
         </note>
       </listitem>
@@ -122,7 +122,7 @@
       <listitem>
         <para>Use this option to specify a "flat" quantity of material
         required that is independent of the total quantity produced on a batch
-        or work order. For example, tooling items added to a Bill of Materials
+        or work order. For example, tooling items added to a bill of materials
         generally have a fixed quantity regardless of the total quantity of
         finished goods produced. Batch size does have an impact on the costing
         for fixed quantity items, however. For example, if the parent item's
@@ -141,8 +141,8 @@
     <varlistentry>
       <term>Qty. Per</term>
       <listitem>
-        <para>Specify the quantity of the component item required per Bill of
-        Materials. This is a required field.</para>
+        <para>Specify the quantity of the component item required per bill of
+        materials. This is a required field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -241,8 +241,8 @@
           </varlistentry>
         </variablelist>
         <note>
-          <para>You can define a default issue method for new Bill of
-          Materials component items at the system level.</para>
+          <para>You can define a default issue method for new bill of
+          materials component items at the system level.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -278,7 +278,7 @@
         components is either "Pull" or "Mixed" and the Operation is set to
         Auto Issue components. Secondly, work order paperwork, such as
         Routings, will show the relationship between linked work order
-        Material Requirements and work order Operations.</para>
+        material requirements and work order Operations.</para>
         <tip>
           <para>If an Operation is expired, the link between the Operation and
           the component item will be removed.</para>
@@ -291,7 +291,7 @@
         <para>Select to indicate that this component is not due until the work
         order Operation that will consume it is scheduled to begin. The
         scheduling of Operations is handled by the Execution Day indicator on
-        the Bill of Operations item screen. For example, let's say we have an
+        the routings item screen. For example, let's say we have an
         Operation with an Execution Day = 5. This means the Operation is
         scheduled to begin five days after the start date of the work order.
         Components scheduled with this Operation are due the day before the
@@ -352,8 +352,8 @@
           <varlistentry>
             <term>BOM-Defined Substitutions</term>
             <listitem>
-              <para>Select to define item Substitutions at the Bill of
-              Materials level.</para>
+              <para>Select to define item Substitutions at the bill of
+              materials level.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -450,7 +450,7 @@
       <caption>BOM Item Costs</caption>
     </mediaobject>
   </screenshot>
-  <para>When opening the Bill of Materials item Costs, you are presented with
+  <para>When opening the bill of materials item Costs, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
@@ -469,7 +469,7 @@
       <term>Costing Elements</term>
       <listitem>
         <para>A list of the costing elements with current standard cost of the
-        Bill of Material item is displayed.</para>
+        bill of material item is displayed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -490,7 +490,7 @@
         <caption>Bill of Operations Items</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When linking Bill of Materials components to Bill of Operations items,
+  <para>When linking bill of materials components to routings items,
   you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -509,9 +509,9 @@
     <varlistentry>
       <term>Bill of Operation Items</term>
       <listitem>
-        <para>Display lists Bill of Operations Items for the same manufactured
-        item whose Bill of Materials is being specified. Highlight the
-        Operation you want to link the Bill of Materials Item to, then hit the
+        <para>Display lists routing items for the same manufactured
+        item whose bill of materials is being specified. Highlight the
+        Operation you want to link the bill of materials item to, then hit the
         SELECT button.</para>
       </listitem>
     </varlistentry>
@@ -521,20 +521,20 @@
     <varlistentry>
       <term>CLEAR</term>
       <listitem>
-        <para>Removes the link between a Bill of Materials component and a
-        Bill of Operations Item if such a link has been made.</para>
+        <para>Removes the link between a bill of materials component and a
+        routing item if such a link has been made.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>SELECT</term>
       <listitem>
-        <para>Links the Bill of Operations Item to the specified Bill of
-        Materials component. Highlight the desired Bill of Operations Item
+        <para>Links the routing item to the specified bill of
+        materials component. Highlight the desired routing item
         before selecting the SELECT button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>On a Bill of Materials, if the parent item is a configured item (i.e.,
+  <para>On a bill of materials, if the parent item is a configured item (i.e.,
   configured Job item or Reference item), then you will have the option to
   link BOM items to specific parent item Characteristics. For example, let's
   say the parent item has a Characteristic for paint finish with the values
@@ -569,7 +569,7 @@
       <listitem>
         <para>Select a Characteristic from the list of Characteristics. These
         Characteristics are item Characteristics defined on the Item master
-        for the parent item on the Bill of Materials. Linking parent
+        for the parent item on the bill of materials. Linking parent
         Characteristics to child BOM items means the child item will be
         included as a material requirement whenever orders call for the same
         parent item Characteristic.</para>

@@ -74,11 +74,11 @@
         </indexterm>Automatically Explode Work Orders</term>
       <listitem>
         <para>Select if you want work orders to be exploded automatically.
-        work order explosion is the process whereby work order Material
+        work order explosion is the process whereby work order material
         Requirements and work order Operations are created for a work order.
         If this option is selected, all parent work order items will be
         exploded by default. Child work orders will also be exploded by
-        default, if the Bill of Materials for the parent item specifies that
+        default, if the bill of materials for the parent item specifies that
         child work orders should be created when the parent work order is
         exploded. If this option is not selected, work orders will need to be
         exploded manually.</para>
@@ -117,7 +117,7 @@
             <term>Date of Explosion</term>
             <listitem>
               <para>Explode work orders effective on the date of explosion,
-              incorporating Bills of Materials and Bills of Operations
+              incorporating bills of materials and routings
               effective on that date.</para>
             </listitem>
           </varlistentry>
@@ -125,7 +125,7 @@
             <term>Work Order Start Date</term>
             <listitem>
               <para>Explode work orders effective on the scheduled start date,
-              incorporating Bills of Materials and Bills of Operations
+              incorporating bills of materials and routings
               effective on that date.</para>
               <tip>
                 <para>Pick a default explosion level if you have not
@@ -219,7 +219,7 @@
                 before they can be exploded. The easiest way to ensure that
                 child work orders are created for manufactured components is
                 to select the "Create Child W/O at Parent W/O Explosion"
-                option found on the Bill of Materials.</para>
+                option found on the bill of materials.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -258,7 +258,7 @@
               Cost of sales.</para>
               <para role="manufacturing"><tip>
                   <para>The appropriate reporting selections must be made in
-                  the Bill of Operations to ensure that labor and overhead
+                  routings to ensure that labor and overhead
                   Costs associated with setup and run time Operations are
                   reported.</para>
                 </tip></para>

@@ -88,7 +88,7 @@
 
       <listitem>
         <para>Select if the item can be manufactured at the specified site.
-        planned work orders from the Material Requirements Planning (MRP)
+        planned work orders from the material requirements Planning (MRP)
         system can only be created for item sites having this option
         selected.</para>
 
@@ -109,7 +109,7 @@
               <note>
                 <para>Work orders created, as specified above, to meet sales
                 order demand will be created regardless of an item's
-                Availability—and also regardless of whether Material
+                Availability—and also regardless of whether material
                 Requirements Planning (MRP) is being run in parallel.</para>
               </note>
             </listitem>
@@ -140,7 +140,7 @@
               <note>
                 <para>Purchase requests created to meet work order or sales
                 order demand will be created regardless of item
-                Availability—and also regardless of whether Material
+                Availability—and also regardless of whether material
                 Requirements Planning (MRP) is being run in parallel.</para>
               </note>
             </listitem>
@@ -505,7 +505,7 @@
 
               <para role="manufacturing"><tip>
                   <para>The appropriate reporting selections must be made in
-                  the Bill of Operations to ensure that labor and overhead
+                  the routings to ensure that labor and overhead
                   Costs associated with setup and run time Operations are
                   reported.</para>
                 </tip></para>
@@ -710,14 +710,14 @@
 
       <listitem>
         <para>Select to enforce order parameters. If this option is selected,
-        then Material Requirements Planning (MRP) will follow the order
+        then material requirements Planning (MRP) will follow the order
         Parameters defined below when generating planned replenishment orders.
         Parameters you define will be saved if this option is turned ON/OFF.
         If you want to enforce order parameters on manual orders as well,
         select the "on Manual Orders" option.</para>
 
         <note>
-          <para>Running Material Requirements Planning (MRP) on your system
+          <para>Running material requirements Planning (MRP) on your system
           consists entirely of running the Create Planned Replenishment Orders
           screens—either by item or by Planner Code. As MRP runs, the planned
           replenishment orders are generated automatically.</para>
@@ -731,7 +731,7 @@
               <para>The Reorder Level specifies when a planned replenishment
               order should be created for an item site. If planned
               Availability minus Safety Stock falls below the Reorder Level,
-              then a Replenishment order will be created when Material
+              then a Replenishment order will be created when material
               Requirements Planning (MRP) is run. The Replenishment order
               quantity will be equal to the quantity required to return
               planned availability to either the Reorder Level or the order Up
@@ -753,7 +753,7 @@
             <listitem>
               <para>The order Up To (OUT) Level indicates the level of planned
               availability an item site should be replenished up to when
-              Material Requirements Planning (MRP) is run. In cases where the
+              material requirements Planning (MRP) is run. In cases where the
               Reorder Level for an item site exceeds the order Up To Level,
               MRP will replenish the item site up to the Reorder Level.</para>
 
@@ -858,7 +858,7 @@
                   <term>MRP</term>
 
                   <listitem>
-                    <para>Select if you want the Material Requirements
+                    <para>Select if you want the material requirements
                     Planning (MRP) system to create planned orders for the
                     item when MRP is run.</para>
                   </listitem>
@@ -892,7 +892,7 @@
             <listitem>
               <para>Specify the quantity of Stock for the item you want to
               keep in inventory to protect against unplanned, unforeseeable
-              trends in your order forecasts. When Material Requirements
+              trends in your order forecasts. When material requirements
               Planning (MRP) is run, the system considers the Safety Stock
               value when determining whether to create planned replenishment
               orders. If planned availability minus Safety Stock is below the
@@ -967,7 +967,7 @@
               the item is a purchased item, then the Lead Time refers to the
               planning Lead Time. The procurement Lead Time for purchased
               items is determined on a Vendor-by-Vendor basis, using Item
-              Source masters. Material Requirements Planning (MRP) will
+              Source masters. Material requirements planning (MRP) will
               consider Lead Times when calculating planned order start dates
               when MRP is run.</para>
             </listitem>
@@ -1001,7 +1001,7 @@
 
             <listitem>
               <para>Select if you want the item site to have planned transfer
-              orders created for it when the Material Requirements Planning
+              orders created for it when the material requirements Planning
               (MRP) system is run. If selected, MRP will only create planned
               transfer orders for the item site. Planned purchase orders or
               planned work orders will not be created.</para>
