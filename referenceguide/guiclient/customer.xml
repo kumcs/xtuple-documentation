@@ -101,9 +101,9 @@
     <varlistentry>
       <term>Ship-To</term>
       <listitem>
-        <para>Select to display Ship-To Addresses for the specified customer.
-        Every customer can have multiple Ship-To Addresses, one for each of
-        the destinations you ship goods to. Ship-To Addresses are specified at
+        <para>Select to display ship-to addresses for the specified customer.
+        Every customer can have multiple ship-to addresses, one for each of
+        the destinations you ship goods to. ship-to addresses are specified at
         the point of Sales Order entry.</para>
       </listitem>
     </varlistentry>
@@ -111,7 +111,7 @@
   <para><indexterm significance="normal">
       <primary>ship-to addresses</primary>
       <secondary>creating new</secondary>
-    </indexterm>To create a new Ship-To Address for a customer, select the NEW
+    </indexterm>To create a new ship-to Address for a customer, select the NEW
   button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -126,11 +126,11 @@
     Customer master—for example, shipping defaults, Sales Representative, etc.
     By default, the Customer master values will be pre-filled on the Ship-To
     Address screen. However, you can easily change these customer defaults for
-    each Ship-To Address. The specific Ship-To Address information will be
-    used when the Ship-To Address is selected at the point of Sales Order
+    each ship-to address. The specific ship-to address information will be
+    used when the ship-to address is selected at the point of Sales Order
     entry.</para>
   </tip>
-  <para>When creating a new Ship-To Address, you are presented with the
+  <para>When creating a new ship-to address, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -142,39 +142,39 @@
     <varlistentry>
       <term>Ship-To #</term>
       <listitem>
-        <para>Specify a number or code to identify the Ship-To Address.</para>
+        <para>Specify a number or code to identify the ship-to address.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Name</term>
       <listitem>
         <para>Enter the name of the company that will receive shipments at
-        this Ship-To Address. Customers may maintain multiple Ship-To
-        Addresses with diverse destinations.</para>
+        this ship-to address. Customers may maintain multiple ship-to
+        addresses with diverse destinations.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Active</term>
       <listitem>
-        <para>Select to activate the Ship-To Address. If this option is not
-        selected, then the Ship-To Address will be inactive.</para>
+        <para>Select to activate the ship-to address. If this option is not
+        selected, then the ship-to address will be inactive.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Default</term>
       <listitem>
-        <para>Select if this is the default Ship-To Address for the
+        <para>Select if this is the default ship-to address for the
         customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Address</term>
       <listitem>
-        <para>Manually enter delivery Address information in the fields
-        below—or use the lookup feature to select pre-existing Address
-        information. If a new Address is manually entered here, that Address
-        will be added automatically to the master list of Addresses. For
-        additional documentation related to creating Addresses, see <xref
+        <para>Manually enter delivery address information in the fields
+        below—or use the lookup feature to select pre-existing address
+        information. If a new address is manually entered here, that address
+        will be added automatically to the master list of addresses. For
+        additional documentation related to creating addresses, see <xref
         linkend="address" />.</para>
       </listitem>
     </varlistentry>
@@ -187,7 +187,7 @@
         <para>Manually enter delivery Contact information in the fields
         below—or use the lookup feature to select pre-existing Contact
         information. This field should not to be confused with the "Name"
-        field that appears on the Ship-To Address label. If a new Contact is
+        field that appears on the ship-to address label. If a new Contact is
         manually entered here, that Contact will be added automatically to the
         master list of Contacts. For additional documentation related to
         creating Contacts, see <xref linkend="contact" />.</para>
@@ -196,21 +196,21 @@
     <varlistentry>
       <term>Defaults</term>
       <listitem>
-        <para>Specify the following Ship-To Address defaults:</para>
+        <para>Specify the following ship-to address defaults:</para>
         <variablelist>
           <varlistentry>
             <term>Sales Rep</term>
             <listitem>
-              <para>Specify the Sales Rep for the Ship-To Address. This is the
-              Sales Rep that will be used whenever an Order specifies this
-              Ship-To Address.</para>
+              <para>Specify the Sales Rep for the ship-to address. This is the
+              Sales Rep that will be used whenever an order specifies this
+              ship-to address.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Commission</term>
             <listitem>
               <para>When you first associate a Sales Rep with a customer—or
-              with a Ship To Address—the system will copy in the commission
+              with a Ship To address—the system will copy in the commission
               from the Sales Rep record as a convenience. This commission may
               be changed locally at the customer record level, but any changes
               will not be inherited by the Sales Rep record. Similarly, if you
@@ -222,20 +222,20 @@
           <varlistentry>
             <term>Ship Zone</term>
             <listitem>
-              <para>Specify the shipping zone for the Ship-To Address.</para>
+              <para>Specify the shipping zone for the ship-to address.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Tax Zone</term>
             <listitem>
-              <para>Specify tax zone to be used for Ship-To Address.</para>
+              <para>Specify tax zone to be used for ship-to address.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Ship Via</term>
             <listitem>
-              <para>Specify the default Ship Via to be used for the Ship-To
-              Address. You may enter a free-form Ship Via simply by typing the
+              <para>Specify the default Ship Via to be used for the ship-to
+              address. You may enter a free-form Ship Via simply by typing the
               name of the Ship Via into the field.</para>
               <tip>
                 <para>The system supports up-to-date shipment tracking with
@@ -248,21 +248,21 @@
             <term>Shipping Form</term>
             <listitem>
               <para>Specify the default shipping form to be used for the
-              Ship-To Address. This field is optional.</para>
+              ship-to address. This field is optional.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Shipping Charges</term>
             <listitem>
               <para>Specify the default shipping charges to be used for the
-              Ship-To Address.</para>
+              ship-to address.</para>
             </listitem>
           </varlistentry>
           <varlistentry role="standard">
             <term>Preferred Selling Site</term>
             <listitem>
-              <para>Specify the preferred selling site for the Ship-To
-              Address. If no default Ship-To Address exists, Sales Orders
+              <para>Specify the preferred selling site for the ship-to
+              address. If no default ship-to address exists, Sales Orders
               entered for the customer will try to match this setting with the
               site selection at the Sales Order header level.</para>
             </listitem>
@@ -275,7 +275,7 @@
       <listitem>
         <para>Select the "General Notes" tab to access this scrolling text
         field with word-wrapping for entering general notes related to the
-        customer Ship-To Address. These notes are for internal use
+        customer ship-to address. These notes are for internal use
         only.</para>
       </listitem>
     </varlistentry>
@@ -284,16 +284,16 @@
       <listitem>
         <para>Select the "Shipping Notes" tab to access this scrolling text
         field with word-wrapping for entering shipping notes related to the
-        customer Ship-To Address. Shipping notes are transferred to the
+        customer ship-to address. Shipping notes are transferred to the
         "Shipping Notes" tab on the Sales Order header whenever a Sales Order
-        for the specified Ship-To Address is entered. Ultimately, shipping
+        for the specified ship-to address is entered. Ultimately, shipping
         notes may be printed on shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Documents</term>
       <listitem>
-        <para>To associate documents with a Ship-To Address, select the
+        <para>To associate documents with a ship-to address, select the
         "Documents" tab.</para>
         <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
                     xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -303,14 +303,14 @@
       <term>Transmission</term>
       <listitem>
         <para>Select the "Transmission" tab to associate EDI Profiles with the
-        Ship-To Address. EDI Profiles are used for transmitting Orders and
+        ship-to address. EDI Profiles are used for transmitting Orders and
         invoices to customers electronically—via email or FTP. Associating an
-        EDI Profile with a Ship-To Address overrides the association of an EDI
+        EDI Profile with a ship-to address overrides the association of an EDI
         Profile with the customer.</para>
         <note>
           <para role="xtconnect">The buttons on the "Transmission" tab are
-          disabled when creating a new Ship-To Address. If you want to set up
-          EDI for a new Ship-To Address, save the Ship-To Address and edit it
+          disabled when creating a new ship-to address. If you want to set up
+          EDI for a new ship-to address, save the ship-to address and edit it
           again.</para>
         </note>
         <xi:include href="../widgets/edirelation.xml"
@@ -349,7 +349,7 @@
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Select to specify the default Tax information for the
+        <para>Select to specify the default tax information for the
         customer.</para>
       </listitem>
     </varlistentry>
@@ -370,7 +370,7 @@
       <listitem>
         <para>Specify a default Sales Representative for the customer. This
         Sales Rep will be used for customer Orders, unless a particular
-        Ship-To Address for the customer specifies a different Sales
+        ship-to address for the customer specifies a different Sales
         Rep.</para>
       </listitem>
     </varlistentry>
@@ -378,7 +378,7 @@
       <term>Commission</term>
       <listitem>
         <para>When you first associate a Sales Rep with a customer—or with a
-        Ship To Address—the system will copy in the commission from the Sales
+        Ship To address—the system will copy in the commission from the Sales
         Rep record as a convenience. This commission may be changed locally at
         the customer record level, but any changes will not be inherited by
         the Sales Rep record. Similarly, if you update the commission
@@ -471,17 +471,17 @@
     <varlistentry>
       <term>Allow Free-Form Ship-To's</term>
       <listitem>
-        <para>Select to indicate that free-form Ship-To Addresses may be
+        <para>Select to indicate that free-form ship-to addresses may be
         entered when Sales Orders are created for the customer. If not
-        selected, you are indicating that free-form Ship-To's may not be
-        entered for the customer. Instead, Ship-To's must be entered using
+        selected, you are indicating that free-form ship-to's may not be
+        entered for the customer. Instead, ship-to's must be entered using
         predefined information.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Allow Free-Form Bill-To</term>
       <listitem>
-        <para>Select to indicate that free-form Bill-To Addresses may be
+        <para>Select to indicate that free-form Bill-To addresses may be
         entered when Sales Orders are created for the customer. If not
         selected, you are indicating that free-form Bill-To's may not be
         entered for the customer. Instead, the predefined Bill-To found on the
@@ -718,7 +718,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To specify Tax-related information for the customer, select the "Tax"
+  <para>To specify tax-related information for the customer, select the "Tax"
   option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -734,7 +734,7 @@
     </indexterm> <indexterm significance="normal">
       <primary>taxes</primary>
       <secondary>for customers</secondary>
-    </indexterm>When adding Customer Tax information, you are presented with
+    </indexterm>When adding Customer tax information, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
@@ -745,19 +745,19 @@
       <listitem>
         <para>Specify the default tax zone you want to associate with the
         customer. By default, the specified tax zone will be used on Sales
-        Orders and quotes for the customer—unless a Ship-To Address in use
+        Orders and quotes for the customer—unless a ship-to address in use
         specifies a different tax zone.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tax Registration Numbers</term>
       <listitem>
-        <para>Display lists Tax Registration Numbers for the specified
+        <para>Display lists tax registration numbers for the specified
         customer.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add a new customer Tax Registration Number, select the NEW button.
+  <para>To add a new customer tax registration number, select the NEW button.
   The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -773,7 +773,7 @@
     </indexterm> <indexterm significance="normal">
       <primary>taxes</primary>
       <secondary>registration for customers</secondary>
-    </indexterm>When adding a new customer Tax Registration Number, you are
+    </indexterm>When adding a new customer tax registration number, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -785,49 +785,49 @@
     <varlistentry>
       <term>Tax Zone</term>
       <listitem>
-        <para>Specify the tax zone the Tax Registration Number is valid
+        <para>Specify the tax zone the tax registration number is valid
         for.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tax Authority</term>
       <listitem>
-        <para>Specify the Tax Authority associated with the Tax Registration
+        <para>Specify the tax authority associated with the tax Registration
         Number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Registration Number</term>
       <listitem>
-        <para>Enter the customer's Tax Registration Number for the specified
-        Tax Authority. The registration number is used by Tax Authorities to
+        <para>Enter the customer's tax registration number for the specified
+        tax authority. The registration number is used by tax authorities to
         identify businesses and/or individuals. An Employer Identification
-        Numbers (EIN) is an example of a Tax Registration Number.</para>
+        Numbers (EIN) is an example of a tax registration number.</para>
         <tip>
-          <para>The customer's Tax Registration Number is used for identifying
-          the customer to relevant Tax Authorities. This information should
-          not be confused with the Tax Registration Numbers, which are used to
-          identify your company to relevant Tax Authorities.</para>
+          <para>The customer's tax registration number is used for identifying
+          the customer to relevant tax authorities. This information should
+          not be confused with the tax registration numbers, which are used to
+          identify your company to relevant tax authorities.</para>
         </tip>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Effectivity</term>
       <listitem>
-        <para>Specify the date range the Tax Registration Number is valid
+        <para>Specify the date range the tax registration number is valid
         for:</para>
         <variablelist>
           <varlistentry>
             <term>Start Date</term>
             <listitem>
-              <para>The Tax Registration Number is valid on and after this
+              <para>The tax registration number is valid on and after this
               date.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>End Date</term>
             <listitem>
-              <para>The Tax Registration Number is valid on and before this
+              <para>The tax registration number is valid on and before this
               date.</para>
             </listitem>
           </varlistentry>
@@ -838,7 +838,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        notes related to the Tax Registration Number.</para>
+        notes related to the tax registration number.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -947,11 +947,11 @@
     <varlistentry>
       <term>Address</term>
       <listitem>
-        <para>By default, the customer's Billing Address will be entered here.
+        <para>By default, the customer's billing address will be entered here.
         However, you may specify an alternate billing address for the Credit
-        Card record using the Address lookup feature located in the lower
+        Card record using the address lookup feature located in the lower
         right-hand corner of the screen. For additional documentation related
-        to creating Addresses, see <xref linkend="address" />.</para>
+        to creating addresses, see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
