@@ -10,16 +10,16 @@
       <primary>credit cards</primary>
       <secondary>configuration for</secondary>
     </indexterm>Credit Card</title>
-  <para>The system supports several Credit Card verification services,
+  <para>The system supports several credit card verification services,
   including YourPay (now First Data), Authorize.Net, and CyberSource. The
-  recording of Credit Card transactions is also supported, even if an approved
+  recording of credit card transactions is also supported, even if an approved
   verification service is not being used.</para>
   <para><tip>
       <para>Once you've confirmed with your bank which payment gateway you
       want to use, contact the gateway to set up a merchant account. The
       merchant account details are needed before you can configure xTuple to
       use payment gateways.</para>
-    </tip>To configure your system to process Credit Cards, select the "Credit
+    </tip>To configure your system to process credit cards, select the "Credit
   Card" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -29,25 +29,25 @@
         <caption>Configure Credit Card General Options</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When establishing the general settings for your Credit Card
+  <para>When establishing the general settings for your credit card
   configuration, you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Accept Credit Cards</term>
       <listitem>
-        <para>Select to indicate the system is configured to accept Credit
-        Card Payments. If selected, the Credit Card processing functionality
+        <para>Select to indicate the system is configured to accept credit
+        card payments. If selected, the credit card processing functionality
         will be enabled throughout the system. For example, users will be able
-        to store customer Credit Card information on the Customer master—and
-        receive Credit Card payments when processing sales orders. If this
-        option is not selected, Credit Card functionality will be
+        to store customer credit card information on the Customer master—and
+        receive credit card payments when processing sales orders. If this
+        option is not selected, credit card functionality will be
         disabled.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Work in Test Mode</term>
       <listitem>
-        <para>Select if your site is testing the Credit Card configuration and
+        <para>Select if your site is testing the credit card configuration and
         functionality. If selected, the system will verify that the server
         specified under the "Server" tab is in fact the correct test server.
         If this option is not selected, the system will verify that the
@@ -73,14 +73,14 @@
           <secondary>selecting verification service</secondary>
         </indexterm>Verification Service</term>
       <listitem>
-        <para>Specify the Credit Card verification service you will be
+        <para>Specify the credit card verification service you will be
         using:</para>
         <variablelist>
           <varlistentry>
             <term>Authorize.Net</term>
             <listitem>
               <para>Select if you will be using the Authorize.Net payment
-              gateway for handling Credit Card transactions. If selected,
+              gateway for handling credit card transactions. If selected,
               specific Authorize.Net options will be enabled on the screen.
               Please be aware that xTuple only supports the card not present
               (CNP) account type through Authorize.Net. The card present (CP)
@@ -93,7 +93,7 @@
             <term>YourPay (now First Data)</term>
             <listitem>
               <para>Select if you will be using the YourPay payment gateway
-              for handling Credit Card transactions. Specific YourPay options
+              for handling credit card transactions. Specific YourPay options
               will be enabled on the screen if you select this service.</para>
             </listitem>
           </varlistentry>
@@ -101,7 +101,7 @@
             <term>CyberSource</term>
             <listitem>
               <para>Select if you will be using the CyberSource payment
-              gateway for handling Credit Card transactions. Specific
+              gateway for handling credit card transactions. Specific
               CyberSource options will be enabled on the screen if you select
               this service.</para>
             </listitem>
@@ -110,12 +110,12 @@
             <term>External</term>
             <listitem>
               <para>Select if you will be using tools outside of xTuple ERP to
-              communicate with your Credit Card company. If selected, you may
-              still process Credit Card transactions in xTuple ERP—and this
+              communicate with your credit card company. If selected, you may
+              still process credit card transactions in xTuple ERP—and this
               information will be stored in your xTuple database. However, no
-              information will be sent to outside Credit Card processors. You
+              information will be sent to outside credit card processors. You
               can learn more about the interface used to collect external
-              Credit Card transactions in <xref
+              credit card transactions in <xref
               linkend="externalCCTransaction" />.</para>
             </listitem>
           </varlistentry>
@@ -132,14 +132,14 @@
             <term>Pre-Authorization</term>
             <listitem>
               <para>Select if you want confirmation before pre-authorizing
-              charges on a Credit Card.</para>
+              charges on a credit card.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Direct Charge</term>
             <listitem>
               <para>Select if you want confirmation before directly charging a
-              Credit Card.</para>
+              credit card.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -153,7 +153,7 @@
             <term>Credit</term>
             <listitem>
               <para>Select if you want confirmation before crediting back
-              charges on a Credit Card.</para>
+              charges on a credit card.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -209,50 +209,50 @@
           <secondary>bank accounts and</secondary>
         </indexterm>Default Bank Accounts</term>
       <listitem>
-        <para>Specify the default Bank Accounts to be used when receiving Cash
-        from customers using the following types of Credit Cards:</para>
+        <para>Specify the default Bank accounts to be used when receiving Cash
+        from customers using the following types of credit cards:</para>
         <variablelist>
           <varlistentry>
             <term>American Express</term>
             <listitem>
-              <para>Select a Bank Account to use for American Express
+              <para>Select a bank account to use for American Express
               transactions. This selection allows you to track American
               Express transactions and reconcile them against statements
-              provided by your Credit Card processing company.</para>
+              provided by your credit card processing company.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Discover</term>
             <listitem>
-              <para>Select a Bank Account to use for Discover transactions.
+              <para>Select a bank account to use for Discover transactions.
               This selection allows you to track Discover transactions and
-              reconcile them against statements provided by your Credit Card
+              reconcile them against statements provided by your credit card
               processing company.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Master Card</term>
             <listitem>
-              <para>Select a Bank Account to use for Master Card transactions.
+              <para>Select a bank account to use for Master Card transactions.
               This selection allows you to track Master Card transactions and
-              reconcile them against statements provided by your Credit Card
+              reconcile them against statements provided by your credit card
               processing company.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Visa</term>
             <listitem>
-              <para>Select a Bank Account to use for Visa transactions. This
+              <para>Select a bank account to use for Visa transactions. This
               selection allows you to track Visa transactions and reconcile
-              them against statements provided by your Credit Card processing
+              them against statements provided by your credit card processing
               company.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Other</term>
             <listitem>
-              <para>Select if you want to specify a different default Bank
-              Account than those listed.</para>
+              <para>Select if you want to specify a different default bank
+              account than those listed.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -302,13 +302,13 @@
       <term>Require Card Verification Value/Code (CVV)</term>
       <listitem>
         <para>Select if you want to require users to enter a CVV code when
-        processing Credit Cards.</para>
+        processing credit cards.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Card Verification</term>
       <listitem>
-        <para>Specify how you want to handle Credit Card verification
+        <para>Specify how you want to handle credit card verification
         processing:</para>
         <variablelist>
           <varlistentry>
@@ -341,7 +341,7 @@
     <varlistentry>
       <term>Fail CVV Check If:</term>
       <listitem>
-        <para>Specify how you want to handle Credit Card Verification Value
+        <para>Specify how you want to handle credit card Verification Value
         (CVV) check failures:</para>
         <variablelist>
           <varlistentry>
@@ -355,7 +355,7 @@
             <term>CVV Was Not Processed</term>
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
-              if the Credit Card company, such as Visa or American Express,
+              if the credit card company, such as Visa or American Express,
               could not process the CVV for the payment gateway.</para>
             </listitem>
           </varlistentry>
@@ -363,7 +363,7 @@
             <term>Card Had No Code</term>
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
-              if the Credit Card does not have a CVV but is expected to have
+              if the credit card does not have a CVV but is expected to have
               one.</para>
             </listitem>
           </varlistentry>
@@ -371,7 +371,7 @@
             <term>Card Issuer Is Not Certified</term>
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
-              if the financial institution that issued the Credit Card is not
+              if the financial institution that issued the credit card is not
               certified.</para>
             </listitem>
           </varlistentry>
@@ -421,15 +421,15 @@
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
               if the address stored by the xTuple application does not match
-              the Credit Card company's recorded billing address for the
-              Credit Card.</para>
+              the credit card company's recorded billing address for the
+              credit card.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Address Comparison Not Available</term>
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
-              if the Credit Card company could not process the street address
+              if the credit card company could not process the street address
               information for the payment gateway.</para>
             </listitem>
           </varlistentry>
@@ -438,15 +438,15 @@
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
               if the postal code stored by the xTuple application does not
-              match the Credit Card company's recorded billing address for the
-              Credit Card.</para>
+              match the credit card company's recorded billing address for the
+              credit card.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>ZIP Comparison Not Available</term>
             <listitem>
               <para>Select if the transaction should be treated as fraudulent
-              if the Credit Card company could not process the postal code
+              if the credit card company could not process the postal code
               information for the payment gateway.</para>
             </listitem>
           </varlistentry>
@@ -454,7 +454,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To establish the server settings for your Credit Card configuration,
+  <para>To establish the server settings for your credit card configuration,
   <indexterm significance="normal">
       <primary>servers</primary>
       <secondary>for credit card companies</secondary>
@@ -468,7 +468,7 @@
         <caption>Configure Credit Card Server Options</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When establishing the server settings for your Credit Card
+  <para>When establishing the server settings for your credit card
   configuration, you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -553,7 +553,7 @@
     the live payment gateway's URL. You will get a warning from the
     application when you click the Save button if you do this.</para>
   </tip>
-  <para>To establish the service option settings for your Credit Card
+  <para>To establish the service option settings for your credit card
   configuration, select the "Service Options" tab. The options will vary
   depending on the payment gateway being used. For example, the CyberSource
   and External methods do not require service options to be entered. However,
@@ -811,7 +811,7 @@
             <term>Always Use</term>
             <listitem>
               <para>Select to always use the Currency specified here for all
-              Credit Card transactions.</para>
+              credit card transactions.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -861,7 +861,7 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>All users on your system who need access to Credit Card information
+    <para>All users on your system who need access to credit card information
     must use the same key file. The key file can be a simple text file with
     any contents whatsoever. It should be stored at the same level as the
     xTuple executable file. For Mac users, this would be within the MacOS
@@ -873,7 +873,7 @@
     key in a safe location. If you lose your encryption key and do not have a
     backup copy, you risk losing access to your encrypted data.</para>
   </caution>
-  <para>When establishing the key file settings for your Credit Card
+  <para>When establishing the key file settings for your credit card
   configuration, you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -882,7 +882,7 @@
         <para>Enter the name of your key file. The encryption key information
         may be entered on this screen, or on the Encryption screen—and vice
         versa. The key file is an encryption seed file, which enables you to
-        read encrypted Credit Card information. The key file is required
+        read encrypted credit card information. The key file is required
         regardless of the Verification Service used at your site. The contents
         of the key file should be at least 16 characters long and use a
         combination of upper and lower case letters and numbers. Special

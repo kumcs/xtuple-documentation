@@ -163,7 +163,7 @@
         </indexterm>Return Auth. # Generation</term>
 
       <listitem>
-        <para>Select one of the available Return Authorization Number
+        <para>Select one of the available return authorization Number
         generation methods:</para>
 
         <variablelist>
@@ -171,8 +171,8 @@
             <term>Manual</term>
 
             <listitem>
-              <para>Return Authorization Numbers must be entered manually
-              whenever you create a new Return Authorization.</para>
+              <para>Return authorization numbers must be entered manually
+              whenever you create a new return authorization.</para>
             </listitem>
           </varlistentry>
 
@@ -180,8 +180,8 @@
             <term>Automatic, Use R/A #'s</term>
 
             <listitem>
-              <para>Return Authorization Numbers will be automatically
-              incremented by 1 each time a new Return Authorization is
+              <para>Return authorization numbers will be automatically
+              incremented by 1 each time a new return authorization is
               created. These automatically-generated numbers may not be
               edited. They are read-only.</para>
             </listitem>
@@ -191,11 +191,11 @@
             <term>Automatic, Use R/A #s, Allow Override</term>
 
             <listitem>
-              <para>Return Authorization Numbers will be automatically
+              <para>Return authorization numbers will be automatically
               generated and incremented, as under the "Automatic" option
               described above. However, this option also allows you to
-              manually override the Return Authorization Number at the time of
-              Return Authorization creation.</para>
+              manually override the return authorization number at the time of
+              return authorization creation.</para>
             </listitem>
           </varlistentry>
 
@@ -203,11 +203,11 @@
             <term>Next #</term>
 
             <listitem>
-              <para>The next sequentially available Return Authorization
+              <para>The next sequentially available return authorization
               Number will display here. You may change the number—creating a
-              new basis for the next Return Authorization Number—by typing the
+              new basis for the next return authorization Number—by typing the
               new number into this field. Any changes you make here will be
-              reflected the next time a new Return Authorization is
+              reflected the next time a new return authorization is
               created.</para>
             </listitem>
           </varlistentry>
@@ -293,7 +293,7 @@
         </indexterm>Invoice # Generation</term>
 
       <listitem>
-        <para>Select one of the available Invoice Number generation
+        <para>Select one of the available invoice number generation
         methods:</para>
 
         <variablelist>
@@ -301,8 +301,8 @@
             <term>Automatic</term>
 
             <listitem>
-              <para>Invoice Numbers will be automatically incremented by 1
-              each time a new Invoice is created. These
+              <para>Invoice numbers will be automatically incremented by 1
+              each time a new invoice is created. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
             </listitem>
@@ -312,10 +312,10 @@
             <term>Automatic With Override</term>
 
             <listitem>
-              <para>Invoice Numbers will be automatically generated and
+              <para>Invoice numbers will be automatically generated and
               incremented, as under the "Automatic" option described above.
               However, this option also allows you to manually override the
-              Invoice Number at the time of Invoice creation.</para>
+              invoice number at the time of invoice creation.</para>
             </listitem>
           </varlistentry>
 
@@ -323,11 +323,11 @@
             <term>Next #</term>
 
             <listitem>
-              <para>The next sequentially available Invoice Number will
+              <para>The next sequentially available invoice number will
               display here. You may change the number—creating a new basis for
-              the next Invoice Number—by typing the new number into this
+              the next invoice number—by typing the new number into this
               field. Any changes you make here will be reflected the next time
-              you create a new Invoice.</para>
+              you create a new invoice.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -548,11 +548,11 @@
             <term>Enable Shipping interface from Sales Order screen</term>
 
             <listitem>
-              <para>Select to enable the performance of limited Shipping
+              <para>Select to enable the performance of limited shipping
               functionality from the Sales Order header. If selected, users
-              will be able to issue Stock to Shipping and also return Stock
-              from Shipping directly from the Sales Order header. If not
-              selected, these Shipping options will not be available on the
+              will be able to issue Stock to shipping and also return Stock
+              from shipping directly from the Sales Order header. If not
+              selected, these shipping options will not be available on the
               Sales Order header.</para>
             </listitem>
           </varlistentry>
@@ -590,10 +590,10 @@
               <para>Select if you want to restrict sales credit items to their
               Apply-To Document. Selecting this option narrows the sales
               credit item selection process to only those items which appeared
-              on the Invoice the sales credit is being applied to. If not
+              on the invoice the sales credit is being applied to. If not
               selected, a sold Item master list will appear instead when
               selecting sales credit items for sales credits applied to a
-              specific Invoice. This setting has no bearing on unapplied sales
+              specific invoice. This setting has no bearing on unapplied sales
               credits.</para>
             </listitem>
           </varlistentry>
@@ -611,7 +611,7 @@
               credits occurs only once—when a sales order is saved for the
               first time. Subsequent saves will not result in additional
               allocations. Sales credits which have been allocated to a sales
-              order are applied at the point when the Invoice resulting from
+              order are applied at the point when the invoice resulting from
               the sales order is posted. Once the full balance of a sales
               credit has been applied, the sales credit is then closed. The
               printed invoice the customer receives will indicate whether
@@ -796,7 +796,7 @@
             <term>Use calculated Freight values by default</term>
 
             <listitem>
-              <para>If selected, items issued to Shipping will be checked
+              <para>If selected, items issued to shipping will be checked
               against Pricing Schedules to determine the actual freight for a
               given Shipment based on shipping quantities and weight rather
               than assuming all freight should be billed. If not selected, the
@@ -918,7 +918,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To establish Invoice and credit memo settings, select the "Invoice"
+  <para>To establish invoice and credit memo settings, select the "Invoice"
   tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -931,7 +931,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When establishing Invoice and credit memo settings, you are presented
+  <para>When establishing invoice and credit memo settings, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -939,14 +939,14 @@
       <term>Invoice Date Source</term>
 
       <listitem>
-        <para>Select one of the following Invoice date options:</para>
+        <para>Select one of the following invoice date options:</para>
 
         <variablelist>
           <varlistentry>
             <term>Current Date</term>
 
             <listitem>
-              <para>If selected, the Invoice date on the Invoice header will
+              <para>If selected, the invoice date on the Invoice header will
               be the same date as the sales order date.</para>
             </listitem>
           </varlistentry>
@@ -955,7 +955,7 @@
             <term>Shipped Date</term>
 
             <listitem>
-              <para>If selected, the Invoice date on the Invoice header will
+              <para>If selected, the invoice date on the Invoice header will
               be the same date as the sales order ship date.</para>
             </listitem>
           </varlistentry>
@@ -964,7 +964,7 @@
             <term>Scheduled Date</term>
 
             <listitem>
-              <para>If selected, the Invoice date on the Invoice header will
+              <para>If selected, the invoice date on the Invoice header will
               be the same date as the sales order scheduled date.</para>
             </listitem>
           </varlistentry>
@@ -1069,7 +1069,7 @@
       <term>Shipping Form</term>
 
       <listitem>
-        <para>Specify a default Shipping Form to be used whenever new
+        <para>Specify a default shipping form to be used whenever new
         customers are created.</para>
       </listitem>
     </varlistentry>
@@ -1078,7 +1078,7 @@
       <term>Shipping Charges</term>
 
       <listitem>
-        <para>Specify a default Shipping Charge to be used whenever new
+        <para>Specify a default shipping Charge to be used whenever new
         customers are created.</para>
       </listitem>
     </varlistentry>
@@ -1180,7 +1180,7 @@
       <primary>return authorizations</primary>
 
       <secondary>configuration for</secondary>
-    </indexterm>To define your system's Return Authorization configuration,
+    </indexterm>To define your system's return authorization configuration,
   select the "Return" tab. The following screen will appear:</para>
 
   <screenshot role="standard">
@@ -1193,7 +1193,7 @@
     </mediaobject>
   </screenshot>
 
-  <para role="standard">When configuring Return Authorization settings, you
+  <para role="standard">When configuring return authorization settings, you
   are presented with the following options:</para>
 
   <para role="standard"><variablelist>
@@ -1201,10 +1201,10 @@
         <term>Enable Return Authorizations</term>
 
         <listitem>
-          <para>Select to enable the system's Return Authorizations
+          <para>Select to enable the system's return authorizations
           capability. If not selected, users will be prevented from performing
-          any tasks related to Return Authorizations—and related functionality
-          will be hidden from view. For systems where Return Authorizations
+          any tasks related to return authorizations—and related functionality
+          will be hidden from view. For systems where return authorizations
           are enabled, this option will be hidden.</para>
         </listitem>
       </varlistentry>
@@ -1213,8 +1213,8 @@
         <term>Post Return Authorization Changes to the Change Log</term>
 
         <listitem>
-          <para>Select to record changes made to Return Authorizations in the
-          Return Authorization change log. If not selected, the Return
+          <para>Select to record changes made to return authorizations in the
+          return authorization change log. If not selected, the return
           Authorization changelog will not contain change information.</para>
         </listitem>
       </varlistentry>
@@ -1224,7 +1224,7 @@
 
         <listitem>
           <para>Specify one of the following default methods for handling
-          Return Authorizations:</para>
+          return authorizations:</para>
 
           <variablelist>
             <varlistentry>
@@ -1233,7 +1233,7 @@
               <listitem>
                 <para>Select if, by default, you want to issue credit to
                 customers for authorized line items and quantities. No return
-                is required or expected. Return Authorization line items will
+                is required or expected. Return authorization line items will
                 close when an associated credit memo is posted.</para>
               </listitem>
             </varlistentry>
@@ -1243,7 +1243,7 @@
 
               <listitem>
                 <para>Select if, by default, you want to authorize returns
-                from customers. Return Authorization Items will close when an
+                from customers. Return authorization items will close when an
                 associated credit memo is posted, or when all items on a line
                 have been returned, whichever comes last.</para>
               </listitem>
@@ -1270,11 +1270,11 @@
               <listitem>
                 <para>Select if, by default, you want to repair or service
                 items returned by customers. Service or repair items will
-                first be received by a Return Authorization. Then a new sales
+                first be received by a return authorization. Then a new sales
                 order with linked work order(s) will be created to track work
                 and shipping on the repair or service. The new sales order
                 will be on RMA Hold until items have been received by the
-                Return Authorization.</para>
+                return authorization.</para>
               </listitem>
             </varlistentry>
 
@@ -1285,8 +1285,8 @@
                 <para>Select if, by default, you want to authorize the
                 substitution of items returned by customers. Under this
                 option, when an original sales order is imported into the
-                Return Authorization, the Return Authorization Line items will
-                default to the Return disposition. Any new line items added
+                return authorization, the return authorization Line items will
+                default to the return disposition. Any new line items added
                 beyond the original ones will have a default disposition of
                 Ship.</para>
               </listitem>
@@ -1368,7 +1368,7 @@
 
               <listitem>
                 <para>Select if, by default, you credit customer returns with
-                a refund on their Credit Card.</para>
+                a refund on their credit card.</para>
               </listitem>
             </varlistentry>
           </variablelist>
@@ -1380,7 +1380,7 @@
 
         <listitem>
           <para>Select if you want the "Print on Save" option to always be
-          enabled when creating new Return Authorizations.</para>
+          enabled when creating new return authorizations.</para>
         </listitem>
       </varlistentry>
 
@@ -1388,8 +1388,8 @@
         <term>Close Return Authorization when Crediting</term>
 
         <listitem>
-          <para>If selected, Return Authorization line items will be closed
-          automatically when a Return credit is created and posted.</para>
+          <para>If selected, return authorization line items will be closed
+          automatically when a return credit is created and posted.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
@@ -1442,7 +1442,7 @@
       <listitem>
         <para>Specify the Sale Type to be used for sales orders entered using
         the Simple Sales Order screen. The Sale Type selection impacts the
-        sales Account Assignment for orders entered using this screen.</para>
+        sales account Assignment for orders entered using this screen.</para>
       </listitem>
     </varlistentry>
 
@@ -1484,9 +1484,9 @@
       <term>Print Invoice</term>
 
       <listitem>
-        <para>Select to automatically prompt for printing an Invoice when
+        <para>Select to automatically prompt for printing an invoice when
         payment for the simple sales order is posted. If not selected, users
-        won't be prompted to print an Invoice when posting payment.</para>
+        won't be prompted to print an invoice when posting payment.</para>
       </listitem>
     </varlistentry>
   </variablelist>

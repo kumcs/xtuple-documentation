@@ -205,7 +205,7 @@
       <listitem>
         <para>Select any or all of the available methods to value inventory
         transactions for an item site. If any item sites exist for a
-        particular Cost Method, that Cost Method is disabled to prevent
+        particular cost Method, that cost Method is disabled to prevent
         unselecting.</para>
 
         <variablelist>
@@ -215,7 +215,7 @@
             <listitem>
               <para>Cost distributions for an item site is based on an average
               of all costs accumulated for the item site. The QOH of item
-              sites defined with this Cost Method will not be allowed to go
+              sites defined with this cost Method will not be allowed to go
               negative.</para>
             </listitem>
           </varlistentry>
@@ -225,7 +225,7 @@
 
             <listitem>
               <para>Cost distributions for an item site is based on the
-              Standard Cost posted for the item.</para>
+              standard cost posted for the item.</para>
             </listitem>
           </varlistentry>
 
@@ -234,8 +234,8 @@
 
             <listitem>
               <para>Cost distributions for an item site is based on actual
-              accumulation of costs on a work order. This Cost Method is used
-              exclusively by items with Type of "Job".</para>
+              accumulation of costs on a work order. This cost method is used
+              exclusively by items with type of "Job".</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -246,7 +246,7 @@
       <term>When Posting a Count Tag for Avg. Cost Items</term>
 
       <listitem>
-        <para>Specify how you want the inventory value of Average Costed items
+        <para>Specify how you want the inventory value of Average costed items
         to be handled when posting Count Tags:</para>
 
         <variablelist>
@@ -254,18 +254,18 @@
             <term>Use Standard Cost</term>
 
             <listitem>
-              <para>Select if you want to use the item's Standard Cost when
+              <para>Select if you want to use the item's standard cost when
               posting Count Tags. This option assumes you are maintaining
-              Standard Costs for your Average Cost items.</para>
+              standard costs for your Average cost items.</para>
             </listitem>
           </varlistentry>
 
           <varlistentry>
-            <term>Use Average Cost</term>
+            <term>Use Average cost</term>
 
             <listitem>
-              <para>Select to use the item's Average Cost when posting Count
-              Tags. If no prior Average Cost exists, the inventory value of a
+              <para>Select to use the item's Average cost when posting Count
+              Tags. If no prior Average cost exists, the inventory value of a
               posted Count Tag will be $0.</para>
             </listitem>
           </varlistentry>
@@ -274,10 +274,10 @@
             <term>Use Actual Cost if no Average Cost</term>
 
             <listitem>
-              <para>Select to use the item's Actual Cost if no Average Cost
+              <para>Select to use the item's actual cost if no Average cost
               exists when posting Count Tags. This option provides an
               alternate method for valuing inventory in the scenario where no
-              prior Average Cost exists and also when Standard Costs are not
+              prior Average cost exists and also when standard costs are not
               in use.</para>
             </listitem>
           </varlistentry>
@@ -401,14 +401,14 @@
       <listitem>
         <para>Select this option to enable cost overrides for Average costed
         items at the point when inventory is received. If not selected, any
-        unposted or uninvoiced Receipts or PO Returns against items previously
+        unposted or uninvoiced Receipts or PO returns against items previously
         received at an override cost value could be negatively
         affected.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To configure the Inventory Shipping and Receiving options, select the
+  <para>To configure the inventory shipping and receiving options, select the
   "Shipping and Receiving" tab. The following screen will appear:</para>
 
   <screenshot>
@@ -421,7 +421,7 @@
     </mediaobject>
   </screenshot>
 
-  <para>When configuring Shipping and Receiving, you are presented with the
+  <para>When configuring shipping and receiving, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -439,9 +439,9 @@
       <listitem>
         <para>Enter the next Shipment Number to be used. The system assigns
         Shipment Numbers to sales order line item quantities when stock is
-        issued to Shipping. All stock at Shipping for an individual sales
+        issued to shipping. All stock at shipping for an individual sales
         order is assigned the same Shipment Number. If no stock is already at
-        Shipping, then a new Shipment Number will be used.</para>
+        shipping, then a new Shipment Number will be used.</para>
       </listitem>
     </varlistentry>
 
@@ -450,9 +450,9 @@
 
       <listitem>
         <para>Select if you want the components of Kit items to inherit the
-        same Cost of sales (COS) Account used by the parent Kit Item. If not
-        selected, the Kit components will use the COS Accounts defined in
-        their respective sales Account Assignments.</para>
+        same cost of sales (COS) account used by the parent Kit Item. If not
+        selected, the Kit components will use the COS accounts defined in
+        their respective sales account Assignments.</para>
       </listitem>
     </varlistentry>
 
@@ -498,14 +498,14 @@
       <listitem>
         <para>If selected, purchase price variances (PPV) will be recorded
         when purchase order Receipts are posted. This option applies to
-        Standard costed items. If not selected, then the default system
+        standard costed items. If not selected, then the default system
         behavior will be in effect—that is, PPV will be recorded when Vouchers
         are posted. It's technically possible (although unlikely) for PPV be
         recorded both at receipt and at Voucher time. This situation would
         occur if and only if the vouchered cost is different from the purchase
         order cost. For the PPV to be recorded twice, the following conditions
         would have to exist: First, there would have to be a difference
-        between purchase order price and an item's Standard Cost, and, second,
+        between purchase order price and an item's standard cost, and, second,
         there would also have to be a difference between the purchase order
         price and the vouchered price.</para>
       </listitem>
@@ -515,7 +515,7 @@
       <term>Default Shipping Form Copies</term>
 
       <listitem>
-        <para>Indicate the number of Shipping Form copies you want to print by
+        <para>Indicate the number of shipping form copies you want to print by
         default:</para>
 
         <variablelist>
@@ -536,10 +536,10 @@
       <term>Update item's Actual Cost on Receipt</term>
 
       <listitem>
-        <para>Select if you want the Actual Cost for a purchase order item to
+        <para>Select if you want the actual cost for a purchase order item to
         be updated when that item is received. This feature complements and
         does not replace the standard process, whereby a received item's
-        Actual Cost is updated at the point when a Voucher for that item is
+        actual cost is updated at the point when a Voucher for that item is
         posted.</para>
       </listitem>
     </varlistentry>

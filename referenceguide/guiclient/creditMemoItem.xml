@@ -45,10 +45,10 @@
             <listitem>
               <para>The lookup feature located to the right of the field leads
               to a searchable list of inventory items. If the sales credit is
-              being applied to a particular Invoice?and your Sales module is
+              being applied to a particular invoice?and your Sales module is
               configured to restrict sales credits to items appearing on their
               apply-to document?then the Item List will show only items on the
-              original Invoice. The ITEM/ALIAS SEARCH button can also be used
+              original invoice. The ITEM/ALIAS SEARCH button can also be used
               to help locate sales credit items. Once an item number is
               entered, the inventory Unit of Measure and item description will
               automatically appear. Additionally, you may also specify the
@@ -64,7 +64,7 @@
               and description fields are free-form, meaning they accept
               unlimited alphanumeric characters. You must also select a sales
               category. Sales categories are used to identify the General
-              Ledger (G/L) Accounts to be used when non-inventory Sales
+              Ledger (G/L) accounts to be used when non-inventory Sales
               transactions take place.</para>
             </listitem>
           </varlistentry>
@@ -86,10 +86,10 @@
     <varlistentry>
       <term>Alternate Revenue Account</term>
       <listitem>
-        <para>Specify an alternate Account to be used as the Revenue Account.
-        This account will be used instead of the typical Accounts pre-defined
+        <para>Specify an alternate account to be used as the Revenue account.
+        This account will be used instead of the typical accounts pre-defined
         in the Receivables Assignments. For example, you might use this
-        alternate Account in the scenario where you are doing business with
+        alternate account in the scenario where you are doing business with
         customers who are part of the same buyer's group (i.e., customer
         Group).</para>
       </listitem>
@@ -98,8 +98,8 @@
       <term>Qty. Returned</term>
       <listitem>
         <para>Enter the quantity of the item returned for credit. If the sales
-        credit was created from a Return Authorization, the quantity returned
-        will be zero on the Sales Credit Item screen. Return Authorization
+        credit was created from a return authorization, the quantity returned
+        will be zero on the Sales Credit Item screen. Return authorization
         returns are handled separately, outside of the normal sales credit
         inventory handling process.</para>
         <variablelist>
@@ -154,9 +154,9 @@
         </indexterm>Net Unit Price</term>
       <listitem>
         <para>Specify the Net Unit price to assign the quantity being
-        credited. If the sales credit is being applied to a specific Invoice,
+        credited. If the sales credit is being applied to a specific invoice,
         then the system will automatically enter the item's Net Unit price as
-        it appeared on the referring Invoice. If no Invoice is being
+        it appeared on the referring invoice. If no invoice is being
         applied-to, then the system will choose the lower of the following two
         prices: A) The most-specific Pricing Schedule Assignment or B) any
         Sale in effect at the time of order entry. The specificity of Pricing
@@ -200,7 +200,7 @@
     <varlistentry>
       <term>Unit Cost</term>
       <listitem>
-        <para>Displays the Standard Cost per unit.</para>
+        <para>Displays the standard cost per unit.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -256,7 +256,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the sales credit item.</para>
+        notes related to the sales credit item.</para>
       </listitem>
     </varlistentry>
   </variablelist>

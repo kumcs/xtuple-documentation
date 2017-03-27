@@ -31,12 +31,12 @@
     <varlistentry>
       <term>Apply To</term>
       <listitem>
-        <para>Specify the Invoice Number of the Invoice you want to apply the
+        <para>Specify the invoice number of the invoice you want to apply the
         sales credit to, using the lookup feature located to the right of the
-        field. The list will include Invoices for the specified customer. If a
-        sales credit is applied to a specific Invoice, the sales credit may
-        only credit items which appeared on the chosen Invoice. If for some
-        reason the sales credit is applied to a closed Invoice, the sales
+        field. The list will include invoices for the specified customer. If a
+        sales credit is applied to a specific invoice, the sales credit may
+        only credit items which appeared on the chosen invoice. If for some
+        reason the sales credit is applied to a closed invoice, the sales
         credit will be listed as an unapplied sales credit.</para>
       </listitem>
     </varlistentry>
@@ -48,7 +48,7 @@
         effective as of the credit date.</para>
         <para><note>
             <para>You are not required to apply a sales credit to a specific
-            Invoice. If a sales credit is applied to an Invoice, any sales
+            invoice. If a sales credit is applied to an invoice, any sales
             credit items will be sales credited to inventory when the sales
             credit is posted.</para>
           </note></para>
@@ -60,7 +60,7 @@
         <para>Indicates whether sales credit is posted or unposted.</para>
         <tip>
           <para>The quickest way to fill in the Sales Credit screen may be to
-          select the Invoice you intend to credit using the "Apply To"
+          select the invoice you intend to credit using the "Apply To"
           feature. If you use this feature, most of the fields in the Sales
           Credit screen will automatically populate with the needed customer
           information.</para>
@@ -72,9 +72,9 @@
       <listitem>
         <para>Specify the sales Representative associated with the order. By
         default, the customer's designated sales Representative will appear in
-        the field—except if you have selected an Invoice to apply the sales
+        the field—except if you have selected an invoice to apply the sales
         credit to. In that case, the sales Representative credited with the
-        Invoice will be selected.</para>
+        invoice will be selected.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -93,9 +93,9 @@
           <secondary>for sales credits</secondary>
         </indexterm>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone associated with the sales credit. The Tax
-        Zone for the specified Ship-To Address will be entered here by
-        default. Otherwise, the primary Tax Zone for the customer will be
+        <para>Specify the tax zone associated with the sales credit. The tax
+        zone for the specified Ship-To Address will be entered here by
+        default. Otherwise, the primary tax zone for the customer will be
         entered.</para>
       </listitem>
     </varlistentry>
@@ -127,7 +127,7 @@
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a Project to the sales credit—the
         Project Number will be added as the final segment of affected G/L
-        Account Numbers when the sales credit is posted.</para>
+        account Numbers when the sales credit is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -139,7 +139,7 @@
     <varlistentry>
       <term>Shipping Zone</term>
       <listitem>
-        <para>Specify the Shipping Zone.</para>
+        <para>Specify the shipping zone.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -183,8 +183,8 @@
         manually entered here, that Address will be added automatically to the
         master list of Addresses. For additional documentation related to
         creating Addresses, see <xref linkend="address" />.<note>
-            <para>A sales credit that is applied to an Invoice will by default
-            have the Address that appeared on the Invoice.</para>
+            <para>A sales credit that is applied to an invoice will by default
+            have the Address that appeared on the invoice.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -238,9 +238,9 @@
       <term>Cust. PO #</term>
       <listitem>
         <para>By default, the customer purchase order number associated with
-        the Invoice being credited will display here. If no customer purchase
+        the invoice being credited will display here. If no customer purchase
         order number was entered at the time of the original sales order—or if
-        the sales credit is not being applied to a specific Invoice—the field
+        the sales credit is not being applied to a specific invoice—the field
         will remain blank. Enter or edit a customer purchase order number as
         necessary.</para>
       </listitem>
@@ -271,7 +271,7 @@
         credit using the NEW ITEM button.</para>
         <tip>
           <para>Before creating a new sales credit line item, be sure to
-          specify an Invoice to apply the sales credit to. The "Apply To"
+          specify an invoice to apply the sales credit to. The "Apply To"
           feature is found on the Sales Credit header screen.</para>
         </tip>
       </listitem>
@@ -290,7 +290,7 @@
       <listitem>
         <para>Enter the amount of the miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
-        sales Account and also enter a description of the charge.</para>
+        sales account and also enter a description of the charge.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -302,7 +302,7 @@
     <varlistentry>
       <term>Misc. Charge Credit Account</term>
       <listitem>
-        <para>Enter a credit Account to assign the miscellaneous charge
+        <para>Enter a credit account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
@@ -331,7 +331,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add Notes to a sales credit, select the "Notes" tab at the top of
+  <para>To add notes to a sales credit, select the "Notes" tab at the top of
   the "Sales Credit" screen. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -341,14 +341,14 @@
         <caption>Sales Credit Notes</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding Notes to a sales credit, you are presented with the
+  <para>When adding notes to a sales credit, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the sales credit. Notes entered on this screen will
+        notes related to the sales credit. Notes entered on this screen will
         follow the sales credit through the billing process. For example, you
         may view notes associated with a posted sales credit within the
         Customer History report.</para>

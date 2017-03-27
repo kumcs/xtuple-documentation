@@ -20,7 +20,7 @@
     </screenshot></para>
   <tip>
     <para>Customers can also be created from the CRM Account screen. Simply
-    enter a new CRM Account, selecting the "Customer" relationship
+    enter a new CRM account, selecting the "Customer" relationship
     option.</para>
   </tip>
   <para>When creating a new customer, you are presented with the following
@@ -64,7 +64,7 @@
     <varlistentry>
       <term>ACCOUNT</term>
       <listitem>
-        <para>Select to open the customer's Account.</para>
+        <para>Select to open the customer's account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -222,13 +222,13 @@
           <varlistentry>
             <term>Ship Zone</term>
             <listitem>
-              <para>Specify the Shipping Zone for the Ship-To Address.</para>
+              <para>Specify the shipping zone for the Ship-To Address.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Tax Zone</term>
             <listitem>
-              <para>Specify Tax Zone to be used for Ship-To Address.</para>
+              <para>Specify tax zone to be used for Ship-To Address.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -247,14 +247,14 @@
           <varlistentry>
             <term>Shipping Form</term>
             <listitem>
-              <para>Specify the default Shipping Form to be used for the
+              <para>Specify the default shipping form to be used for the
               Ship-To Address. This field is optional.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Shipping Charges</term>
             <listitem>
-              <para>Specify the default Shipping Charges to be used for the
+              <para>Specify the default shipping charges to be used for the
               Ship-To Address.</para>
             </listitem>
           </varlistentry>
@@ -274,8 +274,8 @@
       <term>General Notes</term>
       <listitem>
         <para>Select the "General Notes" tab to access this scrolling text
-        field with word-wrapping for entering general Notes related to the
-        customer Ship-To Address. These Notes are for internal use
+        field with word-wrapping for entering general notes related to the
+        customer Ship-To Address. These notes are for internal use
         only.</para>
       </listitem>
     </varlistentry>
@@ -283,11 +283,11 @@
       <term>Shipping Notes</term>
       <listitem>
         <para>Select the "Shipping Notes" tab to access this scrolling text
-        field with word-wrapping for entering Shipping Notes related to the
-        customer Ship-To Address. Shipping Notes are transferred to the
+        field with word-wrapping for entering shipping notes related to the
+        customer Ship-To Address. Shipping notes are transferred to the
         "Shipping Notes" tab on the Sales Order header whenever a Sales Order
-        for the specified Ship-To Address is entered. Ultimately, Shipping
-        Notes may be printed on shipping paperwork.</para>
+        for the specified Ship-To Address is entered. Ultimately, shipping
+        notes may be printed on shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -304,7 +304,7 @@
       <listitem>
         <para>Select the "Transmission" tab to associate EDI Profiles with the
         Ship-To Address. EDI Profiles are used for transmitting Orders and
-        Invoices to customers electronically—via email or FTP. Associating an
+        invoices to customers electronically—via email or FTP. Associating an
         EDI Profile with a Ship-To Address overrides the association of an EDI
         Profile with the customer.</para>
         <note>
@@ -356,9 +356,9 @@
     <varlistentry>
       <term>Credit Cards</term>
       <listitem>
-        <para>Select to enter Credit Card information for the customer. This
+        <para>Select to enter credit card information for the customer. This
         option will only be enabled if your site is configured to use and
-        process customer Credit Cards.</para>
+        process customer credit cards.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -398,14 +398,14 @@
     <varlistentry>
       <term>Shipping Form</term>
       <listitem>
-        <para>Specify the default Shipping Form to be used for the customer.
+        <para>Specify the default shipping form to be used for the customer.
         This field is optional.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Shipping Charges</term>
       <listitem>
-        <para>Specify the default Shipping Charges to be used for the
+        <para>Specify the default shipping charges to be used for the
         customer. Shipping defaults specified on the Customer master will
         transfer to the Sales Order header when a new Sales Order is entered
         for a customer.</para>
@@ -433,7 +433,7 @@
         not accept backorders or partial shipments.</para>
         <tip>
           <para>Sales Orders having unshipped line items on backorder will be
-          closed at billing (i.e., when an Invoice is created) if the customer
+          closed at billing (i.e., when an invoice is created) if the customer
           in question is flagged to not accept backorders.</para>
         </tip>
         <variablelist>
@@ -460,7 +460,7 @@
               shipments.</para>
               <tip>
                 <para>Partially-shipped line items will be closed at billing
-                (i.e., when an Invoice is created) if the customer in question
+                (i.e., when an invoice is created) if the customer in question
                 is flagged to not accept partial shipments.</para>
               </tip>
             </listitem>
@@ -494,7 +494,7 @@
         <para>Specify the preferred selling site, if any. This is an optional
         setting. If a preferred site is selected, then this site will be used
         when entering Sales Orders for the customer. At Sales Order entry, the
-        preferred site will be the default Shipping site for the Sales
+        preferred site will be the default shipping site for the Sales
         Order—as well as the default selling site for Sales Order
         items.</para>
         <note>
@@ -575,7 +575,7 @@
       <listitem>
         <para>Select to alert sales staff to possible credit problems with the
         customer. Non-privileged users will be prevented from issuing Stock to
-        Shipping for any customers on credit warning. An orange-colored
+        shipping for any customers on credit warning. An orange-colored
         typeface will be associated with their account.</para>
       </listitem>
     </varlistentry>
@@ -584,7 +584,7 @@
       <listitem>
         <para>Select to inform sales staff that the customer's credit has been
         suspended. Non-privileged users will be prevented from issuing Stock
-        to Shipping for any customers on credit hold. A red-colored typeface
+        to shipping for any customers on credit hold. A red-colored typeface
         will be associated with their account.</para>
         <tip>
           <para>Place your cash-only customers on credit hold when you create
@@ -634,15 +634,15 @@
           <varlistentry>
             <term>Balance Forward</term>
             <listitem>
-              <para>Select to post payments against the oldest Invoices. Used
-              in Accounts Receivable only.</para>
+              <para>Select to post payments against the oldest invoices. Used
+              in accounts Receivable only.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Open Items</term>
             <listitem>
-              <para>Select to post payments against specific Invoices,
-              regardless of their age. Used in Accounts Receivable
+              <para>Select to post payments against specific invoices,
+              regardless of their age. Used in accounts Receivable
               only.</para>
             </listitem>
           </varlistentry>
@@ -692,9 +692,9 @@
         <para>Select this option to place all new and existing open Sales
         Orders on Credit Hold if the customer's Credit Limit is exceeded. The
         contents of Sales Orders placed on Credit Hold may not be issued to
-        Shipping—except by users with override privileges. Once the customer's
+        shipping—except by users with override privileges. Once the customer's
         Credit Limit is no longer exceeded, Sales Order contents may be issued
-        to Shipping.</para>
+        to shipping.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -743,10 +743,10 @@
           <secondary>default for customers</secondary>
         </indexterm>Default Tax Zone</term>
       <listitem>
-        <para>Specify the default Tax Zone you want to associate with the
-        customer. By default, the specified Tax Zone will be used on Sales
+        <para>Specify the default tax zone you want to associate with the
+        customer. By default, the specified tax zone will be used on Sales
         Orders and quotes for the customer—unless a Ship-To Address in use
-        specifies a different Tax Zone.</para>
+        specifies a different tax zone.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -785,7 +785,7 @@
     <varlistentry>
       <term>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone the Tax Registration Number is valid
+        <para>Specify the tax zone the Tax Registration Number is valid
         for.</para>
       </listitem>
     </varlistentry>
@@ -838,7 +838,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the Tax Registration Number.</para>
+        notes related to the Tax Registration Number.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -859,19 +859,19 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Customer Credit Cards may be used when entering Sales Orders or Cash
+    <para>Customer credit cards may be used when entering Sales Orders or Cash
     Receipt transactions for the customer. When entering a Sales Order, you
-    have the option to either pre-authorize or charge a Credit Card. Any
+    have the option to either pre-authorize or charge a credit card. Any
     pre-authorizations may later be post-authorized using the Receivables
     Workbench.</para>
   </note>
-  <para>When specifying Credit Card information for the customer, you are
+  <para>When specifying credit card information for the customer, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Credit Cards</term>
       <listitem>
-        <para>Display lists Credit Card records for the customer.</para>
+        <para>Display lists credit card records for the customer.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -880,21 +880,21 @@
     <varlistentry>
       <term>MOVE UP</term>
       <listitem>
-        <para>Highlight a Credit Card and then select this button to move the
-        Credit Card up in the sequence of Credit Cards. Sequence numbers are
+        <para>Highlight a credit card and then select this button to move the
+        credit card up in the sequence of credit cards. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>MOVE DOWN</term>
       <listitem>
-        <para>Highlight a Credit Card and then select this button to move the
-        Credit Card down the sequence of Credit Cards. Sequence numbers are
+        <para>Highlight a credit card and then select this button to move the
+        credit card down the sequence of credit cards. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new Credit Card record for a customer, select the NEW
+  <para>To create a new credit card record for a customer, select the NEW
   button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -904,7 +904,7 @@
         <caption>Create New Credit Card Record</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Credit Card record for a customer, you are
+  <para>When creating a new credit card record for a customer, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -917,7 +917,7 @@
     <varlistentry>
       <term>Credit Card Type</term>
       <listitem>
-        <para>Specify the type of Credit Card. The following Credit Card types
+        <para>Specify the type of credit card. The following credit card types
         are currently supported: Master Card, Visa, American Express, and
         Discover.</para>
       </listitem>
@@ -925,23 +925,23 @@
     <varlistentry>
       <term>Credit Card Number</term>
       <listitem>
-        <para>Enter the Credit Card Number. After the Credit Card record has
-        been saved, all but the last four digits of the Credit Card Number
+        <para>Enter the credit card Number. After the credit card record has
+        been saved, all but the last four digits of the credit card Number
         will be encrypted for security purposes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Active</term>
       <listitem>
-        <para>Select if the Credit Card record is active. Do not select this
-        option if the specified Credit Card is inactive or invalid for any
+        <para>Select if the credit card record is active. Do not select this
+        option if the specified credit card is inactive or invalid for any
         reason.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Enter a name to describe the Credit Card record.</para>
+        <para>Enter a name to describe the credit card record.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -957,7 +957,7 @@
     <varlistentry>
       <term>Expiration Month</term>
       <listitem>
-        <para>Enter the month when the specified Credit Card expires. The
+        <para>Enter the month when the specified credit card expires. The
         month must be saved in the format "MM". For example, the month of
         January would be represented as "01".</para>
       </listitem>
@@ -965,7 +965,7 @@
     <varlistentry>
       <term>Expiration Year</term>
       <listitem>
-        <para>Enter the year when the specified Credit Card expires. The year
+        <para>Enter the year when the specified credit card expires. The year
         must be saved in the format "YYYY". For example, the year 2006 would
         be represented as "2006".</para>
       </listitem>
@@ -1009,8 +1009,8 @@
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>Every customer record is linked to a CRM Account. To view information
-  related to the customer's CRM Account, select the "CRM" tab. The following
+  <para>Every customer record is linked to a CRM account. To view information
+  related to the customer's CRM account, select the "CRM" tab. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -1020,26 +1020,26 @@
         <caption>CRM Information</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When viewing information related to the customer's CRM Account, you
+  <para>When viewing information related to the customer's CRM account, you
   are presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Contacts</term>
       <listitem>
         <para>Select to view a list of all Contacts associated with the
-        Account. On this screen you can manage an Account's Contacts—either by
-        adding new Contacts or attaching/detaching Contacts from the Account.
-        Any changes made here also update the CRM Account record. For
+        account. On this screen you can manage an account's Contacts—either by
+        adding new Contacts or attaching/detaching Contacts from the account.
+        Any changes made here also update the CRM account record. For
         additional documentation related to managing a Contacts associated
-        with a CRM Account, see <xref linkend="crmaccount" />.</para>
+        with a CRM account, see <xref linkend="crmaccount" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Activities</term>
       <listitem>
-        <para>Select to view the To-Do list associated with the Account. On
+        <para>Select to view the To-Do list associated with the account. On
         this screen you can manage all of the To-Dos, Opportunities, and
-        Incidents related to the Account. Any changes made here also update
+        Incidents related to the account. Any changes made here also update
         the main To-Do List. For additional documentation related to managing
         the To-Do List, see <xref linkend="todoList" />.</para>
       </listitem>
@@ -1073,7 +1073,7 @@
       <listitem>
         <para>Select to view the list of quotes associated with the customer.
         On this screen you can create new quotes or edit existing ones. You
-        may also view historical quotes converted to Sales Orders or Invoices
+        may also view historical quotes converted to Sales Orders or invoices
         if your Sales Module is configured to allow this. For additional
         documentation related to entering quotes for customers, please see
         <xref linkend="quote" />.</para>
@@ -1091,10 +1091,10 @@
     <varlistentry role="standard">
       <term>Returns</term>
       <listitem>
-        <para>Select to manage Returns associated with the customer. On this
-        screen you can manage most aspects of the Returns process—from
-        creating new Return Authorizations to processing Credit Memos. For
-        additional documentation related to managing Return Authorizations,
+        <para>Select to manage returns associated with the customer. On this
+        screen you can manage most aspects of the returns process—from
+        creating new return authorizations to processing Credit Memos. For
+        additional documentation related to managing return authorizations,
         please see <xref linkend="returnAuthorization" />.</para>
       </listitem>
     </varlistentry>
@@ -1118,11 +1118,11 @@
         <para>Select to view information related to the customer's open
         Receivables. On this screen you can manage most aspects of the
         Receivables process—from creating new Receivable documents (e.g.,
-        Invoices, Credit Memos, etc.) to printing out customer statements. For
+        invoices, Credit Memos, etc.) to printing out customer statements. For
         additional documentation related to managing customer Receivables, see
         <xref linkend="dspAROpenItems" />.</para>
         <tip>
-          <para>You can void posted Invoices and Returns on the open
+          <para>You can void posted invoices and returns on the open
           receivables screen?as long as they are unapplied.</para>
         </tip>
       </listitem>
@@ -1143,10 +1143,10 @@
       <term>Credit Cards</term>
       <listitem>
         <para>Select to view information related to transactions involving the
-        customer's Credit Card(s). On this screen you can view Credit Card
-        transaction history, authorize Credit Card pre-authorizations, and
-        print Credit Card receipts. For additional documentation related to
-        Credit Card history and the method for processing pre-authorizations,
+        customer's credit card(s). On this screen you can view credit card
+        transaction history, authorize credit card pre-authorizations, and
+        print credit card receipts. For additional documentation related to
+        credit card history and the method for processing pre-authorizations,
         see <xref linkend="arWorkBench" />.</para>
       </listitem>
     </varlistentry>
@@ -1166,7 +1166,7 @@
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To enter remarks (e.g., Notes and comments) related to the customer,
+  <para>To enter remarks (e.g., notes and comments) related to the customer,
   select the "Remarks" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -1182,9 +1182,9 @@
     <varlistentry>
       <term>Notes</term>
       <listitem>
-        <para>Select to enter Notes related to the customer. This is a
-        scrolling text field with word-wrapping for entering Notes related to
-        the customer. Any Notes entered on this screen are for internal
+        <para>Select to enter notes related to the customer. This is a
+        scrolling text field with word-wrapping for entering notes related to
+        the customer. Any notes entered on this screen are for internal
         purposes only.</para>
       </listitem>
     </varlistentry>
@@ -1193,7 +1193,7 @@
       <listitem>
         <para>Select to review or add comments related to the customer. Any
         comments entered elsewhere in the CRM Module related to the customer's
-        CRM Account will also be shown here.</para>
+        CRM account will also be shown here.</para>
       </listitem>
     </varlistentry>
   </variablelist>
