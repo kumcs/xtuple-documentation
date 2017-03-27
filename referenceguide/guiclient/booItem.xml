@@ -10,7 +10,7 @@
       <primary>operations</primary>
       <secondary>adding new to Routings</secondary>
     </indexterm>Routing Item</title>
-  <para>To add a new operation to a Routing, select the NEW button. The
+  <para>To add a new operation to a routing, select the NEW button. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -96,7 +96,7 @@
         scheduling will be governed by the start and due dates set on the Work
         Order header. Based on the values entered for all listed operations,
         whichever Execution Day value is the maximum, that value will be
-        displayed as the production Lead Time for the Routing.</para>
+        displayed as the production Lead Time for the routing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -139,8 +139,8 @@
         </variablelist>
         <note>
           <para>Standard operations are intended as initial templates used to
-          set up Routing items. Any changes made to a standard operation will
-          not automatically ripple throughout all your Routing items that use
+          set up routing items. Any changes made to a standard operation will
+          not automatically ripple throughout all your routing items that use
           the standard operation.</para>
         </note>
       </listitem>
@@ -279,7 +279,7 @@
       <listitem>
         <para>Select a Unit of Measure (UOM)—or enter a free-form UOM. Specify
         a UOM to be used optionally when work order operations are posted for
-        the specified operation. Different operations in a single Routing may
+        the specified operation. Different operations in a single routing may
         use different Production UOMs. For example, if you are producing soup,
         you might mix the soup in one operation using UOM = BATCH. But when
         canning the soup, the canning operation might use UOM = CAN.</para>
@@ -305,7 +305,7 @@
         transaction, when the operation is posted.</para>
         <note>
           <para>The "Receive Inventory" option may only be selected once per
-          Routing. Finished items may only be received into inventory once in
+          routing. Finished items may only be received into inventory once in
           the operations sequence.</para>
         </note>
       </listitem>

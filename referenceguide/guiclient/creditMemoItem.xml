@@ -60,10 +60,10 @@
             <term>Miscellaneous</term>
             <listitem>
               <para>Enter a name and description for the miscellaneous,
-              non-inventory item you are billing the Customer for. The name
+              non-inventory item you are billing the customer for. The name
               and description fields are free-form, meaning they accept
               unlimited alphanumeric characters. You must also select a sales
-              category. Sales Categories are used to identify the General
+              category. Sales categories are used to identify the General
               Ledger (G/L) Accounts to be used when non-inventory Sales
               transactions take place.</para>
             </listitem>
@@ -75,7 +75,7 @@
       <term>Reason Code</term>
       <listitem>
         <para>Specify the reason why an adjustment is being made to a
-        Customer's account.</para>
+        customer's account.</para>
         <para><note>
             <para>By default, the Reason Code on the Sales Credit header will
             be used at the line item level. However, you may change the Reason
@@ -90,7 +90,7 @@
         This account will be used instead of the typical Accounts pre-defined
         in the Receivables Assignments. For example, you might use this
         alternate Account in the scenario where you are doing business with
-        Customers who are part of the same buyer's group (i.e., Customer
+        customers who are part of the same buyer's group (i.e., customer
         Group).</para>
       </listitem>
     </varlistentry>
@@ -117,11 +117,11 @@
     <varlistentry>
       <term>Qty. To Credit</term>
       <listitem>
-        <para>Enter the quantity of the item you plan to give the Customer
+        <para>Enter the quantity of the item you plan to give the customer
         credit for. The quantity entered here may equal the quantity returned.
-        However, you have the flexibility to credit the Customer for a
+        However, you have the flexibility to credit the customer for a
         quantity different from the returned quantity. The quantity credited
-        is multiplied by the Net Unit Price to determine the amount of the
+        is multiplied by the Net Unit price to determine the amount of the
         credit.</para>
       </listitem>
     </varlistentry>
@@ -143,7 +143,7 @@
       <term>Discount % from Sale</term>
       <listitem>
         <para>Specify a percentage to reduce the credited amount by. The
-        discount will be deducted from the sale Price, thereby reducing the
+        discount will be deducted from the sale price, thereby reducing the
         amount of the credit by the specified percentage.</para>
       </listitem>
     </varlistentry>
@@ -153,30 +153,30 @@
           <secondary>pricing of</secondary>
         </indexterm>Net Unit Price</term>
       <listitem>
-        <para>Specify the Net Unit Price to assign the quantity being
+        <para>Specify the Net Unit price to assign the quantity being
         credited. If the sales credit is being applied to a specific Invoice,
-        then the system will automatically enter the item's Net Unit Price as
+        then the system will automatically enter the item's Net Unit price as
         it appeared on the referring Invoice. If no Invoice is being
         applied-to, then the system will choose the lower of the following two
-        Prices: A) The most-specific Pricing Schedule Assignment or B) any
+        prices: A) The most-specific Pricing Schedule Assignment or B) any
         Sale in effect at the time of order entry. The specificity of Pricing
         Schedule Assignments is determined in the following descending order:
-        By Customer Ship-To Address (most specific), by Customer, by Customer
-        Type, by Customer Type pattern, by all Customers. The lookup feature
+        By customer Ship-To Address (most specific), by customer, by customer
+        Type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
         <para>If your Pricing Schedule has multiple Units of Measure (UOM) on
-        it (or if several Pricing Schedules share the same level of Price
+        it (or if several Pricing Schedules share the same level of price
         specificity, but they have different UOMs) then the UOM which matches
         the selected UOM will be chosen—that is, as long as the quantity break
         does not exceed the quantity being priced. If no entry matches the UOM
         with a quantity break less than the quantity being priced, then the
-        lowest value Price for any UOM will be chosen. To make sure a specific
-        UOM is always chosen at the desired level of Price specificity, then
+        lowest value price for any UOM will be chosen. To make sure a specific
+        UOM is always chosen at the desired level of price specificity, then
         your Pricing Schedules should include at least one UOM with a quantity
         break of 0.</para>
         <tip>
           <para>The system can be configured to prevent users from editing the
-          Net Unit Price. If your system is configured that way, the Net Unit
+          Net Unit price. If your system is configured that way, the Net Unit
           Price field will not be editable.</para>
         </tip>
       </listitem>
@@ -184,7 +184,7 @@
     <varlistentry>
       <term>Pricing UOM</term>
       <listitem>
-        <para>Displays the item's Price UOM. You may also select a global
+        <para>Displays the item's price UOM. You may also select a global
         conversion ratio here. Global conversions have the label
         <literal>Global</literal> appended to them.</para>
       </listitem>
@@ -192,9 +192,9 @@
     <varlistentry>
       <term>Extended Price</term>
       <listitem>
-        <para>Displays the Extended Price. The Extended Price for a sales
+        <para>Displays the Extended price. The Extended price for a sales
         credit item is based on the quantity credited multiplied by the
-        Price.</para>
+        price.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -206,13 +206,13 @@
     <varlistentry>
       <term>List Price</term>
       <listitem>
-        <para>Displays the item's List Price per unit displays.</para>
+        <para>Displays the item's list price per unit displays.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Sale Price</term>
       <listitem>
-        <para>Displays the sold Price for the item at the time of sale.</para>
+        <para>Displays the sold price for the item at the time of sale.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -221,8 +221,8 @@
           <secondary>discount pricing for</secondary>
         </indexterm>List Discount %</term>
       <listitem>
-        <para>The default Customer discount (if any) will display here.
-        Default Customer discount percentages are defined in the Customer
+        <para>The default customer discount (if any) will display here.
+        Default customer discount percentages are defined in the Customer
         master.</para>
       </listitem>
     </varlistentry>

@@ -94,7 +94,7 @@
         </indexterm>Quote # Generation</term>
 
       <listitem>
-        <para>Select one of the available Quote Number generation
+        <para>Select one of the available quote Number generation
         methods:</para>
 
         <variablelist>
@@ -103,7 +103,7 @@
 
             <listitem>
               <para>Quote Numbers must be entered manually whenever you create
-              a new Quote.</para>
+              a new quote.</para>
             </listitem>
           </varlistentry>
 
@@ -112,7 +112,7 @@
 
             <listitem>
               <para>Quote Numbers will be automatically incremented by 1 each
-              time a new Quote is created. These automatically-generated
+              time a new quote is created. These automatically-generated
               numbers may not be edited. They are read-only.</para>
             </listitem>
           </varlistentry>
@@ -124,7 +124,7 @@
               <para>Quote Numbers will be automatically generated and
               incremented, as under the "Automatic" option described above.
               However, this option also allows you to manually override the
-              Quote Number at the time of Quote creation.</para>
+              quote Number at the time of quote creation.</para>
             </listitem>
           </varlistentry>
 
@@ -133,7 +133,7 @@
 
             <listitem>
               <para>Quote Numbers will be automatically incremented by 1 each
-              time a new Quote is created, using the same number generation
+              time a new quote is created, using the same number generation
               method specified for the creation of sales order numbers. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
@@ -144,11 +144,11 @@
             <term>Next #</term>
 
             <listitem>
-              <para>The next sequentially available Quote Number will display
+              <para>The next sequentially available quote Number will display
               here. You may change the number—creating a new basis for the
-              next Quote Number—by typing the new number into this field. Any
+              next quote Number—by typing the new number into this field. Any
               changes you make here will be reflected the next time a new
-              Quote is created.</para>
+              quote is created.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -354,10 +354,10 @@
       <term>Perform Credit Limit check on S/O Save</term>
 
       <listitem>
-        <para>Select if you want to perform a check of Customers' credit
+        <para>Select if you want to perform a check of customers' credit
         before their sales orders are saved. This credit check compares the
-        Customer's credit limit to the sum of their open sales orders and open
-        Receivables. If the Customer is found to be over their credit limit,
+        customer's credit limit to the sum of their open sales orders and open
+        Receivables. If the customer is found to be over their credit limit,
         the sales order cannot be saved?except by users with the override
         privilege. If this option is not selected, normal credit checking will
         occur during the shipping phase.</para>
@@ -433,7 +433,7 @@
       <term>Enable Reservations</term>
 
       <listitem>
-        <para>Select to enable the sales order Reservations functionality
+        <para>Select to enable the sales order reservations functionality
         system-wide. This feature allows for the hard allocation of quantity
         to sales orders. When this feature is selected, the "Issue Stock to
         Shipping" screen will enforce and disable the option to require
@@ -454,7 +454,7 @@
             <term>Reserve by Location</term>
 
             <listitem>
-              <para>Select to set sales Reservations for discrete locations
+              <para>Select to set sales reservations for discrete locations
               and lots. The hard allocation of quantity will be for particular
               locations and will prevent other orders from issuing reserved
               inventory. The sales order Pick List will print the reserved
@@ -602,10 +602,10 @@
             <term>Allocate Sales Credits to New Sales Order on Save</term>
 
             <listitem>
-              <para>Select to have open sales credits for a Customer
+              <para>Select to have open sales credits for a customer
               automatically allocated to any new sales orders entered for that
-              Customer. This functionality helps reduce Customer credit
-              balances by ensuring that Customer credits are consumed when new
+              customer. This functionality helps reduce customer credit
+              balances by ensuring that customer credits are consumed when new
               sales orders are entered. Any available, open sales credits are
               eligible for allocation. The allocation of available sales
               credits occurs only once—when a sales order is saved for the
@@ -614,9 +614,9 @@
               order are applied at the point when the Invoice resulting from
               the sales order is posted. Once the full balance of a sales
               credit has been applied, the sales credit is then closed. The
-              printed Invoice the Customer receives will indicate whether
+              printed invoice the customer receives will indicate whether
               sales credits have been applied. In addition, the total due from
-              the Customer will be automatically adjusted to reflect any
+              the customer will be automatically adjusted to reflect any
               applied credits.</para>
             </listitem>
           </varlistentry>
@@ -628,9 +628,9 @@
       <term>Show Quotes After Converted</term>
 
       <listitem>
-        <para>Select if you want to be able to view historical Quotes after
+        <para>Select if you want to be able to view historical quotes after
         they have been converted to sales orders. If you don't select this
-        option, converted Quote information will not be saved.</para>
+        option, converted quote information will not be saved.</para>
       </listitem>
     </varlistentry>
 
@@ -660,7 +660,7 @@
       <listitem>
         <para>Select if you want the user entering a sales order to be
         recorded automatically as the Inside sales Rep. If enabled, a
-        Characteristic called <literal>INSIDEREP</literal> will be added to
+        characteristic called <literal>INSIDEREP</literal> will be added to
         the sales order with the value being the username of the user who is
         entering the order. The Inside Rep information will be included in the
         Gross Margin Commissions report. If you don't select this option,
@@ -670,7 +670,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To establish Customer pricing options, select the "Pricing" tab. The
+  <para>To establish customer pricing options, select the "Pricing" tab. The
   following screen will appear:</para>
 
   <para><screenshot>
@@ -683,7 +683,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When establishing Customer pricing options, you are presented with the
+  <para>When establishing customer pricing options, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -704,10 +704,10 @@
             <listitem>
               <para>Check this option to allow pricing discounts for select
               customers. This option instructs the system to verify whether
-              any Pricing Discounts have been established for a Customer,
-              prior to calculating the line item Price for of an item within a
+              any Pricing Discounts have been established for a customer,
+              prior to calculating the line item price for of an item within a
               sales order. If this option is unchecked, then the system will
-              apply the full List Price for an item within a sales
+              apply the full list price for an item within a sales
               order.</para>
             </listitem>
           </varlistentry>
@@ -717,11 +717,11 @@
 
             <listitem>
               <para>Select to prevent all users from overriding the sales
-              Price when entering sales order line items. This is a
+              price when entering sales order line items. This is a
               system-wide setting, affecting all users. Do not select this
               option if you want to selectively prevent users from overriding
-              sales Prices. Individual users may be granted the ability to
-              override sales Prices, use the Sales module's OverridePrice
+              sales prices. Individual users may be granted the ability to
+              override sales prices, use the Sales module's Override price
               privilege.</para>
             </listitem>
           </varlistentry>
@@ -741,8 +741,8 @@
             <term>Item Precedence Over Product Category Pricing</term>
 
             <listitem>
-              <para>If selected, item-specific Price Schedule pricing takes
-              precedence over Product Category pricing. Leave unchecked if the
+              <para>If selected, item-specific price Schedule pricing takes
+              precedence over product category pricing. Leave unchecked if the
               lowest overall price should be selected.</para>
             </listitem>
           </varlistentry>
@@ -836,7 +836,7 @@
 
             <listitem>
               <para>If selected, the system will automatically update the Net
-              Unit Price for the line item, adjusting to accommodate the
+              Unit price for the line item, adjusting to accommodate the
               newly-entered quantity.</para>
             </listitem>
           </varlistentry>
@@ -845,9 +845,9 @@
             <term>Do not Update Price</term>
 
             <listitem>
-              <para>If selected, the Net Unit Price will not be changed when
+              <para>If selected, the Net Unit price will not be changed when
               line item quantity is changed on EDIT—and users will not be
-              prompted to consider changing the Price.</para>
+              prompted to consider changing the price.</para>
             </listitem>
           </varlistentry>
 
@@ -856,19 +856,19 @@
 
             <listitem>
               <para>If selected, the system will ask users if they want to
-              update the Net Unit Price (YES/NO). If they answer "YES" because
-              they do want to update the Price, then they will have to
-              manually make the Price adjustment.</para>
+              update the Net Unit price (YES/NO). If they answer "YES" because
+              they do want to update the price, then they will have to
+              manually make the price adjustment.</para>
 
               <variablelist>
                 <varlistentry>
                   <term>Ignore if Discounted</term>
 
                   <listitem>
-                    <para>Select if you want Price update warnings to be
+                    <para>Select if you want price update warnings to be
                     ignored when line items being edited are already
                     discounted. Also, if Sales Order header changes cause
-                    Prices to be updated, any discounted line items will not
+                    prices to be updated, any discounted line items will not
                     be updated.</para>
                   </listitem>
                 </varlistentry>
@@ -883,7 +883,7 @@
       <term>Price Effective Date</term>
 
       <listitem>
-        <para>Specify one of the following options for when item Prices should
+        <para>Specify one of the following options for when item prices should
         be effective as of:</para>
 
         <variablelist>
@@ -891,7 +891,7 @@
             <term>Current</term>
 
             <listitem>
-              <para>Select if you want Item Prices to be effective as of the
+              <para>Select if you want Item prices to be effective as of the
               current date.</para>
             </listitem>
           </varlistentry>
@@ -900,7 +900,7 @@
             <term>Order</term>
 
             <listitem>
-              <para>Select if you want Item Prices to be effective as of the
+              <para>Select if you want Item prices to be effective as of the
               order date.</para>
             </listitem>
           </varlistentry>
@@ -909,7 +909,7 @@
             <term>Scheduled</term>
 
             <listitem>
-              <para>Select if you want Item Prices to be effective as of the
+              <para>Select if you want Item prices to be effective as of the
               scheduled date.</para>
             </listitem>
           </varlistentry>
@@ -1031,19 +1031,19 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating new Customer records, it can be useful to have a core
+  <para>When creating new customer records, it can be useful to have a core
   set of default values already pre-defined. All these values can be changed
-  when you are creating new Customers. However, they provide you with a
+  when you are creating new customers. However, they provide you with a
   default starting point. The following settings you define here will be
-  present whenever you create a new Customer:</para>
+  present whenever you create a new customer:</para>
 
   <variablelist>
     <varlistentry>
       <term>Customer Type</term>
 
       <listitem>
-        <para>Specify a default Customer Type to be used whenever new
-        Customers are created.</para>
+        <para>Specify a default customer type to be used whenever new
+        customers are created.</para>
       </listitem>
     </varlistentry>
 
@@ -1052,7 +1052,7 @@
 
       <listitem>
         <para>Specify a default sales Representative to be used whenever new
-        Customers are created.</para>
+        customers are created.</para>
       </listitem>
     </varlistentry>
 
@@ -1060,7 +1060,7 @@
       <term>Ship Via</term>
 
       <listitem>
-        <para>Specify a default Ship Via to be used whenever new Customers are
+        <para>Specify a default Ship Via to be used whenever new customers are
         created.</para>
       </listitem>
     </varlistentry>
@@ -1070,7 +1070,7 @@
 
       <listitem>
         <para>Specify a default Shipping Form to be used whenever new
-        Customers are created.</para>
+        customers are created.</para>
       </listitem>
     </varlistentry>
 
@@ -1079,7 +1079,7 @@
 
       <listitem>
         <para>Specify a default Shipping Charge to be used whenever new
-        Customers are created.</para>
+        customers are created.</para>
       </listitem>
     </varlistentry>
 
@@ -1088,7 +1088,7 @@
 
       <listitem>
         <para>Specify a preferred selling site to be used whenever new
-        Customers are created.</para>
+        customers are created.</para>
       </listitem>
     </varlistentry>
 
@@ -1097,7 +1097,7 @@
 
       <listitem>
         <para>Specify the default billing Terms to be used whenever new
-        Customers are created.</para>
+        customers are created.</para>
       </listitem>
     </varlistentry>
 
@@ -1106,7 +1106,7 @@
 
       <listitem>
         <para>Specify a default procedure for handling cash receipts from
-        Customers. This notation is informational only.</para>
+        customers. This notation is informational only.</para>
 
         <variablelist>
           <varlistentry>
@@ -1114,7 +1114,7 @@
 
             <listitem>
               <para>Select to indicate you want to apply cash receipts to the
-              Customer's current balance due.</para>
+              customer's current balance due.</para>
             </listitem>
           </varlistentry>
 
@@ -1123,7 +1123,7 @@
 
             <listitem>
               <para>Select to indicate you want to apply cash receipts to
-              specific Customer open items.</para>
+              specific customer open items.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1134,7 +1134,7 @@
       <term>Accepts Partial Shipments</term>
 
       <listitem>
-        <para>Select to indicate Customers accept partial shipments by
+        <para>Select to indicate customers accept partial shipments by
         default.</para>
       </listitem>
     </varlistentry>
@@ -1143,7 +1143,7 @@
       <term>Accepts Backorders</term>
 
       <listitem>
-        <para>Select to indicate Customers accept backorders by
+        <para>Select to indicate customers accept backorders by
         default.</para>
       </listitem>
     </varlistentry>
@@ -1152,7 +1152,7 @@
       <term>Allow Free Form Ship-Tos</term>
 
       <listitem>
-        <para>Select to indicate Customers allow free-form Ship-To's by
+        <para>Select to indicate customers allow free-form Ship-To's by
         default. This default appears on the Customer master.</para>
       </listitem>
     </varlistentry>
@@ -1162,7 +1162,7 @@
 
       <listitem>
         <para>Specify the default credit limit to be used for all
-        Customers.</para>
+        customers.</para>
       </listitem>
     </varlistentry>
 
@@ -1171,7 +1171,7 @@
 
       <listitem>
         <para>Specify the default credit rating to be used for all
-        Customers.</para>
+        customers.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1232,7 +1232,7 @@
 
               <listitem>
                 <para>Select if, by default, you want to issue credit to
-                Customers for authorized line items and quantities. No return
+                customers for authorized line items and quantities. No return
                 is required or expected. Return Authorization line items will
                 close when an associated credit memo is posted.</para>
               </listitem>
@@ -1243,7 +1243,7 @@
 
               <listitem>
                 <para>Select if, by default, you want to authorize returns
-                from Customers. Return Authorization Items will close when an
+                from customers. Return Authorization Items will close when an
                 associated credit memo is posted, or when all items on a line
                 have been returned, whichever comes last.</para>
               </listitem>
@@ -1254,7 +1254,7 @@
 
               <listitem>
                 <para>Select if, by default, you want to replace items
-                returned by Customers. Authorized quantities will be added as
+                returned by customers. Authorized quantities will be added as
                 additional order quantity to an associated sales order line,
                 which in turn should be reopened if closed. Return
                 Authorization items will close when all items on the line have
@@ -1269,7 +1269,7 @@
 
               <listitem>
                 <para>Select if, by default, you want to repair or service
-                items returned by Customers. Service or repair items will
+                items returned by customers. Service or repair items will
                 first be received by a Return Authorization. Then a new sales
                 order with linked work order(s) will be created to track work
                 and shipping on the repair or service. The new sales order
@@ -1283,7 +1283,7 @@
 
               <listitem>
                 <para>Select if, by default, you want to authorize the
-                substitution of items returned by Customers. Under this
+                substitution of items returned by customers. Under this
                 option, when an original sales order is imported into the
                 Return Authorization, the Return Authorization Line items will
                 default to the Return disposition. Any new line items added
@@ -1299,7 +1299,7 @@
         <term>Credit/Ship</term>
 
         <listitem>
-          <para>Specify the default timetable for Customer credits and/or
+          <para>Specify the default timetable for customer credits and/or
           returns:</para>
 
           <variablelist>
@@ -1307,7 +1307,7 @@
               <term>Immediately</term>
 
               <listitem>
-                <para>Select to issue credit or send returns to Customers
+                <para>Select to issue credit or send returns to customers
                 immediately by default.</para>
               </listitem>
             </varlistentry>
@@ -1316,7 +1316,7 @@
               <term>Upon Receipt</term>
 
               <listitem>
-                <para>Select to issue credit or send returns to Customers only
+                <para>Select to issue credit or send returns to customers only
                 after you have received returned goods from them by
                 default.</para>
               </listitem>
@@ -1338,7 +1338,7 @@
 
               <listitem>
                 <para>Select if, by default, you do not issue credit for
-                Customer returns.</para>
+                customer returns.</para>
               </listitem>
             </varlistentry>
 
@@ -1346,8 +1346,8 @@
               <term>Credit Memo</term>
 
               <listitem>
-                <para>Select if, by default, you credit Customer returns with
-                a credit memo to the Customer's account. This option will
+                <para>Select if, by default, you credit customer returns with
+                a credit memo to the customer's account. This option will
                 result in the automatic creation of a sales credit
                 Memo.</para>
               </listitem>
@@ -1357,7 +1357,7 @@
               <term>Payment</term>
 
               <listitem>
-                <para>Select if, by default, you credit Customer returns by
+                <para>Select if, by default, you credit customer returns by
                 sending them a payment. This option will create a credit memo,
                 then a Misc. Payment that applies to the credit memo.</para>
               </listitem>
@@ -1367,7 +1367,7 @@
               <term>Credit Card</term>
 
               <listitem>
-                <para>Select if, by default, you credit Customer returns with
+                <para>Select if, by default, you credit customer returns with
                 a refund on their Credit Card.</para>
               </listitem>
             </varlistentry>
@@ -1429,10 +1429,10 @@
       <term>Cash Customer #</term>
 
       <listitem>
-        <para>Enter a Customer Number to be used as the default cash-paying
-        Customer when entering simple sales orders. During order entry, you
+        <para>Enter a customer number to be used as the default cash-paying
+        customer when entering simple sales orders. During order entry, you
         may easily override the default with either pre-existing other or new
-        Customer information.</para>
+        customer information.</para>
       </listitem>
     </varlistentry>
 

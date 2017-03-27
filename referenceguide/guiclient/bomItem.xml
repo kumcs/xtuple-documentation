@@ -277,7 +277,7 @@
         a given operation will be backflushed if the issue method for the
         components is either "Pull" or "Mixed" and the operation is set to
         auto issue components. Secondly, work order paperwork, such as
-        Routings, will show the relationship between linked work order
+        routings, will show the relationship between linked work order
         material requirements and work order operations.</para>
         <tip>
           <para>If an operation is expired, the link between the operation and
@@ -426,7 +426,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add Comments to a component item, select the "Comments" tab at the
+  <para>To add comments to a component item, select the "Comments" tab at the
   bottom of the "Bill of Materials Item" screen. The following screen will
   appear:</para>
   <para><screenshot>
@@ -536,15 +536,15 @@
   </variablelist>
   <para>On a bill of materials, if the parent item is a configured item (i.e.,
   configured Job item or Reference item), then you will have the option to
-  link BOM items to specific parent item Characteristics. For example, let's
-  say the parent item has a Characteristic for paint finish with the values
+  link BOM items to specific parent item characteristics. For example, let's
+  say the parent item has a characteristic for paint finish with the values
   "Flat" and "Glossy". At the BOM item level, you can specify whether the BOM
   item goes with "Flat" or "Glossy". If you choose "Glossy" to associate with
   the BOM item, then that means the BOM item will be included as a material
   requirement whenever orders call for the "Glossy" version of the parent
-  item. If no Characteristic association is made at the BOM item level, then
+  item. If no characteristic association is made at the BOM item level, then
   the BOM item will always appear on work orders—regardless of the
-  parent-level configuration selection. To associate Characteristics with a
+  parent-level configuration selection. To associate characteristics with a
   BOM item, select the "Configuration" tab. The following screen will
   appear:</para>
   <para><screenshot>
@@ -561,25 +561,25 @@
     url="http://wiki.xtuple.org/AssembleToOrderConfiguratorTopic">Assemble to
     Order (ATO) Configuration Topic</ulink>.</para>
   </note>
-  <para>When associating Characteristics with a BOM item, you are presented
+  <para>When associating characteristics with a BOM item, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Characteristic</term>
       <listitem>
-        <para>Select a Characteristic from the list of Characteristics. These
-        Characteristics are item Characteristics defined on the Item master
+        <para>Select a characteristic from the list of characteristics. These
+        characteristics are item characteristics defined on the Item master
         for the parent item on the bill of materials. Linking parent
-        Characteristics to child BOM items means the child item will be
+        characteristics to child BOM items means the child item will be
         included as a material requirement whenever orders call for the same
-        parent item Characteristic.</para>
+        parent item characteristic.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Value</term>
       <listitem>
         <para>Enter a value to associate with the selected item
-        Characteristic.</para>
+        characteristic.</para>
       </listitem>
     </varlistentry>
   </variablelist>

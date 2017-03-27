@@ -4,7 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="createPlannedOrdersByPlannerCode">
   <title>Run MRP by Planner Code</title>
-  <para>When you run MRP by Planner Code, you are running the material
+  <para>When you run MRP by planner code, you are running the material
   requirements planning (MRP) system. This utility creates planned
   replenishment orders to meet existing sales order and work order demand.
   replenishment orders will be created whenever a planned availability for an
@@ -12,7 +12,7 @@
   order will be enough to restore planned availability back to the Reorder
   Level—or to the order Up To (OUT) Level, if the OUT Level is greater.</para>
   <note>
-    <para>Running MRP by Planner Code may be used to generate planned orders
+    <para>Running MRP by planner code may be used to generate planned orders
     for both parent-level manufactured items and also lower level purchased
     items. Only items designated as MRP items will be affected by an MRP run.
     Unposted purchase orders and purchase requests are considered as valid
@@ -25,7 +25,7 @@
   there is a progress indicator showing how far along the MRP job is. The
   progress screen also features a cancel option, which allows you to kill the
   MRP job if you feel it has gone on for too long.</para>
-  <para>To run MRP by Planner Code, select the "Run MRP by Planner Code"
+  <para>To run MRP by planner code, select the "Run MRP by Planner Code"
   option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -42,34 +42,34 @@
     Order quantities will also be updated if demand levels have changed since
     MRP was last run.</para>
   </note>
-  <para>When running MRP by Planner Code, you are presented with the following
+  <para>When running MRP by planner code, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
       <listitem>
-        <para>Select to create planned replenishment orders for all Planner
-        Codes.</para>
+        <para>Select to create planned replenishment orders for all planner
+        codes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Planner Code you want to create planned replenishment
+        <para>Specify planner code you want to create planned replenishment
         orders for.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Pattern</term>
       <listitem>
-        <para>Enter a Planner Code pattern to select a range of Planner Codes.
+        <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using Regular Expressions.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>All Sites</term>
       <listitem>
-        <para>Select to create planned replenishment orders by Planner Code
+        <para>Select to create planned replenishment orders by planner code
         for all sites.</para>
       </listitem>
     </varlistentry>
@@ -114,7 +114,7 @@
         only will this option create MRP Exceptions for you—it will also force
         MRP to recognize those exceptions and adjust its calculations when
         creating planned orders. The end result will be planned orders that
-        are netted against the known exceptions. Planner Code options related
+        are netted against the known exceptions. Planner code options related
         to exceptions handling may also impact your results. If you do not
         select this option—and you are using the MRP Exceptions feature
         set—the netting effect will not be applied and you could end up with
@@ -129,7 +129,7 @@
     <varlistentry>
       <term>OK</term>
       <listitem>
-        <para>Creates planned replenishment orders by Planner Code, using the
+        <para>Creates planned replenishment orders by planner code, using the
         specified parameters.</para>
       </listitem>
     </varlistentry>

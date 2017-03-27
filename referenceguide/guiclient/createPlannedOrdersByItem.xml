@@ -14,7 +14,7 @@
   <tip>
     <para>When running MRP by Item for manufactured items, the system
     generates planned work orders only. If you want to also generate planned
-    orders for purchased requirements, you should run MRP by Planner Code.
+    orders for purchased requirements, you should run MRP by planner code.
     Only items designated as MRP items will be affected by an MRP run.
     Unposted purchase orders and purchase requests are considered as valid
     sources of supply when MRP is run.</para>
@@ -77,8 +77,8 @@
         <para>Select to perform a multi-level explosion to identify dependent
         demand for the specified item. This functionality will create planned
         orders for any child demand, if necessary. The functionality mirrors
-        the same feature available at the Planner Code level, which is
-        available when running MRP by Planner Code.</para>
+        the same feature available at the planner code level, which is
+        available when running MRP by planner code.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -104,7 +104,7 @@
         only will this option create MRP Exceptions for you—it will also force
         MRP to recognize those exceptions and adjust its calculations when
         creating planned orders. The end result will be planned orders that
-        are netted against the known exceptions. Planner Code options related
+        are netted against the known exceptions. Planner code options related
         to exceptions handling may also impact your results. If you do not
         select this option—and you are using the MRP Exceptions feature
         set—the netting effect will not be applied and you could end up with

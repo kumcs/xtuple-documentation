@@ -15,7 +15,7 @@
 
   <para>When setting up a new site, you have the ability to create batches of
   item sites—rather than having to create them one-at-a-time. To create item
-  sites by Class Code, select the "Create Item Sites by Class Code" option.
+  sites by class code, select the "Create Item Sites by Class Code" option.
   The following screen will appear:</para>
 
   <para><screenshot>
@@ -34,7 +34,7 @@
     need to be created at once to save time.</para>
   </tip>
 
-  <para>When creating item sites by Class Code, you are presented with the
+  <para>When creating item sites by class code, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -42,7 +42,7 @@
       <term>All Class Codes</term>
 
       <listitem>
-        <para>Select to create item sites for all Class Codes.</para>
+        <para>Select to create item sites for all class codes.</para>
       </listitem>
     </varlistentry>
 
@@ -50,7 +50,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify Class Code you want to create item sites for.</para>
+        <para>Specify a class code you want to create item sites for.</para>
       </listitem>
     </varlistentry>
 
@@ -58,7 +58,7 @@
       <term>Pattern</term>
 
       <listitem>
-        <para>Enter a Class Code pattern to select a range of Class Codes to
+        <para>Enter a class code pattern to select a range of class codes to
         create item sites for. Refine your search using Regular
         Expressions.</para>
       </listitem>
@@ -227,7 +227,7 @@
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 10. Value entered specifies the order
               in which item sites will be chosen during sales order and sales
-              Quote creation. If an item is located in more than one "Sold
+              quote creation. If an item is located in more than one "Sold
               from" site, the item site with the highest ranking will be
               chosen first. If two item sites happen to share the same
               ranking, selection will be based on alphabetical order. The
@@ -310,9 +310,9 @@
             <term>Planner Code</term>
 
             <listitem>
-              <para>Specify the Planner Code you want to assign the item site
-              to. Assigning a Planner Code to an item site makes it possible
-              to group item sites by Planner Code for the purposes of
+              <para>Specify the planner code you want to assign the item site
+              to. Assigning a planner code to an item site makes it possible
+              to group item sites by planner code for the purposes of
               Planning.</para>
             </listitem>
           </varlistentry>
@@ -325,7 +325,7 @@
               </indexterm>Cost Category</term>
 
             <listitem>
-              <para>Specify the Cost Category you want to associate with the
+              <para>Specify the cost category you want to associate with the
               item site. This requirement helps ensure that all inventory
               transactions involving an item site will be properly tracked and
               recorded in the General Ledger.</para>
@@ -432,7 +432,7 @@
               <tip>
                 <para>To monitor the frequency of item site Cycle Counts, view
                 the "Last Counted" column in any of the item site Reports: by
-                item, by Class Code, etc. The Last Counted date represents the
+                item, by class code, etc. The Last Counted date represents the
                 date a Count Tag was last posted (not simply issued) for the
                 item site.</para>
               </tip>
@@ -628,7 +628,7 @@
       <term>Location Comment</term>
 
       <listitem>
-        <para>Enter any free-form Comment related to the site Location. This
+        <para>Enter any free-form comment related to the site Location. This
         is additional information which may be placed on a Pick List or a Pack
         List.</para>
       </listitem>
@@ -719,7 +719,7 @@
         <note>
           <para>Running material requirements Planning (MRP) on your system
           consists entirely of running the Create Planned Replenishment Orders
-          screens—either by item or by Planner Code. As MRP runs, the planned
+          screens—either by item or by planner code. As MRP runs, the planned
           replenishment orders are generated automatically.</para>
         </note>
 
