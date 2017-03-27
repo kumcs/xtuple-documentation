@@ -42,8 +42,8 @@
           <secondary>of operations in routings</secondary>
         </indexterm>Show Expired Operations</term>
       <listitem>
-        <para>Select to display expired Operations in the "Routing" display.
-        Expired Operations are Operations that have been expired from the
+        <para>Select to display expired operations in the "Routing" display.
+        Expired operations are operations that have been expired from the
         Routing.</para>
       </listitem>
     </varlistentry>
@@ -59,8 +59,8 @@
           <secondary>of operations in routings</secondary>
         </indexterm>Show Future Operations</term>
       <listitem>
-        <para>Select to display future Operations in the "Routing" display.
-        Future Operations are Operations that will be added to the Routing at
+        <para>Select to display future operations in the "Routing" display.
+        Future operations are operations that will be added to the Routing at
         a future point in time.</para>
       </listitem>
     </varlistentry>
@@ -170,9 +170,9 @@
         of finished goods inventory as it moves through the manufacturing
         process. The feature applies only to top-level, Multiple Location
         Control (MLC) items whose production is posted through work order
-        Operations posting. If you choose to track finished MLC goods using
+        operations posting. If you choose to track finished MLC goods using
         this feature, then the final Location is the Location where inventory
-        will be located when Operations posting for the work order is
+        will be located when operations posting for the work order is
         completed. If you do not wish to track WIP Locations for finished MLC
         goods, then you can ignore this option.</para>
       </listitem>
@@ -188,9 +188,9 @@
       <listitem>
         <para>Lead Time: Displays production Lead Time for the specified item.
         The production Lead Time value is equal to the maximum Execution Day
-        value specified for listed Operations. Each Operation must have an
+        value specified for listed operations. Each operation must have an
         Execution Day specified. Based on values entered for all listed
-        Operations, whichever Execution Day value is the maximum, that value
+        operations, whichever Execution Day value is the maximum, that value
         will be displayed as the production Lead Time for the Routing.</para>
       </listitem>
     </varlistentry>
@@ -198,13 +198,13 @@
       <term>Close Work Order when full Qty. Posted</term>
       <listitem>
         <para>Select to automatically close work orders when the full work
-        order quantity is posted when posting Operations.</para>
+        order quantity is posted when posting operations.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Routing</term>
       <listitem>
-        <para>Display lists all Operations for the selected Routing.</para>
+        <para>Display lists all operations for the selected Routing.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -235,25 +235,25 @@
     <varlistentry>
       <term>EXPIRE</term>
       <listitem id="booEXPIRE">
-        <para>Highlight an Operation and then select this button to expire the
-        Operation, causing it to be hidden from view on the list—unless the
+        <para>Highlight an operation and then select this button to expire the
+        operation, causing it to be hidden from view on the list—unless the
         "Show Expired Operations" option is specifically chosen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
-    <para>If the Operation is expired on the current day, the Operation will
-    still appear as an option when selecting "Used At" Operations on a bill of
+    <para>If the operation is expired on the current day, the operation will
+    still appear as an option when selecting "Used At" operations on a bill of
     materials (BOM) if done during the same current day. Once a day passes,
-    however, the expired Operation will no longer appear as a "Used At" option
+    however, the expired operation will no longer appear as a "Used At" option
     on the BOM.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term>MOVE UP</term>
       <listitem id="booMOVEUP">
-        <para>Highlight an Operation and then select this button to move the
-        Operation up the Routing list. Sequence numbers, which are incremented
+        <para>Highlight an operation and then select this button to move the
+        operation up the Routing list. Sequence numbers, which are incremented
         in multiples of ten, are automatically adjusted to reflect the change
         in position.</para>
       </listitem>
@@ -261,8 +261,8 @@
     <varlistentry>
       <term>MOVE DOWN</term>
       <listitem id="booMOVEDOWN">
-        <para>Highlight an Operation and then select this button to move the
-        Operation down the Routing list. Sequence numbers, which are
+        <para>Highlight an operation and then select this button to move the
+        operation down the Routing list. Sequence numbers, which are
         incremented in multiples of ten, are automatically adjusted to reflect
         the change in position.</para>
       </listitem>

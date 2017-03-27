@@ -269,18 +269,18 @@
     <varlistentry role="manufacturing">
       <term>Used At</term>
       <listitem>
-        <para>Specify which Operation the component is used at. Using the
-        lookup feature located to the right of the field, select a Bill of
-        Operations sequence number to identify which Operation the component
-        is used at. Linking a component with an Operation will have certain
-        effects. First, when posting Operations, components that are linked to
-        a given Operation will be backflushed if the issue method for the
-        components is either "Pull" or "Mixed" and the Operation is set to
-        Auto Issue components. Secondly, work order paperwork, such as
+        <para>Specify which operation the component is used at. Using the
+        lookup feature located to the right of the field, select a routing
+        sequence number to identify which operation the component
+        is used at. Linking a component with an operation will have certain
+        effects. First, when posting operations, components that are linked to
+        a given operation will be backflushed if the issue method for the
+        components is either "Pull" or "Mixed" and the operation is set to
+        auto issue components. Secondly, work order paperwork, such as
         Routings, will show the relationship between linked work order
-        material requirements and work order Operations.</para>
+        material requirements and work order operations.</para>
         <tip>
-          <para>If an Operation is expired, the link between the Operation and
+          <para>If an operation is expired, the link between the operation and
           the component item will be removed.</para>
         </tip>
       </listitem>
@@ -289,14 +289,14 @@
       <term>Schedule w/ W/O Operation</term>
       <listitem>
         <para>Select to indicate that this component is not due until the work
-        order Operation that will consume it is scheduled to begin. The
-        scheduling of Operations is handled by the Execution Day indicator on
+        order operation that will consume it is scheduled to begin. The
+        scheduling of operations is handled by the Execution Day indicator on
         the routings item screen. For example, let's say we have an
-        Operation with an Execution Day = 5. This means the Operation is
+        operation with an Execution Day = 5. This means the operation is
         scheduled to begin five days after the start date of the work order.
-        Components scheduled with this Operation are due the day before the
-        Operation starts—that is, on day four after the work order start
-        date—to ensure they will be available when the Operation is scheduled
+        Components scheduled with this operation are due the day before the
+        operation starts—that is, on day four after the work order start
+        date—to ensure they will be available when the operation is scheduled
         to begin. If this option is not selected, then the component
         scheduling will be governed by the start and due dates set on the Work
         Order header.</para>
@@ -361,7 +361,7 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>To ensure Availability, a BOM-defined Substitution must be located
+    <para>To ensure availability, a BOM-defined Substitution must be located
     in the same site as the component item it replaces. If the Substitute is
     located in a different site, it will not be available for
     substitution.</para>
@@ -479,15 +479,15 @@
     </indexterm> <indexterm significance="normal">
       <primary>bills of operations</primary>
       <secondary>linking to BOMs</secondary>
-    </indexterm>link a Bill of Materials component to a Bill of Operations
-  Item, select the lookup feature located to the right of the "Used At" field.
+    </indexterm>link a Bill of Materials component to a routing
+  item, select the lookup feature located to the right of the "Used At" field.
   The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/booItemList.png" />
         </imageobject>
-        <caption>Bill of Operations Items</caption>
+        <caption>Routing Items</caption>
       </mediaobject>
     </screenshot></para>
   <para>When linking bill of materials components to routings items,
@@ -507,11 +507,11 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Bill of Operation Items</term>
+      <term>Routing Items</term>
       <listitem>
         <para>Display lists routing items for the same manufactured
         item whose bill of materials is being specified. Highlight the
-        Operation you want to link the bill of materials item to, then hit the
+        operation you want to link the bill of materials item to, then hit the
         SELECT button.</para>
       </listitem>
     </varlistentry>

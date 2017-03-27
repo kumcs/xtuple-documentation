@@ -109,7 +109,7 @@
               <note>
                 <para>Work orders created, as specified above, to meet sales
                 order demand will be created regardless of an item's
-                Availability—and also regardless of whether material
+                availability—and also regardless of whether material
                 Requirements Planning (MRP) is being run in parallel.</para>
               </note>
             </listitem>
@@ -140,7 +140,7 @@
               <note>
                 <para>Purchase requests created to meet work order or sales
                 order demand will be created regardless of item
-                Availability—and also regardless of whether material
+                availability—and also regardless of whether material
                 Requirements Planning (MRP) is being run in parallel.</para>
               </note>
             </listitem>
@@ -170,7 +170,7 @@
 
             <listitem>
               <para>Select to create purchase orders linked to sales orders.
-              You must have at least one Item Source defined for the item to
+              You must have at least one item source defined for the item to
               use this option. Linking purchase orders to sales order creates
               the basic foundation for drop shipment functionality. This
               option and the "Create Purchase Requests for Sales Orders"
@@ -506,7 +506,7 @@
               <para role="manufacturing"><tip>
                   <para>The appropriate reporting selections must be made in
                   the routings to ensure that labor and overhead
-                  Costs associated with setup and run time Operations are
+                  Costs associated with setup and run time operations are
                   reported.</para>
                 </tip></para>
             </listitem>
@@ -639,12 +639,12 @@
 
       <listitem>
         <para>Select to require the use of work-in-process (WIP) Locations
-        when posting work order Operations for Multiple Location Control (MLC)
+        when posting work order operations for Multiple Location Control (MLC)
         finished goods. WIP Locations are an optional feature which may be
         defined on the routing for manufactured MLC items.
         The feature enables you to track finished goods inventory as it moves
         through the manufacturing process. If your site does not combine
-        Multiple Location Control with Operations posting, then this option
+        Multiple Location Control with operations posting, then this option
         should be left unchecked.</para>
       </listitem>
     </varlistentry>
@@ -730,8 +730,8 @@
             <listitem>
               <para>The Reorder Level specifies when a planned replenishment
               order should be created for an item site. If planned
-              Availability minus Safety Stock falls below the Reorder Level,
-              then a Replenishment order will be created when material
+              availability minus safety stock falls below the reorder level,
+              then a replenishment order will be created when material
               Requirements Planning (MRP) is run. The Replenishment order
               quantity will be equal to the quantity required to return
               planned availability to either the Reorder Level or the order Up
@@ -826,7 +826,7 @@
               order and order Multiple. The other order Parameters listed
               below do not apply to manually-created work orders. For manual
               purchase orders, the Minimum order and order Multiple parameters
-              are determined on a Vendor-by-Vendor basis, using Item Source
+              are determined on a vendor-by-vendor basis, using item source
               masters.</para>
             </listitem>
           </varlistentry>
@@ -966,7 +966,7 @@
               item, then the Lead Time refers to the production Lead Time. If
               the item is a purchased item, then the Lead Time refers to the
               planning Lead Time. The procurement Lead Time for purchased
-              items is determined on a Vendor-by-Vendor basis, using Item
+              items is determined on a vendor-by-vendor basis, using Item
               Source masters. Material requirements planning (MRP) will
               consider Lead Times when calculating planned order start dates
               when MRP is run.</para>

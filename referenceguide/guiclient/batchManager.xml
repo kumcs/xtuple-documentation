@@ -9,17 +9,17 @@
   run. These scheduled jobs are submitted from various places within the
   xTuple ERP application. Often the type of jobs that can be submitted are
   jobs that either take long periods of time to run or jobs that you would
-  want to run periodically at a given time. When you submit a job to the Batch
+  want to run periodically at a given time. When you submit a job to the batch
   Manager, you specify a time for the job to start running. This job and
-  others like it are stored on the database, waiting for the Batch Manager to
-  process them. You can see a list of jobs submitted to the Batch Manager by
+  others like it are stored on the database, waiting for the batch Manager to
+  process them. You can see a list of jobs submitted to the batch Manager by
   selecting the "xTuple Connect Console" option from the System module.</para>
   <note>
-    <para>For details on installing and setting up the Batch Manager at your
+    <para>For details on installing and setting up the batch Manager at your
     site, please see the xTuple Connect Product Guide available in the
     Documentation area of the xTuple community website.</para>
   </note>
-  <para>To access the system interface to the Batch Manager, select the
+  <para>To access the system interface to the batch Manager, select the
   "xTuple Connect Console" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -30,8 +30,8 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>When a report or other job is submitted to the Batch Manager with a
-    scheduled time of ASAP, the Batch Manager sets the scheduled time to the
+    <para>When a report or other job is submitted to the batch Manager with a
+    scheduled time of ASAP, the batch Manager sets the scheduled time to the
     current time. However, a job will not necessarily be run immediately if it
     is scheduled for the current time. Any pre-existing jobs with scheduled
     times prior to the current time must be completed first. In other words,
@@ -44,12 +44,12 @@
     <varlistentry>
       <term>Submitted by</term>
       <listitem>
-        <para>Specify the user(s) whose Batch items you want to
+        <para>Specify the user(s) whose batch items you want to
         display.</para>
-        <para>Current User: Select to display Batch Items for the current
+        <para>Current User: Select to display batch Items for the current
         user.</para>
-        <para>All Users: Select to display Batch Items for all users.</para>
-        <para>Selected User: Specify the user whose Batch Items you want to
+        <para>All Users: Select to display batch Items for all users.</para>
+        <para>Selected User: Specify the user whose batch Items you want to
         display.</para>
       </listitem>
     </varlistentry>

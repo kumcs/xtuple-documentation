@@ -10,7 +10,7 @@
       <primary>operations</primary>
       <secondary>adding new to Routings</secondary>
     </indexterm>Routing Item</title>
-  <para>To add a new Operation to a Routing, select the NEW button. The
+  <para>To add a new operation to a Routing, select the NEW button. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -20,7 +20,7 @@
         <caption>Add New Operation to Routing</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding a new Operation to a Routing, you are presented with the
+  <para>When adding a new operation to a routing, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -38,36 +38,36 @@
     <varlistentry>
       <term>Standard Oper.</term>
       <listitem>
-        <para>Select a Standard Operation to use for the Operation, if any.
-        Instructions associated with the Standard Operation will be displayed
+        <para>Select a standard operation to use for the operation, if any.
+        Instructions associated with the standard operation will be displayed
         below.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Operation Type</term>
       <listitem>
-        <para>If a Standard Operation is specified, the Operation Type
-        associated with the Standard Operation will be displayed.</para>
+        <para>If a standard operation is specified, the operation type
+        associated with the standard operation will be displayed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>Enter a description to further identify the Operation.</para>
+        <para>Enter a description to further identify the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Work Center</term>
       <listitem>
         <para>Specify work center to be used for the specified
-        Operation.</para>
+        operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tooling Reference</term>
       <listitem>
         <para>Use this field to briefly describe any tooling required for the
-        Operation. For example, if you are making plastic products, the
+        operation. For example, if you are making plastic products, the
         tooling reference might refer to the mold used to form the
         plastic.</para>
       </listitem>
@@ -75,7 +75,7 @@
     <varlistentry>
       <term>Oper. Seq.#</term>
       <listitem>
-        <para>Displays Operation sequence number.</para>
+        <para>Displays operation sequence number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -86,15 +86,15 @@
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
         value up to a maximum of 99. This feature enables you to schedule work
-        order materials with work order Operations. For example, let's say we
-        have an Operation with an Execution Day = 5. This means the Operation
+        order materials with work order operations. For example, let's say we
+        have an operation with an Execution Day = 5. This means the operation
         is scheduled to begin five days after the start date of the work
-        order. Components scheduled with this Operation are due the day before
-        the Operation starts—that is, on day four after the work order start
-        date—to ensure they will be available when the Operation is scheduled
+        order. Components scheduled with this operation are due the day before
+        the operation starts—that is, on day four after the work order start
+        date—to ensure they will be available when the operation is scheduled
         to begin. If this option is not selected, then the component
         scheduling will be governed by the start and due dates set on the Work
-        Order header. Based on the values entered for all listed Operations,
+        Order header. Based on the values entered for all listed operations,
         whichever Execution Day value is the maximum, that value will be
         displayed as the production Lead Time for the Routing.</para>
       </listitem>
@@ -138,10 +138,10 @@
           </varlistentry>
         </variablelist>
         <note>
-          <para>Standard Operations are intended as initial templates used to
-          set up Routing items. Any changes made to a Standard Operation will
+          <para>Standard operations are intended as initial templates used to
+          set up Routing items. Any changes made to a standard operation will
           not automatically ripple throughout all your Routing items that use
-          the Standard Operation.</para>
+          the standard operation.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -152,7 +152,7 @@
         </indexterm>Setup Time (min)</term>
       <listitem>
         <para>Amount entered represents the number of minutes required to set
-        up the work center for the Operation.</para>
+        up the work center for the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -160,7 +160,7 @@
       <listitem>
         <para>Specify whether you want to report Setup Costs as "Direct
         Labor," "Overhead," or "None." Specify the "None" option if you would
-        do not want to track Setup Time as part of the Operation's
+        do not want to track Setup Time as part of the operation's
         Cost.</para>
       </listitem>
     </varlistentry>
@@ -187,8 +187,8 @@
       <listitem>
         <para>Specify whether you want to report Setup Costs as "Direct
         Labor," "Overhead," or "None." Specify the "None" option if you would
-        do not want to track Setup Time as part of the Operation's
-        Cost.</para>
+        do not want to track Setup Time as part of the operation's
+        cost.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -198,12 +198,12 @@
         associated with run time to be tracked in the G/L and elsewhere. If
         not selected, these Costs will not be reported.</para>
         <note>
-          <para>When Operations are posted, inventory transaction records will
-          be posted to the General Ledger if at least one of the Operations in
-          the list of work order Operations has either or both of the
+          <para>When operations are posted, inventory transaction records will
+          be posted to the General Ledger if at least one of the operations in
+          the list of work order operations has either or both of the
           inventory handling options selected. If items are backflushed at an
-          Operation, select the "Auto. Issue Components" option. If finished
-          items are received into inventory at an Operation, select the
+          operation, select the "Auto. Issue Components" option. If finished
+          items are received into inventory at an operation, select the
           "Receive Inventory" option.</para>
         </note>
       </listitem>
@@ -214,19 +214,19 @@
         <para>Specify the standard quantity that will be produced during a
         typical run-time period. The value entered here is equivalent to a run
         size, batch size, or economic order quantity (EOQ) for this particular
-        Operation. Because work order Operations roll into the Actual and
+        operation. Because work order operations roll into the Actual and
         Standard Costs for manufactured items, you should specify a per
         quantity which accurately reflects your normal batch size for the
-        Operation. Specifying a standard batch size helps ensure your
-        Operations Costs are evenly distributed. The following equation
-        indicates how Operations Costs are distributed using batch
+        operation. Specifying a standard batch size helps ensure your
+        operations Costs are evenly distributed. The following equation
+        indicates how operations Costs are distributed using batch
         sizes:</para>
         <equation>
           <mathphrase>((Setup Time * Setup Cost) + (Run Time * Run Cost))/per
           = Extended Total</mathphrase>
         </equation>
         <para>The following table illustrates two examples of how differing
-        batch sizes produce different Operations Costs per unit:</para>
+        batch sizes produce different operations Costs per unit:</para>
         <para><table>
             <title>Example Batch Sizes with Operations Costing</title>
             <tgroup cols="6">
@@ -278,14 +278,14 @@
         </indexterm>Production UOM</term>
       <listitem>
         <para>Select a Unit of Measure (UOM)—or enter a free-form UOM. Specify
-        a UOM to be used optionally when work order Operations are posted for
-        the specified Operation. Different Operations in a single Routing may
+        a UOM to be used optionally when work order operations are posted for
+        the specified operation. Different operations in a single Routing may
         use different Production UOMs. For example, if you are producing soup,
-        you might mix the soup in one Operation using UOM = BATCH. But when
-        canning the soup, the canning Operation might use UOM = CAN.</para>
+        you might mix the soup in one operation using UOM = BATCH. But when
+        canning the soup, the canning operation might use UOM = CAN.</para>
         <note>
-          <para>When posting work order Operations, you are given the option
-          to post Operations using Production UOMs or inventory UOMs.</para>
+          <para>When posting work order operations, you are given the option
+          to post operations using Production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -293,20 +293,20 @@
       <term>Production/Inventory Ratio</term>
       <listitem>
         <para>This is the ratio that normalizes quantities to create a
-        Production UOM for use when posting work order Operations.</para>
+        Production UOM for use when posting work order operations.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Receive Inventory at this Operation</term>
       <listitem>
         <para>Select to indicate that the manufactured item should be received
-        into inventory at this Operation. The manufactured item will be
+        into inventory at this operation. The manufactured item will be
         received into inventory via a Receive from Manufacturing (RM)
-        transaction, when the Operation is posted.</para>
+        transaction, when the operation is posted.</para>
         <note>
           <para>The "Receive Inventory" option may only be selected once per
           Routing. Finished items may only be received into inventory once in
-          the Operations sequence.</para>
+          the operations sequence.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -314,7 +314,7 @@
       <term>Auto. Issue Components at this Operation</term>
       <listitem>
         <para>Issue Components at this Operation: Select to automatically
-        issue components used at this Operation. This setting will only affect
+        issue components used at this operation. This setting will only affect
         component items whose issue method is either "Pull" or "Mixed".
         Component items using the "Push" issue method must be issued to work
         orders using a specific material issue transaction.</para>
@@ -323,10 +323,10 @@
     <varlistentry>
       <term>May Overlap with Preceding Operation</term>
       <listitem>
-        <para>Select to allow the Operation to overlap with the preceding
-        Operation. If selected, you are indicating that this Operation may be
-        posted before the preceding Operation is complete. If not selected,
-        the Operation may not be posted before the preceding Operation is
+        <para>Select to allow the operation to overlap with the preceding
+        operation. If selected, you are indicating that this operation may be
+        posted before the preceding operation is complete. If not selected,
+        the operation may not be posted before the preceding operation is
         complete.</para>
       </listitem>
     </varlistentry>
@@ -344,10 +344,10 @@
         finished goods inventory as it moves through the manufacturing
         process. The feature applies only to top-level, Multiple Location
         Control (MLC) items whose production is posted through work order
-        Operations posting. If you choose to track finished MLC goods using
+        operations posting. If you choose to track finished MLC goods using
         this feature, then the WIP Location entered here is the Location where
-        inventory will be located when the preceding Operation for the work
-        order is posted. A proceeding Operation must exist for the Location
+        inventory will be located when the preceding operation for the work
+        order is posted. A proceeding operation must exist for the Location
         entered here to be used. If you do not wish to track WIP Locations for
         finished MLC goods, then you can ignore this option.</para>
       </listitem>
@@ -365,11 +365,11 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Bill of materials (BOM) items may be associated with Operations—either
+  <para>Bill of materials (BOM) items may be associated with operations—either
   materials, tools, or finished goods themselves. In an effort to help manage
-  this relationship, the Operation screen includes the ability to both modify
-  the source BOM and also modify the links between the Operation and component
-  items. To view components associated with an Operation, select the
+  this relationship, the operation screen includes the ability to both modify
+  the source BOM and also modify the links between the operation and component
+  items. To view components associated with an operation, select the
   "Materials" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -379,35 +379,35 @@
         <caption>Components Associated with Operation</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When viewing components associated with an Operation, you are
+  <para>When viewing components associated with an operation, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Show Expired</term>
       <listitem>
         <para>Select to display expired components associated with the
-        Operation.</para>
+        operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Show Future</term>
       <listitem>
         <para>Select to display future components associated with the
-        Operation.</para>
+        operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Revision</term>
       <listitem>
         <para>Specify which bill of materials (BOM) revision you want to use
-        in conjunction with the specified Operation.</para>
+        in conjunction with the specified operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Materials</term>
       <listitem>
         <para>Display includes components associated with the
-        Operation.</para>
+        operation.</para>
         <warning>
           <para>Changes made to components on the Operation screen will be
           reflected in the source bill of materials.</para>
@@ -435,18 +435,18 @@
     <varlistentry>
       <term>ATTACH</term>
       <listitem>
-        <para>Select to associate a component with the Operation.</para>
+        <para>Select to associate a component with the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>DETACH</term>
       <listitem>
         <para>Highlight a component and then select this button to break the
-        link between the item and the Operation.</para>
+        link between the item and the operation.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate instructions with an Operation, select the "Instructions"
+  <para>To associate instructions with an operation, select the "Instructions"
   tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -456,19 +456,19 @@
         <caption>Operational Instructions</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When associating instructions with an Operation, you are presented
+  <para>When associating instructions with an operation, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Instructions</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        instructions related to the Operation. If you are using a Standard
-        Operation, the instructions (if any) associated with the Standard
-        Operation will be displayed here. You have the option to edit these
+        instructions related to the operation. If you are using a Standard
+        operation, the instructions (if any) associated with the Standard
+        operation will be displayed here. You have the option to edit these
         instructions, but any edits are ad hoc in nature. Edits are not saved
-        back to the Standard Operation and they will be lost if you change
-        Standard Operations for any reason.</para>
+        back to the standard operation and they will be lost if you change
+        standard operations for any reason.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -480,9 +480,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>You may associate Images with an Operation, thereby making these
-  Images available to be printed on Routings. To associate an Image with an
-  Operation, select the "Images" tab. The following screen will appear:</para>
+  <para>You may associate images with an operation, thereby making these
+  images available to be printed on routings. To associate an image with an
+  operation, select the "Images" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -491,14 +491,14 @@
         <caption>Operation Images</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When associating Images with an Operation, you are presented with the
+  <para>When associating Images with an operation, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Images</term>
       <listitem>
         <para>Display lists stored Images available for association with the
-        specified Operation.</para>
+        specified operation.</para>
       </listitem>
     </varlistentry>
   </variablelist>

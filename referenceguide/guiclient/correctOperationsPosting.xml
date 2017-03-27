@@ -4,7 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="correctOperationsPosting" role="manufacturing">
   <title>Correct Operations Posting</title>
-  <para>To correct a work order Operations posting, select the "Correct
+  <para>To correct a work order operations posting, select the "Correct
   Operations Posting" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -14,7 +14,7 @@
         <caption>Correct Operations Posting</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When correcting a work order Operations posting, you are presented
+  <para>When correcting a work order operations posting, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -27,7 +27,7 @@
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Enter the work order number of the work order whose Operations
+        <para>Enter the work order number of the work order whose operations
         posting you want to correct.</para>
       </listitem>
     </varlistentry>
@@ -68,10 +68,10 @@
     <varlistentry>
       <term>Operation</term>
       <listitem>
-        <para>Select the individual work order Operation you want to post from
-        the list of work order Operations for the specified item. After
-        selecting an Operation, specify details for that Operation. To correct
-        Operations posting for another Operation, simply select that Operation
+        <para>Select the individual work order operation you want to post from
+        the list of work order operations for the specified item. After
+        selecting an operation, specify details for that operation. To correct
+        operations posting for another operation, simply select that operation
         from the sequential list.</para>
       </listitem>
     </varlistentry>
@@ -92,14 +92,14 @@
             <term>Received</term>
             <listitem>
               <para>Indicates the quantity, measured in the item's inventory
-              UOM, that has been completed by this Operation.</para>
+              UOM, that has been completed by this operation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Due</term>
             <listitem>
               <para>Indicates the quantity remaining to be produced by the
-              specified Operation.</para>
+              specified operation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -125,13 +125,13 @@
             <listitem>
               <para>Select to post the corrected quantity in Production Units
               of Measure. Operations may be posted using either the inventory
-              or Production UOM. In addition, different Operations in a single
+              or Production UOM. In addition, different operations in a single
               routing may use different Production UOMs. For
               example, if you are producing soup, you might mix the soup in
-              one Operation using UOM = BATCH. But when canning the soup, the
-              canning Operation might use UOM = CAN. If you post Operations
+              one operation using UOM = BATCH. But when canning the soup, the
+              canning operation might use UOM = CAN. If you post operations
               using the Production UOM, the inventory/Production UOM ratio
-              defined at the Operation level normalizes the posting so that
+              defined at the operation level normalizes the posting so that
               the inventory impact is recorded using the inventory UOM.</para>
             </listitem>
           </varlistentry>
@@ -173,7 +173,7 @@
     <varlistentry>
       <term>Clear Operation Complete Flag</term>
       <listitem>
-        <para>Select to clear the Operation as complete flag.</para>
+        <para>Select to clear the operation as complete flag.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -203,7 +203,7 @@
     <varlistentry>
       <term>POST</term>
       <listitem>
-        <para>Posts the specified Operation using the values entered in the
+        <para>Posts the specified operation using the values entered in the
         screen.</para>
       </listitem>
     </varlistentry>
@@ -216,7 +216,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To review and take action on materials related to Operations
+  <para>To review and take action on materials related to operations
   corrections, select the "Materials" tab. The following screen will
   appear:</para>
   <para><screenshot>
@@ -227,7 +227,7 @@
         <caption>Materials Related to Operation Corrections</caption>
       </mediaobject>
     </screenshot></para>
-  <para>To review and take action on materials related to Operations
+  <para>To review and take action on materials related to operations
   corrections, select the "Materials" tab. The following screen will
   appear:</para>
   <variablelist>
@@ -239,7 +239,7 @@
       <listitem>
         <para>Components: Select to return components to the work order
         material requirements. Option will only be enabled when work order
-        material requirements are linked to a selected Operation. Only items
+        material requirements are linked to a selected operation. Only items
         whose issue method is "Pull" or "Mixed" will be displayed.</para>
       </listitem>
     </varlistentry>
@@ -250,7 +250,7 @@
         </indexterm>Correct Inventory</term>
       <listitem>
         <para>Select of you wish to remove any inventory issued to stock by
-        the selected Operation. Enabled if the selected Operation is tagged to
+        the selected operation. Enabled if the selected operation is tagged to
         receive inventory.</para>
       </listitem>
     </varlistentry>
