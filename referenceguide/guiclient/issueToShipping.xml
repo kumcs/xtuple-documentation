@@ -10,8 +10,8 @@
     </indexterm>Issue to Shipping</title>
 
   <para>Once sales order (or transfer order) line items are ready to be
-  shipped, they must be issued to Shipping. Shipping is a two-step process.
-  Quantity is first issued to Shipping, and then it is shipped.</para>
+  shipped, they must be issued to shipping. Shipping is a two-step process.
+  Quantity is first issued to shipping, and then it is shipped.</para>
 
   <para><indexterm significance="normal">
       <primary>job items</primary>
@@ -22,12 +22,12 @@
 
       <secondary>job items and</secondary>
     </indexterm>For Job items linked to sales order items, the act of issuing
-  to Shipping serves a dual purpose. On the one hand, quantity is issued to
-  Shipping. But at the same time, production for the linked Job item work
-  order is also posted. Issuing to Shipping is the only way to post production
+  to shipping serves a dual purpose. On the one hand, quantity is issued to
+  shipping. But at the same time, production for the linked Job item work
+  order is also posted. Issuing to shipping is the only way to post production
   for a Job item work order. If the Job item is Lot/Serial controlled, you
   will be prompted to assign Lot/Serial numbers when quantity is issued to
-  Shipping.</para>
+  shipping.</para>
 
   <para><indexterm significance="normal">
       <primary>kits</primary>
@@ -38,11 +38,11 @@
 
       <secondary>kits and</secondary>
     </indexterm>When Kit items appear on a sales order, the Kit components may
-  be issued to Shipping. However, the parent Kit item may not be. The
+  be issued to shipping. However, the parent Kit item may not be. The
   automatic "Select for Billing" option takes effect for Kit items when all
   Kit items are shipped.</para>
 
-  <para>To issue Stock to Shipping, select the "Issue to Shipping" option. The
+  <para>To issue stock to shipping, select the "Issue to Shipping" option. The
   following screen will appear:</para>
 
   <para><screenshot>
@@ -57,12 +57,12 @@
     </screenshot></para>
 
   <tip>
-    <para>Before a sales order can be shipped successfully, sales Account and
-    Receivables Assignments for the specified Customer must be in
+    <para>Before a sales order can be shipped successfully, sales account and
+    Receivables Assignments for the specified customer must be in
     place.</para>
   </tip>
 
-  <para>When issuing Stock to Shipping, you are presented with the following
+  <para>When issuing stock to shipping, you are presented with the following
   options:</para>
 
   <variablelist>
@@ -88,8 +88,8 @@
 
       <listitem>
         <para>Enter the order number of the order whose Stock you want to
-        issue to Shipping. Sales orders and transfer orders may be issued to
-        Shipping.</para>
+        issue to shipping. Sales orders and transfer orders may be issued to
+        shipping.</para>
       </listitem>
     </varlistentry>
 
@@ -106,14 +106,14 @@
 
       <listitem>
         <para>Select to ensure you have enough quantity on hand (QOH) of a
-        line item prior to issuing to Shipping. If selected, this option will
-        prevent you from issuing line item quantity to Shipping if doing so
+        line item prior to issuing to shipping. If selected, this option will
+        prevent you from issuing line item quantity to shipping if doing so
         would force QOH for the item site to fall below zero. Not selecting
-        this option means issuing Stock to Shipping may drive item site QOH
+        this option means issuing Stock to shipping may drive item site QOH
         negative.</para>
 
         <note>
-          <para>If your site is configured to enable sales order Reservations,
+          <para>If your site is configured to enable sales order reservations,
           which, by definition, require sufficient inventory before items may
           be shipped, then the "Require sufficient Inventory" option will
           selected and disabled.</para>
@@ -125,7 +125,7 @@
       <term>Line Items with Reservations</term>
 
       <listitem>
-        <para>Display lists sales order line items available for Shipping with
+        <para>Display lists sales order line items available for shipping with
         expanded view of reserved items. If the Scheduled Date for an
         unshipped line item is in the future, the line will display in green
         text. If the Scheduled Date for an unshipped line item is not in the
@@ -141,7 +141,7 @@
 
       <listitem>
         <para>This is an optional field which allows you to issue stock to
-        Shipping using a Bar Code scanner. Enter a Bar Code for a sales order
+        shipping using a Bar Code scanner. Enter a Bar Code for a sales order
         line item using a Bar Code scanner—or manually enter the Bar Code. The
         Bar Code for an item is stored on the Item master. Once the code is
         entered, specify a quantity and then select the FIND button to issue
@@ -198,7 +198,7 @@
         <note>
           <para>If an order is marked "Ship Complete," you will be prevented
           from shipping the order until all line item quantities are issued to
-          Shipping.</para>
+          shipping.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -208,14 +208,14 @@
 
       <listitem>
         <para>Highlight a line item, then select this button to issue stock to
-        Shipping. You may also double-click on a line item to reach the Issue
+        shipping. You may also double-click on a line item to reach the Issue
         Stock screen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>If an item issued to Shipping is a <indexterm significance="normal">
+    <para>If an item issued to shipping is a <indexterm significance="normal">
         <primary>multiple location control</primary>
 
         <secondary>impact on shipping</secondary>
@@ -242,9 +242,9 @@
 
       <listitem>
         <para>Highlight a line item, then select this button to remove the
-        line quantity from Shipping, returning the stock to inventory. This
+        line quantity from shipping, returning the stock to inventory. This
         button will only be enabled only if there is line item quantity at
-        Shipping. If the original line item you shipped was either Lot/Serial
+        shipping. If the original line item you shipped was either Lot/Serial
         or Multiple Location Controlled, the system will automatically put the
         inventory back where it came from.</para>
       </listitem>
@@ -253,7 +253,7 @@
 
   <tip>
     <para>If your site integrates UPS WorldShip with the system, you should
-    process orders in WorldShip after they have been issued to Shipping—but
+    process orders in WorldShip after they have been issued to shipping—but
     before they have been shipped.</para>
   </tip>
 
@@ -262,7 +262,7 @@
       <term>ISSUE ALL</term>
 
       <listitem>
-        <para>Select to issue all line items to Shipping simultaneously. If
+        <para>Select to issue all line items to shipping simultaneously. If
         some line items have insufficient quantity to ship, these will be
         prevented; however, all line items with sufficient quantity will be
         issued.</para>
@@ -275,11 +275,11 @@
       <listitem>
         <para>Compares the Bar Code entered in the "Issue Items Using Bar
         code" field with the Bar Codes for the listed sales order line items,
-        then issues to Shipping the quantity specified in the "Qty." field.
+        then issues to shipping the quantity specified in the "Qty." field.
         The FIND button may be selected using your mouse—or by hitting the
         ENTER key, which corresponds to the FIND button. Because the FIND
         button corresponds to the ENTER key, you can scan in a Bar Code and
-        then hit ENTER to issue a quantity of one to Shipping. If you prefer,
+        then hit ENTER to issue a quantity of one to shipping. If you prefer,
         you can scan in a Bar Code and then specify a different quantity
         before hitting ENTER.</para>
       </listitem>

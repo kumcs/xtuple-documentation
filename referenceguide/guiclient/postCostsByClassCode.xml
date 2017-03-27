@@ -13,22 +13,22 @@
       <primary>costing</primary>
       <secondary>posting actual to standard</secondary>
     </indexterm>Post Actual Costs by Class Code</title>
-  <para id="Para519943">When you post Actual Costs you are replacing your
-  existing Standard Costs with your newer Actual Costs. The Standard Cost of
-  an item is the Cost used for posting General Ledger transactions. Standard
-  Cost is distinguished from Actual Cost in the sense that Standard Cost is
-  fixed, whereas Actual Cost is subject to fluctuations arising from material
-  or production changes. For example, the Actual Costs for purchased items may
+  <para id="Para519943">When you post actual costs you are replacing your
+  existing standard costs with your newer actual costs. The standard cost of
+  an item is the cost used for posting General Ledger transactions. Standard
+  cost is distinguished from actual cost in the sense that standard cost is
+  fixed, whereas actual cost is subject to fluctuations arising from material
+  or production changes. For example, the actual costs for purchased items may
   be updated whenever Vouchers are posted for those items. Because Standard
-  and Actual Costs may diverge, posting Actual Costs to Standard is the way
+  and actual costs may diverge, posting actual costs to Standard is the way
   you bring the two costs into alignment.</para>
   <tip>
     <para>For best performance and results, you should run this utility by all
-    Class Codes?and don't select the "Roll Up" option. This will ensure your
-    Costs are updated properly for any items which cross Class Code
+    class codes?and don't select the "Roll Up" option. This will ensure your
+    costs are updated properly for any items which cross class code
     lines.</para>
   </tip>
-  <para>To post Actual Costs by Class Code, select the "Post Actual Costs by
+  <para>To post actual costs by class code, select the "Post Actual Costs by
   Class Code" option. The following screen will appear:</para>
   <para id="Para519947"><screenshot>
       <mediaobject>
@@ -39,38 +39,38 @@
       </mediaobject>
     </screenshot></para>
   <warning>
-    <para>If you are blending the Average Cost method with the Standard Cost
+    <para>If you are blending the average cost method with the standard cost
     method, your results may vary.</para>
   </warning>
-  <para id="Para519949">When posting Actual Costs by Class Code, you are
+  <para id="Para519949">When posting actual costs by class code, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term id="Para616958">All Class Codes</term>
       <listitem>
-        <para>Select to post Actual Costs for all Class Codes. Running the
-        utility by all Class Codes is the preferred method. You should not use
-        the "Roll Up" option when updating costs by all Class Codes, since
+        <para>Select to post actual costs for all class codes. Running the
+        utility by all class codes is the preferred method. You should not use
+        the "Roll Up" option when updating costs by all class codes, since
         that is redundant and can hurt performance.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term id="Para519950">Selected</term>
       <listitem>
-        <para>Specify Class Code whose Actual Costs you want to post.</para>
+        <para>Specify class code whose actual costs you want to post.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term id="Para593252">Pattern</term>
       <listitem>
-        <para>Enter a Class Code pattern to select a range of Class Codes.
+        <para>Enter a class code pattern to select a range of class codes.
         Refine your search using Regular Expressions.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
-    <para id="Para627992">For manufactured items, rolling up Standard Costs
-    ensures that lower level Costs are reflected in the Cost for the parent
+    <para id="Para627992">For manufactured items, rolling up standard costs
+    ensures that lower level costs are reflected in the cost for the parent
     item.</para>
   </tip>
   <variablelist>
@@ -80,15 +80,15 @@
           <secondary>rolling up of</secondary>
         </indexterm>Roll Up Standard Costs</term>
       <listitem>
-        <para>Select this option if you are updating a selected Class Code or
-        Class Code pattern. Do not use this option if you are updating by all
-        Class Codes, since that is redundant and can hurt performance. When
-        this option is specified, all selected Costs will be added together to
-        establish a revised total Standard Cost for the item. This revised
-        total goes into effect after the POST button is selected. If all Costs
-        are selected, all Costs will be rolled up. If a subset of all Costs is
+        <para>Select this option if you are updating a selected class code or
+        class code pattern. Do not use this option if you are updating by all
+        class codes, since that is redundant and can hurt performance. When
+        this option is specified, all selected costs will be added together to
+        establish a revised total standard cost for the item. This revised
+        total goes into effect after the POST button is selected. If all costs
+        are selected, all costs will be rolled up. If a subset of all costs is
         selected, only the subset will be rolled up. If the Roll Up Standard
-        Costs option is not specified, the selected Cost postings will not be
+        Costs option is not specified, the selected cost postings will not be
         valid above their current level.</para>
       </listitem>
     </varlistentry>
@@ -104,67 +104,67 @@
           <secondary>material costs posted to</secondary>
         </indexterm>Post Material Costs</term>
       <listitem>
-        <para>Select to post material Costs. Not selecting means material
-        Costs will not be posted to the Standard Cost for the item.</para>
+        <para>Select to post material costs. Not selecting means material
+        costs will not be posted to the standard cost for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term id="Para627998">Post Lower Level Material Costs</term>
       <listitem>
-        <para>Select to post lower level material Costs. Not selecting means
-        lower level material Costs will not be posted to the Standard Cost for
+        <para>Select to post lower level material costs. Not selecting means
+        lower level material costs will not be posted to the standard cost for
         the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
       <term id="Para628000">Post Direct Labor Cost</term>
       <listitem>
-        <para>Select to post direct labor Cost. Not selecting means the direct
-        labor Cost will not be posted to the Standard Cost for the
+        <para>Select to post direct labor cost. Not selecting means the direct
+        labor cost will not be posted to the standard cost for the
         item.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
       <term id="Para628002">Post Lower Level Direct Labor Cost</term>
       <listitem>
-        <para>Select to post lower level direct labor Cost. Not selecting
-        means the lower level direct labor Cost will not be posted to the
-        Standard Cost for the item.</para>
+        <para>Select to post lower level direct labor cost. Not selecting
+        means the lower level direct labor cost will not be posted to the
+        standard cost for the item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
     <para id="Para628005">You have the flexibility of updating all or only a
-    subset of the listed Costs. Updating a subset might be desirable if only
-    material or User Costs have changed, for example.</para>
+    subset of the listed costs. Updating a subset might be desirable if only
+    material or user costs have changed, for example.</para>
   </note>
   <variablelist>
     <varlistentry role="manufacturing">
       <term id="Para628007">Post Overhead Cost</term>
       <listitem>
-        <para>Select to post overhead Cost. Not selecting means the overhead
-        Cost will not be posted to the Standard Cost for the item.</para>
+        <para>Select to post overhead cost. Not selecting means the overhead
+        cost will not be posted to the standard cost for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
       <term id="Para628009">Post Lower Level Overhead Cost</term>
       <listitem>
-        <para>Select to post lower level overhead Cost. Not selecting means
-        the lower level overhead Cost will not be posted to the Standard Cost
+        <para>Select to post lower level overhead cost. Not selecting means
+        the lower level overhead cost will not be posted to the standard cost
         for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
       <term id="Para628011">Post Machine Overhead</term>
       <listitem>
-        <para>Select to post machine overhead Cost. This option is selected by
+        <para>Select to post machine overhead cost. This option is selected by
         default.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
       <term id="Para628013">Post Lower Machine Overhead</term>
       <listitem>
-        <para>Select to post lower level machine overhead Cost. This option is
+        <para>Select to post lower level machine overhead cost. This option is
         selected by default.</para>
       </listitem>
     </varlistentry>
@@ -180,15 +180,15 @@
           <secondary>user costs posted to</secondary>
         </indexterm>Post User Costs</term>
       <listitem>
-        <para>Select to post user Costs. Not selecting means user Costs will
-        not be posted to the Standard Cost for the item.</para>
+        <para>Select to post user costs. Not selecting means user costs will
+        not be posted to the standard cost for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term id="Para628017">Post Lower Level User Costs</term>
       <listitem>
-        <para>Select to post lower level user Costs. Not selecting means lower
-        level user Costs will not be posted to the Standard Cost for the
+        <para>Select to post lower level user costs. Not selecting means lower
+        level user costs will not be posted to the standard cost for the
         item.</para>
       </listitem>
     </varlistentry>
@@ -199,14 +199,14 @@
     <varlistentry>
       <term id="Para628021">POST</term>
       <listitem>
-        <para>Posts all selected Actual Costs by item to Standard Cost. If the
-        option "Roll Up Standard Costs" has been selected, the total Standard
-        Cost for the specified item will be updated.</para>
+        <para>Posts all selected actual costs by item to standard cost. If the
+        option "Roll Up Standard Costs" has been selected, the total standard
+        cost for the specified item will be updated.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
-    <para id="Para628023">Actual Costs may also be posted to Standard Cost on
+    <para id="Para628023">Actual costs may also be posted to standard cost on
     an item-by-item basis using the right-click menu found on the Maintain
     Item Costs screen.</para>
   </tip>
@@ -214,10 +214,10 @@
     <varlistentry>
       <term id="Para628024">SELECT ALL COSTS</term>
       <listitem>
-        <para>Selects all Costs for updating. Use this option to save time
-        when selecting all Costs for updating. The option "Roll Up Standard
+        <para>Selects all costs for updating. Use this option to save time
+        when selecting all costs for updating. The option "Roll Up Standard
         Costs" must be selected separately if you want to include a rolled up
-        total for the parent item in the Cost update.</para>
+        total for the parent item in the cost update.</para>
       </listitem>
     </varlistentry>
   </variablelist>

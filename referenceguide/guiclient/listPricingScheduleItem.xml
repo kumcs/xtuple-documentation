@@ -24,7 +24,7 @@
       <term>Type</term>
       <listitem>
         <para>Specify which type of List Pricing Schedule item you want to
-        create: Nominal, Discount, or Freight. The screen will present
+        create: Nominal, Discount, or freight. The screen will present
         different options depending on which type option you select.</para>
       </listitem>
     </varlistentry>
@@ -58,7 +58,7 @@
         </indexterm>Qty. Break</term>
       <listitem>
         <para>Enter the lowest quantity of the specified item that must be
-        purchased to receive the specified Price. The Quantity Break is
+        purchased to receive the specified price. The Quantity Break is
         measured in the inventory Unit of Measure. Multiple Quantity Breaks
         may be assigned to a single item.</para>
       </listitem>
@@ -69,15 +69,15 @@
           <secondary>pricing detail for</secondary>
         </indexterm>Price</term>
       <listitem>
-        <para>Enter the Price the specified item may be purchased for if the
-        specified Quantity Break is met. The Price is measured in the Price
+        <para>Enter the price the specified item may be purchased for if the
+        specified Quantity Break is met. The price is measured in the price
         Unit of Measure.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item List Price</term>
       <listitem>
-        <para>Displays the List Price for the specified item.</para>
+        <para>Displays the list price for the specified item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -92,7 +92,7 @@
         default.</para>
         <tip>
           <para>When using a Selling UOM for the Quantity Break, you may not
-          select an alternate Price UOM. The reason for this is that selling
+          select an alternate price UOM. The reason for this is that selling
           UOMs use the same UOM for both quantity and pricing.</para>
         </tip>
       </listitem>
@@ -100,23 +100,23 @@
     <varlistentry>
       <term>Price UOM</term>
       <listitem>
-        <para>Specify the Price Unit of Measure to be used with the specified
+        <para>Specify the price Unit of Measure to be used with the specified
         Quantity Break UOM. If you select a Selling UOM for the Qty. UOM, you
-        will not be able to select a Price UOM. For Selling UOMs, the Selling
-        UOM and the Price UOM are the same.</para>
+        will not be able to select a price UOM. For Selling UOMs, the Selling
+        UOM and the price UOM are the same.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Price/Inv. Ratio</term>
       <listitem>
-        <para>Displays the ratio between the Price and inventory Units of
+        <para>Displays the ratio between the price and inventory Units of
         Measure for the specified item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Cost (Pricing UOM)</term>
       <listitem>
-        <para>Displays Standard Cost and Actual Cost for the specified
+        <para>Displays standard cost and actual cost for the specified
         item.</para>
       </listitem>
     </varlistentry>
@@ -136,9 +136,9 @@
       <secondary>pricing for</secondary>
     </indexterm>If the specified item is a configured item, then the
   "Characteristics" tab will be available. Characteristics for configured
-  items can carry their own List Prices. These Characteristic Prices may be
-  added to the Base Price when configured items are sold. To define
-  Characteristic pricing for configured items, select the "Characteristics"
+  items can carry their own list prices. These characteristic prices may be
+  added to the base price when configured items are sold. To define
+  characteristic pricing for configured items, select the "Characteristics"
   tab. The following screen will appear:</para>
   <para><mediaobject>
       <imageobject>
@@ -146,18 +146,18 @@
       </imageobject>
       <caption>Configured Item Pricing</caption>
     </mediaobject></para>
-  <para>When defining Characteristic pricing for configured items, you are
+  <para>When defining characteristic pricing for configured items, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Characteristic</term>
       <listitem>
-        <para>List displays all the Characteristic Prices which have been
+        <para>List displays all the characteristic prices which have been
         associated with the List Pricing Schedule item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add a new Characteristic pricing item, select the NEW button. The
+  <para>To add a new characteristic pricing item, select the NEW button. The
   following screen will appear:</para>
   <para><mediaobject>
       <imageobject>
@@ -165,13 +165,13 @@
       </imageobject>
       <caption>Characteristic Pricing</caption>
     </mediaobject></para>
-  <para>When adding a new Characteristic pricing item, you are presented with
+  <para>When adding a new characteristic pricing item, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Characteristic</term>
       <listitem>
-        <para>Select a Characteristic from the list of item Characteristics
+        <para>Select a characteristic from the list of item characteristics
         defined for the specified item.</para>
       </listitem>
     </varlistentry>
@@ -179,32 +179,32 @@
       <term>Value</term>
       <listitem>
         <para>Select a Value from the list of Values defined for the specified
-        item Characteristic.</para>
+        item characteristic.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Price</term>
       <listitem>
-        <para>Enter a new Price for the Characteristic and Value combination.
-        This alternate Price will be used in place of the standard
-        Characteristic List Price when the List Pricing Schedule is
+        <para>Enter a new price for the characteristic and Value combination.
+        This alternate price will be used in place of the standard
+        characteristic list price when the List Pricing Schedule is
         used.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>List Price</term>
       <listitem>
-        <para>Displays the default List Price for the item Characteristic. The
-        List Price for Characteristics is added to the Base Price of sales
-        order items when the Characteristic is specified at sales order entry
-        time. List Pricing Schedules are designed to override standard List
-        Prices.</para>
+        <para>Displays the default list price for the item characteristic. The
+        list price for characteristics is added to the base price of sales
+        order items when the characteristic is specified at sales order entry
+        time. List Pricing Schedules are designed to override standard list
+        prices.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>Select the "Discount" option for fixed amount or percentage based
   discount pricing by item. For List Pricing Schedules, only discounting by
-  item is available. Discounting by Product Category is not available for List
+  item is available. Discounting by product category is not available for List
   Pricing Schedules. To enter discounts by item, select the "Item" option. The
   following screen will appear:</para>
   <para><screenshot>
@@ -244,22 +244,22 @@
           <secondary>discount percentage for</secondary>
         </indexterm>Discount Percent (List Price)</term>
       <listitem>
-        <para>Enter the Discount percentage off List Price to be used when the
+        <para>Enter the Discount percentage off list price to be used when the
         specified Quantity Break is reached.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Discount By Fixed Amount</term>
       <listitem>
-        <para>Enter the fixed amount you want to be discounted off the List
-        Price. If a Discount percentage is also used, the fixed amount will be
-        subtracted after the Discount percentage. However, the Price can never
+        <para>Enter the fixed amount you want to be discounted off the list
+        price. If a Discount percentage is also used, the fixed amount will be
+        subtracted after the Discount percentage. However, the price can never
         go below zero.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Select the "Markup" option to calculate the Price as a markup on the
-  Wholesale Price.</para>
+  <para>Select the "Markup" option to calculate the price as a markup on the
+  wholesale price.</para>
   <para><mediaobject>
       <imageobject>
         <imagedata fileref="images/listPricingScheduleItem_markupSelected.png" />
@@ -292,7 +292,7 @@
           <varlistentry>
             <term>Product Category</term>
             <listitem>
-              <para>Markup by Product Category is not available for List
+              <para>Markup by product category is not available for List
               Pricing Schedules.</para>
             </listitem>
           </varlistentry>
@@ -310,19 +310,19 @@
       <term>Markup Percent (Inventory Cost)</term>
       <listitem>
         <para>Enter the Markup Percent that needs to be added to the inventory
-        Cost.</para>
+        cost.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Markup By Fixed Amount</term>
       <listitem>
-        <para>Enter the Fixed Amount the inventory Cost will be increased
+        <para>Enter the Fixed Amount the inventory cost will be increased
         by.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
-    <para>The inventory Cost will be increased with the sum of the Markup
+    <para>The inventory cost will be increased with the sum of the Markup
     Percent and the Fixed Amount.</para>
   </note>
 </section>

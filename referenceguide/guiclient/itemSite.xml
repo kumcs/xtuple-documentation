@@ -157,7 +157,7 @@
 
             <listitem>
               <para>Select to create purchase orders linked to sales orders.
-              You must have at least one Item Source defined for the item to
+              You must have at least one item source defined for the item to
               use this option. Linking purchase orders to sales order creates
               the basic foundation for drop shipment functionality. This
               option and the "Create Purchase Requests for sales orders"
@@ -297,9 +297,9 @@
             <term>Planner Code</term>
 
             <listitem>
-              <para>Specify the Planner Code you want to assign the item site
-              to. Assigning a Planner Code to an item site makes it possible
-              to group item sites by Planner Code for the purposes of
+              <para>Specify the planner code you want to assign the item site
+              to. Assigning a planner code to an item site makes it possible
+              to group item sites by planner code for the purposes of
               Planning.</para>
             </listitem>
           </varlistentry>
@@ -312,13 +312,13 @@
               </indexterm>Cost Category</term>
 
             <listitem>
-              <para>Specify the Cost Category you want to associate with the
+              <para>Specify the cost category you want to associate with the
               item site. This requirement helps ensure that all inventory
               transactions involving an item site will be properly tracked and
               recorded in the General Ledger.</para>
 
               <note>
-                <para>If you ever need to change the Cost Category for an item
+                <para>If you ever need to change the cost category for an item
                 site having quantity on hand (QOH), the inventory value will
                 be transferred in the Ledger from the initial asset account to
                 the new asset account.</para>
@@ -333,7 +333,7 @@
       <term>Costing Method</term>
 
       <listitem>
-        <para>Specify the item site Costing Method by selecting one of the
+        <para>Specify the item site costing method by selecting one of the
         available options:</para>
 
         <variablelist>
@@ -341,7 +341,7 @@
             <term>None</term>
 
             <listitem>
-              <para>This Cost Method is automatically selected for the item
+              <para>This cost method is automatically selected for the item
               site if the Control Method is "None" or the Item Type is
               "Reference".</para>
             </listitem>
@@ -361,7 +361,7 @@
             <term>Standard</term>
 
             <listitem>
-              <para>Cost distributions are based on the Standard Cost posted
+              <para>Cost distributions are based on the standard cost posted
               for the item. This is the default costing method for all
               newly-created item sites.</para>
             </listitem>
@@ -380,23 +380,23 @@
 
             <listitem>
               <para>Cost distributions are based on actual accumulation of
-              costs on a work order. This Cost Method should be used for
+              costs on a work order. This cost method should be used for
               manufactured items which you want to handle as Job items. Job
               items are specifically for make-to-order or service (i.e.,
               repair) scenarios where simplified production is required. Job
               items cannot be maintained in inventory. Job items also have no
-              concept of Standard Cost or Cost variances. All Costs for Job
+              concept of standard cost or cost variances. All costs for Job
               items are Actual. The work orders which create Job items can
-              only be created via a sales order. The Costs for Job item work
+              only be created via a sales order. The costs for Job item work
               orders are accumulated to WIP, and then transferred directly to
-              Cost of Sales when the job is shipped. Production for a Job item
+              cost of sales when the job is shipped. Production for a Job item
               work order is posted when the linked sales order item is issued
-              to Shipping. BOM and routing items may be assigned to Job items;
-              however, they will not roll up to a Standard Cost for Job items.
-              Job items may be configured. This means you can add List Prices
-              to any Job item Characteristics. These Characteristic Prices are
-              then added to the Base Price of sales order items when the
-              Characteristic is selected at sales order entry.</para>
+              to shipping. BOM and routing items may be assigned to Job items;
+              however, they will not roll up to a standard cost for Job items.
+              Job items may be configured. This means you can add list prices
+              to any Job item characteristics. These characteristic prices are
+              then added to the base price of sales order items when the
+              characteristic is selected at sales order entry.</para>
 
               <note>
                 <para>Job cost items must have a control method of Regular,
@@ -469,7 +469,7 @@
               <tip>
                 <para>To monitor the frequency of item site Cycle Counts, view
                 the "Last Counted" column in any of the item site Reports: by
-                item, by Class Code, etc. The Last Counted date represents the
+                item, by class code, etc. The Last Counted date represents the
                 date a Count Tag was last posted (not simply issued) for the
                 item site.</para>
               </tip>
@@ -511,7 +511,7 @@
       <term>Over-ride Work Order Item Cost Recognition Default</term>
 
       <listitem>
-        <para>The work order item Cost recognition default is set globally at
+        <para>The work order item cost recognition default is set globally at
         the system level. For more information, please see <xref
         linkend="configureWOCostDefaults"/>. However, it is possible to
         override the global default by specifying one of the following options
@@ -519,7 +519,7 @@
 
         <para role="manufacturing"><tip>
             <para>The appropriate reporting selections must be made in the
-            routing to ensure that labor and overhead Costs
+            routing to ensure that labor and overhead costs
             associated with setup and run time operations are reported.</para>
           </tip></para>
 
@@ -528,9 +528,9 @@
             <term>To Date</term>
 
             <listitem>
-              <para>When work orders for Average Cost or Job items are
+              <para>When work orders for average cost or Job items are
               shipped, all of the WIP costs accumulated to date will be
-              charged to Cost of Sales.</para>
+              charged to cost of sales.</para>
             </listitem>
           </varlistentry>
 
@@ -538,13 +538,13 @@
             <term>Proportional</term>
 
             <listitem>
-              <para>When work orders for Average Cost or Job items are
+              <para>When work orders for average cost or Job items are
               shipped, a value up to the proportional value of the total
-              quantity shipped will be charged to Cost of Sales. For example,
+              quantity shipped will be charged to cost of sales. For example,
               if three items are to be shipped on a Job work order and all the
               material has been issued—and if only 1 of the 3 is shipped—then
               1/3 of the value charged to WIP at that point will be charged to
-              Cost of Sales.</para>
+              cost of sales.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -650,7 +650,7 @@
 
                   <listitem>
                     <para>Used for production work order receipts, purchase
-                    order receipts, Return Authorization receipts and
+                    order receipts, return authorization receipts and
                     miscellaneous inventory receipts.</para>
                   </listitem>
                 </varlistentry>
@@ -713,7 +713,7 @@
       <term>Location Comment</term>
 
       <listitem>
-        <para>Enter any free-form Comment related to the site Location. This
+        <para>Enter any free-form comment related to the site Location. This
         is additional information which may be placed on a Pick List or a Pack
         List.</para>
       </listitem>
@@ -804,7 +804,7 @@
         <note>
           <para>Running material requirements planning (MRP) on your system
           consists entirely of running the Create planned replenishment Orders
-          screens—either by item or by Planner Code. As MRP runs, the planned
+          screens—either by item or by planner code. As MRP runs, the planned
           replenishment orders are generated automatically.</para>
         </note>
 
@@ -839,15 +839,15 @@
               <para>The order Up To (OUT) Level indicates the level of planned
               availability an item site should be replenished up to when
               material requirements planning (MRP) is run. In cases where the
-              Reorder Level for an item site exceeds the order Up To Level,
+              Reorder Level for an item site exceeds the order up to level,
               MRP will replenish the item site up to the Reorder Level.</para>
 
               <tip>
-                <para>Setting the order Up To Level to "0" removes any
+                <para>Setting the order up to level to "0" removes any
                 restrictions on maximum order quantities. Removing quantity
                 restrictions can be an effective strategy to help ensure that
                 all order demands are satisfied when MRP is run. Order demands
-                may not be met if order Up To Levels are set below the demand
+                may not be met if order up to levels are set below the demand
                 threshold.</para>
               </tip>
             </listitem>
@@ -911,7 +911,7 @@
               Order and Order Multiple. The other order Parameters listed
               below do not apply to manually-created work orders. For manual
               purchase orders, the Minimum Order and Order Multiple parameters
-              are determined on a Vendor-by-Vendor basis, using Item Source
+              are determined on a vendor-by-vendor basis, using item source
               masters.</para>
             </listitem>
           </varlistentry>
@@ -1052,7 +1052,7 @@
               item, then the Lead Time refers to the production Lead Time. If
               the item is a purchased item, then the Lead Time refers to the
               planning Lead Time. The procurement Lead Time for purchased
-              items is determined on a Vendor-by-Vendor basis, using Item
+              items is determined on a vendor-by-vendor basis, using Item
               Source masters. Material requirements planning (MRP) will
               consider Lead Times when calculating planned order start dates
               when MRP is run.</para>
@@ -1111,7 +1111,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To add miscellaneous Notes to an item site, select the "Notes" tab.
+  <para>To add miscellaneous notes to an item site, select the "Notes" tab.
   The following screen will appear:</para>
 
   <para><screenshot>
@@ -1130,13 +1130,13 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        free-form Notes related to the item site. Notes differ from Comments
-        in that Comments are time/date and user stamped.</para>
+        free-form notes related to the item site. Notes differ from comments
+        in that comments are time/date and user stamped.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To associate Comments with an item site, select the "Comments" tab.
+  <para>To associate comments with an item site, select the "Comments" tab.
   The following screen will appear:</para>
 
   <para><screenshot>
@@ -1203,7 +1203,7 @@
 
         <listitem>
           <para>Select to automatically create a registration for Lot/Serial
-          items when they are issued to Shipping. You can learn more about
+          items when they are issued to shipping. You can learn more about
           registrations in <xref linkend="lotSerialRegistration"/>.</para>
         </listitem>
       </varlistentry>
@@ -1212,7 +1212,7 @@
   <para role="manufacturing">In order to provide for visibility of tooling for
   Capacity Planning, the system provides the ability to define capacity
   information at the item site level that mirrors capacity data inputs for the
-  Work Center on a scheduling tab. The "Schedule" tab is only be enabled for
+  work center on a scheduling tab. The "Schedule" tab is only be enabled for
   tooling items, and only available on the manufacturing edition of xTuple. To
   view capacity information for tooling items, select the "Schedule" tab. The
   following screen will appear:</para>

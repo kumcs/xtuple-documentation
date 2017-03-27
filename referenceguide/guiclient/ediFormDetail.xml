@@ -47,7 +47,7 @@
         populate your CSV file with. As you can see in the example, the query
         selects invoice header information from the "invchead" table. You will
         note in the WHERE clause that MetaSQL is used to dynamically capture
-        the specific Invoice number using the system-defined
+        the specific invoice number using the system-defined
         <literal>docid</literal> token (the <code>"&lt;/&gt;"</code> wrapper
         is replaced by the MetaSQL <code>&lt;? value("") ?&gt;</code>). You
         may also use any tokens defined in the EDI Form query to build the EDI
@@ -59,7 +59,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the EDI Detail query.</para>
+        notes related to the EDI Detail query.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -10,8 +10,8 @@
       <primary>items</primary>
       <secondary>costing maintenance for</secondary>
     </indexterm>Maintain Item Costs</title>
-  <para>For visibility into Costs associated with items—and to perform routine
-  Cost maintenance—select the "Maintain Item Costs" option. The following
+  <para>For visibility into costs associated with items—and to perform routine
+  cost maintenance—select the "Maintain Item Costs" option. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -21,17 +21,17 @@
         <caption>Maintain Item Costs</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When maintaining item Costs, you are presented with the following
+  <para>When maintaining item costs, you are presented with the following
   options:</para>
   <note>
-    <para>If the Costing Element does not contain lower level Costs, you will
-    not be given the option to view Costing detail.</para>
+    <para>If the costing element does not contain lower level costs, you will
+    not be given the option to view costing detail.</para>
   </note>
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the item number of the item whose Costs you want to
+        <para>Enter the item number of the item whose costs you want to
         maintain.</para>
       </listitem>
     </varlistentry>
@@ -44,8 +44,8 @@
     <varlistentry>
       <term>Costing Elements</term>
       <listitem>
-        <para>Display lists item Costs for the specified item using various
-        categories—or Costing Elements—to distinguish one type of Cost from
+        <para>Display lists item costs for the specified item using various
+        categories—or costing elements—to distinguish one type of cost from
         another.</para>
       </listitem>
     </varlistentry>
@@ -56,7 +56,7 @@
     </indexterm> <indexterm significance="normal">
       <primary>items</primary>
       <secondary>costing of</secondary>
-    </indexterm>To create a new item Cost, select the NEW COST button. The
+    </indexterm>To create a new item cost, select the NEW COST button. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -66,7 +66,7 @@
         <caption>Create New Item Cost</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new item Cost, you are presented with the following
+  <para>When creating a new item cost, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
@@ -87,9 +87,9 @@
     <para><indexterm significance="normal">
         <primary>item costs</primary>
         <secondary>for manufactured items</secondary>
-      </indexterm>Manufactured items have no this level material Costs.
-    material Costs for manufactured items are absorbed by lower level
-    component items. The following system-defined Costing Elements are
+      </indexterm>Manufactured items have no this level material costs.
+    material costs for manufactured items are absorbed by lower level
+    component items. The following system-defined costing elements are
     available for manufactured items:</para>
     <itemizedlist>
       <listitem>
@@ -105,16 +105,16 @@
     <para><indexterm significance="normal">
         <primary>item costs</primary>
         <secondary>for purchased items</secondary>
-      </indexterm>For purchased items, the following system-defined Costing
+      </indexterm>For purchased items, the following system-defined costing
     Elements is available:</para>
     <itemizedlist>
       <listitem>
         <para>Material</para>
       </listitem>
     </itemizedlist>
-    <para>If you require additional Elements to describe Costs associated with
-    manufactured or purchased items, you may create user-defined Costing
-    Elements.</para>
+    <para>If you require additional Elements to describe costs associated with
+    manufactured or purchased items, you may create user-defined costing
+    elements.</para>
   </note>
   <variablelist>
     <varlistentry>
@@ -123,16 +123,16 @@
           <secondary>associating with items</secondary>
         </indexterm>Costing Element</term>
       <listitem>
-        <para>Select a Costing Element to associate with the specified item.
-        The list of Elements will include all system-defined Costing Elements,
-        as well as any user-defined Costing Elements that may have been
+        <para>Select a costing element to associate with the specified item.
+        The list of Elements will include all system-defined costing elements,
+        as well as any user-defined costing elements that may have been
         added.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
     <para>Use the right-click menu from the Maintain Item Costs screen to post
-    Actual Cost to Standard Cost.</para>
+    actual cost to standard cost.</para>
   </tip>
   <variablelist>
     <varlistentry>
@@ -150,12 +150,12 @@
           <secondary>entering actual for items</secondary>
         </indexterm>Actual Cost</term>
       <listitem>
-        <para>Enter the amount of the Actual Cost you want to associate with
-        the specified Costing Element. Actual Costs are the real-time Costs
+        <para>Enter the amount of the actual cost you want to associate with
+        the specified costing element. Actual costs are the real-time costs
         associated with an item, including current material and production
-        charges. The Actual Cost of an item may fluctuate given changes in the
-        Cost for materials, or other Costs related to changes in bills of
-        materials or routing. The Actual Cost provides a current
+        charges. The actual cost of an item may fluctuate given changes in the
+        cost for materials, or other costs related to changes in bills of
+        materials or routing. The actual cost provides a current
         record of charges actually incurred by an item.</para>
       </listitem>
     </varlistentry>
@@ -168,15 +168,15 @@
           <secondary>posting actual to standard</secondary>
         </indexterm>Post Cost to Standard</term>
       <listitem>
-        <para>Select to post the Actual Cost for the specified Costing Element
-        to its Standard Cost.</para>
-        <para>This option brings the Actual Cost and the Standard Cost for the
-        Costing Element into alignment with each other. Standard Cost is the
-        Cost used for posting General Ledger transactions. Standard Cost is
-        distinguished from Actual Cost in the sense that Standard Cost is
-        fixed, whereas Actual Cost is subject to fluctuations arising from
-        material or production changes. The two Costs may diverge. However,
-        they can be brought back into alignment by posting Actual Cost to
+        <para>Select to post the actual cost for the specified costing element
+        to its standard cost.</para>
+        <para>This option brings the actual cost and the standard cost for the
+        costing element into alignment with each other. Standard cost is the
+        cost used for posting General Ledger transactions. Standard cost is
+        distinguished from actual cost in the sense that standard cost is
+        fixed, whereas actual cost is subject to fluctuations arising from
+        material or production changes. The two costs may diverge. However,
+        they can be brought back into alignment by posting actual cost to
         Standard.</para>
       </listitem>
     </varlistentry>

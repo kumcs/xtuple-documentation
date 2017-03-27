@@ -150,9 +150,9 @@
               manufacture nor purchase it. Services are an example of
               Reference item. The company sells consulting services, but it
               doesn't manufacture or purchase them. Reference items may be
-              configured. This means you can add List Prices to any Reference
-              item Characteristics. These Characteristic Prices are then added
-              to the Base Price of sales order items when the Characteristic
+              configured. This means you can add list prices to any Reference
+              item characteristics. These characteristic prices are then added
+              to the base price of sales order items when the characteristic
               is selected at sales order entry.</para>
             </listitem>
           </varlistentry>
@@ -163,9 +163,9 @@
               </indexterm>Costing</term>
             <listitem>
               <para>A kind of pseudo-item used solely to provide a costed
-              value for a Costing Element. When a user-defined Costing Element
-              is linked to a Costing item, the Costing Element assumes the
-              Costs associated with the Costing item. For more information,
+              value for a costing element. When a user-defined costing element
+              is linked to a costing item, the costing element assumes the
+              costs associated with the costing item. For more information,
               see <xref linkend="costingElements" />.</para>
             </listitem>
           </varlistentry>
@@ -227,20 +227,20 @@
             <listitem>
               <para>Kit items automatically explode their bill of material
               (BOM) components on to sales orders for shipping. When Kit items
-              appear on sales orders and Return Authorizations, sub line
+              appear on sales orders and return authorizations, sub line
               numbers are generated for Kit components because Kit children
               are sub line items of the parent line item. Kit components are
-              displayed as an indented tree on the sales order or Return
-              Authorization—and they are view-only. Also, Kit components will
+              displayed as an indented tree on the sales order or return
+              authorization—and they are view-only. Also, Kit components will
               appear on the Pick List report. Kit components may be issued to
-              Shipping, whereas the parent Kit item may not be. The automatic
+              shipping, whereas the parent Kit item may not be. The automatic
               "Select for Billing" option takes effect for Kit items when all
               Kit items are shipped.</para>
               <note>
-                <para>The Cost of Sales (COS) Account for Kit items is
-                directed to the Sales Account Assignment mappings of the Kit's
+                <para>The cost of sales (COS) account for Kit items is
+                directed to the Sales account assignment mappings of the Kit's
                 child items—unless your system is configured to have the Kit
-                components inherit the same COS Account used by the parent Kit
+                components inherit the same COS account used by the parent Kit
                 item. You can read more about configuring your system for COS
                 inheritance for Kit items here: <xref
                 linkend="configureIM" />.</para>
@@ -272,7 +272,7 @@
               </indexterm>Co-Product</term>
             <listitem>
               <para>Co-Products are items that you keep and which absorb
-              Costs. They are produced during a manufacturing process. See
+              costs. They are produced during a manufacturing process. See
               "Breeder" Item Type above.</para>
             </listitem>
           </varlistentry>
@@ -282,7 +282,7 @@
                 <secondary>as item type</secondary>
               </indexterm>By-Product</term>
             <listitem>
-              <para>By-Products are things that you throw away and incur Costs
+              <para>By-Products are things that you throw away and incur costs
               doing so during a manufacturing process. See "Breeder" Item Type
               above.</para>
             </listitem>
@@ -294,7 +294,7 @@
       <term>Maximum Desired Cost</term>
       <listitem>
         <para>This is an optional field to be used for entering the maximum
-        Cost desired for the item. If used, you will be warned whenever
+        cost desired for the item. If used, you will be warned whenever
         entering purchase orders if the purchased cost exceeds the maximum
         desired cost value.</para>
       </listitem>
@@ -302,7 +302,7 @@
     <varlistentry>
       <term>Class Code</term>
       <listitem>
-        <para>Specify a Class Code to associate with the item.</para>
+        <para>Specify a class code to associate with the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -332,7 +332,7 @@
         the item is used. Pick Lists are printed lists showing the work order
         material requirements for a specified work order. You may decide not
         to include an item on Pick Lists if the item is insignificant or if it
-        is not stored in a stock room but, for example, in a Work Center
+        is not stored in a stock room but, for example, in a work center
         instead.</para>
       </listitem>
     </varlistentry>
@@ -389,8 +389,8 @@
           <varlistentry>
             <term>Product Category</term>
             <listitem>
-              <para>Specify the Product Category if the item is sold. All sold
-              items must be assigned a Product Category.</para>
+              <para>Specify the product category if the item is sold. All sold
+              items must be assigned a product category.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -399,10 +399,10 @@
                 <secondary>item list price</secondary>
               </indexterm>List Price</term>
             <listitem>
-              <para>Specify the List Price for the item, based on the selling
-              UOM (i.e., "Per" UOM). List Prices may also be created and
+              <para>Specify the list price for the item, based on the selling
+              UOM (i.e., "Per" UOM). List prices may also be created and
               modified in the item Pricing section of the Sales module.
-              Changes made to the List Price in either location will be
+              Changes made to the list price in either location will be
               updated system-wide.</para>
             </listitem>
           </varlistentry>
@@ -412,8 +412,8 @@
                 <secondary>wholesale price</secondary>
               </indexterm>Wholesale Price</term>
             <listitem>
-              <para>Specify the Wholesale Price for the item. The Wholesale
-              Price may be used as the Unit Cost for markup purposes,
+              <para>Specify the wholesale price for the item. The wholesale
+              price may be used as the unit cost for markup purposes,
               depending on your pricing configuration. For more information,
               please see <xref linkend="WholesaleMarkup" />.</para>
             </listitem>
@@ -425,7 +425,7 @@
               </indexterm>Unit Price UOM</term>
             <listitem>
               <para>Specify the selling Unit of Measure (UOM) for the item.
-              The List Price should be based on this selection. By default,
+              The list price should be based on this selection. By default,
               the inventory UOM will be used here. You will not be able to
               select a different UOM until you first manually create a selling
               UOM using the options found under the "UOM" tab on the Item
@@ -445,11 +445,11 @@
               </indexterm>Exclusive</term>
             <listitem>
               <para>Select if the item is sold exclusively. If a sold item is
-              marked as Exclusive, it may only be sold to specified Customers
-              or Customer Types. To link Exclusive items to Customers, you
+              marked as Exclusive, it may only be sold to specified customers
+              or customer types. To link Exclusive items to customers, you
               would first include the item on a Pricing Schedule—indicating
-              relevant Prices and Quantity Breaks. You would then assign the
-              Pricing Schedule to specified Customers or Customer Types, using
+              relevant prices and Quantity Breaks. You would then assign the
+              Pricing Schedule to specified customers or customer types, using
               the Pricing Schedule assignment functionality found in the item
               Pricing section of the Sales module.</para>
               <note>
@@ -508,7 +508,7 @@
             <term>Notes</term>
             <listitem>
               <para>This is a scrolling text field with word-wrapping for
-              entering Notes related to the item. Any Notes entered on this
+              entering notes related to the item. Any notes entered on this
               screen are for internal purposes only.</para>
             </listitem>
           </varlistentry>
@@ -527,8 +527,8 @@
           <varlistentry>
             <term>Comments</term>
             <listitem>
-              <para>To view system-generated Comments associated with an
-              item—or to add new and edit Comments of your own—select the
+              <para>To view system-generated comments associated with an
+              item—or to add new and edit comments of your own—select the
               "Comments" option.</para>
             </listitem>
           </varlistentry>
@@ -549,8 +549,8 @@
     <varlistentry role="manufacturing">
       <term>ROUTING</term>
       <listitem>
-        <para>Select to open the Routing for the specified item. If no Routing
-        exists, you will have the option to create a new Routing.</para>
+        <para>Select to open the routing for the specified item. If no routing
+        exists, you will have the option to create a new routing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -561,17 +561,17 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Item Characteristics are user-defined definitions of an item which may
+  <para>Item characteristics are user-defined definitions of an item which may
   be used to provide additional layers of description to items. For example,
-  item Characteristics might be used to specify "Season" or "Primary Vendor".
+  item characteristics might be used to specify "Season" or "Primary Vendor".
   These constitute static descriptions which are not processed by the
   application, but are useful for informational purposes. For configured items
-  (i.e., Job or Reference items), Characteristics are used to store pricing
+  (i.e., Job or Reference items), characteristics are used to store pricing
   information for the options available on configured items. That pricing by
-  Characteristic is then passed to sales order line items when particular
+  characteristic is then passed to sales order line items when particular
   configurations are sold.</para>
   <tip>
-    <para>Item Characteristics can be associated with sales order, purchase
+    <para>Item characteristics can be associated with sales order, purchase
     order, and work order items.</para>
   </tip>
   <para>To enter <indexterm significance="normal">
@@ -597,14 +597,14 @@
       <para>For configured items, an additional pricing field will be
       available on the item Characteristic screen. This pricing information
       will be passed to sales order line items when particular configurations
-      are sold. The Price for configured items may vary depending on the
-      Characteristics selected at sales order entry time.</para>
+      are sold. The price for configured items may vary depending on the
+      characteristics selected at sales order entry time.</para>
     </tip></para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>For visibility into Costs and bill of materials associated with
-  items—and to perform routine Cost and BOM maintenance—select the "Cost" tab.
+  <para>For visibility into costs and bill of materials associated with
+  items—and to perform routine cost and BOM maintenance—select the "Cost" tab.
   The following screen will appear:</para>
   <screenshot>
     <mediaobject>
@@ -619,8 +619,8 @@
     <varlistentry>
       <term>Elements</term>
       <listitem>
-        <para>Select this option to maintain item Cost elements. For more
-        information on maintaining item Costs, please see <xref
+        <para>Select this option to maintain item cost elements. For more
+        information on maintaining item costs, please see <xref
         linkend="maintainItemCosts" />.</para>
       </listitem>
     </varlistentry>
@@ -776,7 +776,7 @@
               <note>
                 <para>The Alternate Capacity UOM has no impact on bills of
                 materials. It is used solely for Capacity Planning and sales
-                Analysis purposes.</para>
+                analysis purposes.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -798,7 +798,7 @@
               see the total quantity of item Bs.</para>
               <note>
                 <para>The Capacity UOM has no impact on bills of materials. It
-                is used solely for Capacity Planning and Sales Analysis
+                is used solely for Capacity Planning and sales analysis
                 purposes.</para>
               </note>
             </listitem>
@@ -824,13 +824,13 @@
                 <secondary>selling UOM for</secondary>
               </indexterm>Selling</term>
             <listitem>
-              <para>If an item is sold, its List Price will be based on the
+              <para>If an item is sold, its list price will be based on the
               Selling UOM. While the Selling UOM may often mirror the
               inventory UOM, in some scenarios the two UOMs will be different.
               For example, cans of soda may be stocked in inventory as
               individual units (EACH), but sold by the case (CASE24). In this
               example, inventory transactions will be recorded using the
-              inventory UOM (EACH), but all pricing—including List Price and
+              inventory UOM (EACH), but all pricing—including list price and
               Pricing Schedules—will reflect the Selling UOM (CASE24). An item
               may also have multiple Selling UOMs, for example SIX-PACK,
               CASE24, PALLET, etc. You specify the Selling UOM you want to use
@@ -874,7 +874,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view the Vendor item Sources for an item select the "Sources"
+  <para>To view the vendor item sources for an item select the "Sources"
   tab.</para>
   <mediaobject>
     <imageobject>
@@ -886,15 +886,15 @@
     <varlistentry>
       <term>Sources</term>
       <listitem>
-        <para>Displays list of Item Sources and associated Vendors. You may
-        also add new Item Sources for an item on this screen. For additional
-        documentation related to setting up Item Sources for an item, see
+        <para>Displays list of item sources and associated vendors. You may
+        also add new item sources for an item on this screen. For additional
+        documentation related to setting up item sources for an item, see
         <xref linkend="itemSource" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>The Tax policy for an item is determined by how its Tax Type settings
-  are configured. To associate Tax Types with an item, select the "Tax Types"
+  <para>The tax policy for an item is determined by how its tax type settings
+  are configured. To associate tax types with an item, select the "Tax Types"
   tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -905,18 +905,18 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>To mark an item as non-taxable, simply do not associate any Tax
-    Types with the item.</para>
+    <para>To mark an item as non-taxable, simply do not associate any tax
+    types with the item.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term>Tax Types</term>
       <listitem>
-        <para>Display lists Tax Types for the specified item.</para>
+        <para>Display lists tax types for the specified item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new Tax Type definition, select the NEW button. The
+  <para>To create a new tax type definition, select the NEW button. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -926,7 +926,7 @@
         <caption>Create New Tax Type</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Tax Type definition, you are presented with the
+  <para>When creating a new tax type definition, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -935,28 +935,28 @@
           <secondary>for sales orders</secondary>
         </indexterm>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone you want to associate with the specified
-        Tax Type. Creating a relationship between a Tax Zone and a Tax Type
-        enables you to determine how Tax will be applied when processing
+        <para>Specify the tax zone you want to associate with the specified
+        tax type. Creating a relationship between a tax zone and a tax type
+        enables you to determine how tax will be applied when processing
         transactions using the item. If you select the "Any" option, this
-        means any defined Tax Zone is a possible match.</para>
+        means any defined tax zone is a possible match.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
-    <para>Consider creating separate Tax Types for any groups or classes of
+    <para>Consider creating separate tax types for any groups or classes of
     items which are taxed at different rates.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term>Tax Types</term>
       <listitem>
-        <para>Specify the Tax Type you want to associate with the specified
-        Tax Zone. Tax Types provide a system for classifying goods and
+        <para>Specify the tax type you want to associate with the specified
+        tax zone. Tax types provide a system for classifying goods and
         services into taxable categories. Creating a relationship between a
-        Tax Zone and a Tax Type enables you to determine how Tax will be
+        tax zone and a tax type enables you to determine how tax will be
         applied when processing transactions using the item. If you select the
-        "Any" option, this means any defined Tax Type is a possible
+        "Any" option, this means any defined tax type is a possible
         match.</para>
       </listitem>
     </varlistentry>
@@ -972,9 +972,9 @@
       <see>item aliases</see>
     </indexterm>Item Relationships are assigned to items as a means for
   cross-referencing internal and external item information. For example, a
-  Customer may refer to an item by a different item number than you do. To
+  customer may refer to an item by a different item number than you do. To
   avoid confusion—and to simplify item lookups—you can create an item Alias
-  linking the Customer's external Part Number to your own internal item
+  linking the customer's external Part Number to your own internal item
   number. The item Alias acts as an alternate identifier. In this way, items
   may be located using either internal or external item information. To
   associate an item Alias with an item, select the "Relationships" tab. The
@@ -993,7 +993,7 @@
     <varlistentry>
       <term>Alias</term>
       <listitem>
-        <para>Display lists item Alias numbers and related Comments.</para>
+        <para>Display lists item Alias numbers and related comments.</para>
         <tip>
           <para>Multiple item Aliases can be assigned to a single item,
           allowing you to cross-reference an item using many different item
@@ -1031,10 +1031,10 @@
     <varlistentry>
       <term>Associated Account</term>
       <listitem>
-        <para>You have the option to link a CRM Account to the item Alias. If
-        linked, the Alias will only be used on Quotes and sales orders related
-        to the specified Customer. If no Customer is specified, the Alias will
-        be displayed for all Customers you sell the item to.</para>
+        <para>You have the option to link a CRM account to the item Alias. If
+        linked, the Alias will only be used on quotes and sales orders related
+        to the specified customer. If no customer is specified, the Alias will
+        be displayed for all customers you sell the item to.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1047,23 +1047,23 @@
         </indexterm>Use an Alias Description on Billing and Shipping
       Paperwork</term>
       <listitem>
-        <para>Billing and Shipping Paperwork: Select to include an item Alias
-        description on Billing and Shipping paperwork.</para>
+        <para>Select to include an item Alias
+        description on billing and shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>Enter a description of the item Alias for inclusion on Billing
-        and Shipping paperwork.</para>
+        <para>Enter a description of the item Alias for inclusion on billing
+        and shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Comments</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Comments related to the item Alias. This field may be useful for
-        explaining why an item Alias was created (e.g., "Customer XYZ, Inc.
+        comments related to the item Alias. This field may be useful for
+        explaining why an item Alias was created (e.g., "customer XYZ, Inc.
         refers to this item Alias whenever they place an order.").</para>
       </listitem>
     </varlistentry>

@@ -32,8 +32,8 @@
       <listitem>
         <para>Select the type of document the Form will be used for. The
         following Document Types are supported: A/P Memo, A/R Memo, A/R
-        Statement, Credit Memo/Return, Incident, Invoice, MetaSQL Statement,
-        Packing List, Pick List, purchase order, Query Set, Quote, and sales
+        Statement, Sales Credit, Incident, invoice, MetaSQL Statement,
+        Packing List, Pick List, purchase order, Query Set, quote, and sales
         order.</para>
       </listitem>
     </varlistentry>
@@ -60,9 +60,9 @@
         <para>Enter a standard file name to be used when documents are
         forwarded to EDI recipients using this EDI Form. You may enter tags to
         generate dynamic file names using information stored in your database.
-        In the example shown, the file name will include the specific Invoice
-        Number of each Invoice being forwarded to EDI recipients, the Customer
-        Number, and the date the EDI is generated.</para>
+        In the example shown, the file name will include the specific invoice
+        number of each invoice being forwarded to EDI recipients, the customer
+        number, and the date the EDI is generated.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -76,10 +76,10 @@
       <listitem>
         <para>This is an optional field to be used if you want to define your
         own replacement tokens. The example uses a SQL statement to select the
-        Customer Number for this Invoice and the current date as year, month,
+        customer number for this invoice and the current date as year, month,
         and date separated by underscores ("_"). You will note in the WHERE
         clause that MetaSQL is used to dynamically capture the specific
-        Customer Number using the system-defined <literal>docid</literal>
+        customer number using the system-defined <literal>docid</literal>
         token (the <code>"&lt;/&gt;"</code> wrapper is replaced by the MetaSQL
         <code>&lt;? value("") ?&gt;</code>). For more information on writing
         queries using MetaSQL, please see the Report Writer User Guide.</para>
@@ -88,7 +88,7 @@
         sales rep's name and email address. The Message Body on the EDI
         Profile window could be changed to end with the token
         "&lt;/salesrep_name&gt;" and the From address could be set to
-        "&lt;/usr_email&gt;". If you do this, Invoice emails will always be
+        "&lt;/usr_email&gt;". If you do this, invoice emails will always be
         signed with the name of the sales rep and sent from the sales rep's
         email address if s/he is also defined as a User and Employee.</para>
       </listitem>

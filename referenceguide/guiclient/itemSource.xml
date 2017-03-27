@@ -10,7 +10,7 @@
       <primary>source vendors</primary>
       <see>item sources</see>
     </indexterm>Enter New Item Source</title>
-  <para>To enter a new Item Source, select the "Enter New Item Source" option.
+  <para>To enter a new item source, select the "Enter New Item Source" option.
   The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -20,7 +20,7 @@
         <caption>Enter New Item Source</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When entering a new Item Source, you are presented with the following
+  <para>When entering a new item source, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
@@ -45,13 +45,13 @@
     <varlistentry>
       <term>Default</term>
       <listitem>
-        <para>Select this option to distinguish an Item Source from other Item
-        Sources for the same item number. If selected, the default Item Source
+        <para>Select this option to distinguish an item source from other item
+        sources for the same item number. If selected, the default item source
         will be selected automatically when releasing purchase requests or
-        creating drop shipments. If no default Item Source is specified, users
-        will be asked to select Item Sources from a list of available Item
+        creating drop shipments. If no default item source is specified, users
+        will be asked to select item sources from a list of available Item
         Sources when releasing purchase requests or creating drop shipments.
-        When this option is selected and saved, any other Item Sources for the
+        When this option is selected and saved, any other item sources for the
         item flagged as the default will be unchecked.</para>
       </listitem>
     </varlistentry>
@@ -61,38 +61,38 @@
           <secondary>vendors identified as</secondary>
         </indexterm>Vendor</term>
       <listitem>
-        <para>Enter the Vendor Number of the Vendor who is the source for the
+        <para>Enter the vendor number of the vendor who is the source for the
         specified item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Vendor Item Number</term>
       <listitem>
-        <para>Enter the item number the Vendor uses to identify the
+        <para>Enter the item number the vendor uses to identify the
         item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Vendor UOM</term>
       <listitem>
-        <para>Select the Unit of Measure the Vendor uses for the specified
+        <para>Select the Unit of Measure the vendor uses for the specified
         item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Inventory/Vendor UOM Ratio</term>
       <listitem>
-        <para>Specify the ratio between inventory and Vendor Units of Measure
-        (UOM). For example, if you store an item in single units, but a Vendor
+        <para>Specify the ratio between inventory and vendor Units of Measure
+        (UOM). For example, if you store an item in single units, but a vendor
         sells you the item in cases of 12, then you would enter "12" here to
         represent the 12:1 Inv./Vend. ratio. If the ratio is 1:1, then enter
         "1" here. When an Inv./Vend. ratio is specified, the system allows you
-        to purchase items using the Vendor's UOM; however, when the items are
+        to purchase items using the vendor's UOM; however, when the items are
         received, the system will automatically convert the inventory to your
         inventory UOM. This same conversion logic flows throughout the
         system—whether you are viewing inventory availability or running
         material requirements planning (MRP). Your inventory will always be
-        represented in your inventory UOM, regardless of the Vendor UOMs
+        represented in your inventory UOM, regardless of the vendor UOMs
         specified on any open purchase orders.</para>
       </listitem>
     </varlistentry>
@@ -110,7 +110,7 @@
     <varlistentry>
       <term>Vendor Currency</term>
       <listitem>
-        <para>Currency used by the Vendor.</para>
+        <para>Currency used by the vendor.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -121,7 +121,7 @@
             <term>Contract #</term>
             <listitem>
               <para>Select the Contract number if a Contract exists for this
-              Item Source.</para>
+              item source.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -181,12 +181,12 @@
           <secondary>of vendors</secondary>
         </indexterm>Vendor Ranking</term>
       <listitem>
-        <para>Specify the Vendor's rank using the arrow buttons, or manually
-        enter a value up to a maximum of 9. The ranking of a Vendor is used to
-        identify the relative merits of Item Sources when releasing purchase
-        requests. If a purchased item has multiple Item Sources, you may
-        select from a list of available Item Sources when releasing a purchase
-        request. The Item Sources will be listed in descending order by Vendor
+        <para>Specify the vendor's rank using the arrow buttons, or manually
+        enter a value up to a maximum of 9. The ranking of a vendor is used to
+        identify the relative merits of item sources when releasing purchase
+        requests. If a purchased item has multiple item sources, you may
+        select from a list of available item sources when releasing a purchase
+        request. The item sources will be listed in descending order by vendor
         ranking.</para>
       </listitem>
     </varlistentry>
@@ -196,9 +196,9 @@
           <secondary>lead times for</secondary>
         </indexterm>Lead Time</term>
       <listitem>
-        <para>Specify the lead time for the Vendor item using the arrow
+        <para>Specify the lead time for the vendor item using the arrow
         buttons, or manually enter a value up to a maximum of 99. Specifies
-        the Lead Time the Vendor requires to supply the specified item,
+        the Lead Time the vendor requires to supply the specified item,
         measured in days.</para>
       </listitem>
     </varlistentry>
@@ -206,7 +206,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Notes related to the Item Source.</para>
+        notes related to the item source.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -216,7 +216,7 @@
     </indexterm> <indexterm significance="normal">
       <primary>item sources</primary>
       <secondary>item pricing for</secondary>
-    </indexterm>To add or modify Item Source Prices, select the "Prices" tab
+    </indexterm>To add or modify item source prices, select the "Prices" tab
   at the bottom of the "Item Source" screen. The following screen will
   appear:</para>
   <para><screenshot>
@@ -227,13 +227,13 @@
         <caption>Item Source Prices</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding or modifying Item Source Prices, you are presented with
+  <para>When adding or modifying item source prices, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Prices</term>
       <listitem>
-        <para>Display lists Item Source Prices for the specified Item
+        <para>Display lists item source prices for the specified Item
         Source.</para>
       </listitem>
     </varlistentry>
@@ -243,12 +243,12 @@
     <varlistentry>
       <term>ADD</term>
       <listitem>
-        <para>Opens screen for creating a new Item Source Price, as shown
+        <para>Opens screen for creating a new item source price, as shown
         below.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add or modify a description of the Vendor, select the "Vendor
+  <para>To add or modify a description of the vendor, select the "Vendor
   Description" tab at the bottom of the "Item Source" screen. The following
   screen will appear:</para>
   <para><screenshot>
@@ -259,14 +259,14 @@
         <caption>Item Source Vendor Description</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding or modifying a Vendor description, you are presented with
+  <para>When adding or modifying a vendor description, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Vendor Description</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        Comments related to the Vendor.</para>
+        comments related to the vendor.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -306,7 +306,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate documents with an Item Source, select the "Documents"
+  <para>To associate documents with an item source, select the "Documents"
   tab.</para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
