@@ -10,10 +10,10 @@
     </indexterm> <indexterm significance="normal">
       <primary>forms</primary>
       <secondary>creating new for edi</secondary>
-    </indexterm>EDI Forms specify the file format an EDI Profile will use.
+    </indexterm>EDI forms specify the file format an EDI profile will use.
   They also define replacement tokens to fill in email or FTP details and to
-  use when running reports or queries. To associate an EDI Form with a
-  Profile, select the NEW button. For this example, we will choose the
+  use when running reports or queries. To associate an EDI form with a
+  profile, select the NEW button. For this example, we will choose the
   "Report" format, as shown in the following screenshot:</para>
   <para><screenshot>
       <mediaobject>
@@ -24,15 +24,15 @@
         Format</para></caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new EDI Form using the Report format, you are
+  <para>When creating a new EDI form using the Report format, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Document Type</term>
       <listitem>
-        <para>Select the type of document the Form will be used for. The
+        <para>Select the type of document the form will be used for. The
         following Document Types are supported: A/P Memo, A/R Memo, A/R
-        Statement, Sales Credit, Incident, invoice, MetaSQL Statement,
+        Statement, sales credit, incident, invoice, MetaSQL Statement,
         Packing List, Pick List, purchase order, Query Set, quote, and sales
         order.</para>
       </listitem>
@@ -50,7 +50,7 @@
     <varlistentry>
       <term>Include Header Lines</term>
       <listitem>
-        <para>When selecting CSV or HTML as the Output Format, check this box
+        <para>When selecting CSV or HTML as the Output format, check this box
         to include a line containing column headings.</para>
       </listitem>
     </varlistentry>
@@ -58,7 +58,7 @@
       <term>File Name</term>
       <listitem>
         <para>Enter a standard file name to be used when documents are
-        forwarded to EDI recipients using this EDI Form. You may enter tags to
+        forwarded to EDI recipients using this EDI form. You may enter tags to
         generate dynamic file names using information stored in your database.
         In the example shown, the file name will include the specific invoice
         number of each invoice being forwarded to EDI recipients, the customer
@@ -83,7 +83,7 @@
         token (the <code>"&lt;/&gt;"</code> wrapper is replaced by the MetaSQL
         <code>&lt;? value("") ?&gt;</code>). For more information on writing
         queries using MetaSQL, please see the Report Writer User Guide.</para>
-        <para>Tokens defined in this Query can also be used on the EDI Profile
+        <para>Tokens defined in this Query can also be used on the EDI profile
         screen. For example, the query in the example above also retrieves the
         sales rep's name and email address. The Message Body on the EDI
         Profile window could be changed to end with the token
@@ -97,7 +97,7 @@
       <term>Report</term>
       <listitem>
         <para>Specify the report definition you want to associate with the EDI
-        Form.</para>
+        form.</para>
         <note>
           <para>The "Use Query Set" feature is not used with the Report output
           format.</para>
@@ -130,7 +130,7 @@
         <caption><para>Create New EDI Form Using CSV Format</para></caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new EDI Form using the CSV format, you are presented
+  <para>When creating a new EDI form using the CSV format, you are presented
   with the many of the same options as for reports. However, the Report option
   is replaced with the following:</para>
   <variablelist>

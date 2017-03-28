@@ -13,7 +13,7 @@
       <primary>email</primary>
       <secondary>using for edi</secondary>
     </indexterm>EDI Profile</title>
-  <para>To create a new EDI Profile, select the NEW button. For this example,
+  <para>To create a new EDI profile, select the NEW button. For this example,
   we have chosen the Email delivery method, as shown in the following
   screenshot:</para>
   <para><screenshot>
@@ -29,14 +29,14 @@
     <para>The screen options will vary depending on which EDI delivery method
     you select—Email or FTP.</para>
   </note>
-  <para>When creating an EDI Profile using the Email delivery type, you are
+  <para>When creating an EDI profile using the Email delivery type, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Enter a brief name to identify the EDI Profile. This is the name
-        which will appear when the Profile is cross-referenced throughout the
+        <para>Enter a brief name to identify the EDI profile. This is the name
+        which will appear when the profile is cross-referenced throughout the
         application—in the Customer master, for example.</para>
       </listitem>
     </varlistentry>
@@ -67,7 +67,7 @@
       <term>Suppress Printing</term>
       <listitem>
         <para>Select to suppress the operating system print dialog when
-        printing documents for customers/vendors linked to the EDI Profile.
+        printing documents for customers/vendors linked to the EDI profile.
         Users will still be presented with an xTuple "print" dialog. However,
         the operating system's print dialog will be suppressed, effectively
         preventing the actual printing of the document. If not selected,
@@ -101,7 +101,7 @@
       <term>To</term>
       <listitem>
         <para>Enter the email address to be used as the default recipient
-        address whenever documents are emailed using this Profile.</para>
+        address whenever documents are emailed using this profile.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -115,14 +115,14 @@
       <term>Cc</term>
       <listitem>
         <para>Enter the email address to be used as the default carbon copy
-        address whenever documents are emailed using this Profile.</para>
+        address whenever documents are emailed using this profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Bcc</term>
       <listitem>
         <para>Enter the email address to which copies of the email will be
-        sent using this Profile. Bcc differs from Cc in that none of the
+        sent using this profile. Bcc differs from Cc in that none of the
         recipients will see the bcc addresses. It is a good idea to set this
         to an address that will have its Inbox archived or to an email address
         shared by a department. This way there is a history of the
@@ -133,14 +133,14 @@
       <term>Subject</term>
       <listitem>
         <para>Enter a default email subject line to be used whenever documents
-        are emailed using this Profile.</para>
+        are emailed using this profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Message Body</term>
       <listitem>
         <para>Use this text field to enter the default message that will
-        accompany any documents emailed using this Profile.</para>
+        accompany any documents emailed using this profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -153,10 +153,10 @@
     <varlistentry>
       <term>Forms</term>
       <listitem>
-        <para>Displays the EDI Form(s) associated with the Profile. Forms
-        control which types of document can be sent using this EDI Profile—if
-        the EDI Profile does not have a form for a document type, that
-        document type cannot be sent using this EDI Profile. Forms also
+        <para>Displays the EDI form(s) associated with the profile. Forms
+        control which types of document can be sent using this EDI profile—if
+        the EDI profile does not have a form for a document type, that
+        document type cannot be sent using this EDI profile. Forms also
         control the names and values of replacement tokens (see <xref
         linkend="ediForm" />).</para>
       </listitem>
@@ -165,7 +165,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        notes related to the Profile.</para>
+        notes related to the profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -175,8 +175,8 @@
         instead of creating and sending the files individually as the requests
         come in. Typically EDI requests are immediately processed whenever a
         user prints a document that should also be sent by EDI. To process all
-        EDI requests for a Profile in batches, create a recurring EDIBatch Job
-        for that Profile using the Batching tab. When the EDIBatch Job runs,
+        EDI requests for a profile in batches, create a recurring EDIBatch Job
+        for that profile using the Batching tab. When the EDIBatch Job runs,
         it creates individual Scheduled Jobs for each EDI file to be created
         and sent.</para>
         <variablelist>
@@ -231,7 +231,7 @@
       <primary>tokens</primary>
       <secondary>electronic data interchange</secondary>
     </indexterm>Certain special character sequences exist that you can use to
-  build your EDI Profile. You can enter these EDI tokens in any of the text
+  build your EDI profile. You can enter these EDI tokens in any of the text
   input fields on the EDI Profile window (except the Name, of course). You can
   also define your own tokens by writing database queries (see <xref
   linkend="ediForm" />). The system defines the following tokens:</para>
@@ -329,7 +329,7 @@
     </indexterm> <indexterm significance="normal">
       <primary>file transfer protocol</primary>
       <secondary>using for edi</secondary>
-    </indexterm>To create a new EDI Profile using the <indexterm
+    </indexterm>To create a new EDI profile using the <indexterm
       significance="normal">
       <primary>FTP</primary>
       <see>file transfer protocol</see>
@@ -345,14 +345,14 @@
         <caption>Create New EDI Profile for FTP Delivery</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new EDI Profile using the FTP delivery method, you are
+  <para>When creating a new EDI profile using the FTP delivery method, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Enter a brief name to identify the EDI Profile. This is the name
-        which will appear when the Profile is cross-referenced throughout the
+        <para>Enter a brief name to identify the EDI profile. This is the name
+        which will appear when the profile is cross-referenced throughout the
         application—in the Customer master, for example.</para>
       </listitem>
     </varlistentry>
@@ -362,7 +362,7 @@
         <para>For this example, we have selected the "FTP" delivery method.
         Selecting the "FTP" option indicates that recipients will receive EDI
         documents as files transferred by FTP to the server address specified
-        in the Profile.</para>
+        in the profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -400,14 +400,14 @@
     <varlistentry>
       <term>Forms</term>
       <listitem>
-        <para>Displays the EDI Form(s) associated with the Profile.</para>
+        <para>Displays the EDI form(s) associated with the profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        notes related to the Profile.</para>
+        notes related to the profile.</para>
       </listitem>
     </varlistentry>
   </variablelist>

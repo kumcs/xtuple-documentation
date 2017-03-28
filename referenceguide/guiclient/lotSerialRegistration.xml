@@ -10,8 +10,8 @@
       <primary>registrations</primary>
       <secondary>for lot/serial</secondary>
     </indexterm>Lot/Serial Registration</title>
-  <para>Lot/Serial items may be registered for Warranty tracking or other
-  purposes. To register a Lot/Serial item, select the NEW button on the
+  <para>Lot/serial items may be registered for Warranty tracking or other
+  purposes. To register a lot/serial item, select the NEW button on the
   Lot/Serial screen. The following screen will appear.</para>
   <para><screenshot>
       <mediaobject>
@@ -72,8 +72,8 @@
             <term>Shipment</term>
             <listitem>
               <para>Select if the registration was made automatically when the
-              specified Lot/Serial quantity was shipped. This feature is
-              triggered by a setting on the Item Site screen. For Lot/Serial
+              specified lot/serial quantity was shipped. This feature is
+              triggered by a setting on the Item Site screen. For lot/serial
               items, you have the option on the Item Site screen to auto
               register quantity at shipping.</para>
             </listitem>
@@ -84,28 +84,28 @@
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Displays the item number of the Lot/Serial item specified on the
+        <para>Displays the item number of the lot/serial item specified on the
         previous screen.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Displays the inventory Unit of Measure for the specified
-        Lot/Serial item.</para>
+        <para>Displays the inventory unit of measure for the specified
+        lot/serial item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Lot/Serial #</term>
       <listitem>
-        <para>Displays the Lot/Serial Number specified on the previous
+        <para>Displays the lot/serial number specified on the previous
         screen.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Qty</term>
       <listitem>
-        <para>Specify the quantity of the Lot/Serial item covered by the
+        <para>Specify the quantity of the lot/serial item covered by the
         current registration.</para>
       </listitem>
     </varlistentry>
@@ -125,7 +125,7 @@
     <varlistentry>
       <term>Sold Date</term>
       <listitem>
-        <para>Specify the date when the Lot/Serial quantity was sold. The sold
+        <para>Specify the date when the lot/serial quantity was sold. The sold
         date marks the beginning of the warranty period for warranty items.
         This date will default to the sales order date for auto
         registrations.</para>
@@ -134,7 +134,7 @@
     <varlistentry>
       <term>Expire Date</term>
       <listitem>
-        <para>Specify the expiration date for the Lot/Serial quantity. For
+        <para>Specify the expiration date for the lot/serial quantity. For
         warranty items, the expiration date is based on the sold date plus the
         number of warranty days specified on the item master. This date will
         default to the sales order date plus the warranty days for auto
@@ -158,31 +158,31 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>When defining a Contact for the registration, you are presented with
+  <para>When defining a contact for the registration, you are presented with
   the following options:</para>
   <tip>
-    <para>For Contacts, you have two options:</para>
+    <para>For contacts, you have two options:</para>
     <orderedlist>
       <listitem>
-        <para>Attach an existing Contact to the account</para>
+        <para>Attach an existing contact to the account</para>
       </listitem>
       <listitem>
-        <para>Enter new Contact information</para>
+        <para>Enter new contact information</para>
       </listitem>
     </orderedlist>
   </tip>
   <variablelist>
     <varlistentry>
-      <term>Contact</term>
+      <term>contact</term>
       <listitem>
-        <para>Specify the details for the registration Contact. You can
-        manually enter Contact information in the fields shown—or use the
-        lookup feature to select pre-existing Contact information. If the
+        <para>Specify the details for the registration contact. You can
+        manually enter contact information in the fields shown—or use the
+        lookup feature to select pre-existing contact information. If the
         registration is created automatically from the shipment of a sales
-        order, the name of the customer billing Contact will be used. If a new
-        Contact is manually entered here, that Contact will be added
+        order, the name of the customer billing contact will be used. If a new
+        contact is manually entered here, that contact will be added
         automatically to the master list of Contacts. For additional
-        documentation related to creating Contacts, see <xref
+        documentation related to creating contacts, see <xref
         linkend="contact" />.</para>
       </listitem>
     </varlistentry>

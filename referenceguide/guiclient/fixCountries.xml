@@ -4,12 +4,12 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="fixCountries">
   <title>Fix Countries</title>
-  <para>The Fix Countries utility is designed to help you clean up Country
-  information in your database so your addresses will have valid Country names
+  <para>The Fix Countries utility is designed to help you clean up country
+  information in your database so your addresses will have valid country names
   associated with them. The utility is an extension package available for free
   from the <ulink url="http://www.xtuple.com/xchange">xTuple xChange</ulink>.
   The utility is especially useful for anyone seeking to enforce the use of
-  valid Country names. To learn more about the CRM configuration which
+  valid country names. To learn more about the CRM configuration which
   enforces the use of valid country names, please see <xref
   linkend="configureCRM" />.</para>
   <para>To access the utility, select the "Fix Countries" option. The
@@ -22,21 +22,21 @@
         <caption>Fix Countries Utility</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When fixing Country information in your database, you are presented
+  <para>When fixing country information in your database, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>QUERY</term>
       <listitem>
         <para>Select to query the database and return any records which
-        contain invalid Countries. The list of records found will be displayed
+        contain invalid countries. The list of records found will be displayed
         below.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>FIX CASE DIFFERENCES</term>
       <listitem>
-        <para>Select to fix instances where the case of letters in a Country
+        <para>Select to fix instances where the case of letters in a country
         name are non-conforming. For example, the utility will change all
         occurrences of "HOMELAND" or "HomeLand" to "Homeland".</para>
       </listitem>
@@ -44,16 +44,16 @@
     <varlistentry>
       <term>REPLACE ABBREVIATIONS</term>
       <listitem>
-        <para>Select to replace Country name abbreviations with a valid
-        Country name. For example, all occurrences of "HL" would be changed to
+        <para>Select to replace country name abbreviations with a valid
+        country name. For example, all occurrences of "HL" would be changed to
         "Homeland".</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>BULK REPLACE</term>
       <listitem>
-        <para>Select to replace all occurrences of an invalid Country name
-        with a valid Country name that you choose.</para>
+        <para>Select to replace all occurrences of an invalid country name
+        with a valid country name that you choose.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -67,9 +67,9 @@
     <varlistentry>
       <term>ADD COUNTRY</term>
       <listitem>
-        <para>Select for the rare case when you need to add a new Country to
-        the list of Countries. Adding new Countries should be discouraged. To
-        learn more about the list of available Country names, please see <xref
+        <para>Select for the rare case when you need to add a new country to
+        the list of countries. Adding new countries should be discouraged. To
+        learn more about the list of available country names, please see <xref
         linkend="countries" />.</para>
       </listitem>
     </varlistentry>
@@ -79,7 +79,7 @@
         <para>Select to include historical data, such as closed sales orders
         and posted Credit Memos and invoices. These records will continue to
         print properly if you don't fix them, but if you edit the records you
-        will have to change the Country when strict Country enforcement is
+        will have to change the country when strict country enforcement is
         turned on.</para>
       </listitem>
     </varlistentry>
