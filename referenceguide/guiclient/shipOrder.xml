@@ -18,11 +18,11 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>Before an Order can be shipped successfully, sales Account and
-    Receivables Assignments for the specified Customer must be in
+    <para>Before an Order can be shipped successfully, sales account and
+    Receivables Assignments for the specified customer must be in
     place.</para>
   </tip>
-  <para>When Shipping an Order, you are presented with the following
+  <para>When shipping an Order, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
@@ -42,7 +42,7 @@
       <listitem>
         <para>Enter the Order Number of the Order you want to ship. The browse
         button located to the right of the field leads to a searchable list of
-        Orders available for Shipping.</para>
+        Orders available for shipping.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -57,7 +57,7 @@
         <para>Specify this option to approve the sales order for Billing as
         soon as it is shipped. If selected, the Order will appear on the
         Billing Approvals list—making it available to be converted into an
-        Invoice. This option will be selected by default if specified in your
+        invoice. This option will be selected by default if specified in your
         system-level configuration. This option will be disabled if a Transfer
         Order is specified.</para>
       </listitem>
@@ -65,18 +65,18 @@
     <varlistentry>
       <term>Create and Print Invoice</term>
       <listitem>
-        <para>Specify this option to automatically create and print an Invoice
+        <para>Specify this option to automatically create and print an invoice
         for the sales order as soon as it is shipped. Selecting this option
         enables you to bypass the Billing Selection process. Once the Order is
-        shipped, an Invoice will be created and printed. This Invoice will
-        appear on the list of unposted Invoices—making it available for
+        shipped, an invoice will be created and printed. This invoice will
+        appear on the list of unposted invoices—making it available for
         posting. By default, the "Select for Billing" option will also be
         selected. This option will be disabled if a transfer order is
         specified.</para>
         <para role="xtconnect"><tip>
-            <para>If the Customer specified on the sales order has an EDI
+            <para>If the customer specified on the sales order has an EDI
             Profile attached, you may encounter an EDI processing interface
-            when printing the Invoice.</para>
+            when printing the invoice.</para>
           </tip></para>
       </listitem>
     </varlistentry>
@@ -90,7 +90,7 @@
     <varlistentry>
       <term>Print Shipping</term>
       <listitem>
-        <para>Select to print the Shipping Form.</para>
+        <para>Select to print the shipping form.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -118,7 +118,7 @@
     <varlistentry>
       <term>Bill To</term>
       <listitem>
-        <para>Displays the name of the Customer to be billed for the sales
+        <para>Displays the name of the customer to be billed for the sales
         order.</para>
       </listitem>
     </varlistentry>
@@ -129,14 +129,14 @@
         <tip>
           <para>If your site integrates UPS WorldShip with the system, you
           should process Orders in WorldShip after they have been issued to
-          Shipping—but before they have been shipped.</para>
+          shipping—but before they have been shipped.</para>
         </tip>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Items to Ship</term>
       <listitem>
-        <para>Display lists Order line items available for Shipping.</para>
+        <para>Display lists Order line items available for shipping.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -203,6 +203,6 @@
   <note>
     <para>If an Order is marked "Ship Complete," you will be prevented from
     shipping the Order until all line item quantities are issued to
-    Shipping.</para>
+    shipping.</para>
   </note>
 </section>

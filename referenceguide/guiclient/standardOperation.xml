@@ -7,7 +7,7 @@
       <primary>standard operations</primary>
       <secondary>creating new</secondary>
     </indexterm>Standard Operation</title>
-  <para>To create a new Standard Operation, select the NEW button. The
+  <para>To create a new standard operation, select the NEW button. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -17,48 +17,48 @@
         <caption>Create New Standard Operation</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Standard Operation, you are presented with the
+  <para>When creating a new standard operation, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Std. Oper. #</term>
       <listitem>
-        <para>Enter a number or code to identify the Standard
-        Operation.</para>
+        <para>Enter a number or code to identify the standard
+        operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Active</term>
       <listitem>
-        <para>Select to indicate the Standard Operation is active. If not
-        selected, the Standard Operation will be considered inactive.</para>
+        <para>Select to indicate the standard operation is active. If not
+        selected, the standard operation will be considered inactive.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>Enter a description to further identify the Operation.</para>
+        <para>Enter a description to further identify the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Work Center #</term>
       <listitem>
-        <para>Select the Work Center you want to use for the Standard
-        Operation.</para>
+        <para>Select the work center you want to use for the standard
+        operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Operation Type</term>
       <listitem>
-        <para>Select an Operation Type to categorize the Standard
-        Operation.</para>
+        <para>Select an operation type to categorize the standard
+        operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tool Reference</term>
       <listitem>
         <para>Use this field to briefly describe any tooling required for the
-        Operation. For example, if you are making plastic products, the
+        operation. For example, if you are making plastic products, the
         tooling reference might refer to the mold used to form the
         plastic.</para>
       </listitem>
@@ -70,26 +70,26 @@
         </indexterm>Production UOM</term>
       <listitem>
         <para>Specify the Unit of Measure to use for the Production UOM—or
-        enter a free-form UOM. Specify a UOM to be used optionally when Work
-        Order Operations are posted for the specified Operation. Operations
+        enter a free-form UOM. Specify a UOM to be used optionally when work
+        order operations are posted for the specified operation. Operations
         may be posted using either the inventory or Production UOM. In
-        addition, different Operations in a single Bill of Operations may use
+        addition, different operations in a single routing may use
         different Production UOMs. For example, if you are producing soup, you
-        might mix the soup in one Operation using UOM = BATCH. But when
-        canning the soup, the canning Operation might use UOM = CAN. If you
-        post Operations using the Production UOM, the inventory/Production UOM
+        might mix the soup in one operation using UOM = BATCH. But when
+        canning the soup, the canning operation might use UOM = CAN. If you
+        post operations using the Production UOM, the inventory/Production UOM
         ratio normalizes the posting so that the inventory impact is recorded
         using the inventory UOM.</para>
         <note>
-          <para>When posting work order Operations, you are given the option
-          to post Operations using Production UOMs or inventory UOMs.</para>
+          <para>When posting work order operations, you are given the option
+          to post operations using Production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Inventory/Production UOM Ratio</term>
       <listitem>
-        <para>When work order Operations are posted using the Production UOM,
+        <para>When work order operations are posted using the Production UOM,
         the inventory/Production UOM ratio normalizes the posting so that the
         inventory impact is recorded in the inventory UOM. The ratio is set up
         in the same way as the Capacity/inventory UOM ratio described in <xref
@@ -100,10 +100,10 @@
       <term>Use Standard Times</term>
       <listitem>
         <para>Select to activate fields for standard times below. Standard
-        times will be associated with the Standard Operation if
+        times will be associated with the standard operation if
         selected.</para>
         <note>
-          <para>Labor and overhead Costs associated with setup and run times
+          <para>Labor and overhead costs associated with setup and run times
           must be reported if they are to be tracked in the G/L and elsewhere.
           To report setup and run times, select the appropriate boxes in the
           Operation screen.</para>
@@ -117,24 +117,24 @@
         </indexterm>Setup Time (min)</term>
       <listitem>
         <para>Amount entered represents the number of minutes required to set
-        up the Work Center for the Operation.</para>
+        up the work center for the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Report Cost as (Setup Time)</term>
       <listitem>
-        <para>Specify whether you want to report Setup Costs as "Direct
+        <para>Specify whether you want to report setup costs as "Direct
         Labor," "Overhead," or "None." Specify the "None" option if you would
-        do not want to track Setup Time as part of the Operation's
-        Cost.</para>
+        do not want to track Setup Time as part of the operation's
+        cost.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Report Setup Time</term>
       <listitem>
-        <para>Select to report setup time. Must be selected for labor Costs
+        <para>Select to report setup time. Must be selected for labor costs
         associated with setup to be tracked in the G/L and elsewhere. If not
-        selected, these Costs will not be reported.</para>
+        selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -144,7 +144,7 @@
         </indexterm>Run Time (min)</term>
       <listitem>
         <para>Amount entered represents the number of minutes required to run
-        the Operation.</para>
+        the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -153,34 +153,34 @@
         <para>Specify the standard quantity that will be produced during a
         typical run-time period. The value entered here is equivalent to a run
         size, batch size, or Economic Order Quantity (EOQ) for this particular
-        Operation. Because work order Operations roll into the Actual and
-        Standard Costs for manufactured items, you should specify a per
+        operation. Because work order operations roll into the actual and
+        standard costs for manufactured items, you should specify a per
         quantity which accurately reflects your normal batch size for the
-        Operation. Specifying a standard batch size helps ensure your
-        Operations Costs are evenly distributed.</para>
+        operation. Specifying a standard batch size helps ensure your
+        operations costs are evenly distributed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Report Cost as (Run Time)</term>
       <listitem>
-        <para>Specify whether you want to report Setup Costs as "Direct
+        <para>Specify whether you want to report setup costs as "Direct
         Labor," "Overhead," or "None." Specify the "None" option if you would
-        do not want to track Run Time as part of the Operation's Cost.</para>
+        do not want to track Run Time as part of the operation's cost.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Report Run Time</term>
       <listitem>
-        <para>Select to report run time. Must be selected for labor Costs
+        <para>Select to report run time. Must be selected for labor costs
         associated with run time to be tracked in the G/L and elsewhere. If
-        not selected, these Costs will not be reported.</para>
+        not selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Instructions</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        special instructions or Comments related to the Work Center.</para>
+        special instructions or comments related to the work center.</para>
       </listitem>
     </varlistentry>
   </variablelist>

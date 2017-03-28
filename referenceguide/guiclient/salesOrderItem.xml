@@ -42,8 +42,8 @@
         <para>Displays the line item number for the current line item.</para>
 
         <note>
-          <para>If the sales order was generated from a Return Authorization,
-          the Return Authorization Number and corresponding Line Number will
+          <para>If the sales order was generated from a return authorization,
+          the return authorization number and corresponding Line Number will
           also be displayed at the top of the screen.</para>
         </note>
       </listitem>
@@ -67,7 +67,7 @@
       <term>Return Auth.#</term>
 
       <listitem>
-        <para>Displays the Return Authorization number associated with the
+        <para>Displays the return authorization number associated with the
         sales order, if any.</para>
       </listitem>
     </varlistentry>
@@ -76,8 +76,8 @@
       <term>Line #</term>
 
       <listitem>
-        <para>Displays the Line Number for the item listed on the Return
-        Authorization, if any.</para>
+        <para>Displays the line number for the item listed on the return
+        authorization, if any.</para>
       </listitem>
     </varlistentry>
 
@@ -87,8 +87,8 @@
       <listitem>
         <para>Enter the item number of the item you want to sell. The item
         list will contain sold items available for sale to the specified
-        Customer. The list of available items may vary from Customer to
-        Customer, depending on how Pricing Schedules are implemented at your
+        customer. The list of available items may vary from customer to
+        customer, depending on how Pricing Schedules are implemented at your
         site. Once an item number is entered, the inventory Unit of Measure
         and item description will automatically appear.</para>
 
@@ -119,11 +119,11 @@
       <term>Customer P/N</term>
 
       <listitem>
-        <para>Displays the Customer Part Number (i.e., item Alias) that
+        <para>Displays the customer part number (i.e., item Alias) that
         corresponds to the item number entered in the Item Number field. If
-        the Alias is associated with a particular Customer account, then the
-        Alias will only be displayed for sales orders and Quotes entered for
-        that Customer. Item Aliases are defined on the Item master.</para>
+        the Alias is associated with a particular customer account, then the
+        Alias will only be displayed for sales orders and quotes entered for
+        that customer. Item Aliases are defined on the Item master.</para>
       </listitem>
     </varlistentry>
 
@@ -133,7 +133,7 @@
       <listitem>
         <para>Optional selection used solely for gathering information related
         to sales order line item substitutions. This feature can be used, for
-        example, to gather information about inventory shortages or Customer
+        example, to gather information about inventory shortages or customer
         first preferences. There is no impact on the system of using this
         feature. Its function is simply to store information in the database,
         where it may be accessed for reporting purposes.</para>
@@ -163,7 +163,7 @@
         the Item Site master.</para>
 
         <tip>
-          <para>If a preferred Selling site is specified for the Customer,
+          <para>If a preferred Selling site is specified for the customer,
           then that site will be selected here by default. If the preferred
           Selling site is not selected—and you think it should be—verify that
           the Item Site master for the line item in question is marked as a
@@ -196,7 +196,7 @@
 
       <listitem>
         <para>Select to use the External Vendor Catalog screen to view items
-        as they appear within the various Vendor Catalogs you are subscribed
+        as they appear within the various vendor catalogs you are subscribed
         to.</para>
       </listitem>
     </varlistentry>
@@ -246,7 +246,7 @@
             <para>When sales orders are entered, the system will search for
             Quantity Break matches between the sales order item and any
             relevant Pricing Schedule. If duplicate Quantity Breaks are found,
-            the lowest Price for the given quantity will be used.</para>
+            the lowest price for the given quantity will be used.</para>
           </tip></para>
       </listitem>
     </varlistentry>
@@ -263,8 +263,8 @@
       <term>List Price</term>
 
       <listitem>
-        <para>Displays either the List Price found on the Item master or the
-        alternate List Price, if alternate List Pricing is being used. To
+        <para>Displays either the list price found on the Item master or the
+        alternate list price, if alternate List Pricing is being used. To
         learn more about how alternate List Pricing works, please see the
         <ulink
         url="https://xtupleuniversity.xtuple.com/library/articles/alternate-list-pricing">Alternate
@@ -277,10 +277,10 @@
 
       <listitem>
         <para>If standard List Pricing is being used, this field will display
-        the default discount percentage (if any) for the specified Customer,
+        the default discount percentage (if any) for the specified customer,
         as defined on the Customer master. On the other hand, if alternate
         List Pricing is being used, the field will display the percentage
-        difference between the alternate List Price and the Net Unit Price.
+        difference between the alternate list price and the net unit price.
         You also have the option to manually override the discount
         percentage.</para>
       </listitem>
@@ -299,8 +299,8 @@
       <term>Discount %</term>
 
       <listitem>
-        <para>Displays the percentage difference between the Customer Price
-        and the Net Unit Price.</para>
+        <para>Displays the percentage difference between the customer price
+        and the net unit price.</para>
       </listitem>
     </varlistentry>
 
@@ -312,22 +312,22 @@
         </indexterm>Net Unit Price</term>
 
       <listitem>
-        <para>Displays either the List Price minus the Customer Discount or
-        the Price from any applicable Pricing Schedule or Sale. If a Pricing
+        <para>Displays either the list price minus the customer Discount or
+        the price from any applicable Pricing Schedule or Sale. If a Pricing
         Schedule is in effect, the <emphasis>most specific</emphasis> Pricing
         Schedule Assignment will be used. The specificity of Pricing Schedule
         Assignments is determined in the following descending order: by
-        Customer Ship-To Address (most specific), by Customer, by Customer
-        Type, by Customer Type pattern, by all Customers. The lookup feature
+        customer Ship-To Address (most specific), by customer, by customer
+        Type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
 
         <tip>
           <para>The system can be configured to prevent users from editing the
-          Net Unit Price. If your system is configured that way, the Net Unit
-          Price field will not be editable. The Unit Cost and Unit Cost Markup
+          net unit price. If your system is configured that way, the Net Unit
+          Price field will not be editable. The unit cost and unit cost Markup
           % values on the Details tab can also be configured to be editable
           with permission settings. These values, if changed, will adjust the
-          Net Unit Price.</para>
+          net unit price.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -336,7 +336,7 @@
       <term>Price UOM</term>
 
       <listitem>
-        <para>The Price Unit of Measure is the same as the Selling UOM. If an
+        <para>The price Unit of Measure is the same as the Selling UOM. If an
         item has Selling UOMs defined, then the item may be sold and priced in
         these alternate UOMs. You may also select a global conversion ratio
         here. Global conversions have the label <literal>Global</literal>
@@ -346,14 +346,14 @@
         <itemizedlist>
           <listitem>
             <para>If your Pricing Schedule has multiple UOMs on it (or if
-            several Pricing Schedules share the same level of Price
+            several Pricing Schedules share the same level of price
             specificity, but they have different UOMs) then the UOM which
             matches the selected UOM will be chosen—that is, as long as the
             quantity break does not exceed the quantity being priced. If no
             entry matches the UOM with a quantity break less than the quantity
-            being priced, then the lowest value Price for any UOM will be
+            being priced, then the lowest value price for any UOM will be
             chosen. To make sure a specific UOM is always chosen at the
-            desired level of Price specificity, then your Pricing Schedules
+            desired level of price specificity, then your Pricing Schedules
             should include at least one UOM with a quantity break of 0.</para>
           </listitem>
         </itemizedlist>
@@ -364,9 +364,9 @@
       <term>Extended Price</term>
 
       <listitem>
-        <para>Displays the Extended Price. The Extended Price for a line item
-        is based on the quantity ordered multiplied by the Net Unit
-        Price.</para>
+        <para>Displays the extended price. The extended price for a line item
+        is based on the quantity ordered multiplied by the net unit
+        price.</para>
       </listitem>
     </varlistentry>
 
@@ -402,10 +402,10 @@
 
       <listitem>
         <para>Select if the line item is a warranty item. If selected, the
-        Cost of Warranty Account will be used when shipping the line item,
-        instead of the Cost of sales Account. It will also be used when
-        receiving warranty items through a Return Authorization, instead of
-        the P/O Liability Clearing Account.</para>
+        cost of Warranty account will be used when shipping the line item,
+        instead of the cost of sales account. It will also be used when
+        receiving warranty items through a return authorization, instead of
+        the P/O Liability Clearing account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -413,7 +413,7 @@
   <para>When entering sales orders you have the ability to view current supply
   considerations, including item availability and dependencies. You may also
   create replenishment Orders (if they are needed) and change work order
-  Materials and Operations.</para>
+  materials and operations.</para>
 
   <variablelist>
     <varlistentry>
@@ -424,9 +424,9 @@
         </indexterm>Show Availability</term>
 
       <listitem>
-        <para>Select to display Availability information for the sales order
+        <para>Select to display availability information for the sales order
         item in the following categories. If the feature is turned on, the
-        Availability totals will display only after a Scheduled Date has been
+        availability totals will display only after a Scheduled Date has been
         entered for the line item.</para>
       </listitem>
     </varlistentry>
@@ -455,7 +455,7 @@
               <para>Displays the quantity allocated to current sales orders
               and/or work orders in the system. An item is considered
               allocated to a sales order if a sales order line item exists for
-              the item—and that line item has not yet been issued to Shipping.
+              the item—and that line item has not yet been issued to shipping.
               An item is considered allocated to a work order if the item is a
               material requirement—and the material has not yet been issued to
               the work order. Once the current sales order line item is saved,
@@ -533,7 +533,7 @@
                   <term>Scheduled Date</term>
 
                   <listitem>
-                    <para>Select to show projected Availability based on the
+                    <para>Select to show projected availability based on the
                     scheduled date.</para>
                   </listitem>
                 </varlistentry>
@@ -542,7 +542,7 @@
                   <term>Lead Time</term>
 
                   <listitem>
-                    <para>Select to show projected Availability based on the
+                    <para>Select to show projected availability based on the
                     Lead Time specified in the Item Site master.</para>
                   </listitem>
                 </varlistentry>
@@ -618,7 +618,7 @@
               may appear, depending on how the item site for the item is set
               up: "Create Purchase Request" or "Create Purchase Order." In
               either case, you will be given the option to override any item
-              Source Price(s) which are in place. Also, linked purchase orders
+              source price(s) which are in place. Also, linked purchase orders
               will be updated when sales order details are changed. If your
               site is configured to use drop shipping, an additional "Drop
               Ship" flag will also be shown for linked purchase orders. The
@@ -626,7 +626,7 @@
               linked to the sales order with a matching Ship-To Address and
               add the line item to that Order—or create a new Order if none
               exists. Drop ship purchase orders inherit the Ship-To Address
-              and Contact information from the sales order. Item Sources must
+              and Contact information from the sales order. Item sources must
               be defined for drop ship items—including each component of a Kit
               item.</para>
 
@@ -717,7 +717,7 @@
       <term>W/O Materials and Operations</term>
 
       <listitem>
-        <para>Display lists an exploded view of the Materials and Operations
+        <para>Display lists an exploded view of the materials and operations
         for the work order.</para>
       </listitem>
     </varlistentry>
@@ -726,7 +726,7 @@
       <term>NEW MATL.</term>
 
       <listitem>
-        <para>Select to add Materials to the BOM for the work order.</para>
+        <para>Select to add materials to the BOM for the work order.</para>
       </listitem>
     </varlistentry>
 
@@ -734,7 +734,7 @@
       <term>NEW OPER.</term>
 
       <listitem>
-        <para>Select to add Operations to the routing for this Order item.</para>
+        <para>Select to add operations to the routing for this Order item.</para>
       </listitem>
     </varlistentry>
 
@@ -742,7 +742,7 @@
       <term>EDIT</term>
 
       <listitem>
-        <para>The Materials and Operations can be changed from this screen
+        <para>The materials and operations can be changed from this screen
         while placing the Order. To do this, click the EDIT button.</para>
       </listitem>
     </varlistentry>
@@ -751,7 +751,7 @@
       <term>DELETE</term>
 
       <listitem>
-        <para>To remove Materials or Operations from the work order, highlight
+        <para>To remove materials or operations from the work order, highlight
         the line in the exploded work order view and click the DELETE button.
         Repeat for every line that needs to be removed.</para>
       </listitem>
@@ -762,7 +762,7 @@
 
       <listitem>
         <para>If this option is selected, the price will be based on the price
-        of all Materials and Operations. These Material and Operations prices
+        of all materials and operations. These material and operations prices
         can be edited from the Sales Order Item screen.</para>
       </listitem>
     </varlistentry>
@@ -786,7 +786,7 @@
       <listitem>
         <para>If your site has enabled the "Allow Inventory Receipt Cost
         Override" option in the Inventory setup, then you will be able to
-        override the default Unit Price here. This option applies only to
+        override the default unit price here. This option applies only to
         Average cost items.</para>
       </listitem>
     </varlistentry>
@@ -801,8 +801,8 @@
     </varlistentry>
   </variablelist>
 
-  <para>To see a list of Item Sources, select the "Item Sources" option on the
-  "Supply" tab. Available Item Sources will be displayed:</para>
+  <para>To see a list of item sources, select the "Item Sources" option on the
+  "Supply" tab. Available item sources will be displayed:</para>
 
   <mediaobject>
     <imageobject>
@@ -893,7 +893,7 @@
       <term>Inventory Costing Method:</term>
 
       <listitem>
-        <para>Displays the item's inventory costing method (i.e., Standard,
+        <para>Displays the item's inventory costing method (i.e., standard,
         Average, or Job).</para>
       </listitem>
     </varlistentry>
@@ -902,7 +902,7 @@
       <term>Inventory Unit Cost</term>
 
       <listitem>
-        <para>Displays the item's inventory Unit Cost.</para>
+        <para>Displays the item's inventory unit cost.</para>
       </listitem>
     </varlistentry>
 
@@ -971,7 +971,7 @@
       <term>Inventory Costing Method:</term>
 
       <listitem>
-        <para>Displays the item's inventory costing method (i.e., Standard,
+        <para>Displays the item's inventory costing method (i.e., standard,
         Average, or Job).</para>
       </listitem>
     </varlistentry>
@@ -980,7 +980,7 @@
       <term>Inventory Unit Cost</term>
 
       <listitem>
-        <para>Displays the item's inventory Unit Cost.</para>
+        <para>Displays the item's inventory unit cost.</para>
       </listitem>
     </varlistentry>
 
@@ -988,27 +988,27 @@
       <term>Purchase Orders</term>
 
       <listitem>
-        <para>Display lists Invoices for the item, using the specified date
+        <para>Display lists invoices for the item, using the specified date
         range.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>If an item has Characteristics associated with it, you have the option
-  of linking those Characteristics to a sales order line item. And, in the
+  <para>If an item has characteristics associated with it, you have the option
+  of linking those characteristics to a sales order line item. And, in the
   case where sales order demand automatically generates either a purchase
-  request or a work order, the Characteristics defined here will be inherited
+  request or a work order, the characteristics defined here will be inherited
   by those subsequent Orders.</para>
 
   <tip>
     <para>For configured items, an additional pricing field will be available
     on the Item Characteristic screen. This pricing information will be passed
     to sales order line items when particular configurations are sold. The
-    Price for configured items may vary depending on the Characteristics
+    price for configured items may vary depending on the characteristics
     selected at sales order entry time.</para>
   </tip>
 
-  <para>To associate Characteristics with a sales order line item, select the
+  <para>To associate characteristics with a sales order line item, select the
   "Item Characteristics" tab at the bottom of the screen, as shown
   below:</para>
 
@@ -1022,7 +1022,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When selecting or editing Characteristics for a sales order line item,
+  <para>When selecting or editing characteristics for a sales order line item,
   you are presented with the following options:</para>
 
   <variablelist>
@@ -1030,8 +1030,8 @@
       <term>Name</term>
 
       <listitem>
-        <para>Displays the name of any item Characteristics associated with
-        the item. Characteristics defined as item Characteristics may be
+        <para>Displays the name of any item characteristics associated with
+        the item. Characteristics defined as item characteristics may be
         associated with items on the Item master.</para>
       </listitem>
     </varlistentry>
@@ -1041,12 +1041,12 @@
 
       <listitem>
         <para>Displays the default Value associated with an item
-        Characteristic, but permits you to specify an alternate Value. When
-        associating Characteristic Values with a sales order line item, you
+        characteristic, but permits you to specify an alternate Value. When
+        associating characteristic Values with a sales order line item, you
         have four options: 1) Select the default Value; 2) select an alternate
         pre-defined Value; 3) manually enter a new Value in place of the
         pre-defined Value; or 4) make no selection. Making no selection means
-        the Characteristics will not be associated with the sales order line
+        the characteristics will not be associated with the sales order line
         item.</para>
       </listitem>
     </varlistentry>
@@ -1058,11 +1058,11 @@
         <para>If the sales order item is a configured item (i.e., Job or
         Reference item), the "Base Price" option will be shown.
         Characteristics associated with configured items may have additional
-        List Prices associated with them. As a result, when Characteristics
-        are added to a sales order item, the overall Price of the item may
-        increase. The Base Price shows the Price before any Characteristic
-        List Prices have been added to the Net Unit Price. To learn more about
-        adding price Characteristics to configured items, see <xref
+        list prices associated with them. As a result, when characteristics
+        are added to a sales order item, the overall price of the item may
+        increase. The base price shows the price before any characteristic
+        list prices have been added to the net unit price. To learn more about
+        adding price characteristics to configured items, see <xref
         linkend="configItemChar"/>.</para>
       </listitem>
     </varlistentry>
@@ -1070,16 +1070,16 @@
 
   <note>
     <para>During the creation of a new sales order for a configured item, the
-    work order is imploded and the Characteristics will remain enabled and may
-    be edited. When the SAVE button is clicked, the work order Characteristics
+    work order is imploded and the characteristics will remain enabled and may
+    be edited. When the SAVE button is clicked, the work order characteristics
     are updated and the work order is exploded. To edit the sales order item
     for a configured item, the work order needs to be manually imploded first.
-    This will enable the Characteristics and allow editing. When the SAVE
-    button is clicked, the work order Characteristics will be updated and the
+    This will enable the characteristics and allow editing. When the SAVE
+    button is clicked, the work order characteristics will be updated and the
     work order exploded.</para>
   </note>
 
-  <para>To view Costs or adjust Tax information for a sales order line item,
+  <para>To view costs or adjust Tax information for a sales order line item,
   select the "Detail" tab at the bottom of the screen, as shown below:</para>
 
   <para><screenshot>
@@ -1092,7 +1092,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing Costs or adjusting Tax information for a sales order line
+  <para>When viewing costs or adjusting Tax information for a sales order line
   item, you are presented with the following options:</para>
 
   <variablelist>
@@ -1100,13 +1100,13 @@
       <term>Unit Cost</term>
 
       <listitem>
-        <para>Depending on configuration settings, the Unit Cost displays the
-        Wholesale Price or the standard or average inventory Cost. For Average
-        Cost items having zero QOH, the standard cost will be used instead of
+        <para>Depending on configuration settings, the unit cost displays the
+        wholesale price or the standard or average inventory cost. For average
+        cost items having zero QOH, the standard cost will be used instead of
         the average cost, if it exists.<note>
             <para>This value can be changed if the user has the necessary
-            permissions. A change in this value will result in a new Net Unit
-            Price.</para>
+            permissions. A change in this value will result in a new net unit
+            price.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -1115,7 +1115,7 @@
       <term>List Price</term>
 
       <listitem>
-        <para>Displays the sales List Price per unit.</para>
+        <para>Displays the sales list price per unit.</para>
       </listitem>
     </varlistentry>
 
@@ -1123,8 +1123,8 @@
       <term>Customer Price</term>
 
       <listitem>
-        <para>Displays the Price given to the specified Customer. Special
-        Customer Prices can be set for individual Customers or Customer Groups
+        <para>Displays the price given to the specified customer. Special
+        customer prices can be set for individual customers or customer Groups
         by using a Pricing Schedule.</para>
       </listitem>
     </varlistentry>
@@ -1137,10 +1137,10 @@
         </indexterm>List Price Discount %</term>
 
       <listitem>
-        <para>Displays the percentage discount off the List Price. Indicates
-        the difference between the List Price for an item and the Net Unit
-        Price as a percentage. This is the margin between the Net Unit Price
-        and the List Price.</para>
+        <para>Displays the percentage discount off the list price. Indicates
+        the difference between the list price for an item and the net unit
+        price as a percentage. This is the margin between the net unit price
+        and the list price.</para>
       </listitem>
     </varlistentry>
 
@@ -1148,11 +1148,11 @@
       <term>Unit Cost Markup %</term>
 
       <listitem>
-        <para>Displays the effective markup which is based on the Unit Cost
-        and Net Unit Price values.<note>
-            <para>Like the Unit Cost, this value can be changed by a user with
-            sufficient permissions and such a change will adjust Net Unit
-            Price.</para>
+        <para>Displays the effective markup which is based on the unit cost
+        and net unit price values.<note>
+            <para>Like the unit cost, this value can be changed by a user with
+            sufficient permissions and such a change will adjust net unit
+            price.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -1200,7 +1200,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To enter Notes related to a sales order line item, select the "Notes"
+  <para>To enter notes related to a sales order line item, select the "Notes"
   tab at the bottom of the screen, as shown below:</para>
 
   <para><screenshot>
@@ -1213,7 +1213,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes related to a sales order line item, you are
+  <para>When adding notes related to a sales order line item, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -1222,19 +1222,19 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the sales order line item.</para>
+        general notes related to the sales order line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <tip>
     <para>If a sales order item is marked to create a work order, the
-    Production Notes for the created work order will contain the sales order
-    number, the Customer Name, and any additional sales order line item
-    Notes.</para>
+    Production notes for the created work order will contain the sales order
+    number, the customer Name, and any additional sales order line item
+    notes.</para>
   </tip>
 
-  <para>To add Comments related to a sales order line item, select the
+  <para>To add comments related to a sales order line item, select the
   "Comments" tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -1249,14 +1249,14 @@
 
   <note>
     <para>Whenever sales order line items are created or their quantities are
-    changed, the system will automatically generate a Comment, which will
-    appear in the list of line item Comments.</para>
+    changed, the system will automatically generate a comment, which will
+    appear in the list of line item comments.</para>
   </note>
 
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>To define an alternate Cost of sales Account for a sales order Line
+  <para>To define an alternate cost of sales account for a sales order Line
   item, select the "Accounting" tab at the bottom of the screen, as shown
   below:</para>
 
@@ -1270,8 +1270,8 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When defining an alternate Cost of Sales Account or alternate Revenue
-  Account for a sales order line item, you are presented with
+  <para>When defining an alternate cost of sales account or alternate Revenue
+  account for a sales order line item, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -1279,9 +1279,9 @@
       <term>Alternate Cost of Sales Account</term>
 
       <listitem>
-        <para>Specify an alternate Account to be used for the Cost of sales.
-        This Account will be used instead of the typical Account pre-defined
-        in the sales Accounts Assignments.</para>
+        <para>Specify an alternate account to be used for the cost of sales.
+        This account will be used instead of the typical account pre-defined
+        in the sales accounts assignments.</para>
       </listitem>
     </varlistentry>
 
@@ -1289,8 +1289,8 @@
       <term>Alternate Revenue Account</term>
 
       <listitem>
-        <para>Specify an alternate Account to be used as the Revenue Account.
-        This Account will be used instead of the typical Account predefined in
+        <para>Specify an alternate account to be used as the Revenue account.
+        This account will be used instead of the typical account predefined in
         the Receivables Assignments.</para>
       </listitem>
     </varlistentry>

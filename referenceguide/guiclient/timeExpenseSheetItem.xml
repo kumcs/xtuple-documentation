@@ -45,7 +45,7 @@
       <listitem>
         <para>Enter the number of the Project associated with the entry. This
         is a required field. Depending on how the Project is configured, many
-        of the other fields in the entry (e.g., Customer and item numbers)
+        of the other fields in the entry (e.g., customer and item numbers)
         will be filled out automatically from the Project information.</para>
       </listitem>
     </varlistentry>
@@ -73,9 +73,9 @@
     <varlistentry>
       <term>Customer</term>
       <listitem>
-        <para>Enter the number of the Customer associated with the entry. This
+        <para>Enter the number of the customer associated with the entry. This
         field may be filled automatically from the Project information,
-        depending on how the Project is configured. The Customer is needed for
+        depending on how the Project is configured. The customer is needed for
         billable entries, so the system knows who to invoice for the time
         and/or expense.</para>
       </listitem>
@@ -83,7 +83,7 @@
     <varlistentry>
       <term>Cust. PO#</term>
       <listitem>
-        <para>Enter the Customer purchase order number, if any.</para>
+        <para>Enter the customer purchase order number, if any.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -91,7 +91,7 @@
       <listitem>
         <para>Enter an item number to associate with the entry, if one is not
         already linked from the specified Project Task. This is a required
-        field. The item number is needed to map an Expense Account to the
+        field. The item number is needed to map an Expense account to the
         Task, which is required for subsequent General Ledger transactions.
         Only Reference items which have been configured specifically to work
         with time and expense entries (on the "Project" tab of the Item
@@ -124,7 +124,7 @@
       <term>Billable</term>
       <listitem>
         <para>Select if the work performed or the expense incurred is billable
-        to the specified Customer. If not selected, time entries will be
+        to the specified customer. If not selected, time entries will be
         booked to overhead and expense entries will be reimbursable.</para>
       </listitem>
     </varlistentry>
@@ -132,7 +132,7 @@
       <term>Rate</term>
       <listitem>
         <para>For billable time entries, enter the rate to be billed to the
-        Customer. Depending on how the Project is configured, this information
+        customer. Depending on how the Project is configured, this information
         may be filled in automatically for you.</para>
       </listitem>
     </varlistentry>
@@ -156,7 +156,7 @@
       <listitem>
         <para>For time entries, displays the Employee's hourly rate (or cost),
         as distinguished from the billable rate charged to the
-        Customer.</para>
+        customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>

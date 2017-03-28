@@ -10,24 +10,24 @@
   <para>Work Orders define requirements for the production of manufactured
   items. You may also create Work Orders for purchased items that you normally
   purchase, but you occasionally manufacture. These items may have a Bill of
-  Materials (BOM)—or not. The system supports both BOM-based and non-BOM-based
+  materials (BOM)—or not. The system supports both BOM-based and non-BOM-based
   Work Orders.</para>
   <variablelist>
     <varlistentry>
       <term>BOM-based</term>
       <listitem>
-        <para>Material Requirements are drawn from the Bill of Materials when
+        <para>Material requirements are drawn from the bill of materials when
         the Work Order is exploded, using the specified Revision. Users may
-        add or subtract Material Requirements as needed.</para>
+        add or subtract material requirements as needed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Non-BOM-based</term>
       <listitem>
         <para>Ideal for labor-only Work Orders having a routing
-        but no BOM—for example, service Work Orders which require labor
-        Operations only. Also good for items or Jobs where the Material
-        Requirements are not-known—but must be added on an ad-hoc
+        but no BOM—for example, service work orders which require labor
+        operations only. Also good for items or Jobs where the material
+        requirements are not-known—but must be added on an ad-hoc
         basis.</para>
       </listitem>
     </varlistentry>
@@ -78,7 +78,7 @@
           Order using the Work Order screen. Similarly, production posting for
           Job items occurs in a unique way. Production for Job item Work
           Orders is posted when the sales order which demanded the Job item is
-          issued to Shipping. This is the only way to post production for Job
+          issued to shipping. This is the only way to post production for Job
           item Work Orders.</para>
         </note>
       </listitem>
@@ -98,8 +98,8 @@
         <note>
           <para>Order Parameters may have an impact on Work Order quantity if
           the "on Manual Orders" option is selected in the Item Site master
-          for a manufactured item. If Order Parameters are in effect, the Work
-          Order must conform to those restrictions. Both Minimum Order size
+          for a manufactured item. If Order Parameters are in effect, the work
+          order must conform to those restrictions. Both Minimum Order size
           and Order Multiple may be governed by Order Parameter
           settings.</para>
         </note>
@@ -118,8 +118,8 @@
         disassembling items, the system will not enforce order parameters
         defined at the item site level.</para>
         <note>
-          <para>If there are Average Cost items on a disassembly order, those
-          components will be returned to inventory using Standard Cost when
+          <para>If there are average cost items on a disassembly order, those
+          components will be returned to inventory using standard cost when
           they are backflushed.</para>
         </note>
       </listitem>
@@ -192,56 +192,56 @@
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a Project to the Work
         Order—transactions related to the Work Order will include the Project
-        Number as the final segment of affected G/L Account Numbers. Account
-        Numbers related to the following transactions will include the Project
-        Number as the final segment: Issue Materials, Post Operations, Post
-        Production, Return Material, Correct Post Operations, Correct Post
-        Production, Scrap Material.</para>
+        number as the final segment of affected G/L Account Numbers. Account
+        numbers related to the following transactions will include the Project
+        number as the final segment: issue materials, post operations, post
+        production, return material, correct post operations, correct post
+        production, scrap material.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Detail</term>
       <listitem>
         <para>The "Detail" tab provides a kind of workbench for managing
-        Materials, child Work Orders, and Operations associated with a Work
+        materials, child work orders, and operations associated with a Work
         Order. Use the context-sensitive right-click menu to perform actions
-        related to Work Order management. The display is a nested list, with a
+        related to work order management. The display is a nested list, with a
         plus ("+") sign located to the far left of the display next to each
         row that may be expanded to lower levels. By clicking your mouse on a
         plus sign, you reveal lower levels of information related to the
         group. The following color-coding has been implemented to simplify
-        navigation: green (Work Orders), blue (Operations), black
-        (Materials).</para>
+        navigation: green (work orders), blue (operations), black
+        (materials).</para>
         <variablelist>
           <varlistentry>
             <term>Show</term>
             <listitem>
-              <para>Specify the type of Work Order information you would like
+              <para>Specify the type of work order information you would like
               to include in the display:</para>
               <variablelist>
                 <varlistentry role="manufacturing">
                   <term>Operations</term>
                   <listitem>
-                    <para>Select to include information about Work Order
-                    Operations in the display.</para>
+                    <para>Select to include information about work order
+                    operations in the display.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
                   <term>Materials</term>
                   <listitem>
-                    <para>Select to include information about Material
-                    Requirements in the display. Materials may be issued to
-                    exploded Work Orders only if that option is enabled in the
-                    Work Order configuration. For more information, please see
+                    <para>Select to include information about material
+                    requirements in the display. Materials may be issued to
+                    exploded work orders only if that option is enabled in the
+                    work order configuration. For more information, please see
                     <xref linkend="AllowIssue" />.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
                   <term>Indented</term>
                   <listitem>
-                    <para>Select to include child Work Orders in the display.
-                    If selected, child Work Orders will be shown indented in
-                    the Materials and Operations list.</para>
+                    <para>Select to include child work orders in the display.
+                    If selected, child work orders will be shown indented in
+                    the materials and operations list.</para>
                   </listitem>
                 </varlistentry>
               </variablelist>
@@ -253,13 +253,13 @@
     <varlistentry>
       <term>Print Traveler</term>
       <listitem>
-        <para>Select to print a Work Order Traveler at the point when the Work
+        <para>Select to print a work order traveler at the point when the Work
         Order is initially created. This option will be hidden once the Work
         Order has been created.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add Notes to a Work Order, select the "Notes" tab. The following
+  <para>To add notes to a work order, select the "Notes" tab. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -268,36 +268,36 @@
         </imageobject>
         <caption>Work Order Notes</caption>
       </mediaobject>
-    </screenshot>When adding Notes to a Work Order, you are presented with the
+    </screenshot>When adding notes to a work order, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        production Notes related to the Work Order. Production Notes are
+        production notes related to the work order. Production notes are
         printed on Pick Lists and Packing Lists for reference by production
         personnel.</para>
         <tip>
-          <para>If a Work Order was created from a sales order, the Production
-          Notes field will contain the sales order number, the Customer Name,
-          and any additional sales order line item Notes.</para>
+          <para>If a work order was created from a sales order, the Production
+          notes field will contain the sales order number, the customer Name,
+          and any additional sales order line item notes.</para>
         </tip>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>If an item has Characteristics associated with it, you have the option
-  of linking those Characteristics to a Work Order item. And, in the case
-  where a Work Order is generated from a linked sales order, the Work Order
-  will inherit Characteristics defined at the sales order level.</para>
+  <para>If an item has characteristics associated with it, you have the option
+  of linking those characteristics to a work order item. And, in the case
+  where a work order is generated from a linked sales order, the work order
+  will inherit characteristics defined at the sales order level.</para>
   <tip>
-    <para>You can link Characteristics and Values to an item by using the Item
-    master. Once entered, these Characteristics and Values will be available
+    <para>You can link characteristics and Values to an item by using the Item
+    master. Once entered, these characteristics and Values will be available
     to users entering Sales Order line items.</para>
   </tip>
-  <para>To associate Characteristics with a work order, select the
+  <para>To associate characteristics with a work order, select the
   "Characteristics" tab. As you can see in the following screenshot, there are
-  two types of Characteristics available:</para>
+  two types of characteristics available:</para>
   <orderedlist>
     <listitem>
       <para><emphasis role="bold">Work Order Item Characteristics</emphasis>:
@@ -305,7 +305,7 @@
     </listitem>
     <listitem>
       <para><emphasis role="bold">Work Order Characteristics</emphasis>: Ad
-      hoc Characteristics which may be associated manually with a Work
+      hoc characteristics which may be associated manually with a Work
       Order</para>
     </listitem>
   </orderedlist>
@@ -316,14 +316,14 @@
         </imageobject>
         <caption>Work Order Characteristics</caption>
       </mediaobject>
-    </screenshot>When specifying work order Item Characteristics, you are
+    </screenshot>When specifying work order Item characteristics, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Work Order Item Characteristics</term>
       <listitem>
-        <para>Displays the name of any item Characteristics associated with
-        the item. Characteristics defined as item Characteristics may be
+        <para>Displays the name of any item characteristics associated with
+        the item. Characteristics defined as item characteristics may be
         associated with items on the Item master.</para>
       </listitem>
     </varlistentry>
@@ -331,22 +331,22 @@
       <term>Value</term>
       <listitem>
         <para>Displays the default Value associated with an item
-        Characteristic, but permits you to specify an alternate Value. When
-        associating Characteristic Values with a work order item, you have
+        characteristic, but permits you to specify an alternate Value. When
+        associating characteristic Values with a work order item, you have
         four options: 1) Select the default Value; 2) select an alternate
         pre-defined Value; 3) manually enter a new Value in place of the
         pre-defined Value; or 4) make no selection. Making no selection means
-        the Characteristics will not be associated with the work order
+        the characteristics will not be associated with the work order
         item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Work order Characteristics, by contrast, are ad hoc in nature and may
+  <para>Work order characteristics, by contrast, are ad hoc in nature and may
   be created manually and linked to the Work order.</para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To create or view Comments related to a work order, select the
+  <para>To create or view comments related to a work order, select the
   "Comments" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -357,20 +357,20 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Work order Comments may not be added at the time of work order
-    creation. Instead, use the Production Notes tab for entering Notes related
+    <para>Work order comments may not be added at the time of work order
+    creation. Instead, use the Production Notes tab for entering notes related
     to a work order.</para>
   </note>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>Once a work order is in process—that is, either Materials have been
-  issued or Production or Operations have been posted—you can begin to view
-  Costing information for the work order. To view Costing information for the
+  <para>Once a work order is in process—that is, either materials have been
+  issued or Production or operations have been posted—you can begin to view
+  costing information for the work order. To view costing information for the
   work order, select the "Costing" tab. The following screen will
   appear:</para>
   <para><tip>
       <para>The Costing tab will not be visible until after a work order has
-      been created. You will not see Costing information when creating a Work
+      been created. You will not see costing information when creating a Work
       Order.</para>
     </tip><screenshot>
       <mediaobject>
@@ -379,23 +379,23 @@
         </imageobject>
         <caption>Work Order Costing</caption>
       </mediaobject>
-    </screenshot>When viewing work order Costing information, you are
+    </screenshot>When viewing work order costing information, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Accumulated Costs</term>
       <listitem>
         <para>Information about the following categories of currently
-        accumulated work order Costs will be shown:</para>
+        accumulated work order costs will be shown:</para>
         <variablelist>
           <varlistentry>
             <term>Posted</term>
             <listitem>
               <para>Displays the current posted value of the work order. The
               posted value is equal to the total cost accumulated on the Work
-              Order, including both labor and Materials. The posted value will
+              Order, including both labor and materials. The posted value will
               be the same as the WIP value until the point when finished goods
-              are received. Ultimately, once Production (or Operations)
+              are received. Ultimately, once Production (or operations)
               posting is completed, the posted value will be equal to the
               received value. If these two values are different, then a
               variance will result.</para>
@@ -423,7 +423,7 @@
     <varlistentry>
       <term>Cost Recognition</term>
       <listitem>
-        <para>Used by work orders for Job and Average Cost items to determine
+        <para>Used by work orders for Job and average cost items to determine
         how and when costs are recognized:</para>
         <variablelist>
           <varlistentry>
@@ -445,13 +445,13 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>The default Cost Recognition method is defined at the system level;
+    <para>The default cost recognition method is defined at the system level;
     however, you may change the setting manually at the work order
     level.</para>
   </note>
   <para role="standard">When creating a work order, you have the option to
-  specify which Revision of the work order item's Bill of Materials and Bill
-  of Operations you want to use. By default, the active Revision will be used.
+  specify which Revision of the work order item's bill of materials and bill
+  of operations you want to use. By default, the active Revision will be used.
   Once the work order has been created, these options will become read-only.
   To specify Revision information for a work order item, select the "Revision"
   tab. The following screen will appear:</para>
@@ -489,7 +489,7 @@
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
-      <term>Bill of Operations</term>
+      <term>Routing</term>
       <listitem>
         <para>Specify the routing revision you want to use for the work order. You
         can select the current Active or any Substitute routing. By default, the

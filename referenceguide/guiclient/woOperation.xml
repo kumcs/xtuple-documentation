@@ -4,7 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="woOperation">
   <title>Create Work Order Operation</title>
-  <para>To create a work order Operation, select the "Create Work Order
+  <para>To create a work order operation, select the "Create Work Order
   Operation" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -14,14 +14,14 @@
         <caption>Create New Work Order Operation</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a work order Operation, you are presented with the
+  <para>When creating a work order operation, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
         <para>Enter the work order number of the work order you want to create
-        an Operation for.</para>
+        an operation for.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -61,14 +61,14 @@
     <varlistentry>
       <term>Standard Oper.</term>
       <listitem>
-        <para>Select a Standard Operation to be used, if any.</para>
+        <para>Select a standard operation to be used, if any.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Operation Type</term>
       <listitem>
-        <para>If a Standard Operation is specified, the Operation Type
-        associated with the Standard Operation will be displayed.</para>
+        <para>If a standard operation is specified, the operation type
+        associated with the standard operation will be displayed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -88,7 +88,7 @@
     <varlistentry>
       <term>Work Center</term>
       <listitem>
-        <para>Specify a Work Center to be used for specified Operation.</para>
+        <para>Specify a work center to be used for specified operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -100,7 +100,7 @@
     <varlistentry>
       <term>Oper. Seq. #</term>
       <listitem>
-        <para>Indicates the next available work order Operations sequence
+        <para>Indicates the next available work order operations sequence
         number.</para>
       </listitem>
     </varlistentry>
@@ -115,9 +115,9 @@
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
         value up to a maximum of 99. (Default is "1".) Value entered defines
-        when the specified Operation is to begin. For example, if the default
-        value "1" is entered, the Operation will begin on the first day of the
-        manufacturing process. If "2" is entered, the Operation will begin on
+        when the specified operation is to begin. For example, if the default
+        value "1" is entered, the operation will begin on the first day of the
+        manufacturing process. If "2" is entered, the operation will begin on
         the second day.</para>
       </listitem>
     </varlistentry>
@@ -146,15 +146,15 @@
         </indexterm>Total Setup Time</term>
       <listitem>
         <para>Amount entered represents the time required to set up the Work
-        Center for the Operation, measured in minutes.</para>
+        Center for the operation, measured in minutes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Report Setup Time</term>
       <listitem>
-        <para>Select to report setup time. Must be selected for labor Costs
+        <para>Select to report setup time. Must be selected for labor costs
         associated with setup to be tracked in the G/L and elsewhere. If not
-        selected, these Costs will not be reported.</para>
+        selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -166,16 +166,16 @@
           <secondary>run time for operations</secondary>
         </indexterm>Total Run Time</term>
       <listitem>
-        <para>Amount entered represents the total run time for the Operation,
+        <para>Amount entered represents the total run time for the operation,
         measured in minutes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Report Run Time</term>
       <listitem>
-        <para>Select to report run time. Must be selected for labor Costs
+        <para>Select to report run time. Must be selected for labor costs
         associated with run time to be tracked in the G/L and elsewhere. If
-        not selected, these Costs will not be reported.</para>
+        not selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -185,13 +185,13 @@
         </indexterm>Production UOM</term>
       <listitem>
         <para>Select a Unit of Measure—or enter a free-form UOM. Specify a UOM
-        to be used optionally when work order Operations are posted for the
-        specified Operation. Operations may be posted using either the
-        Inventory or Production UOM. In addition, different Operations in a
-        single Bill of Operations may use different Production UOMs. For
+        to be used optionally when work order operations are posted for the
+        specified operation. Operations may be posted using either the
+        Inventory or Production UOM. In addition, different operations in a
+        single routing may use different Production UOMs. For
         example, if you are producing soup, you might mix the soup in one
-        Operation using UOM = BATCH. But when canning the soup, the canning
-        Operation might use UOM = CAN. If you post Operations using the
+        operation using UOM = BATCH. But when canning the soup, the canning
+        operation might use UOM = CAN. If you post operations using the
         Production UOM, the Inventory/Production UOM ratio normalizes the
         posting so that the Inventory impact is recorded using the Inventory
         UOM.</para>
@@ -199,14 +199,14 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>When posting work order Operations, you are given the option to post
-    Operations using Production UOMs or Inventory UOMs.</para>
+    <para>When posting work order operations, you are given the option to post
+    operations using Production UOMs or Inventory UOMs.</para>
   </note>
   <variablelist>
     <varlistentry>
       <term>Production/Inventory UOM Ratio</term>
       <listitem>
-        <para>When work order Operations are posted using the Production UOM,
+        <para>When work order operations are posted using the Production UOM,
         the Inventory/Production UOM ratio normalizes the posting so that the
         Inventory impact is recorded in the Inventory UOM.</para>
       </listitem>
@@ -216,7 +216,7 @@
     <para>Labor and <indexterm significance="normal">
         <primary>overhead</primary>
         <secondary>in work order costing</secondary>
-      </indexterm>overhead Costs associated with setup and run times must be
+      </indexterm>overhead costs associated with setup and run times must be
     reported if they are to be tracked in the G/L and elsewhere. To report
     setup and run times, select the appropriate boxes in the Operation
     screen.</para>
@@ -262,19 +262,19 @@
       <term>Receive to Stock at this Operation</term>
       <listitem>
         <para>Select if you want finished goods to be received into Inventory
-        when this Operation is posted. Only one work order Operation may have
+        when this operation is posted. Only one work order operation may have
         this flag set. If this option is selected, the General Ledger will
         show the finished goods being received into Inventory when the
-        Operation is posted.</para>
+        operation is posted.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Auto. Issue Components at this Operation</term>
       <listitem>
         <para>Select if you want linked component material to be issued
-        automatically (i.e., backflushed) when this Operation is posted. If
+        automatically (i.e., backflushed) when this operation is posted. If
         this option is selected, the General Ledger will show the component
-        materials being removed from Inventory when this Operation is
+        materials being removed from Inventory when this operation is
         posted.</para>
         <note>
           <para>The "Auto. Issue" setting applies only to component items
@@ -285,7 +285,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add instructions to the work order Operation, select the
+  <para>To add instructions to the work order operation, select the
   "Instructions" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -295,14 +295,14 @@
         <caption>Work Order Operation</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding Instructions to a work order Operation, you are presented
+  <para>When adding Instructions to a work order operation, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Instructions</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        instructions related to the Operation.</para>
+        instructions related to the operation.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -314,7 +314,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view Materials related to the work order Operation, select the
+  <para>To view materials related to the work order operation, select the
   "Materials" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>

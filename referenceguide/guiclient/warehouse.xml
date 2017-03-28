@@ -92,11 +92,11 @@
         to. This account is used as a general bucket for General Ledger
         transactions which the system, for one reason or another, may not know
         how to handle. A transaction is considered unassigned if the affected
-        item site does not have a Cost Category assigned to it for the
+        item site does not have a cost category assigned to it for the
         transaction type in question. By specifying an Account to post
         unassigned transactions to, you can remove most of the ambiguous error
-        messages that may result from inadequately assigned item site Cost
-        Categories. For example, if an inventory Asset Account is not defined,
+        messages that may result from inadequately assigned item site cost
+        categories. For example, if an inventory Asset Account is not defined,
         inventory transactions may proceed—but the Asset portion of the
         transactions will be posted to the unassigned transaction
         Account.</para>
@@ -148,7 +148,7 @@
                 <secondary>designation of</secondary>
               </indexterm>Shipping Site</term>
             <listitem>
-              <para>Select if the site is used for Shipping. Not selecting
+              <para>Select if the site is used for shipping. Not selecting
               means materials are not shipped from the site.</para>
             </listitem>
           </varlistentry>
@@ -169,12 +169,12 @@
                 <secondary>enforcing zones in</secondary>
               </indexterm>Enforce the use of Zones</term>
             <listitem>
-              <para>Select to enforce the use of Zones within the site. A site
-              Zone is a defined section or area within a site. For example,
-              separate site Zones might be designated to define areas where
-              Orders are selected, Picked, and Packed. If selected, Zones may
+              <para>Select to enforce the use of zones within the site. A site
+              zone is a defined section or area within a site. For example,
+              separate site zones might be designated to define areas where
+              Orders are selected, Picked, and Packed. If selected, zones may
               be specified when defining site Locations. If not selected, site
-              Locations may not include Zones.</para>
+              Locations may not include zones.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -194,7 +194,7 @@
                 <secondary>for sites</secondary>
               </indexterm>Tax Zone</term>
             <listitem>
-              <para>Specify the Tax Zone associated with the site.</para>
+              <para>Specify the tax zone associated with the site.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -205,7 +205,7 @@
             <listitem>
               <para>Enter default free on board (FOB) Terms for the site. The
               default F.O.B. Terms will be entered on the Sales Order header
-              for any Orders where the site is specified as the Shipping
+              for any Orders where the site is specified as the shipping
               site.</para>
             </listitem>
           </varlistentry>
@@ -254,12 +254,12 @@
       <varlistentry>
         <term>Default Shipping Form</term>
         <listitem>
-          <para>Specify a default Shipping Form to be used by the Transit
-          site. If a Shipping Form is selected here, it will be used by
+          <para>Specify a default shipping form to be used by the Transit
+          site. If a shipping form is selected here, it will be used by
           default on the Transfer Order header whenever the specified Transit
           site is used.</para>
           <note>
-            <para>The Shipping Form will be used when printing Packing Lists
+            <para>The shipping form will be used when printing Packing Lists
             for the transfer order.</para>
           </note>
         </listitem>
@@ -267,15 +267,15 @@
       <varlistentry>
         <term>Default Cost Category</term>
         <listitem>
-          <para>Specify a default Cost Category to be used by the Transit
-          site. Associating a Cost Category with a Transit site makes it
+          <para>Specify a default cost category to be used by the Transit
+          site. Associating a cost category with a Transit site makes it
           possible for the system to create item sites for Transit sites
           automatically when transfer order inventory is shipped. This greatly
           simplifies the use of Transit sites, as item sites do not need to be
           created manually beforehand. The accounting for in-transit goods is
-          handled by the default Cost Category associated with the Transit
+          handled by the default cost category associated with the Transit
           site.<tip>
-              <para>Consider creating a separate Cost Category for Transit
+              <para>Consider creating a separate cost category for Transit
               sites. In this way you can use unique Accounts to reflect the
               movement of Inventory which is in-transit.</para>
             </tip></para>
@@ -284,10 +284,10 @@
       <varlistentry>
         <term>Shipping Comments</term>
         <listitem>
-          <para>Enter shipping Comments you want to associate with the Transit
-          site. Shipping Comments entered here will be used on any Transfer
+          <para>Enter shipping comments you want to associate with the Transit
+          site. Shipping comments entered here will be used on any Transfer
           Order which uses specified Transit site. This is a scrolling text
-          field with word-wrapping for entering shipping Comments.</para>
+          field with word-wrapping for entering shipping comments.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
@@ -355,9 +355,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Site Zones are defined sections or areas within a site. For example,
-  separate site Zones might be designated to define areas where Orders are
-  selected, Picked, and Packed. To define or maintain site Zones, select the
+  <para>Site zones are defined sections or areas within a site. For example,
+  separate site zones might be designated to define areas where Orders are
+  selected, Picked, and Packed. To define or maintain site zones, select the
   "Site Zones" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -367,7 +367,7 @@
         <caption>Site Zones Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When defining or maintaining site Zones, you are presented with the
+  <para>When defining or maintaining site zones, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
@@ -379,7 +379,7 @@
           <secondary>zones for</secondary>
         </indexterm>Site Zones</term>
       <listitem>
-        <para>Display includes site Zones for the specified site.</para>
+        <para>Display includes site zones for the specified site.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -392,7 +392,7 @@
     </indexterm><indexterm significance="normal">
       <primary>site zones</primary>
       <secondary>creating new</secondary>
-    </indexterm>create a new site Zone, select the NEW button. The following
+    </indexterm>create a new site zone, select the NEW button. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -402,23 +402,23 @@
         <caption>Create New Site Zone</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new site Zone, you are presented with the following
+  <para>When creating a new site zone, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Enter a unique name for the site Zone.</para>
+        <para>Enter a unique name for the site zone.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>Enter a brief description of the site Zone.</para>
+        <para>Enter a brief description of the site zone.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate Comments with a site, select the "Comments" tab. The
+  <para>To associate comments with a site, select the "Comments" tab. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>

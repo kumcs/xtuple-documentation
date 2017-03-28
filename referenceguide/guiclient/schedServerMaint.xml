@@ -36,7 +36,7 @@
       <term>Action</term>
       <listitem>
         <para>Displays the name of the action to be performed by the xTuple
-        Connect Batch Manager. In this case, the name of the action is
+        Connect batch manager. In this case, the name of the action is
         <literal>ServerMaintenance</literal>.</para>
       </listitem>
     </varlistentry>
@@ -71,8 +71,8 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>When a job is submitted to the xTuple Connect Batch Manager with a
-    scheduled time of ASAP, the Batch Manager sets the scheduled time to the
+    <para>When a job is submitted to the xTuple Connect batch manager with a
+    scheduled time of ASAP, the batch manager sets the scheduled time to the
     current time. However, a job will not necessarily be run immediately if it
     is scheduled for the current time. Any pre-existing jobs with scheduled
     times prior to the current time must be completed first. In other words,

@@ -13,13 +13,13 @@
   <para>Many users of xTuple ERP have a company policy to accept returned
   goods. To adequately handle this situation they need a mechanism to keep a
   record of what goods have been authorized for a return, credit, or other
-  disposition. A Return Authorization is an internal approval system to
+  disposition. A return authorization is an internal approval system to
   resolve a problem resulting from dissatisfaction with products or services
   shipped. Depending on the business model, users may handle the return in a
   number of ways. The xTuple ERP return system is flexible enough to handle
   the needs of most business scenarios.</para>
-  <para>To access the Return Authorization window, Return Authorizations must
-  be enabled in Sales Configuration. A Return Authorization appears as
+  <para>To access the Return Authorization window, return authorizations must
+  be enabled in Sales Configuration. A return authorization appears as
   follows:</para>
   <para><screenshot>
       <mediaobject>
@@ -29,16 +29,16 @@
         <caption>Create New Return Authorization</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new Return Authorization, you are presented with the
+  <para>When creating a new return authorization, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Auth #</term>
       <listitem>
-        <para>Next available Return Authorization Number will automatically
-        display, unless your system requires you to enter Return Authorization
-        Numbers manually. Default values and input parameters for Return
-        Authorization Numbers are configurable at the system level.</para>
+        <para>Next available return authorization number will automatically
+        display, unless your system requires you to enter return authorization
+        numbers manually. Default values and input parameters for return
+        authorization numbers are configurable at the system level.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -50,18 +50,18 @@
     <varlistentry>
       <term>Expire Date</term>
       <listitem>
-        <para>Specify the date when the Return Authorization will expire. This
+        <para>Specify the date when the return authorization will expire. This
         is an optional setting used to determine the amount of time that
-        should pass before the transactions on the Return Authorization are
-        considered past due. When used, Return Authorizations cannot be
+        should pass before the transactions on the return authorization are
+        considered past due. When used, return authorizations cannot be
         received after their expiration date.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Reason Code</term>
       <listitem>
-        <para>Specify the reason for the Return Authorization. Reason Codes
-        are used to explain why a Customer return is being authorized.</para>
+        <para>Specify the reason for the return authorization. Reason Codes
+        are used to explain why a customer return is being authorized.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -73,8 +73,8 @@
           <secondary>commissions on</secondary>
         </indexterm>Sales Rep.</term>
       <listitem>
-        <para>Specify the sales representative associated with the Return
-        Authorization. Sales representatives are linked to a Customer on the
+        <para>Specify the sales representative associated with the return
+        authorization. Sales representatives are linked to a customer on the
         Customer master—either by a default setting or through the assignment
         of Ship-To Addresses. Each Ship-To Address may have a different sales
         representative associated with it. Consequently, the name of the sales
@@ -98,26 +98,26 @@
           <secondary>for return authorizations</secondary>
         </indexterm>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone associated with the Return Authorization.
-        The Tax Zone for the specified Ship-To Address will be entered here by
-        default. Otherwise, the primary Tax Zone for the Customer will be
+        <para>Specify the tax zone associated with the return authorization.
+        The tax zone for the specified Ship-To Address will be entered here by
+        default. Otherwise, the primary tax zone for the customer will be
         entered.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Shipping Zone</term>
       <listitem>
-        <para>Specify the Shipping Zone associated with the Return
-        Authorization. The Shipping Zone for the specified Ship-To Address
-        will be entered here by default. Otherwise, the primary Shipping Zone
-        for the Customer will be entered.</para>
+        <para>Specify the shipping zone associated with the return
+        authorization. The shipping zone for the specified Ship-To Address
+        will be entered here by default. Otherwise, the primary shipping zone
+        for the customer will be entered.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Disposition</term>
       <listitem>
-        <para>Specify the method to be used for handling the Return
-        Authorization. If your system is configured to use a default
+        <para>Specify the method to be used for handling the return
+        authorization. If your system is configured to use a default
         disposition, then that value will be shown.</para>
         <note>
           <para>The disposition of individual line items will be determined
@@ -129,17 +129,17 @@
             <term>Credit</term>
             <listitem>
               <para>Select to authorize the issuing of credit to the specified
-              Customer. No return is required or expected; as a result, the
+              customer. No return is required or expected; as a result, the
               Credit/Ship timetable option will be disabled for this
-              disposition method. Return Authorization line items will close
+              disposition method. Return authorization line items will close
               when an associated Credit Memo is posted.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Return</term>
             <listitem>
-              <para>Select to authorize returns from the specified Customer.
-              Return Authorization items will close when an associated Credit
+              <para>Select to authorize returns from the specified customer.
+              Return authorization items will close when an associated Credit
               Memo is posted, or when all items on a line have been returned,
               whichever comes last.</para>
             </listitem>
@@ -148,12 +148,12 @@
             <term>Replace</term>
             <listitem>
               <para>Select to authorize the replacement of items returned by
-              the specified Customer. Authorized quantities will be added as
+              the specified customer. Authorized quantities will be added as
               additional order quantity to a new associated sales order.
-              Return Authorization items will close when all items on the line
+              Return authorization items will close when all items on the line
               have been returned or all authorized items on the line have been
               shipped, whichever comes last. Any money to be credited to the
-              customer is set on the Return Authorization line; any money to
+              customer is set on the return authorization line; any money to
               be billed to the customer is set at the new sales order
               line.</para>
             </listitem>
@@ -162,11 +162,11 @@
             <term>Service</term>
             <listitem>
               <para>Select to authorize the repair or service of items
-              returned by the specified Customer. To isolate costing
+              returned by the specified customer. To isolate costing
               implications, only Job items may be selected. A new sales order
               with linked work order(s) will be created to track work and
               shipping on the repair or service. Service or repair items
-              should first be received by the Return Authorization. If the Job
+              should first be received by the return authorization. If the Job
               item is Lot/Serial controlled, you will be prompted to assign
               Lot/Serial numbers when the receipt is posted. This assignment
               of Lot/Serial Numbers can be simplified if you link authorized
@@ -183,9 +183,9 @@
             <term>Substitute</term>
             <listitem>
               <para>Select to authorize the substitution of items returned by
-              the specified Customer. Under this option, when an original
-              sales order is imported into the Return Authorization, the
-              Return Authorization line items will default to the Return
+              the specified customer. Under this option, when an original
+              sales order is imported into the return authorization, the
+              return authorization line items will default to the return
               disposition. Any new line items added beyond the original ones
               will have a default disposition of Ship.</para>
             </listitem>
@@ -196,13 +196,13 @@
     <varlistentry>
       <term>Credit/Ship</term>
       <listitem>
-        <para>Specify the timing for the Return Authorization:</para>
+        <para>Specify the timing for the return authorization:</para>
         <variablelist>
           <varlistentry>
             <term>Immediately</term>
             <listitem>
               <para>Select to issue credit or send returns to the specified
-              Customer immediately.</para>
+              customer immediately.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -218,21 +218,21 @@
     <varlistentry>
       <term>Credit by</term>
       <listitem>
-        <para>Specify the method to be used for crediting the Customer:</para>
+        <para>Specify the method to be used for crediting the customer:</para>
         <variablelist>
           <varlistentry>
             <term>None</term>
             <listitem>
-              <para>Select if you will not be issuing credit to the Customer.
+              <para>Select if you will not be issuing credit to the customer.
               If you select this option, you will be unable to add pricing
-              information at the Return Authorization line item level.</para>
+              information at the return authorization line item level.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Sales Credit</term>
             <listitem>
               <para>Select to credit the return with a sales credit to the
-              Customer's account. If selected, a sales credit will be
+              customer's account. If selected, a sales credit will be
               automatically queued up for processing on the Return
               Authorizations Workbench.</para>
             </listitem>
@@ -240,8 +240,8 @@
           <varlistentry>
             <term>Cash Payment</term>
             <listitem>
-              <para>Select to credit the return by sending the Customer a
-              payment. If selected, a Customer payment will be queued up for
+              <para>Select to credit the return by sending the customer a
+              payment. If selected, a customer payment will be queued up for
               processing on the Return Authorizations Workbench. When the
               payment is processed, a sales credit will be created
               automatically—and the payment will be applied to it.</para>
@@ -251,15 +251,15 @@
             <term>Credit Card</term>
             <listitem>
               <para>Select to credit the return with a refund to the
-              Customer's Credit Card. If selected, the payment will be queued
+              customer's credit card. If selected, the payment will be queued
               up for processing on the Return Authorizations Workbench. A
               Credit Memo will be posted when the refund is processed—and the
               refund charges will be applied to it. If the timing of the
               credit is immediately, then you may issue the refund directly
-              from the line items tab of the Return Authorization.</para>
+              from the line items tab of the return authorization.</para>
               <note>
-                <para>The Credit Card functionality must be enabled at your
-                site for the Credit Card method to function properly.</para>
+                <para>The credit card functionality must be enabled at your
+                site for the credit card method to function properly.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -287,9 +287,9 @@
     <varlistentry>
       <term>Print on Save</term>
       <listitem>
-        <para>Select to print a copy of the Return Authorization when you
-        select the SAVE button. You must have a Form "keyed on" Return
-        Authorizations for this option to work. The keyed on process is
+        <para>Select to print a copy of the return authorization when you
+        select the SAVE button. You must have a Form "keyed on" return
+        authorizations for this option to work. The keyed on process is
         described here: <xref linkend="form" />.</para>
       </listitem>
     </varlistentry>
@@ -300,23 +300,23 @@
       <listitem>
         <para>You have the option to select an original sales order for all
         disposition types. When an original sales order is selected, all Line
-        items from the original order will be imported into the Return
-        Authorization automatically. For dispositions Credit and Return this
+        items from the original order will be imported into the return
+        authorization automatically. For dispositions Credit and return this
         feature imports the original pricing and billing information. When a
-        sales order number is selected, the Customer Number and address
-        information will be populated and disabled. If the Customer is
+        sales order number is selected, the customer number and address
+        information will be populated and disabled. If the customer is
         selected first, only sales orders for that customer will appear on the
         search list.</para>
         <note>
-          <para>A sales order may be linked to only one open Return
-          Authorization at a time.</para>
+          <para>A sales order may be linked to only one open return
+          authorization at a time.</para>
         </note>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>New Order #</term>
       <listitem>
-        <para>For Return Authorizations having either Replace, Service, or
+        <para>For return authorizations having either Replace, Service, or
         Substitute dispositions, the system will automatically generate a new
         sales order for shipping purposes when the line item is received and
         posted. Authorized line item quantities are added automatically to the
@@ -328,43 +328,43 @@
       <term>Project #</term>
       <listitem>
         <para>If your system is configured to you Projects, you will have the
-        option to select a Project Number to associate with the Return
-        Authorization. This enables you to link the Return Authorization with
+        option to select a Project Number to associate with the return
+        authorization. This enables you to link the return authorization with
         other orders linked to the same project. The browse button located to
         the right of the field enables you to select from a list of available
         Projects.</para>
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
-        package installed—and you link a Project to the Return
-        Authorization—transactions related to the Return Authorization will
+        package installed—and you link a Project to the return
+        authorization—transactions related to the return authorization will
         include the Project Number as the final segment of affected G/L
-        Account Numbers. Account Numbers related to the following transactions
-        will include Project Number as the final segment: Issue to Shipping,
-        Return Stock, Ship Shipment, Recall Shipment, and Post Invoice.</para>
+        account numbers. Account numbers related to the following transactions
+        will include Project Number as the final segment: Issue to shipping,
+        return Stock, Ship Shipment, Recall Shipment, and Post invoice.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Customer #</term>
       <listitem>
-        <para>Enter the Customer Number of the Customer whose return you are
+        <para>Enter the customer number of the customer whose return you are
         authorizing. The lookup feature located to the right of the field
-        leads to a searchable Customers list. You may also access this list
+        leads to a searchable customers list. You may also access this list
         using the keyboard shortcut "CTRL + L".</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
-    <para>A valid Customer Number must be entered in the "Customer #" field
-    before line items can be added to a Return Authorization for all
-    disposition types except Return. If no valid Customer Number is entered,
-    you will not be able to add line items to the Return Authorization.
-    Additionally, Return Authorizations may only be entered for active
-    Customers.</para>
+    <para>A valid customer number must be entered in the "Customer #" field
+    before line items can be added to a return authorization for all
+    disposition types except return. If no valid customer number is entered,
+    you will not be able to add line items to the return authorization.
+    Additionally, return authorizations may only be entered for active
+    customers.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term>Cust. Type</term>
       <listitem>
-        <para>Displays the Customer Type for the specified Customer.</para>
+        <para>Displays the customer type for the specified customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -373,19 +373,19 @@
           <secondary>billing information for</secondary>
         </indexterm>Bill-To Name</term>
       <listitem>
-        <para>Displays the Customer's Bill-To name.</para>
+        <para>Displays the customer's Bill-To name.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Bill-To Phone</term>
       <listitem>
-        <para>Displays the Customer's Bill-To phone number.</para>
+        <para>Displays the customer's Bill-To phone number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Address</term>
       <listitem>
-        <para>Displays the Customer's Bill-To Address. You may manually
+        <para>Displays the customer's Bill-To Address. You may manually
         override the displayed Address information in the fields below—or use
         the lookup feature to select another Address. If a new Address is
         manually entered here, that Address will be added automatically to the
@@ -398,7 +398,7 @@
       <listitem>
         <para>Select to copy contents of billing address into Ship-To address
         field. This option is enabled if the Customer master for the specified
-        Customer indicates that free-form Ship-To's are allowed.</para>
+        customer indicates that free-form Ship-To's are allowed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -406,7 +406,7 @@
       <listitem>
         <para>Enter the number of the preferred Ship-To Address. Customers may
         maintain multiple Ship-To Addresses. If the Customer master for the
-        specified Customer indicates that free-form Ship-To's are allowed,
+        specified customer indicates that free-form Ship-To's are allowed,
         then any address may be entered. If free-form Ship-To's are not
         allowed, then the Ship-To Address must be entered using the browse
         button located to the right of the field.</para>
@@ -443,14 +443,14 @@
     <varlistentry>
       <term>Cust. PO #</term>
       <listitem>
-        <para>Enter a Customer purchase order number, as needed.</para>
+        <para>Enter a customer purchase order number, as needed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Incident</term>
       <listitem>
         <para>You have the option to associate an Incident Number with the
-        Return Authorization. The lookup feature located to the right of the
+        return authorization. The lookup feature located to the right of the
         field enables you to select from a list of available Projects.</para>
       </listitem>
     </varlistentry>
@@ -458,7 +458,7 @@
   <para><indexterm significance="normal">
       <primary>return authorizations</primary>
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify Return Authorization line items, select
+    </indexterm>To create or modify return authorization line items, select
   the "Line Items" tab at the top of the "Return Authorization" screen. The
   following screen will appear:</para>
   <para><screenshot>
@@ -469,16 +469,16 @@
         <caption>Return Authorization Line Items</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating or modifying Return Authorization line items, you are
+  <para>When creating or modifying return authorization line items, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Line Items</term>
       <listitem>
-        <para>Display lists line items for this Return Authorization. A valid
-        Customer Number must be entered in the "Customer #" field before Line
-        items can be added to the Return Authorization for all Dispositions
-        except Return. For Kit items, the Kit components will be given sub
+        <para>Display lists line items for this return authorization. A valid
+        customer number must be entered in the "Customer #" field before Line
+        items can be added to the return authorization for all Dispositions
+        except return. For Kit items, the Kit components will be given sub
         line numbers which will be displayed in an indented view.</para>
       </listitem>
     </varlistentry>
@@ -501,7 +501,7 @@
     <varlistentry>
       <term>Misc. Charge Credit Account</term>
       <listitem>
-        <para>Enter a Credit Account to assign the miscellaneous charge
+        <para>Enter a Credit account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
@@ -510,7 +510,7 @@
     <varlistentry>
       <term>Subtotal</term>
       <listitem>
-        <para>Displays the subtotal for the Return Authorization line
+        <para>Displays the subtotal for the return authorization line
         items.</para>
       </listitem>
     </varlistentry>
@@ -519,12 +519,12 @@
       <listitem>
         <para>Enter the amount of any miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
-        sales Account and also enter a description of the charge.</para>
+        sales account and also enter a description of the charge.</para>
         <tip>
-          <para>You may only enter miscellaneous charges on a Return
-          Authorization only when a valid credit method is selected and a
+          <para>You may only enter miscellaneous charges on a return
+          authorization only when a valid credit method is selected and a
           credit amount has been specified for one or more line items. Once a
-          credit memo has been created against the Return Authorization, the
+          credit memo has been created against the return authorization, the
           header amounts may not be subsequently modified.</para>
         </tip>
       </listitem>
@@ -539,12 +539,12 @@
         </indexterm>Freight</term>
       <listitem>
         <para>Manually enter the amount of freight charge to be credited on
-        the specified Return Authorization, unless the freight amount is
+        the specified return authorization, unless the freight amount is
         automatically calculated. The freight amount displayed here represents
         the total for all line items. To get a detailed view of the freight
         calculation, click on the Freight link using your mouse. Freight
-        charges may be entered during the creation or modification of a Return
-        Authorization—or at the time of shipment. The system can be configured
+        charges may be entered during the creation or modification of a return
+        authorization—or at the time of shipment. The system can be configured
         to automatically calculate freight amounts per quantity and Shipment.
         To learn more about freight configuration, see <xref
         linkend="configureSO_freightPricing" />.</para>
@@ -558,8 +558,8 @@
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Displays the total amount of Tax to be charged on the Return
-        Authorization. The Tax amount displayed here represents the total for
+        <para>Displays the total amount of Tax to be charged on the return
+        authorization. The Tax amount displayed here represents the total for
         all line item Tax amounts. To get a detailed view of the Tax
         calculation, click on the Tax link using your mouse.</para>
       </listitem>
@@ -567,7 +567,7 @@
     <varlistentry>
       <term>Total Credit</term>
       <listitem>
-        <para>Displays the total amount of the Return Authorization
+        <para>Displays the total amount of the return authorization
         credit.</para>
       </listitem>
     </varlistentry>
@@ -576,14 +576,14 @@
       <listitem>
         <para>Displays the total net due. The net is determined by adding the
         total credits with the total sales. If the amount is a negative
-        number, this means the Customer owes you money.</para>
+        number, this means the customer owes you money.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>CVV CODE</term>
       <listitem>
         <para>Enter the Card Verification Value (CVV) Code found on the back
-        of the specified Credit Card. This may be an optional feature at your
+        of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
     </varlistentry>
@@ -593,7 +593,7 @@
     <varlistentry>
       <term>AUTHORIZE LINE</term>
       <listitem>
-        <para>Highlight a Return Authorization line item and then select this
+        <para>Highlight a return authorization line item and then select this
         button to authorize the line item quantity. This option is available
         only when an imported original sales order is being used—and then, the
         original line item quantity must be shipped before it may be
@@ -603,7 +603,7 @@
     <varlistentry>
       <term>CLEAR AUTHORIZATION</term>
       <listitem>
-        <para>Highlight a Return Authorization line item and then select this
+        <para>Highlight a return authorization line item and then select this
         button to change the authorization quantity to zero for the line
         item.</para>
       </listitem>
@@ -620,7 +620,7 @@
     <varlistentry>
       <term>ENTER RECEIPT</term>
       <listitem>
-        <para>Highlight an authorized Return Authorization line item and then
+        <para>Highlight an authorized return authorization line item and then
         select this button to receive the authorized quantity. The received
         quantity will be saved for subsequent posting.</para>
       </listitem>
@@ -636,16 +636,16 @@
     <varlistentry>
       <term>POST RECEIPTS</term>
       <listitem>
-        <para>Select to post all pending receipts for the Return
-        Authorization.</para>
+        <para>Select to post all pending receipts for the return
+        authorization.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>REFUND</term>
       <listitem>
-        <para>Select to issue the specified Customer a refund on their Credit
-        Card. This option is only available for credits issued by Credit Card.
-        Your system must also be configured to use Credit Cards for this
+        <para>Select to issue the specified customer a refund on their Credit
+        Card. This option is only available for credits issued by credit card.
+        Your system must also be configured to use credit cards for this
         option to work.</para>
         <note>
           <para>If you are using the Authorize.Net payment gateway, refunds
@@ -659,13 +659,13 @@
       <term>CVV Code</term>
       <listitem>
         <para>Enter the Card Verification Value (CVV) Code found on the back
-        of the specified Credit Card. This may be an optional feature at your
+        of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Order Notes added to a Return Authorization are used for internal
-  purposes only. To add Notes to a Return Authorization, select the "Order
+  <para>Order notes added to a return authorization are used for internal
+  purposes only. To add notes to a return authorization, select the "Order
   Notes" tab at the top of the "Return Authorization" screen. The following
   screen will appear:</para>
   <para><screenshot>
@@ -676,19 +676,19 @@
         <caption>Return Authorization Notes</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding Notes to a Return Authorization, you are presented with
+  <para>When adding notes to a return authorization, you are presented with
   the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Order Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the Return Authorization. These Notes are for
+        general notes related to the return authorization. These notes are for
         internal use only.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add Comments related to a Return Authorization, select the
+  <para>To add comments related to a return authorization, select the
   "Comments" tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -700,7 +700,7 @@
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To associate documents with a Return Authorization item, select the
+  <para>To associate documents with a return authorization item, select the
   "Documents" tab.</para>
   <para><screenshot>
       <mediaobject>
@@ -712,7 +712,7 @@
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view Email associated with the Return Authorization, select the
+  <para>To view Email associated with the return authorization, select the
   "Email" tab. The following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />

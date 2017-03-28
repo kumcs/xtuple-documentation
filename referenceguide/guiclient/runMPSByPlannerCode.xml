@@ -4,7 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="runMPSByPlannerCode">
   <title>Run MPS by Planner Code</title>
-  <para>When you run MPS by Planner Code, you are running the Master
+  <para>When you run MPS by planner code, you are running the Master
   Production Scheduling (MPS) system. This utility creates firm planned orders
   to meet forecasted demand (i.e., from Production Plans) and also actual
   demand (i.e., from sales orders) for MPS items. An item is defined as an MPS
@@ -35,7 +35,7 @@
     MRP after MPS will ensure you plan for the materials required to satisfy
     your MPS-driven demand.</para>
   </tip>
-  <para>To run MPS by Planner Code, select the "Run MPS by Planner Code"
+  <para>To run MPS by planner code, select the "Run MPS by Planner Code"
   option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -50,41 +50,41 @@
     for them when MPS is run. By default, MPS generates firm planned
     orders.</para>
   </note>
-  <para>When running MPS by Planner Code, you are presented with the following
+  <para>When running MPS by planner code, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
       <listitem>
-        <para>Select to create firm planned orders for all Planner
-        Codes.</para>
+        <para>Select to create firm planned orders for all planner
+        codes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Planner Code you want to create firm planned orders
+        <para>Specify planner code you want to create firm planned orders
         for.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Pattern</term>
       <listitem>
-        <para>Enter a Planner Code pattern to select a range of Planner Codes.
+        <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using Regular Expressions.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>All Sites</term>
       <listitem>
-        <para>Select to create firm planned orders by Planner Code for all
+        <para>Select to create firm planned orders by planner code for all
         sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify site firm planned order by Planner Code should be
+        <para>Specify site firm planned order by planner code should be
         created for.</para>
       </listitem>
     </varlistentry>
@@ -100,7 +100,7 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>If you schedule an MRP or MPS job submitted to the Batch Manager to
+    <para>If you schedule an MRP or MPS job submitted to the batch manager to
     run on a periodic basis—daily, weekly, monthly—the cutoff date used for
     the run will automatically be updated by the number of days in the
     specified reschedule interval (Day = +1, Week = +7, and Month =
@@ -111,7 +111,7 @@
     <varlistentry>
       <term>CREATE</term>
       <listitem>
-        <para>Creates firm planned orders by Planner Code, using the specified
+        <para>Creates firm planned orders by planner code, using the specified
         parameters.</para>
       </listitem>
     </varlistentry>

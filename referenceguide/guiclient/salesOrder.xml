@@ -9,8 +9,8 @@
       <secondary>creating new</secondary>
     </indexterm>New Sales Order</title>
 
-  <para>Creating a new sales order requires a detailed mix of Customer, sales
-  representative, and Shipping information. To access the sales order area,
+  <para>Creating a new sales order requires a detailed mix of customer, sales
+  representative, and shipping information. To access the sales order area,
   select the "New Sales Order" option. The following screen will
   appear:</para>
 
@@ -62,7 +62,7 @@
         become the default schedule date for the first one. If line items do
         exist and the date is changed, you will be asked whether you want all
         editable lines to change. If the change affects pricing, you will be
-        asked whether you want Prices to be updated as well. If hidden, this
+        asked whether you want prices to be updated as well. If hidden, this
         field can be viewed by selecting the MORE button.</para>
       </listitem>
     </varlistentry>
@@ -94,7 +94,7 @@
         saved.</para>
 
         <para role="xtconnect"><note>
-            <para>If the Customer specified on the sales order has an EDI
+            <para>If the customer specified on the sales order has an EDI
             Profile attached, you may encounter an EDI processing interface
             when printing the sales order.</para>
           </note></para>
@@ -105,29 +105,29 @@
       <term>Customer #</term>
 
       <listitem>
-        <para>Enter the Customer Number of the Customer to be billed for the
+        <para>Enter the customer number of the customer to be billed for the
         sale. The lookup feature located to the right of the field leads to a
-        searchable Customers list. You may also access this list using the
-        keyboard shortcut "CTRL + L". Once a Customer Number is entered, the
-        Customer name and billing address will display. Select the "?" or "$"
-        symbol to view Customer information for the specified Customer. If a
-        Customer's credit is "In Good Standing," the button will feature a
+        searchable customers list. You may also access this list using the
+        keyboard shortcut "CTRL + L". Once a customer number is entered, the
+        customer name and billing address will display. Select the "?" or "$"
+        symbol to view customer information for the specified customer. If a
+        customer's credit is "In Good Standing," the button will feature a
         black question mark ("?") icon. If the icon turns to an orange dollar
-        sign ("$"), the Customer's credit Status is "On Credit Warning." A red
-        dollar sign ("$") indicates the Customer's credit Status is "On Credit
-        Hold." You may also create a new Customer record by selecting the "+"
+        sign ("$"), the customer's credit Status is "On Credit Warning." A red
+        dollar sign ("$") indicates the customer's credit Status is "On Credit
+        Hold." You may also create a new customer record by selecting the "+"
         button.</para>
 
         <tip>
-          <para>A valid Customer Number must be entered in the "Customer #"
+          <para>A valid customer number must be entered in the "Customer #"
           field before line items can be added to a sales order. If no valid
-          Customer Number is entered, you will not be able to add line items
+          customer number is entered, you will not be able to add line items
           to the sales order. Additionally, sales orders may only be entered
-          for active Customers.</para>
+          for active customers.</para>
         </tip>
 
         <note>
-          <para>Sales orders may not be entered for Customers whose credit
+          <para>Sales orders may not be entered for customers whose credit
           status is either "On Credit Warning" or "On Credit Hold." Only users
           with special privileges may override these credit settings.</para>
         </note>
@@ -138,7 +138,7 @@
       <term>Name</term>
 
       <listitem>
-        <para>The Customer name is displayed in an editable text field.</para>
+        <para>The customer name is displayed in an editable text field.</para>
       </listitem>
     </varlistentry>
 
@@ -148,7 +148,7 @@
       <listitem>
         <para>Enter the number of the preferred Ship-To Address. Customers may
         maintain multiple Ship-To Addresses. If the Customer master for the
-        specified Customer indicates that free-form Ship-To's are allowed,
+        specified customer indicates that free-form Ship-To's are allowed,
         then any address may be entered. If free-form Ship-To's are not
         allowed, then the Ship-To Address must be entered using the browse
         button located to the right of the field.</para>
@@ -167,13 +167,13 @@
       <term>Cust. PO #</term>
 
       <listitem>
-        <para>Enter a Customer purchase order number, as needed.</para>
+        <para>Enter a customer purchase order number, as needed.</para>
 
         <note>
-          <para>You will be required to enter a Customer purchase order number
-          for Customers who require them. If required, duplicate numbers will
-          only be allowed if the Customer uses blanket purchase orders. All
-          Customer requirements are specified on the Customer master.</para>
+          <para>You will be required to enter a customer purchase order number
+          for customers who require them. If required, duplicate numbers will
+          only be allowed if the customer uses blanket purchase orders. All
+          customer requirements are specified on the Customer master.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -206,15 +206,15 @@
             <term>Credit</term>
 
             <listitem>
-              <para>Indicates the open balance for the Customer has exceeded
+              <para>Indicates the open balance for the customer has exceeded
               the credit limit defined on their Customer master record. Users
-              will be prevented from issuing Stock to Shipping with this hold
+              will be prevented from issuing Stock to shipping with this hold
               type.</para>
 
               <note>
                 <para>If the sales order is paid in full, as in a counter
-                sales scenario for cash-only Customers, the order may be
-                issued to Shipping.</para>
+                sales scenario for cash-only customers, the order may be
+                issued to shipping.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -223,8 +223,8 @@
             <term>Shipping</term>
 
             <listitem>
-              <para>Indicates a Shipping hold has been placed on the order.
-              Users who attempt to ship an order on Shipping hold will be
+              <para>Indicates a shipping hold has been placed on the order.
+              Users who attempt to ship an order on shipping hold will be
               prevented from doing so.</para>
             </listitem>
           </varlistentry>
@@ -234,7 +234,7 @@
 
             <listitem>
               <para>Indicates a Packing hold has been placed on the order.
-              Users who attempt to issue stock to Shipping for an order on
+              Users who attempt to issue stock to shipping for an order on
               Packing hold will be prevented from doing so.</para>
             </listitem>
           </varlistentry>
@@ -244,7 +244,7 @@
 
             <listitem>
               <para>This hold type is set automatically when a sales order is
-              created from a Return Authorization and the disposition requires
+              created from a return authorization and the disposition requires
               inventory to be received before the replacement order can be
               shipped.</para>
             </listitem>
@@ -288,7 +288,7 @@
 
       <listitem>
         <para>Specify the billing Terms associated with the order. By default,
-        the Customer's standard billing Terms will appear in the field.</para>
+        the customer's standard billing Terms will appear in the field.</para>
       </listitem>
     </varlistentry>
 
@@ -306,7 +306,7 @@
       <listitem>
         <para>Specify the sales representative?or Outside Rep, in the
         Distribution Edition?associated with the order. Sales representatives
-        are linked to a Customer on the Customer master—either by a default
+        are linked to a customer on the Customer master—either by a default
         setting or through the assignment of Ship-To Addresses. Each Ship-To
         Address may have a different sales representative associated with it.
         Consequently, the name of the sales representative appearing on the
@@ -344,9 +344,9 @@
         </indexterm>Tax Zone</term>
 
       <listitem>
-        <para>Specify the Tax Zone associated with the sales order. The Tax
-        Zone for the specified Ship-To Address will be entered here by
-        default. Otherwise, the primary Tax Zone for the Customer will be
+        <para>Specify the tax zone associated with the sales order. The tax
+        zone for the specified Ship-To Address will be entered here by
+        default. Otherwise, the primary tax zone for the customer will be
         entered. This field can be viewed upon selecting the MORE
         button.</para>
       </listitem>
@@ -367,7 +367,7 @@
       <term>Ship Via</term>
 
       <listitem>
-        <para>The preferred Ship Via method for the Customer will appear in
+        <para>The preferred Ship Via method for the customer will appear in
         the field. You may change the default Ship Via using the list. You may
         also enter a free-form Ship Via simply by typing the name of the Ship
         Via into the field.</para>
@@ -384,15 +384,15 @@
       <term>Shipping Form</term>
 
       <listitem>
-        <para>Specify the Shipping Form associated with the order. The
-        preferred Shipping Form for the Customer will appear in the field.
+        <para>Specify the shipping form associated with the order. The
+        preferred shipping form for the customer will appear in the field.
         This field is optional and can be viewed upon selecting the MORE
         button.</para>
 
         <note>
           <para>Shipping defaults specified on the Customer master will
           transfer to the Sales Order header when a new sales order is entered
-          for a Customer.</para>
+          for a customer.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -417,8 +417,8 @@
         </indexterm>Shipping Chgs.</term>
 
       <listitem>
-        <para>Specify the Shipping charges associated with the order. The
-        preferred Shipping Charges Type for the Customer will appear in the
+        <para>Specify the shipping charges associated with the order. The
+        preferred shipping charges type for the customer will appear in the
         field. This field can be viewed upon selecting the MORE button.</para>
       </listitem>
     </varlistentry>
@@ -427,8 +427,8 @@
       <term>Shipping Zone</term>
 
       <listitem>
-        <para>Specify the Shipping Zone. Sales account assignments by Shipping
-        Zone are available.</para>
+        <para>Specify the shipping zone. Sales account assignments by shipping
+        zone are available.</para>
       </listitem>
     </varlistentry>
 
@@ -437,10 +437,10 @@
 
       <listitem>
         <para>Select to require that all sales order line item quantities be
-        issued to Shipping before the order is shipped. This feature is
+        issued to shipping before the order is shipped. This feature is
         designed to prevent partial shipments. If selected, users will be
         prevented from shipping the order unless all line item quantities have
-        been issued to Shipping. If not selected, partial shipments for the
+        been issued to shipping. If not selected, partial shipments for the
         order will be allowed.</para>
       </listitem>
     </varlistentry>
@@ -453,14 +453,14 @@
         </indexterm>Bill-To</term>
 
       <listitem>
-        <para>Specify the Customer billing information below:</para>
+        <para>Specify the customer billing information below:</para>
 
         <variablelist>
           <varlistentry>
             <term>Address</term>
 
             <listitem>
-              <para>Displays the Customer's Bill-To Address. You may manually
+              <para>Displays the customer's Bill-To Address. You may manually
               override the displayed Address information in the fields
               below—or use the lookup feature to select another Address. If a
               new Address is manually entered here, that Address will be added
@@ -474,7 +474,7 @@
             <term>Billing Contact</term>
 
             <listitem>
-              <para>Displays the Customer's billing Contact. You may manually
+              <para>Displays the customer's billing Contact. You may manually
               override the displayed Contact information in the fields
               below—or use the lookup feature to select another Contact. If a
               new Contact is manually entered here, that Contact will be added
@@ -493,7 +493,7 @@
       <listitem>
         <para>Select to copy contents of billing address into Ship-To address
         field. This option is enabled if the Customer master for the specified
-        Customer indicates that free-form Ship-To's are allowed.</para>
+        customer indicates that free-form Ship-To's are allowed.</para>
       </listitem>
     </varlistentry>
 
@@ -558,7 +558,7 @@
 
       <listitem>
         <para>Creates the sales order, saves it, and adds it to the list of
-        orders available for printing on the Packing List Batch.</para>
+        orders available for printing on the Packing List batch.</para>
       </listitem>
     </varlistentry>
 
@@ -571,7 +571,7 @@
         again.</para>
 
         <para role="xtconnect"><note>
-            <para>If the Customer specified on the sales order has an EDI
+            <para>If the customer specified on the sales order has an EDI
             Profile attached, you may encounter an EDI processing interface
             when printing the sales order.</para>
           </note></para>
@@ -605,11 +605,11 @@
       <term>Line Items</term>
 
       <listitem>
-        <para>Display lists line items for this sales order. A valid Customer
-        Number must be entered in the "Customer #" field before line items can
-        be added to the order. The Shipping-related columns will not be
-        visible if the system is configured to hide Shipping options at sales
-        order entry. However, if the Shipping options are enabled, the Line
+        <para>Display lists line items for this sales order. A valid customer
+        number must be entered in the "Customer #" field before line items can
+        be added to the order. The shipping-related columns will not be
+        visible if the system is configured to hide shipping options at sales
+        order entry. However, if the shipping options are enabled, the Line
         items may display in different colors, depending on their scheduling.
         If the Scheduled Date for an unshipped line item is in the future, the
         date will display in green text. If the Scheduled Date for an
@@ -668,12 +668,12 @@
 
       <listitem>
         <para>Select to ensure you have enough quantity on hand (QOH) in stock
-        of a line item prior to issuing Stock to Shipping. If selected, this
-        option will prevent you from issuing line item quantity to Shipping if
+        of a line item prior to issuing Stock to shipping. If selected, this
+        option will prevent you from issuing line item quantity to shipping if
         doing so would force QOH for the item site to fall below zero. Not
-        selecting this option means issuing Stock to Shipping may drive item
+        selecting this option means issuing Stock to shipping may drive item
         site QOH negative. This option will not be visible if the system is
-        configured to hide Shipping options at sales order entry.</para>
+        configured to hide shipping options at sales order entry.</para>
       </listitem>
     </varlistentry>
 
@@ -683,7 +683,7 @@
       <listitem>
         <para>Select to include in the line items display sales order line
         items which have been specifically canceled. Displaying canceled line
-        items can provide useful Customer and order history
+        items can provide useful customer and order history
         information.</para>
       </listitem>
     </varlistentry>
@@ -700,7 +700,7 @@
       <term>Misc. Charge Sales Account</term>
 
       <listitem>
-        <para>Enter a Sales Account to assign the miscellaneous charge
+        <para>Enter a sales account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
@@ -713,7 +713,7 @@
         Card charges which have been specifically allocated to the sales
         Order. If your system is configured to automatically allocate open
         Credit Memo balances to new sales orders, then the monetary value of
-        these allocated Credit Memos—plus any Credit Card charges applied to
+        these allocated Credit Memos—plus any credit card charges applied to
         the Order—will display here. You can also select the "Allocated
         Credit" link to manually allocate Credit Memos to the sales
         order.</para>
@@ -732,7 +732,7 @@
 
       <listitem>
         <para>Displays the total monetary value of all unallocated Credit
-        Memos for the Customer.</para>
+        Memos for the customer.</para>
       </listitem>
     </varlistentry>
 
@@ -741,9 +741,9 @@
 
       <listitem>
         <para>Displays the monetary value of any credit card
-        pre-authorizations for the Order. Credit Card charges may be
+        pre-authorizations for the Order. Credit card charges may be
         pre-authorized using the options found under the "Payment" tab. When a
-        Credit Card charge is pre-authorized, the authorization is stored and
+        credit card charge is pre-authorized, the authorization is stored and
         may later be posted as a completed charge using the Receivables
         Workbench.</para>
       </listitem>
@@ -786,10 +786,10 @@
 
       <listitem>
         <para>Displays the monetary value of sales order line items at
-        Shipping. The shipment value represents the total of the extended
+        shipping. The shipment value represents the total of the extended
         prices for all items included in the Shipment. The amount does not
         include freight or Tax. This displayed information will not be visible
-        if the system is configured to hide Shipping options at sales order
+        if the system is configured to hide shipping options at sales order
         entry.</para>
       </listitem>
     </varlistentry>
@@ -809,7 +809,7 @@
         <para>Enter the amount of any miscellaneous charge. Examples of
         miscellaneous charges include palletization costs, co-op refund, etc.
         Before entering a miscellaneous charge amount, you must first assign
-        the charge to a sales Account and also enter a description of the
+        the charge to a sales account and also enter a description of the
         charge.</para>
 
         <tip>
@@ -872,8 +872,8 @@
 
         <tip>
           <para>If the sales order is paid in full, the order can be shipped
-          even though the Customer may be on credit hold. This is to
-          accommodate cash Customers who do not typically have a credit
+          even though the customer may be on credit hold. This is to
+          accommodate cash customers who do not typically have a credit
           limit.</para>
         </tip>
       </listitem>
@@ -884,8 +884,8 @@
 
       <listitem>
         <para>Displays the projected total due for the sales order. The
-        outstanding balance represents the amount the Customer would owe if
-        all allocated and outstanding Credit Memos and Credit Card
+        outstanding balance represents the amount the customer would owe if
+        all allocated and outstanding Credit Memos and credit card
         pre-authorizations were applied to the Order.</para>
       </listitem>
     </varlistentry>
@@ -905,8 +905,8 @@
               <listitem>
                 <para>Enter the item number of the item you want to sell. The
                 item list will contain sold items available for sale to the
-                specified Customer. The list of available items may vary from
-                Customer to Customer, depending on how Pricing Schedules are
+                specified customer. The list of available items may vary from
+                customer to customer, depending on how Pricing Schedules are
                 implemented at your site. Once an item number is entered, the
                 inventory Unit of Measure and item description will
                 automatically appear.</para>
@@ -955,14 +955,14 @@
               <term>Net Unit Price</term>
 
               <listitem>
-                <para>Displays the Unit Price for the sales order item. By
+                <para>Displays the unit price for the sales order item. By
                 default, the system will choose the lower of the following two
-                Prices: A) The most-specific Pricing Schedule Assignment or B)
+                prices: A) The most-specific Pricing Schedule Assignment or B)
                 any Sale in effect at the time of Order entry. The specificity
                 of Pricing Schedule Assignments is determined in the following
-                descending order: By Customer Ship-To Address (most specific),
-                by Customer, by Customer Type, by Customer Type pattern, by
-                all Customers. The lookup feature located to the right of the
+                descending order: By customer Ship-To Address (most specific),
+                by customer, by customer type, by customer type pattern, by
+                all customers. The lookup feature located to the right of the
                 field leads to a Price List screen.</para>
               </listitem>
             </varlistentry>
@@ -987,9 +987,9 @@
 
       <listitem>
         <para>Select this button to bring up an interactive screen showing a
-        list of items the Customer has purchased in the past. On the Favorites
+        list of items the customer has purchased in the past. On the Favorites
         screen you'll have the option to add one or multiple items from the
-        Customer's traditional favorite items.</para>
+        customer's traditional favorite items.</para>
       </listitem>
     </varlistentry>
 
@@ -1067,12 +1067,12 @@
 
       <listitem id="salesOrderISSUE1STOCK">
         <para>Highlight a sales order line item and then select this button to
-        issue quantity to Shipping. This button will not be visible if the
-        system is configured to hide Shipping options at sales order
+        issue quantity to shipping. This button will not be visible if the
+        system is configured to hide shipping options at sales order
         entry.</para>
 
         <tip>
-          <para>You may select multiple line items for issuing to Shipping by
+          <para>You may select multiple line items for issuing to shipping by
           highlighting them using your mouse—or a combination of your mouse
           and either the SHIFT or CTRL keys.</para>
         </tip>
@@ -1084,13 +1084,13 @@
 
       <listitem>
         <para>Highlight a sales order line item and then select this button to
-        issue the balance of the line item quantity to Shipping. This button
-        will not be visible if the system is configured to hide Shipping
+        issue the balance of the line item quantity to shipping. This button
+        will not be visible if the system is configured to hide shipping
         options at sales order entry.</para>
 
         <note>
-          <para>The Shipping-related options will not be visible if the system
-          is configured to hide Shipping options at sales order entry.</para>
+          <para>The shipping-related options will not be visible if the system
+          is configured to hide shipping options at sales order entry.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -1101,7 +1101,7 @@
       <listitem>
         <para>Select this button to issue all material available to fill the
         current sales order. Only stock that is available to be issued to
-        Shipping will be issued. If an item is on backorder, that stock will
+        shipping will be issued. If an item is on backorder, that stock will
         have to be issued at a future point.</para>
       </listitem>
     </varlistentry>
@@ -1112,7 +1112,7 @@
       <listitem>
         <para>Highlight a sales order line item and then select this button to
         ship the Order. This button will not be visible if the system is
-        configured to hide Shipping options at sales order entry.</para>
+        configured to hide shipping options at sales order entry.</para>
       </listitem>
     </varlistentry>
 
@@ -1122,7 +1122,7 @@
       <listitem>
         <para>Select this button to issue all material available and then ship
         the sales order, all in one step. Only stock that is available to be
-        issued to Shipping will be issued. If an item is on backorder, that
+        issued to shipping will be issued. If an item is on backorder, that
         stock will have to be issued at a future point.</para>
       </listitem>
     </varlistentry>
@@ -1155,8 +1155,8 @@
       <listitem>
         <para>If your system is configured to use Projects, select a Project
         Number to associate with the sales order. If a sales order is created
-        from a converted Quote—and the Quote had a Project Number associated
-        with it—then the Project Number from the originating Quote will
+        from a converted quote—and the quote had a Project Number associated
+        with it—then the Project Number from the originating quote will
         automatically be entered here. Once a Project Number is associated
         with a sales order, any work orders or purchase orders created by the
         sales order demand will automatically be linked to the same Project
@@ -1166,16 +1166,16 @@
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a Project to the sales
         order—transactions related to the sales order will include the Project
-        Number as the final segment of affected G/L Account Numbers. Account
+        Number as the final segment of affected G/L account numbers. Account
         Numbers related to the following transactions will include the Project
-        Number as the final segment: Issue to Shipping, Return Stock, Ship
-        Shipment, Recall Shipment, and Post Invoice.</para>
+        Number as the final segment: Issue to shipping, return Stock, Ship
+        Shipment, Recall Shipment, and Post invoice.</para>
 
         <tip>
           <para>If your site is configured to create Projects automatically
-          whenever new sales orders or Quotes are entered, the Projects
+          whenever new sales orders or quotes are entered, the Projects
           generated in this way will assume the number of the sales order or
-          Quote which caused their creation.</para>
+          quote which caused their creation.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -1193,19 +1193,19 @@
       <term>From Quote</term>
 
       <listitem>
-        <para>If a sales order was converted from a Quote, the originating
-        Quote Number will display here.</para>
+        <para>If a sales order was converted from a quote, the originating
+        quote number will display here.</para>
 
         <para role="standard"><note>
-            <para>If the sales order was generated from a Return
-            Authorization, the Return Authorization Number will display
+            <para>If the sales order was generated from a return
+            authorization, the return authorization number will display
             here.</para>
           </note></para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>sales order Characteristics are user-defined definitions which may be
+  <para>Sales order characteristics are user-defined definitions which may be
   used to provide additional layers of description about sales orders. These
   descriptions are static and not processed by the system, but are useful for
   informational purposes.</para>
@@ -1214,11 +1214,11 @@
     <para>For configured items, an additional pricing field will be available
     on the Item Characteristic screen. This pricing information will be passed
     to sales order line items when particular configurations are sold. The
-    Price for configured items may vary depending on the Characteristics
+    price for configured items may vary depending on the characteristics
     selected at sales order entry time.</para>
   </tip>
 
-  <para>To enter Characteristics associated with a sales order, select the
+  <para>To enter characteristics associated with a sales order, select the
   "Characteristics" tab. The following will be displayed:</para>
 
   <para><mediaobject>
@@ -1233,7 +1233,7 @@
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>To add Comments related to a sales order, select the "Comments" tab.
+  <para>To add comments related to a sales order, select the "Comments" tab.
   The following will be displayed:</para>
 
   <para><screenshot>
@@ -1249,9 +1249,9 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>Order Notes added to a sales order are used for internal purposes
-  only. If an Invoice results from the sales order, these Notes will be
-  transferred to the Invoice. To add Notes to a sales order, select the "Order
+  <para>Order notes added to a sales order are used for internal purposes
+  only. If an invoice results from the sales order, these notes will be
+  transferred to the invoice. To add notes to a sales order, select the "Order
   Notes" tab on the "Sales Order" screen. The following will be
   displayed:</para>
 
@@ -1265,7 +1265,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes to a sales order, you are presented with the
+  <para>When adding notes to a sales order, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -1274,7 +1274,7 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the sales order. These Notes are for internal
+        general notes related to the sales order. These notes are for internal
         use only.</para>
       </listitem>
     </varlistentry>
@@ -1283,14 +1283,14 @@
       <term>Shipping Notes</term>
 
       <listitem>
-        <para>Shipping Notes are drawn from the Customer master—specifically
-        from the "Shipping Notes" tab on the Ship-To Address master. The Notes
+        <para>Shipping notes are drawn from the customer master—specifically
+        from the "Shipping Notes" tab on the Ship-To Address master. The notes
         may vary depending on the Ship-To Address specified for the Order.
-        These Notes provide a mechanism for transferring shipping information
-        from the Customer master to the sales order. Ultimately, Shipping
-        Notes may be printed on shipping paperwork. While Shipping Notes
-        content may originate from the Customer master, you can edit the Notes
-        to fit the requirements of an Order. Shipping Notes may be printed on
+        These notes provide a mechanism for transferring shipping information
+        from the Customer master to the sales order. Ultimately, shipping
+        notes may be printed on shipping paperwork. While shipping notes
+        content may originate from the Customer master, you can edit the notes
+        to fit the requirements of an Order. Shipping notes may be printed on
         shipping paperwork.</para>
       </listitem>
     </varlistentry>
@@ -1321,8 +1321,8 @@
 
       <secondary>credit cards and</secondary>
     </indexterm>To receive payments for the sales order, select the "Payment"
-  tab at the top of the "Sales Order" screen. To authorize or charge Customer
-  Credit Cards, select the "Credit Card" tab in the window. The following
+  tab at the top of the "Sales Order" screen. To authorize or charge customer
+  credit cards, select the "Credit Card" tab in the window. The following
   screen will appear:</para>
 
   <para><screenshot>
@@ -1335,7 +1335,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When authorizing or charging Customer Credit Cards, you are presented
+  <para>When authorizing or charging customer credit cards, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -1343,8 +1343,8 @@
       <term>Payment</term>
 
       <listitem>
-        <para>Display lists Credit Card information for the specified
-        Customer.</para>
+        <para>Display lists credit card information for the specified
+        customer.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1356,8 +1356,8 @@
       <term>MOVE UP</term>
 
       <listitem>
-        <para>Highlight a Credit Card and then select this button to move the
-        Credit Card up in the sequence of Credit Cards. Sequence numbers are
+        <para>Highlight a credit card and then select this button to move the
+        credit card up in the sequence of credit cards. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
@@ -1366,8 +1366,8 @@
       <term>MOVE DOWN</term>
 
       <listitem>
-        <para>Highlight a Credit Card and then select this button to move the
-        Credit Card down the sequence of Credit Cards. Sequence numbers are
+        <para>Highlight a credit card and then select this button to move the
+        credit card down the sequence of credit cards. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
@@ -1376,13 +1376,13 @@
       <term>AUTHORIZE</term>
 
       <listitem>
-        <para>After entering an amount below, highlight an active Credit Card
-        and then select this button to pre-authorize the Credit Card charge
-        for the amount specified. Pre-authorized Credit Card charges will be
+        <para>After entering an amount below, highlight an active credit card
+        and then select this button to pre-authorize the credit card charge
+        for the amount specified. Pre-authorized credit card charges will be
         displayed in the "Authorized CC Payments" field on the "Line Items"
-        tab. After a Credit Card charge has been pre-authorized, the charge
+        tab. After a credit card charge has been pre-authorized, the charge
         may then be post-authorized using the Receivables Workbench—thereby
-        completing the Credit Card transaction.</para>
+        completing the credit card transaction.</para>
       </listitem>
     </varlistentry>
 
@@ -1390,13 +1390,13 @@
       <term>CHARGE</term>
 
       <listitem>
-        <para>After entering an amount below, highlight an active Credit Card
-        and then select this button to charge the Credit Card for the amount
-        specified. When a Credit Card is charged, both a Credit Memo and a
+        <para>After entering an amount below, highlight an active credit card
+        and then select this button to charge the credit card for the amount
+        specified. When a credit card is charged, both a Credit Memo and a
         Cash Receipt are posted for the charge amount. The total due from the
-        Customer will be automatically adjusted on the Invoice to reflect the
-        amount of any Credit Card charges. If, by chance, you charge a
-        Customer's Credit Card but fail to save the sales order, the link
+        customer will be automatically adjusted on the invoice to reflect the
+        amount of any credit card charges. If, by chance, you charge a
+        customer's credit card but fail to save the sales order, the link
         between the Order and the charge will be broken; however, the
         transactions resulting from the charge will remain in the
         system.</para>
@@ -1407,7 +1407,7 @@
       <term>Amount</term>
 
       <listitem>
-        <para>Enter the amount of the Credit Card pre-authorization or charge.
+        <para>Enter the amount of the credit card pre-authorization or charge.
         By default, the outstanding balance due will be displayed here.
         However, you may edit the default amount.</para>
       </listitem>
@@ -1418,7 +1418,7 @@
 
       <listitem>
         <para>Enter the Card Verification Value (CVV) Code found on the back
-        of the specified Credit Card. This may be an optional feature at your
+        of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
     </varlistentry>
@@ -1475,8 +1475,8 @@
   </variablelist>
 
   <tip>
-    <para>You can use the Funds Type "Other" for entering Credit Card
-    information if you are not using xTuple's Credit Card processing
+    <para>You can use the Funds Type "Other" for entering credit card
+    information if you are not using xTuple's credit card processing
     functionality at your site.</para>
   </tip>
 
@@ -1485,8 +1485,8 @@
       <term>Payment/Document #</term>
 
       <listitem>
-        <para>Use this field to enter the Customer's Check Number, transaction
-        number, Credit Card number, or any other Document Number associated
+        <para>Use this field to enter the customer's Check Number, transaction
+        number, credit card number, or any other Document Number associated
         with the Cash Receipt.</para>
 
         <para role="distribution">The username of the logged-in user will
@@ -1512,17 +1512,17 @@
       <term>Post to</term>
 
       <listitem>
-        <para>Select the Bank Account you want to post the Cash Receipt to.
-        The Asset Account used for the selected Bank Account is specified on
+        <para>Select the bank account you want to post the Cash Receipt to.
+        The Asset account used for the selected bank account is specified on
         the Bank Account master.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <tip>
-    <para>If your site uses a unique Bank Account for receiving Credit Card
-    payments, make sure to select the appropriate Bank Account when entering
-    payments from a Credit Card.</para>
+    <para>If your site uses a unique bank account for receiving credit card
+    payments, make sure to select the appropriate bank account when entering
+    payments from a credit card.</para>
   </tip>
 
   <variablelist>
@@ -1535,8 +1535,8 @@
         current day's date will appear. If the distribution date precedes the
         application date, the label "Apply Balance As" will change to "Record
         Receipt as" to clarify that the cash will be recorded as a Credit Memo
-        or Customer Deposit until the application date arrives. On the
-        application date, the Credit Memo or Customer Deposit will
+        or customer Deposit until the application date arrives. On the
+        application date, the Credit Memo or customer Deposit will
         automatically be applied to its specified receivable
         document(s).</para>
       </listitem>
@@ -1559,16 +1559,16 @@
 
       <listitem>
         <para>Select one of the following optional Receivables
-        Accounts:</para>
+        accounts:</para>
 
         <variablelist>
           <varlistentry>
             <term>Sales Category</term>
 
             <listitem>
-              <para>Specify a sales Category whose Receivables Account option
+              <para>Specify a sales category whose Receivables account option
               you want to use instead of the default Receivables
-              Account.</para>
+              account.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1577,9 +1577,9 @@
   </variablelist>
 
   <note>
-    <para>If an alternate Receivables Account is not specified, the system
-    will use the default Receivables Account specified for the Customer Type
-    under Receivables Account Assignments.</para>
+    <para>If an alternate Receivables account is not specified, the system
+    will use the default Receivables account specified for the customer type
+    under Receivables account assignments.</para>
   </note>
 
   <para>To view Shipments associated with the order, select the "Shipments"
@@ -1618,7 +1618,7 @@
       <term>Cust. Name</term>
 
       <listitem>
-        <para>Displays the Customer Name associated with the specified sales
+        <para>Displays the customer Name associated with the specified sales
         order.</para>
       </listitem>
     </varlistentry>
@@ -1627,7 +1627,7 @@
       <term>Cust. Phone</term>
 
       <listitem>
-        <para>Displays the Customer's phone number.</para>
+        <para>Displays the customer's phone number.</para>
       </listitem>
     </varlistentry>
 

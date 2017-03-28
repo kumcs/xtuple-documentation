@@ -60,7 +60,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify Class Code whose item site Lead Times you want to
+        <para>Specify class code whose item site Lead Times you want to
         update.</para>
       </listitem>
     </varlistentry>
@@ -69,7 +69,7 @@
       <term>Pattern</term>
 
       <listitem>
-        <para>Enter a Class Code pattern to select a range of Class Codes.
+        <para>Enter a class code pattern to select a range of class codes.
         Refine your search using Regular Expressions.</para>
       </listitem>
     </varlistentry>
@@ -93,7 +93,7 @@
 
       <listitem>
         <para>Updates the item site Lead Times, using the specified
-        parameters. Item sites are updated in item type and Bill of Material
+        parameters. Item sites are updated in item type and bill of material
         level sequence so that the lead times of lower level items are
         calculated before the lead times of dependent items.</para>
 
@@ -103,9 +103,9 @@
         <itemizedlist>
           <listitem>
             <para><emphasis role="bold">Manufactured Items:</emphasis> The
-            utility first scans the Bill of Materials for the item and finds
+            utility first scans the bill of materials for the item and finds
             the component item having the longest lead time. It then scans the
-            Bill of Operations for the item and finds the Operation having the
+            routing for the item and finds the operation having the
             latest execution day. Finally it performs the following
             calculation:</para>
 
@@ -117,7 +117,7 @@
 
           <listitem>
             <para><emphasis role="bold">Purchased Items (with Item
-            Source):</emphasis> The utility scans any Item Sources and finds
+            Source):</emphasis> The utility scans any item sources and finds
             the longest Lead Time. Then if performs the following
             calculation:</para>
 

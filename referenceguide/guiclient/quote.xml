@@ -9,8 +9,8 @@
     </indexterm><indexterm significance="normal">
       <primary>sales quotes</primary>
       <see>quotes</see>
-    </indexterm> New Quote</title>
-  <para>A quote is a statement issued to a Customer or Prospect indicating
+    </indexterm> New quote</title>
+  <para>A quote is a statement issued to a customer or Prospect indicating
   pricing and sales Terms for specified quantities of sold items. Quotes are
   often precursors to sales orders. To create a quote, select the "New Quote"
   option. The following screen will appear:</para>
@@ -53,7 +53,7 @@
         the default schedule date for the first one. If line items do exist
         and the date is changed, you will be asked whether you want all
         editable lines to change. If the change affects pricing, you will be
-        asked whether you want Prices to be updated as well. If hidden, this
+        asked whether you want prices to be updated as well. If hidden, this
         field can be viewed by selecting the MORE button.</para>
       </listitem>
     </varlistentry>
@@ -81,28 +81,28 @@
     <varlistentry>
       <term>Customer #</term>
       <listitem>
-        <para>Enter the Customer Number of the Customer (or Prospect) to be
+        <para>Enter the customer number of the customer (or Prospect) to be
         billed for the sale. The lookup feature located to the right of the
-        field leads to a searchable Customers list. The lookup feature will be
+        field leads to a searchable customers list. The lookup feature will be
         disabled if the quote is entered for a Prospect. You may also access
-        the Customer list using the keyboard shortcut "CTRL + L". Once a
-        Customer Number is entered, the Customer name and billing address will
-        display. Select the "?" or "$" symbol to view Customer information for
-        the specified Customer. If a Customer's credit is "In Good Standing,"
+        the customer list using the keyboard shortcut "CTRL + L". Once a
+        customer number is entered, the customer name and billing address will
+        display. Select the "?" or "$" symbol to view customer information for
+        the specified customer. If a customer's credit is "In Good Standing,"
         the button will feature a black question mark ("?") icon. If the icon
-        turns to an orange dollar sign ("$"), the Customer's credit Status is
-        "On Credit Warning." A red dollar sign ("$") indicates the Customer's
-        credit Status is "On Credit Hold." You may also create a new Customer
+        turns to an orange dollar sign ("$"), the customer's credit Status is
+        "On Credit Warning." A red dollar sign ("$") indicates the customer's
+        credit Status is "On Credit Hold." You may also create a new customer
         record by selecting the "+" button.</para>
         <tip>
-          <para>A valid Customer Number must be entered in the "Customer #"
+          <para>A valid customer number must be entered in the "Customer #"
           field before line items can be added to a quote. If no valid
-          Customer Number is entered, you will not be able to add line items
+          customer number is entered, you will not be able to add line items
           to the quote. Additionally, quotes may only be entered for active
-          Customers.</para>
+          customers.</para>
         </tip>
         <note>
-          <para>Quotes may not be entered for Customers whose credit status is
+          <para>Quotes may not be entered for customers whose credit status is
           either "On Credit Warning" or "On Credit Hold." Only users with
           special privileges may override these credit settings.</para>
         </note>
@@ -111,7 +111,7 @@
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>The Customer name is displayed in an editable text field.</para>
+        <para>The customer name is displayed in an editable text field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -119,7 +119,7 @@
       <listitem>
         <para>Enter the number of the preferred Ship-To Address. Customers may
         maintain multiple Ship-To Addresses. If the Customer master for the
-        specified Customer indicates that free-form Ship-To's are allowed,
+        specified customer indicates that free-form Ship-To's are allowed,
         then any address may be entered. If free-form Ship-To's are not
         allowed, then the Ship-To Address must be entered using the browse
         button located to the right of the field.</para>
@@ -134,12 +134,12 @@
     <varlistentry>
       <term>Cust. PO #</term>
       <listitem>
-        <para>PO #: Enter a Customer purchase order number, as needed.</para>
+        <para>Enter a customer purchase order number, as needed.</para>
         <note>
-          <para>You will be required to enter a Customer purchase order number
-          for Customers who require them. If required, duplicate numbers will
-          only be allowed if the Customer uses blanket purchase orders. All
-          Customer requirements are specified on the Customer master.</para>
+          <para>You will be required to enter a customer purchase order number
+          for customers who require them. If required, duplicate numbers will
+          only be allowed if the customer uses blanket purchase orders. All
+          customer requirements are specified on the Customer master.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -171,7 +171,7 @@
         </indexterm>Terms</term>
       <listitem>
         <para>Specify the billing Terms associated with the order. By default,
-        the Customer's standard billing Terms will appear in the field.</para>
+        the customer's standard billing Terms will appear in the field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -185,7 +185,7 @@
       <listitem>
         <para>Specify the sales representative?or Outside Rep, in the
         Distribution Edition?associated with the quote. Sales representatives
-        are linked to a Customer on the Customer master—either by a default
+        are linked to a customer on the Customer master—either by a default
         setting or through the assignment of Ship-To Addresses. Each Ship-To
         Address may have a different sales representative associated with it.
         Consequently, the name of the sales representative appearing on the
@@ -217,9 +217,9 @@
           <secondary>for quotes</secondary>
         </indexterm>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone associated with the quote. The Tax Zone for
+        <para>Specify the tax zone associated with the quote. The tax zone for
         the specified Ship-To Address will be entered here by default.
-        Otherwise, the primary Tax Zone for the Customer will be entered. This
+        Otherwise, the primary tax zone for the customer will be entered. This
         field can be viewed upon selecting the MORE button.</para>
       </listitem>
     </varlistentry>
@@ -235,7 +235,7 @@
     <varlistentry>
       <term>Ship Via</term>
       <listitem>
-        <para>The preferred Ship Via method for the Customer will appear in
+        <para>The preferred Ship Via method for the customer will appear in
         the field. You may change the default Ship Via using the list. You may
         also enter a free-form Ship Via simply by typing the name of the Ship
         Via into the field.</para>
@@ -249,8 +249,8 @@
     <varlistentry>
       <term>Shipping Zone</term>
       <listitem>
-        <para>Specify the Shipping Zone. Sales account assignments by Shipping
-        Zone are available.</para>
+        <para>Specify the shipping zone. Sales account assignments by shipping
+        zone are available.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -276,12 +276,12 @@
           <secondary>billing information for</secondary>
         </indexterm>Bill-To</term>
       <listitem>
-        <para>Specify the Customer billing information below:</para>
+        <para>Specify the customer billing information below:</para>
         <variablelist>
           <varlistentry>
             <term>Address</term>
             <listitem>
-              <para>Displays the Customer's Bill-To Address. You may manually
+              <para>Displays the customer's Bill-To Address. You may manually
               override the displayed Address information in the fields
               below—or use the lookup feature to select another Address. If a
               new Address is manually entered here, that Address will be added
@@ -293,7 +293,7 @@
           <varlistentry>
             <term>Billing Contact</term>
             <listitem>
-              <para>Displays the Customer's billing Contact. You may manually
+              <para>Displays the customer's billing Contact. You may manually
               override the displayed Contact information in the fields
               below—or use the lookup feature to select another Contact. If a
               new Contact is manually entered here, that Contact will be added
@@ -309,8 +309,8 @@
       <term>Copy to Ship-to -&gt;</term>
       <listitem>
         <para>Select to copy contents of billing address into Ship-To address
-        field. This option is enabled if the Customer master for the specified
-        Customer indicates that free-form Ship-To's are allowed.</para>
+        field. This option is enabled if the customer master for the specified
+        customer indicates that free-form Ship-To's are allowed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -393,7 +393,7 @@
     <varlistentry>
       <term>Line Items</term>
       <listitem>
-        <para>Display lists line items for this quote. A valid Customer Number
+        <para>Display lists line items for this quote. A valid customer number
         must be entered in the "Customer #" field before line items can be
         added to the order.</para>
       </listitem>
@@ -407,7 +407,7 @@
     <varlistentry>
       <term>Misc. Charge Sales Account</term>
       <listitem>
-        <para>Enter a Sales Account to assign the miscellaneous charge
+        <para>Enter a sales account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
@@ -448,7 +448,7 @@
         <para>Enter the amount of any miscellaneous charge. Examples of
         miscellaneous charges include palletization costs, co-op refund, etc.
         Before entering a miscellaneous charge amount, you must first assign
-        the charge to a Sales Account and also enter a description of the
+        the charge to a sales account and also enter a description of the
         charge.</para>
       </listitem>
     </varlistentry>
@@ -505,8 +505,8 @@
               <listitem>
                 <para>Enter the item number of the item you want to sell. The
                 item list will contain sold items available for sale to the
-                specified Customer. The list of available items may vary from
-                Customer to Customer, depending on how Pricing Schedules are
+                specified customer. The list of available items may vary from
+                customer to customer, depending on how Pricing Schedules are
                 implemented at your site. Once an item number is entered, the
                 inventory Unit of Measure and item description will
                 automatically appear.</para>
@@ -547,14 +547,14 @@
             <varlistentry>
               <term>Net Unit Price</term>
               <listitem>
-                <para>Displays the Unit Price for the sales order item. By
+                <para>Displays the unit price for the sales order item. By
                 default, the system will choose the lower of the following two
-                Prices: A) The most-specific Pricing Schedule Assignment or B)
+                prices: A) The most-specific Pricing Schedule Assignment or B)
                 any Sale in effect at the time of order entry. The specificity
                 of Pricing Schedule Assignments is determined in the following
-                descending order: By Customer Ship-To Address (most specific),
-                by Customer, by Customer Type, by Customer Type pattern, by
-                all Customers. The lookup feature located to the right of the
+                descending order: By customer Ship-To Address (most specific),
+                by customer, by customer type, by customer type pattern, by
+                all customers. The lookup feature located to the right of the
                 field leads to a Price List screen.</para>
               </listitem>
             </varlistentry>
@@ -596,10 +596,10 @@
         <para role="xtprjaccnt">If you have the xTuple Project Accounting
         package installed—and you link a Project to the quote—transactions
         related to the sales order will include the Project Number as the
-        final segment of affected G/L Account Numbers. Account Numbers related
+        final segment of affected G/L account numbers. Account numbers related
         to the following transactions will include the Project Number as the
-        final segment: Issue to Shipping, Return Stock, Ship Shipment, Recall
-        Shipment, and Post Invoice.</para>
+        final segment: Issue to shipping, return Stock, Ship Shipment, Recall
+        Shipment, and Post invoice.</para>
         <tip>
           <para>If your site is configured to create Projects automatically
           whenever new sales orders or quotes are entered, the Projects
@@ -616,10 +616,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Quote Characteristics are user-defined definitions which may be used
+  <para>Quote characteristics are user-defined definitions which may be used
   to provide additional layers of description about quotes. These descriptions
   are static and not processed by the system, but are useful for informational
-  purposes. To enter Characteristics associated with a quote, select the
+  purposes. To enter characteristics associated with a quote, select the
   "Characteristics" tab. The following screen will appear:</para>
   <mediaobject>
     <imageobject>
@@ -630,7 +630,7 @@
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add Comments related to a quote, select the "Comments" tab. The
+  <para>To add comments related to a quote, select the "Comments" tab. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -642,8 +642,8 @@
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>Order Notes added to a quote are used for internal purposes only. To
-  add order Notes to a quote, select the "Order Notes" tab at the top of the
+  <para>Order notes added to a quote are used for internal purposes only. To
+  add order notes to a quote, select the "Order Notes" tab at the top of the
   "New Quote" screen. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -653,14 +653,14 @@
         <caption>Quote Notes</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding order Notes to a quote, you are presented with the
+  <para>When adding order notes to a quote, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Order Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the quote. These Notes are for internal use
+        general notes related to the quote. These notes are for internal use
         only.</para>
       </listitem>
     </varlistentry>
@@ -668,11 +668,11 @@
       <term>Shipping Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        shipping Notes related to the quote. These Notes are for internal use
-        only. Shipping Notes are drawn from the Customer master—specifically
-        from the "Shipping Notes" tab on the Ship-To Address master. The Notes
+        shipping notes related to the quote. These notes are for internal use
+        only. Shipping notes are drawn from the Customer master—specifically
+        from the "Shipping Notes" tab on the Ship-To Address master. The notes
         may vary depending on the Ship-To Address specified for the quote.
-        These Notes provide a mechanism for transferring shipping information
+        These notes provide a mechanism for transferring shipping information
         from the Customer master to the quote.</para>
       </listitem>
     </varlistentry>

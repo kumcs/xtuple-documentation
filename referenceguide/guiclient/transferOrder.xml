@@ -118,7 +118,7 @@
         </indexterm>Tax Zone</term>
 
       <listitem>
-        <para>Specify the Tax Zone for this transfer order.</para>
+        <para>Specify the tax zone for this transfer order.</para>
       </listitem>
     </varlistentry>
 
@@ -127,10 +127,10 @@
 
       <listitem>
         <para>Select to require that all transfer order line item quantities
-        be issued to Shipping before the Order is shipped. This feature is
+        be issued to shipping before the Order is shipped. This feature is
         designed to prevent partial shipments. If selected, users will be
         prevented from shipping the Order unless all line item quantities have
-        been issued to Shipping. If not selected, partial shipments for the
+        been issued to shipping. If not selected, partial shipments for the
         Order will be allowed.</para>
 
         <note>
@@ -259,7 +259,7 @@
       <term>Shipping Form</term>
 
       <listitem>
-        <para>Specify the Shipping Form associated with the transfer order.
+        <para>Specify the shipping form associated with the transfer order.
         This field is optional.</para>
       </listitem>
     </varlistentry>
@@ -273,7 +273,7 @@
 
       <listitem>
         <para>Creates the transfer order, saves it, and adds it to the list of
-        Orders available for printing on the Packing List Batch.</para>
+        Orders available for printing on the Packing List batch.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -338,10 +338,10 @@
 
       <listitem>
         <para>Select to ensure you have enough quantity on hand (QOH) of a
-        line item prior to issuing Stock to Shipping. If selected, this option
-        will prevent you from issuing line item quantity to Shipping if doing
+        line item prior to issuing Stock to shipping. If selected, this option
+        will prevent you from issuing line item quantity to shipping if doing
         so would force QOH for the item site to fall below zero. Not selecting
-        this option means issuing Stock to Shipping may drive item site QOH
+        this option means issuing Stock to shipping may drive item site QOH
         negative.</para>
       </listitem>
     </varlistentry>
@@ -444,13 +444,13 @@
 
       <listitem>
         <para>Highlight a transfer order line item and then select this button
-        to issue quantity to Shipping.</para>
+        to issue quantity to shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <tip>
-    <para>You may select multiple line items for issuing to Shipping by
+    <para>You may select multiple line items for issuing to shipping by
     highlighting them using your mouse—or a combination of your mouse and
     either the SHIFT or CTRL keys.</para>
   </tip>
@@ -461,13 +461,13 @@
 
       <listitem>
         <para>Highlight a transfer order line item and then select this button
-        to issue the balance of the line item quantity to Shipping.</para>
+        to issue the balance of the line item quantity to shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>Order Notes added to a transfer order are used for internal purposes
-  only. To add Notes to a transfer order, select the "Order Notes" tab at the
+  <para>Order notes added to a transfer order are used for internal purposes
+  only. To add notes to a transfer order, select the "Order Notes" tab at the
   top of the "Transfer Order" screen. The following screen will appear:</para>
 
   <para><screenshot>
@@ -480,7 +480,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When adding Notes to a transfer order, you are presented with the
+  <para>When adding notes to a transfer order, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -489,13 +489,13 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        general Notes related to the transfer order. These Notes are for
+        general notes related to the transfer order. These notes are for
         internal use only.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To add Comments related to a transfer order, select the "Comments"
+  <para>To add comments related to a transfer order, select the "Comments"
   tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -511,11 +511,11 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>Shipping Notes are drawn from the Shipping Comments (if any)
-  associated with transit sites. The Notes may vary depending on the Transit
-  site being used. These Notes provide a mechanism for transferring
-  information about Transit sites to the transfer order. To view Transfer
-  Order Shipping Notes, select the "Shipping Notes" tab at the top of the
+  <para>Shipping notes are drawn from the shipping comments (if any)
+  associated with transit sites. The notes may vary depending on the Transit
+  site being used. These notes provide a mechanism for transferring
+  information about Transit sites to the transfer order. To view transfer
+  order shipping notes, select the "Shipping Notes" tab at the top of the
   "Transfer Order" screen. The following screen will appear:</para>
 
   <para><screenshot>
@@ -528,7 +528,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing or editing Shipping Notes for a transfer order, you are
+  <para>When viewing or editing shipping notes for a transfer order, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -536,8 +536,8 @@
       <term>Shipping Notes</term>
 
       <listitem>
-        <para>While the content for Shipping Notes may originate from the
-        Transit Site master, you can edit the Notes to fit the requirements of
+        <para>While the content for shipping notes may originate from the
+        Transit Site master, you can edit the notes to fit the requirements of
         an Order. This is a scrolling text field with word-wrapping.</para>
       </listitem>
     </varlistentry>
@@ -607,7 +607,7 @@
       <term>Standard Cost</term>
 
       <listitem>
-        <para>Displays the Standard Cost per unit.</para>
+        <para>Displays the standard cost per unit.</para>
       </listitem>
     </varlistentry>
 

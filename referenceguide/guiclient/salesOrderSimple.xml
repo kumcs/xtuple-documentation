@@ -40,7 +40,7 @@
     <varlistentry>
       <term>Cust. PO #</term>
       <listitem>
-        <para>Enter a Customer purchase order number, as needed.</para>
+        <para>Enter a customer purchase order number, as needed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -53,23 +53,23 @@
     <varlistentry>
       <term>Tax Zone</term>
       <listitem>
-        <para>Specify the Tax Zone for the Order. If the default Customer (or
-        other specified Customer) does not have a default Ship-to Address and
-        associated Tax Zone, then the Tax Zone for the site will be
+        <para>Specify the tax zone for the Order. If the default customer (or
+        other specified customer) does not have a default Ship-to Address and
+        associated tax zone, then the tax zone for the site will be
         used.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Customer</term>
       <listitem>
-        <para>Specify the Customer associated with the sales order. By
-        default, the cash-paying Customer defined in your Sales module
+        <para>Specify the customer associated with the sales order. By
+        default, the cash-paying customer defined in your Sales module
         configuration will be displayed here. However, you may easily select a
-        different, pre-existing Customer?or enter a new Customer record?during
+        different, pre-existing customer?or enter a new customer record?during
         order entry.</para>
         <note>
-          <para>If the specified Customer has exceeded their credit limit, the
-          screen will revert to using the default cash-paying Customer.</para>
+          <para>If the specified customer has exceeded their credit limit, the
+          screen will revert to using the default cash-paying customer.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -85,8 +85,8 @@
       <listitem>
         <para>Enter the item number of the item you want to sell. The item
         list will contain sold items available for sale to the specified
-        Customer. The list of available items may vary from Customer to
-        Customer, depending on how Pricing Schedules are implemented at your
+        customer. The list of available items may vary from customer to
+        customer, depending on how Pricing Schedules are implemented at your
         site.</para>
       </listitem>
     </varlistentry>
@@ -126,16 +126,16 @@
       <caption>Credit Card Payment</caption>
     </mediaobject>
   </screenshot>
-  <para>When processing a Credit Card payment for the Order, you are presented
+  <para>When processing a credit card payment for the Order, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Credit Card</term>
       <listitem>
-        <para>List will display Credit Cards already on file for the Customer,
-        if any. Highlight the Credit Card you want to use for the transaction
+        <para>List will display credit cards already on file for the customer,
+        if any. Highlight the credit card you want to use for the transaction
         prior to selecting the CHARGE button. If none exist, you can create a
-        new Credit Card record by selecting the NEW button.</para>
+        new credit card record by selecting the NEW button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -148,7 +148,7 @@
       <term>CVV Code</term>
       <listitem>
         <para>Enter the Card Verification Value (CVV) Code found on the back
-        of the specified Credit Card. This may be an optional feature at your
+        of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
     </varlistentry>
@@ -158,23 +158,23 @@
     <varlistentry>
       <term>NEW</term>
       <listitem>
-        <para>Select to create a new Credit Card record for the
-        Customer.</para>
+        <para>Select to create a new credit card record for the
+        customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>VIEW</term>
       <listitem>
-        <para>Highlight a Credit Card record on file and then select this
-        button to view the Credit Card information.</para>
+        <para>Highlight a credit card record on file and then select this
+        button to view the credit card information.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>CHARGE CC AND COMPLETE ORDER</term>
       <listitem>
-        <para>Select to charge the highlighted Credit Card and complete the
+        <para>Select to charge the highlighted credit card and complete the
         Order. You may be prompted to print a shipping Packing List and/or an
-        Invoice if your Sales module is configured to do so.</para>
+        invoice if your Sales module is configured to do so.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -205,7 +205,7 @@
     <varlistentry>
       <term>Available Credit</term>
       <listitem>
-        <para>Displays the value of the Customer's outstanding credits, if
+        <para>Displays the value of the customer's outstanding credits, if
         any.</para>
       </listitem>
     </varlistentry>
@@ -213,7 +213,7 @@
       <term>Amount Received</term>
       <listitem>
         <para>Enter the amount of Cash being received against the Order. If
-        the Customer's credit status is good and the Funds Type is set to "On
+        the customer's credit status is good and the Funds Type is set to "On
         Account," this field will be disabled.</para>
       </listitem>
     </varlistentry>
@@ -221,12 +221,12 @@
       <term>Funds Type</term>
       <listitem>
         <para>Specify the type of funds being used for the Cash Receipt.
-        Choose from the following types: On Account, Cash, Check, Certified
+        Choose from the following types: On account, Cash, Check, Certified
         Check, Wire Transfer, and Other.</para>
         <note>
           <para>The "On Account" Funds Type will only be shown if the
-          specified Customer has not exceeded their credit limit. If they
-          have, the type will be hidden and the default cash-paying Customer
+          specified customer has not exceeded their credit limit. If they
+          have, the type will be hidden and the default cash-paying customer
           will be used instead.</para>
         </note>
       </listitem>
@@ -234,8 +234,8 @@
     <varlistentry>
       <term>Payment/Document #</term>
       <listitem>
-        <para>Use this field to enter the Customer's Payment Number,
-        transaction number, Credit Card number, or any other Document Number
+        <para>Use this field to enter the customer's Payment Number,
+        transaction number, credit card number, or any other Document Number
         you wish to associate with the Cash Receipt.</para>
       </listitem>
     </varlistentry>
@@ -250,8 +250,8 @@
     <varlistentry>
       <term>Post To</term>
       <listitem>
-        <para>Select the Bank Account you want to post the Cash Receipt to.
-        The Asset Account used for the selected Bank Account is specified on
+        <para>Select the bank account you want to post the Cash Receipt to.
+        The Asset account used for the selected bank account is specified on
         the Bank Account master.</para>
       </listitem>
     </varlistentry>
@@ -262,7 +262,7 @@
       <term>POST PAYMENT AND COMPLETE ORDER</term>
       <listitem>
         <para>Select to post the Cash Receipt and complete the Order. You may
-        be prompted to print a shipping Packing List and/or an Invoice if your
+        be prompted to print a shipping Packing List and/or an invoice if your
         Sales module is configured to do so.</para>
       </listitem>
     </varlistentry>
