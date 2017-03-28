@@ -10,7 +10,7 @@
       <primary>planner codes</primary>
       <secondary>purchase requests for</secondary>
     </indexterm>Purchase Requests by Planner Code</title>
-  <para>To view purchase requests by Planner Code or to create new manual
+  <para>To view purchase requests by planner code or to create new manual
   purchase requests, select the "Purchase Requests by Planner Code" option.
   The following screen will appear:</para>
   <note>
@@ -27,36 +27,36 @@
     </screenshot></para>
   <tip>
     <para>Use the NEW button to create a manual purchase request. Or use the
-    right-click option on the Inventory Availability and Planned Order
+    right-click option on the Inventory availability and Planned Order
     screens.</para>
   </tip>
-  <para>When displaying purchase requests by Planner Code, you are presented
+  <para>When displaying purchase requests by planner code, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
       <listitem>
-        <para>Select to display purchase requests for all Planner
-        Codes.</para>
+        <para>Select to display purchase requests for all planner
+        codes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify Planner Code whose purchase requests you want to
+        <para>Specify planner code whose purchase requests you want to
         display.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Pattern</term>
       <listitem>
-        <para>Enter a Planner Code pattern to select a range of Planner Codes.
+        <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using Regular Expressions.</para>
         <note>
           <para>Purchase request quantities are based on the inventory Unit of
-          Measure (UOM). However, some Vendor Item Sources may specify an
+          Measure (UOM). However, some vendor item sources may specify an
           alternate UOM. If this is the case, the system will automatically
-          convert the requirement to the Vendor's UOM when the Purchase
+          convert the requirement to the vendor's UOM when the Purchase
           Request is released.</para>
         </note>
       </listitem>
@@ -64,51 +64,51 @@
     <varlistentry role="standard">
       <term>All Sites</term>
       <listitem>
-        <para>Select to display purchase requests by Planner Code for all
+        <para>Select to display purchase requests by planner code for all
         sites.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="standard">
       <term>Selected</term>
       <listitem>
-        <para>Specify site whose purchase requests by Planner Code you want to
+        <para>Specify site whose purchase requests by planner code you want to
         display.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Start Date</term>
       <listitem>
-        <para>Purchase requests by Planner Code entered on and after this date
+        <para>Purchase requests by planner code entered on and after this date
         will be displayed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>End Date</term>
       <listitem>
-        <para>Purchase requests by Planner Code entered on and before this
+        <para>Purchase requests by planner code entered on and before this
         date will be displayed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Sort by Vendor</term>
       <listitem>
-        <para>Select to force the results to be sorted by Vendor.</para>
+        <para>Select to force the results to be sorted by vendor.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Purchase Requests</term>
       <listitem>
-        <para>Display lists purchase requests for the specified Planner Code,
+        <para>Display lists purchase requests for the specified planner code,
         using the specified parameters. You may multi-select purchase requests
         in the list, but when doing so each request will be processed
         individually.</para>
         <note>
           <para>When a purchase request is released, the requested item will
-          automatically populate a Purchase Order Item screen. If Item Sources
-          have been defined for the item, then Item Source Prices will be
-          used—that is, unless the Vendor price has been specifically
+          automatically populate a Purchase Order Item screen. If item sources
+          have been defined for the item, then item source prices will be
+          used—that is, unless the vendor price has been specifically
           overridden for purchase requests generated from sales orders.
-          Project Numbers may also be transferred from sales orders. In this
+          Project numbers may also be transferred from sales orders. In this
           way, sales orders and purchase order line items may be linked to the
           same Project.</para>
         </note>
