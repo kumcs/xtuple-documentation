@@ -50,7 +50,7 @@
               apply-to document?then the Item List will show only items on the
               original invoice. The ITEM/ALIAS SEARCH button can also be used
               to help locate sales credit items. Once an item number is
-              entered, the inventory Unit of Measure and item description will
+              entered, the inventory unit of measure and item description will
               automatically appear. Additionally, you may also specify the
               item's receiving site. Commercial editions of xTuple allow items
               to be received into multiple sites.</para>
@@ -77,7 +77,7 @@
         <para>Specify the reason why an adjustment is being made to a
         customer's account.</para>
         <para><note>
-            <para>By default, the Reason Code on the Sales Credit header will
+            <para>By default, the reason code on the Sales Credit header will
             be used at the line item level. However, you may change the Reason
             Code for individual line items.</para>
           </note></para>
@@ -88,7 +88,7 @@
       <listitem>
         <para>Specify an alternate account to be used as the Revenue account.
         This account will be used instead of the typical accounts pre-defined
-        in the Receivables Assignments. For example, you might use this
+        in the receivables assignments. For example, you might use this
         alternate account in the scenario where you are doing business with
         customers who are part of the same buyer's group (i.e., customer
         Group).</para>
@@ -158,21 +158,21 @@
         then the system will automatically enter the item's Net Unit price as
         it appeared on the referring invoice. If no invoice is being
         applied-to, then the system will choose the lower of the following two
-        prices: A) The most-specific Pricing Schedule Assignment or B) any
+        prices: A) The most-specific Pricing schedule assignment or B) any
         Sale in effect at the time of order entry. The specificity of Pricing
-        Schedule Assignments is determined in the following descending order:
+        schedule assignments is determined in the following descending order:
         By customer ship-to address (most specific), by customer, by customer
         type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
-        <para>If your Pricing Schedule has multiple Units of Measure (UOM) on
-        it (or if several Pricing Schedules share the same level of price
+        <para>If your Pricing schedule has multiple units of measure (UOM) on
+        it (or if several Pricing schedules share the same level of price
         specificity, but they have different UOMs) then the UOM which matches
         the selected UOM will be chosen—that is, as long as the quantity break
         does not exceed the quantity being priced. If no entry matches the UOM
         with a quantity break less than the quantity being priced, then the
         lowest value price for any UOM will be chosen. To make sure a specific
         UOM is always chosen at the desired level of price specificity, then
-        your Pricing Schedules should include at least one UOM with a quantity
+        your Pricing schedules should include at least one UOM with a quantity
         break of 0.</para>
         <tip>
           <para>The system can be configured to prevent users from editing the

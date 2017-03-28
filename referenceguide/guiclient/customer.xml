@@ -29,12 +29,12 @@
     <varlistentry>
       <term>Customer #</term>
       <listitem>
-        <para>The customer Number uniquely identifies the customer. To search
+        <para>The customer number uniquely identifies the customer. To search
         for an existing customer, use the lookup feature located next to the
         Customer field. Use the "+" button to add a new customer. And use the
-        "!" button if you want to edit the customer Number. If the "!" button
+        "!" button if you want to edit the customer number. If the "!" button
         is not selected, you will be prevented from editing the customer
-        Number.</para>
+        number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -71,30 +71,30 @@
   <para><indexterm significance="normal">
       <primary>customers</primary>
       <secondary>addresses for</secondary>
-    </indexterm>To enter Contact information for the customer, select the
+    </indexterm>To enter contact information for the customer, select the
   "Addresses" tab and choose from the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Billing Contact</term>
       <listitem>
-        <para>Select to manually enter billing Contact information in the
-        fields below—or use the lookup feature to select pre-existing Contact
-        information. If a new Contact is manually entered here, that Contact
-        will be added automatically to the master list of Contacts. For
-        additional documentation related to creating Contacts, see <xref
+        <para>Select to manually enter billing contact information in the
+        fields below—or use the lookup feature to select pre-existing contact
+        information. If a new contact is manually entered here, that contact
+        will be added automatically to the master list of contacts. For
+        additional documentation related to creating contacts, see <xref
         linkend="contact" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Correspondence Contact</term>
       <listitem>
-        <para>Select to manually enter non-billing-related Contact information
+        <para>Select to manually enter non-billing-related contact information
         in the fields below—or use the lookup feature to select pre-existing
-        Contact information. Examples of non-billing-related correspondence
+        contact information. Examples of non-billing-related correspondence
         might include price updates, holiday cards, etc. You may also enter
-        additional contact information. If a new Contact is manually entered
-        here, that Contact will be added automatically to the master list of
-        Contacts. For additional documentation related to creating Contacts,
+        additional contact information. If a new contact is manually entered
+        here, that contact will be added automatically to the master list of
+        contacts. For additional documentation related to creating contacts,
         see <xref linkend="contact" />.</para>
       </listitem>
     </varlistentry>
@@ -136,7 +136,7 @@
     <varlistentry>
       <term>Customer #</term>
       <listitem>
-        <para>Displays the customer Number and customer name.</para>
+        <para>Displays the customer number and customer name.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -184,13 +184,13 @@
           <secondary>contact information for</secondary>
         </indexterm>Contact</term>
       <listitem>
-        <para>Manually enter delivery Contact information in the fields
-        below—or use the lookup feature to select pre-existing Contact
+        <para>Manually enter delivery contact information in the fields
+        below—or use the lookup feature to select pre-existing contact
         information. This field should not to be confused with the "Name"
-        field that appears on the ship-to address label. If a new Contact is
-        manually entered here, that Contact will be added automatically to the
-        master list of Contacts. For additional documentation related to
-        creating Contacts, see <xref linkend="contact" />.</para>
+        field that appears on the ship-to address label. If a new contact is
+        manually entered here, that contact will be added automatically to the
+        master list of contacts. For additional documentation related to
+        creating contacts, see <xref linkend="contact" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -234,13 +234,13 @@
           <varlistentry>
             <term>Ship Via</term>
             <listitem>
-              <para>Specify the default Ship Via to be used for the ship-to
-              address. You may enter a free-form Ship Via simply by typing the
-              name of the Ship Via into the field.</para>
+              <para>Specify the default ship via to be used for the ship-to
+              address. You may enter a free-form ship via simply by typing the
+              name of the ship via into the field.</para>
               <tip>
                 <para>The system supports up-to-date shipment tracking with
                 links to the websites of many leading shipping companies
-                (i.e., "Ship Vias").</para>
+                (i.e., "ship vias").</para>
               </tip>
             </listitem>
           </varlistentry>
@@ -302,11 +302,11 @@
     <varlistentry role="xtconnect">
       <term>Transmission</term>
       <listitem>
-        <para>Select the "Transmission" tab to associate EDI Profiles with the
-        ship-to address. EDI Profiles are used for transmitting Orders and
+        <para>Select the "Transmission" tab to associate EDI profiles with the
+        ship-to address. EDI profiles are used for transmitting Orders and
         invoices to customers electronically—via email or FTP. Associating an
-        EDI Profile with a ship-to address overrides the association of an EDI
-        Profile with the customer.</para>
+        EDI profile with a ship-to address overrides the association of an EDI
+        profile with the customer.</para>
         <note>
           <para role="xtconnect">The buttons on the "Transmission" tab are
           disabled when creating a new ship-to address. If you want to set up
@@ -390,8 +390,8 @@
     <varlistentry>
       <term>Ship Via</term>
       <listitem>
-        <para>Specify the default Ship Via to be used for the customer. You
-        may enter a free-form Ship Via simply by typing the name of the Ship
+        <para>Specify the default ship via to be used for the customer. You
+        may enter a free-form ship via simply by typing the name of the Ship
         Via into the field.</para>
       </listitem>
     </varlistentry>
@@ -527,7 +527,7 @@
     <varlistentry>
       <term>Terms</term>
       <listitem>
-        <para>Specify the default billing Terms for the customer.</para>
+        <para>Specify the default billing terms for the customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -536,16 +536,16 @@
         <para>Enter the default discount—if any—which the customer should
         receive. Customer discounts are applied to the list price for a sold
         item, if the list price is being used. The discount does not get used
-        if a Pricing Schedule price applies to the item.</para>
+        if a Pricing schedule price applies to the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Currency</term>
       <listitem>
-        <para>Specify the Currency to be used when transacting business with
+        <para>Specify the currency to be used when transacting business with
         the customer. With the system's multi-currency support, you can do
-        business with customer's in their Currency, using Exchange Rates to
-        normalize transactions in your base Currency.</para>
+        business with customer's in their currency, using exchange rates to
+        normalize transactions in your base currency.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -600,13 +600,13 @@
       <listitem>
         <para>Select to indicate that the customer uses Purchase Orders. If
         selected, users will be required to enter a customer Purchase Order
-        Number when entering a Sales Order. In addition, selecting the option
+        number when entering a Sales Order. In addition, selecting the option
         will prevent users from entering duplicate customer Purchase Order
-        Numbers—unless the customer is marked as using Blanket POs.</para>
+        numbers—unless the customer is marked as using Blanket POs.</para>
         <note>
           <para>If the option "Uses Purchase Orders" is not selected, the
           system will place no restrictions on customer Purchase Order
-          Numbers.</para>
+          numbers.</para>
         </note>
         <variablelist>
           <varlistentry>
@@ -619,7 +619,7 @@
               Orders. A blanket Purchase Order is a customer Purchase Order
               which may be used for more than one Sales Order. Selecting this
               option means users will be allowed to enter duplicate Purchase
-              Order Numbers for this customer.</para>
+              Order numbers for this customer.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -779,7 +779,7 @@
     <varlistentry>
       <term>Customer #</term>
       <listitem>
-        <para>Displays the customer Number for the specified customer.</para>
+        <para>Displays the customer number for the specified customer.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -792,8 +792,8 @@
     <varlistentry>
       <term>Tax Authority</term>
       <listitem>
-        <para>Specify the tax authority associated with the tax Registration
-        Number.</para>
+        <para>Specify the tax authority associated with the tax registration
+        number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -802,7 +802,7 @@
         <para>Enter the customer's tax registration number for the specified
         tax authority. The registration number is used by tax authorities to
         identify businesses and/or individuals. An Employer Identification
-        Numbers (EIN) is an example of a tax registration number.</para>
+        numbers (EIN) is an example of a tax registration number.</para>
         <tip>
           <para>The customer's tax registration number is used for identifying
           the customer to relevant tax authorities. This information should
@@ -859,8 +859,8 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>Customer credit cards may be used when entering Sales Orders or Cash
-    Receipt transactions for the customer. When entering a Sales Order, you
+    <para>Customer credit cards may be used when entering Sales Orders or cash
+    receipt transactions for the customer. When entering a Sales Order, you
     have the option to either pre-authorize or charge a credit card. Any
     pre-authorizations may later be post-authorized using the Receivables
     Workbench.</para>
@@ -925,8 +925,8 @@
     <varlistentry>
       <term>Credit Card Number</term>
       <listitem>
-        <para>Enter the credit card Number. After the credit card record has
-        been saved, all but the last four digits of the credit card Number
+        <para>Enter the credit card number. After the credit card record has
+        been saved, all but the last four digits of the credit card number
         will be encrypted for security purposes.</para>
       </listitem>
     </varlistentry>
@@ -996,15 +996,15 @@
       </mediaobject>
     </screenshot></para>
   <para>If the customer type a customer belongs to has a characteristic
-  Profile (i.e., template) defined, then every customer in that customer type
+  profile (i.e., template) defined, then every customer in that customer type
   will be presented with a range of pre-defined characteristics. You can
   select or add values for each characteristic by right-clicking on a
   characteristic in the list.</para>
   <tip>
     <para>If you do not see buttons on the right side of the Customer
-    Characteristics screen, this means characteristic Profiles are being used
+    Characteristics screen, this means characteristic profiles are being used
     for the customer type the customer belongs to. These buttons will only
-    appear if customer type characteristic Profiles are not being used.</para>
+    appear if customer type characteristic profiles are not being used.</para>
   </tip>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
@@ -1026,22 +1026,22 @@
     <varlistentry>
       <term>Contacts</term>
       <listitem>
-        <para>Select to view a list of all Contacts associated with the
-        account. On this screen you can manage an account's Contacts—either by
-        adding new Contacts or attaching/detaching Contacts from the account.
+        <para>Select to view a list of all contacts associated with the
+        account. On this screen you can manage an account's contacts—either by
+        adding new contacts or attaching/detaching contacts from the account.
         Any changes made here also update the CRM account record. For
-        additional documentation related to managing a Contacts associated
+        additional documentation related to managing a contacts associated
         with a CRM account, see <xref linkend="crmaccount" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Activities</term>
       <listitem>
-        <para>Select to view the To-Do list associated with the account. On
-        this screen you can manage all of the To-Dos, Opportunities, and
-        Incidents related to the account. Any changes made here also update
-        the main To-Do List. For additional documentation related to managing
-        the To-Do List, see <xref linkend="todoList" />.</para>
+        <para>Select to view the to-do list associated with the account. On
+        this screen you can manage all of the to-dos, opportunities, and
+        incidents related to the account. Any changes made here also update
+        the main to-do list. For additional documentation related to managing
+        the to-do list, see <xref linkend="todoList" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1130,12 +1130,12 @@
     <varlistentry>
       <term>Cash Receipts</term>
       <listitem>
-        <para>Select to view information related to Cash Receipts from the
-        customer. On this screen you can view Cash Receipt and cash
-        application history, as well as enter new Cash Receipts for the
-        customer. For additional documentation related to Cash Receipt
+        <para>Select to view information related to cash receipts from the
+        customer. On this screen you can view cash receipt and cash
+        application history, as well as enter new cash receipts for the
+        customer. For additional documentation related to cash receipt
         history, see <xref linkend="dspCashReceipts" />. And for detailed
-        information about entering Cash Receipts, see <xref
+        information about entering cash receipts, see <xref
         linkend="cashReceipt" />.</para>
       </listitem>
     </varlistentry>
@@ -1219,7 +1219,7 @@
   </note>
   <xi:include href="../widgets/edirelation.xml" xpointer="edirelationWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view Email associated with the customer, select the "Email" tab.
+  <para>To view email associated with the customer, select the "Email" tab.
   The following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />

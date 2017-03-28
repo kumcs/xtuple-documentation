@@ -11,30 +11,30 @@
       <secondary>currency definitions for</secondary>
     </indexterm>Currencies</title>
   <para>The system support for multi-currency begins with the definition of
-  multiple Currencies. In fact, the way to turn on multi-currency support is
-  to define two or more Currencies on the master list of Currencies. Once two
-  Currencies are defined, you will see multi-currency support integrated
+  multiple currencies. In fact, the way to turn on multi-currency support is
+  to define two or more currencies on the master list of currencies. Once two
+  currencies are defined, you will see multi-currency support integrated
   throughout the application. If you prefer not to use multi-currency at your
-  site, then simply define a base Currency only—and no secondary
-  Currencies.</para>
+  site, then simply define a base currency only—and no secondary
+  currencies.</para>
   <caution>
-    <para>You must define a base Currency, even if you do not plan to use
-    multi-currency. System administrators must ensure that a base Currency is
+    <para>You must define a base currency, even if you do not plan to use
+    multi-currency. System administrators must ensure that a base currency is
     defined—and that it is defined accurately.</para>
   </caution>
-  <para>The base Currency is the Currency used for all General Ledger (G/L)
-  transactions. Only one base Currency may be defined per each database. Any
-  transactions conducted in a foreign Currency will be converted automatically
-  to the base Currency (using the prevailing Exchange Rate) before they are
+  <para>The base currency is the currency used for all general ledger (G/L)
+  transactions. Only one base currency may be defined per each database. Any
+  transactions conducted in a foreign currency will be converted automatically
+  to the base currency (using the prevailing exchange rate) before they are
   posted to the G/L.</para>
   <warning>
     <para>Once you post a transaction using multi-currency support, you cannot
     turn off multi-currency from that point forward. Either you implement
     multi-currency or you don"t. There is no middle ground. System-level
-    privileges are available to prevent users from accessing Currency and
-    Exchange Rate functionality.</para>
+    privileges are available to prevent users from accessing currency and
+    exchange rate functionality.</para>
   </warning>
-  <para>To access the master list of Currencies, select the "Currencies"
+  <para>To access the master list of currencies, select the "Currencies"
   option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -45,19 +45,19 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>Currency information for most Countries can be found as part of the
-    Country set up. For more information, please see <xref
+    <para>Currency information for most countries can be found as part of the
+    country set up. For more information, please see <xref
     linkend="countries" />.</para>
   </tip>
-  <para>The Currencies master list displays information on all Currencies,
-  including base Currency indicator, Currency name, Currency symbol, and
-  Currency abbreviation. Beneath the list of Currencies, you will find another
-  list showing Exchange Rate comments. Whenever the Exchange Rate for a
-  Currency is updated, the change will be recorded here as a comment. You may
-  also add your own manual comments, by Currency.</para>
+  <para>The Currencies master list displays information on all currencies,
+  including base currency indicator, currency name, currency symbol, and
+  currency abbreviation. Beneath the list of currencies, you will find another
+  list showing exchange rate comments. Whenever the exchange rate for a
+  currency is updated, the change will be recorded here as a comment. You may
+  also add your own manual comments, by currency.</para>
   <note>
-    <para>To add comments, you must first select a Currency from the list of
-    Currencies. Exchange Rate comments are linked to the Currency they relate
+    <para>To add comments, you must first select a currency from the list of
+    currencies. Exchange rate comments are linked to the currency they relate
     to.</para>
   </note>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"

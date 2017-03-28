@@ -26,20 +26,20 @@
           <secondary>numbering of</secondary>
         </indexterm>Account # Generation</term>
       <listitem>
-        <para>Select one of the available CRM account Number generation
+        <para>Select one of the available CRM account number generation
         methods:</para>
         <variablelist>
           <varlistentry>
             <term>Manual</term>
             <listitem>
-              <para>CRM account Numbers must be entered manually whenever you
+              <para>CRM account numbers must be entered manually whenever you
               create a new CRM account.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Automatic</term>
             <listitem>
-              <para>CRM account Numbers will be automatically incremented by 1
+              <para>CRM account numbers will be automatically incremented by 1
               each time a new CRM account is created. These
               automatically-generated numbers may not be edited. They are
               read-only.</para>
@@ -48,10 +48,10 @@
           <varlistentry>
             <term>Automatic, Allow Override</term>
             <listitem>
-              <para>CRM account Numbers will be automatically generated and
+              <para>CRM account numbers will be automatically generated and
               incremented, as under the "Automatic" option described above.
               However, this option also allows you to manually override the
-              CRM account Number at the time of CRM account creation.</para>
+              CRM account number at the time of CRM account creation.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -69,15 +69,15 @@
     <varlistentry>
       <term>Incident # Generation</term>
       <listitem>
-        <para>By default, Incident numbers are generated automatically.
+        <para>By default, incident numbers are generated automatically.
         However, you have the ability to specify the next available
         number.</para>
         <variablelist>
           <varlistentry>
             <term>Next #</term>
             <listitem>
-              <para>Specify the next available Incident number. The next
-              Incident created will use the number specified here.</para>
+              <para>Specify the next available incident number. The next
+              incident created will use the number specified here.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -96,7 +96,7 @@
               Accounting package. When Project Accounting is enabled, all G/L
               accounts are eligible to have transactions performed against
               them—and to have an extra dynamic segment for the Project number
-              appended to the G/L account Number. Project Accounts are created
+              appended to the G/L account number. Project Accounts are created
               on the fly as transactions are performed against them,
               eliminating the need for users having to create G/L accounts for
               every possible G/L account and Project combination. Financial
@@ -129,8 +129,8 @@
       <term>Post Opportunity Changes to the Change Log</term>
       <listitem>
         <para>Select to have the system automatically log changes made to
-        Opportunity records under the "Comments" tab for each Opportunity
-        where the changes are made. If not selected, Opportunity changes will
+        opportunity records under the "Comments" tab for each opportunity
+        where the changes are made. If not selected, opportunity changes will
         not be tracked automatically.</para>
       </listitem>
     </varlistentry>
@@ -140,7 +140,7 @@
         <para>Select if you want to show the "Public" checkbox option on the
         Incidents screen. In not selected, the "Public" checkbox will not be
         shown. This option applies primarily to sites where the xTuple Web
-        Portal has been implemented. With the Web Portal, xTuple Incidents may
+        Portal has been implemented. With the Web Portal, xTuple incidents may
         be viewed by customers, vendors, and others on your website. Depending
         on your website rules, private incidents may be hidden from most
         website users.</para>
@@ -149,8 +149,8 @@
     <varlistentry>
       <term>Incidents Public by Default</term>
       <listitem>
-        <para>If you are showing the "Public" checkbox on Incidents, select
-        this option to make Incidents publicly viewable by default. Incidents
+        <para>If you are showing the "Public" checkbox on incidents, select
+        this option to make incidents publicly viewable by default. Incidents
         will be private by default if this option is not selected. Regardless
         of the setting you make here, the "Public" flag can be overridden on
         the Incident screen.</para>
@@ -176,82 +176,82 @@
       <term>Default Incident Email Delivery Profile</term>
       <listitem>
         <para>Specify the default EDI email delivery profile you want to use
-        when emailing Incidents.</para>
+        when emailing incidents.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="xtconnect">
       <term>Email Delivery when Incident</term>
       <listitem>
-        <para>Select the options below to trigger Email notifications when
-        Incident Events occur.</para>
+        <para>Select the options below to trigger email notifications when
+        incident events occur.</para>
         <variablelist>
           <varlistentry>
             <term>Created</term>
             <listitem>
-              <para>When Incident is created, Email notification is
+              <para>When incident is created, email notification is
               sent.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Assigned</term>
             <listitem>
-              <para>When user is assigned to Incident, Email notification is
+              <para>When user is assigned to incident, email notification is
               sent.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Status Changed</term>
             <listitem>
-              <para>When status of an Incident is changed, Email notification
+              <para>When status of an incident is changed, email notification
               is sent.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Updated</term>
             <listitem>
-              <para>When Incident is updated, Email notification is
+              <para>When incident is updated, email notification is
               sent.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Comments Added</term>
             <listitem>
-              <para>When comments are added to an Incident, Email notification
+              <para>When comments are added to an incident, email notification
               is sent.</para>
             </listitem>
           </varlistentry>
         </variablelist>
         <note>
           <para>The following tokens are supported in EDI profile for CRM
-          Incidents:</para>
+          incidents:</para>
           <itemizedlist>
             <listitem>
-              <para>&lt;/email1&gt; = Incident owner email address</para>
+              <para>&lt;/email1&gt; = incident owner email address</para>
             </listitem>
             <listitem>
-              <para>&lt;/email2&gt; = Incident assignee email address</para>
+              <para>&lt;/email2&gt; = incident assignee email address</para>
             </listitem>
             <listitem>
-              <para>&lt;/email3&gt; = Incident contact email address</para>
+              <para>&lt;/email3&gt; = incident contact email address</para>
             </listitem>
             <listitem>
-              <para>&lt;/description&gt; = Incident description</para>
+              <para>&lt;/description&gt; = incident description</para>
             </listitem>
             <listitem>
-              <para>&lt;/docnumber&gt; = Incident number</para>
+              <para>&lt;/docnumber&gt; = incident number</para>
             </listitem>
             <listitem>
               <para>&lt;/doctype&gt; = "INCDT"</para>
             </listitem>
             <listitem>
-              <para>&lt;/docid&gt; = Incident primary key id</para>
+              <para>&lt;/docid&gt; = incident primary key id</para>
             </listitem>
             <listitem>
               <para>&lt;/docbody&gt; = Builds text of fields, notes and
               history of incident record</para>
             </listitem>
             <listitem>
-              <para>&lt;/comments&gt; = Incident comments</para>
+              <para>&lt;/comments&gt; = incident comments</para>
             </listitem>
           </itemizedlist>
         </note>
@@ -260,62 +260,62 @@
     <varlistentry>
       <term>Incident Status Colors</term>
       <listitem>
-        <para>The Incident color configuration option supports simple color
+        <para>The incident color configuration option supports simple color
         names (e.g., red, blue, green, etc.), as well as the full range of
         hexadecimal codes (e.g., #FFA0A0, #FF50A8, etc.). Specify how you want
-        Incidents on the Incident Workbench to appear according to their
+        incidents on the Incident Workbench to appear according to their
         various statuses:</para>
         <variablelist>
           <varlistentry>
             <term>New</term>
             <listitem>
-              <para>Specify the color for Incidents whose status is "New". The
+              <para>Specify the color for incidents whose status is "New". The
               default color is set to "white." Setting no value in this field
-              will cause New Incident rows to be rendered all "black."</para>
+              will cause new incident rows to be rendered all "black."</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Feedback</term>
             <listitem>
-              <para>Specify the color for Incidents whose status is
+              <para>Specify the color for incidents whose status is
               "Feedback". The default color is set to "white." Setting no
-              value in this field will cause New Incident rows to be rendered
+              value in this field will cause new incident rows to be rendered
               all "black."</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Confirmed</term>
             <listitem>
-              <para>Specify the color for Incidents whose status is
+              <para>Specify the color for incidents whose status is
               "Confirmed". The default color is set to "white." Setting no
-              value in this field will cause New Incident rows to be rendered
+              value in this field will cause new incident rows to be rendered
               all "black."</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Assigned</term>
             <listitem>
-              <para>Specify the color for Incidents whose status is
+              <para>Specify the color for incidents whose status is
               "Assigned". The default color is set to "white." Setting no
-              value in this field will cause New Incident rows to be rendered
+              value in this field will cause new incident rows to be rendered
               all "black."</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Resolved</term>
             <listitem>
-              <para>Specify the color for Incidents whose status is
+              <para>Specify the color for incidents whose status is
               "Resolved". The default color is set to "white." Setting no
-              value in this field will cause New Incident rows to be rendered
+              value in this field will cause new incident rows to be rendered
               all "black."</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Closed</term>
             <listitem>
-              <para>Specify the color for Incidents whose status is "Closed".
+              <para>Specify the color for incidents whose status is "Closed".
               The default color is set to "white." Setting no value in this
-              field will cause New Incident rows to be rendered all
+              field will cause new incident rows to be rendered all
               "black."</para>
             </listitem>
           </varlistentry>
@@ -325,24 +325,24 @@
     <varlistentry>
       <term>Default Country for Addresses</term>
       <listitem>
-        <para>Select if you want a default Country (e.g., United States) to be
+        <para>Select if you want a default country (e.g., United States) to be
         used whenever new addresses are created. While a default address will
         be set, the choice can be overridden manually when creating or editing
         addresses. If not selected, users will need to manually select a
-        Country when entering addresses.</para>
+        country when entering addresses.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Enforce Valid Country Names</term>
       <listitem>
         <para>If selected, users will be required to select from a list of
-        valid Countries when creating or editing addresses. Once this box is
+        valid countries when creating or editing addresses. Once this box is
         checked and you save the configuration, it will be disabled and you
         cannot uncheck it. If not selected, users will be permitted to enter
-        ad hoc Country names.</para>
+        ad hoc country names.</para>
         <warning>
           <para>When you select this option, the application will warn you if
-          it finds you have addresses with invalid Country names. This
+          it finds you have addresses with invalid country names. This
           includes addresses themselves and also documents which use
           addresses?namely, sales orders, invoices, etc. The warning message
           refers to a <literal>fixCountry.gz</literal> extension package,
@@ -350,7 +350,7 @@
           url="http://www.xtuple.com/xchange">xTuple xChange</ulink>.</para>
         </warning>
         <tip>
-          <para>To learn more about editing the list of Country names, please
+          <para>To learn more about editing the list of country names, please
           see <xref linkend="countries" />.</para>
         </tip>
       </listitem>

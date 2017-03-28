@@ -10,17 +10,17 @@
       <primary>multi-currency</primary>
       <secondary>exchange rates and</secondary>
     </indexterm>Exchange Rates</title>
-  <para>Exchange Rates are used to determine the value of foreign Currency—in
-  relation to the base Currency—on a given date. They are also used to convert
-  the value of transactions involving foreign Currencies to the base Currency
-  when the transactions are posted. This conversion to base Currency is
-  required because all transactions posted to the General Ledger (G/L) are
-  posted in base Currency.</para>
+  <para>Exchange rates are used to determine the value of foreign currency—in
+  relation to the base currency—on a given date. They are also used to convert
+  the value of transactions involving foreign currencies to the base currency
+  when the transactions are posted. This conversion to base currency is
+  required because all transactions posted to the general ledger (G/L) are
+  posted in base currency.</para>
   <note>
     <para>You also have the option to import exchange rates from external
     sources using the API.</para>
   </note>
-  <para>To access the master list of Exchange Rates, select the "Exchange
+  <para>To access the master list of exchange rates, select the "Exchange
   Rates" option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -30,18 +30,18 @@
         <caption>Exchange Rates Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The Exchange Rates master list displays information on all Exchange
-  Rates. The following options are available:</para>
+  <para>The Exchange Rates master list displays information on all exchange
+  rates. The following options are available:</para>
   <variablelist>
     <varlistentry>
       <term>All Foreign Currencies</term>
       <listitem>
-        <para>Select to display Exchange Rates for all foreign
-        Currencies.</para>
+        <para>Select to display exchange rates for all foreign
+        currencies.</para>
         <note>
-          <para>The system will post Exchange Rate variances whenever
-          fluctuating Exchange Rates result in Currency gains or losses. The
-          Currency gain/loss account is defined on the Configure G/L
+          <para>The system will post exchange rate variances whenever
+          fluctuating exchange rates result in currency gains or losses. The
+          currency gain/loss account is defined on the Configure G/L
           screen.</para>
         </note>
       </listitem>
@@ -49,45 +49,45 @@
     <varlistentry>
       <term>Selected</term>
       <listitem>
-        <para>Specify the foreign Currency whose Exchange Rates you want to
+        <para>Specify the foreign currency whose exchange rates you want to
         display.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Pattern</term>
       <listitem>
-        <para>Enter a foreign Currency pattern to select a range of foreign
-        Currencies. Refine your search using Regular Expressions.</para>
+        <para>Enter a foreign currency pattern to select a range of foreign
+        currencies. Refine your search using Regular Expressions.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Base Currency</term>
       <listitem>
-        <para>Displays the base Currency defined for the database you are
+        <para>Displays the base currency defined for the database you are
         connected to.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Start Date</term>
       <listitem>
-        <para>Exchange Rates effective on and after this date will be
+        <para>Exchange rates effective on and after this date will be
         displayed. This is a required field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>End Date</term>
       <listitem>
-        <para>Exchange Rates effective on and before this date will be
+        <para>Exchange rates effective on and before this date will be
         displayed. This is a required field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Foreign Currencies</term>
       <listitem>
-        <para>Display lists valid Exchange Rates for the specified foreign
-        Currencies, using the specified parameters. You can configure the
-        meaning of your Exchange Rate values using the Configure G/L screen in
-        the System module. Exchange Rates may be configured in either of two
+        <para>Display lists valid exchange rates for the specified foreign
+        currencies, using the specified parameters. You can configure the
+        meaning of your exchange rate values using the Configure G/L screen in
+        the System module. Exchange rates may be configured in either of two
         ways: 1) Base x Exchange Rate = Foreign or 2) Foreign x Exchange Rate
         = Base.</para>
       </listitem>
