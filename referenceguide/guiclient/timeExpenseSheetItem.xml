@@ -7,8 +7,8 @@
       <primary>worksheets</primary>
       <secondary>management of</secondary>
     </indexterm>Worksheet Item</title>
-  <para>The Worksheet Item screen is where Employees record their actual time
-  or expenses related to a Project. To add a time or expense entry, select the
+  <para>The Worksheet Item screen is where employees record their actual time
+  or expenses related to a project. To add a time or expense entry, select the
   NEW button on the Worksheet screen. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -24,7 +24,7 @@
     <varlistentry>
       <term>Worksheet</term>
       <listitem>
-        <para>Displays the system-generated number of the Worksheet.</para>
+        <para>Displays the system-generated number of the worksheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -37,16 +37,16 @@
     <varlistentry>
       <term>Week Of</term>
       <listitem>
-        <para>Displays the date for the parent Worksheet.</para>
+        <para>Displays the date for the parent worksheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Project #</term>
       <listitem>
-        <para>Enter the number of the Project associated with the entry. This
-        is a required field. Depending on how the Project is configured, many
+        <para>Enter the number of the project associated with the entry. This
+        is a required field. Depending on how the project is configured, many
         of the other fields in the entry (e.g., customer and item numbers)
-        will be filled out automatically from the Project information.</para>
+        will be filled out automatically from the project information.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -74,8 +74,8 @@
       <term>Customer</term>
       <listitem>
         <para>Enter the number of the customer associated with the entry. This
-        field may be filled automatically from the Project information,
-        depending on how the Project is configured. The customer is needed for
+        field may be filled automatically from the project information,
+        depending on how the project is configured. The customer is needed for
         billable entries, so the system knows who to invoice for the time
         and/or expense.</para>
       </listitem>
@@ -92,7 +92,7 @@
         <para>Enter an item number to associate with the entry, if one is not
         already linked from the specified project task. This is a required
         field. The item number is needed to map an Expense account to the
-        task, which is required for subsequent General Ledger transactions.
+        task, which is required for subsequent general ledger transactions.
         Only Reference items which have been configured specifically to work
         with time and expense entries (on the "Project" tab of the Item
         master) may be selected.</para>
@@ -101,8 +101,8 @@
     <varlistentry>
       <term>Employee</term>
       <listitem>
-        <para>Displays the name of the Employee indicated on the parent
-        Worksheet.</para>
+        <para>Displays the name of the employee indicated on the parent
+        worksheet.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -132,7 +132,7 @@
       <term>Rate</term>
       <listitem>
         <para>For billable time entries, enter the rate to be billed to the
-        customer. Depending on how the Project is configured, this information
+        customer. Depending on how the project is configured, this information
         may be filled in automatically for you.</para>
       </listitem>
     </varlistentry>
@@ -154,7 +154,7 @@
     <varlistentry>
       <term>Hourly Cost</term>
       <listitem>
-        <para>For time entries, displays the Employee's hourly rate (or cost),
+        <para>For time entries, displays the employee's hourly rate (or cost),
         as distinguished from the billable rate charged to the
         customer.</para>
       </listitem>
@@ -162,8 +162,8 @@
     <varlistentry>
       <term>Total Cost</term>
       <listitem>
-        <para>For time entries, displays the total cost for the Employee's
-        time spent on the task, based on the Employee's hourly rate.</para>
+        <para>For time entries, displays the total cost for the employee's
+        time spent on the task, based on the employee's hourly rate.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -219,20 +219,20 @@
           <varlistentry>
             <term>Employee</term>
             <listitem>
-              <para>Displays the following information for the Employee
-              associated with the Worksheet:<variablelist>
+              <para>Displays the following information for the employee
+              associated with the worksheet:<variablelist>
                   <varlistentry>
                     <term>Day Total</term>
                     <listitem>
                       <para>Displays the number of hours entered for the
-                      Employee on the given work date.</para>
+                      employee on the given work date.</para>
                     </listitem>
                   </varlistentry>
                   <varlistentry>
                     <term>Worksheet Total</term>
                     <listitem>
-                      <para>Displays the Employee's total hours on the parent
-                      Worksheet.</para>
+                      <para>Displays the employee's total hours on the parent
+                      worksheet.</para>
                     </listitem>
                   </varlistentry>
                 </variablelist></para>

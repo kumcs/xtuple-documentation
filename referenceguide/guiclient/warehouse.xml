@@ -19,7 +19,7 @@
     </screenshot></para>
   <tip>
     <para>Site codes are abbreviations used to quickly and easily identify
-    sites. Keep these Codes short and meaningful so Employees will have an
+    sites. Keep these Codes short and meaningful so employees will have an
     easy time identifying them.</para>
   </tip>
   <para>When creating a new site, you are presented with the following
@@ -88,8 +88,8 @@
     <varlistentry>
       <term>Post Unassigned Transactions to</term>
       <listitem>
-        <para>Specify a General Ledger Account to post unassigned transactions
-        to. This account is used as a general bucket for General Ledger
+        <para>Specify a general ledger Account to post unassigned transactions
+        to. This account is used as a general bucket for general ledger
         transactions which the system, for one reason or another, may not know
         how to handle. A transaction is considered unassigned if the affected
         item site does not have a cost category assigned to it for the
@@ -121,7 +121,7 @@
               first field window to prefix the bill of lading number with
               user-defined information (e.g., site code). Prefixing bill of
               lading numbers may be helpful in tracking items that were
-              shipped to customers from a specific site Location. Use the
+              shipped to customers from a specific site location. Use the
               second part of this two-part field window to enter an unlimited
               number of whole numbers.</para>
             </listitem>
@@ -172,9 +172,9 @@
               <para>Select to enforce the use of zones within the site. A site
               zone is a defined section or area within a site. For example,
               separate site zones might be designated to define areas where
-              Orders are selected, Picked, and Packed. If selected, zones may
-              be specified when defining site Locations. If not selected, site
-              Locations may not include zones.</para>
+              orders are selected, Picked, and Packed. If selected, zones may
+              be specified when defining site locations. If not selected, site
+              locations may not include zones.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -205,7 +205,7 @@
             <listitem>
               <para>Enter default free on board (FOB) terms for the site. The
               default F.O.B. terms will be entered on the Sales Order header
-              for any Orders where the site is specified as the shipping
+              for any orders where the site is specified as the shipping
               site.</para>
             </listitem>
           </varlistentry>
@@ -221,9 +221,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para role="standard">Transit sites are special sites used by Transfer
-  Orders. When transfer order inventory is shipped from the Source site, it is
-  moved to a Transit site. Inventory stays in the Transit site until it is
+  <para role="standard">Transit sites are special sites used by transfer
+  orders. When transfer order inventory is shipped from the source site, it is
+  moved to a transit site. Inventory stays in the transit site until it is
   received at the Destination site. If the site is to be used as a Transit
   site, select the "Transit Site" option. The following changes to the main
   screen will appear:</para>
@@ -236,9 +236,9 @@
       </mediaobject>
     </screenshot></para>
   <tip role="standard">
-    <para>Be sure to define a default Transit site on your Inventory
-    Configuration screen. This will make it easier to generate Transfer
-    Orders, as Transit sites are required for transfer orders.</para>
+    <para>Be sure to define a default transit site on your Inventory
+    Configuration screen. This will make it easier to generate transfer
+    orders, as transit sites are required for transfer orders.</para>
   </tip>
   <para role="standard">When defining a site as a Transit site, you are
   presented with the following options:</para>
@@ -259,7 +259,7 @@
           default on the Transfer Order header whenever the specified Transit
           site is used.</para>
           <note>
-            <para>The shipping form will be used when printing Packing Lists
+            <para>The shipping form will be used when printing packing lists
             for the transfer order.</para>
           </note>
         </listitem>
@@ -284,14 +284,14 @@
       <varlistentry>
         <term>Shipping Comments</term>
         <listitem>
-          <para>Enter shipping comments you want to associate with the Transit
-          site. Shipping comments entered here will be used on any Transfer
-          Order which uses specified Transit site. This is a scrolling text
+          <para>Enter shipping comments you want to associate with the transit
+          site. Shipping comments entered here will be used on any transfer
+          order which uses specified transit site. This is a scrolling text
           field with word-wrapping for entering shipping comments.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
-  <para>To define ARBL (Aisle, Rack, Bin, Location) naming conventions for
+  <para>To define ARBL (Aisle, Rack, Bin, location) naming conventions for
   your site Locations, select the "Site Locations" tab. The following screen
   will appear:</para>
   <para><screenshot>
@@ -302,7 +302,7 @@
         <caption>Site Locations Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When defining ARBL naming conventions for your site Locations, you are
+  <para>When defining ARBL naming conventions for your site locations, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -311,8 +311,8 @@
           <secondary>enforcing in sites</secondary>
         </indexterm>Enforce ARBL Naming Convention</term>
       <listitem>
-        <para>Select to enforce the aisle, rack, bin, Location (ARBL) naming
-        convention when defining site Locations. Specify values for the
+        <para>Select to enforce the aisle, rack, bin, location (ARBL) naming
+        convention when defining site locations. Specify values for the
         following ARBL parameters:</para>
         <variablelist>
           <varlistentry>
@@ -346,9 +346,9 @@
             <term>Location Size</term>
             <listitem>
               <para>Specify the maximum number of characters allowed in a
-              Location name by using the arrow buttons or manually entering a
+              location name by using the arrow buttons or manually entering a
               value up to a maximum of 99. Also specify whether alpha
-              characters are allowed in Location names.</para>
+              characters are allowed in location names.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -356,7 +356,7 @@
     </varlistentry>
   </variablelist>
   <para>Site zones are defined sections or areas within a site. For example,
-  separate site zones might be designated to define areas where Orders are
+  separate site zones might be designated to define areas where orders are
   selected, Picked, and Packed. To define or maintain site zones, select the
   "Site Zones" tab. The following screen will appear:</para>
   <para><screenshot>

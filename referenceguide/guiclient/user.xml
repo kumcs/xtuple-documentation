@@ -16,7 +16,7 @@
       <primary>system administrators</primary>
       <see>xtuple administrators</see>
     </indexterm>User Account</title>
-  <para>To create a new User account, select the NEW button. The following
+  <para>To create a new user account, select the NEW button. The following
   screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -26,7 +26,7 @@
         <caption>User Account Information</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new User account, you are presented with the following
+  <para>When creating a new user account, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
@@ -38,8 +38,8 @@
           <secondary>creating usernames for</secondary>
         </indexterm>Username</term>
       <listitem>
-        <para>Enter a unique username to clearly distinguish the new User
-        account from existing User accounts. The username is case-sensitive.
+        <para>Enter a unique username to clearly distinguish the new user
+        account from existing user accounts. The username is case-sensitive.
         This is a required field.</para>
       </listitem>
     </varlistentry>
@@ -52,13 +52,13 @@
     <varlistentry>
       <term>Active</term>
       <listitem>
-        <para>Select to mark the User account as Active. Not selecting marks
-        the User account as Inactive. User accounts cannot be deleted from the
+        <para>Select to mark the user account as active. Not selecting marks
+        the user account as inactive. User accounts cannot be deleted from the
         system; however, marking them Inactive prevents them from logging into
-        the application. In some cases, inactive User accounts may still be
+        the application. In some cases, inactive user accounts may still be
         associated with valid documents in the system. Whenever that is the
-        case, the User account's name will appear with horizontal lines
-        striking through it. Re-saving documents with this inactive User
+        case, the user account's name will appear with horizontal lines
+        striking through it. Re-saving documents with this inactive user
         account relationship may cause the username to be dropped from the
         record.</para>
       </listitem>
@@ -66,14 +66,14 @@
     <varlistentry>
       <term>Proper Name</term>
       <listitem>
-        <para>Enter the User account's first name and last name (e.g., John
+        <para>Enter the user account's first name and last name (e.g., John
         Smith).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Initials</term>
       <listitem>
-        <para>Enter the User account's initials.</para>
+        <para>Enter the user account's initials.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -92,7 +92,7 @@
         system security. Passwords are case-sensitive. As you can see in the
         example, this field does not display the values entered on the screen.
         Instead, individual keystrokes are replaced by asterisks (*) to
-        protect the password from being viewed. Once the User account's
+        protect the password from being viewed. Once the user account's
         password is entered, it can only be reset by an system administrator
         who must overwrite the existing password.</para>
       </listitem>
@@ -100,7 +100,7 @@
     <varlistentry>
       <term>Verify</term>
       <listitem>
-        <para>Verify the accuracy of the User account's password by retyping
+        <para>Verify the accuracy of the user account's password by retyping
         it in this field. Again, individual keystrokes will be replaced by
         asterisks (*) to protect the password from being viewed.</para>
       </listitem>
@@ -116,21 +116,21 @@
       <listitem>
         <para>Select one of the available locales. Use the
         <option>Default</option> option if you want the operating system to
-        determine the correct locale for the User account. Locale settings
-        affect how information is formatted and displayed on a User account's
-        screen. Only User accounts who have been granted the "MaintainLocales"
+        determine the correct locale for the user account. Locale settings
+        affect how information is formatted and displayed on a User Account's
+        screen. Only user accounts who have been granted the "MaintainLocales"
         privilege can define and maintain locale settings. For more
         information on locales and locale settings, see <xref
         linkend="locales" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Employee</term>
+      <term>employee</term>
       <listitem>
-        <para>If the User account is an Employee, then the Employee Code will
-        be displayed here. The link between the User account and Employee
+        <para>If the user account is an employee, then the employee code will
+        be displayed here. The link between the user account and employee
         records will be made automatically if the username matches the
-        Employee Code.</para>
+        employee code.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -145,17 +145,17 @@
           <secondary>for user accounts</secondary>
         </indexterm>Purchasing Agent</term>
       <listitem>
-        <para>Select if the User accounts is authorized to make purchases. Not
-        selecting means the User account is not authorized to make
+        <para>Select if the user accounts is authorized to make purchases. Not
+        selecting means the user account is not authorized to make
         purchases.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Can Create System User Accounts</term>
       <listitem>
-        <para>Select if the User account is authorized to create new User
-        accounts. Not selecting means the User account is not authorized to
-        create new User accounts.</para>
+        <para>Select if the user account is authorized to create new user
+        accounts. Not selecting means the user account is not authorized to
+        create new user accounts.</para>
         <note>
           <para>System administrators are able to assign and/or revoke
           privileges on a module-by-module basis. The application provides
@@ -167,35 +167,35 @@
     <varlistentry>
       <term>Disable Export Display Contents</term>
       <listitem>
-        <para>Select to prevent User account from exporting display contents.
+        <para>Select to prevent user account from exporting display contents.
         The "Export Contents" option can be found on right-click menus
-        throughout the application. If selected, the User account will be
+        throughout the application. If selected, the user account will be
         blocked from using the "Export Contents" option.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Use Enhanced Authentication</term>
       <listitem>
-        <para>Select to require User accounts to use enhanced authentication
+        <para>Select to require user accounts to use enhanced authentication
         when they log in to the application. Enhanced authentication adds a
         layer to the authentication process used to log in to the system. When
-        this feature is turned on, User account passwords are stored in the
-        database in a modified form. The end result is that User accounts may
-        only log in to the database using the xTuple Client. If User accounts
+        this feature is turned on, user account passwords are stored in the
+        database in a modified form. The end result is that user accounts may
+        only log in to the database using the xTuple Client. If user accounts
         try to access the database using a tool other than an xTuple
         application, they will not be able to connect. User account passwords
         entered when logging in via the xTuple Client will not be recognized
         if the xTuple Client is not used. If enhanced authentication is
-        specified for a User account, that User account must also select the
+        specified for a user account, that user account must also select the
         "Use Enhanced Authentication" flag in their log in options. If
-        enhanced authentication is not specified, User accounts will be
+        enhanced authentication is not specified, user accounts will be
         permitted to log in to the database using database tools other than
         the xTuple Client.</para>
         <note>
-          <para>The enhanced authentication option will only affect User
+          <para>The enhanced authentication option will only affect user
           accounts whose passwords are created or updated after the option is
-          enabled/disabled. Legacy User accounts will not be affected if the
-          option is not used. Legacy User accounts may continue logging in as
+          enabled/disabled. Legacy user accounts will not be affected if the
+          option is not used. Legacy user accounts may continue logging in as
           before this feature was implemented.</para>
         </note>
       </listitem>
@@ -203,22 +203,22 @@
     <varlistentry>
       <term>May use the full application</term>
       <listitem>
-        <para>Select if the User account should have access to all screens in
+        <para>Select if the user account should have access to all screens in
         the application, restricted only by their assigned privileges.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>May only use Simple Sales Order</term>
       <listitem>
-        <para>Select if you want the User account to have access only to the
+        <para>Select if you want the user account to have access only to the
         Simple Sales Order—and to no other screens. The Simple Sales Order
         must be enabled for this option to apply. If selected, the Simple
-        Sales Order will be the only screen the User will have access to when
-        they log in to the database. The log in screen for this User account
-        will be the same as for all User accounts. However, once logged in,
-        the User account will only be able to see and use the Simple Sales
+        Sales Order will be the only screen the user will have access to when
+        they log in to the database. The log in screen for this user account
+        will be the same as for all user accounts. However, once logged in,
+        the user account will only be able to see and use the Simple Sales
         Order. This option will override any other privileges which may have
-        been assigned previously to the User account. For more information
+        been assigned previously to the user account. For more information
         about the Simple Sales Order, please see <xref
         linkend="salesOrderSimple" />.</para>
       </listitem>
@@ -226,14 +226,14 @@
     <varlistentry role="manufacturing">
       <term>May only use Shop Floor Workbench</term>
       <listitem>
-        <para>Select if you want the User account to have access only to the
+        <para>Select if you want the user account to have access only to the
         Shop Floor Workbench—and to no other screens. If selected, the Shop
-        Floor Workbench will be the only screen the User account will have
+        Floor Workbench will be the only screen the user account will have
         access to when they log in to the database. The log in screen for this
-        User account will be the same as for all User accounts. However, once
-        logged in, the User account will only be able to see and use the Shop
+        user account will be the same as for all user accounts. However, once
+        logged in, the user account will only be able to see and use the Shop
         Floor Workbench. This option will override any other privileges which
-        may have been assigned previously to the User account. For more
+        may have been assigned previously to the user account. For more
         information on related privileges and other aspects of using and
         configuring the Shop Floor Workbench, please see <xref
         linkend="woTimeClock" />.</para>
@@ -243,13 +243,13 @@
       <term>Module</term>
       <listitem>
         <para>Select an individual module to assign privileges for that
-        module. Assign privileges to the User account on a module-by-module
+        module. Assign privileges to the user account on a module-by-module
         basis. Select one module, assign the appropriate privileges, and then
-        repeat for each subsequent module the User account will need access
+        repeat for each subsequent module the user account will need access
         to. All application modules are included in the list.</para>
         <tip>
-          <para>You can dramatically speed up the process of adding new User
-          accounts by adding privileges by User account role.</para>
+          <para>You can dramatically speed up the process of adding new user
+          accounts by adding privileges by user account role.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -264,9 +264,9 @@
         privileges listed in this column represent the full range of
         privileges available for the specified module. The list of available
         privileges will change as different modules are specified. To grant
-        privileges to a User account, highlight an available privilege and
+        privileges to a user account, highlight an available privilege and
         then click the ADD button. The highlighted privilege will be added to
-        the User account's list of granted privileges. Double-clicking on a
+        the user account's list of granted privileges. Double-clicking on a
         privilege will also move it to the granted privileges column. You can
         grant all privileges for a specified module by clicking on the ADD ALL
         button.</para>
@@ -278,18 +278,18 @@
           <secondary>list of granted</secondary>
         </indexterm>Granted Privileges</term>
       <listitem>
-        <para>Displays granted privileges for the specified User account.
-        Descriptions of each privilege will be shown. To remove a User
+        <para>Displays granted privileges for the specified user account.
+        Descriptions of each privilege will be shown. To remove a user
         account's granted privileges for a specified module, highlight a
         granted privilege and then click the REVOKE button. The highlighted
-        privilege will be removed from the User account's list of granted
+        privilege will be removed from the user account's list of granted
         privileges. Double-clicking on a privilege will also remove it from
         the granted privileges column. You can remove all granted privileges
         for a specified module by clicking on the REVOKE ALL button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Many of the available privileges govern User accounts' ability to
+  <para>Many of the available privileges govern user accounts' ability to
   either view or edit information. In some cases, however, it may be possible
   to perform editing tasks on screens where only view privileges have been
   granted. Take item sites, for example. Item sites exist as their own objects
@@ -298,9 +298,9 @@
   By contrast, when you edit item notes, item transformations, or item
   aliases, you are editing things which belong exclusively and intrinsically
   to item records. On the Item screen, there is an option to view/edit item
-  sites for the item. Let's imagine a User account has privileges to edit item
+  sites for the item. Let's imagine a user account has privileges to edit item
   sites but to only view items. Following this example, xTuple would allow the
-  User account to edit item sites from the Item record, even when in view
+  user account to edit item sites from the Item record, even when in view
   mode.</para>
   <para>Here are some examples of independent objects which may be editable
   from a parent window, even in view mode:</para>
@@ -382,48 +382,48 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>While you may assign individual privileges by User account, you also
-  have the option to add User account privileges by User account role. Adding
-  User account privileges by User account role can dramatically speed up the
-  process of adding new User accounts. You can learn more about User account
+  <para>While you may assign individual privileges by user account, you also
+  have the option to add user account privileges by user account role. Adding
+  user account privileges by user account role can dramatically speed up the
+  process of adding new user accounts. You can learn more about user account
   roles here <xref linkend="groupsTitle" />.</para>
   <tip>
-    <para>If individual User account privileges appear to be disabled, that
-    means the User account is assigned to a User account role. The only way to
-    change individual privileges in this case is to remove the User account
+    <para>If individual user account privileges appear to be disabled, that
+    means the user account is assigned to a user account role. The only way to
+    change individual privileges in this case is to remove the user account
     from the role.</para>
   </tip>
-  <para>To add User account role privileges to a User account profile, select
+  <para>To add user account role privileges to a user account profile, select
   the "Roles" tab, as shown in the following screen:</para>
   <para><mediaobject>
       <imageobject>
         <imagedata fileref="images/user_groupTab.png" />
       </imageobject>
       <caption>User Account Role Information</caption>
-    </mediaobject>When adding User account role privileges to a User account
+    </mediaobject>When adding user account role privileges to a user account
   profile, you are presented with the following options:</para>
   <tip>
     <para>Don't forget to select the ADD button when you have finished
-    entering a User account's information.</para>
+    entering a user account's information.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term>Available Roles</term>
       <listitem>
-        <para>Select an available User account role from the list. To grant
-        User account role privileges to a User account, highlight an available
+        <para>Select an available user account role from the list. To grant
+        user account role privileges to a user account, highlight an available
         role and then click the ADD button. The highlighted role will be added
-        to the User account's list of granted roles. Double-clicking on a role
+        to the user account's list of granted roles. Double-clicking on a role
         will also move it to the granted roles column.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Granted Roles</term>
       <listitem>
-        <para>Displays granted roles for the specified User account. To remove
-        a granted role from the User account, highlight a granted role and
+        <para>Displays granted roles for the specified user account. To remove
+        a granted role from the user account, highlight a granted role and
         then click the REVOKE button. The highlighted role will be removed
-        from the User account's list of granted roles. Double-clicking on a
+        from the user account's list of granted roles. Double-clicking on a
         role will also remove it from the granted roles column.</para>
       </listitem>
     </varlistentry>
@@ -451,12 +451,12 @@
     </varlistentry>
   </variablelist>
   <para role="standard">Multiple site installations have the option of
-  defining User account site security. User account site security provides a
-  method for restricting a User account to a single or multiple sites. All of
+  defining user account site security. User account site security provides a
+  method for restricting a user account to a single or multiple sites. All of
   the screens in the application will honor this restriction. On the multiple
-  site documents, such as purchase orders and sales orders, the User account
+  site documents, such as purchase orders and sales orders, the user account
   will be able to view restricted sites, however, they will not be able to
-  edit restricted sites. To add User account site security to a User account
+  edit restricted sites. To add user account site security to a user account
   profile, select the "Sites" tab, as shown in the following screen:</para>
   <para role="standard"><mediaobject>
       <imageobject>
@@ -464,20 +464,20 @@
       </imageobject>
       <caption>User Account Site Security</caption>
     </mediaobject></para>
-  <para role="standard">When adding User account site security to a User
+  <para role="standard">When adding user account site security to a user
   account profile, you are presented with the following options:</para>
   <para role="standard"><variablelist>
       <varlistentry>
         <term>Grant Access to all Sites</term>
         <listitem>
-          <para>Select this option if the User account has full unrestricted
+          <para>Select this option if the user account has full unrestricted
           access to all sites defined in the application.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Grant Access only to Selected Sites</term>
         <listitem>
-          <para>Select this option if the User account has restricted access
+          <para>Select this option if the user account has restricted access
           to the sites defined in the application.</para>
         </listitem>
       </varlistentry>
@@ -485,8 +485,8 @@
         <term>Available Sites</term>
         <listitem>
           <para>Select an available site from the list. To grant access
-          privileges to a User account, highlight an available site and then
-          click the ADD button. The highlighted site will be added to the User
+          privileges to a user account, highlight an available site and then
+          click the ADD button. The highlighted site will be added to the user
           account's list of granted sites. Double-clicking on a site will also
           move it to the granted Sites column.</para>
         </listitem>
@@ -494,10 +494,10 @@
       <varlistentry>
         <term>Granted Sites</term>
         <listitem>
-          <para>Displays granted sites for the specified User account. To
-          remove a granted site from the User account, highlight a granted
+          <para>Displays granted sites for the specified user account. To
+          remove a granted site from the user account, highlight a granted
           site and then click the REVOKE button. The highlighted site will be
-          removed from the User account's list of granted sites.
+          removed from the user account's list of granted sites.
           Double-clicking on a site will also remove it from the granted Sites
           column.</para>
         </listitem>

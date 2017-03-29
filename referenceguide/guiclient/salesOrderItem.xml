@@ -88,7 +88,7 @@
         <para>Enter the item number of the item you want to sell. The item
         list will contain sold items available for sale to the specified
         customer. The list of available items may vary from customer to
-        customer, depending on how Pricing Schedules are implemented at your
+        customer, depending on how pricing schedules are implemented at your
         site. Once an item number is entered, the inventory unit of measure
         and item description will automatically appear.</para>
 
@@ -101,9 +101,9 @@
               <primary>sales orders</primary>
 
               <secondary>job items and</secondary>
-            </indexterm>If the item is a Job item, a linked work order will
-          automatically be created. Creating a sales order for Job items is
-          the only way to create a Job item work order. Production for Job
+            </indexterm>If the item is a job item, a linked work order will
+          automatically be created. Creating a sales order for job items is
+          the only way to create a job item work order. Production for job
           item work orders is posted automatically when the linked sales order
           item is linked to shipping.</para>
         </note>
@@ -119,11 +119,11 @@
       <term>Customer P/N</term>
 
       <listitem>
-        <para>Displays the customer part number (i.e., item Alias) that
+        <para>Displays the customer part number (i.e., item alias) that
         corresponds to the item number entered in the Item Number field. If
-        the Alias is associated with a particular customer account, then the
-        Alias will only be displayed for sales orders and quotes entered for
-        that customer. Item Aliases are defined on the Item master.</para>
+        the alias is associated with a particular customer account, then the
+        alias will only be displayed for sales orders and quotes entered for
+        that customer. Item aliases are defined on the Item master.</para>
       </listitem>
     </varlistentry>
 
@@ -178,9 +178,9 @@
       <listitem>
         <para>Advanced Item Search (AIS) is a feature designed specifically
         with distribution in mind. This feature allows distributors and end
-        users to quickly search for both items and item Aliases?as well as
+        users to quickly search for both items and item aliases?as well as
         current inventory levels?filtering every keystroke. From this screen
-        you also have the ability to create an item Alias.</para>
+        you also have the ability to create an item alias.</para>
 
         <note>
           <para>When using the Advanced Item Search, you must enter at least
@@ -244,8 +244,8 @@
         Selling UOM defined, then the inventory UOM will be used here by
         default.<tip>
             <para>When sales orders are entered, the system will search for
-            Quantity Break matches between the sales order item and any
-            relevant Pricing Schedule. If duplicate Quantity Breaks are found,
+            quantity break matches between the sales order item and any
+            relevant pricing schedule. If duplicate quantity breaks are found,
             the lowest price for the given quantity will be used.</para>
           </tip></para>
       </listitem>
@@ -313,12 +313,12 @@
 
       <listitem>
         <para>Displays either the list price minus the customer Discount or
-        the price from any applicable Pricing Schedule or Sale. If a Pricing
-        Schedule is in effect, the <emphasis>most specific</emphasis> Pricing
-        Schedule assignment will be used. The specificity of Pricing Schedule
+        the price from any applicable pricing schedule or Sale. If a pricing
+        schedule is in effect, the <emphasis>most specific</emphasis> pricing
+        schedule assignment will be used. The specificity of pricing schedule
         assignments is determined in the following descending order: by
         customer ship-to address (most specific), by customer, by customer
-        Type, by customer type pattern, by all customers. The lookup feature
+        type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
 
         <tip>
@@ -345,15 +345,15 @@
 
         <itemizedlist>
           <listitem>
-            <para>If your Pricing Schedule has multiple UOMs on it (or if
-            several Pricing Schedules share the same level of price
+            <para>If your pricing schedule has multiple UOMs on it (or if
+            several pricing schedules share the same level of price
             specificity, but they have different UOMs) then the UOM which
             matches the selected UOM will be chosen—that is, as long as the
             quantity break does not exceed the quantity being priced. If no
             entry matches the UOM with a quantity break less than the quantity
             being priced, then the lowest value price for any UOM will be
             chosen. To make sure a specific UOM is always chosen at the
-            desired level of price specificity, then your Pricing Schedules
+            desired level of price specificity, then your pricing schedules
             should include at least one UOM with a quantity break of 0.</para>
           </listitem>
         </itemizedlist>
@@ -412,7 +412,7 @@
 
   <para>When entering sales orders you have the ability to view current supply
   considerations, including item availability and dependencies. You may also
-  create replenishment Orders (if they are needed) and change work order
+  create replenishment orders (if they are needed) and change work order
   materials and operations.</para>
 
   <variablelist>
@@ -426,7 +426,7 @@
       <listitem>
         <para>Select to display availability information for the sales order
         item in the following categories. If the feature is turned on, the
-        availability totals will display only after a Scheduled Date has been
+        availability totals will display only after a scheduled date has been
         entered for the line item.</para>
       </listitem>
     </varlistentry>
@@ -579,7 +579,7 @@
             <caption><para>Supply Order Information For Manufactured
             Item</para></caption>
           </mediaobject><note>
-            <para>Supply Orders are created as soon as a valid item, Order
+            <para>Supply orders are created as soon as a valid item, order
             quantity, and scheduled date are entered.</para>
           </note></para>
 
@@ -610,8 +610,8 @@
               be selected automatically?as long as the item site's "Stocked"
               flag is set to "False." The work order will be created once you
               save the sales order line item. Work orders created
-              automatically from a sales order will assume the same Order
-              Number as the sales order—even if that Order Number has already
+              automatically from a sales order will assume the same order
+              number as the sales order—even if that order number has already
               been used by a previous work order.</para>
 
               <para>For purchased items, the following two different options
@@ -624,7 +624,7 @@
               Ship" flag will also be shown for linked purchase orders. The
               drop ship function will search for an existing purchase order
               linked to the sales order with a matching ship-to address and
-              add the line item to that Order—or create a new Order if none
+              add the line item to that order—or create a new order if none
               exists. Drop ship purchase orders inherit the ship-to address
               and contact information from the sales order. Item sources must
               be defined for drop ship items—including each component of a Kit
@@ -734,7 +734,7 @@
       <term>NEW OPER.</term>
 
       <listitem>
-        <para>Select to add operations to the routing for this Order item.</para>
+        <para>Select to add operations to the routing for this order item.</para>
       </listitem>
     </varlistentry>
 
@@ -743,7 +743,7 @@
 
       <listitem>
         <para>The materials and operations can be changed from this screen
-        while placing the Order. To do this, click the EDIT button.</para>
+        while placing the order. To do this, click the EDIT button.</para>
       </listitem>
     </varlistentry>
 
@@ -787,7 +787,7 @@
         <para>If your site has enabled the "Allow Inventory Receipt Cost
         Override" option in the Inventory setup, then you will be able to
         override the default unit price here. This option applies only to
-        Average cost items.</para>
+        average cost items.</para>
       </listitem>
     </varlistentry>
 
@@ -894,7 +894,7 @@
 
       <listitem>
         <para>Displays the item's inventory costing method (i.e., standard,
-        Average, or Job).</para>
+        average, or job).</para>
       </listitem>
     </varlistentry>
 
@@ -972,7 +972,7 @@
 
       <listitem>
         <para>Displays the item's inventory costing method (i.e., standard,
-        Average, or Job).</para>
+        average, or job).</para>
       </listitem>
     </varlistentry>
 
@@ -998,7 +998,7 @@
   of linking those characteristics to a sales order line item. And, in the
   case where sales order demand automatically generates either a purchase
   request or a work order, the characteristics defined here will be inherited
-  by those subsequent Orders.</para>
+  by those subsequent orders.</para>
 
   <tip>
     <para>For configured items, an additional pricing field will be available
@@ -1040,12 +1040,12 @@
       <term>Value</term>
 
       <listitem>
-        <para>Displays the default Value associated with an item
-        characteristic, but permits you to specify an alternate Value. When
-        associating characteristic Values with a sales order line item, you
-        have four options: 1) Select the default Value; 2) select an alternate
-        pre-defined Value; 3) manually enter a new Value in place of the
-        pre-defined Value; or 4) make no selection. Making no selection means
+        <para>Displays the default value associated with an item
+        characteristic, but permits you to specify an alternate value. When
+        associating characteristic values with a sales order line item, you
+        have four options: 1) Select the default value; 2) select an alternate
+        pre-defined value; 3) manually enter a new value in place of the
+        pre-defined value; or 4) make no selection. Making no selection means
         the characteristics will not be associated with the sales order line
         item.</para>
       </listitem>
@@ -1055,7 +1055,7 @@
       <term>Base Price</term>
 
       <listitem>
-        <para>If the sales order item is a configured item (i.e., Job or
+        <para>If the sales order item is a configured item (i.e., job or
         Reference item), the "Base Price" option will be shown.
         Characteristics associated with configured items may have additional
         list prices associated with them. As a result, when characteristics
@@ -1125,7 +1125,7 @@
       <listitem>
         <para>Displays the price given to the specified customer. Special
         customer prices can be set for individual customers or customer Groups
-        by using a Pricing Schedule.</para>
+        by using a pricing schedule.</para>
       </listitem>
     </varlistentry>
 

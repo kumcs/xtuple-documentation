@@ -30,7 +30,7 @@
       <term>Auth #</term>
 
       <listitem>
-        <para>Displays the return authorization Number specified on the Return
+        <para>Displays the return authorization number specified on the Return
         Authorization header.</para>
       </listitem>
     </varlistentry>
@@ -131,13 +131,13 @@
 
             <listitem>
               <para>Select to authorize the servicing of an item for the
-              specified quantity. This disposition is valid only for Job
+              specified quantity. This disposition is valid only for job
               items. Price controls will be disabled for this disposition. A
               new sales order with linked work order(s) will be created to
               track work and shipping on the repair or service. The billing
               for service or repair work should be handled on the new sales
               order. Service or repair items should first be received by the
-              return authorization. If the Job item is lot/serial controlled,
+              return authorization. If the job item is lot/serial controlled,
               you will be prompted to assign lot/serial numbers when the
               receipt is posted. This assignment of lot/serial numbers can be
               simplified if you link authorized line items with existing
@@ -182,7 +182,7 @@
       <listitem>
         <para>Enter the item number of the item you want to authorize. The
         items you may select will vary depending on the line item disposition.
-        For example, only Job items may be selected for line items having the
+        For example, only job items may be selected for line items having the
         Service disposition. Once an item number is entered, the inventory
         unit of measure and item description will automatically appear.</para>
 
@@ -202,16 +202,16 @@
       <term>Customer P/N</term>
 
       <listitem>
-        <para>Displays the customer part number (i.e., item Alias) that
+        <para>Displays the customer part number (i.e., item alias) that
         corresponds to the item number entered in the Item Number field. The
-        customer part number will display only if you enter an item Alias in
-        the Item Number field?or if an Alias was used on the original sales
-        order. To enter an item Alias, place the cursor in the Item Number
+        customer part number will display only if you enter an item alias in
+        the Item Number field?or if an alias was used on the original sales
+        order. To enter an item alias, place the cursor in the Item Number
         field and then use the keyboard shortcut "CTRL + A". After you have
-        entered a valid item Alias, hit the TAB key. A list of items that use
-        the specified item Alias will be displayed. Select the desired item
-        from the list. The item Alias will display as the customer part
-        number. Item Aliases are defined on the Item master.</para>
+        entered a valid item alias, hit the TAB key. A list of items that use
+        the specified item alias will be displayed. Select the desired item
+        from the list. The item alias will display as the customer part
+        number. Item aliases are defined on the Item master.</para>
       </listitem>
     </varlistentry>
 
@@ -341,19 +341,19 @@
               <para>Displays the net unit price for the sales order item. This
               information will be imported automatically for return
               authorizations linked to an original sales order if header
-              disposition was Credit or return when the order was imported. If
+              disposition was credit or return when the order was imported. If
               there is no linked sales order, then the system will choose the
-              lower of the following two prices: A) The most-specific Pricing
-              Schedule assignment or B) any Sale in effect at the time of
-              order entry. The specificity of Pricing Schedule assignments is
+              lower of the following two prices: A) The most-specific pricing
+              schedule assignment or B) any Sale in effect at the time of
+              order entry. The specificity of pricing schedule assignments is
               determined in the following descending order: By customer
               ship-to address (most specific), by customer, by customer type,
               by customer type pattern, by all customers. The lookup feature
               located to the right of the field leads to a Price List
               screen.</para>
 
-              <para>If your Pricing Schedule has multiple units of measure
-              (UOM) on it (or if several Pricing Schedules share the same
+              <para>If your pricing schedule has multiple units of measure
+              (UOM) on it (or if several pricing schedules share the same
               level of price specificity, but they have different UOMs) then
               the UOM which matches the selected UOM will be chosen—that is,
               as long as the quantity break does not exceed the quantity being
@@ -361,7 +361,7 @@
               than the quantity being priced, then the lowest value price for
               any UOM will be chosen. To make sure a specific UOM is always
               chosen at the desired level of Price specificity, then your
-              Pricing Schedules should include at least one UOM with a
+              pricing schedules should include at least one UOM with a
               quantity break of 0.</para>
 
               <note>
@@ -425,27 +425,27 @@
               <para>Displays the net unit price for the sales order item. This
               information will be imported automatically for return
               authorizations linked to an original sales order if header
-              disposition was Credit or return when the order was imported. If
+              disposition was credit or return when the order was imported. If
               there is no linked sales order, then the system will choose the
-              lower of the following two prices: A) The most-specific Pricing
-              Schedule assignment or B) any Sale in effect at the time of
-              order entry. The specificity of Pricing Schedule assignments is
+              lower of the following two prices: A) The most-specific pricing
+              schedule assignment or B) any Sale in effect at the time of
+              order entry. The specificity of pricing schedule assignments is
               determined in the following descending order: By customer
               ship-to address (most specific), by customer, by customer type,
               by customer type pattern, by all customers. The lookup feature
               located to the right of the field leads to a Price List
               screen.</para>
 
-              <para>If your Pricing Schedule has multiple units of measure
-              (UOM) on it—or if several Pricing Schedules share the same level
+              <para>If your pricing schedule has multiple units of measure
+              (UOM) on it—or if several pricing schedules share the same level
               of price specificity, but they have different UOMs—then the UOM
               which matches the selected UOM will be chosen—that is, as long
               as the quantity break does not exceed the quantity being priced.
               If no entry matches the UOM with a quantity break less than the
               quantity being priced, then the lowest value price for any UOM
               will be chosen. To make sure a specific UOM is always chosen at
-              the desired level of price specificity, then your Pricing
-              Schedules should include at least one UOM with a quantity break
+              the desired level of price specificity, then your pricing
+              schedules should include at least one UOM with a quantity break
               of 0.</para>
 
               <note>
@@ -615,7 +615,7 @@
         <tip>
           <para>The "Show Availability" feature can be turned on or off by
           default at the system level. If the feature is turned on, the
-          availability totals will display only after a Scheduled Date has
+          availability totals will display only after a scheduled date has
           been entered for the line item.</para>
         </tip>
       </listitem>
@@ -856,7 +856,7 @@
       <term>Alternate cost of sales Account</term>
 
       <listitem>
-        <para>Specify an alternate account to be used for the cost of Sales.
+        <para>Specify an alternate account to be used for the cost of sales.
         The account you specify will be used instead of the typical account
         pre-defined in the sales account assignments.</para>
       </listitem>

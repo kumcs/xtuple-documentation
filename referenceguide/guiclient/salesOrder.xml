@@ -113,8 +113,8 @@
         symbol to view customer information for the specified customer. If a
         customer's credit is "In Good Standing," the button will feature a
         black question mark ("?") icon. If the icon turns to an orange dollar
-        sign ("$"), the customer's credit Status is "On Credit Warning." A red
-        dollar sign ("$") indicates the customer's credit Status is "On Credit
+        sign ("$"), the customer's credit status is "On Credit Warning." A red
+        dollar sign ("$") indicates the customer's credit status is "On Credit
         Hold." You may also create a new customer record by selecting the "+"
         button.</para>
 
@@ -268,7 +268,7 @@
       <term>Sale Type</term>
 
       <listitem>
-        <para>Specify the sales Type. Sales account assignments by sales Type
+        <para>Specify the sales type. Sales account assignments by sales type
         are available.</para>
 
         <note>
@@ -558,7 +558,7 @@
 
       <listitem>
         <para>Creates the sales order, saves it, and adds it to the list of
-        orders available for printing on the Packing List batch.</para>
+        orders available for printing on the packing list batch.</para>
       </listitem>
     </varlistentry>
 
@@ -611,8 +611,8 @@
         visible if the system is configured to hide shipping options at sales
         order entry. However, if the shipping options are enabled, the Line
         items may display in different colors, depending on their scheduling.
-        If the Scheduled Date for an unshipped line item is in the future, the
-        date will display in green text. If the Scheduled Date for an
+        If the scheduled date for an unshipped line item is in the future, the
+        date will display in green text. If the scheduled date for an
         unshipped line item is not in the future, the date will display in red
         text. Once shipped, all line items revert to black text. For Kit
         items, the Kit components will be given sub line numbers which will be
@@ -709,17 +709,17 @@
       <term>Allocated CM/Invoice</term>
 
       <listitem>
-        <para>Displays the monetary value of any Credit Memos and/or Credit
-        Card charges which have been specifically allocated to the sales
-        Order. If your system is configured to automatically allocate open
-        Credit Memo balances to new sales orders, then the monetary value of
-        these allocated Credit Memos—plus any credit card charges applied to
-        the Order—will display here. You can also select the "Allocated
-        Credit" link to manually allocate Credit Memos to the sales
+        <para>Displays the monetary value of any credit memos and/or credit
+        card charges which have been specifically allocated to the sales
+        order. If your system is configured to automatically allocate open
+        credit memo balances to new sales orders, then the monetary value of
+        these allocated credit memos—plus any credit card charges applied to
+        the order—will display here. You can also select the "Allocated
+        Credit" link to manually allocate credit memos to the sales
         order.</para>
 
         <note>
-          <para>The automatic allocation of available Credit Memos occurs only
+          <para>The automatic allocation of available credit memos occurs only
           once—when a sales order is saved for the first time. After that
           first save, any additional allocations will need to be applied
           manually.</para>
@@ -731,8 +731,8 @@
       <term>Outstanding Credit</term>
 
       <listitem>
-        <para>Displays the total monetary value of all unallocated Credit
-        Memos for the customer.</para>
+        <para>Displays the total monetary value of all unallocated credit
+        memos for the customer.</para>
       </listitem>
     </varlistentry>
 
@@ -741,7 +741,7 @@
 
       <listitem>
         <para>Displays the monetary value of any credit card
-        pre-authorizations for the Order. Credit card charges may be
+        pre-authorizations for the order. Credit card charges may be
         pre-authorized using the options found under the "Payment" tab. When a
         credit card charge is pre-authorized, the authorization is stored and
         may later be posted as a completed charge using the Receivables
@@ -758,7 +758,7 @@
         packaging weight, both of which are defined on the Item master. The
         per unit freight weight multiplied by the quantity per gives you the
         line item freight weight. The sum of all line item freight weights is
-        the combined weight for the Order.</para>
+        the combined weight for the order.</para>
       </listitem>
     </varlistentry>
 
@@ -766,7 +766,7 @@
       <term>Margin</term>
 
       <listitem>
-        <para>Displays the total profit margin for the Order. The profit
+        <para>Displays the total profit margin for the order. The profit
         margin is based on the following formula:</para>
 
         <para>Order Subtotal - Total Standard Costs for all line items</para>
@@ -777,7 +777,7 @@
       <term>Margin %</term>
 
       <listitem>
-        <para>Displays the profit margin percentage for the Order.</para>
+        <para>Displays the profit margin percentage for the order.</para>
       </listitem>
     </varlistentry>
 
@@ -834,7 +834,7 @@
 
       <listitem>
         <para>Manually enter the amount of freight charges to be added to the
-        specified Order, unless the freight amount is automatically
+        specified order, unless the freight amount is automatically
         calculated. The freight amount displayed here represents the total for
         all line items. To get a detailed view of the freight calculation,
         click on the Freight link using your mouse. Freight charges may be
@@ -846,7 +846,7 @@
 
         <note>
           <para>If you are manually entering freight, all freight charges will
-          be added to the initial Shipment for an Order. Any subsequent
+          be added to the initial Shipment for an order. Any subsequent
           backorder Shipments will not include freight.</para>
         </note>
       </listitem>
@@ -885,8 +885,8 @@
       <listitem>
         <para>Displays the projected total due for the sales order. The
         outstanding balance represents the amount the customer would owe if
-        all allocated and outstanding Credit Memos and credit card
-        pre-authorizations were applied to the Order.</para>
+        all allocated and outstanding credit memos and credit card
+        pre-authorizations were applied to the order.</para>
       </listitem>
     </varlistentry>
 
@@ -906,7 +906,7 @@
                 <para>Enter the item number of the item you want to sell. The
                 item list will contain sold items available for sale to the
                 specified customer. The list of available items may vary from
-                customer to customer, depending on how Pricing Schedules are
+                customer to customer, depending on how pricing schedules are
                 implemented at your site. Once an item number is entered, the
                 inventory unit of measure and item description will
                 automatically appear.</para>
@@ -957,9 +957,9 @@
               <listitem>
                 <para>Displays the unit price for the sales order item. By
                 default, the system will choose the lower of the following two
-                prices: A) The most-specific Pricing Schedule assignment or B)
-                any Sale in effect at the time of Order entry. The specificity
-                of Pricing Schedule assignments is determined in the following
+                prices: A) The most-specific pricing schedule assignment or B)
+                any Sale in effect at the time of order entry. The specificity
+                of pricing schedule assignments is determined in the following
                 descending order: By customer ship-to address (most specific),
                 by customer, by customer type, by customer type pattern, by
                 all customers. The lookup feature located to the right of the
@@ -971,7 +971,7 @@
               <term>ADD ITEM</term>
 
               <listitem>
-                <para>Select to add another line item to the Order.</para>
+                <para>Select to add another line item to the order.</para>
               </listitem>
             </varlistentry>
           </variablelist></para>
@@ -1111,7 +1111,7 @@
 
       <listitem>
         <para>Highlight a sales order line item and then select this button to
-        ship the Order. This button will not be visible if the system is
+        ship the order. This button will not be visible if the system is
         configured to hide shipping options at sales order entry.</para>
       </listitem>
     </varlistentry>
@@ -1153,27 +1153,27 @@
       <term>Project #</term>
 
       <listitem>
-        <para>If your system is configured to use Projects, select a Project
-        Number to associate with the sales order. If a sales order is created
-        from a converted quote—and the quote had a Project Number associated
-        with it—then the Project Number from the originating quote will
-        automatically be entered here. Once a Project Number is associated
+        <para>If your system is configured to use projects, select a project
+        number to associate with the sales order. If a sales order is created
+        from a converted quote—and the quote had a project number associated
+        with it—then the project number from the originating quote will
+        automatically be entered here. Once a project number is associated
         with a sales order, any work orders or purchase orders created by the
-        sales order demand will automatically be linked to the same Project
-        Number as the sales order. In this way, sales orders, work orders, and
-        purchase orders may be linked to the same Project.</para>
+        sales order demand will automatically be linked to the same project
+        number as the sales order. In this way, sales orders, work orders, and
+        purchase orders may be linked to the same project.</para>
 
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a Project to the sales
         order—transactions related to the sales order will include the Project
-        Number as the final segment of affected G/L account numbers. Account
-        Numbers related to the following transactions will include the Project
-        Number as the final segment: Issue to shipping, return Stock, Ship
+        number as the final segment of affected G/L account numbers. Account
+        numbers related to the following transactions will include the project
+        number as the final segment: Issue to shipping, return Stock, Ship
         Shipment, Recall Shipment, and Post invoice.</para>
 
         <tip>
-          <para>If your site is configured to create Projects automatically
-          whenever new sales orders or quotes are entered, the Projects
+          <para>If your site is configured to create projects automatically
+          whenever new sales orders or quotes are entered, the projects
           generated in this way will assume the number of the sales order or
           quote which caused their creation.</para>
         </tip>
@@ -1285,12 +1285,12 @@
       <listitem>
         <para>Shipping notes are drawn from the customer master—specifically
         from the "Shipping Notes" tab on the Ship-To Address master. The notes
-        may vary depending on the ship-to address specified for the Order.
+        may vary depending on the ship-to address specified for the order.
         These notes provide a mechanism for transferring shipping information
         from the Customer master to the sales order. Ultimately, shipping
         notes may be printed on shipping paperwork. While shipping notes
         content may originate from the Customer master, you can edit the notes
-        to fit the requirements of an Order. Shipping notes may be printed on
+        to fit the requirements of an order. Shipping notes may be printed on
         shipping paperwork.</para>
       </listitem>
     </varlistentry>
@@ -1392,12 +1392,12 @@
       <listitem>
         <para>After entering an amount below, highlight an active credit card
         and then select this button to charge the credit card for the amount
-        specified. When a credit card is charged, both a Credit Memo and a
-        Cash Receipt are posted for the charge amount. The total due from the
+        specified. When a credit card is charged, both a credit memo and a
+        cash receipt are posted for the charge amount. The total due from the
         customer will be automatically adjusted on the invoice to reflect the
         amount of any credit card charges. If, by chance, you charge a
         customer's credit card but fail to save the sales order, the link
-        between the Order and the charge will be broken; however, the
+        between the order and the charge will be broken; however, the
         transactions resulting from the charge will remain in the
         system.</para>
       </listitem>
@@ -1417,7 +1417,7 @@
       <term>CVV Code</term>
 
       <listitem>
-        <para>Enter the Card Verification Value (CVV) Code found on the back
+        <para>Enter the card verification value (CVV) code found on the back
         of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
@@ -1467,15 +1467,15 @@
       <term>Funds Type</term>
 
       <listitem>
-        <para>Specify the type of the Cash Receipt. Choose from following
-        Funds Types: check, certified check, Cash, Wire Transfer, and
+        <para>Specify the type of the cash receipt. Choose from following
+        Funds types: check, certified check, cash, Wire Transfer, and
         Other.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <tip>
-    <para>You can use the Funds Type "Other" for entering credit card
+    <para>You can use the Funds type "Other" for entering credit card
     information if you are not using xTuple's credit card processing
     functionality at your site.</para>
   </tip>
@@ -1487,7 +1487,7 @@
       <listitem>
         <para>Use this field to enter the customer's check number, transaction
         number, credit card number, or any other Document Number associated
-        with the Cash Receipt.</para>
+        with the cash receipt.</para>
 
         <para role="distribution">The username of the logged-in user will
         display as the default document number, when the XWD package is
@@ -1512,7 +1512,7 @@
       <term>Post to</term>
 
       <listitem>
-        <para>Select the bank account you want to post the Cash Receipt to.
+        <para>Select the bank account you want to post the cash receipt to.
         The Asset account used for the selected bank account is specified on
         the Bank Account master.</para>
       </listitem>
@@ -1531,12 +1531,12 @@
 
       <listitem>
         <para>Specify the date of the cash distribution. This is the date the
-        Cash Receipt will hit the General Ledger (G/L). By default, the
+        cash receipt will hit the general ledger (G/L). By default, the
         current day's date will appear. If the distribution date precedes the
         application date, the label "Apply Balance As" will change to "Record
-        Receipt as" to clarify that the cash will be recorded as a Credit Memo
+        Receipt as" to clarify that the cash will be recorded as a credit memo
         or customer Deposit until the application date arrives. On the
-        application date, the Credit Memo or customer Deposit will
+        application date, the credit memo or customer Deposit will
         automatically be applied to its specified receivable
         document(s).</para>
       </listitem>
@@ -1610,7 +1610,7 @@
       <term>Order Date</term>
 
       <listitem>
-        <para>Displays the Order Date of the current sales order.</para>
+        <para>Displays the order date of the current sales order.</para>
       </listitem>
     </varlistentry>
 
@@ -1649,7 +1649,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>To view Email associated with the sales order, select the "Email" tab.
+  <para>To view email associated with the sales order, select the "Email" tab.
   The following screen will appear:</para>
 
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"

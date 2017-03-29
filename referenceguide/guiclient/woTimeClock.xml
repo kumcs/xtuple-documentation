@@ -5,7 +5,7 @@
 <section id="woTimeClock" role="manufacturing">
   <title>Shop Floor Workbench</title>
   <para>The Shop Floor Workbench offers enhanced labor tracking and
-  streamlined work order processing for either operations or Production
+  streamlined work order processing for either operations or production
   posting environments. Its built-in Time Clock functionality ensures precise
   run-time reporting, as Workbench users are required to clock-in to and
   clock-out of work orders.</para>
@@ -14,8 +14,8 @@
   option chosen. The standard times are drawn from the routing item
   definitions. By contrast, the specified times are based on the users' clock
   in/out times (i.e., "effort"). The specified effort for an operation may be
-  complicated by the fact that users can be clocked into more than one Work
-  Order at a time. In this case, the users' effort will be spread across the
+  complicated by the fact that users can be clocked into more than one work
+  order at a time. In this case, the users' effort will be spread across the
   various work orders they have clocked into.</para>
   <para><tip>
       <para>The clock-in requirement applies only to Shop Floor Workbench
@@ -24,7 +24,7 @@
   <para>Some users may be "Shop Floor Workbench only" users, meaning the only
   screen they see when they log in to xTuple is the Shop Floor Workbench.
   These users do not require any privileges to run the Shop Floor Workbench.
-  The ability to post Production or post operations is "baked into" the "Shop
+  The ability to post production or post operations is "baked into" the "Shop
   Floor Workbench only" user functionality.</para>
   <para>However, if your site is configured to use the "Post Production" style
   for the Shop Floor Workbench, the following privileges may be used to
@@ -85,7 +85,7 @@
     </screenshot></para>
   <note>
     <para>The Shop Floor Workbench must be configured for either operations
-    posting or Production posting. You may not use the Workbench for both
+    posting or production posting. You may not use the Workbench for both
     methods simultaneously. To configure the method used by the Shop Floor
     Workbench, use the Configure Manufacture screen.</para>
   </note>
@@ -95,7 +95,7 @@
     <varlistentry>
       <term>User</term>
       <listitem>
-        <para>Enter the name of the User wanting to clock-in or clock-out of a
+        <para>Enter the name of the user wanting to clock-in or clock-out of a
         work order. Once a username is entered, the display at the bottom of
         the screen will show all the work orders the user is currently
         clocked-in to.</para>
@@ -110,11 +110,11 @@
       <term>Work Order #</term>
       <listitem>
         <para>Enter the work order number of the work order the user wants to
-        clock-in to or clock-out of. Only released "R" and in-process "I" Work
-        Orders may be processed using the Shop Floor Workbench.<note>
+        clock-in to or clock-out of. Only released "R" and in-process "I" work
+        orders may be processed using the Shop Floor Workbench.<note>
             <para>A work order must be released "R" before users may clock-in
-            or clock out. The release of a work order occurs after the Work
-            Order has been exploded.</para>
+            or clock out. The release of a work order occurs after the work
+            order has been exploded.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -209,7 +209,7 @@
     <varlistentry>
       <term>POST PRODUCTION</term>
       <listitem>
-        <para>If the Workbench is configured for Production-posting, the Post
+        <para>If the Workbench is configured for production-posting, the Post
         Production screen will be presented immediately after this button is
         selected. The button will be hidden if the Workbench is configured for
         operations-posting</para>

@@ -10,7 +10,7 @@
       <primary>sales quotes</primary>
       <see>quotes</see>
     </indexterm> New quote</title>
-  <para>A quote is a statement issued to a customer or Prospect indicating
+  <para>A quote is a statement issued to a customer or prospect indicating
   pricing and sales terms for specified quantities of sold items. Quotes are
   often precursors to sales orders. To create a quote, select the "New Quote"
   option. The following screen will appear:</para>
@@ -81,18 +81,18 @@
     <varlistentry>
       <term>Customer #</term>
       <listitem>
-        <para>Enter the customer number of the customer (or Prospect) to be
+        <para>Enter the customer number of the customer (or prospect) to be
         billed for the sale. The lookup feature located to the right of the
         field leads to a searchable customers list. The lookup feature will be
-        disabled if the quote is entered for a Prospect. You may also access
+        disabled if the quote is entered for a prospect. You may also access
         the customer list using the keyboard shortcut "CTRL + L". Once a
         customer number is entered, the customer name and billing address will
         display. Select the "?" or "$" symbol to view customer information for
         the specified customer. If a customer's credit is "In Good Standing,"
         the button will feature a black question mark ("?") icon. If the icon
-        turns to an orange dollar sign ("$"), the customer's credit Status is
+        turns to an orange dollar sign ("$"), the customer's credit status is
         "On Credit Warning." A red dollar sign ("$") indicates the customer's
-        credit Status is "On Credit Hold." You may also create a new customer
+        credit status is "On Credit Hold." You may also create a new customer
         record by selecting the "+" button.</para>
         <tip>
           <para>A valid customer number must be entered in the "Customer #"
@@ -155,7 +155,7 @@
     <varlistentry>
       <term>Sale Type</term>
       <listitem>
-        <para>Specify the sale type. Sales account assignments by sales Type
+        <para>Specify the sale type. Sales account assignments by sales type
         are available.</para>
         <note>
           <para>If the Sales Order setup setting "Display Sales Order Line
@@ -477,7 +477,7 @@
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Displays the amount of tax that will be added to the Sales
+        <para>Displays the amount of tax that will be added to the sales
         order, as defined by the specified tax code. To get a detailed view of
         the tax calculation, click on the Tax link using your mouse.</para>
       </listitem>
@@ -506,7 +506,7 @@
                 <para>Enter the item number of the item you want to sell. The
                 item list will contain sold items available for sale to the
                 specified customer. The list of available items may vary from
-                customer to customer, depending on how Pricing Schedules are
+                customer to customer, depending on how pricing schedules are
                 implemented at your site. Once an item number is entered, the
                 inventory unit of measure and item description will
                 automatically appear.</para>
@@ -549,9 +549,9 @@
               <listitem>
                 <para>Displays the unit price for the sales order item. By
                 default, the system will choose the lower of the following two
-                prices: A) The most-specific Pricing Schedule assignment or B)
+                prices: A) The most-specific pricing schedule assignment or B)
                 any Sale in effect at the time of order entry. The specificity
-                of Pricing Schedule assignments is determined in the following
+                of pricing schedule assignments is determined in the following
                 descending order: By customer ship-to address (most specific),
                 by customer, by customer type, by customer type pattern, by
                 all customers. The lookup feature located to the right of the
@@ -584,25 +584,25 @@
     <varlistentry>
       <term>Project #</term>
       <listitem>
-        <para>If your site is configured to use Projects, select a Project
-        Number to associate with the quote. If a sales order is created from a
-        converted quote—and the quote had a Project Number associated with
-        it—then the Project Number from the originating quote will
-        automatically be entered here. Once a Project Number is associated
+        <para>If your site is configured to use projects, select a project
+        number to associate with the quote. If a sales order is created from a
+        converted quote—and the quote had a project number associated with
+        it—then the project number from the originating quote will
+        automatically be entered here. Once a project number is associated
         with a sales order, any work orders or purchase orders created by the
-        sales order demand will automatically be linked to the same Project
-        Number as the sales order. In this way, sales orders, work orders, and
-        purchase orders may be linked to the same Project.</para>
+        sales order demand will automatically be linked to the same project
+        number as the sales order. In this way, sales orders, work orders, and
+        purchase orders may be linked to the same project.</para>
         <para role="xtprjaccnt">If you have the xTuple Project Accounting
-        package installed—and you link a Project to the quote—transactions
-        related to the sales order will include the Project Number as the
+        package installed—and you link a project to the quote—transactions
+        related to the sales order will include the project number as the
         final segment of affected G/L account numbers. Account numbers related
-        to the following transactions will include the Project Number as the
+        to the following transactions will include the project number as the
         final segment: Issue to shipping, return Stock, Ship Shipment, Recall
         Shipment, and Post invoice.</para>
         <tip>
-          <para>If your site is configured to create Projects automatically
-          whenever new sales orders or quotes are entered, the Projects
+          <para>If your site is configured to create projects automatically
+          whenever new sales orders or quotes are entered, the projects
           generated in this way will assume the number of the sales order or
           quote which caused their creation.</para>
         </tip>
@@ -689,7 +689,7 @@
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view Email associated with a quote, select the "Email" tab. The
+  <para>To view email associated with a quote, select the "Email" tab. The
   following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />

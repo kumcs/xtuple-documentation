@@ -130,17 +130,17 @@
             <listitem>
               <para>Select to authorize the issuing of credit to the specified
               customer. No return is required or expected; as a result, the
-              Credit/Ship timetable option will be disabled for this
+              credit/ship timetable option will be disabled for this
               disposition method. Return authorization line items will close
-              when an associated Credit Memo is posted.</para>
+              when an associated credit memo is posted.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Return</term>
             <listitem>
               <para>Select to authorize returns from the specified customer.
-              Return authorization items will close when an associated Credit
-              Memo is posted, or when all items on a line have been returned,
+              Return authorization items will close when an associated credit
+              memo is posted, or when all items on a line have been returned,
               whichever comes last.</para>
             </listitem>
           </varlistentry>
@@ -163,10 +163,10 @@
             <listitem>
               <para>Select to authorize the repair or service of items
               returned by the specified customer. To isolate costing
-              implications, only Job items may be selected. A new sales order
+              implications, only job items may be selected. A new sales order
               with linked work order(s) will be created to track work and
               shipping on the repair or service. Service or repair items
-              should first be received by the return authorization. If the Job
+              should first be received by the return authorization. If the job
               item is lot/serial controlled, you will be prompted to assign
               lot/serial numbers when the receipt is posted. This assignment
               of lot/serial numbers can be simplified if you link authorized
@@ -253,7 +253,7 @@
               <para>Select to credit the return with a refund to the
               customer's credit card. If selected, the payment will be queued
               up for processing on the Return Authorizations Workbench. A
-              Credit Memo will be posted when the refund is processed—and the
+              credit memo will be posted when the refund is processed—and the
               refund charges will be applied to it. If the timing of the
               credit is immediately, then you may issue the refund directly
               from the line items tab of the return authorization.</para>
@@ -301,7 +301,7 @@
         <para>You have the option to select an original sales order for all
         disposition types. When an original sales order is selected, all Line
         items from the original order will be imported into the return
-        authorization automatically. For dispositions Credit and return this
+        authorization automatically. For dispositions credit and return this
         feature imports the original pricing and billing information. When a
         sales order number is selected, the customer number and address
         information will be populated and disabled. If the customer is
@@ -327,18 +327,18 @@
     <varlistentry>
       <term>Project #</term>
       <listitem>
-        <para>If your system is configured to you Projects, you will have the
-        option to select a Project Number to associate with the return
+        <para>If your system is configured to you projects, you will have the
+        option to select a project number to associate with the return
         authorization. This enables you to link the return authorization with
         other orders linked to the same project. The browse button located to
         the right of the field enables you to select from a list of available
-        Projects.</para>
+        projects.</para>
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
-        package installed—and you link a Project to the return
+        package installed—and you link a project to the return
         authorization—transactions related to the return authorization will
-        include the Project Number as the final segment of affected G/L
+        include the project number as the final segment of affected G/L
         account numbers. Account numbers related to the following transactions
-        will include Project Number as the final segment: Issue to shipping,
+        will include project number as the final segment: Issue to shipping,
         return Stock, Ship Shipment, Recall Shipment, and Post invoice.</para>
       </listitem>
     </varlistentry>
@@ -451,7 +451,7 @@
       <listitem>
         <para>You have the option to associate an incident number with the
         return authorization. The lookup feature located to the right of the
-        field enables you to select from a list of available Projects.</para>
+        field enables you to select from a list of available projects.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -501,7 +501,7 @@
     <varlistentry>
       <term>Misc. Charge Credit Account</term>
       <listitem>
-        <para>Enter a Credit account to assign the miscellaneous charge
+        <para>Enter a credit account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
@@ -582,7 +582,7 @@
     <varlistentry>
       <term>CVV CODE</term>
       <listitem>
-        <para>Enter the Card Verification Value (CVV) Code found on the back
+        <para>Enter the card verification value (CVV) Code found on the back
         of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
@@ -643,8 +643,8 @@
     <varlistentry>
       <term>REFUND</term>
       <listitem>
-        <para>Select to issue the specified customer a refund on their Credit
-        Card. This option is only available for credits issued by credit card.
+        <para>Select to issue the specified customer a refund on their credit
+        card. This option is only available for credits issued by credit card.
         Your system must also be configured to use credit cards for this
         option to work.</para>
         <note>
@@ -658,7 +658,7 @@
     <varlistentry>
       <term>CVV Code</term>
       <listitem>
-        <para>Enter the Card Verification Value (CVV) Code found on the back
+        <para>Enter the card verification value (CVV) code found on the back
         of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
@@ -712,7 +712,7 @@
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view Email associated with the return authorization, select the
+  <para>To view email associated with the return authorization, select the
   "Email" tab. The following screen will appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />

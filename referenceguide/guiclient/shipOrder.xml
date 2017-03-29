@@ -7,7 +7,7 @@
       <primary>shipping</primary>
       <secondary>shipping sales orders</secondary>
     </indexterm> Ship Order</title>
-  <para>To ship an Order, select the "Ship Order" option. The following screen
+  <para>To ship an order, select the "Ship Order" option. The following screen
   will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -18,11 +18,11 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>Before an Order can be shipped successfully, sales account and
+    <para>Before an order can be shipped successfully, sales account and
     receivables assignments for the specified customer must be in
     place.</para>
   </tip>
-  <para>When shipping an Order, you are presented with the following
+  <para>When shipping an order, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
@@ -34,15 +34,15 @@
     <varlistentry>
       <term>Date Shipped</term>
       <listitem>
-        <para>Specify the date you shipped the Order.</para>
+        <para>Specify the date you shipped the order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Order #</term>
       <listitem>
-        <para>Enter the Order Number of the Order you want to ship. The browse
+        <para>Enter the order number of the order you want to ship. The browse
         button located to the right of the field leads to a searchable list of
-        Orders available for shipping.</para>
+        orders available for shipping.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -54,12 +54,12 @@
     <varlistentry>
       <term>Approve for Billing</term>
       <listitem>
-        <para>Specify this option to approve the sales order for Billing as
-        soon as it is shipped. If selected, the Order will appear on the
+        <para>Specify this option to approve the sales order for billing as
+        soon as it is shipped. If selected, the order will appear on the
         Billing Approvals list—making it available to be converted into an
         invoice. This option will be selected by default if specified in your
-        system-level configuration. This option will be disabled if a Transfer
-        Order is specified.</para>
+        system-level configuration. This option will be disabled if a transfer
+        order is specified.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -67,7 +67,7 @@
       <listitem>
         <para>Specify this option to automatically create and print an invoice
         for the sales order as soon as it is shipped. Selecting this option
-        enables you to bypass the Billing Selection process. Once the Order is
+        enables you to bypass the billing selection process. Once the order is
         shipped, an invoice will be created and printed. This invoice will
         appear on the list of unposted invoices—making it available for
         posting. By default, the "Select for Billing" option will also be
@@ -83,8 +83,8 @@
     <varlistentry>
       <term>Print Packing List</term>
       <listitem>
-        <para>Specify this option to automatically print a Packing List as
-        soon as the Order is shipped.</para>
+        <para>Specify this option to automatically print a packing list as
+        soon as the order is shipped.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -103,13 +103,13 @@
       <term>Receive Immediately</term>
       <listitem>
         <para>Select if you want the transfer order to be received
-        automatically at the Destination site as soon as the Order is shipped.
+        automatically at the Destination site as soon as the order is shipped.
         If this option is not used, transfer order items must be received
         manually at the Destination site. This option will be disabled if a
         sales order is specified.</para>
         <tip>
           <para>The system will move transfer order items to the specified
-          Transit site when the Order is shipped. If the Order is marked to be
+          Transit site when the order is shipped. If the order is marked to be
           received immediately, the system will then receive inventory at the
           Destination site.</para>
         </tip>
@@ -128,7 +128,7 @@
         <para>Displays the appropriate ship-to address.</para>
         <tip>
           <para>If your site integrates UPS WorldShip with the system, you
-          should process Orders in WorldShip after they have been issued to
+          should process orders in WorldShip after they have been issued to
           shipping—but before they have been shipped.</para>
         </tip>
       </listitem>
@@ -136,7 +136,7 @@
     <varlistentry>
       <term>Items to Ship</term>
       <listitem>
-        <para>Display lists Order line items available for shipping.</para>
+        <para>Display lists order line items available for shipping.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -158,8 +158,8 @@
         </indexterm>Freight</term>
       <listitem>
         <para>Enter the amount of freight charge to be added to the specified
-        Order. Freight charges may be entered during the creation or
-        modification of an Order—or at the time of shipment.</para>
+        order. Freight charges may be entered during the creation or
+        modification of an order—or at the time of shipment.</para>
         <note>
           <para>The system supports up-to-date shipment tracking with links to
           the websites of many leading shipping companies (i.e., "Ship
@@ -170,7 +170,7 @@
     <varlistentry>
       <term>Ship Via</term>
       <listitem>
-        <para>Specify the ship via for the Order. The Ship Via field supports
+        <para>Specify the ship via for the order. The Ship Via field supports
         free-form ship vias. If you want to enter a free-form ship via, simply
         type the name of the ship via into the field.</para>
         <tip>
@@ -185,7 +185,7 @@
     <varlistentry>
       <term>Tracking Number</term>
       <listitem>
-        <para>Tracking Numbers associated with an Order may be viewed in the
+        <para>Tracking Numbers associated with an order may be viewed in the
         Shipments by Sales Order report.</para>
       </listitem>
     </varlistentry>
@@ -195,14 +195,14 @@
     <varlistentry>
       <term>SHIP</term>
       <listitem>
-        <para>Ships the Order, clearing the screen of previously-displayed
+        <para>Ships the order, clearing the screen of previously-displayed
         data.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
-    <para>If an Order is marked "Ship Complete," you will be prevented from
-    shipping the Order until all line item quantities are issued to
+    <para>If an order is marked "Ship Complete," you will be prevented from
+    shipping the order until all line item quantities are issued to
     shipping.</para>
   </note>
 </section>

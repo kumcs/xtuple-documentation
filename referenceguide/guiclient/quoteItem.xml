@@ -63,7 +63,7 @@
         <para>Enter the item number of the item you want to sell. The item
         list will contain sold items available for purchase by the specified
         customer. The list of available items may vary from customer to
-        customer, depending on how Pricing Schedules are implemented at your
+        customer, depending on how pricing schedules are implemented at your
         site. Once an item number is entered, the inventory unit of measure
         and item description will automatically appear.</para>
       </listitem>
@@ -73,11 +73,11 @@
       <term>Customer P/N</term>
 
       <listitem>
-        <para>Displays the customer part number (i.e., item Alias) that
+        <para>Displays the customer part number (i.e., item alias) that
         corresponds to the item number entered in the Item Number field. If
-        the Alias is associated with a particular customer account, then the
-        Alias will only be displayed for sales orders and quotes entered for
-        that customer. Item Aliases are defined on the Item master.</para>
+        the alias is associated with a particular customer account, then the
+        alias will only be displayed for sales orders and quotes entered for
+        that customer. Item aliases are defined on the Item master.</para>
       </listitem>
     </varlistentry>
 
@@ -132,9 +132,9 @@
       <listitem>
         <para>Advanced Item Search (AIS) is a feature designed specifically
         with distribution in mind. This feature allows distributors and end
-        users to quickly search for both items and item Aliases?as well as
+        users to quickly search for both items and item aliases?as well as
         current inventory levels?filtering every keystroke. From this screen
-        you also have the ability to create an item Alias.</para>
+        you also have the ability to create an item alias.</para>
 
         <note>
           <para>When using the Advanced Item Search, you must enter at least
@@ -211,7 +211,7 @@
       <listitem>
         <para>Specify here and apply any discount for specified customer for
         this quote. This is a discount off the regular customer price,
-        obtained either from the Customer master or a Pricing Schedule.</para>
+        obtained either from the Customer master or a pricing schedule.</para>
       </listitem>
     </varlistentry>
 
@@ -225,28 +225,28 @@
       <listitem>
         <para>Displays the unit price for the quote item. By default, the
         system will choose the lower of the following two prices: A) The
-        most-specific Pricing Schedule assignment or B) any Sale in effect at
-        the time of order entry. The specificity of Pricing Schedule
+        most-specific pricing schedule assignment or B) any Sale in effect at
+        the time of order entry. The specificity of pricing schedule
         assignments is determined in the following descending order: By
         customer ship-to address (most specific), by customer, by customer
         type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
 
-        <para>If your Pricing Schedule has multiple units of measure (UOM) on
-        it (or if several Pricing Schedules share the same level of price
+        <para>If your pricing schedule has multiple units of measure (UOM) on
+        it (or if several pricing schedules share the same level of price
         specificity, but they have different UOMs) then the UOM which matches
         the selected UOM will be chosen—that is, as long as the quantity break
         does not exceed the quantity being priced. If no entry matches the UOM
         with a quantity break less than the quantity being priced, then the
         lowest value price for any UOM will be chosen. To make sure a specific
         UOM is always chosen at the desired level of price specificity, then
-        your Pricing Schedules should include at least one UOM with a quantity
+        your pricing schedules should include at least one UOM with a quantity
         break of 0.</para>
 
         <tip>
           <para>The system can be configured to prevent users from editing the
           net unit price. If your system is configured that way, the Net Unit
-          Price field will not be editable. The Unit Cost and Unit Cost Markup
+          Price field will not be editable. The unit cost and unit cost Markup
           % values on the Details tab can also be configured to be editable
           with permission settings. These values, if changed, will adjust the
           net unit price.</para>
@@ -319,7 +319,7 @@
       <listitem>
         <para>Select to display availability information for the quote item in
         the following categories. If the feature is turned on, the
-        availability totals will display only after a Scheduled Date has been
+        availability totals will display only after a scheduled date has been
         entered for the line item.</para>
       </listitem>
     </varlistentry>
@@ -678,7 +678,7 @@
         <para>If your site has enabled the "Allow Inventory Receipt Cost
         Override" option in the Inventory setup, then you will be able to
         override the default unit price here. This option applies only to
-        Average cost items.</para>
+        average cost items.</para>
       </listitem>
     </varlistentry>
 
@@ -856,7 +856,7 @@
       <listitem>
         <para>Displays the price given to the specified customer. Special
         customer prices can be set for individual customers or customer Groups
-        by using a Pricing Schedule.</para>
+        by using a pricing schedule.</para>
       </listitem>
     </varlistentry>
 

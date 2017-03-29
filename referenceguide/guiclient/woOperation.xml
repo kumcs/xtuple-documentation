@@ -187,27 +187,27 @@
         <para>Select a unit of measure—or enter a free-form UOM. Specify a UOM
         to be used optionally when work order operations are posted for the
         specified operation. Operations may be posted using either the
-        Inventory or Production UOM. In addition, different operations in a
-        single routing may use different Production UOMs. For
+        Inventory or production UOM. In addition, different operations in a
+        single routing may use different production UOMs. For
         example, if you are producing soup, you might mix the soup in one
         operation using UOM = BATCH. But when canning the soup, the canning
         operation might use UOM = CAN. If you post operations using the
-        Production UOM, the Inventory/Production UOM ratio normalizes the
-        posting so that the Inventory impact is recorded using the Inventory
+        production UOM, the inventory/production UOM ratio normalizes the
+        posting so that the inventory impact is recorded using the Inventory
         UOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
     <para>When posting work order operations, you are given the option to post
-    operations using Production UOMs or Inventory UOMs.</para>
+    operations using production UOMs or inventory UOMs.</para>
   </note>
   <variablelist>
     <varlistentry>
       <term>Production/Inventory UOM Ratio</term>
       <listitem>
-        <para>When work order operations are posted using the Production UOM,
-        the Inventory/Production UOM ratio normalizes the posting so that the
+        <para>When work order operations are posted using the production UOM,
+        the inventory/production UOM ratio normalizes the posting so that the
         Inventory impact is recorded in the Inventory UOM.</para>
       </listitem>
     </varlistentry>
@@ -261,9 +261,9 @@
     <varlistentry>
       <term>Receive to Stock at this Operation</term>
       <listitem>
-        <para>Select if you want finished goods to be received into Inventory
+        <para>Select if you want finished goods to be received into inventory
         when this operation is posted. Only one work order operation may have
-        this flag set. If this option is selected, the General Ledger will
+        this flag set. If this option is selected, the general ledger will
         show the finished goods being received into Inventory when the
         operation is posted.</para>
       </listitem>
@@ -273,8 +273,8 @@
       <listitem>
         <para>Select if you want linked component material to be issued
         automatically (i.e., backflushed) when this operation is posted. If
-        this option is selected, the General Ledger will show the component
-        materials being removed from Inventory when this operation is
+        this option is selected, the general ledger will show the component
+        materials being removed from inventory when this operation is
         posted.</para>
         <note>
           <para>The "Auto. Issue" setting applies only to component items

@@ -46,14 +46,14 @@
     <varlistentry>
       <term>Site</term>
       <listitem>
-        <para>Specify the supplied from site for the Order. By default, the
-        logged in User's preferred site will be used.</para>
+        <para>Specify the supplied from site for the order. By default, the
+        logged in user's preferred site will be used.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tax Zone</term>
       <listitem>
-        <para>Specify the tax zone for the Order. If the default customer (or
+        <para>Specify the tax zone for the order. If the default customer (or
         other specified customer) does not have a default ship-to address and
         associated tax zone, then the tax zone for the site will be
         used.</para>
@@ -86,7 +86,7 @@
         <para>Enter the item number of the item you want to sell. The item
         list will contain sold items available for sale to the specified
         customer. The list of available items may vary from customer to
-        customer, depending on how Pricing Schedules are implemented at your
+        customer, depending on how pricing schedules are implemented at your
         site.</para>
       </listitem>
     </varlistentry>
@@ -104,7 +104,7 @@
     <varlistentry>
       <term>HOLD ORDER</term>
       <listitem>
-        <para>Select to save the Order and save it for processing later. You
+        <para>Select to save the order and save it for processing later. You
         may be prompted to print a sales order acknowledgement form if your
         Sales module is configured to do so.</para>
       </listitem>
@@ -116,7 +116,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To process payment for the Order, select the "Payment" tab. The
+  <para>To process payment for the order, select the "Payment" tab. The
   following screen will appear:</para>
   <screenshot>
     <mediaobject>
@@ -126,7 +126,7 @@
       <caption>Credit Card Payment</caption>
     </mediaobject>
   </screenshot>
-  <para>When processing a credit card payment for the Order, you are presented
+  <para>When processing a credit card payment for the order, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -141,13 +141,13 @@
     <varlistentry>
       <term>Amount</term>
       <listitem>
-        <para>The Order total will be displayed here.</para>
+        <para>The order total will be displayed here.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>CVV Code</term>
       <listitem>
-        <para>Enter the Card Verification Value (CVV) Code found on the back
+        <para>Enter the card verification value (CVV) code found on the back
         of the specified credit card. This may be an optional feature at your
         site. Contact your Systems Administrator for details.</para>
       </listitem>
@@ -173,12 +173,12 @@
       <term>CHARGE CC AND COMPLETE ORDER</term>
       <listitem>
         <para>Select to charge the highlighted credit card and complete the
-        Order. You may be prompted to print a shipping Packing List and/or an
+        order. You may be prompted to print a shipping packing list and/or an
         invoice if your Sales module is configured to do so.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To process a cash payment for the Order, select the "Cash" tab. The
+  <para>To process a cash payment for the order, select the "Cash" tab. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -187,19 +187,19 @@
         </imageobject>
         <caption>Cash Payment</caption>
       </mediaobject>
-    </screenshot>When processing a Cash Receipt for the Order, you are
+    </screenshot>When processing a cash receipt for the order, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Order Total</term>
       <listitem>
-        <para>Displays the total for the Order.</para>
+        <para>Displays the total for the order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Balance</term>
       <listitem>
-        <para>Displays the balance due for the Order.</para>
+        <para>Displays the balance due for the oder.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -212,19 +212,19 @@
     <varlistentry>
       <term>Amount Received</term>
       <listitem>
-        <para>Enter the amount of Cash being received against the Order. If
-        the customer's credit status is good and the Funds Type is set to "On
+        <para>Enter the amount of cash being received against the order. If
+        the customer's credit status is good and the Funds type is set to "On
         Account," this field will be disabled.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Funds Type</term>
       <listitem>
-        <para>Specify the type of funds being used for the Cash Receipt.
-        Choose from the following types: On account, Cash, check, certified
+        <para>Specify the type of funds being used for the cash receipt.
+        Choose from the following types: On account, cash, check, certified
         check, Wire Transfer, and Other.</para>
         <note>
-          <para>The "On Account" Funds Type will only be shown if the
+          <para>The "On Account" Funds type will only be shown if the
           specified customer has not exceeded their credit limit. If they
           have, the type will be hidden and the default cash-paying customer
           will be used instead.</para>
@@ -236,7 +236,7 @@
       <listitem>
         <para>Use this field to enter the customer's Payment Number,
         transaction number, credit card number, or any other Document Number
-        you wish to associate with the Cash Receipt.</para>
+        you wish to associate with the cash receipt.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -250,7 +250,7 @@
     <varlistentry>
       <term>Post To</term>
       <listitem>
-        <para>Select the bank account you want to post the Cash Receipt to.
+        <para>Select the bank account you want to post the cash receipt to.
         The Asset account used for the selected bank account is specified on
         the Bank Account master.</para>
       </listitem>
@@ -261,8 +261,8 @@
     <varlistentry>
       <term>POST PAYMENT AND COMPLETE ORDER</term>
       <listitem>
-        <para>Select to post the Cash Receipt and complete the Order. You may
-        be prompted to print a shipping Packing List and/or an invoice if your
+        <para>Select to post the cash receipt and complete the order. You may
+        be prompted to print a shipping packing list and/or an invoice if your
         Sales module is configured to do so.</para>
       </listitem>
     </varlistentry>
