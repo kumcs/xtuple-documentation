@@ -11,7 +11,7 @@
       <see>quotes</see>
     </indexterm> New quote</title>
   <para>A quote is a statement issued to a customer or Prospect indicating
-  pricing and sales Terms for specified quantities of sold items. Quotes are
+  pricing and sales terms for specified quantities of sold items. Quotes are
   often precursors to sales orders. To create a quote, select the "New Quote"
   option. The following screen will appear:</para>
   <para><screenshot>
@@ -117,11 +117,11 @@
     <varlistentry>
       <term>Ship-To #</term>
       <listitem>
-        <para>Enter the number of the preferred Ship-To Address. Customers may
-        maintain multiple Ship-To Addresses. If the Customer master for the
+        <para>Enter the number of the preferred ship-to address. Customers may
+        maintain multiple ship-to addresses. If the Customer master for the
         specified customer indicates that free-form Ship-To's are allowed,
         then any address may be entered. If free-form Ship-To's are not
-        allowed, then the Ship-To Address must be entered using the browse
+        allowed, then the ship-to address must be entered using the browse
         button located to the right of the field.</para>
       </listitem>
     </varlistentry>
@@ -155,7 +155,7 @@
     <varlistentry>
       <term>Sale Type</term>
       <listitem>
-        <para>Specify the Sales Type. Sales account assignments by sales Type
+        <para>Specify the sale type. Sales account assignments by sales Type
         are available.</para>
         <note>
           <para>If the Sales Order setup setting "Display Sales Order Line
@@ -170,8 +170,8 @@
           <secondary>setting terms for</secondary>
         </indexterm>Terms</term>
       <listitem>
-        <para>Specify the billing Terms associated with the order. By default,
-        the customer's standard billing Terms will appear in the field.</para>
+        <para>Specify the billing terms associated with the order. By default,
+        the customer's standard billing terms will appear in the field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -186,10 +186,10 @@
         <para>Specify the sales representative?or Outside Rep, in the
         Distribution Edition?associated with the quote. Sales representatives
         are linked to a customer on the Customer master—either by a default
-        setting or through the assignment of Ship-To Addresses. Each Ship-To
-        Address may have a different sales representative associated with it.
+        setting or through the assignment of ship-to addresses. Each ship-to
+        address may have a different sales representative associated with it.
         Consequently, the name of the sales representative appearing on the
-        Quote header will be the same as specified for the Ship-To Address
+        Quote header will be the same as specified for the ship-to address
         being used. If you are using the Enhanced Commissions package, the
         sales rep information is moved to a separate tab.</para>
         <note>
@@ -218,7 +218,7 @@
         </indexterm>Tax Zone</term>
       <listitem>
         <para>Specify the tax zone associated with the quote. The tax zone for
-        the specified Ship-To Address will be entered here by default.
+        the specified ship-to address will be entered here by default.
         Otherwise, the primary tax zone for the customer will be entered. This
         field can be viewed upon selecting the MORE button.</para>
       </listitem>
@@ -226,18 +226,18 @@
     <varlistentry>
       <term>F.O.B.</term>
       <listitem>
-        <para>Enter free on board (FOB) Terms for the order. By default, FOB.
+        <para>Enter free on board (FOB) terms for the order. By default, FOB.
         Terms entered on the Shipping Site master will appear in this field.
-        The default Terms may be changed during order entry—and also at later
+        The default terms may be changed during order entry—and also at later
         stages during the billing cycle.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Ship Via</term>
       <listitem>
-        <para>The preferred Ship Via method for the customer will appear in
-        the field. You may change the default Ship Via using the list. You may
-        also enter a free-form Ship Via simply by typing the name of the Ship
+        <para>The preferred ship via method for the customer will appear in
+        the field. You may change the default ship via using the list. You may
+        also enter a free-form ship via simply by typing the name of the Ship
         Via into the field.</para>
         <tip>
           <para>The system supports up-to-date shipment tracking with links to
@@ -281,24 +281,24 @@
           <varlistentry>
             <term>Address</term>
             <listitem>
-              <para>Displays the customer's Bill-To Address. You may manually
-              override the displayed Address information in the fields
-              below—or use the lookup feature to select another Address. If a
-              new Address is manually entered here, that Address will be added
-              automatically to the master list of Addresses. For additional
-              documentation related to creating Addresses, see <xref
+              <para>Displays the customer's bill-to address. You may manually
+              override the displayed address information in the fields
+              below—or use the lookup feature to select another address. If a
+              new address is manually entered here, that address will be added
+              automatically to the master list of addresses. For additional
+              documentation related to creating addresses, see <xref
               linkend="address" />.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Billing Contact</term>
             <listitem>
-              <para>Displays the customer's billing Contact. You may manually
-              override the displayed Contact information in the fields
-              below—or use the lookup feature to select another Contact. If a
-              new Contact is manually entered here, that Contact will be added
-              automatically to the master list of Contacts. For additional
-              documentation related to creating Addresses, see <xref
+              <para>Displays the customer's billing contact. You may manually
+              override the displayed contact information in the fields
+              below—or use the lookup feature to select another contact. If a
+              new contact is manually entered here, that contact will be added
+              automatically to the master list of contacts. For additional
+              documentation related to creating addresses, see <xref
               linkend="contact" />.</para>
             </listitem>
           </varlistentry>
@@ -324,24 +324,24 @@
           <varlistentry>
             <term>Address</term>
             <listitem>
-              <para>Displays the specified Ship-To Address. You may manually
-              override the displayed Address information in the fields
-              below—or use the lookup feature to select another Address. If a
-              new Address is manually entered here, that Address will be added
-              automatically to the master list of Addresses. For additional
-              documentation related to creating Addresses, see <xref
+              <para>Displays the specified ship-to address. You may manually
+              override the displayed address information in the fields
+              below—or use the lookup feature to select another address. If a
+              new address is manually entered here, that address will be added
+              automatically to the master list of addresses. For additional
+              documentation related to creating addresses, see <xref
               linkend="contact" />.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Shipping Contact</term>
+            <term>Shipping contact</term>
             <listitem>
-              <para>Displays the shipping Contact for the Ship-To Address. You
-              may manually override the displayed Contact information in the
+              <para>Displays the shipping contact for the ship-to address. You
+              may manually override the displayed contact information in the
               fields below—or use the lookup feature to select another
-              Contact. If a new Contact is manually entered here, that Contact
+              contact. If a new contact is manually entered here, that contact
               will be added automatically to the master list of Contacts. For
-              additional documentation related to creating Addresses, see
+              additional documentation related to creating addresses, see
               <xref linkend="contact" />.</para>
             </listitem>
           </varlistentry>
@@ -477,9 +477,9 @@
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Displays the amount of Tax that will be added to the Sales
-        order, as defined by the specified Tax Code. To get a detailed view of
-        the Tax calculation, click on the Tax link using your mouse.</para>
+        <para>Displays the amount of tax that will be added to the Sales
+        order, as defined by the specified tax code. To get a detailed view of
+        the tax calculation, click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -508,7 +508,7 @@
                 specified customer. The list of available items may vary from
                 customer to customer, depending on how Pricing Schedules are
                 implemented at your site. Once an item number is entered, the
-                inventory Unit of Measure and item description will
+                inventory unit of measure and item description will
                 automatically appear.</para>
               </listitem>
             </varlistentry>
@@ -549,10 +549,10 @@
               <listitem>
                 <para>Displays the unit price for the sales order item. By
                 default, the system will choose the lower of the following two
-                prices: A) The most-specific Pricing Schedule Assignment or B)
+                prices: A) The most-specific Pricing Schedule assignment or B)
                 any Sale in effect at the time of order entry. The specificity
-                of Pricing Schedule Assignments is determined in the following
-                descending order: By customer Ship-To Address (most specific),
+                of Pricing Schedule assignments is determined in the following
+                descending order: By customer ship-to address (most specific),
                 by customer, by customer type, by customer type pattern, by
                 all customers. The lookup feature located to the right of the
                 field leads to a Price List screen.</para>
@@ -611,7 +611,7 @@
     <varlistentry>
       <term>Opportunity</term>
       <listitem>
-        <para>Select an Opportunity to associate with the quote, using the
+        <para>Select an opportunity to associate with the quote, using the
         lookup feature located to the right of the field.</para>
       </listitem>
     </varlistentry>
@@ -671,7 +671,7 @@
         shipping notes related to the quote. These notes are for internal use
         only. Shipping notes are drawn from the Customer master—specifically
         from the "Shipping Notes" tab on the Ship-To Address master. The notes
-        may vary depending on the Ship-To Address specified for the quote.
+        may vary depending on the ship-to address specified for the quote.
         These notes provide a mechanism for transferring shipping information
         from the Customer master to the quote.</para>
       </listitem>

@@ -137,11 +137,11 @@
               track work and shipping on the repair or service. The billing
               for service or repair work should be handled on the new sales
               order. Service or repair items should first be received by the
-              return authorization. If the Job item is Lot/Serial controlled,
-              you will be prompted to assign Lot/Serial numbers when the
-              receipt is posted. This assignment of Lot/Serial Numbers can be
+              return authorization. If the Job item is lot/serial controlled,
+              you will be prompted to assign lot/serial numbers when the
+              receipt is posted. This assignment of lot/serial numbers can be
               simplified if you link authorized line items with existing
-              Lot/Serial Numbers at the line item level. For more information,
+              lot/serial numbers at the line item level. For more information,
               please see <xref linkend="returnAuthItemLotSerial"/>.</para>
             </listitem>
           </varlistentry>
@@ -171,7 +171,7 @@
       <listitem>
         <para>Specify the reason for the return authorization. Reason codes
         are used to explain why a customer return is being authorized. The
-        line item inherits the Reason Code from the header, but may be
+        line item inherits the reason code from the header, but may be
         overridden at the line level.</para>
       </listitem>
     </varlistentry>
@@ -184,7 +184,7 @@
         items you may select will vary depending on the line item disposition.
         For example, only Job items may be selected for line items having the
         Service disposition. Once an item number is entered, the inventory
-        Unit of Measure and item description will automatically appear.</para>
+        unit of measure and item description will automatically appear.</para>
 
         <para>If a returned item is an average-cost item, is linked to a sales
         order, and will result in an inventory receipt, the average cost for
@@ -273,7 +273,7 @@
       <term>Qty. UOM</term>
 
       <listitem>
-        <para>Specify the Unit of Measure (UOM) to be used when selling the
+        <para>Specify the unit of measure (UOM) to be used when selling the
         line item. Sold items may be assigned multiple Selling UOMs. These
         alternate UOMs may be defined on the Item master. You may also select
         a global conversion ratio here. Global conversions have the label
@@ -344,15 +344,15 @@
               disposition was Credit or return when the order was imported. If
               there is no linked sales order, then the system will choose the
               lower of the following two prices: A) The most-specific Pricing
-              Schedule Assignment or B) any Sale in effect at the time of
-              order entry. The specificity of Pricing Schedule Assignments is
+              Schedule assignment or B) any Sale in effect at the time of
+              order entry. The specificity of Pricing Schedule assignments is
               determined in the following descending order: By customer
-              Ship-To Address (most specific), by customer, by customer type,
+              ship-to address (most specific), by customer, by customer type,
               by customer type pattern, by all customers. The lookup feature
               located to the right of the field leads to a Price List
               screen.</para>
 
-              <para>If your Pricing Schedule has multiple Units of Measure
+              <para>If your Pricing Schedule has multiple units of measure
               (UOM) on it (or if several Pricing Schedules share the same
               level of price specificity, but they have different UOMs) then
               the UOM which matches the selected UOM will be chosen—that is,
@@ -377,7 +377,7 @@
             <term>Price UOM</term>
 
             <listitem>
-              <para>The price Unit of Measure is the same as the Selling UOM.
+              <para>The price unit of measure is the same as the Selling UOM.
               If an item has Selling UOMs defined, then you will be able to
               select from between the inventory UOM and any defined Selling
               UOMs. If no Selling UOMs have been defined, then the inventory
@@ -428,15 +428,15 @@
               disposition was Credit or return when the order was imported. If
               there is no linked sales order, then the system will choose the
               lower of the following two prices: A) The most-specific Pricing
-              Schedule Assignment or B) any Sale in effect at the time of
-              order entry. The specificity of Pricing Schedule Assignments is
+              Schedule assignment or B) any Sale in effect at the time of
+              order entry. The specificity of Pricing Schedule assignments is
               determined in the following descending order: By customer
-              Ship-To Address (most specific), by customer, by customer type,
+              ship-to address (most specific), by customer, by customer type,
               by customer type pattern, by all customers. The lookup feature
               located to the right of the field leads to a Price List
               screen.</para>
 
-              <para>If your Pricing Schedule has multiple Units of Measure
+              <para>If your Pricing Schedule has multiple units of measure
               (UOM) on it—or if several Pricing Schedules share the same level
               of price specificity, but they have different UOMs—then the UOM
               which matches the selected UOM will be chosen—that is, as long
@@ -461,7 +461,7 @@
             <term>Price UOM</term>
 
             <listitem>
-              <para>The price Unit of Measure is the same as the Selling UOM.
+              <para>The price unit of measure is the same as the Selling UOM.
               If an item has Selling UOMs defined, then you will be able to
               select from between the inventory UOM and any defined Selling
               UOMs. If no Selling UOMs have been defined, then the inventory
@@ -673,9 +673,9 @@
     </varlistentry>
   </variablelist>
 
-  <para>For Lot/Serial items, you have the option to authorize only specific
-  Lot/Serial quantities. The "Lot/Serial" tab will only be enabled for
-  Lot/Serial items. To authorize specific Lot/Serial quantities, select the
+  <para>For lot/serial items, you have the option to authorize only specific
+  lot/serial quantities. The "Lot/Serial" tab will only be enabled for
+  lot/serial items. To authorize specific lot/serial quantities, select the
   "Lot/Serial" tab. The following screen will appear:</para>
 
   <para><screenshot>
@@ -688,7 +688,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When authorizing specific Lot/Serial quantities, you are presented
+  <para>When authorizing specific lot/serial quantities, you are presented
   with the following options:</para>
 
   <variablelist>
@@ -696,7 +696,7 @@
       <term>Lot/Serial</term>
 
       <listitem>
-        <para>Displays any Lot/Serial quantities specifically authorized for
+        <para>Displays any lot/serial quantities specifically authorized for
         the return authorization.</para>
       </listitem>
     </varlistentry>
@@ -705,14 +705,14 @@
       <term>Authorize only these Lot/Serial Numbers</term>
 
       <listitem>
-        <para>Select to enable the Lot/Serial selection process. When this
-        option is selected, you will be able to select specific Lot/Serial
+        <para>Select to enable the lot/serial selection process. When this
+        option is selected, you will be able to select specific lot/serial
         quantities for authorization.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>To view costs or adjust Tax information for a return authorization
+  <para>To view costs or adjust tax information for a return authorization
   line item, select the "Detail" tab at the bottom of the screen, as shown
   below:</para>
 
@@ -726,7 +726,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing costs or adjusting Tax information for a return
+  <para>When viewing costs or adjusting tax information for a return
   authorization line item, you are presented with the following
   options:</para>
 
@@ -769,7 +769,7 @@
       <term>Tax</term>
 
       <listitem>
-        <para>The following Tax options are available, should you need to
+        <para>The following tax options are available, should you need to
         override the Tax Selection settings for the line item:</para>
 
         <variablelist>
@@ -777,9 +777,9 @@
             <term>Tax Type</term>
 
             <listitem>
-              <para>Specify the Tax Type for the line item. If the Item master
-              does not have a Tax Type for the return authorization's tax
-              authority, then no Tax will be charged.</para>
+              <para>Specify the tax type for the line item. If the Item master
+              does not have a tax type for the return authorization's tax
+              authority, then no tax will be charged.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -789,8 +789,8 @@
             <term>Tax</term>
 
             <listitem>
-              <para>Displays the amount of Tax to be charged for the line item
-              quantity. To get a detailed view of the Tax calculation, click
+              <para>Displays the amount of tax to be charged for the line item
+              quantity. To get a detailed view of the tax calculation, click
               on the Tax link using your mouse.</para>
             </listitem>
           </varlistentry>

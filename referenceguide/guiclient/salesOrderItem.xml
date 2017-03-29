@@ -89,7 +89,7 @@
         list will contain sold items available for sale to the specified
         customer. The list of available items may vary from customer to
         customer, depending on how Pricing Schedules are implemented at your
-        site. Once an item number is entered, the inventory Unit of Measure
+        site. Once an item number is entered, the inventory unit of measure
         and item description will automatically appear.</para>
 
         <note>
@@ -236,7 +236,7 @@
       <term>Qty. UOM</term>
 
       <listitem>
-        <para>Specify the Unit of Measure (UOM) to be used when selling the
+        <para>Specify the unit of measure (UOM) to be used when selling the
         line item. Sold items may be assigned multiple Selling UOMs. These
         alternate UOMs may be defined on the Item master. You may also select
         a global conversion ratio here. Global conversions have the label
@@ -315,9 +315,9 @@
         <para>Displays either the list price minus the customer Discount or
         the price from any applicable Pricing Schedule or Sale. If a Pricing
         Schedule is in effect, the <emphasis>most specific</emphasis> Pricing
-        Schedule Assignment will be used. The specificity of Pricing Schedule
-        Assignments is determined in the following descending order: by
-        customer Ship-To Address (most specific), by customer, by customer
+        Schedule assignment will be used. The specificity of Pricing Schedule
+        assignments is determined in the following descending order: by
+        customer ship-to address (most specific), by customer, by customer
         Type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
 
@@ -336,7 +336,7 @@
       <term>Price UOM</term>
 
       <listitem>
-        <para>The price Unit of Measure is the same as the Selling UOM. If an
+        <para>The price unit of measure is the same as the Selling UOM. If an
         item has Selling UOMs defined, then the item may be sold and priced in
         these alternate UOMs. You may also select a global conversion ratio
         here. Global conversions have the label <literal>Global</literal>
@@ -623,10 +623,10 @@
               site is configured to use drop shipping, an additional "Drop
               Ship" flag will also be shown for linked purchase orders. The
               drop ship function will search for an existing purchase order
-              linked to the sales order with a matching Ship-To Address and
+              linked to the sales order with a matching ship-to address and
               add the line item to that Order—or create a new Order if none
-              exists. Drop ship purchase orders inherit the Ship-To Address
-              and Contact information from the sales order. Item sources must
+              exists. Drop ship purchase orders inherit the ship-to address
+              and contact information from the sales order. Item sources must
               be defined for drop ship items—including each component of a Kit
               item.</para>
 
@@ -1079,7 +1079,7 @@
     work order exploded.</para>
   </note>
 
-  <para>To view costs or adjust Tax information for a sales order line item,
+  <para>To view costs or adjust tax information for a sales order line item,
   select the "Detail" tab at the bottom of the screen, as shown below:</para>
 
   <para><screenshot>
@@ -1092,7 +1092,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing costs or adjusting Tax information for a sales order line
+  <para>When viewing costs or adjusting tax information for a sales order line
   item, you are presented with the following options:</para>
 
   <variablelist>
@@ -1172,7 +1172,7 @@
       <term>Tax</term>
 
       <listitem>
-        <para>The following Tax options are available, should you need to
+        <para>The following tax options are available, should you need to
         override the Tax Selection settings for the line item:</para>
 
         <variablelist>
@@ -1180,7 +1180,7 @@
             <term>Tax Type</term>
 
             <listitem>
-              <para>Specify the Tax Type for the sales order item.</para>
+              <para>Specify the tax type for the sales order item.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1190,8 +1190,8 @@
             <term>Tax</term>
 
             <listitem>
-              <para>Displays the amount of Tax to be charged for the sales
-              order line item quantity. To get a detailed view of the Tax
+              <para>Displays the amount of tax to be charged for the sales
+              order line item quantity. To get a detailed view of the tax
               calculation, click on the Tax link using your mouse.</para>
             </listitem>
           </varlistentry>
@@ -1291,7 +1291,7 @@
       <listitem>
         <para>Specify an alternate account to be used as the Revenue account.
         This account will be used instead of the typical account predefined in
-        the Receivables Assignments.</para>
+        the receivables assignments.</para>
       </listitem>
     </varlistentry>
   </variablelist>

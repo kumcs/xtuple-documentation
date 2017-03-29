@@ -60,7 +60,7 @@
     <varlistentry>
       <term>Reason Code</term>
       <listitem>
-        <para>Specify the reason for the return authorization. Reason Codes
+        <para>Specify the reason for the return authorization. Reason codes
         are used to explain why a customer return is being authorized.</para>
       </listitem>
     </varlistentry>
@@ -76,10 +76,10 @@
         <para>Specify the sales representative associated with the return
         authorization. Sales representatives are linked to a customer on the
         Customer master—either by a default setting or through the assignment
-        of Ship-To Addresses. Each Ship-To Address may have a different sales
+        of ship-to addresses. Each ship-to address may have a different sales
         representative associated with it. Consequently, the name of the sales
         representative appearing on the Return Authorization header will be
-        the same as specified for the Ship-To Address being used.</para>
+        the same as specified for the ship-to address being used.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -99,7 +99,7 @@
         </indexterm>Tax Zone</term>
       <listitem>
         <para>Specify the tax zone associated with the return authorization.
-        The tax zone for the specified Ship-To Address will be entered here by
+        The tax zone for the specified ship-to address will be entered here by
         default. Otherwise, the primary tax zone for the customer will be
         entered.</para>
       </listitem>
@@ -108,7 +108,7 @@
       <term>Shipping Zone</term>
       <listitem>
         <para>Specify the shipping zone associated with the return
-        authorization. The shipping zone for the specified Ship-To Address
+        authorization. The shipping zone for the specified ship-to address
         will be entered here by default. Otherwise, the primary shipping zone
         for the customer will be entered.</para>
       </listitem>
@@ -167,10 +167,10 @@
               with linked work order(s) will be created to track work and
               shipping on the repair or service. Service or repair items
               should first be received by the return authorization. If the Job
-              item is Lot/Serial controlled, you will be prompted to assign
-              Lot/Serial numbers when the receipt is posted. This assignment
-              of Lot/Serial Numbers can be simplified if you link authorized
-              line items with existing Lot/Serial Numbers at the line item
+              item is lot/serial controlled, you will be prompted to assign
+              lot/serial numbers when the receipt is posted. This assignment
+              of lot/serial numbers can be simplified if you link authorized
+              line items with existing lot/serial numbers at the line item
               level. For more information, please see <xref
               linkend="returnAuthItemLotSerial" />.</para>
               <note>
@@ -269,7 +269,7 @@
     <varlistentry>
       <term>Sale Type</term>
       <listitem>
-        <para>Specify the Sale Type.</para>
+        <para>Specify the sale type.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -288,7 +288,7 @@
       <term>Print on Save</term>
       <listitem>
         <para>Select to print a copy of the return authorization when you
-        select the SAVE button. You must have a Form "keyed on" return
+        select the SAVE button. You must have a form "keyed on" return
         authorizations for this option to work. The keyed on process is
         described here: <xref linkend="form" />.</para>
       </listitem>
@@ -385,12 +385,12 @@
     <varlistentry>
       <term>Address</term>
       <listitem>
-        <para>Displays the customer's Bill-To Address. You may manually
-        override the displayed Address information in the fields below—or use
-        the lookup feature to select another Address. If a new Address is
-        manually entered here, that Address will be added automatically to the
+        <para>Displays the customer's bill-to address. You may manually
+        override the displayed address information in the fields below—or use
+        the lookup feature to select another address. If a new address is
+        manually entered here, that address will be added automatically to the
         master list of Addresses. For additional documentation related to
-        creating Addresses, see <xref linkend="address" />.</para>
+        creating addresses, see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -404,11 +404,11 @@
     <varlistentry>
       <term>Ship-To #</term>
       <listitem>
-        <para>Enter the number of the preferred Ship-To Address. Customers may
-        maintain multiple Ship-To Addresses. If the Customer master for the
+        <para>Enter the number of the preferred ship-to address. Customers may
+        maintain multiple ship-to addresses. If the Customer master for the
         specified customer indicates that free-form Ship-To's are allowed,
         then any address may be entered. If free-form Ship-To's are not
-        allowed, then the Ship-To Address must be entered using the browse
+        allowed, then the ship-to address must be entered using the browse
         button located to the right of the field.</para>
       </listitem>
     </varlistentry>
@@ -430,12 +430,12 @@
     <varlistentry>
       <term>Address</term>
       <listitem>
-        <para>Displays the specified Ship-To Address. You may manually
-        override the displayed Address information in the fields below—or use
-        the lookup feature to select another Address. If a new Address is
-        manually entered here, that Address will be added automatically to the
+        <para>Displays the specified ship-to address. You may manually
+        override the displayed address information in the fields below—or use
+        the lookup feature to select another address. If a new address is
+        manually entered here, that address will be added automatically to the
         master list of Addresses. For additional documentation related to
-        creating Addresses, see <xref linkend="address" />.</para>
+        creating addresses, see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -449,7 +449,7 @@
     <varlistentry>
       <term>Incident</term>
       <listitem>
-        <para>You have the option to associate an Incident Number with the
+        <para>You have the option to associate an incident number with the
         return authorization. The lookup feature located to the right of the
         field enables you to select from a list of available Projects.</para>
       </listitem>
@@ -558,9 +558,9 @@
     <varlistentry>
       <term>Tax</term>
       <listitem>
-        <para>Displays the total amount of Tax to be charged on the return
-        authorization. The Tax amount displayed here represents the total for
-        all line item Tax amounts. To get a detailed view of the Tax
+        <para>Displays the total amount of tax to be charged on the return
+        authorization. The tax amount displayed here represents the total for
+        all line item tax amounts. To get a detailed view of the tax
         calculation, click on the Tax link using your mouse.</para>
       </listitem>
     </varlistentry>
