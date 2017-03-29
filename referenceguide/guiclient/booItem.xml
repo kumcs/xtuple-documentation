@@ -179,7 +179,7 @@
         </indexterm>Run Time (min)</term>
       <listitem>
         <para>Amount entered represents the number of minutes required to run
-        the Production UOM.</para>
+        the production UOM.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -280,12 +280,12 @@
         <para>Select a unit of measure (UOM)—or enter a free-form UOM. Specify
         a UOM to be used optionally when work order operations are posted for
         the specified operation. Different operations in a single routing may
-        use different Production UOMs. For example, if you are producing soup,
+        use different production UOMs. For example, if you are producing soup,
         you might mix the soup in one operation using UOM = BATCH. But when
         canning the soup, the canning operation might use UOM = CAN.</para>
         <note>
           <para>When posting work order operations, you are given the option
-          to post operations using Production UOMs or inventory UOMs.</para>
+          to post operations using production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -293,7 +293,7 @@
       <term>Production/Inventory Ratio</term>
       <listitem>
         <para>This is the ratio that normalizes quantities to create a
-        Production UOM for use when posting work order operations.</para>
+        production UOM for use when posting work order operations.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -339,16 +339,16 @@
           <secondary>wip locations and</secondary>
         </indexterm>WIP Location</term>
       <listitem>
-        <para>Select a work-in-process (WIP) Location. This is an optional
-        selection which may be used for tracking the site Locations of
+        <para>Select a work-in-process (WIP) location. This is an optional
+        selection which may be used for tracking the site locations of
         finished goods inventory as it moves through the manufacturing
-        process. The feature applies only to top-level, Multiple Location
-        Control (MLC) items whose production is posted through work order
+        process. The feature applies only to top-level, multiple location
+        control (MLC) items whose production is posted through work order
         operations posting. If you choose to track finished MLC goods using
-        this feature, then the WIP Location entered here is the Location where
+        this feature, then the WIP location entered here is the location where
         inventory will be located when the preceding operation for the work
-        order is posted. A proceeding operation must exist for the Location
-        entered here to be used. If you do not wish to track WIP Locations for
+        order is posted. A proceeding operation must exist for the location
+        entered here to be used. If you do not wish to track WIP locations for
         finished MLC goods, then you can ignore this option.</para>
       </listitem>
     </varlistentry>

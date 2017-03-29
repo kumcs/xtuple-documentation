@@ -187,14 +187,14 @@
     </varlistentry>
 
     <varlistentry>
-      <term>Set default Location while transacting Location-controlled
+      <term>Set default location while transacting location-controlled
       Items</term>
 
       <listitem>
         <para>Select if you want to allow users to set or change the default
-        Location for Multiple Location Control (MLC) items while in the
+        location for multiple location control (MLC) items while in the
         process of conducting transactions involving MLC items. If not
-        selected, the default Location will have to be set or changed on the
+        selected, the default location will have to be set or changed on the
         item site record for each item.</para>
       </listitem>
     </varlistentry>
@@ -246,7 +246,7 @@
       <term>When Posting a Count Tag for Avg. Cost Items</term>
 
       <listitem>
-        <para>Specify how you want the inventory value of Average costed items
+        <para>Specify how you want the inventory value of average costed items
         to be handled when posting Count Tags:</para>
 
         <variablelist>
@@ -256,7 +256,7 @@
             <listitem>
               <para>Select if you want to use the item's standard cost when
               posting Count Tags. This option assumes you are maintaining
-              standard costs for your Average cost items.</para>
+              standard costs for your average cost items.</para>
             </listitem>
           </varlistentry>
 
@@ -264,8 +264,8 @@
             <term>Use Average cost</term>
 
             <listitem>
-              <para>Select to use the item's Average cost when posting Count
-              Tags. If no prior Average cost exists, the inventory value of a
+              <para>Select to use the item's average cost when posting Count
+              Tags. If no prior average cost exists, the inventory value of a
               posted Count Tag will be $0.</para>
             </listitem>
           </varlistentry>
@@ -274,10 +274,10 @@
             <term>Use Actual Cost if no Average Cost</term>
 
             <listitem>
-              <para>Select to use the item's actual cost if no Average cost
+              <para>Select to use the item's actual cost if no average cost
               exists when posting Count Tags. This option provides an
               alternate method for valuing inventory in the scenario where no
-              prior Average cost exists and also when standard costs are not
+              prior average cost exists and also when standard costs are not
               in use.</para>
             </listitem>
           </varlistentry>
@@ -399,7 +399,7 @@
       only)</term>
 
       <listitem>
-        <para>Select this option to enable cost overrides for Average costed
+        <para>Select this option to enable cost overrides for average costed
         items at the point when inventory is received. If not selected, any
         unposted or uninvoiced Receipts or PO returns against items previously
         received at an override cost value could be negatively
@@ -499,9 +499,9 @@
         <para>If selected, purchase price variances (PPV) will be recorded
         when purchase order Receipts are posted. This option applies to
         standard costed items. If not selected, then the default system
-        behavior will be in effect—that is, PPV will be recorded when Vouchers
+        behavior will be in effect—that is, PPV will be recorded when vouchers
         are posted. It's technically possible (although unlikely) for PPV be
-        recorded both at receipt and at Voucher time. This situation would
+        recorded both at receipt and at voucher time. This situation would
         occur if and only if the vouchered cost is different from the purchase
         order cost. For the PPV to be recorded twice, the following conditions
         would have to exist: First, there would have to be a difference
@@ -539,7 +539,7 @@
         <para>Select if you want the actual cost for a purchase order item to
         be updated when that item is received. This feature complements and
         does not replace the standard process, whereby a received item's
-        actual cost is updated at the point when a Voucher for that item is
+        actual cost is updated at the point when a voucher for that item is
         posted.</para>
       </listitem>
     </varlistentry>
@@ -549,7 +549,7 @@
 
       <listitem>
         <para>Select if you want sales orders linked to purchase orders to be
-        automatically added to the Packing List batch when line items on the
+        automatically added to the packing list batch when line items on the
         purchase order are received.</para>
       </listitem>
     </varlistentry>

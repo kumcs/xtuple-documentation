@@ -348,7 +348,7 @@
 
             <listitem>
               <para>This cost Method is automatically selected for the item
-              site if the Control Method is "None" or the item type is
+              site if the control Method is "None" or the item type is
               "Reference".</para>
             </listitem>
           </varlistentry>
@@ -485,7 +485,7 @@
             <term>To Date</term>
 
             <listitem>
-              <para>When work orders for Average cost or job items are
+              <para>When work orders for average cost or job items are
               shipped, all of the WIP costs accumulated to date will be
               charged to cost of sales.</para>
             </listitem>
@@ -495,10 +495,10 @@
             <term>Proportional</term>
 
             <listitem>
-              <para>When work orders for Average cost or job items are
+              <para>When work orders for average cost or job items are
               shipped, a value up to the proportional value of the total
               quantity shipped will be charged to cost of sales. For example,
-              if three items are to be shipped on a Job work order and all the
+              if three items are to be shipped on a job work order and all the
               material has been issued—and if only 1 of the 3 is shipped—then
               1/3 of the value charged to WIP at that point will be charged to
               cost of sales.</para>
@@ -543,7 +543,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>Item sites have several Location control choices. To view Location
+  <para>Item sites have several location control choices. To view location
   control choices for an item site, select the "Locations" tab. The following
   screen will appear:</para>
 
@@ -557,7 +557,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing Location control choices for an item site, you are
+  <para>When viewing location control choices for an item site, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -566,12 +566,12 @@
 
       <listitem>
         <para>Select if the specified item is to be stored in multiple
-        Locations within a single site. Items designated as Multiple Location
-        Control (MLC) items require special processing whenever item
+        locations within a single site. Items designated as multiple location
+        control (MLC) items require special processing whenever item
         quantities are distributed.</para>
 
         <tip>
-          <para>Exercise caution when adjusting the Multiple Location Control
+          <para>Exercise caution when adjusting the multiple location control
           (MLC) setting for an item site. If you turn off MLC for an item site
           which was previously MLC, you will lose detailed inventory records
           for that item site. All quantity will be merged into one QOH value
@@ -594,19 +594,19 @@
         </indexterm>Use Default Location</term>
 
       <listitem>
-        <para>Default Location: Select to designate one Location within a site
-        as the default Location for the specified item. This option may be
-        used for single Location and Multiple Location Control (MLC) items
+        <para>Default Location: Select to designate one location within a site
+        as the default location for the specified item. This option may be
+        used for single location and multiple location control (MLC) items
         alike. You may find that inventory distributions for MLC items are
-        greatly simplified if you designate a default Location.</para>
+        greatly simplified if you designate a default location.</para>
 
         <variablelist>
           <varlistentry>
             <term>Location</term>
 
             <listitem>
-              <para>Specify the site Location to be used as the default
-              Location.</para>
+              <para>Specify the site location to be used as the default
+              location.</para>
             </listitem>
           </varlistentry>
 
@@ -615,7 +615,7 @@
 
             <listitem>
               <para>This is a free-form field for describing storage areas
-              with a site not specifically designated as site Locations. A
+              with a site not specifically designated as site locations. A
               user-defined location is non-transactional, but may be used for
               reporting purposes.</para>
             </listitem>
@@ -628,9 +628,9 @@
       <term>Location Comment</term>
 
       <listitem>
-        <para>Enter any free-form comment related to the site Location. This
-        is additional information which may be placed on a Pick List or a Pack
-        List.</para>
+        <para>Enter any free-form comment related to the site location. This
+        is additional information which may be placed on a pick list or a pack
+        list.</para>
       </listitem>
     </varlistentry>
 
@@ -638,13 +638,13 @@
       <term>Disallow Blank WIP Locations</term>
 
       <listitem>
-        <para>Select to require the use of work-in-process (WIP) Locations
-        when posting work order operations for Multiple Location Control (MLC)
-        finished goods. WIP Locations are an optional feature which may be
+        <para>Select to require the use of work-in-process (WIP) locations
+        when posting work order operations for multiple location control (MLC)
+        finished goods. WIP locations are an optional feature which may be
         defined on the routing for manufactured MLC items.
         The feature enables you to track finished goods inventory as it moves
         through the manufacturing process. If your site does not combine
-        Multiple Location Control with operations posting, then this option
+        multiple location control with operations posting, then this option
         should be left unchecked.</para>
       </listitem>
     </varlistentry>
@@ -661,7 +661,7 @@
         </indexterm>Restricted Locations</term>
 
       <listitem>
-        <para>Displays restricted Locations associated with the site the item
+        <para>Displays restricted locations associated with the site the item
         site is located in.</para>
       </listitem>
     </varlistentry>
@@ -674,10 +674,10 @@
       <term>TOGGLE</term>
 
       <listitem>
-        <para>Highlight a site Location and then select this button to change
+        <para>Highlight a site location and then select this button to change
         the allowed status for the item. Any changes made on the item site
         master related to an item's allowed status will also be saved to the
-        Site Location master record.</para>
+        Site location master record.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -868,7 +868,7 @@
                   <term>MPS</term>
 
                   <listitem>
-                    <para>Select if you want the Master Production Scheduling
+                    <para>Select if you want the Master production Scheduling
                     (MPS) system to create planned orders for the item when
                     MPS is run.</para>
                   </listitem>
@@ -980,14 +980,14 @@
               <para>Specify the length of the Demand Time Fence by using the
               arrow buttons or manually entering a value up to a maximum of
               999. The Demand Time Fence (also known as the demand fence) is
-              used by the Master Production Scheduling (MPS) system to
-              evaluate when forecasted demand (i.e., from Production Plans)
+              used by the Master production Scheduling (MPS) system to
+              evaluate when forecasted demand (i.e., from production Plans)
               should be used in place of actual demand (i.e., from sales
               orders)—and vice versa. Measured in days, the Demand Time Fence
               is the period of time extending from the current day to the
               number of days into the future as specified in this field. The
               Demand Time Fence option applies only to those items which
-              currently appear on a released Production Plan. If demand for
+              currently appear on a released production Plan. If demand for
               these items falls within the Demand Time Fence period, then the
               Forecast will be ignored. If demand falls outside the Demand
               Time Fence, then the larger of actual or forecasted demand will

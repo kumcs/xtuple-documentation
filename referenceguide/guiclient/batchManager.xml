@@ -38,7 +38,7 @@
     ASAP jobs will not necessarily be run immediately. Previously scheduled
     jobs will be run first.</para>
   </note>
-  <para>When managing scheduled Jobs using the xTuple Connect Console, you are
+  <para>When managing scheduled jobs using the xTuple Connect Console, you are
   presented with the following options:</para>
   <variablelist>
     <varlistentry>
@@ -56,18 +56,18 @@
     <varlistentry>
       <term>Show Completed Actions</term>
       <listitem>
-        <para>Select to include completed scheduled Jobs in the
+        <para>Select to include completed scheduled jobs in the
         display.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Jobs</term>
       <listitem>
-        <para>Displays scheduled Jobs using the specified parameters.
-        Completed jobs will have a Run Status of <literal>Done</literal> and a
+        <para>Displays scheduled jobs using the specified parameters.
+        Completed jobs will have a Run status of <literal>Done</literal> and a
         Completed timestamp. If the job failed for any reason, the first line
         of the error message will appear in the Exit Status column. If you
-        allow the cursor to hover over the Exit Status text, the full version
+        allow the cursor to hover over the Exit status text, the full version
         will appear in a tooltip window.</para>
         <note>
           <para>Read the exit status carefully. Jobs might show error messages
@@ -92,14 +92,14 @@
     <varlistentry>
       <term>RESCHEDULE</term>
       <listitem>
-        <para>Highlight a Job and then select this button to reschedule the
-        Job.</para>
+        <para>Highlight a job and then select this button to reschedule the
+        job.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>RETRY ASAP</term>
       <listitem>
-        <para>Rerun one or more selected Jobs as soon as possible. This is a
+        <para>Rerun one or more selected jobs as soon as possible. This is a
         shortcut for the RESCHEDULE button. It allows rescheduling multiple
         jobs with one click. It will not reschedule existing jobs that have
         not yet completed.</para>
@@ -108,17 +108,17 @@
     <varlistentry>
       <term>EDIT</term>
       <listitem>
-        <para>Select to edit selected details of the Job.</para>
+        <para>Select to edit selected details of the job.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>CANCEL</term>
       <listitem>
-        <para>Cancel (or delete) the selected Jobs, whether they have been run
+        <para>Cancel (or delete) the selected jobs, whether they have been run
         or not.<warning>
             <para>If the list of cancelled jobs contains all copies of a
-            recurring Job, the recurrence will stop immediately. You will have
-            to create a new copy of the Job and re-enter the recurrence
+            recurring job, the recurrence will stop immediately. You will have
+            to create a new copy of the job and re-enter the recurrence
             schedule.</para>
           </warning></para>
       </listitem>
