@@ -16,7 +16,7 @@
       <primary>system administrators</primary>
       <see>xtuple administrators</see>
     </indexterm>Role</title>
-  <para>To create a new user role, select the NEW button. The following screen
+  <para>To create a new user role, select the <guibutton>NEW</guibutton> button. The following screen
   will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -70,10 +70,10 @@
         privileges available for the specified module. The list of available
         privileges will change as different modules are specified. To grant
         privileges to a user role, highlight an available privilege and then
-        click the ADD button. The highlighted privilege will be added to the
+        click the <guibutton>ADD</guibutton> button. The highlighted privilege will be added to the
         user role's list of granted privileges. Double-clicking on a privilege
         will also move it to the granted privileges column. You can grant all
-        privileges for a specified module by clicking on the ADD ALL
+        privileges for a specified module by clicking on the <guibutton>ADD ALL</guibutton>
         button.</para>
       </listitem>
     </varlistentry>
@@ -85,11 +85,11 @@
       <listitem>
         <para>Displays granted privileges for the specified user role. To
         remove a user role's granted privileges for a specified module,
-        highlight a granted privilege and then click the REVOKE button. The
+        highlight a granted privilege and then click the <guibutton>REVOKE</guibutton> button. The
         highlighted privilege will be removed from the user role's list of
         granted privileges. Double-clicking on a privilege will also remove it
         from the granted privileges column. You can remove all granted
-        privileges for a specified module by clicking on the REVOKE ALL
+        privileges for a specified module by clicking on the <guibutton>REVOKE ALL</guibutton>
         button.</para>
       </listitem>
     </varlistentry>
@@ -98,7 +98,7 @@
   Granted Privileges columns:</para>
   <variablelist>
     <varlistentry>
-      <term>ADD-&gt;</term>
+      <term><guibutton>ADD-&gt;</guibutton></term>
       <listitem>
         <para>Highlight a specific privilege in the available privileges
         column, then select this button to transfer the privilege to the
@@ -107,14 +107,14 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>ADD ALL-&gt;&gt;</term>
+      <term><guibutton>ADD ALL-&gt;&gt;</guibutton></term>
       <listitem>
         <para>Select this button to automatically transfer all available
         privileges to the granted privileges column.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>&lt;-REVOKE</term>
+      <term><guibutton>&lt;-REVOKE</guibutton></term>
       <listitem>
         <para>Highlight a specific privilege in the granted privileges column,
         then select this button to remove the privilege from the granted
@@ -123,7 +123,7 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>&lt;&lt;-REVOKE ALL</term>
+      <term><guibutton>&lt;&lt;-REVOKE ALL</guibutton></term>
       <listitem>
         <para>Select this button to automatically remove all granted
         privileges from the granted privileges column.</para>
