@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
@@ -31,9 +31,9 @@
       <term>Document Type</term>
       <listitem>
         <para>Select the type of document the form will be used for. The
-        following Document Types are supported: A/P Memo, A/R Memo, A/R
+        following Document types are supported: A/P Memo, A/R Memo, A/R
         Statement, sales credit, incident, invoice, MetaSQL Statement,
-        Packing List, Pick List, purchase order, Query Set, quote, and sales
+        packing list, pick list, purchase order, query Set, quote, and sales
         order.</para>
       </listitem>
     </varlistentry>
@@ -83,14 +83,14 @@
         token (the <code>"&lt;/&gt;"</code> wrapper is replaced by the MetaSQL
         <code>&lt;? value("") ?&gt;</code>). For more information on writing
         queries using MetaSQL, please see the Report Writer User Guide.</para>
-        <para>Tokens defined in this Query can also be used on the EDI profile
+        <para>Tokens defined in this query can also be used on the EDI profile
         screen. For example, the query in the example above also retrieves the
         sales rep's name and email address. The Message Body on the EDI
         Profile window could be changed to end with the token
         "&lt;/salesrep_name&gt;" and the From address could be set to
         "&lt;/usr_email&gt;". If you do this, invoice emails will always be
         signed with the name of the sales rep and sent from the sales rep's
-        email address if s/he is also defined as a User and Employee.</para>
+        email address if s/he is also defined as a user and employee.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -118,7 +118,7 @@
       significance="normal">
       <primary>CSV</primary>
       <see>comma separated value</see>
-    </indexterm>Comma Separated Value (CSV) format, select the NEW button from
+    </indexterm>Comma Separated value (CSV) format, select the NEW button from
   the EDI Profiles master list. Once the new Profile screen opens, choose the
   "CSV" option. As the following screenshot shows, the screen options change
   when "CSV" is selected:</para>

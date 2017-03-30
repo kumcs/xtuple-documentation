@@ -21,11 +21,11 @@
       <primary>shipping</primary>
 
       <secondary>job items and</secondary>
-    </indexterm>For Job items linked to sales order items, the act of issuing
+    </indexterm>For job items linked to sales order items, the act of issuing
   to shipping serves a dual purpose. On the one hand, quantity is issued to
-  shipping. But at the same time, production for the linked Job item work
+  shipping. But at the same time, production for the linked job item work
   order is also posted. Issuing to shipping is the only way to post production
-  for a Job item work order. If the Job item is lot/serial controlled, you
+  for a job item work order. If the job item is lot/serial controlled, you
   will be prompted to assign lot/serial numbers when quantity is issued to
   shipping.</para>
 
@@ -79,7 +79,7 @@
 
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
-        General Ledger. The current day's date will display by default.</para>
+        general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
 
@@ -126,9 +126,9 @@
 
       <listitem>
         <para>Display lists sales order line items available for shipping with
-        expanded view of reserved items. If the Scheduled Date for an
+        expanded view of reserved items. If the scheduled date for an
         unshipped line item is in the future, the line will display in green
-        text. If the Scheduled Date for an unshipped line item is not in the
+        text. If the scheduled date for an unshipped line item is not in the
         future, the line will display in red text. Once shipped, all line
         items revert to black text. To manually reserve or unreserve stock for
         an order item, right click on reserved item quantity in the expanded
@@ -181,8 +181,8 @@
   </variablelist>
 
   <note>
-    <para>If the "Require Reservations" setting is selected under Sales Order
-    Setup, you will not be able to issue more than what is reserved.</para>
+    <para>If the "Require Reservations" setting is selected under sales order
+    setup, you will not be able to issue more than what is reserved.</para>
   </note>
 
   <para>The following buttons are unique to this screen:</para>
@@ -245,7 +245,7 @@
         line quantity from shipping, returning the stock to inventory. This
         button will only be enabled only if there is line item quantity at
         shipping. If the original line item you shipped was either lot/serial
-        or Multiple Location Controlled, the system will automatically put the
+        or multiple location controlled, the system will automatically put the
         inventory back where it came from.</para>
       </listitem>
     </varlistentry>

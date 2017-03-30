@@ -264,7 +264,7 @@
                   <listitem>
                     <para>Select to monitor inventory history transactions for
                     the item site using a Regular method. Regular means
-                    without Lot Number or Serial Number control.</para>
+                    without Lot number or Serial number control.</para>
                   </listitem>
                 </varlistentry>
 
@@ -272,8 +272,8 @@
                   <term>Lot #</term>
 
                   <listitem>
-                    <para>Select to impose Lot Number control methods on the
-                    item site. Item sites using Lot Number control are subject
+                    <para>Select to impose Lot number control methods on the
+                    item site. Item sites using Lot number control are subject
                     to unique processing requirements whenever inventory is
                     received or distributed.</para>
                   </listitem>
@@ -283,8 +283,8 @@
                   <term>Serial #</term>
 
                   <listitem>
-                    <para>Select to impose Serial Number control methods on
-                    the item site. Item sites using Serial Number control are
+                    <para>Select to impose Serial number control methods on
+                    the item site. Item sites using Serial number control are
                     subject to unique processing requirements whenever
                     inventory is received or distributed.</para>
                   </listitem>
@@ -315,7 +315,7 @@
               <para>Specify the cost category you want to associate with the
               item site. This requirement helps ensure that all inventory
               transactions involving an item site will be properly tracked and
-              recorded in the General Ledger.</para>
+              recorded in the general ledger.</para>
 
               <note>
                 <para>If you ever need to change the cost category for an item
@@ -342,7 +342,7 @@
 
             <listitem>
               <para>This cost method is automatically selected for the item
-              site if the Control Method is "None" or the Item Type is
+              site if the Control Method is "None" or the Item type is
               "Reference".</para>
             </listitem>
           </varlistentry>
@@ -381,20 +381,20 @@
             <listitem>
               <para>Cost distributions are based on actual accumulation of
               costs on a work order. This cost method should be used for
-              manufactured items which you want to handle as Job items. Job
+              manufactured items which you want to handle as job items. job
               items are specifically for make-to-order or service (i.e.,
               repair) scenarios where simplified production is required. Job
               items cannot be maintained in inventory. Job items also have no
-              concept of standard cost or cost variances. All costs for Job
-              items are Actual. The work orders which create Job items can
-              only be created via a sales order. The costs for Job item work
+              concept of standard cost or cost variances. All costs for job
+              items are actual. The work orders which create job items can
+              only be created via a sales order. The costs for job item work
               orders are accumulated to WIP, and then transferred directly to
-              cost of sales when the job is shipped. Production for a Job item
+              cost of sales when the job is shipped. Production for a job item
               work order is posted when the linked sales order item is issued
-              to shipping. BOM and routing items may be assigned to Job items;
-              however, they will not roll up to a standard cost for Job items.
+              to shipping. BOM and routing items may be assigned to job items;
+              however, they will not roll up to a standard cost for job items.
               Job items may be configured. This means you can add list prices
-              to any Job item characteristics. These characteristic prices are
+              to any job item characteristics. These characteristic prices are
               then added to the base price of sales order items when the
               characteristic is selected at sales order entry.</para>
 
@@ -528,7 +528,7 @@
             <term>To Date</term>
 
             <listitem>
-              <para>When work orders for average cost or Job items are
+              <para>When work orders for average cost or job items are
               shipped, all of the WIP costs accumulated to date will be
               charged to cost of sales.</para>
             </listitem>
@@ -538,10 +538,10 @@
             <term>Proportional</term>
 
             <listitem>
-              <para>When work orders for average cost or Job items are
+              <para>When work orders for average cost or job items are
               shipped, a value up to the proportional value of the total
               quantity shipped will be charged to cost of sales. For example,
-              if three items are to be shipped on a Job work order and all the
+              if three items are to be shipped on a job work order and all the
               material has been issued—and if only 1 of the 3 is shipped—then
               1/3 of the value charged to WIP at that point will be charged to
               cost of sales.</para>
@@ -579,7 +579,7 @@
     </varlistentry>
   </variablelist>
 
-  <para>Item sites have several Location control choices. To view Location
+  <para>Item sites have several location control choices. To view location
   control choices for an item site, select the "Locations" tab. The following
   screen will appear:</para>
 
@@ -593,7 +593,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing Location control choices for an item site, you are
+  <para>When viewing location control choices for an item site, you are
   presented with the following options:</para>
 
   <variablelist>
@@ -602,12 +602,12 @@
 
       <listitem>
         <para>Select if the specified item is to be stored in multiple
-        Locations within a single site. Items designated as Multiple Location
-        Control (MLC) items require special processing whenever item
+        locations within a single site. Items designated as multiple location
+        control (MLC) items require special processing whenever item
         quantities are distributed.</para>
 
         <tip>
-          <para>Exercise caution when adjusting the Multiple Location Control
+          <para>Exercise caution when adjusting the multiple location control
           (MLC) setting for an item site. If you turn off MLC for an item site
           which was previously MLC, you will lose detailed inventory records
           for that item site. All quantity will be merged into one QOH value
@@ -630,19 +630,19 @@
         </indexterm>Use Default Location</term>
 
       <listitem>
-        <para>Default Location: Select to designate one Location within a site
-        as the default Location for the specified item. This option may be
-        used for single Location and Multiple Location Control (MLC) items
+        <para>Default location: Select to designate one location within a site
+        as the default location for the specified item. This option may be
+        used for single location and multiple location control (MLC) items
         alike. You may find that inventory distributions for MLC items are
-        greatly simplified if you designate a default Location.</para>
+        greatly simplified if you designate a default location.</para>
 
         <variablelist>
           <varlistentry>
             <term>Location</term>
 
             <listitem>
-              <para>Specify the site Location to be used as the default
-              Location for each of the following:</para>
+              <para>Specify the site location to be used as the default
+              location for each of the following:</para>
 
               <variablelist>
                 <varlistentry>
@@ -682,7 +682,7 @@
 
             <listitem>
               <para>If this automatic distribution checkbox is checked against
-              a particular default Location, the Distribute Inventory window
+              a particular default location, the Distribute Inventory window
               will distribute inventory automatically without providing an
               opportunity to override the default. This will effectively allow
               the posting of inventory transactions for multi-location items
@@ -700,7 +700,7 @@
 
             <listitem>
               <para>This is a free-form field for describing storage areas
-              with a site not specifically designated as site Locations. A
+              with a site not specifically designated as site locations. A
               user-defined location is non-transactional, but may be used for
               reporting purposes.</para>
             </listitem>
@@ -713,9 +713,9 @@
       <term>Location Comment</term>
 
       <listitem>
-        <para>Enter any free-form comment related to the site Location. This
-        is additional information which may be placed on a Pick List or a Pack
-        List.</para>
+        <para>Enter any free-form comment related to the site location. This
+        is additional information which may be placed on a pick list or a pack
+        list.</para>
       </listitem>
     </varlistentry>
 
@@ -723,13 +723,13 @@
       <term>Disallow Blank WIP Locations</term>
 
       <listitem>
-        <para>Select to require the use of work-in-process (WIP) Locations
-        when posting work order operations for Multiple Location Control (MLC)
-        finished goods. WIP Locations are an optional feature which may be
+        <para>Select to require the use of work-in-process (WIP) locations
+        when posting work order operations for multiple location control (MLC)
+        finished goods. WIP locations are an optional feature which may be
         defined on the routing for manufactured MLC items.
         The feature enables you to track finished goods inventory as it moves
         through the manufacturing process. If your site does not combine
-        Multiple Location Control with operations posting, then this option
+        multiple location control with operations posting, then this option
         should be left unchecked.</para>
       </listitem>
     </varlistentry>
@@ -746,7 +746,7 @@
         </indexterm>Restricted Locations</term>
 
       <listitem>
-        <para>Displays restricted Locations associated with the site the item
+        <para>Displays restricted locations associated with the site the item
         site is located in.</para>
       </listitem>
     </varlistentry>
@@ -759,10 +759,10 @@
       <term>TOGGLE</term>
 
       <listitem>
-        <para>Highlight a site Location and then select this button to change
+        <para>Highlight a site location and then select this button to change
         the allowed status for the item. Any changes made on the item site
         master related to an item's allowed status will also be saved to the
-        Site Location master record.</para>
+        Site location master record.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -803,7 +803,7 @@
 
         <note>
           <para>Running material requirements planning (MRP) on your system
-          consists entirely of running the Create planned replenishment Orders
+          consists entirely of running the Create planned replenishment orders
           screens—either by item or by planner code. As MRP runs, the planned
           replenishment orders are generated automatically.</para>
         </note>
@@ -870,8 +870,8 @@
 
             <listitem>
               <para>This is a special setting which regulates the maximum
-              quantity for planned replenishment Orders when MRP is run. The
-              setting does not apply to manual Orders, but to planned orders
+              quantity for planned replenishment orders when MRP is run. The
+              setting does not apply to manual orders, but to planned orders
               only. When a maximum order quantity is specified, MRP will
               ignore order multiples and minimum order specifications—focusing
               instead solely on the maximum order setting. For example, if the
@@ -908,9 +908,9 @@
               work orders. If this option is selected, order Parameters will
               also be enforced whenever work orders are manually created. This
               option applies only to the following two parameters: Minimum
-              Order and Order Multiple. The other order Parameters listed
+              order and order Multiple. The other order Parameters listed
               below do not apply to manually-created work orders. For manual
-              purchase orders, the Minimum Order and Order Multiple parameters
+              purchase orders, the Minimum order and order Multiple parameters
               are determined on a vendor-by-vendor basis, using item source
               masters.</para>
             </listitem>
@@ -953,7 +953,7 @@
                   <term>MPS</term>
 
                   <listitem>
-                    <para>Select if you want the Master Production Scheduling
+                    <para>Select if you want the Master production Scheduling
                     (MPS) system to create planned orders for the item when
                     MPS is run.</para>
                   </listitem>
@@ -1066,14 +1066,14 @@
               <para>Specify the length of the Demand Time Fence by using the
               arrow buttons or manually entering a value up to a maximum of
               999. The Demand Time Fence (also known as the demand fence) is
-              used by the Master Production Scheduling (MPS) system to
-              evaluate when forecasted demand (i.e., from Production Plans)
+              used by the Master production Scheduling (MPS) system to
+              evaluate when forecasted demand (i.e., from production Plans)
               should be used in place of actual demand (i.e., from sales
               orders)—and vice versa. Measured in days, the Demand Time Fence
               is the period of time extending from the current day to the
               number of days into the future as specified in this field. The
               Demand Time Fence option applies only to those items which
-              currently appear on a released Production Plan. If demand for
+              currently appear on a released production Plan. If demand for
               these items falls within the Demand Time Fence period, then the
               Forecast will be ignored. If demand falls outside the Demand
               Time Fence, then the larger of actual or forecasted demand will

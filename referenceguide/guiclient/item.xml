@@ -94,7 +94,7 @@
           <secondary>list of types</secondary>
         </indexterm>Item Type</term>
       <listitem>
-        <para>Select one of the available Item Types:</para>
+        <para>Select one of the available item types:</para>
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
@@ -104,7 +104,7 @@
             <listitem>
               <para>Select if the item is an item you purchase. A purchase
               order is the normal supply order. However, you may enter a work
-              order for this Item Type.</para>
+              order for this Item type.</para>
             </listitem>
           </varlistentry>
           <varlistentry id="manufacturedItemType">
@@ -118,10 +118,10 @@
             <listitem>
               <para>Select if the item is an item you make. A work order is
               the normal supply order. However, you may also enter a purchase
-              order for this Item Type. Job items are considered to be
-              manufactured items. Use the Job costing option at the item site
-              level to distinguish Job items from regular manufactured items.
-              For more information about the Job costing option, please see
+              order for this Item type. Job items are considered to be
+              manufactured items. Use the job costing option at the item site
+              level to distinguish job items from regular manufactured items.
+              For more information about the job costing option, please see
               <xref linkend="itemSiteJobItem" />.</para>
             </listitem>
           </varlistentry>
@@ -207,13 +207,13 @@
               </indexterm>Planning</term>
             <listitem>
               <para>An item whose bill of materials (BOM) groups together
-              other items so that a Production Plan may be defined for the
+              other items so that a production Plan may be defined for the
               Planning item—and then exploded down to the lower level items
-              during a Master Production Scheduling (MPS) run. Planning items
+              during a Master production Scheduling (MPS) run. Planning items
               are frequently used to group together product families or
               product lines of MPS items. MPS items are typically top-level
               saleable items. By grouping together MPS items under a Planning
-              item, the family may be forecasted through with a Production
+              item, the family may be forecasted through with a production
               Plan for the Planning item, thereby simplifying the planning
               process. The system automatically sets the Planning System as
               "MPS" by default when a Planning item is created.</para>
@@ -232,13 +232,13 @@
               are sub line items of the parent line item. Kit components are
               displayed as an indented tree on the sales order or return
               authorization—and they are view-only. Also, Kit components will
-              appear on the Pick List report. Kit components may be issued to
+              appear on the pick list report. Kit components may be issued to
               shipping, whereas the parent Kit item may not be. The automatic
-              "Select for Billing" option takes effect for Kit items when all
+              "Select for Billing" option takes effect for kit items when all
               Kit items are shipped.</para>
               <note>
                 <para>The cost of sales (COS) account for Kit items is
-                directed to the Sales account assignment mappings of the Kit's
+                directed to the sales account assignment mappings of the Kit's
                 child items—unless your system is configured to have the Kit
                 components inherit the same COS account used by the parent Kit
                 item. You can read more about configuring your system for COS
@@ -253,7 +253,7 @@
                 <secondary>as item type</secondary>
               </indexterm>Breeder</term>
             <listitem>
-              <para>A logical item from which Co-Products and By-Products are
+              <para>A logical item from which Co-products and By-products are
               produced. An example use for a breeder item is the screening of
               raw gravel to produce different sizes of gravel. The breeder
               item's bill of materials (BOM) defines the inputs—in this case
@@ -262,7 +262,7 @@
               breeder item, but this item is never stocked or produced; again,
               it is a logical item. Instead, raw gravel is consumed by the
               breeder's work order, along with labor, and the resulting
-              quantities of Co-Products and By-Products are recorded.</para>
+              quantities of Co-products and By-products are recorded.</para>
             </listitem>
           </varlistentry>
           <varlistentry role="manufacturing">
@@ -271,9 +271,9 @@
                 <secondary>as item type</secondary>
               </indexterm>Co-Product</term>
             <listitem>
-              <para>Co-Products are items that you keep and which absorb
+              <para>Co-products are items that you keep and which absorb
               costs. They are produced during a manufacturing process. See
-              "Breeder" Item Type above.</para>
+              "Breeder" Item type above.</para>
             </listitem>
           </varlistentry>
           <varlistentry role="manufacturing">
@@ -282,8 +282,8 @@
                 <secondary>as item type</secondary>
               </indexterm>By-Product</term>
             <listitem>
-              <para>By-Products are things that you throw away and incur costs
-              doing so during a manufacturing process. See "Breeder" Item Type
+              <para>By-products are things that you throw away and incur costs
+              doing so during a manufacturing process. See "Breeder" Item type
               above.</para>
             </listitem>
           </varlistentry>
@@ -316,7 +316,7 @@
       <listitem>
         <para>Specify the item's primary unit of measure—or enter a free-form
         UOM. The inventory (UOM) is the UOM in which inventory is maintained.
-        All inventory transactions, sales transactions, and General Ledger
+        All inventory transactions, sales transactions, and general ledger
         transactions reflect movement in inventory UOMs. The inventory UOM is
         also the base reference for all UOM conversion ratios.</para>
         <note>
@@ -328,10 +328,10 @@
     <varlistentry>
       <term>Pick List</term>
       <listitem>
-        <para>Select if you want the item to be included on Pick Lists when
-        the item is used. Pick Lists are printed lists showing the work order
+        <para>Select if you want the item to be included on pick lists when
+        the item is used. Pick lists are printed lists showing the work order
         material requirements for a specified work order. You may decide not
-        to include an item on Pick Lists if the item is insignificant or if it
+        to include an item on pick lists if the item is insignificant or if it
         is not stored in a stock room but, for example, in a work center
         instead.</para>
       </listitem>
@@ -357,7 +357,7 @@
       <listitem>
         <para>If the item is a Manufactured or Reference item, then you will
         have the option to configure the item for Assemble to order (ATO)
-        scenarios. This option will be disabled for all other Item Types. To
+        scenarios. This option will be disabled for all other Item types. To
         learn more about product configuration, see our <ulink
         url="http://www.xtuple.org/AssembleToOrderConfigurator">ATO
         Configurator Topic</ulink>.</para>
@@ -447,10 +447,10 @@
               <para>Select if the item is sold exclusively. If a sold item is
               marked as Exclusive, it may only be sold to specified customers
               or customer types. To link Exclusive items to customers, you
-              would first include the item on a Pricing Schedule—indicating
-              relevant prices and Quantity Breaks. You would then assign the
-              Pricing Schedule to specified customers or customer types, using
-              the Pricing Schedule assignment functionality found in the item
+              would first include the item on a pricing schedule—indicating
+              relevant prices and quantity breaks. You would then assign the
+              pricing schedule to specified customers or customer types, using
+              the pricing schedule assignment functionality found in the item
               Pricing section of the Sales module.</para>
               <note>
                 <para>Sold items can be configured as Exclusive by default at
@@ -566,7 +566,7 @@
   item characteristics might be used to specify "Season" or "Primary Vendor".
   These constitute static descriptions which are not processed by the
   application, but are useful for informational purposes. For configured items
-  (i.e., Job or Reference items), characteristics are used to store pricing
+  (i.e., job or Reference items), characteristics are used to store pricing
   information for the options available on configured items. That pricing by
   characteristic is then passed to sales order line items when particular
   configurations are sold.</para>
@@ -695,9 +695,9 @@
   <para>When defining an alternate item UOM, you are presented with the
   following options:</para>
   <tip>
-    <para>By default, the Available Types list will be empty—until you specify
+    <para>By default, the Available types list will be empty—until you specify
     either a source or per UOM. Once a source or per UOM is selected, the
-    Available Types list will be populated with the available options. An item
+    Available types list will be populated with the available options. An item
     may have multiple selling UOMs but only one of each of the other
     types.</para>
   </tip>
@@ -761,7 +761,7 @@
         item.</para>
         <tip>
           <para>Double-clicking on an available UOM type will move it to the
-          Selected Types list.</para>
+          Selected types list.</para>
         </tip>
         <variablelist>
           <varlistentry>
@@ -770,9 +770,9 @@
               <para>The Alt. Capacity UOM should be used to provide an
               alternate UOM for viewing inventory details. For example, a
               sales manager may be satisfied looking at a group of items
-              normalized to their selling or inventory UOM, but a Production
+              normalized to their selling or inventory UOM, but a production
               Manager may need to look at the same items normalized to a
-              Production UOM—say, Cubic Feet (CuFt).</para>
+              production UOM—say, Cubic Feet (CuFt).</para>
               <note>
                 <para>The Alternate Capacity UOM has no impact on bills of
                 materials. It is used solely for Capacity Planning and sales
@@ -783,7 +783,7 @@
           <varlistentry>
             <term>Capacity</term>
             <listitem>
-              <para>In Capacity Planning and Sales Analysis reports, the
+              <para>In Capacity Planning and sales Analysis reports, the
               Capacity UOM enables you to make apples-to-apples comparisons of
               items that use different inventory UOMs. For example, let's say
               that item A is a carton containing 24 item B"s—and that you sell
@@ -831,7 +831,7 @@
               individual units (EACH), but sold by the case (CASE24). In this
               example, inventory transactions will be recorded using the
               inventory UOM (EACH), but all pricing—including list price and
-              Pricing Schedules—will reflect the Selling UOM (CASE24). An item
+              pricing schedules—will reflect the Selling UOM (CASE24). An item
               may also have multiple Selling UOMs, for example SIX-PACK,
               CASE24, PALLET, etc. You specify the Selling UOM you want to use
               at sales order entry time.</para>
@@ -850,7 +850,7 @@
         select it.</para>
         <tip>
           <para>Double-clicking on a selected UOM type will remove it from the
-          list, returning it to the Available Types list.</para>
+          list, returning it to the Available types list.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -973,11 +973,11 @@
     </indexterm>Item Relationships are assigned to items as a means for
   cross-referencing internal and external item information. For example, a
   customer may refer to an item by a different item number than you do. To
-  avoid confusion—and to simplify item lookups—you can create an item Alias
-  linking the customer's external Part Number to your own internal item
-  number. The item Alias acts as an alternate identifier. In this way, items
+  avoid confusion—and to simplify item lookups—you can create an item alias
+  linking the customer's external Part number to your own internal item
+  number. The item alias acts as an alternate identifier. In this way, items
   may be located using either internal or external item information. To
-  associate an item Alias with an item, select the "Relationships" tab. The
+  associate an item alias with an item, select the "Relationships" tab. The
   following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -987,22 +987,22 @@
         <caption>Item Relationships</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When associating Alias relationships with an item, you are presented
+  <para>When associating alias relationships with an item, you are presented
   with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Alias</term>
       <listitem>
-        <para>Display lists item Alias numbers and related comments.</para>
+        <para>Display lists item alias numbers and related comments.</para>
         <tip>
-          <para>Multiple item Aliases can be assigned to a single item,
+          <para>Multiple item aliases can be assigned to a single item,
           allowing you to cross-reference an item using many different item
           numbers.</para>
         </tip>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create an item Alias, select the NEW button. The following screen
+  <para>To create an item alias, select the NEW button. The following screen
   will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -1012,7 +1012,7 @@
         <caption>Create New Item Alias</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When creating a new item Alias, you are presented with the following
+  <para>When creating a new item alias, you are presented with the following
   options:</para>
   <variablelist>
     <varlistentry>
@@ -1025,15 +1025,15 @@
     <varlistentry>
       <term>Alias Number</term>
       <listitem>
-        <para>This is the Alias number for the item.</para>
+        <para>This is the alias number for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Associated Account</term>
       <listitem>
-        <para>You have the option to link a CRM account to the item Alias. If
-        linked, the Alias will only be used on quotes and sales orders related
-        to the specified customer. If no customer is specified, the Alias will
+        <para>You have the option to link a CRM account to the item alias. If
+        linked, the alias will only be used on quotes and sales orders related
+        to the specified customer. If no customer is specified, the alias will
         be displayed for all customers you sell the item to.</para>
       </listitem>
     </varlistentry>
@@ -1047,14 +1047,14 @@
         </indexterm>Use an Alias Description on Billing and Shipping
       Paperwork</term>
       <listitem>
-        <para>Select to include an item Alias
+        <para>Select to include an item alias
         description on billing and shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>Enter a description of the item Alias for inclusion on billing
+        <para>Enter a description of the item alias for inclusion on billing
         and shipping paperwork.</para>
       </listitem>
     </varlistentry>
@@ -1062,9 +1062,9 @@
       <term>Comments</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        comments related to the item Alias. This field may be useful for
-        explaining why an item Alias was created (e.g., "customer XYZ, Inc.
-        refers to this item Alias whenever they place an order.").</para>
+        comments related to the item alias. This field may be useful for
+        explaining why an item alias was created (e.g., "customer XYZ, Inc.
+        refers to this item alias whenever they place an order.").</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1082,7 +1082,7 @@
         <tip>
           <para>Multiple item Substitutes can be assigned to a single item,
           allowing you to cross-reference an item using many different item
-          Numbers.</para>
+          numbers.</para>
         </tip>
         <note>
           <para>There is a difference between item Substitutes and
@@ -1150,7 +1150,7 @@
         <para>Select a number using the arrow buttons, or manually enter a
         value up to a maximum of 9 to specify the rank of the item Substitute.
         The ranking determines the order in which the item Substitute will
-        appear in the Substitute List accessed from the Maintain Work Order
+        appear in the Substitute list accessed from the Maintain Work Order
         Materials screen. The item Substitute having the highest rank will
         appear at the top of list, and so on in descending order. You may
         assign the same ranking to multiple items, if this is
