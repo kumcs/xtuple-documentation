@@ -10,15 +10,15 @@
       <primary>batch mode</primary>
       <secondary>printing packing lists using</secondary>
     </indexterm>Packing List Batch</title>
-  <para>If you want to print Packing Lists or Pick Lists in batch mode—or to
-  gain greater visibility over your Packing and Pick Lists—select the "Packing
+  <para>If you want to print packing lists or pick lists in batch mode—or to
+  gain greater visibility over your packing and pick lists—select the "Packing
   List Batch" option. The following screen will appear:</para>
   <note>
-    <para>A Pick List will be printed if the order does not yet have a
-    Shipment Number associated with it—that is, if no line item quantity has
+    <para>A pick list will be printed if the order does not yet have a
+    shipment number associated with it—that is, if no line item quantity has
     been issued to shipping. If stock has been issued to shipping, then the
-    Packing List report definition will be used. The Pick List and Packing
-    List form assignments are made on the customer Form Assignments
+    packing list report definition will be used. The pick list and packing
+    list form assignments are made on the customer Form Assignments
     screen.</para>
   </note>
   <para><screenshot>
@@ -30,7 +30,7 @@
       </mediaobject>
     </screenshot></para>
   <tip>
-    <para>The system includes two alternate Pick List report definitions for
+    <para>The system includes two alternate pick list report definitions for
     sales orders:</para>
     <itemizedlist>
       <listitem>
@@ -43,7 +43,7 @@
     <para>The first includes already closed sales order line items in the
     report; the other excludes closed line items.</para>
   </tip>
-  <para>When printing Packing Lists in batch mode, you are presented with the
+  <para>When printing packing lists in batch mode, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry role="standard">
@@ -75,22 +75,22 @@
           <varlistentry>
             <term>Auto Select</term>
             <listitem>
-              <para>Select to print a Packing List if a Shipment Number
-              exists, or a Pick List if a Shipment Number does not
+              <para>Select to print a packing list if a shipment number
+              exists, or a pick list if a shipment number does not
               exist.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Packing List</term>
             <listitem>
-              <para>Select to print Packing Lists only. No Packing List will
-              print if a Shipment Number does not exist.</para>
+              <para>Select to print packing lists only. No packing list will
+              print if a shipment number does not exist.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Pick List</term>
             <listitem>
-              <para>Select to print Pick Lists only.</para>
+              <para>Select to print pick lists only.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -152,10 +152,10 @@
       <term>PRINT BATCH</term>
       <listitem>
         <para>Select to print packing lists for all orders in batch list. A
-        Pick List will be printed if the order does not yet have a Shipment
-        Number associated with it—that is, if no line item quantity has been
+        pick list will be printed if the order does not yet have a shipment
+        number associated with it—that is, if no line item quantity has been
         issued to shipping. If stock has been issued to shipping, then the
-        Packing List report definition will be used.</para>
+        packing list report definition will be used.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -190,11 +190,11 @@
       <term>PRINT PACKING LIST</term>
       <listitem>
         <para>Highlight an order, then select this option to print an
-        individual Packing List or Pick List for the specified order. A Pick
-        List will be printed if the order does not yet have a Shipment Number
+        individual packing list or pick list for the specified order. A pick
+        list will be printed if the order does not yet have a shipment number
         associated with it—that is, if no line item quantity has been issued
-        to shipping. If stock has been issued to shipping, then the Packing
-        List report definition will be used.</para>
+        to shipping. If stock has been issued to shipping, then the packing
+        list report definition will be used.</para>
       </listitem>
     </varlistentry>
   </variablelist>
