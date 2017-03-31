@@ -9,7 +9,7 @@
   various application defaults. While users have the ability to modify their
   own preferences, only those users granted the "MaintainUsers" privilege can
   change another user's preferences. To access the User Account Preferences
-  area, select the "Preferences" option. The following screen will
+  area, select the <guimenuitem>Preferences</guimenuitem> option. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -27,7 +27,7 @@
       <listitem>
         <para>Select to edit user account preferences for the current user
         account. This is the only option available to users who do not have
-        the "MaintainUsers" privilege.</para>
+        the MaintainUsers privilege.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -36,7 +36,7 @@
         <para>Select an individual user account to view and/or edit
         preferences for that user account. This option is only available to
         system administrators and others who have been granted the
-        "MaintainUsers" privilege. Only users who have been granted this
+        MaintainUsers privilege. Only users who have been granted this
         privilege can edit the preferences of other user accounts. The
         usernames of all user accounts who are registered on the current
         database will appear in the list.</para>
@@ -111,8 +111,8 @@
             <listitem>
               <para>Select to bypass the warning message which may be
               presented at log in to indicate that a translation file is
-              missing. The warning may be irrelevant in some cases. This user
-              account preference option will be useful in situations where the
+              missing. The warning may be irrelevant in some cases. This <guimenuitem>User
+              Account Preference</guimenuitem> option will be useful in situations where the
               default language is acceptable, even though the country
               designation on the user's locale might indicate otherwise. For
               example, in the United Kingdom (UK), the language may be English
@@ -258,8 +258,8 @@
             <term>Limit</term>
             <listitem>
               <para>Define how much data the application will attempt to
-              export when right-clicking on lists and choosing the "Export As"
-              or "Copy to Clipboard" options. Setting this limit can help
+              export when right-clicking on lists and choosing the <guimenuitem>Export As</guimenuitem>
+              or <guimenuitem>Copy to Clipboard</guimenuitem> options. Setting this limit can help
               prevent application crashes. For example, if you set the limit
               to 0.5 GB, then load a list where the total data from all the
               column headers and cells is greater than 0.5 GB, the exporting
@@ -497,7 +497,7 @@
       </imageobject>
       <caption>Event Preferences</caption>
     </mediaobject></para>
-  <para>When defining or modifying a user's Event notification preferences,
+  <para>When defining or modifying a user's event notification preferences,
   you are presented with the following options:</para>
   <variablelist>
     <varlistentry>
