@@ -15,7 +15,7 @@
 
   <para>When setting up a new site, you have the ability to create batches of
   item sites—rather than having to create them one-at-a-time. To create item
-  sites by class code, select the "Create Item Sites by Class Code" option.
+  sites by class code, select the <guimenuitem>Create Item Sites by Class Code</guimenuitem> option.
   The following screen will appear:</para>
 
   <para><screenshot>
@@ -156,7 +156,7 @@
               you are indicating that you want purchase requests to be
               automatically generated for the item in question whenever
               quantities are demanded by sales orders. This option and the
-              "Create Purchase Orders linked to Sales Orders" option are
+              <guilabel>Create Purchase Orders linked to Sales Orders</guilabel> option are
               mutually exclusive.</para>
             </listitem>
           </varlistentry>
@@ -173,7 +173,7 @@
               You must have at least one item source defined for the item to
               use this option. Linking purchase orders to sales order creates
               the basic foundation for drop shipment functionality. This
-              option and the "Create Purchase Requests for Sales Orders"
+              option and the <guilabel>Create Purchase Requests for Sales Orders</guilabel>
               option are mutually exclusive. If your site is configured to use
               drop shipping, the following additional option will also be
               available:</para>
@@ -714,7 +714,7 @@
         Parameters defined below when generating planned replenishment orders.
         Parameters you define will be saved if this option is turned ON/OFF.
         If you want to enforce order parameters on manual orders as well,
-        select the "on Manual Orders" option.</para>
+        select the <guilabel>on Manual Orders</guilabel> option.</para>
 
         <note>
           <para>Running material requirements Planning (MRP) on your system
@@ -774,7 +774,7 @@
             <listitem>
               <para>Value entered indicates the minimum quantity that may be
               entered for a planned replenishment order when MRP is run. If
-              the "on Manual Orders" option is selected above,
+              the <guilabel>on Manual Orders</guilabel> option is selected above,
               manually-created work orders will recognize the Minimum order
               value.</para>
             </listitem>
@@ -810,7 +810,7 @@
             <listitem>
               <para>Value entered indicates the quantity multiple that should
               be used for planned replenishment orders when MRP is run. If the
-              "on Manual Orders" option is selected above, manually-created
+              <guilabel>on Manual Orders</guilabel> option is selected above, manually-created
               work orders will recognize the order Multiple value.</para>
             </listitem>
           </varlistentry>
@@ -986,7 +986,7 @@
               orders)—and vice versa. Measured in days, the Demand Time Fence
               is the period of time extending from the current day to the
               number of days into the future as specified in this field. The
-              Demand Time Fence option applies only to those items which
+              <guilabel>Demand Time Fence</guilabel> option applies only to those items which
               currently appear on a released production Plan. If demand for
               these items falls within the Demand Time Fence period, then the
               Forecast will be ignored. If demand falls outside the Demand
