@@ -543,7 +543,7 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>You can leave the Server Name and Port fields blank if you desire.
+    <para>You can leave the <guilabel>Server Name</guilabel> and <guilabel>Port</guilabel> fields blank if you desire.
     This is the easiest way to switch between test mode and production mode,
     as you won't have to change these values every time you switch
     modes.</para>
@@ -757,11 +757,11 @@
     <varlistentry>
       <term>MD5 Hash</term>
       <listitem>
-        <para>If you want an additional sense of security, set the MD5 Hash
+        <para>If you want an additional sense of security, set the <guilabel>MD5 Hash</guilabel>
         field to a short string and set the same value on the Merchant
         Interface. This shared secret can be used to assure that the payment
         gateway is actually Authorize.Net's server and not an imposter. The
-        value of the MD5 Hash field and a few other fields in the transaction
+        value of the <guilabel>MD5 Hash</guilabel> field and a few other fields in the transaction
         request are processed with the MD5 algorithm by the payment gateway
         and the resulting string is returned to the xTuple application. The
         xTuple application performs the same processing and compares the

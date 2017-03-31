@@ -118,7 +118,7 @@
     <title>Custom Report Details</title>
     <para>If the Custom Command is designed to launch a custom report, specify
     the location for the standalone report renderer (RPTrender) in the
-    "Executable" field. The following examples illustrate how (on Windows) you
+    <guilabel>Executable</guilabel> field. The following examples illustrate how (on Windows) you
     can map to either local or network drives:</para>
     <informalexample>
       <para><emphasis role="bold">Local Drive</emphasis>: <code>C:\Program
@@ -236,7 +236,7 @@
   <section>
     <title>Custom Screen Details</title>
     <para>If the Custom Command is designed to launch a custom screen, then
-    the following text should be entered in the "Executable" field:</para>
+    the following text should be entered in the <guilabel>Executable</guilabel> field:</para>
     <informalexample>
       <para><code>!customuiform</code></para>
       <para>It should be noted, however, that launching custom screens in this
@@ -280,7 +280,7 @@
   <section>
     <title>OpenURL Details</title>
     <para>If the Custom Command should open a file or web page, then the
-    following text should be entered in the "Executable" field:</para>
+    following text should be entered in the <guilabel>Executable</guilabel> field:</para>
     <para><code>!openurl</code></para>
     <para>This command is good for opening either URLs or files in a
     cross-platform manner.</para>
