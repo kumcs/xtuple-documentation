@@ -109,7 +109,7 @@
         <para>Specify the site the quote item is sold from. Items may be
         supplied to quotes from multiple item sites. After an item number is
         entered above, the system checks for available item sites for the
-        item. Any item sites having the "Sold from" flag set on them will be
+        item. Any item sites having the <guilabel>Sold from</guilabel> flag set on them will be
         selectable from this site list. By default, the item site having the
         highest Ranking will be selected as the first available site. If more
         than one item site share a Ranking of "1," the sites will be sorted in
@@ -225,7 +225,7 @@
       <listitem>
         <para>Displays the unit price for the quote item. By default, the
         system will choose the lower of the following two prices: A) The
-        most-specific pricing schedule assignment or B) any Sale in effect at
+        most-specific pricing schedule assignment or B) any sale in effect at
         the time of order entry. The specificity of pricing schedule
         assignments is determined in the following descending order: By
         customer ship-to address (most specific), by customer, by customer
@@ -499,7 +499,7 @@
               <para>If the line item is a manufactured item, select this
               option to automatically create a work order for the specified
               quantity. For make-to-order manufactured items, this option will
-              be selected automatically?as long as the item site's "Stocked"
+              be selected automatically?as long as the item site's <guilabel>Stocked</guilabel>
               flag is set to "False." The work order will be created once you
               save the quote line item. Work orders created automatically from
               a quote will assume the same order number as the quote—even if
@@ -508,11 +508,11 @@
 
               <para>For purchased items, the following two different options
               may appear, depending on how the item site for the item is set
-              up: "Create Purchase Request" or "Create Purchase Order." In
+              up: Create Purchase Request or Create Purchase Order. In
               either case, you will be given the option to override any item
               source price(s) which are in place. Also, linked purchase orders
               will be updated when quote details are changed. If your site is
-              configured to use drop shipping, an additional "Drop Ship" flag
+              configured to use drop shipping, an additional <guilabel>Drop Ship</guilabel> flag
               will also be shown for linked purchase orders. The drop ship
               function will search for an existing purchase order linked to
               the quote with a matching ship-to address and add the line item

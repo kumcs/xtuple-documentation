@@ -120,7 +120,7 @@
 
       <listitem>
         <para>Displays the customer part number (i.e., item alias) that
-        corresponds to the item number entered in the Item Number field. If
+        corresponds to the item number entered in the <guilabel>Item Number</guilabel> field. If
         the alias is associated with a particular customer account, then the
         alias will only be displayed for sales orders and quotes entered for
         that customer. Item aliases are defined on the Item master.</para>
@@ -155,10 +155,10 @@
         <para>Specify the site the sales order item is sold from. Items may be
         supplied to sales orders from multiple item sites. After an item
         Number is entered above, the system checks for available item sites
-        for the item. Any item sites having the "Sold from" flag set on them
+        for the item. Any item sites having the <guilabel>Sold from</guilabel> flag set on them
         will be selectable from this site list. By default, the item site
-        having the highest Ranking will be selected as the first available
-        site. If more than one item site share a Ranking of "1," the sites
+        having the highest ranking will be selected as the first available
+        site. If more than one item site share a ranking of "1," the sites
         will be sorted in alphabetical order. Item site Rankings are set on
         the Item Site master.</para>
 
@@ -276,10 +276,10 @@
       <term>Discount %</term>
 
       <listitem>
-        <para>If standard List Pricing is being used, this field will display
+        <para>If standard list pricing is being used, this field will display
         the default discount percentage (if any) for the specified customer,
         as defined on the Customer master. On the other hand, if alternate
-        List Pricing is being used, the field will display the percentage
+        list pricing is being used, the field will display the percentage
         difference between the alternate list price and the net unit price.
         You also have the option to manually override the discount
         percentage.</para>
@@ -323,8 +323,8 @@
 
         <tip>
           <para>The system can be configured to prevent users from editing the
-          net unit price. If your system is configured that way, the Net Unit
-          Price field will not be editable. The unit cost and unit cost Markup
+          net unit price. If your system is configured that way, the <guilabel>Net Unit
+          Price</guilabel> field will not be editable. The unit cost and unit cost markup
           % values on the <guimenuitem>Details</guimenuitem> tab can also be configured to be editable
           with permission settings. These values, if changed, will adjust the
           net unit price.</para>
@@ -607,7 +607,7 @@
               <para>If the line item is a manufactured item, select this
               option to automatically create a work order for the specified
               quantity. For make-to-order manufactured items, this option will
-              be selected automatically?as long as the item site's "Stocked"
+              be selected automatically?as long as the item site's <guilabel>Stocked</guilabel>
               flag is set to "False." The work order will be created once you
               save the sales order line item. Work orders created
               automatically from a sales order will assume the same order
@@ -620,8 +620,8 @@
               either case, you will be given the option to override any item
               source price(s) which are in place. Also, linked purchase orders
               will be updated when sales order details are changed. If your
-              site is configured to use drop shipping, an additional "Drop
-              Ship" flag will also be shown for linked purchase orders. The
+              site is configured to use drop shipping, an additional <guilabel>Drop
+              Ship</guilabel> flag will also be shown for linked purchase orders. The
               drop ship function will search for an existing purchase order
               linked to the sales order with a matching ship-to address and
               add the line item to that order—or create a new order if none
@@ -1256,7 +1256,7 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para>To define an alternate cost of sales account for a sales order Line
+  <para>To define an alternate cost of sales account for a sales order line
   item, select the <guimenuitem>Accounting</guimenuitem> tab at the bottom of the screen, as shown
   below:</para>
 

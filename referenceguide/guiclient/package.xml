@@ -9,8 +9,8 @@
     </indexterm>Package</title>
   <para>Once a package has been loaded into xTuple ERP, you have the ability
   to review the package's contents using the Package screen. You won't be able
-  to edit the Package, because Package details are defined at the Package
-  level. However, being able to view Package details is helpful for general
+  to edit the package, because package details are defined at the package
+  level. However, being able to view package details is helpful for general
   information and debugging purposes. For additional information, please see
   the <ulink
   url="http://wiki.xtuple.org/CreateUpdaterPackages">CreateUpdaterPackages</ulink>
@@ -31,7 +31,7 @@
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Displays the name of the Package, as defined in the
+        <para>Displays the name of the package, as defined in the
         <code>package.xml</code> file.</para>
       </listitem>
     </varlistentry>
@@ -77,13 +77,13 @@
     <varlistentry>
       <term>Notes</term>
       <listitem>
-        <para>Displays any notes related to the Package, as defined in the
+        <para>Displays any notes related to the package, as defined in the
         <code>package.xml</code> file.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To review the contents included in a Package, select the <guimenuitem>Contents</guimenuitem>
-  tab at the top of the "Package" screen. The following screen will
+  <para>To review the contents included in a package, select the <guimenuitem>Contents</guimenuitem>
+  tab at the top of the Package screen. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -93,7 +93,7 @@
         <caption>Package Contents</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The contents screen displays a directory listing of all the components
+  <para>The Contents screen displays a directory listing of all the components
   contained in the Package. Packages may include any of the following:</para>
   <itemizedlist>
     <listitem>
@@ -127,7 +127,7 @@
       <para>custom commands</para>
     </listitem>
   </itemizedlist>
-  <para>To review a list of any Packages required to load the Package, select
+  <para>To review a list of any packages required to load the package, select
   the <guimenuitem>Requirements</guimenuitem> tab at the top of the screen. The following screen will
   appear:</para>
   <para><screenshot>
@@ -138,10 +138,10 @@
         <caption>Package Requirements</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The "Requirements" list displays information on all packages required
-  to load the Package, including Package name, description, and
+  <para>The Requirements list displays information on all packages required
+  to load the package, including package name, description, and
   version.</para>
-  <para>To review a list of any Packages which depend on the Package, select
+  <para>To review a list of any packages which depend on the package, select
   the <guimenuitem>Dependencies</guimenuitem> tab at the top of the screen. The following screen will
   appear:</para>
   <para><screenshot>
@@ -152,6 +152,6 @@
         <caption>Package Dependencies</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The "Dependencies" list displays information on all packages dependent
+  <para>The Dependencies list displays information on all packages dependent
   on this package including, package name, description, and version.</para>
 </section>

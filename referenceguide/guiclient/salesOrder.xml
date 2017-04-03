@@ -119,7 +119,7 @@
         button.</para>
 
         <tip>
-          <para>A valid customer number must be entered in the "Customer #"
+          <para>A valid customer number must be entered in the <guilabel>Customer #</guilabel>
           field before line items can be added to a sales order. If no valid
           customer number is entered, you will not be able to add line items
           to the sales order. Additionally, sales orders may only be entered
@@ -272,8 +272,8 @@
         are available.</para>
 
         <note>
-          <para>If the Sales Order setup setting "Display Sales Order Line
-          Items Tab by Default" is checked, the <guimenuitem>Line Items</guimenuitem> tab will be
+          <para>If the sales order setup setting <guilabel>Display Sales Order Line
+          Items Tab by Default</guilabel> is checked, the <guimenuitem>Line Items</guimenuitem> tab will be
           displayed on the opening window for sales order entry.</para>
         </note>
       </listitem>
@@ -369,8 +369,8 @@
       <listitem>
         <para>The preferred ship via method for the customer will appear in
         the field. You may change the default ship via using the list. You may
-        also enter a free-form ship via simply by typing the name of the Ship
-        Via into the field.</para>
+        also enter a free-form ship via simply by typing the name of the ship
+        via into the field.</para>
 
         <tip>
           <para>The system supports up-to-date shipment tracking with links to
@@ -491,9 +491,9 @@
       <term>Copy to Ship-to -&gt;</term>
 
       <listitem>
-        <para>Select to copy contents of billing address into Ship-To address
+        <para>Select to copy contents of billing address into <guilabel>Ship-To Address</guilabel>
         field. This option is enabled if the Customer master for the specified
-        customer indicates that free-form Ship-To's are allowed.</para>
+        customer indicates that free-form ship-to's are allowed.</para>
       </listitem>
     </varlistentry>
 
@@ -606,7 +606,7 @@
 
       <listitem>
         <para>Display lists line items for this sales order. A valid customer
-        number must be entered in the "Customer #" field before line items can
+        number must be entered in the <guilabel>Customer #</guilabel> field before line items can
         be added to the order. The shipping-related columns will not be
         visible if the system is configured to hide shipping options at sales
         order entry. However, if the shipping options are enabled, the Line
@@ -813,7 +813,7 @@
         charge.</para>
 
         <tip>
-          <para>If you do not use Miscellaneous Charges at your site, you can
+          <para>If you do not use miscellaneous charges at your site, you can
           hide these fields so they are not visible when entering sales
           orders. To do so, simply select the <guilabel>Hide Misc. Charges</guilabel> option in
           the system-level configuration.</para>
@@ -921,7 +921,7 @@
                 items may be supplied to sales orders from multiple item
                 sites. After an item number is entered above, the system
                 checks for available item sites for the item. Any item sites
-                having the "Sold from" flag set on them will be selectable
+                having the <guilabel>Sold from</guilabel> flag set on them will be selectable
                 from this site list. By default, the item site having the
                 highest Ranking will be selected as the first available site.
                 If more than one item site share a Ranking of "1," the sites
@@ -1030,7 +1030,7 @@
 
       <listitem>
         <para>Highlight one or multiple sales order line items and then select
-        this button to reach the margin smoothing screen. On the Smooth Margin
+        this button to reach the Margin Smoothing screen. On the Smooth Margin
         screen you will be given the option to smooth the margin for the
         selected items by a percentage you determine.</para>
       </listitem>
@@ -1164,7 +1164,7 @@
         purchase orders may be linked to the same project.</para>
 
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
-        package installed—and you link a Project to the sales
+        package installed—and you link a project to the sales
         order—transactions related to the sales order will include the Project
         number as the final segment of affected G/L account numbers. Account
         numbers related to the following transactions will include the project
@@ -1379,7 +1379,7 @@
         <para>After entering an amount below, highlight an active credit card
         and then select this button to pre-authorize the credit card charge
         for the amount specified. Pre-authorized credit card charges will be
-        displayed in the "Authorized CC Payments" field on the <guimenuitem>Line Items</guimenuitem>
+        displayed in the <guilabel>Authorized CC Payments</guilabel> field on the <guimenuitem>Line Items</guimenuitem>
         tab. After a credit card charge has been pre-authorized, the charge
         may then be post-authorized using the Receivables Workbench—thereby
         completing the credit card transaction.</para>
