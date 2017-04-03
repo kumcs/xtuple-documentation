@@ -21,7 +21,7 @@
       <para>The clock-in requirement applies only to Shop Floor Workbench
       users. If you don't use the Workbench, no clock-in is required.</para>
     </tip></para>
-  <para>Some users may be "Shop Floor Workbench only" users, meaning the only
+  <para>Some users may be Shop Floor Workbench only users, meaning the only
   screen they see when they log in to xTuple is the Shop Floor Workbench.
   These users do not require any privileges to run the Shop Floor Workbench.
   The ability to post production or post operations is "baked into" the "Shop
@@ -122,14 +122,14 @@
       <term>Site</term>
       <listitem>
         <para>Displays site code automatically when work order number is
-        entered into "Work Order #" field.</para>
+        entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
         <para>Displays item number automatically when work order number is
-        entered into "Work Order #" field.</para>
+        entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -142,7 +142,7 @@
       <term>Status</term>
       <listitem>
         <para>Displays work order status automatically when work order number
-        is entered into "Work Order #" field. Only released "R" and in-process
+        is entered into <guilabel>Work Order #</guilabel> field. Only released "R" and in-process
         "I" work orders may be processed using the Shop Floor
         Workbench.</para>
       </listitem>
@@ -192,10 +192,10 @@
         for the work order. This run-time calculation is automatic and cannot
         be overridden—except by users who have override privileges. Users may
         only clock-out of work orders they are already clocked-in to. If the
-        Workbench is configured for operations-posting, the "Post Operations"
+        Workbench is configured for operations-posting, the Post Operations
         screen will be presented immediately after the <guibutton>CLOCK OUT</guibutton> button is
-        selected. By default, the "Scrap Work Order Material screen will
-        immediately follow the "Post Operations" screen.</para>
+        selected. By default, the Scrap Work Order Material screen will
+        immediately follow the Post Operations screen.</para>
         <tip>
           <para>Shop Floor Workbench users should only scrap top-level items
           after they have posted production sufficient to cover the scrap
@@ -209,7 +209,7 @@
     <varlistentry>
       <term><guibutton><guibutton>POST PRODUCTION</guibutton></guibutton></term>
       <listitem>
-        <para>If the Workbench is configured for production-posting, the Post
+        <para>If the workbench is configured for production-posting, the Post
         Production screen will be presented immediately after this button is
         selected. The button will be hidden if the Workbench is configured for
         operations-posting</para>
