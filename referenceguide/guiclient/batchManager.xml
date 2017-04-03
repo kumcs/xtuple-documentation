@@ -4,72 +4,91 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="batchManager" role="xtconnect">
   <title>xTuple Connect Console</title>
+
   <para>The xTuple Connect batch manager is an application which connects to a
   database and waits for and then processes scheduled jobs that need to be
   run. These scheduled jobs are submitted from various places within the
   xTuple ERP application. Often the type of jobs that can be submitted are
   jobs that either take long periods of time to run or jobs that you would
   want to run periodically at a given time. When you submit a job to the batch
-  Manager, you specify a time for the job to start running. This job and
-  others like it are stored on the database, waiting for the batch Manager to
-  process them. You can see a list of jobs submitted to the batch Manager by
-  selecting the <guimenuitem>xTuple Connect Console</guimenuitem> option from the
-  <guimenu>System</guimenu> module.</para>
+  manager, you specify a time for the job to start running. This job and
+  others like it are stored on the database, waiting for the batch manager to
+  process them. You can see a list of jobs submitted to the batch manager by
+  selecting the <guimenuitem>xTuple Connect Console</guimenuitem> option from
+  the <guimenu>System</guimenu> module.</para>
+
   <note>
-    <para>For details on installing and setting up the batch Manager at your
+    <para>For details on installing and setting up the batch manager at your
     site, please see the xTuple Connect Product Guide available in the
-    Documentation area of the xTuple community website.</para>
+    documentation area of the xTuple community website.</para>
   </note>
-  <para>To access the system interface to the batch Manager, select the
-  <guimenuitem>xTuple Connect Console</guimenuitem> option. The following screen will appear:</para>
+
+  <para>To access the system interface to the batch manager, select the
+  <guimenuitem>xTuple Connect Console</guimenuitem> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/batchManager.png"/>
         </imageobject>
+
         <caption>xTuple Connect Console</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
-    <para>When a report or other job is submitted to the batch Manager with a
-    scheduled time of ASAP, the batch Manager sets the scheduled time to the
+    <para>When a report or other job is submitted to the batch manager with a
+    scheduled time of ASAP, the batch manager sets the scheduled time to the
     current time. However, a job will not necessarily be run immediately if it
     is scheduled for the current time. Any pre-existing jobs with scheduled
     times prior to the current time must be completed first. In other words,
     ASAP jobs will not necessarily be run immediately. Previously scheduled
     jobs will be run first.</para>
   </note>
-  <para>When managing scheduled jobs using the xTuple Connect Console, you are
+
+  <para>When managing scheduled jobs using the xTuple Connect console, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Submitted by</term>
+
       <listitem>
         <para>Specify the user(s) whose batch items you want to
         display.</para>
-        <para>Current User: Select to display batch Items for the current
+
+        <para>Current user: Select to display batch items for the current
         user.</para>
-        <para>All Users: Select to display batch Items for all users.</para>
-        <para>Selected User: Specify the user whose batch Items you want to
+
+        <para>All users: Select to display batch items for all users.</para>
+
+        <para>Selected user: Specify the user whose batch items you want to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Completed Actions</term>
+
       <listitem>
         <para>Select to include completed scheduled jobs in the
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Jobs</term>
+
       <listitem>
         <para>Displays scheduled jobs using the specified parameters.
         Completed jobs will have a Run status of <literal>Done</literal> and a
-        Completed timestamp. If the job failed for any reason, the first line
-        of the error message will appear in the Exit Status column. If you
-        allow the cursor to hover over the Exit status text, the full version
-        will appear in a tooltip window.</para>
+        completed timestamp. If the job failed for any reason, the first line
+        of the error message will appear in the <guilabel>Exit
+        Status</guilabel> column. If you allow the cursor to hover over the
+        exit status text, the full version will appear in a Tooltip
+        window.</para>
+
         <note>
           <para>Read the exit status carefully. Jobs might show error messages
           for a number of different reasons. For example, a RunMRP job might
@@ -81,39 +100,50 @@
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Automatically Update</term>
+
       <listitem>
         <para>Select to automatically update the display every minute.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>RESCHEDULE</guibutton></term>
+
       <listitem>
         <para>Highlight a job and then select this button to reschedule the
         job.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>RETRY ASAP</guibutton></term>
+
       <listitem>
         <para>Rerun one or more selected jobs as soon as possible. This is a
-        shortcut for the RESCHEDULE button. It allows rescheduling multiple
-        jobs with one click. It will not reschedule existing jobs that have
-        not yet completed.</para>
+        shortcut for the <guibutton>RESCHEDULE</guibutton> button. It allows
+        rescheduling multiple jobs with one click. It will not reschedule
+        existing jobs that have not yet completed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>EDIT</guibutton></term>
+
       <listitem>
         <para>Select to edit selected details of the job.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>CANCEL</guibutton></term>
+
       <listitem>
         <para>Cancel (or delete) the selected jobs, whether they have been run
         or not.<warning>
@@ -125,6 +155,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="batchItem.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
