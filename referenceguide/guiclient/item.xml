@@ -272,8 +272,8 @@
               </indexterm>Co-Product</term>
             <listitem>
               <para>Co-products are items that you keep and which absorb
-              costs. They are produced during a manufacturing process. See
-              "Breeder" Item type above.</para>
+              costs. They are produced during a manufacturing process. (See
+              breeder item type.)</para>
             </listitem>
           </varlistentry>
           <varlistentry role="manufacturing">
@@ -283,8 +283,8 @@
               </indexterm>By-Product</term>
             <listitem>
               <para>By-products are things that you throw away and incur costs
-              doing so during a manufacturing process. See "Breeder" Item type
-              above.</para>
+              doing so during a manufacturing process. (See breeder item
+              type.)</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -400,8 +400,8 @@
               </indexterm>List Price</term>
             <listitem>
               <para>Specify the list price for the item, based on the selling
-              UOM (i.e., "Per" UOM). List prices may also be created and
-              modified in the item Pricing section of the
+              UOM (i.e., <guilabel>Per</guilabel> UOM). List prices may also
+              be created and modified in the item Pricing section of the
               <guimenu>Sales</guimenu> module. Changes made to the list price
               in either location will be updated system-wide.</para>
             </listitem>
@@ -564,7 +564,7 @@
   </variablelist>
   <para>Item characteristics are user-defined definitions of an item which may
   be used to provide additional layers of description to items. For example,
-  item characteristics might be used to specify "Season" or "Primary Vendor".
+  item characteristics might be used to specify "Season" or "Primary Vendor."
   These constitute static descriptions which are not processed by the
   application, but are useful for informational purposes. For configured items
   (i.e., job or Reference items), characteristics are used to store pricing
@@ -790,7 +790,7 @@
               <para>In Capacity Planning and sales Analysis reports, the
               Capacity UOM enables you to make apples-to-apples comparisons of
               items that use different inventory UOMs. For example, let's say
-              that item A is a carton containing 24 item B"s—and that you sell
+              that item A is a carton containing 24 item B's—and that you sell
               both items. However, item A and item B use different inventory
               UOMs. Item A is measured by the CASE (24), and item B is
               measured by EACH. By utilizing the Capacity UOM, you have the
@@ -1076,8 +1076,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate item Substitutes with an item, select the "Substitutes"
-  button. The following options will appear:</para>
+  <para>To associate item Substitutes with an item, select the
+  <guilabel>Substitutes</guilabel> radio button. The following options will
+  appear:</para>
   <variablelist>
     <varlistentry>
       <term>Substitutes</term>
@@ -1088,20 +1089,20 @@
           </indexterm>Display lists item Substitutes, including rank and item
         description.</para>
         <tip>
-          <para>Multiple item Substitutes can be assigned to a single item,
+          <para>Multiple item substitutes can be assigned to a single item,
           allowing you to cross-reference an item using many different item
           numbers.</para>
         </tip>
         <note>
-          <para>There is a difference between item Substitutes and
-          Substitutions defined in a bill of materials (BOM). The difference
-          is that BOM-defined Substitutions may be implemented on the fly
-          during work order processing—item Substitutes cannot be.</para>
+          <para>There is a difference between item substitutes and
+          substitutions defined in a bill of materials (BOM). The difference
+          is that BOM-defined substitutions may be implemented on the fly
+          during work order processing—item substitutes cannot be.</para>
         </note>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new item Substitute, select the <guibutton>NEW</guibutton>
+  <para>To create a new item substitute, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
@@ -1167,14 +1168,14 @@
     </varlistentry>
   </variablelist>
   <para role="standard">To associate Transformation options for an item,
-  select the "Transformations" button. The following options will
-  appear:</para>
+  select the <guilabel>Transformations</guilabel> radio button. The following
+  options will appear:</para>
   <para role="standard"><variablelist>
       <varlistentry>
         <term>Transformations</term>
         <listitem>
           <para>Display lists items which may be chosen as target items during
-          Transformation transactions.</para>
+          transformation transactions.</para>
           <note>
             <para>You may only transform an item if the source item is located
             in the same site as the target item.</para>
