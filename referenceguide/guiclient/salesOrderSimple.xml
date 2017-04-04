@@ -13,14 +13,14 @@
   for quickly processing simple sales orders. The screen provides an
   alternative to the regular sales order entry screen and may be used in
   conjunction with it. Because the simple sales order is optional, it must be
-  specifically enabled in the <guimenu>Sales</guimenu> module configuration before it can be
-  used.</para>
-  <para>To create a new simple sales order, select the <guimenuitem>New Simple</guimenuitem> option.
-  The following screen will appear:</para>
+  specifically enabled in the <guimenu>Sales</guimenu> module configuration
+  before it can be used.</para>
+  <para>To create a new simple sales order, select the <guimenuitem>New
+  Simple</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderSimple.png" />
+          <imagedata fileref="images/salesOrderSimple.png"/>
         </imageobject>
         <caption>Create New Simple Sales Order</caption>
       </mediaobject>
@@ -63,10 +63,10 @@
       <term>Customer</term>
       <listitem>
         <para>Specify the customer associated with the sales order. By
-        default, the cash-paying customer defined in your <guimenu>Sales</guimenu> module
-        configuration will be displayed here. However, you may easily select a
-        different, pre-existing customer?or enter a new customer record?during
-        order entry.</para>
+        default, the cash-paying customer defined in your
+        <guimenu>Sales</guimenu> module configuration will be displayed here.
+        However, you may easily select a different, pre-existing customer—or
+        enter a new customer record—during order entry.</para>
         <note>
           <para>If the specified customer has exceeded their credit limit, the
           screen will revert to using the default cash-paying customer.</para>
@@ -116,12 +116,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To process payment for the order, select the <guimenuitem>Payment</guimenuitem> tab. The
-  following screen will appear:</para>
+  <para>To process payment for the order, select the
+  <guimenuitem>Payment</guimenuitem> tab. The following screen will
+  appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/salesOrderSimpleCCPay.png" />
+        <imagedata fileref="images/salesOrderSimpleCCPay.png"/>
       </imageobject>
       <caption>Credit Card Payment</caption>
     </mediaobject>
@@ -134,8 +135,9 @@
       <listitem>
         <para>List will display credit cards already on file for the customer,
         if any. Highlight the credit card you want to use for the transaction
-        prior to selecting the <guibutton>CHARGE</guibutton> button. If none exist, you can create a
-        new credit card record by selecting the <guibutton>NEW</guibutton> button.</para>
+        prior to selecting the <guibutton>CHARGE</guibutton> button. If none
+        exist, you can create a new credit card record by selecting the
+        <guibutton>NEW</guibutton> button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -174,16 +176,18 @@
       <listitem>
         <para>Select to charge the highlighted credit card and complete the
         order. You may be prompted to print a shipping packing list and/or an
-        invoice if your <guimenu>Sales</guimenu> module is configured to do so.</para>
+        invoice if your <guimenu>Sales</guimenu> module is configured to do
+        so.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To process a cash payment for the order, select the <guimenuitem>Cash</guimenuitem> tab. The
-  following screen will appear:</para>
+  <para>To process a cash payment for the order, select the
+  <guimenuitem>Cash</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderSimpleCashPay.png" />
+          <imagedata fileref="images/salesOrderSimpleCashPay.png"/>
         </imageobject>
         <caption>Cash Payment</caption>
       </mediaobject>
@@ -199,7 +203,7 @@
     <varlistentry>
       <term>Balance</term>
       <listitem>
-        <para>Displays the balance due for the oder.</para>
+        <para>Displays the balance due for the order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>

@@ -7,7 +7,7 @@
   <para>When you run MRP by planner code, you are running the material
   requirements planning (MRP) system. This utility creates planned
   replenishment orders to meet existing sales order and work order demand.
-  replenishment orders will be created whenever a planned availability for an
+  Replenishment orders will be created whenever a planned availability for an
   item site falls below its Reorder Level. The quantity of the Replenishment
   order will be enough to restore planned availability back to the Reorder
   Level—or to the order Up To (OUT) Level, if the OUT Level is greater.</para>
@@ -30,7 +30,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/createPlannedOrdersByPlannerCode.png" />
+          <imagedata fileref="images/createPlannedOrdersByPlannerCode.png"/>
         </imageobject>
         <caption>Run MRP by Planner Code</caption>
       </mediaobject>
@@ -97,13 +97,13 @@
           <secondary>deletion of</secondary>
         </indexterm>Delete Existing Firmed MRP Orders</term>
       <listitem>
-        <para>Select to delete existing Firmed orders. A
-        firm planned order is a planned order that has been solidified in the
-        schedule. By default, firm planned orders are not deleted when MRP is
-        run. Selecting this option overrides that default behavior. If firm
-        planned orders are deleted when MRP is run, they will automatically be
-        replaced by soft (i.e., non-firmed) planned orders, assuming the
-        demand for the requirements still exists.</para>
+        <para>Select to delete existing Firmed orders. A firm planned order is
+        a planned order that has been solidified in the schedule. By default,
+        firm planned orders are not deleted when MRP is run. Selecting this
+        option overrides that default behavior. If firm planned orders are
+        deleted when MRP is run, they will automatically be replaced by soft
+        (i.e., non-firmed) planned orders, assuming the demand for the
+        requirements still exists.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -120,7 +120,7 @@
         set—the netting effect will not be applied and you could end up with
         excess supply orders. Do not select this option if you are not using
         the MRP Exceptions feature set. For more information about MRP
-        Exceptions, please see <xref linkend="dspMRPException" />.</para>
+        Exceptions, please see <xref linkend="dspMRPException"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>

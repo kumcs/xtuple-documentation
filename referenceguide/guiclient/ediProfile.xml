@@ -13,13 +13,13 @@
       <primary>email</primary>
       <secondary>using for edi</secondary>
     </indexterm>EDI Profile</title>
-  <para>To create a new EDI profile, select the <guibutton>NEW</guibutton> button. For this example,
-  we have chosen the email delivery method, as shown in the following
-  screenshot:</para>
+  <para>To create a new EDI profile, select the <guibutton>NEW</guibutton>
+  button. For this example, we have chosen the email delivery method, as shown
+  in the following screenshot:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediProfile.png" />
+          <imagedata fileref="images/ediProfile.png"/>
         </imageobject>
         <caption><para>Create New EDI Profile for Email
         Delivery</para></caption>
@@ -43,10 +43,11 @@
     <varlistentry>
       <term>EDI Type</term>
       <listitem>
-        <para>For this example, we have selected the <guilabel>Email</guilabel> delivery method.
-        Selecting the <guilabel>Email</guilabel> option indicates that recipients will receive
-        EDI documents via electronic mail. Most documents will be attached to
-        the email after the Message Body.</para>
+        <para>For this example, we have selected the
+        <guilabel>Email</guilabel> delivery method. Selecting the
+        <guilabel>Email</guilabel> option indicates that recipients will
+        receive EDI documents via electronic mail. Most documents will be
+        attached to the email after the Message Body.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -158,7 +159,7 @@
         the EDI profile does not have a form for a document type, that
         document type cannot be sent using this EDI profile. Forms also
         control the names and values of replacement tokens (see <xref
-        linkend="ediForm" />).</para>
+        linkend="ediForm"/>).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -176,9 +177,9 @@
         come in. Typically EDI requests are immediately processed whenever a
         user prints a document that should also be sent by EDI. To process all
         EDI requests for a profile in batches, create a recurring EDIBatch job
-        for that profile using the <guimenuitem>Batching</guimenuitem> tab. When the EDIBatch job runs,
-        it creates individual scheduled jobs for each EDI file to be created
-        and sent.</para>
+        for that profile using the <guimenuitem>Batching</guimenuitem> tab.
+        When the EDIBatch job runs, it creates individual scheduled jobs for
+        each EDI file to be created and sent.</para>
         <variablelist>
           <varlistentry>
             <term>Send Batch Status Notices</term>
@@ -198,19 +199,19 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediProfile_batchTab.png" />
+          <imagedata fileref="images/ediProfile_batchTab.png"/>
         </imageobject>
         <caption><para>Batch Processing Options</para></caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/recurrencewidget.xml"
               xpointer="recurrenceWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <variablelist>
     <varlistentry>
       <term>Send Batch Status Notices</term>
       <listitem>
-        <para>Whenever an EDIBatch job runs, the xTuple Connect batch nanager
+        <para>Whenever an EDIBatch job runs, the xTuple Connect batch manager
         will use the provided email address properties to send email about the
         EDIBatch job itself. This email tells the recipients how many
         RunReport, FTPReport, EmailCSV, FTPCSV, etc. jobs were generated but
@@ -234,7 +235,7 @@
   build your EDI profile. You can enter these EDI tokens in any of the text
   input fields on the EDI Profile window (except the Name, of course). You can
   also define your own tokens by writing database queries (see <xref
-  linkend="ediForm" />). The system defines the following tokens:</para>
+  linkend="ediForm"/>). The system defines the following tokens:</para>
   <variablelist>
     <varlistentry>
       <term>&lt;/docid&gt;</term>
@@ -333,14 +334,15 @@
       significance="normal">
       <primary>FTP</primary>
       <see>file transfer protocol</see>
-    </indexterm>FTP delivery method, select the <guibutton>NEW</guibutton> button from the EDI
-  Profiles master list. Once the new Profile screen opens, choose the <guilabel>FTP</guilabel>
-  option. As the following screenshot shows, the screen options change when
-  <guilabel>FTP</guilabel> is selected:</para>
+    </indexterm>FTP delivery method, select the <guibutton>NEW</guibutton>
+  button from the EDI Profiles master list. Once the new Profile screen opens,
+  choose the <guilabel>FTP</guilabel> option. As the following screenshot
+  shows, the screen options change when <guilabel>FTP</guilabel> is
+  selected:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediProfile_ftp.png" />
+          <imagedata fileref="images/ediProfile_ftp.png"/>
         </imageobject>
         <caption>Create New EDI Profile for FTP Delivery</caption>
       </mediaobject>
@@ -359,10 +361,11 @@
     <varlistentry>
       <term>Type</term>
       <listitem>
-        <para>For this example, we have selected the <guilabel>FTP</guilabel> delivery method.
-        Selecting the <guilabel>FTP</guilabel> option indicates that recipients will receive EDI
-        documents as files transferred by FTP to the server address specified
-        in the profile.</para>
+        <para>For this example, we have selected the <guilabel>FTP</guilabel>
+        delivery method. Selecting the <guilabel>FTP</guilabel> option
+        indicates that recipients will receive EDI documents as files
+        transferred by FTP to the server address specified in the
+        profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -412,5 +415,5 @@
     </varlistentry>
   </variablelist>
   <xi:include href="ediForm.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

@@ -7,12 +7,12 @@
       <primary>sales credits</primary>
       <secondary>creating new</secondary>
     </indexterm> New Sales Credit</title>
-  <para>To create a sales credit, select the <guimenuitem>New Sales Credit</guimenuitem> option. The
-  following screen will appear:</para>
+  <para>To create a sales credit, select the <guimenuitem>New Sales
+  Credit</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditMemo.png" />
+          <imagedata fileref="images/creditMemo.png"/>
         </imageobject>
         <caption>Create New Sales Credit</caption>
       </mediaobject>
@@ -60,10 +60,10 @@
         <para>Indicates whether sales credit is posted or unposted.</para>
         <tip>
           <para>The quickest way to fill in the Sales Credit screen may be to
-          select the invoice you intend to credit using the <guilabel>Apply To</guilabel>
-          feature. If you use this feature, most of the fields in the Sales
-          Credit screen will automatically populate with the needed customer
-          information.</para>
+          select the invoice you intend to credit using the <guilabel>Apply
+          To</guilabel> feature. If you use this feature, most of the fields
+          in the Sales Credit screen will automatically populate with the
+          needed customer information.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -151,14 +151,14 @@
         <para>Enter the customer number of the customer you want to issue the
         sales credit to. The lookup feature located to the right of the field
         leads to a searchable customers list. You may also access this list
-        using the keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a customer number is
-        entered, the customer name and billing address will display. Select
-        the "?" or "$" symbol to view customer information for the specified
-        customer. If a customer's credit is "In Good Standing," the button
-        will feature a black question mark ("?") icon. If the icon turns to an
-        orange dollar sign ("$"), the customer's credit status is "On Credit
-        Warning." A red dollar sign ("$") indicates the customer's credit
-        status is "On Credit Hold."</para>
+        using the keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a
+        customer number is entered, the customer name and billing address will
+        display. Select the "?" or "$" symbol to view customer information for
+        the specified customer. If a customer's credit is "In Good Standing,"
+        the button will feature a black question mark ("?") icon. If the icon
+        turns to an orange dollar sign ("$"), the customer's credit status is
+        "On Credit Warning." A red dollar sign ("$") indicates the customer's
+        credit status is "On Credit Hold."</para>
         <note>
           <para>Sales credits may be entered for inactive customers. The same
           does not hold true for sales orders.</para>
@@ -182,7 +182,7 @@
         the lookup feature to select another address. If a new address is
         manually entered here, that address will be added automatically to the
         master list of addresses. For additional documentation related to
-        creating addresses, see <xref linkend="address" />.<note>
+        creating addresses, see <xref linkend="address"/>.<note>
             <para>A sales credit that is applied to an invoice will by default
             have the address that appeared on the invoice.</para>
           </note></para>
@@ -191,9 +191,10 @@
     <varlistentry>
       <term>Copy to Ship-to -\&gt;</term>
       <listitem>
-        <para>Select to copy contents of billing address into <guilabel>Ship-to Address</guilabel>
-        field. This option is enabled if the Customer master for the specified
-        customer indicates that free-form ship-to's are allowed.</para>
+        <para>Select to copy contents of billing address into
+        <guilabel>Ship-to Address</guilabel> field. This option is enabled if
+        the Customer master for the specified customer indicates that
+        free-form ship-tos are allowed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -201,11 +202,11 @@
       <listitem>
         <para>Enter the number of the preferred ship-to address. Customers may
         maintain multiple ship-to addresses. If the Customer master for the
-        specified customer indicates that free-form ship-to's are allowed,
-        then any address may be entered. If free-form ship-to's are not
-        allowed, then the ship-to address must be entered using the browse
-        button located to the right of the field. The lookup feature leads to
-        a searchable ship-to addresses list.</para>
+        specified customer indicates that free-form ship-tos are allowed, then
+        any address may be entered. If free-form ship-tos are not allowed,
+        then the ship-to address must be entered using the browse button
+        located to the right of the field. The lookup feature leads to a
+        searchable ship-to addresses list.</para>
         <tip>
           <para>Make sure the ship-to address on the sales credit matches the
           ship-to address on the customer's Pricing schedule. If they don"t
@@ -231,7 +232,7 @@
         the lookup feature to select another address. If a new address is
         manually entered here, that address will be added automatically to the
         master list of addresses. For additional documentation related to
-        creating addresses, see <xref linkend="address" />.</para>
+        creating addresses, see <xref linkend="address"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -249,13 +250,13 @@
   <para><indexterm significance="normal">
       <primary>sales credits</primary>
       <secondary>adding line items to</secondary>
-    </indexterm>To create or modify sales credit line items, select the <guimenuitem>Line
-  Items</guimenuitem> tab at the top of the Sales Credit screen. The following screen
-  will appear:</para>
+    </indexterm>To create or modify sales credit line items, select the
+  <guimenuitem>Line Items</guimenuitem> tab at the top of the Sales Credit
+  screen. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditMemo_itemsTab.png" />
+          <imagedata fileref="images/creditMemo_itemsTab.png"/>
         </imageobject>
         <caption>Sales Credit Line Items</caption>
       </mediaobject>
@@ -267,7 +268,7 @@
       <term>Line Items</term>
       <listitem>
         <para>Display lists sales order line item quantities that have been
-        returned and selected for credit. line items are added to a sales
+        returned and selected for credit. Line items are added to a sales
         credit using the <guibutton>NEW ITEM</guibutton> button.</para>
         <tip>
           <para>Before creating a new sales credit line item, be sure to
@@ -331,12 +332,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add notes to a sales credit, select the <guimenuitem>Notes</guimenuitem> tab at the top of
-  the Sales Credit screen. The following screen will appear:</para>
+  <para>To add notes to a sales credit, select the
+  <guimenuitem>Notes</guimenuitem> tab at the top of the Sales Credit screen.
+  The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditMemo_notesTab.png" />
+          <imagedata fileref="images/creditMemo_notesTab.png"/>
         </imageobject>
         <caption>Sales Credit Notes</caption>
       </mediaobject>
@@ -355,18 +357,19 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate documents with a sales credit, select the <guimenuitem>Documents</guimenuitem>
-  tab. The following screen will appear:</para>
+  <para>To associate documents with a sales credit, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditMemo_documentsTab.png" />
+          <imagedata fileref="images/creditMemo_documentsTab.png"/>
         </imageobject>
         <caption>Sales Credit Documents</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="creditMemoItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

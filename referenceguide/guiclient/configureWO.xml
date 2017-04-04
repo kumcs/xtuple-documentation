@@ -7,18 +7,19 @@
       <primary>configuration</primary>
       <secondary>of manufacture module</secondary>
     </indexterm>Configure Manufacture</title>
-  <para>To configure the <guimenu>Manufacture</guimenu> module, select the <guimenuitem>Configure
-  Manufacture</guimenuitem> option. The following screen will appear:</para>
+  <para>To configure the <guimenu>Manufacture</guimenu> module, select the
+  <guimenuitem>Configure Manufacture</guimenuitem> option. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureWO.png" />
+          <imagedata fileref="images/configureWO.png"/>
         </imageobject>
         <caption>Configure Manufacture Module</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When configuring the <guimenu>Manufacture</guimenu> module, you are presented with the
-  following options:</para>
+  <para>When configuring the <guimenu>Manufacture</guimenu> module, you are
+  presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
@@ -59,9 +60,10 @@
             <term>Automatic, Allow Override</term>
             <listitem>
               <para>Work order numbers will be automatically generated and
-              incremented, as under the <guilabel>Automatic</guilabel> option described above.
-              However, this option also allows you to manually override the
-              work order number at the time of work order creation.</para>
+              incremented, as under the <guilabel>Automatic</guilabel> option
+              described above. However, this option also allows you to
+              manually override the work order number at the time of work
+              order creation.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -74,7 +76,7 @@
         </indexterm>Automatically Explode Work Orders</term>
       <listitem>
         <para>Select if you want work orders to be exploded automatically.
-        work order explosion is the process whereby work order material
+        Work order explosion is the process whereby work order material
         Requirements and work order operations are created for a work order.
         If this option is selected, all parent work order items will be
         exploded by default. Child work orders will also be exploded by
@@ -117,21 +119,22 @@
             <term>Date of Explosion</term>
             <listitem>
               <para>Explode work orders effective on the date of explosion,
-              incorporating bills of materials and routings
-              effective on that date.</para>
+              incorporating bills of materials and routings effective on that
+              date.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Work Order Start Date</term>
             <listitem>
               <para>Explode work orders effective on the scheduled start date,
-              incorporating bills of materials and routings
-              effective on that date.</para>
+              incorporating bills of materials and routings effective on that
+              date.</para>
               <tip>
                 <para>Pick a default explosion level if you have not
-                configured the <guimenu>Manufacture</guimenu> module to automatically explode
-                work orders. If work orders are exploded by default, the
-                selection of an explosion level is not relevant.</para>
+                configured the <guimenu>Manufacture</guimenu> module to
+                automatically explode work orders. If work orders are exploded
+                by default, the selection of an explosion level is not
+                relevant.</para>
               </tip>
             </listitem>
           </varlistentry>
@@ -173,7 +176,7 @@
             <term>Production</term>
             <listitem>
               <para>Select to require a production-posting approach on the
-              Shop Floor Workbench. </para>
+              Shop Floor Workbench.</para>
             </listitem>
           </varlistentry>
           <varlistentry role="manufacturing">
@@ -218,8 +221,9 @@
                 child work orders. Child work orders must first be created
                 before they can be exploded. The easiest way to ensure that
                 child work orders are created for manufactured components is
-                to select the <guilabel>Create Child W/O at Parent W/O Explosion</guilabel>
-                option found on the bill of materials.</para>
+                to select the <guilabel>Create Child W/O at Parent W/O
+                Explosion</guilabel> option found on the bill of
+                materials.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -258,9 +262,8 @@
               cost of sales.</para>
               <para role="manufacturing"><tip>
                   <para>The appropriate reporting selections must be made in
-                  routings to ensure that labor and overhead
-                  costs associated with setup and run time operations are
-                  reported.</para>
+                  routings to ensure that labor and overhead costs associated
+                  with setup and run time operations are reported.</para>
                 </tip></para>
             </listitem>
           </varlistentry>

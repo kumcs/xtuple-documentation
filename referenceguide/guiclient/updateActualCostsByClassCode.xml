@@ -15,22 +15,23 @@
   costs are the real-time costs associated with an item, including current
   material and production costs. The actual cost of an item may fluctuate
   given changes in the cost for materials, or other costs related to changes
-  in bills of materials or routings. For example, the actual costs
-  for purchased items may be updated whenever vouchers are posted for those
-  items. Actual costs provide a current record of costs actually incurred by
-  an item.</para>
+  in bills of materials or routings. For example, the actual costs for
+  purchased items may be updated whenever vouchers are posted for those items.
+  Actual costs provide a current record of costs actually incurred by an
+  item.</para>
   <tip>
     <para>For best performance and results, you should run this utility by all
-    class codes?and don't select the <guilabel>Roll Up</guilabel> option. This will ensure your
-    costs are updated properly for any items which cross class code lines.
-    </para>
+    class codes—and don't select the <guilabel>Roll Up</guilabel> option. This
+    will ensure your costs are updated properly for any items which cross
+    class code lines.</para>
   </tip>
-  <para>To update actual costs by class code, select the <guimenuitem>Update Actual Costs
-  by Class Code</guimenuitem> option. The following screen will appear:</para>
+  <para>To update actual costs by class code, select the <guimenuitem>Update
+  Actual Costs by Class Code</guimenuitem> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/updateActualCostsByClassCode.png" />
+          <imagedata fileref="images/updateActualCostsByClassCode.png"/>
         </imageobject>
         <caption>Update Actual Costs by Class Code</caption>
       </mediaobject>
@@ -47,8 +48,8 @@
       <listitem>
         <para>Select to update actual costs for all class codes. Running the
         utility by all class codes is the preferred method. You should not use
-        the <guilabel>Roll Up</guilabel> option when updating costs by all class codes, since
-        that is redundant and can hurt performance.</para>
+        the <guilabel>Roll Up</guilabel> option when updating costs by all
+        class codes, since that is redundant and can hurt performance.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -81,11 +82,12 @@
         class codes, since that is redundant and can hurt performance. When
         this option is specified, all selected costs will be added together to
         establish a revised total actual cost for the item. This revised total
-        goes into effect after the <guibutton>UPDATE</guibutton> button is selected. If all costs are
-        selected, all costs will be rolled up. If a subset of all costs is
-        selected, only the subset will be rolled up. If the <guilabel>Roll Up Actual
-        Costs</guilabel> option is not specified, the selected cost updates will not be
-        valid above their current level.</para>
+        goes into effect after the <guibutton>UPDATE</guibutton> button is
+        selected. If all costs are selected, all costs will be rolled up. If a
+        subset of all costs is selected, only the subset will be rolled up. If
+        the <guilabel>Roll Up Actual Costs</guilabel> option is not specified,
+        the selected cost updates will not be valid above their current
+        level.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -186,17 +188,18 @@
       <term><guibutton>UPDATE</guibutton></term>
       <listitem>
         <para>Updates all selected costs for the specified item. If the option
-        <guilabel>Roll Up Actual Costs</guilabel> has been selected, the total actual cost for
-        the specified item will be updated.</para>
+        <guilabel>Roll Up Actual Costs</guilabel> has been selected, the total
+        actual cost for the specified item will be updated.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term><guibutton>SELECT ALL COSTS</guibutton></term>
       <listitem>
         <para>Selects all costs for updating. Use this option to save time
-        when selecting all costs for updating. The option <guilabel>"Roll Up Actual
-        Costs"</guilabel> must be selected separately if you want to include a rolled up
-        total for the parent item in the cost update.</para>
+        when selecting all costs for updating. The option <guilabel>"Roll Up
+        Actual Costs"</guilabel> must be selected separately if you want to
+        include a rolled up total for the parent item in the cost
+        update.</para>
       </listitem>
     </varlistentry>
   </variablelist>

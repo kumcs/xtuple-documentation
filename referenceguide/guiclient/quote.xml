@@ -12,12 +12,13 @@
     </indexterm> New quote</title>
   <para>A quote is a statement issued to a customer or prospect indicating
   pricing and sales terms for specified quantities of sold items. Quotes are
-  often precursors to sales orders. To create a quote, select the <guimenuitem>New Quote</guimenuitem>
-  option. The following screen will appear:</para>
+  often precursors to sales orders. To create a quote, select the
+  <guimenuitem>New Quote</guimenuitem> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/quote.png" />
+          <imagedata fileref="images/quote.png"/>
         </imageobject>
         <caption>Create New Quote</caption>
       </mediaobject>
@@ -54,7 +55,8 @@
         and the date is changed, you will be asked whether you want all
         editable lines to change. If the change affects pricing, you will be
         asked whether you want prices to be updated as well. If hidden, this
-        field can be viewed by selecting the <guibutton>MORE</guibutton> button.</para>
+        field can be viewed by selecting the <guibutton>MORE</guibutton>
+        button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -85,21 +87,22 @@
         billed for the sale. The lookup feature located to the right of the
         field leads to a searchable customers list. The lookup feature will be
         disabled if the quote is entered for a prospect. You may also access
-        the customer list using the keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a
-        customer number is entered, the customer name and billing address will
-        display. Select the "?" or "$" symbol to view customer information for
-        the specified customer. If a customer's credit is "In Good Standing,"
-        the button will feature a black question mark ("?") icon. If the icon
-        turns to an orange dollar sign ("$"), the customer's credit status is
-        "On Credit Warning." A red dollar sign ("$") indicates the customer's
-        credit status is "On Credit Hold." You may also create a new customer
-        record by selecting the "+" button.</para>
+        the customer list using the keyboard shortcut <guibutton>CTRL +
+        L</guibutton>. Once a customer number is entered, the customer name
+        and billing address will display. Select the "?" or "$" symbol to view
+        customer information for the specified customer. If a customer's
+        credit is "In Good Standing," the button will feature a black question
+        mark ("?") icon. If the icon turns to an orange dollar sign ("$"), the
+        customer's credit status is "On Credit Warning." A red dollar sign
+        ("$") indicates the customer's credit status is "On Credit Hold." You
+        may also create a new customer record by selecting the "+"
+        button.</para>
         <tip>
-          <para>A valid customer number must be entered in the <guilabel>Customer #</guilabel>
-          field before line items can be added to a quote. If no valid
-          customer number is entered, you will not be able to add line items
-          to the quote. Additionally, quotes may only be entered for active
-          customers.</para>
+          <para>A valid customer number must be entered in the
+          <guilabel>Customer #</guilabel> field before line items can be added
+          to a quote. If no valid customer number is entered, you will not be
+          able to add line items to the quote. Additionally, quotes may only
+          be entered for active customers.</para>
         </tip>
         <note>
           <para>Quotes may not be entered for customers whose credit status is
@@ -149,7 +152,8 @@
         <para>Specify the shipping site associated with the quote. The site
         selected here acts as the default free on board (FOB) location. A site
         may be designated as a shipping site on the Site master. This field
-        can be viewed upon selecting the <guibutton>MORE</guibutton> button.</para>
+        can be viewed upon selecting the <guibutton>MORE</guibutton>
+        button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -158,9 +162,10 @@
         <para>Specify the sale type. Sales account assignments by sales type
         are available.</para>
         <note>
-          <para>If the sales order setup setting <guilabel>Display Sales Order Line
-          Items Tab by Default</guilabel> is checked, the <guimenuitem>Line Items</guimenuitem> tab will be
-          displayed on the opening window for quote entry.</para>
+          <para>If the sales order setup setting <guilabel>Display Sales Order
+          Line Items Tab by Default</guilabel> is checked, the
+          <guimenuitem>Line Items</guimenuitem> tab will be displayed on the
+          opening window for quote entry.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -183,8 +188,8 @@
           <secondary>commissions on</secondary>
         </indexterm>Sales Rep.</term>
       <listitem>
-        <para>Specify the sales representative?or Outside Rep, in the
-        Distribution Edition?associated with the quote. Sales representatives
+        <para>Specify the sales representative—or Outside Rep, in the
+        Distribution Edition—associated with the quote. Sales representatives
         are linked to a customer on the Customer master—either by a default
         setting or through the assignment of ship-to addresses. Each ship-to
         address may have a different sales representative associated with it.
@@ -220,7 +225,8 @@
         <para>Specify the tax zone associated with the quote. The tax zone for
         the specified ship-to address will be entered here by default.
         Otherwise, the primary tax zone for the customer will be entered. This
-        field can be viewed upon selecting the <guibutton>MORE</guibutton> button.</para>
+        field can be viewed upon selecting the <guibutton>MORE</guibutton>
+        button.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -258,10 +264,10 @@
       <listitem>
         <para>Displays the current status of the quote. There are two possible
         values: open and converted. Quotes get the converted status after they
-        have been converted to sales orders. If your <guimenu>Sales</guimenu> module is
-        configured to show quotes after they have been converted, you may view
-        historical quotes from the Customer Workbench. Converted quotes will
-        not be visible on the list of open quotes.</para>
+        have been converted to sales orders. If your <guimenu>Sales</guimenu>
+        module is configured to show quotes after they have been converted,
+        you may view historical quotes from the Customer Workbench. Converted
+        quotes will not be visible on the list of open quotes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -287,7 +293,7 @@
               new address is manually entered here, that address will be added
               automatically to the master list of addresses. For additional
               documentation related to creating addresses, see <xref
-              linkend="address" />.</para>
+              linkend="address"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -299,7 +305,7 @@
               new contact is manually entered here, that contact will be added
               automatically to the master list of contacts. For additional
               documentation related to creating addresses, see <xref
-              linkend="contact" />.</para>
+              linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -308,9 +314,10 @@
     <varlistentry>
       <term>Copy to Ship-to -&gt;</term>
       <listitem>
-        <para>Select to copy contents of billing address into <guilabel>Ship-To Address</guilabel>
-        field. This option is enabled if the Customer master for the specified
-        customer indicates that free-form ship-to's are allowed.</para>
+        <para>Select to copy contents of billing address into
+        <guilabel>Ship-To Address</guilabel> field. This option is enabled if
+        the Customer master for the specified customer indicates that
+        free-form ship-tos are allowed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -330,7 +337,7 @@
               new address is manually entered here, that address will be added
               automatically to the master list of addresses. For additional
               documentation related to creating addresses, see <xref
-              linkend="contact" />.</para>
+              linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -342,7 +349,7 @@
               contact. If a new contact is manually entered here, that contact
               will be added automatically to the master list of Contacts. For
               additional documentation related to creating addresses, see
-              <xref linkend="contact" />.</para>
+              <xref linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -355,29 +362,30 @@
       <term><guibutton>CLEAR</guibutton></term>
       <listitem>
         <para>Select to refresh the Quote screen so that you can enter a new
-        quote. Using the <guibutton>CLEAR</guibutton> button does not erase or in any way change the
-        information on the quote you are clearing.</para>
+        quote. Using the <guibutton>CLEAR</guibutton> button does not erase or
+        in any way change the information on the quote you are
+        clearing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term><guibutton>MORE</guibutton></term>
       <listitem>
         <para>Select to display extra information related to the sales order.
-        To hide the extra information, simply select the <guibutton>MORE</guibutton> button
-        again.</para>
+        To hide the extra information, simply select the
+        <guibutton>MORE</guibutton> button again.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para><indexterm significance="normal">
       <primary>quotes</primary>
       <secondary>creating line items for</secondary>
-    </indexterm>To create or modify quote line items, select the <guimenuitem>Line Items</guimenuitem>
-  tab at the top of the New Quote screen. The following screen will
-  appear:</para>
+    </indexterm>To create or modify quote line items, select the
+  <guimenuitem>Line Items</guimenuitem> tab at the top of the New Quote
+  screen. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/quote_lineItems.png" />
+          <imagedata fileref="images/quote_lineItems.png"/>
         </imageobject>
         <caption>Quote Line Items</caption>
       </mediaobject>
@@ -394,8 +402,8 @@
       <term>Line Items</term>
       <listitem>
         <para>Display lists line items for this quote. A valid customer number
-        must be entered in the <guilabel>Customer #</guilabel> field before line items can be
-        added to the order.</para>
+        must be entered in the <guilabel>Customer #</guilabel> field before
+        line items can be added to the order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -456,8 +464,8 @@
   <tip>
     <para>If you do not use miscellaneous charges at your site, you can hide
     these fields so they are not visible when entering sales orders. To do so,
-    simply select the <guilabel>Hide Misc. Charges</guilabel> option in the system-level
-    configuration.</para>
+    simply select the <guilabel>Hide Misc. Charges</guilabel> option in the
+    system-level configuration.</para>
   </tip>
   <variablelist>
     <varlistentry>
@@ -519,12 +527,12 @@
                 Items may be supplied to sales orders from multiple item
                 sites. After an item number is entered above, the system
                 checks for available item sites for the item. Any item sites
-                having the <guilabel>Sold from</guilabel> flag set on them will be selectable
-                from this site list. By default, the item site having the
-                highest Ranking will be selected as the first available site.
-                If more than one item site share a ranking of "1," the sites
-                will be sorted in alphabetical order. Item site rankings are
-                set on the Item Site master.</para>
+                having the <guilabel>Sold from</guilabel> flag set on them
+                will be selectable from this site list. By default, the item
+                site having the highest Ranking will be selected as the first
+                available site. If more than one item site share a ranking of
+                "1," the sites will be sorted in alphabetical order. Item site
+                rankings are set on the Item Site master.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
@@ -540,8 +548,9 @@
                 <para>The scheduled date is the date when the line item
                 quantity should be shipped. The user who enters the line item
                 is responsible for determining the scheduled date. After
-                entering the scheduled date, hit the <guibutton>TAB</guibutton> key on your keyboard
-                to display values in the remaining display only fields.</para>
+                entering the scheduled date, hit the
+                <guibutton>TAB</guibutton> key on your keyboard to display
+                values in the remaining display only fields.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
@@ -569,11 +578,12 @@
     </varlistentry>
   </variablelist>
   <para>To define or maintain relationships for quotes, select the
-  <guimenuitem>Relationships</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Relationships</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/quote_relationshipsTab.png" />
+          <imagedata fileref="images/quote_relationshipsTab.png"/>
         </imageobject>
         <caption>Quote Relationships</caption>
       </mediaobject>
@@ -620,35 +630,38 @@
   to provide additional layers of description about quotes. These descriptions
   are static and not processed by the system, but are useful for informational
   purposes. To enter characteristics associated with a quote, select the
-  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/quote_characteristics.png" />
+      <imagedata fileref="images/quote_characteristics.png"/>
     </imageobject>
     <caption><para>Quote Characteristics</para></caption>
   </mediaobject>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add comments related to a quote, select the <guimenuitem>Comments</guimenuitem> tab. The
-  following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To add comments related to a quote, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/quote_comments.png" />
+          <imagedata fileref="images/quote_comments.png"/>
         </imageobject>
         <caption>quote Comments</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>Order notes added to a quote are used for internal purposes only. To
-  add order notes to a quote, select the <guimenuitem>Order Notes</guimenuitem> tab at the top of the
-  New Quote screen. The following screen will appear:</para>
+  add order notes to a quote, select the <guimenuitem>Order
+  Notes</guimenuitem> tab at the top of the New Quote screen. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/quote_notes.png" />
+          <imagedata fileref="images/quote_notes.png"/>
         </imageobject>
         <caption>Quote Notes</caption>
       </mediaobject>
@@ -670,29 +683,32 @@
         <para>This is a scrolling text field with word-wrapping for entering
         shipping notes related to the quote. These notes are for internal use
         only. Shipping notes are drawn from the Customer master—specifically
-        from the <guimenuitem>Shipping Notes</guimenuitem> tab on the Ship-To Address master. The notes
-        may vary depending on the ship-to address specified for the quote.
-        These notes provide a mechanism for transferring shipping information
-        from the Customer master to the quote.</para>
+        from the <guimenuitem>Shipping Notes</guimenuitem> tab on the Ship-To
+        Address master. The notes may vary depending on the ship-to address
+        specified for the quote. These notes provide a mechanism for
+        transferring shipping information from the Customer master to the
+        quote.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate documents with a quote, select the <guimenuitem>Documents</guimenuitem> tab. The
-  following screen will appear:</para>
+  <para>To associate documents with a quote, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/quote_documents.png" />
+          <imagedata fileref="images/quote_documents.png"/>
         </imageobject>
         <caption>Quote Documents</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view email associated with a quote, select the <guimenuitem>Email</guimenuitem> tab. The
-  following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To view email associated with a quote, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="quoteItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

@@ -9,19 +9,20 @@
     </indexterm>Enter New Customer</title>
   <para>Maintaining detailed customer information is essential to ensuring a
   successful customer relationship. To enter a new customer into the system,
-  select the <guimenuitem>New Customer</guimenuitem> option. The following screen will appear:</para>
+  select the <guimenuitem>New Customer</guimenuitem> option. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer.png" />
+          <imagedata fileref="images/customer.png"/>
         </imageobject>
         <caption>Create New Customer</caption>
       </mediaobject>
     </screenshot></para>
   <tip>
     <para>Customers can also be created from the CRM Account screen. Simply
-    enter a new CRM account, selecting the <guibutton>CUSTOMER</guibutton> relationship
-    option.</para>
+    enter a new CRM account, selecting the <guibutton>CUSTOMER</guibutton>
+    relationship option.</para>
   </tip>
   <para>When creating a new customer, you are presented with the following
   options:</para>
@@ -31,10 +32,11 @@
       <listitem>
         <para>The customer number uniquely identifies the customer. To search
         for an existing customer, use the lookup feature located next to the
-        <guilabel>Customer</guilabel> field. Use the <guibutton>+</guibutton> button to add a new customer. And use the
-        <guibutton>!</guibutton> button if you want to edit the customer number. If the <guibutton>!</guibutton> button
-        is not selected, you will be prevented from editing the customer
-        number.</para>
+        <guilabel>Customer</guilabel> field. Use the <guibutton>+</guibutton>
+        button to add a new customer. And use the <guibutton>!</guibutton>
+        button if you want to edit the customer number. If the
+        <guibutton>!</guibutton> button is not selected, you will be prevented
+        from editing the customer number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -72,7 +74,8 @@
       <primary>customers</primary>
       <secondary>addresses for</secondary>
     </indexterm>To enter contact information for the customer, select the
-  <guimenuitem>Addresses</guimenuitem> tab and choose from the following options:</para>
+  <guimenuitem>Addresses</guimenuitem> tab and choose from the following
+  options:</para>
   <variablelist>
     <varlistentry>
       <term>Billing Contact</term>
@@ -82,7 +85,7 @@
         information. If a new contact is manually entered here, that contact
         will be added automatically to the master list of contacts. For
         additional documentation related to creating contacts, see <xref
-        linkend="contact" />.</para>
+        linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -95,7 +98,7 @@
         additional contact information. If a new contact is manually entered
         here, that contact will be added automatically to the master list of
         contacts. For additional documentation related to creating contacts,
-        see <xref linkend="contact" />.</para>
+        see <xref linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -111,12 +114,12 @@
   <para><indexterm significance="normal">
       <primary>ship-to addresses</primary>
       <secondary>creating new</secondary>
-    </indexterm>To create a new ship-to Address for a customer, select the <guibutton>NEW</guibutton>
-  button. The following screen will appear:</para>
+    </indexterm>To create a new ship-to Address for a customer, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/shipTo.png" />
+          <imagedata fileref="images/shipTo.png"/>
         </imageobject>
         <caption>Ship-To Address</caption>
       </mediaobject>
@@ -175,7 +178,7 @@
         information. If a new address is manually entered here, that address
         will be added automatically to the master list of addresses. For
         additional documentation related to creating addresses, see <xref
-        linkend="address" />.</para>
+        linkend="address"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -186,11 +189,12 @@
       <listitem>
         <para>Manually enter delivery contact information in the fields
         below—or use the lookup feature to select pre-existing contact
-        information. This field should not to be confused with the <guilabel>Name</guilabel>
-        field that appears on the ship-to address label. If a new contact is
-        manually entered here, that contact will be added automatically to the
-        master list of contacts. For additional documentation related to
-        creating contacts, see <xref linkend="contact" />.</para>
+        information. This field should not to be confused with the
+        <guilabel>Name</guilabel> field that appears on the ship-to address
+        label. If a new contact is manually entered here, that contact will be
+        added automatically to the master list of contacts. For additional
+        documentation related to creating contacts, see <xref
+        linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -273,21 +277,22 @@
     <varlistentry>
       <term>General Notes</term>
       <listitem>
-        <para>Select the <guimenuitem>General Notes</guimenuitem> tab to access this scrolling text
-        field with word-wrapping for entering general notes related to the
-        customer ship-to address. These notes are for internal use
-        only.</para>
+        <para>Select the <guimenuitem>General Notes</guimenuitem> tab to
+        access this scrolling text field with word-wrapping for entering
+        general notes related to the customer ship-to address. These notes are
+        for internal use only.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Shipping Notes</term>
       <listitem>
-        <para>Select the <guimenuitem>Shipping Notes</guimenuitem> tab to access this scrolling text
-        field with word-wrapping for entering shipping notes related to the
-        customer ship-to address. Shipping notes are transferred to the
-        <guimenuitem>Shipping Notes</guimenuitem> tab on the Sales Order header whenever a sales Order
-        for the specified ship-to address is entered. Ultimately, shipping
-        notes may be printed on shipping paperwork.</para>
+        <para>Select the <guimenuitem>Shipping Notes</guimenuitem> tab to
+        access this scrolling text field with word-wrapping for entering
+        shipping notes related to the customer ship-to address. Shipping notes
+        are transferred to the <guimenuitem>Shipping Notes</guimenuitem> tab
+        on the Sales Order header whenever a sales Order for the specified
+        ship-to address is entered. Ultimately, shipping notes may be printed
+        on shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -296,35 +301,36 @@
         <para>To associate documents with a ship-to address, select the
         <guimenuitem>Documents</guimenuitem> tab.</para>
         <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
       </listitem>
     </varlistentry>
     <varlistentry role="xtconnect">
       <term>Transmission</term>
       <listitem>
-        <para>Select the <guimenuitem>Transmission</guimenuitem> tab to associate EDI profiles with the
-        ship-to address. EDI profiles are used for transmitting Orders and
-        invoices to customers electronically—via email or FTP. Associating an
-        EDI profile with a ship-to address overrides the association of an EDI
-        profile with the customer.</para>
+        <para>Select the <guimenuitem>Transmission</guimenuitem> tab to
+        associate EDI profiles with the ship-to address. EDI profiles are used
+        for transmitting Orders and invoices to customers electronically—via
+        email or FTP. Associating an EDI profile with a ship-to address
+        overrides the association of an EDI profile with the customer.</para>
         <note>
-          <para role="xtconnect">The buttons on the <guimenuitem>Transmission</guimenuitem> tab are
-          disabled when creating a new ship-to address. If you want to set up
-          EDI for a new ship-to address, save the ship-to address and edit it
-          again.</para>
+          <para role="xtconnect">The buttons on the
+          <guimenuitem>Transmission</guimenuitem> tab are disabled when
+          creating a new ship-to address. If you want to set up EDI for a new
+          ship-to address, save the ship-to address and edit it again.</para>
         </note>
         <xi:include href="../widgets/edirelation.xml"
                     xpointer="edirelationWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To define some of the basic customer settings, select the <guimenuitem>Settings</guimenuitem>
-  tab. The following screen will appear:</para>
+  <para>To define some of the basic customer settings, select the
+  <guimenuitem>Settings</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab.png" />
+          <imagedata fileref="images/customer_settingsTab.png"/>
         </imageobject>
         <caption>Customer Settings Tab</caption>
       </mediaobject>
@@ -362,8 +368,8 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>The following options are available when you select the <guilabel>General</guilabel>
-  option:</para>
+  <para>The following options are available when you select the
+  <guilabel>General</guilabel> option:</para>
   <variablelist>
     <varlistentry>
       <term>Sales Rep</term>
@@ -473,8 +479,8 @@
       <listitem>
         <para>Select to indicate that free-form ship-to addresses may be
         entered when sales Orders are created for the customer. If not
-        selected, you are indicating that free-form ship-to's may not be
-        entered for the customer. Instead, ship-to's must be entered using
+        selected, you are indicating that free-form ship-tos may not be
+        entered for the customer. Instead, ship-tos must be entered using
         predefined information.</para>
       </listitem>
     </varlistentry>
@@ -510,7 +516,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_termsButton.png" />
+          <imagedata fileref="images/customer_settingsTab_termsButton.png"/>
         </imageobject>
         <caption>Customer Terms Options</caption>
       </mediaobject>
@@ -604,9 +610,9 @@
         will prevent users from entering duplicate customer Purchase Order
         numbers—unless the customer is marked as using Blanket POs.</para>
         <note>
-          <para>If the option <guilabel>Uses Purchase Orders</guilabel> is not selected, the
-          system will place no restrictions on customer Purchase Order
-          numbers.</para>
+          <para>If the option <guilabel>Uses Purchase Orders</guilabel> is not
+          selected, the system will place no restrictions on customer Purchase
+          Order numbers.</para>
         </note>
         <variablelist>
           <varlistentry>
@@ -703,7 +709,7 @@
         <para>Select to specify an alternate number of grace days for the
         customer, to override the global grace period defined at the system
         level in the Accounting configuration. To learn more about configuring
-        grace days, see <xref linkend="configureGL" />.</para>
+        grace days, see <xref linkend="configureGL"/>.</para>
         <variablelist>
           <varlistentry>
             <term>Grace Days</term>
@@ -718,12 +724,12 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To specify tax-related information for the customer, select the <guilabel>Tax</guilabel>
-  option. The following screen will appear:</para>
+  <para>To specify tax-related information for the customer, select the
+  <guilabel>Tax</guilabel> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_taxButton.png" />
+          <imagedata fileref="images/customer_settingsTab_taxButton.png"/>
         </imageobject>
         <caption>Customer Tax Options</caption>
       </mediaobject>
@@ -757,12 +763,12 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add a new customer tax registration number, select the <guibutton>NEW</guibutton> button.
-  The following screen will appear:</para>
+  <para>To add a new customer tax registration number, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxRegistration.png" />
+          <imagedata fileref="images/taxRegistration.png"/>
         </imageobject>
         <caption>Customer Tax Registration Information</caption>
       </mediaobject>
@@ -849,11 +855,12 @@
       <primary>customers</primary>
       <secondary>credit cards for</secondary>
     </indexterm>To specify Credit Card information for the customer, select
-  the <guilabel>Credit Cards</guilabel> option. The following screen will appear:</para>
+  the <guilabel>Credit Cards</guilabel> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_creditcardsButton.png" />
+          <imagedata fileref="images/customer_settingsTab_creditcardsButton.png"/>
         </imageobject>
         <caption>Customer Credit Cards</caption>
       </mediaobject>
@@ -894,12 +901,12 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new credit card record for a customer, select the <guibutton>NEW</guibutton>
-  button. The following screen will appear:</para>
+  <para>To create a new credit card record for a customer, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditCard.png" />
+          <imagedata fileref="images/creditCard.png"/>
         </imageobject>
         <caption>Create New Credit Card Record</caption>
       </mediaobject>
@@ -951,7 +958,7 @@
         However, you may specify an alternate billing address for the Credit
         Card record using the address lookup feature located in the lower
         right-hand corner of the screen. For additional documentation related
-        to creating addresses, see <xref linkend="address" />.</para>
+        to creating addresses, see <xref linkend="address"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -986,11 +993,12 @@
   Preferences" or "Buying Season." These constitute static descriptions which
   are not processed by the system, but are useful for informational purposes.
   To enter characteristics associated with a customer, select the
-  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_tabCharacteristics.png" />
+          <imagedata fileref="images/customer_tabCharacteristics.png"/>
         </imageobject>
         <caption>Customer Characteristics</caption>
       </mediaobject>
@@ -1008,14 +1016,14 @@
   </tip>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>Every customer record is linked to a CRM account. To view information
-  related to the customer's CRM account, select the <guimenuitem>CRM</guimenuitem> tab. The following
-  screen will appear:</para>
+  related to the customer's CRM account, select the
+  <guimenuitem>CRM</guimenuitem> tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_crmTab.png" />
+          <imagedata fileref="images/customer_crmTab.png"/>
         </imageobject>
         <caption>CRM Information</caption>
       </mediaobject>
@@ -1031,7 +1039,7 @@
         adding new contacts or attaching/detaching contacts from the account.
         Any changes made here also update the CRM account record. For
         additional documentation related to managing a contacts associated
-        with a CRM account, see <xref linkend="crmaccount" />.</para>
+        with a CRM account, see <xref linkend="crmaccount"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1041,16 +1049,17 @@
         this screen you can manage all of the to-dos, opportunities, and
         incidents related to the account. Any changes made here also update
         the main to-do list. For additional documentation related to managing
-        the to-do list, see <xref linkend="todoList" />.</para>
+        the to-do list, see <xref linkend="todoList"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To manage or review a customer's sales activity, select the <guimenuitem>Sales</guimenuitem>
-  tab. The following screen will appear:</para>
+  <para>To manage or review a customer's sales activity, select the
+  <guimenuitem>Sales</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_salesTab.png" />
+          <imagedata fileref="images/customer_salesTab.png"/>
         </imageobject>
         <caption>Customer Sales Information</caption>
       </mediaobject>
@@ -1064,8 +1073,9 @@
         <para>Select to view high-level sales history information for the
         customer, including year-to-date sales, last year sales, total backlog
         value, and more. For more detailed customer sales history, see the
-        wide range of sales analysis options available in the <guimenu>Sales</guimenu> module
-        menu here: <guimenuitem>Sales &gt; Analysis</guimenuitem>.</para>
+        wide range of sales analysis options available in the
+        <guimenu>Sales</guimenu> module menu here: <guimenuitem>Sales &gt;
+        Analysis</guimenuitem>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1074,9 +1084,9 @@
         <para>Select to view the list of quotes associated with the customer.
         On this screen you can create new quotes or edit existing ones. You
         may also view historical quotes converted to sales Orders or invoices
-        if your <guimenu>Sales</guimenu> module is configured to allow this. For additional
-        documentation related to entering quotes for customers, please see
-        <xref linkend="quote" />.</para>
+        if your <guimenu>Sales</guimenu> module is configured to allow this.
+        For additional documentation related to entering quotes for customers,
+        please see <xref linkend="quote"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1085,7 +1095,7 @@
         <para>Select to view the list of sales Orders associated with the
         customer. On this screen you can create new sales Orders or edit
         existing ones. For additional documentation related to entering sales
-        Orders for customers, please see <xref linkend="salesOrder" />.</para>
+        Orders for customers, please see <xref linkend="salesOrder"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="standard">
@@ -1095,16 +1105,17 @@
         screen you can manage most aspects of the returns process—from
         creating new return authorizations to processing Credit Memos. For
         additional documentation related to managing return authorizations,
-        please see <xref linkend="returnAuthorization" />.</para>
+        please see <xref linkend="returnAuthorization"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>To manage or review accounting information for the customer, select
-  the <guimenuitem>Accounting</guimenuitem> tab. The following screen will appear:</para>
+  the <guimenuitem>Accounting</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_accountingTab.png" />
+          <imagedata fileref="images/customer_accountingTab.png"/>
         </imageobject>
         <caption>Customer Accounting Information</caption>
       </mediaobject>
@@ -1120,10 +1131,10 @@
         Receivables process—from creating new Receivable documents (e.g.,
         invoices, Credit Memos, etc.) to printing out customer statements. For
         additional documentation related to managing customer Receivables, see
-        <xref linkend="dspAROpenItems" />.</para>
+        <xref linkend="dspAROpenItems"/>.</para>
         <tip>
           <para>You can void posted invoices and returns on the open
-          receivables screen?as long as they are unapplied.</para>
+          receivables screen—as long as they are unapplied.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -1134,9 +1145,9 @@
         customer. On this screen you can view cash receipt and cash
         application history, as well as enter new cash receipts for the
         customer. For additional documentation related to cash receipt
-        history, see <xref linkend="dspCashReceipts" />. And for detailed
+        history, see <xref linkend="dspCashReceipts"/>. And for detailed
         information about entering cash receipts, see <xref
-        linkend="cashReceipt" />.</para>
+        linkend="cashReceipt"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1147,7 +1158,7 @@
         transaction history, authorize credit card pre-authorizations, and
         print credit card receipts. For additional documentation related to
         credit card history and the method for processing pre-authorizations,
-        see <xref linkend="arWorkBench" />.</para>
+        see <xref linkend="arWorkBench"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1157,21 +1168,23 @@
     </indexterm><indexterm significance="normal">
       <primary>customers</primary>
       <secondary>documents associated with</secondary>
-    </indexterm>associate documents with a Customer, select the <guimenuitem>Documents</guimenuitem>
-  tab. The following screen will appear:<mediaobject>
+    </indexterm>associate documents with a Customer, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/customer_documentsTab.png" />
+        <imagedata fileref="images/customer_documentsTab.png"/>
       </imageobject>
       <caption><para>Customer Documents</para></caption>
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To enter remarks (e.g., notes and comments) related to the customer,
-  select the <guimenuitem>Remarks</guimenuitem> tab. The following screen will appear:</para>
+  select the <guimenuitem>Remarks</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_tabRemarks.png" />
+          <imagedata fileref="images/customer_tabRemarks.png"/>
         </imageobject>
         <caption>Customer Notes</caption>
       </mediaobject>
@@ -1192,46 +1205,48 @@
       <term>Comments</term>
       <listitem>
         <para>Select to review or add comments related to the customer. Any
-        comments entered elsewhere in the <guimenu>CRM</guimenu> module related to the customer's
-        CRM account will also be shown here.</para>
+        comments entered elsewhere in the <guimenu>CRM</guimenu> module
+        related to the customer's CRM account will also be shown here.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para role="xtconnect">The Electronic Data Interchange (EDI) system enables
   you to send quotes, sales Orders, Credit Memos, Receivables Statements, and
   Invoices electronically to your customers. To establish a customer's EDI
-  preferences, select the <guimenuitem>Transmission</guimenuitem> tab. The following screen will
-  appear:</para>
+  preferences, select the <guimenuitem>Transmission</guimenuitem> tab. The
+  following screen will appear:</para>
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_transmitTab.png" />
+          <imagedata fileref="images/customer_transmitTab.png"/>
         </imageobject>
         <caption>Transmission Information for EDI</caption>
       </mediaobject>
     </screenshot></para>
   <note role="xtconnect">
-    <para>The buttons on the <guimenuitem>Transmission</guimenuitem> tab are disabled when creating a
-    new customer. If you want to set up EDI for a new customer, save the
-    customer and edit it again.</para>
+    <para>The buttons on the <guimenuitem>Transmission</guimenuitem> tab are
+    disabled when creating a new customer. If you want to set up EDI for a new
+    customer, save the customer and edit it again.</para>
   </note>
   <xi:include href="../widgets/edirelation.xml" xpointer="edirelationWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view email associated with the customer, select the <guimenuitem>Email</guimenuitem> tab.
-  The following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To view email associated with the customer, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para role="standard"><indexterm significance="normal">
       <primary>dashboards</primary>
       <secondary>for customers</secondary>
     </indexterm>To view the Dashboard associated with the customer, select the
-  <guimenuitem>Dashboard</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Dashboard</guimenuitem> tab. The following screen will
+  appear:</para>
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_dashboardTab.png" />
+          <imagedata fileref="images/customer_dashboardTab.png"/>
         </imageobject>
         <caption>Customer Workbench Dashboard</caption>
       </mediaobject>
@@ -1293,5 +1308,5 @@
       </varlistentry>
     </variablelist></para>
   <xi:include href="../widgets/dashboardPane.xml" xpointer="dashboardsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

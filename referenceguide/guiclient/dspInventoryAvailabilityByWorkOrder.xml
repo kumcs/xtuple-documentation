@@ -5,105 +5,82 @@
 <section id="dspInventoryAvailabilityByWorkOrder">
   <title><indexterm significance="normal">
       <primary>work orders</primary>
-
       <secondary>material availability by</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>materials</primary>
-
       <secondary>w/o availability and</secondary>
     </indexterm>Inventory Availability by Work Order</title>
-
-  <para>To view inventory availability by work order, select the <guimenuitem>Inventory
-  Availability by Work Order</guimenuitem> option. The following screen will appear:</para>
-
+  <para>To view inventory availability by work order, select the
+  <guimenuitem>Inventory Availability by Work Order</guimenuitem> option. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspInventoryAvailabilityByWorkOrder.png"/>
         </imageobject>
-
         <caption>Inventory Availability by Work Order</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When displaying inventory availability by work order, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Work Order #</term>
-
       <listitem>
         <para>Enter the work order number of the work order whose inventory
         availability you want to view.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Site</term>
-
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Status</term>
-
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Method</term>
-
       <listitem>
         <para>Indicates work order method is either assembly or
         disassembly.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>All Materials</term>
-
       <listitem>
         <para>Select to include all inventory availability, including items
         showing shortages and insufficient inventory.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Shortages</term>
-
       <listitem>
         <para>Select to include only inventory which is short in the display.
-        inventory is considered short if its availability is negative</para>
+        Inventory is considered short if its availability is negative.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Insufficient Inventory</term>
-
       <listitem>
         <para>Select to include only inventory having insufficient inventory
         in the display. Inventory is considered insufficient if existing
@@ -113,36 +90,28 @@
         Insufficient inventory has positive availability.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Parent Work Order Only</term>
-
       <listitem>
         <para>Select to include only parent work orders in the display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Summarized Parent/Child Work Orders</term>
-
       <listitem>
         <para>Select to include a summarized view of materials for all related
         work orders.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Indented Work Orders</term>
-
       <listitem>
         <para>Select to show child work orders as nested in an indented list
         below the parent work order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Work Order Material Availability</term>
-
       <listitem>
         <para>Display lists inventory availability by work order, using the
         specified parameters. The display is color-coded for ease of use.

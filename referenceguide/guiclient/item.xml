@@ -7,12 +7,12 @@
       <primary>items</primary>
       <secondary>creating new</secondary>
     </indexterm>Enter New Item</title>
-  <para>To enter a new item into your system, select the <guimenuitem>Enter New Item</guimenuitem>
-  option. The following screen will appear:</para>
+  <para>To enter a new item into your system, select the <guimenuitem>Enter
+  New Item</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item.png" />
+          <imagedata fileref="images/item.png"/>
         </imageobject>
         <caption>Create New Item</caption>
       </mediaobject>
@@ -122,7 +122,7 @@
               manufactured items. Use the job costing option at the item site
               level to distinguish job items from regular manufactured items.
               For more information about the job costing option, please see
-              <xref linkend="itemSiteJobItem" />.</para>
+              <xref linkend="itemSiteJobItem"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -166,7 +166,7 @@
               value for a costing element. When a user-defined costing element
               is linked to a costing item, the costing element assumes the
               costs associated with the costing item. For more information,
-              see <xref linkend="costingElements" />.</para>
+              see <xref linkend="costingElements"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -180,8 +180,8 @@
               reusable mold, apparatus, fixture, or tool. It may be included
               on a bill of materials for an item, usually specifying a fixed
               quantity. Tooling items can be purchased, manufactured, or sold.
-              A manufactured tool can have a routing, a BOM, and a work order. As
-              with other material items, tools can be tracked as serialized
+              A manufactured tool can have a routing, a BOM, and a work order.
+              As with other material items, tools can be tracked as serialized
               items. The cost of a tooling item is not included in the overall
               cost of the parent item where it is used.</para>
             </listitem>
@@ -234,8 +234,8 @@
               authorization—and they are view-only. Also, Kit components will
               appear on the pick list report. Kit components may be issued to
               shipping, whereas the parent Kit item may not be. The automatic
-              <guilabel>Select for Billing</guilabel> option takes effect for kit items when all
-              Kit items are shipped.</para>
+              <guilabel>Select for Billing</guilabel> option takes effect for
+              kit items when all Kit items are shipped.</para>
               <note>
                 <para>The cost of sales (COS) account for Kit items is
                 directed to the sales account assignment mappings of the Kit's
@@ -243,7 +243,7 @@
                 components inherit the same COS account used by the parent Kit
                 item. You can read more about configuring your system for COS
                 inheritance for Kit items here: <xref
-                linkend="configureIM" />.</para>
+                linkend="configureIM"/>.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -346,9 +346,9 @@
         manufacturing or purchasing) unless this option is selected.</para>
         <tip>
           <para>If you will ever use the item in fractional quantities, then
-          the <guilabel>Fractional</guilabel> option must be selected. If it is not selected, the
-          system will never let you use fractional quantities of the
-          item.</para>
+          the <guilabel>Fractional</guilabel> option must be selected. If it
+          is not selected, the system will never let you use fractional
+          quantities of the item.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -401,9 +401,9 @@
             <listitem>
               <para>Specify the list price for the item, based on the selling
               UOM (i.e., "Per" UOM). List prices may also be created and
-              modified in the item Pricing section of the <guimenu>Sales</guimenu> module.
-              Changes made to the list price in either location will be
-              updated system-wide.</para>
+              modified in the item Pricing section of the
+              <guimenu>Sales</guimenu> module. Changes made to the list price
+              in either location will be updated system-wide.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -415,7 +415,7 @@
               <para>Specify the wholesale price for the item. The wholesale
               price may be used as the unit cost for markup purposes,
               depending on your pricing configuration. For more information,
-              please see <xref linkend="WholesaleMarkup" />.</para>
+              please see <xref linkend="WholesaleMarkup"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -428,8 +428,8 @@
               The list price should be based on this selection. By default,
               the inventory UOM will be used here. You will not be able to
               select a different UOM until you first manually create a selling
-              UOM using the options found under the <guimenuitem>UOM</guimenuitem> tab on the Item
-              master.</para>
+              UOM using the options found under the
+              <guimenuitem>UOM</guimenuitem> tab on the Item master.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -515,13 +515,14 @@
           <varlistentry>
             <term>Extended Description</term>
             <listitem>
-              <para>The <guilabel>Extended Description</guilabel> field is for entering descriptive
-              item information, which may be printed on sales and/or
-              purchasing documents. You would add the Extended Description to
-              printed documents using the report writer. The report writer
-              enables you to customize forms to include data stored in the
-              database. To enter an Extended Description of an item, select
-              the <guilabel>Extended Description</guilabel> option.</para>
+              <para>The <guilabel>Extended Description</guilabel> field is for
+              entering descriptive item information, which may be printed on
+              sales and/or purchasing documents. You would add the Extended
+              Description to printed documents using the report writer. The
+              report writer enables you to customize forms to include data
+              stored in the database. To enter an Extended Description of an
+              item, select the <guilabel>Extended Description</guilabel>
+              option.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -584,11 +585,12 @@
       <primary>items</primary>
       <secondary>characteristics for</secondary>
     </indexterm>Characteristics associated with an item, select the
-  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_characteristicsTab.png" />
+        <imagedata fileref="images/item_characteristicsTab.png"/>
       </imageobject>
       <caption>Item Characteristics</caption>
     </mediaobject>
@@ -602,14 +604,15 @@
     </tip></para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>For visibility into costs and bill of materials associated with
-  items—and to perform routine cost and BOM maintenance—select the <guimenuitem>Cost</guimenuitem> tab.
-  The following screen will appear:</para>
+  items—and to perform routine cost and BOM maintenance—select the
+  <guimenuitem>Cost</guimenuitem> tab. The following screen will
+  appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_costTab.png" />
+        <imagedata fileref="images/item_costTab.png"/>
       </imageobject>
       <caption>Item Cost</caption>
     </mediaobject>
@@ -621,7 +624,7 @@
       <listitem>
         <para>Select this option to maintain item cost elements. For more
         information on maintaining item costs, please see <xref
-        linkend="maintainItemCosts" />.</para>
+        linkend="maintainItemCosts"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -629,7 +632,7 @@
       <listitem>
         <para>Select this option to maintain the bill of materials. For more
         detailed information on maintaining bills of materials, please see
-        <xref linkend="boms" />.</para>
+        <xref linkend="boms"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -657,11 +660,12 @@
       <primary>units of measure</primary>
       <secondary>associating with items</secondary>
     </indexterm> Units of measure associated with an item, select the
-  <guimenuitem>Conversions</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Conversions</guimenuitem> tab. The following screen will
+  appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_tabUOM.png" />
+        <imagedata fileref="images/item_tabUOM.png"/>
       </imageobject>
       <caption><para>Item Conversions</para></caption>
     </mediaobject>
@@ -672,7 +676,7 @@
       <listitem>
         <para>Display lists the UOM Conversions defined for the item (if any)
         and where these conversions are used. Global conversion ratios are
-        defined in <xref linkend="uomConv" />.</para>
+        defined in <xref linkend="uomConv"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -682,12 +686,12 @@
     </indexterm><indexterm significance="normal">
       <primary>items</primary>
       <secondary>alternate uoms for</secondary>
-    </indexterm>To define an alternate item UOM, select the <guibutton>NEW</guibutton> button. The
-  following screen will appear:</para>
+    </indexterm>To define an alternate item UOM, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/itemUOM.png" />
+        <imagedata fileref="images/itemUOM.png"/>
       </imageobject>
       <caption><para>Unit of Measure Definition</para></caption>
     </mediaobject>
@@ -788,7 +792,7 @@
               items that use different inventory UOMs. For example, let's say
               that item A is a carton containing 24 item B"s—and that you sell
               both items. However, item A and item B use different inventory
-              UOMs. item A is measured by the CASE (24), and item B is
+              UOMs. Item A is measured by the CASE (24), and item B is
               measured by EACH. By utilizing the Capacity UOM, you have the
               ability to track total load and total sales for item B—even
               though the inventory UOM for item A obscures the quantity of
@@ -856,11 +860,12 @@
     </varlistentry>
   </variablelist>
   <para>To view, add, or edit item sites associated with an item, select the
-  <guimenuitem>Sites</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Sites</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item_itemsitesTab.png" remap="" />
+          <imagedata fileref="images/item_itemsitesTab.png" remap=""/>
         </imageobject>
         <caption>Item Sites for the Item</caption>
       </mediaobject>
@@ -870,15 +875,15 @@
       <term>Item Sites</term>
       <listitem>
         <para>Display lists item sites for the specified item. For more
-        information, see <xref linkend="itemSite" />.</para>
+        information, see <xref linkend="itemSite"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view the vendor item sources for an item select the <guimenuitem>Sources</guimenuitem>
-  tab.</para>
+  <para>To view the vendor item sources for an item select the
+  <guimenuitem>Sources</guimenuitem> tab.</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/item_sourcesTab.png" remap="" />
+      <imagedata fileref="images/item_sourcesTab.png" remap=""/>
     </imageobject>
     <caption>Sources for the Item</caption>
   </mediaobject>
@@ -889,17 +894,18 @@
         <para>Displays list of item sources and associated vendors. You may
         also add new item sources for an item on this screen. For additional
         documentation related to setting up item sources for an item, see
-        <xref linkend="itemSource" />.</para>
+        <xref linkend="itemSource"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>The tax policy for an item is determined by how its tax type settings
-  are configured. To associate tax types with an item, select the <guimenuitem>Tax Types</guimenuitem>
-  tab. The following screen will appear:</para>
+  are configured. To associate tax types with an item, select the
+  <guimenuitem>Tax Types</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item_taxtypesTab.png" />
+          <imagedata fileref="images/item_taxtypesTab.png"/>
         </imageobject>
         <caption>Item Tax Types</caption>
       </mediaobject>
@@ -916,12 +922,12 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new tax type definition, select the <guibutton>NEW</guibutton> button. The
-  following screen will appear:</para>
+  <para>To create a new tax type definition, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemtax.png" />
+          <imagedata fileref="images/itemtax.png"/>
         </imageobject>
         <caption>Create New Tax Type</caption>
       </mediaobject>
@@ -938,8 +944,9 @@
         <para>Specify the tax zone you want to associate with the specified
         tax type. Creating a relationship between a tax zone and a tax type
         enables you to determine how tax will be applied when processing
-        transactions using the item. If you select the <guilabel>Any</guilabel> option, this
-        means any defined tax zone is a possible match.</para>
+        transactions using the item. If you select the
+        <guilabel>Any</guilabel> option, this means any defined tax zone is a
+        possible match.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -956,8 +963,8 @@
         services into taxable categories. Creating a relationship between a
         tax zone and a tax type enables you to determine how tax will be
         applied when processing transactions using the item. If you select the
-        <guilabel>Any</guilabel> option, this means any defined tax type is a possible
-        match.</para>
+        <guilabel>Any</guilabel> option, this means any defined tax type is a
+        possible match.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -977,12 +984,13 @@
   linking the customer's external Part number to your own internal item
   number. The item alias acts as an alternate identifier. In this way, items
   may be located using either internal or external item information. To
-  associate an item alias with an item, select the <guimenuitem>Relationships</guimenuitem> tab. The
-  following screen will appear:</para>
+  associate an item alias with an item, select the
+  <guimenuitem>Relationships</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item_relationshipsTab.png" />
+          <imagedata fileref="images/item_relationshipsTab.png"/>
         </imageobject>
         <caption>Item Relationships</caption>
       </mediaobject>
@@ -1002,12 +1010,12 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create an item alias, select the <guibutton>NEW</guibutton> button. The following screen
-  will appear:</para>
+  <para>To create an item alias, select the <guibutton>NEW</guibutton> button.
+  The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemAlias.png" />
+          <imagedata fileref="images/itemAlias.png"/>
         </imageobject>
         <caption>Create New Item Alias</caption>
       </mediaobject>
@@ -1047,8 +1055,8 @@
         </indexterm>Use an Alias Description on Billing and Shipping
       Paperwork</term>
       <listitem>
-        <para>Select to include an item alias
-        description on billing and shipping paperwork.</para>
+        <para>Select to include an item alias description on billing and
+        shipping paperwork.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1093,12 +1101,12 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new item Substitute, select the <guibutton>NEW</guibutton> button. The following
-  screen will appear:</para>
+  <para>To create a new item Substitute, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSubstitute.png" />
+          <imagedata fileref="images/itemSubstitute.png"/>
         </imageobject>
         <caption>Create New Item Substitute</caption>
       </mediaobject>
@@ -1183,13 +1191,14 @@
     </indexterm><indexterm significance="normal">
       <primary>items</primary>
       <secondary>documents associated with</secondary>
-    </indexterm>associate documents with an item, select the <guimenuitem>Documents</guimenuitem> tab.
-  The following screen will appear:<mediaobject>
+    </indexterm>associate documents with an item, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_documentsTab.png" />
+        <imagedata fileref="images/item_documentsTab.png"/>
       </imageobject>
       <caption><para>Item Documents</para></caption>
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

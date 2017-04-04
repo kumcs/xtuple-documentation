@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="shippingZones">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>shipping zones</primary>
       <secondary>master list of</secondary>
     </indexterm> <indexterm significance="normal">
@@ -14,22 +14,21 @@
       <secondary>for shipping</secondary>
     </indexterm>Shipping Zones</title>
   <para>Shipping zones are used to define geographic regions into which sold
-  items are shipped. sales orders are linked to shipping zones through the
+  items are shipped. Sales orders are linked to shipping zones through the
   Ship-To Address master. This assignment of shipping zones to sales order
   enables you to analyze sales activity by geographic region. To access the
-  master list of shipping zones, select the <guimenuitem>Shipping Zones</guimenuitem> option. The
-  following screen will appear:</para>
-  <para>
-<screenshot>
+  master list of shipping zones, select the <guimenuitem>Shipping
+  Zones</guimenuitem> option. The following screen will appear:</para>
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/shippingZones.png"/>
         </imageobject>
         <caption>Shipping Zones Master List</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
   <para>The Shipping Zones master list displays the name and description of
   all existing shipping zones.</para>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="shippingZone.xml" xpointer="element(/1)"/>
+  <xi:include href="shippingZone.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
