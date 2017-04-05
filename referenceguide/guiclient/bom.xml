@@ -78,23 +78,23 @@
       <listitem>
         <para>If revision control is enabled at your site, specify the bill of
         materials revision number you want to view. If none exists, simply
-        enter a value to create one. The status of the Revision will also be
-        displayed. The following statuses apply to Revisions:</para>
+        enter a value to create one. The status of the revision will also be
+        displayed. The following statuses apply to revisions:</para>
         <variablelist>
           <varlistentry>
             <term>Active</term>
             <listitem>
-              <para>This is the current, default Revision used for costing and
-              material requirements planning (MRP). Only one Revision can be
-              active at the same time. Active Revisions may be modified.
-              However, once a Revision has been deactivated, it may only be
+              <para>This is the current, default revision used for costing and
+              material requirements planning (MRP). Only one revision can be
+              active at the same time. Active revisions may be modified.
+              However, once a revision has been deactivated, it may only be
               reactivated if you have enabled the configuration option to
-              allow for substitute Revisions.</para>
+              allow for substitute revisions.</para>
               <tip>
-                <para>The active Revision becomes inactive when a pending or
-                substitute Revision is activated. To activate a pending or
-                substitute Revision, right-click on the magnifying glass next
-                to the item number and select "Activate". Inactive Revisions
+                <para>The active revision becomes inactive when a pending or
+                substitute revision is activated. To activate a pending or
+                substitute revision, right-click on the magnifying glass next
+                to the item number and select "Activate". Inactive revisions
                 cannot be modified.</para>
               </tip>
             </listitem>
@@ -102,36 +102,36 @@
           <varlistentry>
             <term>Pending</term>
             <listitem>
-              <para>This is a Revision that has never been used, but is under
+              <para>This is a revision that has never been used, but is under
               development or consideration. You may store multiple pending
-              Revisions. When a pending Revision is entered in the <guilabel>Revision</guilabel>
+              revisions. When a pending revision is entered in the <guilabel>Revision</guilabel>
               field, an option to activate the item will dynamically appear in
               the context menu after you right-click on the magnifying glass
               next to the item number. Select "Activate" from this context
-              menu to convert a pending Revision to the active
-              Revision.</para>
+              menu to convert a pending revision to the active
+              revision.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Substitute</term>
             <listitem>
               <para>If you have enabled the configuration option to allow for
-              substitute Revisions, this status will be available. If enabled,
-              any active Revision will become a substitute Revision when it is
-              deactivated. Substitute Revisions serve as alternate Revisions
+              substitute revisions, this status will be available. If enabled,
+              any active revision will become a substitute revision when it is
+              deactivated. Substitute revisions serve as alternate revisions
               which can be activated at a later date.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Inactive</term>
             <listitem>
-              <para>This is a formerly active Revision. Inactive Revisions
+              <para>This is a formerly active revision. Inactive revisions
               cannot be modified—only viewed. They are stored to provide
               historical, point-in-time build information, which may be used
               for various purposes throughout the application. For example,
-              privileged users may select inactive Revisions when processing
+              privileged users may select inactive revisions when processing
               work orders or purchase orders. There is no limit to the number
-              of inactive Revisions you may save.</para>
+              of inactive revisions you may save.</para>
             </listitem>
           </varlistentry>
         </variablelist>
