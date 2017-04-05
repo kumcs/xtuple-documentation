@@ -5,93 +5,123 @@
 <section id="searchForEmp">
   <title><indexterm significance="normal">
       <primary>employees</primary>
+
       <secondary>searching for</secondary>
     </indexterm>Search for Employee</title>
-  <para>To search for an employee, select the <guimenuitem>Search for Employee</guimenuitem> option.
-  The following screen will appear:</para>
+
+  <para>To search for an employee, select the <guimenuitem>Search for
+  Employee</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/searchForEmp.png" />
+          <imagedata fileref="images/searchForEmp.png"/>
         </imageobject>
+
         <caption>Search for Employee</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When searching to retrieve employee information from the database, you
   are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Search for</term>
+
       <listitem>
         <para>Enter any character or combination of characters you want to
-        match, followed by the <guibutton>TAB</guibutton> key. The <guilabel>Search for</guilabel> field supports
-        pattern matching with regular expressions.</para>
+        match, followed by the <guibutton>TAB</guibutton> key. The
+        <guilabel>Search for</guilabel> field supports pattern matching with
+        regular expressions.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>Hitting the <guibutton>TAB</guibutton> key activates the search operation.</para>
+    <para>Hitting the <guibutton>TAB</guibutton> key activates the search
+    operation.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>Show Inactive Employees</term>
+
       <listitem>
         <para>Select to show inactive employees as well as active employees.
         By default, inactive employees are not displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
         <para>Select to show employees who have permissions for all
         sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
         <para>Select to show employees who have permissions only for site
         specified from drop down list.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Search through</term>
+
       <listitem>
         <para>Specify which of the following criteria you want to include in
         the search:</para>
+
         <variablelist>
           <varlistentry>
             <term>Employee Codes</term>
+
             <listitem>
               <para>Select to search by employee code.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Employee Numbers</term>
+
             <listitem>
               <para>Select to search by employee number.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Employee Name</term>
+
             <listitem>
               <para>Select to search by employee name.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Manager Codes and Numbers</term>
+
             <listitem>
-              <para>Select to search by Manager codes and numbers.</para>
+              <para>Select to search by manager codes and numbers.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Departments</term>
+
             <listitem>
               <para>Select to search by department.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="manufacturing">
             <term>Shifts</term>
+
             <listitem>
               <para>Select to search by shift.</para>
             </listitem>
@@ -99,8 +129,10 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Employees</term>
+
       <listitem>
         <para>Display will show search results for employees, using specified
         parameters.</para>

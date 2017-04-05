@@ -5,8 +5,10 @@
 <section id="package">
   <title><indexterm significance="normal">
       <primary>packages</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Package</title>
+
   <para>Once a package has been loaded into xTuple ERP, you have the ability
   to review the package's contents using the Package screen. You won't be able
   to edit the package, because package details are defined at the package
@@ -15,56 +17,73 @@
   the <ulink
   url="http://wiki.xtuple.org/CreateUpdaterPackages">CreateUpdaterPackages</ulink>
   wiki page.</para>
-  <para>To view the details of a specific package, select the <guibutton>VIEW</guibutton> button from
-  the Packages master list. The following screen will appear:</para>
+
+  <para>To view the details of a specific package, select the
+  <guibutton>VIEW</guibutton> button from the Packages master list. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/package.png" />
+          <imagedata fileref="images/package.png"/>
         </imageobject>
+
         <caption>View Package</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When viewing a package, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Displays the name of the package, as defined in the
         <code>package.xml</code> file.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Version</term>
+
       <listitem>
         <para>Displays the package version, as defined in the
         <code>package.xml</code> file.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Displays the Package description, as defined in the
+        <para>Displays the package description, as defined in the
         <code>package.xml</code> file.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Developer</term>
+
       <listitem>
-        <para>Displays the name Package developer, as defined in the
+        <para>Displays the name package developer, as defined in the
         <code>package.xml</code> file. The name used could be an individual or
         a company name.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Enabled</term>
+
       <listitem>
         <para>Indicates whether the package is enabled or disabled.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Modifications Allowed</term>
+
       <listitem>
         <para>Indicates whether users with sufficient privilege are allowed to
         modify contents of this package. This is used to switch between
@@ -73,85 +92,108 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>Displays any notes related to the package, as defined in the
         <code>package.xml</code> file.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To review the contents included in a package, select the <guimenuitem>Contents</guimenuitem>
-  tab at the top of the Package screen. The following screen will
-  appear:</para>
+
+  <para>To review the contents included in a package, select the
+  <guimenuitem>Contents</guimenuitem> tab at the top of the Package screen.
+  The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/package_recordsTab.png" />
+          <imagedata fileref="images/package_recordsTab.png"/>
         </imageobject>
+
         <caption>Package Contents</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The Contents screen displays a directory listing of all the components
   contained in the Package. Packages may include any of the following:</para>
+
   <itemizedlist>
     <listitem>
-      <para>user interface forms</para>
+      <para>User interface forms</para>
     </listitem>
+
     <listitem>
-      <para>application scripts</para>
+      <para>Application scripts</para>
     </listitem>
+
     <listitem>
-      <para>images</para>
+      <para>Images</para>
     </listitem>
+
     <listitem>
-      <para>report definitions</para>
+      <para>Report definitions</para>
     </listitem>
+
     <listitem>
       <para>MetaSQL statements</para>
     </listitem>
+
     <listitem>
-      <para>tables</para>
+      <para>Tables</para>
     </listitem>
+
     <listitem>
-      <para>views</para>
+      <para>Views</para>
     </listitem>
+
     <listitem>
-      <para>stored procedures</para>
+      <para>Stored procedures</para>
     </listitem>
+
     <listitem>
-      <para>application privileges</para>
+      <para>Application privileges</para>
     </listitem>
+
     <listitem>
-      <para>custom commands</para>
+      <para>Custom commands</para>
     </listitem>
   </itemizedlist>
+
   <para>To review a list of any packages required to load the package, select
-  the <guimenuitem>Requirements</guimenuitem> tab at the top of the screen. The following screen will
-  appear:</para>
+  the <guimenuitem>Requirements</guimenuitem> tab at the top of the screen.
+  The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/package_requirementsTab.png" />
+          <imagedata fileref="images/package_requirementsTab.png"/>
         </imageobject>
+
         <caption>Package Requirements</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The Requirements list displays information on all packages required
-  to load the package, including package name, description, and
-  version.</para>
+
+  <para>The Requirements list displays information on all packages required to
+  load the package, including package name, description, and version.</para>
+
   <para>To review a list of any packages which depend on the package, select
-  the <guimenuitem>Dependencies</guimenuitem> tab at the top of the screen. The following screen will
-  appear:</para>
+  the <guimenuitem>Dependencies</guimenuitem> tab at the top of the screen.
+  The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/package_dependenciesTab.png" />
+          <imagedata fileref="images/package_dependenciesTab.png"/>
         </imageobject>
+
         <caption>Package Dependencies</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The Dependencies list displays information on all packages dependent
   on this package including, package name, description, and version.</para>
 </section>

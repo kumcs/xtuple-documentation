@@ -5,41 +5,52 @@
 <section id="ediProfileManager" role="xtconnect">
   <title><indexterm significance="normal">
       <primary>profiles</primary>
+
       <secondary>managing assignments for</secondary>
     </indexterm><indexterm significance="normal">
       <primary>electronic data interchange</primary>
+
       <secondary>managing assignments for</secondary>
     </indexterm><indexterm significance="normal">
       <primary>email</primary>
+
       <secondary>management of</secondary>
     </indexterm>Manage EDI Profile Assignments</title>
+
   <para>EDI profiles can be assigned at the record level (i.e., on customer,
   prospect, tax authority or vendor records). However, you may need at times
   to also manage EDI profiles and their recipient assignments at a global
   level. To access the utility for managing EDI profile assignments, select
-  the <guimenuitem>Manage EDI Profile Assignments</guimenuitem> option. The following screen will
-  appear:</para>
+  the <guimenuitem>Manage EDI Profile Assignments</guimenuitem> option. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediProfileManager.png" />
+          <imagedata fileref="images/ediProfileManager.png"/>
         </imageobject>
+
         <caption>Manage EDI Profile Assignments</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When managing EDI profile assignments, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>EDI Profiles</term>
+
       <listitem>
         <para>Displays the list of EDI profiles you have defined. Use the
         search filter to customize how the profiles are displayed, including
         grouping by document type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>EDI Recipients</term>
+
       <listitem>
         <para>Displays the list of potential recipients of EDI profiles. The
         list will include your customers, prospects, tax authorities, and
@@ -48,19 +59,24 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>The following buttons are located between the EDI profiles and EDI
-  Recipients columns:</para>
+
+  <para>The following buttons are located between the <guilabel>EDI
+  Profiles</guilabel> and <guilabel>EDI Recipients</guilabel> columns:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>ATTACH-&gt;</guibutton></term>
+
       <listitem>
         <para>Highlight one or more EDI profiles and also one or more EDI
         recipients, then select this button to attach the EDI profile to the
         selected recipient(s).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>&lt;-DETACH</guibutton></term>
+
       <listitem>
         <para>Highlight one or more EDI recipients, then select this button to
         remove the EDI profile from the selected recipient(s).</para>
