@@ -4,48 +4,63 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dashboardDatasources" role="standard">
   <title>Datasources</title>
-  <para>All Dashboards get their source data and formatting from Datasources.
-  Datasources are required to provide the information to populate the Charts,
+
+  <para>All dashboards get their source data and formatting from datasources.
+  Datasources are required to provide the information to populate the charts,
   but they are also used to define axis labels, color requirements and other
-  presentation aspects of the Charts.</para>
-  <para>To view the list of available Datasources, select the "Datasources"
-  option. The following screen will appear:</para>
+  presentation aspects of the charts.</para>
+
+  <para>To view the list of available datasources, select the
+  <guimenuitem>Datasources</guimenuitem> option. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/xTDashDatasources.png" />
+          <imagedata fileref="images/xTDashDatasources.png"/>
         </imageobject>
+
         <caption>Dashboard Datasources Master List</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The Datasources list displays information on all existing Datasources,
-  including Datasource title, description, type, and public, active and system
+
+  <para>The datasources list displays information on all existing datasources,
+  including datasource title, description, type, and public, active and system
   statuses.</para>
+
   <warning>
-    <para>Many of the Dashboards are marked as <emphasis>system</emphasis>
-    Dashboards. You should be careful not to edit these, copying their
+    <para>Many of the dashboards are marked as <emphasis>system</emphasis>
+    dashboards. You should be careful not to edit these, copying their
     information to your own versions instead.</para>
   </warning>
-  <para>To view the server side settings for your Datasources, select the
-  "Server" tab. The following screen will appear:</para>
+
+  <para>To view the server side settings for your datasources, select the
+  <guimenuitem>Server</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/xTDashDatasourcesServerTab.png" />
+          <imagedata fileref="images/xTDashDatasourcesServerTab.png"/>
         </imageobject>
+
         <caption>Dashboard Server Options</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>Server settings define the internal web server that is used to present
-  the Dashboard Charts. It is technically feasible to use these settings to
-  view Dashboards in an external browser or other software. However, if you
-  only intend to view Dashboards inside your xTuple client, you can just leave
+  the dashboard charts. It is technically feasible to use these settings to
+  view dashboards in an external browser or other software. However, if you
+  only intend to view dashboards inside your xTuple client, you can just leave
   the settings as they are.</para>
-  <para>When defining your Dashboard server settings, you are presented with
+
+  <para>When defining your dashboard server settings, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Server Hostname</term>
+
       <listitem>
         <para>This is the network address of the web server. This is typically
         <literal>127.0.0.1</literal> for an internal (local) address—or you
@@ -53,43 +68,54 @@
         client.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>HTTP Server Port</term>
+
       <listitem>
         <para>Defaults to 3000. Typically no change is required, unless there
         is a conflict with other software.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>WebSocket Server Port</term>
+
       <listitem>
         <para>Defaults to 3030. Typically no change is required, unless there
         is a conflict with other software.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Server API Key</term>
+
       <listitem>
         <para>Randomly generated key. This does not require changing.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Server SSL Key (Generate a Self Signed SSL Certificate)</term>
+
       <listitem>
-        <para>Use the default key unless you wish to make the Dashboards
+        <para>Use the default key unless you wish to make the dashboards
         externally available and want to provide a suitably secure SSL
         key.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Server SSL Certificate</term>
+
       <listitem>
-        <para>Use the default key unless you wish to make the Dashboards
+        <para>Use the default key unless you wish to make the dashboards
         externally available and want to provide a suitably secure (and
-        signed) Server Certificate.</para>
+        signed) server certificate.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="xTDashDatasource.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

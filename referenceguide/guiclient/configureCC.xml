@@ -201,7 +201,7 @@
       <listitem>
         <para>Select which of the following options should be enabled under
         the <guimenuitem>Payments</guimenuitem> tab of the sales order header.
-        This setting does not affect the Receivables Workbench or any other
+        This setting does not affect the Receivables workbench or any other
         window in the application.</para>
 
         <variablelist>
@@ -258,7 +258,7 @@
         </indexterm>Default Bank Accounts</term>
 
       <listitem>
-        <para>Specify the default Bank accounts to be used when receiving cash
+        <para>Specify the default bank accounts to be used when receiving cash
         from customers using the following types of credit cards:</para>
 
         <variablelist>
@@ -418,7 +418,7 @@
       <term>Fail CVV Check If:</term>
 
       <listitem>
-        <para>Specify how you want to handle credit card Verification value
+        <para>Specify how you want to handle credit card verification value
         (CVV) check failures:</para>
 
         <variablelist>
@@ -588,7 +588,7 @@
         </indexterm>Server Name</term>
 
       <listitem>
-        <para>Enter the URL for the specified Verification Service's
+        <para>Enter the URL for the specified verification service's
         server—or, leave this field blank to automatically use the correct
         default URL. If you manually enter a URL, keep in mind that the
         address needed may vary depending on whether you are working in test
@@ -601,9 +601,9 @@
       <term>Port</term>
 
       <listitem>
-        <para>Enter the port number for the specified Verification Service's
+        <para>Enter the port number for the specified verification service's
         server. If this is left empty then the application will use the
-        default Port for this Verification Service.</para>
+        default port for this verification service.</para>
       </listitem>
     </varlistentry>
 
@@ -612,8 +612,8 @@
 
       <listitem>
         <para>YourPay does not require login information to be entered in this
-        field. For Authorize.Net, use your API Login here, not your Merchant
-        Interface Login, which may differ.</para>
+        field. For Authorize.Net, use your API Login here, not your merchant
+        interface Login, which may differ.</para>
       </listitem>
     </varlistentry>
 
@@ -678,15 +678,16 @@
 
     <para>Some payment gateways, such as Authorize.Net, allow testing against
     the live, production server. If you want to run test transactions against
-    the live payment gateway then you must set the Server Name explicitly to
+    the live payment gateway then you must set the server name explicitly to
     the live payment gateway's URL. You will get a warning from the
-    application when you click the Save button if you do this.</para>
+    application when you click the <guibutton>SAVE</guibutton> button if you
+    do this.</para>
   </tip>
 
   <para>To establish the service option settings for your credit card
   configuration, select the <guimenuitem>Service Options</guimenuitem> tab.
   The options will vary depending on the payment gateway being used. For
-  example, the CyberSource and External methods do not require service options
+  example, the CyberSource and external methods do not require service options
   to be entered. However, if YourPay (now First Data) is being used, the
   following screen will appear:</para>
 
@@ -717,7 +718,8 @@
       <listitem>
         <para>LinkShield is a risk-scoring service provided by YourPay at an
         additional fee. If you have purchased this service then check the
-        Enabled box and set the desired cut-off score.</para>
+        <guilabel>Enabled</guilabel> box and set the desired cut-off
+        score.</para>
 
         <variablelist>
           <varlistentry>
@@ -740,8 +742,8 @@
 
       <listitem>
         <para>Enter the number of your YourPay store. Store numbers are
-        assigned when you register with the YourPay Verification
-        Service.</para>
+        assigned when you register with the YourPay verification
+        service.</para>
       </listitem>
     </varlistentry>
 
@@ -876,9 +878,9 @@
         <para>This field allows overriding the default character used by
         Authorize.Net to separate parts of the messages sent by the gateway to
         the client application. If this field is blank then Authorize.Net will
-        use the comma (,) to separate message fields. If you expect your data
-        to contain commas as part of their content, such as street addresses,
-        then you should change the Delimiting Character.</para>
+        use the comma (",") to separate message fields. If you expect your
+        data to contain commas as part of their content, such as street
+        addresses, then you should change the delimiting character.</para>
       </listitem>
     </varlistentry>
 
@@ -892,26 +894,26 @@
         use any character for this purpose.</para>
 
         <warning>
-          <para>You should set the Encapsulating Character to a value.
+          <para>You should set the encapsulating character to a value.
           Otherwise some transactions may fail with an error reporting that
           the response from the payment gateway has the wrong number of
           fields.</para>
 
           <para>Several of these configuration options may be set through the
-          Authorize.Net Merchant Interface. If you set any of these options
+          Authorize.Net merchant interface. If you set any of these options
           there, you <emphasis>must</emphasis> use exactly the same values
           here in the <guimenuitem>Service Options</guimenuitem> tab. If you
           do not then most or all of your credit card transactions will fail,
           often with mysterious errors.</para>
 
           <para>If you want to use the MD5 Hash feature, you must set it to
-          exactly the same value here and on the Merchant Interface, including
+          exactly the same value here and on the merchant interface, including
           spaces and capitalization.</para>
 
-          <para>You may set the Delimiting Character, Encapsulating Character,
-          Duplicate Window, and currency of transactions in the xTuple
-          application without setting them through the Authorize.Net Merchant
-          Interface.</para>
+          <para>You may set the delimiting character, encapsulating character,
+          duplicate window, and currency of transactions in the xTuple
+          application without setting them through the Authorize.Net merchant
+          interface.</para>
         </warning>
       </listitem>
     </varlistentry>
@@ -933,7 +935,7 @@
       <listitem>
         <para>If you want an additional sense of security, set the
         <guilabel>MD5 Hash</guilabel> field to a short string and set the same
-        value on the Merchant Interface. This shared secret can be used to
+        value on the merchant interface. This shared secret can be used to
         assure that the payment gateway is actually Authorize.Net's server and
         not an imposter. The value of the <guilabel>MD5 Hash</guilabel> field
         and a few other fields in the transaction request are processed with
@@ -988,8 +990,8 @@
 
             <listitem>
               <para>Always process credit card transactions using the same
-              currency as the sales order, cash Deposit, or Credit
-              Memo.</para>
+              currency as the sales order, cash deposit, or credit
+              memo.</para>
             </listitem>
           </varlistentry>
 
@@ -1044,7 +1046,7 @@
       <primary>credit cards</primary>
 
       <secondary>key files and</secondary>
-    </indexterm>To establish the key file settings for your Credit Card
+    </indexterm>To establish the key file settings for your credit card
   configuration, select the <guimenuitem>Key File</guimenuitem> tab. The
   following screen will appear:</para>
 
@@ -1063,7 +1065,7 @@
     must use the same key file. The key file can be a simple text file with
     any contents whatsoever. It should be stored at the same level as the
     xTuple executable file. For Mac users, this would be within the MacOS
-    directory inside the Package Contents for your xTuple executable. The key
+    directory inside the package contents for your xTuple executable. The key
     file is not stored in the database.</para>
   </tip>
 
@@ -1085,7 +1087,7 @@
         may be entered on this screen, or on the Encryption screen—and vice
         versa. The key file is an encryption seed file, which enables you to
         read encrypted credit card information. The key file is required
-        regardless of the Verification Service used at your site. The contents
+        regardless of the verification service used at your site. The contents
         of the key file should be at least 16 characters long and use a
         combination of upper and lower case letters and numbers. Special
         characters should not be used.</para>
@@ -1097,7 +1099,7 @@
     <para>If you change the contents of your key file after it has already
     been in production, steps must be taken to convert any data encrypted up
     to that point. The function "alterencrypt" must be used to handle the
-    conversion. Please contact your Systems Administrator for more
+    conversion. Please contact your systems administrator for more
     information.</para>
   </note>
 
