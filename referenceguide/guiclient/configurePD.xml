@@ -7,18 +7,19 @@
       <primary>configuration</primary>
       <secondary>of products module</secondary>
     </indexterm>Configure Products</title>
-  <para>To configure the <guimenu>Products</guimenu> module, select the <guimenuitem>Configure Products</guimenuitem>
-  option. The following screen will appear:</para>
+  <para>To configure the <guimenu>Products</guimenu> module, select the
+  <guimenuitem>Configure Products</guimenuitem> option. The following screen
+  will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configurePD.png" />
+          <imagedata fileref="images/configurePD.png"/>
         </imageobject>
         <caption>Configure Products Module</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When configuring the <guimenu>Products</guimenu> module, you are presented with the
-  following options:</para>
+  <para>When configuring the <guimenu>Products</guimenu> module, you are
+  presented with the following options:</para>
   <variablelist>
     <varlistentry role="standard">
       <term>Enable Transforms</term>
@@ -55,9 +56,10 @@
       <term>Allow deletion of Items from Bill of Material</term>
       <listitem>
         <para>Select if you want to globally allow users to delete items from
-        bills of materials (BOMs). The <guimenuitem>Delete</guimenuitem> option will be found in the
-        right-click menu on the BOM header screen. If you do not select this
-        option, users will be able to expire but not delete BOM items.</para>
+        bills of materials (BOMs). The <guimenuitem>Delete</guimenuitem>
+        option will be found in the right-click menu on the BOM header screen.
+        If you do not select this option, users will be able to expire but not
+        delete BOM items.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -79,7 +81,7 @@
                 <secondary>as default configuration</secondary>
               </indexterm>Exclusive</term>
             <listitem>
-              <para>Select to mark all sold items as "Exclusive" by default
+              <para>Select to mark all sold items as exclusive by default
               whenever a new item is created.</para>
             </listitem>
           </varlistentry>
@@ -118,10 +120,10 @@
           <para><indexterm significance="normal">
               <primary>bills of materials</primary>
               <secondary>deleting items from</secondary>
-            </indexterm>The default settings "Set Sold Items as Exclusive" and
-          "W/O Material Issue Method" only apply to newly-created items. They
-          cannot be used to retroactively update already existing
-          items.</para>
+            </indexterm>The default settings <guilabel>Set Sold Items as
+          Exclusive </guilabel>and <guilabel>W/O Material Issue
+          Method</guilabel> only apply to newly-created items. They cannot be
+          used to retroactively update already existing items.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -143,8 +145,8 @@
                     <para>Select to track machine overhead separately from
                     other overhead costs, using the machine overhead rate
                     specified in a Work Center master. Any associated costs
-                    will display in the system-defined "Machine Overhead"
-                    costing element.</para>
+                    will display in the system-defined <guilabel>Machine
+                    Overhead</guilabel> costing element.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
@@ -152,8 +154,9 @@
                   <listitem>
                     <para>Select to track machine overhead in the same
                     category as other overhead costs. Any associated costs
-                    will display in the system-defined "Overhead" costing
-                    Element. (This is the default setting.)</para>
+                    will display in the system-defined
+                    <guilabel>Overhead</guilabel> costing Element. (This is
+                    the default setting.)</para>
                   </listitem>
                 </varlistentry>
               </variablelist>

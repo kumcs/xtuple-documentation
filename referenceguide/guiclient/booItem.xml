@@ -10,12 +10,12 @@
       <primary>operations</primary>
       <secondary>adding new to Routings</secondary>
     </indexterm>Routing Item</title>
-  <para>To add a new operation to a routing, select the <guibutton>NEW</guibutton> button. The
-  following screen will appear:</para>
+  <para>To add a new operation to a routing, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem.png" />
+          <imagedata fileref="images/booItem.png"/>
         </imageobject>
         <caption>Add New Operation to Routing</caption>
       </mediaobject>
@@ -116,7 +116,7 @@
               engineering department may be working on a new design for an
               existing item—but that new design will not be available for use
               until a given date in the future. In this case, you can specify
-              the "effective" date when the component will be available for
+              the effective date when the component will be available for
               use.</para>
             </listitem>
           </varlistentry>
@@ -129,7 +129,7 @@
               department may be working on a new design for an existing
               item—but that new design will not be available for use until a
               given date in the future. In this case, the old component item
-              must be marked for "expiration" on a given date. This expiration
+              must be marked for expiration on a given date. This expiration
               date will most likely coincide with the effective date of the
               replacement part. Setting this parameter will instruct the
               system to stop using the specified component on the date entered
@@ -158,10 +158,11 @@
     <varlistentry>
       <term>Report Cost as (Setup Time)</term>
       <listitem>
-        <para>Specify whether you want to report setup costs as <guilabel>Direct
-        Labor</guilabel>, <guilabel>Overhead</guilabel>, or <guilabel>None</guilabel>. Specify the <guilabel>None</guilabel> option if you would
-        do not want to track setup time as part of the operation's
-        cost.</para>
+        <para>Specify whether you want to report setup costs as
+        <guilabel>Direct Labor</guilabel>, <guilabel>Overhead</guilabel>, or
+        <guilabel>None</guilabel>. Specify the <guilabel>None</guilabel>
+        option if you would do not want to track setup time as part of the
+        operation's cost.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -185,10 +186,11 @@
     <varlistentry>
       <term>Report Cost as (Run Time)</term>
       <listitem>
-        <para>Specify whether you want to report setup costs as <guilabel>Direct
-        Labor</guilabel>, <guilabel>Overhead</guilabel>, or <guilabel>None</guilabel>. Specify the <guilabel>None</guilabel> option if you would
-        do not want to track setup time as part of the operation's
-        cost.</para>
+        <para>Specify whether you want to report setup costs as
+        <guilabel>Direct Labor</guilabel>, <guilabel>Overhead</guilabel>, or
+        <guilabel>None</guilabel>. Specify the <guilabel>None</guilabel>
+        option if you would do not want to track setup time as part of the
+        operation's cost.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -202,9 +204,10 @@
           be posted to the general ledger if at least one of the operations in
           the list of work order operations has either or both of the
           inventory handling options selected. If items are backflushed at an
-          operation, select the <guilabel>Auto. Issue Components</guilabel> option. If finished
-          items are received into inventory at an operation, select the
-          <guilabel>Receive Inventory</guilabel> option.</para>
+          operation, select the <guilabel>Auto. Issue Components</guilabel>
+          option. If finished items are received into inventory at an
+          operation, select the <guilabel>Receive Inventory</guilabel>
+          option.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -304,9 +307,9 @@
         received into inventory via a Receive from Manufacturing (RM)
         transaction, when the operation is posted.</para>
         <note>
-          <para>The <guilabel>Receive Inventory</guilabel> option may only be selected once per
-          routing. Finished items may only be received into inventory once in
-          the operations sequence.</para>
+          <para>The <guilabel>Receive Inventory</guilabel> option may only be
+          selected once per routing. Finished items may only be received into
+          inventory once in the operations sequence.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -315,9 +318,10 @@
       <listitem>
         <para>Issue Components at this Operation: Select to automatically
         issue components used at this operation. This setting will only affect
-        component items whose issue method is either "Pull" or "Mixed".
-        Component items using the "Push" issue method must be issued to work
-        orders using a specific material issue transaction.</para>
+        component items whose issue method is either <guilabel>Pull</guilabel>
+        or <guilabel>Mixed</guilabel>. Component items using the
+        <guilabel>Push</guilabel> issue method must be issued to work orders
+        using a specific material issue transaction.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -370,11 +374,12 @@
   this relationship, the Operation screen includes the ability to both modify
   the source BOM and also modify the links between the operation and component
   items. To view components associated with an operation, select the
-  <guimenuitem>Materials</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Materials</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem_materials.png" />
+          <imagedata fileref="images/booItem_materials.png"/>
         </imageobject>
         <caption>Components Associated with Operation</caption>
       </mediaobject>
@@ -427,8 +432,8 @@
               <primary>bills of materials</primary>
               <secondary>deleting items from</secondary>
             </indexterm>If your site is configured to allow the deletion of
-          BOM items, you will see a <guilabel>Delete</guilabel> option in the right-click menu on
-          this screen.</para>
+          BOM items, you will see a <guilabel>Delete</guilabel> option in the
+          right-click menu on this screen.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -446,12 +451,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate instructions with an operation, select the <guimenuitem>Instructions</guimenuitem>
-  tab. The following screen will appear:</para>
+  <para>To associate instructions with an operation, select the
+  <guimenuitem>Instructions</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem_instructions.png" />
+          <imagedata fileref="images/booItem_instructions.png"/>
         </imageobject>
         <caption>Operational Instructions</caption>
       </mediaobject>
@@ -474,19 +480,20 @@
     <varlistentry>
       <term>Use Fixed-Width Font</term>
       <listitem>
-        <para>Select to display text in the <guilabel>Instructions</guilabel> field in
-        fixed-width font. This is a useful feature for displaying tables,
-        matrixes, and other format-driven texts.</para>
+        <para>Select to display text in the <guilabel>Instructions</guilabel>
+        field in fixed-width font. This is a useful feature for displaying
+        tables, matrixes, and other format-driven texts.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>You may associate images with an operation, thereby making these
   images available to be printed on routings. To associate an image with an
-  operation, select the <guimenuitem>Images</guimenuitem> tab. The following screen will appear:</para>
+  operation, select the <guimenuitem>Images</guimenuitem> tab. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem_booimage.png" />
+          <imagedata fileref="images/booItem_booimage.png"/>
         </imageobject>
         <caption>Operation Images</caption>
       </mediaobject>
@@ -504,5 +511,5 @@
   </variablelist>
   <xi:include href="../widgets/imageAssignment.xml"
               xpointer="imageAssignmentWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

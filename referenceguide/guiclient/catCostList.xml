@@ -14,26 +14,27 @@
   to an item's costing information on this screen will be transferred to the
   xTuple items when you run the update option.</para>
   <para>To view and manage your converted vendor catalog items, select the
-  <guimenuitem>Vendor Catalog Costs</guimenuitem> option. The following screen will appear.</para>
+  <guimenuitem>Vendor Catalog Costs</guimenuitem> option. The following screen
+  will appear.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/catCostList.png" />
+          <imagedata fileref="images/catCostList.png"/>
         </imageobject>
         <caption>Vendor Catalog Costs</caption>
       </mediaobject>
     </screenshot></para>
   <para>The Vendor Catalog Costs screen displays cost and pricing information
   for xTuple inventory items converted from your external vendor catalog. Item
-  Master and item source records are both displayed here. To modify
-  information for an item, select the <guilabel>Edit</guilabel> option from the right-click
-  menu.</para>
+  and item source records are both displayed here. To modify information for
+  an item, select the <guimenuitem>Edit</guimenuitem> option from the
+  right-click menu.</para>
   <note>
-    <para>If your pricing configuration is configured to "Use Wholesale Price
-    for Unit Cost for Markups," then your sales commission is based on the
-    item's wholesale price. The <literal>catcost</literal> information can be
-    used to manage those costs, as well, reflecting a true cost for
-    commissions.</para>
+    <para>If your pricing configuration is configured to <guilabel>Use
+    Wholesale Price for Unit Cost for Markups</guilabel>, then your sales
+    commission is based on the item's wholesale price. The
+    <literal>catcost</literal> information can be used to manage those costs,
+    as well, reflecting a true cost for commissions.</para>
   </note>
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
@@ -49,9 +50,9 @@
       <term><guibutton>DELETE CATCOST</guibutton></term>
       <listitem>
         <para>Select to temporarily clear all item information from the
-        Catalog Cost table. When you select the UPDATE CATCOST button, this
-        information will be refreshed with the current xTuple item information
-        on file.</para>
+        Catalog Cost table. When you select the <guibutton>UPDATE
+        CATCOST</guibutton> button, this information will be refreshed with
+        the current xTuple item information on file.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -65,5 +66,5 @@
     </varlistentry>
   </variablelist>
   <xi:include href="catCost.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

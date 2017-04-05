@@ -4,12 +4,12 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="boo">
   <title>Enter New Routing</title>
-  <para>To enter a new routing, select the <guimenuitem>Enter New Routing</guimenuitem> option. The
-  following screen will appear:</para>
+  <para>To enter a new routing, select the <guimenuitem>Enter New
+  Routing</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/boo.png" />
+          <imagedata fileref="images/boo.png"/>
         </imageobject>
         <caption>Create New Routing</caption>
       </mediaobject>
@@ -42,7 +42,7 @@
           <secondary>of operations in routings</secondary>
         </indexterm>Show Expired Operations</term>
       <listitem>
-        <para>Select to display expired operations in the "Routing" display.
+        <para>Select to display expired operations in the Routing display.
         Expired operations are operations that have been expired from the
         routing.</para>
       </listitem>
@@ -59,7 +59,7 @@
           <secondary>of operations in routings</secondary>
         </indexterm>Show Future Operations</term>
       <listitem>
-        <para>Select to display future operations in the "Routing" display.
+        <para>Select to display future operations in the Routing display.
         Future operations are operations that will be added to the routing at
         a future point in time.</para>
       </listitem>
@@ -91,8 +91,9 @@
                 <para>The active revision becomes inactive when a pending or
                 substitute revision is activated. To activate a pending or
                 substitute revision, right-click on the magnifying glass next
-                to the item number and select "Activate". Inactive revisions
-                cannot be modified.</para>
+                to the item number and select
+                <guimenuitem>Activate</guimenuitem>. Inactive revisions cannot
+                be modified.</para>
               </tip>
             </listitem>
           </varlistentry>
@@ -101,12 +102,12 @@
             <listitem>
               <para>This is a revision that has never been used, but is under
               development or consideration. You may store multiple pending
-              revisions. When a pending revision is entered in the <guilabel>Revision</guilabel>
-              field, an option to activate the item will dynamically appear in
-              the context menu after you right-click on the magnifying glass
-              next to the item number. Select <guilabel>Activate</guilabel> from this context
-              menu to convert a pending revision to the active
-              revision.</para>
+              revisions. When a pending revision is entered in the
+              <guilabel>Revision</guilabel> field, an option to activate the
+              item will dynamically appear in the context menu after you
+              right-click on the magnifying glass next to the item number.
+              Select <guilabel>Activate</guilabel> from this context menu to
+              convert a pending revision to the active revision.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -214,8 +215,8 @@
       <term><guibutton>ACTIVATE</guibutton></term>
       <listitem>
         <para>Select to activate a pending revision. This button will only be
-        visible when a pending revision number is entered in the <guilabel>Revision</guilabel>
-        field.</para>
+        visible when a pending revision number is entered in the
+        <guilabel>Revision</guilabel> field.</para>
         <tip>
           <para>When you activate a pending revision, the currently active
           revision will become inactive. Inactive revisions cannot be
@@ -228,8 +229,8 @@
       <listitem>
         <para>Select to deactivate a substitute revision. This button will
         only be visible when a substitute revision number is entered in the
-        <guilabel>Revision</guilabel> field. Once the revision is inactive, it cannot be
-        modified.</para>
+        <guilabel>Revision</guilabel> field. Once the revision is inactive, it
+        cannot be modified.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -237,16 +238,17 @@
       <listitem id="booEXPIRE">
         <para>Highlight an operation and then select this button to expire the
         operation, causing it to be hidden from view on the list—unless the
-        <guilabel>Show Expired Operations</guilabel> option is specifically chosen.</para>
+        <guilabel>Show Expired Operations</guilabel> option is specifically
+        chosen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <tip>
     <para>If the operation is expired on the current day, the operation will
-    still appear as an option when selecting "Used At" operations on a bill of
-    materials (BOM) if done during the same current day. Once a day passes,
-    however, the expired operation will no longer appear as a "Used At" option
-    on the BOM.</para>
+    still appear as an option when selecting <guilabel>Used At</guilabel>
+    operations on a bill of materials (BOM) if done during the same current
+    day. Once a day passes, however, the expired operation will no longer
+    appear as a <guilabel>Used At</guilabel> option on the BOM.</para>
   </tip>
   <variablelist>
     <varlistentry>
@@ -269,5 +271,5 @@
     </varlistentry>
   </variablelist>
   <xi:include href="booItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
