@@ -4,13 +4,15 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="schedServerMaint" role="xtconnect">
   <title>Schedule Server Maintenance</title>
-  <para>The server maintenance utility is designed to perform automated
+
+  <para>The Server Maintenance utility is designed to perform automated
   maintenance on xTuple databases. The default task is to REINDEX the
   database. This can be changed and additional tasks added if desired. For
   more information see the xTuple Connect Product Guide.<note>
       <para>The user who schedules server maintenance must be a superuser
       (i.e., have the ability to create system users).</para>
     </note></para>
+
   <note>
     <para>Server maintenance with xTuple Connect 3.5.0 and earlier runs VACUUM
     FULL ANALYZE, followed by a REINDEX. For more information on these
@@ -19,47 +21,62 @@
     <ulink id="Hypertext956137"
     url="http://www.postgresql.com">http://www.postgresql.com</ulink>.</para>
   </note>
-  <para>To run the server maintenance utility, select the <guimenuitem>Schedule Server
-  Maintenance</guimenuitem> option. The following screen will appear:</para>
+
+  <para>To run the Server Maintenance utility, select the
+  <guimenuitem>Schedule Server Maintenance</guimenuitem> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/schedServerMaint.png" />
+          <imagedata fileref="images/schedServerMaint.png"/>
         </imageobject>
+
         <caption>Schedule Server Maintenance</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When scheduling server maintenance, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Action</term>
+
       <listitem>
         <para>Displays the name of the action to be performed by the xTuple
         Connect batch manager. In this case, the name of the action is
         <literal>ServerMaintenance</literal>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Response Email</term>
+
       <listitem>
         <para>By default, the email address of the logged-in user will be
         entered here. This address may be edited or changed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Scheduled</term>
+
       <listitem>
         <para>Select one of the following schedule options:</para>
+
         <variablelist>
           <varlistentry>
             <term>ASAP</term>
+
             <listitem>
               <para>Select to have the job run as soon as possible.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Scheduled</term>
+
             <listitem>
               <para>Schedule a date and time to run the job. Specify a date in
               the first field using a standard date format. Use the arrow
@@ -70,6 +87,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>When a job is submitted to the xTuple Connect batch manager with a
     scheduled time of ASAP, the batch manager sets the scheduled time to the
