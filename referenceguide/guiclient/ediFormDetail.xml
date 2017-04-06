@@ -4,49 +4,63 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="ediFormDetail">
   <title>EDI Form Detail</title>
+
   <para>To create a new form detail query to be used when generating CSV file
-  output, select the <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  output, select the <guibutton>NEW</guibutton> button. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediFormDetail.png" />
+          <imagedata fileref="images/ediFormDetail.png"/>
         </imageobject>
+
         <caption><para>Create New EDI Form Detail Query</para></caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new form detail query, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a name to identify the form detail query. In the example
         shown, the name indicates the query will return information to be used
         in the header of the CSV file output.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order</term>
+
       <listitem>
         <para>Select a value between 1 and 99 using the arrow buttons located
         to the right of the field. The value entered specifies the order in
         which a query will be executed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Type of Query</term>
+
       <listitem>
-        <para>Choose the type of Query. Available options are <guilabel>Entire Table or
-        View</guilabel>, <guilabel>Pre-defined Meta-SQL</guilabel> and <guilabel>Custom Query</guilabel>.</para>
+        <para>Choose the type of query. Available options are <guilabel>Entire
+        Table or View</guilabel>, <guilabel>Pre-defined Meta-SQL</guilabel>
+        and <guilabel>Custom Query</guilabel>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Query</term>
+
       <listitem>
         <para>Enter a SQL query to identify the information you want to
         populate your CSV file with. As you can see in the example, the query
         selects invoice header information from the "invchead" table. You will
-        note in the WHERE clause that MetaSQL is used to dynamically capture
+        note in the "WHERE" clause that MetaSQL is used to dynamically capture
         the specific invoice number using the system-defined
         <literal>docid</literal> token (the <code>"&lt;/&gt;"</code> wrapper
         is replaced by the MetaSQL <code>&lt;? value("") ?&gt;</code>). You
@@ -55,11 +69,13 @@
         MetaSQL, please see the Report Writer User Guide.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        notes related to the EDI Detail query.</para>
+        notes related to the EDI detail query.</para>
       </listitem>
     </varlistentry>
   </variablelist>
