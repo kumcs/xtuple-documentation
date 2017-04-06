@@ -5,52 +5,66 @@
 <section id="currency">
   <title><indexterm significance="normal">
       <primary>currencies</primary>
+
       <secondary>adding new</secondary>
     </indexterm>Currency</title>
-  <para>To add a new currency to the master list of currencies, select the <guibutton>NEW</guibutton>
-  button. The following screen will appear:</para>
+
+  <para>To add a new currency to the master list of Currencies, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/currency.png" />
+          <imagedata fileref="images/currency.png"/>
         </imageobject>
+
         <caption>Create New Currency</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>Standard currency information for most countries is provided by
-    default as part of the standard country list: <xref
-    linkend="countries" />. Simply select this information by country when
-    setting up multiple currencies.</para>
+    default as part of the standard country list: <xref linkend="countries"/>.
+    Simply select this information by country when setting up multiple
+    currencies.</para>
   </tip>
-  <para>When adding a new currency to the master list of currencies, you are
+
+  <para>When adding a new currency to the master list of Currencies, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a name to describe the currency.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Symbol</term>
+
       <listitem>
         <para>Enter a symbol to identify the currency. Use special keyboard
         characters to enter special currency symbols. For example, under
-        Windows, you can create the symbol for Japanese Yen by using the
-        following keys: <guibutton>ALT + 0165</guibutton>. If you change the symbol for your base
-        currency, you must restart the application to ensure the change is
-        populated throughout the system.</para>
+        Windows, you can create the symbol for Japanese yen by using the
+        following keys: <guibutton>ALT + 0165</guibutton>. If you change the
+        symbol for your base currency, you must restart the application to
+        ensure the change is populated throughout the system.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Abbreviation</term>
+
       <listitem>
         <para>Enter an abbreviation to identify the currency.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Base Currency</term>
+
       <listitem>
         <para>Specify whether the currency is the base currency. The base
         currency is the currency used for all general ledger (G/L)
@@ -61,72 +75,93 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>Choose your base currency carefully. Once you indicate a given
     currency is the base currency, you will not be able to change that
     selection using the application. Consult your system administrator if this
     situation occurs.</para>
   </tip>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>SELECT</guibutton></term>
+
       <listitem>
         <para>Use this button to specify a country when creating a new
         currency definition. This button will only be enabled when creating
-        new currency definitions. Otherwise it will be disabled. </para>
+        new currency definitions. Otherwise it will be disabled.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To select currency information by country, choose the <guibutton>SELECT</guibutton> button.
-  The following screen will appear:</para>
+
+  <para>To select currency information by country, choose the
+  <guibutton>SELECT</guibutton> button. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/currencySelect.png" />
+          <imagedata fileref="images/currencySelect.png"/>
         </imageobject>
+
         <caption>Select Currency by Country</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>Make any changes to the currency information for a country on the
     Country master screen.</para>
   </tip>
+
   <para>When selecting currency information by country, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Country</term>
+
       <listitem>
         <para>Specify the country you want to assign the currency to.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Currency Name</term>
+
       <listitem>
         <para>Displays the name of the currency for the specified
         country.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Symbol</term>
+
       <listitem>
         <para>Displays the symbol for the currency of the specified
         country.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Abbreviation</term>
+
       <listitem>
         <para>Displays the abbreviation for the currency of the specified
         country.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>SELECT</guibutton></term>
+
       <listitem>
         <para>Choose this button to select the currency information for the
         specified country.</para>
