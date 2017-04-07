@@ -4,65 +4,80 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="plannedScheduleItem">
   <title>Planned Schedule Item</title>
+
   <para><indexterm significance="normal">
       <primary>production plans</primary>
+
       <secondary>creating new</secondary>
-    </indexterm>To create a new Production Plan item, select the <guibutton>NEW</guibutton> button.
-  The following screen will appear:</para>
+    </indexterm>To create a new production plan item, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/plannedScheduleItem.png" />
+          <imagedata fileref="images/plannedScheduleItem.png"/>
         </imageobject>
+
         <caption>New Production Plan Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
-    <para>You can reduce clutter (and simplify) your production Plans by
-    taking advantage of the Planning Item type. A Planning item is an item
+    <para>You can reduce clutter (and simplify) your production plans by
+    taking advantage of the planning item type. A planning item is an item
     whose bill of materials (BOM) groups together other items so that a
-    production Plan may be defined for the Planning item—and then exploded
-    down to the lower level items during a Master production Scheduling (MPS)
+    production plan may be defined for the planning item—and then exploded
+    down to the lower level items during a master production scheduling (MPS)
     run. Planning items are frequently used to group together product families
     or product lines of MPS items.</para>
   </tip>
+
   <para>When creating a new production plan item, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item you want to add to the
         production plan. You may only add items whose item site is
-        specifically linked to the MPS planning system. See the <guimenuitem>Planning</guimenuitem> tab
-        on the Item Site screen. Use the lookup feature located to the right
-        of the field to reach a searchable MPS items list.</para>
+        specifically linked to the MPS planning system. See the
+        <guimenuitem>Planning</guimenuitem> tab on the Item Site screen. Use
+        the lookup feature located to the right of the field to reach a
+        searchable MPS items list.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Planned Date</term>
+
       <listitem>
         <para>Enter the date when the specified item quantity will be
         required. When MPS is run, the system will look at the planned date
-        for production Plan items. If a planned date falls within the cutoff
+        for production plan items. If a planned date falls within the cutoff
         date for the MPS run, the system will plan for the demand accordingly.
         If the planned date falls beyond the cutoff date, the demand will be
         ignored.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty.</term>
+
       <listitem>
-        <para>Specify the demand quantity for the production Plan item. In the
-        case of a Planning item, the quantity entered here will have a ripple
-        effect on any component items listed on the planning item's bill of
-        materials.</para>
+        <para>Specify the demand quantity for the production plan item. In the
+        case of a planning item, the quantity entered here will have a ripple
+        effect on any component items listed on the planning item's
+        BOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
