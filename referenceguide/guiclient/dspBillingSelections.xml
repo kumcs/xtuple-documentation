@@ -4,28 +4,28 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspBillingSelections">
   <title>Billing Approvals</title>
-  <para>When you convert an order selected for billing to an invoice, you
+  <para>When you convert an order approved for billing to an invoice, you
   create an unposted invoice. Unposted invoices must in turn be posted to
   generate associated general ledger (G/L) transaction records. You can
   reverse the process of invoice creation by deleting the unposted invoice. To
-  edit orders selected for billing and to create invoices for these orders,
-  select the <guimenuitem>Billing Approvals</guimenuitem> option. The following screen will
-  appear:</para>
+  edit orders approved for billing and to create invoices for these orders,
+  select the <guimenuitem>Billing Approvals</guimenuitem> option. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspBillingSelections.png" />
+          <imagedata fileref="images/dspBillingSelections.png"/>
         </imageobject>
         <caption>Billing Approvals</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The billing Approvals list displays orders selected for
+  <para>The billing Approvals list displays orders approved for
   billing.</para>
   <tip>
     <para>Because less detailed information is shown, the billing Approvals
     list will load more quickly than the billing edit list. The amount of
     detail is the only difference between the two lists. Both show the same
-    orders selected for billing.</para>
+    orders approved for billing.</para>
   </tip>
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
@@ -46,15 +46,16 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>Users may be restricted from editing billing selections if they are
-    granted the privilege "RestrictSelectOrderEditing."</para>
+    <para>Users may be restricted from editing billing approvals if they are
+    granted the privilege
+    <literal>RestrictSelectOrderEditing</literal>.</para>
   </tip>
   <variablelist>
     <varlistentry>
       <term><guibutton>CANCEL</guibutton></term>
       <listitem id="listitemN0x180ac00N0x190b750">
         <para>Highlight an order and then select this button to cancel the
-        billing for the selected order. Canceled billing selections may be
+        billing for the selected order. Canceled billing approvals may be
         recalled to shipping—and then returned to inventory from there.</para>
       </listitem>
     </varlistentry>

@@ -153,12 +153,9 @@
         leads to a searchable customers list. You may also access this list
         using the keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a
         customer number is entered, the customer name and billing address will
-        display. Select the <guibutton>?</guibutton> or <guibutton>$</guibutton> symbol to view customer information for
-        the specified customer. If a customer's credit is <guilabel>In Good Standing</guilabel>,
-        the button will feature a black question mark (<guibutton>?</guibutton>) icon. If the icon
-        turns to an orange dollar sign (<guibutton>$</guibutton>), the customer's credit status is
-        <guilabel>On Credit Warning</guilabel>. A red dollar sign (<guibutton>$</guibutton>) indicates the customer's
-        credit status is <guilabel>On Credit Hold</guilabel>.</para>
+        display. Select the <guibutton>?</guibutton> or
+        <guibutton>$</guibutton> symbol to view customer information for the
+        specified customer. If a customer's credit is good, the button will feature a black question mark (<guibutton>?</guibutton>) icon. If the customer is on credit warning, the icon will turn into an orange dollar sign (<guibutton>$</guibutton>). A red dollar sign (<guibutton>$</guibutton>) indicates the customer is on credit hold.</para>
         <note>
           <para>Sales credits may be entered for inactive customers. The same
           does not hold true for sales orders.</para>
@@ -209,8 +206,8 @@
         searchable ship-to addresses list.</para>
         <tip>
           <para>Make sure the ship-to address on the sales credit matches the
-          ship-to address on the customer's Pricing schedule. If they don"t
-          match, you won"t be able to issue credit for exclusively sold
+          ship-to address on the customer's Pricing schedule. If they don't
+          match, you won't be able to issue credit for exclusively sold
           items.</para>
         </tip>
       </listitem>
@@ -272,8 +269,9 @@
         credit using the <guibutton>NEW ITEM</guibutton> button.</para>
         <tip>
           <para>Before creating a new sales credit line item, be sure to
-          specify an invoice to apply the sales credit to. The "Apply To"
-          feature is found on the Sales Credit header screen.</para>
+          specify an invoice to apply the sales credit to. The <guilabel>Apply
+          To</guilabel> feature is found on the Sales Credit header
+          screen.</para>
         </tip>
       </listitem>
     </varlistentry>

@@ -9,12 +9,12 @@
     </indexterm>Approve Order for Billing</title>
   <para>This utility enables you to manually enter billing details for
   individual sales order line items. Both shipped orders and unshipped Line
-  items may be selected for billing in this manner. This individualized
+  items may be approved for billing in this manner. This individualized
   approach differs from the approach taken by the Select All Shipped Orders
-  for Billing utility, which by default selects for billing the full line item
-  quantities for all shipped orders. To select an individual shipped order for
-  billing, select the <guimenuitem>Approve Order for Billing</guimenuitem>
-  option. The following screen will appear:</para>
+  for Billing utility, which by default approves for billing the full line
+  item quantities for all shipped orders. To approve an individual shipped
+  order for billing, select the <guimenuitem>Approve Order for
+  Billing</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -24,18 +24,18 @@
       </mediaobject>
     </screenshot></para>
   <note>
-    <para>When you select an order for billing, you are indicating that you
+    <para>When you approve an order for billing, you are indicating that you
     wish to create an invoice for the order. Invoice numbers are assigned when
     an invoice is printed.</para>
   </note>
-  <para>When selecting an order for billing, you are presented with the
+  <para>When approving an order for billing, you are presented with the
   following options:</para>
   <variablelist>
     <varlistentry>
       <term>Sales Order #</term>
       <listitem>
         <para>Enter the sales order number of the sales order you want to
-        select for billing.</para>
+        approve for billing.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -101,8 +101,8 @@
         be defined at the system level.</para>
         <para><tip>
             <para>The system supports up-to-date shipment tracking with links
-            to the websites of many leading shipping companies (i.e., "Ship
-            Vias").</para>
+            to the websites of many leading shipping companies (i.e., ship
+            Vias).</para>
           </tip></para>
       </listitem>
     </varlistentry>
@@ -125,9 +125,9 @@
           <secondary>at line item level</secondary>
         </indexterm>Line Items</term>
       <listitem>
-        <para>Displays the sales order line items selected for billing.
-        Double-clicking on a line item—or highlighting it and selecting the
-        <guibutton>EDIT SELECTION</guibutton> button—enables you to select a
+        <para>Displays the sales order line items approved for billing.
+        Double-clicking on a line item—or highlighting it and approving the
+        <guibutton>EDIT SELECTION</guibutton> button—enables you to approve a
         billing quantity for that Item.</para>
         <note>
           <para>In the Line Items display, the Uninvoiced column refers to
@@ -231,7 +231,7 @@
       <term>Notes</term>
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        notes related to the sales order selected for billing. Notes entered
+        notes related to the sales order approved for billing. Notes entered
         on this screen will follow the order through the billing process. For
         example, you may view notes associated with a posted invoice within
         the Invoice Information report.</para>

@@ -89,13 +89,10 @@
         disabled if the quote is entered for a prospect. You may also access
         the customer list using the keyboard shortcut <guibutton>CTRL +
         L</guibutton>. Once a customer number is entered, the customer name
-        and billing address will display. Select the <guibutton>?</guibutton> or <guibutton>$</guibutton> symbol to view
-        customer information for the specified customer. If a customer's
-        credit is <guilabel>In Good Standing</guilabel>, the button will feature a black question
-        mark (<guibutton>?</guibutton>) icon. If the icon turns to an orange dollar sign (<guibutton>$</guibutton>), the
-        customer's credit status is <guilabel>On Credit Warning</guilabel>. A red dollar sign
-        (<guibutton>$</guibutton>) indicates the customer's credit status is <guilabel>On Credit Hold</guilabel>. You
-        may also create a new customer record by selecting the "+"
+        and billing address will display. Select the <guibutton>?</guibutton>
+        or <guibutton>$</guibutton> symbol to view customer information for
+        the specified customer. If a customer's credit is good, the button will feature a black question mark (<guibutton>?</guibutton>) icon. If the customer is on credit warning, the icon will turn into an orange dollar sign (<guibutton>$</guibutton>). A red dollar sign (<guibutton>$</guibutton>) indicates the customer is on credit hold. You may also create a new
+        customer record by selecting the <guibutton>+</guibutton>
         button.</para>
         <tip>
           <para>A valid customer number must be entered in the
@@ -105,9 +102,9 @@
           be entered for active customers.</para>
         </tip>
         <note>
-          <para>Quotes may not be entered for customers whose credit status is
-          either <guilabel>On Credit Warning</guilabel> or <guilabel>On Credit Hold</guilabel>. Only users with
-          special privileges may override these credit settings.</para>
+          <para>Quotes may not be entered for customers who are on credit warning or credit
+          hold. Only users with special privileges may override
+          these credit settings.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -247,8 +244,8 @@
         Via into the field.</para>
         <tip>
           <para>The system supports up-to-date shipment tracking with links to
-          the websites of many leading shipping companies (i.e., "Ship
-          Vias").</para>
+          the websites of many leading shipping companies (i.e., ship
+          vias).</para>
         </tip>
       </listitem>
     </varlistentry>

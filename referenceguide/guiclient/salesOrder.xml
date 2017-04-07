@@ -90,13 +90,9 @@
         searchable customers list. You may also access this list using the
         keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a customer
         number is entered, the customer name and billing address will display.
-        Select the <guibutton>?</guibutton> or <guibutton>$</guibutton> symbol to view customer information for the
-        specified customer. If a customer's credit is <guilabel>In Good Standing</guilabel>, the
-        button will feature a black question mark (<guibutton>?</guibutton>) icon. If the icon
-        turns to an orange dollar sign (<guibutton>$</guibutton>), the customer's credit status is
-        <guilabel>On Credit Warning</guilabel>. A red dollar sign (<guibutton>$</guibutton>) indicates the customer's
-        credit status is <guilabel>On Credit Hold</guilabel>. You may also create a new customer
-        record by selecting the "+" button.</para>
+        Select the <guibutton>?</guibutton> or <guibutton>$</guibutton> symbol
+        to view customer information for the specified customer. If a customer's credit is good, the button will feature a black question mark (<guibutton>?</guibutton>) icon. If the customer is on credit warning, the icon will turn into an orange dollar sign (<guibutton>$</guibutton>). A red dollar sign (<guibutton>$</guibutton>) indicates the customer is on credit hold. You may also create a new customer record by
+        selecting the <guibutton>+</guibutton> button.</para>
         <tip>
           <para>A valid customer number must be entered in the
           <guilabel>Customer #</guilabel> field before line items can be added
@@ -105,9 +101,10 @@
           sales orders may only be entered for active customers.</para>
         </tip>
         <note>
-          <para>Sales orders may not be entered for customers whose credit
-          status is either <guilabel>On Credit Warning</guilabel> or <guilabel>On Credit Hold</guilabel>. Only users
-          with special privileges may override these credit settings.</para>
+          <para>Sales orders may not be entered for customers whose are
+          on credit warning or
+          credit hold</guilabel>. Only users with special
+          privileges may override these credit settings.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -307,8 +304,8 @@
         via into the field.</para>
         <tip>
           <para>The system supports up-to-date shipment tracking with links to
-          the websites of many leading shipping companies (i.e., "Ship
-          Vias").</para>
+          the websites of many leading shipping companies (i.e., ship
+          vias).</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -586,9 +583,9 @@
         order. If your system is configured to automatically allocate open
         credit memo balances to new sales orders, then the monetary value of
         these allocated credit memos—plus any credit card charges applied to
-        the order—will display here. You can also select the "Allocated
-        Credit" link to manually allocate credit memos to the sales
-        order.</para>
+        the order—will display here. You can also select the
+        <guibutton>Allocated Credit</guibutton> link to manually allocate
+        credit memos to the sales order.</para>
         <note>
           <para>The automatic allocation of available credit memos occurs only
           once—when a sales order is saved for the first time. After that
@@ -858,8 +855,8 @@
         <para>Highlight a sales order line item and then select this button to
         reserve inventory quantity for the line item.<note>
             <para>In order to manually reserve or unreserve stock for a line
-            item, the Sales Configuration option <guilabel>"Allow Manual
-            Reservations"</guilabel> must be selected.</para>
+            item, the Sales Configuration option <guilabel>Allow Manual
+            Reservations</guilabel> must be selected.</para>
           </note></para>
       </listitem>
     </varlistentry>
@@ -1213,7 +1210,7 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>You can use the Funds type "Other" for entering credit card
+    <para>You can use the Ffunds type Other for entering credit card
     information if you are not using xTuple's credit card processing
     functionality at your site.</para>
   </tip>
@@ -1260,12 +1257,12 @@
         <para>Specify the date of the cash distribution. This is the date the
         cash receipt will hit the general ledger (G/L). By default, the
         current day's date will appear. If the distribution date precedes the
-        application date, the label "Apply Balance As" will change to "Record
-        Receipt as" to clarify that the cash will be recorded as a credit memo
-        or customer Deposit until the application date arrives. On the
-        application date, the credit memo or customer Deposit will
-        automatically be applied to its specified receivable
-        document(s).</para>
+        application date, the label <guilabel>Apply Balance As</guilabel> will
+        change to <guilabel>Record Receipt as</guilabel> to clarify that the
+        cash will be recorded as a credit memo or customer deposit until the
+        application date arrives. On the application date, the credit memo or
+        customer deposit will automatically be applied to its specified
+        receivable document(s).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
