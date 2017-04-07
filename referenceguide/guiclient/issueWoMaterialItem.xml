@@ -10,12 +10,13 @@
       <primary>work order material requirements</primary>
       <secondary>issuing individually</secondary>
     </indexterm>Issue W/O Material Item</title>
-  <para>To issue work order material items individually, select the <guimenuitem>Issue W/O
-  Material Item</guimenuitem> option. The following screen will appear:</para>
+  <para>To issue work order material items individually, select the
+  <guimenuitem>Issue W/O Material Item</guimenuitem> option. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/issueWoMaterialItem.png" />
+          <imagedata fileref="images/issueWoMaterialItem.png"/>
         </imageobject>
         <caption>Issue Work Order Material Item</caption>
       </mediaobject>
@@ -24,7 +25,7 @@
     <para>Unless your system is configured to allow material issues to
     exploded work orders, you may only issue materials to released or
     in-process work orders. For more information about issuing to exploded
-    work orders, please see <xref linkend="AllowIssue" />.</para>
+    work orders, please see <xref linkend="AllowIssue"/>.</para>
   </note>
   <para>When issuing work order material items individually, you are presented
   with the following options:</para>
@@ -81,15 +82,15 @@
       <term>Comp. Item Number</term>
       <listitem>
         <para>Select one of the specified item's component items whose issue
-        method is "Push" or "Mixed."</para>
+        method is Push or Mixed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
-    <para>If the "Comp. Item Number" list contains no component items, this
-    means that the issue method for all the component items is "Pull." Only
-    items with the issue method of "Push" or "Mixed" will appear in the
-    menu.</para>
+    <para>If the <guilabel>Comp. Item Number</guilabel> list contains no
+    component items, this means that the issue method for all the component
+    items is Pull. Only items with the issue method of Push or Mixed will
+    appear in the menu.</para>
   </note>
   <variablelist>
     <varlistentry>

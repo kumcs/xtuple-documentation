@@ -24,9 +24,9 @@
   <para>Some users may be Shop Floor Workbench only users, meaning the only
   screen they see when they log in to xTuple is the Shop Floor Workbench.
   These users do not require any privileges to run the Shop Floor Workbench.
-  The ability to post production or post operations is "baked into" the "Shop
-  Floor Workbench only" user functionality.</para>
-  <para>However, if your site is configured to use the "Post Production" style
+  The ability to post production or post operations is "baked into" the Shop
+  Floor Workbench only user functionality.</para>
+  <para>However, if your site is configured to use the "post production" style
   for the Shop Floor Workbench, the following privileges may be used to
   enhance the capabilities of Shop Floor Workbench users:</para>
   <itemizedlist>
@@ -40,7 +40,7 @@
       <para><literal>ChangeNonPickItems</literal></para>
     </listitem>
   </itemizedlist>
-  <para>By contrast, if you are configured to use the "Post Operations" style,
+  <para>By contrast, if you are configured to use the "post operations" style,
   the following privileges are available:</para>
   <itemizedlist>
     <listitem>
@@ -73,12 +73,12 @@
       change the clocked times</para>
     </listitem>
   </itemizedlist>
-  <para>To access the Shop Floor Workbench, select the <guimenuitem>Shop Floor Workbench</guimenuitem>
-  option. The following screen will appear:</para>
+  <para>To access the Shop Floor Workbench, select the <guimenuitem>Shop Floor
+  Workbench</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woTimeClock.png" />
+          <imagedata fileref="images/woTimeClock.png"/>
         </imageobject>
         <caption>Shop Floor Workbench</caption>
       </mediaobject>
@@ -142,9 +142,9 @@
       <term>Status</term>
       <listitem>
         <para>Displays work order status automatically when work order number
-        is entered into <guilabel>Work Order #</guilabel> field. Only released "R" and in-process
-        "I" work orders may be processed using the Shop Floor
-        Workbench.</para>
+        is entered into <guilabel>Work Order #</guilabel> field. Only released
+        "R" and in-process "I" work orders may be processed using the Shop
+        Floor Workbench.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -193,9 +193,10 @@
         be overridden—except by users who have override privileges. Users may
         only clock-out of work orders they are already clocked-in to. If the
         Workbench is configured for operations-posting, the Post Operations
-        screen will be presented immediately after the <guibutton>CLOCK OUT</guibutton> button is
-        selected. By default, the Scrap Work Order Material screen will
-        immediately follow the Post Operations screen.</para>
+        screen will be presented immediately after the <guibutton>CLOCK
+        OUT</guibutton> button is selected. By default, the Scrap Work Order
+        Material screen will immediately follow the Post Operations
+        screen.</para>
         <tip>
           <para>Shop Floor Workbench users should only scrap top-level items
           after they have posted production sufficient to cover the scrap
