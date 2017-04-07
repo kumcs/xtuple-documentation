@@ -20,12 +20,13 @@
     on our community website here: <ulink
     url="http://www.xtuple.org/node/4479">http://www.xtuple.org/node/4479</ulink>.</para>
   </tip>
-  <para>To begin using the Merge Accounts utility, select the <guimenuitem>Merge Accounts</guimenuitem>
-  option. The following screen will appear:</para>
+  <para>To begin using the Merge Accounts utility, select the
+  <guimenuitem>Merge Accounts</guimenuitem> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccountMergePickTaskPage.png" />
+          <imagedata fileref="images/crmaccountMergePickTaskPage.png"/>
         </imageobject>
         <caption>Identify Merge Tasks</caption>
       </mediaobject>
@@ -64,13 +65,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>After specifying a task to perform, select the <guibutton>NEXT</guibutton> button to reach
-  the next step. The following screenshot shows the second step for creating a
-  new merge:</para>
+  <para>After specifying a task to perform, select the
+  <guibutton>NEXT</guibutton> button to reach the next step. The following
+  screenshot shows the second step for creating a new merge:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccountMergePickAccountsPage.png" />
+          <imagedata fileref="images/crmaccountMergePickAccountsPage.png"/>
         </imageobject>
         <caption>Select Accounts to be Merged</caption>
       </mediaobject>
@@ -80,7 +81,7 @@
   <variablelist>
     <xi:include href="../widgets/parameterwidget.xml"
                 xpointer="parameterwidget"
-                xmlns:xi="http://www.w3.org/2001/XInclude" />
+                xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <varlistentry>
       <term><guibutton>QUERY</guibutton></term>
       <listitem>
@@ -93,8 +94,8 @@
       <listitem>
         <para>Displays the list of accounts found in your system. By using
         your mouse, you can click on accounts to specify which ones you want
-        to merge. The accounts you select will appear in the "Destination
-        Account" drop-down list.</para>
+        to merge. The accounts you select will appear in the
+        <guilabel>Destination Account</guilabel> drop-down list.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -107,13 +108,14 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Once you've selected accounts to merge, select the <guibutton>NEXT</guibutton> button to
-  reach the next step. The following screenshot shows the next step once
-  you've identified accounts to merge:</para>
+  <para>Once you've selected accounts to merge, select the
+  <guibutton>NEXT</guibutton> button to reach the next step. The following
+  screenshot shows the next step once you've identified accounts to
+  merge:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccountMergePickDataPage.png" />
+          <imagedata fileref="images/crmaccountMergePickDataPage.png"/>
         </imageobject>
         <caption>Select Data to be Merged</caption>
       </mediaobject>
@@ -129,7 +131,8 @@
         displayed in blue will be added to the target account. You can select
         information (i.e., make it blue) by double-clicking on the information
         with your mouse. You can also click on the information once and then
-        choose either the <guibutton>SELECT</guibutton> or <guibutton>DESELECT</guibutton> button to add or remove the
+        choose either the <guibutton>SELECT</guibutton> or
+        <guibutton>DESELECT</guibutton> button to add or remove the
         information from the merge. Since the final result can only contain
         one piece of information per column, only one item in each column can
         be selected and blue.</para>
@@ -158,32 +161,34 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Once you select the <guibutton>COMMIT</guibutton> button, you will be shown a preview of your
-  merge results, as shown below:</para>
+  <para>Once you select the <guibutton>COMMIT</guibutton> button, you will be
+  shown a preview of your merge results, as shown below:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/crmaccountMergeResultPage.png" />
+        <imagedata fileref="images/crmaccountMergeResultPage.png"/>
       </imageobject>
       <caption>Results of Account Merge</caption>
     </mediaobject>
   </screenshot>
-  <para>To keep the merge result, make sure the <guilabel>Keep</guilabel> option is chosen and
-  then select the <guibutton>NEXT</guibutton> button. To undo the merge, make sure the <guilabel>Undo</guilabel> option
-  is chosen and then select the <guibutton>NEXT</guibutton> button.</para>
+  <para>To keep the merge result, make sure the <guilabel>Keep</guilabel>
+  option is chosen and then select the <guibutton>NEXT</guibutton> button. To
+  undo the merge, make sure the <guilabel>Undo</guilabel> option is chosen and
+  then select the <guibutton>NEXT</guibutton> button.</para>
   <para>Assuming you decide to keep the merge, you will be presented with the
   following purge screen:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/crmaccountMergePurgePage.png" />
+        <imagedata fileref="images/crmaccountMergePurgePage.png"/>
       </imageobject>
       <caption>Purge Accounts</caption>
     </mediaobject>
   </screenshot>
   <para>When reviewing the purge screen, pay particular attention to the
-  information shown in the "Status" column. The status information explains
-  what will happen to the specified records when they are purged.</para>
+  information shown in the <guilabel>Status</guilabel> column. The status
+  information explains what will happen to the specified records when they are
+  purged.</para>
   <tip>
     <para>If you decide to delete a merge you are working on, look for a
     status of "In Process." When you purge an in-process merge, you are
