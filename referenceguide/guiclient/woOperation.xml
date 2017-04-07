@@ -4,12 +4,13 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="woOperation">
   <title>Create Work Order Operation</title>
-  <para>To create a work order operation, select the <guimenuitem>Create Work Order
-  Operation</guimenuitem> option. The following screen will appear:</para>
+  <para>To create a work order operation, select the <guimenuitem>Create Work
+  Order Operation</guimenuitem> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation.png" />
+          <imagedata fileref="images/woOperation.png"/>
         </imageobject>
         <caption>Create New Work Order Operation</caption>
       </mediaobject>
@@ -188,13 +189,12 @@
         to be used optionally when work order operations are posted for the
         specified operation. Operations may be posted using either the
         Inventory or production UOM. In addition, different operations in a
-        single routing may use different production UOMs. For
-        example, if you are producing soup, you might mix the soup in one
-        operation using UOM = BATCH. But when canning the soup, the canning
-        operation might use UOM = CAN. If you post operations using the
-        production UOM, the inventory/production UOM ratio normalizes the
-        posting so that the inventory impact is recorded using the Inventory
-        UOM.</para>
+        single routing may use different production UOMs. For example, if you
+        are producing soup, you might mix the soup in one operation using UOM
+        = BATCH. But when canning the soup, the canning operation might use
+        UOM = CAN. If you post operations using the production UOM, the
+        inventory/production UOM ratio normalizes the posting so that the
+        inventory impact is recorded using the Inventory UOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -277,20 +277,21 @@
         materials being removed from inventory when this operation is
         posted.</para>
         <note>
-          <para>The "Auto. Issue" setting applies only to component items
-          whose issue method is either "Pull" or "Mixed". Component items
-          using the "Push" issue method must be issued to work orders using a
-          specific material issue transaction.</para>
+          <para>The <guilabel>Auto. Issue</guilabel> setting applies only to
+          component items whose issue method is either Pull or Mixed.
+          Component items using the Push issue method must be issued to work
+          orders using a specific material issue transaction.</para>
         </note>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>To add instructions to the work order operation, select the
-  <guimenuitem>Instructions</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Instructions</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation_instructionsTab.png" />
+          <imagedata fileref="images/woOperation_instructionsTab.png"/>
         </imageobject>
         <caption>Work Order Operation</caption>
       </mediaobject>
@@ -308,18 +309,19 @@
     <varlistentry>
       <term>Use Fixed-Width Font</term>
       <listitem>
-        <para>Select to display text in the <guilabel>Instructions</guilabel> field in
-        fixed-width font. This is a useful feature for displaying tables,
-        matrixes, and other format-driven texts.</para>
+        <para>Select to display text in the <guilabel>Instructions</guilabel>
+        field in fixed-width font. This is a useful feature for displaying
+        tables, matrixes, and other format-driven texts.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>To view materials related to the work order operation, select the
-  <guimenuitem>Materials</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Materials</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation_materialsTab.png" />
+          <imagedata fileref="images/woOperation_materialsTab.png"/>
         </imageobject>
         <caption>Materials for Work Order Operation</caption>
       </mediaobject>

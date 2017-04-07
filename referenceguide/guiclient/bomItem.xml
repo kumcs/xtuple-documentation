@@ -210,11 +210,11 @@
               <para>Select if you want the component item to be issued to work
               orders by a specific material issue transaction. Because a
               specific material issue transaction must be used,
-              <guilabel>Push</guilabel> items enable you to monitor material
+              Push items enable you to monitor material
               usage variances. Standard issue quantities are not automatically
               backflushed to work orders, as is true for
-              <guilabel>Pull</guilabel> items. If a component item uses the
-              <guilabel>Push</guilabel> issue method, you must manually issue
+              Pull items. If a component item uses the
+              Push issue method, you must manually issue
               quantities to work orders.</para>
             </listitem>
           </varlistentry>
@@ -222,9 +222,9 @@
             <term>Pull</term>
             <listitem>
               <para>Select if you want the component item to be issued to work
-              orders by a material backflush. <guilabel>Pull</guilabel> items
+              orders by a material backflush. Pull items
               are automatically issued to work orders when work order
-              production is posted. Using the <guilabel>Pull</guilabel> issue
+              production is posted. Using the Pull issue
               method saves time, since materials do not need to be manually
               issued to work orders by a specific material issue
               transaction.</para>
@@ -235,11 +235,11 @@
             <listitem>
               <para>Select if you want the component item to take upon itself
               the issue method applied to it initially—that is, either
-              <guilabel>Pull</guilabel> or <guilabel>Push</guilabel>.
-              Assigning the <guilabel>Mixed</guilabel> issue method to a
+              Pull or Push.
+              Assigning the Mixed issue method to a
               component item gives you the flexibility of deciding on a work
               order by work order basis whether you want to assign the
-              <guilabel>Pull</guilabel> or <guilabel>Push</guilabel> method to
+              Pull or Push method to
               the component item.</para>
             </listitem>
           </varlistentry>
@@ -279,7 +279,7 @@
         Linking a component with an operation will have certain effects.
         First, when posting operations, components that are linked to a given
         operation will be backflushed if the issue method for the components
-        is either <guilabel>Pull</guilabel> or <guilabel>Mixed</guilabel> and
+        is either Pull or Mixed and
         the operation is set to auto issue components. Secondly, work order
         paperwork, such as routings, will show the relationship between linked
         work order material requirements and work order operations.</para>

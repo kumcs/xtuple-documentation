@@ -24,28 +24,28 @@
     <varlistentry>
       <term>Non-BOM-based</term>
       <listitem>
-        <para>Ideal for labor-only work orders having a routing
-        but no BOM—for example, service work orders which require labor
-        operations only. Also good for items or jobs where the material
-        requirements are not-known—but must be added on an ad-hoc
-        basis.</para>
+        <para>Ideal for labor-only work orders having a routing but no BOM—for
+        example, service work orders which require labor operations only. Also
+        good for items or jobs where the material requirements are
+        not-known—but must be added on an ad-hoc basis.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new work order, select the <guimenuitem>Create New Work Order</guimenuitem> option.
-  The following screen will appear:</para>
+  <para>To create a new work order, select the <guimenuitem>Create New Work
+  Order</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workOrder_detailTab.png" />
+          <imagedata fileref="images/workOrder_detailTab.png"/>
         </imageobject>
         <caption>Create New Work Order</caption>
       </mediaobject>
     </screenshot></para>
   <tip>
     <para>To edit a work order after it has been created, use the right-click
-    menu in any of the "Work Order Schedule by..." displays. There you will
-    find an <guimenuitem>Edit W/O</guimenuitem> option.</para>
+    menu in any of the <guimenuitem>Work Order Schedule by...</guimenuitem>
+    displays. There you will find an <guimenuitem>Edit W/O</guimenuitem>
+    option.</para>
   </tip>
   <para>When creating a new work order, you are presented with the following
   options:</para>
@@ -97,11 +97,11 @@
         indicate they are manufactured for the site.</para>
         <note>
           <para>Order parameters may have an impact on work order quantity if
-          the <guilabel>on Manual Orders</guilabel> option is selected in the Item Site master
-          for a manufactured item. If order parameters are in effect, the work
-          order must conform to those restrictions. Both minimum order size
-          and order multiple may be governed by order parameter
-          settings.</para>
+          the <guilabel>on Manual Orders</guilabel> option is selected in the
+          Item Site master for a manufactured item. If order parameters are in
+          effect, the work order must conform to those restrictions. Both
+          minimum order size and order multiple may be governed by order
+          parameter settings.</para>
         </note>
       </listitem>
     </varlistentry>
@@ -150,9 +150,9 @@
         starts and the date it is due. Lead Times for items are specified in
         the Item Site master, but may be modified on this screen.</para>
         <tip>
-          <para>The <guilabel>Lead Time</guilabel> option is only available when creating a new
-          work order. Once the order is created, this option will not be
-          visible.</para>
+          <para>The <guilabel>Lead Time</guilabel> option is only available
+          when creating a new work order. Once the order is created, this
+          option will not be visible.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -167,7 +167,8 @@
       <listitem>
         <para>Enter the date the work order must be started by. By default,
         this date will be the due date less the lead time. The start date may
-        be changed by altering the <guilabel>Lead Time</guilabel> field.</para>
+        be changed by altering the <guilabel>Lead Time</guilabel>
+        field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -202,16 +203,16 @@
     <varlistentry>
       <term>Detail</term>
       <listitem>
-        <para>The <guimenuitem>Detail</guimenuitem> tab provides a kind of workbench for managing
-        materials, child work orders, and operations associated with a work
-        order. Use the context-sensitive right-click menu to perform actions
-        related to work order management. The display is a nested list, with a
-        plus ("+") sign located to the far left of the display next to each
-        row that may be expanded to lower levels. By clicking your mouse on a
-        plus sign, you reveal lower levels of information related to the
-        group. The following color-coding has been implemented to simplify
-        navigation: green (work orders), blue (operations), black
-        (materials).</para>
+        <para>The <guimenuitem>Detail</guimenuitem> tab provides a kind of
+        workbench for managing materials, child work orders, and operations
+        associated with a work order. Use the context-sensitive right-click
+        menu to perform actions related to work order management. The display
+        is a nested list, with a plus (<guibutton>+</guibutton>) sign located
+        to the far left of the display next to each row that may be expanded
+        to lower levels. By clicking your mouse on a plus sign, you reveal
+        lower levels of information related to the group. The following
+        color-coding has been implemented to simplify navigation: green (work
+        orders), blue (operations), black (materials).</para>
         <variablelist>
           <varlistentry>
             <term>Show</term>
@@ -233,7 +234,7 @@
                     requirements in the display. Materials may be issued to
                     exploded work orders only if that option is enabled in the
                     work order configuration. For more information, please see
-                    <xref linkend="AllowIssue" />.</para>
+                    <xref linkend="AllowIssue"/>.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
@@ -259,12 +260,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add notes to a work order, select the <guimenuitem>Notes</guimenuitem> tab. The following
-  screen will appear:</para>
+  <para>To add notes to a work order, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workOrder_notesTab.png" />
+          <imagedata fileref="images/workOrder_notesTab.png"/>
         </imageobject>
         <caption>Work Order Notes</caption>
       </mediaobject>
@@ -279,9 +281,10 @@
         printed on pick lists and packing lists for reference by production
         personnel.</para>
         <tip>
-          <para>If a work order was created from a sales order, the <guilabel>Production
-          Notes</guilabel> field will contain the sales order number, the customer Name,
-          and any additional sales order line item notes.</para>
+          <para>If a work order was created from a sales order, the
+          <guilabel>Production Notes</guilabel> field will contain the sales
+          order number, the customer Name, and any additional sales order line
+          item notes.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -296,8 +299,9 @@
     to users entering sales order line items.</para>
   </tip>
   <para>To associate characteristics with a work order, select the
-  <guimenuitem>Characteristics</guimenuitem> tab. As you can see in the following screenshot, there are
-  two types of characteristics available:</para>
+  <guimenuitem>Characteristics</guimenuitem> tab. As you can see in the
+  following screenshot, there are two types of characteristics
+  available:</para>
   <orderedlist>
     <listitem>
       <para><emphasis role="bold">Work Order Item Characteristics</emphasis>:
@@ -312,7 +316,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workOrder_itemchar.png" />
+          <imagedata fileref="images/workOrder_itemchar.png"/>
         </imageobject>
         <caption>Work Order Characteristics</caption>
       </mediaobject>
@@ -345,37 +349,38 @@
   be created manually and linked to the work order.</para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To create or view comments related to a work order, select the
-  <guimenuitem>Comments</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workOrder_TabPage.png" />
+          <imagedata fileref="images/workOrder_TabPage.png"/>
         </imageobject>
         <caption>Add Work Order Comments</caption>
       </mediaobject>
     </screenshot></para>
   <note>
     <para>Work order comments may not be added at the time of work order
-    creation. Instead, use the <guimenuitem>Production Notes</guimenuitem> tab for entering notes related
-    to a work order.</para>
+    creation. Instead, use the <guimenuitem>Production Notes</guimenuitem> tab
+    for entering notes related to a work order.</para>
   </note>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>Once a work order is in process—that is, either materials have been
   issued or production or operations have been posted—you can begin to view
   costing information for the work order. To view costing information for the
-  work order, select the <guimenuitem>Costing</guimenuitem> tab. The following screen will
-  appear:</para>
+  work order, select the <guimenuitem>Costing</guimenuitem> tab. The following
+  screen will appear:</para>
   <para><tip>
-      <para>The <guimenuitem>Costing</guimenuitem> tab will not be visible until after a work order has
-      been created. You will not see costing information when creating a work
-      order.</para>
+      <para>The <guimenuitem>Costing</guimenuitem> tab will not be visible
+      until after a work order has been created. You will not see costing
+      information when creating a work order.</para>
     </tip><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workOrder_costing.png" />
+          <imagedata fileref="images/workOrder_costing.png"/>
         </imageobject>
         <caption>Work Order Costing</caption>
       </mediaobject>
@@ -453,12 +458,13 @@
   specify which revision of the work order item's bill of materials and bill
   of operations you want to use. By default, the active revision will be used.
   Once the work order has been created, these options will become read-only.
-  To specify revision information for a work order item, select the <guimenuitem>Revision</guimenuitem>
-  tab. The following screen will appear:</para>
+  To specify revision information for a work order item, select the
+  <guimenuitem>Revision</guimenuitem> tab. The following screen will
+  appear:</para>
   <para role="standard"><screenshot role="standard">
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workOrder_revision.png" />
+          <imagedata fileref="images/workOrder_revision.png"/>
         </imageobject>
         <caption>Revision Information</caption>
       </mediaobject>
@@ -491,9 +497,9 @@
     <varlistentry role="manufacturing">
       <term>Routing</term>
       <listitem>
-        <para>Specify the routing revision you want to use for the work order. You
-        can select the current active or any substitute routing. By default, the
-        active revision will be used.</para>
+        <para>Specify the routing revision you want to use for the work order.
+        You can select the current active or any substitute routing. By
+        default, the active revision will be used.</para>
         <variablelist>
           <varlistentry>
             <term>Revision</term>
@@ -507,12 +513,13 @@
     </varlistentry>
   </variablelist>
   <para>To view the documents associated with a work order, select the
-  <guimenuitem>Documents</guimenuitem> tab. The following screen will appear:<mediaobject>
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/workOrder_documentsTab.png" />
+        <imagedata fileref="images/workOrder_documentsTab.png"/>
       </imageobject>
       <caption><para>Work Order Documents</para></caption>
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
