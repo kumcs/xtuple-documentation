@@ -160,10 +160,11 @@
     <varlistentry>
       <term>Sold from this Site</term>
       <listitem>
-        <para>Select if item is sold from specified site. If selected, "Sold
-        from" means that sales orders line items may request to Ship from the
-        site. When adding sales order line items to a sales order, a "Sold
-        from" site appears as the "Supplying" site.</para>
+        <para>Select if item is sold from specified site. If selected,
+        <guilabel>Sold from</guilabel> means that sales orders line items may
+        request to Ship from the site. When adding sales order line items to a
+        sales order, a <guilabel>Sold from</guilabel> site appears as the
+        <guilabel>Supplying</guilabel> site.</para>
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
@@ -180,11 +181,12 @@
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 10. Value entered specifies the order
               in which item sites will be chosen during sales order and sales
-              quote creation. If an item is located in more than one "Sold
-              from" site, the item site with the highest ranking will be
-              chosen first. If two item sites happen to share the same
-              ranking, selection will be based on alphabetical order. The
-              highest ranking an item site can have is one (1).</para>
+              quote creation. If an item is located in more than one
+              <guilabel>Sold from</guilabel> site, the item site with the
+              highest ranking will be chosen first. If two item sites happen
+              to share the same ranking, selection will be based on
+              alphabetical order. The highest ranking an item site can have is
+              one (1).</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -211,7 +213,7 @@
                 <varlistentry>
                   <term>None</term>
                   <listitem>
-                    <para>Select if you don"t care to see inventory history
+                    <para>Select if you don't care to see inventory history
                     transactions for the item site.</para>
                   </listitem>
                 </varlistentry>
@@ -284,8 +286,8 @@
             <term>None</term>
             <listitem>
               <para>This cost method is automatically selected for the item
-              site if the Control Method is "None" or the Item type is
-              "Reference".</para>
+              site if the control method is <guilabel>None</guilabel> or the
+              item type is Reference.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -393,10 +395,10 @@
               length of that period, measured in days.</para>
               <tip>
                 <para>To monitor the frequency of item site Cycle Counts, view
-                the "Last Counted" column in any of the item site Reports: by
-                item, by class code, etc. The Last Counted date represents the
-                date a Count Tag was last posted (not simply issued) for the
-                item site.</para>
+                the <guilabel>Last Counted</guilabel> column in any of the
+                item site Reports: by item, by class code, etc. The last
+                counted date represents the date a count tag was last posted
+                (not simply issued) for the item site.</para>
               </tip>
             </listitem>
           </varlistentry>
@@ -418,10 +420,10 @@
               Event Fence is set to five days. Assume that a work order exists
               for this item and that the scheduled start date for that work
               order is three days from the current date. If someone were to
-              change the quantity of that work order, the Event "WoQtyChanged"
-              would be triggered. And because the work order start date falls
-              within the Event Fence for the item site, an Event notification
-              would be issued.</para>
+              change the quantity of that work order, the event
+              <literal>WoQtyChanged</literal> would be triggered. And because
+              the work order start date falls within the event fence for the
+              item site, an event notification would be issued.</para>
             </listitem>
           </varlistentry>
         </variablelist>

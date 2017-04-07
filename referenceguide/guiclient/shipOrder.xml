@@ -7,12 +7,12 @@
       <primary>shipping</primary>
       <secondary>shipping sales orders</secondary>
     </indexterm> Ship Order</title>
-  <para>To ship an order, select the <guimenuitem>Ship Order</guimenuitem> option. The following screen
-  will appear:</para>
+  <para>To ship an order, select the <guimenuitem>Ship Order</guimenuitem>
+  option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/shipOrder.png" />
+          <imagedata fileref="images/shipOrder.png"/>
         </imageobject>
         <caption>Ship Order</caption>
       </mediaobject>
@@ -70,9 +70,9 @@
         enables you to bypass the billing selection process. Once the order is
         shipped, an invoice will be created and printed. This invoice will
         appear on the list of unposted invoices—making it available for
-        posting. By default, the <guilabel>Select for Billing</guilabel> option will also be
-        selected. This option will be disabled if a transfer order is
-        specified.</para>
+        posting. By default, the <guilabel>Select for Billing</guilabel>
+        option will also be selected. This option will be disabled if a
+        transfer order is specified.</para>
         <para role="xtconnect"><tip>
             <para>If the customer specified on the sales order has an EDI
             profile attached, you may encounter an EDI processing interface
@@ -162,23 +162,24 @@
         modification of an order—or at the time of shipment.</para>
         <note>
           <para>The system supports up-to-date shipment tracking with links to
-          the websites of many leading shipping companies (i.e., "Ship
-          Vias").</para>
+          the websites of many leading shipping companies (i.e., ship
+          vias).</para>
         </note>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Ship Via</term>
       <listitem>
-        <para>Specify the ship via for the order. The <guilabel>Ship Via</guilabel> field supports
-        free-form ship vias. If you want to enter a free-form ship via, simply
-        type the name of the ship via into the field.</para>
+        <para>Specify the ship via for the order. The <guilabel>Ship
+        Via</guilabel> field supports free-form ship vias. If you want to
+        enter a free-form ship via, simply type the name of the ship via into
+        the field.</para>
         <tip>
           <para>Get the most up-to-date tracking information directly from the
-          shipper's website by using the <guimenuitem>Query Shipment Status</guimenuitem> option found
-          in the Shipments by Sales Order report. This feature is enabled
-          for a limited number of shipping companies (i.e., "Ship
-          Vias")</para>
+          shipper's website by using the <guimenuitem>Query Shipment
+          Status</guimenuitem> option found in the Shipments by Sales Order
+          report. This feature is enabled for a limited number of shipping
+          companies (i.e., ship vias).</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -201,8 +202,8 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>If an order is marked "Ship Complete," you will be prevented from
-    shipping the order until all line item quantities are issued to
-    shipping.</para>
+    <para>If an order is marked <guilabel>Ship Complete</guilabel>, you will
+    be prevented from shipping the order until all line item quantities are
+    issued to shipping.</para>
   </note>
 </section>

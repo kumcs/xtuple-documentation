@@ -4,96 +4,79 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="transferTrans" role="standard">
   <title>Inter-Site Transfer</title>
-
   <para>To transfer quantity of an item from one site to another, select the
-  <guimenuitem>Inter-Site Transfer</guimenuitem> option. The following screen will appear:</para>
-
+  <guimenuitem>Inter-Site Transfer</guimenuitem> option. The following screen
+  will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/transferTrans.png"/>
         </imageobject>
-
         <caption>Enter Inter-Site Transfer</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>An inter-site transfer can only be executed if the specified item is
     located in more than one site. To add an additional site for an item, go
     to the enter item sites section of the Item Sites menu. Locate the desired
     item number using the item number lookup feature. Then select a new site
-    in the <guilabel>Site</guilabel> field. Enter all other required fields and save your
-    results. The item will now also be located in the additional site. Repeat
-    as often as necessary.</para>
+    in the <guilabel>Site</guilabel> field. Enter all other required fields
+    and save your results. The item will now also be located in the additional
+    site. Repeat as often as necessary.</para>
   </tip>
-
   <para>When creating an inter-site transfer, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
-
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
         general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter the item number of the item you want to transfer from one
         site to another.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>From Site</term>
-
       <listitem>
         <para>Specify the source site for the transaction. If an item is
         located in more than one site, be sure to specify the correct site you
-        want to transfer the item from. The <guilabel>Before</guilabel> column displays current
-        quantity on hand (QOH) for the item.</para>
+        want to transfer the item from. The <guilabel>Before</guilabel> column
+        displays current quantity on hand (QOH) for the item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>To Site</term>
-
       <listitem>
         <para>: Specify the destination site for the transaction. If an item
         is located in more than one site, be sure to specify the correct site
-        you want to transfer the item to. The <guilabel>Before</guilabel> column displays current
-        QOH for the item</para>
+        you want to transfer the item to. The <guilabel>Before</guilabel>
+        column displays current QOH for the item</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Transferred Qty.</term>
-
       <listitem>
-        <para>The number entered will adjust the item's QOH in both the "From"
-        and "To" sites. The values displayed in the <guilabel>After</guilabel> column represent
+        <para>The number entered will adjust the item's QOH in both the
+        <guilabel>From</guilabel> and <guilabel>To</guilabel> sites. The
+        values displayed in the <guilabel>After</guilabel> column represent
         the new QOH in each location. Non-netable QOH is not included in these
         values.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Document #</term>
-
       <listitem>
         <para>Creates a user-defined reference for the Inter-site Transfer.
         The Document reference will be posted with the general ledger (G/L)
@@ -101,10 +84,8 @@
         field may be used for internal tracking and auditing purposes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Comments</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the transfer.</para>

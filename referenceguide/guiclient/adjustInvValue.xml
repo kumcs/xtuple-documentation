@@ -4,39 +4,32 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="adjustInvValue">
   <title>Adjust Average Cost Value</title>
-
   <para>From time to time you may find it necessary to adjust the inventory
   value of your average cost items. The Adjust Average Cost Value utility is
   designed to facilitate this process. To access the utility, select the
-  <guimenuitem>Adjust Average Cost Value</guimenuitem> option. The following screen will appear:</para>
-
+  <guimenuitem>Adjust Average Cost Value</guimenuitem> option. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/adjustInvValue.png"/>
         </imageobject>
-
         <caption>Adjust Average Cost Value Utility</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When adjusting the inventory value of average cost items, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry role="standard">
       <term>Site</term>
-
       <listitem>
         <para>Specify the site where the adjustment should be recorded. If an
         item is located in more than one site, be sure to specify the correct
         site for the adjustment.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter the item number of the item you want to create an
         adjustment for. Only average cost items having a quantity on hand
@@ -45,26 +38,20 @@
         QOH = 0.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty on Hand</term>
-
       <listitem>
         <para>Displays the current QOH for the item site.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Current Value</term>
-
       <listitem>
         <para>Displays the current value of the inventory in the item
         site.</para>
-
         <variablelist>
           <varlistentry>
             <term>Current Unit Cost</term>
-
             <listitem>
               <para>Displays the current unit cost for the inventory.</para>
             </listitem>
@@ -72,18 +59,14 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>New Value</term>
-
       <listitem>
         <para>Enter the new value you want to assign to the inventory in the
         item site.</para>
-
         <variablelist>
           <varlistentry>
             <term>New Unit Cost</term>
-
             <listitem>
               <para>Displays the new unit cost for the inventory.</para>
             </listitem>
@@ -91,26 +74,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Use alternate adjustment account</term>
-
       <listitem>
         <para>Specify an alternate account number to use for the
         transaction.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>POST</guibutton></term>
-
       <listitem>
         <para>Select to update the value of your average cost inventory,
-        create an "Adjustment" inventory history transaction, and post the
+        create an Adjustment inventory history transaction, and post the
         difference in value to the G/L.</para>
       </listitem>
     </varlistentry>

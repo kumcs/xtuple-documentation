@@ -71,8 +71,9 @@
       <term>Order Status</term>
       <listitem>
         <para>Select the current status of the transfer order. Transfer orders
-        may be either Unreleased = "U", Open = "O" or Closed = "C". The
-        default status for a new transfer order is Unreleased. The
+        may be either Unreleased = <guilabel>U</guilabel>, Open =
+        <guilabel>O</guilabel> or Closed = <guilabel>C</guilabel>. The default
+        status for a new transfer order is Unreleased. The
         ReleaseTransferOrders privilege is required to change the status to
         Open. The transfer order must be released before shipping and
         receiving transactions are allowed. Changing the order status will
@@ -254,10 +255,10 @@
   <note>
     <para>Transfer order line items may exist in any of the following
     statuses:</para>
-    <para>"U" = Unreleased</para>
-    <para>"O" = Open</para>
-    <para>"C" = Closed</para>
-    <para>"X" = Cancelled</para>
+    <para><guilabel>U</guilabel> = Unreleased</para>
+    <para><guilabel>O</guilabel> = Open</para>
+    <para><guilabel>C</guilabel> = Closed</para>
+    <para><guilabel>X</guilabel> = Cancelled</para>
   </note>
   <variablelist>
     <varlistentry>
