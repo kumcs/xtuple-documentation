@@ -5,49 +5,38 @@
 <section id="reconcileBankaccount">
   <title><indexterm significance="normal">
       <primary>bank accounts</primary>
-
       <secondary>reconciliation of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bank reconciliations</primary>
-
       <secondary>process for</secondary>
     </indexterm>Reconcile Bank Account</title>
-
   <para>To reconcile a bank account, select the <guimenuitem>Reconcile Bank
   Account</guimenuitem> option. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/reconcileBankaccount.png"/>
         </imageobject>
-
         <caption>Reconcile Bank Account</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>To reopen a posted bank reconciliation, go to the Summarized Bank
     Reconciliation History screen and right-click on the most recently posted
     reconciliation. Only the most recently posted bank reconciliation can be
     reopened.</para>
   </tip>
-
   <para>When reconciling a bank account, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Bank Account</term>
-
       <listitem>
         <para>Specify the bank account you want to reconcile.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Currency</term>
-
       <listitem>
         <para>Displays the currency of the selected bank account. To help with
         the reconciliation of foreign currency transactions, the screen allows
@@ -60,10 +49,8 @@
         global exchange rates.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Exchange Rate Edit</term>
-
       <listitem>
         <para>Select if you want the ability to edit the exchange rate for any
         posted deposits or payments. Editing exchange rates for bank
@@ -77,7 +64,6 @@
         Rate/Effective Date Edit</guilabel> and double-clicking a record will
         enable you to change the effective date as well as the exchange
         rate.</para>
-
         <tip>
           <para>To work on a bank reconciliation over several sessions, simply
           select the <guibutton>SAVE</guibutton> button. Your work will be
@@ -85,10 +71,8 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>By default the start date field will be pre-populated based on
         the end date of your most recent bank reconciliation—if it exists. The
@@ -99,10 +83,8 @@
         You must select new date range.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Specify the ending date of the current bank reconciliation
         period. Bank reconciliations are identified by their date ranges, for
@@ -111,154 +93,126 @@
         You must select new date range.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Opening Balance</term>
-
       <listitem>
-        <para>By default the <guilabel>Opening Balance</guilabel> field will be pre-populated with
-        the ending balance of your most recent bank reconciliation—if it
-        exists. If you want to use a different opening balance, simply edit
-        the amount to your preferred amount.</para>
+        <para>By default the <guilabel>Opening Balance</guilabel> field will
+        be pre-populated with the ending balance of your most recent bank
+        reconciliation—if it exists. If you want to use a different opening
+        balance, simply edit the amount to your preferred amount.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ending Balance</term>
-
       <listitem>
         <para>Enter the current ending balance, as shown on your bank
         statement.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>checks</primary>
-
           <secondary>marking as cleared</secondary>
         </indexterm><indexterm significance="normal">
           <primary>bank reconciliations</primary>
-
           <secondary>marking checks as cleared</secondary>
         </indexterm><indexterm significance="normal">
           <primary>bank reconciliations</primary>
-
           <secondary>marking deposits as cleared</secondary>
         </indexterm> Deposits</term>
-
       <listitem>
         <para>Display lists posted receipts and other deposits which have not
         been previously reconciled. This display is a nested list, with a plus
-        ("+") sign located to the far left of the display next to each receipt
-        or deposit that may be expanded to lower levels. By clicking your
-        mouse on a plus sign, you reveal lower levels of information related
-        to the group. Double-click on a deposit line to mark the document as
-        "Cleared" and to save any edits made to the exchange rate.</para>
+        sign (<guibutton>+</guibutton>) located to the far left of the display
+        next to each receipt or deposit that may be expanded to lower levels.
+        By clicking your mouse on a plus sign, you reveal lower levels of
+        information related to the group. Double-click on a deposit line to
+        mark the document as "cleared" and to save any edits made to the
+        exchange rate.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>Cash receipts posted in batch mode will appear grouped together in
     the nested list appearing under the appropriate document number.</para>
   </note>
-
   <variablelist>
     <varlistentry>
       <term>Payments</term>
-
       <listitem>
         <para>Display lists posted checks and other payments which have not
         been previously reconciled. Double-click on a payment line to mark the
-        document as "Cleared" and to save any edits made to the exchange
+        document as cleared and to save any edits made to the exchange
         rate.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>adjustments</primary>
-
           <secondary>entering for bank accounts</secondary>
         </indexterm><indexterm significance="normal">
           <primary>bank adjustments</primary>
-
           <secondary>entering new</secondary>
         </indexterm><indexterm significance="normal">
           <primary>bank accounts</primary>
-
           <secondary>adjusting balances for</secondary>
         </indexterm>ADD ADJUSTMENT</term>
-
       <listitem>
         <para>Select to add a bank adjustment directly to either the deposits
-        or payments list. Bank adjustments marked as "Cleared" will
+        or payments list. Bank adjustments marked as cleared will
         automatically be posted to the general ledger (G/L) when a bank
         account is reconciled. For more information on entering bank
         adjustments, see <xref linkend="bankAdjustment"/>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cleared Deposits</term>
-
       <listitem>
         <para>Displays a running total amount of deposits which have been
         marked as cleared. Double-click on a document using your mouse to mark
         the document as cleared. To unmark the document, double-click on it
-        again. The "Cleared" column value will alternate between "Yes" and
-        "No" as you double-click on a document line.</para>
+        again. The Cleared column value will alternate between "Yes" and "No"
+        as you double-click on a document line.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cleared Payments</term>
-
       <listitem>
         <para>Displays a running total amount of payments which have been
         marked as cleared. Double-click on a document using your mouse to mark
         the document as cleared. To unmark the document, double-click on it
-        again. The "Cleared" column value will alternate between "Yes" and
-        "No" as you double-click on a document line.</para>
+        again. The Cleared column value will alternate between "Yes" and "No"
+        as you double-click on a document line.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ending Balance</term>
-
       <listitem>
         <para>Displays the ending balance entered in the <guilabel>Ending
         Balance</guilabel> field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cleared Balance</term>
-
       <listitem>
         <para>Displays the cleared balance. The cleared balance is calculated
         based on the following formula:</para>
-
         <informalexample>
           <para><literal>(Opening Balance) + (Cleared Deposits) - (Cleared
           Payments)</literal></para>
         </informalexample>
-
         <para><tip>
             <para>A successful bank reconciliation will result in the cleared
             balance being equal to the ending balance.</para>
           </tip></para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Difference</term>
-
       <listitem>
         <para>Displays the difference between the ending balance and the
         cleared balance. A successful bank reconciliation will result in
@@ -267,9 +221,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <tip>
     <para>If you want to save any work you have done in the current or a prior
     session, you should select the <guibutton>SAVE</guibutton> button.
@@ -278,29 +230,24 @@
     work you saved previously will be ready for you to start working on it
     again.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>RECONCILE</guibutton></term>
-
       <listitem>
         <para>Select to reconcile the specified bank account and create a
         record of the bank reconciliation. Selecting this option posts the
         bank reconciliation. The posting may be viewed using the Bank
         Reconciliation History display. The start and end dates for the
         posting are used to identify it.</para>
-
         <note>
           <para>Once a bank account is reconciled, any deposits or payments
-          which were marked as "Cleared" will no longer be available for
-          future bank reconciliations.</para>
+          which were marked as cleared will no longer be available for future
+          bank reconciliations.</para>
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>IMPORT</guibutton></term>
-
       <listitem>
         <para>Select to import a bank statement file in .CSV format. This
         button will be hidden if you have not configured the system to allow
@@ -319,11 +266,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>UPDATE</guibutton></term>
-
       <listitem>
         <para>Select to update the Bank Reconciliation screen with any new
         transaction information not already listed.</para>

@@ -5,86 +5,67 @@
 <section id="dspCheckRegister">
   <title><indexterm significance="normal">
       <primary>payments</primary>
-
       <secondary>register for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>registers</primary>
-
       <secondary>for payments</secondary>
     </indexterm>Payment Register</title>
-
   <para>To view Payment Registers by bank account, select the
   <guimenuitem>Payment Register</guimenuitem> option. The following screen
   will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspCheckRegister.png"/>
         </imageobject>
-
         <caption>Payment Register</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>From the right-click menu you can view payment details. You can also
     void posted payments. When voiding a payment, you will be given the option
     to specify the void date. Apply-to records will also be reversed on the
     void date you specify.</para>
   </tip>
-
   <para>When displaying payment register information, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Bank Account</term>
-
       <listitem>
         <para>Specify the bank account whose payment register information you
         want to display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Payment Number</term>
-
       <listitem>
         <para>Enter a payment number or regular expression. The display will
         show payment(s) matching the specified payment number(s).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show only payments written to:</term>
-
       <listitem>
         <para>Select if you want to limit the results to any of the following
         payment recipient types:</para>
-
         <variablelist>
           <varlistentry>
             <term>Vendor</term>
-
             <listitem>
               <para>Select to include only payments written to vendors in the
               report.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Customer</term>
-
             <listitem>
               <para>Select to include only payments written to customers in
               the report.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Tax Authority</term>
-
             <listitem>
               <para>Select to include only payments written to tax authorities
               in the report.</para>
@@ -93,27 +74,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Payments posted on and after this date will be displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Payments posted on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Detail</term>
-
       <listitem>
         <para>Select to include payment detail information in the display. If
         selected, the vouchers and/or debit memos associated with payments
@@ -122,17 +97,15 @@
         ensure detail is included in the display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Payments</term>
-
       <listitem>
         <para>Display lists payments by bank account, using the specified
-        parameters. This display is a nested list, with a plus ("+") sign
-        located to the far left of the display next to each date. By clicking
-        your mouse on a plus sign, you reveal lower levels of information
-        related to transactions on that date. The total amount of all payments
-        will also be displayed.</para>
+        parameters. This display is a nested list, with a plus sign
+        (<guibutton>+</guibutton>) located to the far left of the display next
+        to each date. By clicking your mouse on a plus sign, you reveal lower
+        levels of information related to transactions on that date. The total
+        amount of all payments will also be displayed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
