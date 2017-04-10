@@ -5,9 +5,9 @@
 <section id="dspMRPDetail" role="standard">
   <title>MRP Detail</title>
 
-  <para>To display a time-phased view of material requirements Planning (MRP)
-  detail, select the <guimenuitem>MRP Detail</guimenuitem> option. The following screen will
-  appear:</para>
+  <para>To display a time-phased view of material requirements planning (MRP)
+  detail, select the <guimenuitem>MRP Detail</guimenuitem> option. The
+  following screen will appear:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -23,7 +23,7 @@
     <para>Only firm planned orders will be included in the MRP Detail display.
     If a planned order is not firmed, it will not be recognized. This
     limitation pertains also to MRP items which may be associated with MPS or
-    Planning items. While firm MPS orders may exist, planned orders for the
+    planning items. While firm MPS orders may exist, planned orders for the
     underlying MRP items must be firmed (or released) before the MRP Detail
     display will recognize them.</para>
   </note>
@@ -70,7 +70,7 @@
 
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
-        Refine your search using Regular Expressions.</para>
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
 
@@ -95,18 +95,19 @@
 
       <listitem>
         <para>Select as many periods as you want to display. Selected periods
-        correspond to calendar specified in the <guilabel>Calendar</guilabel> field. Select
-        individual periods or groups of periods together. To select an
-        individual period, highlight the period using your mouse button. The
-        period is now selected. To select a sequence of periods, highlight the
-        first in the sequence using your mouse button. Then, holding down the
-        <guibutton>SHIFT</guibutton> key on your keyboard, highlight the last period in the sequence.
-        The entire sequence is now selected. To select periods that are out of
-        sequence (e.g., January, April, July, October), highlight the first
-        period in the group. Then, holding down the <guibutton>CTRL</guibutton> key on your keyboard,
+        correspond to calendar specified in the <guilabel>Calendar</guilabel>
+        field. Select individual periods or groups of periods together. To
+        select an individual period, highlight the period using your mouse
+        button. The period is now selected. To select a sequence of periods,
+        highlight the first in the sequence using your mouse button. Then,
+        holding down the <guibutton>SHIFT</guibutton> key on your keyboard,
+        highlight the last period in the sequence. The entire sequence is now
+        selected. To select periods that are out of sequence (e.g., January,
+        April, July, October), highlight the first period in the group. Then,
+        holding down the <guibutton>CTRL</guibutton> key on your keyboard,
         highlight the next period you want to select. Continue highlighting
-        periods with the <guibutton>CTRL</guibutton> key depressed until all desired periods are
-        selected. The entire group is now selected.</para>
+        periods with the <guibutton>CTRL</guibutton> key depressed until all
+        desired periods are selected. The entire group is now selected.</para>
       </listitem>
     </varlistentry>
 
@@ -116,8 +117,8 @@
       <listitem>
         <para>Display lists items matching the specified parameters. When you
         have selected a calendar type and corresponding calendar period(s),
-        highlight an item to display MRP detail for the item in the "MRP
-        Detail" display below.</para>
+        highlight an item to display MRP detail for the item in the MRP Detail
+        display below.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -132,22 +133,22 @@
       <term>MRP Detail</term>
 
       <listitem>
-        <para>Display lists MRP detail for the item you selected in the "Site
-        Items" display above.</para>
+        <para>Display lists MRP detail for the item you selected in the Site
+        Items display above.</para>
 
-        <para>MRP detail will include the following rows: Projected QOH (based
-        on Allocations and orders for specified future periods); Allocations
+        <para>MRP detail will include the following rows: projected QOH (based
+        on allocations and orders for specified future periods); allocations
         (demand from sales orders); orders (based on work orders or purchase
-        orders); availability (based on current Allocations and orders);
-        Firmed Allocations (firmed planned requirements); Firmed orders (firm
-        planned orders); and Firmed availability (based on availability and
+        orders); availability (based on current allocations and orders);
+        firmed allocations (firmed planned requirements); firmed orders (firm
+        planned orders); and firmed availability (based on availability and
         firm planned orders).</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>You will only be able to view Allocations if Allocations are showing
+    <para>You will only be able to view allocations if allocations are showing
     a positive value in the period where you right-click your mouse.
     Similarly, you will only be able to view orders if orders are showing a
     positive value in the period where you right-click your mouse.</para>

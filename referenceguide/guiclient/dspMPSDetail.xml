@@ -5,8 +5,9 @@
 <section id="dspMPSDetail" role="manufacturing">
   <title>MPS Detail</title>
 
-  <para>To view the Master production schedule (MPS), select the <guimenuitem>MPS Detail</guimenuitem>
-  option. The following screen will appear:</para>
+  <para>To view the master production schedule (MPS), select the
+  <guimenuitem>MPS Detail</guimenuitem> option. The following screen will
+  appear:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -18,7 +19,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When viewing the Master production schedule, you are presented with
+  <para>When viewing the Master Production Schedule, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -60,7 +61,7 @@
 
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
-        Refine your search using Regular Expressions.</para>
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
 
@@ -86,18 +87,19 @@
 
       <listitem>
         <para>Select as many periods as you want to display. Selected periods
-        correspond to calendar specified in the <guilabel>Calendar</guilabel> field. Select
-        individual periods or groups of periods together. To select an
-        individual period, highlight the period using your mouse button. The
-        period is now selected. To select a sequence of periods, highlight the
-        first in the sequence using your mouse button. Then, holding down the
-        <guibutton>SHIFT</guibutton> key on your keyboard, highlight the last period in the sequence.
-        The entire sequence is now selected. To select periods that are out of
-        sequence (e.g., January, April, July, October), highlight the first
-        period in the group. Then, holding down the <guibutton>CTRL</guibutton> key on your keyboard,
+        correspond to calendar specified in the <guilabel>Calendar</guilabel>
+        field. Select individual periods or groups of periods together. To
+        select an individual period, highlight the period using your mouse
+        button. The period is now selected. To select a sequence of periods,
+        highlight the first in the sequence using your mouse button. Then,
+        holding down the <guibutton>SHIFT</guibutton> key on your keyboard,
+        highlight the last period in the sequence. The entire sequence is now
+        selected. To select periods that are out of sequence (e.g., January,
+        April, July, October), highlight the first period in the group. Then,
+        holding down the <guibutton>CTRL</guibutton> key on your keyboard,
         highlight the next period you want to select. Continue highlighting
-        periods with the <guibutton>CTRL</guibutton> key depressed until all desired periods are
-        selected. The entire group is now selected.</para>
+        periods with the <guibutton>CTRL</guibutton> key depressed until all
+        desired periods are selected. The entire group is now selected.</para>
       </listitem>
     </varlistentry>
 
@@ -108,7 +110,7 @@
         <para>Display lists item sites for items matching the specified
         parameters. When you have selected a calendar type and corresponding
         calendar period(s), highlight an item site to display MPS detail for
-        the item site in the "MPS Detail" display below.</para>
+        the item site in the MPS Detail display below.</para>
       </listitem>
     </varlistentry>
 
@@ -117,21 +119,21 @@
 
       <listitem>
         <para>Display lists MPS detail for the item site you selected in the
-        "Item Sites" display above. MPS detail will include the following
-        rows: Forecast (based on MPS reading of production Plans); Allocations
+        Item Sites display above. MPS detail will include the following rows:
+        forecast (based on MPS reading of production plans); allocations
         (requirements from customer orders or work orders); orders (based on
-        work orders or purchase orders); projected QOH (based on Allocations
+        work orders or purchase orders); projected QOH (based on allocations
         and orders for specified future periods); planned orders
         (system-generated orders showing requirements needed to meet negative
-        availability); availability (based on current Allocations and orders);
-        Available to Promise (uncommitted quantity available to support new
+        availability); availability (based on current allocations and orders);
+        available to promise (uncommitted quantity available to support new
         sales orders).</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
   <note>
-    <para>You will only be able to view Allocations if Allocations are showing
+    <para>You will only be able to view allocations if allocations are showing
     a positive value in the period where you right-click your mouse.
     Similarly, you will only be able to view orders if orders are showing a
     positive value in the period where you right-click your mouse.</para>

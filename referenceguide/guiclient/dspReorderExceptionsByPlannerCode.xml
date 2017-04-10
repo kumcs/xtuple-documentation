@@ -4,75 +4,95 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspReorderExceptionsByPlannerCode" role="standard">
   <title>Reorder Exceptions by Planner Code</title>
-  <para>A Reorder Exception is an indication that an item site's projected
-  availability will drop below the Reorder Level for that item site. To view a
+
+  <para>A reorder exception is an indication that an item site's projected
+  availability will drop below the reorder level for that item site. To view a
   list of items requiring orders to correct projected deficits, select the
-  <guimenuitem>Reorder Exceptions by Planner Code</guimenuitem> option. The following screen will
-  appear:</para>
+  <guimenuitem>Reorder Exceptions by Planner Code</guimenuitem> option. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspReorderExceptionsByPlannerCode.png" />
+          <imagedata fileref="images/dspReorderExceptionsByPlannerCode.png"/>
         </imageobject>
+
         <caption>Reorder Exceptions by Planner Code</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When displaying Reorder Exceptions by planner code, you are presented
+
+  <para>When displaying reorder exceptions by planner code, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
+
       <listitem>
-        <para>Select to display Reorder Expedite Exceptions for all planner
+        <para>Select to display reorder expedite exceptions for all planner
         codes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
-        <para>Specify planner code whose Reorder Expedite Exceptions you want
+        <para>Specify planner code whose reorder expedite exceptions you want
         to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
-        Refine your search using Regular Expressions.</para>
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Sites</term>
+
       <listitem>
-        <para>Select to display Reorder Expedite Exceptions by planner code
+        <para>Select to display reorder expedite exceptions by planner code
         for all sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
-        <para>Specify site whose Reorder Expedite Exceptions by planner code
+        <para>Specify site whose reorder expedite exceptions by planner code
         you want to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Look Ahead Days</term>
+
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
-        value up to a maximum of 1000. Reorder Expedite Exceptions by planner
+        value up to a maximum of 1000. Reorder expedite exceptions by planner
         code will be displayed based on the value entered here.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Include Planned Orders</term>
+
       <listitem>
         <para>Select to include planned orders in the display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Expedite Exceptions</term>
+
       <listitem>
-        <para>Display lists Reorder Expedite Exceptions by planner code, using
+        <para>Display lists reorder expedite exceptions by planner code, using
         the specified parameters.</para>
       </listitem>
     </varlistentry>
