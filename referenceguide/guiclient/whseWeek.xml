@@ -4,29 +4,37 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="whseWeek" role="manufacturing">
   <title>Site Week</title>
+
   <para>Site weeks are used to define the days of the week when a site is open
   for business. For example, a production site may operate from Monday-Friday;
   whereas, the hours for a shipping site may also include the weekend. The
-  site week is used by the Constraint Management system when calculating time
-  buffers for item sites. The <guimenu>Schedule</guimenu> module can also be configured to
-  require specific order documents (e.g., sales orders, purchase orders) to
-  honor the site week calendar. For more information on configuring the
-  <guimenu>Schedule</guimenu> module, please see <xref linkend="configureMS" />.</para>
-  <para>To define the work week for a site(s), select the <guimenuitem>Site Week</guimenuitem> option.
-  The following screen will appear:</para>
+  site week is used by the constraint management system when calculating time
+  buffers for item sites. The <guimenu>Schedule</guimenu> module can also be
+  configured to require specific order documents (e.g., sales orders, purchase
+  orders) to honor the site week calendar. For more information on configuring
+  the <guimenu>Schedule</guimenu> module, please see <xref
+  linkend="configureMS"/>.</para>
+
+  <para>To define the work week for a site(s), select the <guimenuitem>Site
+  Week</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/whseWeek.png" />
+          <imagedata fileref="images/whseWeek.png"/>
         </imageobject>
+
         <caption>Create New Site Work Week</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When defining the work week for a site, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Select the site whose work week you want to define. Specify
         which days the site is open for business. Settings made using this

@@ -5,70 +5,91 @@
 <section id="workCenter">
   <title><indexterm significance="normal">
       <primary>work centers</primary>
+
       <secondary>creating new</secondary>
     </indexterm>work center</title>
-  <para>To create a new work center, select the <guibutton>NEW</guibutton> button. The following
-  screen will appear:</para>
+
+  <para>To create a new work center, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workCenter.png" />
+          <imagedata fileref="images/workCenter.png"/>
         </imageobject>
+
         <caption>Create New Work Center</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new work center, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Work Center #</term>
+
       <listitem>
         <para>Enter a unique code to identify the work center.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify the site where the work center is located.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Active</term>
+
       <listitem>
         <para>Select to indicate the work center is active. If not selected,
         the work center will be considered inactive.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Enter a description to further identify the work center.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>WIP Location</term>
+
       <listitem>
         <para>Select a location that designates where the work center
         resides.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Setup Labor Rate</term>
+
       <listitem>
         <para>Specify a setup labor rate from the following options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Specify Labor Rate</term>
+
             <listitem>
               <para>Amount entered represents dollars per man hour that it
-              costs to set up the operation that will be performed at the Work
-              Center. You have the choice of entering a specific setup labor
+              costs to set up the operation that will be performed at the work
+              center. You have the choice of entering a specific setup labor
               rate in this field, or selecting a pre-defined standard labor
               rate from the list in the succeeding field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Select Standard Rate</term>
+
             <listitem>
               <para>Select a pre-defined labor rate to be applied to the setup
               activity assigned to the work center. If you determine that none
@@ -78,6 +99,7 @@
             </listitem>
           </varlistentry>
         </variablelist>
+
         <tip>
           <para>To calculate hourly labor rates for a work center, multiply
           the number of people by the labor rate—either the run rate or the
@@ -86,19 +108,25 @@
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>labor rates</primary>
+
           <secondary>for work centers</secondary>
         </indexterm><indexterm significance="normal">
           <primary>work centers</primary>
+
           <secondary>labor rates for</secondary>
         </indexterm>Run Labor Rate</term>
+
       <listitem>
         <para>Specify a run labor rate from the following options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Specify Labor Rate</term>
+
             <listitem>
               <para>Amount entered represents dollars per man hour that it
               costs to complete the activity assigned to the work center. You
@@ -107,14 +135,17 @@
               list in the succeeding field.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Select Standard Rate</term>
+
             <listitem>
               <para>Select a pre-defined labor rate to be applied for the
               activity assigned to the work center.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <note>
           <para>For the purposes of work order reporting, work centers are set
           up only once. As a result, the setup labor rate is charged only once
@@ -124,34 +155,44 @@
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Overhead</term>
+
       <listitem>
         <para>Specify overhead rates from the following options:</para>
+
         <variablelist>
           <varlistentry>
             <term># of Machines</term>
+
             <listitem>
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 99.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term># of People</term>
+
             <listitem>
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 1,000. Value entered indicates the
               multiplier that will be used for man hour calculations.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>overhead</primary>
+
                 <secondary>in work centers</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>work centers</primary>
+
                 <secondary>overhead in</secondary>
               </indexterm>Overhead % of Labor</term>
+
             <listitem>
               <para>Amount entered represents overhead for this work center as
               a percentage of the hourly run labor rate. The hourly run labor
@@ -159,34 +200,43 @@
               labor rate.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Overhead per Labor Hr.</term>
+
             <listitem>
               <para>Amount entered represents overhead for this work center as
               the number of dollars per man hour.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Overhead per Mach. Hr.</term>
+
             <listitem>
-              <para>Hr.: Amount entered represents overhead for this Work
-              Center as the number of dollars per machine hour.</para>
+              <para>Hr.: amount entered represents overhead for this work
+              center as the number of dollars per machine hour.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Overhead Rate/Hr.</term>
+
             <listitem>
               <para>Displays automatic calculation of the work center's
               overhead costs, expressed in dollars per hour. Calculation is
               based on the following formula, using data entered into the Work
               Center screen:</para>
+
               <para><literal>(overhead % of labor * run labor rate) +
               (overhead per labor Hr. * # of People) + (overhead per mach. hr.
               * # of machines) = overhead rate/Hr.</literal></para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Overhead per Unit</term>
+
             <listitem>
               <para>Amount entered represents overhead for this work center as
               the number of dollars per unit produced.</para>
@@ -196,31 +246,38 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>When the <guimenuitem>Scheduling</guimenuitem> tab is selected, the screen will appear as
-  follows:<screenshot>
+
+  <para>When the <guimenuitem>Scheduling</guimenuitem> tab is selected, the
+  screen will appear as follows:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workCenter_schedulingTab.png" />
+          <imagedata fileref="images/workCenter_schedulingTab.png"/>
         </imageobject>
+
         <caption>Work Center Scheduling Tab</caption>
       </mediaobject>
     </screenshot></para>
+
   <variablelist>
     <varlistentry>
       <term>Department</term>
+
       <listitem>
         <para>Specify a department to be associated with the work center. This
         is an optional setting.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Average</term>
+
       <listitem>
         <para>Specify average times to complete work with the following
         options. These values do not have any impact on costing or scheduling.
         They are informational only.<variablelist>
             <varlistentry>
               <term>Queue Days</term>
+
               <listitem>
                 <para>Select a number using the arrow buttons, or manually
                 enter a value up to a maximum of 999. Amount entered
@@ -229,8 +286,10 @@
                 job.</para>
               </listitem>
             </varlistentry>
+
             <varlistentry>
               <term>Setup Time</term>
+
               <listitem>
                 <para>Amount entered represents the average amount of time
                 required to set up the work center in preparation for starting
@@ -241,32 +300,39 @@
           </variablelist></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Capacity</term>
+
       <listitem>
         <para>Specify capacity available with the following
         options:<variablelist>
             <varlistentry>
               <term><indexterm significance="normal">
                   <primary>capacity</primary>
+
                   <secondary>daily in work centers</secondary>
                 </indexterm> <indexterm significance="normal">
                   <primary>work centers</primary>
+
                   <secondary>daily capacity</secondary>
                 </indexterm>Daily Capacity</term>
+
               <listitem>
                 <para>The amount entered indicates the number of minutes worth
                 of production the work center is available to perform in one
                 day.</para>
               </listitem>
             </varlistentry>
+
             <varlistentry>
               <term>Efficiency Factor</term>
+
               <listitem>
-                <para>Amount entered will be multiplied by the daily Capacity
-                to determine the standard Capacity for the work center. The
-                standard Capacity value will be used when determining the
-                actual Capacity for this work center. The efficiency factor
+                <para>Amount entered will be multiplied by the daily capacity
+                to determine the standard capacity for the work center. The
+                standard capacity value will be used when determining the
+                actual capacity for this work center. The efficiency factor
                 for a work center should be developed based on time
                 studies.</para>
               </listitem>
@@ -275,19 +341,24 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>When the <guimenuitem>Notes</guimenuitem> tab is selected, the screen will appear as
-  follows:</para>
+
+  <para>When the <guimenuitem>Notes</guimenuitem> tab is selected, the screen
+  will appear as follows:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/workCenter_notesTab.png" />
+        <imagedata fileref="images/workCenter_notesTab.png"/>
       </imageobject>
+
       <caption>Work Center Notes Tab</caption>
     </mediaobject>
   </screenshot>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the work center.</para>
