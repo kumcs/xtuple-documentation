@@ -5,86 +5,109 @@
 <section id="selectOrderForBilling">
   <title><indexterm significance="normal">
       <primary>billing</primary>
+
       <secondary>approve order for</secondary>
     </indexterm>Approve Order for Billing</title>
+
   <para>This utility enables you to manually enter billing details for
-  individual sales order line items. Both shipped orders and unshipped Line
+  individual sales order line items. Both shipped orders and unshipped line
   items may be approved for billing in this manner. This individualized
   approach differs from the approach taken by the Select All Shipped Orders
   for Billing utility, which by default approves for billing the full line
   item quantities for all shipped orders. To approve an individual shipped
   order for billing, select the <guimenuitem>Approve Order for
   Billing</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/selectOrderForBilling.png"/>
         </imageobject>
+
         <caption>Approve Order for Billing</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>When you approve an order for billing, you are indicating that you
     wish to create an invoice for the order. Invoice numbers are assigned when
     an invoice is printed.</para>
   </note>
+
   <para>When approving an order for billing, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Sales Order #</term>
+
       <listitem>
         <para>Enter the sales order number of the sales order you want to
         approve for billing.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order Date</term>
+
       <listitem>
         <para>Displays the original sales order date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship Date</term>
+
       <listitem>
         <para>By default, the most-recent ship date will appear in the field.
         You may override the default value by entering ship date information
         manually.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Invoice Date</term>
+
       <listitem>
         <para>By default, the current (today's) date will appear in the field.
         You may override the default value by entering invoice date
         information manually.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Cust. Name</term>
+
       <listitem>
-        <para>Name: Displays customer's name.</para>
+        <para>Name: displays customer's name.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>P/O Number</term>
+
       <listitem>
         <para>Displays purchase for the specified sales order. Indicates the
         customer purchase order number assigned to the specified sales
         order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship-To Name</term>
+
       <listitem>
-        <para>Displays Ship-To name.</para>
+        <para>Displays ship-to name.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>tax zones</primary>
+
           <secondary>for sales orders</secondary>
         </indexterm>Tax Zone</term>
+
       <listitem>
         <para>Specify the tax zone associated with the sales order. The tax
         zone for the specified ship-to address will be entered here by
@@ -92,87 +115,111 @@
         entered.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship Via</term>
+
       <listitem>
         <para>By default, the preferred ship via method for specified customer
         will appear in the field. You may enter a free-form ship via simply by
         typing the name of the ship via into the field. Default ship vias may
         be defined at the system level.</para>
+
         <para><tip>
             <para>The system supports up-to-date shipment tracking with links
             to the websites of many leading shipping companies (i.e., ship
-            Vias).</para>
+            vias).</para>
           </tip></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Closed Line Items</term>
+
       <listitem>
         <para>Select to show closed line items in the Line Items
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Close all Open Items</term>
+
       <listitem>
         <para>Select to close all open sales order line items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>billing</primary>
+
           <secondary>at line item level</secondary>
         </indexterm>Line Items</term>
+
       <listitem>
         <para>Displays the sales order line items approved for billing.
         Double-clicking on a line item—or highlighting it and approving the
         <guibutton>EDIT SELECTION</guibutton> button—enables you to approve a
-        billing quantity for that Item.</para>
+        billing quantity for that item.</para>
+
         <note>
-          <para>In the Line Items display, the Uninvoiced column refers to
-          quantity that has been shipped but not yet invoiced. Quantity must
-          have been shipped to appear in the Uninvoiced column. If no quantity
-          has been shipped, then no quantity will appear as uninvoiced.</para>
+          <para>In the Line Items display, the <guilabel>Uninvoiced</guilabel>
+          column refers to quantity that has been shipped but not yet
+          invoiced. Quantity must have been shipped to appear in the
+          <guilabel>Uninvoiced</guilabel> column. If no quantity has been
+          shipped, then no quantity will appear as uninvoiced.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Subtotal</term>
+
       <listitem>
         <para>Displays the subtotal for the sales order line items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>billing</primary>
+
           <secondary>related charges for</secondary>
         </indexterm>Misc. Amount</term>
+
       <listitem>
         <para>Enter the amount of the miscellaneous charge. Before entering a
         miscellaneous charge amount, you must first assign the charge to a
         sales account and also enter a description of the charge.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Misc. Charge Description</term>
+
       <listitem>
         <para>Enter a description to identify the miscellaneous charge.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Misc. Charge Sales Account</term>
+
       <listitem>
         <para>Enter a sales account to assign the miscellaneous charge
         to.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Freight</term>
+
       <listitem>
         <para>Enter the amount of freight charge to be added to the specified
         order. The freight charge may be entered during the creation or
         modification of a sales order—or at the time of shipment.</para>
+
         <note>
           <para>The <guilabel>Payment Received</guilabel> field is an optional
           field which may be used to provide visibility into prepaid amounts.
@@ -183,61 +230,77 @@
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax</term>
+
       <listitem>
         <para>Displays the amount of tax that will be added to the sales
         order, as defined by the specified tax code. To get a detailed view of
-        the tax calculation, click on the Tax link using your mouse.</para>
+        the tax calculation, click on the <guibutton>Tax</guibutton> link
+        using your mouse.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Total</term>
+
       <listitem>
         <para>Displays the total amount of all uninvoiced sales orders.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>EDIT ORDER</guibutton></term>
+
       <listitem>
         <para>Brings you to the Sales Order screen, where you may edit the
         specified sales order. The Sales Order screen is described at length
         in <xref linkend="salesOrder"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>APPROVE BALANCE</guibutton></term>
+
       <listitem>
         <para>Highlight a line item, then select this button to approve the
         full balance for billing.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>When the <guimenuitem>Notes</guimenuitem> tab is clicked, the screen
   will appear as follows:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
         <imagedata fileref="images/selectOrderForBilling_notes.png"/>
       </imageobject>
+
       <caption>Approve Order for Billing Notes</caption>
     </mediaobject>
   </screenshot>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the sales order approved for billing. Notes entered
         on this screen will follow the order through the billing process. For
         example, you may view notes associated with a posted invoice within
-        the Invoice Information report.</para>
+        the invoice information report.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="selectBillingQty.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

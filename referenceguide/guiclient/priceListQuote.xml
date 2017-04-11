@@ -4,88 +4,113 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="priceListQuote">
   <title>Quote Price List</title>
+
   <para>To enter the net unit price for a quote line item, select the browse
-  button located to the right of the <guilabel>Net Unit Price</guilabel> field. The following
-  screen will appear:</para>
+  button located to the right of the <guilabel>Net Unit Price</guilabel>
+  field. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/priceListQuote.png" />
+          <imagedata fileref="images/priceListQuote.png"/>
         </imageobject>
+
         <caption>Price List</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When entering the net unit price for a quote line item, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Customer #</term>
+
       <listitem>
         <para>Displays the customer associated with the specified quote. The
         name of the customer will also be displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays the item number associated with the specified quote
         line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Site</term>
+
       <listitem>
         <para>Displays the site associated with the line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Quantity</term>
+
       <listitem>
         <para>Displays line item quantity specified on previous screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>List Price</term>
+
       <listitem>
-        <para>Used in conjunction with Unit cost to calculate the net price
+        <para>Used in conjunction with unit cost to calculate the net price
         when markup pricing is used.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Wholesale Price</term>
+
       <listitem>
         <para>Displays the wholesale price for the line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="distribution">
       <term>Unit Cost</term>
+
       <listitem>
         <para>The unit cost and site cost are used to calculate the net price
         when markup pricing is used.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Items</term>
+
       <listitem>
         <para>Display lists available pricing for the specified quote line
         item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>SELECT</guibutton></term>
+
       <listitem>
         <para>Highlight a price from the list of prices, then select this
-        button to enter the price in the <guilabel>Net Unit Price</guilabel> field on the
-        previous screen.</para>
+        button to enter the price in the <guilabel>Net Unit Price</guilabel>
+        field on the previous screen.</para>
       </listitem>
     </varlistentry>
   </variablelist>

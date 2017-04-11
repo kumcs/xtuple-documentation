@@ -5,37 +5,48 @@
 <section id="quoteItem">
   <title><indexterm significance="normal">
       <primary>quotes</primary>
+
       <secondary>creating line items for</secondary>
     </indexterm>Quote Item</title>
+
   <para>To create a new quote line item, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quoteItem.png"/>
         </imageobject>
+
         <caption>Create New Quote Line Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new quote line item, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Order #</term>
+
       <listitem>
         <para>Displays the order number specified in the header screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line #</term>
+
       <listitem>
         <para>Displays the line item number for the current line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Refresh Order</term>
+
       <listitem>
-        <para>Select to indicate you want the Quote header to be refreshed
+        <para>Select to indicate you want the quote header to be refreshed
         immediately in the background. When the header is refreshed
         immediately, you will be able to see the rows of line items being
         added to the order. However, this feature can impact performance when
@@ -44,8 +55,10 @@
         you close the Quote Line Item screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item you want to sell. The item
         list will contain sold items available for purchase by the specified
@@ -55,8 +68,10 @@
         and item description will automatically appear.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Customer P/N</term>
+
       <listitem>
         <para>Displays the customer part number (i.e., item alias) that
         corresponds to the item number entered in the <guilabel>Item
@@ -66,8 +81,10 @@
         on the Item master.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Substitute for</term>
+
       <listitem>
         <para>Optional selection used solely for gathering information related
         to line item substitutions. This feature can be used, for example, to
@@ -77,109 +94,135 @@
         may be accessed for reporting purposes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term><indexterm significance="normal">
           <primary>sites</primary>
+
           <secondary>sold from for quotes</secondary>
         </indexterm><indexterm significance="normal">
           <primary>quotes</primary>
+
           <secondary>selling sites for</secondary>
         </indexterm>Site</term>
+
       <listitem>
         <para>Specify the site the quote item is sold from. Items may be
         supplied to quotes from multiple item sites. After an item number is
         entered above, the system checks for available item sites for the
         item. Any item sites having the <guilabel>Sold from</guilabel> flag
         set on them will be selectable from this site list. By default, the
-        item site having the highest Ranking will be selected as the first
-        available site. If more than one item site share a Ranking of "1," the
-        sites will be sorted in alphabetical order. Item site Rankings are set
+        item site having the highest ranking will be selected as the first
+        available site. If more than one item site share a ranking of "1," the
+        sites will be sorted in alphabetical order. Item site rankings are set
         on the Item Site master.</para>
+
         <tip>
-          <para>If a preferred Selling site is specified for the customer,
+          <para>If a preferred selling site is specified for the customer,
           then that site will be selected here by default. If the preferred
-          Selling site is not selected—and you think it should be—verify that
+          selling site is not selected—and you think it should be—verify that
           the Item Site master for the line item in question is marked as a
           <guilabel>Sold from</guilabel> site.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry role="distribution">
       <term>ADV. ITEM SEARCH</term>
+
       <listitem>
-        <para>Advanced Item Search (AIS) is a feature designed specifically
+        <para>Advanced item search (AIS) is a feature designed specifically
         with distribution in mind. This feature allows distributors and end
         users to quickly search for both items and item aliases—as well as
         current inventory levels—filtering every keystroke. From this screen
         you also have the ability to create an item alias.</para>
+
         <note>
-          <para>When using the Advanced Item Search, you must enter at least
-          three characters (i.e., numbers, letters or a combination of both)
-          before any search results will be returned. This is for speed of
-          performance reasons.</para>
+          <para>When using the AIS, you must enter at least three characters
+          (i.e., numbers, letters or a combination of both) before any search
+          results will be returned. This is for speed of performance
+          reasons.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry role="distribution">
       <term>VENDOR CATALOG</term>
+
       <listitem>
         <para>Select to use the External Vendor Catalog screen to view items
         as they appear within the various vendor catalogs you are subscribed
         to.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="distribution">
       <term>VIEW IMAGE</term>
+
       <listitem>
         <para>Select to view an item image, if available.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="distribution">
       <term>VIEW SPEC</term>
+
       <listitem>
         <para>Select to view a specification sheet for the item, if
         available.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
         <para>Enter the quantity of the specified item being ordered.</para>
+
         <note>
-          <para>The quantity ordered is based on the Quantity Unit of
-          Measure.</para>
+          <para>The quantity ordered is based on the quantity unit of
+          measure.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. UOM</term>
+
       <listitem>
-        <para>Specify the unit of measure to be used when selling the line
-        item. Sold items may be assigned multiple Selling UOMs. These
+        <para>Specify the unit of measure (UOM) to be used when selling the
+        line item. Sold items may be assigned multiple selling UOMs. These
         alternate UOMs may be defined on the Item master. If a line item has
-        no Selling UOM defined, then the inventory UOM will be used here by
+        no selling UOM defined, then the inventory UOM will be used here by
         default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Shipped</term>
+
       <listitem>
         <para>Displays the line item quantity shipped (if any) to date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Cust Discount %</term>
+
       <listitem>
         <para>Specify here and apply any discount for specified customer for
         this quote. This is a discount off the regular customer price,
         obtained either from the Customer master or a pricing schedule.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>quotes</primary>
+
           <secondary>line item pricing for</secondary>
         </indexterm>Net Unit Price</term>
+
       <listitem>
         <para>Displays the unit price for the quote item. By default, the
         system will choose the lower of the following two prices: A) The
@@ -189,60 +232,71 @@
         customer ship-to address (most specific), by customer, by customer
         type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
-        <para>If your pricing schedule has multiple units of measure (UOM) on
-        it (or if several pricing schedules share the same level of price
-        specificity, but they have different UOMs) then the UOM which matches
-        the selected UOM will be chosen—that is, as long as the quantity break
-        does not exceed the quantity being priced. If no entry matches the UOM
-        with a quantity break less than the quantity being priced, then the
-        lowest value price for any UOM will be chosen. To make sure a specific
-        UOM is always chosen at the desired level of price specificity, then
-        your pricing schedules should include at least one UOM with a quantity
-        break of 0.</para>
+
+        <para>If your pricing schedule has multiple UOMs on it (or if several
+        pricing schedules share the same level of price specificity, but they
+        have different UOMs) then the UOM which matches the selected UOM will
+        be chosen—that is, as long as the quantity break does not exceed the
+        quantity being priced. If no entry matches the UOM with a quantity
+        break less than the quantity being priced, then the lowest value price
+        for any UOM will be chosen. To make sure a specific UOM is always
+        chosen at the desired level of price specificity, then your pricing
+        schedules should include at least one UOM with a quantity break of
+        0.</para>
+
         <tip>
           <para>The system can be configured to prevent users from editing the
           net unit price. If your system is configured that way, the
           <guilabel>Net Unit Price</guilabel> field will not be editable. The
-          unit cost and unit cost Markup % values on the
+          unit cost and unit cost markup % values on the
           <guimenuitem>Details</guimenuitem> tab can also be configured to be
           editable with permission settings. These values, if changed, will
           adjust the net unit price.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Price UOM</term>
+
       <listitem>
-        <para>The price unit of measure is the same as the Selling UOM. If an
-        item has Selling UOMs defined, then the item may be sold and priced in
-        these alternate UOMs. If no Selling UOMs are defined, then the
+        <para>The price unit of measure is the same as the selling UOM. If an
+        item has selling UOMs defined, then the item may be sold and priced in
+        these alternate UOMs. If no selling UOMs are defined, then the
         inventory UOM will be used here by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Extended Price</term>
+
       <listitem>
         <para>Displays the extended price. The extended price for a line item
         is based on the quantity ordered multiplied by the net unit
         price.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Scheduled Date</term>
+
       <listitem>
         <para>The scheduled date is the date when the line item should be
-        Shipped. The user who enters the line item is responsible for
+        shipped. The user who enters the line item is responsible for
         determining the scheduled date. After entering the scheduled date, hit
         the <guibutton>TAB</guibutton> key on your keyboard to display values
         in the remaining display only fields.</para>
+
         <note>
           <para>The line item having the earliest scheduled date will
           determine the ship date for the sales order.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Promised Date</term>
+
       <listitem>
         <para>Enter the date when you promised delivery of the line item. This
         is an optional field. It will only be displayed on the screen if your
@@ -250,16 +304,20 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>When entering quotes you have the ability to view current supply
   considerations, including item availability and dependencies. You may also
   create replenishment orders (if they are needed) and change work order
   materials and operations.</para>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>quotes</primary>
+
           <secondary>availability of items for</secondary>
         </indexterm>Show Availability</term>
+
       <listitem>
         <para>Select to display availability information for the quote item in
         the following categories. If the feature is turned on, the
@@ -267,21 +325,27 @@
         entered for the line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Inventory</term>
+
       <listitem>
         <para>Select option to view inventory availability. The display lists
         item availability for dependencies.</para>
+
         <variablelist>
           <varlistentry>
             <term>Available QOH</term>
+
             <listitem>
               <para>Displays the current available quantity on hand (QOH)
               value.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Allocated</term>
+
             <listitem>
               <para>Displays the quantity allocated to current sales orders
               and/or work orders in the system. An item is considered
@@ -294,16 +358,21 @@
               quantity ordered.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Unallocated</term>
+
             <listitem>
               <para>Displays the QOH remaining after allocations have been
-              accounted for, as in: QOH - Allocated Qty. = Unallocated
-              Qty.</para>
+              accounted for, as in: </para>
+
+              <para>QOH - Allocated Qty. = Unallocated Qty.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>On Order</term>
+
             <listitem>
               <para>If the quote item is a manufactured item, the quantity
               ordered by current work orders will be displayed. If the quote
@@ -311,59 +380,75 @@
               purchase orders will be displayed.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Available</term>
+
             <listitem>
               <para>Displays the available quantity. Available quantity is
               determined using the following formula: Unallocated Qty. + On
               Order Qty. = Available Qty.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="standard">
             <term>Reserved</term>
+
             <listitem>
               <para>Displays the item quantity already reserved.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="standard">
             <term>Reservable</term>
+
             <listitem>
               <para>Displays the available item quantity remaining to be
               reserved.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Lead Time</term>
+
             <listitem>
-              <para>Displays the item site Lead Time for the specified line
+              <para>Displays the item site lead time for the specified line
               item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>As Of</term>
+
             <listitem>
               <para>Show availability using one of the following
               criteria:</para>
+
               <variablelist>
                 <varlistentry>
                   <term>Scheduled Date</term>
+
                   <listitem>
                     <para>Select to show projected availability based on the
                     scheduled date.</para>
                   </listitem>
                 </varlistentry>
+
                 <varlistentry>
                   <term>Lead Time</term>
+
                   <listitem>
                     <para>Select to show projected availability based on the
-                    Lead Time specified in the Item Site master.</para>
+                    lead time specified in the Item Site master.</para>
                   </listitem>
                 </varlistentry>
               </variablelist>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Show Dependencies as Indented BOM</term>
+
             <listitem>
               <para>Displays component items associated with sold manufactured
               items in a nested list with a plus (<guibutton>+</guibutton>)
@@ -376,8 +461,10 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Supply Order</term>
+
       <listitem>
         <para>If you wish to maintain work order materials and operations for
         a manufactured item, select the <guilabel>Supply Order</guilabel>
@@ -386,27 +473,34 @@
             <imageobject>
               <imagedata fileref="images/salesOrderItem_availabilitySupply.png"/>
             </imageobject>
+
             <caption><para>Supply Order Information For Manufactured
             Item</para></caption>
           </mediaobject><note>
             <para>Supply orders are created as soon as a valid item, order
             quantity, and scheduled date are entered.</para>
           </note></para>
+
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>quotes</primary>
+
                 <secondary>work orders generated by</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>work orders</primary>
+
                 <secondary>generated by quotes</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>purchase requests</primary>
+
                 <secondary>generated by quotes</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>quotes</primary>
+
                 <secondary>purchase requests generated by</secondary>
               </indexterm>Create Work Order</term>
+
             <listitem>
               <para>If the line item is a manufactured item, select this
               option to automatically create a work order for the specified
@@ -417,26 +511,29 @@
               orders created automatically from a quote will assume the same
               order number as the quote—even if that order number has already
               been used by a previous work order.</para>
+
               <para>For purchased items, the following two different options
               may appear, depending on how the item site for the item is set
-              up: Create Purchase Request or Create Purchase Order. In either
-              case, you will be given the option to override any item source
-              price(s) which are in place. Also, linked purchase orders will
-              be updated when quote details are changed. If your site is
-              configured to use drop shipping, an additional <guilabel>Drop
-              Ship</guilabel> flag will also be shown for linked purchase
-              orders. The drop ship function will search for an existing
-              purchase order linked to the quote with a matching ship-to
-              address and add the line item to that order—or create a new
-              order if none exists. Drop ship purchase orders inherit the
-              ship-to address and contact information from the quote. Item
-              sources must be defined for drop ship items—including each
-              component of a Kit item.</para>
+              up: <guilabel>Create Purchase Request</guilabel> or
+              <guilabel>Create Purchase Order</guilabel>. In either case, you
+              will be given the option to override any item source price(s)
+              which are in place. Also, linked purchase orders will be updated
+              when quote details are changed. If your site is configured to
+              use drop shipping, an additional <guilabel>Drop Ship</guilabel>
+              flag will also be shown for linked purchase orders. The drop
+              ship function will search for an existing purchase order linked
+              to the quote with a matching ship-to address and add the line
+              item to that order—or create a new order if none exists. Drop
+              ship purchase orders inherit the ship-to address and contact
+              information from the quote. Item sources must be defined for
+              drop ship items—including each component of a kit item.</para>
+
               <tip>
                 <para>This option will not be selected by default if the
                 relevant item site has the <guilabel>Stocked</guilabel>
                 setting selected.</para>
               </tip>
+
               <note>
                 <para>When changing an existing quote line item, you will be
                 asked for confirmation before the work order is
@@ -447,26 +544,34 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order #</term>
+
       <listitem>
         <para>The number of the newly created work order is displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line #</term>
+
       <listitem>
-        <para>Displays the Line item number for the work order.</para>
+        <para>Displays the line item number for the work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>The work order status is displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty.</term>
+
       <listitem>
         <para>The quantity ordered by the quote line item will display here.
         If the line item is a purchased item, purchase quantity information
@@ -475,22 +580,28 @@
         orders, or purchase requests.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due Date</term>
+
       <listitem>
         <para>The scheduled date of the quote line item will display here. If
         the line item is a purchased item, the purchasing due dates will
         appear instead.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term><indexterm significance="normal">
           <primary>sites</primary>
+
           <secondary>for make-to-order</secondary>
         </indexterm><indexterm significance="normal">
           <primary>quotes</primary>
+
           <secondary>supplying sites and</secondary>
         </indexterm>Supplying Site</term>
+
       <listitem>
         <para>Specify the site a corresponding work order would be supplied
         from. Work orders may only be created for manufactured items having a
@@ -500,36 +611,46 @@
         be created for the item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>W/O Materials and Operations</term>
+
       <listitem>
         <para>Display lists an exploded view of the materials and operations
         for the work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>NEW MATL.</guibutton></term>
+
       <listitem>
         <para>Select to add materials to the BOM for the work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>NEW OPER.</guibutton></term>
+
       <listitem>
         <para>Select to add operations to the routing for this order
         item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>EDIT</guibutton></term>
+
       <listitem>
         <para>The materials and operations can be changed from this screen
         while placing the order. To do this, click the
         <guibutton>EDIT</guibutton> button.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>DELETE</guibutton></term>
+
       <listitem>
         <para>To remove materials or operations from the work order, highlight
         the line in the exploded work order view and click the
@@ -537,8 +658,10 @@
         to be removed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Rollup Prices</term>
+
       <listitem>
         <para>If this option is selected, the price will be based on the price
         of all materials and operations. These material and operations prices
@@ -546,17 +669,22 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following will be displayed when the item is a purchased
   item:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/salesOrderItem_availabilitySupply2.png"/>
     </imageobject>
+
     <caption><para>Supply Order Information For Bought Item</para></caption>
   </mediaobject>
+
   <variablelist>
     <varlistentry>
       <term>Override Price</term>
+
       <listitem>
         <para>If your site has enabled the <guilabel>Allow Inventory Receipt
         Cost Override</guilabel> option in the Inventory setup, then you will
@@ -564,79 +692,101 @@
         only to average cost items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Drop Ship</term>
+
       <listitem>
         <para>Select this option if the item should be automatically shipped
         when the purchase order receipt is posted.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To see a list of item sources, select the <guilabel>Item
   Sources</guilabel> option on the <guimenuitem>Supply</guimenuitem> tab.
   Available item sources will be displayed:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/salesOrderItem_availabilityItemSources.png"/>
     </imageobject>
+
     <caption><para>Available Item Sources</para></caption>
   </mediaobject>
+
   <para>To display a list of substitutes for the selected item or site with
   availability information, select the <guilabel>Substitutes</guilabel> option
   on the <guimenuitem>Supply</guimenuitem> tab. The following will be
   displayed:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/salesOrderItem_availabilitySubstitutes.png"/>
     </imageobject>
+
     <caption><para>Available Substitutes</para></caption>
   </mediaobject>
+
   <note>
     <para>Substitutes are defined on the Item master. Right-click on an item
     in the list and select <guimenuitem>Substitute</guimenuitem> to set the
     selected item as a line item substitute. The original line item will be
     moved to the <guilabel>Substitute For</guilabel> field.</para>
   </note>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>PREVIOUS</guibutton></term>
+
       <listitem>
         <para>Select to view previous line items associated with the
         quote.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>NEW</guibutton></term>
+
       <listitem>
         <para>Select to create a new quote line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view the customer's sales history, select the
   <guimenuitem>History</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quoteItem_history.png"/>
         </imageobject>
+
         <caption>Customer History Information</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When viewing customer history, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Costs History</term>
+
       <listitem>
         <para>Select to display historical costing information for the item
         inside a specified date range. Purchased costs for the item will be
         shown, if the item has ever been received on a purchase order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Sales History</term>
+
       <listitem>
         <para>Select to display historical sales information for the item
         inside a specified date range. Invoices for the item will be shown, if
@@ -644,11 +794,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>If an item has characteristics associated with it, you have the option
   of linking those characteristics to a sales order line item. And, in the
-  case where sales order demand automatically generates either a Purchase
-  Request or a work order, the characteristics defined here will be inherited
+  case where sales order demand automatically generates either a purchase
+  request or a work order, the characteristics defined here will be inherited
   by those subsequent orders.</para>
+
   <tip>
     <para>For configured items, an additional pricing field will be available
     on the Item Characteristic screen. This pricing information will be passed
@@ -656,36 +808,46 @@
     price for configured items may vary depending on the characteristics
     selected at sales order entry time.</para>
   </tip>
+
   <para>To associate characteristics with a quote line item, select the
   <guimenuitem>Item Characteristics</guimenuitem> tab at the bottom of the
   screen, as shown below:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quoteItem_itemCharacteristicsTab.png"/>
         </imageobject>
+
         <caption>Quote Line Item Characteristics</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>To view costs or adjust tax information for a quote line item, select
   the <guimenuitem>Detail</guimenuitem> tab at the bottom of the screen, as
   shown below:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quoteItem_costs.png"/>
         </imageobject>
+
         <caption>Quote Line Item Detail</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When viewing costs or adjusting tax information for a quote line item,
   you are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Unit Cost</term>
+
       <listitem>
         <para>Depending on configuration settings, the unit cost displays the
         wholesale price, or the standard or average inventory cost.<note>
@@ -695,25 +857,32 @@
           </note></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>List Price</term>
+
       <listitem>
         <para>Displays the sales list price per unit.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Customer Price</term>
+
       <listitem>
         <para>Displays the price given to the specified customer. Special
-        customer prices can be set for individual customers or customer Groups
+        customer prices can be set for individual customers or customer groups
         by using a pricing schedule.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>sales orders</primary>
+
           <secondary>discount percentages for</secondary>
         </indexterm>List Price Discount %</term>
+
       <listitem>
         <para>Displays the percentage discount off the list price. Indicates
         the difference between the list price for an item and the net unit
@@ -721,8 +890,10 @@
         and the list price.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Unit Cost Markup %</term>
+
       <listitem>
         <para>Displays the effective markup which is based on the unit cost
         and net unit price values.<note>
@@ -732,31 +903,39 @@
           </note></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Margin</term>
+
       <listitem>
         <para>Displays the difference between extended price and extended
         cost.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Tax</term>
+
       <listitem>
         <para>The following tax options are available, should you need to
-        override the Tax Selection settings for the line item:</para>
+        override the tax selection settings for the line item:</para>
+
         <variablelist>
           <varlistentry>
             <term>Tax Type</term>
+
             <listitem>
               <para>Specify the tax type for the sales order item.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <variablelist>
           <varlistentry>
             <term>Tax</term>
+
             <listitem>
               <para>Displays the amount of tax to be charged for the sales
               order line item quantity. To get a detailed view of the tax
@@ -768,51 +947,64 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To enter notes related to a quote line item, select the
   <guimenuitem>Notes</guimenuitem> tab at the bottom of the screen, as shown
   below:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quoteItem_notesTab.png"/>
         </imageobject>
+
         <caption>Quote Line Item Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When adding notes related to a quote line item, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         general notes related to the quote line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>If a quote item is marked to create a work order, the production
     notes for the created work order will contain the quote number, the
     customer name, and any additional quote line item notes.</para>
   </tip>
+
   <para>To add comments related to a quote line item, select the
   <guimenuitem>Comments</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/quoteItem_commentsTab.png"/>
         </imageobject>
+
         <caption>Quote Line Item Comments</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Whenever quote line items are created or their quantities are
     changed, the system will automatically generate a comment, which will
     appear in the list of line item comments.</para>
   </note>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="priceListQuote.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
