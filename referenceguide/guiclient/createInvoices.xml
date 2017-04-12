@@ -5,49 +5,62 @@
 <section id="createInvoices">
   <title><indexterm significance="normal">
       <primary>invoices</primary>
+
       <secondary>creation of</secondary>
     </indexterm>New Invoice</title>
+
   <para>Invoices are created from sales orders that have been selected for
   billing. To create invoices for orders which have been selected for billing,
-  choose the <guimenuitem>Create Invoices</guimenuitem> option. The following screen will
-  appear:</para>
+  choose the <guimenuitem>Create Invoices</guimenuitem> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/postBillingSelections.png" />
+          <imagedata fileref="images/postBillingSelections.png"/>
         </imageobject>
+
         <caption>Create Invoices</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating invoices, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Customer Types</term>
+
       <listitem>
         <para>Select to create invoices for all customer types.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify customer type whose invoices you want to create.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a customer type pattern to select a range of customer
-        types. Refine your search using Regular Expressions.</para>
+        types. Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Consolidate by Customer</term>
+
       <listitem>
         <para>Select to cause all sales orders selected for billing to be
         consolidated on one invoice by customer. Keep in mind, though, that to
         be consolidated the orders must have matching criteria (e.g., billing,
-        tax, sales Rep information). If the criteria do not match, then
+        tax, sales rep information). If the criteria do not match, then
         non-conforming orders will not be consolidated. (Separate invoices
         will be created for them instead.) If only a single order exists, at
         all or in a group, then it will be posted as a single invoice.
@@ -59,10 +72,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE INVOICES</guibutton></term>
+
       <listitem>
         <para>Select this button to create invoices for all orders selected
         for billing.</para>
