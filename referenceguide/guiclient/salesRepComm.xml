@@ -5,32 +5,41 @@
 <section id="salesRepComm" role="xtcommission">
   <title><indexterm significance="normal">
       <primary>commissions</primary>
+
       <secondary>earned</secondary>
     </indexterm>Sales Rep Commissions</title>
-  <para>The Sales Rep Commissions report is part of the Enhanced Commissions
-  package. It replaces the stock Commissions report when the Enhanced
-  Commissions package is installed. To view sales rep commission information,
+
+  <para>The sales rep commissions report is part of the enhanced commissions
+  package. It replaces the stock commissions report when the enhanced
+  commissions package is installed. To view sales rep commission information,
   select the <guimenuitem>Sales Rep Commissions</guimenuitem> option. The
   following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/salesRepComm.png"/>
         </imageobject>
+
         <caption>Sales Rep Commissions</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When displaying sales rep commission information, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Parameters</term>
+
       <listitem>
         <para>Display lists commission information for the specified sales
         representative(s) using the specified parameters.</para>
+
         <variablelist>
           <varlistentry>
             <term>Sales Rep</term>
+
             <listitem>
               <para>Select the sales rep whose commission information you want
               to include in the display. To see information for all sales
@@ -38,34 +47,42 @@
               option.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Start Date</term>
+
             <listitem>
               <para>Commissions occurring on or after this date will
               display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>End Date</term>
+
             <listitem>
               <para>Commissions occurring on or before this date will
               display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Status</term>
+
             <listitem>
               <para>Specify which commission status you want to include in the
               display. The following statuses are available: show all
               commissionable, show closed/paid commissionable, show
               closed/unpaid commissionable, and show open commissionable. The
-              Show Closed/Unpaid Commissionable status will cause the
-              <guibutton>PAY COMMISSIONS</guibutton> button to be
-              enabled.</para>
+              <guilabel>Show Closed/Unpaid Commissionable</guilabel> status
+              will cause the <guibutton>PAY COMMISSIONS</guibutton> button to
+              be enabled.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Select All</term>
+
             <listitem>
               <para>Select this option to choose all displayed commission
               information for payment. The alternative is to select rows of
@@ -75,22 +92,28 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Commissions</term>
+
       <listitem>
-        <para>Display lists Commissions for the specified sales rep(s) using
+        <para>Display lists commissions for the specified sales rep(s) using
         the specified parameters.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following button is unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>PAY COMMISSIONS</guibutton></term>
+
       <listitem>
         <para>Highlight a row(s) of information and then select this button to
-        pay the commission. This button will be enabled when the Show
-        Closed/Unpaid Commissionable status is specified.</para>
+        pay the commission. This button will be enabled when the
+        <guilabel>Show Closed/Unpaid Commissionable</guilabel> status is
+        specified.</para>
       </listitem>
     </varlistentry>
   </variablelist>
