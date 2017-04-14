@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="shippingChargeTypes">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>shipping</primary>
+
       <secondary>master list of charge types</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>charge types</primary>
+
       <secondary>master list for shipping</secondary>
     </indexterm>Shipping Charge Types</title>
+
   <para>To access the master list of shipping charge types, select the
-  <guimenuitem>Shipping Charge Types</guimenuitem> option. The following screen will appear:</para>
-  <para>
-<screenshot>
+  <guimenuitem>Shipping Charge Types</guimenuitem> option. The following
+  screen will appear:</para>
+
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/shippingChargeTypes.png"/>
         </imageobject>
-        <caption>Shipping Charge Types Master
-        List</caption>
+
+        <caption>Shipping Charge Types Master List</caption>
       </mediaobject>
-    </screenshot>
-</para>
-  <para>The shipping charge types master list displays the name and
+    </screenshot></para>
+
+  <para>The Shipping Charge Types master list displays the name and
   description for all existing shipping charge types.</para>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="shippingChargeType.xml" xpointer="element(/1)"/>
+
+  <xi:include href="shippingChargeType.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
