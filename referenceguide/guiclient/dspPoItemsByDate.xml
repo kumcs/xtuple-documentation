@@ -1,99 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspPoItemsByDate">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>purchase orders</primary>
+
       <secondary>line items by date</secondary>
     </indexterm>P/O Items by Date</title>
-  <para>To view purchase order items by date, select the <guimenuitem>P/O Items by Date</guimenuitem>
-  option. The following screen will appear:</para>
-  <para>
-<screenshot>
+
+  <para>To view purchase order items by date, select the <guimenuitem>P/O
+  Items by Date</guimenuitem> option. The following screen will appear:</para>
+
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspPoItemsByDate.png"/>
         </imageobject>
+
         <caption>Purchase Order Items by Date</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
+
   <tip>
     <para>A purchase order will remain open if at least one of its line items
     is open. Once all line items are closed, the purchase order will also be
     closed. To reopen a closed purchase order, simply open one of its closed
     line items.</para>
   </tip>
+
   <para>When displaying purchase order items by date, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Starting Due Date</term>
+
       <listitem>
         <para>Purchase order items entered on and after this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ending Due Date</term>
+
       <listitem>
         <para>Purchase order items entered on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
         <para>Select to display purchase order items by date for all
         sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
         <para>Specify site whose purchase order items by date you want to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Purchasing Agents</term>
+
       <listitem>
         <para>Select to display purchase order items by date for all
-        Purchasing Agents.</para>
+        purchasing agents.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
-        <para>Specify Purchasing Agent whose purchase order items by date you
-        want to display. Users may be designated as Purchasing Agents at the
+        <para>Specify purchasing agent whose purchase order items by date you
+        want to display. Users may be designated as purchasing agents at the
         system level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Items</term>
+
       <listitem>
         <para>Select to include all purchase order items by date in the
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Open Items</term>
+
       <listitem>
         <para>Select to include open purchase order items by date in the
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Closed Items</term>
+
       <listitem>
         <para>Select to include closed purchase order items by date in the
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>P/O Items</term>
+
       <listitem>
         <para>Display lists purchase order items by date, using the specified
         parameters.</para>

@@ -5,82 +5,104 @@
 <section id="copyPurchaseOrder">
   <title><indexterm significance="normal">
       <primary>purchase orders</primary>
+
       <secondary>copying of</secondary>
     </indexterm>Copy Purchase Order</title>
+
   <para>To copy a purchase order, select the <guibutton>COPY</guibutton>
   button on the Purchase Order History display screen. The following screen
   will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/copyPurchaseOrder.png"/>
         </imageobject>
+
         <caption>Copy Purchase Order</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>The copy functionality can be used as a <indexterm
         significance="normal">
         <primary>purchase orders</primary>
+
         <secondary>templates for</secondary>
       </indexterm> <indexterm significance="normal">
         <primary>purchase orders</primary>
+
         <secondary>handling repetitive</secondary>
-      </indexterm>templating mechanism for repetitive Purchase Orders.
+      </indexterm>templating mechanism for repetitive purchase orders.
     Consider creating a template purchase order and then simply copy it
     whenever you need to send out a new one.</para>
   </tip>
+
   <para>When copying purchase order history, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Purchase Order #</term>
+
       <listitem>
         <para>Displays the purchase order number for the purchase order you
         are copying.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order Date</term>
+
       <listitem>
         <para>Displays the original order date for the purchase order you are
         copying.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor #</term>
+
       <listitem>
         <para>Displays the vendor number for the purchase order you are
         copying. The vendor name and phone number will also display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Original Line Items</term>
+
       <listitem>
         <para>Display lists the line items which originally appeared on the
         purchase order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Use Today's Date</term>
+
       <listitem>
         <para>Select to use today's date as the order date for the purchase
         order copy. Due dates for purchase order line items will be adjusted
-        automatically from today's date using item source Lead Times, if
+        automatically from today's date using item source lead times, if
         any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Schedule Purchase Order for</term>
+
       <listitem>
         <para>Specify a date to use as the order date for the purchase order
         copy. Due dates for purchase order line items will be adjusted
-        automatically from the specified date using item source Lead Times, if
+        automatically from the specified date using item source lead times, if
         any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Use latest Item Sources and Prices</term>
+
       <listitem>
         <para>Select to use the most current item source information,
         including up-to-date item source prices. If not selected, the purchase
