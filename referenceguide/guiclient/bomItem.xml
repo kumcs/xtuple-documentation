@@ -5,130 +5,157 @@
 <section id="bomItem">
   <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>adding new components to</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>components</primary>
+
       <secondary>adding to BOMs</secondary>
     </indexterm>Bill of Materials Item</title>
-  <para>To add new components to a bill of materials, select the
+
+  <para>To add new components to a bill of materials (BOMs), select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/bomItem.png"/>
         </imageobject>
+
         <caption>Add New BOM Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>Bill of materials component items must have an item site defined to
     be valid.</para>
   </tip>
-  <para>When adding a new component item to a bill of materials, you are
-  presented with the following options:</para>
+
+  <para>When adding a new component item to a BOMs, you are presented with the
+  following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
-        <para>Enter the item number of the item you want to add to the bill of
-        materials.</para>
+        <para>Enter the item number of the item you want to add to the
+        BOMs.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
-        <para>Inventory unit of measure. You may also select a global
+        <para>Inventory unit of measure (UOM). You may also select a global
         conversion ratio here. Global conversions have the label
         <literal>Global</literal> appended to them.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Description of item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>effectivity</primary>
+
           <secondary>in BOMs</secondary>
         </indexterm>Effectivity</term>
+
       <listitem>
         <para>Specify the component's effectivity, using the following
         parameters:</para>
+
         <variablelist>
           <varlistentry>
             <term>Effective</term>
+
             <listitem>
               <para>The system enables you to specify when a component can be
-              used in a bill of materials. For example, the company's
-              engineering department may be working on a new design for an
-              existing item—but that new design will not be available for use
-              until a given date in the future. In this case, you can specify
-              a future effective date to indicate when the component will be
-              available for use.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Expires</term>
-            <listitem>
-              <para>The system also enables you to specify when a component is
-              planned to be obsoleted from (i.e., no longer used in) a bill of
-              materials. As mentioned above, the company's engineering
+              used in a BOMs. For example, the company's engineering
               department may be working on a new design for an existing
               item—but that new design will not be available for use until a
-              given date in the future. In this case, the old component item
-              must be marked for expiration on the date when the new item
-              becomes effective. Setting this parameter will instruct the
-              system to stop using the specified component on the date entered
-              into this field.</para>
+              given date in the future. In this case, you can specify a future
+              effective date to indicate when the component will be available
+              for use.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Expires</term>
+
+            <listitem>
+              <para>The system also enables you to specify when a component is
+              planned to be obsoleted from (i.e., no longer used in) a BOMs.
+              As mentioned above, the company's engineering department may be
+              working on a new design for an existing item—but that new design
+              will not be available for use until a given date in the future.
+              In this case, the old component item must be marked for
+              expiration on the date when the new item becomes effective.
+              Setting this parameter will instruct the system to stop using
+              the specified component on the date entered into this
+              field.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Create Child W/O at Parent W/O Explosion</term>
+
       <listitem>
         <para>Select to create work orders for manufactured components when
         their parent items are exploded. This option applies only to
-        manufactured items appearing as components on a bill of materials. If
-        selected, a work order will automatically be created for the
-        manufactured component when the parent item is exploded. The impact on
-        work order numbers will be visible. For example, a "-1" will be
-        appended to the parent level work order and a "-2" to the child level
-        work order—as in, #1061-1 and #1061-2. If this option is not selected,
-        a child work order will not be created when the parent item is
-        exploded.</para>
+        manufactured items appearing as components on a BOMs. If selected, a
+        work order will automatically be created for the manufactured
+        component when the parent item is exploded. The impact on work order
+        numbers will be visible. For example, a "-1" will be appended to the
+        parent level work order and a "-2" to the child level work order—as
+        in, #1061-1 and #1061-2. If this option is not selected, a child work
+        order will not be created when the parent item is exploded.</para>
+
         <note>
           <para>The <guilabel>Create Child W/O at Parent W/O
           Explosion</guilabel> option will cause the creation of lower level
           work orders BOTH at work order explosion and also during the
-          explosion that takes place during Master production Scheduling (MPS)
-          and material requirements Planning (MRP) runs.</para>
+          explosion that takes place during master production Scheduling (MPS)
+          and material requirements planning (MRP) runs.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Issue Child W/O to Parent W/O at Receipt</term>
+
       <listitem>
         <para>Select to have the completed item (i.e., subassembly) issued to
         the parent work order at the point when production for the child work
         order is posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Fixed Qty.</term>
+
       <listitem>
         <para>Use this option to specify a "flat" quantity of material
         required that is independent of the total quantity produced on a batch
-        or work order. For example, tooling items added to a bill of materials
-        generally have a fixed quantity regardless of the total quantity of
-        finished goods produced. Batch size does have an impact on the costing
-        for fixed quantity items, however. For example, if the parent item's
-        batch size is 100 and the cost of the fixed quantity item is $100,
-        then the fixed item's cost should be distributed across the batch, as
-        in the following: ((1/100) * $100) = $1.</para>
+        or work order. For example, tooling items added to a BOMs generally
+        have a fixed quantity regardless of the total quantity of finished
+        goods produced. Batch size does have an impact on the costing for
+        fixed quantity items, however. For example, if the parent item's batch
+        size is 100 and the cost of the fixed quantity item is $100, then the
+        fixed item's cost should be distributed across the batch, as in the
+        following: ((1/100) * $100) = $1.</para>
+
         <tip>
           <para>To ensure fixed quantity item costs are distributed accurately
           across an entire batch, make sure you select the
@@ -138,29 +165,36 @@
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Per</term>
+
       <listitem>
-        <para>Specify the quantity of the component item required per bill of
-        materials. This is a required field.</para>
+        <para>Specify the quantity of the component item required per BOMs.
+        This is a required field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Issue UOM</term>
+
       <listitem>
-        <para>Specify the unit of measure (UOM) you want to use when issuing
-        item quantity to work orders. You may also select a global conversion
-        ratio here. Global conversions have the label
-        <literal>Global</literal> appended to them. Unless you specify an
-        alternate UOM, the inventory UOM will be used by default.</para>
+        <para>Specify the UOM you want to use when issuing item quantity to
+        work orders. You may also select a global conversion ratio here.
+        Global conversions have the label <literal>Global</literal> appended
+        to them. Unless you specify an alternate UOM, the inventory UOM will
+        be used by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Scrap %</term>
+
       <listitem>
         <para>Number entered should represent a percentage of material
-        quantity that is additionally consumed as Scrap. This is a required
+        quantity that is additionally consumed as scrap. This is a required
         field.</para>
+
         <tip>
           <para>Using the <guilabel>Create Child W/O at Parent W/O
           Explosion</guilabel> option can greatly simplify the processing of
@@ -169,100 +203,120 @@
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>issue methods</primary>
+
           <secondary>within BOMs</secondary>
         </indexterm><indexterm significance="normal">
           <primary>bills of materials</primary>
+
           <secondary>issue methods for</secondary>
         </indexterm><indexterm significance="normal">
           <primary>push</primary>
+
           <secondary>issue method defined</secondary>
         </indexterm><indexterm significance="normal">
           <primary>pull</primary>
+
           <secondary>issue method defined</secondary>
         </indexterm><indexterm significance="normal">
           <primary>mixed</primary>
+
           <secondary>issue method defined</secondary>
         </indexterm><indexterm significance="normal">
           <primary>issue methods</primary>
+
           <secondary>push as</secondary>
         </indexterm><indexterm significance="normal">
           <primary>issue methods</primary>
+
           <secondary>pull as</secondary>
         </indexterm><indexterm significance="normal">
           <primary>issue methods</primary>
+
           <secondary>mixed as</secondary>
         </indexterm><indexterm significance="normal">
           <primary>issue methods</primary>
+
           <secondary>backflush as</secondary>
         </indexterm><indexterm significance="normal">
           <primary>backflush</primary>
+
           <secondary>as issue method</secondary>
         </indexterm>Issue Method</term>
+
       <listitem>
         <para>Method: Select one of the available issue methods:</para>
+
         <variablelist>
           <varlistentry>
             <term>Push</term>
+
             <listitem>
               <para>Select if you want the component item to be issued to work
               orders by a specific material issue transaction. Because a
-              specific material issue transaction must be used,
-              Push items enable you to monitor material
-              usage variances. Standard issue quantities are not automatically
-              backflushed to work orders, as is true for
-              Pull items. If a component item uses the
-              Push issue method, you must manually issue
-              quantities to work orders.</para>
+              specific material issue transaction must be used, push items
+              enable you to monitor material usage variances. Standard issue
+              quantities are not automatically backflushed to work orders, as
+              is true for pull items. If a component item uses the push issue
+              method, you must manually issue quantities to work
+              orders.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Pull</term>
+
             <listitem>
               <para>Select if you want the component item to be issued to work
-              orders by a material backflush. Pull items
-              are automatically issued to work orders when work order
-              production is posted. Using the Pull issue
-              method saves time, since materials do not need to be manually
-              issued to work orders by a specific material issue
-              transaction.</para>
+              orders by a material backflush. Pull items are automatically
+              issued to work orders when work order production is posted.
+              Using the pull issue method saves time, since materials do not
+              need to be manually issued to work orders by a specific material
+              issue transaction.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Mixed</term>
+
             <listitem>
               <para>Select if you want the component item to take upon itself
-              the issue method applied to it initially—that is, either
-              Pull or Push.
-              Assigning the Mixed issue method to a
-              component item gives you the flexibility of deciding on a work
-              order by work order basis whether you want to assign the
-              Pull or Push method to
-              the component item.</para>
+              the issue method applied to it initially—that is, either pull or
+              push. Assigning the mixed issue method to a component item gives
+              you the flexibility of deciding on a work order by work order
+              basis whether you want to assign the pull or push method to the
+              component item.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <note>
-          <para>You can define a default issue method for new bill of
-          materials component items at the system level.</para>
+          <para>You can define a default issue method for new BOMs component
+          items at the <guimenuitem>System</guimenuitem> level.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>engineering change notices</primary>
+
           <secondary>in BOMs</secondary>
         </indexterm><indexterm significance="normal">
           <primary>ECN</primary>
+
           <see>engineering change notices</see>
         </indexterm>ECN #</term>
+
       <listitem>
-        <para>Enter the Engineering Change Notice number—if applicable—for the
+        <para>Enter the engineering change notice number—if applicable—for the
         specified component item.</para>
+
         <note>
-          <para>BOM-defined Substitutions are the only Substitutes which may
+          <para>BOM-defined substitutions are the only substitutes which may
           be implemented during work order processing. To substitute a
           component item on a work order, use the
           <guilabel>Substitute</guilabel> option found on the right-click menu
@@ -270,8 +324,10 @@
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Used At</term>
+
       <listitem>
         <para>Specify which operation the component is used at. Using the
         lookup feature located to the right of the field, select a routing
@@ -279,310 +335,388 @@
         Linking a component with an operation will have certain effects.
         First, when posting operations, components that are linked to a given
         operation will be backflushed if the issue method for the components
-        is either Pull or Mixed and
-        the operation is set to auto issue components. Secondly, work order
-        paperwork, such as routings, will show the relationship between linked
-        work order material requirements and work order operations.</para>
+        is either pull or mixed and the operation is set to auto issue
+        components. Secondly, work order paperwork, such as routings, will
+        show the relationship between linked work order material requirements
+        and work order operations.</para>
+
         <tip>
           <para>If an operation is expired, the link between the operation and
           the component item will be removed.</para>
         </tip>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Schedule w/ W/O Operation</term>
+
       <listitem>
         <para>Select to indicate that this component is not due until the work
         order operation that will consume it is scheduled to begin. The
-        scheduling of operations is handled by the Execution Day indicator on
+        scheduling of operations is handled by the execution day indicator on
         the Routings Item screen. For example, let's say we have an operation
-        with an Execution Day = 5. This means the operation is scheduled to
+        with an execution day = 5. This means the operation is scheduled to
         begin five days after the start date of the work order. Components
         scheduled with this operation are due the day before the operation
         starts—that is, on day four after the work order start date—to ensure
         they will be available when the operation is scheduled to begin. If
         this option is not selected, then the component scheduling will be
-        governed by the start and due dates set on the Work Order
+        governed by the start and due dates set on the work order
         header.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>Enter additional notes related to the item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add Reference information related to a BOM item, select the
+
+  <para>To add reference information related to a BOM item, select the
   <guimenuitem>Reference</guimenuitem> tab. The following screen will
   appear:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/bomItem_referencePage.png"/>
     </imageobject>
+
     <caption>Add Reference to BOM Item</caption>
   </mediaobject>
-  <para>The Reference field can be used to identify any additional attributes
-  associated with an item.</para>
-  <para>To add Substitution information related to a BOM item, select the
+
+  <para>The <guilabel>Reference</guilabel> field can be used to identify any
+  additional attributes associated with an item.</para>
+
+  <para>To add substitution information related to a BOM item, select the
   <guimenuitem>Substitution</guimenuitem> tab. The following screen will
   appear:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/bomItem_substitutionsTab.png"/>
     </imageobject>
+
     <caption>Add Substitution to BOM Item</caption>
   </mediaobject>
+
   <variablelist>
     <varlistentry>
       <term>Substitutions</term>
+
       <listitem>
-        <para>Choose one of the following item Substitution options:</para>
+        <para>Choose one of the following item substitution options:</para>
+
         <variablelist>
           <varlistentry>
             <term>No Substitutions</term>
+
             <listitem>
-              <para>Select if no Substitutions exist for the component
+              <para>Select if no substitutions exist for the component
               item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Item-Defined Substitutions</term>
+
             <listitem>
-              <para>Select if Substitutions are defined on the Item master for
+              <para>Select if substitutions are defined on the Item master for
               the component item. Selecting this option will not cause
-              item-defined Substitutions to display here. You are simply
-              indicating that Item master level Substitutions do exist.</para>
+              item-defined substitutions to display here. You are simply
+              indicating that Item master level substitutions do exist.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>BOM-Defined Substitutions</term>
+
             <listitem>
-              <para>Select to define item Substitutions at the bill of
-              materials level.</para>
+              <para>Select to define item substitutions at the BOMs
+              level.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>To ensure availability, a BOM-defined Substitution must be located
-    in the same site as the component item it replaces. If the Substitute is
+    <para>To ensure availability, a BOM-defined substitution must be located
+    in the same site as the component item it replaces. If the substitute is
     located in a different site, it will not be available for
     substitution.</para>
   </tip>
+
   <para><indexterm significance="normal">
       <primary>substitutions</primary>
+
       <secondary>creating new bom-defined</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bom-defined substitutions</primary>
+
       <secondary>creating new</secondary>
-    </indexterm>To create a new BOM-defined Substitution, select the
+    </indexterm>To create a new BOM-defined substitution, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/itemSubstitute.png"/>
         </imageobject>
+
         <caption>Add New BOM-Defined Substitution</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When adding a new BOM-defined Substitution, you are presented with the
+
+  <para>When adding a new BOM-defined substitution, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number (Root Item)</term>
+
       <listitem>
         <para>Displays item number of specified component item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number (Substitution)</term>
+
       <listitem>
-        <para>Enter the item number of the Substitute item.</para>
+        <para>Enter the item number of the substitute item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Substitute/Parent UOM Ratio</term>
+
       <listitem>
-        <para>Indicate the ratio between the Issue UOM for the specified BOM
-        item and the corresponding Issue UOM for the Substitute item.</para>
+        <para>Indicate the ratio between the issue UOM for the specified BOM
+        item and the corresponding issue UOM for the substitute item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ranking</term>
+
       <listitem>
         <para>Select a number using the arrow buttons, or manually enter a
         value up to a maximum of 9. Enter the specified ranking order of the
-        item Substitute. You may assign the same ranking to multiple items, if
+        item substitute. You may assign the same ranking to multiple items, if
         this is appropriate.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add comments to a component item, select the
   <guimenuitem>Comments</guimenuitem> tab at the bottom of the Bill of
   Materials Item screen. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/bomItem_commentsTab.png"/>
         </imageobject>
+
         <caption>Add Comment to BOM Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>To view or maintain the current standard costs for the selected item,
   select the <guimenuitem>Costs</guimenuitem> tab at the bottom of the Bill of
   Materials Item screen. The following screen will appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
         <imagedata fileref="images/bomItem_costsTab.png"/>
       </imageobject>
+
       <caption>BOM Item Costs</caption>
     </mediaobject>
   </screenshot>
-  <para>When opening the bill of materials item costs, you are presented with
-  the following options:</para>
+
+  <para>When opening the BOMs item costs, you are presented with the following
+  options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Costs are specific to this Bill of Material Item</term>
+
       <listitem>
         <para>Select this option to manually edit the current standard costs
         of the item. If this option is not selected, a read only list of the
         current standard costs for the item is displayed.</para>
+
         <note>
           <para>If this option is unchecked after the costs have been changed,
           the list will revert to displaying standard costs.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Costing Elements</term>
+
       <listitem>
         <para>A list of the costing elements with current standard cost of the
-        bill of material item is displayed.</para>
+        BOM item is displayed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To <indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>linking to routings</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bills of operations</primary>
+
       <secondary>linking to BOMs</secondary>
-    </indexterm>link a Bill of Materials component to a routing item, select
-  the lookup feature located to the right of the <guilabel>Used At</guilabel>
-  field. The following screen will appear:</para>
+    </indexterm>link a BOMs component to a routing item, select the lookup
+  feature located to the right of the <guilabel>Used At</guilabel> field. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/booItemList.png"/>
         </imageobject>
+
         <caption>Routing Items</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When linking bill of materials components to routings items, you are
-  presented with the following options:</para>
+
+  <para>When linking BOMs components to routings items, you are presented with
+  the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>The component item selected on the Bill of Materials screen will
         display here.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Routing Items</term>
+
       <listitem>
         <para>Display lists routing items for the same manufactured item whose
-        bill of materials is being specified. Highlight the operation you want
-        to link the bill of materials item to, then hit the
-        <guibutton>SELECT</guibutton> button.</para>
+        BOMs is being specified. Highlight the operation you want to link the
+        BOMs item to, then hit the <guibutton>SELECT</guibutton>
+        button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CLEAR</guibutton></term>
+
       <listitem>
-        <para>Removes the link between a bill of materials component and a
-        routing item if such a link has been made.</para>
+        <para>Removes the link between a BOMs component and a routing item if
+        such a link has been made.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>SELECT</term>
+
       <listitem>
-        <para>Links the routing item to the specified bill of materials
-        component. Highlight the desired routing item before selecting the
+        <para>Links the routing item to the specified BOMs component.
+        Highlight the desired routing item before selecting the
         <guibutton>SELECT</guibutton> button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>On a bill of materials, if the parent item is a configured item (i.e.,
-  configured job item or Reference item), then you will have the option to
-  link BOM items to specific parent item characteristics. For example, let's
-  say the parent item has a characteristic for paint finish with the values
-  "Flat" and "Glossy". At the BOM item level, you can specify whether the BOM
-  item goes with "Flat" or "Glossy". If you choose "Glossy" to associate with
-  the BOM item, then that means the BOM item will be included as a material
-  requirement whenever orders call for the "Glossy" version of the parent
+
+  <para>On a BOMs, if the parent item is a configured item (i.e., configured
+  job item or reference item), then you will have the option to link BOM items
+  to specific parent item characteristics. For example, let's say the parent
+  item has a characteristic for paint finish with the values "Flat" and
+  "Glossy". At the BOM item level, you can specify whether the BOM item goes
+  with "flat" or "glossy". If you choose "glossy" to associate with the BOM
+  item, then that means the BOM item will be included as a material
+  requirement whenever orders call for the "glossy" version of the parent
   item. If no characteristic association is made at the BOM item level, then
   the BOM item will always appear on work orders—regardless of the
   parent-level configuration selection. To associate characteristics with a
   BOM item, select the <guimenuitem>Configuration</guimenuitem> tab. The
   following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/bomItem_configurationTab.png"/>
         </imageobject>
+
         <caption>Configure BOM Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>You can learn more about item configuration in xTuple ERP by reading
     the <ulink
     url="http://wiki.xtuple.org/AssembleToOrderConfiguratorTopic">Assemble to
     Order (ATO) Configuration Topic</ulink>.</para>
   </note>
+
   <para>When associating characteristics with a BOM item, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Characteristic</term>
+
       <listitem>
         <para>Select a characteristic from the list of characteristics. These
         characteristics are item characteristics defined on the Item master
-        for the parent item on the bill of materials. Linking parent
-        characteristics to child BOM items means the child item will be
-        included as a material requirement whenever orders call for the same
-        parent item characteristic.</para>
+        for the parent item on the BOMs. Linking parent characteristics to
+        child BOM items means the child item will be included as a material
+        requirement whenever orders call for the same parent item
+        characteristic.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Value</term>
+
       <listitem>
         <para>Enter a value to associate with the selected item
         characteristic.</para>

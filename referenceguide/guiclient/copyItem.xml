@@ -5,196 +5,248 @@
 <section id="copyItem">
   <title><indexterm significance="normal">
       <primary>items</primary>
+
       <secondary>copying of</secondary>
     </indexterm>Copy Item</title>
+
   <para>The Copy Item screen can be used as</para>
+
   <itemizedlist>
     <listitem>
-      <para>a Quick Item Builder to create new items in order to satisfy the
-      "reusable" requirement</para>
+      <para>A quick item builder to create new items in order to satisfy the
+      "reusable" requirement.</para>
     </listitem>
+
     <listitem>
-      <para>a job order Builder which allows you to add, remove and/or change
-      bill of material and routing lines.</para>
+      <para>A job order builder which allows you to add, remove and/or change
+      bill of material (BOM) and routing lines.</para>
     </listitem>
   </itemizedlist>
+
   <para>To make a copy of an item, select the <guimenuitem>Copy
-  Item</guimenuitem>option. The following screen will appear:</para>
+  Item</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/copyItem.png"/>
         </imageobject>
+
         <caption>Copy Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When copying an item, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number (Source Item)</term>
+
       <listitem>
         <para>Enter the item number of the item you want to copy.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Target Item Number</term>
+
       <listitem>
         <para>The target item number must be a unique item number new to the
         system.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Copy Bill of Materials</term>
+
       <listitem>
-        <para>Select if you want to copy the source item's bill of
-        materials.</para>
+        <para>Select if you want to copy the source item's BOM.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Copy Routing</term>
+
       <listitem>
         <para>Select if you want to copy the source item's routing.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Rollup Prices</term>
+
       <listitem>
         <para>Select if the price should be based on the price of all the
         target material and operations.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Copy Item Sites</term>
+
       <listitem>
         <para>Select if you want to copy the source item's item sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Copy Used At Operation</term>
+
       <listitem>
         <para>Select if you want to include the <guilabel>Used At</guilabel>
-        operation information when copying a source item's bill of materials.
-        If selected, the <guilabel>Schedule w/ W/O Operation</guilabel>
-        information will also be copied.</para>
+        operation information when copying a source item's BOM. If selected,
+        the <guilabel>Schedule w/ W/O Operation</guilabel> information will
+        also be copied.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>COPY</term>
+
       <listitem>
         <para>Click the <guibutton>COPY</guibutton> button to copy the item
         according to the selections made on this screen.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add or remove components in the bill of material for the target
-  item, click on the <guimenuitem>Bill of Material</guimenuitem> tab. The
-  following is displayed:</para>
+
+  <para>To add or remove components in the BOM for the target item, click on
+  the <guimenuitem>Bill of Material</guimenuitem> tab. The following is
+  displayed:</para>
+
   <variablelist>
     <varlistentry>
       <term>Search for Item</term>
+
       <listitem>
         <para>Start typing the item that you would like to add. A list of
         items containing the typed characters will appear, allowing you to
-        select the item that you want to add to the bill of material.</para>
+        select the item that you want to add to the BOM.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>ADD -&gt;</term>
+
       <listitem>
         <para>Clicking the <guibutton>ADD-&gt;</guibutton> button will add
         selected components from the list in the left pane to the
         <guilabel>Component Items</guilabel> list on the right.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>REMOVE -&gt;</guibutton></term>
+
       <listitem>
-        <para>To remove components from the source item's bill of material,
-        select the components in the <guilabel>Bill of Material</guilabel>
-        list and click the <guibutton>REMOVE -&gt;</guibutton> button.</para>
+        <para>To remove components from the source item's BOM, select the
+        components in the <guilabel>Bill of Material</guilabel> list and click
+        the <guibutton>REMOVE -&gt;</guibutton> button.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Component Items</term>
+
       <listitem>
         <para>Display lists the components that will be part of the target
-        item's bill of material.</para>
+        item's BOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add or remove standard operations, select the
   <guimenuitem>Routing</guimenuitem> tab. The following will be
   displayed:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/copyItem_BOO.png"/>
     </imageobject>
   </mediaobject>
+
   <variablelist>
     <varlistentry>
       <term>Available Standard Operations</term>
+
       <listitem>
         <para>By default the display lists the source item's routing. Select
         the operations that you wish to include in the target item's
         routing.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>ADD -&gt;</guibutton></term>
+
       <listitem>
         <para>Clicking the <guibutton>ADD-&gt;</guibutton> button will add
         selected operations from the list in the left pane to the
         <guilabel>Routings</guilabel> list on the right.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>REMOVE -&gt;</guibutton></term>
+
       <listitem>
         <para>To remove operations from the source item's routing, highlight
         the relevant operations in the <guilabel>Routings</guilabel> list and
         click the <guibutton>REMOVE -&gt;</guibutton> button.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Routings</term>
+
       <listitem>
         <para>Display lists the target item's routing.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add or remove item sites for the target item, select the
   <guimenuitem>Item Site</guimenuitem> tab. The following will be
   displayed:</para>
+
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/copyItem_itemSite.png"/>
     </imageobject>
   </mediaobject>
+
   <variablelist>
     <varlistentry>
       <term>Item Sites</term>
+
       <listitem>
         <para>By default the list will display the source item's item sites.
         From this list, you can select the item sites that you do not wish to
         copy to the target item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>COPY</term>
+
       <listitem>
         <para>The list of item sites displayed will be copied to the target
         item when the <guibutton>COPY</guibutton> button is clicked.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>REMOVE</guibutton></term>
+
       <listitem>
         <para>Click the <guibutton>REMOVE</guibutton> button to remove the
         selected item sites that should not be copied to the target

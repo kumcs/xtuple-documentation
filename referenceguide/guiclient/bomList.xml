@@ -5,35 +5,44 @@
 <section id="bomList">
   <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>master list of</secondary>
     </indexterm>List Bills of Materials</title>
+
   <para>To access the master list of bills of materials (BOM), select the
   <guimenuitem>List Bills of Materials</guimenuitem> option. The following
   screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/bomList.png"/>
         </imageobject>
+
         <caption>Bills of Materials Master List</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>At the top of the screen is a <guilabel>Search For</guilabel> field.
   To search for an item, begin typing in the <guilabel>Search</guilabel>
-  field. As you type, the Bills of Materials list will automatically scroll
-  toward the item number you are typing. You can also search for items
-  manually by using the scroll bar to the right of the Bills of Materials
-  list. The following additional options are also available:</para>
+  field. As you type, the BOMs list will automatically scroll toward the item
+  number you are typing. You can also search for items manually by using the
+  scroll bar to the right of the BOMs list. The following additional options
+  are also available:</para>
+
   <variablelist>
     <varlistentry>
       <term>Show BOMs for Inactive Items</term>
+
       <listitem>
         <para>Select to include BOMs for items which are inactive in the
         display. If not selected, only active items will be displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>BOMs with Component Items</term>
+
       <listitem>
         <para>Select to include only BOMs with BOM items in the display. If
         not selected, all BOMs will be shown—regardless of whether the BOM has
@@ -41,8 +50,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip role="standard">
-    <para>You may not delete a bill of materials (BOM) if the item in question
-    has any revision history. You must make the BOM inactive instead</para>
+    <para>You may not delete a BOM if the item in question has any revision
+    history. You must make the BOM inactive instead.</para>
   </tip>
 </section>

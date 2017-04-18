@@ -5,91 +5,116 @@
 <section id="massReplaceComponent">
   <title><indexterm significance="normal">
       <primary>components</primary>
+
       <secondary>mass replacement of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>mass replacement</primary>
+
       <secondary>of component items</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>replacement</primary>
+
       <secondary>of component items</secondary>
     </indexterm>Mass Replace Component Item</title>
-  <para>The Mass Replace Component item feature will save you time whenever
-  you need to replace components that are used in multiple bills of materials.
-  To perform a mass replacement of a component item, select the <guimenuitem>Mass Replace
-  Component Item</guimenuitem> option. The following screen will appear:</para>
+
+  <para>The mass replace component item feature will save you time whenever
+  you need to replace components that are used in multiple bills of materials
+  (BOMs). To perform a mass replacement of a component item, select the
+  <guimenuitem>Mass Replace Component Item</guimenuitem> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/massReplaceComponent.png" />
+          <imagedata fileref="images/massReplaceComponent.png"/>
         </imageobject>
+
         <caption>Mass Replace Component Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When performing a mass replacement of a component item, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number (Original Item)</term>
+
       <listitem>
         <para>Enter the item number of the component item you want to
         replace.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM (Original Item)</term>
+
       <listitem>
-        <para>Displays inventory UOM automatically when item number is entered
-        into <guilabel>Item Number</guilabel> field. The item description will also
-        appear.</para>
+        <para>Displays inventory unit of measure (UOM) automatically when item
+        number is entered into <guilabel>Item Number</guilabel> field. The
+        item description will also appear.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number (Replacement Item)</term>
+
       <listitem>
         <para>Enter the item number of the replacement item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM (Original Item)</term>
+
       <listitem>
         <para>Displays inventory UOM automatically when item number is entered
-        into <guilabel>Item Number</guilabel> field. The item description will also
-        appear.</para>
+        into <guilabel>Item Number</guilabel> field. The item description will
+        also appear.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Effective</term>
+
       <listitem>
         <para>Specify the effective date for the replacement</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>engineering change notices</primary>
+
           <secondary>for mass replacement</secondary>
         </indexterm><indexterm significance="normal">
           <primary>mass replacement</primary>
+
           <secondary>of component items</secondary>
         </indexterm><indexterm significance="normal">
           <primary>replacement</primary>
+
           <secondary>of component items</secondary>
         </indexterm>ECN #</term>
+
       <listitem>
-        <para>Enter the Engineering Change Notice number&mdash;if
-        applicable&mdash;for the specified component item.</para>
+        <para>Enter the engineering change notice number—if applicable—for the
+        specified component item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>REPLACE</guibutton></term>
+
       <listitem>
         <para>Executes the replace command. Every occurrence of the original
-        item in a bill of materials will be replaced by the replacement item.
-        The expiration and effective dates for the newly-created and replaced
-        bill of materials items will be set to the indicated effective
-        date.</para>
+        item in a BOMs will be replaced by the replacement item. The
+        expiration and effective dates for the newly-created and replaced BOMs
+        items will be set to the indicated effective date.</para>
       </listitem>
     </varlistentry>
   </variablelist>

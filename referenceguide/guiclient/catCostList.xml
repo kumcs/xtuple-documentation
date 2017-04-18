@@ -5,30 +5,37 @@
 <section id="catCostList" role="distribution">
   <title><indexterm significance="normal">
       <primary>vendor catalog</primary>
+
       <secondary>costs for</secondary>
     </indexterm>Vendor Catalog Costs</title>
+
   <para>The Vendor Catalog Costs screen allows you to manage the costs
   associated with any external vendor catalog items which you've converted to
   inventory items in xTuple. From this one screen you can both view your
   converted items and manage their item costing information. Changes you make
   to an item's costing information on this screen will be transferred to the
-  xTuple items when you run the update option.</para>
+  xTuple items when you run the <guilabel>Update</guilabel> option.</para>
+
   <para>To view and manage your converted vendor catalog items, select the
   <guimenuitem>Vendor Catalog Costs</guimenuitem> option. The following screen
   will appear.</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/catCostList.png"/>
         </imageobject>
+
         <caption>Vendor Catalog Costs</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The Vendor Catalog Costs screen displays cost and pricing information
   for xTuple inventory items converted from your external vendor catalog. Item
   and item source records are both displayed here. To modify information for
   an item, select the <guimenuitem>Edit</guimenuitem> option from the
   right-click menu.</para>
+
   <note>
     <para>If your pricing configuration is configured to <guilabel>Use
     Wholesale Price for Unit Cost for Markups</guilabel>, then your sales
@@ -36,35 +43,43 @@
     <literal>catcost</literal> information can be used to manage those costs,
     as well, reflecting a true cost for commissions.</para>
   </note>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>UPDATE CATCOST</guibutton></term>
+
       <listitem>
         <para>Select to update your xTuple item information with the
         information shown on the Vendor Catalog Cost screen. If the two sets
         of information are in sync, no changes will be made.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>DELETE CATCOST</guibutton></term>
+
       <listitem>
         <para>Select to temporarily clear all item information from the
-        Catalog Cost table. When you select the <guibutton>UPDATE
+        catalog cost table. When you select the <guibutton>UPDATE
         CATCOST</guibutton> button, this information will be refreshed with
         the current xTuple item information on file.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>UPDATE ITEMS</guibutton></term>
+
       <listitem>
-        <para>Select to update the Catalog cost data using information from
+        <para>Select to update the catalog cost data using information from
         your external vendors' price sheet(s). If you are coordinating with
         multiple price sheets, you will be given the option to choose the
         provider whose updates you want to apply.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="catCost.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

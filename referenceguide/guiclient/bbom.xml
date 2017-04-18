@@ -4,41 +4,53 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="bbom">
   <title>Enter New Breeder Bill of Materials</title>
-  <para>To enter a new breeder bill of materials, select the
+
+  <para>To enter a new breeder bill of materials (BOMs), select the
   <guimenuitem>Enter New Breeder Bill of Materials</guimenuitem> option. The
   following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/bbom.png"/>
         </imageobject>
+
         <caption>Create New Breeder Bill of Materials</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new breeder bill of materials, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the breeder item you want to create a
         breeder bill of materials for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>components</primary>
+
           <secondary>expired from breeder bill</secondary>
         </indexterm><indexterm significance="normal">
           <primary>breeder items</primary>
+
           <secondary>expiration in breeder bills</secondary>
         </indexterm>Show Expired Components</term>
+
       <listitem>
         <para>Select to display expired components in the
         Co-Product/By-Product Definitions display. Expired components are
@@ -46,11 +58,14 @@
         materials.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>breeder items</primary>
+
           <secondary>adding to bills in future</secondary>
         </indexterm>Show Future Components</term>
+
       <listitem>
         <para>Select to display future components in the Co-Product/By-Product
         Definitions display. Future components are components that will be
@@ -58,48 +73,60 @@
         time.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>costing</primary>
+
           <secondary>for co-products</secondary>
         </indexterm><indexterm significance="normal">
           <primary>breeder items</primary>
+
           <secondary>cost absorption by</secondary>
         </indexterm><indexterm significance="normal">
           <primary>co-products</primary>
+
           <secondary>costs absorbed by</secondary>
         </indexterm>Costs Absorbed</term>
+
       <listitem>
         <para>Displays the percentage amount of cost absorption each
-        Co-product will assume. The costing of Co-products is tied directly to
+        co-product will assume. The costing of co-products is tied directly to
         the percentage of breeder item costs they absorb. For best results,
-        all your breeder Co-products and By-products should use the same
+        all your breeder co-products and by-products should use the same
         costing method (i.e., either standard or average cost). Mixing the two
         costing methods on one breeder bill of materials can lead to
         unexpected results. For more information, see <xref
         linkend="bbomItem"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>breeder items</primary>
+
           <secondary>as co-products</secondary>
         </indexterm><indexterm significance="normal">
           <primary>breeder items</primary>
+
           <secondary>as by-products</secondary>
         </indexterm><indexterm significance="normal">
           <primary>co-products</primary>
+
           <secondary>in breeder bills</secondary>
         </indexterm><indexterm significance="normal">
           <primary>by-products</primary>
+
           <secondary>in breeder bills</secondary>
         </indexterm>Co-Product/By-Product Definitions</term>
+
       <listitem>
         <para>Display lists all the component items in the breeder bill of
         materials.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="bbomItem.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

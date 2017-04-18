@@ -5,8 +5,10 @@
 <section role="distribution">
   <title><indexterm significance="normal">
       <primary>vendor catalog</primary>
+
       <secondary>management of</secondary>
     </indexterm>External Vendor Catalog</title>
+
   <para>The external vendor catalog is designed to help distributors manage
   not only their own items but also the potential items they have access to.
   These external items can come from pricing services such as Trade Service
@@ -14,53 +16,66 @@
   url="http://www.tradeservice.com">http://www.tradeservice.com</ulink>). Or,
   if your vendor provides price sheets, you can also create custom maps to
   import the vendor's items into xTuple ERP.</para>
+
   <note>
-    <para>To learn more about building your Catalog using vendor provided
+    <para>To learn more about building your catalog using vendor provided
     price sheets, check out the <ulink
     url="http://xtupleuniversity.com/xwdpricesheet-install">xwdpricesheet
     package</ulink> video at xTuple University: <ulink
     url="http://xtupleuniversity.com/">http://xtupleuniversity.com/</ulink>.</para>
   </note>
+
   <para>To access the external vendor catalog, select the
-  <guimenuitem>External Vendor Catalog</guimenuitem> option in the Item menu
-  or by clicking on the <guibutton>VENDOR CATALOG</guibutton> button on the
-  sales Order Item or Purchase Order Item screens. The following screen will
-  appear.</para>
+  <guimenuitem>External Vendor Catalog</guimenuitem> option in the
+  <guimenu>Item</guimenu> menu or by clicking on the <guibutton>VENDOR
+  CATALOG</guibutton> button on the Sales Order Item or Purchase Order Item
+  screens. The following screen will appear.</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/catalogList.png"/>
         </imageobject>
+
         <caption>External Vendor Catalog</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When accessing the external vendor catalog, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Filter</term>
+
       <listitem>
         <para>Use the filter to manage and save search criteria.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Query Limit</term>
+
       <listitem>
         <para>Use this option to limit the number of query results when
         working with large data sets.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Commodity Code</term>
+
       <listitem>
-        <para>Displays Commodity Code information. You can select a Commodity
-        Code to filter the query results to an individual Commodity Code or
-        select a Commodity Code family to filter the query results to the
-        Commodity Codes of the family.</para>
+        <para>Displays commodity code information. You can select a commodity
+        code to filter the query results to an individual commodity code or
+        select a commodity code family to filter the query results to the
+        commodity codes of the family.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Catalog</term>
+
       <listitem>
         <para>Displays items appearing in the external vendor catalog. If an
         item displays in red type, that means the item has already been
@@ -68,20 +83,23 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CONVERT</guibutton></term>
+
       <listitem>
         <para>Highlight an external vendor catalog item in the list and then
-        select this button to convert the Catalog item to an inventory item in
+        select this button to convert the catalog item to an inventory item in
         xTuple ERP. The Vendor Catalog Conversion screen will be displayed.
-        You have the options to create a new inventory item or add the Catalog
+        You have the options to create a new inventory item or add the catalog
         item as a new item source for an existing inventory item. When
         creating a new inventory item, an item, item site(s), item source,
-        item cost, item UOM Conversion, and item tax type are created using
-        the information of the Catalog item and the appropriate Provider entry
-        in your Vendor Catalog Conversion Configurations.</para>
+        item cost, item UOM conversion, and item tax type are created using
+        the information of the catalog item and the appropriate provider entry
+        in your vendor catalog conversion configurations.</para>
       </listitem>
     </varlistentry>
   </variablelist>
