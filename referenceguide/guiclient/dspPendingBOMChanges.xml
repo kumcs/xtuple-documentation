@@ -5,47 +5,61 @@
 <section id="dspPendingBOMChanges">
   <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>pending changes in</secondary>
     </indexterm>Pending BOM Changes</title>
+
   <para>To view an item's pending bill of materials changes, select the
-  <guimenuitem>Pending BOM Changes</guimenuitem> option. The following screen will appear:</para>
+  <guimenuitem>Pending BOM Changes</guimenuitem> option. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspPendingBOMChanges.png" />
+          <imagedata fileref="images/dspPendingBOMChanges.png"/>
         </imageobject>
+
         <caption>Pending Bill of Materials Changes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When displaying an item's pending bill of materials changes, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the manufactured item whose pending
         bill of materials changes you want to view.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Revision</term>
+
       <listitem>
         <para>If revision control is enabled at your site, specify the bill of
         materials revision number you want to view. If none exists, simply
         enter a value to create one. The status of the revision will also be
         displayed. The following statuses apply to revisions:</para>
+
         <variablelist>
           <varlistentry>
             <term>Active</term>
+
             <listitem>
               <para>This is the current, default revision used for costing and
-              material requirements Planning (MRP). Only one revision can be
+              material requirements planning (MRP). Only one revision can be
               active at the same time. Active revisions may be modified.
               However, once a revision becomes inactive, it may no longer be
               changed.</para>
@@ -54,14 +68,18 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Cutoff Date</term>
+
       <listitem>
         <para>Indicates the last event date to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pending Bill of Materials Changes</term>
+
       <listitem>
         <para>Display lists pending bill of materials changes, using the
         specified parameters.</para>

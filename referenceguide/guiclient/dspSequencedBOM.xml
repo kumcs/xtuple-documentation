@@ -5,48 +5,61 @@
 <section id="dspSequencedBOM">
   <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>sequenced view of</secondary>
     </indexterm>Sequenced Bill of Materials</title>
+
   <para>To view how bill of materials component items correspond sequentially
   to their associated routings, select the <guimenuitem>Sequenced Bill of
   Materials</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspSequencedBOM.png"/>
         </imageobject>
+
         <caption>Sequenced Bill of Materials</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When displaying a sequenced bill of materials, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the manufactured item you would like to
         view a sequenced bill of materials for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Revision</term>
+
       <listitem>
         <para>If revision control is enabled at your site, specify the bill of
         materials revision number you want to view. If none exists, simply
         enter a value to create one. The status of the revision will also be
         displayed. The following statuses apply to revisions:</para>
+
         <variablelist>
           <varlistentry>
             <term>Active</term>
+
             <listitem>
               <para>This is the current, default revision used for costing and
-              material requirements Planning (MRP). Only one revision can be
+              material requirements planning (MRP). Only one revision can be
               active at the same time. Active revisions may be modified.
               However, once a revision becomes inactive, it may no longer be
               changed.</para>
@@ -55,22 +68,28 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Expired Components</term>
+
       <listitem>
         <para>Select to cause expired components to be listed in the Bill of
         Materials display. Expired components will display in red font.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Future Components</term>
+
       <listitem>
         <para>Select to cause future components to be listed in the Bill of
         Materials display. Future components will display in blue font.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Bill of Materials</term>
+
       <listitem>
         <para>Display lists sequenced bill of materials components, using the
         specified parameters.</para>

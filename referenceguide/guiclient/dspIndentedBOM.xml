@@ -5,48 +5,61 @@
 <section id="dspIndentedBOM">
   <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>indented view of</secondary>
     </indexterm>Indented Bill of Materials</title>
+
   <para>To view an indented bill of materials, select the
   <guimenuitem>Indented Bill of Materials</guimenuitem> option. The following
   screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspIndentedBOM.png"/>
         </imageobject>
+
         <caption>Indented Bill of Materials</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When displaying an indented bill of materials, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the manufactured item you would like to
         view an indented bill of materials for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Revision</term>
+
       <listitem>
         <para>If revision control is enabled at your site, specify the bill of
         materials revision number you want to view. If none exists, simply
         enter a value to create one. The status of the revision will also be
         displayed. The following statuses apply to revisions:</para>
+
         <variablelist>
           <varlistentry>
             <term>Active</term>
+
             <listitem>
               <para>This is the current, default revision used for costing and
-              material requirements Planning (MRP). Only one revision can be
+              material requirements planning (MRP). Only one revision can be
               active at the same time. Active revisions may be modified.
               However, once a revision becomes inactive, it may no longer be
               changed.</para>
@@ -55,14 +68,18 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Expired Components</term>
+
       <listitem>
         <para>Select to cause expired components to be listed in the Bill of
         Materials display.</para>
+
         <variablelist>
           <varlistentry>
             <term>Threshold Days</term>
+
             <listitem>
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 999. Components that have been
@@ -73,14 +90,18 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Future Components</term>
+
       <listitem>
         <para>Select to cause future components to be listed in the Bill of
         Materials display.</para>
+
         <variablelist>
           <varlistentry>
             <term>Threshold Days</term>
+
             <listitem>
               <para>Select a number using the arrow buttons, or manually enter
               a value up to a maximum of 999. Components that will be added in
@@ -91,8 +112,10 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Bill of Materials</term>
+
       <listitem>
         <para>Display lists indented bill of materials components, using the
         specified parameters. The difference between the indented view and the
