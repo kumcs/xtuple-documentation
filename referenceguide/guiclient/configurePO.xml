@@ -5,32 +5,43 @@
 <section id="configurePO">
   <title><indexterm significance="normal">
       <primary>configuration</primary>
+
       <secondary>of purchase module</secondary>
     </indexterm>Configure Purchase</title>
-  <para>To configure the <guimenu>Purchase</guimenu> module, select the <guimenuitem>Configure Purchase</guimenuitem>
-  option. The following screen will appear:</para>
+
+  <para>To configure the <guimenu>Purchase</guimenu> module, select the
+  <guimenuitem>Configure Purchase</guimenuitem> option. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configurePO.png" />
+          <imagedata fileref="images/configurePO.png"/>
         </imageobject>
+
         <caption>Configure Purchase Module</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When configuring the <guimenu>Purchase</guimenu> module, you are presented with the
-  following options:</para>
+
+  <para>When configuring the <guimenu>Purchase</guimenu> module, you are
+  presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>purchase orders</primary>
+
           <secondary>numbering of</secondary>
         </indexterm>Order # Generation</term>
+
       <listitem>
         <para>Specify one of the available purchase order number generation
         methods:</para>
+
         <variablelist>
           <varlistentry>
             <term>Automatic</term>
+
             <listitem>
               <para>Purchase order numbers will be automatically incremented
               by one each time a new purchase order is created. These
@@ -38,70 +49,87 @@
               read-only.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Manual</term>
+
             <listitem>
               <para>Purchase order numbers must be entered manually whenever
               you create a new purchase order.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Automatic, Allow Override</term>
+
             <listitem>
               <para>Purchase order numbers will be automatically generated and
-              incremented, as under the <guilabel>Automatic</guilabel> option described above.
-              However, this option also allows you to manually override the
-              purchase order number at the time of purchase order
-              creation.</para>
+              incremented, as under the <guilabel>Automatic</guilabel> option
+              described above. However, this option also allows you to
+              manually override the purchase order number at the time of
+              purchase order creation.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Next #</term>
+
             <listitem>
               <para>The next sequentially available purchase order number will
               display here. You may change the number—creating a new basis for
               the next purchase order number—by typing the new number into
               this field. Any changes you make here will be reflected the next
-              time a new purchase order is created in the <guimenu>Purchase</guimenu>
+              time a new purchase order is created in the
+              <guimenu>Purchase</guimenu> module.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>vouchers</primary>
+
+          <secondary>numbering of</secondary>
+        </indexterm>Voucher # Generation</term>
+
+      <listitem>
+        <para>By default, voucher numbers are automatically generated. This
+        system setting cannot be changed.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Next #</term>
+
+            <listitem>
+              <para>The next sequentially available voucher number will
+              display here. You may change the number—creating a new basis for
+              the next voucher number—by typing the new number into this
+              field. Any changes you make here will be reflected the next time
+              a new voucher is created in the <guimenu>Purchase</guimenu>
               module.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
-    <varlistentry>
-      <term><indexterm significance="normal">
-          <primary>vouchers</primary>
-          <secondary>numbering of</secondary>
-        </indexterm>Voucher # Generation</term>
-      <listitem>
-        <para>By default, voucher numbers are automatically generated. This
-        system setting cannot be changed.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Next #</term>
-            <listitem>
-              <para>The next sequentially available voucher number will
-              display here. You may change the number—creating a new basis for
-              the next voucher number—by typing the new number into this
-              field. Any changes you make here will be reflected the next time
-              a new voucher is created in the <guimenu>Purchase</guimenu> module.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>purchase requests</primary>
+
           <secondary>numbering of</secondary>
         </indexterm>Purchase Request # Generation</term>
+
       <listitem>
         <para>Select one of the available purchase request number generation
         methods:</para>
+
         <variablelist>
           <varlistentry>
             <term>Automatic</term>
+
             <listitem>
               <para>Purchase request numbers will be automatically incremented
               by 1 each time a new purchase request is created. These
@@ -109,25 +137,31 @@
               read-only.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Manual</term>
+
             <listitem>
               <para>Purchase request numbers must be entered manually whenever
               you create a new purchase order.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Automatic, Allow Override</term>
+
             <listitem>
               <para>Purchase request numbers will be automatically generated
-              and incremented, as under the <guilabel>Automatic</guilabel> option described
-              above. However, this option also allows you to manually override
-              the purchase request number at the time of purchase request
-              creation.</para>
+              and incremented, as under the <guilabel>Automatic</guilabel>
+              option described above. However, this option also allows you to
+              manually override the purchase request number at the time of
+              purchase request creation.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Next #</term>
+
             <listitem>
               <para>The next sequentially available purchase request number
               will display here. You may change the number—creating a new
@@ -140,27 +174,35 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Default Purchase Order Copies</term>
+
       <listitem>
         <para>Indicate the copies you want to print.</para>
+
         <variablelist>
           <varlistentry>
             <term>Vendor</term>
+
             <listitem>
               <para>Select to print one vendor copy.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Internal</term>
+
             <listitem>
               <para>Select to print a specified number of internal copies.
-              When you select this option, the <guilabel># of Copies</guilabel> field will be
-              enabled.</para>
+              When you select this option, the <guilabel># of
+              Copies</guilabel> field will be enabled.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term># of Copies</term>
+
             <listitem>
               <para>Specify the number of copies you want to print.</para>
             </listitem>
@@ -168,16 +210,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>vendors</primary>
+
           <secondary>default settings for</secondary>
         </indexterm>Vendor Defaults</term>
+
       <listitem>
         <para>Specify the following vendor defaults:</para>
+
         <variablelist>
           <varlistentry>
             <term>Ship Via</term>
+
             <listitem>
               <para>Specify the default ship via to be used for purchase
               orders.</para>
@@ -186,38 +233,48 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Post Purchase Order Changes to the Change Log</term>
+
       <listitem>
-        <para>Select to post to the Change Log any changes made to purchase
+        <para>Select to post to the change log any changes made to purchase
         orders.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Post Vendor Changes to the Change Log</term>
+
       <listitem>
-        <para>Select to post to the Change Log any changes made to vendor
+        <para>Select to post to the change log any changes made to Vendor
         masters.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Use Earliest Avail. as Due Date for purchase order item</term>
+
       <listitem>
-        <para>Select to use item source Earliest Available dates as the
+        <para>Select to use item source earliest available dates as the
         default due date when entering manual purchase order line items. If
         not selected, the due date field will be left blank when entering
         purchase order line items—requiring users to enter the date manually.
-        Earliest Available dates are determined by adding item source Lead
-        Times to the current date.</para>
+        Earliest available dates are determined by adding item source lead
+        times to the current date.</para>
+
         <note>
-          <para>The <guilabel>Use Earliest Avail.</guilabel> option applies only to purchase
-          orders entered manually. This option does not impact the scheduling
-          of POs generated from MRP planned orders.</para>
+          <para>The <guilabel>Use Earliest Avail.</guilabel> option applies
+          only to purchase orders entered manually. This option does not
+          impact the scheduling of POs generated from MRP planned
+          orders.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Prevent Purchase Order Items when no Std. Cost Exists</term>
+
       <listitem>
         <para>Select if you want to prevent users from entering purchase order
         line items for items which have no standard cost. If selected, users
@@ -225,8 +282,10 @@
         standard cost to the item(s) in question.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Check Print Purchase Order on Save by Default</term>
+
       <listitem>
         <para>Select to prompt users to print purchase orders whenever
         purchase orders are saved. If selected, users will be presented with a
@@ -234,27 +293,35 @@
         bypass this feature, do not select this option.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Copy Purchase Request notes to Purchase Order Item notes</term>
+
       <listitem>
         <para>Select if you want notes entered on a purchase request to
         transfer to the corresponding purchase order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Require Tax on Purchase Orders</term>
+
       <listitem>
         <para>Select if you want to require that tax be added to all purchase
         orders. If not selected, tax will not be required.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term><indexterm significance="normal">
           <primary>drop shipping</primary>
+
           <secondary>system settings for</secondary>
         </indexterm>Enable Drop Shipments</term>
+
       <listitem>
         <para>Select to enable drop ship functionality in the system.</para>
+
         <tip>
           <para>These drop ship configuration settings will be disabled if
           there are unfinished drop ship transactions in the system. To
@@ -262,9 +329,11 @@
           must first complete all pending drop ship transactions. For example,
           all drop ship purchase receipts must be fully vouchered.</para>
         </tip>
+
         <variablelist>
           <varlistentry>
             <term>Select Drop Shipped Orders for Billing on Receipt</term>
+
             <listitem>
               <para>Select to have drop ship items automatically shipped and
               selected for billing at the point when they are received. If not

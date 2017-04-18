@@ -5,36 +5,46 @@
 <section id="itemSourcePrice" role="standard">
   <title><indexterm significance="normal">
       <primary>item source prices</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Item Source Price</title>
+
   <para>There are two kinds of item source pricing available: nominal pricing
   and discount pricing. In this section we will explore the options for both
-  of these. To add an item source price to the list of prices, select the <guibutton>ADD</guibutton>
-  button. The following screen will appear:</para>
+  of these. To add an item source price to the list of prices, select the
+  <guibutton>ADD</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSourcePrice.png" />
+          <imagedata fileref="images/itemSourcePrice.png"/>
         </imageobject>
+
         <caption>Create Nominal Pricing</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new item source price, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Pricing Type</term>
+
       <listitem>
         <variablelist>
           <varlistentry>
             <term>Nominal</term>
+
             <listitem>
               <para>Select this option if the price is expressed in a fixed
               currency value.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Discount</term>
+
             <listitem>
               <para>Select this option if the price is calculated according to
               a discount.</para>
@@ -43,19 +53,24 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site Restriction</term>
+
       <listitem>
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
+
             <listitem>
               <para>Select this option if the item source price applies to all
               sites.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Selected</term>
+
             <listitem>
               <para>Select this option if the item source price applies to a
               single site. Select the relevant site from the drop down
@@ -65,59 +80,76 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Drop Ship</term>
+
       <listitem>
-        <para>Check this option if this item source price applies to Drop Ship
+        <para>Check this option if this item source price applies to drop ship
         orders.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following options apply to nominal pricing:</para>
+
   <variablelist>
     <varlistentry>
       <term>Qty. Break (Vendor UOM)</term>
+
       <listitem>
         <para>Specify the minimum quantity of the item you must order to
         receive a price break.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Price per Unit</term>
+
       <listitem>
         <para>Specify the price per unit if the quantity break requirements
         are met.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create discount pricing, select the Discount radio button. The
-  following screen will appear:</para>
+
+  <para>To create discount pricing, select the <guilabel>Discount</guilabel>
+  radio button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSourcePrice_discount.png" />
+          <imagedata fileref="images/itemSourcePrice_discount.png"/>
         </imageobject>
+
         <caption>Create Discount Pricing</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating discount pricing, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Discount Percent (Wholesale Price)</term>
+
       <listitem>
-        <para>Specify the discount Percent.</para>
+        <para>Specify the discount percent.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Discount By Fixed Amount</term>
+
       <listitem>
         <para>Specify a fixed amount to apply to the selected quantity
         break.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Wholesale Price</term>
+
       <listitem>
         <para>Displays the wholesale price.</para>
       </listitem>
