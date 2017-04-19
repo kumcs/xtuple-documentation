@@ -5,55 +5,67 @@
 <section id="dspCostedIndentedBOM">
   <title><indexterm significance="normal">
       <primary>costing</primary>
+
       <secondary>for indented BOMs</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>costed indented view of</secondary>
     </indexterm>Costed Indented BOM</title>
+
   <para>The difference between the indented view and the single level view is
   that the indented view displays costs for all subcomponents if there is a
-  manufactured component listed on the bill of materials list. To view
-  associated item costs using an indented bill of materials, select the
-  <guimenuitem>Costed Indented BOM</guimenuitem> option. The following screen
-  will appear:</para>
+  manufactured component listed on the bill of materials (BOMs) list. To view
+  associated item costs using an indented BOMs, select the <guimenuitem>Costed
+  Indented BOM</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspCostedIndentedBOM.png"/>
         </imageobject>
+
         <caption>Costed Indented Bill of Materials</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When displaying costs for an indented bill of materials, you are
-  presented with the following options:</para>
+
+  <para>When displaying costs for an indented BOMs, you are presented with the
+  following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the manufactured item whose associated
-        costs you would like to view using an indented bill of
-        materials.</para>
+        costs you would like to view using an indented BOMs.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Revision</term>
+
       <listitem>
-        <para>If revision control is enabled at your site, specify the bill of
-        materials revision number you want to view. If none exists, simply
-        enter a value to create one. The status of the revision will also be
-        displayed. The following statuses apply to revisions:</para>
+        <para>If revision control is enabled at your site, specify the BOMs
+        revision number you want to view. If none exists, simply enter a value
+        to create one. The status of the revision will also be displayed. The
+        following statuses apply to revisions:</para>
+
         <variablelist>
           <varlistentry>
             <term>Active</term>
+
             <listitem>
               <para>This is the current, default revision used for costing and
-              material requirements Planning (MRP). Only one revision can be
+              material requirements planning (MRP). Only one revision can be
               active at the same time. Active revisions may be modified.
               However, once a revision becomes inactive, it may no longer be
               changed.</para>
@@ -62,77 +74,91 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Use Standard Costs</term>
+
       <listitem>
         <para>Select to display standard costs for component items in the
-        specified item's bill of materials. Both the Unit cost and Extended
-        cost for each component item, expressed in terms of standard cost,
-        will display—assuming standard costs have been defined for each
-        component item.</para>
+        specified item's BOMs. Both the unit cost and extended cost for each
+        component item, expressed in terms of standard cost, will
+        display—assuming standard costs have been defined for each component
+        item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
-    <para>When labor and Overhead are posted to the general ledger, they are
+    <para>When labor and overhead are posted to the general ledger, they are
     posted using their actual cost. This is a departure from the rule which
     governs materials—namely, that materials are always posted using their
-    standard cost. Differences between actual and standard labor and Overhead
-    costs will be reflected in inventory cost Variances when work order
+    standard cost. Differences between actual and standard labor and overhead
+    costs will be reflected in inventory cost variances when work order
     production or operations are posted. You can address these variances if
     and when they occur by posting your actual costs to standard.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>Use Actual Costs</term>
+
       <listitem>
         <para>Select to display actual costs for component items in the
-        specified item's bill of materials. Both the Unit cost and Extended
-        cost for each component item, expressed in terms of actual cost, will
+        specified item's BOMs. Both the unit cost and extended cost for each
+        component item, expressed in terms of actual cost, will
         display—assuming actual costs have been defined for each component
         item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>The totals displayed on the screen are derived as follows:</para>
+
     <variablelist>
       <varlistentry>
         <term>Total Cost</term>
+
         <listitem>
-          <para>This total is pulled from the Extended cost column—and
-          reflects the real time total cost for the specified item. The total
-          cost may differ from the actual or standard totals in cases where
-          real time cost updates have not yet been rolled up into the
-          specified parent item.</para>
+          <para>This total is pulled from the <guilabel>Extended
+          Cost</guilabel> column—and reflects the real time total cost for the
+          specified item. The total cost may differ from the actual or
+          standard totals in cases where real time cost updates have not yet
+          been rolled up into the specified parent item.</para>
         </listitem>
       </varlistentry>
+
       <varlistentry>
         <term>Actual Cost</term>
+
         <listitem>
           <para>This value represents the actual cost for the parent item
-          whose costed Indented BOM is being displayed.</para>
+          whose costed indented BOM is being displayed.</para>
         </listitem>
       </varlistentry>
+
       <varlistentry>
         <term>Standard Cost</term>
+
         <listitem>
           <para>This value represents the standard cost for the parent item
-          whose costed Indented BOM is being displayed.</para>
+          whose costed indented BOM is being displayed.</para>
         </listitem>
       </varlistentry>
     </variablelist>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Costed Bill of Materials</term>
+
       <listitem>
-        <para>Display lists costed Indented bill of materials components,
-        using the specified parameters. The difference between the indented
-        view and the single level view is that the indented view displays all
-        subcomponents if there is a manufactured component listed on the bill
-        of materials. The Total cost, actual cost, and standard cost will be
-        calculated automatically at the bottom of the display.</para>
+        <para>Display lists costed indented BOMs components, using the
+        specified parameters. The difference between the indented view and the
+        single level view is that the indented view displays all subcomponents
+        if there is a manufactured component listed on the BOMs. The total
+        cost, actual cost, and standard cost will be calculated automatically
+        at the bottom of the display.</para>
       </listitem>
     </varlistentry>
   </variablelist>

@@ -5,48 +5,63 @@
 <section id="dspItemCostsByClassCode">
   <title><indexterm significance="normal">
       <primary>costing</primary>
+
       <secondary>for items by class code</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>class codes</primary>
+
       <secondary>item costs details for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>item costs</primary>
+
       <secondary>by class code</secondary>
     </indexterm>Item Costs by Class Code</title>
-  <para>To view item costs by class code, select the <guimenuitem>Item Costs by Class
-  Code</guimenuitem> option. The following screen will appear:</para>
+
+  <para>To view item costs by class code, select the <guimenuitem>Item Costs
+  by Class Code</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspItemCostsByClassCode.png" />
+          <imagedata fileref="images/dspItemCostsByClassCode.png"/>
         </imageobject>
+
         <caption>Item Costs by Class Code</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When displaying item costs by class code, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Class Codes</term>
+
       <listitem>
         <para>Select to display item costs for all class codes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify class code whose item costs you want to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a class code pattern to select a range of class codes.
-        Refine your search using Regular Expressions.</para>
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only Show Zero Standard Cost Items</term>
+
       <listitem>
         <para>Select to include only items with zero standard cost in the
         display. The zero standard costs view can be helpful when trying to
@@ -57,8 +72,10 @@
         item will be created.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only Show Zero Last Actual Items</term>
+
       <listitem>
         <para>Select to include only items whose last actual cost equals zero.
         This option can help you quickly identify purchased items with costing
@@ -67,8 +84,10 @@
         posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only Show Items where Actual and Standard are different</term>
+
       <listitem>
         <para>Select to include in the report only those items whose actual
         and standard costs are not the same. In some cases, items whose actual
@@ -80,62 +99,80 @@
         level of precision than can be viewed on the screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Inactive Items</term>
+
       <listitem>
         <para>Select to include inactive items in the display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Types</term>
+
       <listitem>
         <para>Specify which of the following item types you want to include in
         the display:</para>
+
         <variablelist>
           <varlistentry>
             <term>Purchased</term>
+
             <listitem>
               <para>Select to include purchased items in the display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Manufactured</term>
+
             <listitem>
-              <para>Select to include Manufactured items in the
+              <para>Select to include manufactured items in the
               display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Outside Service</term>
+
             <listitem>
-              <para>Select to include Outside Service items in the
+              <para>Select to include outside service items in the
               display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Costing</term>
+
             <listitem>
               <para>Select to include costing items in the display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Planning</term>
+
             <listitem>
-              <para>Select to include Planning items in the display.</para>
+              <para>Select to include planning items in the display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>All Others</term>
+
             <listitem>
               <para>Select to include all other item types not otherwise
-              listed in the display (e.g., Service items, etc.). </para>
+              listed in the display (e.g., service items, etc.).</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Items</term>
+
       <listitem>
         <para>Display lists item costs by class code, using the specified
         parameters.</para>

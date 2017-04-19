@@ -5,151 +5,198 @@
 <section id="lotSerial" role="standard">
   <title><indexterm significance="normal">
       <primary>lots</primary>
+
       <secondary>creating new</secondary>
     </indexterm><indexterm significance="normal">
       <primary>lots</primary>
+
       <secondary>registrations and</secondary>
     </indexterm><indexterm significance="normal">
       <primary>serial numbers</primary>
+
       <secondary>creating new</secondary>
     </indexterm><indexterm significance="normal">
       <primary>serial numbers</primary>
+
       <secondary>registrations and</secondary>
     </indexterm><indexterm significance="normal">
       <primary>registrations</primary>
+
       <secondary>for lot/serial</secondary>
     </indexterm>Lot/Serial</title>
-  <para>The Lot/Serial screen provides a kind of Workbench for managing
+
+  <para>The Lot/Serial screen provides a kind of workbench for managing
   lot/serial records and registrations. The screen may also be used for
   creating new lot/serial numbers for items. To manage your lot/serial
   records, use the following screen:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/lotSerial.png" />
+          <imagedata fileref="images/lotSerial.png"/>
         </imageobject>
+
         <caption>Create New Lot/Serial Record</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When managing lot/serial records, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number whose lot/serial records you want to
         manage.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Lot/Serial #</term>
+
       <listitem>
         <para>Select a pre-existing lot/serial number for the specified item.
         Or create a new lot/serial number if none exists. Keep in mind that
         any ad hoc lot/serial numbers created here are not traceable. To have
         traceable lot/serial numbers, the item must have an item site where
-        the control method is either Lot or Serial.</para>
+        the control method is either lot or serial.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>If an item has characteristics associated with it, you have the option
   of linking those characteristics to a lot/serial number. Characteristics
   specified for lot/serial may also be associated. When associating
   characteristics with a lot/serial number, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Characteristics</term>
+
       <listitem>
         <para>Display lists the characteristic name and value of
         characteristics related to the lot/serial number.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>PRINT LABEL</guibutton></term>
+
       <listitem>
         <para>Select to print a bar-coded label containing lot/serial
         information.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>You have the ability to register lot/serial numbers—whether for
   warranty or other purposes. To register a lot/serial number, select the
-  <guimenuitem>Register</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Register</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/lotSerial_regTab.png" />
+          <imagedata fileref="images/lotSerial_regTab.png"/>
         </imageobject>
+
         <caption>Lot/Serial Registrations</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When registering lot/serial numbers, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Registrations</term>
+
       <listitem>
         <para>Display lists registrations associated with the lot/serial
         number.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To associate notes with the Lot/Serial record, select the <guimenuitem>Notes</guimenuitem> tab.
-  The following screen will appear:</para>
+
+  <para>To associate notes with the lot/serial record, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/lotSerial_tabNotes.png" />
+        <imagedata fileref="images/lotSerial_tabNotes.png"/>
       </imageobject>
+
       <caption>Lot/Serial Notes</caption>
     </mediaobject></para>
-  <para>When associating notes with a Lot/Serial record, you are presented
+
+  <para>When associating notes with a lot/serial record, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        notes related to the Lot/Serial record.</para>
+        notes related to the lot/serial record.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create or view comments related to a Lot/Serial record, select the
-  <guimenuitem>Comments</guimenuitem> tab. The following screen will appear:</para>
+
+  <para>To create or view comments related to a lot/serial record, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/lotSerial_commentsTab.png" />
+          <imagedata fileref="images/lotSerial_commentsTab.png"/>
         </imageobject>
+
         <caption>Add Lot/Serial Comments</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To associate documents with a Lot/Serial record, select the
-  <guimenuitem>Documents</guimenuitem> tab. The following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To associate documents with a lot/serial record, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/lotSerial_documentsTab.png" />
+          <imagedata fileref="images/lotSerial_documentsTab.png"/>
         </imageobject>
+
         <caption>Lot/Serial Documents</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="lotSerialRegistration.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

@@ -5,47 +5,59 @@
 <section id="costingElements">
   <title><indexterm significance="normal">
       <primary>costing elements</primary>
+
       <secondary>user-defined</secondary>
     </indexterm>User-Defined Costing Elements</title>
+
   <para>If you need to establish costing elements above and beyond the default
   costing elements defined by the system, you have the ability to do so in
   this section. Costing elements you add here will be available to you when
   you define costs for items, as described in <xref
-  linkend="maintainItemCosts" />. To create user-defined costing elements, select
-  the <guimenuitem>User-Defined Costing Elements</guimenuitem> option. The following screen will
-  appear:</para>
+  linkend="maintainItemCosts"/>. To create user-defined costing elements,
+  select the <guimenuitem>User-Defined Costing Elements</guimenuitem> option.
+  The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/costingElements.png" />
+          <imagedata fileref="images/costingElements.png"/>
         </imageobject>
+
         <caption>User-Defined Costing Elements Master List</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The user-defined Costing Elements master list displays an alphabetical
   list of all user-defined costing elements.</para>
+
   <note>
     <para>By default, the system provides the following costing elements for
     manufactured items:</para>
+
     <itemizedlist>
       <listitem>
-        <para>Direct Labor</para>
+        <para>Direct labor</para>
       </listitem>
+
       <listitem>
-        <para>Machine Overhead</para>
+        <para>Machine overhead</para>
       </listitem>
+
       <listitem>
         <para>Overhead</para>
       </listitem>
     </itemizedlist>
+
     <para>For purchased items, this default costing elements is
     provided:</para>
+
     <itemizedlist>
       <listitem>
         <para>Material</para>
       </listitem>
     </itemizedlist>
   </note>
+
   <xi:include href="userCostingElement.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
