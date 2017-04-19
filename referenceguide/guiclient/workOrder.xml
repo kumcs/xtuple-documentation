@@ -27,18 +27,20 @@
         <para>Ideal for labor-only work orders having a routing but no BOM—for
         example, service work orders which require labor operations only. Also
         good for items or jobs where the material requirements are
-        not-known—but must be added on an ad-hoc basis.</para>
+        not-known—but must be added on an <emphasis>ad hoc</emphasis>
+        basis.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To create a new work order, select the <guimenuitem>Create New Work
-  Order</guimenuitem> option. The following screen will appear:</para>
+  <para>To create a new work order, select the <guimenuitem>Manufacture &gt;
+  Work Order &gt; New...</guimenuitem> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/workOrder_detailTab.png" />
         </imageobject>
-        <caption>Create New Work Order</caption>
+        <caption>Work Order</caption>
       </mediaobject>
     </screenshot></para>
   <tip>
@@ -53,19 +55,21 @@
     <varlistentry>
       <term>Work Order #</term>
       <listitem>
-        <para>Next available work order number will automatically display,
+        <para>The next available work order number will automatically display,
         unless your system requires you to enter work order numbers manually.
         Default values and input parameters for work order numbers are
-        configurable at the system level.</para>
+        configurable in the <guimenuitem>Manufacture &gt;
+        Setup</guimenuitem>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Item Number</term>
       <listitem>
-        <para>Enter the item number of the item you want to create a work
-        order for. You may also enter purchased items that you normally buy,
-        but you occasionally make. The lookup feature located to the right of
-        the field leads to a searchable list of make and buy items.</para>
+        <para>Enter the <guilabel>Item Number</guilabel> of the item you want
+        to create a work order for. You may also enter purchased items that
+        you normally buy, but you occasionally make. The magnifying glass
+        located to the right of the field leads to a searchable list of make
+        and buy items.</para>
         <note>
           <para><indexterm significance="normal">
               <primary>job items</primary>
@@ -77,30 +81,30 @@
           sales order demand. It is not possible to create a job item work
           order using the Work Order screen. Similarly, production posting for
           job items occurs in a unique way. Production for job item work
-          orders is posted when the sales order which demanded the job item is
-          issued to shipping. This is the only way to post production for job
-          item work orders.</para>
+          orders is posted when the sales order, which demanded the job item,
+          is issued to shipping. This is the only way to post production for
+          job item work orders.</para>
         </note>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry role="standard">
       <term>Site</term>
       <listitem>
-        <para>Specify the site where the item is supplied at. For manufactured
+        <para>Specify the site where the item is supplied. For manufactured
         items to be included on a work order, their item site record must
         indicate they are manufactured for the site.</para>
         <note>
           <para>Order parameters may have an impact on work order quantity if
-          the <guilabel>on Manual Orders</guilabel> option is selected in the
-          Item Site master for a manufactured item. If order parameters are in
-          effect, the work order must conform to those restrictions. Both
-          minimum order size and order multiple may be governed by order
+          the <guilabel>Enforce on Manual Orders</guilabel> option is selected
+          in the Item Site master for a manufactured item. If order parameters
+          are in effect, the work order must conform to those restrictions.
+          Both minimum order size and order multiple may be governed by order
           parameter settings.</para>
         </note>
       </listitem>
@@ -116,7 +120,7 @@
       <listitem>
         <para>Select to identify the work order as a disassembly order. When
         disassembling items, the system will not enforce order parameters
-        defined at the item site level.</para>
+        defined at <guimenuitem>Item Site &gt; Planning</guimenuitem>.</para>
         <note>
           <para>If there are average cost items on a disassembly order, those
           components will be returned to inventory using standard cost when
