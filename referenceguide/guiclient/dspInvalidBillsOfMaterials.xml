@@ -5,58 +5,73 @@
 <section id="dspInvalidBillsOfMaterials">
   <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>without component item sites</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>invalid</secondary>
     </indexterm>Bills of Materials Without Component Item Sites</title>
-  <para>The Bills of Materials Without Component Item Sites utility enables
-  you to generate a list of parent items whose bills of materials do not have
-  component item sites. The display also provides other valuable information
-  about each item. Selecting the <guimenuitem>The Bills of Materials Without
-  Component Item Sites</guimenuitem> option. The following screen will
-  appear:</para>
+
+  <para>The bills of materials without component item sites utility enables
+  you to generate a list of parent items whose bills of materials (BOMs) do
+  not have component item sites. The display also provides other valuable
+  information about each item. Selecting the <guimenuitem>The Bills of
+  Materials Without Component Item Sites</guimenuitem> option. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspInvalidBillsOfMaterials.png"/>
         </imageobject>
+
         <caption>Bills of Materials Without Component Item Sites</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>This utility may run for a long period of time. We recommend running
     it during off-peak hours whenever possible.</para>
   </note>
+
   <para>When using this utility, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
-        <para>Select to display bills of materials without component item
-        sites from all sites.</para>
+        <para>Select to display BOMs without component item sites from all
+        sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
-        <para>Specify site whose bills of materials without component items
-        sites you want to display.</para>
+        <para>Specify site whose BOMs without component items sites you want
+        to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Update when items or item sites are Changed</term>
+
       <listitem>
         <para>Select to update the display when changes are made to items or
         item sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Invalid Bill of Material Items</term>
+
       <listitem>
-        <para>Display lists invalid bill of materials items sorted according
-        to the specified parameters.</para>
+        <para>Display lists invalid BOMs items sorted according to the
+        specified parameters.</para>
       </listitem>
     </varlistentry>
   </variablelist>

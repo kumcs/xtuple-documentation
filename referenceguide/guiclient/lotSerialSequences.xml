@@ -5,14 +5,18 @@
 <section id="lotSerialSequences" role="standard">
   <title><indexterm significance="normal">
       <primary>lots</primary>
+
       <secondary>creating sequences for</secondary>
     </indexterm><indexterm significance="normal">
       <primary>serial numbers</primary>
+
       <secondary>creating sequences for</secondary>
     </indexterm><indexterm significance="normal">
       <primary>sequences</primary>
+
       <secondary>for lot/serial</secondary>
     </indexterm>Lot/Serial Sequences</title>
+
   <para>If you want lot/serial numbers to be automatically generated when
   receiving lot/serial quantity, then you need to set up lot/serial sequences.
   The sequences defined here are cross-referenced at the item site level. Once
@@ -22,29 +26,36 @@
   manually, if necessary. Items that require expiration or warranty
   information will still require that information to be entered on the Create
   Lot/Serial screen.</para>
+
   <note>
     <para>If a user cancels, deletes, or over-writes an automatically assigned
     lot/serial number, the automatically incremented number will not be rolled
     back or reused. This is because there is no way to ensure number issuance
     integrity in an environment where multiple users are posting
-    simultaneously&mdash;other than to issue new unused numbers during every
+    simultaneously—other than to issue new unused numbers during every
     transaction. The system will, however, check each number it attempts to
     issue. If it finds any existing matches already in the database for the
-    given Item, it will skip past them until it finds a previously unused
+    given item, it will skip past them until it finds a previously unused
     number.</para>
   </note>
-  <para>To access the list of lot/serial sequences, select the <guimenuitem>Lot/Serial
-  Sequences</guimenuitem> option. The following screen will appear:</para>
+
+  <para>To access the list of lot/serial sequences, select the
+  <guimenuitem>Lot/Serial Sequences</guimenuitem> option. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/lotSerialSequences.png" />
+          <imagedata fileref="images/lotSerialSequences.png"/>
         </imageobject>
+
         <caption>Lot/Serial Sequences</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The Lot/Serial Sequences screen displays information on all existing
   lot/serial sequences, including sequence number and description.</para>
+
   <xi:include href="lotSerialSequence.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

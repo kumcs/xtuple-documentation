@@ -5,53 +5,67 @@
 <section id="dspUndefinedManufacturedItems">
   <title><indexterm significance="normal">
       <primary>items</primary>
+
       <secondary>locating undefined manufactured</secondary>
     </indexterm>Undefined Manufactured Items</title>
-  <para>The Undefined Manufactured Items utility enables you to generate a
-  list of manufactured items that do not have valid bills of materials and/or
-  routings defined. The display also provides other valuable
+
+  <para>The undefined manufactured items utility enables you to generate a
+  list of manufactured items that do not have valid bills of materials (BOMs)
+  and/or routings defined. The display also provides other valuable
   information about each item. Using the right-click option, you can use this
-  utility to quickly resolve problems related to invalid bills of materials
-  and/or routings, using the right-click option. Select the
-  <guimenuitem>Undefined Manufactured Items</guimenuitem> option and the following screen will
-  appear:</para>
+  utility to quickly resolve problems related to invalid BOMs and/or routings,
+  using the right-click option. Select the <guimenuitem>Undefined Manufactured
+  Items</guimenuitem> option and the following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspUndefinedManufacturedItems.png" />
+          <imagedata fileref="images/dspUndefinedManufacturedItems.png"/>
         </imageobject>
+
         <caption>Undefined Manufactured Items</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>This utility may run for a long period of time. We recommend running
     it during off-peak hours whenever possible.</para>
   </note>
+
   <para>When using this utility, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Show Manufactured Items with valid Routings</term>
+
       <listitem>
-        <para>Select to display all manufactured items with valid routings.</para>
+        <para>Select to display all manufactured items with valid
+        routings.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Manufactured Items without valid Bills of Materials</term>
+
       <listitem>
-        <para>Select to display all manufactured items without valid bills of
-        materials. Display will show undefined manufactured items for the
-        selected class code.</para>
+        <para>Select to display all manufactured items without valid BOMs.
+        Display will show undefined manufactured items for the selected class
+        code.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Inactive Items</term>
+
       <listitem>
         <para>Select to display inactive items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Undefined Manufactured Items</term>
+
       <listitem>
         <para>Display lists undefined manufactured items, using the parameters
         specified on the screen.</para>
