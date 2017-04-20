@@ -5,111 +5,143 @@
 <section id="countSlip">
   <title><indexterm significance="normal">
       <primary>count slips</primary>
+
       <secondary>entering of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>physical inventory</primary>
+
       <secondary>entering count slips</secondary>
     </indexterm>Enter Count Slip</title>
-  <para>Count Slips are used for contributing inventory count totals to
-  unposted Count Tags. Unlike Count Tags, however, Count Slips do not have to
-  be created before they can be entered. To enter a Count Slip, select the
-  <guimenuitem>Enter Count Slip</guimenuitem> option. The following screen will appear:</para>
+
+  <para>Count slips are used for contributing inventory count totals to
+  unposted count tags. Unlike count tags, however, count slips do not have to
+  be created before they can be entered. To enter a count slip, select the
+  <guimenuitem>Enter Count Slip</guimenuitem> option. The following screen
+  will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/countSlip.png" />
+          <imagedata fileref="images/countSlip.png"/>
         </imageobject>
+
         <caption>Enter Count Slip</caption>
       </mediaobject>
     </screenshot></para>
-  <para>When entering a Count Slip, you are presented with the following
+
+  <para>When entering a count slip, you are presented with the following
   options:</para>
+
   <tip>
-    <para>Restrictions may be imposed on the creation of Count Slips. To learn
-    more, see <xref linkend="configureIM" />.</para>
+    <para>Restrictions may be imposed on the creation of count slips. To learn
+    more, see <xref linkend="configureIM"/>.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>Count Tag #</term>
+
       <listitem>
-        <para>Enter the Count Tag number of the Count Tag you want to enter a
-        Count Slip toward.</para>
+        <para>Enter the count tag number of the count tag you want to enter a
+        count slip toward.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
-        <para>Displays item number automatically when Count Tag number is
+        <para>Displays item number automatically when count tag number is
         entered into <guilabel>Count Tag #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify site where count is being conducted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Counted Qty. TD</term>
+
       <listitem>
-        <para>Displays total for specified Count Tag to date.</para>
+        <para>Displays total for specified count tag to date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Slip #</term>
+
       <listitem>
-        <para>Enter a Count Slip number to identify the Count Slip. Some
-        restrictions may apply. To learn more about Count Slip numbering
-        restrictions, see <xref linkend="configureIM" />.</para>
+        <para>Enter a count slip number to identify the count slip. Some
+        restrictions may apply. To learn more about count slip numbering
+        restrictions, see <xref linkend="configureIM"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Slip Qty</term>
+
       <listitem>
-        <para>Enter the Physical Count total.</para>
+        <para>Enter the physical count total.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Location</term>
+
       <listitem>
-        <para>Specify the location you want the Count Slip created for. The
+        <para>Specify the location you want the count slip created for. The
         list will show all valid site locations for the specified item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Lot/Serial #</term>
+
       <listitem>
         <para>Displays related lot/serial number information, if
         applicable.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Lot Expiration</term>
+
       <listitem>
-        <para>If a Lot-controlled item site is also perishable, you will have
+        <para>If a lot-controlled item site is also perishable, you will have
         the option to enter a perishability expiration date for the counted
         quantity.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Warranty Expiration</term>
+
       <listitem>
         <para>If a lot/serial item is marked to require a warranty when
         purchased, then you will have the option to enter a warranty
         expiration date for the counted quantity.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Comments</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        comments related to the Count Slip.</para>
+        comments related to the count slip.</para>
       </listitem>
     </varlistentry>
   </variablelist>

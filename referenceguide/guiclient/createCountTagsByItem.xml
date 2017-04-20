@@ -13,11 +13,11 @@
       <secondary>creating count tags</secondary>
     </indexterm>Create Count Tag by Item</title>
 
-  <para>Count Tags are used to spearhead inventory counts. They are created
+  <para>Count tags are used to spearhead inventory counts. They are created
   manually and on-demand, and they are not tied to any particular cycle or
-  frequency, as Cycle Count Tags are. To create a Count Tag by item, select
-  the <guimenuitem>Create Count Tag by Item</guimenuitem> option. The following screen will
-  appear:</para>
+  frequency, as cycle count tags are. To create a count tag by item, select
+  the <guimenuitem>Create Count Tag by Item</guimenuitem> option. The
+  following screen will appear:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -29,13 +29,13 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When creating Count Tags by item, you are presented with the following
+  <para>When creating count tags by item, you are presented with the following
   options:</para>
 
   <tip>
-    <para>By default, the system allows only one unposted Count Tag per item
-    site. To view all unposted Count Tags in your system, see the Count Tag
-    Edit List.</para>
+    <para>By default, the system allows only one unposted count tag per item
+    site. To view all unposted count tags in your system, see the count tag
+    edit list.</para>
   </tip>
 
   <variablelist>
@@ -62,9 +62,9 @@
 
       <listitem>
         <para>Specify the site you want the count tag created for. This field
-        will remain blank until you enter an item number into the <guilabel>Item
-        Number</guilabel> field. Once that is entered, the site(s) where the item is
-        located will display in the list.</para>
+        will remain blank until you enter an item number into the
+        <guilabel>Item Number</guilabel> field. Once that is entered, the
+        site(s) where the item is located will display in the list.</para>
       </listitem>
     </varlistentry>
 
@@ -72,10 +72,10 @@
       <term>Mark Created Count Tag as Priority</term>
 
       <listitem>
-        <para>Select to give priority status to Count Tag. Count Tags marked
+        <para>Select to give priority status to count tag. Count tags marked
         as having priority status are listed first in any prioritized lists.
-        For example, priority Count Tags will appear at the top of the Count
-        Tag Edit list; whereas, non-priority Count Tags will appear at the
+        For example, priority count tags will appear at the top of the count
+        tag edit list; whereas, non-priority count tags will appear at the
         bottom of the list.</para>
       </listitem>
     </varlistentry>
@@ -104,10 +104,10 @@
   <note>
     <para>When an item site is frozen, any inventory transactions entered
     against that item site will not update the system-wide QOH until after the
-    item site is thawed and its Count Tag posted. If an item site is frozen
-    when a Count Tag is created, both the inventory count and the
-    corresponding general ledger (G/L) transactions will use the Count Tag
-    created (i.e., frozen) date when the Count Tag is posted.</para>
+    item site is thawed and its count tag posted. If an item site is frozen
+    when a count tag is created, both the inventory count and the
+    corresponding general ledger (G/L) transactions will use the count tag
+    created (i.e., frozen) date when the count tag is posted.</para>
   </note>
 
   <variablelist>
@@ -115,9 +115,9 @@
       <term>Only for Specified Location</term>
 
       <listitem>
-        <para>Select if you want to create Count Tags for an individual site
+        <para>Select if you want to create count tags for an individual site
         location. If selected, you will have the option to specify which site
-        location you want to have Count Tags created for. This option enables
+        location you want to have count tags created for. This option enables
         you to count individual site locations separately, without having to
         post counts for an entire site all at once.</para>
       </listitem>
@@ -126,7 +126,7 @@
 
   <note>
     <para>An item must have multiple location control (MLC) turned ON to take
-    advantage of the Count Tags by location feature. If the item is not
+    advantage of the count tags by location feature. If the item is not
     multiply-located, then this option will not be available.</para>
   </note>
 
@@ -144,9 +144,10 @@
 
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
-        comments related to the Count Tag. Use the <guilabel>Comments</guilabel> field to enter any
-        instructions or other comments that need to reach and be read by the
-        inventory counters.</para>
+        comments related to the count tag. Use the
+        <guilabel>Comments</guilabel> field to enter any instructions or other
+        comments that need to reach and be read by the inventory
+        counters.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -158,7 +159,7 @@
       <term><guibutton>CREATE TAG</guibutton></term>
 
       <listitem>
-        <para>Creates Count Tag. Count Tag numbers are generated automatically
+        <para>Creates count tag. Count tag numbers are generated automatically
         in an ordered sequence.</para>
       </listitem>
     </varlistentry>
