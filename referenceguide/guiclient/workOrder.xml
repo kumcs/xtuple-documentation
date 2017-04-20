@@ -148,11 +148,12 @@
           <secondary>adjusting lead times for</secondary>
         </indexterm>Lead Time (Days)</term>
       <listitem>
-        <para>Select a number using the arrow buttons, or manually enter a
+        <para>Select a number using the arrow buttons or manually enter a
         value up to a maximum of 999. Value entered specifies the
-        manufacturing Lead Time required between the date the work order
-        starts and the date it is due. Lead Times for items are specified in
-        the Item Site master, but may be modified on this screen.</para>
+        manufacturing <guilabel>Lead Time</guilabel> required between the date
+        the work order starts and the date it is due. Lead Times for items are
+        specified in the Item Site master, but may be modified on this
+        screen.</para>
         <tip>
           <para>The <guilabel>Lead Time</guilabel> option is only available
           when creating a new work order. Once the order is created, this
@@ -169,16 +170,15 @@
     <varlistentry>
       <term>Start Date</term>
       <listitem>
-        <para>Enter the date the work order must be started by. By default,
-        this date will be the due date less the lead time. The start date may
-        be changed by altering the <guilabel>Lead Time</guilabel>
-        field.</para>
+        <para>By default, this date will be the due date less the lead time.
+        The start date may be changed by altering the <guilabel>Lead
+        Time</guilabel> field.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Priority</term>
       <listitem>
-        <para>Select a number using the arrow buttons, or manually enter a
+        <para>Select a number using the arrow buttons or manually enter a
         value up to a maximum of 99. Value entered assigns a priority to the
         selected work order. By assigning a priority to a work order, you can
         indicate the relative importance of a work order in comparison to
@@ -197,7 +197,7 @@
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a project to the work
         order—transactions related to the work order will include the project
-        number as the final segment of affected G/L Account Numbers. Account
+        number as the final segment of affected G/L account numbers. Account
         numbers related to the following transactions will include the project
         number as the final segment: issue materials, post operations, post
         production, return material, correct post operations, correct post
