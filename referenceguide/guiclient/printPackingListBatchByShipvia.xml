@@ -5,47 +5,61 @@
 <section id="printPackingListBatchByShipvia">
   <title><indexterm significance="normal">
       <primary>packing lists</primary>
+
       <secondary>batch printing of</secondary>
     </indexterm><indexterm significance="normal">
       <primary>batch mode</primary>
+
       <secondary>printing packing lists using</secondary>
     </indexterm><indexterm significance="normal">
       <primary>ship vias</primary>
+
       <secondary>printing packing lists by</secondary>
     </indexterm>Print Packing List Batch</title>
+
   <para>If you want to print batches of packing lists according to specified
   parameters, select the <guimenuitem>Print Packing List Batch</guimenuitem>
   option. Keep in mind: This feature only works if you have unprinted orders
   already queued up on the packing list batch.</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/printPackingListBatch.png"/>
         </imageobject>
+
         <caption>Print Packing List Batch</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When printing batches of packing lists according to specified
   parameters, you are presented with the following options:</para>
+
   <note>
     <para>xTuple supports up-to-date shipment tracking with links to the
     websites of many leading shipping companies (i.e., ship vias).</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>All Sites</term>
+
       <listitem>
         <para>Select to print packing lists for all sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
-        <para>Specify the site whose packing lists you want to print..</para>
+        <para>Specify the site whose packing lists you want to print.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship Via</term>
+
       <listitem>
         <para>Select the ship via you want to print packing lists for.<tip>
             <para>If you don't see any ship vias in the ship via list, open
@@ -54,29 +68,37 @@
           </tip></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Form</term>
+
       <listitem>
         <para>Specify which type of packing list form you want to
         print:</para>
+
         <variablelist>
           <varlistentry>
             <term>Auto Select</term>
+
             <listitem>
               <para>Select to have the system automatically determine which
               form should be used, based on the state of the order at the time
               the report is printed.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Packing List</term>
+
             <listitem>
               <para>Select to have the defined packing list form printed. This
               form is used if an order has a shipment number.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Pick List</term>
+
             <listitem>
               <para>Select to have the sales order pick list form printed. If
               the order does not have a shipment number, this form is
@@ -86,21 +108,27 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Scheduled Date Range</term>
+
       <listitem>
         <para>Specify a date range for orders you want to print packing lists
         for:</para>
+
         <variablelist>
           <varlistentry>
             <term>Start Date</term>
+
             <listitem>
               <para>Unprinted orders on the packing list batch having line
               items schedule on or after this date will be printed.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>End Date</term>
+
             <listitem>
               <para>Unprinted orders on the packing list batch having line
               items schedule on or before this date will be included in the

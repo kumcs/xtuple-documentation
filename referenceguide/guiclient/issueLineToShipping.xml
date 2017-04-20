@@ -5,109 +5,143 @@
 <section id="issueLineToShipping">
   <title><indexterm significance="normal">
       <primary>shipping</primary>
+
       <secondary>issue line item to</secondary>
     </indexterm>Issue Line to Shipping</title>
+
   <para>To issue a line item to shipping, highlight the line item, then select
   the <guibutton>ISSUE STOCK</guibutton> button. You may also double-click on
   the line item. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/issueLineToShipping.png"/>
         </imageobject>
+
         <caption>Issue Line Item to Shipping</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When issuing a line item to shipping, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Sales Order #</term>
+
       <listitem>
         <para>Displays sales order number for specified line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Shipment #</term>
+
       <listitem>
-        <para>Displays the Shipment number for the line item, if any.</para>
+        <para>Displays the shipment number for the line item, if any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays item number for specified line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Displays site identified on sales order line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
-        <para>Displays quantity of Item ordered.</para>
+        <para>Displays quantity of item ordered.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selling UOM</term>
+
       <listitem>
-        <para>The unit of measure you are shipping in</para>
+        <para>The UOM you are shipping in</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Shipped</term>
+
       <listitem>
-        <para>Displays quantity of Item already shipped for specified
+        <para>Displays quantity of item already shipped for specified
         order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Returned</term>
+
       <listitem>
-        <para>Displays quantity of Item returned for specified order.</para>
+        <para>Displays quantity of item returned for specified order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Balance Due</term>
+
       <listitem>
         <para>Displays balance of line item remaining to be shipped for
         specified order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Reserved</term>
+
       <listitem>
         <para>Displays the reserved quantity.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. at Shipping</term>
+
       <listitem>
         <para>Displays quantity of item at shipping for specified
         order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. to Issue</term>
+
       <listitem>
         <para>Enter the quantity of items you want to issue to shipping for
         specified order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>ISSUE</guibutton></term>
+
       <listitem>
         <para>Select to issue the specified line item quantity to shipping. If
         the specified item is a multiple location control item, you will be
