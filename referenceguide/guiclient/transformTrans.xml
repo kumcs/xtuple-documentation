@@ -4,78 +4,99 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="transformTrans" role="standard">
   <title>Transform</title>
+
   <para>Transformation is the process of converting quantity of one item into
-  quantity of another item. The Transform utility can be applied in multiple
-  scenarios. For example, let's say you manufacture an item&mdash;but when
-  supplies run low, you purchase replenishment quantity from a vendor. You
-  would receive the replenishment quantity using an item number having the
+  quantity of another item. The transform utility can be applied in multiple
+  scenarios. For example, let's say you manufacture an item—but when supplies
+  run low, you purchase replenishment quantity from a vendor. You would
+  receive the replenishment quantity using an item number having the
   "purchased" item type. This purchased quantity would then be transformed
   into quantity of your manufactured item.</para>
+
   <note>
     <para>You may only transform an item if the source item is located in the
     same site as the target item.</para>
   </note>
-  <para>To transform inventory quantity, select the <guimenuitem>Transform</guimenuitem> option. The
-  following screen will appear:</para>
+
+  <para>To transform inventory quantity, select the
+  <guimenuitem>Transform</guimenuitem> option. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transformTrans.png" />
+          <imagedata fileref="images/transformTrans.png"/>
         </imageobject>
+
         <caption>Transform Utility</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When transforming inventory quantity, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
+
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
         general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the source item whose quantity you want
         to transform.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify site where desired source item quantity is
         located.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Source</term>
+
       <listitem>
         <para>Displays available site locations. Highlight the location
         containing quantity you want to transform. If the item is
-        multiply-located in the specified site, all locations having
-        valid quantity will display.</para>
+        multiply-located in the specified site, all locations having valid
+        quantity will display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Target Item Number</term>
+
       <listitem>
         <para>Specify which item you want to transform the source item
         quantity to. Target item numbers are defined using the
-        <guimenuitem>Transformations</guimenuitem> tab on the Item master for the source item. If no
-        target item is defined on the Item master, no transformations may
-        occur.</para>
+        <guimenuitem>Transformations</guimenuitem> tab on the Item master for
+        the source item. If no target item is defined on the Item master, no
+        transformations may occur.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. to Transform</term>
+
       <listitem>
         <para>Specify the source item quantity you want to transform into
         target item quantity.</para>

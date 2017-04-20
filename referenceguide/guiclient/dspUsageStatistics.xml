@@ -5,41 +5,52 @@
 <section id="dspUsageStatistics">
   <title><indexterm significance="normal">
       <primary>item usage statistics</primary>
+
       <secondary>reporting for</secondary>
     </indexterm> Item Usage Statistics</title>
+
   <para>The Item Usage Statistics screen provides a summarized view of
   inventory transactions, where the summary information is separated out into
   common inventory categories. By specifying a date range, you are able to
   generate a summarized inventory report for the specified time frame.</para>
+
   <para>Here are some tips for using this screen:</para>
+
   <itemizedlist>
     <listitem>
       <para>The right-click menu is context-sensitive by column header,
       meaning you can drill down to see the underlying detail for each
       inventory category.</para>
     </listitem>
+
     <listitem>
       <para>Use the <guilabel>Item</guilabel> filter to see statistics for
       individual items.</para>
     </listitem>
+
     <listitem>
-      <para>View ABC Class information by enabling the ABC Class column
-      header.</para>
+      <para>View ABC class information by enabling the <guilabel>ABC
+      Class</guilabel> column header.</para>
     </listitem>
   </itemizedlist>
+
   <para>The following screenshot shows the Item Usage Statistics
   screen:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspUsageStatistics.png"/>
         </imageobject>
+
         <caption>Item Usage Statistics</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The default filter on the Item Usage Statistics screen shows all
   transactions for the current day. You can build your own search criteria
   using the following options:</para>
+
   <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

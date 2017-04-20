@@ -5,67 +5,86 @@
 <section id="locations">
   <title><indexterm significance="normal">
       <primary>site locations</primary>
+
       <secondary>master list of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>locations</primary>
+
       <secondary>in sites</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>sites</primary>
+
       <secondary>locations in</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>site locations</primary>
+
       <secondary>See also locations[site locations</secondary>
     </indexterm>Site Locations</title>
+
   <para>Site locations—also known as locations—are the specific, unique
   material sites where <indexterm significance="normal">
       <primary>inventory</primary>
+
       <secondary>site locations and</secondary>
-    </indexterm>Inventory is located inside a site. If the ARBL naming
+    </indexterm>inventory is located inside a site. If the ARBL naming
   convention is being enforced within a site, locations may be identified by
   aisle, rack, bin, and location number. Locations may also exist within site
   zones, if zones are defined for the specified site. In most cases, related
   items will be stored near to each other to simplify picking and inventory
-  counting. To access a master list of site locations, select the <guimenuitem>Site
-  Locations</guimenuitem> option. The following screen will appear:</para>
+  counting. To access a master list of site locations, select the
+  <guimenuitem>Site Locations</guimenuitem> option. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/locations.png" />
+          <imagedata fileref="images/locations.png"/>
         </imageobject>
+
         <caption>Site Locations Master List</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>The Site Locations screen displays information on all existing site
   locations, including site code, location name, location description, whether
   the location is netable or restricted, and the active status. When
   displaying available site locations, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
         <para>Select to display site locations for all sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
         <para>Specify site whose locations you want to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site Zone</term>
+
       <listitem>
         <para>Specify zone whose locations you want to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Inactive</term>
+
       <listitem>
         <para>Select to include inactive locations in the display.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="location.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

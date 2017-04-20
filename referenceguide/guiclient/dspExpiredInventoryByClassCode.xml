@@ -5,77 +5,98 @@
 <section id="dspExpiredInventoryByClassCode" role="standard">
   <title><indexterm significance="normal">
       <primary>expiration</primary>
+
       <secondary>of inventory</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>inventory</primary>
+
       <secondary>expiration of</secondary>
     </indexterm>Expired Inventory</title>
+
   <para>Item sites marked as perishable may have quantity on hand (QOH) that
   expires on a specified date. Typically, these are lot/serial number
   controlled item sites. If such inventory has expired, you may view inventory
   details using this display. To view expired inventory, select the
   <guimenuitem>Expired Inventory</guimenuitem> option. The following screen
   will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspExpiredInventoryByClassCode.png"/>
         </imageobject>
+
         <caption>Expired Inventory</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Expired inventory will be displayed in red type, to alert users to
     the expired status of the item. This typographical feature appears in
     other inventory displays, as well.</para>
   </note>
+
   <para>When displaying expired inventory, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Class Code</term>
+
       <listitem>
         <para>Specify one of the following class code options:</para>
+
         <variablelist>
           <varlistentry>
             <term>All Class Codes</term>
+
             <listitem>
-              <para>Select to display expired inventory for all Class
-              Codes.</para>
+              <para>Select to display expired inventory for all class
+              codes.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Selected</term>
+
             <listitem>
               <para>Specify class code whose expired inventory you want to
               display.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Pattern</term>
+
             <listitem>
-              <para>Enter a class code pattern to select a range of Class
-              Codes. Refine your search using Regular Expressions.</para>
+              <para>Enter a class code pattern to select a range of class
+              codes. Refine your search using regular expressions.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Expired By</term>
+
       <listitem>
         <para>Specify one of the following expiration types to include in the
         display:</para>
+
         <variablelist>
           <varlistentry>
             <term>Perishability</term>
+
             <listitem>
               <para>Select if you want to include inventory which expired
               because its perishable date passed.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Warranty</term>
+
             <listitem>
               <para>Select if you want to include inventory which expired
               because its warranty date passed.</para>
@@ -84,8 +105,10 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Threshold</term>
+
       <listitem>
         <para>Select a number of days using the arrow buttons, or manually
         enter a value between 999 and -999. Specify which expired items to
@@ -96,19 +119,25 @@
         to display inventory that expired prior to the current day.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify one of the following site options:</para>
+
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
+
             <listitem>
               <para>Select to display expired inventory for all sites.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="standard">
             <term>Selected</term>
+
             <listitem>
               <para>Specify site whose expired inventory you want to
               display.</para>
@@ -117,31 +146,39 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Inventory Value</term>
+
       <listitem>
         <para>Select to include the inventory value of expired inventory in
         the display. Then specify one of the following costing options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Use Posted Costs</term>
+
             <listitem>
               <para>Select to show inventory value based on the costing method
               defined for the item site. Item sites may use the following
               costing methods, depending on the item type: standard, average,
-              job (i.e., job items), and None (i.e., Reference items and any
-              items having a control method = None).</para>
+              job (i.e., job items), and none (i.e., reference items and any
+              items having a control method = none).</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Standard Costs</term>
+
             <listitem>
               <para>Select to show inventory value based on standard
               costs.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Use Actual Costs</term>
+
             <listitem>
               <para>Select to show inventory value based on actual
               costs.</para>
@@ -150,8 +187,10 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Expired Inventory</term>
+
       <listitem>
         <para>Display lists expired inventory, using the specified parameters.
         If the <guilabel>Show Inventory Value</guilabel> box is selected, the

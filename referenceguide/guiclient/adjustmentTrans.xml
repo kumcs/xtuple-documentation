@@ -7,70 +7,89 @@
       <primary>miscellaneous adjustments</primary>
     </indexterm> <indexterm significance="normal">
       <primary>adjustments</primary>
+
       <secondary>miscellaneous for inventory</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>inventory</primary>
+
       <secondary>miscellaneous adjustments to</secondary>
     </indexterm>Adjustment Transaction</title>
+
   <para>To make a miscellaneous adjustment to the quantity on hand (QOH) for
   an item, select the <guimenuitem>Adjustment Transaction</guimenuitem>
   option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/adjustmentTrans_tabCost.png"/>
         </imageobject>
+
         <caption>Enter Adjustment Transaction</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Use the adjustment transaction utility to handle inventory
-    adjustments not covered by another transaction type—for example, Receipt
-    from Purchasing, Receipt from Manufacturing, Scrap, etc. For a complete
+    adjustments not covered by another transaction type—for example, receipt
+    from purchasing, receipt from manufacturing, scrap, etc. For a complete
     list of inventory transaction types, see <xref
     linkend="Section461282"/>.</para>
   </note>
+
   <para>When creating an adjustment transaction, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
+
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
         general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item you want to create an
         adjustment transaction for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Site</term>
+
       <listitem>
         <para>Specify the site where the adjustment transaction should be
         recorded. If an item is located in more than one site, be sure to
         specify the correct site for the adjustment.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Adjustment Qty.</term>
+
       <listitem>
         <para>The number entered will adjust the QOH for the specified item.
         Field accepts positive and negative numbers. To enter a negative
         number, simply prefix the number with a minus symbol.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Relative</term>
+
       <listitem>
         <para>Select to make a relative adjustment to the item's QOH. The
         <guilabel>Before</guilabel> value, which represents current QOH, will
@@ -80,8 +99,10 @@
         is not included in these values.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Absolute</term>
+
       <listitem>
         <para>Select to make an absolute adjustment to the item's QOH. The
         <guilabel>Before</guilabel> value, which represents current QOH, will
@@ -91,8 +112,10 @@
         included in these values.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Document #</term>
+
       <listitem>
         <para>Creates a user-defined reference for the adjustment transaction.
         The document reference will be posted with the general ledger (G/L)
@@ -100,8 +123,10 @@
         used for internal tracking and auditing purposes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Adjust Value</term>
+
       <listitem>
         <para>The <guimenuitem>Cost</guimenuitem> tab will be visible only if
         average costing is enabled on the Configure Inventory screen. The
@@ -109,17 +134,21 @@
         costing is the cost method selected for the item site being adjusted.
         If adjust value is checked then the transaction will affect the value
         of perpetual inventory using the following costs:</para>
+
         <variablelist>
           <varlistentry>
             <term>Calculated</term>
+
             <listitem>
               <para>Use the average cost calculation to determine perpetual
               inventory value and distribute costs for this
               transaction.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Manual</term>
+
             <listitem>
               <para>Use the total cost entered to determine perpetual
               inventory value and distribute costs for this
@@ -130,22 +159,28 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To enter notes related to the adjustment transaction, select the
   <guimenuitem>Notes</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/adjustmentTrans_tabNotes.png"/>
         </imageobject>
+
         <caption>Adjustment Transaction Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When entering notes related to an adjustment transaction, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the adjustment.</para>
