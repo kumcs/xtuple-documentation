@@ -13,20 +13,21 @@
       <secondary>updating for item sites</secondary>
     </indexterm>Update Item Site Lead Times</title>
 
-  <para>To update the Lead Times associated with item sites, select the <guimenuitem>Item
-  Site Lead Times</guimenuitem> option. The following screen will appear:</para>
+  <para>To update the lead times associated with item sites, select the
+  <guimenuitem>Item Site Lead Times</guimenuitem> option. The following screen
+  will appear:</para>
 
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/updateItemSiteLeadTimes.png" />
+          <imagedata fileref="images/updateItemSiteLeadTimes.png"/>
         </imageobject>
 
         <caption>Update Item Site Lead Times</caption>
       </mediaobject>
     </screenshot></para>
 
-  <para>When updating item site Lead Times, you are presented with the
+  <para>When updating item site lead times, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -34,7 +35,7 @@
       <term>All Sites</term>
 
       <listitem>
-        <para>Select to update item site Lead Times for all sites.</para>
+        <para>Select to update item site lead times for all sites.</para>
       </listitem>
     </varlistentry>
 
@@ -42,7 +43,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify site where item site Lead Times are to be
+        <para>Specify site where item site lead times are to be
         updated.</para>
       </listitem>
     </varlistentry>
@@ -51,8 +52,8 @@
       <term>All Class Codes</term>
 
       <listitem>
-        <para>Select to update item site Lead Times for all Class
-        Codes.</para>
+        <para>Select to update item site lead times for all class
+        codes.</para>
       </listitem>
     </varlistentry>
 
@@ -60,7 +61,7 @@
       <term>Selected</term>
 
       <listitem>
-        <para>Specify class code whose item site Lead Times you want to
+        <para>Specify class code whose item site lead times you want to
         update.</para>
       </listitem>
     </varlistentry>
@@ -70,7 +71,7 @@
 
       <listitem>
         <para>Enter a class code pattern to select a range of class codes.
-        Refine your search using Regular Expressions.</para>
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
 
@@ -78,9 +79,9 @@
       <term>Pad Lead Time by (Days)</term>
 
       <listitem>
-        <para>Select a number using the arrows, or manually enter a
-        value up to a maximum of 99. Value entered specifies the number of
-        days you want to pad item site Lead times by.</para>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 99. Value entered specifies the number of days you
+        want to pad item site lead times by.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -92,22 +93,21 @@
       <term><guibutton>UPDATE</guibutton></term>
 
       <listitem>
-        <para>Updates the item site Lead Times, using the specified
+        <para>Updates the item site lead times, using the specified
         parameters. Item sites are updated in item type and bill of material
-        level sequence so that the lead times of lower level items are
+        (BOM) level sequence so that the lead times of lower level items are
         calculated before the lead times of dependent items.</para>
 
-        <para>The following formulas describe how Lead Times for different
+        <para>The following formulas describe how lead times for different
         item types are handled:</para>
 
         <itemizedlist>
           <listitem>
             <para><emphasis role="bold">Manufactured Items:</emphasis> The
-            utility first scans the bill of materials for the item and finds
-            the component item having the longest lead time. It then scans the
-            routing for the item and finds the operation having the
-            latest execution day. Finally it performs the following
-            calculation:</para>
+            utility first scans the BOM for the item and finds the component
+            item having the longest lead time. It then scans the routing for
+            the item and finds the operation having the latest execution day.
+            Finally it performs the following calculation:</para>
 
             <informalexample>
               <para>Longest Component Item Lead Time + Latest Execution Day +
@@ -118,7 +118,7 @@
           <listitem>
             <para><emphasis role="bold">Purchased Items (with Item
             Source):</emphasis> The utility scans any item sources and finds
-            the longest Lead Time. Then if performs the following
+            the longest lead time. Then if performs the following
             calculation:</para>
 
             <informalexample>

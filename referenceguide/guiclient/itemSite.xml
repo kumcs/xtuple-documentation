@@ -215,8 +215,8 @@
               </indexterm>Ranking</term>
 
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 10. Value entered specifies the order
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 10. Value entered specifies the order
               in which item sites will be chosen during sales order and sales
               quote creation. If an item is located in more than one
               <guilabel>Sold from</guilabel> site, the item site with the
@@ -268,8 +268,8 @@
 
                   <listitem>
                     <para>Select to monitor inventory history transactions for
-                    the item site using a Regular method. Regular means
-                    without Lot number or Serial number control.</para>
+                    the item site using a regular method. Regular means
+                    without lot number or serial number control.</para>
                   </listitem>
                 </varlistentry>
 
@@ -277,8 +277,8 @@
                   <term>Lot #</term>
 
                   <listitem>
-                    <para>Select to impose Lot number control methods on the
-                    item site. Item sites using Lot number control are subject
+                    <para>Select to impose lot number control methods on the
+                    item site. Item sites using lot number control are subject
                     to unique processing requirements whenever inventory is
                     received or distributed.</para>
                   </listitem>
@@ -288,8 +288,8 @@
                   <term>Serial #</term>
 
                   <listitem>
-                    <para>Select to impose Serial number control methods on
-                    the item site. Item sites using Serial number control are
+                    <para>Select to impose serial number control methods on
+                    the item site. Item sites using serial number control are
                     subject to unique processing requirements whenever
                     inventory is received or distributed.</para>
                   </listitem>
@@ -305,7 +305,7 @@
               <para>Specify the planner code you want to assign the item site
               to. Assigning a planner code to an item site makes it possible
               to group item sites by planner code for the purposes of
-              Planning.</para>
+              planning.</para>
             </listitem>
           </varlistentry>
 
@@ -325,7 +325,7 @@
               <note>
                 <para>If you ever need to change the cost category for an item
                 site having quantity on hand (QOH), the inventory value will
-                be transferred in the Ledger from the initial asset account to
+                be transferred in the ledger from the initial asset account to
                 the new asset account.</para>
               </note>
             </listitem>
@@ -348,7 +348,7 @@
             <listitem>
               <para>This cost method is automatically selected for the item
               site if the control method is <guilabel>None</guilabel> or the
-              item type is Reference.</para>
+              item type is reference.</para>
             </listitem>
           </varlistentry>
 
@@ -404,8 +404,8 @@
               characteristic is selected at sales order entry.</para>
 
               <note>
-                <para>Job cost items must have a control method of Regular,
-                Lot, or Serial.</para>
+                <para>Job cost items must have a control method of regular,
+                lot, or serial.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -446,10 +446,10 @@
             <term>Allow Automatic Updates</term>
 
             <listitem>
-              <para>Select to allow the ABC Class setting for the item site to
-              be updated whenever the ABC Class update utility is run. Not
-              selecting indicates the ABC Class for the item site should not
-              be updated whenever the ABC Class update utility is run.</para>
+              <para>Select to allow the ABC class setting for the item site to
+              be updated whenever the ABC class update utility is run. Not
+              selecting indicates the ABC class for the item site should not
+              be updated whenever the ABC class update utility is run.</para>
 
               <variablelist>
                 <varlistentry>
@@ -468,16 +468,16 @@
             <term>Cycl. Cnt. Freq.</term>
 
             <listitem>
-              <para>Cnt. Freq.: Select a number using the arrows, or
-              manually enter a value up to a maximum of 999. A Cycle Count is
-              a periodic issue of a Count Tag to count inventory quantity
-              within an item site. The Cycle Count frequency defines the
-              length of that period, measured in days.</para>
+              <para>Cnt. Freq.: Select a number using the arrows, or manually
+              enter a value up to a maximum of 999. A cycle count is a
+              periodic issue of a count tag to count inventory quantity within
+              an item site. The cycle count frequency defines the length of
+              that period, measured in days.</para>
 
               <tip>
-                <para>To monitor the frequency of item site Cycle Counts, view
+                <para>To monitor the frequency of item site cycle counts, view
                 the <guilabel>Last Counted</guilabel> column in any of the
-                item site Reports: by item, by class code, etc. The last
+                item site reports: by item, by class code, etc. The last
                 counted date represents the date a count tag was last posted
                 (not simply issued) for the item site.</para>
               </tip>
@@ -496,13 +496,13 @@
               </indexterm>Event Fence</term>
 
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 999. Specify the period of time,
-              measured in days, within which relevant Event notifications
-              should be issued. If an Event affecting the item site occurs
-              within the Event Fence, then the system will issue a
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 999. Specify the period of time,
+              measured in days, within which relevant event notifications
+              should be issued. If an event affecting the item site occurs
+              within the event fence, then the system will issue a
               notification. Consider the case of a manufactured item whose
-              Event Fence is set to five days. Assume that a work order exists
+              event fence is set to five days. Assume that a work order exists
               for this item and that the scheduled start date for that work
               order is three days from the current date. If someone were to
               change the quantity of that work order, the event
@@ -550,9 +550,9 @@
               shipped, a value up to the proportional value of the total
               quantity shipped will be charged to cost of sales. For example,
               if three items are to be shipped on a job work order and all the
-              material has been issued—and if only 1 of the 3 is shipped—then
-              1/3 of the value charged to WIP at that point will be charged to
-              cost of sales.</para>
+              material has been issued—and if only one of the three is
+              shipped—then 1/3 of the value charged to WIP at that point will
+              be charged to cost of sales.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -669,8 +669,8 @@
 
                   <listitem>
                     <para>Used for transaction types that do not fall under
-                    the other default types (i.e., Receive and W/O
-                    Issue).</para>
+                    the other default types (i.e., receive and W/O
+                    issue).</para>
                   </listitem>
                 </varlistentry>
 
@@ -698,8 +698,8 @@
               without having to make any distribution decisions.</para>
 
               <note>
-                <para>This option is not available for items that are Serial
-                or Lot controlled.</para>
+                <para>This option is not available for items that are serial
+                or lot controlled.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -771,7 +771,7 @@
         <para>Highlight a site location and then select this button to change
         the allowed status for the item. Any changes made on the item site
         master related to an item's allowed status will also be saved to the
-        Site location master record.</para>
+        Site Location master record.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -806,14 +806,14 @@
       <listitem>
         <para>Select to enforce order parameters. If this option is selected,
         then material requirements planning (MRP) will follow the order
-        Parameters defined below when generating planned replenishment orders.
+        parameters defined below when generating planned replenishment orders.
         Parameters you define will be saved if this option is turned ON/OFF.
         If you want to enforce order parameters on manual orders as well,
         select the <guilabel>on Manual Orders</guilabel> option.</para>
 
         <note>
           <para>Running material requirements planning (MRP) on your system
-          consists entirely of running the Create planned replenishment orders
+          consists entirely of running the Create Planned Replenishment Orders
           screens—either by item or by planner code. As MRP runs, the planned
           replenishment orders are generated automatically.</para>
         </note>
@@ -823,14 +823,14 @@
             <term>Reorder Level</term>
 
             <listitem>
-              <para>The Reorder Level specifies when a planned replenishment
+              <para>The reorder level specifies when a planned replenishment
               order should be created for an item site. If planned
-              availability minus Safety Stock falls below the Reorder Level,
+              availability minus safety stock falls below the reorder level,
               then a replenishment order will be created when material
-              requirements planning (MRP) is run. The Replenishment order
+              requirements planning (MRP) is run. The replenishment order
               quantity will be equal to the quantity required to return
-              planned availability to either the Reorder Level or the order Up
-              To quantity—whichever is greater.</para>
+              planned availability to either the reorder level or the order up
+              to quantity—whichever is greater.</para>
 
               <note>
                 <para>Planned availability differs from QOH. The difference is
@@ -846,11 +846,11 @@
             <term>Order Up To</term>
 
             <listitem>
-              <para>The order Up To (OUT) Level indicates the level of planned
+              <para>The order up to (OUT) level indicates the level of planned
               availability an item site should be replenished up to when
               material requirements planning (MRP) is run. In cases where the
-              Reorder Level for an item site exceeds the order up to level,
-              MRP will replenish the item site up to the Reorder Level.</para>
+              reorder level for an item site exceeds the order up to level,
+              MRP will replenish the item site up to the reorder level.</para>
 
               <tip>
                 <para>Setting the order up to level to "0" removes any
@@ -870,7 +870,7 @@
               <para>Value entered indicates the minimum quantity that may be
               entered for a planned replenishment order when MRP is run. If
               the <guilabel>on Manual Orders</guilabel> option is selected
-              above, manually-created work orders will recognize the Minimum
+              above, manually-created work orders will recognize the minimum
               order value.</para>
             </listitem>
           </varlistentry>
@@ -915,15 +915,16 @@
             <term>Enforce on Manual Orders</term>
 
             <listitem>
-              <para>Select to enforce order Parameters on manually-created
-              work orders. If this option is selected, order Parameters will
+              <para>Select to enforce order parameters on manually-created
+              work orders. If this option is selected, order parameters will
               also be enforced whenever work orders are manually created. This
-              option applies only to the following two parameters: Minimum
-              order and order Multiple. The other order Parameters listed
-              below do not apply to manually-created work orders. For manual
-              purchase orders, the Minimum order and order Multiple parameters
-              are determined on a vendor-by-vendor basis, using item source
-              masters.</para>
+              option applies only to the following two parameters:
+              <guilabel>Minimum Order</guilabel> and <guilabel>Order
+              Multiple</guilabel>. The other order parameters listed below do
+              not apply to manually-created work orders. For manual purchase
+              orders, the <guilabel>Minimum Order</guilabel> and
+              <guilabel>Order Multiple</guilabel> parameters are determined on
+              a vendor-by-vendor basis, using Item Source masters.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -955,8 +956,8 @@
 
                   <listitem>
                     <para>Select if you want the material requirements
-                    Planning (MRP) system to create planned orders for the
-                    Item when MRP is run.</para>
+                    planning (MRP) system to create planned orders for the
+                    item when MRP is run.</para>
                   </listitem>
                 </varlistentry>
 
@@ -964,7 +965,7 @@
                   <term>MPS</term>
 
                   <listitem>
-                    <para>Select if you want the Master production Scheduling
+                    <para>Select if you want the master production scheduling
                     (MPS) system to create planned orders for the item when
                     MPS is run.</para>
                   </listitem>
@@ -975,7 +976,7 @@
 
                   <listitem>
                     <para>Select if you want MRP and MPS to ignore the
-                    Item.</para>
+                    item.</para>
                   </listitem>
                 </varlistentry>
               </variablelist>
@@ -986,18 +987,18 @@
             <term>Safety Stock</term>
 
             <listitem>
-              <para>Specify the quantity of Stock for the item you want to
+              <para>Specify the quantity of stock for the item you want to
               keep in inventory to protect against unplanned, unforeseeable
               trends in your order forecasts. When material requirements
-              Planning (MRP) is run, the system considers the Safety Stock
+              planning (MRP) is run, the system considers the safety stock
               value when determining whether to create planned replenishment
-              orders. If planned availability minus Safety Stock is below the
-              Reorder Level, then planned orders will be created. If not below
-              the Reorder Level, then no planned orders will be created. The
+              orders. If planned availability minus safety stock is below the
+              reorder level, then planned orders will be created. If not below
+              the reorder level, then no planned orders will be created. The
               system's calculation effectively creates a buffer inventory (if
               needed) to handle unexpected fluctuations in demand. If you do
-              not want to use the Safety Stock functionality, set the Safety
-              Stock value to "0".</para>
+              not want to use the safety stock functionality, set the safety
+              stock value to "0".</para>
             </listitem>
           </varlistentry>
 
@@ -1057,15 +1058,15 @@
             <term>Lead Time</term>
 
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 999. Specifies the Lead Time for the
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 999. Specifies the lead time for the
               specified item, measured in days. If the item is a manufactured
-              item, then the Lead Time refers to the production Lead Time. If
-              the item is a purchased item, then the Lead Time refers to the
-              planning Lead Time. The procurement Lead Time for purchased
+              item, then the lead time refers to the production lead time. If
+              the item is a purchased item, then the lead time refers to the
+              planning lead time. The procurement lead time for purchased
               items is determined on a vendor-by-vendor basis, using Item
               Source masters. Material requirements planning (MRP) will
-              consider Lead Times when calculating planned order start dates
+              consider lead times when calculating planned order start dates
               when MRP is run.</para>
             </listitem>
           </varlistentry>
@@ -1074,23 +1075,22 @@
             <term>MPS Time Fence</term>
 
             <listitem>
-              <para>Specify the length of the Demand Time Fence by using the
-              arrows or manually entering a value up to a maximum of
-              999. The Demand Time Fence (also known as the demand fence) is
-              used by the Master production Scheduling (MPS) system to
-              evaluate when forecasted demand (i.e., from production Plans)
-              should be used in place of actual demand (i.e., from sales
-              orders)—and vice versa. Measured in days, the Demand Time Fence
-              is the period of time extending from the current day to the
-              number of days into the future as specified in this field. The
-              <guilabel>Demand Time Fence</guilabel> option applies only to
-              those items which currently appear on a released production
-              plan. If demand for these items falls within the demand time
-              fence period, then the forecast will be ignored. If demand falls
-              outside the demand time fence, then the larger of actual or
-              forecasted demand will be used. MPS responds to the demand it
-              locates by creating firm planned orders for the required
-              quantities.</para>
+              <para>Specify the length of the demand time fence by using the
+              arrows or manually entering a value up to a maximum of 999. The
+              demand time fence (also known as the demand fence) is used by
+              the master production Scheduling (MPS) system to evaluate when
+              forecasted demand (i.e., from production plans) should be used
+              in place of actual demand (i.e., from sales orders)—and vice
+              versa. Measured in days, the Demand Time Fence is the period of
+              time extending from the current day to the number of days into
+              the future as specified in this field. The <guilabel>Demand Time
+              Fence</guilabel> option applies only to those items which
+              currently appear on a released production plan. If demand for
+              these items falls within the demand time fence period, then the
+              forecast will be ignored. If demand falls outside the demand
+              time fence, then the larger of actual or forecasted demand will
+              be used. MPS responds to the demand it locates by creating firm
+              planned orders for the required quantities.</para>
             </listitem>
           </varlistentry>
 
@@ -1166,7 +1166,7 @@
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
-  <para role="standard">If the item site is Lot or Serial controlled, you will
+  <para role="standard">If the item site is lot or serial controlled, you will
   have access to several product expiration options. The
   <guimenuitem>Expiration</guimenuitem> tab will be disabled for
   non-lot/serial item sites. To view or modify expiration settings for the
@@ -1191,8 +1191,8 @@
         <term>Perishable</term>
 
         <listitem>
-          <para>Select if the item is Perishable. Materials received into a
-          Perishable item site are required to have an expiration date,
+          <para>Select if the item is perishable. Materials received into a
+          perishable item site are required to have an expiration date,
           thereby increasing your ability to monitor the status of the
           goods.</para>
         </listitem>
@@ -1225,7 +1225,7 @@
     </variablelist></para>
 
   <para role="manufacturing">In order to provide for visibility of tooling for
-  Capacity Planning, the system provides the ability to define capacity
+  capacity planning, the system provides the ability to define capacity
   information at the item site level that mirrors capacity data inputs for the
   work center on a scheduling tab. The <guimenuitem>Schedule</guimenuitem> tab
   is only be enabled for tooling items, and only available on the

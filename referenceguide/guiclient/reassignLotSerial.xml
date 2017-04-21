@@ -4,73 +4,94 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="reassignLotSerial">
   <title>Reassign Lot/Serial Number</title>
+
   <para>To reassign the lot/serial number for a lot/serial item—or to assign a
   lot/serial number to a quantity located in a lot/serial number controlled
-  item site—select the <guimenuitem>Reassign Lot/Serial Number</guimenuitem> option. The following
-  screen will appear:</para>
+  item site—select the <guimenuitem>Reassign Lot/Serial Number</guimenuitem>
+  option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/reassignLotSerial.png" />
+          <imagedata fileref="images/reassignLotSerial.png"/>
         </imageobject>
+
         <caption>Reassign Lot/Serial Number</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When reassigning the lot/serial number for a lot/serial item, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item whose lot/serial number you
         want to reassign.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify site where inventory is located.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Source</term>
+
       <listitem>
         <para>Display lists source locations for the specified item. Select
         the location containing inventory whose lot/serial number you want to
         reassign by highlighting the line using your mouse.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. to Reassign</term>
+
       <listitem>
-        <para>to Reassign: Enter the quantity of the specified item whose
+        <para>To reassign: Enter the quantity of the specified item whose
         lot/serial number you want to reassign.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>New Lot Number</term>
+
       <listitem>
         <para>Enter the new lot number for the quantity of the specified item
         whose lot/serial number you want to reassign.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>New Expiration Date</term>
+
       <listitem>
         <para>Specify the date when the lot/serial quantity expires.<note>
-            <para>A value must be entered in the <guilabel>Expiration Date</guilabel> field for
-            item sites designated as perishable.</para>
+            <para>A value must be entered in the <guilabel>Expiration
+            Date</guilabel> field for item sites designated as
+            perishable.</para>
           </note></para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>New Warranty Date</term>
+
       <listitem>
         <para>Specify the date when the warranty for the item expires.<note>
             <para>The warranty option is only required and available for item
@@ -79,10 +100,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>REASSIGN</guibutton></term>
+
       <listitem>
         <para>Reassigns the lot/serial number for the quantity of the
         specified item. Additional steps will be necessary if the specified

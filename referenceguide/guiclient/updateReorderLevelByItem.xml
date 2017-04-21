@@ -5,89 +5,114 @@
 <section id="updateReorderLevelByItem">
   <title><indexterm significance="normal">
       <primary>reorder levels</primary>
+
       <secondary>updating by item</secondary>
     </indexterm><indexterm significance="normal">
       <primary>items</primary>
+
       <secondary>reorder levels for</secondary>
     </indexterm>Update Reorder Level by Item</title>
-  <para>To update Reorder Levels by item, select the <guimenuitem>Reorder Level by Item</guimenuitem>
-  option. The following screen will appear:</para>
+
+  <para>To update reorder levels by item, select the <guimenuitem>Reorder
+  Level by Item</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/updateReorderLevelByItem.png" />
+          <imagedata fileref="images/updateReorderLevelByItem.png"/>
         </imageobject>
+
         <caption>Update Reorder Levels by Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>This utility does <emphasis>not</emphasis> update reorder levels for
-    items located in Transit sites when it is run.</para>
+    items located in transit sites when it is run.</para>
   </note>
-  <para>When updating Reorder Levels by item, you are presented with the
+
+  <para>When updating reorder levels by item, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
-        <para>Enter the item number of the item whose Reorder Level you want
+        <para>Enter the item number of the item whose reorder level you want
         to update. The lookup feature located to the right of the field leads
         to a searchable list of make and buy items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>Inventory Item Description.</para>
+        <para>Inventory item description.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Site Selection</term>
+
       <listitem>
         <para>Select what sites you want to query.</para>
+
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
+
             <listitem>
-              <para>Select to update Reorder Levels by item for all
+              <para>Select to update reorder levels by item for all
               sites.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <variablelist>
           <varlistentry>
             <term>Selected</term>
+
             <listitem>
-              <para>Specify site where Reorder Levels by item are to be
+              <para>Specify site where reorder levels by item are to be
               updated.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Options</term>
+
       <listitem>
         <para>Select whether you would prefer to review results of analysis
         before updating reorder levels or update immediately.</para>
+
         <variablelist>
           <varlistentry>
             <term>Preview Results</term>
+
             <listitem>
               <para>Review results of analysis prior to updating reorder
               levels.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <variablelist>
           <varlistentry>
             <term>Update Immediately</term>
+
             <listitem>
               <para>Update reorder levels without previewing analysis
               first.</para>
@@ -96,63 +121,77 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Days of Stock at Reorder Level</term>
+
       <listitem>
         <para>Specify number of days using one of the following
         options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Item Site Lead Time +</term>
+
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 99. Average daily usage calculated
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 99. Average daily usage calculated
               using selected calendar periods will be multiplied by this value
-              to determine Reorder Level.</para>
+              to determine reorder level.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Fixed Days</term>
+
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 999. Average daily usage calculated
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 999. Average daily usage calculated
               using selected calendar periods will be multiplied by this value
-              to determine Reorder Level.</para>
+              to determine reorder level.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Periods to Include in Analysis</term>
+
       <listitem>
         <para>Specify the periods to include in the analysis using the
         following calendar options:</para>
+
         <variablelist>
           <varlistentry>
             <term>Calendar</term>
+
             <listitem>
               <para>Select the calendar you want to use for the
               analysis.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Name/Selected Periods</term>
+
             <listitem>
               <para>Select as many periods as you want to include in the
               analysis. Selected periods correspond to calendar specified in
-              the <guilabel>Calendar</guilabel> field. Select individual periods or groups of
-              periods together. To select an individual period, highlight the
-              period using your mouse button. The period is now selected. To
-              select a sequence of periods, highlight the first in the
-              sequence using your mouse button. Then, holding down the <guibutton>SHIFT</guibutton>
-              key on your keyboard, highlight the last period in the sequence.
-              The entire sequence is now selected. To select periods that are
-              out of sequence (e.g., January, April, July, October), highlight
-              the first period in the group. Then, holding down the <guibutton>CTRL</guibutton> key
-              on your keyboard, highlight the next period you want to select.
-              Continue highlighting periods with the <guibutton>CTRL</guibutton> key depressed until
-              all desired periods are selected. The entire group is now
+              the <guilabel>Calendar</guilabel> field. Select individual
+              periods or groups of periods together. To select an individual
+              period, highlight the period using your mouse button. The period
+              is now selected. To select a sequence of periods, highlight the
+              first in the sequence using your mouse button. Then, holding
+              down the <guibutton>SHIFT</guibutton> key on your keyboard,
+              highlight the last period in the sequence. The entire sequence
+              is now selected. To select periods that are out of sequence
+              (e.g., January, April, July, October), highlight the first
+              period in the group. Then, holding down the
+              <guibutton>CTRL</guibutton> key on your keyboard, highlight the
+              next period you want to select. Continue highlighting periods
+              with the <guibutton>CTRL</guibutton> key depressed until all
+              desired periods are selected. The entire group is now
               selected.</para>
             </listitem>
           </varlistentry>
@@ -160,30 +199,39 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To view Results of query, select the <guimenuitem>Results</guimenuitem> tab. The following
-  screen will appear:</para>
+
+  <para>To view results of query, select the
+  <guimenuitem>Results</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/updateReorderLevelByItem_resultsTab.png" />
+        <imagedata fileref="images/updateReorderLevelByItem_resultsTab.png"/>
       </imageobject>
+
       <caption>Review Reorder Level Analysis by Item</caption>
     </mediaobject>
   </screenshot>
-  <para>Upon selecting Results a list of analysis results will appear on the
+
+  <para>Upon selecting results a list of analysis results will appear on the
   screen.</para>
+
   <variablelist>
     <varlistentry>
       <term>Total Days Analyzed</term>
+
       <listitem>
         <para>Shows how many days were analyzed in your analysis and also
         lists affected item sites.</para>
+
         <note>
           <para>Item sites subject to constraint management must always have a
           minimum reorder level of at least one. If your results indicate a
           new level of zero for one of these item sites, you will get an error
-          message preventing the update. Item sites having the <guilabel>Stocked</guilabel> flag
-          turned ON are subject to constraint management.</para>
+          message preventing the update. Item sites having the
+          <guilabel>Stocked</guilabel> flag turned ON are subject to
+          constraint management.</para>
         </note>
       </listitem>
     </varlistentry>
