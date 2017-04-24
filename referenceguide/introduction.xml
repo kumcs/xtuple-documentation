@@ -6,8 +6,8 @@
   <title><anchor id="Anchor23250" role="Cross-Ref"
   xreflabel="23250: ChapterTitleNoNumber: Introduction"/>Introduction</title>
 
-  <para>Welcome to the reference guide for xTuple Enterprise Resource
-  Planning! This reference guide is designed as a screen-by-screen reference
+  <para>Welcome to the reference guide for xTuple Enterprise resource
+  planning! This reference guide is designed as a screen-by-screen reference
   for anyone using any of the following xTuple ERP editions:</para>
 
   <itemizedlist>
@@ -82,7 +82,7 @@
 
   <note>
     <para>For more information on the differences between the xTuple ERP
-    Editions, including licensing options, please visit <ulink
+    editions, including licensing options, please visit <ulink
     url="http://www.xtuple.com/comparison">www.xtuple.com/comparison</ulink>.</para>
   </note>
 
@@ -154,7 +154,7 @@
 
       <tip>
         <para>You should always be sure to use a version of xTuple ERP which
-        matches the version of your xTuple Database. Using mis-matched
+        matches the version of your xTuple database. Using mis-matched
         versions can lead to errors and loss of data integrity. The system
         will issue a warning message whenever you attempt to log in to a
         database whose version does not match the client version.</para>
@@ -200,9 +200,9 @@
             </indexterm>Server</term>
 
           <listitem>
-            <para>Enter the address of the server where your xTuple Database
-            is running. The address will consist of either a TCP/IP Address or
-            a Network Alias Name. If the network address for the xTuple Server
+            <para>Enter the address of the server where your xTuple database
+            is running. The address will consist of either a TCP/IP address or
+            a network alias name. If the network address for the xTuple server
             changes, you may need to change the address in this field.</para>
           </listitem>
         </varlistentry>
@@ -216,7 +216,7 @@
 
           <listitem>
             <para>Displays the default port. The default port for the xTuple
-            Database is 5432.</para>
+            database is 5432.</para>
           </listitem>
         </varlistentry>
 
@@ -238,8 +238,8 @@
       </variablelist>
 
       <note>
-        <para>xTuple will automatically connect with SSL and Enhanced
-        Authentication where required by the server.</para>
+        <para>xTuple will automatically connect with SSL and enhanced
+        authentication where required by the server.</para>
       </note>
 
       <para>To the far right of the screen, the following buttons are
@@ -256,7 +256,7 @@
             username/password combination. This feature bypasses the need to
             enter connection options manually, as long as those options have
             been entered recently. To clear the list of recent connection,
-            choose the Clear Menu option.</para>
+            choose the <guilabel>Clear Menu</guilabel> option.</para>
           </listitem>
         </varlistentry>
 
@@ -318,7 +318,7 @@
 
           <listitem>
             <para>Add customizable shortcuts to your favorite screens. The
-            shortcuts are nothing more than user-defined Hot Keys, which can
+            shortcuts are nothing more than user-defined hot keys, which can
             be created under <guimenuitem>System &gt; Preferences &gt; Hot
             Keys</guimenuitem>.</para>
           </listitem>
@@ -329,7 +329,7 @@
 
           <listitem>
             <para>The main menu displays the various desktops currently
-            available on your system. The default desktop―the Welcome
+            available on your system. The default desktop―the welcome
             desktop―features news and information from xTuple. Other desktops
             are described below.</para>
           </listitem>
@@ -433,8 +433,8 @@
                 <term>Reference Guide</term>
 
                 <listitem>
-                  <para>Select to access the online xTuple ERP Reference
-                  Guide. The Reference Guide provides field level help for
+                  <para>Select to access the online xTuple ERP reference
+                  guide. The reference guide provides field level help for
                   xTuple ERP.</para>
                 </listitem>
               </varlistentry>
@@ -443,7 +443,7 @@
                 <term>xTuple.org Home</term>
 
                 <listitem>
-                  <para>Select to access the xTuple community page.</para>
+                  <para>Select to access the xTuple Community page.</para>
                 </listitem>
               </varlistentry>
 
@@ -476,7 +476,7 @@
                 <term>Bugs and Feature Requests</term>
 
                 <listitem>
-                  <para>Select to access the Issue Tracking system on the
+                  <para>Select to access the issue tracking system on the
                   xTuple site.</para>
                 </listitem>
               </varlistentry>
@@ -499,9 +499,10 @@
           <listitem>
             <para>This option is available to the free-floating mode only.
             Menu options will vary, depending on which of the various xTuple
-            desktops (i.e., CRM, Sales, etc.) is currently being used. Using
+            desktops (i.e., CRM, sales, etc.) is currently being used. Using
             this menu feature, you can specify which desktop widgets you want
-            to turn ON/OFF.</para>
+            to turn
+            <guibutton>ON</guibutton>/<guibutton>OFF</guibutton>.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -536,8 +537,8 @@
             <term>My Contacts</term>
 
             <listitem>
-              <para>Displays all Contact records you are the owner of.
-              Ownership is defined on the source Contact record.</para>
+              <para>Displays all contact records you are the owner of.
+              Ownership is defined on the source contact record.</para>
             </listitem>
           </varlistentry>
 
@@ -545,8 +546,8 @@
             <term>My Accounts</term>
 
             <listitem>
-              <para>Displays all Contact records you are the owner of.
-              Ownership is defined on the source CRM Account.</para>
+              <para>Displays all contact records you are the owner of.
+              Ownership is defined on the source CRM account.</para>
             </listitem>
           </varlistentry>
 
@@ -554,8 +555,8 @@
             <term>To Do</term>
 
             <listitem>
-              <para>Displays To-Do items you either own or are assigned to.
-              Ownership and assignment are defined on the To-Do item
+              <para>Displays to-do items you either own or are assigned to.
+              Ownership and assignment are defined on the to-do item
               records.</para>
             </listitem>
           </varlistentry>
@@ -567,7 +568,7 @@
 
         <para>The Sales desktop provides an easy means for quickly accessing
         basic sales information. The desktop also provides graphical links to
-        commonly used Sales module screens.</para>
+        commonly used <guimenu>Sales</guimenu> module screens.</para>
 
         <para><screenshot>
             <mediaobject>
@@ -594,7 +595,7 @@
 
             <listitem>
               <para>Displays summarized information about currently open
-              Quotes and Sales Orders.</para>
+              quotes and sales orders.</para>
             </listitem>
           </varlistentry>
 
@@ -603,9 +604,9 @@
 
             <listitem>
               <para>Displays either sales or booking history, depending on
-              your preference. Click on the gear icon to toggle between
-              bookings and sales―and to specify the time period you want the
-              widget to use.</para>
+              your preference. Click on the <guibutton>gear icon</guibutton>
+              to toggle between bookings and sales―and to specify the time
+              period you want the widget to use.</para>
             </listitem>
           </varlistentry>
 
@@ -613,8 +614,8 @@
             <term>Sales Orders</term>
 
             <listitem>
-              <para>Displays detailed information about open Sales
-              Orders.</para>
+              <para>Displays detailed information about open sales
+              orders.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -624,10 +625,10 @@
         <title>Accounting Desktop</title>
 
         <para>The Accounting desktop offers a quick view into basic accounting
-        information, including current balances for Payables, Receivables,
-        Bank Accounts, and any other Accounts you choose to monitor. The
-        desktop also provides graphical links to commonly used Accounting
-        module screens.</para>
+        information, including current balances for payables, receivables,
+        bank accounts, and any other accounts you choose to monitor. The
+        desktop also provides graphical links to commonly used
+        <guimenu>Accounting</guimenu> module screens.</para>
 
         <para><screenshot>
             <mediaobject>
@@ -652,8 +653,8 @@
             <term>Bank Accounts</term>
 
             <listitem>
-              <para>Displays the current balances for your Bank
-              Accounts.</para>
+              <para>Displays the current balances for your bank
+              accounts.</para>
             </listitem>
           </varlistentry>
 
@@ -662,7 +663,7 @@
 
             <listitem>
               <para>Displays current aging information for your
-              Payables.</para>
+              payables.</para>
             </listitem>
           </varlistentry>
 
@@ -671,7 +672,7 @@
 
             <listitem>
               <para>Displays current aging information for your
-              Receivables.</para>
+              receivables.</para>
             </listitem>
           </varlistentry>
 
@@ -679,10 +680,10 @@
             <term>Monitored Accounts</term>
 
             <listitem>
-              <para>Displays current balance information for any Accounts you
-              choose to monitor in the desktop. Click on the gear icon to
-              identify which Account(s) you want to add or remove from the
-              list.</para>
+              <para>Displays current balance information for any accounts you
+              choose to monitor in the desktop. Click on the <guibutton>gear
+              icon</guibutton> to identify which account(s) you want to add or
+              remove from the list.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -693,7 +694,7 @@
 
         <para>The Manufacture desktop provides quick insight into your current
         manufacturing activities. The desktop also provides graphical links to
-        commonly used Manufacture module screens.</para>
+        commonly used <guimenu>Manufacture</guimenu> module screens.</para>
 
         <para><screenshot>
             <mediaobject>
@@ -719,7 +720,7 @@
 
               <listitem>
                 <para>Displays summarized information about currently open
-                Work Orders.</para>
+                work orders.</para>
               </listitem>
             </varlistentry>
 
@@ -729,8 +730,9 @@
               <listitem>
                 <para>Displays information about receipts from manufacturing,
                 using a grouping order and time frame of your choosing. Click
-                on the gear icon to specify the grouping order and time period
-                you want the widget to use.</para>
+                on the <guibutton>gear icon</guibutton> to specify the
+                grouping order and time period you want the widget to
+                use.</para>
               </listitem>
             </varlistentry>
 
@@ -738,8 +740,8 @@
               <term>Work Orders</term>
 
               <listitem>
-                <para>Displays the Work Order schedule for all open Work
-                Orders.</para>
+                <para>Displays the work order schedule for all open work
+                orders.</para>
               </listitem>
             </varlistentry>
           </variablelist></para>
@@ -776,12 +778,12 @@
               <term>Comment Console</term>
 
               <listitem>
-                <para>Displays Comment summaries from a variety of users and
-                Comment sources, depending on the preferences you choose.
-                Click on the gear icon to specify the Comment parameters you
-                want to include in the display. Keep in mind that, while you
-                may specify a date range, the maximum range is limited to
-                seven days for performance reasons.</para>
+                <para>Displays comment summaries from a variety of users and
+                comment sources, depending on the preferences you choose.
+                Click on the <guibutton>gear icon</guibutton> to specify the
+                comment parameters you want to include in the display. Keep in
+                mind that, while you may specify a date range, the maximum
+                range is limited to seven days for performance reasons.</para>
               </listitem>
             </varlistentry>
 
@@ -789,8 +791,9 @@
               <term>Send Message</term>
 
               <listitem>
-                <para>Enter a User name and message, then click the SEND
-                button to send the message to the User.</para>
+                <para>Enter a user name and message, then click the
+                <guibutton>SEND</guibutton> button to send the message to the
+                user.</para>
               </listitem>
             </varlistentry>
 
@@ -807,7 +810,7 @@
               <term>Users Online</term>
 
               <listitem>
-                <para>Displays the names of Users who are currently logged
+                <para>Displays the names of users who are currently logged
                 into the system.</para>
               </listitem>
             </varlistentry>
@@ -872,9 +875,9 @@
         <title>My Dashboard Desktop</title>
 
         <para>The My Dashboard desktop provides a place for you to create a
-        personalized Dashboard space, with the Dashboard Panes you are most
-        interested in seeing. The My Dashboard is unique to your own user
-        account, and is not shared with others in your company.</para>
+        personalized dashboard space, with the dashboard panes you are most
+        interested in seeing. The My Dashboard desktop is unique to your own
+        user account, and is not shared with others in your company.</para>
 
         <para><screenshot>
             <mediaobject>
@@ -899,8 +902,8 @@
           <secondary>how to</secondary>
         </indexterm>Exit the Application</title>
 
-      <para>To exit the application using the System menu, select the
-      <guimenuitem>Exit</guimenuitem> option from the
+      <para>To exit the application using the <guimenu>System</guimenu> menu,
+      select the <guimenuitem>Exit</guimenuitem> option from the
       <guimenu>System</guimenu> module, as shown below:</para>
 
       <para><screenshot>
@@ -919,9 +922,9 @@
       <tip>
         <para>Be sure to close all open screens before exiting xTuple ERP to
         help prevent data loss. When closing screens, it is recommended that
-        you use the CLOSE button (or similar). We recommend that you not close
-        screens using the <guibutton>X</guibutton> button on the
-        screen.</para>
+        you use the <guibutton>CLOSE</guibutton> button (or similar). We
+        recommend that you not close screens using the
+        <guibutton>X</guibutton> button on the screen.</para>
       </tip>
     </section>
   </section>
@@ -938,7 +941,7 @@
     <section>
       <title>Searching for Information</title>
 
-      <para>Every time you look up an Order or a Customer or an Item, you are
+      <para>Every time you look up an order or a customer or an item, you are
       using search navigation. In this section, we'll discuss some of the
       various search methods available to you.</para>
 
@@ -998,8 +1001,8 @@
         <para>On several screens throughout xTuple ERP you are able to
         create—and save—custom search filters for getting at the data you
         really need. This search capability can be found, for example, on the
-        Incident Workbench in the CRM Module. The following graphic shows the
-        basic features of the search filter:</para>
+        Incident workbench in the <guimenu>CRM</guimenu> module. The following
+        graphic shows the basic features of the search filter:</para>
 
         <para><screenshot>
             <mediaobject>
@@ -1028,12 +1031,12 @@
           parameter from the list of available options.</para>
         </tip>
 
-        <para>The MANAGE button brings you to the list of saved filters—both
-        your private ones and any others that are shared across your
-        organization. When managing your filters you can choose to either
-        share them or remove them from the list. If a filter appears in the
-        <guilabel>Filter</guilabel> drop-down list, that means it's a saved
-        filter. Only saved filters will appear in that list.</para>
+        <para>The <guibutton>MANAGE</guibutton> button brings you to the list
+        of saved filters—both your private ones and any others that are shared
+        across your organization. When managing your filters you can choose to
+        either share them or remove them from the list. If a filter appears in
+        the <guilabel>Filter</guilabel> drop-down list, that means it's a
+        saved filter. Only saved filters will appear in that list.</para>
 
         <caution>
           <para>Think twice before deleting a shared filter. Other people may
@@ -1062,25 +1065,27 @@
               <para>Relative dates shift over time. So, for example, you may
               want to always search for information that is new <emphasis
               role="bold">today</emphasis>. Rather than manually entering
-              today's date, then, you would enter "0" in the search parameter
-              date field. Today's date will appear there today. But tomorrow,
-              the date will be tomorrow's date. And so on, with the current
-              date always being used by that parameter. To learn more about
-              the full range of date shortcuts available for entering relative
-              dates, please see <xref linkend="Section474757"/>.</para>
+              today's date, then, you would enter "0" in the search
+              <guilabel>Parameter Date</guilabel> field. Today's date will
+              appear there today. But tomorrow, the date will be tomorrow's
+              date. And so on, with the current date always being used by that
+              parameter. To learn more about the full range of date shortcuts
+              available for entering relative dates, please see <xref
+              linkend="Section474757"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
 
         <para>Once you've created a working catalog of search filters, you may
-        decide you don't want to always see the details. The MORE button
-        allows you to show or hide parameter details, as you wish. Click the
-        MORE button once to reveal the underlying parameter details. Click it
-        again to hide them.</para>
+        decide you don't want to always see the details. The
+        <guibutton>MORE</guibutton> button allows you to show or hide
+        parameter details, as you wish. Click the <guibutton>MORE</guibutton>
+        button once to reveal the underlying parameter details. Click it again
+        to hide them.</para>
 
         <note>
-          <para>The Default filter will vary on a screen-by-screen
-          basis.</para>
+          <para>The <guilabel>Default</guilabel> filter will vary on a
+          screen-by-screen basis.</para>
         </note>
       </section>
     </section>
@@ -1101,43 +1106,47 @@
 
       <itemizedlist>
         <listitem>
-          <para>SAVE Buttons</para>
+          <para><guibutton>SAVE</guibutton> buttons</para>
         </listitem>
 
         <listitem>
-          <para>POST Buttons</para>
+          <para><guibutton>POST</guibutton> buttons</para>
         </listitem>
 
         <listitem>
-          <para>CLOSE Buttons</para>
+          <para><guibutton>CLOSE</guibutton> buttons</para>
         </listitem>
 
         <listitem>
-          <para>CANCEL Buttons</para>
+          <para><guibutton>CANCEL</guibutton> buttons</para>
         </listitem>
 
         <listitem>
-          <para>PRINT Buttons</para>
+          <para><guibutton>PRINT</guibutton> buttons</para>
         </listitem>
 
         <listitem>
-          <para>QUERY Buttons</para>
+          <para><guibutton>QUERY</guibutton> buttons</para>
         </listitem>
 
         <listitem>
-          <para>Next Tab (e.g., Function + Up Arrow)</para>
+          <para>Next tab (e.g., Function + <guibutton>Up
+          arrow</guibutton>)</para>
         </listitem>
 
         <listitem>
-          <para>Previous Tab (e.g., Function + Down Arrow)</para>
+          <para>Previous tab (e.g., Function + <guibutton>Down
+          arrow</guibutton>)</para>
         </listitem>
 
         <listitem>
-          <para>Menu (e.g., CTRL + M)</para>
+          <para>Menu (e.g., <guibutton>CTRL</guibutton> +
+          <guibutton>M</guibutton>)</para>
         </listitem>
 
         <listitem>
-          <para>Double Click (e.g., Highlight + ENTER)</para>
+          <para>Double click (e.g., Highlight +
+          <guibutton>ENTER</guibutton>)</para>
         </listitem>
       </itemizedlist>
 
@@ -1148,7 +1157,7 @@
 
       <para>Other keyboard shortcuts are available at several points
       throughout the application. In fields where you see the magnifying glass
-      (e.g., Contact lookup), you can click on the magnifying glass to see the
+      (e.g., contact lookup), you can click on the magnifying glass to see the
       full menu of shortcuts available for that field.</para>
 
       <para><screenshot>
@@ -1167,7 +1176,7 @@
       List</guilabel> option enables you go straight to the master list for
       the given context, where you can add new terms or edit existing ones on
       the fly. The following screenshot shows an instance where this feature
-      appears on the Quantity on Hand report:</para>
+      appears on the quantity on hand (QOH) report:</para>
 
       <para><screenshot>
           <mediaobject>
@@ -1181,8 +1190,8 @@
 
       <para>In this case, if we select the <guilabel>Edit List</guilabel>
       option we will be brought to the Class Codes master list. Now we can add
-      or edit Class Codes, before returning to the report where the Class
-      Codes are used.</para>
+      or edit class codes, before returning to the report where the class
+      codes are used.</para>
 
       <section id="Section456225">
         <title><indexterm significance="normal">
@@ -1193,23 +1202,25 @@
             <secondary>TAB key</secondary>
           </indexterm>TAB Key</title>
 
-        <para>The TAB key on your keyboard may be used to move the cursor from
-        one field to the next within any given data-entry screen. Simply place
-        the cursor in the first field you want to enter data into—and when
-        you're done entering data, hit the TAB key to move the cursor to the
-        next field.</para>
+        <para>The <guibutton>TAB</guibutton> key on your keyboard may be used
+        to move the cursor from one field to the next within any given
+        data-entry screen. Simply place the cursor in the first field you want
+        to enter data into—and when you're done entering data, hit the
+        <guibutton>TAB</guibutton> key to move the cursor to the next
+        field.</para>
 
-        <para>Also use the TAB key as a shortcut for converting date field
-        entries to the proper format for your system. For example, in a
-        <guilabel>Start Date</guilabel> field you might enter the numbers
-        "022503". Then, with the cursor still blinking in the field, hit the
-        TAB key. The date will be converted to "02/25/03"—or whatever the
-        proper date format is for your system. For more information on
-        keyboard shortcuts related to dates, see the <xref
-        linkend="Section474757"/>.</para>
+        <para>Also use the <guibutton>TAB</guibutton> key as a shortcut for
+        converting date field entries to the proper format for your system.
+        For example, in a <guilabel>Start Date</guilabel> field you might
+        enter the numbers "022503". Then, with the cursor still blinking in
+        the field, hit the <guibutton>TAB</guibutton> key. The date will be
+        converted to "02/25/03"—or whatever the proper date format is for your
+        system. For more information on keyboard shortcuts related to dates,
+        see the <xref linkend="Section474757"/>.</para>
 
         <note>
-          <para>Date formats are controlled by Locale settings.</para>
+          <para>Date formats are controlled by
+          <guimenuitem>Locale</guimenuitem> settings.</para>
         </note>
       </section>
 
@@ -1223,12 +1234,12 @@
           </indexterm>CTRL Key</title>
 
         <para>The majority of on-screen shortcuts begin with the
-        <guibutton>CTRL</guibutton> key, in combination with either the "L",
-        "A", or <guibutton>SHIFT</guibutton> keys. For
-        <guibutton>CRTL</guibutton> shortcuts to work, you must place your
-        cursor in the field you want to use. The following screenshots
-        illustrate the most common <guibutton>CTRL</guibutton>
-        operations:</para>
+        <guibutton>CTRL</guibutton> key, in combination with either the
+        "<guibutton>L</guibutton>", "<guibutton>A</guibutton>", or
+        <guibutton>SHIFT</guibutton> keys. For <guibutton>CRTL</guibutton>
+        shortcuts to work, you must place your cursor in the field you want to
+        use. The following screenshots illustrate the most common
+        <guibutton>CTRL</guibutton> operations:</para>
 
         <tip>
           <para>Macintosh users should substitute the
@@ -1248,12 +1259,14 @@
 
         <variablelist>
           <varlistentry>
-            <term>List (CTRL + SHIFT +L)</term>
+            <term>List (<guibutton>CTRL</guibutton> +
+            <guibutton>SHIFT</guibutton> +<guibutton>L</guibutton>)</term>
 
             <listitem>
               <para>Brings up a master list of documents or items. This is the
               same kind of list you would see if you clicked your mouse on a
-              browse button located next to the field.</para>
+              <guibutton>BROWSE</guibutton> button located next to the
+              field.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1270,7 +1283,9 @@
 
         <variablelist>
           <varlistentry>
-            <term>Search (CTRL + SHIFT + SPACE)</term>
+            <term>Search (<guibutton>CTRL</guibutton> +
+            <guibutton>SHIFT</guibutton> +
+            <guibutton>SPACE</guibutton>)</term>
 
             <listitem>
               <para>Brings up a searchable list. Depending on the context,
@@ -1297,7 +1312,8 @@
                 <primary>item aliases</primary>
 
                 <secondary>keyboard shortcut for</secondary>
-              </indexterm>Aliases (CTRL + SHIFT + A)</term>
+              </indexterm>Aliases (<guibutton>CTRL</guibutton> +
+            <guibutton>SHIFT</guibutton> + <guibutton>A</guibutton>)</term>
 
             <listitem>
               <para>Brings up a list of item aliases. Item aliases are used to
@@ -1321,11 +1337,12 @@
         <para>You will notice throughout the application that several
         characters—or individual letters within words—are underlined. In the
         sample Bill of Materials screen, for example, the
-        <guibutton>SAVE</guibutton> button has the first letter, "S",
-        underlined. The first letter, "C", in the
-        <guibutton>CANCEL</guibutton> button is also underlined. Alternately,
-        notice that the <guibutton>MOVE DOWN</guibutton> button has the "W"
-        underlined. The list could go on.</para>
+        <guibutton>SAVE</guibutton> button has the first letter,
+        "<guibutton>S</guibutton>", underlined. The first letter,
+        "<guibutton>C</guibutton>", in the <guibutton>CANCEL</guibutton>
+        button is also underlined. Alternately, notice that the
+        <guibutton>MOVE DOWN</guibutton> button has the
+        "<guibutton>W</guibutton>" underlined. The list could go on.</para>
 
         <para>If you depress the <guibutton>ALT</guibutton> key on your
         keyboard in combination with any of these underlined letters, the
@@ -1333,7 +1350,7 @@
         or field. For example, the following combination of keys will activate
         the <guibutton>PRINT</guibutton> button: <guibutton>ALT +
         P</guibutton>. The following keyboard shortcut will cancel or close a
-        screen: <guibutton>ALT + C</guibutton>. Or, move a component Item down
+        screen: <guibutton>ALT + C</guibutton>. Or, move a component item down
         a notch in a Bill of Materials display with the following shortcut:
         <guibutton>ALT + W</guibutton>.</para>
       </section>
@@ -1389,9 +1406,9 @@
 
           <para>M or MM / D or DD / YY or YYYY</para>
 
-          <para>While date input formats may vary, the "output" format (i.e.,
-          how dates display on screen) is defined by your Locale
-          settings.</para>
+          <para>While date input formats may vary, the output format (i.e.,
+          how dates display on screen) is defined by your
+          <guimenuitem>Locale</guimenuitem> settings.</para>
         </note>
 
         <table>
@@ -1471,7 +1488,7 @@
 
         <tip>
           <para>Some date fields support time-periods represented by
-          words—such as "Earliest" and "Latest". Keep in mind that these words
+          words—such as "Earliest" and "Latest." Keep in mind that these words
           are case-sensitive. They will not work unless the first letter of
           the word is capitalized.</para>
         </tip>
@@ -1483,8 +1500,8 @@
         <para>In addition to the keyboard shortcuts for dates, you also have
         the option of selecting the calendar button located to the far right
         of every date field in the application. The calendar buttons are shown
-        in the following screen shot next to the Start Date and End Date
-        fields:</para>
+        in the following screen shot next to the <guilabel>Start
+        Date</guilabel> and <guilabel>End Date</guilabel> fields:</para>
 
         <para><mediaobject>
             <imageobject>
@@ -1528,7 +1545,8 @@
         <note>
           <para>You can control the display of toolbar buttons on your
           desktop. Turn them on or off on a module-by-module basis, using the
-          settings available in the User Preferences section of the System
+          settings available in the <guimenuitem>User
+          Preferences</guimenuitem> section of the <guimenu>System</guimenu>
           module. In addition, you may drag-and-drop toolbar buttons, allowing
           them to float or attach to alternate locations on the application
           desktop.</para>
@@ -2160,10 +2178,10 @@
           <primary>mouse options</primary>
         </indexterm>Right-Click Options</title>
 
-      <para>Going back to our Bill of Materials example, let's look at another
-      fundamental feature involving the right-click button on your computer
-      mouse. For a complete list of all the right-click menu options used in
-      xTuple ERP, please see <xref linkend="appendixa"/>.</para>
+      <para>Going back to our bill of materials (BOM) example, let's look at
+      another fundamental feature involving the right-click button on your
+      computer mouse. For a complete list of all the right-click menu options
+      used in xTuple ERP, please see <xref linkend="appendixa"/>.</para>
 
       <note>
         <para>For Macintosh users who don't have a dual-button mouse, use the
@@ -2171,12 +2189,12 @@
         record to reveal the right-click options.</para>
       </note>
 
-      <para>xTuple ERP is full of displays similar to our sample bill of
-      materials example. Report screens feature parameter settings at the top
-      of the screen—and a main display area located toward the bottom of the
-      screen. Whenever you encounter a display like this, you can right-click
-      on a line in the display to reveal a host of additional options, as
-      shown in the following screen:</para>
+      <para>xTuple ERP is full of displays similar to our sample BOM example.
+      Report screens feature parameter settings at the top of the screen—and a
+      main display area located toward the bottom of the screen. Whenever you
+      encounter a display like this, you can right-click on a line in the
+      display to reveal a host of additional options, as shown in the
+      following screen:</para>
 
       <para><screenshot>
           <mediaobject>
@@ -2188,7 +2206,7 @@
           </mediaobject>
         </screenshot></para>
 
-      <para>As you can see, right-clicking on a component Item in the Bill of
+      <para>As you can see, right-clicking on a component item in the Bill of
       Materials screen gives you access to the following options:</para>
 
       <variablelist>
@@ -2196,7 +2214,7 @@
           <term>View</term>
 
           <listitem>
-            <para>Gives you a read-only view of the Item.</para>
+            <para>Gives you a read-only view of the item.</para>
           </listitem>
         </varlistentry>
 
@@ -2204,7 +2222,7 @@
           <term>Edit</term>
 
           <listitem>
-            <para>Enables you to edit the Item.</para>
+            <para>Enables you to edit the item.</para>
           </listitem>
         </varlistentry>
 
@@ -2212,7 +2230,7 @@
           <term>Delete</term>
 
           <listitem>
-            <para>Deletes the Item.</para>
+            <para>Deletes the item.</para>
           </listitem>
         </varlistentry>
 
@@ -2220,7 +2238,7 @@
           <term>Replace</term>
 
           <listitem>
-            <para>Replaces one Item with another Item.</para>
+            <para>Replaces one item with another item.</para>
           </listitem>
         </varlistentry>
 
@@ -2228,7 +2246,7 @@
           <term>Move Up</term>
 
           <listitem>
-            <para>Moves the Item up the Bill of Materials sequence.</para>
+            <para>Moves the item up the BOMs sequence.</para>
           </listitem>
         </varlistentry>
 
@@ -2236,7 +2254,7 @@
           <term>Move Down</term>
 
           <listitem>
-            <para>Moves the Item down the Bill of Materials sequence.</para>
+            <para>Moves the item down the BOMs sequence.</para>
 
             <note>
               <para>For the copy to clipboard options to work, your user
@@ -2259,8 +2277,9 @@
 
                 <listitem>
                   <para>Copies the header and all visible columns and rows to
-                  the clipboard in plain-text, TAB-separated format with a
-                  carriage return after each row. Requires plain text user
+                  the clipboard in plain-text,
+                  <guibutton>TAB</guibutton>-separated format with a carriage
+                  return after each row. Requires plain text user
                   preference.</para>
                 </listitem>
               </varlistentry>
@@ -2270,7 +2289,8 @@
 
                 <listitem>
                   <para>Copies all visible columns in the selected rows to the
-                  clipboard in plain-text, TAB-separated format without the
+                  clipboard in plain-text,
+                  <guibutton>TAB</guibutton>-separated format without the
                   header information. Requires plain text user
                   preference.</para>
                 </listitem>
@@ -2281,8 +2301,9 @@
 
                 <listitem>
                   <para>Copies all visible information in the selected cell to
-                  the clipboard in plain-text, TAB-separated format without
-                  the header information. Requires plain text user
+                  the clipboard in plain-text,
+                  <guibutton>TAB</guibutton>-separated format without the
+                  header information. Requires plain text user
                   preference.</para>
                 </listitem>
               </varlistentry>
@@ -2292,8 +2313,9 @@
 
                 <listitem>
                   <para>Copies all visible information in the selected column
-                  to the clipboard in plain-text, TAB-separated format without
-                  the header information. Requires plain text user
+                  to the clipboard in plain-text,
+                  <guibutton>TAB</guibutton>-separated format without the
+                  header information. Requires plain text user
                   preference.</para>
                 </listitem>
               </varlistentry>
@@ -2306,7 +2328,7 @@
 
           <listitem>
             <para>Export the data displayed on the screen into your choice of
-            plain-text, CSV, ODF (e.g., Open Office), or HTML file formats.
+            plain-text, CSV, ODF (e.g., open office), or HTML file formats.
             The plain text and CSV files may subsequently be opened in a
             spreadsheet or other text-editing tool.</para>
           </listitem>
@@ -2314,11 +2336,11 @@
       </variablelist>
 
       <para>Right-click options will vary from screen to screen—and from
-      edition to edition. In our sample Bill of Materials example, the
-      right-click options basically mirror the functionality of buttons
-      already available within the screen. This will not always be the case,
-      though. Often, the right-click feature reveals important and useful
-      functionality not to be found on the main display screen.</para>
+      edition to edition. In our sample BOM example, the right-click options
+      basically mirror the functionality of buttons already available within
+      the screen. This will not always be the case, though. Often, the
+      right-click feature reveals important and useful functionality not to be
+      found on the main display screen.</para>
     </section>
 
     <section id="Section486620">
@@ -2432,11 +2454,11 @@
 
       <para>The system gives you the ability to specify a default screen size
       and position on a screen-by-screen basis. This feature applies to all
-      Window screens, but not to Dialog screens. A Dialog screen is a screen
+      window screens, but not to dialog screens. A dialog screen is a screen
       which holds the focus when it is open and prevents you from working on
       other screens at the same time. The controls for the screen position and
-      size memory are located under the Windows menu, as shown in the
-      following screen:</para>
+      size memory are located under the <guimenu>Windows</guimenu> menu, as
+      shown in the following screen:</para>
 
       <para><screenshot>
           <mediaobject>
@@ -2450,12 +2472,13 @@
 
       <note>
         <para>Unless you specify otherwise, the system will always remember
-        the size of all Window screens—and also the position where the screen
+        the size of all window screens—and also the position where the screen
         was located—when you last used it.</para>
       </note>
 
-      <para>When opening the Windows menu to set your screen position or size,
-      you are presented with the following options:</para>
+      <para>When opening the <guimenu>Windows</guimenu> menu to set your
+      screen position or size, you are presented with the following
+      options:</para>
 
       <variablelist>
         <varlistentry>
@@ -2520,9 +2543,9 @@
       the screen is next used.</para>
 
       <tip>
-        <para>The Check Box memory feature can be de-activated by de-selecting
+        <para>The check box memory feature can be de-activated by de-selecting
         the <guilabel>Remember Check Box Settings</guilabel> option on the
-        user Preferences screen. Turning this setting off will hide the shaded
+        User Preferences screen. Turning this setting off will hide the shaded
         bullet symbols from view.</para>
       </tip>
     </section>
@@ -2565,8 +2588,8 @@
             <para>Inserts a highlighted list item into a requesting field. The
             use of the <guibutton>SELECT</guibutton> button is illustrated in
             the example. In this bill of materials example, you would
-            highlight an Item in the searchable master list of Items and then
-            hit <guibutton>SELECT</guibutton>. The Item would then be
+            highlight an item in the searchable master list of items and then
+            hit <guibutton>SELECT</guibutton>. The item would then be
             automatically entered into the <guilabel>Item Number</guilabel>
             field on the Bill of Materials screen. You may bypass the
             <guibutton>SELECT</guibutton> button by double-clicking on a
@@ -2596,7 +2619,7 @@
 
           <listitem>
             <para>Saves any information you have entered and stores it in the
-            xTuple Database.</para>
+            xTuple database.</para>
           </listitem>
         </varlistentry>
 
@@ -2645,7 +2668,7 @@
             When scheduling reports you have the option of sending them
             directly to a printer or emailing them. If you choose to print,
             the default printer on the computer running the xTuple Connect
-            Batch Manager is used. If you choose to send the report by email,
+            batch manager is used. If you choose to send the report by email,
             you will have to supply an email address and message text.</para>
           </listitem>
         </varlistentry>
@@ -2669,10 +2692,10 @@
       Internet.</para>
 
       <para>The spell checking feature has been designed to operate with a
-      user's Locale settings—which means that if you are using a Locale other
-      than English (and you have the correct Hunspell dictionary files
-      installed) the spell checker should work in your specified
-      language.</para>
+      user's <guilabel>Locale</guilabel> settings—which means that if you are
+      using a locale other than English (and you have the correct Hunspell
+      dictionary files installed) the spell checker should work in your
+      specified language.</para>
     </section>
   </section>
 </preface>
