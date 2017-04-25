@@ -47,24 +47,24 @@
     listed below:</para>
     <orderedlist continuation="restarts" inheritnum="ignore">
       <listitem>
-        <para>Open ("O"): This is the initial state a work order receives when
+        <para>Open (O): This is the initial state a work order receives when
         it is first created.</para>
       </listitem>
       <listitem>
-        <para>Exploded ("E"): A work order is considered exploded once it has
+        <para>Exploded (E): A work order is considered exploded once it has
         been opened and its accompanying work order material requirement and
         work order operations have also been created.</para>
       </listitem>
       <listitem>
-        <para>Released ("R"): This state describes a work order that has been
+        <para>Released (R): This state describes a work order that has been
         released to the shop floor.</para>
       </listitem>
       <listitem>
-        <para>In-process ("I"): This is the state a work order reaches when
-        work order material requirements have been issued to it.</para>
+        <para>In-process (I): This is the state a work order reaches when work
+        order material requirements have been issued to it.</para>
       </listitem>
       <listitem>
-        <para>Closed ("C"): The final state of a work order occurs when it is
+        <para>Closed (C): The final state of a work order occurs when it is
         closed.</para>
       </listitem>
     </orderedlist>
@@ -110,11 +110,11 @@
   </section>
   <section id="Section519172" role="manufacturing">
     <title>Operations</title>
-    <para>Work Order Operations can be created and managed in the Operations
-    section of the menu.</para>
+    <para>Work order operations can be created and managed in this
+    section.</para>
     <note>
-      <para>If your system is set to automatically explode Work Orders at
-      creation, Work Order Operations will also be created automatically at
+      <para>If your system is set to automatically explode work orders at
+      creation, work order operations will also be created automatically at
       explosion.</para>
     </note>
     <xi:include href="guiclient/woOperation.xml" xpointer="element(/1)"
@@ -125,10 +125,11 @@
   </section>
   <section>
     <title>Transactions</title>
-    <para>Work Order Transactions section.</para>
+    <para>Work order transactions can be created and managed in this
+    section.</para>
     <section>
       <title>Issue Material</title>
-      <para>Issue Material transactions section.</para>
+      <para>Issuing material transactions is managed in this section.</para>
       <xi:include href="guiclient/issueWoMaterialBatch.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -138,7 +139,7 @@
     </section>
     <section>
       <title>Return Material</title>
-      <para>Return Material transaction section.</para>
+      <para>Return material transactions is managed in this section.</para>
       <xi:include href="guiclient/returnWoMaterialBatch.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />

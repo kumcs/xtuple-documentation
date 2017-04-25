@@ -8,20 +8,21 @@
       <secondary>from work order materials</secondary>
     </indexterm>Scrap Work Order Material</title>
   <para>To scrap work order materials which have been specifically issued to a
-  work order using a material issue transaction, select the <guimenuitem>Scrap Work Order
-  Material from Work Order</guimenuitem> option. The following screen will appear:</para>
+  work order using a material issue transaction, select the
+  <guimenuitem>Manufacture &gt; Transactions &gt; Scrap</guimenuitem> option.
+  The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/scrapWoMaterialFromWIP.png" />
         </imageobject>
-        <caption>Scrap Work Order Material from Work Order</caption>
+        <caption>Scrap Work Order Material</caption>
       </mediaobject>
     </screenshot></para>
   <tip>
     <para>You may only scrap work order materials which have been specifically
     issued to a work order. In other words, material requirements having the
-    Push issue method may be scrapped.</para>
+    push issue method may be scrapped.</para>
   </tip>
   <para>When scrapping work order materials from a work order, you are
   presented with the following options:</para>
@@ -57,7 +58,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -134,7 +135,7 @@
           <varlistentry>
             <term>UOM</term>
             <listitem>
-              <para>Inventory unit of measure.</para>
+              <para>Inventory UOM.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -155,7 +156,7 @@
             <term>Scrap %</term>
             <listitem>
               <para>Displays the component scrap percentage specified on the
-              item's bill of materials.</para>
+              item's bill of materials (BOMs).</para>
             </listitem>
           </varlistentry>
           <varlistentry>

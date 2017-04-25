@@ -11,12 +11,12 @@
       <secondary>issuing individually</secondary>
     </indexterm>Issue W/O Material Item</title>
   <para>To issue work order material items individually, select the
-  <guimenuitem>Issue W/O Material Item</guimenuitem> option. The following
-  screen will appear:</para>
+  <guimenuitem>Manufacture &gt; Transactions &gt; Issue Material &gt;
+  Item...</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/issueWoMaterialItem.png"/>
+          <imagedata fileref="images/issueWoMaterialItem.png" />
         </imageobject>
         <caption>Issue Work Order Material Item</caption>
       </mediaobject>
@@ -25,7 +25,7 @@
     <para>Unless your system is configured to allow material issues to
     exploded work orders, you may only issue materials to released or
     in-process work orders. For more information about issuing to exploded
-    work orders, please see <xref linkend="AllowIssue"/>.</para>
+    work orders, please see <xref linkend="AllowIssue" />.</para>
   </note>
   <para>When issuing work order material items individually, you are presented
   with the following options:</para>
@@ -61,7 +61,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -74,35 +74,35 @@
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected work order is an Assembly or
-        Disassembly work order.</para>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Comp. Item Number</term>
       <listitem>
         <para>Select one of the specified item's component items whose issue
-        method is Push or Mixed.</para>
+        method is push or mixed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
   <note>
     <para>If the <guilabel>Comp. Item Number</guilabel> list contains no
     component items, this means that the issue method for all the component
-    items is Pull. Only items with the issue method of Push or Mixed will
+    items is pull. Only items with the issue method of push or mixed will
     appear in the menu.</para>
   </note>
   <variablelist>
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Issue unit of measure.</para>
+        <para>Issue UOM.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Scrap %</term>
       <listitem>
-        <para>Displayed value represents the allotted Scrap percentage for the
+        <para>Displayed value represents the allotted scrap percentage for the
         component item when manufacturing the parent item.</para>
       </listitem>
     </varlistentry>
@@ -136,14 +136,14 @@
     <varlistentry>
       <term>Qty. to Issue</term>
       <listitem>
-        <para>to Issue: Enter the quantity of the component item you want to
-        issue to the work order.</para>
+        <para>Enter the quantity of the component item you want to issue to
+        the work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Issue unit of measure.</para>
+        <para>Issue UOM.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -155,7 +155,7 @@
     <varlistentry>
       <term>Available QOH After</term>
       <listitem>
-        <para>Displays available QOH after the issue</para>
+        <para>Displays available QOH after the issue.</para>
       </listitem>
     </varlistentry>
   </variablelist>

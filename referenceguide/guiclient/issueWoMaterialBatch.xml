@@ -14,12 +14,13 @@
       <secondary>issuing in batch mode</secondary>
     </indexterm>Issue W/O Material Batch</title>
   <para>To issue work order material requirement items simultaneously in a
-  batch, select the <guimenuitem>Issue W/O Material Batch</guimenuitem>
-  option. The following screen will appear:</para>
+  batch, select the <guimenuitem>Manufacture &gt; Transactions &gt; Issue
+  Material &gt; Batch...</guimenuitem> option. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/issueWoMaterialBatch.png"/>
+          <imagedata fileref="images/issueWoMaterialBatch.png" />
         </imageobject>
         <caption>Issue Work Order Material Batch</caption>
       </mediaobject>
@@ -28,7 +29,7 @@
     <para>Unless your system is configured to allow material issues to
     exploded work orders, you may only issue materials to released or
     in-process work orders. For more information about issuing to exploded
-    work orders, please see <xref linkend="AllowIssue"/>.</para>
+    work orders, please see <xref linkend="AllowIssue" />.</para>
   </note>
   <para>When issuing work order material requirement items in a batch, you are
   presented with the following options:</para>
@@ -77,8 +78,8 @@
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected work order is an Assembly or
-        Disassembly work order.</para>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -93,11 +94,11 @@
       <term>W/O Material Requirements</term>
       <listitem>
         <para>Display lists work order material requirements. The display is
-        color-coded for ease of use. If an item's issue method is Pull, then
+        color-coded for ease of use. If an item's issue method is pull, then
         that item—and the entire row it sits on—will appear in blue type. The
         blue type indicates that the batch issue utility will not affect these
         items. By definition, pulled items are backflushed, not issued.
-        However, if an item's issue method is Push, then that item—and the row
+        However, if an item's issue method is push, then that item—and the row
         it sits on—will appear in black type. Rows with black type are
         affected by the batch issue utility. One other color may also appear.
         If the quantity required by the work order exceeds the quantity on
