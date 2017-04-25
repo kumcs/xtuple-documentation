@@ -4,13 +4,13 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="woOperation">
   <title>Create Work Order Operation</title>
-  <para>To create a work order operation, select the <guimenuitem>Create Work
-  Order Operation</guimenuitem> option. The following screen will
+  <para>To create a work order operation, select the <guimenuitem>Manufacture
+  &gt; Operations &gt; New</guimenuitem> option. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation.png"/>
+          <imagedata fileref="images/woOperation.png" />
         </imageobject>
         <caption>Create New Work Order Operation</caption>
       </mediaobject>
@@ -42,7 +42,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -55,8 +55,8 @@
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected work order is an Assembly or
-        Disassembly work order.</para>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -75,14 +75,14 @@
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>You will notice that two separate description fields are
+        <para>You will notice that two separate desciption fields are
         available here. This makes it possible to isolate different categories
         of information onto separate lines. For example, the first line might
         contain an item name, while the second line contains packaging
         information. Having these two types of information one above the other
         can serve as a kind of useful shorthand when viewing data in certain
-        windows. However, these two lines will be concatenated (i.e., "joined
-        together") when they are printed or presented in an on-line display
+        windows. However, these two lines will be concatenated (i.e., joined
+        together) when they are printed or presented in an on-line display
         format.</para>
       </listitem>
     </varlistentry>
@@ -114,10 +114,10 @@
           <secondary>execution days in</secondary>
         </indexterm>Execution Day</term>
       <listitem>
-        <para>Select a number using the arrows, or manually enter a
-        value up to a maximum of 99. (Default is "1".) Value entered defines
-        when the specified operation is to begin. For example, if the default
-        value "1" is entered, the operation will begin on the first day of the
+        <para>Select a number using the arrows or manually enter a value up to
+        a maximum of 99. (Default is "1".) Value entered defines when the
+        specified operation is to begin. For example, if the default value "1"
+        is entered, the operation will begin on the first day of the
         manufacturing process. If "2" is entered, the operation will begin on
         the second day.</para>
       </listitem>
@@ -131,10 +131,10 @@
     <varlistentry>
       <term>Throughput</term>
       <listitem>
-        <para>Indicates the number of units, in the given item's Inventory
+        <para>Indicates the number of units, in the given item's inventory
         UOM, that can be produced in a minute—and also the number of minutes
         that are required to produce 1 unit, expressed in the given item's
-        Inventory UOM.</para>
+        inventory UOM.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -146,8 +146,8 @@
           <secondary>setup time for operations</secondary>
         </indexterm>Total Setup Time</term>
       <listitem>
-        <para>Amount entered represents the time required to set up the Work
-        Center for the operation, measured in minutes.</para>
+        <para>Amount entered represents the time required to set up the work
+        center for the operation, measured in minutes.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -185,16 +185,16 @@
           <secondary>in operations</secondary>
         </indexterm>Production UOM</term>
       <listitem>
-        <para>Select a unit of measure—or enter a free-form UOM. Specify a UOM
-        to be used optionally when work order operations are posted for the
-        specified operation. Operations may be posted using either the
-        Inventory or production UOM. In addition, different operations in a
-        single routing may use different production UOMs. For example, if you
-        are producing soup, you might mix the soup in one operation using UOM
-        = BATCH. But when canning the soup, the canning operation might use
-        UOM = CAN. If you post operations using the production UOM, the
-        inventory/production UOM ratio normalizes the posting so that the
-        inventory impact is recorded using the Inventory UOM.</para>
+        <para>Select a UOM—or enter a free-form UOM. Specify a UOM to be used
+        optionally when work order operations are posted for the specified
+        operation. Operations may be posted using either the inventory or
+        production UOM. In addition, different operations in a single routing
+        may use different production UOMs. For example, if you are producing
+        soup, you might mix the soup in one operation using UOM = BATCH. But
+        when canning the soup, the canning operation might use UOM = CAN. If
+        you post operations using the production UOM, the inventory/production
+        UOM ratio normalizes the posting so that the inventory impact is
+        recorded using the inventory UOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -208,7 +208,7 @@
       <listitem>
         <para>When work order operations are posted using the production UOM,
         the inventory/production UOM ratio normalizes the posting so that the
-        Inventory impact is recorded in the Inventory UOM.</para>
+        inventory impact is recorded in the inventory UOM.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -264,7 +264,7 @@
         <para>Select if you want finished goods to be received into inventory
         when this operation is posted. Only one work order operation may have
         this flag set. If this option is selected, the general ledger will
-        show the finished goods being received into Inventory when the
+        show the finished goods being received into inventory when the
         operation is posted.</para>
       </listitem>
     </varlistentry>
@@ -278,8 +278,8 @@
         posted.</para>
         <note>
           <para>The <guilabel>Auto. Issue</guilabel> setting applies only to
-          component items whose issue method is either Pull or Mixed.
-          Component items using the Push issue method must be issued to work
+          component items whose issue method is either pull or mixed.
+          Component items using the push issue method must be issued to work
           orders using a specific material issue transaction.</para>
         </note>
       </listitem>
@@ -291,7 +291,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation_instructionsTab.png"/>
+          <imagedata fileref="images/woOperation_instructionsTab.png" />
         </imageobject>
         <caption>Work Order Operation</caption>
       </mediaobject>
@@ -321,7 +321,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation_materialsTab.png"/>
+          <imagedata fileref="images/woOperation_materialsTab.png" />
         </imageobject>
         <caption>Materials for Work Order Operation</caption>
       </mediaobject>
