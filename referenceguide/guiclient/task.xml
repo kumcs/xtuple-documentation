@@ -5,48 +5,63 @@
 <section id="task">
   <title><indexterm significance="normal">
       <primary>tasks</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Create New Task</title>
-  <para>To create a new task, select the <guibutton>NEW</guibutton> button. The following screen will
-  appear:</para>
+
+  <para>To create a new task, select the <guibutton>NEW</guibutton> button.
+  The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/task.png" />
+          <imagedata fileref="images/task.png"/>
         </imageobject>
+
         <caption>Create New Task</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new task, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Number</term>
+
       <listitem>
         <para>Enter a code to identify the task.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Specify one of the following statuses to characterize the
         task:</para>
+
         <variablelist>
           <varlistentry>
             <term>Concept</term>
+
             <listitem>
               <para>Use this status to indicate the task has not yet
               begun.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>In-Process</term>
+
             <listitem>
               <para>Use this status to indicate the task is in-process.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Complete</term>
+
             <listitem>
               <para>Use this status to indicate the task is complete.</para>
             </listitem>
@@ -54,90 +69,119 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a brief name to identify the task.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Enter a description to identify the task.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Owner</term>
+
       <listitem>
         <para>Select task owner.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Assigned to</term>
+
       <listitem>
         <para>Select who the task was assigned to.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due</term>
+
       <listitem>
         <para>Date task is due.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Assigned</term>
+
       <listitem>
         <para>Date task was assigned.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Started</term>
+
       <listitem>
         <para>Date task actually started.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Completed</term>
+
       <listitem>
         <para>Date task was actually completed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view a time and expenses summary of the project, select the
-  <guimenuitem>Summary</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Summary</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/task_planTab.png" />
+          <imagedata fileref="images/task_planTab.png"/>
         </imageobject>
+
         <caption>Task Planning</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When viewing the time and expenses summary for a project, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Hours</term>
+
       <listitem>
         <para>Specify the number of hours associated with the task using the
         following fields:</para>
+
         <variablelist>
           <varlistentry>
             <term>Budgeted</term>
+
             <listitem>
               <para>Enter the number of hours budgeted for the task. This
               information may be saved and updated later.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Actual</term>
+
             <listitem>
               <para>Enter the actual number of hours consumed performing the
               task. This information may be saved and updated later.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Balance</term>
+
             <listitem>
               <para>Displays the difference between the budgeted and actual
               hours.</para>
@@ -146,67 +190,86 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Expenses</term>
+
       <listitem>
         <para>Specify the expenses associated with the task using the
         following fields:</para>
+
         <variablelist>
           <varlistentry>
             <term>Budgeted</term>
+
             <listitem>
               <para>Enter the total expenses budgeted for the task. This
               information may be saved and updated later.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Actual</term>
+
             <listitem>
-              <para>Enter the actual Expenses incurred while performing the
+              <para>Enter the actual expenses incurred while performing the
               task. This information may be saved and updated later.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Balance</term>
+
             <listitem>
               <para>Displays the difference between the budgeted and actual
-              Expenses.</para>
+              expenses.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para role="xtte">With the Time and Expense package installed, you can
+
+  <para role="xtte">With the time and expense package installed, you can
   specify customer and billing rate information by individual tasks. To
   specify the customer and billing rate information by task, select the
-  <guimenuitem>Billing</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Billing</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot role="xtte">
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/task_billing.png" />
+        <imagedata fileref="images/task_billing.png"/>
       </imageobject>
+
       <caption>Task Billing</caption>
     </mediaobject>
   </screenshot>
+
   <para role="xtte">When specifying customer and billing rate information by
   task, you are presented with the following options:</para>
+
   <para role="xtte"><variablelist>
       <varlistentry>
         <term>Customer</term>
+
         <listitem>
           <para>Enter the customer you want to associate with the task.</para>
         </listitem>
       </varlistentry>
+
       <varlistentry>
         <term>Use specified billing rate</term>
+
         <listitem>
           <para>Select if you want to specify a customer billing rate for the
-          task. If not selected, the rate may be entered manually on Time
-          Sheets.</para>
+          task. If not selected, the rate may be entered manually on time
+          sheets.</para>
+
           <variablelist>
             <varlistentry>
               <term>Rate</term>
+
               <listitem>
                 <para>Specify the customer billing rate for the task.</para>
               </listitem>
@@ -215,47 +278,67 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
-  <para>To add an alarm related to a task, select the <guimenuitem>Alarms</guimenuitem> tab. The
-  following screen will appear:</para>
+
+  <para>To add an alarm related to a task, select the
+  <guimenuitem>Alarms</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/task_alarmTab.png" />
+        <imagedata fileref="images/task_alarmTab.png"/>
       </imageobject>
+
       <caption>Create New Alarm</caption>
     </mediaobject>
   </screenshot>
+
   <xi:include href="../widgets/alarmMaint.xml" xpointer="alarmMaint"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add comments to a task, select the <guimenuitem>Comments</guimenuitem> tab. The following
-  screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To add comments to a task, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/task_commentsTab.png" />
+      <imagedata fileref="images/task_commentsTab.png"/>
     </imageobject>
+
     <caption>Alarm Comments</caption>
   </mediaobject>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add characteristics to a task, select the <guimenuitem>Characteristics</guimenuitem> tab.
-  The following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To add characteristics to a task, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/task_characteristicsTab.png" />
+      <imagedata fileref="images/task_characteristicsTab.png"/>
     </imageobject>
+
     <caption>Task Characteristics</caption>
   </mediaobject>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add documents to a task, select the <guimenuitem>Documents</guimenuitem> tab. The following
-  screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To add documents to a task, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/task_DocumentsTab.png" />
+      <imagedata fileref="images/task_DocumentsTab.png"/>
     </imageobject>
+
     <caption>Task Documents</caption>
   </mediaobject>
+
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

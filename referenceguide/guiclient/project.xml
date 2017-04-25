@@ -5,68 +5,87 @@
 <section id="project">
   <title><indexterm significance="normal">
       <primary>projects</primary>
+
       <secondary>creating new</secondary>
     </indexterm>New Project</title>
+
   <para>Projects can be created manually or automatically, depending on your
   needs. To have projects created automatically whenever a new sales order or
   quote is entered, choose the appropriate setting in your system-level
   configuration. Otherwise, projects will be created manually. Once created,
   projects can be linked to sales orders, work orders, and purchase
   orders.</para>
-  <para>To create a new project, select the <guimenuitem>New Project</guimenuitem> option. The
-  following screen will appear:</para>
+
+  <para>To create a new project, select the <guimenuitem>New
+  Project</guimenuitem> option. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/project.png" />
+          <imagedata fileref="images/project.png"/>
         </imageobject>
+
         <caption>Create New Project</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new project, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Number</term>
+
       <listitem>
         <para>Enter a code to identify the project.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a brief name to identify the project.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Specify one of the following statuses to characterize the
         project:</para>
+
         <variablelist>
           <varlistentry>
             <term>Concept</term>
+
             <listitem>
               <para>Use this status to indicate the project has not yet
               begun.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>In-Process</term>
+
             <listitem>
               <para>Use this status to indicate the project is in-process.
               Certain functions, like time and expense reporting, can only be
               performed against in-process projects.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Complete</term>
+
             <listitem>
               <para>Use this status to indicate the project is
               complete.</para>
             </listitem>
           </varlistentry>
         </variablelist>
+
         <note>
           <para>Projects generated automatically when a new sales order or
           quote is entered will be assigned the status "Undefined" at first.
@@ -75,65 +94,84 @@
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Project Type</term>
+
       <listitem>
         <para>Specify the project type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Account</term>
+
       <listitem>
         <para>Enter the account associated with the project.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Owner</term>
+
       <listitem>
         <para>Specify the project owner.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Assigned to</term>
+
       <listitem>
         <para>Identify the user assigned to the project.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due</term>
+
       <listitem>
         <para>Specify the date the project is due.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Started</term>
+
       <listitem>
         <para>Specify the start date for the project.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Assigned</term>
+
       <listitem>
-        <para>Specify the date the project was assigned. The Assigned date
+        <para>Specify the date the project was assigned. The assigned date
         automatically populates when the a user other than the current user is
         assigned.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Completed</term>
+
       <listitem>
         <para>Enter the date the project was completed. The completed date
         automatically populates when the document status is changed to
-        "Complete".</para>
+        "Complete."</para>
+
         <note>
           <para>Subsequent changes to the above dates are tracked under the
-          <guimenuitem>Comments</guimenuitem> tab as change log comments. The changelogs include user
-          and timestamp information.</para>
+          <guimenuitem>Comments</guimenuitem> tab as change log comments. The
+          changelogs include user and timestamp information.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Use the lookup feature to add a new contact or to select a
         pre-existing contact linked to the CRM account that the project is
@@ -142,23 +180,29 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>On the <guimenuitem>Activity</guimenuitem> tab, the following options are
-  available:<variablelist>
+
+  <para>On the <guimenuitem>Activity</guimenuitem> tab, the following options
+  are available:<variablelist>
       <varlistentry>
         <term>Show Types</term>
+
         <listitem>
           <para>Select which of the following project associations should be
           listed.</para>
+
           <itemizedlist>
             <listitem>
-              <para>Sales Orders</para>
+              <para>Sales orders</para>
             </listitem>
+
             <listitem>
-              <para>Work Orders</para>
+              <para>Work orders</para>
             </listitem>
+
             <listitem>
-              <para>Purchase Orders</para>
+              <para>Purchase orders</para>
             </listitem>
+
             <listitem>
               <para>Incidents</para>
             </listitem>
@@ -166,10 +210,13 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
+
   <para>The following button is unique to this screen:</para>
+
   <variablelist>
     <varlistentry role="xtte">
       <term><guibutton>GANTT</guibutton></term>
+
       <listitem>
         <para>Select to generate a Gantt chart bar chart to illustrate the
         project schedule. The Gantt chart presents the task completion time
@@ -177,41 +224,54 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view additional information for the project, select the
-  <guimenuitem>Additional</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Additional</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/project_additional.png" />
+        <imagedata fileref="images/project_additional.png"/>
       </imageobject>
+
       <caption>Additional Project Information</caption>
     </mediaobject>
   </screenshot>
+
   <para>When viewing the additional information for a project, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Assignable Orders</term>
+
       <listitem>
         <para>Specify which of the following order types can be linked to the
         project.</para>
+
         <variablelist>
           <varlistentry>
             <term>Sales Orders</term>
+
             <listitem>
               <para>Select to indicate sales orders may be linked to the
               project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Work Orders</term>
+
             <listitem>
               <para>Select to indicate work orders may be linked to the
               project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Purchase Orders</term>
+
             <listitem>
               <para>Select to indicate purchase orders may be linked to the
               project.</para>
@@ -220,49 +280,63 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Summary</term>
+
       <listitem>
         <para>When viewing the time and expenses summary for a project, you
         are presented with the following information:</para>
+
         <variablelist>
           <varlistentry>
             <term>Total Hours Budgeted</term>
+
             <listitem>
               <para>Displays the total task hours budgeted for the
               project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Total Hours Actual</term>
+
             <listitem>
               <para>Displays the actual task hours used for the
               project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Balance</term>
+
             <listitem>
               <para>Displays the balance difference between budgeted and
               actual task hours for the project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Total Expenses Budgeted</term>
+
             <listitem>
               <para>Displays the total task expenses budgeted for the
               project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Total Expenses Actual</term>
+
             <listitem>
               <para>Displays the actual task expenses used for the
               project.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Balance</term>
+
             <listitem>
               <para>Displays the balance difference between budgeted and
               actual task expenses for the project.</para>
@@ -272,36 +346,47 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para role="xtte">You can specify customer and billing rate information by
   project. To specify the customer and billing rate information, select the
-  <guimenuitem>Billing</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Billing</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot role="xtte">
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/project_billing.png" />
+        <imagedata fileref="images/project_billing.png"/>
       </imageobject>
+
       <caption>Project Billing</caption>
     </mediaobject>
   </screenshot>
+
   <para role="xtte">When specifying customer and billing rate information, you
   are presented with the following options:</para>
+
   <para role="xtte"><variablelist>
       <varlistentry>
         <term>Customer</term>
+
         <listitem>
           <para>Enter the customer you want to associate with the
           project.</para>
         </listitem>
       </varlistentry>
+
       <varlistentry>
         <term>Use specified billing rate</term>
+
         <listitem>
           <para>Select if you want to specify a customer billing rate for the
           project. If not selected, the rate may be entered manually on time
           sheets.</para>
+
           <variablelist>
             <varlistentry>
               <term>Rate</term>
+
               <listitem>
                 <para>Specify the customer billing rate for the
                 project.</para>
@@ -311,70 +396,99 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
-  <para>To add a description of the project, select the <guimenuitem>Description</guimenuitem> tab. The
-  following screen will appear:</para>
+
+  <para>To add a description of the project, select the
+  <guimenuitem>Description</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/project_notes.png" />
+          <imagedata fileref="images/project_notes.png"/>
         </imageobject>
+
         <caption>Project Description</caption>
       </mediaobject>
     </screenshot></para>
-  <para>Notes entered here are displayed in the <guilabel>Description</guilabel> field when
-  projects are listed.</para>
-  <para>To add characteristics to a project, select the <guimenuitem>Characteristics</guimenuitem> tab.
-  The following screen will appear:</para>
+
+  <para>Notes entered here are displayed in the
+  <guilabel>Description</guilabel> field when projects are listed.</para>
+
+  <para>To add characteristics to a project, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/project_characteristics.png" />
+        <imagedata fileref="images/project_characteristics.png"/>
       </imageobject>
+
       <caption><para>Project Characteristics</para></caption>
     </mediaobject></para>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To add comments related to a project, select the <guimenuitem>Comments</guimenuitem> tab. The
-  following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To add comments related to a project, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/project_commentsTab.png" />
+          <imagedata fileref="images/project_commentsTab.png"/>
         </imageobject>
+
         <caption>Comments Added to Project</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>To view the documents associated with a project, select the
-  <guimenuitem>Documents</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/project_documentsTab.png" />
+        <imagedata fileref="images/project_documentsTab.png"/>
       </imageobject>
+
       <caption>Project Documents</caption>
     </mediaobject>
   </screenshot>
+
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To create recurring projects, select the <guimenuitem>Advanced</guimenuitem> tab. The following
-  screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To create recurring projects, select the
+  <guimenuitem>Advanced</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/project_advancedTab.png" />
+        <imagedata fileref="images/project_advancedTab.png"/>
       </imageobject>
+
       <caption>Project Advanced</caption>
     </mediaobject>
   </screenshot>
+
   <xi:include href="../widgets/recurrencewidget.xml"
               xpointer="recurrenceWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view email associated with a project, select the <guimenuitem>Email</guimenuitem> tab. The
-  following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To view email associated with a project, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="task.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

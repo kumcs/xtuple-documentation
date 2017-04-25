@@ -5,43 +5,57 @@
 <section id="timeExpenseSheetItem" role="xtte">
   <title><indexterm significance="normal">
       <primary>worksheets</primary>
+
       <secondary>management of</secondary>
     </indexterm>Worksheet Item</title>
+
   <para>The Worksheet Item screen is where employees record their actual time
   or expenses related to a project. To add a time or expense entry, select the
-  <guibutton>NEW</guibutton> button on the Worksheet screen. The following screen will appear:</para>
+  <guibutton>NEW</guibutton> button on the Worksheet screen. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/timeExpenseSheetItem.png" />
+          <imagedata fileref="images/timeExpenseSheetItem.png"/>
         </imageobject>
+
         <caption>Worksheet Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When adding a time or expense entry, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Worksheet</term>
+
       <listitem>
         <para>Displays the system-generated number of the worksheet.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line #</term>
+
       <listitem>
         <para>Displays the line number assigned to the time or expense
         entry.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Week Of</term>
+
       <listitem>
         <para>Displays the date for the parent worksheet.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Project #</term>
+
       <listitem>
         <para>Enter the number of the project associated with the entry. This
         is a required field. Depending on how the project is configured, many
@@ -49,29 +63,37 @@
         will be filled out automatically from the project information.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Task</term>
+
       <listitem>
         <para>Select a task from the list of project tasks to associate with
         the entry. This is a required field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Work Date</term>
+
       <listitem>
         <para>Enter the date the work was performed or the expense was
         incurred.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Type</term>
+
       <listitem>
         <para>Specify whether the entry is a time or expense type
         entry.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Customer</term>
+
       <listitem>
         <para>Enter the number of the customer associated with the entry. This
         field may be filled automatically from the project information,
@@ -80,134 +102,171 @@
         and/or expense.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Cust. PO#</term>
+
       <listitem>
         <para>Enter the customer purchase order number, if any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter an item number to associate with the entry, if one is not
         already linked from the specified project task. This is a required
-        field. The item number is needed to map an Expense account to the
+        field. The item number is needed to map an expense account to the
         task, which is required for subsequent general ledger transactions.
-        Only Reference items which have been configured specifically to work
-        with time and expense entries (on the <guimenuitem>Project</guimenuitem> tab of the Item
-        master) may be selected.</para>
+        Only reference items which have been configured specifically to work
+        with time and expense entries (on the
+        <guimenuitem>Project</guimenuitem> tab of the Item master) may be
+        selected.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Employee</term>
+
       <listitem>
         <para>Displays the name of the employee indicated on the parent
         worksheet.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Hours</term>
+
       <listitem>
         <para>For time entries, enter the number of hours worked on the
         specified task.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty</term>
+
       <listitem>
         <para>For expense entries, enter the quantity of expenses incurred.
         For example, if mileage is being reimbursed, enter the number of
         miles. For hotel stays, enter the number of days.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Billable</term>
+
       <listitem>
         <para>Select if the work performed or the expense incurred is billable
         to the specified customer. If not selected, time entries will be
         booked to overhead and expense entries will be reimbursable.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Rate</term>
+
       <listitem>
         <para>For billable time entries, enter the rate to be billed to the
         customer. Depending on how the project is configured, this information
         may be filled in automatically for you.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Unit Cost</term>
+
       <listitem>
         <para>For expense entries, enter the per unit cost of the expense
         item. For example, enter $0.25 per mile for mileage reimbursements or
         $125 per night for hotel costs.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Total</term>
+
       <listitem>
         <para>Displays the total billable amount for time entries and the
         total reimbursement amount for expense entries.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Hourly Cost</term>
+
       <listitem>
         <para>For time entries, displays the employee's hourly rate (or cost),
         as distinguished from the billable rate charged to the
         customer.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Total Cost</term>
+
       <listitem>
         <para>For time entries, displays the total cost for the employee's
         time spent on the task, based on the employee's hourly rate.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Prepaid (not reimbursable)</term>
+
       <listitem>
         <para>For expense entries, select if the item has already been paid
         for, making it ineligible for reimbursement.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Summary</term>
+
       <listitem>
         <para>When viewing the summary for a time and expense entry, you are
         presented with the following information:</para>
+
         <variablelist>
           <varlistentry>
             <term>Task</term>
+
             <listitem>
               <para>Displays the following information related to the selected
               project task:</para>
+
               <variablelist>
                 <varlistentry>
                   <term>Planned Hours</term>
+
                   <listitem>
                     <para>Displays the total hours budgeted for the
                     task.</para>
                   </listitem>
                 </varlistentry>
+
                 <varlistentry>
                   <term>Actual Hours</term>
+
                   <listitem>
                     <para>Displays the actual hours logged against the
                     task.</para>
                   </listitem>
                 </varlistentry>
+
                 <varlistentry>
                   <term>Planned Expense</term>
+
                   <listitem>
                     <para>Displays the total expenses budgeted for the
                     task.</para>
                   </listitem>
                 </varlistentry>
+
                 <varlistentry>
                   <term>Actual Expense</term>
+
                   <listitem>
                     <para>Displays the actual expenses logged against the
                     task.</para>
@@ -216,20 +275,25 @@
               </variablelist>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Employee</term>
+
             <listitem>
               <para>Displays the following information for the employee
               associated with the worksheet:<variablelist>
                   <varlistentry>
                     <term>Day Total</term>
+
                     <listitem>
                       <para>Displays the number of hours entered for the
                       employee on the given work date.</para>
                     </listitem>
                   </varlistentry>
+
                   <varlistentry>
                     <term>Worksheet Total</term>
+
                     <listitem>
                       <para>Displays the employee's total hours on the parent
                       worksheet.</para>
@@ -242,33 +306,43 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>PREV</guibutton></term>
+
       <listitem>
         <para>Select to view the previous time or expense entry. If none
         exists, this button will be disabled.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>NEXT</guibutton></term>
+
       <listitem>
         <para>Select to view the next time or expense entry. If none exists,
         this button will be disabled.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To enter notes related to a time or expense entry, select the <guimenuitem>Notes</guimenuitem>
-  tab. The following screen will appear:</para>
+
+  <para>To enter notes related to a time or expense entry, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/timeExpenseSheetItem_tabNotes.png" />
+          <imagedata fileref="images/timeExpenseSheetItem_tabNotes.png"/>
         </imageobject>
+
         <caption>Worksheet Item Notes</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The <guimenuitem>Notes</guimenuitem> tab provides a text area where you can add miscellaneous
-  notes related to the time or expense entry.</para>
+
+  <para>The <guimenuitem>Notes</guimenuitem> tab provides a text area where
+  you can add miscellaneous notes related to the time or expense entry.</para>
 </section>
