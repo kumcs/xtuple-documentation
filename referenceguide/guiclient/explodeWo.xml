@@ -12,9 +12,9 @@
     </indexterm>Explode Work Order</title>
   <para>When a work order is exploded, work order material requirements and
   work order operations are created for the work order in question, using the
-  bill of materials and routing for the parent item. To manually
-  explode a work order, select the <guimenuitem>Explode Work Order</guimenuitem> option. The following
-  screen will appear:</para>
+  bill of materials and routing for the parent item. To manually explode a
+  work order, navigate to <guimenuitem>Manufacture &gt; Work Order &gt;
+  Explode</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -56,7 +56,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -68,8 +68,8 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>Default work order explosion levels can be configured at the system
-    level.</para>
+    <para>Default work order explosion levels can be configured in
+    <guimenuitem>Manufacture &gt; Setup</guimenuitem>.</para>
   </note>
   <variablelist>
     <varlistentry>
@@ -84,8 +84,8 @@
             <term>Single Level Explosion</term>
             <listitem>
               <para>During a single-level explosion, work order material
-              Requirements and work order operations are created for the
-              parent item&mdash;but not for any manufactured components of the
+              requirements and work order operations are created for the
+              parent item—but not for any manufactured components of the
               parent item. The work orders for manufactured components must be
               exploded manually.</para>
             </listitem>
