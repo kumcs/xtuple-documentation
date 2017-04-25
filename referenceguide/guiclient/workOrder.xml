@@ -148,12 +148,11 @@
           <secondary>adjusting lead times for</secondary>
         </indexterm>Lead Time (Days)</term>
       <listitem>
-        <para>Select a number using the arrows or manually enter a
-        value up to a maximum of 999. Value entered specifies the
-        manufacturing <guilabel>Lead Time</guilabel> required between the date
-        the work order starts and the date it is due. Lead Times for items are
-        specified in the Item Site master, but may be modified on this
-        screen.</para>
+        <para>Select a number using the arrows or manually enter a value up to
+        a maximum of 999. Value entered specifies the manufacturing lead time
+        required between the date the work order starts and the date it is
+        due. Lead times for items are specified in the Item Site master, but
+        may be modified on this screen.</para>
         <tip>
           <para>The <guilabel>Lead Time</guilabel> option is only available
           when creating a new work order. Once the order is created, this
@@ -178,11 +177,11 @@
     <varlistentry>
       <term>Priority</term>
       <listitem>
-        <para>Select a number using the arrows or manually enter a
-        value up to a maximum of 99. Value entered assigns a priority to the
-        selected work order. By assigning a priority to a work order, you can
-        indicate the relative importance of a work order in comparison to
-        other work orders.</para>
+        <para>Select a number using the arrows or manually enter a value up to
+        a maximum of 99. Value entered assigns a priority to the selected work
+        order. By assigning a priority to a work order, you can indicate the
+        relative importance of a work order in comparison to other work
+        orders.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -201,7 +200,7 @@
         numbers related to the following transactions will include the project
         number as the final segment: issue materials, post operations, post
         production, return material, correct post operations, correct post
-        production, scrap material.</para>
+        production, and scrap material.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -287,16 +286,16 @@
         <tip>
           <para>If a work order was created from a sales order, the
           <guilabel>Production Notes</guilabel> field will contain the sales
-          order number, the customer Name, and any additional sales order line
+          order number, the customer name, and any additional sales order line
           item notes.</para>
         </tip>
       </listitem>
     </varlistentry>
   </variablelist>
   <para>If an item has characteristics associated with it, you have the option
-  of linking those characteristics to a work order item. And, in the case
-  where a work order is generated from a linked sales order, the work order
-  will inherit characteristics defined at the sales order level.</para>
+  of linking those characteristics to a work order item. In the case where a
+  work order is generated from a linked sales order, the work order will
+  inherit characteristics defined at the sales order level.</para>
   <tip>
     <para>You can link characteristics and values to an item by using the Item
     master. Once entered, these characteristics and values will be available
@@ -308,13 +307,13 @@
   available:</para>
   <orderedlist>
     <listitem>
-      <para><emphasis role="bold">Work Order Item Characteristics</emphasis>:
-      Inherited from Item Characteristics</para>
+      <para><guilabel>Work Order Item Characteristics</guilabel>: Inherited
+      from Item Characteristics</para>
     </listitem>
     <listitem>
-      <para><emphasis role="bold">Work Order Characteristics</emphasis>: Ad
-      hoc characteristics which may be associated manually with a work
-      order</para>
+      <para><guilabel>Work Order Characteristics</guilabel>: <emphasis>Ad
+      hoc</emphasis> characteristics which may be associated manually with a
+      work order</para>
     </listitem>
   </orderedlist>
   <para><screenshot>
@@ -324,11 +323,11 @@
         </imageobject>
         <caption>Work Order Characteristics</caption>
       </mediaobject>
-    </screenshot>When specifying work order item characteristics, you are
-  presented with the following options:</para>
+    </screenshot>The <guilabel>Work Order Item Characteristics</guilabel> list
+  presents the following columns:</para>
   <variablelist>
     <varlistentry>
-      <term>Work Order Item Characteristics</term>
+      <term>Name</term>
       <listitem>
         <para>Displays the name of any item characteristics associated with
         the item. Characteristics defined as item characteristics may be
@@ -349,8 +348,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>Work order characteristics, by contrast, are ad hoc in nature and may
-  be created manually and linked to the work order.</para>
+  <para>Work order characteristics, by contrast, are <emphasis>ad
+  hoc</emphasis> in nature and may be created manually and linked to the work
+  order.</para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -421,7 +421,7 @@
           <varlistentry>
             <term>WIP</term>
             <listitem>
-              <para>Displays the current value of Work in Process (WIP) for
+              <para>Displays the current value of work in process (WIP) for
               the work order. The WIP value is equal to the posted value minus
               the received value.</para>
             </listitem>
@@ -454,17 +454,18 @@
     </varlistentry>
   </variablelist>
   <note>
-    <para>The default cost recognition method is defined at the system level;
-    however, you may change the setting manually at the work order
-    level.</para>
+    <para>The default cost recognition method is defined at
+    <guimenuitem>System &gt; Setup &gt; Manufacture</guimenuitem> under
+    <guilabel>Work Order Cost Recognition Defaults</guilabel>; however, you
+    may change the setting manually at the work order level.</para>
   </note>
   <para role="standard">When creating a work order, you have the option to
-  specify which revision of the work order item's bill of materials and bill
-  of operations you want to use. By default, the active revision will be used.
-  Once the work order has been created, these options will become read-only.
-  To specify revision information for a work order item, select the
-  <guimenuitem>Revision</guimenuitem> tab. The following screen will
-  appear:</para>
+  specify which revision of the work order item's bill of materials (BOM) and
+  bill of operations (BOO) you want to use. By default, the active revision
+  will be used. Once the work order has been created, these options will
+  become read-only. To specify revision information for a work order item,
+  select the <guimenuitem>Revision</guimenuitem> tab. The following screen
+  will appear:</para>
   <para role="standard"><screenshot role="standard">
       <mediaobject>
         <imageobject>

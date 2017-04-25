@@ -4,58 +4,46 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section>
   <title>Comments</title>
-
   <para id="commentsWidget"><informalexample>
       <para>When adding or reviewing comments, you are presented with the
       following options:</para>
-
       <variablelist>
         <varlistentry>
           <term>Verbose Text</term>
-
           <listitem>
             <para>Select to display all comments in the list in an expanded
             view which includes the entire text of each comment. To edit a
             comment, simply select the <guibutton>EDIT</guibutton> link next
             to the comment. That link will not be shown for changelog
-            comments, which can't be edited. If the <guimenuitem>Verbose
-            Text</guimenuitem> option is not selected, the comment list will
+            comments, which can't be edited. If the <guilabel>Verbose
+            Text</guilabel> option is not selected, the comment list will
             display only header level information for each comment.</para>
           </listitem>
         </varlistentry>
-
         <varlistentry>
           <term>Comments</term>
-
           <listitem>
             <para>Display lists comments related to the record.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-
       <para>The following buttons are available:</para>
-
       <variablelist>
         <varlistentry>
-          <term>NEW</term>
-
+          <term><guibutton>NEW</guibutton></term>
           <listitem>
             <para>Opens screen for creating a new comment.</para>
           </listitem>
         </varlistentry>
-
         <varlistentry>
-          <term>VIEW</term>
-
+          <term><guibutton>VIEW</guibutton></term>
           <listitem>
             <para>Highlight a comment and then select this button to reach a
             read-only view of the Edit screen.</para>
           </listitem>
         </varlistentry>
-
         <varlistentry>
-          <term>EDIT</term>
-
+          <term><guibutton>EDIT</guibutton></term>
           <listitem>
             <para>Enables you to edit highlighted comments—as long as the
             comments are not changelog comments. ChangeLog comments are
@@ -66,47 +54,39 @@
           </listitem>
         </varlistentry>
       </variablelist>
-
       <para>To enter a new comment, select the <guibutton>NEW</guibutton>
       button. The following screen will appear:</para>
-
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/comment.png"/>
+              <imagedata fileref="images/comment.png" />
             </imageobject>
-
             <caption>Create New Comment</caption>
           </mediaobject>
         </screenshot></para>
-
       <variablelist>
         <varlistentry>
           <term>Comment Type</term>
-
           <listitem>
             <para>Select a comment type from the drop-down list to classify
             the comment. This is a required step. Comment types may be
             system-defined (i.e., changelog and general) or user-defined, as
-            described in <xref linkend="commentTypes"/>. Once you have
+            described in <xref linkend="commentTypes" />. Once you have
             specified a comment type, begin typing your comment in the main
             text area. The text area features word-wrapping and scroll-bar
             support for longer comments.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-
       <para>The following buttons are unique to this screen:</para>
-
       <variablelist>
         <varlistentry>
-          <term>MORE</term>
-
+          <term><guibutton>MORE</guibutton></term>
           <listitem>
             <para>Select to show the complete list (i.e., thread) of comments
             associated with the record. To hide the list, simply select the
-            <guibutton>SHOW MORE</guibutton> button again. The comment thread
-            will show the most recent comment first.</para>
+            <guibutton>MORE</guibutton> button again. The comment thread will
+            show the most recent comment first.</para>
           </listitem>
         </varlistentry>
       </variablelist>

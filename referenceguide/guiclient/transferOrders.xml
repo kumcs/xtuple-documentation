@@ -4,7 +4,6 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="transferOrders" role="standard">
   <title>List Transfer Orders</title>
-
   <para>Transfer orders are used to move inventory between sites. They are
   distinct from inter-site transfers in three primary ways: 1) you can add
   multiple items to a single transfer order and transfer all the items at
@@ -13,41 +12,32 @@
   paperwork) associated with transfer orders. To access the master list of
   transfer orders, select the <guimenuitem>List Transfer Orders</guimenuitem>
   option. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrders.png"/>
+          <imagedata fileref="images/transferOrders.png" />
         </imageobject>
-
         <caption>Transfer Orders Master List</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When displaying the master list of transfer orders, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Source Site</term>
-
       <listitem>
         <para>Specify the source site(s) you want to display in the
         list:</para>
-
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
-
             <listitem>
               <para>Select to display transfer orders for all source
               sites.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Selected</term>
-
             <listitem>
               <para>Specify source site whose transfer orders you want to
               display.</para>
@@ -56,27 +46,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Destination Site</term>
-
       <listitem>
         <para>Specify the destination site(s) you want to display in the
         list:</para>
-
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
-
             <listitem>
               <para>Select to display transfer orders for all destination
               sites.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Selected</term>
-
             <listitem>
               <para>Specify destination site whose transfer orders you want to
               display.</para>
@@ -85,25 +69,19 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Status</term>
-
       <listitem>
         <para>Specify the statuses you want to display in the list:</para>
-
         <variablelist>
           <varlistentry>
             <term>All Statuses</term>
-
             <listitem>
               <para>Select to display transfer orders for all statuses.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Selected</term>
-
             <listitem>
               <para>Specify the status whose transfer orders you want to
               display. The following statuses are available:
@@ -114,31 +92,24 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Transfer Orders</term>
-
       <listitem>
         <para>Display lists transfer orders for the specified site(s).</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>RELEASE</guibutton></term>
-
       <listitem>
         <para>Highlight an Unreleased transfer order and then select this
         button to change the status to <guilabel>Open</guilabel>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>ISSUE STOCK</guibutton></term>
-
       <listitem id="transferOrdersISSUESTOCK">
         <para>Highlight a transfer order and then select this button to issue
         transfer order stock to shipping.</para>
