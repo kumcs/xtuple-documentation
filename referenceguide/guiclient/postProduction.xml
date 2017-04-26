@@ -10,24 +10,24 @@
   <para>Work order progress can be posted in terms of materials used or
   operations completed. When you post production, you are using the
   materials-driven process for reporting progress. To post production for a
-  work order, select the <guimenuitem>Post Production</guimenuitem> option.
-  The following screen will appear:</para>
+  work order, select the <guimenuitem>Manufacture &gt; Transactions &gt;
+  Post...</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/postProduction.png"/>
+          <imagedata fileref="images/postProduction.png" />
         </imageobject>
-        <caption>Post Production for a Work Order</caption>
+        <caption>Post Production</caption>
       </mediaobject>
-    </screenshot></para>
-  <para>When posting production for a work order, you are presented with the
-  following options:</para>
+    </screenshot>When posting production for a work order, you are presented
+  with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
-        general ledger. The current day's date will display by default.</para>
+        general ledger (G/L). The current day's date will display by
+        default.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -54,7 +54,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -67,8 +67,8 @@
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected work order is an Assembly or
-        Disassembly work order.</para>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -81,8 +81,8 @@
     <varlistentry>
       <term>Qty. Received</term>
       <listitem>
-        <para>Received: Displays the quantity required to fulfill the
-        specified work order.</para>
+        <para>Displays the quantity required to fulfill the specified work
+        order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -95,7 +95,7 @@
     <varlistentry>
       <term>Qty. to Post</term>
       <listitem>
-        <para>to Post: Enter the quantity of the component items you want to
+        <para>Enter the quantity of the component items you want to
         post.</para>
       </listitem>
     </varlistentry>
@@ -104,21 +104,21 @@
       <listitem>
         <para>Select to indicate that the amount of materials indicated by the
         associated work order material requirement record will be issued to
-        the selected work order for all Pull or Mixed component items. If
-        there are any Pull component items on the requirements list, this
-        option will be selected and disabled (you must backflush Pull items).
-        If there are any Mixed component items on the requirements list, this
+        the selected work order for all pull or mixed component items. If
+        there are any pull component items on the requirements list, this
+        option will be selected and disabled (you must backflush pull items).
+        If there are any mixed component items on the requirements list, this
         option will be selected and enabled (you can choose whether to
-        backflush or not). If there are no Pull or Mixed component items on
+        backflush or not). If there are no pull or mixed component items on
         the requirements list, this option will not be selected and disabled
-        (Push items are not backflushed).</para>
+        (Ppush items are not backflushed).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Backflush Operations</term>
       <listitem>
         <para>Select to indicate that the amount of time and labor indicated
-        by the associated work order Operation record will be issued to the
+        by the associated work order operation record will be issued to the
         selected work order.</para>
       </listitem>
     </varlistentry>

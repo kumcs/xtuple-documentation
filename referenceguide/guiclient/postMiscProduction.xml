@@ -14,14 +14,14 @@
   continuous, the option to post miscellaneous production can be a useful
   feature. It can also be a useful feature for shops where disassembling
   manufactured items is required. To post miscellaneous production, select the
-  <guimenuitem>Post Miscellaneous Production</guimenuitem> option. The following screen will
-  appear:</para>
+  <guimenuitem>Manufacture &gt; Transactions &gt; Post Misc.
+  Production...</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/postMiscProduction.png" />
         </imageobject>
-        <caption>Post Miscellaneous Work Order Production</caption>
+        <caption>Post Miscellaneous Production</caption>
       </mediaobject>
     </screenshot></para>
   <tip>
@@ -43,19 +43,19 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Assembly</term>
       <listitem>
-        <para>Select to identify work order as Assembly order.</para>
+        <para>Select to identify work order as assembly order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Disassembly</term>
       <listitem>
-        <para>Select to identify work order as Disassembly order.</para>
+        <para>Select to identify work order as disassembly order.</para>
         <note>
           <para>If there are average cost items on a disassembly order, those
           components will be returned to inventory using standard cost when
@@ -115,8 +115,9 @@
               <para>Enter the name of the user who performed the production
               run.</para>
               <note>
-                <para>If the <guilabel>Backflush Operations</guilabel> option is not selected,
-                the setup and run time options will be disabled.</para>
+                <para>If the <guilabel>Backflush Operations</guilabel> option
+                is not selected, the setup and run time options will be
+                disabled.</para>
               </note>
             </listitem>
           </varlistentry>

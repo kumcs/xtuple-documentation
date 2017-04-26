@@ -7,14 +7,14 @@
   <para>Work order progress can be posted in terms of materials used or
   operations completed. When you post operations, you are using the
   operations-driven process for reporting progress. To post work order
-  operations, select the <guimenuitem>Post Operations</guimenuitem> option.
-  The following screen will appear:</para>
+  operations, select the <guimenuitem>Manufacture &gt; Transactions &gt; Post
+  Operations...</guimenuitem> option. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/postOperations.png"/>
+          <imagedata fileref="images/postOperations.png" />
         </imageobject>
-        <caption>Post Work Order Operations</caption>
+        <caption>Post Operations</caption>
       </mediaobject>
     </screenshot></para>
   <para>When posting a work order's operations, you are presented with the
@@ -32,8 +32,7 @@
       <listitem>
         <para>Enter the work order number of the work order whose operations
         you want to post. You may also scan into this field a work order
-        operation barcode as defined for the Shop Floor Workbench
-        screen.</para>
+        operation barcode as defined in the Time Clock screen.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -53,7 +52,7 @@
     <varlistentry>
       <term>UOM</term>
       <listitem>
-        <para>Inventory unit of measure.</para>
+        <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -73,8 +72,8 @@
     <varlistentry>
       <term>Method</term>
       <listitem>
-        <para>Indicates whether selected work order is an Assembly or
-        Disassembly work order.</para>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -135,9 +134,9 @@
                 <secondary>posting options</secondary>
               </indexterm>Production UOMs</term>
             <listitem>
-              <para>Select to post the operations quantity in production Units
-              of Measure. Operations may be posted using either the inventory
-              or production UOM. In addition, different operations in a single
+              <para>Select to post the operations quantity in production UOM.
+              Operations may be posted using either the inventory or
+              production UOM. In addition, different operations in a single
               routing may use different production UOMs. For example, if you
               are producing soup, you might mix the soup in one operation
               using UOM = BATCH. But when canning the soup, the canning
@@ -150,8 +149,8 @@
           <varlistentry>
             <term>Inventory UOMs</term>
             <listitem>
-              <para>Select to post the operations quantity in inventory Units
-              of Measure.</para>
+              <para>Select to post the operations quantity in inventory
+              UOM.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -183,7 +182,7 @@
         Typically, standard times will not be used if operations are being
         posted using the Shop Floor Workbench. Instead, labor times will be
         calculated based on clock-in and clock-out times. Only users with
-        privileges to override the production Time Clock will be able to post
+        privileges to override the production time clock will be able to post
         standard times.</para>
       </listitem>
     </varlistentry>
@@ -201,7 +200,7 @@
       <listitem>
         <para>Enter the name of the user who performed the set up. Since this
         is a text field, user names may also be scanned into the field using a
-        Bar Code scanner.</para>
+        bar code scanner.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -214,7 +213,7 @@
       <term>Mark Operation as Complete</term>
       <listitem>
         <para>Select to mark operation as complete. An operation may not be
-        marked as Complete until all users are clocked-out of the operation.
+        marked as complete until all users are clocked-out of the operation.
         Users clock-in to and clock-out of work orders using the Shop Floor
         Workbench.</para>
       </listitem>
@@ -255,9 +254,9 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/postOperations_matlTab.png"/>
+          <imagedata fileref="images/postOperations_matlTab.png" />
         </imageobject>
-        <caption>Materials Related to Work Order Operations</caption>
+        <caption>Materials related to Post Operations</caption>
       </mediaobject>
     </screenshot></para>
   <para>When reviewing and taking action on materials associated with a work
@@ -269,12 +268,12 @@
         <para>Indicates that linked component materials will be issued
         automatically (i.e., backflushed) when the specified operation is
         posted. Option will be enabled only if component materials are linked
-        to the specified operation within the parent item's bill of materials.
-        If such linkages exist, only components with pull or mixed issue
-        methods will be displayed. Components having the push issue method
-        will not appear in the list, as these must be issued manually to a
-        work order. If this option is selected, the general ledger will show
-        the component materials being removed from inventory when this
+        to the specified operation within the parent item's bill of materials
+        (BOMs). If such linkages exist, only components with pull or mixed
+        issue methods will be displayed. Components having the push issue
+        method will not appear in the list, as these must be issued manually
+        to a work order. If this option is selected, the general ledger will
+        show the component materials being removed from inventory when this
         operation is posted.</para>
       </listitem>
     </varlistentry>
