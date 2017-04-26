@@ -1,38 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="incidentResolutions">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>crm</primary>
+
       <secondary>incident resolutions and</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>incidents</primary>
+
       <secondary>resolutions for</secondary>
     </indexterm>incident resolutions</title>
+
   <para>Incident resolutions are used by the incident management system to
   categorize how incidents are resolved. When incident resolutions are entered
-  in the Master Information section, these Resolutions are then available for
-  use when entering or updating incidents.</para>
+  in the <guilabel>Master Information</guilabel> section, these resolutions
+  are then available for use when entering or updating incidents.</para>
+
   <tip>
     <para>You must manually create incident resolutions if you want the
     ability to assign them to incidents. If no incident resolutions are
     defined, then none will be available when entering incidents.</para>
   </tip>
-  <para>To access the master list of Incident Resolutions, select the
-  <guimenuitem>Incident Resolutions</guimenuitem> option. The following screen will appear.</para>
-  <para>
-<screenshot>
+
+  <para>To access the master list of incident resolutions, select the
+  <guimenuitem>Incident Resolutions</guimenuitem> option. The following screen
+  will appear.</para>
+
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/incidentResolutions.png"/>
         </imageobject>
+
         <caption>Incident Resolutions Master List</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
+
   <para>The Incident Resolutions screen displays information on all existing
   incident resolutions, including incident resolution order, name, and
   description.</para>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="incidentResolution.xml" xpointer="element(/1)"/>
+
+  <xi:include href="incidentResolution.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
