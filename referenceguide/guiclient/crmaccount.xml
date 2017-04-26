@@ -5,28 +5,37 @@
 <section id="crmaccount">
   <title><indexterm significance="normal">
       <primary>accounts</primary>
+
       <secondary>creating new</secondary>
     </indexterm><indexterm significance="normal">
       <primary>customer relationship management</primary>
+
       <secondary>creating new accounts for</secondary>
     </indexterm>New Account</title>
-  <para>Accounts are central to the xTuple CRM system. An account holds
-  information about an entity and serves to define it further as a customer,
-  prospect, vendor, competitor, or partner. To create a new account, select
-  the <guimenuitem>New Account</guimenuitem> option. The following screen will appear.</para>
+
+  <para>Accounts are central to the xTuple <guimenu>CRM</guimenu> system. An
+  account holds information about an entity and serves to define it further as
+  a customer, prospect, vendor, competitor, or partner. To create a new
+  account, select the <guimenuitem>New Account</guimenuitem> option. The
+  following screen will appear.</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccount.png" />
+          <imagedata fileref="images/crmaccount.png"/>
         </imageobject>
+
         <caption>Create New Account</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new account, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Account Number</term>
+
       <listitem>
         <para>The account number uniquely identifies the account. Users must
         have sufficient privileges to change the account number, particularly
@@ -34,37 +43,47 @@
         etc.).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Account Name</term>
+
       <listitem>
         <para>Enter the name of the account you do business with (e.g.,
-        customer Name or vendor Name). This field should not to be confused
+        customer name or vendor name). This field should not to be confused
         with the contact name of an individual at the company. Users must have
-        sufficient privileges to change the account Name, particularly when
+        sufficient privileges to change the account name, particularly when
         the account extends to different types (e.g., customer, vendor,
         etc.).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Active</term>
+
       <listitem>
         <para>Select if you are actively doing business with this account. Not
         selecting makes the account inactive.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Type</term>
+
       <listitem>
         <para>Specify one of the following account types:</para>
+
         <variablelist>
           <varlistentry>
             <term>Organization</term>
+
             <listitem>
               <para>Select if the account is an organization.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Individual</term>
+
             <listitem>
               <para>Select if the account is an individual.</para>
             </listitem>
@@ -72,8 +91,10 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Parent</term>
+
       <listitem>
         <para>Enter the account number of the account (if any) which serves as
         the parent for the account. All contacts and comments associated with
@@ -81,110 +102,143 @@
         parent account record.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Owner</term>
+
       <listitem>
         <para>Enter a contact who serves as the owner of the account.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Roles</term>
+
       <listitem>
         <para>Indicate how the account relates to your business by selecting
         from the available options. A single account may have multiple
         different roles:</para>
+
         <variablelist>
           <varlistentry>
             <term>Prospect</term>
+
             <listitem>
               <para>Select if the account is a prospect. Specific prospect
               information is maintained on the Prospect screen, which can be
-              reached by selecting the <guibutton>PROSPECT</guibutton> button.</para>
+              reached by selecting the <guibutton>PROSPECT</guibutton>
+              button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Customer</term>
+
             <listitem>
               <para>Select if the account is a customer account. Specific
               customer information is maintained on the Customer screen, which
-              can be reached by selecting the <guibutton>CUSTOMER</guibutton> button.</para>
+              can be reached by selecting the <guibutton>CUSTOMER</guibutton>
+              button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Vendor</term>
+
             <listitem>
               <para>Select if the account is a vendor account. Specific vendor
               information is maintained on the Vendor screen, which can be
-              reached by selecting the <guibutton>VENDOR</guibutton> button.</para>
+              reached by selecting the <guibutton>VENDOR</guibutton>
+              button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Sales Rep</term>
+
             <listitem>
-              <para>Select if the account is a sales Representative. Specific
-              sales Rep information is maintained on the Sales Rep screen,
-              which can be reached by selecting the <guibutton>SALES REP</guibutton> button.</para>
+              <para>Select if the account is a sales representative. Specific
+              sales rep information is maintained on the Sales Rep screen,
+              which can be reached by selecting the <guibutton>SALES
+              REP</guibutton> button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Employee</term>
+
             <listitem>
               <para>Select if the account is an employee. Specific employee
               information is maintained on the Employee screen, which can be
-              reached by selecting the <guibutton>EMPLOYEE</guibutton> button.</para>
+              reached by selecting the <guibutton>EMPLOYEE</guibutton>
+              button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>User Account</term>
+
             <listitem>
               <para>Select if the account is a user. Specific user information
               is maintained on the User screen, which can be reached by
               selecting the <guibutton>USER</guibutton> button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Tax Authority</term>
+
             <listitem>
               <para>Select if the account is a tax authority. Specific tax
               authority information is maintained on the Tax Authority screen,
-              which can be reached by selecting the <guibutton>TAX AUTHORITY</guibutton>
-              button.</para>
+              which can be reached by selecting the <guibutton>TAX
+              AUTHORITY</guibutton> button.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Competitor</term>
+
             <listitem>
-              <para>Select if the account is a Competitor. There is no
-              separate screen for maintaining Competitor information.</para>
+              <para>Select if the account is a competitor. There is no
+              separate screen for maintaining competitor information.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Partner</term>
+
             <listitem>
-              <para>Select if the account is a Partner. There is no separate
-              screen for maintaining Partner information.</para>
+              <para>Select if the account is a partner. There is no separate
+              screen for maintaining partner information.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>When defining or viewing contacts for the specified account, you are
   presented with the following options:</para>
+
   <tip>
     <para>For contacts, you have two options:</para>
+
     <orderedlist>
       <listitem>
-        <para>Attach an existing contact to the account</para>
+        <para>Attach an existing contact to the account.</para>
       </listitem>
+
       <listitem>
-        <para>Enter new contact information</para>
+        <para>Enter new contact information.</para>
       </listitem>
     </orderedlist>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>Primary</term>
+
       <listitem>
         <para>Select to enter or view information for the primary contact. You
         can manually enter contact information in the fields shown—or use the
@@ -192,11 +246,13 @@
         contact is manually entered here, that contact will be added
         automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact" />.</para>
+        linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Secondary</term>
+
       <listitem>
         <para>Select to enter or view information for the secondary contact.
         You can manually enter contact information in the fields shown—or use
@@ -204,48 +260,62 @@
         new contact is manually entered here, that contact will be added
         automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact" />.</para>
+        linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All</term>
+
       <listitem>
         <para>Select to view the master list of contacts associated with the
         account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>DETACH</guibutton></term>
+
       <listitem id="crmaccountDETACH">
         <para>Highlight a contact and then select this button to remove the
         association between the contact and the account.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>ATTACH</guibutton></term>
+
       <listitem id="crmaccountATTACH">
         <para>Select to associate a new contact with the account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add notes to an account, select the <guimenuitem>Notes</guimenuitem> tab. The following
-  screen will appear:</para>
+
+  <para>To add notes to an account, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccount_notesTab.png" />
+          <imagedata fileref="images/crmaccount_notesTab.png"/>
         </imageobject>
+
         <caption>Account Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When adding notes to an account, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the account. Any notes entered on this screen are for
@@ -253,75 +323,99 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>To add comments to an account, select the <guimenuitem>Comments</guimenuitem> tab at the bottom
-  of the Account screen. The following screen will appear:</para>
+
+  <para>To add comments to an account, select the
+  <guimenuitem>Comments</guimenuitem> tab at the bottom of the Account screen.
+  The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccount_commentsTab.png" />
+          <imagedata fileref="images/crmaccount_commentsTab.png"/>
         </imageobject>
+
         <caption>Account Comments</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>Account characteristics are user-defined definitions of an account
   which may be used to provide additional layers of description. To enter
   <indexterm significance="normal">
       <primary>characteristics</primary>
+
       <secondary>creating new for crm</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>characteristics</primary>
+
       <secondary>crm accounts having</secondary>
-    </indexterm>Characteristics associated with an Account, select the
-  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will appear:</para>
+    </indexterm>characteristics associated with an account, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccount_characteristicsTab.png" />
+          <imagedata fileref="images/crmaccount_characteristicsTab.png"/>
         </imageobject>
+
         <caption>Account Characteristics</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>To enter or associate to-dos, opportunities, or incidents with an
-  account, select the <guimenuitem>Activities</guimenuitem> tab. The following screen will
-  appear:</para>
+  account, select the <guimenuitem>Activities</guimenuitem> tab. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccount_todoListTab.png" />
+          <imagedata fileref="images/crmaccount_todoListTab.png"/>
         </imageobject>
+
         <caption>Account Activities</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When associating to-dos, opportunities, or incidents with an account,
   you are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Show</term>
+
       <listitem>
         <para>Specify which of the following options you want to include in
         the list:</para>
+
         <variablelist>
           <varlistentry>
             <term>To-Do List</term>
+
             <listitem>
               <para>Select to include to-dos in the display. If not selected,
               to-dos will not be included.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Opportunities</term>
+
             <listitem>
               <para>Select to include opportunities in the display. If not
               selected, to-dos will not be included.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Incidents</term>
+
             <listitem>
               <para>Select to include incidents in the display. If not
               selected, incidents will not be included.</para>
@@ -330,65 +424,86 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>To-Do List</term>
+
       <listitem>
         <para>Displays to-dos, opportunities, and incidents associated with
         the account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para role="standard">You have the ability to track lot/serial registrations
-  by Account. In most cases, registrations must be manually entered. However,
+  by account. In most cases, registrations must be manually entered. However,
   in the case of items sold to customers, the system can be configured to
   automatically track warranty registrations for you.</para>
+
   <para role="standard"><tip>
-      <para>If you select the <guilabel>Auto Register Lot/Serial at Shipping</guilabel> option on
-      the item site for an item, then the system will automatically track
-      registrations (by customer) whenever the item is shipped. This applies
-      only to sold items which are lot/serial controlled.</para>
+      <para>If you select the <guilabel>Auto Register Lot/Serial at
+      Shipping</guilabel> option on the item site for an item, then the system
+      will automatically track registrations (by customer) whenever the item
+      is shipped. This applies only to sold items which are lot/serial
+      controlled.</para>
     </tip></para>
+
   <para role="standard">To view a list of lot/serial registrations associated
-  with the Account, select the <guimenuitem>Registrations</guimenuitem> tab. The following screen will
-  appear:</para>
+  with the account, select the <guimenuitem>Registrations</guimenuitem> tab.
+  The following screen will appear:</para>
+
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/crmaccount_registrationsTab.png" />
+          <imagedata fileref="images/crmaccount_registrationsTab.png"/>
         </imageobject>
+
         <caption>Account Registrations</caption>
       </mediaobject>
     </screenshot></para>
+
   <para role="standard">When viewing lot/serial registrations associated with
   the account, you are presented with the following options:</para>
+
   <para role="standard"><variablelist>
       <varlistentry>
         <term>Registrations</term>
+
         <listitem>
           <para>Display lists lot/serial registrations associated with the
           account. The process for creating a new lot/serial registration is
-          described in <xref linkend="lotSerialRegistration" />.</para>
+          described in <xref linkend="lotSerialRegistration"/>.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
+
   <para>To <indexterm significance="normal">
       <primary>documents</primary>
+
       <secondary>crm associated with</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>crm accounts</primary>
+
       <secondary>documents associated with</secondary>
     </indexterm>associate images and files with an account, select the
-  <guimenuitem>Documents</guimenuitem> tab. The following screen will appear:</para>
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/crmaccount_documentsTab.png" />
+      <imagedata fileref="images/crmaccount_documentsTab.png"/>
     </imageobject>
+
     <caption>Account Documents</caption>
   </mediaobject>
+
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
-  <para>To view email associated with the CRM account, select the <guimenuitem>Email</guimenuitem> tab.
-  The following screen will appear:</para>
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To view email associated with the CRM account, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
