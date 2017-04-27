@@ -13,7 +13,7 @@
       <secondary>adding to BOMs</secondary>
     </indexterm>Bill of Materials Item</title>
 
-  <para>To add new components to a bill of materials (BOMs), select the
+  <para>To add new components to a bill of materials (BOM), select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
 
   <para><screenshot>
@@ -31,7 +31,7 @@
     be valid.</para>
   </tip>
 
-  <para>When adding a new component item to a BOMs, you are presented with the
+  <para>When adding a new component item to a BOM, you are presented with the
   following options:</para>
 
   <variablelist>
@@ -40,7 +40,7 @@
 
       <listitem>
         <para>Enter the item number of the item you want to add to the
-        BOMs.</para>
+        BOM.</para>
       </listitem>
     </varlistentry>
 
@@ -79,7 +79,7 @@
 
             <listitem>
               <para>The system enables you to specify when a component can be
-              used in a BOMs. For example, the company's engineering
+              used in a BOM. For example, the company's engineering
               department may be working on a new design for an existing
               item—but that new design will not be available for use until a
               given date in the future. In this case, you can specify a future
@@ -93,7 +93,7 @@
 
             <listitem>
               <para>The system also enables you to specify when a component is
-              planned to be obsoleted from (i.e., no longer used in) a BOMs.
+              planned to be obsoleted from (i.e., no longer used in) a BOM.
               As mentioned above, the company's engineering department may be
               working on a new design for an existing item—but that new design
               will not be available for use until a given date in the future.
@@ -114,7 +114,7 @@
       <listitem>
         <para>Select to create work orders for manufactured components when
         their parent items are exploded. This option applies only to
-        manufactured items appearing as components on a BOMs. If selected, a
+        manufactured items appearing as components on a BOM. If selected, a
         work order will automatically be created for the manufactured
         component when the parent item is exploded. The impact on work order
         numbers will be visible. For example, a "-1" will be appended to the
@@ -148,7 +148,7 @@
       <listitem>
         <para>Use this option to specify a "flat" quantity of material
         required that is independent of the total quantity produced on a batch
-        or work order. For example, tooling items added to a BOMs generally
+        or work order. For example, tooling items added to a BOM generally
         have a fixed quantity regardless of the total quantity of finished
         goods produced. Batch size does have an impact on the costing for
         fixed quantity items, however. For example, if the parent item's batch
@@ -170,7 +170,7 @@
       <term>Qty. Per</term>
 
       <listitem>
-        <para>Specify the quantity of the component item required per BOMs.
+        <para>Specify the quantity of the component item required per BOM.
         This is a required field.</para>
       </listitem>
     </varlistentry>
@@ -294,7 +294,7 @@
         </variablelist>
 
         <note>
-          <para>You can define a default issue method for new BOMs component
+          <para>You can define a default issue method for new BOM component
           items at the <guimenuitem>System</guimenuitem> level.</para>
         </note>
       </listitem>
@@ -434,7 +434,7 @@
             <term>BOM-Defined Substitutions</term>
 
             <listitem>
-              <para>Select to define item substitutions at the BOMs
+              <para>Select to define item substitutions at the BOM
               level.</para>
             </listitem>
           </varlistentry>
@@ -559,7 +559,7 @@
     </mediaobject>
   </screenshot>
 
-  <para>When opening the BOMs item costs, you are presented with the following
+  <para>When opening the BOM's item costs, you are presented with the following
   options:</para>
 
   <variablelist>
@@ -610,7 +610,7 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When linking BOMs components to routings items, you are presented with
+  <para>When linking BOM components to routings items, you are presented with
   the following options:</para>
 
   <variablelist>
@@ -636,8 +636,8 @@
 
       <listitem>
         <para>Display lists routing items for the same manufactured item whose
-        BOMs is being specified. Highlight the operation you want to link the
-        BOMs item to, then hit the <guibutton>SELECT</guibutton>
+        BOM is being specified. Highlight the operation you want to link the
+        BOM item to, then hit the <guibutton>SELECT</guibutton>
         button.</para>
       </listitem>
     </varlistentry>
@@ -650,7 +650,7 @@
       <term><guibutton>CLEAR</guibutton></term>
 
       <listitem>
-        <para>Removes the link between a BOMs component and a routing item if
+        <para>Removes the link between a BOM component and a routing item if
         such a link has been made.</para>
       </listitem>
     </varlistentry>
@@ -659,14 +659,14 @@
       <term>SELECT</term>
 
       <listitem>
-        <para>Links the routing item to the specified BOMs component.
+        <para>Links the routing item to the specified BOM component.
         Highlight the desired routing item before selecting the
         <guibutton>SELECT</guibutton> button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
 
-  <para>On a BOMs, if the parent item is a configured item (i.e., configured
+  <para>On a BOM, if the parent item is a configured item (i.e., configured
   job item or reference item), then you will have the option to link BOM items
   to specific parent item characteristics. For example, let's say the parent
   item has a characteristic for paint finish with the values "Flat" and
@@ -707,7 +707,7 @@
       <listitem>
         <para>Select a characteristic from the list of characteristics. These
         characteristics are item characteristics defined on the Item master
-        for the parent item on the BOMs. Linking parent characteristics to
+        for the parent item on the BOM. Linking parent characteristics to
         child BOM items means the child item will be included as a material
         requirement whenever orders call for the same parent item
         characteristic.</para>
