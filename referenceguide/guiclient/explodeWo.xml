@@ -5,33 +5,43 @@
 <section id="explodeWo">
   <title><indexterm significance="normal">
       <primary>explosion</primary>
+
       <secondary>of work orders</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>work orders</primary>
+
       <secondary>explosion of</secondary>
     </indexterm>Explode Work Order</title>
+
   <para>When a work order is exploded, work order material requirements and
   work order operations are created for the work order in question, using the
   bill of materials and routing for the parent item. To manually explode a
   work order, go to <guimenuitem>Manufacture &gt; Work Order &gt;
   Explode</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/explodeWo.png" />
+          <imagedata fileref="images/explodeWo.png"/>
         </imageobject>
+
         <caption>Explode Work Order</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Work orders can be exploded either manually or automatically by
-    default. The default setting is configured at the system level.</para>
+    default. The default setting is configured in <guimenuitem>Manufacture
+    &gt; Setup</guimenuitem>.</para>
   </note>
+
   <para>When manually exploding a work order, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Work Order #</term>
+
       <listitem>
         <para>Enter the work order number of the work order you want to
         explode. The lookup feature located to the right of the field leads to
@@ -39,49 +49,63 @@
         explosion.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>Default work order explosion levels can be configured in
     <guimenuitem>Manufacture &gt; Setup</guimenuitem>.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>explosion levels for</secondary>
         </indexterm>Level</term>
+
       <listitem>
         <para>Select one of the following work order explosion levels:</para>
+
         <variablelist>
           <varlistentry>
             <term>Single Level Explosion</term>
+
             <listitem>
               <para>During a single-level explosion, work order material
               requirements and work order operations are created for the
@@ -90,8 +114,10 @@
               exploded manually.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Multiple Level Explosion</term>
+
             <listitem>
               <para>In a multiple-level explosion, any manufactured components
               of the parent item are identified and work orders are created
@@ -104,10 +130,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>EXPLODE</guibutton></term>
+
       <listitem>
         <para>Explodes the selected work order.</para>
       </listitem>

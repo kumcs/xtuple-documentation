@@ -5,115 +5,148 @@
 <section id="releaseWorkOrdersByPlannerCode">
   <title><indexterm significance="normal">
       <primary>work orders</primary>
+
       <secondary>releasing by planner code</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>planner codes</primary>
+
       <secondary>releasing work orders by</secondary>
     </indexterm>Release Work Orders by Planner Code</title>
+
   <para>If multiple work orders within a planner code have been exploded, you
   have the option of releasing them simultaneously. To release work orders by
   planner code, go to <guimenuitem>Manufacture &gt; Work Order &gt;
   Release</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/releaseWorkOrdersByPlannerCode.png" />
+          <imagedata fileref="images/releaseWorkOrdersByPlannerCode.png"/>
         </imageobject>
+
         <caption>Release Work Orders by Planner Code</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Once an order has been released, the system considers the ordered
     quantity to be available at 00:00:01 of the due date of the order in
     question.</para>
   </note>
+
   <para>When releasing work orders by planner code, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
+
       <listitem>
         <para>Select to release work orders for all planner codes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify planner code whose exploded work orders you want to
         release.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
-        Refine your search using Regular Expressions.</para>
+        Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Cutoff Date</term>
+
       <listitem>
         <para>All relevant work orders exploded prior to the date entered will
         be released.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>by Start Date</term>
+
       <listitem>
         <para>Select to make cutoff date effective as of work order start
         date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>by Due Date</term>
+
       <listitem>
         <para>Select to make cutoff date effective as of work order due
         date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
         <para>Select to release work orders by planner code from all
         sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
         <para>Specify site whose exploded work orders by planner code you want
         to release.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Documents</term>
+
       <listitem>
         <para>Select which of the following documents you want to print when
         releasing the specified work orders:</para>
+
         <variablelist>
           <varlistentry>
             <term>Print Pick List</term>
+
             <listitem>
               <para>Select to print pick lists for the specified work
               orders.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="manufacturing">
             <term>Print Routing</term>
+
             <listitem>
               <para>Select to print routings for the specified work
               orders.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Print Packing List</term>
+
             <listitem>
               <para>Select to print packing lists for the specified work
               orders.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Print Work Order Label</term>
+
             <listitem>
               <para>Select to print work order labels for the specified work
               orders.</para>
@@ -123,10 +156,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>RELEASE</guibutton></term>
+
       <listitem>
         <para>Releases work orders by planner code, using the specified
         parameters.</para>

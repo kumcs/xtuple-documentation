@@ -5,83 +5,107 @@
 <section id="scrapWoMaterialFromWIP">
   <title><indexterm significance="normal">
       <primary>scrap</primary>
+
       <secondary>from work order materials</secondary>
     </indexterm>Scrap Work Order Material</title>
+
   <para>To scrap work order materials which have been specifically issued to a
   work order using a material issue transaction, go to
   <guimenuitem>Manufacture &gt; Transactions &gt; Scrap</guimenuitem>. The
   following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/scrapWoMaterialFromWIP.png" />
+          <imagedata fileref="images/scrapWoMaterialFromWIP.png"/>
         </imageobject>
+
         <caption>Scrap Work Order Material</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>You may only scrap work order materials which have been specifically
     issued to a work order. In other words, material requirements having the
     push issue method may be scrapped.</para>
   </tip>
+
   <para>When scrapping work order materials from a work order, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
+
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
         general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Work Order #</term>
+
       <listitem>
         <para>Enter the work order number of the work order whose materials
         you want to scrap.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Method</term>
+
       <listitem>
         <para>Indicates whether selected work order is an assembly or
         disassembly work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Top-Level Finished Item</term>
+
       <listitem>
         <para>Select if you want to scrap parent-level items.</para>
+
         <variablelist>
           <varlistentry>
             <term>Qty.</term>
+
             <listitem>
               <para>Enter the quantity of top-level finished items you want to
               scrap. You may scrap top-level items after they have been
@@ -92,8 +116,9 @@
               account for those requirements. For example, you may need to
               issue the components—either manually or through a material
               backflush—and then scrap them retroactively.</para>
+
               <tip>
-                <para>Shop Floor Workbench users should only scrap top-level
+                <para>Shop Floor workbench users should only scrap top-level
                 items after they have posted production sufficient to cover
                 the scrap quantity. For example, if a user assembles 10
                 top-level items successfully but significantly damages the
@@ -102,8 +127,10 @@
               </tip>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Production receipt already posted</term>
+
             <listitem>
               <para>Select this option if a production receipt has already
               been posted.</para>
@@ -112,17 +139,22 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Scrap Component</term>
+
       <listitem>
         <para>Select if you want to scrap component items issued to the work
         order.</para>
+
         <variablelist>
           <varlistentry>
             <term>Component Item Number</term>
+
             <listitem>
               <para>Select one of the component items from the parent item's
               work order material requirements will be listed.</para>
+
               <note>
                 <para>You may scrap component items regardless of their issue
                 method. However, components must first be issued to a work
@@ -132,42 +164,54 @@
               </note>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>UOM</term>
+
             <listitem>
               <para>Inventory UOM.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty. Per</term>
+
             <listitem>
               <para>Displays the component quantity per each specified on the
               parent item's work order material requirements.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Fxd. Qty.</term>
+
             <listitem>
               <para>Displays the fixed quantity of material issued, if
               applicable.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Scrap %</term>
+
             <listitem>
               <para>Displays the component scrap percentage specified on the
               item's bill of materials (BOM).</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty. Required</term>
+
             <listitem>
               <para>Displays the component quantity required to fulfill the
               work order material requirements.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty. Issued</term>
+
             <listitem>
               <para>Displays the component quantity currently issued to the
               work order. You may only scrap components which have already
@@ -175,19 +219,24 @@
               material backflush.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty. Scrapped from WIP</term>
+
             <listitem>
               <para>Displays a running total of the component quantity already
               scrapped—if any.</para>
+
               <tip>
                 <para>You may not scrap the full quantity of a work order
                 material requirement from a work order.</para>
               </tip>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty.</term>
+
             <listitem>
               <para>Enter the quantity of the component item you want to scrap
               from the work order.</para>
@@ -197,10 +246,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>POST</guibutton></term>
+
       <listitem>
         <para>Scraps the specified quantity of the component item from the
         work order.</para>

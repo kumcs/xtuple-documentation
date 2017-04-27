@@ -4,77 +4,99 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="woOperation">
   <title>Create Work Order Operation</title>
+
   <para>To create a work order operation, go to <guimenuitem>Manufacture &gt;
   Operations &gt; New</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation.png" />
+          <imagedata fileref="images/woOperation.png"/>
         </imageobject>
+
         <caption>Create New Work Order Operation</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a work order operation, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Work Order #</term>
+
       <listitem>
         <para>Enter the work order number of the work order you want to create
         an operation for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Method</term>
+
       <listitem>
         <para>Indicates whether selected work order is an assembly or
         disassembly work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Standard Oper.</term>
+
       <listitem>
         <para>Select a standard operation to be used, if any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Operation Type</term>
+
       <listitem>
         <para>If a standard operation is specified, the operation type
         associated with the standard operation will be displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
-        <para>You will notice that two separate desciption fields are
+        <para>You will notice that two separate description fields are
         available here. This makes it possible to isolate different categories
         of information onto separate lines. For example, the first line might
         contain an item name, while the second line contains packaging
@@ -85,33 +107,43 @@
         format.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Work Center</term>
+
       <listitem>
         <para>Specify a work center to be used for specified operation.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tooling Reference</term>
+
       <listitem>
         <para>Enter a tooling reference—if applicable.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Oper. Seq. #</term>
+
       <listitem>
         <para>Indicates the next available work order operations sequence
         number.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>execution days</primary>
+
           <secondary>in work orders</secondary>
         </indexterm><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>execution days in</secondary>
         </indexterm>Execution Day</term>
+
       <listitem>
         <para>Select a number using the arrows or manually enter a value up to
         a maximum of 99. (Default is "1".) Value entered defines when the
@@ -121,14 +153,18 @@
         the second day.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
         <para>Displays the quantity ordered for the specified item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Throughput</term>
+
       <listitem>
         <para>Indicates the number of units, in the given item's inventory
         UOM, that can be produced in a minute—and also the number of minutes
@@ -136,53 +172,68 @@
         inventory UOM.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>setup time</primary>
+
           <secondary>in work orders</secondary>
         </indexterm><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>setup time for operations</secondary>
         </indexterm>Total Setup Time</term>
+
       <listitem>
         <para>Amount entered represents the time required to set up the work
         center for the operation, measured in minutes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Report Setup Time</term>
+
       <listitem>
         <para>Select to report setup time. Must be selected for labor costs
         associated with setup to be tracked in the G/L and elsewhere. If not
         selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>run time</primary>
+
           <secondary>in work orders</secondary>
         </indexterm> <indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>run time for operations</secondary>
         </indexterm>Total Run Time</term>
+
       <listitem>
         <para>Amount entered represents the total run time for the operation,
         measured in minutes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Report Run Time</term>
+
       <listitem>
         <para>Select to report run time. Must be selected for labor costs
         associated with run time to be tracked in the G/L and elsewhere. If
         not selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>units of measure</primary>
+
           <secondary>in operations</secondary>
         </indexterm>Production UOM</term>
+
       <listitem>
         <para>Select a UOM—or enter a free-form UOM. Specify a UOM to be used
         optionally when work order operations are posted for the specified
@@ -197,13 +248,16 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>When posting work order operations, you are given the option to post
     operations using production UOMs or inventory UOMs.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Production/Inventory UOM Ratio</term>
+
       <listitem>
         <para>When work order operations are posted using the production UOM,
         the inventory/production UOM ratio normalizes the posting so that the
@@ -211,54 +265,70 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>Labor and <indexterm significance="normal">
         <primary>overhead</primary>
+
         <secondary>in work order costing</secondary>
       </indexterm>overhead costs associated with setup and run times must be
     reported if they are to be tracked in the G/L and elsewhere. To report
     setup and run times, select the appropriate boxes in the Operation
     screen.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Setup Time Remaining</term>
+
       <listitem>
         <para>Displays setup time remaining.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Run Time Remaining</term>
+
       <listitem>
         <para>Displays run time remaining.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Setup Time Consumed</term>
+
       <listitem>
         <para>Displays setup time consumed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Run Time Consumed</term>
+
       <listitem>
         <para>Displays run time consumed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Setup Complete</term>
+
       <listitem>
         <para>Selected if setup complete.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Run Complete</term>
+
       <listitem>
         <para>Selected if run complete.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Receive to Stock at this Operation</term>
+
       <listitem>
         <para>Select if you want finished goods to be received into inventory
         when this operation is posted. Only one work order operation may have
@@ -267,14 +337,17 @@
         operation is posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Auto. Issue Components at this Operation</term>
+
       <listitem>
         <para>Select if you want linked component material to be issued
         automatically (i.e., backflushed) when this operation is posted. If
         this option is selected, the general ledger will show the component
         materials being removed from inventory when this operation is
         posted.</para>
+
         <note>
           <para>The <guilabel>Auto. Issue</guilabel> setting applies only to
           component items whose issue method is either pull or mixed.
@@ -284,29 +357,37 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add instructions to the work order operation, select the
   <guimenuitem>Instructions</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation_instructionsTab.png" />
+          <imagedata fileref="images/woOperation_instructionsTab.png"/>
         </imageobject>
+
         <caption>Work Order Operation</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When adding Instructions to a work order operation, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Instructions</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         instructions related to the operation.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Use Fixed-Width Font</term>
+
       <listitem>
         <para>Select to display text in the <guilabel>Instructions</guilabel>
         field in fixed-width font. This is a useful feature for displaying
@@ -314,14 +395,17 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view materials related to the work order operation, select the
   <guimenuitem>Materials</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woOperation_materialsTab.png" />
+          <imagedata fileref="images/woOperation_materialsTab.png"/>
         </imageobject>
+
         <caption>Materials for Work Order Operation</caption>
       </mediaobject>
     </screenshot></para>

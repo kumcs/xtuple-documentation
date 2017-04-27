@@ -5,77 +5,100 @@
 <section id="woMaterialItem">
   <title><indexterm significance="normal">
       <primary>work orders</primary>
+
       <secondary>creating material requirements for</secondary>
     </indexterm>Create Work Order Material Requirement</title>
+
   <para>To create a work order material requirement for an open (O) work
   order, go to <guimenuitem>Manufacture &gt; Materials &gt; New</guimenuitem>.
   The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/woMaterialItem.png" />
+          <imagedata fileref="images/woMaterialItem.png"/>
         </imageobject>
+
         <caption>Create Work Order Material Requirement</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a work order material requirement, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Work Order #</term>
+
       <listitem>
         <para>Enter the work order number of the work order you want to create
         a material requirement for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Description of item number.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Method</term>
+
       <listitem>
         <para>Indicates whether selected work order is an assembly or
         disassembly work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Component</term>
+
       <listitem>
         <para>Enter the information for the component you want to add to
         parent item bill of materials (BOM)</para>
+
         <variablelist>
           <varlistentry>
             <term>Item Number</term>
+
             <listitem>
               <para>Enter the item number of the item you want to add to the
               parent item's bill of materials. This feature allows you to add
@@ -84,9 +107,11 @@
             </listitem>
           </varlistentry>
         </variablelist>
+
         <variablelist>
           <varlistentry>
             <term>UOM</term>
+
             <listitem>
               <para>Inventory UOM.</para>
             </listitem>
@@ -94,22 +119,28 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Details</term>
+
       <listitem>
         <para>Enter component details required to produce the item
         manufactured by the selected work order.</para>
+
         <variablelist>
           <varlistentry>
             <term>Fixed Qty.</term>
+
             <listitem>
               <para>If applicable, specify a flat quantity of material
               required that is independent of the total quantity produced on
               the work order.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty. Per</term>
+
             <listitem>
               <para>Enter the quantity of component items required to produce
               one of the items manufactured by the selected work order. The
@@ -118,8 +149,10 @@
               inventory UOM.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Issue UOM</term>
+
             <listitem>
               <para>Specify the UOM you want to use when issuing item quantity
               to the work order. Items may be assigned multiple material issue
@@ -130,27 +163,35 @@
               will be used by default.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Scrap %</term>
+
             <listitem>
               <para>Enter the estimated scrap percentage for the <emphasis>ad
               hoc</emphasis> addition.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Qty. Required</term>
+
             <listitem>
               <para>Displays the total quantity required, including quantity
               per and scrap allowance.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Issue Method</term>
+
             <listitem>
               <para>Select one of the available issue methods:</para>
+
               <variablelist>
                 <varlistentry>
                   <term>Push</term>
+
                   <listitem>
                     <para>Select if you want material for the item to be
                     issued to the work order by a specific material issue
@@ -158,9 +199,11 @@
                   </listitem>
                 </varlistentry>
               </variablelist>
+
               <variablelist>
                 <varlistentry>
                   <term>Pull</term>
+
                   <listitem>
                     <para>Select if you want material for the item to be
                     issued to the work order by either a material backflush or
@@ -168,9 +211,11 @@
                   </listitem>
                 </varlistentry>
               </variablelist>
+
               <variablelist>
                 <varlistentry>
                   <term>Mixed</term>
+
                   <listitem>
                     <para>Select if you want the item to take upon itself the
                     issue method applied to it initially—that is, either a
@@ -180,54 +225,67 @@
               </variablelist>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Pick List</term>
+
             <listitem>
               <para>Select when item should be included as a pick list
               item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Used At</term>
+
             <listitem>
               <para>Specify which operation the component is used at. For more
               information on this option, please refer to <xref
-              linkend="bomItem" /></para>
+              linkend="bomItem"/></para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Schedule at W/O Operation</term>
+
             <listitem>
               <para>Select to indicate that this component is not due until
               the work order operation that will consume it is scheduled to
               begin. The scheduling of operations is handled by the
-              E<guilabel>xecution Day</guilabel> indicator on the Routing Item
+              <guilabel>Execution Day</guilabel> indicator on the Routing Item
               screen. For more information, see <xref
-              linkend="bomItem" /></para>
+              linkend="bomItem"/></para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add notes related to work order material requirement, select the
   <guimenuitem>Notes</guimenuitem> tab. The following screen will
   appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/woMaterialItem_notesTab.png" />
+      <imagedata fileref="images/woMaterialItem_notesTab.png"/>
     </imageobject>
+
     <caption>Material Requirement Notes</caption>
   </mediaobject>
+
   <para>To add reference information related to the work order material
   requirement, select the <guimenuitem>Reference</guimenuitem> tab. The
   following screen will appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/woMaterialItem_referenceTab.png" />
+      <imagedata fileref="images/woMaterialItem_referenceTab.png"/>
     </imageobject>
+
     <caption>Material Requirement Reference</caption>
   </mediaobject>
+
   <para>The <guilabel>Reference</guilabel> field can be used to identify any
   additional attributes associated with the material requirement.</para>
 </section>
