@@ -5,99 +5,127 @@
 <section id="correctProductionPosting">
   <title><indexterm significance="normal">
       <primary>production</primary>
+
       <secondary>correcting posting of</secondary>
     </indexterm>Correct Production Posting</title>
+
   <para>To correct production posting for a work order—in the event, for
   example, that production has been previously overstated—go to
   <guimenuitem>Manufacture &gt; Transactions &gt; Correct Production
   Posting</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/correctProductionPosting.png" />
+          <imagedata fileref="images/correctProductionPosting.png"/>
         </imageobject>
+
         <caption>Correct Production Posting</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>You may not post a correction to a work order that manufactures a
     breeder item. Instead, you must manually adjust the quantity on hand (QOH)
     values for the breeder materials, the co-products, and the
     by-products.</para>
   </note>
+
   <para>When correcting production posting for a work order, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
+
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
         general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Work Order #</term>
+
       <listitem>
         <para>Enter the work order number of the work order whose production
         posting you want to correct.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Method</term>
+
       <listitem>
         <para>Indicates whether selected work order is an assembly or
         disassembly work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
         <para>Displays the original work order quantity.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Received</term>
+
       <listitem>
         <para>Displays the quantity received against the work order to
         date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Balance Due</term>
+
       <listitem>
         <para>Displays the quantity remaining to be received against the work
         order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. to Correct</term>
+
       <listitem>
         <para>Enter the quantity you want to subtract from the already-posted
         quantity. This field will not accept a negative number, so you must
@@ -105,16 +133,20 @@
         by the value of the positive number entered here.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Backflush Materials</term>
+
       <listitem>
         <para>Select to indicate that the amount of materials indicated by the
         associated work order material requirement record will be issued to
-        the selected work order for all Pull or Mixed component items.</para>
+        the selected work order for all pull or mixed component items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Backflush Operations</term>
+
       <listitem>
         <para>Select to indicate that the amount of time and labor indicated
         by the associated work order operation record will be issued to the
