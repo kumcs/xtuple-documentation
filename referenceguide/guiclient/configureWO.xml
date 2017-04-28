@@ -5,26 +5,34 @@
 <section id="configureWO">
   <title><indexterm significance="normal">
       <primary>configuration</primary>
+
       <secondary>of manufacture module</secondary>
     </indexterm>Configure Manufacture</title>
+
   <para>For configuration, go to <guimenuitem>Manufacture &gt;
   Setup</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureWO.png" />
+          <imagedata fileref="images/configureWO.png"/>
         </imageobject>
+
         <caption>Setup</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When configuring the <guimenu>Manufacture</guimenu> module, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>numbering of</secondary>
         </indexterm>Next Work Order #</term>
+
       <listitem>
         <para>The next sequentially available work order number will display
         here. You may change the number—creating a new basis for the next work
@@ -33,14 +41,18 @@
         created.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Work Order Number Creation</term>
+
       <listitem>
         <para>Select one of the available work order number creation
         methods:</para>
+
         <variablelist>
           <varlistentry>
             <term>Automatic</term>
+
             <listitem>
               <para>Work order numbers will be automatically incremented by
               one each time a new work order is created. These
@@ -48,15 +60,19 @@
               read-only.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Manual</term>
+
             <listitem>
               <para>Work order numbers must be entered manually whenever you
               create a new work order.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Automatic, Allow Override</term>
+
             <listitem>
               <para>Work order numbers will be automatically generated and
               incremented, as under the <guilabel>Automatic</guilabel> option
@@ -68,65 +84,80 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>automatic explosion of</secondary>
         </indexterm>Automatically Explode Work Orders</term>
+
       <listitem>
         <para>Select if you want work orders to be exploded automatically.
         Work order explosion is the process whereby work order material
-        Requirements and work order operations are created for a work order.
+        requirements and work order operations are created for a work order.
         If this option is selected, all parent work order items will be
         exploded by default. Child work orders will also be exploded by
-        default, if the bill of materials for the parent item specifies that
-        child work orders should be created when the parent work order is
+        default, if the bill of materials (BOM) for the parent item specifies
+        that child work orders should be created when the parent work order is
         exploded. If this option is not selected, work orders will need to be
         exploded manually.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Auto fill Post Operation Qty. to Balance</term>
+
       <listitem>
         <para>Check this option if you want quantities to be automatically
         populated with the quantity balance due when posting
         operations.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Post Work Order Changes to the Change Log</term>
+
       <listitem>
         <para>Select to post to the change log any changes made to work
         orders.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry id="AllowIssue">
       <term>Allow Issue To Exploded Work Orders</term>
+
       <listitem>
         <para>Select if you want to allow material to be issued to exploded
         work orders. If not selected, users will be unable to issue materials
         to exploded work orders.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Explode Work Orders Effective as of</term>
+
       <listitem>
         <para>Select one of the following work order explosion effectivity
         dates:</para>
+
         <variablelist>
           <varlistentry>
             <term>Date of Explosion</term>
+
             <listitem>
               <para>Explode work orders effective on the date of explosion,
-              incorporating bills of materials (BOM) and routings effective
-              on that date.</para>
+              incorporating BOM and routings effective on that date.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Work Order Start Date</term>
+
             <listitem>
               <para>Explode work orders effective on the scheduled start date,
               incorporating BOMs and routings effective on that date.</para>
+
               <tip>
                 <para>Pick a default explosion level if you have not
                 configured the <guimenu>Manufacture</guimenu> module to
@@ -139,23 +170,30 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>default variance reporting for</secondary>
         </indexterm>Inventory Item Cost Defaults</term>
+
       <listitem>
         <para>Specify preferences for the following defaults:</para>
+
         <variablelist>
           <varlistentry>
             <term>Post Material Usage Variances</term>
+
             <listitem>
               <para>Select to post material usage variances whenever work
               order production is posted.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="manufacturing">
             <term>Post Labor Variances</term>
+
             <listitem>
               <para>Select to post labor variances whenever work order
               operations are posted.</para>
@@ -164,26 +202,33 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Shop Floor Workbench Posts</term>
+
       <listitem>
         <para>Select the work order processing method to be used by the Shop
-        Floor Workbench:</para>
+        Floor workbench:</para>
+
         <variablelist>
           <varlistentry>
             <term>Production</term>
+
             <listitem>
               <para>Select to require a production-posting approach on the
-              Shop Floor Workbench.</para>
+              Shop Floor workbench.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="manufacturing">
             <term>Operations</term>
+
             <listitem>
               <para>Select to require an operations-posting approach on the
-              Shop Floor Workbench.</para>
+              Shop Floor workbench.</para>
+
               <para role="manufacturing"><note>
-                  <para>The Shop Floor Workbench cannot be used in a dual
+                  <para>The Shop Floor workbench cannot be used in a dual
                   mode. The workbench must be configured to use either a
                   production-posting or an operations-posting approach.</para>
                 </note></para>
@@ -192,28 +237,36 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>work orders</primary>
+
           <secondary>default explosion levels for</secondary>
         </indexterm>Default Work Order Explosion Level</term>
+
       <listitem>
         <para>Select one of the following default explosion levels, if work
         orders will not be exploded automatically by default:</para>
+
         <variablelist>
           <varlistentry>
             <term>Single Level</term>
+
             <listitem>
               <para>This option specifies that when work orders are exploded,
               requirements should be created for the parent work order items
               only.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Multiple Level</term>
+
             <listitem>
               <para>This option specifies that requirements should be created
               for both parent and child work orders.</para>
+
               <note>
                 <para>Performing a multiple level explosion does not create
                 child work orders. Child work orders must first be created
@@ -227,28 +280,35 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry id="configureWOCostDefaults">
       <term>Work Order Cost Recognition Defaults</term>
+
       <listitem>
         <para>Select one of the following cost of sales recognition defaults
         for average cost and job items:</para>
+
         <note>
           <para>The default method specified here will be used when creating
           work orders for average cost job items, unless the default is being
           overridden at the item site level. The method may also be changed
           manually at the header level of the Work Order screen.</para>
         </note>
+
         <variablelist>
           <varlistentry>
             <term>To Date</term>
+
             <listitem>
               <para>When work orders for average cost or job items are
               shipped, all of the WIP costs accumulated to date will be
               charged to cost of sales.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Proportional</term>
+
             <listitem>
               <para>When work orders for average cost or job items are
               shipped, a value up to the proportional value of the total
@@ -257,6 +317,7 @@
               material has been issued—and if only one of the three is
               shipped—then 1/3 of the value charged to WIP at that point will
               be charged to cost of sales.</para>
+
               <para role="manufacturing"><tip>
                   <para>The appropriate reporting selections must be made in
                   routings to ensure that labor and overhead costs associated

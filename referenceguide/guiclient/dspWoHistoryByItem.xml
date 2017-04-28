@@ -5,78 +5,100 @@
 <section id="dspWoHistoryByItem">
   <title><indexterm significance="normal">
       <primary>work orders</primary>
+
       <secondary>history by item</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>items</primary>
+
       <secondary>work order history for</secondary>
     </indexterm>Work Order History by Item</title>
+
   <para>To view work order history by item, go to <guimenuitem>Manufacture
   &gt; Reports &gt; History &gt; by Item</guimenuitem>. The following screen
   will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspWoHistoryByItem.png"
-                     id="dspWoHistoryByItem.imagedata" />
+                     id="dspWoHistoryByItem.imagedata"/>
         </imageobject>
+
         <caption>Work Order History by Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When displaying work order history by item, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item whose work order history you
         want to view. The lookup feature located to the right of the field
         leads to a searchable list of make and buy items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
-        <para>Inventory unit of measure (UOM).</para>
+        <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
         <para>Select to display the work order history by item for all
         sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
         <para>Specify site whose work order history by item you want to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Start Date</term>
+
       <listitem>
         <para>Work orders scheduled on and after this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>End Date</term>
+
       <listitem>
         <para>Work orders scheduled on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only Show Top Level Work Orders</term>
+
       <listitem>
         <para>Select to display only top level work orders. Top level work
         orders are work orders that have not been created to meet the
         component demands of a parent work order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show W/O Cost</term>
+
       <listitem>
         <para>Select to include the current posted value of the work order in
         the display. The posted value is equal to the total cost accumulated
@@ -88,10 +110,12 @@
         result.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Work Orders</term>
+
       <listitem>
-        <para>Display lists work order History by item, using the specified
+        <para>Display lists work order history by item, using the specified
         parameters. The start dates and end dates are color-coded for ease of
         use. Both dates will display in red type if the work order is not yet
         in-process and is also past due. Once a work order's status is changed
