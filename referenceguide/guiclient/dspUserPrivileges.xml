@@ -5,58 +5,45 @@
 <section id="dspUserPrivileges">
   <title><indexterm significance="normal">
       <primary>users</primary>
-
       <secondary>privileges for</secondary>
-    </indexterm>User Privileges</title>
-
-  <para>The User Privileges screen lists system users and the privileges/roles
-  they are assigned to. In addition to listing user privileges, this screen
-  can also be used to maintain users.</para>
-
+    </indexterm>User Privilege Audit</title>
+  <para>The User Privilege Audit screen lists system users and the
+  privileges/roles they are assigned to. In addition to listing user
+  privileges, this screen can also be used to maintain users.</para>
   <para>Here are some tips for using this screen:</para>
-
   <itemizedlist>
     <listitem>
       <para>Use the right-click menu to maintain a user's record.</para>
     </listitem>
-
     <listitem>
       <para>You can also maintain user roles from the right-click menu,
       impacting a broader range of users.</para>
     </listitem>
-
     <listitem>
       <para>Isolate a single user's privileges with the <guilabel>Per User
       Filter</guilabel> option.</para>
     </listitem>
-
     <listitem>
-      <para>Using the filter option, identify all users assigned to a
-      particular role.</para>
+      <para>Using the filter, identify all users assigned to a particular
+      role.</para>
     </listitem>
-
     <listitem>
       <para>See who is assigned to one particular privilege using the filter
       tools.</para>
     </listitem>
   </itemizedlist>
-
   <para>The following screenshot shows the User Privileges screen:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspUserPrivileges.png"/>
+          <imagedata fileref="images/dspUserPrivileges.png" />
         </imageobject>
-
-        <caption>User Privileges</caption>
+        <caption>User Privilege Audit</caption>
       </mediaobject>
     </screenshot></para>
-
-  <para>The default filter on the User Privileges screen shows privileges for
-  all users. You can build your own search criteria using the following
+  <para>The default filter on the User Privilege Audit screen shows privileges
+  for all users. You can build your own search criteria using the following
   options:</para>
-
   <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
