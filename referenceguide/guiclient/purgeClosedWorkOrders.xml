@@ -5,47 +5,62 @@
 <section id="purgeClosedWorkOrders">
   <title><indexterm significance="normal">
       <primary>work orders</primary>
+
       <secondary>purging closed</secondary>
     </indexterm>Purge Closed Work Orders</title>
+
   <para>When you purge closed work orders, you are removing from the database
   both detailed and header level work order information. To purge closed work
   orders, go to <guimenuitem>Manufacture &gt; Utilities &gt; Purge Closed Work
   Orders</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/purgeClosedWorkOrders.png" />
+          <imagedata fileref="images/purgeClosedWorkOrders.png"/>
         </imageobject>
+
         <caption>Purge Closed Work Orders</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When purging closed work orders, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Cutoff Date</term>
+
       <listitem>
         <para>All closed work orders prior to the date entered will be purged
         from the system.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>All Sites</term>
+
       <listitem>
         <para>Select to purge closed work orders from all sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="standard">
       <term>Selected</term>
+
       <listitem>
-        <para>Specify site whose closed work orders you want to purge.</para>
+        <para>Specify the site whose closed work orders you want to
+        purge.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>PURGE</guibutton></term>
+
       <listitem>
         <para>Purges closed work orders using the criteria specified in the
         screen.</para>
