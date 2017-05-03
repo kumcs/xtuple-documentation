@@ -9,8 +9,8 @@
   Columns utility was designed to identify and correct problems caused by this
   scenario. Because this screen will be of little value to most users, access
   to this screen is limited to admin users only. To identify and correct
-  sequence problems, select the <guimenuitem>Serial Columns</guimenuitem> option. The following screen
-  will appear:</para>
+  sequence problems, go to <guimenuitem>System &gt; Utilities &gt; Serial
+  Columns</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -26,19 +26,20 @@
       <term>Only Show Problems</term>
       <listitem>
         <para>Select to include only tables which have sequencing problems in
-        the display. No problems will exist as long as the "Next Key" value is
-        equal to or greater than the "Largest Key Used" value. A problem
-        exists if the "Largest Key Used" value is greater than the "Next Key"
-        value.</para>
+        the display. No problems will exist as long as the <guilabel>Next
+        Key</guilabel> value is equal to or greater than the <guilabel>Largest
+        Key Used</guilabel> value. A problem exists if the <guilabel>Largest
+        Key Used</guilabel> value is greater than the <guilabel>Next
+        Key</guilabel> value.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Tables</term>
       <listitem>
         <para>Display lists the complete set of database tables and
-        corresponding sequences. If the <guilabel>Only Show Problems</guilabel> option is
-        selected, then only those tables which have sequence problems will be
-        included in the display.</para>
+        corresponding sequences. If the <guilabel>Only Show
+        Problems</guilabel> option is selected, then only those tables which
+        have sequence problems will be included in the display.</para>
       </listitem>
     </varlistentry>
   </variablelist>
