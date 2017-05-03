@@ -5,10 +5,8 @@
 <section id="metasqls">
   <title><indexterm significance="normal">
       <primary>metasql</primary>
-
       <secondary>statements master list</secondary>
     </indexterm>MetaSQL Statements</title>
-
   <para>MetaSQL is a scripting language designed to handle dynamic database
   queries. MetaSQL tags such as <literal>&lt;? if exists("parameter")
   ?&gt;</literal> or <literal>&lt;? value("parameter") ?&gt;</literal> are
@@ -22,7 +20,6 @@
   same MetaSQL statement. For more information, please see the <ulink
   url="http://www.xtuple.org/node/270">MetaSQL advanced topic</ulink> in the
   OpenRPT user guide.</para>
-
   <note>
     <para>You must have been granted the <literal>ViewMetaSQL</literal>
     privilege to view statements, the <literal>MaintainMetaSQL</literal>
@@ -30,28 +27,23 @@
     <literal>ExecuteMetaSQL</literal> privilege to run statements that change
     the database.</para>
   </note>
-
-  <para>To access the master list of MetaSQL Statements, select the
-  <guimenuitem>MetaSQL Statements</guimenuitem> option. The following screen
-  will appear:</para>
-
+  <para>To access the master list of MetaSQL Statements, go to
+  <guimenuitem>System &gt; Design &gt; MetaSQL Statements</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/metasqls.png"/>
+          <imagedata fileref="images/metasqls.png" />
         </imageobject>
-
-        <caption>MetaSQL Statements List</caption>
+        <caption>MetaSQL Statements</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The MetaSQL Statements screen displays information on all existing
   MetaSQL statements, including group, name and notes. If the MetaSQL is part
   of a larger package, the name of the parent package will be displayed—with
   all the child MetaSQL statements appearing in a nested list below it. Select
   the <guilabel>Organize By Package</guilabel> option to see an indented view
   of the MetaSQL statements and the package they belong to.</para>
-
   <xi:include href="metasqlEditor.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

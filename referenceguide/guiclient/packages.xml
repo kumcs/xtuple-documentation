@@ -5,10 +5,8 @@
 <section id="packages">
   <title><indexterm significance="normal">
       <primary>packages</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Packages</title>
-
   <para>Packages are compressed files which may contain either a) custom
   software designed to extend the functionality of xTuple ERP without touching
   the core xTuple ERP source code or b) upgrade bundles designed to migrate
@@ -22,30 +20,23 @@
   please see the <ulink
   url="http://wiki.xtuple.org/CreateUpdaterPackages">CreateUpdaterPackages</ulink>
   wiki page.</para>
-
   <para>To view the complete list of packages loaded into your xTuple ERP
-  system, select the <guimenuitem>Packages</guimenuitem> option. The following
-  screen will appear:</para>
-
+  system, go to <guimenuitem>System &gt; Design &gt; Packages</guimenuitem>.
+  The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/packages.png"/>
+          <imagedata fileref="images/packages.png" />
         </imageobject>
-
-        <caption>Packages Master List</caption>
+        <caption>List Packages</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The List Packages screen displays information on all existing
   packages.</para>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>LOAD</guibutton></term>
-
       <listitem>
         <para>Opens the Updater utility to allow loading a new package. If the
         application cannot find the updater then the user is given a dialog to
@@ -53,20 +44,16 @@
         administrators.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>ENABLE</guibutton></term>
-
       <listitem>
         <para>Highlight a package and then select this button to enable a
         package which has been disabled. This option will only be available to
         xTuple ERP administrators.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>DISABLE</guibutton></term>
-
       <listitem>
         <para>Highlight a package and then select this button to disable a
         package which has been enabled. This option will only be available to
@@ -74,7 +61,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="package.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

@@ -13,10 +13,10 @@
   <para>Report definitions in xTuple can be customized to meet the needs of
   your business. Adding logos, changing how and what information is displayed
   are all possible. The stock (or standard) xTuple reports are given a grade
-  of zero ("0"). Anyone who customizes an xTuple report should know that the
-  stock xTuple reports may be updated during database upgrades. Because of
-  this, you should be sure to assign a grade greater than zero to any custom
-  reports you create&mdash;to clearly distinguish them from stock xTuple
+  of <literal>0</literal>. Anyone who customizes an xTuple report should know
+  that the stock xTuple reports may be updated during database upgrades.
+  Because of this, you should be sure to assign a grade greater than zero to
+  any custom reports you create—to clearly distinguish them from stock xTuple
   reports. Doing so will ensure your custom reports are not overwritten during
   upgrades. A report definition may have multiple grades. By default, the
   application uses the report definition with the highest grade.</para>
@@ -27,22 +27,24 @@
     are, of course, free to use other fonts when writing report definitions
     for your own environment.</para>
   </tip>
-  <para>To view the master list of Available Report Definitions, select the
-  <guimenuitem>Reports</guimenuitem> option. The following screen will appear:</para>
+  <para>To view the List Report Definitions master list, select the
+  <guimenuitem>System &gt; Design &gt; Reports</guimenuitem> option. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/reports.png" />
         </imageobject>
-        <caption>Report Definitions Master List</caption>
+        <caption>List Report Definitions</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The Report Definitions master list displays information on all stored
-  reports, including report name, report grade, and report description. If the
-  report is part of a larger package, the name of the parent package will be
-  displayed&mdash;with all the child reports appearing in a nested list below
-  it. Select the <guimenuitem>Organize By Package</guimenuitem> option to see an indented view of the
-  reports and the package they belong to.</para>
+  <para>The List Report Definitions master list displays information on all
+  stored reports, including report name, report grade, and report description.
+  If the report is part of a larger package, the name of the parent package
+  will be displayed—with all the child reports appearing in a nested list
+  below it. Select the <guimenuitem>Organize By Package</guimenuitem> option
+  to see an indented view of the reports and the package they belong
+  to.</para>
   <xi:include href="report.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

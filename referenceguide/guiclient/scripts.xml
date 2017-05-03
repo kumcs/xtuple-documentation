@@ -5,10 +5,8 @@
 <section id="scripts">
   <title><indexterm significance="normal">
       <primary>scripts</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Scripts</title>
-
   <para>xTuple ERP supports <ulink
   url="http://doc.qt.io/qt-5/qtscript-index.html">QtScript</ulink>, a tool for
   loading UI forms using <ulink
@@ -21,7 +19,6 @@
   learn more about scripting for xTuple ERP, please see the <ulink
   url="https://github.com/xtuple/qt-client/wiki/Hacking-the-xTuple-Desktop-Client-With-Extensions">Scripting
   Guide</ulink>.</para>
-
   <tip>
     <para>You can enable automatic script debugging using the <ulink
     url="http://doc.qt.io/qt-5/qtscriptdebugger-manual.html">Qt Script
@@ -30,35 +27,29 @@
     you are trying to develop your own custom scripts and want to use the Qt
     Script debugger, xTuple recommends starting your script with this command.
     To learn more about the User Preferences setting, see <xref
-    linkend="userPreferences"/>.</para>
+    linkend="userPreferences" />.</para>
   </tip>
-
-  <para>To view the master list of available scripts, select the
-  <guimenuitem>Scripts</guimenuitem> option. The following screen will
-  appear:</para>
-
+  <para>To view the master list of available scripts, go to
+  <guimenuitem>System &gt; Design &gt; Scripts</guimenuitem>. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/scripts.png"/>
+          <imagedata fileref="images/scripts.png" />
         </imageobject>
-
-        <caption>Scripts Master List</caption>
+        <caption>List Scripts</caption>
       </mediaobject>
     </screenshot></para>
-
-  <para>The Scripts master list displays information on all stored scripts,
-  including script name, description, order, and enabled status. If the script
-  is part of a larger package, the name of the parent package will be
-  displayed—with all the child scripts appearing in a nested list below it.
+  <para>The List Scripts master list displays information on all stored
+  scripts, including script name, description, order, and enabled status. If
+  the script is part of a larger package, the name of the parent package will
+  be displayed—with all the child scripts appearing in a nested list below it.
   Select the <guilabel>Organize By Package</guilabel> option to see an
   indented view of the scripts and the package they belong to.</para>
-
   <note>
     <para>You may edit multiple scripts at the same time. To do so, open
     scripts for editing side-by-side.</para>
   </note>
-
   <xi:include href="scriptEditor.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
