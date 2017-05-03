@@ -64,13 +64,13 @@
               (UOM) and item description will automatically appear.
               Additionally, you may also specify the item's supplying site.
               Items may be supplied from multiple sites. Sites designated as
-              sold from sites in the item site master for an item are
+              sold from sites in the Item Site master for an item are
               considered <guilabel>Supplying Sites</guilabel> on this screen.
               By default, the item site with the highest ranking will be
               selected as the supplying site. If more than one item site share
               a ranking of <guilabel>1</guilabel>, the default supplying site
               will be selected in alphabetical order. Item sites are ranked
-              using the ranking mechanism on the item site master.</para>
+              using the ranking mechanism on the Item Site master.</para>
             </listitem>
           </varlistentry>
 
@@ -118,7 +118,7 @@
         alias, hit the <guibutton>TAB</guibutton> key. A list of items that
         use the specified item alias will be displayed. Select the desired
         item from the list. The item alias will display as the customer part
-        number. Item aliases are defined on the item master.</para>
+        number. Item aliases are defined on the Item master.</para>
       </listitem>
     </varlistentry>
 
@@ -144,7 +144,7 @@
       Price)</literal></para>
     </informalexample>
 
-    <para>If for some reason the prices don't look correct, check the item
+    <para>If for some reason the prices don't look correct, check the Item
     master for the line item in question. It may be that the inventory and
     price UOMs do not exist in a 1:1 relationship.</para>
   </note>
@@ -177,7 +177,7 @@
       <listitem>
         <para>Specify the UOM to be used when selling the line item. Sold
         items may be assigned multiple selling UOMs. These alternate UOMs may
-        be defined on the item master. You may also select a global conversion
+        be defined on the Item master. You may also select a global conversion
         ratio here. Global conversions have the label
         <literal>Global</literal> appended to them. If a line item has no
         selling UOM defined, then the inventory UOM will be used here by
@@ -297,7 +297,7 @@
             <term>Type</term>
 
             <listitem>
-              <para>Specify the tax type for the invoice item. If the item
+              <para>Specify the tax type for the invoice item. If the Item
               master does not have a tax type for the invoice's tax authority,
               then no tax will be charged.</para>
             </listitem>
