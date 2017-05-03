@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="configureAM">
+  <title>Asset Management</title>
+
+  <para>To configure asset management, go to <guimenuitem>Accounting &gt;
+  Setup</guimenuitem>. In the Setup window, from the left side menu, select
+  <guimenuitem>Configure &gt; Asset Management</guimenuitem>. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configureAM.png"/>
+        </imageobject>
+
+        <caption>Configure Asset Management</caption>
+      </mediaobject>
+    </screenshot>The Asset Management screen includes the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Next Maintenance Order #</term>
+
+      <listitem>
+        <para>The number of the upcoming maintenance order will be in this
+        field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Maintenance Parts Expense</term>
+
+      <listitem>
+        <para>Lists the options that control where the charge for maintenance
+        parts gets assigned to.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Use Item Cost Category Expense</term>
+
+            <listitem>
+              <para>Select to add maintenance parts expenses to the item cost
+              category.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Use Item Cost Category Expense (with Manual Override)</term>
+
+            <listitem>
+              <para>Select to add maintenance parts expenses to the item cost
+              category, with the option to change the cost category per
+              maintenance order.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Use Default Expense Category</term>
+
+            <listitem>
+              <para>Select to use and set the default expense category for the
+              system.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Default Expense Category</term>
+
+            <listitem>
+              <para>Click on the magnifying glass icon to search through the
+              expense categories in the database. The selected expense
+              category will become the default expense category for the
+              system. This field is only enabled when the <guilabel>Default
+              Expense Category</guilabel> option is selected.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Create To Do items and alarms</term>
+
+      <listitem>
+        <para>Select this option to add maintenance orders as to-do items and
+        to set an alarm for them as needed.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>
