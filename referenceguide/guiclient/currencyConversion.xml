@@ -5,70 +5,63 @@
 <section id="currencyConversion">
   <title><indexterm significance="normal">
       <primary>exchange rates</primary>
-
       <secondary>adding new</secondary>
     </indexterm>Exchange Rate</title>
-
-  <para>To add a new exchange rate to the master list of Exchange Rates,
+  <para>To add a new exchange rate to the master list of exchange rates,
   select the <guibutton>NEW</guibutton> button. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/currencyConversion.png"/>
+          <imagedata fileref="images/currencyConversion.png" />
         </imageobject>
-
-        <caption>Create New Exchange Rate</caption>
+        <caption>New Currency Exchange Rate</caption>
       </mediaobject>
     </screenshot></para>
-
-  <para>When adding a new exchange rate to the master list of Exchange Rates,
+  <para>When adding a new exchange rate to the master list of exchange rates,
   you are presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Currency</term>
-
       <listitem id="currencyConversionCurrency">
         <para>Specify the currency you want to apply the exchange rate to. You
         may enter multiple exchange rates for an individual currency—as long
         as the effective dates do not overlap.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Exchange Rate</term>
-
       <listitem id="currencyConversionExchangeRate">
         <para>Enter the exchange rate to be used for the specified currency
         during specified date range. The meaning of the exchange rate value is
         configured on the Configure G/L screen in the
         <guimenu>System</guimenu> module. The value of exchange rates may be
-        configured in either of two ways: 1) Base x Exchange Rate = Foreign or
-        2) Foreign x Exchange Rate = Base.</para>
+        configured in either of two ways:</para>
+        <orderedlist>
+          <listitem>
+            <para>Base x Exchange Rate = Foreign</para>
+          </listitem>
+          <listitem>
+            <para>Foreign x Exchange Rate = Base</para>
+          </listitem>
+        </orderedlist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem id="currencyConversionStartDate">
         <para>Enter the date on which the exchange rate becomes
         effective.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem id="currencyConversionEndDate">
         <para>Enter the date after which the exchange rate is no longer
         valid.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>You also have the option to import exchange rates from external
     sources using the API.</para>

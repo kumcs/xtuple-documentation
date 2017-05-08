@@ -5,58 +5,45 @@
 <section id="commentType">
   <title><indexterm significance="normal">
       <primary>comment types</primary>
-
       <secondary>creating new</secondary>
     </indexterm>Comment Type</title>
-
   <para>To create a new comment type, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/commentType.png"/>
+          <imagedata fileref="images/commentType.png" />
         </imageobject>
-
-        <caption>Create New Comment Type</caption>
+        <caption>Create new Comment Type</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating a new comment type, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter a unique comment type name.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Enter a brief description of the comment type.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Order</term>
-
       <listitem>
         <para>Specify the sort order for the comment type. The order number
         defines where the comment type will appear in lists where it is used.
-        For example, comment types assigned order "1" will appear at the top
-        of comment type selections and those defined as order "5" will appear
-        farther down the list.</para>
+        For example, comment types assigned order <literal>1</literal> will
+        appear at the top of comment type selections and those defined as
+        order <literal>5</literal> will appear farther down the list.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Editable</term>
-
       <listitem>
         <para>Select if you want to allow users to edit the content of
         comments entered using the comment type. If not selected, users will
@@ -64,10 +51,8 @@
         words, comments will be read-only.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Module</term>
-
       <listitem>
         <para>Specify the module(s) where you want the comment type to be
         available for use. For example, if you only want comments using this
@@ -79,38 +64,31 @@
         explicitly assigned to a module and source.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Available Sources</term>
-
       <listitem>
         <para>For each of the available modules, there are corresponding
         places (i.e., sources) where comments may be entered. In the
         <guimenu>Sales</guimenu> module, for example, you can add comments to
-        customers, sales orders, quotes, etc. The Available Sources list
-        indicates all the places in a module where comments can be
-        used.</para>
+        customers, sales orders, quotes, etc. The <guilabel>Available
+        Sources</guilabel> list indicates all the places in a module where
+        comments can be used.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Granted Sources</term>
-
       <listitem>
-        <para>The Granted Sources list indicates all the places in a module
-        where the comment type has been made available for use. If a source
-        does not appear in the granted list, then the comment type won't be
-        available for use in that source.</para>
+        <para>The <guilabel>Granted Sources</guilabel> list indicates all the
+        places in a module where the comment type has been made available for
+        use. If a source does not appear in the granted list, then the comment
+        type won't be available for use in that source.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>ADD-&gt;</guibutton></term>
-
       <listitem>
         <para>Highlight a specific source in the <guilabel>Available
         Sources</guilabel> column, then select this button to transfer the
@@ -119,19 +97,15 @@
         <guilabel>Granted Sources</guilabel> column.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>ADD ALL-&gt;&gt;</guibutton></term>
-
       <listitem>
         <para>Select this button to automatically transfer all available
         sources to the <guilabel>Granted Sources</guilabel> column.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>&lt;-REVOKE</guibutton></term>
-
       <listitem>
         <para>Highlight a specific source in the <guilabel>Granted
         Sources</guilabel> column, then select this button to remove the
@@ -140,10 +114,8 @@
         <guilabel>Granted Sources</guilabel> column.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>&lt;&lt;-REVOKE ALL</guibutton></term>
-
       <listitem>
         <para>Select this button to automatically remove all granted sources
         from the <guilabel>Granted Sources</guilabel> column.</para>

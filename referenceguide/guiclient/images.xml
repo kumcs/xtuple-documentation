@@ -5,60 +5,48 @@
 <section id="images">
   <title><indexterm significance="normal">
       <primary>images</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Images</title>
-
   <para>You can store various types of images in an database for later
   reference. For example, you may want to store an image of your company logo
   to display on printed invoices. Users who have been granted the
   "MaintainImages" privilege will have the ability to load and maintain
   images. The following list shows the supported image formats:</para>
-
   <itemizedlist>
     <listitem>
       <para><indexterm significance="normal">
           <primary>graphics</primary>
-
           <secondary>supported formats</secondary>
         </indexterm> <indexterm significance="normal">
           <primary>images</primary>
-
           <secondary>supported formats</secondary>
         </indexterm>Graphics interchange format (.gif)</para>
     </listitem>
-
     <listitem>
       <para>Joint photographic experts group (.jpg)</para>
     </listitem>
-
     <listitem>
       <para>Portable network graphics (.png)</para>
     </listitem>
-
     <listitem>
       <para>XPixMap (.xpm)</para>
     </listitem>
   </itemizedlist>
-
-  <para>To access the master list of Stored Images, select the
-  <guimenuitem>Images</guimenuitem> option. The following screen will
-  appear:</para>
-
+  <para>To access the master list of Stored Images, go to <guimenuitem>System
+  &gt; Setup</guimenuitem>. In the Setup window, from the left side menu,
+  select <guimenuitem>Master Information &gt; Images</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/images.png"/>
+          <imagedata fileref="images/images.png" />
         </imageobject>
-
-        <caption>Images Master List</caption>
+        <caption>Images master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Images master list displays information on all stored images,
   including image name, image description. To view the file size of images,
   select the <guilabel>Display Image Size</guilabel> option.</para>
-
   <xi:include href="image.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

@@ -5,56 +5,45 @@
 <section id="locale">
   <title><indexterm significance="normal">
       <primary>locales</primary>
-
       <secondary>creating new</secondary>
     </indexterm>Locale</title>
-
   <para>Locales are used to present information to users in the formats and
   language appropriate for their site. For example, the formatting of dates,
   times, and currency are controlled by locales. Translation of the
   application into a user's local language is also controlled by
   locales.</para>
-
   <tip>
     <para>Make the link between users and their locales on the Maintain Users
     screen.</para>
   </tip>
-
   <para>The xTuple locale functionality is designed to coordinate with the
   settings in your local operating system. Because of this, it should only be
-  necessary to specify the "Default" language and country value—and xTuple ERP
+  necessary to specify the default language and country value—and xTuple ERP
   will follow your operating system settings. For example, let's say you are
   located in China, running an operating system configured for China. In that
   scenario, using the default xTuple locale values should result in xTuple ERP
   being formatted appropriately for China.</para>
-
   <para>While in most cases using the default values will work, you may have
   the need to modify your locale settings for specific cases. To create a new
   locale, select the <guibutton>NEW</guibutton> button. The following screen
   will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/locale.png"/>
+          <imagedata fileref="images/locale.png" />
         </imageobject>
-
-        <caption>Create New Locale</caption>
+        <caption>Create new locale</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating a new locale, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Code</term>
-
       <listitem>
         <para>Enter a code to uniquely identify the specified locale setting.
         This code is referenced in the Maintain Users section, where locales
         are associated with individual users.</para>
-
         <note>
           <para>If you plan to use the default locale, then it may not be
           necessary to define any additional locales. By using the default
@@ -63,23 +52,18 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Enter a brief description to further define the specified
         locale.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>locales</primary>
-
           <secondary>language setting for</secondary>
         </indexterm>Language</term>
-
       <listitem>
         <para>Select a language from the list of languages—or specify
         <guilabel>Default</guilabel> to indicate you want your operating
@@ -89,8 +73,7 @@
         download the latest translation file for your language by using the
         <guibutton>GET TRANSLATIONS</guibutton> button on the User Preferences
         screen. To learn more about this feature, please see <xref
-        linkend="userPreferences"/>.</para>
-
+        linkend="userPreferences" />.</para>
         <para>xTuple ERP supports multi-language translations of the product
         interface through the use of .qm files. To learn more about xTuple
         translation and how you can get involved translating the interface for
@@ -98,18 +81,14 @@
         url="http://www.xtuple.org/translate">www.xtuple.org/translate</ulink>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>locales</primary>
-
           <secondary>country setting for</secondary>
         </indexterm><indexterm significance="normal">
           <primary>countries</primary>
-
           <secondary>defined in locales</secondary>
         </indexterm>Country</term>
-
       <listitem>
         <para>Select a country from the list of countries—or specify
         <guilabel>Any</guilabel> to indicate you want your operating system to
@@ -119,49 +98,39 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following date and time formatting will be used, based on your
-  language and country selections. If you are using the "Default" language and
+  language and country selections. If you are using the default language and
   country selections, then the formatting will be inherited from your
   operating system.</para>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>locales</primary>
-
           <secondary>data formats for</secondary>
         </indexterm>Date Format</term>
-
       <listitem>
         <para>Displays the format used for dates within the
         application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Time Format</term>
-
       <listitem>
         <para>Displays the format used for times within the
         application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Timestamp Format</term>
-
       <listitem>
-        <para>Displays the timestamp format used to display any "timestamp"
-        data within the application. Timestamps are typically used in
-        transaction logs that record the specific date and time when an
-        activity occurs within the system.</para>
+        <para>Displays the timestamp format used to display any
+        <literal>timestamp</literal> data within the application. Timestamps
+        are typically used in transaction logs that record the specific date
+        and time when an activity occurs within the system.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Interval Format</term>
-
       <listitem>
         <para>Displays the format used for intervals within the application.
         The interval format is used to define how work order
@@ -169,107 +138,84 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>While date and time formatting and the general format of numeric
   values are governed by the language and country selections, you do have the
   ability to manually determine the number of decimal places displayed for
   various types of numeric value. The following formatting options are
   available:</para>
-
   <variablelist>
     <varlistentry>
       <term>Currency</term>
-
       <listitem>
         <para>The currency format is used to display most monetary data within
         the application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Sales Price</term>
-
       <listitem>
         <para>The sales price format is used to display any sales price data
         within the application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Purch. Price</term>
-
       <listitem>
         <para>The purchase price format is used to display any purchase price
         data within the application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ext. Price</term>
-
       <listitem>
         <para>The extended price format is used to display any extended price
         data within the application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cost</term>
-
       <listitem>
         <para>The cost format is used to display costing data within the
         application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty.</term>
-
       <listitem>
         <para>The quantity format is used to display quantity data within the
         application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty. Per</term>
-
       <listitem>
         <para>The quantity per format is used to display quantity ratios
         within the application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Weight</term>
-
       <listitem>
         <para>The weight format is used to display weight data within the
         application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM Ratio</term>
-
       <listitem>
         <para>The unit of measure ratio format is used to display unit of
         measure ratios within the application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Percent</term>
-
       <listitem>
         <para>The percent format is used to display percentages within the
         application.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Color Coding</term>
-
       <listitem>
         <para>Specify RGB values, or use color names. You have the ability to
         define the colors used by the application to emphasize special cases
@@ -281,52 +227,40 @@
         is either <literal>#RGB</literal>, <literal>#RRGGBB</literal>, or
         <literal>#RRRGGGBBB</literal>. Colors may be defined for any of the
         following cases:</para>
-
         <variablelist>
           <varlistentry>
             <term>Error</term>
-
             <listitem>
               <para>Specify the color-coding for errors.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Warning</term>
-
             <listitem>
               <para>Specify the color-coding for warnings.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Emphasis</term>
-
             <listitem>
               <para>Specify the color-coding for emphasis.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Alternate</term>
-
             <listitem>
               <para>Specify the color-coding for alternate text.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Expired</term>
-
             <listitem>
               <para>Specify the color-coding to indicate the expired
               condition.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Future</term>
-
             <listitem>
               <para>Specify the color-coding to indicate the future
               condition.</para>
@@ -336,14 +270,11 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To enter comments related to the locale, use the
   <guilabel>Comments</guilabel> field:</para>
-
   <variablelist>
     <varlistentry>
       <term>Comments</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the locale.</para>
