@@ -5,19 +5,15 @@
 <section id="configxTupleConnect" role="xtconnect">
   <title><indexterm significance="normal">
       <primary>xtuple connect</primary>
-
       <secondary>configuration of</secondary>
     </indexterm> xTuple Connect</title>
-
   <para>xTuple Connect is an extension of xTuple ERP that supports the
   automated integration of xTuple with other systems, transports xTuple
   information via mechanisms such as email and FTP, lets you schedule the
   start-time of long-running reports and database maintenance tasks, and
   allows setting up and running repeating jobs. It may be purchased from
   xTuple for use with all editions of xTuple ERP.</para>
-
   <para>There are two components to xTuple Connect:</para>
-
   <itemizedlist>
     <listitem>
       <para>The xtConnect package adds features to the xTuple ERP application.
@@ -26,7 +22,6 @@
       configure xTuple Connect and submit and schedule jobs to the xTuple
       Connect batch manager.</para>
     </listitem>
-
     <listitem>
       <para>The xTuple Connect batch manager client is a separate program that
       does the actual work. It runs continually, checking for jobs to start
@@ -35,46 +30,37 @@
       servers, and more.</para>
     </listitem>
   </itemizedlist>
-
-  <para>To configure the connection between xTuple Connect and xTuple ERP,
-  select the <guimenuitem>xTuple Connect</guimenuitem> option. The following
-  screen will appear:</para>
-
+  <para>To configure the connection between xTuple Connect and xTuple ERP, go
+  to <guimenuitem>System &gt; Setup</guimenuitem>. In the Setup window, from
+  the left side menu, select <guimenuitem>Configure &gt; xTuple
+  Connect</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configxTupleConnect.png"/>
+          <imagedata fileref="images/configxTupleConnect.png" />
         </imageobject>
-
         <caption>Configure xTuple Connect</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When configuring the connection between xTuple Connect and xTuple ERP,
   you are presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>xTuple Connect Enabled</term>
-
       <listitem>
         <para>If you have xTuple Connect installed on your system and you want
         to enable/activate it, then select this option.</para>
-
         <tip>
           <para>You should log out/log in after enabling xTuple Connect on
           your system.</para>
         </tip>
-
         <para>Once selected, any jobs submitted to the xTuple Connect batch
         manager will be processed. If the option is not selected, then you
         will not be able to submit jobs to the xTuple Connect batch manager.
         The following options should also be specified:</para>
-
         <variablelist>
           <varlistentry>
             <term>Default From Email Address</term>
-
             <listitem>
               <para>Enter an email address to be used as the default "From"
               address in situations when no other "From" address is specified.
@@ -83,10 +69,8 @@
               an invoice for email delivery.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Purge Jobs after</term>
-
             <listitem>
               <para>Specify how frequently (in days) you want to purge
               already-completed batch manager jobs.</para>
@@ -95,10 +79,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Automatically Create Contacts During Email Sync</term>
-
       <listitem>
         <para>Select if you want new contact records to be created in xTuple
         ERP when importing email from people you do not already have contact
@@ -108,10 +90,8 @@
         import email.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Exclude Contacts Matching</term>
-
       <listitem>
         <para>If you enable the configuration to create new contact records
         when email is imported, you can develop an exclusion list (i.e., black
@@ -119,18 +99,15 @@
         records for. The exclusion list supports pattern matching, which
         increases your ability to block the users and/or domains you do not
         want contact records for.</para>
-
         <para>To develop an email exclusion list, select the
         <guibutton>NEW</guibutton> button. The following screen will
         appear:</para>
-
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/emailExclusion.png"/>
+                <imagedata fileref="images/emailExclusion.png" />
               </imageobject>
-
-              <caption>Excluded Contacts List</caption>
+              <caption>Excluded contacts list</caption>
             </mediaobject>
           </screenshot></para>
       </listitem>

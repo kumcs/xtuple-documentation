@@ -4,83 +4,68 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="configureIE">
   <title>Import/Export</title>
-
   <para>The import and export configuration allows you to set a number of
   options for importing data from XML and CSV files. These data might be
   generated manually or by other database or e-commerce systems. For example
   xTuple supports importing orders from Yahoo! stores.</para>
-
   <para>Importing data files is a multi-step process:</para>
-
   <orderedlist>
     <listitem>
       <para>The files have to be received from the originator and placed on a
       computer file system where the xTuple application can find them.</para>
     </listitem>
-
     <listitem>
       <para>Any wrapper information has to be stripped off, such as mail
       headers for files received by electronic mail.</para>
     </listitem>
-
     <listitem>
       <para>XML may have to be converted from its original format to one
       understood by the xTuple application.</para>
     </listitem>
-
     <listitem>
       <para>The file has to be read by the xTuple application and its contents
       inserted into the database.</para>
     </listitem>
   </orderedlist>
-
   <para role="xtconnect">The xTuple Connect extension package can be used to
   automate much of this processing, including retrieving files from remote FTP
   servers, converting XML files to a usable format, and importing the contents
   of XML and CSV files.</para>
-
   <para>xTuple uses <indexterm>
       <primary>XSLT</primary>
-
       <secondary>transforming XML documents for import</secondary>
     </indexterm><link linkend="glossary.XSLT">XSLT</link> to convert XML files
   from one format to another. XML file formats are described in DTDs. The
   <literal>xtupleimport</literal> <indexterm>
       <primary>DTD</primary>
-
       <secondary>xtupleapi</secondary>
     </indexterm><link linkend="glossary.DTD">DTD</link> defines an XML file
   format which can be directly imported by the xTuple application. This DTD
   defines XML tags with names that correspond exactly with the names of views
   and columns in the xTuple import API.</para>
-
   <para>An XSLT file for transforming Yahoo! OrderList files for import into
   an xTuple database is available from xTuple. If you need to import data
   files in other XML formats you must write your own XSLT to convert the data
   to conform to xTuple's DTD.</para>
-
   <para>To configure which transformations to use for XML files in various
-  formats, click the <guimenuitem>XSLT Mapping</guimenuitem> tab on the
-  Configure Import and Export window.</para>
-
+  formats, go to <guimenuitem>System &gt; Setup</guimenuitem>. In the Setup
+  window, from the left side menu, select <guimenuitem>Configure &gt;
+  Import/Export</guimenuitem>. Click the <guimenuitem>XSLT
+  Settings</guimenuitem> tab and the following screen will appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_mappingTab.png"/>
+        <imagedata fileref="images/configureIE_mappingTab.png" />
       </imageobject>
-
       <caption><para>Configure XSLT Mapping</para></caption>
     </mediaobject>
   </screenshot>
-
   <para>When configuring XSLT mapping, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term id="configureIE.defaultXSLTdirectory">Default XSLT File
       Directories</term>
-
       <listitem>
         <para>The XSLT files used to perform the translation between XML data
         formats must be present on the file system of the computer which is
@@ -89,30 +74,24 @@
         should look for XSLT files.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Map of XSLT import and export filters</term>
-
       <listitem>
         <para>This is a list of document transformations recognized by the
         xTuple application. These transformations are called
         <wordasword>filters</wordasword>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>XSLT Processor</term>
-
       <listitem>
         <para>XSLT is a language for transforming XML documents. To apply an
         XSLT stylesheet to a given XML document you need an XSLT processor.
         This is a program that interprets or compiles the XSLT and then
         performs the transformation on the XML file.</para>
-
         <note>
           <para>Each XSLT processor has its own command-line syntax.</para>
         </note>
-
         <para>The <guilabel>XSLT Processor</guilabel> field lets you define
         the command line that the xTuple application should execute to perform
         the transformation. Two arguments that will always be required are the
@@ -124,35 +103,27 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To create a new XSLT map, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/xsltMap.png"/>
+        <imagedata fileref="images/xsltMap.png" />
       </imageobject>
-
       <caption><para>XSLT Map</para></caption>
     </mediaobject>
   </screenshot>
-
   <para>When creating a new XSLT map, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Map Name</term>
-
       <listitem>
         <para>This is a name you choose to describe this map.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Document Type</term>
-
       <listitem>
         <para>This is the XML document type that the application will use to
         find the correct filter to use when importing an XML document. When
@@ -163,27 +134,21 @@
         Otherwise it searches for a match in the <guilabel>Document
         Type</guilabel> and <guilabel>System Identifier</guilabel> columns to
         find the correct filter to use when importing the file.</para>
-
         <para>The document type of an XML file is the name of its root
         element.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>System Identifier</term>
-
       <listitem>
         <para>This is the system identifier that the application will use to
         find the correct filter to use when importing an XML document.</para>
-
         <para>The system identifier is a URI that describes how to get the DTD
         for the XML document.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Import XSLT File Name</term>
-
       <listitem>
         <para>This is the name of the XSLT file that will be used to transform
         XML files with this document type and system identifier to xTuple's
@@ -193,14 +158,12 @@
         specification. If the name is a simple filename (like
         <filename>myTransform.xsl</filename>) or a relative pathname (like
         <filename>oasis/from_ubl.xsl</filename>) then the application will
-        look for it in the default XSLT directory defined on the
-        <guilabel>Configure Import and Export</guilabel> window.</para>
+        look for it in the default XSLT directory defined on the configuration
+        of import and export.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Export XSLT File Name</term>
-
       <listitem>
         <para>This is the name of the XSLT file that will be used to transform
         XML files generated by xTuple to a file of the given document type and
@@ -208,47 +171,36 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>Exporting XML is not currently supported by xTuple. At this time the
     <guilabel>Export XSLT File Name</guilabel> on the XSLT Map window and the
-    <guimenuitem>XML Export</guimenuitem> tab on the <guilabel>Configure
-    Import and Export</guilabel> window are placeholders for future
-    development.</para>
+    <guimenuitem>XML Export</guimenuitem> tab on the configuration of import
+    and export are placeholders for future development.</para>
   </note>
-
-  <para>The <guimenuitem>Import Settings</guimenuitem> tab on the
-  <guilabel>Configure Import and Export</guilabel> window lets you enter
+  <para>The <guimenuitem>Import Settings</guimenuitem> tab lets you enter
   details of how files are imported.</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_dirTab.png"/>
+        <imagedata fileref="images/configureIE_dirTab.png" />
       </imageobject>
-
       <caption><para>XML Import</para></caption>
     </mediaobject>
   </screenshot>
-
   <para>When configuring import processing you are presented with the
   following options on the <guimenuitem>Directories</guimenuitem> tab:</para>
-
   <variablelist>
     <varlistentry>
       <term id="configureIE.defaultImportDirectory">Default Import File
       Directory</term>
-
       <listitem>
         <para>This names the directory on the current platform that the xTuple
         application will search when the user wants to import files. It is
-        used to populate the <guilabel>Import Data</guilabel> window.</para>
+        used to populate the Import Data window.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="xtconnect">
       <term>Transfer files from</term>
-
       <listitem>
         <para>The xTuple Connect extension package allows retrieving files
         from remote FTP servers. This list contains information about the FTP
@@ -256,71 +208,55 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para role="xtconnect">To set up a new FTP server to check, click the
   <guibutton>NEW</guibutton> button. You will be presented with the following
   screen:</para>
-
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/importsrc.png"/>
+          <imagedata fileref="images/importsrc.png" />
         </imageobject>
-
         <caption><para>Import Source screen</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <para role="xtconnect">When setting up an Import Source you are presented
   with the following options:</para>
-
   <para role="xtconnect"><variablelist>
       <varlistentry>
         <term>Name</term>
-
         <listitem>
           <para>Enter a name for this import source.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Host</term>
-
         <listitem>
           <para>Enter the host name or IP address of the FTP server.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>User Name</term>
-
         <listitem>
           <para>Enter the user name with which to log in to the FTP
           server.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Password</term>
-
         <listitem>
           <para>Enter the password with which to log in to the FTP
           server.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Directory</term>
-
         <listitem>
           <para>Enter the directory in which to look for files to download, if
           any.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>File Name or Pattern</term>
-
         <listitem>
           <para>Enter the file name or a regular expression to use to find
           files to download. For example you can leave this blank if you want
@@ -329,50 +265,37 @@
           expression like <literal>.*TTOYS.*201[0-9].*\.csv$</literal></para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>After Successful Download</term>
-
         <listitem>
           <para>Select an option from the list of how the xTuple Connect batch
           manager should handle the file <emphasis>on the FTP
           server</emphasis> after the file has been downloaded
           successfully.</para>
-
           <xi:include href="../widgets/filemoveselector.xml"
                       xpointer="fileMoveSelector"
-                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                      xmlns:xi="http://www.w3.org/2001/XInclude" />
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Recurring</term>
-
         <listitem>
           <para>Enter a schedule for the xTuple Connect batch manager to
           connect to the FTP server and try to download files.</para>
-
           <xi:include href="../widgets/recurrencewidget.xml"
                       xpointer="recurrenceWidget"
-                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                      xmlns:xi="http://www.w3.org/2001/XInclude" />
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>From</term>
-
         <term>Reply To</term>
-
         <term>To</term>
-
         <term>Cc</term>
-
         <term>Bcc</term>
-
         <listitem>
           <para>Enter email information for sending the status of download
           processing.</para>
-
           <note>
             <para>Importing downloaded files with the xTuple Connect batch
             manager is a two-step process. The FTP download and the file
@@ -384,61 +307,48 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
-
   <para>The <guimenuitem>General Import Options</guimenuitem> tab lets you
   choose how to handle files after their contents have been imported.</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_xmlImportTab.png"/>
+        <imagedata fileref="images/configureIE_xmlImportTab.png" />
       </imageobject>
-
       <caption><para>General Import Options</para></caption>
     </mediaobject>
   </screenshot>
-
   <para>When defining general import options, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>After successful import</term>
-
       <listitem>
         <para>Choose how CSV and XML files that have been successfully
         imported should be handled after the import is complete.</para>
-
         <xi:include href="../widgets/filemoveselector.xml"
                     xpointer="fileMoveSelector"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>After error during import</term>
-
       <listitem>
         <para>Choose how CSV and XML files that could not be successfully
         imported should be handled after the import attempt is
         complete.</para>
-
         <xi:include href="../widgets/filemoveselector.xml"
                     xpointer="fileMoveSelector"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Save failed XML elements to a separate file</term>
-
       <listitem>
         <para>Leave this unchecked if you want XML files to be processed in an
         all-or-none fashion. Check this option if you want those portions of
         XML files that can be imported to be saved and those portions that
         cannot be imported successfully to be written out to a separate
         file.</para>
-
         <para>If this option is checked, a new XML file will be created in the
         xTuple import format containing those elements that could not be
         imported. A comment will be added to the XML containing the error
@@ -449,7 +359,6 @@
             handled as though they were successfully imported even if every
             element failed. The failed elements will be written to a separate
             error file.</para>
-
             <para>The error file will have the xTuple import format, not the
             format of the original XML file before the XSLT
             transformation.</para>
@@ -457,90 +366,71 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The <guimenuitem>CSV Import Options</guimenuitem> tab lets you define
   options specific to importing CSV files.</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_csvImportTab.png"/>
+        <imagedata fileref="images/configureIE_csvImportTab.png" />
       </imageobject>
-
-      <caption><para>CSV Import Options</para></caption>
+      <caption><para>CSV import options</para></caption>
     </mediaobject>
   </screenshot>
-
   <para>When defining options specific to importing CSV files, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>CSV Atlas Directory</term>
-
       <listitem>
         <para>This is where the application will look for CSV atlas files when
         opening them for editing and when importing CSV files.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Map of CSV file properties and CSV Atlas files</term>
-
       <listitem>
         <para>This lists how CSV atlases are chosen automatically when
         importing CSV files.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To set up a new mapping between CSV files and the CSV atlases to
   choose, click the <guibutton>NEW</guibutton> button. The following screen
   will appear:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/atlasMap.png"/>
+          <imagedata fileref="images/atlasMap.png" />
         </imageobject>
-
         <caption><para>CSV File to Atlas Map</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When setting up a CSV atlas map you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter a name for this mapping between CSV files and the CSV
         atlas to use</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pattern</term>
-
       <listitem>
         <para>Enter a regular expression that uniquely describes this CSV file
         format</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Apply Pattern to</term>
-
       <listitem>
         <para>Choose whether the <guilabel>Pattern</guilabel> should be
         applied to the name of the CSV file or the first line of the CSV
         file.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Atlas File</term>
-
       <listitem>
         <para>Choose the atlas file that should be applied to files matching
         the entered <guilabel>Pattern</guilabel>. This file should be placed
@@ -548,20 +438,16 @@
         entered.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Map</term>
-
       <listitem>
         <para>Choose the particular map within the atlas file that should be
         used for files matching the entered
         <guilabel>Pattern</guilabel>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Treat first row as header information</term>
-
       <listitem>
         <para>Check this if the first row of the CSV file contains column
         headers. Uncheck this if the first row of the CSV file contains data
@@ -569,54 +455,40 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para role="xtconnect">The <guimenuitem>Schedule Imports</guimenuitem> tab
   lets you define a schedule for importing data with the xTuple Connect batch
   manager.</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_scheduleTab.png"/>
+        <imagedata fileref="images/configureIE_scheduleTab.png" />
       </imageobject>
-
-      <caption><para>Scheduling Options</para></caption>
+      <caption><para>Scheduling options</para></caption>
     </mediaobject>
   </screenshot>
-
   <para role="xtconnect">When setting up an import schedule, you are presented
   with the following options:</para>
-
   <para role="xtconnect"><variablelist>
       <varlistentry>
         <term>Recurring</term>
-
         <listitem>
           <para>Enter a schedule for the xTuple Connect batch manager to check
           the import directory and try to import the XML and CSV files found
           in that directory</para>
-
           <xi:include href="../widgets/recurrencewidget.xml"
                       xpointer="recurrenceWidget"
-                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                      xmlns:xi="http://www.w3.org/2001/XInclude" />
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>From</term>
-
         <term>Reply To</term>
-
         <term>To</term>
-
         <term>Cc</term>
-
         <term>Bcc</term>
-
         <listitem>
           <para>Enter email information for sending the status of import
           processing.</para>
-
           <note>
             <para>Importing downloaded files with the xTuple Connect batch
             manager is a two-step process. The FTP download and the file
@@ -628,32 +500,25 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
-
-  <para>The <guimenuitem>XML Export</guimenuitem> tab on the
-  <guilabel>Configure Import and Export</guilabel> window lets you define how
-  the transformations are to be performed.</para>
-
+  <para>The <guimenuitem>XML Export</guimenuitem> tab lets you define how the
+  transformations are to be performed.</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_exportTab.png"/>
+        <imagedata fileref="images/configureIE_exportTab.png" />
       </imageobject>
-
       <caption><para>XML Export</para></caption>
     </mediaobject>
   </screenshot>
-
   <para>When configuring <guimenuitem>XML Export</guimenuitem> processing you
   are presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Default Export File Directories</term>
-
       <listitem>
         <para>This names the directory on each platform that the xTuple
         application will search when the user wants to export XML files. It is
-        used to populate the <guilabel>Export XML</guilabel> window.</para>
+        used to populate the Export XML window.</para>
       </listitem>
     </varlistentry>
   </variablelist>

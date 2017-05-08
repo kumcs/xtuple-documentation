@@ -7,14 +7,16 @@
       <primary>configuration</primary>
       <secondary>of system module</secondary>
     </indexterm>Search Path</title>
-  <para>To configure the search path, select the <guimenuitem>Search Path</guimenuitem> option. The
-  following screen will appear:</para>
+  <para>To configure the search path, go to <guimenuitem>System &gt;
+  Setup</guimenuitem>. In the Setup window, from the left side menu, select
+  <guimenuitem>Configure &gt; Search Path</guimenuitem>. The following screen
+  will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/configureSearchPath.png" />
         </imageobject>
-        <caption>Configure Search Path</caption>
+        <caption>Configure search path</caption>
       </mediaobject>
     </screenshot></para>
   <para>When configuring the search path, you are presented with the following
@@ -41,10 +43,11 @@
     <varlistentry>
       <term>Schemas in Order</term>
       <listitem>
-        <para>From the <emphasis>Schemas Not in Order</emphasis> list,
+        <para>From the <guilabel>Schemas Not in Order</guilabel> list,
         consecutively select schemas that you want to be searched in a
-        particular order by PostgreSQL. You can use the <guibutton>MOVE UP</guibutton> and <guibutton>MOVE DOWN</guibutton>
-        buttons to change the order of the selected schemas.</para>
+        particular order by PostgreSQL. You can use the <guibutton>MOVE
+        UP</guibutton> and <guibutton>MOVE DOWN</guibutton> buttons to change
+        the order of the selected schemas.</para>
       </listitem>
     </varlistentry>
     <varlistentry>

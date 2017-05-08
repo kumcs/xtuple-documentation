@@ -5,35 +5,28 @@
 <section id="databaseInformation">
   <title><indexterm significance="normal">
       <primary>databases</primary>
-
       <secondary>information about</secondary>
     </indexterm>Database Information</title>
-
-  <para>To enter information about your database, select the
-  <guimenuitem>Database Information</guimenuitem> option. The following screen
-  will appear:</para>
-
+  <para>To enter information about your database, go to <guimenuitem>System
+  &gt; Setup</guimenuitem>. In the Setup window, from the left side menu,
+  select <guimenuitem>Configure &gt; Database</guimenuitem>. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/databaseInformation.png"/>
+          <imagedata fileref="images/databaseInformation.png" />
         </imageobject>
-
-        <caption>Database Information</caption>
+        <caption>Database setup</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When entering database information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>databases</primary>
-
           <secondary>description of</secondary>
         </indexterm>Database Description</term>
-
       <listitem>
         <para>The description entered here will be displayed in the Title bar
         of the main window. This field is typically used to store company
@@ -42,27 +35,21 @@
         Server").</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Application</term>
-
       <listitem>
         <para>Displays the xTuple ERP edition of the database running on your
         server.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>servers</primary>
-
           <secondary>addresses for</secondary>
         </indexterm>Server Address</term>
-
       <listitem>
         <para>Displays the unique network address assigned to the server. This
         will typically show a TCP/IP address or network host name.</para>
-
         <note>
           <para>The network address for the server is set using the
           <guibutton>OPTIONS</guibutton> button found on the Login screen you
@@ -73,62 +60,49 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Database Name</term>
-
       <listitem>
         <para>Displays the default name of the database running on your
         server.</para>
-
         <tip>
           <para>If you ever change or rename your database, you will need to
           notify all users to update their login options.</para>
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Database Version</term>
-
       <listitem>
         <para>Displays the version of the database running on your
         server.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Patch</term>
-
       <listitem>
         <para>This field will show the contents, if any, of the metric table
         field <guilabel>ServerPatchVersion</guilabel> so users can tell what
         if any patches have been applied to the database.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Auto Update Signal Interval</term>
-
       <listitem>
         <para>Many screens in the application have an auto update option.
         Specify how frequently you want the auto update signal to be
         refreshed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Disallow Mismatched Client Versions</term>
-
       <listitem>
         <para>This flag prevents users from running client versions that are
         different than the version the database is running on.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Check for client updates on login</term>
-
       <listitem>
         <para>If selected, during the login process the software will check to
         see if the client and database server are matching at the same
@@ -138,10 +112,8 @@
         client will download and launch.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Disable Auto Completer List</term>
-
       <listitem>
         <para>Select if you want to disable the auto-complete functionality
         for anyone using the <guilabel>Menu</guilabel> search navigation
@@ -149,20 +121,16 @@
         to those users.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Enable Gapless Document Numbering</term>
-
       <listitem>
         <para>Select this option when document numbering should not contain
         gaps in the number sequence. By default this option is not selected
         and gaps in a document numbering sequence will not be filled.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Do not allow user logins that exceed licensed user count</term>
-
       <listitem>
         <para>Select if you want to prevent users from logging in once you've
         hit your limit for maximum concurrent licensed users. Turning this
@@ -172,30 +140,24 @@
         has been met will be presented with a warning message. This setting
         only affects commercial editions of xTuple ERP. To learn more about
         xTuple license limits, please see <xref
-        linkend="registration"/>.</para>
+        linkend="registration" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Access Mode</term>
-
       <listitem>
         <para>Specify one of the following options to determine which users
         should be able to access the database:</para>
-
         <variablelist>
           <varlistentry>
             <term>Active Users Only</term>
-
             <listitem>
               <para>Select to allow any active database users to access the
               database.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Admin Users Only (Maintenance Mode)</term>
-
             <listitem>
               <para>Select to allow only system admin users to access the
               database. This is a useful mode during periods when you are
@@ -203,10 +165,8 @@
               accessing the system.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Any Users not Inactive</term>
-
             <listitem>
               <para>Select to allow any users who are either active or
               undefined to access the database. This option differs from the
@@ -224,21 +184,17 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Enforce User Password Reset</term>
-
       <listitem>
         <para>Select if you want to require system users to reset their
         passwords on a defined interval. Resetting user passwords on a regular
         basis (e.g., every 90 days) is a requirement of payment card industry
         (PCI) compliance for companies who process credit card
         transactions.</para>
-
         <variablelist>
           <varlistentry>
             <term>Password change every (Days)</term>
-
             <listitem>
               <para>Specify how frequently you want users to be required to
               reset their passwords, measured in days.</para>
@@ -247,14 +203,11 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Comments</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to your database.</para>
-
         <note>
           <para>Only users with the appropriate privileges will be permitted
           to change database information. For all other users, this screen
@@ -263,10 +216,8 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Number of Database Users</term>
-
       <listitem>
         <para>Displays the total number of concurrent xTuple ERP client user
         connections combined with any non-xTuple ERP connections (e.g.,
@@ -276,14 +227,12 @@
         Connect, the updater, CSVimp, and others count toward your maximum
         concurrent xTuple client users total. To get a more detailed view of
         all your current connections, use the following menu path from the
-        xTuple Desktop: <guimenu>Social Desktop &gt; Window &gt; Users
-        Online</guimenu>.</para>
+        xTuple Desktop: <guimenuitem>Social Desktop &gt; Window &gt; Users
+        Online</guimenuitem>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Number of Server Users</term>
-
       <listitem>
         <para>Displays the total number of concurrent users connected to the
         PostgreSQL server where the xTuple ERP database is running. Because
@@ -293,13 +242,11 @@
         users connected to a single xTuple ERP database.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Number of Server Licenses</term>
-
       <listitem>
         <para>For more information, please see <xref
-        linkend="registration"/>.</para>
+        linkend="registration" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
