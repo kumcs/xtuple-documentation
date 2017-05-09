@@ -5,38 +5,33 @@
 <section id="workCenters" role="manufacturing">
   <title><indexterm significance="normal">
       <primary>work centers</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Work Centers</title>
-
   <para>Work centers are collections of machines or labor that perform a
   specific task when building a manufactured item. Work centers are used by
   routings to determine the amount of available and required manufacturing
   capacity to produce the manufactured item. Work centers also determine the
   cost, in direct labor, overhead, and, optionally, machine overhead, of such
   production. A single site may contain multiple work centers. To access the
-  master list of work centers, select the <guimenuitem>Work
-  Centers</guimenuitem> option. The following screen will appear.</para>
-
+  master list of work centers, go to <guimenuitem>Schedule &gt;
+  Setup</guimenuitem>. In the Setup window, from the left side menu, select
+  <guimenuitem>Master Information &gt; </guimenuitem><guimenuitem>Work
+  Centers</guimenuitem>. The following screen will appear.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/workCenters.png"/>
+          <imagedata fileref="images/workCenters.png" />
         </imageobject>
-
-        <caption>Work Centers Master List</caption>
+        <caption>Work Centers master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Work Centers screen displays information on all existing work
   centers, including site location, work center name, number of machines, and
   work center description.</para>
-
   <tip>
     <para>At least one site must be entered into the system before a work
     center may be added.</para>
   </tip>
-
   <xi:include href="workCenter.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

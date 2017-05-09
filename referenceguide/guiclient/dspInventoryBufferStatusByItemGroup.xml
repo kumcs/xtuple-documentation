@@ -4,28 +4,23 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspInventoryBufferStatusByItemGroup" role="manufacturing">
   <title>Inventory Buffer Status by Item Group</title>
-
   <para>The inventory buffer status displays provide information on your
   current stock buffer levels. Stock buffers apply to make-to-stock items.
   Keep in mind that buffer status information will only be displayed on days
   when the constraint management system is run. If you find your displays show
   no information, this probably means constraint management has not been
   run.</para>
-
-  <para>To view inventory buffer status by item group, select the
-  <guimenuitem>Inventory Buffer Status by Item Group</guimenuitem> option. The
-  following screen will appear:</para>
-
+  <para>To view inventory buffer status by item group, go to
+  <guimenuitem>Schedule &gt; Constrain Management &gt; Inventory &gt; by Item
+  Group</guimenuitem>. The following screen will appear: </para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspInventoryBufferStatusByItemGroup.png"/>
+          <imagedata fileref="images/dspInventoryBufferStatusByItemGroup.png" />
         </imageobject>
-
         <caption>Inventory Buffer Status by Item Group</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>When the buffer status for an item hits 66 or higher, the status
     number will become red. By highlighting items which are "red hot," the
@@ -33,85 +28,66 @@
     best remedy for red hot item sites is to expedite any associated work
     orders or purchase orders.</para>
   </note>
-
   <para>When displaying inventory buffer statuses by item group, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Item Groups</term>
-
       <listitem>
         <para>Select to display inventory buffer statuses for all item
         groups.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify item group whose inventory buffer statuses you want to
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Group Pattern</term>
-
       <listitem>
         <para>Enter an item group pattern to select a range of item groups.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>All Sites</term>
-
       <listitem>
         <para>Select to display inventory buffer statuses for all
         sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify site whose inventory buffer statuses you want to
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Buffer Status</term>
-
       <listitem>
         <para>Show buffer statuses using one of the following criteria:</para>
-
         <variablelist>
           <varlistentry>
             <term>Greater than zero</term>
-
             <listitem>
               <para>Select to display only those item sites having a buffer
               status greater than zero.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>In Emergency Zone</term>
-
             <listitem>
               <para>Select to display only those item sites whose buffer
               status is in the "emergency zone." The emergency zone is defined
               as a buffer status of 66 or greater.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>All</term>
-
             <listitem>
               <para>Select to display buffer statuses for all item
               sites.</para>
@@ -121,18 +97,15 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>By default, the display will sort item sites by buffer status in
     descending order. In other words, item sites with the highest buffer
     status will appear at the top of the list; item sites with the lowest
     buffer status will appear at the bottom.</para>
   </note>
-
   <variablelist>
     <varlistentry>
       <term>Availability</term>
-
       <listitem>
         <para>Display lists inventory buffer statuses by item group, using the
         specified parameters. If planned availability displays in the color
@@ -142,7 +115,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>When quantity appears in the <guilabel>On Order</guilabel> column,
     this refers to quantity that is on order through either a work order or

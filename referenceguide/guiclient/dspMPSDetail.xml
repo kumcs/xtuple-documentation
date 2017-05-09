@@ -4,70 +4,54 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspMPSDetail" role="manufacturing">
   <title>MPS Detail</title>
-
-  <para>To view the master production schedule (MPS), select the
-  <guimenuitem>MPS Detail</guimenuitem> option. The following screen will
-  appear:</para>
-
+  <para>To view the master production schedule (MPS), go to
+  <guimenuitem>Schedule &gt; Reports &gt; MPS Detail</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspMPSDetail.png"/>
+          <imagedata fileref="images/dspMPSDetail.png" />
         </imageobject>
-
         <caption>MPS Detail</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing the Master Production Schedule, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Sites</term>
-
       <listitem>
         <para>Select to display MPS detail for all sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify site whose MPS detail you want to display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>All Planner Codes</term>
-
       <listitem>
         <para>Select to display MPS detail for all planner codes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify planner code whose MPS detail you want to
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pattern</term>
-
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Calendar</term>
-
       <listitem>
         <para>Select the calendar you want to use for the report. By default,
         the calendar defined at the system level will be used. Associated
@@ -75,16 +59,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>When setting up a planning calendar, be sure to include past due
     information in the first period of the calendar.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term>Name/Selected Periods</term>
-
       <listitem>
         <para>Select as many periods as you want to display. Selected periods
         correspond to calendar specified in the <guilabel>Calendar</guilabel>
@@ -102,10 +83,8 @@
         desired periods are selected. The entire group is now selected.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Sites</term>
-
       <listitem>
         <para>Display lists item sites for items matching the specified
         parameters. When you have selected a calendar type and corresponding
@@ -113,10 +92,8 @@
         the item site in the MPS Detail display below.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>MPS Detail</term>
-
       <listitem>
         <para>Display lists MPS detail for the item site you selected in the
         Item Sites display above. MPS detail will include the following rows:
@@ -131,7 +108,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>You will only be able to view allocations if allocations are showing
     a positive value in the period where you right-click your mouse.

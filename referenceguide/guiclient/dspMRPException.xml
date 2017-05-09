@@ -5,10 +5,8 @@
 <section id="dspMRPException" role="standard">
   <title><indexterm significance="normal">
       <primary>mrp</primary>
-
       <secondary>exceptions handling and</secondary>
     </indexterm> MRP Exceptions</title>
-
   <para>The MRP exceptions feature set extends the MRP planning system by
   offering advice on existing work orders and purchase orders in the form of
   exception messages. The goal of these messages is to identify supply orders
@@ -19,45 +17,36 @@
   Or you can automate the process using MRP and the planner code options
   designed for MRP exception handling. For more information about the planner
   code settings related to MRP exceptions, please see <xref
-  linkend="plannerCode"/>.</para>
-
-  <para>To manage your MRP exceptions, select the <guimenuitem>MRP
-  Exceptions</guimenuitem> option. The following screen will appear:</para>
-
+  linkend="plannerCode" />.</para>
+  <para>To manage your MRP exceptions, go to <guimenuitem>Schedule &gt;
+  Reports &gt; MRP Exceptions</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspMRPException.png"/>
+          <imagedata fileref="images/dspMRPException.png" />
         </imageobject>
-
         <caption>MRP Exceptions</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When managing MRP exceptions, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Filter By</term>
-
       <listitem>
         <para>Specify the primary filter you want to use when managing MRP
         exceptions:</para>
-
         <variablelist>
           <varlistentry>
             <term>Planner Code</term>
-
             <listitem>
               <para>If selected, you will be presented with a range of planner
               code options to filter by.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Item</term>
-
             <listitem>
               <para>If selected, you will be prompted to enter the item number
               you want to filter by.</para>
@@ -66,25 +55,19 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Site</term>
-
       <listitem>
         <para>Specify the site filter you want to use:</para>
-
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
-
             <listitem>
               <para>Select to display MRP exceptions for all sites.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Selected</term>
-
             <listitem>
               <para>Specify site whose MRP exceptions you want to
               display.</para>
@@ -93,19 +76,15 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Only</term>
-
       <listitem>
         <para>To limit the displayed information to include only results
         having exception messages, select one or both of the following
         options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Schedule Exceptions</term>
-
             <listitem>
               <para>Select to include exception message results for supply
               orders that need to be rescheduled—that is, either pushed into
@@ -116,10 +95,8 @@
               a value of "6."</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Cancel Exceptions</term>
-
             <listitem>
               <para>Select to include exception message results for supply
               orders that need to be canceled. Using the <guilabel>Min.
@@ -132,10 +109,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Exceptions</term>
-
       <listitem>
         <para>Display lists MRP exceptions, using the specified parameters. If
         you do not limit the display using one or both of the <guilabel>Show
@@ -149,13 +124,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>QUERY</guibutton></term>
-
       <listitem>
         <para>Select to generate MRP exceptions. When selected, you will be
         presented with the Run MRP Exceptions screen which allows you to
@@ -167,7 +139,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="runMRPException.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

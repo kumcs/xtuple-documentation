@@ -5,30 +5,24 @@
 <section id="plannerCodes">
   <title><indexterm significance="normal">
       <primary>planner codes</primary>
-
       <secondary>in master scheduling</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>planner codes</primary>
-
       <secondary>master list of</secondary>
     </indexterm><indexterm significance="normal">
       <primary>planners</primary>
-
       <secondary>codes for</secondary>
     </indexterm>Planner Codes</title>
-
   <para>Planner codes are used to identify items that fall under the
   jurisdiction of planners—that is, employees responsible for planning,
   scheduling, or procurement. Here are some tips for creating and managing
   your planner codes:</para>
-
   <itemizedlist>
     <listitem>
       <para>Create your planner codes using a logical, hierarchical structure.
       This will make it easier to retrieve planner code information in the
       future.</para>
     </listitem>
-
     <listitem>
       <para role="standard">If you want requirements to be created for planned
       work orders, the option <guilabel>Automatically Explode Planned
@@ -36,7 +30,6 @@
       will not be exploded. This means that planned orders for lower level
       material requirements will not be generated when MRP is run.</para>
     </listitem>
-
     <listitem>
       <para role="standard">If you are running MRP by planner code, the
       explosion level setting may not make a difference—depending on how your
@@ -46,24 +39,20 @@
       is set. The same does not hold true when running MRP by item.</para>
     </listitem>
   </itemizedlist>
-
-  <para>To access the master list of planner codes, select the
-  <guimenuitem>Planner Codes</guimenuitem> option. The following screen will
-  appear:</para>
-
+  <para>To access the master list of planner codes, go to
+  <guimenuitem>Schedule &gt; Setup</guimenuitem>. In the Setup window, from
+  the left side menu, select <guimenuitem>Master Information &gt; Planner
+  Codes</guimenuitem>. The following screen will appear:</para>
   <para><screenshot id="Figure555004">
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/plannerCodes.png"/>
+          <imagedata fileref="images/plannerCodes.png" />
         </imageobject>
-
-        <caption><para>Planner Codes Master List</para></caption>
+        <caption><para>Planner Codes master list</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Planner Codes screen displays information on all existing planner
   codes, including planner code and planner code description.</para>
-
   <xi:include href="plannerCode.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

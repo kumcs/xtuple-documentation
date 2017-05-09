@@ -4,23 +4,19 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="runMPSByPlannerCode">
   <title>Run MPS by Planner Code</title>
-
   <para>When you run MPS by planner code, you are running the master
   production scheduling (MPS) system. This utility creates firm planned orders
   to meet forecasted demand (i.e., from production plans) and also actual
   demand (i.e., from sales orders) for MPS items. An item is defined as an MPS
   item on its item master.</para>
-
   <para>By default, planned orders created by the MPS planning system will be
   firm when they are generated. This establishes them as a legitimate source
   of demand within the wider planning system. The firm-by-default nature of
   MPS orders distinguishes them from MRP orders, which must be manually
   firmed.</para>
-
   <para>The quantities for MPS planned orders will vary depending on the
   source of demand. The following considerations are used to identify the
   appropriate demand:</para>
-
   <orderedlist continuation="restarts" inheritnum="ignore">
     <listitem>
       <para>Actual demand quantity (i.e., from sales orders) will be used if
@@ -28,91 +24,73 @@
       fence for that item; forecasted demand is ignored within the time
       fence</para>
     </listitem>
-
     <listitem>
       <para>Outside the demand time fence, the system will create planned
       orders for whichever demand source is greater—that is, actual demand or
       forecasted demand</para>
     </listitem>
   </orderedlist>
-
   <tip>
     <para>You might consider running the MRP system after you run MPS. Running
     MRP after MPS will ensure you plan for the materials required to satisfy
     your MPS-driven demand.</para>
   </tip>
-
-  <para>To run MPS by planner code, select the <guimenuitem>Run MPS by Planner
-  Code</guimenuitem> option. The following screen will appear:</para>
-
+  <para>To run MPS by planner code, go to <guimenuitem>Schedule &gt;
+  Scheduling &gt; Run MPS</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/runMPSByPlannerCode.png"/>
+          <imagedata fileref="images/runMPSByPlannerCode.png" />
         </imageobject>
-
         <caption>Run MPS by Planner Code</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>Only items designated as MPS items will have planned orders created
     for them when MPS is run. By default, MPS generates firm planned
     orders.</para>
   </note>
-
   <para>When running MPS by planner code, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
-
       <listitem>
         <para>Select to create firm planned orders for all planner
         codes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify planner code you want to create firm planned orders
         for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pattern</term>
-
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>All Sites</term>
-
       <listitem>
         <para>Select to create firm planned orders by planner code for all
         sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify site firm planned order by planner code should be
         created for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cutoff Date</term>
-
       <listitem>
         <para>Specify how far into the future the MPS run should look for
         demand. The forecast will be ignored if the planned date for a
@@ -122,7 +100,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>If you schedule an MRP or MPS job submitted to the batch manager to
     run on a periodic basis—daily, weekly, monthly—the cutoff date used for
@@ -130,13 +107,10 @@
     specified reschedule interval (day = +1, week = +7, and month =
     +30).</para>
   </tip>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE</guibutton></term>
-
       <listitem>
         <para>Creates firm planned orders by planner code, using the specified
         parameters.</para>

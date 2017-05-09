@@ -4,21 +4,17 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspMRPDetail" role="standard">
   <title>MRP Detail</title>
-
   <para>To display a time-phased view of material requirements planning (MRP)
-  detail, select the <guimenuitem>MRP Detail</guimenuitem> option. The
-  following screen will appear:</para>
-
+  detail, go to <guimenuitem>Schedule &gt; Reports &gt; MRP
+  Detail</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspMRPDetail.png"/>
+          <imagedata fileref="images/dspMRPDetail.png" />
         </imageobject>
-
         <caption>MRP Detail</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>Only firm planned orders will be included in the MRP Detail display.
     If a planned order is not firmed, it will not be recognized. This
@@ -27,72 +23,56 @@
     underlying MRP items must be firmed (or released) before the MRP Detail
     display will recognize them.</para>
   </note>
-
   <para>When displaying MRP detail, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Sites</term>
-
       <listitem>
         <para>Select to display MRP detail for all sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify site whose MRP detail you want to display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>All Planner Codes</term>
-
       <listitem>
         <para>Select to display MRP detail for all planner codes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify planner code whose MRP detail you want to
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pattern</term>
-
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Calendar</term>
-
       <listitem>
         <para>Select the calendar you want to use for the report. Associated
         calendar periods will be displayed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>When setting up a planning calendar, be sure to include dates that
     are past due in the first period of the calendar.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term>Name/Selected Periods</term>
-
       <listitem>
         <para>Select as many periods as you want to display. Selected periods
         correspond to calendar specified in the <guilabel>Calendar</guilabel>
@@ -110,10 +90,8 @@
         desired periods are selected. The entire group is now selected.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Sites</term>
-
       <listitem>
         <para>Display lists items matching the specified parameters. When you
         have selected a calendar type and corresponding calendar period(s),
@@ -122,20 +100,16 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>To refresh the MRP Detail display, double-click on the item site
     whose detail you want to refresh.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term>MRP Detail</term>
-
       <listitem>
         <para>Display lists MRP detail for the item you selected in the Site
         Items display above.</para>
-
         <para>MRP detail will include the following rows: projected QOH (based
         on allocations and orders for specified future periods); allocations
         (demand from sales orders); orders (based on work orders or purchase
@@ -146,7 +120,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>You will only be able to view allocations if allocations are showing
     a positive value in the period where you right-click your mouse.

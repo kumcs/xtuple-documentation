@@ -4,7 +4,6 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="createPlannedOrdersByPlannerCode">
   <title>Run MRP by Planner Code</title>
-
   <para>When you run MRP by planner code, you are running the material
   requirements planning (MRP) system. This utility creates planned
   replenishment orders to meet existing sales order and work order demand.
@@ -12,7 +11,6 @@
   item site falls below its reorder level. The quantity of the replenishment
   order will be enough to restore planned availability back to the reorder
   level—or to the order up to (OUT) level, if the OUT level is greater.</para>
-
   <note>
     <para>Running MRP by planner code may be used to generate planned orders
     for both parent-level manufactured items and also lower level purchased
@@ -20,7 +18,6 @@
     Unposted purchase orders and purchase requests are considered as valid
     sources of supply when MRP is run.</para>
   </note>
-
   <para>Depending on the size of your database and the amount of demand in the
   system, running MRP can take some time to complete. To compensate for this,
   companies often schedule MRP runs so they run overnight, using xTuple
@@ -29,20 +26,17 @@
   Progress screen also features a <guibutton>CANCEL</guibutton> option, which
   allows you to kill the MRP job if you feel it has gone on for too
   long.</para>
-
-  <para>To run MRP by planner code, select the <guimenuitem>Run MRP by Planner
-  Code</guimenuitem> option. The following screen will appear:</para>
-
+  <para>To run MRP by planner code, go to <guimenuitem>Schedule &gt;
+  Scheduling &gt; Run MRP &gt; by Planner Code</guimenuitem>. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/createPlannedOrdersByPlannerCode.png"/>
+          <imagedata fileref="images/createPlannedOrdersByPlannerCode.png" />
         </imageobject>
-
         <caption>Run MRP by Planner Code</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>The system deletes any non-firmed planned orders when MRP is run. If
     demand for the deleted planned orders still exists, the orders will be
@@ -50,59 +44,46 @@
     Order quantities will also be updated if demand levels have changed since
     MRP was last run.</para>
   </note>
-
   <para>When running MRP by planner code, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
-
       <listitem>
         <para>Select to create planned replenishment orders for all planner
         codes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify planner code you want to create planned replenishment
         orders for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pattern</term>
-
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>All Sites</term>
-
       <listitem>
         <para>Select to create planned replenishment orders by planner code
         for all sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify site planned replenishment orders should be created
         for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cutoff Date</term>
-
       <listitem>
         <para>Specify how far into the future the MRP run should look for
         demand. If you schedule an MRP or MPS job submitted to the xTuple
@@ -112,14 +93,11 @@
         week = +7, and month = +30).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>firmed orders</primary>
-
           <secondary>deletion of</secondary>
         </indexterm>Delete Existing Firmed MRP Orders</term>
-
       <listitem>
         <para>Select to delete existing firmed orders. A firm planned order is
         a planned order that has been solidified in the schedule. By default,
@@ -130,10 +108,8 @@
         requirements still exists.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Create MRP Exceptions</term>
-
       <listitem>
         <para>If you are using the MRP exceptions feature set for planning
         purposes, you should always select this option when running MRP. Not
@@ -146,17 +122,14 @@
         set—the netting effect will not be applied and you could end up with
         excess supply orders. Do not select this option if you are not using
         the MRP exceptions feature set. For more information about MRP
-        exceptions, please see <xref linkend="dspMRPException"/>.</para>
+        exceptions, please see <xref linkend="dspMRPException" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>OK</guibutton></term>
-
       <listitem>
         <para>Creates planned replenishment orders by planner code, using the
         specified parameters.</para>
