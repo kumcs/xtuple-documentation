@@ -5,56 +5,43 @@
 <section id="creditMemoItem">
   <title><indexterm significance="normal">
       <primary>sales credits</primary>
-
       <secondary>adding line items to</secondary>
     </indexterm>Sales Credit Item</title>
-
   <para>To create a new sales credit line item, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditMemoItem.png"/>
+          <imagedata fileref="images/creditMemoItem.png" />
         </imageobject>
-
-        <caption>Create New Sales Credit Line Item</caption>
+        <caption>Create new Sales Credit Item</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating a new sales credit line item, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Sales Credit #</term>
-
       <listitem>
         <para>Displays the sales credit number for the current sales
         credit.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Line #</term>
-
       <listitem>
         <para>Displays the line number assigned to the sales credit
         item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Type</term>
-
       <listitem>
         <para>Indicate the item type for the sales credit line item, by
         selecting one of the following options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Item</term>
-
             <listitem>
               <para>The lookup feature located to the right of the field leads
               to a searchable list of inventory items. If the sales credit is
@@ -70,10 +57,8 @@
               to be received into multiple sites.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Miscellaneous</term>
-
             <listitem>
               <para>Enter a name and description for the miscellaneous,
               non-inventory item you are billing the customer for. The
@@ -88,14 +73,11 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Reason Code</term>
-
       <listitem>
         <para>Specify the reason why an adjustment is being made to a
         customer's account.</para>
-
         <para><note>
             <para>By default, the reason code on the sales credit header will
             be used at the line item level. However, you may change the reason
@@ -103,10 +85,8 @@
           </note></para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Alternate Revenue Account</term>
-
       <listitem>
         <para>Specify an alternate account to be used as the revenue account.
         This account will be used instead of the typical accounts pre-defined
@@ -116,21 +96,17 @@
         Group).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty. Returned</term>
-
       <listitem>
         <para>Enter the quantity of the item returned for credit. If the sales
         credit was created from a return authorization, the quantity returned
         will be zero on the Sales Credit Item screen. Return authorization
         returns are handled separately, outside of the normal sales credit
         inventory handling process.</para>
-
         <variablelist>
           <varlistentry>
             <term>Update Inventory</term>
-
             <listitem>
               <para>Select if you want the quantity returned to be added back
               into inventory when you post the sales credit. If not selected,
@@ -140,10 +116,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty. To Credit</term>
-
       <listitem>
         <para>Enter the quantity of the item you plan to give the customer
         credit for. The quantity entered here may equal the quantity returned.
@@ -153,42 +127,33 @@
         credit.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty UOM</term>
-
       <listitem>
         <para>The unit of measure being returned and credited in. You may also
         select a global conversion ratio here. Global conversions have the
         label <literal>Global</literal> appended to them.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty. Shipped</term>
-
       <listitem>
         <para>Displays the quantity of the item shipped to date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Discount % from Sale</term>
-
       <listitem>
         <para>Specify a percentage to reduce the credited amount by. The
         discount will be deducted from the sale price, thereby reducing the
         amount of the credit by the specified percentage.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>sales credits</primary>
-
           <secondary>pricing of</secondary>
         </indexterm>Net Unit Price</term>
-
       <listitem>
         <para>Specify the net unit price to assign the quantity being
         credited. If the sales credit is being applied to a specific invoice,
@@ -201,7 +166,6 @@
         by customer ship-to address (most specific), by customer, by customer
         type, by customer type pattern, by all customers. The lookup feature
         located to the right of the field leads to a Price List screen.</para>
-
         <para>If your pricing schedule has multiple units of measure (UOM) on
         it (or if several pricing schedules share the same level of price
         specificity, but they have different UOMs) then the UOM which matches
@@ -212,7 +176,6 @@
         UOM is always chosen at the desired level of price specificity, then
         your pricing schedules should include at least one UOM with a quantity
         break of 0.</para>
-
         <tip>
           <para>The system can be configured to prevent users from editing the
           net unit price. If your system is configured that way, the
@@ -221,76 +184,59 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pricing UOM</term>
-
       <listitem>
         <para>Displays the item's price UOM. You may also select a global
         conversion ratio here. Global conversions have the label
         <literal>Global</literal> appended to them.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Extended Price</term>
-
       <listitem>
         <para>Displays the extended price. The extended price for a sales
         credit item is based on the quantity credited multiplied by the
         price.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Unit Cost</term>
-
       <listitem>
         <para>Displays the standard cost per unit.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>List Price</term>
-
       <listitem>
         <para>Displays the item's list price per unit displays.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Sale Price</term>
-
       <listitem>
         <para>Displays the sold price for the item at the time of sale.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>sales credits</primary>
-
           <secondary>discount pricing for</secondary>
         </indexterm>List Discount %</term>
-
       <listitem>
         <para>The default customer discount (if any) will display here.
         Default customer discount percentages are defined in the Customer
         master.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Type</term>
-
       <listitem>
         <para>Specify the tax type for the sales credit item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax</term>
-
       <listitem>
         <para>Displays the amount of tax to be charged for the sales credit
         line item quantity. To get a detailed view of the tax calculation,
@@ -298,24 +244,19 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>Click on the <guimenuitem>Notes</guimenuitem> tab to enter notes and
   you will be presented with the following screen:</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/creditMemoItem_notes.png"/>
+        <imagedata fileref="images/creditMemoItem_notes.png" />
       </imageobject>
-
-      <caption>Create New Sales Credit Line Item Notes</caption>
+      <caption>Create new Sales Credit Item notes</caption>
     </mediaobject>
   </screenshot>
-
   <variablelist>
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the sales credit item.</para>
