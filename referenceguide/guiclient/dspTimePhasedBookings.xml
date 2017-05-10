@@ -5,89 +5,72 @@
 <section id="dspTimePhasedBookings">
   <title><indexterm significance="normal">
       <primary>bookings</primary>
-
       <secondary>time-phased reporting</secondary>
     </indexterm> Time-Phased Bookings</title>
-
   <para>The Time-Phased Bookings screen provides a time-phased perspective on
   all open, invoiced, and closed sales order line items. Here are some tips
   for using this screen:</para>
-
   <itemizedlist>
     <listitem>
       <para>When selecting a calendar from the list, make sure to also select
       corresponding periods.</para>
     </listitem>
-
     <listitem>
       <para>The type of calendar and number of calendar periods you choose to
       display may have an impact on response time. The data may take longer to
       display, depending on the time frame requested.</para>
     </listitem>
-
     <listitem>
       <para>Calendars are defined under the <guimenu>System</guimenu> module
       Setup screen.</para>
     </listitem>
-
     <listitem>
       <para>Because bookings represent both active and past customer demand,
       sales order line items that have been deleted before any activity is
       registered are not considered bookings.</para>
     </listitem>
-
     <listitem>
       <para>Prices are normalized to the base currency using the currency
       exchange rate effective on the order date.</para>
     </listitem>
   </itemizedlist>
-
-  <para>The following screenshot shows the Time-Phased Bookings screen:</para>
-
+  <para>To view the Time-Phased Bookings screen, go to <guimenuitem>Sales &gt;
+  Analysis &gt; Time Phased Bookings</guimenuitem>. The following screen will
+  appear: </para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspTimePhasedBookings.png"/>
+          <imagedata fileref="images/dspTimePhasedBookings.png" />
         </imageobject>
-
         <caption>Time-Phased Bookings</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The following options on this screen are a supplement to the choices
   available under the search filter:</para>
-
   <variablelist>
     <varlistentry>
       <term>Group By</term>
-
       <listitem>
         <para>Specify how you want the information grouped: by customer,
         product category, or item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Units</term>
-
       <listitem>
         <para>Specify the units you want to see the results sorted by: sales
         dollars, inventory, capacity, alternate capacity.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Calendar</term>
-
       <listitem>
         <para>Select the calendar you want to use for the report. Associated
         calendar periods will be displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Name/Selected Periods</term>
-
       <listitem>
         <para>Select as many periods as you want to display. Selected periods
         correspond to calendar specified in the <guilabel>Calendar</guilabel>
@@ -106,11 +89,9 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The default filter on the Time-Phased Bookings screen shows all
   bookings for the specified calendar period(s). You can build your own search
   criteria using the following options:</para>
-
   <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

@@ -5,38 +5,30 @@
 <section id="customer">
   <title><indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>creating new</secondary>
     </indexterm>Enter New Customer</title>
-
   <para>Maintaining detailed customer information is essential to ensuring a
   successful customer relationship. To enter a new customer into the system,
-  select the <guimenuitem>New Customer</guimenuitem> option. The following
+  go to <guimenuitem>Sales &gt; Cutomer &gt; New</guimenuitem>. The following
   screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer.png"/>
+          <imagedata fileref="images/customer.png" />
         </imageobject>
-
         <caption>Create New Customer</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>Customers can also be created from the CRM Account screen. Simply
     enter a new CRM account, selecting the <guibutton>CUSTOMER</guibutton>
     relationship option.</para>
   </tip>
-
   <para>When creating a new customer, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Customer #</term>
-
       <listitem>
         <para>The customer number uniquely identifies the customer. To search
         for an existing customer, use the lookup feature located next to the
@@ -47,72 +39,57 @@
         from editing the customer number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Customer Name</term>
-
       <listitem>
         <para>Enter the name of the customer or company you are doing business
         with. This field should not to be confused with the contact name of an
         individual at the company.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Customer Type</term>
-
       <listitem>
         <para>Specify the customer type the customer belongs to.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Active</term>
-
       <listitem>
         <para>Select if you are actively doing business with this customer.
         Not selecting makes the customer inactive.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>ACCOUNT</guibutton></term>
-
       <listitem>
         <para>Select to open the customer's account.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>addresses for</secondary>
     </indexterm>To enter contact information for the customer, select the
   <guimenuitem>Addresses</guimenuitem> tab and choose from the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Billing Contact</term>
-
       <listitem>
         <para>Select to manually enter billing contact information in the
         fields below—or use the lookup feature to select pre-existing contact
         information. If a new contact is manually entered here, that contact
         will be added automatically to the master list of contacts. For
         additional documentation related to creating contacts, see <xref
-        linkend="contact"/>.</para>
+        linkend="contact" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Correspondence Contact</term>
-
       <listitem>
         <para>Select to manually enter non-billing-related contact information
         in the fields below—or use the lookup feature to select pre-existing
@@ -121,13 +98,11 @@
         additional contact information. If a new contact is manually entered
         here, that contact will be added automatically to the master list of
         contacts. For additional documentation related to creating contacts,
-        see <xref linkend="contact"/>.</para>
+        see <xref linkend="contact" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ship-To</term>
-
       <listitem>
         <para>Select to display ship-to addresses for the specified customer.
         Every customer can have multiple ship-to addresses, one for each of
@@ -136,24 +111,19 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>ship-to addresses</primary>
-
       <secondary>creating new</secondary>
     </indexterm>To create a new ship-to address for a customer, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/shipTo.png"/>
+          <imagedata fileref="images/shipTo.png" />
         </imageobject>
-
         <caption>Ship-To Address</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>The Ship-To Address screen shares many common fields with the
     Customer master—for example, shipping defaults, sales representative, etc.
@@ -163,75 +133,59 @@
     used when the ship-to address is selected at the point of sales order
     entry.</para>
   </tip>
-
   <para>When creating a new ship-to address, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Customer #</term>
-
       <listitem>
         <para>Displays the customer number and customer name.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ship-To #</term>
-
       <listitem>
         <para>Specify a number or code to identify the ship-to address.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter the name of the company that will receive shipments at
         this ship-to address. Customers may maintain multiple ship-to
         addresses with diverse destinations.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Active</term>
-
       <listitem>
         <para>Select to activate the ship-to address. If this option is not
         selected, then the ship-to address will be inactive.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Default</term>
-
       <listitem>
         <para>Select if this is the default ship-to address for the
         customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Address</term>
-
       <listitem>
         <para>Manually enter delivery address information in the fields
         below—or use the lookup feature to select pre-existing address
         information. If a new address is manually entered here, that address
         will be added automatically to the master list of addresses. For
         additional documentation related to creating addresses, see <xref
-        linkend="address"/>.</para>
+        linkend="address" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>ship-to addresses</primary>
-
           <secondary>contact information for</secondary>
         </indexterm>Contact</term>
-
       <listitem>
         <para>Manually enter delivery contact information in the fields
         below—or use the lookup feature to select pre-existing contact
@@ -240,30 +194,24 @@
         label. If a new contact is manually entered here, that contact will be
         added automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact"/>.</para>
+        linkend="contact" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Defaults</term>
-
       <listitem>
         <para>Specify the following ship-to address defaults:</para>
-
         <variablelist>
           <varlistentry>
             <term>Sales Rep</term>
-
             <listitem>
               <para>Specify the sales rep for the ship-to address. This is the
               sales rep that will be used whenever an order specifies this
               ship-to address.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Commission</term>
-
             <listitem>
               <para>When you first associate a sales rep with a customer—or
               with a ship-to address—the system will copy in the commission
@@ -275,31 +223,24 @@
               wherever that sales rep is used.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Ship Zone</term>
-
             <listitem>
               <para>Specify the shipping zone for the ship-to address.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Tax Zone</term>
-
             <listitem>
               <para>Specify tax zone to be used for ship-to address.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Ship Via</term>
-
             <listitem>
               <para>Specify the default ship via to be used for the ship-to
               address. You may enter a free-form ship via simply by typing the
               name of the ship via into the field.</para>
-
               <tip>
                 <para>The system supports up-to-date shipment tracking with
                 links to the websites of many leading shipping companies
@@ -307,28 +248,22 @@
               </tip>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Shipping Form</term>
-
             <listitem>
               <para>Specify the default shipping form to be used for the
               ship-to address. This field is optional.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Shipping Charges</term>
-
             <listitem>
               <para>Specify the default shipping charges to be used for the
               ship-to address.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="standard">
             <term>Preferred Selling Site</term>
-
             <listitem>
               <para>Specify the preferred selling site for the ship-to
               address. If no default ship-to address exists, sales orders
@@ -339,10 +274,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>General Notes</term>
-
       <listitem>
         <para>Select the <guimenuitem>General Notes</guimenuitem> tab to
         access this scrolling text field with word-wrapping for entering
@@ -350,10 +283,8 @@
         for internal use only.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Shipping Notes</term>
-
       <listitem>
         <para>Select the <guimenuitem>Shipping Notes</guimenuitem> tab to
         access this scrolling text field with word-wrapping for entering
@@ -364,91 +295,72 @@
         on shipping paperwork.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Documents</term>
-
       <listitem>
         <para>To associate documents with a ship-to address, select the
         <guimenuitem>Documents</guimenuitem> tab.</para>
-
         <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
       </listitem>
     </varlistentry>
-
     <varlistentry role="xtconnect">
       <term>Transmission</term>
-
       <listitem>
         <para>Select the <guimenuitem>Transmission</guimenuitem> tab to
         associate EDI profiles with the ship-to address. EDI profiles are used
         for transmitting orders and invoices to customers electronically—via
         email or FTP. Associating an EDI profile with a ship-to address
         overrides the association of an EDI profile with the customer.</para>
-
         <note>
           <para role="xtconnect">The buttons on the
           <guimenuitem>Transmission</guimenuitem> tab are disabled when
           creating a new ship-to address. If you want to set up EDI for a new
           ship-to address, save the ship-to address and edit it again.</para>
         </note>
-
         <xi:include href="../widgets/edirelation.xml"
                     xpointer="edirelationWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To define some of the basic customer settings, select the
   <guimenuitem>Settings</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab.png"/>
+          <imagedata fileref="images/customer_settingsTab.png" />
         </imageobject>
-
-        <caption>Customer Settings Tab</caption>
+        <caption>Customer Settings tab</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When defining basic customer settings, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>General</term>
-
       <listitem>
         <para>Select to specify the default preferences for the
         customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Terms</term>
-
       <listitem>
         <para>Select to specify credit-related information for the
         customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax</term>
-
       <listitem>
         <para>Select to specify the default tax information for the
         customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credit Cards</term>
-
       <listitem>
         <para>Select to enter credit card information for the customer. This
         option will only be enabled if your site is configured to use and
@@ -456,14 +368,11 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following options are available when you select the
   <guilabel>General</guilabel> option:</para>
-
   <variablelist>
     <varlistentry>
       <term>Sales Rep</term>
-
       <listitem>
         <para>Specify a default sales representative for the customer. This
         sales rep will be used for customer orders, unless a particular
@@ -471,10 +380,8 @@
         rep.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Commission</term>
-
       <listitem>
         <para>When you first associate a sales rep with a customer—or with a
         ship-to address—the system will copy in the commission from the sales
@@ -486,35 +393,28 @@
         used.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ship Via</term>
-
       <listitem>
         <para>Specify the default ship via to be used for the customer. You
         may enter a free-form ship via simply by typing the name of the ship
         via into the field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Shipping Form</term>
-
       <listitem>
         <para>Specify the default shipping form to be used for the customer.
         This field is optional.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Shipping Charges</term>
-
       <listitem>
         <para>Specify the default shipping charges to be used for the
         customer. Shipping defaults specified on the Customer master will
         transfer to the sales order header when a new sales order is entered
         for a customer.</para>
-
         <tip>
           <para>The system supports up-to-date shipment tracking with links to
           the websites of many leading shipping companies (i.e., ship
@@ -522,18 +422,14 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>backorders</primary>
-
           <secondary>accepted by customer</secondary>
         </indexterm><indexterm significance="normal">
           <primary>customers</primary>
-
           <secondary>backorders accepted by</secondary>
         </indexterm>Accepts Backorders</term>
-
       <listitem>
         <para>Select to indicate whether the customer accepts backorders. A
         backorder is defined as an unshipped line item on a shipped sales
@@ -541,29 +437,23 @@
         one of the line items is shipped, the remaining two line items would
         be on backorder. Not selecting this option indicates the customer does
         not accept backorders or partial shipments.</para>
-
         <tip>
           <para>Sales orders having unshipped line items on backorder will be
           closed at billing (i.e., when an invoice is created) if the customer
           in question is flagged to not accept backorders.</para>
         </tip>
-
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>customers</primary>
-
                 <secondary>order preferences for</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>shipments</primary>
-
                 <secondary>partial</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>customers</primary>
-
                 <secondary>partial shipments accepted by</secondary>
               </indexterm>Accepts Partial Shipments</term>
-
             <listitem>
               <para>Accepts partial shipments: select to indicate whether the
               customer accepts partial shipments. A partial shipment is
@@ -574,7 +464,6 @@
               a partial shipment of the ordered item. Not selecting this
               option indicates the customer does not accept partial
               shipments.</para>
-
               <tip>
                 <para>Partially-shipped line items will be closed at billing
                 (i.e., when an invoice is created) if the customer in question
@@ -585,10 +474,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Allow Free-Form Ship-To's</term>
-
       <listitem>
         <para>Select to indicate that free-form ship-to addresses may be
         entered when sales orders are created for the customer. If not
@@ -597,10 +484,8 @@
         predefined information.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Allow Free-Form Bill-To</term>
-
       <listitem>
         <para>Select to indicate that free-form bill-to addresses may be
         entered when sales orders are created for the customer. If not
@@ -609,10 +494,8 @@
         Customer master will be used.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Preferred Selling Site</term>
-
       <listitem>
         <para>Specify the preferred selling site, if any. This is an optional
         setting. If a preferred site is selected, then this site will be used
@@ -620,7 +503,6 @@
         preferred site will be the default shipping site for the sales
         order—as well as the default selling site for sales order
         items.</para>
-
         <note>
           <para>If there are no item sites matching the preferred site at the
           point of sales order line item entry, the highest-ranked selling
@@ -629,43 +511,33 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To specify credit-related information for the customer, select the
   <guilabel>Terms</guilabel> option. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_termsButton.png"/>
+          <imagedata fileref="images/customer_settingsTab_termsButton.png" />
         </imageobject>
-
-        <caption>Customer Terms Options</caption>
+        <caption>Customer Terms options</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When specifying credit-related information for the customer, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Use specified billing rate</term>
-
       <listitem>
         <para>Specify the default billing rate for the customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Terms</term>
-
       <listitem>
         <para>Specify the default billing terms for the customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Discount</term>
-
       <listitem>
         <para>Enter the default discount—if any—which the customer should
         receive. Customer discounts are applied to the list price for a sold
@@ -673,10 +545,8 @@
         if a pricing schedule price applies to the item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Currency</term>
-
       <listitem>
         <para>Specify the currency to be used when transacting business with
         the customer. With the system's multi-currency support, you can do
@@ -684,25 +554,20 @@
         normalize transactions in your base currency.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Exempt from Finance Charges</term>
-
       <listitem>
         <para>Select if you want the customer to be exempt from finance
         charges when their receivables are overdue.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>In Good Standing</term>
-
       <listitem>
         <para>Select to mark the customer as having credit in good standing.
         Customers with credit in good standing may have sales orders issued
         for them. A black-colored typeface will be associated with their
         account.</para>
-
         <note>
           <para>Sales orders may not be entered for customers who are on
           credit warning or credit hold. Credit holds may be overridden, but
@@ -710,10 +575,8 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>On Credit Warning</term>
-
       <listitem>
         <para>Select to alert sales staff to possible credit problems with the
         customer. Non-privileged users will be prevented from issuing stock to
@@ -721,16 +584,13 @@
         typeface will be associated with their account.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>On Credit Hold</term>
-
       <listitem>
         <para>Select to inform sales staff that the customer's credit has been
         suspended. Non-privileged users will be prevented from issuing stock
         to shipping for any customers on credit hold. A red-colored typeface
         will be associated with their account.</para>
-
         <tip>
           <para>Place your cash-only customers on credit hold when you create
           their customer records. That way, their sales orders can only be
@@ -740,31 +600,25 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Uses Purchase Orders</term>
-
       <listitem>
         <para>Select to indicate that the customer uses purchase orders. If
         selected, users will be required to enter a customer purchase order
         number when entering a sales order. In addition, selecting the option
         will prevent users from entering duplicate customer purchase order
         numbers—unless the customer is marked as using blanket POs.</para>
-
         <note>
           <para>If the option <guilabel>Uses Purchase Orders</guilabel> is not
           selected, the system will place no restrictions on customer purchase
           order numbers.</para>
         </note>
-
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>purchase orders</primary>
-
                 <secondary>customers using blanket</secondary>
               </indexterm>Uses Blanket P/O's</term>
-
             <listitem>
               <para>Select to indicate that the customer uses blanket purchase
               orders. A blanket purchase order is a customer purchase order
@@ -776,27 +630,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Balance Method</term>
-
       <listitem>
         <para>Specify one of the available methods for handling open balances
         for the customer:</para>
-
         <variablelist>
           <varlistentry>
             <term>Balance Forward</term>
-
             <listitem>
               <para>Select to post payments against the oldest invoices. Used
               in accounts receivable only.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Open Items</term>
-
             <listitem>
               <para>Select to post payments against specific invoices,
               regardless of their age. Used in accounts receivable
@@ -806,33 +654,26 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credit Limit</term>
-
       <listitem>
         <para>Specify the credit ceiling you are willing to extend to the
         customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>customers</primary>
-
           <secondary>credit rating options for</secondary>
         </indexterm>Credit Rating</term>
-
       <listitem>
         <para>You have the option of assigning a credit rating to the
         customer. Any value entered here is purely informational. The system
         does not use the credit rating in any calculations.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Place on Credit Warning when Credit Limit is Exceeded</term>
-
       <listitem>
         <para>Select this option to automatically place the customer on credit
         warning if their open receivables balance exceeds their credit limit.
@@ -842,7 +683,6 @@
         entered for the customer—except by users with override privileges.
         Once the customer's receivables open balance falls below their credit
         limit, sales orders may once again be entered for the customer.</para>
-
         <tip>
           <para>You must specify you want a customer to be placed on credit
           warning to enable the late credit status utility to consider a
@@ -850,11 +690,9 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Place Open Sales Orders on Credit Hold when Credit Limit is
       Exceeded</term>
-
       <listitem>
         <para>Select this option to place all new and existing open sales
         orders on credit hold if the customer's credit limit is exceeded. The
@@ -864,21 +702,17 @@
         to shipping.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Alternate Late Grace Days</term>
-
       <listitem>
         <para>Select to specify an alternate number of grace days for the
         customer, to override the global grace period defined at the system
         level in the <guimenu>Accounting</guimenu> configuration. To learn
         more about configuring grace days, see <xref
-        linkend="configureGL"/>.</para>
-
+        linkend="configureGL" />.</para>
         <variablelist>
           <varlistentry>
             <term>Grace Days</term>
-
             <listitem>
               <para>Specify the number of days beyond the receivables open due
               date which will serve as a grace period for the customer. The
@@ -890,39 +724,30 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To specify tax-related information for the customer, select the
   <guilabel>Tax</guilabel> option. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_taxButton.png"/>
+          <imagedata fileref="images/customer_settingsTab_taxButton.png" />
         </imageobject>
-
-        <caption>Customer Tax Options</caption>
+        <caption>Customer Tax options</caption>
       </mediaobject>
     </screenshot></para>
-
   <para><indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>tax information for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>taxes</primary>
-
       <secondary>for customers</secondary>
     </indexterm>When adding customer tax information, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>tax zones</primary>
-
           <secondary>default for customers</secondary>
         </indexterm>Default Tax Zone</term>
-
       <listitem>
         <para>Specify the default tax zone you want to associate with the
         customer. By default, the specified tax zone will be used on sales
@@ -930,77 +755,60 @@
         specifies a different tax zone.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Registration Numbers</term>
-
       <listitem>
         <para>Display lists tax registration numbers for the specified
         customer.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To add a new customer tax registration number, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxRegistration.png"/>
+          <imagedata fileref="images/taxRegistration.png" />
         </imageobject>
-
         <caption>Customer Tax Registration Information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para><indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>tax registration for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>taxes</primary>
-
       <secondary>registration for customers</secondary>
     </indexterm>When adding a new customer tax registration number, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Customer #</term>
-
       <listitem>
         <para>Displays the customer number for the specified customer.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Zone</term>
-
       <listitem>
         <para>Specify the tax zone the tax registration number is valid
         for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Authority</term>
-
       <listitem>
         <para>Specify the tax authority associated with the tax registration
         number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Registration Number</term>
-
       <listitem>
         <para>Enter the customer's tax registration number for the specified
         tax authority. The registration number is used by tax authorities to
         identify businesses and/or individuals. An employer identification
         numbers (EIN) is an example of a tax registration number.</para>
-
         <tip>
           <para>The customer's tax registration number is used for identifying
           the customer to relevant tax authorities. This information should
@@ -1009,27 +817,21 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Effectivity</term>
-
       <listitem>
         <para>Specify the date range the tax registration number is valid
         for:</para>
-
         <variablelist>
           <varlistentry>
             <term>Start Date</term>
-
             <listitem>
               <para>The tax registration number is valid on and after this
               date.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>End Date</term>
-
             <listitem>
               <para>The tax registration number is valid on and before this
               date.</para>
@@ -1038,39 +840,31 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the tax registration number.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>credit cards</primary>
-
       <secondary>adding to customer master</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>credit cards for</secondary>
     </indexterm>To specify credit card information for the customer, select
   the <guilabel>Credit Cards</guilabel> option. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_creditcardsButton.png"/>
+          <imagedata fileref="images/customer_settingsTab_creditcardsButton.png" />
         </imageobject>
-
         <caption>Customer Credit Cards</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>Customer credit cards may be used when entering sales orders or cash
     receipt transactions for the customer. When entering a sales order, you
@@ -1078,36 +872,28 @@
     pre-authorizations may later be post-authorized using the Receivables
     workbench.</para>
   </note>
-
   <para>When specifying credit card information for the customer, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Credit Cards</term>
-
       <listitem>
         <para>Display lists credit card records for the customer.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>MOVE UP</guibutton></term>
-
       <listitem>
         <para>Highlight a credit card and then select this button to move the
         credit card up in the sequence of credit cards. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>MOVE DOWN</guibutton></term>
-
       <listitem>
         <para>Highlight a credit card and then select this button to move the
         credit card down the sequence of credit cards. Sequence numbers are
@@ -1115,96 +901,76 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To create a new credit card record for a customer, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditCard.png"/>
+          <imagedata fileref="images/creditCard.png" />
         </imageobject>
-
-        <caption>Create New Credit Card Record</caption>
+        <caption>Create new Credit Card Record</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating a new credit card record for a customer, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Customer #</term>
-
       <listitem>
         <para>Displays the name of the customer associated with the credit
         card record. The name of the customer will also be displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credit Card Type</term>
-
       <listitem>
         <para>Specify the type of credit card. The following credit card types
         are currently supported: Master Card, Visa, American Express, and
         Discover.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credit Card Number</term>
-
       <listitem>
         <para>Enter the credit card number. After the credit card record has
         been saved, all but the last four digits of the credit card number
         will be encrypted for security purposes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Active</term>
-
       <listitem>
         <para>Select if the credit card record is active. Do not select this
         option if the specified credit card is inactive or invalid for any
         reason.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter a name to describe the credit card record.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Address</term>
-
       <listitem>
         <para>By default, the customer's billing address will be entered here.
         However, you may specify an alternate billing address for the credit
         card record using the address lookup feature located in the lower
         right-hand corner of the screen. For additional documentation related
-        to creating addresses, see <xref linkend="address"/>.</para>
+        to creating addresses, see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Expiration Month</term>
-
       <listitem>
         <para>Enter the month when the specified credit card expires. The
         month must be saved in the format "MM". For example, the month of
         January would be represented as "01".</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Expiration Year</term>
-
       <listitem>
         <para>Enter the year when the specified credit card expires. The year
         must be saved in the format "YYYY". For example, the year 2006 would
@@ -1212,18 +978,14 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>characteristics</primary>
-
       <secondary>creating new for customer</secondary>
     </indexterm><indexterm significance="normal">
       <primary>characteristics</primary>
-
       <secondary>customers having</secondary>
     </indexterm><indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>characteristics for</secondary>
     </indexterm>Customer characteristics are user-defined definitions which
   may be used to provide additional layers of description about customers. For
@@ -1233,99 +995,80 @@
   are useful for informational purposes. To enter characteristics associated
   with a customer, select the <guimenuitem>Characteristics</guimenuitem> tab.
   The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_tabCharacteristics.png"/>
+          <imagedata fileref="images/customer_tabCharacteristics.png" />
         </imageobject>
-
         <caption>Customer Characteristics</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>If the customer type a customer belongs to has a characteristic
   profile (i.e., template) defined, then every customer in that customer type
   will be presented with a range of pre-defined characteristics. You can
   select or add values for each characteristic by right-clicking on a
   characteristic in the list.</para>
-
   <tip>
     <para>If you do not see buttons on the right side of the Customer
     Characteristics screen, this means characteristic profiles are being used
     for the customer type the customer belongs to. These buttons will only
     appear if customer type characteristic profiles are not being used.</para>
   </tip>
-
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>Every customer record is linked to a CRM account. To view information
   related to the customer's CRM account, select the
   <guimenuitem>CRM</guimenuitem> tab. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_crmTab.png"/>
+          <imagedata fileref="images/customer_crmTab.png" />
         </imageobject>
-
         <caption>CRM Information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing information related to the customer's CRM account, you
   are presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Contacts</term>
-
       <listitem>
         <para>Select to view a list of all contacts associated with the
         account. On this screen you can manage an account's contacts—either by
         adding new contacts or attaching/detaching contacts from the account.
         Any changes made here also update the CRM account record. For
         additional documentation related to managing a contacts associated
-        with a CRM account, see <xref linkend="crmaccount"/>.</para>
+        with a CRM account, see <xref linkend="crmaccount" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Activities</term>
-
       <listitem>
         <para>Select to view the to-do list associated with the account. On
         this screen you can manage all of the to-dos, opportunities, and
         incidents related to the account. Any changes made here also update
         the main to-do list. For additional documentation related to managing
-        the to-do list, see <xref linkend="todoList"/>.</para>
+        the to-do list, see <xref linkend="todoList" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To manage or review a customer's sales activity, select the
   <guimenuitem>Sales</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_salesTab.png"/>
+          <imagedata fileref="images/customer_salesTab.png" />
         </imageobject>
-
         <caption>Customer Sales Information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When reviewing a customer's sales activity, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Summary</term>
-
       <listitem>
         <para>Select to view high-level sales history information for the
         customer, including year-to-date sales, last year sales, total backlog
@@ -1335,150 +1078,122 @@
         Analysis</guimenuitem>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Quotes</term>
-
       <listitem>
         <para>Select to view the list of quotes associated with the customer.
         On this screen you can create new quotes or edit existing ones. You
         may also view historical quotes converted to sales orders or invoices
         if your <guimenu>Sales</guimenu> module is configured to allow this.
         For additional documentation related to entering quotes for customers,
-        please see <xref linkend="quote"/>.</para>
+        please see <xref linkend="quote" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Orders</term>
-
       <listitem>
         <para>Select to view the list of sales orders associated with the
         customer. On this screen you can create new sales orders or edit
         existing ones. For additional documentation related to entering sales
-        orders for customers, please see <xref linkend="salesOrder"/>.</para>
+        orders for customers, please see <xref linkend="salesOrder" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Returns</term>
-
       <listitem>
         <para>Select to manage returns associated with the customer. On this
         screen you can manage most aspects of the returns process—from
         creating new return authorizations to processing credit memos. For
         additional documentation related to managing return authorizations,
-        please see <xref linkend="returnAuthorization"/>.</para>
+        please see <xref linkend="returnAuthorization" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To manage or review accounting information for the customer, select
   the <guimenuitem>Accounting</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_accountingTab.png"/>
+          <imagedata fileref="images/customer_accountingTab.png" />
         </imageobject>
-
         <caption>Customer Accounting Information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When reviewing a customer's accounting information, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Receivables</term>
-
       <listitem>
         <para>Select to view information related to the customer's open
         receivables. On this screen you can manage most aspects of the
         receivables process—from creating new receivable documents (e.g.,
         invoices, credit memos, etc.) to printing out customer statements. For
         additional documentation related to managing customer receivables, see
-        <xref linkend="dspAROpenItems"/>.</para>
-
+        <xref linkend="dspAROpenItems" />.</para>
         <tip>
           <para>You can void posted invoices and returns on the open
           receivables screen—as long as they are unapplied.</para>
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cash Receipts</term>
-
       <listitem>
         <para>Select to view information related to cash receipts from the
         customer. On this screen you can view cash receipt and cash
         application history, as well as enter new cash receipts for the
         customer. For additional documentation related to cash receipt
-        history, see <xref linkend="dspCashReceipts"/>. And for detailed
+        history, see <xref linkend="dspCashReceipts" />. And for detailed
         information about entering cash receipts, see <xref
-        linkend="cashReceipt"/>.</para>
+        linkend="cashReceipt" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credit Cards</term>
-
       <listitem>
         <para>Select to view information related to transactions involving the
         customer's credit card(s). On this screen you can view credit card
         transaction history, authorize credit card pre-authorizations, and
         print credit card receipts. For additional documentation related to
         credit card history and the method for processing pre-authorizations,
-        see <xref linkend="arWorkBench"/>.</para>
+        see <xref linkend="arWorkBench" />.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To <indexterm significance="normal">
       <primary>documents</primary>
-
       <secondary>customers associated with</secondary>
     </indexterm><indexterm significance="normal">
       <primary>customers</primary>
-
       <secondary>documents associated with</secondary>
     </indexterm>associate documents with a customer, select the
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/customer_documentsTab.png"/>
+        <imagedata fileref="images/customer_documentsTab.png" />
       </imageobject>
-
       <caption><para>Customer Documents</para></caption>
     </mediaobject></para>
-
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To enter remarks (e.g., notes and comments) related to the customer,
   select the <guimenuitem>Remarks</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_tabRemarks.png"/>
+          <imagedata fileref="images/customer_tabRemarks.png" />
         </imageobject>
-
         <caption>Customer Notes</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When entering remarks related to a customer, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>Select to enter notes related to the customer. This is a
         scrolling text field with word-wrapping for entering notes related to
@@ -1486,10 +1201,8 @@
         purposes only.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Comments</term>
-
       <listitem>
         <para>Select to review or add comments related to the customer. Any
         comments entered elsewhere in the <guimenu>CRM</guimenu> module
@@ -1497,123 +1210,96 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para role="xtconnect">The electronic data interchange (EDI) system enables
   you to send quotes, sales orders, credit memos, receivables statements, and
   invoices electronically to your customers. To establish a customer's EDI
   preferences, select the <guimenuitem>Transmission</guimenuitem> tab. The
   following screen will appear:</para>
-
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_transmitTab.png"/>
+          <imagedata fileref="images/customer_transmitTab.png" />
         </imageobject>
-
         <caption>Transmission Information for EDI</caption>
       </mediaobject>
     </screenshot></para>
-
   <note role="xtconnect">
     <para>The buttons on the <guimenuitem>Transmission</guimenuitem> tab are
     disabled when creating a new customer. If you want to set up EDI for a new
     customer, save the customer and edit it again.</para>
   </note>
-
   <xi:include href="../widgets/edirelation.xml" xpointer="edirelationWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To view email associated with the customer, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
-
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para role="standard"><indexterm significance="normal">
       <primary>dashboards</primary>
-
       <secondary>for customers</secondary>
     </indexterm>To view the dashboard associated with the customer, select the
   <guimenuitem>Dashboard</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_dashboardTab.png"/>
+          <imagedata fileref="images/customer_dashboardTab.png" />
         </imageobject>
-
         <caption>Customer Workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
-
   <para role="standard">The customer dashboard includes the following
   pre-loaded dashboard panes, which you can either remove or supplement with
   additional panes at any time:</para>
-
   <para role="standard"><variablelist>
       <varlistentry>
         <term>Percent of Credit Limit</term>
-
         <listitem>
           <para>Displays how much of the customer's credit limit has been
           consumed.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Balance Summary</term>
-
         <listitem>
           <para>Displays information indicating customer balances for several
           indicators.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Sales Summary</term>
-
         <listitem>
           <para>Displays time-phased sales summary information for the
           customer.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Item Sales Rolling 12</term>
-
         <listitem>
           <para>Displays the customer's rolling sales information for the last
           12 months from the current date, or the first of the current
           month.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Sales By Month</term>
-
         <listitem>
           <para>Displays an historical view of the customer's summarized sales
           by month.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Percent Item Sales Rolling 12</term>
-
         <listitem>
           <para>Displays rolling item sales information for the last 12 months
           from the current date, or the first of the current month.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Order Bucket Count</term>
-
         <listitem>
           <para>Displays orders grouped into order-size buckets, making it
           possible for you to see where your customer order totals are
@@ -1621,7 +1307,6 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
-
   <xi:include href="../widgets/dashboardPane.xml" xpointer="dashboardsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
