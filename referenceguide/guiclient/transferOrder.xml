@@ -5,29 +5,36 @@
 <section id="transferOrder" role="standard">
   <title><indexterm significance="normal">
       <primary>transfer orders</primary>
+
       <secondary>creating new</secondary>
     </indexterm>New Transfer Order</title>
+
   <para>Transfer orders are used to move inventory between sites. They are
   distinct from inter-site transfers in three primary ways: 1) you can add
   multiple items to a single transfer order and transfer all the items at
   once; 2) all transfer order transfers involve a transit site, for tracking
   inventory while it is "in transit"; and 3) there are reports (i.e.,
   paperwork) associated with transfer orders. To enter a new transfer order,
-  select the <guilabel>New Transfer Order</guilabel> option. The following
-  screen will appear:</para>
+  go to <guimenuitem>Inventory &gt; Transfer Order &gt; New</guimenuitem>. The
+  following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder.png" />
+          <imagedata fileref="images/transferOrder.png"/>
         </imageobject>
+
         <caption>Create New Transfer Order</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new transfer order, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Order #</term>
+
       <listitem>
         <para>Next available transfer order number will automatically display,
         unless your system requires you to enter transfer order numbers
@@ -35,14 +42,18 @@
         numbers are configurable at the system level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order Date</term>
+
       <listitem>
         <para>Displays current day's date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Scheduled Date</term>
+
       <listitem>
         <para>Displays the order's earliest scheduled date. The scheduled date
         corresponds to the earliest scheduled date for an included transfer
@@ -53,22 +64,28 @@
         created and a scheduled date assigned to it.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>pack dates</primary>
+
           <secondary>for transfer orders</secondary>
         </indexterm><indexterm significance="normal">
           <primary>transfer orders</primary>
+
           <secondary>pack dates for</secondary>
         </indexterm>Pack Date</term>
+
       <listitem>
         <para>The pack date is the same date as the ship date. Because the
         field can be edited, you have the ability to change the pack date and
         make it different from the ship date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order Status</term>
+
       <listitem>
         <para>Select the current status of the transfer order. Transfer orders
         may be either unreleased = <guilabel>U</guilabel>, open =
@@ -81,8 +98,10 @@
         order line items.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Agent</term>
+
       <listitem>
         <para>Specify the agent associated with the transfer order. By
         default, the name of the logged-in user will be entered as purchasing
@@ -91,17 +110,22 @@
         list of purchasing agents will be entered.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>tax zones</primary>
+
           <secondary>for transfer orders</secondary>
         </indexterm>Tax Zone</term>
+
       <listitem>
         <para>Specify the tax zone for this transfer order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship Complete</term>
+
       <listitem>
         <para>Select to require that all transfer order line item quantities
         be issued to shipping before the order is shipped. This feature is
@@ -109,34 +133,43 @@
         prevented from shipping the order unless all line item quantities have
         been issued to shipping. If not selected, partial shipments for the
         order will be allowed.</para>
+
         <note>
           <para>Transfer orders may not be received before they have been
           shipped.</para>
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Project #</term>
+
       <listitem>
         <para>Select a project number to associate with the transfer order.
         Projects may be used to link transfer orders with work orders, sales
         orders, purchase orders, etc.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship From</term>
+
       <listitem>
         <para>Specify the following details related to the site the order is
         being shipped from:</para>
+
         <variablelist>
           <varlistentry>
             <term>Site</term>
+
             <listitem>
               <para>Select a source site from the available options.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Address</term>
+
             <listitem>
               <para>Displays the default address for the specified ship-from
               site. You may manually override the displayed address
@@ -144,11 +177,13 @@
               select another address. If a new address is manually entered
               here, that address will be added automatically to the master
               list of addresses. For additional documentation related to
-              creating addresses, see <xref linkend="address" />.</para>
+              creating addresses, see <xref linkend="address"/>.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Site Contact</term>
+
             <listitem>
               <para>Displays the default contact for the specified ship-from
               site. You may manually override the displayed contact
@@ -156,27 +191,33 @@
               select another contact. If a new contact is manually entered
               here, that contact will be added automatically to the master
               list of contacts. For additional documentation related to
-              creating addresses, see <xref linkend="contact" />.</para>
+              creating addresses, see <xref linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship-To</term>
+
       <listitem>
         <para>Specify the following details related to the site the order is
         being shipped to:</para>
+
         <variablelist>
           <varlistentry>
             <term>Site</term>
+
             <listitem>
               <para>Select a destination site from the available
               options.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Address</term>
+
             <listitem>
               <para>Displays the default address for the specified ship-to
               site. You may manually override the displayed address
@@ -184,11 +225,13 @@
               select another address. If a new address is manually entered
               here, that address will be added automatically to the master
               list of addresses. For additional documentation related to
-              creating addresses, see <xref linkend="address" />.</para>
+              creating addresses, see <xref linkend="address"/>.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Site Contact</term>
+
             <listitem>
               <para>Displays the default contact for the specified ship-to
               site. You may manually override the displayed contact
@@ -196,81 +239,104 @@
               select another contact. If a new contact is manually entered
               here, that contact will be added automatically to the master
               list of contacts. For additional documentation related to
-              creating addresses, see <xref linkend="contact" />.</para>
+              creating addresses, see <xref linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Ship Via</term>
+
       <listitem>
         <para>Specify the ship via associated with the transfer order. You may
         enter a free-form ship via simply by typing the name of the ship via
         into the field.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Shipping Form</term>
+
       <listitem>
         <para>Specify the shipping form associated with the transfer order.
         This field is optional.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>SAVE AND ADD TO PACKING LIST BATCH</guibutton></term>
+
       <listitem>
         <para>Creates the transfer order, saves it, and adds it to the list of
         orders available for printing on the packing list batch.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para><indexterm significance="normal">
       <primary>transfer orders</primary>
+
       <secondary>adding line items to</secondary>
     </indexterm>To create or modify transfer order line items, select the
   <guimenuitem>Line Items</guimenuitem> tab at the top of the Transfer Order
   screen. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder_lineItemsPage.png" />
+          <imagedata fileref="images/transferOrder_lineItemsPage.png"/>
         </imageobject>
+
         <caption>Transfer Order Line Items</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating or modifying transfer order line items, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Line Items</term>
+
       <listitem>
         <para>Display lists line items for this transfer order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>Transfer order line items may exist in any of the following
     statuses:</para>
+
     <para><guilabel>U</guilabel> = Unreleased</para>
+
     <para><guilabel>O</guilabel> = Open</para>
+
     <para><guilabel>C</guilabel> = Closed</para>
+
     <para><guilabel>X</guilabel> = Cancelled</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Show Canceled Line Items</term>
+
       <listitem>
         <para>Select to include in the line items display transfer order line
         items which have been specifically canceled. Displaying canceled line
         items can provide useful order history information.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Require sufficient Inventory</term>
+
       <listitem>
         <para>Select to ensure you have enough quantity on hand (QOH) of a
         line item prior to issuing stock to shipping. If selected, this option
@@ -280,8 +346,10 @@
         negative.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Freight Weight</term>
+
       <listitem>
         <para>Displays the combined weight of all transfer order line items.
         Freight weight represents the sum of an item's product weight and
@@ -291,22 +359,28 @@
         the combined weight for the order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>freight</primary>
+
           <secondary>on transfer orders</secondary>
         </indexterm><indexterm significance="normal">
           <primary>transfer orders</primary>
+
           <secondary>freight charges on</secondary>
         </indexterm>Line Item Freight Subtotal</term>
+
       <listitem>
         <para>Displays the subtotal for all line item freight. Freight charges
         may be added when entering or editing a transfer order line
         item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax</term>
+
       <listitem>
         <para>Displays the total amount of tax to be charged on the transfer
         order. Sales tax is calculated at the transfer order line item level.
@@ -315,22 +389,28 @@
         the <guibutton>Tax</guibutton> link using your mouse.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Total</term>
+
       <listitem>
         <para>Displays the total amount of the transfer order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>Any transfer order line item may be shipped—even if the item or item
     site in question becomes inactive after the sales order has been
     created.</para>
   </note>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CLEAR</guibutton></term>
+
       <listitem>
         <para>Select to clear the contents of the current transfer order and
         open a fresh, new transfer order for order entry. The order number of
@@ -339,14 +419,17 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>Selecting the <guibutton>CLEAR</guibutton> button on the transfer
     order header does not delete any information which has been saved
     previously.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CLOSE</guibutton></term>
+
       <listitem id="transferOrderCLOSE">
         <para>Highlight a transfer order line item and then select this to
         close the transfer order line item. If the highlighted line item is
@@ -355,49 +438,61 @@
         closed line item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>shipping</primary>
+
           <secondary>issuing stock to</secondary>
         </indexterm><guibutton>ISSUE STOCK</guibutton></term>
+
       <listitem>
         <para>Highlight a transfer order line item and then select this button
         to issue quantity to shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>You may select multiple line items for issuing to shipping by
     highlighting them using your mouse—or a combination of your mouse and
     either the <guibutton>SHIFT</guibutton> or <guibutton>CTRL</guibutton>
     key.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>ISSUE LINE BAL.</guibutton></term>
+
       <listitem>
         <para>Highlight a transfer order line item and then select this button
         to issue the balance of the line item quantity to shipping.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>Order notes added to a transfer order are used for internal purposes
   only. To add notes to a transfer order, select the <guimenuitem>Order
   Notes</guimenuitem> tab at the top of the Transfer Order screen. The
   following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder_orderCommentsPage.png" />
+          <imagedata fileref="images/transferOrder_orderCommentsPage.png"/>
         </imageobject>
+
         <caption>Transfer Order Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When adding notes to a transfer order, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Order Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         general notes related to the transfer order. These notes are for
@@ -405,19 +500,24 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add comments related to a transfer order, select the
   <guimenuitem>Comments</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder_comments.png" />
+          <imagedata fileref="images/transferOrder_comments.png"/>
         </imageobject>
+
         <caption>Transfer Order Comments</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>Shipping notes are drawn from the shipping comments (if any)
   associated with transit sites. The notes may vary depending on the transit
   site being used. These notes provide a mechanism for transferring
@@ -425,19 +525,24 @@
   order shipping notes, select the <guimenuitem>Shipping Notes</guimenuitem>
   tab at the top of the Transfer Order screen. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder_shippingCommentsPage.png" />
+          <imagedata fileref="images/transferOrder_shippingCommentsPage.png"/>
         </imageobject>
+
         <caption>Transfer Order Shipping Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When viewing or editing shipping notes for a transfer order, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Shipping Notes</term>
+
       <listitem>
         <para>While the content for shipping notes may originate from the
         Transit Site master, you can edit the notes to fit the requirements of
@@ -445,19 +550,24 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To associate documents with a transfer order, select the
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder_documentsPage.png" />
+          <imagedata fileref="images/transferOrder_documentsPage.png"/>
         </imageobject>
+
         <caption>Transfer Order Documents</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>If you want to speed up your data entry of transfer order line items,
   you can use the quick entry interface. This screen allows you to enter
   multiple line items in one session. It also simplifies the process by
@@ -465,76 +575,98 @@
   quick entry interface, select the <guimenuitem>Quick Entry</guimenuitem> tab
   at the top of the Transfer Order screen. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/transferOrder_qeTab.png" />
+          <imagedata fileref="images/transferOrder_qeTab.png"/>
         </imageobject>
+
         <caption>Transfer Order Quick Entry</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>To get started entering line items, place your cursor in the
     <guilabel>Item</guilabel> field. You can then move from field-to-field
     using the <guibutton>TAB</guibutton> button on your keyboard.</para>
   </tip>
+
   <para>When entering transfer order line items using the quick entry
   interface, you are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item</term>
+
       <listitem>
         <para>Enter an inventory item number. This field is used for entering
         items stored in inventory.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty.</term>
+
       <listitem>
         <para>Enter the quantity you want to transfer.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Standard Cost</term>
+
       <listitem>
         <para>Displays the standard cost per unit.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Freight</term>
+
       <listitem>
         <para>Enter the freight amount, if any.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due Date</term>
+
       <listitem>
         <para>Enter the due date.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>SAVE QUICK ENTRIES</guibutton></term>
+
       <listitem>
         <para>Select to save all the line items entered using the quick entry
         interface.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>DELETE QUICK ENTRY</guibutton></term>
+
       <listitem>
         <para>Highlight a line item and then select this button to remove the
         item from the list.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view email associated with a transfer order, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
+
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="transferOrderItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
