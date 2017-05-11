@@ -5,60 +5,47 @@
 <section id="listPricingSchedule">
   <title><indexterm significance="normal">
       <primary>list pricing schedules</primary>
-
       <secondary>creating new</secondary>
     </indexterm>List Pricing Schedule</title>
-
   <para>A single list pricing schedule may contain multiple items or product
   categories—and multiple quantity breaks. To create a new list pricing
   schedule, select the <guibutton>NEW</guibutton> button. The following screen
   will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/listPricingSchedule.png"/>
+          <imagedata fileref="images/listPricingSchedule.png" />
         </imageobject>
-
-        <caption>Create New List Pricing Schedule</caption>
+        <caption>Create new List Pricing Schedule</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>When sales orders are entered, the system will search for quantity
     break matches between the sales order item and the relevant list pricing
     schedule. If duplicate quantity breaks are found, the lowest price for the
     given quantity will be used.</para>
   </tip>
-
   <para>When creating a new list pricing schedule, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter the name of the list pricing schedule.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Enter a description to identify the list pricing
         schedule.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Effective</term>
-
       <listitem>
         <para>Enter the date when the list pricing schedule becomes
         effective.</para>
-
         <note>
           <para>The effectivity and expiration dates for list pricing
           schedules correspond to the created date for sales orders. Changes
@@ -68,27 +55,21 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Expires</term>
-
       <listitem>
         <para>Enter the date when the list pricing schedule expires.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Schedule</term>
-
       <listitem>
         <para>Display lists all sold items or product categories assigned to
         this list pricing schedule.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Currency</term>
-
       <listitem>
         <para>Select the currency.<note>
             <para>This field is only enabled when multiple currencies are
@@ -96,10 +77,8 @@
           </note></para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Calculate Net Price using Site</term>
-
       <listitem>
         <para>Select the site to be used for calculating net price when
         average cost is used as the markup basis.<note>
@@ -109,7 +88,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="listPricingScheduleItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

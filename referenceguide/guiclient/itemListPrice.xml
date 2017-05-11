@@ -7,100 +7,77 @@
       <primary>item list price</primary>
     </indexterm> <indexterm significance="normal">
       <primary>list prices</primary>
-
       <secondary>by item</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>items</primary>
-
       <secondary>list prices for</secondary>
     </indexterm>Item List Price</title>
-
-  <para>To create or modify the list price for an item, select the
-  <guimenuitem>Item List Price</guimenuitem> option. The following screen will
-  appear:</para>
-
+  <para>To create or modify the list price for an item, go to
+  <guimenuitem>Sales &gt; Pricing &gt; Item List Price</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemListPrice.png"/>
+          <imagedata fileref="images/itemListPrice.png" />
         </imageobject>
-
         <caption>Item List Price</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>List prices may also be created or modified in the Item master for
     an item. Changes made to an item's list price in either location will be
     reflected application-wide.</para>
   </note>
-
   <para>When creating an item list price, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter the item number of the item you want to create or modify a
         list price for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>List Price</term>
-
       <listitem>
         <para>Enter the list price for the specified item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Price UOM</term>
-
       <listitem>
         <para>Displays the price UOM for the specified item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Inv./Price Ratio</term>
-
       <listitem>
         <para>Displays the ratio between the price and inventory UOM for the
         specified item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Inventory UOM Price</term>
-
       <listitem>
         <para>Displays the inventory UOM price for the item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cost</term>
-
       <listitem>
         <para>Displays standard cost and actual cost for the specified
         item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Extended Cost</term>
-
       <listitem>
         <para>Displays the extended standard cost and extended actual cost for
         the item. The extended cost is equal to the list price multiplied by
@@ -108,14 +85,11 @@
         cost and extended cost will be the same.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Margin</term>
-
       <listitem>
         <para>Displays the profit margin. The margin is determined by the
-        following formula: </para>
-
+        following formula:</para>
         <para>Price - Cost / Price.</para>
       </listitem>
     </varlistentry>

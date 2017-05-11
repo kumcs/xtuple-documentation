@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="sales2">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>sales</primary>
       <secondary>master list of</secondary>
     </indexterm>Sales</title>
@@ -11,18 +11,17 @@
   categories across all customer types. Unlike pricing schedule assignments,
   sales cannot be limited to certain customers or customer types. Instead, all
   customers benefit from sales during the period of time when a sale is in
-  effect. To create a sale tied to a pricing schedule, select the <guimenuitem>Sales</guimenuitem>
-  option. The following screen will appear:</para>
-  <para>
-<screenshot>
+  effect. To create a sale tied to a pricing schedule, go to
+  <guimenuitem>Sales &gt; Pricing &gt; Sales</guimenuitem>. The following
+  screen will appear:</para>
+  <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/sales.png"/>
+          <imagedata fileref="images/sales.png" />
         </imageobject>
-        <caption>Sales Master List</caption>
+        <caption>Sales master list</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
   <note>
     <para>If a sale is in effect and the sale price is lower than the most
     specific customer price, then the customer will be given the sale
@@ -38,5 +37,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="sale.xml" xpointer="element(/1)"/>
+  <xi:include href="sale.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

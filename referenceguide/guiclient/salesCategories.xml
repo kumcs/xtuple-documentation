@@ -5,50 +5,41 @@
 <section id="salesCategories">
   <title><indexterm significance="normal">
       <primary>sales categories</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Sales Categories</title>
-
   <para>Sales categories are used to identify the general ledger (G/L)
   accounts to be used when processing the following:</para>
-
   <itemizedlist>
     <listitem>
       <para>Non-inventory invoices</para>
     </listitem>
-
     <listitem>
       <para>Receivables credit memos (optional)</para>
     </listitem>
-
     <listitem>
       <para>Receivables debit memos (optional)</para>
     </listitem>
-
     <listitem>
       <para>Cash receipts (optional)</para>
     </listitem>
   </itemizedlist>
-
   <para>For example, when creating an invoice for miscellaneous goods or
   services unrelated to inventory, you must select a sales category—thereby
   identifying the G/L accounts the sales transaction will be distributed to.
-  To access the Sales Categories master list, select the <guimenuitem>Sales
-  Categories</guimenuitem> option. The following screen will appear:</para>
-
+  To access the Sales Categories master list, go to <guimenuitem>Sales &gt;
+  Setup</guimenuitem>. In the Setup window, from the left side menu, select
+  <guimenuitem>Accounting Mappings &gt; Sales Categories</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesCategories.png"/>
+          <imagedata fileref="images/salesCategories.png" />
         </imageobject>
-
         <caption>Sales Categories Master List</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Sales Categories screen displays information on existing sales
   categories.</para>
-
   <xi:include href="salesCategory.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

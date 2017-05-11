@@ -5,57 +5,47 @@
 <section id="allocateReservations" role="standard">
   <title><indexterm significance="normal">
       <primary>inventory</primary>
-
       <secondary>reservation utility for</secondary>
     </indexterm><indexterm significance="normal">
       <primary>sales orders</primary>
-
       <secondary>reservation utility for</secondary>
     </indexterm>Allocate Reservations</title>
-
   <note>
     <para>To use the Allocate Reservations utility it is necessary to select
-    <guilabel>Enable sales Reservations</guilabel> in sales setup.</para>
+    <guilabel>Enable Reservations</guilabel> in <guimenuitem>Sales &gt;
+    Setup</guimenuitem>.</para>
   </note>
-
   <para>The Allocate Reservations utility enables you to allocate inventory to
   batches of open sales orders. This can be a more efficient method for
   quickly making hard inventory allocations, as compared to allocating
-  inventory one-at-a-time at the individual sales order line item level. You
-  can allocate inventory to batches of sales orders using the following
-  screen:</para>
-
+  inventory one-at-a-time at the individual sales order line item level. To
+  allocate inventory to batches of sales orders, go to <guimenuitem>Sales &gt;
+  Utilities &gt; Allocate Reservations</guimenuitem>. The following screen
+  will appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/allocateReservations.png"/>
+        <imagedata fileref="images/allocateReservations.png" />
       </imageobject>
-
       <caption>Allocate sales Order Reservations</caption>
     </mediaobject>
   </screenshot>
-
   <note>
     <para>Only sales order line items that can be completely reserved using
     actual quantity on hand (QOH) will be affected when this utility is run.
     If a line item cannot be completely reserved, it will be skipped.</para>
   </note>
-
   <para>When allocating inventory to batches of open sales orders, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Selected Customer</term>
-
       <listitem>
         <para>Select to allocate inventory to an individual customer's open
         sales orders.</para>
-
         <variablelist>
           <varlistentry>
             <term>Customer #</term>
-
             <listitem>
               <para>Specify the customer number of the customer whose open
               sales orders you want to allocate inventory to. The browse
@@ -76,10 +66,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected Customer Ship-To</term>
-
       <listitem>
         <para>Specify the customer ship-to address whose open sales orders you
         want to allocate inventory to. This is an optional setting which may
@@ -90,58 +78,46 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <variablelist>
     <varlistentry>
       <term>Selected Customer Type</term>
-
       <listitem>
         <para>Specify the customer type you want to assign a pricing schedule
         to.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Customer Type Pattern</term>
-
       <listitem>
         <para>Enter a customer type pattern to select a range of customer
         types. Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Open sales orders having a due date on and after this date will
         have inventory allocated to them. Start date and end date must be
         entered for calculation to proceed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Open sales orders having a due date on and before this date will
         have inventory allocated to them. Start date and end date must be
         entered for calculation to proceed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Allow Partial Quantity Reservations</term>
-
       <listitem>
         <para>Select to allow a partial quantity reservation when the quantity
         to reserve is greater than the quantity available to reserve.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Automatically Add to Packing List Batch</term>
-
       <listitem>
         <para>Select to automatically add affected sales orders to the packing
         list batch.</para>
