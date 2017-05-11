@@ -39,7 +39,8 @@
         <para>Next available transfer order number will automatically display,
         unless your system requires you to enter transfer order numbers
         manually. Default values and input parameters for transfer order
-        numbers are configurable at the system level.</para>
+        numbers are configurable in <guimenuitem>Inventory &gt;
+        Setup</guimenuitem>.</para>
       </listitem>
     </varlistentry>
 
@@ -90,12 +91,12 @@
         <para>Select the current status of the transfer order. Transfer orders
         may be either unreleased = <guilabel>U</guilabel>, open =
         <guilabel>O</guilabel> or closed = <guilabel>C</guilabel>. The default
-        status for a new transfer order is "Unreleased." The
-        <guilabel>ReleaseTransferOrders</guilabel> privilege is required to
-        change the status to "Open." The transfer order must be released
-        before shipping and receiving transactions are allowed. Changing the
-        order status will also make the appropriate status changes to the
-        order line items.</para>
+        status for a new transfer order is <guilabel>Unreleased</guilabel>.
+        The <guilabel>ReleaseTransferOrders</guilabel> privilege is required
+        to change the status to <guilabel>Open</guilabel>. The transfer order
+        must be released before shipping and receiving transactions are
+        allowed. Changing the order status will also make the appropriate
+        status changes to the order line items.</para>
       </listitem>
     </varlistentry>
 

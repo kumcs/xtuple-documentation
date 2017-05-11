@@ -5,63 +5,82 @@
 <section id="createCountTagsByClassCode">
   <title><indexterm significance="normal">
       <primary>count tags</primary>
+
       <secondary>creating by class code/site</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>physical inventory</primary>
+
       <secondary>creating count tags</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>class codes</primary>
+
       <secondary>count tags created by</secondary>
     </indexterm>Create Count Tags by Class Code/Site</title>
+
   <para>Count tags are used to spearhead inventory counts. They are created
   manually and on-demand, and they are not tied to any particular cycle or
   frequency, as cycle count tags are. To create count tags by class code and
-  site, select the <guimenuitem>Create Count Tags by Class
-  Code/Site</guimenuitem> option. The following screen will appear:</para>
+  site, go to <guimenuitem>Inventory &gt; Physical Inventory &gt; Create Count
+  Tags &gt; by Class Code</guimenuitem>. The following screen will
+  appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/createCountTagsByClassCode.png" />
+          <imagedata fileref="images/createCountTagsByClassCode.png"/>
         </imageobject>
+
         <caption>Create Count Tags by Class Code/Site</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating count tags by class code and site, you are presented
   with the following options:</para>
+
   <tip>
     <para>By default, the system allows only one unposted count tag per item
     site. To view all unposted count tags in your system, see the count tag
     edit list.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term>All Class Codes</term>
+
       <listitem>
         <para>Select to create count tags for all class codes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify class code whose you want to create count tags
         for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a class code pattern to select a range of class codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify site the count tags are to be created for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Mark Created Count Tag as Priority</term>
+
       <listitem>
         <para>Select to give priority status to count tag. Count tags marked
         as having priority status are listed first in any prioritized lists.
@@ -70,14 +89,18 @@
         bottom of the list.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>freezing</primary>
+
           <secondary>of inventory</secondary>
         </indexterm> <indexterm significance="normal">
           <primary>inventory</primary>
+
           <secondary>freezing at count tag creation</secondary>
         </indexterm>Freeze Inventory</term>
+
       <listitem>
         <para>Select to freeze inventory. The quantity on hand (QOH) value is
         not updated when a transaction is posted against a frozen item site.
@@ -87,6 +110,7 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>When an item site is frozen, any inventory transactions entered
     against that item site will not update the system-wide QOH until after the
@@ -95,17 +119,21 @@
     corresponding general ledger (G/L) transactions will use the count tag
     created (i.e., frozen) date when the count tag is posted.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Ignore Zero Balance Item Sites</term>
+
       <listitem>
         <para>Select to ignore item sites which have a QOH balance of zero. If
         selected, count tags will not be created for any item site having a
         QOH balance of zero.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Only for Specified Location</term>
+
       <listitem>
         <para>Select if you want to create count tags for an individual site
         location. If selected, you will have the option to specify which site
@@ -114,14 +142,18 @@
         post counts for an entire site all at once.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>cycle counters</primary>
+
           <secondary>creating instructions for</secondary>
         </indexterm> <indexterm significance="normal">
           <primary>cycle counts</primary>
+
           <secondary>creating instructions for</secondary>
         </indexterm>Comments</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the count tag. Use the
@@ -131,10 +163,13 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE TAGS</guibutton></term>
+
       <listitem>
         <para>Creates count tags. Count tag numbers are generated
         automatically in an ordered sequence.</para>
