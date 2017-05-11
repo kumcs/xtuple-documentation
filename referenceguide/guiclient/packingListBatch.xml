@@ -5,15 +5,19 @@
 <section id="packingListBatch">
   <title><indexterm significance="normal">
       <primary>packing lists</primary>
+
       <secondary>batch printing of</secondary>
     </indexterm><indexterm significance="normal">
       <primary>batch mode</primary>
+
       <secondary>printing packing lists using</secondary>
     </indexterm>Packing List Batch</title>
+
   <para>If you want to print packing lists or pick lists in batch mode—or to
   gain greater visibility over your packing and pick lists—go to
-  <guimenuitem>Sales &gt; Forms &gt;</guimenuitem><guimenuitem> Packing List
+  <guimenuitem>Forms &gt;</guimenuitem><guimenuitem> Packing List
   Batch</guimenuitem>. The following screen will appear:</para>
+
   <note>
     <para>A pick list will be printed if the order does not yet have a
     shipment number associated with it—that is, if no line item quantity has
@@ -22,45 +26,58 @@
     list form assignments are made on the Customer Form Assignments
     screen.</para>
   </note>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/packingListBatch.png" />
+          <imagedata fileref="images/packingListBatch.png"/>
         </imageobject>
+
         <caption>Packing List Batch</caption>
       </mediaobject>
     </screenshot></para>
+
   <tip>
     <para>The system includes two alternate pick list report definitions for
     sales orders:</para>
+
     <itemizedlist>
       <listitem>
         <para><literal>PickingListSOClosedLines.xml</literal></para>
       </listitem>
+
       <listitem>
         <para><literal>PickingListNoClosedLines.xml</literal></para>
       </listitem>
     </itemizedlist>
+
     <para>The first includes already closed sales order line items in the
     report; the other excludes closed line items.</para>
   </tip>
+
   <para>When printing packing lists in batch mode, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry role="standard">
       <term>Site</term>
+
       <listitem>
         <para>Specify the site(s) whose orders you want to include in the
         list.</para>
+
         <variablelist>
           <varlistentry>
             <term>All Sites</term>
+
             <listitem>
               <para>Select to include orders for all sites.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Selected</term>
+
             <listitem>
               <para>Specify site whose orders you want to include.</para>
             </listitem>
@@ -68,28 +85,36 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Form</term>
+
       <listitem>
         <para>Select the desired form.</para>
+
         <variablelist>
           <varlistentry>
             <term>Auto Select</term>
+
             <listitem>
               <para>Select to print a packing list if a shipment number
               exists, or a pick list if a shipment number does not
               exist.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Packing List</term>
+
             <listitem>
               <para>Select to print packing lists only. No packing list will
               print if a shipment number does not exist.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Pick List</term>
+
             <listitem>
               <para>Select to print pick lists only.</para>
             </listitem>
@@ -97,30 +122,38 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Show Orders on Hold</term>
+
       <listitem>
         <para>Orders having the following hold types may also be included in
         the list:</para>
+
         <variablelist>
           <varlistentry>
             <term>Credit Hold</term>
+
             <listitem>
               <para>Select to include orders on credit hold in the list. If
               not selected, orders having this hold type will be
               excluded.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Packing Hold</term>
+
             <listitem>
               <para>Select to include orders on packing hold in the list. If
               not selected, orders having this hold type will be
               excluded.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Shipping Hold</term>
+
             <listitem>
               <para>Select to include orders on shipping hold in the list. If
               not selected, orders having this hold type will be
@@ -131,26 +164,33 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Selected Orders</term>
+
       <listitem>
         <para>Display lists selected open orders (i.e., sales orders and
         transfer orders).</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>PRINT EDIT LIST</guibutton></term>
+
       <listitem>
         <para>Select to print a copy of the contents displayed on the screen,
         using the specified parameters.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>PRINT BATCH</guibutton></term>
+
       <listitem>
         <para>Select to print packing lists for all orders in batch list. A
         pick list will be printed if the order does not yet have a shipment
@@ -159,36 +199,46 @@
         packing list report definition will be used.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>DELETE PRINTED</guibutton></term>
+
       <listitem>
         <para>Select to delete orders from batch printing list once they have
         been printed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>ADD S/O</guibutton></term>
+
       <listitem>
         <para>Select to add a sales order to the list of selected
         orders.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>ADD T/O</guibutton></term>
+
       <listitem>
         <para>Select to add a transfer order to the list of selected
         orders.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>REMOVE ORDER</guibutton></term>
+
       <listitem>
         <para>Highlight an order and then select this button to remove the
         order from the list.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>PRINT PACKING LIST</guibutton></term>
+
       <listitem>
         <para>Highlight an order, then select this option to print an
         individual packing list or pick list for the specified order. A pick

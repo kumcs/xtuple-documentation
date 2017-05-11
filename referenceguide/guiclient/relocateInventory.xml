@@ -4,90 +4,116 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="relocateInventory" role="standard">
   <title>Relocate Inventory</title>
-  <para>To relocate inventory from one location to another, select the
-  <guimenuitem>Relocate Inventory</guimenuitem> option. The following screen will appear:</para>
+
+  <para>To relocate inventory from one location to another, go to
+  <guimenuitem>Inventory &gt; Transactions &gt; Relocate
+  Inventory</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/relocateInventory.png" />
+          <imagedata fileref="images/relocateInventory.png"/>
         </imageobject>
+
         <caption>Relocate Inventory</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When relocating inventory from one location to another, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Transaction Date</term>
+
       <listitem>
         <para>Specify the date you want the transaction to be posted to the
         general ledger. The current day's date will display by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the inventory you are
         relocating.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify site where inventory is located.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Set Target Location as Default on Move</term>
+
       <listitem>
         <para>Select to change the default location for the item site to the
-        target location once the <guibutton>MOVE</guibutton> button is selected. Performing this
-        action means the target location will become the new default location
-        for the item site. This option will only be available if your site is
-        configured to allow on-the-fly changes to the default location. To
-        learn more about this configuration option, see <xref
-        linkend="configureIM" />.</para>
+        target location once the <guibutton>MOVE</guibutton> button is
+        selected. Performing this action means the target location will become
+        the new default location for the item site. This option will only be
+        available if your site is configured to allow on-the-fly changes to
+        the default location. To learn more about this configuration option,
+        see <xref linkend="configureIM"/>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Source</term>
+
       <listitem>
         <para>Display lists source locations for the specified item. Select
         the source location inventory is to be transferred from.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Target</term>
+
       <listitem>
         <para>Display lists target locations for the specified item. Select
         the target location inventory is to be transferred to.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. to Move</term>
+
       <listitem>
         <para>Enter the quantity of the specified item you want to move from
         the source location to the target location.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the inventory relocation.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>MOVE</guibutton></term>
+
       <listitem>
         <para>Moves specified quantity of inventory from source location to
         target location. Additional steps will be necessary if the specified
