@@ -5,125 +5,96 @@
 <section id="vendor">
   <title id="Anchor55000"><indexterm significance="normal">
       <primary>\vendors</primary>
-
       <secondary>creating new</secondary>
     </indexterm>Create New Vendor</title>
-
-  <para>To create a new vendor, select the <guimenuitem>New
-  Vendor</guimenuitem> option. The following screen will appear:</para>
-
+  <para>To create a new vendor, go to <guimenuitem>Purchase &gt; Vendor &gt;
+  New</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor.png"/>
+          <imagedata fileref="images/vendor.png" />
         </imageobject>
-
-        <caption>Create New Vendor</caption>
+        <caption>Create new Vendor</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>Vendors can also be created from the CRM account screen. Simply
     enter a new CRM account, selecting the <guilabel>Vendor</guilabel>
     relationship option.</para>
   </tip>
-
   <para>When creating a new vendor, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Vendor #</term>
-
       <listitem>
         <para>Enter a number to identify the vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vendor Type</term>
-
       <listitem>
         <para>Specify the vendor type of the vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Parent #</term>
-
       <listitem>
         <para>Enter the vendor number for the parent vendor, if any.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter the name of the vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Active</term>
-
       <listitem>
         <para>Select if you are actively doing business with this
         vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Number</term>
-
       <listitem>
         <para>Use this field to indicate the account number the vendor assigns
         to your site.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view or enter general vendor information, select the
   <guilabel>General</guilabel> radio button. The following information will
   appear:</para>
-
   <variablelist>
     <varlistentry>
       <term>Default</term>
-
       <listitem>
         <para>Default settings for vendor.</para>
-
         <variablelist>
           <varlistentry>
             <term>Terms</term>
-
             <listitem>
               <para>Specify the default billing terms for the vendor.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Ship Via</term>
-
             <listitem>
               <para>Specify default ship via for vendor.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Currency</term>
-
             <listitem>
               <para>Specify the currency to be used when conducting business
               transactions with the vendor. This option will only be visible
               in systems configured to use multiple currencies.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="distribution">
             <term>Catalog Cost Column</term>
-
             <listitem>
               <para>Allows you to set the desired column from the external
               vendor catalog for item pricing. After setting the
@@ -131,10 +102,8 @@
               you must run an update to complete the process.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="distribution">
             <term>Freight Allowed Amount</term>
-
             <listitem>
               <para>Provides the ability to set the freight requirements for
               purchase orders by dollar amount. The <guilabel>Freight
@@ -142,10 +111,8 @@
               Purchase Order screen.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="distribution">
             <term>Freight Allowed Weight</term>
-
             <listitem>
               <para>Provides the ability to set the freight requirements for
               purchase orders by weight. The <guilabel>Freight
@@ -153,10 +120,8 @@
               Purchase Order screen.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="standard">
             <term>Purchase Type</term>
-
             <listitem>
               <para>Specify the default purchase type for the vendor. This
               type will be used when entering purchase orders for the
@@ -166,26 +131,20 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Default Miscellaneous Distribution</term>
-
       <listitem>
         <para>You have the option to select a default accounting distribution
         option to be used when entering vouchers for the vendor:</para>
-
         <variablelist>
           <varlistentry>
             <term>Account</term>
-
             <listitem>
               <para>Select a general ledger account to use for the
               distribution.</para>
-
               <variablelist>
                 <varlistentry role="xtprjaccnt">
                   <term>Project</term>
-
                   <listitem>
                     <para>Select a project to associate with the transaction.
                     The project number will be added as the final segment of
@@ -195,19 +154,15 @@
               </variablelist>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Expense Category</term>
-
             <listitem>
               <para>Select an expense category to use for the
               distribution.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Tax</term>
-
             <listitem>
               <para>Select a tax code to use for the distribution.</para>
             </listitem>
@@ -215,41 +170,32 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>free on board</primary>
-
           <secondary>at receiving site</secondary>
         </indexterm><indexterm significance="normal">
           <primary>free on board</primary>
-
           <secondary>vendor specified</secondary>
         </indexterm><indexterm significance="normal">
           <primary>FOB</primary>
-
           <see>free on board</see>
         </indexterm>Default FOB</term>
-
       <listitem>
         <para>Indicate the default free on board (FOB) destination by
         selecting one of the following options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Receiving Site</term>
-
             <listitem>
               <para>Select if receiving site is default FOB
               destination.</para>
             </listitem>
           </varlistentry>
         </variablelist>
-
         <variablelist>
           <varlistentry>
             <term>Vendor Specific</term>
-
             <listitem>
               <para>Select if vendor specifies an FOB destination other than
               the receiving site. Enter alternate FOB details in space
@@ -259,29 +205,23 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Sells Purchase Order Items</term>
-
       <listitem>
         <para>Select if vendor accepts purchase orders to render goods. This
         setting is informational only. It has no impact on the ordering
         process.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qualified</term>
-
       <listitem>
         <para>Select this flag to indicate that the vendor is a trusted
         vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Check for matching voucher and purchase order amounts</term>
-
       <listitem>
         <para>Select to perform voucher matching when entering voucher items
         for the vendor. If selected, users will be presented with a warning
@@ -291,10 +231,8 @@
         simply alerts users that a mis-match exists.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>May only Sell Items defined by an Item Source</term>
-
       <listitem>
         <para>Select if you want to restrict items purchased from the vendor
         to items having a defined item source. If not selected, you may choose
@@ -303,155 +241,120 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>ACCOUNT</guibutton></term>
-
       <listitem>
         <para>Select to open the vendor's account.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>NEXT</guibutton></term>
-
       <listitem>
         <para>Select to open the Vendor master whose vendor number immediately
         follows the current vendor number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>PREVIOUS</guibutton></term>
-
       <listitem>
         <para>Select to open the Vendor master whose vendor number immediately
         precedes the current vendor number.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view or enter tax information for the vendor, select the
   <guilabel>Tax</guilabel> radio button. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_tax.png"/>
+          <imagedata fileref="images/vendor_tax.png" />
         </imageobject>
-
-        <caption>Vendor Tax Information</caption>
+        <caption>Vendor Tax information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para><indexterm significance="normal">
       <primary>vendors</primary>
-
       <secondary>tax information for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>taxes</primary>
-
       <secondary>for vendors</secondary>
     </indexterm>When adding vendor tax information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Receives a 1099</term>
-
       <listitem>
         <para>Select if vendor receives a 1099 federal tax form.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>tax zones</primary>
-
           <secondary>default for vendors</secondary>
         </indexterm>Default Tax Zone</term>
-
       <listitem>
         <para>Specify the primary tax zone you want to associate with the
         vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Registration Numbers</term>
-
       <listitem>
         <para>Display lists tax registration numbers for the specified
         vendor.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To add a new vendor tax registration number, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxRegistration.png"/>
+          <imagedata fileref="images/taxRegistration.png" />
         </imageobject>
-
         <caption>Vendor Tax Registration Information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para><indexterm significance="normal">
       <primary>vendors</primary>
-
       <secondary>tax registration for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>taxes</primary>
-
       <secondary>registration for vendors</secondary>
     </indexterm>When adding a new vendor tax registration number, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Vendor #</term>
-
       <listitem>
         <para>Displays the name and number of the vendor the tax registration
         applies to.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Zone</term>
-
       <listitem>
         <para>Specify the tax zone associated with the tax registration
         number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Authority</term>
-
       <listitem>
         <para>Specify the tax authority associated with the tax registration
         number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Registration Number</term>
-
       <listitem>
         <para>Enter the vendor's tax registration number for the specified tax
         authority. The registration number is used by tax authorities to
         identify businesses and/or individuals. An employer identification
         number (EIN) is an example of a tax registration number.</para>
-
         <tip>
           <para>The vendor's tax registration number is used for identifying
           the vendor to relevant tax authorities. This information should not
@@ -461,58 +364,47 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view or enter vendor contact information, select the
   <guimenuitem>Contact Information</guimenuitem> tab. The following screen
   will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_contactTab.png"/>
+          <imagedata fileref="images/vendor_contactTab.png" />
         </imageobject>
-
         <caption>Vendor Contact Information</caption>
       </mediaobject>
     </screenshot></para>
-
   <para><indexterm significance="normal">
       <primary>vendors</primary>
-
       <secondary>contact information for</secondary>
     </indexterm>When adding vendor contact information, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Contact 1</term>
-
       <listitem>
         <para>Manually enter contact information in the fields below—or use
         the lookup feature to select pre-existing contact information. If a
         new contact is manually entered here, that contact will be added
         automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact"/>.</para>
+        linkend="contact" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Contact 2</term>
-
       <listitem>
         <para>Manually enter contact information in the fields below—or use
         the lookup feature to select pre-existing contact information. If a
         new contact is manually entered here, that contact will be added
         automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact"/>.</para>
+        linkend="contact" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Main Address</term>
-
       <listitem>
         <para>Select to manually enter the primary address information for the
         vendor—or use the lookup feature to select pre-existing address
@@ -520,67 +412,53 @@
         when entering purchase orders for the vendor. If a new address is
         manually entered here, that address will be added automatically to the
         master list of addresses. For additional documentation related to
-        creating addresses, see <xref linkend="address"/>.</para>
+        creating addresses, see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Alternate Addresses</term>
-
       <listitem>
         <para>Select to list various alternate addresses for vendor.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>vendor addresses</primary>
-
       <secondary>creating new</secondary>
     </indexterm>To create a alternate vendor address, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendorAddress.png"/>
+          <imagedata fileref="images/vendorAddress.png" />
         </imageobject>
-
-        <caption>Create New Vendor Address</caption>
+        <caption>Create new Vendor Address</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating a new vendor address, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Number</term>
-
       <listitem>
         <para>Enter a number or code to identify the vendor address. Using the
         value "Remit" or "REMIT" or "remit" in this field will cause the
         specified address to be used as the default remit-to address when
         printing checks for the vendor.</para>
-
         <note>
           <para>The remit-to feature is only supported when printing checks
           using the APcheck report definition.</para>
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter the name of the vendor address.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Address</term>
-
       <listitem>
         <para>Manually enter address information in the fields below—or use
         the lookup feature to select pre-existing address information. By
@@ -588,277 +466,215 @@
         purchase orders for the vendor. If a new address is manually entered
         here, that address will be added automatically to the master list of
         addresses. For additional documentation related to creating addresses,
-        see <xref linkend="address"/>.</para>
+        see <xref linkend="address" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Contact</term>
-
       <listitem>
         <para>Manually enter contact information in the fields below—or use
         the lookup feature to select pre-existing contact information. If a
         new contact is manually entered here, that contact will be added
         automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact"/>.</para>
+        linkend="contact" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         Notes related to the vendor address.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>Vendor characteristics are user-defined definitions which may be used
   to provide additional layers of description about vendors. These
   descriptions are static and not processed by the system, but are useful for
   informational purposes. To enter characteristics associated with a vendor,
   select the <guimenuitem>Characteristics</guimenuitem> tab. The following
   screen will appear:</para>
-
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/vendor_characteristics.png"/>
+      <imagedata fileref="images/vendor_characteristics.png" />
     </imageobject>
-
     <caption><para>Vendor Characteristics</para></caption>
   </mediaobject>
-
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To <indexterm significance="normal">
       <primary>documents</primary>
-
       <secondary>vendors associated with</secondary>
     </indexterm><indexterm significance="normal">
       <primary>vendors</primary>
-
       <secondary>documents associated with</secondary>
     </indexterm>associate documents with a vendor, select the
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/vendor_documentsTab.png"/>
+        <imagedata fileref="images/vendor_documentsTab.png" />
       </imageobject>
-
       <caption><para>Vendor Documents</para></caption>
     </mediaobject></para>
-
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add notes and/or comments related to a vendor, select the
   <guimenuitem>Remarks</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_remarksTab.png"/>
+          <imagedata fileref="images/vendor_remarksTab.png" />
         </imageobject>
-
         <caption>Add Vendor Notes</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When adding notes related to a vendor, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>Use this field to enter general notes related to the
         vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Order Notes</term>
-
       <listitem>
         <para>Notes entered in this field will be transferred to any purchase
         order you create for the vendor.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To view orders associated with the vendor, select the
   <guimenuitem>Orders</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_ordersSummary.png"/>
+          <imagedata fileref="images/vendor_ordersSummary.png" />
         </imageobject>
-
-        <caption>Vendor Order Summary</caption>
+        <caption>Vendor Order</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing summary order information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>First Purchase</term>
-
       <listitem>
         <para>Displays date of vendor's first purchase.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Most Recent Purchase</term>
-
       <listitem>
         <para>Displays date of vendor's most recent purchase.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Backlog</term>
-
       <listitem>
         <para>Displays the value of purchase order line items which have not
         yet been received.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Last Year's Purchases</term>
-
       <listitem>
         <para>Displays value of vendor's purchases in the prior year.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>YTD Purchases</term>
-
       <listitem>
         <para>Displays value of vendor's purchases year-to-date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Open Balance</term>
-
       <listitem>
         <para>Displays the vendor's open payables balance.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view purchase orders associated with the vendor, select the
   <guilabel>Purchase Orders</guilabel> radio button. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_ordersPOs.png"/>
+          <imagedata fileref="images/vendor_ordersPOs.png" />
         </imageobject>
-
         <caption>Vendor Purchase Orders</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing purchase order information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry role="standard">
       <term>All Sites</term>
-
       <listitem>
         <para>Select to display purchase orders in all sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Selected</term>
-
       <listitem>
         <para>Specify site whose purchase orders you want to display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Enter a start date based on the corresponding date filter you
         choose. The following three date filters are available: order date,
         due date, or receipt date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Enter an end date based on the corresponding date filter you
         choose. The following three date filters are available: order date,
         due date, or receipt date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Order Date</term>
-
       <listitem>
         <para>Select to display results by the order date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Due Date</term>
-
       <listitem>
         <para>Select to display results by the due date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Receipt Date</term>
-
       <listitem>
         <para>Select to display results by the receipt date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show</term>
-
       <listitem>
         <para>Select from the following additional report options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Closed</term>
-
             <listitem>
               <para>Select to display only closed purchase orders.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Where Item Description contains</term>
-
             <listitem>
               <para>Select to display purchase orders whose item description
               matches the value entered in the corresponding field. This field
@@ -869,99 +685,77 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view receipts and returns associated with the vendor, select the
   <guilabel>Receipts and Returns</guilabel> radio button. The following screen
   will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_ordersReturns.png"/>
+          <imagedata fileref="images/vendor_ordersReturns.png" />
         </imageobject>
-
         <caption>Vendor Receipts/Returns</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing receipt and return information, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Purchasing Agents</term>
-
       <listitem>
         <para>Select to display receipts and returns by date for all
         purchasing agents.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify purchasing agent whose receipts and returns by date you
         want to display. Users may be designated as purchasing agents at the
-        <guimenuitem>System</guimenuitem> level.</para>
+        <guimenu>System</guimenu> level.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>All Sites</term>
-
       <listitem>
         <para>Select to display receipts and returns by date for all
         sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Selected</term>
-
       <listitem>
         <para>Specify site whose receipts and returns by date you want to
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Receipts and returns entered on and after this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Receipts and returns entered on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show</term>
-
       <listitem>
         <para>Select from the following additional report options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Unvouchered</term>
-
             <listitem>
               <para>Select to include receipts and returns which have not been
               vouchered yet in the display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>costs</term>
-
             <listitem>
               <para>Select to include purchase order costing information in
               the display.</para>
@@ -971,102 +765,80 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view accounting information associated with the vendor, select the
   <guimenuitem>Accounting</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_accountingPayables.png"/>
+          <imagedata fileref="images/vendor_accountingPayables.png" />
         </imageobject>
-
         <caption>Vendor Payables</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing payables information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Due Date</term>
-
       <listitem>
         <para>Specify all dates or a date range for payables to include in the
         display.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view credit memos associated with the vendor, select the
   <guilabel>Credit Memos</guilabel> radio button. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_accountingCMs.png"/>
+          <imagedata fileref="images/vendor_accountingCMs.png" />
         </imageobject>
-
         <caption>Vendor Credit Memos</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing credit memo information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Unapplied Accounts Payable Credit Memos</term>
-
       <listitem>
         <para>Displays vendor credit memos which have not yet been
         applied.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view accounts payable (A/P) history associated with the vendor,
   select the <guilabel>A/P History</guilabel> radio button. The following
   screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_accountingAPHist.png"/>
+          <imagedata fileref="images/vendor_accountingAPHist.png" />
         </imageobject>
-
         <caption>Vendor A/P History</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing A/P history information, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Vendor activity entered on and after this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Vendor activity entered on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Find Vend. Invoice#</term>
-
       <listitem>
         <para>To search for an invoice in the Vendor History display, begin
         typing an invoice number into this field. As you type, the list will
@@ -1076,63 +848,49 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view checks associated with the vendor, select the
   <guilabel>Checks</guilabel> radio button. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_accountingChecks.png"/>
+          <imagedata fileref="images/vendor_accountingChecks.png" />
         </imageobject>
-
         <caption>Vendor Checks</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing checks information, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Bank Account</term>
-
       <listitem>
         <para>Specify the bank account whose payment register information you
         want to display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Payment Number</term>
-
       <listitem>
         <para>Enter a payment number or regular expression. The display will
         show payment(s) matching the specified payment number(s).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Payments posted on and after this date will be displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Payments posted on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Detail</term>
-
       <listitem>
         <para>Select to include payment detail information in the display. If
         selected, the vouchers and/or debit memos associated with payments
@@ -1142,78 +900,61 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The electronic data interchange (EDI) system enables you to exchange
   information electronically with your vendors. To set up a vendor to receive
   purchase orders, select the <guimenuitem>Transmission</guimenuitem> tab and
   select the <guilabel>EDI Profiles</guilabel> radio button. The following
   screen will appear:</para>
-
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_transmission.png"/>
+          <imagedata fileref="images/vendor_transmission.png" />
         </imageobject>
-
         <caption><para>Vendor Transmissions</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <para role="xtconnect"><note>
       <para>The buttons to set up EDI profiles are disabled when creating a
       new vendor. If you want to set up EDI for a new vendor, save the vendor
       and edit it again.</para>
     </note></para>
-
   <xi:include href="../widgets/edirelation.xml" xpointer="edirelationWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To enable electronic funds transfer (EFT) payment printing for the
   vendor, select the <guilabel>Payments</guilabel> option on the
   <guimenuitem>Transmissions</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_transmissionCheck.png"/>
+          <imagedata fileref="images/vendor_transmissionCheck.png" />
         </imageobject>
-
         <caption><para>EFT Check Options</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When configuring EFT check settings for the vendor, you are presented
   with the following options:</para>
-
   <para><variablelist>
       <varlistentry>
         <term>Enable EFT Payment Printing</term>
-
         <listitem>
           <para>Select to enable online processing or EFT payment
           printing.</para>
-
           <variablelist>
             <varlistentry>
               <term>Routing Number</term>
-
               <listitem>
                 <para>Enter bank account routing number.</para>
               </listitem>
             </varlistentry>
-
             <varlistentry>
               <term>Account Number</term>
-
               <listitem>
                 <para>Enter bank account check number.</para>
               </listitem>
             </varlistentry>
-
             <varlistentry>
               <term>Account Type</term>
-
               <listitem>
                 <para>Select type of bank account associated with routing and
                 account numbers.</para>
@@ -1222,27 +963,21 @@
           </variablelist>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Use Instead of Vendor Number and Name</term>
-
         <listitem>
           <para>Select to use alternative vendor identification information
           other than vendor number and name.</para>
-
           <variablelist>
             <varlistentry>
               <term>Identification Number</term>
-
               <listitem>
                 <para>Enter alternate vendor identification number (i.e., tax
                 ID number).</para>
               </listitem>
             </varlistentry>
-
             <varlistentry>
               <term>Name</term>
-
               <listitem>
                 <para>Enter alternate vendor name (i.e., name of parent
                 company).</para>
@@ -1252,63 +987,49 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
-
   <para>To view email associated with the vendor, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
-
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para role="standard"><indexterm significance="normal">
       <primary>dashboards</primary>
-
       <secondary>for vendors</secondary>
     </indexterm>To view the dashboard associated with your vendor, select the
   <guimenuitem>Dashboard</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/vendor_dashboardTab.png"/>
+          <imagedata fileref="images/vendor_dashboardTab.png" />
         </imageobject>
-
-        <caption>Vendor Workbench Dashboard</caption>
+        <caption>Vendor workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
-
   <para role="standard">The vendor dashboard includes the following pre-loaded
   dashboard panes, which you can either remove or supplement with additional
   panes at any time:</para>
-
   <para role="standard"><variablelist>
       <varlistentry>
         <term>Vendor Balances</term>
-
         <listitem>
           <para>Displays your open and late balances with your vendor.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Vendor Orders</term>
-
         <listitem>
           <para>Displays your summarized vendor order volume, by year.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Vendor Returns</term>
-
         <listitem>
           <para>Displays your vendor returns percentage for the current
           month.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
-
   <xi:include href="../widgets/dashboardPane.xml" xpointer="dashboardsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

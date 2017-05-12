@@ -5,74 +5,59 @@
 <section id="printPurchaseOrdersByAgent">
   <title><indexterm significance="normal">
       <primary>purchase orders</primary>
-
       <secondary>printing by agent</secondary>
     </indexterm>Print Purchase Orders by Agent</title>
-
   <para>To print any posted purchase orders which have not yet been printed by
-  agent, select the <guimenuitem>Print Purchase Orders by Agent</guimenuitem>
-  option. The following screen will appear:</para>
-
+  agent, go to <guimenuitem>Purchase &gt; Forms &gt;
+  </guimenuitem><guimenuitem>Print Purchase Orders by Agent</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/printPurchaseOrdersByAgent.png"/>
+          <imagedata fileref="images/printPurchaseOrdersByAgent.png" />
         </imageobject>
-
         <caption>Print Purchase Orders by Agent</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When printing purchase orders by agent, you are presented with the
   following options:</para>
-
   <para role="xtconnect"><note>
       <para>Only posted purchase orders which have not yet been printed will
       be printed. If the vendor specified on the purchase order has an EDI
       profile attached, you may encounter an EDI processing interface when
       printing the purchase order.</para>
     </note></para>
-
   <variablelist>
     <varlistentry>
       <term>Purchasing Agent</term>
-
       <listitem>
         <para>Specify the purchasing agent whose purchase orders you want to
         print. Users may be designated as purchasing agents at the
-        <guimenuitem>System</guimenuitem> level.</para>
+        <guimenu>System</guimenu> level.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Copies</term>
-
       <listitem>
         <para>Indicate the copies you want to print.</para>
-
         <variablelist>
           <varlistentry>
             <term>Vendor</term>
-
             <listitem>
               <para>Select to print one vendor copy of the specified purchase
               orders by agent.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Internal</term>
-
             <listitem>
               <para>Select to print internal copies of the specified purchase
               orders by agent. When you select this option, the <guilabel># of
               Copies</guilabel> field will be enabled.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term># of Copies</term>
-
             <listitem>
               <para>Specify the number of internal copies you want to print
               using the arrows.</para>

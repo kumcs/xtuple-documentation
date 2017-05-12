@@ -5,59 +5,47 @@
 <section id="dspPurchaseReqsByItem">
   <title><indexterm significance="normal">
       <primary>purchase requests</primary>
-
       <secondary>by item</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>items</primary>
-
       <secondary>purchase requests for</secondary>
     </indexterm>Purchase Requests by Item</title>
-
   <para>To view purchase requests by item or to create new manual purchase
-  requests, select the <guimenuitem>Purchase Requests by Item</guimenuitem>
-  option. The following screen will appear:</para>
-
+  requests, go to <guimenuitem>Purchase &gt; Purchase Requests &gt;
+  </guimenuitem><guimenuitem>by Item</guimenuitem>. The following screen will
+  appear:</para>
   <note>
     <para>Purchase requests are considered to be a valid source of supply by
     the planning systems.</para>
   </note>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspPurchaseReqsByItem.png"/>
+          <imagedata fileref="images/dspPurchaseReqsByItem.png" />
         </imageobject>
-
         <caption>Purchase Requests by Item</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>Use the <guibutton>NEW</guibutton> button to create a manual
     purchase request. Or use the right-click option on the Inventory
     Availability and Planned Order screens.</para>
   </tip>
-
   <para>When displaying purchase requests by item, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter the item number of the item whose purchase requests you
         want to view. The lookup feature located to the right of the field
         leads to a searchable list of make and buy items.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
-
         <note>
           <para>Purchase request quantities are based on the inventory UOM.
           However, some vendor item sources may specify an alternate UOM. If
@@ -67,34 +55,27 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>All Sites</term>
-
       <listitem>
         <para>Select to display purchase requests by item for all
         sites.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Selected</term>
-
       <listitem>
         <para>Specify site whose purchase requests by item you want to
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Purchase Requests</term>
-
       <listitem>
         <para>Display lists purchase requests for the specified item, using
         the specified parameters. You may multi-select purchase requests in
         the list, but when doing so each request will be processed
         individually.</para>
-
         <note>
           <para>When a purchase request is released, the requested item will
           automatically populate a Purchase Order Item screen. If item sources
@@ -108,19 +89,15 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>NEW</guibutton></term>
-
       <listitem>
         <para>Select to create a manual purchase request.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="../widgets/purchaseRequest.xml" xpointer="purchaseRequest"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

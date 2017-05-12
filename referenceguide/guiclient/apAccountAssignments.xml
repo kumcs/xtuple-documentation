@@ -5,50 +5,41 @@
 <section id="apAccountAssignments">
   <title><indexterm significance="normal">
       <primary>account assignments</primary>
-
       <secondary>for payables</secondary>
     </indexterm>Payables Assignments</title>
-
   <para>Payables assignments represent the default general ledger (G/L)
   accounts used by the system when processing the following:</para>
-
   <itemizedlist>
     <listitem>
       <para>Vouchers</para>
     </listitem>
-
     <listitem>
       <para>Payment discounts</para>
     </listitem>
-
     <listitem>
       <para>Miscellaneous payables credit memos</para>
     </listitem>
-
     <listitem>
       <para>Miscellaneous payables debit memos</para>
     </listitem>
   </itemizedlist>
-
   <para>The account assignments are made by vendor type. This means that
   transactions involving a vendor will follow the assignments established for
   the vendor type—unless otherwise specified. To access the Payables
-  Assignments master list, select the <guilabel>Payables
-  Assignments</guilabel> option. The following screen will appear:</para>
-
+  Assignments master list, go to <guimenuitem>Sales &gt; Setup</guimenuitem>.
+  In the Setup window, from the left side menu, select <guimenuitem>Accounting
+  Mappings &gt; Payables Assignments</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apAccountAssignments_purchasing.png"/>
+          <imagedata fileref="images/apAccountAssignments_purchasing.png" />
         </imageobject>
-
-        <caption>Payables Assignments Master List</caption>
+        <caption>Payables Assignments master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Payables Assignments screen displays information on all existing
   payables account assignments.</para>
-
   <xi:include href="apAccountAssignment.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

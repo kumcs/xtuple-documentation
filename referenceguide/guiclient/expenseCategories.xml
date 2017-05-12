@@ -5,52 +5,42 @@
 <section id="expenseCategories">
   <title><indexterm significance="normal">
       <primary>expense categories</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Expense Categories</title>
-
   <para>Expense categories are used to identify the general ledger (G/L)
   accounts to be used when processing the following:</para>
-
   <itemizedlist>
     <listitem>
       <para>Non-inventory purchase order items</para>
     </listitem>
-
     <listitem>
       <para>Miscellaneous vouchers</para>
     </listitem>
-
     <listitem>
       <para>Miscellaneous payables checks</para>
     </listitem>
-
     <listitem>
       <para>Expense transactions</para>
     </listitem>
   </itemizedlist>
-
   <para>For example, when entering a purchase order for a non-inventory item,
   you must select an expense category—thereby identifying the G/L accounts the
   purchasing transaction will be distributed to. To access the master list of
-  expense categories, go to <guimenuitem>Inventory &gt; Setup</guimenuitem>
-  then <guimenuitem>Accounting Mappings &gt; Expense Categories</guimenuitem>
-  from the left-side menu. The following screen will appear:</para>
-
+  expense categories, go to <guimenuitem>Sales &gt; Setup</guimenuitem>. In
+  the Setup window, from the left side menu, select <guimenuitem>Accounting
+  Mappings &gt; Expense Categories</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/expenseCategories.png"/>
+          <imagedata fileref="images/expenseCategories.png" />
         </imageobject>
-
-        <caption>Expense Categories Master List</caption>
+        <caption>Expense Categories master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Expense Categories screen displays information on all existing
   expense categories, including expense category code and expense category
   description.</para>
-
   <xi:include href="expenseCategory.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

@@ -5,59 +5,45 @@
 <section id="itemSource">
   <title><indexterm significance="normal">
       <primary>item sources</primary>
-
       <secondary>creating new</secondary>
     </indexterm><indexterm significance="normal">
       <primary>source vendors</primary>
-
       <see>item sources</see>
     </indexterm>Enter New Item Source</title>
-
-  <para>To enter a new item source, select the <guimenuitem>Enter New Item
-  Source</guimenuitem> option. The following screen will appear:</para>
-
+  <para>To enter a new item source, go to <guimenuitem>Purchase &gt; Item
+  Source &gt; New</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSource.png"/>
+          <imagedata fileref="images/itemSource.png" />
         </imageobject>
-
-        <caption>Enter New Item Source</caption>
+        <caption>Enter new Item Source</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When entering a new item source, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter the item number of the manufactured item you want to
         create a work order for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Active</term>
-
       <listitem>
         <para>Identifies whether the item is currently active.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Default</term>
-
       <listitem>
         <para>Select this option to distinguish an item source from other item
         sources for the same item number. If selected, the default item source
@@ -69,40 +55,31 @@
         item flagged as the default will be unchecked.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>item sources</primary>
-
           <secondary>vendors identified as</secondary>
         </indexterm>Vendor</term>
-
       <listitem>
         <para>Enter the vendor number of the vendor who is the source for the
         specified item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vendor Item Number</term>
-
       <listitem>
         <para>Enter the item number the vendor uses to identify the
         item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vendor UOM</term>
-
       <listitem>
         <para>Select the UOM the vendor uses for the specified item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Inventory/Vendor UOM Ratio</term>
-
       <listitem>
         <para>Specify the ratio between inventory and vendor UOM. For example,
         if you store an item in single units, but a vendor sells you the item
@@ -118,13 +95,10 @@
         purchase orders.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Bar Code</term>
-
       <listitem>
         <para>Enter the bar code for the item.</para>
-
         <note>
           <para>Standard bar code formats supported by the system include the
           following: Code 3of9, Code 3of9 Extended, Code 128, UPC-A, UPC-E,
@@ -132,50 +106,39 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vendor Currency</term>
-
       <listitem>
         <para>Currency used by the vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Effectivity</term>
-
       <listitem>
         <variablelist>
           <varlistentry>
             <term>Contract #</term>
-
             <listitem>
               <para>Select the contract number if a contract exists for this
               item source.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Effective</term>
-
             <listitem>
               <para>Specify the date when the relevant contract takes
               effect.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Expires</term>
-
             <listitem>
               <para>Specify the date when the relevant contract
               expires.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Contracted Qty</term>
-
             <listitem>
               <para>Enter the blanket order quantity that will be used to
               track released and received purchase order quantities for the
@@ -185,20 +148,16 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Minimum Order</term>
-
       <listitem>
         <para>Indicate the minimum order allowed for the specified item. A
         warning message will be shown if a purchase order line item falls
         below the minimum order value entered here.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Order Multiple</term>
-
       <listitem>
         <para>Value entered indicates the quantity multiple that orders for
         this item must use. A warning message will be shown if a purchase
@@ -206,29 +165,23 @@
         here.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>vendor ranking</primary>
-
           <secondary>for item sources</secondary>
         </indexterm><indexterm significance="normal">
           <primary>item sources</primary>
-
           <secondary>ranking of</secondary>
         </indexterm><indexterm significance="normal">
           <primary>vendors</primary>
-
           <secondary>ranking of</secondary>
         </indexterm><indexterm significance="normal">
           <primary>ranking</primary>
-
           <secondary>of vendors</secondary>
         </indexterm>Vendor Ranking</term>
-
       <listitem>
-        <para>Specify the vendor's rank using the arrows, or manually
-        enter a value up to a maximum of 9. The ranking of a vendor is used to
+        <para>Specify the vendor's rank using the arrows, or manually enter a
+        value up to a maximum of 9. The ranking of a vendor is used to
         identify the relative merits of item sources when releasing purchase
         requests. If a purchased item has multiple item sources, you may
         select from a list of available item sources when releasing a purchase
@@ -236,14 +189,11 @@
         ranking.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>item sources</primary>
-
           <secondary>lead times for</secondary>
         </indexterm>Lead Time</term>
-
       <listitem>
         <para>Specify the lead time for the vendor item using the arrow
         buttons, or manually enter a value up to a maximum of 99. Specifies
@@ -251,146 +201,114 @@
         measured in days.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the item source.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>item sources</primary>
-
       <secondary>pricing of items for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>item sources</primary>
-
       <secondary>item pricing for</secondary>
     </indexterm>To add or modify item source prices, select the
   <guimenuitem>Prices</guimenuitem> tab at the bottom of the Item Source
   screen. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSource_widget.png"/>
+          <imagedata fileref="images/itemSource_widget.png" />
         </imageobject>
-
         <caption>Item Source Prices</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When adding or modifying item source prices, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Prices</term>
-
       <listitem>
         <para>Display lists item source prices for the specified item
         source.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>ADD</guibutton></term>
-
       <listitem>
         <para>Opens screen for creating a new item source price, as shown
         below.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To add or modify a description of the vendor, select the
   <guimenuitem>Vendor Description</guimenuitem> tab at the bottom of the Item
   Source screen. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSource_tab.png"/>
+          <imagedata fileref="images/itemSource_tab.png" />
         </imageobject>
-
         <caption>Item Source Vendor Description</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When adding or modifying a vendor description, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Vendor Description</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the vendor.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To add or modify a manufacturer's information, select the
   <guimenuitem>Manufacturer</guimenuitem> tab at the bottom of the Item Source
   screen. The following screen will appear:</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/itemSource_manfTab.png"/>
+        <imagedata fileref="images/itemSource_manfTab.png" />
       </imageobject>
-
       <caption>Item Source Manufacturer</caption>
     </mediaobject>
   </screenshot>
-
   <para>When adding or modifying manufacturing information, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Name of the manufacturer who creates the item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Item number used by manufacturer who creates the item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Description used by the manufacturer who creates the
         item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To associate documents with an item source, select the
   <guimenuitem>Documents</guimenuitem> tab.</para>
-
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="itemSourcePrice.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
