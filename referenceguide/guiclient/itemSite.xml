@@ -11,8 +11,8 @@
 
   <para>An item site identifies and defines the methods and controls used when
   maintaining a given item within a given site. To enter a new item site into
-  your system, select the <guimenuitem>Enter Item Site</guimenuitem> option.
-  The following screen will appear:</para>
+  your system, go to <guimenuitem>Inventory &gt; Item Site &gt;
+  New</guimenuitem>. The following screen will appear:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -87,11 +87,10 @@
               order. To ensure the <guilabel>Create Work Order</guilabel> flag
               is always enabled on the Sales Order Line Item screen, set the
               <guilabel>Stocked</guilabel> option on the Item Site screen to
-              <guilabel>False</guilabel>. When the
-              <guilabel>Stocked</guilabel> option is
-              <guilabel>True</guilabel>, the <guilabel>Create Work
-              Order</guilabel> flag will be available but turned off by
-              default on the Sales Order Line Item screen.</para>
+              false. When the <guilabel>Stocked</guilabel> option is true, the
+              <guilabel>Create Work Order</guilabel> flag will be available
+              but turned off by default on the Sales Order Line Item
+              screen.</para>
 
               <note>
                 <para>Work orders created, as specified above, to meet sales
@@ -173,7 +172,7 @@
 
                     <listitem>
                       <para>If selected, the <guilabel>Drop Ship</guilabel>
-                      flag will always be turned "ON" when sales order line
+                      flag will always be turned on when sales order line
                       items are created for drop ship items. Do not select
                       this option if you want users to manually select the
                       <guilabel>Drop Ship</guilabel> flag when entering sales
@@ -196,7 +195,7 @@
         <guilabel>Sold from</guilabel> means that sales orders line items may
         request to ship from the site. When adding sales order line items to a
         sales order, a <guilabel>Sold from</guilabel> site appears as the
-        <guilabel>Supplying</guilabel> site.</para>
+        supplying site.</para>
 
         <variablelist>
           <varlistentry>
@@ -428,17 +427,15 @@
               option is used in conjunction with the <guilabel>Create Work
               Orders linked to Sales Orders</guilabel> option on the Item Site
               screen. When the <guilabel>Stocked</guilabel> flag is set to
-              <guilabel>False</guilabel>, the <guilabel>Create Work
-              Order</guilabel> flag on the Sales Order Line Item screen will
-              be enabled by default. Conversely, when the
-              <guilabel>Stocked</guilabel> flag is set to
-              <guilabel>True</guilabel>, the <guilabel>Create Work
-              Order</guilabel> flag will be available but turned off by
-              default on the Sales Order Line Item screen. This setting is
-              also used to drive the constraint management system. As a
-              result, to avoid inaccurate results when running that system, an
-              item site must also have a reorder level defined to use this
-              option.</para>
+              false, the <guilabel>Create Work Order</guilabel> flag on the
+              Sales Order Line Item screen will be enabled by default.
+              Conversely, when the <guilabel>Stocked</guilabel> flag is set to
+              true, the <guilabel>Create Work Order</guilabel> flag will be
+              available but turned off by default on the Sales Order Line Item
+              screen. This setting is also used to drive the constraint
+              management system. As a result, to avoid inaccurate results when
+              running that system, an item site must also have a reorder level
+              defined to use this option.</para>
             </listitem>
           </varlistentry>
 

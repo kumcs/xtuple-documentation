@@ -5,61 +5,79 @@
 <section id="location">
   <title><indexterm significance="normal">
       <primary>site locations</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Site Location</title>
-  <para>To create a new site location, select the <guibutton>NEW</guibutton> button. The following
-  screen will appear:</para>
+
+  <para>To create a new site location, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/location.png" />
+          <imagedata fileref="images/location.png"/>
         </imageobject>
+
         <caption id="NewSiteLocation">Create New Site Location</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new site location, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry role="standard">
       <term>Site</term>
+
       <listitem>
         <para>Specify site for the site location.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>site zones</primary>
+
           <secondary>locations within</secondary>
         </indexterm><indexterm significance="normal">
           <primary>site locations</primary>
+
           <secondary>within zones</secondary>
         </indexterm>Zone</term>
+
       <listitem>
         <para>Specify the site zone you want to associate with the location,
         if any. Zone selection will be activated only if site zones have been
         defined for the specified site.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>site locations</primary>
+
           <secondary>netable</secondary>
         </indexterm><indexterm significance="normal">
           <primary>netable</primary>
+
           <secondary>site location as</secondary>
         </indexterm><indexterm significance="normal">
           <primary>non-netable</primary>
+
           <secondary>site location as</secondary>
         </indexterm>Netable</term>
+
       <listitem>
         <para>Select if you want inventory stored in the location to be used
         for inventory planning purposes (i.e., MRP). If not selected, the
         location will be considered non-netable. Both netable and non-netable
-        inventory are included in the QOH total.</para>
+        inventory are included in the quantity on hand (QOH) total.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Usable</term>
+
       <listitem>
         <para>Select if you want inventory stored in the location to be
         available immediately to satisfy work order and sales order demand. If
@@ -68,30 +86,38 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>site locations</primary>
+
           <secondary>restricted</secondary>
         </indexterm><indexterm significance="normal">
           <primary>restricted</primary>
+
           <secondary>site location as</secondary>
         </indexterm>Restricted</term>
+
       <listitem>
         <para>Select if only a restricted set of items may be placed in this
         location. Not selecting means any item that exists in the same site as
         this location may be placed into it.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Active</term>
+
       <listitem>
         <para>Select to mark the location as active. If not selected, the
         location will be considered inactive.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a name to identify the location. The name of the location
         will vary, depending on whether the specified site enforces the aisle,
@@ -102,27 +128,34 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>The parameters for the ARBL naming convention are set within a site
     master. These parameters include the maximum length allowed for names and
     whether alpha characters or numeric only may be used.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering a
         description of the location.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>allowable items</primary>
+
           <secondary>in site locations</secondary>
         </indexterm><indexterm significance="normal">
           <primary>site locations</primary>
+
           <secondary>allowable items in</secondary>
         </indexterm>Allowable Items</term>
+
       <listitem>
         <para>Display is only activated if the location has been designated as
         restricted. If a location is restricted, only certain items are
