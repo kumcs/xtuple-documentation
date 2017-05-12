@@ -1,54 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
-<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspSingleLevelWhereUsed">
-  <title>
-<indexterm significance="normal">
+  <title><indexterm significance="normal">
       <primary>bills of materials</primary>
+
       <secondary>single level where used view of</secondary>
     </indexterm>Single Level Where Used</title>
+
   <para>The Single Where Used display will indicate every manufactured item
   that directly uses a specified item as a component item. To view a display
-  showing parent items which use a specified component item, select the
-  <guimenuitem>Single Level Where Used</guimenuitem> option. The following screen will appear:</para>
-  <para>
-<screenshot>
+  showing parent items which use a specified component item, go to
+  <guimenuitem>Products &gt; Reports &gt; Where Used &gt; Single
+  Level</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspSingleLevelWhereUsed.png"/>
         </imageobject>
+
         <caption>Single Level Where Used</caption>
       </mediaobject>
-    </screenshot>
-</para>
+    </screenshot></para>
+
   <para>When displaying a view showing parent items which use a specified
   component item, you are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item you would like to
         display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Effective</term>
+
       <listitem>
         <para>Indicate the effective date to use when searching through bill
-        of material components to determine the selected item's usage.</para>
+        of material (BOM) components to determine the selected item's
+        usage.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Bill of Materials Items</term>
+
       <listitem>
-        <para>Display lists parent items whose bill of materials includes the
-        specified component item, using the specified parameters.</para>
+        <para>Display lists parent items whose BOM includes the specified
+        component item, using the specified parameters.</para>
       </listitem>
     </varlistentry>
   </variablelist>

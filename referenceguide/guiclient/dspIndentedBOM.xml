@@ -9,9 +9,9 @@
       <secondary>indented view of</secondary>
     </indexterm>Indented Bill of Materials</title>
 
-  <para>To view an indented bill of materials, select the
-  <guimenuitem>Indented Bill of Materials</guimenuitem> option. The following
-  screen will appear:</para>
+  <para>To view an indented bill of materials (BOM), go to
+  <guimenuitem>Products &gt; Reports &gt; Bill of Materials &gt;
+  Indented</guimenuitem>. The following screen will appear:</para>
 
   <para><screenshot>
       <mediaobject>
@@ -23,8 +23,8 @@
       </mediaobject>
     </screenshot></para>
 
-  <para>When displaying an indented bill of materials, you are presented with
-  the following options:</para>
+  <para>When displaying an indented BOM, you are presented with the following
+  options:</para>
 
   <variablelist>
     <varlistentry>
@@ -32,7 +32,7 @@
 
       <listitem>
         <para>Enter the item number of the manufactured item you would like to
-        view an indented bill of materials for.</para>
+        view an indented BOM for.</para>
       </listitem>
     </varlistentry>
 
@@ -48,10 +48,10 @@
       <term>Revision</term>
 
       <listitem>
-        <para>If revision control is enabled at your site, specify the bill of
-        materials revision number you want to view. If none exists, simply
-        enter a value to create one. The status of the revision will also be
-        displayed. The following statuses apply to revisions:</para>
+        <para>If revision control is enabled at your site, specify the BOMs
+        revision number you want to view. If none exists, simply enter a value
+        to create one. The status of the revision will also be displayed. The
+        following statuses apply to revisions:</para>
 
         <variablelist>
           <varlistentry>
@@ -81,10 +81,10 @@
             <term>Threshold Days</term>
 
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 999. Components that have been
-              expired from the bill of materials within the specified number
-              of days will be included in the display.</para>
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 999. Components that have been expired
+              from the BOM within the specified number of days will be
+              included in the display.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -103,8 +103,8 @@
             <term>Threshold Days</term>
 
             <listitem>
-              <para>Select a number using the arrows, or manually enter
-              a value up to a maximum of 999. Components that will be added in
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 999. Components that will be added in
               future to the bill of materials within the specified number of
               days will be included in the display.</para>
             </listitem>
@@ -117,13 +117,13 @@
       <term>Bill of Materials</term>
 
       <listitem>
-        <para>Display lists indented bill of materials components, using the
-        specified parameters. The difference between the indented view and the
-        single level view is that the indented view displays all subcomponents
-        if there is a manufactured component listed on the bill of materials.
-        To view a component item's subassembly, select the plus
-        <guibutton>+</guibutton> sign in the <guilabel>Seq #</guilabel> column
-        to view that detail.</para>
+        <para>Display lists indented BOM components, using the specified
+        parameters. The difference between the indented view and the single
+        level view is that the indented view displays all subcomponents if
+        there is a manufactured component listed on the BOM. To view a
+        component item's subassembly, select the plus <guibutton>+</guibutton>
+        sign in the <guilabel>Seq #</guilabel> column to view that
+        detail.</para>
       </listitem>
     </varlistentry>
   </variablelist>
