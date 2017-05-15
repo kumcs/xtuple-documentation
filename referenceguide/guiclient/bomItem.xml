@@ -79,12 +79,11 @@
 
             <listitem>
               <para>The system enables you to specify when a component can be
-              used in a BOM. For example, the company's engineering
-              department may be working on a new design for an existing
-              item—but that new design will not be available for use until a
-              given date in the future. In this case, you can specify a future
-              effective date to indicate when the component will be available
-              for use.</para>
+              used in a BOM. For example, the company's engineering department
+              may be working on a new design for an existing item—but that new
+              design will not be available for use until a given date in the
+              future. In this case, you can specify a future effective date to
+              indicate when the component will be available for use.</para>
             </listitem>
           </varlistentry>
 
@@ -93,8 +92,8 @@
 
             <listitem>
               <para>The system also enables you to specify when a component is
-              planned to be obsoleted from (i.e., no longer used in) a BOM.
-              As mentioned above, the company's engineering department may be
+              planned to be obsoleted from (i.e., no longer used in) a BOM. As
+              mentioned above, the company's engineering department may be
               working on a new design for an existing item—but that new design
               will not be available for use until a given date in the future.
               In this case, the old component item must be marked for
@@ -146,14 +145,14 @@
       <term>Fixed Qty.</term>
 
       <listitem>
-        <para>Use this option to specify a "flat" quantity of material
-        required that is independent of the total quantity produced on a batch
-        or work order. For example, tooling items added to a BOM generally
-        have a fixed quantity regardless of the total quantity of finished
-        goods produced. Batch size does have an impact on the costing for
-        fixed quantity items, however. For example, if the parent item's batch
-        size is 100 and the cost of the fixed quantity item is $100, then the
-        fixed item's cost should be distributed across the batch, as in the
+        <para>Use this option to specify a flat quantity of material required
+        that is independent of the total quantity produced on a batch or work
+        order. For example, tooling items added to a BOM generally have a
+        fixed quantity regardless of the total quantity of finished goods
+        produced. Batch size does have an impact on the costing for fixed
+        quantity items, however. For example, if the parent item's batch size
+        is 100 and the cost of the fixed quantity item is $100, then the fixed
+        item's cost should be distributed across the batch, as in the
         following: ((1/100) * $100) = $1.</para>
 
         <tip>
@@ -520,10 +519,10 @@
       <term>Ranking</term>
 
       <listitem>
-        <para>Select a number using the arrows, or manually enter a
-        value up to a maximum of 9. Enter the specified ranking order of the
-        item substitute. You may assign the same ranking to multiple items, if
-        this is appropriate.</para>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of nine. Enter the specified ranking order of the item
+        substitute. You may assign the same ranking to multiple items, if this
+        is appropriate.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -559,8 +558,8 @@
     </mediaobject>
   </screenshot>
 
-  <para>When opening the BOM's item costs, you are presented with the following
-  options:</para>
+  <para>When opening the BOM's item costs, you are presented with the
+  following options:</para>
 
   <variablelist>
     <varlistentry>
@@ -637,8 +636,7 @@
       <listitem>
         <para>Display lists routing items for the same manufactured item whose
         BOM is being specified. Highlight the operation you want to link the
-        BOM item to, then hit the <guibutton>SELECT</guibutton>
-        button.</para>
+        BOM item to, then hit the <guibutton>SELECT</guibutton> button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -659,8 +657,8 @@
       <term>SELECT</term>
 
       <listitem>
-        <para>Links the routing item to the specified BOM component.
-        Highlight the desired routing item before selecting the
+        <para>Links the routing item to the specified BOM component. Highlight
+        the desired routing item before selecting the
         <guibutton>SELECT</guibutton> button.</para>
       </listitem>
     </varlistentry>
@@ -669,16 +667,17 @@
   <para>On a BOM, if the parent item is a configured item (i.e., configured
   job item or reference item), then you will have the option to link BOM items
   to specific parent item characteristics. For example, let's say the parent
-  item has a characteristic for paint finish with the values "Flat" and
-  "Glossy". At the BOM item level, you can specify whether the BOM item goes
-  with "flat" or "glossy". If you choose "glossy" to associate with the BOM
-  item, then that means the BOM item will be included as a material
-  requirement whenever orders call for the "glossy" version of the parent
-  item. If no characteristic association is made at the BOM item level, then
-  the BOM item will always appear on work orders—regardless of the
-  parent-level configuration selection. To associate characteristics with a
-  BOM item, select the <guimenuitem>Configuration</guimenuitem> tab. The
-  following screen will appear:</para>
+  item has a characteristic for paint finish with the values
+  <emphasis>flat</emphasis> and <emphasis>glossy</emphasis>. At the BOM item
+  level, you can specify whether the BOM item goes with flat or glossy. If you
+  choose glossy to associate with the BOM item, then that means the BOM item
+  will be included as a material requirement whenever orders call for the
+  glossy version of the parent item. If no characteristic association is made
+  at the BOM item level, then the BOM item will always appear on work
+  orders—regardless of the parent-level configuration selection. To associate
+  characteristics with a BOM item, select the
+  <guimenuitem>Configuration</guimenuitem> tab. The following screen will
+  appear:</para>
 
   <para><screenshot>
       <mediaobject>

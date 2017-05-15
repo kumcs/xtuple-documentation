@@ -60,8 +60,8 @@
         is typically used for entering the name used to describe the item. In
         printed reports or other printouts, the first line will appear on a
         separate line above the second line. However, the two lines will be
-        concatenated (i.e., "joined together") when they are displayed
-        on-screen within the application.</para>
+        concatenated (i.e., joined together) when they are displayed on-screen
+        within the application.</para>
       </listitem>
     </varlistentry>
 
@@ -74,7 +74,7 @@
         packaging, or any other descriptive information. In printed reports or
         other printouts, the second line will appear on a separate line below
         the first line. However, the two lines will be concatenated (i.e.,
-        "joined together") when they are displayed on-screen within the
+        joined together) when they are displayed on-screen within the
         application.</para>
 
         <tip>
@@ -292,7 +292,7 @@
               <note>
                 <para>The cost of sales (COS) account for kit items is
                 directed to the sales account assignment mappings of the kit's
-                child items—unless your system is configured to have the Kit
+                child items—unless your system is configured to have the kit
                 components inherit the same COS account used by the parent kit
                 item. You can read more about configuring your system for COS
                 inheritance for kit items here: <xref
@@ -691,13 +691,13 @@
 
   <para>Item characteristics are user-defined definitions of an item which may
   be used to provide additional layers of description to items. For example,
-  item characteristics might be used to specify "Season" or "Primary Vendor."
-  These constitute static descriptions which are not processed by the
-  application, but are useful for informational purposes. For configured items
-  (i.e., job or reference items), characteristics are used to store pricing
-  information for the options available on configured items. That pricing by
-  characteristic is then passed to sales order line items when particular
-  configurations are sold.</para>
+  item characteristics might be used to specify <guilabel>Season</guilabel> or
+  <guilabel>Primary Vendor</guilabel>. These constitute static descriptions
+  which are not processed by the application, but are useful for informational
+  purposes. For configured items (i.e., job or reference items),
+  characteristics are used to store pricing information for the options
+  available on configured items. That pricing by characteristic is then passed
+  to sales order line items when particular configurations are sold.</para>
 
   <tip>
     <para>Item characteristics can be associated with sales order, purchase
@@ -974,14 +974,14 @@
               items that use different inventory UOMs. For example, let's say
               that item A is a carton containing 24 item B's—and that you sell
               both items. However, item A and item B use different inventory
-              UOMs. Item A is measured by the CASE (24), and item B is
-              measured by EACH. By utilizing the capacity UOM, you have the
+              UOMs. Item A is measured by the (CASE [24]), and item B is
+              measured by (EACH). By utilizing the capacity UOM, you have the
               ability to track total load and total sales for item B—even
               though the inventory UOM for item A obscures the quantity of
               item B's contained therein. If, when you query the database, you
               request data to be displayed in capacity UOMs, then the system
-              will normalize the quantities of item A to EACH, allowing you to
-              see the total quantity of item Bs.</para>
+              will normalize the quantities of item A to (EACH), allowing you
+              to see the total quantity of item Bs.</para>
 
               <note>
                 <para>The capacity UOM has no impact on BOMs. It is used
@@ -1025,9 +1025,9 @@
               example, inventory transactions will be recorded using the
               inventory UOM (EACH), but all pricing—including list price and
               pricing schedules—will reflect the selling UOM (CASE24). An item
-              may also have multiple selling UOMs, for example SIX-PACK,
-              CASE24, PALLET, etc. You specify the selling UOM you want to use
-              at sales order entry time.</para>
+              may also have multiple selling UOMs (for example SIX-PACK,
+              CASE24, PALLET, etc.). You specify the selling UOM you want to
+              use at sales order entry time.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1317,8 +1317,8 @@
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         comments related to the item alias. This field may be useful for
-        explaining why an item alias was created (e.g., "customer XYZ, Inc.
-        refers to this item alias whenever they place an order.").</para>
+        explaining why an item alias was created (e.g., customer XYZ, Inc.
+        refers to this item alias whenever they place an order.).</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1336,7 +1336,7 @@
             <primary>items</primary>
 
             <secondary>substitutes for</secondary>
-          </indexterm>Display lists item Substitutes, including rank and item
+          </indexterm>Display lists item substitutes, including rank and item
         description.</para>
 
         <tip>
