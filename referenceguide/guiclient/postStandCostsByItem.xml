@@ -5,108 +5,135 @@
 <section id="postStandCostsByItem">
   <title><indexterm significance="normal">
       <primary>standard costs</primary>
+
       <secondary>updating by item</secondary>
     </indexterm><indexterm significance="normal">
       <primary>items</primary>
+
       <secondary>updating standard costs for</secondary>
     </indexterm>Post Standard Costs by Item</title>
+
   <para>Posting standard costs is <emphasis>not</emphasis> the same process as
   updating actual costs or posting actual costs to standard. It is an entirely
-  different process&mdash;and in most cases, it will only be used in rare
+  different process—and in most cases, it will only be used in rare
   circumstances.</para>
+
   <para>Standard costs are the costs which are recorded in the general ledger
   whenever transactions are posted. As such, they are the costs of record.
-  Typically, a company will update its standard costs on a periodic
-  basis&mdash;for example, annually or quarterly. However, if you introduce
-  new products into production between standard cost updates, you may want to
-  roll up existing standard costs into the cost of your new manufactured
-  items.</para>
+  Typically, a company will update its standard costs on a periodic basis—for
+  example, annually or quarterly. However, if you introduce new products into
+  production between standard cost updates, you may want to roll up existing
+  standard costs into the cost of your new manufactured items.</para>
+
   <tip>
     <para>Cost roll ups in xTuple are performed from the bottom up. In other
     words, to update the costs for a parent item you need to roll the costs
     for all the child items up into the parent item. For this reason, posting
     costs by class code is the generally preferred method. That way you can
-    guarantee all the required costs are posted&mdash;and none are
-    missed.</para>
+    guarantee all the required costs are posted—and none are missed.</para>
   </tip>
-  <para>To update standard costs individually by item, select the <guimenuitem>Update
-  Standard Costs by Item</guimenuitem> option. The following screen will appear:</para>
+
+  <para>To update standard costs individually by item, go to
+  <guimenuitem>Products &gt; Costing &gt; Post Standard
+  Costs</guimenuitem><guimenuitem> &gt; by Item</guimenuitem>. The following
+  screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/postStandCostsByItem.png" />
+          <imagedata fileref="images/postStandCostsByItem.png"/>
         </imageobject>
+
         <caption>Update Standard Costs by Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Updating standard costs has absolutely no impact on an item's actual
     costs. The only costs affected will be standard costs.</para>
   </note>
+
   <para>When updating standard costs by item, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>Enter the item number of the item whose standard costs you want
         to update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>For manufactured items, rolling up standard costs ensures that lower
     level costs are reflected in the cost for the parent item.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>standard costs</primary>
+
           <secondary>rolling up of</secondary>
         </indexterm>Roll Up Standard Costs</term>
+
       <listitem>
         <para>Select to roll up standard costs. When this option is specified,
         all selected costs will be added together to establish a revised total
         standard cost for the item. This revised total goes into effect after
-        the <guibutton>UPDATE</guibutton> button is selected. If all costs are selected, all costs
-        will be rolled up. If a subset of all costs is selected, only the
-        subset will be rolled up. If the <guilabel>Roll Up Standard Costs</guilabel> option is not
-        specified, the selected cost updates will not be valid above their
-        current level.</para>
+        the <guibutton>UPDATE</guibutton> button is selected. If all costs are
+        selected, all costs will be rolled up. If a subset of all costs is
+        selected, only the subset will be rolled up. If the <guilabel>Roll Up
+        Standard Costs</guilabel> option is not specified, the selected cost
+        updates will not be valid above their current level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>material costs</primary>
+
           <secondary>updating of</secondary>
         </indexterm><indexterm significance="normal">
           <primary>costing</primary>
+
           <secondary>updating of material costs</secondary>
         </indexterm><indexterm significance="normal">
           <primary>standard costs</primary>
+
           <secondary>updating material costs</secondary>
         </indexterm>Update Lower Level Material Costs</term>
+
       <listitem>
         <para>Select to update lower level material costs. Not selecting means
         lower level material costs will not be included in the cost
         update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Update Direct Labor Cost</term>
+
       <listitem>
         <para>Select to update direct labor cost. Not selecting means the
         direct labor cost will not be included in the cost update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Update Lower Level Direct Labor Cost</term>
+
       <listitem>
         <para>Select to update lower level direct labor cost. Not selecting
         means the lower level direct labor cost will not be included in the
@@ -114,82 +141,104 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>You have the flexibility of updating all or only a subset of the
     listed costs. Updating a subset might be desirable if only material or
     user costs have changed, for example.</para>
   </note>
+
   <variablelist>
     <varlistentry role="manufacturing">
       <term>Update Overhead Cost</term>
+
       <listitem>
         <para>Select to update overhead cost. Not selecting means the overhead
         cost will not be included in the cost update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Update Lower Level Overhead Cost</term>
+
       <listitem>
         <para>Select to update lower level overhead cost. Not selecting means
         the lower level overhead cost will not be included in the cost
         update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Update Machine Overhead</term>
+
       <listitem>
         <para>Select to update machine overhead cost. This option is selected
         by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Update Lower Machine Overhead</term>
+
       <listitem>
         <para>Select to update lower level machine overhead cost. This option
         is selected by default.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>user costs</primary>
+
           <secondary>updating of</secondary>
         </indexterm><indexterm significance="normal">
           <primary>costing</primary>
+
           <secondary>updating of user costs</secondary>
         </indexterm><indexterm significance="normal">
           <primary>standard costs</primary>
+
           <secondary>updating user costs</secondary>
         </indexterm>Update User Costs</term>
+
       <listitem>
         <para>Select to update user costs. Not selecting means user costs will
         not be included in the cost update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Update Lower Level User Costs</term>
+
       <listitem>
         <para>Select to update lower level user costs. Not selecting means
         lower level user costs will not be included in the cost update.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>UPDATE</guibutton></term>
+
       <listitem>
         <para>Updates all selected costs for the specified item. If the option
-        <guilabel>Roll Up Standard Costs</guilabel> has been selected, the total standard cost
-        for the specified item will be updated.</para>
+        <guilabel>Roll Up Standard Costs</guilabel> has been selected, the
+        total standard cost for the specified item will be updated.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>SELECT ALL COSTS</guibutton></term>
+
       <listitem>
         <para>Selects all costs for updating. Use this option to save time
-        when selecting all costs for updating. The option <guilabel>Roll Up Standard
-        Costs</guilabel> must be selected separately if you want to include a rolled up
-        total for the parent item in the cost update.</para>
+        when selecting all costs for updating. The option <guilabel>Roll Up
+        Standard Costs</guilabel> must be selected separately if you want to
+        include a rolled up total for the parent item in the cost
+        update.</para>
       </listitem>
     </varlistentry>
   </variablelist>

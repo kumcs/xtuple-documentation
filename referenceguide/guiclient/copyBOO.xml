@@ -4,70 +4,89 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="copyBOO">
   <title>Copy Routing</title>
-  <para>To make a copy of a routing, select the <guimenuitem>Copy Routing</guimenuitem> option. The
-  following screen will appear:</para>
+
+  <para>To make a copy of a routing, go to <guimenuitem>Products &gt; Routing
+  &gt; Copy</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/copyBOO.png" />
+          <imagedata fileref="images/copyBOO.png"/>
         </imageobject>
+
         <caption>Copy Routings</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When copying a routing, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Source Item</term>
+
       <listitem>
         <para>Specify the source item whose routing you want to copy:</para>
+
         <variablelist>
           <varlistentry>
             <term>Item Number</term>
+
             <listitem>
               <para>Enter the item number of the item whose routing you want
               to copy.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>UOM</term>
+
             <listitem>
               <para>Displays inventory UOM automatically when item number is
-              entered into <guilabel>Item Number</guilabel> field. The item description will also
-              appear.</para>
+              entered into <guilabel>Item Number</guilabel> field. The item
+              description will also appear.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Target Item</term>
+
       <listitem>
         <para>Specify the item you want to copy the routing to:</para>
+
         <variablelist>
           <varlistentry>
             <term>Item Number</term>
+
             <listitem>
               <para>Enter the item number of the item whose routing you wish
               to create by this copy.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>UOM</term>
+
             <listitem>
               <para>Displays inventory UOM automatically when item number is
-              entered into <guilabel>Item Number</guilabel> field. The item description will also
-              appear.</para>
+              entered into <guilabel>Item Number</guilabel> field. The item
+              description will also appear.</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>COPY</guibutton></term>
+
       <listitem>
         <para>Select this button to copy the routing of the source item to the
         target item.</para>
