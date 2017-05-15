@@ -5,42 +5,33 @@
 <section id="incidentPriorities">
   <title><indexterm significance="normal">
       <primary>crm</primary>
-
       <secondary>incident &amp; to-do priorities and</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>incidents &amp; to-do</primary>
-
       <secondary>priorities for</secondary>
     </indexterm>incident Priorities</title>
-
   <para>Priorities are used by the priority management system to prioritize
-  incidents and to-dos. When priorities are entered in the <guilabel>Master
-  Information</guilabel> section, these are then available for use when
+  incidents and to-dos. When priorities are entered in the <guimenuitem>Master
+  Information</guimenuitem> section, these are then available for use when
   entering or updating incidents and to-dos.</para>
-
   <tip>
     <para>You must manually create priorities if you want the ability to
     assign them to incidents or to-dos. If no priorities are defined, then
     none will be available when entering incidents or to-dos.</para>
   </tip>
-
-  <para>To access the master list of priorities, select the
-  <guimenuitem>Incident Priorities</guimenuitem> option. The following screen
-  will appear.</para>
-
+  <para>To access the master list of priorities, go to <guimenuitem>CRM &gt;
+  Setup &gt; Master Information &gt; Incident Priorities</guimenuitem>. The
+  following screen will appear.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/incidentPriorities.png"/>
+          <imagedata fileref="images/incidentPriorities.png" />
         </imageobject>
-
-        <caption>Priorities Master List</caption>
+        <caption>Priorities master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The List Priorities screen displays information on all existing
   priorities, including priority order, name, and description.</para>
-
   <xi:include href="incidentPriority.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

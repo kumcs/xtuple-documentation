@@ -5,52 +5,40 @@
 <section id="configureCRM">
   <title><indexterm significance="normal">
       <primary>configuration</primary>
-
       <secondary>of crm module</secondary>
     </indexterm>Configure CRM</title>
-
-  <para>To configure the <guimenu>CRM</guimenu> module, select the
-  <guimenuitem>Configure CRM</guimenuitem> option. The following screen will
+  <para>To configure the <guimenu>CRM</guimenu> module, go to <guimenuitem>CRM
+  &gt; Setup &gt; Configure &gt; CRM</guimenuitem>. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureCRM.png"/>
+          <imagedata fileref="images/configureCRM.png" />
         </imageobject>
-
-        <caption>Configure CRM Module</caption>
+        <caption>Configure CRM module</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When configuring the <guimenu>CRM</guimenu> module, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>crm accounts</primary>
-
           <secondary>numbering of</secondary>
         </indexterm>Account # Generation</term>
-
       <listitem>
         <para>Select one of the available CRM account number generation
         methods:</para>
-
         <variablelist>
           <varlistentry>
             <term>Manual</term>
-
             <listitem>
               <para>CRM account numbers must be entered manually whenever you
               create a new CRM account.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Automatic</term>
-
             <listitem>
               <para>CRM account numbers will be automatically incremented by 1
               each time a new CRM account is created. These
@@ -58,10 +46,8 @@
               read-only.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Automatic, Allow Override</term>
-
             <listitem>
               <para>CRM account numbers will be automatically generated and
               incremented, as under the <guilabel>Automatic</guilabel> option
@@ -70,10 +56,8 @@
               account creation.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Next #</term>
-
             <listitem>
               <para>Specify the next available CRM account number. The next
               CRM account created will use the number specified here. Leave
@@ -84,19 +68,15 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Incident # Generation</term>
-
       <listitem>
         <para>By default, incident numbers are generated automatically.
         However, you have the ability to specify the next available
         number.</para>
-
         <variablelist>
           <varlistentry>
             <term>Next #</term>
-
             <listitem>
               <para>Specify the next available incident number. The next
               incident created will use the number specified here.</para>
@@ -105,18 +85,14 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Use Projects</term>
-
       <listitem>
         <para>Select to enable project functionality. This option must be
         enabled for project accounting to be enabled.</para>
-
         <variablelist>
           <varlistentry role="xtprjaccnt">
             <term>Enable Project Accounting</term>
-
             <listitem>
               <para>Select to enable the features related to the project
               accounting package. When project accounting is enabled, all G/L
@@ -132,10 +108,8 @@
               filtered by project transaction.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="xtte">
             <term>Project Labor And Overhead</term>
-
             <listitem>
               <para>Enter a G/L account to be used when approving time sheets
               for employees who record time against projects. For this account
@@ -143,10 +117,8 @@
               employee record—and they must also not be a contractor.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Automatically create Projects for sales Orders</term>
-
             <listitem>
               <para>Select to create a project for every sales order when a
               new sales order is created.</para>
@@ -155,10 +127,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Post Opportunity Changes to the Change Log</term>
-
       <listitem>
         <para>Select to have the system automatically log changes made to
         opportunity records under the <guimenuitem>Comments</guimenuitem> tab
@@ -166,10 +136,8 @@
         opportunity changes will not be tracked automatically.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Incident Public checkbox</term>
-
       <listitem>
         <para>Select if you want to show the <guilabel>Public</guilabel>
         checkbox option on the Incidents screen. In not selected, the
@@ -181,10 +149,8 @@
         users.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Incidents Public by Default</term>
-
       <listitem>
         <para>If you are showing the <guilabel>Public</guilabel> checkbox on
         incidents, select this option to make incidents publicly viewable by
@@ -194,150 +160,125 @@
         screen.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Require SO/PO/WO assignment to Project</term>
-
       <listitem>
         <para>If selected, you will be required to link a project before
         saving sales orders, purchase orders, or work orders. If not selected,
         the project association won't be required at order entry.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Warning Period for Project Due Dates</term>
-
       <listitem>
         <para>Specify how far in advance you want to be notified of a
         project's approaching due date. The warning consists of a color-coded
         alert on the order activity by project report.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="xtconnect">
       <term>Default Incident Email Delivery Profile</term>
-
       <listitem>
         <para>Specify the default EDI email delivery profile you want to use
         when emailing incidents.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="xtconnect">
       <term>Email Delivery when Incident</term>
-
       <listitem>
         <para>Select the options below to trigger email notifications when
         incident events occur.</para>
-
         <variablelist>
           <varlistentry>
             <term>Created</term>
-
             <listitem>
               <para>When incident is created, email notification is
               sent.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Assigned</term>
-
             <listitem>
               <para>When user is assigned to incident, email notification is
               sent.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Status Changed</term>
-
             <listitem>
               <para>When status of an incident is changed, email notification
               is sent.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Updated</term>
-
             <listitem>
               <para>When incident is updated, email notification is
               sent.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Comments Added</term>
-
             <listitem>
               <para>When comments are added to an incident, email notification
               is sent.</para>
             </listitem>
           </varlistentry>
         </variablelist>
-
         <note>
           <para>The following tokens are supported in EDI profile for CRM
           incidents:</para>
-
           <itemizedlist>
             <listitem>
-              <para>&lt;/email1&gt; = incident owner email address</para>
+              <para><literal>&lt;/email1&gt;</literal> = incident owner email
+              address</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/email2&gt; = incident assignee email address</para>
+              <para><literal>&lt;/email2&gt;</literal> = incident assignee
+              email address</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/email3&gt; = incident contact email address</para>
+              <para><literal>&lt;/email3&gt;</literal> = incident contact
+              email address</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/description&gt; = incident description</para>
+              <para><literal>&lt;/description&gt;</literal> = incident
+              description</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/docnumber&gt; = incident number</para>
+              <para><literal>&lt;/docnumber&gt;</literal> = incident
+              number</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/doctype&gt; = "INCDT"</para>
+              <para><literal>&lt;/doctype&gt;</literal> = "INCDT"</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/docid&gt; = incident primary key id</para>
+              <para><literal>&lt;/docid&gt;</literal> = incident primary key
+              id</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/docbody&gt; = builds text of fields, notes and
-              history of incident record</para>
+              <para><literal>&lt;/docbody&gt;</literal> = builds text of
+              fields, notes and history of incident record</para>
             </listitem>
-
             <listitem>
-              <para>&lt;/comments&gt; = incident comments</para>
+              <para><literal>&lt;/comments&gt;</literal> = incident
+              comments</para>
             </listitem>
           </itemizedlist>
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Incident Status Colors</term>
-
       <listitem>
         <para>The incident color configuration option supports simple color
         names (e.g., red, blue, green, etc.), as well as the full range of
         hexadecimal codes (e.g., #FFA0A0, #FF50A8, etc.). Specify how you want
         incidents on the Incident workbench to appear according to their
         various statuses:</para>
-
         <variablelist>
           <varlistentry>
             <term>New</term>
-
             <listitem>
               <para>Specify the color for incidents whose status is
               <guilabel>New</guilabel>. The default color is set to white.
@@ -345,10 +286,8 @@
               be rendered all black.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Feedback</term>
-
             <listitem>
               <para>Specify the color for incidents whose status is
               <guilabel>Feedback</guilabel>. The default color is set to
@@ -356,10 +295,8 @@
               rows to be rendered all black.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Confirmed</term>
-
             <listitem>
               <para>Specify the color for incidents whose status is
               <guilabel>Confirmed</guilabel>. The default color is set to
@@ -367,10 +304,8 @@
               rows to be rendered all black.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Assigned</term>
-
             <listitem>
               <para>Specify the color for incidents whose status is
               <guilabel>Assigned</guilabel>. The default color is set to
@@ -378,10 +313,8 @@
               rows to be rendered all black.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Resolved</term>
-
             <listitem>
               <para>Specify the color for incidents whose status is
               <guilabel>Resolved</guilabel>. The default color is set to
@@ -389,10 +322,8 @@
               rows to be rendered all black.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Closed</term>
-
             <listitem>
               <para>Specify the color for incidents whose status is
               <guilabel>Closed</guilabel>. The default color is set to white.
@@ -403,10 +334,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Default Country for Addresses</term>
-
       <listitem>
         <para>Select if you want a default country (e.g., United States) to be
         used whenever new addresses are created. While a default address will
@@ -415,17 +344,14 @@
         country when entering addresses.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Enforce Valid Country Names</term>
-
       <listitem>
         <para>If selected, users will be required to select from a list of
         valid countries when creating or editing addresses. Once this box is
         checked and you save the configuration, it will be disabled and you
         cannot uncheck it. If not selected, users will be permitted to enter
         <emphasis>ad hoc</emphasis> country names.</para>
-
         <warning>
           <para>When you select this option, the application will warn you if
           it finds you have addresses with invalid country names. This
@@ -435,22 +361,19 @@
           which can be downloaded for free from the <ulink
           url="http://www.xtuple.com/xchange">xTuple xChange</ulink>.</para>
         </warning>
-
         <tip>
           <para>To learn more about editing the list of country names, please
-          see <xref linkend="countries"/>.</para>
+          see <xref linkend="countries" />.</para>
         </tip>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invalidCountries.png"/>
+          <imagedata fileref="images/invalidCountries.png" />
         </imageobject>
-
-        <caption>Invalid Countries Warning Message</caption>
+        <caption>Invalid Countries warning message</caption>
       </mediaobject>
     </screenshot></para>
 </section>
