@@ -5,25 +5,19 @@
 <section id="unpostedInvoices">
   <title><indexterm significance="normal">
       <primary>invoices</primary>
-
       <secondary>unposted list of</secondary>
     </indexterm>List Unposted Invoices</title>
-
   <para>To edit or post sales orders that have been selected for billing and
-  are ready to be invoiced, go to <guimenuitem>Accounting &gt; Accounts
-  Receivable &gt; Invoices &gt; Unposted Invoices</guimenuitem>. The following
-  screen will appear:</para>
-
+  are ready to be invoiced, go to <guimenuitem>Invoices &gt; Unposted
+  Invoices</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/unpostedInvoices.png"/>
         </imageobject>
-
         <caption>Unposted Invoices</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>Deleting an invoice effectively reverses the transaction which
     created it. In other words, when you delete an invoice the source sales
@@ -31,23 +25,19 @@
     list. From there, you have the ability to either A) cancel the billing
     selection or B) re-create the invoice.</para>
   </tip>
-
   <para>The Unposted Invoices list displays information on all invoices
   available for posting. Users with the appropriate privilege will also see
   the <guilabel>G/L Distribution Date</guilabel> column. To view the list of
   already-posted recurring invoices, see <xref
   linkend="dspRecurringInvoices"/>.</para>
-
   <para role="xtconnect"><note>
       <para>If the customer specified on the invoice has an EDI profile
       attached, you may encounter an EDI processing interface when printing
       invoices.</para>
     </note></para>
-
   <variablelist>
     <varlistentry>
       <term>Print Journal</term>
-
       <listitem>
         <para>Select to print the G/L series journal in addition to posting
         the invoices.</para>

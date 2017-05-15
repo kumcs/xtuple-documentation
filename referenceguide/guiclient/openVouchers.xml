@@ -5,26 +5,21 @@
 <section id="openVouchers">
   <title><indexterm significance="normal">
       <primary>vouchers</primary>
-
       <secondary>list of unposted</secondary>
     </indexterm>Unposted Vouchers</title>
-
   <para>Vouchers may be posted individually or in groups using the Unposted
   Vouchers screen. After they are posted, open vouchers may later be voided
   using the right-click menu on the Vendor History screen. To display unposted
-  vouchers, go to <guimenuitem>Accounting &gt; Accounts Payable &gt; Voucher
-  &gt; List Unposted</guimenuitem>. The following screen will appear:</para>
-
+  vouchers, go to <guimenuitem>Voucher &gt; List Unposted</guimenuitem>. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/openVouchers.png"/>
         </imageobject>
-
         <caption>List Unposted Vouchers</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>Actual costs for purchased items will be automatically updated when
     vouchers are posted if there are differences between current actual costs
@@ -33,31 +28,25 @@
     recognized as standard costs, actual costs must be posted to
     standard.</para>
   </note>
-
   <para>The Vouchers screen displays information on all unposted vouchers,
   including voucher number, purchase order number, vendor number/vendor name,
   vendor invoice number, and distribution date. Users with the appropriate
   privilege will also see the <guilabel>G/L Distribution Date</guilabel>
   column.</para>
-
   <tip>
     <para>You may select multiple vouchers for posting by highlighting them
     using your mouse—or a combination of your mouse and either the
     <guibutton>SHIFT</guibutton> or <guibutton>CTRL</guibutton> key.</para>
   </tip>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>NEW MISC.</guibutton></term>
-
       <listitem>
         <para>Opens screen for creating a new miscellaneous voucher.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>If you have a purchase order voucher that was corrupted by, for
     example, a sudden power outage, you can clear the record by running the
@@ -65,11 +54,9 @@
     record and allow you to voucher the purchase order with a fresh
     voucher.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>POST</guibutton></term>
-
       <listitem id="openVouchersPOST">
         <para>Highlight one—or multiple—vouchers, then select this button to
         post the selected voucher(s). By default, vouchers post to the general
@@ -81,10 +68,8 @@
         and also batches of vouchers from this screen.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Print Journal</term>
-
       <listitem>
         <para>Select to print the G/L series journal in addition to posting
         the vouchers.</para>
