@@ -5,64 +5,53 @@
 <section id="dspInventoryHistory">
   <title><indexterm significance="normal">
       <primary>inventory history</primary>
-
       <secondary>reporting for</secondary>
     </indexterm>Inventory History</title>
-
   <para>The Inventory History screen provides the complete record of all
   inventory movement in the system. As a result, this is the perfect screen
   for analyzing and troubleshooting inventory issues. And the search filter
   gives you multiple ways to narrow your searches down so you can quickly find
   the records you are looking for.</para>
-
   <para>Here are some tips for using this screen:</para>
-
   <itemizedlist>
     <listitem>
       <para>If a line displays in orange, this means the item site in question
       is frozen. Accurate quantity on hand (QOH) information will not be shown
       until the item site is thawed.</para>
     </listitem>
-
     <listitem>
       <para>You can narrow your searches by transaction type, date range, and
       order type to simplify the process of locating records.</para>
     </listitem>
-
     <listitem>
       <para>The system prefixes order numbers with letters indicating the
       order type. For example, work orders are prefixed with WO, purchase
       orders with PO, and sales orders with SO. These letters are for display
       purposes only and are not considered part of the order number.</para>
     </listitem>
-
     <listitem>
       <para>Use the right-click menu to examine the details of any transaction
       in the list.</para>
     </listitem>
-
     <listitem>
       <para>View ABC class information by enabling the <guilabel>ABC
       Class</guilabel> column header.</para>
     </listitem>
   </itemizedlist>
-
-  <para>The following screenshot shows the Inventory History screen:</para>
-
+  <para>To view the Inventory History screen, go to <guimenuitem>Inventory
+  &gt; Reports &gt; History</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspInventoryHistory.png"/>
+          <imagedata fileref="images/dspInventoryHistory.png" />
         </imageobject>
-
         <caption>Inventory History</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The default filter on the Inventory History screen shows all inventory
   transactions for the current day. You can build your own search criteria
   using the following options:</para>
-
   <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
