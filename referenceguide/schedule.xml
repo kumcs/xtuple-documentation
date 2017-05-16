@@ -84,7 +84,6 @@
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
     <section>
       <title>Run MRP</title>
-      <para><guimenuitem>Run MRP</guimenuitem> section.</para>
       <xi:include href="guiclient/createPlannedOrdersByPlannerCode.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -134,7 +133,6 @@
       </itemizedlist></para>
     <section role="manufacturing">
       <title>Update</title>
-      <para>Update buffer status section.</para>
       <xi:include href="guiclient/createBufferStatusByPlannerCode.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -144,7 +142,6 @@
     </section>
     <section>
       <title>Inventory</title>
-      <para role="manufacturing">Inventory buffer status section.</para>
       <xi:include href="guiclient/dspInventoryBufferStatusByPlannerCode.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -160,7 +157,6 @@
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
     <section>
       <title>Work Order</title>
-      <para role="manufacturing">Work order buffer status section.</para>
       <xi:include href="guiclient/dspWoBufferStatusByPlannerCode.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -180,7 +176,6 @@
   </section>
   <section role="manufacturing">
     <title>Capacity Planning</title>
-    <para>Capacity planning section.</para>
     <xi:include href="guiclient/dspTimePhasedCapacityByWorkCenter.xml"
                 xpointer="element(/1)"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -192,7 +187,6 @@
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
     <section>
       <title>Time-Phased Production</title>
-      <para>Time-phased production section.</para>
       <xi:include href="guiclient/dspTimePhasedProductionByPlannerCode.xml"
                   xpointer="element(dspTimePhasedProductionByPlannerCode)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
@@ -209,8 +203,6 @@
   </section>
   <section>
     <title>Reports</title>
-    <para role="standard">This section includes the various schedule
-    reports.</para>
     <xi:include href="guiclient/dspPlannedOrders.xml" xpointer="element(/1)"
                 xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/dspRunningAvailability.xml"
@@ -262,15 +254,11 @@
       </itemizedlist></para>
     <section>
       <title>Configure</title>
-      <para role="standard">This section covers the configuration of the
-      <guimenu>Schedule</guimenu> module.</para>
       <xi:include href="guiclient/configureMS.xml" xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
     <section>
       <title>Master Information</title>
-      <para role="standard">This section covers the master information of the
-      <guimenu>Schedule</guimenu> module.</para>
       <xi:include href="guiclient/plannerCodes.xml" xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/whseCalendars.xml" xpointer="element(/1)"
