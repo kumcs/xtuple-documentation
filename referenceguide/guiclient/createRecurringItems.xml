@@ -5,22 +5,17 @@
 <section id="createRecurringItems">
   <title><indexterm significance="normal">
       <primary>incidents</primary>
-
       <secondary>create recurring</secondary>
     </indexterm><indexterm significance="normal">
       <primary>to-dos</primary>
-
       <secondary>create recurring</secondary>
     </indexterm><indexterm significance="normal">
       <primary>projects</primary>
-
       <secondary>create recurring</secondary>
     </indexterm><indexterm significance="normal">
       <primary>invoices</primary>
-
       <secondary>create recurring</secondary>
     </indexterm>Create Recurring Items</title>
-
   <para>Several document types may be marked as recurring: invoices,
   incidents, to-do items, and projects. Recurring means these documents have
   the capacity to be recreated over and over again on a periodic basis. To
@@ -28,7 +23,6 @@
   When the utility is run, copies will be created of any documents marked as
   recurring. The frequency of the recurrence is defined on the parent document
   itself.</para>
-
   <tip>
     <para>Once the recurring flag is set on a parent document, all subsequent
     copies will be marked in the database as children of the original parent
@@ -37,28 +31,21 @@
     changes there. Frequency changes made at the parent level will propagate
     to the child level.</para>
   </tip>
-
-  <para>To create recurring items, go to <guimenuitem>CRM &gt; Utilities &gt;
-  Create Recurring Items</guimenuitem>. The following screen will
-  appear:</para>
-
+  <para>To create recurring items, go to <guimenuitem>Utilities &gt; Create
+  Recurring Items</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/createRecurringItems.png"/>
+          <imagedata fileref="images/createRecurringItems.png" />
         </imageobject>
-
         <caption>Create New G/L Account Number</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating recurring items, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Invoices</term>
-
       <listitem>
         <para>Select to create recurring invoices for any invoices marked as
         recurring. The frequency of the recurrence is defined on the parent
@@ -67,13 +54,11 @@
         number of look-ahead days. The look ahead days, or buffer days, are
         specified in the <guimenu>Accounting</guimenu> module configuration.
         You can read more about recurring invoice buffer days here: <xref
-        linkend="configureGLRecurInvBuffer"/>.</para>
+        linkend="configureGLRecurInvBuffer" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vouchers</term>
-
       <listitem>
         <para>Select to create recurring vouchers for any miscellaneous
         vouchers marked as recurring. The frequency of the recurrence is
@@ -82,43 +67,35 @@
         within the specified number of look-ahead days. The look ahead days,
         or buffer days, are specified in the <guimenu>Accounting</guimenu>
         module configuration. You can read more about recurring voucher buffer
-        days here: <xref linkend="configureGLRecurVoBuffer"/>.</para>
+        days here: <xref linkend="configureGLRecurVoBuffer" />.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Incidents</term>
-
       <listitem>
         <para>Select to create recurring incidents for any incidents marked as
         recurring. The frequency of the recurrence is defined on the parent
         incident.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>To-Do Items</term>
-
       <listitem>
         <para>Select to create recurring to-do items for any to-do items
         marked as recurring. The frequency of the recurrence is defined on the
         parent to-do item.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Projects</term>
-
       <listitem>
         <para>Select to create recurring projects for any projects marked as
         recurring. The frequency of the recurrence is defined on the parent
         project.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="xtconnect">
       <term>xTuple Connect jobs</term>
-
       <listitem>
         <para>Select to create recurring jobs for any xTuple Connect job
         marked as recurring. The frequency of the recurrence is defined on the
@@ -126,13 +103,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE</guibutton></term>
-
       <listitem>
         <para>Select to create recurring items for the selected document
         types.</para>
