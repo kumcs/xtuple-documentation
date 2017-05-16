@@ -4,376 +4,272 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <chapter id="products">
   <title>Products Module</title>
-
   <section id="Section520254">
     <title>Reports</title>
-
     <section id="boms">
       <title>Bills of Materials</title>
-
       <xi:include href="guiclient/dspSingleLevelBOM.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/dspIndentedBOM.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/dspSummarizedBOM.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/dspSequencedBOM.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
-
     <section>
       <title>Where Used</title>
-
       <para><guimenuitem>Products &gt; Reports &gt;Where Used</guimenuitem>
       section.</para>
-
       <xi:include href="guiclient/dspSingleLevelWhereUsed.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/dspIndentedWhereUsed.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
-
     <xi:include href="guiclient/dspPendingBOMChanges.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/dspOperationsByWorkCenter.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/dspStandardOperationsByWorkCenter.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <section>
       <title>Capacity UOMs</title>
-
       <para><guimenuitem>Products &gt; Reports &gt; Capacity
       UOMs</guimenuitem> section.</para>
-
       <xi:include href="guiclient/dspCapacityUOMsByProductCategory.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/dspCapacityUOMsByClassCode.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
   </section>
-
   <section id="Section518881">
     <title>Item</title>
-
     <para>The <guimenu>Products &gt; Item</guimenu> section covers item
     information and sorting in the ERP. The vendor catalog and item options
     are focused on in this section as well.</para>
-
     <xi:include href="guiclient/item.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/items.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/copyItem.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/itemAvailabilityWorkbench.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/itemGroups.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/itemImages.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/catalogList.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/catCostList.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/catComms.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
   </section>
-
   <section id="Section519278">
     <title><indexterm significance="normal">
         <primary>BOM</primary>
-
         <see>bills of materials</see>
       </indexterm>Bill of Materials</title>
-
     <para>A bill of materials (BOM) is a list of component parts and specified
     quantities required to manufacture an item. In this section we describe
     the features of bills of materials.</para>
-
     <xi:include href="guiclient/bom.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/bomList.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/copyBOM.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/massReplaceComponent.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/massExpireComponent.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
   </section>
-
   <section id="Section519479" role="manufacturing">
     <title>Routing</title>
-
     <para>A routing is a sequential list of operations required to manufacture
     an item. In this section we describe the features of routings.</para>
-
     <xi:include href="guiclient/boo.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/booList.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/copyBOO.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
   </section>
-
   <section id="Section519671" role="manufacturing">
     <title>Breeder Bill of Materials</title>
-
     <para>A breeder item is an item from which other items—or by-products—are
     produced. In this section we describe the features of breeder bills of
     materials.</para>
-
     <xi:include href="guiclient/bbom.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/bboms.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
   </section>
-
   <section id="Section519762">
     <title>Costing</title>
-
     <para>The maintenance and posting of costs associated with items occurs
     within the <guimenuitem>Products &gt; Costing</guimenuitem>
     section.</para>
-
     <xi:include href="guiclient/maintainItemCosts.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <section>
       <title>Update Actual Costs</title>
-
       <para><guimenuitem>Products &gt; Costing &gt; Update Actual
       Costs</guimenuitem> section.</para>
-
       <xi:include href="guiclient/updateActualCostsByItem.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/updateActualCostsByClassCode.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
-
     <section>
       <title>Post Actual Costs</title>
-
       <para><guimenuitem>Products &gt; Costing &gt; Post Actual
       Costs</guimenuitem> section.</para>
-
       <xi:include href="guiclient/postCostsByItem.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/postCostsByClassCode.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
-
     <section>
       <title>Post Standard Costs</title>
-
       <para><guimenuitem>Products &gt; Costing &gt; Post Standard
       Costs</guimenuitem> section.</para>
-
       <xi:include href="guiclient/postStandCostsByItem.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/postStandCostsByClassCode.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
-
     <section id="Section519980">
       <title>Reports</title>
-
       <para><guimenuitem>Products &gt; Costing &gt; Reports</guimenuitem> are
       found in this section.</para>
-
       <section>
         <title>Costed BOM</title>
-
         <para><guimenuitem>Products &gt; Costing &gt; Reports &gt; Costing
         BOM</guimenuitem>.</para>
-
         <xi:include href="guiclient/dspCostedSingleLevelBOM.xml"
                     xpointer="element(/1)"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
         <xi:include href="guiclient/dspCostedIndentedBOM.xml"
                     xpointer="element(/1)"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
         <xi:include href="guiclient/dspCostedSummarizedBOM.xml"
                     xpointer="element(/1)"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
       </section>
-
       <section>
         <title>Item Costs</title>
-
         <para><guimenuitem>Products &gt; Costing &gt; Report &gt; Item
         Costs</guimenuitem>.</para>
-
         <xi:include href="guiclient/dspItemCostsByClassCode.xml"
                     xpointer="element(/1)"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
         <xi:include href="guiclient/dspItemCostSummary.xml"
                     xpointer="element(/1)"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
         <xi:include href="guiclient/dspItemCostHistory.xml"
                     xpointer="element(/1)"
-                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                    xmlns:xi="http://www.w3.org/2001/XInclude" />
       </section>
     </section>
-
     <xi:include href="guiclient/costingElements.xml" xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
   </section>
-
   <xi:include href="guiclient/lotSerial.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <section id="Section662694">
     <title><indexterm significance="normal">
         <primary>utilities</primary>
-
         <secondary>in products module</secondary>
       </indexterm>Utilities</title>
-
     <para><guimenuitem>Products &gt; Utilities</guimenuitem> section.</para>
-
     <xi:include href="guiclient/dspUnusedPurchasedItems.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/dspUndefinedManufacturedItems.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/dspInvalidBillsOfMaterials.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/reassignClassCodeByClassCode.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
     <xi:include href="guiclient/reassignProductCategoryByProductCategory.xml"
                 xpointer="element(/1)"
-                xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                xmlns:xi="http://www.w3.org/2001/XInclude" />
   </section>
-
   <section>
     <title>Setup</title>
-
     <para>This is the setup section for the <guimenu>Products</guimenu>
     module. The following <guimenu>Product</guimenu> module setup tasks are
     described in this section:</para>
-
     <itemizedlist>
       <listitem>
         <para>Configuration</para>
       </listitem>
-
       <listitem>
         <para>Master information</para>
       </listitem>
     </itemizedlist>
-
     <section>
       <title>Configure</title>
-
-      <para><guimenuitem>Products &gt; Setup &gt; Configuration</guimenuitem>
-      section.</para>
-
+      <para><guimenu>Products</guimenu> module
+      <guimenuitem>Configuration</guimenuitem> section.</para>
       <xi:include href="guiclient/configurePD.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
-
     <section id="Section518577">
       <title><indexterm significance="normal">
           <primary>master information</primary>
-
           <secondary>for products module</secondary>
         </indexterm>Master Information</title>
-
-      <para><guimenuitem>Products &gt; Setup &gt; Master
+      <para><guimenu>Products</guimenu> module <guimenuitem>Master
       Information</guimenuitem> section.</para>
-
       <xi:include href="guiclient/catConfigs.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/characteristics.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/classCodes.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/freightClasses.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/laborRates.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/lotSerialSequences.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/operationTypes.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/productCategories.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/shifts.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/standardOperations.xml"
                   xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/uoms.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include href="guiclient/workCenters.xml" xpointer="element(/1)"
-                  xmlns:xi="http://www.w3.org/2001/XInclude"/>
+                  xmlns:xi="http://www.w3.org/2001/XInclude" />
     </section>
   </section>
 </chapter>
