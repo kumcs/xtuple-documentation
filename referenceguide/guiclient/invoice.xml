@@ -16,14 +16,15 @@
   miscellaneous invoices—that is, invoices which are not tied to sales orders.
   For example, you might use a miscellaneous invoice to bill for non-inventory
   items you have sold. To create a miscellaneous invoice, go to
-  <guimenuitem>Invoice &gt; New</guimenuitem>. The following screen will
+  <guimenuitem>Accounting &gt; Accounts Receivable &gt; Invoice
+  &gt;</guimenuitem><guimenuitem> New</guimenuitem>. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invoice.png"/>
+          <imagedata fileref="images/invoice.png" />
         </imageobject>
-        <caption>Create New Invoice</caption>
+        <caption>Create new Invoice</caption>
       </mediaobject>
     </screenshot></para>
   <para>When creating an invoice, you are presented with the following
@@ -242,7 +243,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invoice_lineItems.png"/>
+          <imagedata fileref="images/invoice_lineItems.png" />
         </imageobject>
         <caption>Miscellaneous Invoice Line Items</caption>
       </mediaobject>
@@ -353,7 +354,7 @@
   </variablelist>
   <xi:include href="../widgets/allocateARCreditMemo.xml"
               xpointer="allocateARCMs"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>Invoice characteristics are user-defined definitions which may be used
   to provide additional layers of description about invoices. These
   descriptions are static and not processed by the system, but are useful for
@@ -362,13 +363,13 @@
   screen will appear:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/invoice_characteristics.png"/>
+      <imagedata fileref="images/invoice_characteristics.png" />
     </imageobject>
     <caption><para>Invoice Characteristics</para></caption>
   </mediaobject>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To add notes to an invoice, select the
   <guimenuitem>Notes</guimenuitem> tab at the top of the Invoice screen. If
   the invoice was created from a sales order, any sales order notes will be
@@ -376,7 +377,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invoice_notes.png"/>
+          <imagedata fileref="images/invoice_notes.png" />
         </imageobject>
         <caption>Invoice Notes</caption>
       </mediaobject>
@@ -401,32 +402,32 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/invoice_documentsTab.png"/>
+          <imagedata fileref="images/invoice_documentsTab.png" />
         </imageobject>
         <caption>Invoice Documents</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To create recurring invoices, select the
   <guimenuitem>Advanced</guimenuitem> tab. The following screen will
   appear:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/invoice_advanced.png"/>
+        <imagedata fileref="images/invoice_advanced.png" />
       </imageobject>
       <caption>Recurring Invoices</caption>
     </mediaobject>
   </screenshot>
   <xi:include href="../widgets/recurrencewidget.xml"
               xpointer="recurrenceWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>To view email associated with the invoice, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="invoiceItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>
