@@ -15,7 +15,7 @@
   or specified times—and the run time recorded will vary depending on the
   option chosen. The standard times are drawn from the routing item
   definitions. By contrast, the specified times are based on the users' clock
-  in/out times (i.e., "effort"). The specified effort for an operation may be
+  in/out times (i.e., effort). The specified effort for an operation may be
   complicated by the fact that users can be clocked into more than one work
   order at a time. In this case, the users' effort will be spread across the
   various work orders they have clocked into.</para>
@@ -28,12 +28,13 @@
   <para>Some users may be Shop Floor workbench only users, meaning the only
   screen they see when they log in to xTuple is the Shop Floor workbench.
   These users do not require any privileges to run the Shop Floor workbench.
-  The ability to post production or post operations is "baked into" the Shop
-  Floor workbench only user functionality.</para>
+  The ability to post production or post operations is <emphasis>baked
+  into</emphasis> the Shop Floor workbench only user functionality.</para>
 
-  <para>However, if your site is configured to use the "post production" style
-  for the Shop Floor workbench, the following privileges may be used to
-  enhance the capabilities of Shop Floor workbench users:</para>
+  <para>However, if your site is configured to use the post
+  <guilabel>Production</guilabel> style for the Shop Floor workbench, the
+  following privileges may be used to enhance the capabilities of Shop Floor
+  workbench users:</para>
 
   <itemizedlist>
     <listitem>
@@ -49,8 +50,9 @@
     </listitem>
   </itemizedlist>
 
-  <para>By contrast, if you are configured to use the "post operations" style,
-  the following privileges are available:</para>
+  <para>By contrast, if you are configured to use the post
+  <guilabel>Operations</guilabel> style, the following privileges are
+  available:</para>
 
   <itemizedlist>
     <listitem>
@@ -219,8 +221,8 @@
         <para>Select to clock-in to the specified work order. When a user
         clocks-in to a work order, the run-time clock starts running from that
         point. The clock stops when a user clocks-out of the work order. The
-        elapsed time—or "effort"—is used for labor reporting purposes. Users
-        may only clock-in to work orders they are not already clocked-in to.
+        elapsed time—or effort—is used for labor reporting purposes. Users may
+        only clock-in to work orders they are not already clocked-in to.
         However, users may clock-in to and clock-out of the same work order as
         many times as necessary. Each clock-in starts the run-time time clock;
         each clock-out stops it.</para>

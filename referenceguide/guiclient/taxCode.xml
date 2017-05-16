@@ -5,37 +5,48 @@
 <section id="taxCode">
   <title><indexterm significance="normal">
       <primary>tax codes</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Tax Code</title>
+
   <para>To create a new tax code, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxCode.png" />
+          <imagedata fileref="images/taxCode.png"/>
         </imageobject>
+
         <caption>Create new Tax Code</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new tax code, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Code</term>
+
       <listitem>
         <para>Enter an identifying code for the tax code.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Enter a description to identify the tax code.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Account</term>
+
       <listitem>
         <para>Specify a valid general ledger account. This is a liability
         account. It will be credited when invoices are posted and debited when
@@ -48,15 +59,19 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Tax Class</term>
+
       <listitem>
         <para>Select a valid tax class.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Calculation basis on</term>
+
       <listitem>
         <para>Select a valid calculation basis. This list includes
         <guilabel>Base Price</guilabel> and all other tax codes that share the
@@ -66,16 +81,19 @@
         any applicable cumulative taxes. When a tax code is selected, then the
         tax code will be calculated against the derived amount from the
         referenced tax code. This is a method used for defining nested taxes
-        or "a tax on a tax."</para>
+        or <emphasis>a tax on a tax</emphasis>.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax Authority</term>
+
       <listitem>
         <para>Select a valid tax authority. This selection is required if you
         want to generate tax returns for a specified tax authority. The link
         between tax codes and tax authorities is the key driver behind the tax
         return report.</para>
+
         <note>
           <para>For transaction information to be included in the tax return
           report, the tax authority must be linked to one or more tax
@@ -83,24 +101,30 @@
         </note>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Auto Apply to Memos</term>
+
       <listitem>
         <para>Select if you want the tax code rate to be automatically applied
         to miscellaneous credit/debit memos. This feature is designed
         primarily to support value added tax (VAT) scenarios. If this option
         is not selected, tax will not be calculated automatically for
         memos.</para>
+
         <variablelist>
           <varlistentry>
             <term>A/P Memos</term>
+
             <listitem>
               <para>Select to have the tax code rate automatically applied to
               miscellaneous payables credit/debit memos.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>A/R Memos</term>
+
             <listitem>
               <para>Select to have the tax code rate automatically applied to
               miscellaneous receivables credit/debit memos.</para>
@@ -110,26 +134,34 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>When defining or maintaining tax code rates, you are presented with
   the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>rates</primary>
+
           <secondary>for taxes</secondary>
         </indexterm><indexterm significance="normal">
           <primary>tax codes</primary>
+
           <secondary>rates for</secondary>
         </indexterm>Rates</term>
+
       <listitem>
         <para>Display includes rates for the specified tax code.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>EXPIRE</guibutton></term>
+
       <listitem>
         <para>Highlight a tax code rate and then select this button to expire
         the rate. The effectivity end date will be changed to the current
@@ -137,49 +169,64 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To <indexterm significance="normal">
       <primary>tax codes</primary>
+
       <secondary>creating rates in</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>rates</primary>
+
       <secondary>creating new in tax code</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>tax code rates</primary>
+
       <secondary>creating new</secondary>
     </indexterm>create a new tax code rate, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxCode_rate.png" />
+          <imagedata fileref="images/taxCode_rate.png"/>
         </imageobject>
+
         <caption>Create new Tax Code Rate</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new tax code rate, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Effectivity Start Date</term>
+
       <listitem>
         <para>Enter the date that this tax code rate becomes effective.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Effectivity End Date</term>
+
       <listitem>
         <para>Enter the date that this tax code rate is no longer
         effective.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Percentage</term>
+
       <listitem>
         <para>Enter the tax rate as a percentage.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Amount</term>
+
       <listitem>
         <para>Enter the additional flat rate amount.</para>
       </listitem>
