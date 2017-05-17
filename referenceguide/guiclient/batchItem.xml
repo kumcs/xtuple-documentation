@@ -4,43 +4,33 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="batchItem">
   <title>Scheduled Job</title>
-
   <para>To edit an xTuple Connect job, select the <guibutton>EDIT</guibutton>
   button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/batchItem.png"/>
+          <imagedata fileref="images/batchItem.png" />
         </imageobject>
-
         <caption>Scheduled Job</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When editing an xTuple Connect job, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Submitted by</term>
-
       <listitem>
         <para>Displays the name of the user who submitted the job.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Submitted on</term>
-
       <listitem>
         <para>Displays the date and time when the job was submitted.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Email To</term>
-
       <listitem>
         <para>Displays the email address of the person who will receive the
         email or job results once the scheduled action is run. Send to
@@ -48,58 +38,46 @@
         address.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Action</term>
-
       <listitem>
         <para>Displays the type of action to be performed when the job is
         run.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Parameter</term>
-
       <listitem>
         <para>Displays an additional piece of information about the action, if
         relevant. For example, if the action is <emphasis>RunReport</emphasis>
         then the parameter is the name of the report to run.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Scheduled</term>
-
       <listitem>
         <para>Specify a date in the first field using a standard date format.
         Use the arrows in the second field to specify a time of day.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Started</term>
-
       <listitem>
         <para>Displays the date and time when processing of the job
         began.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Completed</term>
-
       <listitem>
         <para>Displays the date and time when processing of the job was
         completed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="../widgets/recurrencewidget.xml"
               xpointer="recurrenceWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>In addition to the single parameter described above, individual jobs
   usually require additional details to execute successfully. For example the
   user might have requested that a report be run showing information about a
@@ -108,88 +86,69 @@
   the user selected. To see these details, select the
   <guimenuitem>Parameters</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/batchItem_parameterList.png"/>
+          <imagedata fileref="images/batchItem_parameterList.png" />
         </imageobject>
-
         <caption><para>Parameter details passed to a Scheduled
         Job</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <para>To review the details of the email notification related to a scheduled
   job, select the <guimenuitem>Email Details</guimenuitem> tab. The following
   screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/batchItem_emailTab.png"/>
+          <imagedata fileref="images/batchItem_emailTab.png" />
         </imageobject>
-
-        <caption><para>Parameter details passed to a Scheduled
+        <caption><para>Email Details passed to a Scheduled
         Job</para></caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>Email details can be manually changed on this screen. However, if
     you find yourself making changes frequently, you may want to consider
     updating your EDI profile. That way routine changes will become part of
     the template.</para>
   </tip>
-
   <para>When reviewing the details of an email notification, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>From</term>
-
       <listitem>
         <para>Displays the email address the email is being sent from.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Cc:</term>
-
       <listitem>
         <para>Displays any email addresses being copied on the email.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Reply To:</term>
-
       <listitem>
         <para>Displays the reply-to email address.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Bcc:</term>
-
       <listitem>
         <para>Displays any email addresses being blind copied on the
         email.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Subject</term>
-
       <listitem>
         <para>Displays the subject line of the email</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Email</term>
-
       <listitem>
         <para>Displays the contents of the email.</para>
       </listitem>
