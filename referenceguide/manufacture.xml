@@ -227,9 +227,6 @@
   <section>
     <title>Forms</title>
 
-    <para><guimenu>Manufacturing</guimenu> module
-    <guimenuitem>Forms</guimenuitem> section.</para>
-
     <xi:include href="guiclient/printWoTraveler.xml" xpointer="element(/1)"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
 
@@ -250,8 +247,6 @@
   <section id="manufactureReports">
     <title>Reports</title>
 
-    <para>Manufacturing reports are contained in this section.</para>
-
     <xi:include href="guiclient/manufacturingDashboard.xml"
                 xpointer="element(/1)"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -261,9 +256,6 @@
 
     <section>
       <title>Work Order Status</title>
-
-      <para>This section includes the various work order buffer status
-      reports.</para>
 
       <xi:include href="guiclient/dspWoBufferStatusByPlannerCode.xml"
                   xpointer="element(/1)"
@@ -280,9 +272,6 @@
 
     <section>
       <title>Material Requirements</title>
-
-      <para>This section includes various work order material requirements
-      reports.</para>
 
       <xi:include href="guiclient/dspWoMaterialsByWorkOrder.xml"
                   xpointer="element(/1)"
@@ -304,9 +293,6 @@
     <section role="manufacturing">
       <title>Operations</title>
 
-      <para>This section includes various work order operations
-      reports.</para>
-
       <xi:include href="guiclient/dspWoOperationsByWorkCenter.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -323,8 +309,6 @@
     <section role="manufacturing">
       <title>Production Time Clock</title>
 
-      <para>This section includes production time clock reports.</para>
-
       <xi:include href="guiclient/dspWoEffortByUser.xml"
                   xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -336,8 +320,6 @@
 
     <section>
       <title>History</title>
-
-      <para>This section covers various manufacturing history reports.</para>
 
       <xi:include href="guiclient/dspWoHistoryByClassCode.xml"
                   xpointer="element(/1)"
@@ -357,9 +339,6 @@
 
     <section>
       <title>Material Usage Variance</title>
-
-      <para>This section includes the various material usage variance
-      reports.</para>
 
       <xi:include href="guiclient/dspMaterialUsageVarianceByWarehouse.xml"
                   xpointer="element(/1)"
@@ -384,8 +363,6 @@
 
     <section role="manufacturing">
       <title>Labor Variance</title>
-
-      <para>This section includes the various labor variance reports.</para>
 
       <xi:include href="guiclient/dspLaborVarianceByWorkCenter.xml"
                   xpointer="element(/1)"
@@ -412,9 +389,6 @@
   <section>
     <title>Utilities</title>
 
-    <para><guimenu>Manufacturing</guimenu> module
-    <guimenuitem>Utilities</guimenuitem> section.</para>
-
     <xi:include href="guiclient/purgeClosedWorkOrders.xml"
                 xpointer="element(/1)"
                 xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -423,10 +397,9 @@
   <section>
     <title>Setup</title>
 
-    <para>This is the <guimenuitem>Setup</guimenuitem> section for the
-    <guimenu>Manufacture</guimenu> module. The following
-    <guimenu>Manufacture</guimenu> module setup tasks are described in this
-    section:</para>
+    <para>This is the setup section for the <guimenu>Manufacture</guimenu>
+    module. The following <guimenu>Manufacture</guimenu> module setup tasks
+    are described in this section:</para>
 
     <itemizedlist>
       <listitem>
@@ -436,9 +409,6 @@
 
     <section>
       <title>Configure</title>
-
-      <para>This section includes configuring the
-      <guimenu>Manufacture</guimenu> module.</para>
 
       <xi:include href="guiclient/configureWO.xml" xpointer="element(/1)"
                   xmlns:xi="http://www.w3.org/2001/XInclude"/>
