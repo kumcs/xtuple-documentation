@@ -5,23 +5,30 @@
 <section id="voucher">
   <title><indexterm significance="normal">
       <primary>vouchers</primary>
+
       <secondary>creating new</secondary>
     </indexterm>Enter New Voucher</title>
+
   <para>To enter a new voucher, go to <guimenuitem>Voucher &gt;
   New</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/voucher.png" />
+          <imagedata fileref="images/voucher.png"/>
         </imageobject>
-        <caption>Enter new Voucher</caption>
+
+        <caption>Voucher</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When entering a new voucher, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Voucher #</term>
+
       <listitem>
         <para>Next available voucher number will automatically display, unless
         your system requires you to enter voucher numbers manually. Default
@@ -29,88 +36,112 @@
         the system level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order #</term>
+
       <listitem>
         <para>Enter the purchase order number of the purchase order you want
         to create a voucher for.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor</term>
+
       <listitem>
         <para>The name and address of the vendor associated with the specified
         purchase order will display here.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>vouchers</primary>
+
           <secondary>distributing quantities to</secondary>
         </indexterm>Amount to Distribute</term>
+
       <listitem>
         <para>Specify the dollar amount you intend to distribute to the vendor
         for the specified purchase order. You may enter an amount greater than
         the amount due on the purchase order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Freight</term>
+
       <listitem>
         <para>Enter the amount of any freight charges that are not being
         recorded at the line item level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Freight Exp. Category</term>
+
       <listitem>
         <para>Specify the expense category you want to assign header level
         freight charges to, if you are tracking freight expenses at the line
         item level.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Amount Distributed</term>
+
       <listitem>
         <para>Displays sum of all line item distributions for specified
         purchase order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Balance</term>
+
       <listitem>
         <para>Displays the difference between amount to distribute and amount
         distributed.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Invoice Date</term>
+
       <listitem>
         <para>Enter an invoice date for the voucher. The invoice date is used
         for determining the due date, based on the specified terms.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Distribution Date</term>
+
       <listitem>
         <para>Enter the date of the current distribution. When the voucher is
         posted, this is the date when the posting will be recorded in the
         general ledger.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due Date</term>
+
       <listitem>
         <para>Enter the date payment is due to the vendor. The due date is
         derived when the specified terms are added to the invoice date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Terms</term>
+
       <listitem>
         <para>Specify the billing terms for the voucher. By default, the
         billing terms will be transferred from the original purchase order.
         You may select alternate terms on the voucher header.</para>
+
         <tip>
           <para>You are given the opportunity to apply any billing terms
           discounts when selecting a posted voucher for payment.</para>
@@ -118,142 +149,179 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Vendor Invoice #</term>
+
       <listitem>
         <para>Enter the vendor invoice number associated with the specified
         purchase order. The system will issue a warning if you attempt to
         enter an invoice number which has already been used.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Reference</term>
+
       <listitem>
         <para>Use this field to enter any notation or reference required for
         further identification.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax Zone</term>
+
       <listitem>
         <para>Specify the tax zone which has jurisdiction over the
         transaction. By default, the tax zone specified on the selected
         purchase order will be used.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax</term>
+
       <listitem>
         <para>Displays the total amount of tax to be charged on the voucher.
         To get a detailed view of the tax calculation, click on the
         <guibutton>Tax</guibutton> link using your mouse.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Flag for 1099</term>
+
       <listitem>
         <para>Select to flag transaction for form 1099 tax reporting. This is
         informational only and does not impact tax calculations.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line Items</term>
+
       <listitem>
         <para>Display lists line items associated with the specified purchase
         order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>DISTRIBUTIONS</guibutton></term>
+
       <listitem>
         <para>Highlight a purchase order line item and then select this button
         to reach the Voucher Item Distribution screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>DISTRIBUTE LINE</guibutton></term>
+
       <listitem>
         <para>Highlight a purchase order line item(s) and then select this
         button to automatically distribute all quantities and amounts for the
         selected voucher item(s).</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>CLEAR</guibutton></term>
+
       <listitem>
         <para>Highlight a purchase order line item(s) and then select this
         button to automatically clear any distributions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term><guibutton>DISTRIBUTE ALL</guibutton></term>
+
       <listitem>
         <para>Select to distribute quantities and amounts for all voucher
         items.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>You may select multiple purchase order line items for distribution
     or clearing by highlighting them using your mouse—or a combination of your
     mouse and either the <guibutton>SHIFT</guibutton> or
     <guibutton>CTRL</guibutton> key.</para>
   </tip>
+
   <para>To add miscellaneous cost distributions to a voucher, select the
   <guimenuitem>Misc. Distributions</guimenuitem> tab. The following screen
   will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/voucher_misc.png" />
+          <imagedata fileref="images/voucher_misc.png"/>
         </imageobject>
-        <caption>Misc. Voucher Distributions</caption>
+
+        <caption>Voucher Misc. Distributions</caption>
       </mediaobject>
     </screenshot>When adding miscellaneous distributions to a voucher, you are
   presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Account</term>
+
       <listitem>
         <para>Display lists accounts and distribution amounts for any
         miscellaneous distributions associated with the voucher.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>Voucher characteristics are user-defined definitions which may be used
   to provide additional layers of description about vouchers. These
   descriptions are static and not processed by the system, but are useful for
   informational purposes. To enter characteristics associated with a voucher,
   select the <guimenuitem>Characteristics</guimenuitem> tab. The following
   screen will appear:</para>
+
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/voucher_characteristics.png" />
+      <imagedata fileref="images/voucher_characteristics.png"/>
     </imageobject>
+
     <caption><para>Voucher Characteristics</para></caption>
   </mediaobject>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para>To add notes to a voucher, select the <guimenuitem>Notes</guimenuitem>
   tab. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/voucher_notes.png" />
+          <imagedata fileref="images/voucher_notes.png"/>
         </imageobject>
-        <caption>Add Notes to Voucher</caption>
+
+        <caption>Voucher Notes</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When adding notes to a voucher, you are presented with the following
   options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         general notes related to the voucher. These notes are for internal use
@@ -261,21 +329,27 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To associate documents with a voucher, select the
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/voucher_documentsTab.png" />
+          <imagedata fileref="images/voucher_documentsTab.png"/>
         </imageobject>
-        <caption>Add Documents to Voucher</caption>
+
+        <caption>Voucher Documents</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="voucherItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <xi:include href="voucherMiscDistrib.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

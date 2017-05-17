@@ -5,42 +5,54 @@
 <section id="purchaseOrderItem">
   <title><indexterm significance="normal">
       <primary>purchase orders</primary>
+
       <secondary>creating items for</secondary>
     </indexterm>Purchase Order Item</title>
+
   <para>To create a new purchase order line item, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/purchaseOrderItem.png" />
+          <imagedata fileref="images/purchaseOrderItem.png"/>
         </imageobject>
-        <caption>Create new Purchase Order Line Item</caption>
+
+        <caption>Purchase Order Item</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new purchase order line item, you are presented with
   the following options:</para>
+
   <note>
     <para>If the line item was created from a linked sales order, the details
     will be updated whenever the sales order is updated.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Order Number</term>
+
       <listitem>
         <para>Displays the purchase order number specified in the New Purchase
         Order screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Line #</term>
+
       <listitem>
         <para>The application automatically assigns line numbers to purchase
         order line items. Numbering begins at one (1) and increases
         automatically in increments of one.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Refresh Order</term>
+
       <listitem>
         <para>Select to indicate you want the purchase order header to be
         refreshed immediately in the background. When the header is refreshed
@@ -52,14 +64,18 @@
         screen.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Inventory Item</term>
+
       <listitem>
         <para>If the item being purchased is an inventory item, select this
         option and specify the following:</para>
+
         <variablelist>
           <varlistentry>
             <term>Item Number</term>
+
             <listitem>
               <para>Enter the item number of the item you want to add to the
               purchase order. You may also enter manufactured items that you
@@ -68,8 +84,10 @@
               purchased.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="standard">
             <term>Site</term>
+
             <listitem>
               <para>Specify the site where the item is supplied at. For
               purchased items to be included on a purchase order, their item
@@ -77,8 +95,10 @@
               site.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry role="distribution">
             <term>ITEM/ALIAS SEARCH</term>
+
             <listitem>
               <para>Advanced item search (AIS) is a feature designed
               specifically with distribution in mind. This feature allows
@@ -86,6 +106,7 @@
               item aliases—as well as current inventory levels—filtering every
               keystroke. From this screen you also have the ability to create
               an item alias.</para>
+
               <note>
                 <para>When using the AIS, you must enter at least three
                 characters (i.e., numbers, letters or a combination of both)
@@ -94,8 +115,10 @@
               </note>
             </listitem>
           </varlistentry>
+
           <varlistentry role="distribution">
             <term>VENDOR CATALOG</term>
+
             <listitem>
               <para>Select to use the External Vendor Catalog screen to view
               items as they appear within the various vendor catalogs you are
@@ -106,15 +129,19 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Non-Inventory Item</term>
+
       <listitem>
         <para>If the item being purchased is a non-inventory item, select this
         option and specify the following:</para>
+
         <variablelist>
           <varlistentry>
             <term>Expense Category</term>
+
             <listitem>
               <para>Select an expense category to assign the non-inventory
               item to.</para>
@@ -123,49 +150,63 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Ordered</term>
+
       <listitem>
         <para>Enter the quantity of the specified item to be ordered.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Qty. Received</term>
+
       <listitem>
         <para>Displays quantity received from quantity ordered.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>UOM</term>
+
       <listitem>
         <para>Unit of measure (UOM) item is being ordered in.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax Type</term>
+
       <listitem>
         <para>Select a tax type.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Unit Price</term>
+
       <listitem>
         <para>Enter the unit price for the specified item—or use the
         lookup—feature to look up pricing information, including pricing
         related to quantity breaks.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Extended Price</term>
+
       <listitem>
         <para>Displays the extended price. The extended price for a line item
         is based on the quantity ordered multiplied by the unit price.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Line Item Freight</term>
+
       <listitem>
         <para>Enter the amount of freight charges for the entire line item
         quantity. The system automatically calculates the per unit freight
@@ -176,22 +217,28 @@
         applies to the purchase order as a whole.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Tax</term>
+
       <listitem>
         <para>Displays the calculated tax amount.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Due Date</term>
+
       <listitem>
         <para>Specify date when order is expected to be received. For drop
         ship orders, the due date for purchase order items will be the same as
         the linked sales order's scheduled date.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Project #</term>
+
       <listitem>
         <para>If your system is configured to use projects, select a project
         number to associate with the purchase order line item. If the purchase
@@ -200,6 +247,7 @@
         associated with it—then the project number from the parent sales order
         will automatically be entered here. In this way, sales orders and
         purchase order line items may be linked to the same project.</para>
+
         <para role="xtprjaccnt">When you have the xTuple Project Accounting
         package installed—and you link a project to the purchase order line
         item—transactions related to the purchase order line item will include
@@ -211,29 +259,37 @@
         project number segment.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor Source Information</term>
+
       <listitem>
         <para>If item source information exists for an inventory item, that
         information will display automatically here. For non-inventory items,
         you should specify an item number and item description.</para>
+
         <variablelist>
           <varlistentry>
             <term>Vend. Item Number</term>
+
             <listitem>
               <para>Enter the item number the vendor assigns to the specified
               item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Vendor Item Description</term>
+
             <listitem>
               <para>Enter the description the vendor uses to describe to the
               specified item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Min. Order Qty</term>
+
             <listitem>
               <para>For inventory items only, displays the minimum order
               quantity for the specified item and the specified vendor.
@@ -241,26 +297,33 @@
               master.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Order Qty. Mult.</term>
+
             <listitem>
               <para>For inventory items only, displays the order multiple for
               the specified item and the specified vendor. Order multiples are
               established in the Item Source master.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Vendor UOM:</term>
+
             <listitem>
               <para>For inventory items only, displays the UOM used by the
               vendor for the specified item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Inv./Vendor UOM Ratio:</term>
+
             <listitem>
               <para>For inventory items only, displays the ratio between
               inventory and vendor UOM.</para>
+
               <note>
                 <para>The inv./vendor UOM ratio specifies the ratio between
                 inventory and vendor UOM. For example, if you store an item in
@@ -273,15 +336,19 @@
               </note>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Earliest Avail. Due Date</term>
+
             <listitem>
               <para>For inventory items only, displays the earliest due date
               for the specified item.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Contract</term>
+
             <listitem>
               <para>Displays the standard contract quantity for the item
               source, if it exists.</para>
@@ -291,65 +358,82 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add manufacturer information to the purchase order item, select the
   <guimenuitem>Manufacturer</guimenuitem> tab. The following screen will
   appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/purchaseOrderItem_manufTab.png" />
+        <imagedata fileref="images/purchaseOrderItem_manufTab.png"/>
       </imageobject>
-      <caption>Purchase Order Item Manufacturer </caption>
+
+      <caption>Purchase Order Item Manufacturer</caption>
     </mediaobject>
   </screenshot>
+
   <para>When entering manufacturer information to a purchase order item, you
   are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>The name of the manufacturer who creates the item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Item Number</term>
+
       <listitem>
         <para>The item number the manufacturer uses to identify the
         component.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>The description the manufacturer uses to describe the
         item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To add miscellaneous remarks to the purchase order item, select the
   <guimenuitem>Remarks</guimenuitem> tab. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/purchaseOrderItem_remarksTab.png" />
+          <imagedata fileref="images/purchaseOrderItem_remarksTab.png"/>
         </imageobject>
+
         <caption>Purchase Order Item Remarks</caption>
       </mediaobject>
     </screenshot>When entering miscellaneous remarks to a purchase order item,
   you are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the purchase order line item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term>Comments</term>
+
       <listitem>
         <para>To view system-generated comments associated with an item—or to
         add new comments of your own—select the
@@ -357,62 +441,77 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>If an item has characteristics associated with it, you have the option
   of linking those characteristics to a purchase order item. In the case where
   sales order demand generates a purchase request, item characteristics and
   values inherited from the sales order will already be linked to the purchase
   order. Ultimately, characteristics associated with a purchase order item may
   be printed on the purchase order report.</para>
+
   <tip>
     <para>You can link characteristics and values to an item by using the Item
     master. Once entered, these characteristics and values will be available
     to users entering purchase order items.</para>
   </tip>
+
   <para>To specify or edit characteristics for a purchase order item, select
   the <guimenuitem>Characteristics</guimenuitem> tab at the bottom of the
   screen. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/purchaseOrderItem_itemchar.png" />
+          <imagedata fileref="images/purchaseOrderItem_itemchar.png"/>
         </imageobject>
-        <caption>Purchase Order Line Item Characteristics</caption>
+
+        <caption>Purchase Order Item Characteristics</caption>
       </mediaobject>
     </screenshot></para>
+
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
   <para role="standard">When ordering purchased items, you have the option to
   specify which revision of the item's bill of materials (BOM) and routing you
   want to buy. By default, the active revision will be used. To specify
   revision information for a purchase order item, select the
   <guimenuitem>Revision</guimenuitem> tab. The following screen will
   appear:</para>
+
   <screenshot role="standard">
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/purchaseOrderItem_revision.png" />
+        <imagedata fileref="images/purchaseOrderItem_revision.png"/>
       </imageobject>
-      <caption>Line Item Revisions</caption>
+
+      <caption>Purchase Order Item Revision</caption>
     </mediaobject>
   </screenshot>
+
   <para role="standard"><note>
       <para>You may create purchase order items for pending revisions. For
       purchase order purposes, a pending revision is considered to be the same
       as an inactive revision. The revision status of a pending revision will
       not be changed if a purchase order item is created for it.</para>
     </note></para>
+
   <para role="standard">When specifying revision information for a purchase
   order item, you are presented with the following options:</para>
+
   <variablelist>
     <varlistentry role="standard">
       <term>Bill of Materials</term>
+
       <listitem>
         <para>Specify the BOM revision you want to use for the purchase order
         item. By default, the active revision will be used.</para>
+
         <variablelist>
           <varlistentry>
             <term>Revision</term>
+
             <listitem>
               <para>Select from the list of existing available revisions. The
               status of the revision will also be displayed.</para>
@@ -421,14 +520,18 @@
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry role="manufacturing">
       <term>Routing</term>
+
       <listitem>
         <para>Specify the routing revision you want to use for the purchase
         order item. By default, the active revision will be used.</para>
+
         <variablelist>
           <varlistentry>
             <term>Revision</term>
+
             <listitem>
               <para>Select from the list of existing available revisions. The
               status of the revision will also be displayed.</para>
@@ -438,20 +541,25 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>To view demand information for purchase order items linked to sales
   orders or work orders, select the <guimenuitem>Demand</guimenuitem> tab. The
   following screen will appear:</para>
+
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/purchaseOrderItem_demandTab.png" />
+        <imagedata fileref="images/purchaseOrderItem_demandTab.png"/>
       </imageobject>
-      <caption>Line Item Demand </caption>
+
+      <caption>Purchase Order Item Demand</caption>
     </mediaobject>
   </screenshot>
+
   <variablelist>
     <varlistentry>
       <term>Demand</term>
+
       <listitem>
         <para>Displays information about the sales order or the work order the
         purchase order item is linked to. If the purchase order item is not
