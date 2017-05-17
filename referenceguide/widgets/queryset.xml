@@ -4,14 +4,17 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="queryset">
   <title>Query Sets and the QuerySet widget</title>
+
   <para>A query set is a collection of database queries that are run in
   sequence. They can be used for exporting data, checking the status of the
   database, or performing routine database maintenance tasks. When the query
   set is run, each individual query in the query set is run in the order you
   choose. The results of the individual queries, called query items, are saved
   together in a single file.</para>
+
   <para>To create, edit, and use a query set, follow this path:
   <guimenuitem>System &gt; Utilities &gt; Export Data</guimenuitem></para>
+
   <note role="xtconnect">
     <para>If you have xTuple Connect installed and enabled, you can also work
     with query sets when editing an EDI form as part of an EDI profile. The
@@ -20,86 +23,110 @@
     url="http://xtuple.com/docs/reference-guide">xTuple Connect Product
     Guide</ulink> for more information.</para>
   </note>
+
   <para>You will see a screen that contains the following:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/queryset_widget.png" />
+          <imagedata fileref="images/queryset_widget.png"/>
         </imageobject>
+
         <caption><para>The QuerySet widget</para></caption>
       </mediaobject>
     </screenshot></para>
+
   <para>In this example there is one query set defined in the database, named
-  "ARStmt".</para>
+  ARStmt.</para>
+
   <para>To modify an existing query set, select it from the list and click the
   <guibutton>EDIT</guibutton> button. Similarly, to delete an existing query
   set, select it from the list and click the <guibutton>DELETE</guibutton>
   button.</para>
+
   <para>To create a new query set, click the <guibutton>NEW</guibutton>
   button. You will see the following screen:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/queryset.png" />
+          <imagedata fileref="images/queryset.png"/>
         </imageobject>
+
         <caption><para>The Query Set window</para></caption>
       </mediaobject>
     </screenshot></para>
+
   <para>You are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a short name for this query set.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Enter a simple description of what this query set does.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Queries in this set</term>
+
       <listitem>
         <para>This is a list of the query items which have already been
         defined as part of this query set.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>Enter notes about this query set—a full description of why you
         created it or what it is intended to do.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>Use the <guibutton>NEW</guibutton> button to add a query item to this
   query set. You will see the following screen:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/queryitem.png" />
+          <imagedata fileref="images/queryitem.png"/>
         </imageobject>
+
         <caption><para>The Query Item window showing an example of a custom
         MetaSQL query</para></caption>
       </mediaobject>
     </screenshot></para>
+
   <para>You are presented with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Name</term>
+
       <listitem>
         <para>Enter a name for this query item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Order</term>
+
       <listitem>
         <para>Select the position of this query item in the sequence. Query
         items with a lower order value will be run before those with a higher
         order.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Type of Query</term>
+
       <listitem>
         <para>Choose whether this query item should list all data from a
         particular database table or view, if it should use a MetaSQL
@@ -108,13 +135,16 @@
         by this query item.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Notes</term>
+
       <listitem>
         <para>Add comments about this query item here.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>If you choose Custom Query as the <guilabel>Type of Query</guilabel>,
   you will see the MetaSQL editor. The MetaSQL language and MetaSQL editor are
   described in the <ulink
@@ -124,7 +154,9 @@
   MetaSQL statements. The query shown in the example above lists all of the
   header data for every sales order with one or more open line items,
   optionally restricted to a single customer.</para>
+
   <para>Click <guibutton>SAVE </guibutton>to save this query item.</para>
+
   <para>To add line item data to this query set, create another query item.
   Set the order to <literal>1</literal>, select Custom Query as the
   <guilabel>Type of Query</guilabel>, and enter the following text in the
@@ -137,6 +169,7 @@
                         WHERE customer_number = &lt;? value('cust_number') ?&gt;)
 &lt;? endif ?&gt;
 ;</programlisting></para>
+
   <para>If this query set gets run with no active parameters, it will show all
   sales orders with at least one open line item followed by all open sales
   line items. If you make the <literal>cust_number</literal> parameter active

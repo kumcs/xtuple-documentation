@@ -4,16 +4,19 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="createBufferStatusByPlannerCode">
   <title>Run Buffer Status by Planner Code</title>
+
   <para>When you run buffer status by planner code, you are running the
   constraint management system. This utility, when it is run, scans through
   your data and then updates the buffer status for items in the specified
   planner code(s) using the most current information.</para>
+
   <para>Because buffer status information is time-sensitive, you must run the
   system frequently (i.e., daily) to keep your statuses up-to-date. In fact,
   the various buffer status displays will not even show status information if
-  constraint management has not been run on the day when you"re trying to view
+  constraint management has not been run on the day when you're trying to view
   buffer status information. This built-in requirement prevents you from using
   information that is not current.</para>
+
   <note>
     <para>The critical buffer status in the constraint management system is
     66%. In other words, any time you consume 66% of a buffer, then it's time
@@ -22,63 +25,81 @@
     implementations of the Theory of Constraints—a theory pioneered by Eliyahu
     Goldratt.</para>
   </note>
+
   <para>After the buffer status utility has been run, you may view the
   constraint management displays which pertain to the affected items—and then
   decide whether to take immediate action based on the newly-updated status
   values.</para>
+
   <para>To run buffer status by planner code, go to <guimenuitem>Schedule &gt;
   Constrain Management &gt; Update Status &gt; by Planner Code</guimenuitem>.
   The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/createBufferStatusByPlannerCode.png" />
+          <imagedata fileref="images/createBufferStatusByPlannerCode.png"/>
         </imageobject>
+
         <caption>Run Buffer Status by Planner Code</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When running buffer status by planner code, you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Planner Codes</term>
+
       <listitem>
         <para>Select to update the buffer status for item sites in all planner
         codes.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify planner code whose item site buffer statuses you want to
         update.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Pattern</term>
+
       <listitem>
         <para>Enter a planner code pattern to select a range of planner codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Sites</term>
+
       <listitem>
         <para>Select to update buffer statuses by planner code in all
         sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify site where buffer status updates should occur.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE</guibutton></term>
+
       <listitem>
         <para>Runs the buffer status update by planner code, using the
         specified parameters.</para>

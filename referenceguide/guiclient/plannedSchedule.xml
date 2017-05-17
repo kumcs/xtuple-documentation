@@ -4,69 +4,88 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="plannedSchedule">
   <title>New Production Plan</title>
+
   <para>Production plans are used for loading sales forecasts into the system.
   These forecasts are then accounted for when the master production scheduling
   (MPS) system is run. Firm planned orders may be created for items listed on
   production plans as the result of an MPS run. To create a new production
   plan, go to <guimenuitem>Schedule &gt; Production Plan &gt;
   New</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/plannedSchedule.png" />
+          <imagedata fileref="images/plannedSchedule.png"/>
         </imageobject>
+
         <caption>Create new Production Plan</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new production plan you are presented with the
   following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>Schedule #</term>
+
       <listitem>
         <para>Enter a name to identify the production plan.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Description</term>
+
       <listitem>
         <para>Enter a brief description of the production plan.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Site</term>
+
       <listitem>
         <para>Specify the site where the forecasted quantity would be located.
         By specifying a site you indicate the specific item site which the MPS
         planning system should create planned orders for, if required.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Schedule Type</term>
+
       <listitem>
         <para>Select one of the available production plan schedule
         types:</para>
+
         <variablelist>
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>mps</primary>
+
                 <secondary>forecast reporting and</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>forecast</primary>
+
                 <secondary>reporting for mps</secondary>
               </indexterm>Forecast Reporting</term>
+
             <listitem>
               <para>Planning items having this schedule type are not taken
               into account by MPS. Instead, use this schedule type for
               reporting purposes only, such as the reporting found on the MPS
               Detail screen. Forecast reporting can be useful as a reference
               of progress against cumulative MPS schedules, usually in
-              scenarios where demand is discontinuous or "lumpy," but
-              production schedules are continuous.</para>
+              scenarios where demand is discontinuous or
+              <emphasis>lumpy</emphasis>, but production schedules are
+              continuous.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term>Forecast Netted to MPS</term>
+
             <listitem>
               <para>Used for forecast reporting and netted as demand to
               existing supply by the MPS processor for items scheduled inside
@@ -79,84 +98,104 @@
               nets this against projected availability.</para>
             </listitem>
           </varlistentry>
+
           <varlistentry>
             <term><indexterm significance="normal">
                 <primary>mps</primary>
+
                 <secondary>cumulative schedules and</secondary>
               </indexterm><indexterm significance="normal">
                 <primary>cumulative schedules</primary>
+
                 <secondary>explained</secondary>
               </indexterm>Cumulative MPS</term>
+
             <listitem>
               <para>Cumulative schedules allow the forced accumulation of
-              inventory in a discontinuous or "lumpy" demand situation where
+              inventory in a discontinuous or lumpy demand situation where
               load leveling or continuous production is desired. With this
               setting, MPS may release more, but never less, than the quantity
               dictated in a cumulative MPS schedule. Inside the demand time
               fence, cumulative schedules are ignored—and only actual demand
               is considered. Outside the demand time fence, planned orders for
               cumulative schedules are created per the greater of schedule
-              quantity or net actual demand. The system interprets "net actual
-              demand" to mean that it will use, for a given period, the larger
-              of A) cumulative schedule quantity or B) quantity required to
-              accommodate time-phased availability (i.e., QOH + qty. on order
-              - allocations).</para>
+              quantity or net actual demand. The system interprets
+              <emphasis>net actual demand</emphasis> to mean that it will use,
+              for a given period, the larger of A) cumulative schedule
+              quantity or B) quantity required to accommodate time-phased
+              availability (i.e., QOH + qty. on order - allocations).</para>
             </listitem>
           </varlistentry>
         </variablelist>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Status</term>
+
       <listitem>
         <para>Displays the current status of the production plan.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>Production plans may exist in either of the following two
     statuses:</para>
+
     <para>U = un-released</para>
+
     <para>R = released</para>
+
     <para>The master production scheduling (MPS) system will only consider
     production plans which have been released. Any un-released production
     plans will be ignored by MPS when it is run.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>Start Date</term>
+
       <listitem>
         <para>Enter the first date when MPS items may be added to the
         production plan. Items having a planned date earlier than the date
         entered here may not be added to the production plan.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>End Date</term>
+
       <listitem>
         <para>Enter the last date when MPS items may be added to the
         production plan. Items having a planned date later than the date
         entered here may not be added to the production plan.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Planned Items</term>
+
       <listitem>
         <para>Displays the current list of planned items associated with the
         production plan.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CHG. STATUS</guibutton></term>
+
       <listitem>
         <para>Use this button to toggle between the active and inactive status
         for the selected planned item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <xi:include href="plannedScheduleItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

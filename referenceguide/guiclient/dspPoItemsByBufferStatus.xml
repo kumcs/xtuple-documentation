@@ -4,6 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspPoItemsByBufferStatus" role="manufacturing">
   <title>P/O Items by Buffer Status</title>
+
   <para>The purchase order buffer status displays provide information on your
   current stock and time buffer levels for those items having current purchase
   orders. Stock buffers apply to make-to-stock items; whereas time buffers
@@ -11,49 +12,62 @@
   information will only be displayed on days when the constraint management
   system is run. If you find your displays show no information, this probably
   means constraint management has not been run.</para>
+
   <para>To view purchase order item buffer statuses, go to <guimenuitem>Status
   &gt; Purchase Order</guimenuitem>. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspPoItemsByBufferStatus.png"/>
         </imageobject>
+
         <caption>Purchase Order Items by Buffer Status</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>When the buffer status for an item hits 66 or higher, the status
-    number will become red. By highlighting items which are red hot, the
-    system is informing you which items should be acted on immediately. The
-    best remedy for red hot item sites is to expedite any associated work
-    orders or purchase orders.</para>
+    number will become red. By highlighting items which are <emphasis>red
+    hot</emphasis>, the system is informing you which items should be acted on
+    immediately. The best remedy for red hot item sites is to expedite any
+    associated work orders or purchase orders.</para>
   </note>
+
   <para>When displaying purchase order item buffer statuses, you are presented
   with the following options:</para>
+
   <variablelist>
     <varlistentry>
       <term>All Sites</term>
+
       <listitem>
         <para>Select to display purchase order item buffer statuses for all
         sites.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify site whose purchase order item buffer statuses you want
         to display.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>All Purchasing Agents</term>
+
       <listitem>
         <para>Select to display purchase order item buffer statuses for all
         purchasing agents.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected</term>
+
       <listitem>
         <para>Specify purchasing agent whose purchase order item buffer
         statuses you want to display. Users may be designated as purchasing
@@ -61,15 +75,18 @@
       </listitem>
     </varlistentry>
   </variablelist>
+
   <note>
     <para>By default, the display will sort purchase order items by buffer
     status in descending order. In other words, purchase order items with the
     highest buffer status will appear at the top of the list; purchase order
     items with the lowest buffer status will appear at the bottom.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>P/O Items</term>
+
       <listitem>
         <para>Display lists buffer statuses for open purchase order items,
         using the specified parameters.</para>
