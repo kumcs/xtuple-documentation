@@ -4,40 +4,30 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="characteristic">
   <title>Characteristic</title>
-
   <para>To create a new characteristic, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
-
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/characteristic.png"/>
+        <imagedata fileref="images/characteristic.png" />
       </imageobject>
-
-      <caption><para>Create New Characteristic</para></caption>
+      <caption><para>Create new Characteristic</para></caption>
     </mediaobject></para>
-
   <para>When creating a new characteristic, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter a unique name to identify the characteristic.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Type</term>
-
       <listitem>
         <para>Specify one of the following characteristic type options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Text</term>
-
             <listitem>
               <para>Select if you want the characteristic to be a text string.
               Text type characteristics have access to the <guilabel>Input
@@ -45,10 +35,8 @@
               options.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>List</term>
-
             <listitem>
               <para>Select if you want the characteristic to present a list of
               possible values. If selected, you will have the option to enter
@@ -56,10 +44,8 @@
               order.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Date</term>
-
             <listitem>
               <para>Select if you want the characteristic to be a date string.
               The formatting of date type characteristics conforms to the
@@ -70,10 +56,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Order</term>
-
       <listitem>
         <para>Specify the sort order for the characteristic. This option is
         useful whenever you present multiple characteristics in a given
@@ -83,10 +67,8 @@
         edited.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Include in searches</term>
-
       <listitem>
         <para>Select to indicate you want the characteristic to be included in
         searches related to records where the characteristic is used. Not
@@ -99,10 +81,8 @@
         characteristics which you are most likely to search on.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Allow unique Characteristic assignment only</term>
-
       <listitem>
         <para>Select if you want to restrict use of the characteristic to only
         once per object association. For example, if want to make sure a
@@ -110,10 +90,8 @@
         should select this option.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>May be used on</term>
-
       <listitem>
         <para>Select one or more of the following characteristic assignment
         options by selecting the relevant check boxes. The characteristic will
@@ -126,19 +104,15 @@
         voucher, work order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Options</term>
-
       <listitem>
         <para>The options presented will vary depending on the characteristic
         type you choose. The range of possible options are described
         below:</para>
-
         <variablelist>
           <varlistentry>
             <term>Text options</term>
-
             <listitem>
               <para>The following options will be available for text type
               characteristics. These advanced options are not required, but if
@@ -149,11 +123,9 @@
               at once, they must be coordinated and consistent—otherwise users
               will experience difficulties when attempting to enter text type
               characteristic values.</para>
-
               <variablelist>
                 <varlistentry>
                   <term>Input Mask</term>
-
                   <listitem>
                     <para>Select from the available options—or manually enter
                     an input mask of your own design. An input mask creates a
@@ -165,21 +137,17 @@
                     entering values for the characteristic: __/__/____. In
                     this case, users will simply have to fill in the blanks
                     between the separators.</para>
-
                     <variablelist>
                       <varlistentry>
                         <term>00/00/0000</term>
-
                         <listitem>
                           <para>Select this format to prompt users to enter a
                           date format with the pattern shown (e.g.,
                           MM/DD/YYYY).</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>### - ### - ####</term>
-
                         <listitem>
                           <para>Select this format to prompt users to enter a
                           numerical format with the pattern shown. This
@@ -187,10 +155,8 @@
                           (e.g., 757-555-1111).</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>### - ## - ####</term>
-
                         <listitem>
                           <para>Select this format to prompt users to enter a
                           numerical format with the pattern shown. This
@@ -198,10 +164,8 @@
                           numbers (e.g., 012-34-5678).</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>00,000.00</term>
-
                         <listitem>
                           <para>Select this format to prompt users to enter a
                           price format with the pattern shown.</para>
@@ -210,10 +174,8 @@
                     </variablelist>
                   </listitem>
                 </varlistentry>
-
                 <varlistentry>
                   <term>Validator</term>
-
                   <listitem>
                     <para>Select from the available options—or manually enter
                     a validator of your own design. A validator is used to
@@ -222,21 +184,17 @@
                     then users will have to conform to the format when
                     entering values for the characteristic. Values which do
                     not conform will not be accepted.</para>
-
                     <variablelist>
                       <varlistentry>
                         <term>[Y/N]</term>
-
                         <listitem>
                           <para>Select this boolean validator to require users
                           to enter <guilabel>Y</guilabel> or
                           <guilabel>N</guilabel> for yes or no.</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>\S+</term>
-
                         <listitem>
                           <para>Select this validator to require users to
                           enter one or more non-white-space characters. So,
@@ -245,19 +203,15 @@
                           <guilabel>Inventory Availability</guilabel>.</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>[1-9]\d{0,3}</term>
-
                         <listitem>
                           <para>Select this validator to require users to
                           enter a number from 1-9999.</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>[A-Z]\d{5}[1-9]</term>
-
                         <listitem>
                           <para>Select this validator to require users to
                           enter a value where the first character is A-Z, the
@@ -269,10 +223,8 @@
                           custom needs.</para>
                         </listitem>
                       </varlistentry>
-
                       <varlistentry>
                         <term>(https?:\/\/(?:www\.|(?!www))[^\s\.]+\.[^\s]{2,}|www\.[^\s]+\.[^\s]{2,})</term>
-
                         <listitem>
                           <para>Select this validator to require users to
                           enter a website address (e.g., <ulink
@@ -285,27 +237,21 @@
               </variablelist>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>List options</term>
-
             <listitem>
               <para>The following options will be available for list type
               characteristics:</para>
-
               <variablelist>
                 <varlistentry>
                   <term><guibutton>NEW</guibutton></term>
-
                   <listitem>
                     <para>Select to create a new value for the
                     characteristic.</para>
                   </listitem>
                 </varlistentry>
-
                 <varlistentry>
                   <term>Value</term>
-
                   <listitem>
                     <para>Use your mouse to click in the
                     <guilabel>Value</guilabel> field. Once you see the cursor
@@ -318,10 +264,8 @@
                     values you can imagine.</para>
                   </listitem>
                 </varlistentry>
-
                 <varlistentry>
                   <term>Order</term>
-
                   <listitem>
                     <para>Specify the sort order for each value in the list.
                     If the order of the value <guilabel>True</guilabel> is
@@ -332,10 +276,8 @@
                     list.</para>
                   </listitem>
                 </varlistentry>
-
                 <varlistentry>
                   <term><guibutton>DELETE</guibutton></term>
-
                   <listitem>
                     <para>Highlight a characteristic value and select this
                     button to remove the value from the list.</para>
@@ -344,10 +286,8 @@
               </variablelist>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Date options</term>
-
             <listitem>
               <para>There are no options for date type characteristics. The
               formatting of date type characteristics conforms to the
@@ -358,10 +298,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Use the <guimenuitem>Description</guimenuitem> tab to enter a
         brief description of the characteristic.</para>
