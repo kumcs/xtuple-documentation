@@ -5,20 +5,26 @@
 <section id="apAccountAssignment">
   <title><indexterm significance="normal">
       <primary>account assignments</primary>
+
       <secondary>creating new for payables</secondary>
     </indexterm>Payables Assignment</title>
+
   <para>To create a new payables assignment, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/apAccountAssignment.png" />
+          <imagedata fileref="images/apAccountAssignment.png"/>
         </imageobject>
-        <caption>Create new Payables Assignment</caption>
+
+        <caption>Create new Payables Account Assignment</caption>
       </mediaobject>
     </screenshot></para>
+
   <para>When creating a new payables assignment, you are presented with the
   following options:</para>
+
   <note>
     <para>By default, the screen will limit your account number choices to
     only those accounts having the correct account type for the chosen
@@ -26,38 +32,48 @@
     manually entering any account number listed in the chart of
     accounts.</para>
   </note>
+
   <variablelist>
     <varlistentry>
       <term>All Vendor Types</term>
+
       <listitem>
         <para>Select to assign the payables accounts to all vendor
         types.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Selected Vendor Type</term>
+
       <listitem>
         <para>Specify vendor type you want to associate with the payables
         assignment.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Vendor Type Pattern</term>
+
       <listitem>
         <para>Enter a vendor type pattern to select a range of vendor types.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Payables Account</term>
+
       <listitem>
         <para>Identify a general ledger (G/L) account to assign as the default
         payables account. This is a liability account. It will be credited
         when vouchers are posted and debited when checks are posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Prepaid Account</term>
+
       <listitem>
         <para>Identify a G/L account to assign as the default payables prepaid
         account. This is an asset account. It should not be confused with or
@@ -67,8 +83,10 @@
         posted.</para>
       </listitem>
     </varlistentry>
+
     <varlistentry>
       <term>Discount Account</term>
+
       <listitem>
         <para>Identify a G/L account to distribute purchasing discounts to.
         This is a revenue account. It will be credited when purchasing

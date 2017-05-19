@@ -5,30 +5,37 @@
 <section id="costCategories">
   <title><indexterm significance="normal">
       <primary>cost categories</primary>
+
       <secondary>master list of</secondary>
     </indexterm>Cost Categories</title>
+
   <para>Cost categories are applied to item sites as a mechanism for
   specifying how costs should be distributed to the general ledger whenever
   inventory is received, moved, consumed, produced, shipped, scrapped, or
   returned. To access the master list of cost categories, go to
   <guimenuitem>Cost Categories</guimenuitem>. The following screen will
   appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/costCategories.png"/>
         </imageobject>
-        <caption>Cost Categories Master List</caption>
+
+        <caption>Cost Categories master list</caption>
       </mediaobject>
     </screenshot></para>
+
   <note>
     <para>Cost categories define cost distributions for inventory items. The
     distribution of costs for non-inventory items are determined by expense
     categories.</para>
   </note>
+
   <para>The Cost Categories screen displays information on all existing cost
   categories, including cost category code and cost category
   description.</para>
+
   <xi:include href="costCategory.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
