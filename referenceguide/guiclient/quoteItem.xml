@@ -89,7 +89,7 @@
         <para>Specify the site the quote item is sold from. Items may be
         supplied to quotes from multiple item sites. After an item number is
         entered above, the system checks for available item sites for the
-        item. Any item sites having the <guilabel>Sold from</guilabel> flag
+        item. Any item sites having the <guilabel>Sold From</guilabel> flag
         set on them will be selectable from this site list. By default, the
         item site having the highest ranking will be selected as the first
         available site. If more than one item site share a ranking of "1," the
@@ -100,7 +100,7 @@
           then that site will be selected here by default. If the preferred
           selling site is not selected—and you think it should be—verify that
           the Item Site master for the line item in question is marked as a
-          <guilabel>Sold from</guilabel> site.</para>
+          <guilabel>Sold From</guilabel> site.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -386,7 +386,7 @@
             <imageobject>
               <imagedata fileref="images/salesOrderItem_availabilitySupply.png" />
             </imageobject>
-            <caption><para>Supply order information for manufactured
+            <caption><para>Supply Order information for manufactured
             item</para></caption>
           </mediaobject><note>
             <para>Supply orders are created as soon as a valid item, order
@@ -494,10 +494,10 @@
       <listitem>
         <para>Specify the site a corresponding work order would be supplied
         from. Work orders may only be created for manufactured items having a
-        supplying site. Sites designated as <guilabel>Supplied at</guilabel>
-        sites in the Item Site master for an item are considered supplying
-        sites. If no supplying site exists for an item, a work order may not
-        be created for the item.</para>
+        supplying site. Sites designated as <guilabel>Supplied from
+        Site</guilabel> in the Item Site master for an item are considered
+        supplying sites. If no supplying site exists for an item, a work order
+        may not be created for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -552,7 +552,7 @@
     <imageobject>
       <imagedata fileref="images/salesOrderItem_availabilitySupply2.png" />
     </imageobject>
-    <caption><para>Supply order information for bought item</para></caption>
+    <caption><para>Supply Order information for bought item</para></caption>
   </mediaobject>
   <variablelist>
     <varlistentry>

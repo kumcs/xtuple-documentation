@@ -126,19 +126,19 @@
         <para>Specify the site the sales order item is sold from. Items may be
         supplied to sales orders from multiple item sites. After an item
         number is entered above, the system checks for available item sites
-        for the item. Any item sites having the <guilabel>Sold from</guilabel>
+        for the item. Any item sites having the <guilabel>Sold From</guilabel>
         flag set on them will be selectable from this site list. By default,
         the item site having the highest ranking will be selected as the first
         available site. If more than one item site share a ranking of "1," the
         sites will be sorted in alphabetical order. Item site rankings are set
         on the Item Site master.</para>
         <tip>
-          <para>If a preferred <guilabel>Selling</guilabel> site is specified
+          <para>If a <guilabel>Preferred Selling Site</guilabel> is specified
           for the customer, then that site will be selected here by default.
-          If the preferred <guilabel>Selling</guilabel> site is not
+          If the <guilabel>Preferred Selling Site</guilabel> is not
           selected—and you think it should be—verify that the Item Site master
           for the line item in question is marked as a <guilabel>Sold
-          from</guilabel> site.</para>
+          From</guilabel> site.</para>
         </tip>
       </listitem>
     </varlistentry>
@@ -477,8 +477,8 @@
             <imageobject>
               <imagedata fileref="images/salesOrderItem_availabilitySupply.png" />
             </imageobject>
-            <caption><para>Supply Order Information for Manufactured
-            Item</para></caption>
+            <caption><para>Supply Order information for manufactured
+            item</para></caption>
           </mediaobject><note>
             <para>Supply orders are created as soon as a valid item, order
             quantity, and scheduled date are entered.</para>
@@ -587,10 +587,10 @@
       <listitem>
         <para>Specify the site a corresponding work order would be supplied
         from. Work orders may only be created for manufactured items having a
-        supplying site. Sites designated as <guilabel>Supplied at</guilabel>
-        sites in the Item Site master for an item are considered supplying
-        sites. If no supplying site exists for an item, a work order may not
-        be created for the item.</para>
+        supplying site. Sites designated as <guilabel>Supplied from
+        Site</guilabel> in the Item Site master for an item are considered
+        supplying sites. If no supplying site exists for an item, a work order
+        may not be created for the item.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -645,7 +645,7 @@
     <imageobject>
       <imagedata fileref="images/salesOrderItem_availabilitySupply2.png" />
     </imageobject>
-    <caption><para>Supply Order Information for Bought Item</para></caption>
+    <caption><para>Supply Order information for bought item</para></caption>
   </mediaobject>
   <variablelist>
     <varlistentry>
@@ -832,14 +832,14 @@
     selected at sales order entry time.</para>
   </tip>
   <para>To associate characteristics with a sales order line item, select the
-  <guimenuitem>Item Characteristics</guimenuitem> tab at the bottom of the
-  screen, as shown below:</para>
+  <guimenuitem>Characteristics</guimenuitem> tab at the bottom of the screen,
+  as shown below:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/salesOrderItem_itemCharacteristicsTab.png" />
         </imageobject>
-        <caption>Sales Order Line Item Characteristics</caption>
+        <caption>Sales Order line item Characteristics</caption>
       </mediaobject>
     </screenshot></para>
   <para>When selecting or editing characteristics for a sales order line item,
@@ -899,7 +899,7 @@
         <imageobject>
           <imagedata fileref="images/salesOrderItem_costs.png" />
         </imageobject>
-        <caption>Sales Order Line Item Detail</caption>
+        <caption>Sales Order line item Detail</caption>
       </mediaobject>
     </screenshot></para>
   <para>When viewing costs or adjusting tax information for a sales order line
@@ -999,7 +999,7 @@
         <imageobject>
           <imagedata fileref="images/salesOrderItem_notesTab.png" />
         </imageobject>
-        <caption>Sales Order Line Item Notes</caption>
+        <caption>Sales Order line item Notes</caption>
       </mediaobject>
     </screenshot></para>
   <para>When adding notes related to a sales order line item, you are
@@ -1027,7 +1027,7 @@
         <imageobject>
           <imagedata fileref="images/salesOrderItem_commentsTab.png" />
         </imageobject>
-        <caption>Sales Order Line Item Comments</caption>
+        <caption>Sales Order line item Comments</caption>
       </mediaobject>
     </screenshot></para>
   <note>
@@ -1045,7 +1045,7 @@
         <imageobject>
           <imagedata fileref="images/salesOrderItem_costofsalesTab.png" />
         </imageobject>
-        <caption>Sales Order Line Item Accounting</caption>
+        <caption>Sales Order line item Accounting</caption>
       </mediaobject>
     </screenshot></para>
   <para>When defining an alternate cost of sales account or alternate revenue

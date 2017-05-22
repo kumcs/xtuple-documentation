@@ -529,19 +529,21 @@
                 Items may be supplied to sales orders from multiple item
                 sites. After an item number is entered above, the system
                 checks for available item sites for the item. Any item sites
-                having the <guilabel>Sold from</guilabel> flag set on them
+                having the <guilabel>Sold From</guilabel> flag set on them
                 will be selectable from this site list. By default, the item
                 site having the highest ranking will be selected as the first
                 available site. If more than one item site share a ranking of
-                "1," the sites will be sorted in alphabetical order. Item site
-                rankings are set on the Item Site master.</para>
+                <literal>1</literal>, the sites will be sorted in alphabetical
+                order. Item site rankings are set on the Item Site
+                master.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
               <term>Qty. Ordered</term>
               <listitem>
                 <para>Enter the quantity of the specified item being ordered.
-                The quantity will be set to "1" by default.</para>
+                The quantity will be set to <literal>1</literal> by
+                default.</para>
               </listitem>
             </varlistentry>
             <varlistentry>
