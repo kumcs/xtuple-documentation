@@ -5,86 +5,66 @@
 <section id="booItem">
   <title><indexterm significance="normal">
       <primary>Routings</primary>
-
       <secondary>creating new operation in</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>operations</primary>
-
       <secondary>adding new to Routings</secondary>
     </indexterm>Routing Item</title>
-
   <para>To add a new operation to a routing, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem.png"/>
+          <imagedata fileref="images/booItem.png" />
         </imageobject>
-
-        <caption>Add New Operation to Routing</caption>
+        <caption>Add new Operation to Routing</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When adding a new operation to a routing, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Displays item number specified in Routing screen.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure (UOM).</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Standard Oper.</term>
-
       <listitem>
         <para>Select a standard operation to use for the operation, if any.
         Instructions associated with the standard operation will be displayed
         below.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Operation Type</term>
-
       <listitem>
         <para>If a standard operation is specified, the operation type
         associated with the standard operation will be displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Enter a description to further identify the operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Work Center</term>
-
       <listitem>
         <para>Specify work center to be used for the specified
         operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tooling Reference</term>
-
       <listitem>
         <para>Use this field to briefly describe any tooling required for the
         operation. For example, if you are making plastic products, the
@@ -92,30 +72,25 @@
         plastic.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Oper. Seq.#</term>
-
       <listitem>
         <para>Displays operation sequence number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>execution days</primary>
-
           <secondary>in routings</secondary>
         </indexterm>Execution Day</term>
-
       <listitem>
-        <para>Select a number using the arrows, or manually enter a
-        value up to a maximum of 99. This feature enables you to schedule work
-        order materials with work order operations. For example, let's say we
-        have an operation with an execution day = 5. This means the operation
-        is scheduled to begin five days after the start date of the work
-        order. Components scheduled with this operation are due the day before
-        the operation starts—that is, on day four after the work order start
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 99. This feature enables you to schedule work order
+        materials with work order operations. For example, let's say we have
+        an operation with an execution day = 5. This means the operation is
+        scheduled to begin five days after the start date of the work order.
+        Components scheduled with this operation are due the day before the
+        operation starts—that is, on day four after the work order start
         date—to ensure they will be available when the operation is scheduled
         to begin. If this option is not selected, then the component
         scheduling will be governed by the start and due dates set on the work
@@ -124,22 +99,17 @@
         displayed as the production lead time for the routing.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>effectivity</primary>
-
           <secondary>in routings</secondary>
         </indexterm>Effectivity</term>
-
       <listitem>
         <para>Specify the operation's effectivity, using the following
         parameters:</para>
-
         <variablelist>
           <varlistentry>
             <term>Effective</term>
-
             <listitem>
               <para>The system enables you to specify when an operation can be
               used in a bill of materials (BOM). For example, the company's
@@ -150,17 +120,15 @@
               use.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Expires</term>
-
             <listitem>
               <para>The system also enables you to specify when an operation
-              is planned to be obsoleted from (i.e., no longer used in) a
-              BOM. As mentioned above, the company's engineering department
-              may be working on a new design for an existing item—but that new
-              design will not be available for use until a given date in the
-              future. In this case, the old component item must be marked for
+              is planned to be obsoleted from (i.e., no longer used in) a BOM.
+              As mentioned above, the company's engineering department may be
+              working on a new design for an existing item—but that new design
+              will not be available for use until a given date in the future.
+              In this case, the old component item must be marked for
               expiration on a given date. This expiration date will most
               likely coincide with the effective date of the replacement part.
               Setting this parameter will instruct the system to stop using
@@ -169,7 +137,6 @@
             </listitem>
           </varlistentry>
         </variablelist>
-
         <note>
           <para>Standard operations are intended as initial templates used to
           set up routing items. Any changes made to a standard operation will
@@ -178,75 +145,62 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>setup time</primary>
-
           <secondary>in routings</secondary>
         </indexterm>Setup Time (min)</term>
-
       <listitem>
         <para>Amount entered represents the number of minutes required to set
         up the work center for the operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Report Cost as (Setup Time)</term>
-
       <listitem>
         <para>Specify whether you want to report setup costs as
-        <guilabel>Direct Labor</guilabel>, <guilabel>Overhead</guilabel>, or
-        <guilabel>None</guilabel>. Specify the <guilabel>None</guilabel>
-        option if you would do not want to track setup time as part of the
-        operation's cost.</para>
+        <guimenuitem>Direct Labor</guimenuitem>,
+        <guimenuitem>Overhead</guimenuitem>, or
+        <guimenuitem>None</guimenuitem>. Specify the
+        <guimenuitem>None</guimenuitem> option if you would do not want to
+        track setup time as part of the operation's cost.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Report Setup Time</term>
-
       <listitem>
         <para>Select to report setup time. Must be selected for labor costs
         associated with setup to be tracked in the G/L and elsewhere. If not
         selected, these costs will not be reported.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>run time</primary>
-
           <secondary>in routings</secondary>
         </indexterm>Run Time (min)</term>
-
       <listitem>
         <para>Amount entered represents the number of minutes required to run
         the production UOM.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Report Cost as (Run Time)</term>
-
       <listitem>
         <para>Specify whether you want to report setup costs as
-        <guilabel>Direct Labor</guilabel>, <guilabel>Overhead</guilabel>, or
-        <guilabel>None</guilabel>. Specify the <guilabel>None</guilabel>
-        option if you would do not want to track setup time as part of the
-        operation's cost.</para>
+        <guimenuitem>Direct Labor</guimenuitem>,
+        <guimenuitem>Overhead</guimenuitem>, or
+        <guimenuitem>None</guimenuitem>. Specify the
+        <guimenuitem>None</guimenuitem> option if you would do not want to
+        track setup time as part of the operation's cost.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Report Run Time</term>
-
       <listitem>
         <para>Select to report run time. Must be selected for labor costs
         associated with run time to be tracked in the G/L and elsewhere. If
         not selected, these costs will not be reported.</para>
-
         <note>
           <para>When operations are posted, inventory transaction records will
           be posted to the general ledger if at least one of the operations in
@@ -259,10 +213,8 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>per</term>
-
       <listitem>
         <para>Specify the standard quantity that will be produced during a
         typical run-time period. The value entered here is equivalent to a run
@@ -274,71 +226,48 @@
         operations costs are evenly distributed. The following equation
         indicates how operations costs are distributed using batch
         sizes:</para>
-
         <equation>
           <mathphrase>((Setup Time * Setup Cost) + (Run Time * Run Cost))/per
           = Extended Total</mathphrase>
         </equation>
-
         <para>The following table illustrates two examples of how differing
         batch sizes produce different operations costs per unit:</para>
-
         <para><table>
             <title>Example Batch Sizes with Operations Costing</title>
-
             <tgroup cols="6">
               <thead>
                 <row>
                   <entry><para> Setup Time (Mins) </para></entry>
-
                   <entry><para> Run Time (Mins) </para></entry>
-
                   <entry><para> Units in Run ("per") </para></entry>
-
                   <entry><para>Setup Cost from WC (Per Min)</para></entry>
-
                   <entry><para>Run Cost from WC (Per Min)</para></entry>
-
                   <entry><para> Extended Cost per Unit </para></entry>
                 </row>
               </thead>
-
               <tbody>
                 <row>
                   <entry><para> 15 </para></entry>
-
                   <entry><para> 100 </para></entry>
-
                   <entry><para> 10 </para></entry>
-
                   <entry><para>$0.500</para></entry>
-
                   <entry><para>$0.417</para></entry>
-
                   <entry><para>$4.920</para></entry>
                 </row>
-
                 <row>
                   <entry><para> 15</para></entry>
-
                   <entry><para> 1000 </para></entry>
-
                   <entry><para> 100 </para></entry>
-
                   <entry><para>$0.500</para></entry>
-
                   <entry><para>$0.417</para></entry>
-
                   <entry><para>$4.245</para></entry>
                 </row>
               </tbody>
             </tgroup>
           </table></para>
-
         <note>
           <para>Labor and <indexterm significance="normal">
               <primary>overhead</primary>
-
               <secondary>in routings</secondary>
             </indexterm>overhead costs associated with setup and run times
           must be reported if they are to be tracked in the G/L and elsewhere.
@@ -347,14 +276,11 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>units of measure</primary>
-
           <secondary>in routings</secondary>
         </indexterm>Production UOM</term>
-
       <listitem>
         <para>Select a UOM—or enter a free-form UOM. Specify a UOM to be used
         optionally when work order operations are posted for the specified
@@ -362,43 +288,36 @@
         production UOMs. For example, if you are producing soup, you might mix
         the soup in one operation using UOM = BATCH. But when canning the
         soup, the canning operation might use UOM = CAN.</para>
-
         <note>
           <para>When posting work order operations, you are given the option
           to post operations using production UOMs or inventory UOMs.</para>
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Production/Inventory Ratio</term>
-
       <listitem>
         <para>This is the ratio that normalizes quantities to create a
         production UOM for use when posting work order operations.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Receive Inventory at this Operation</term>
-
       <listitem>
         <para>Select to indicate that the manufactured item should be received
         into inventory at this operation. The manufactured item will be
         received into inventory via a receive from manufacturing (RM)
         transaction, when the operation is posted.</para>
-
         <note>
-          <para>The <guilabel>Receive Inventory</guilabel> option may only be
-          selected once per routing. Finished items may only be received into
-          inventory once in the operations sequence.</para>
+          <para>The <guilabel>Receive Inventory at this Operation</guilabel>
+          option may only be selected once per routing. Finished items may
+          only be received into inventory once in the operations
+          sequence.</para>
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Auto. Issue Components at this Operation</term>
-
       <listitem>
         <para>Issue components at this operation: Select to automatically
         issue components used at this operation. This setting will only affect
@@ -407,10 +326,8 @@
         a specific material issue transaction.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>May Overlap with Preceding Operation</term>
-
       <listitem>
         <para>Select to allow the operation to overlap with the preceding
         operation. If selected, you are indicating that this operation may be
@@ -419,18 +336,14 @@
         complete.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>work in process</primary>
-
           <secondary>boo-defined locations for</secondary>
         </indexterm><indexterm significance="normal">
           <primary>bills of operations</primary>
-
           <secondary>wip locations and</secondary>
         </indexterm>WIP Location</term>
-
       <listitem>
         <para>Select a work-in-process (WIP) location. This is an optional
         selection which may be used for tracking the site locations of
@@ -445,14 +358,11 @@
         finished MLC goods, then you can ignore this option.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>throughput</primary>
-
           <secondary>at operation level</secondary>
         </indexterm>Throughput</term>
-
       <listitem>
         <para>Indicates the number of units, in the given item's inventory
         UOM, that can be produced in a minute—and also the number of minutes
@@ -461,7 +371,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>Bill of materials (BOM) items may be associated with operations—either
   materials, tools, or finished goods themselves. In an effort to help manage
   this relationship, the Operation screen includes the ability to both modify
@@ -469,55 +378,43 @@
   items. To view components associated with an operation, select the
   <guimenuitem>Materials</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem_materials.png"/>
+          <imagedata fileref="images/booItem_materials.png" />
         </imageobject>
-
-        <caption>Components Associated with Operation</caption>
+        <caption>Components associated with operation</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing components associated with an operation, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Show Expired</term>
-
       <listitem>
         <para>Select to display expired components associated with the
         operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Future</term>
-
       <listitem>
         <para>Select to display future components associated with the
         operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Revision</term>
-
       <listitem>
         <para>Specify which BOM revision you want to use in conjunction with
         the specified operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Materials</term>
-
       <listitem>
         <para>Display includes components associated with the
         operation.</para>
-
         <warning>
           <para>Changes made to components on the Operation screen will be
           reflected in the source BOM.</para>
@@ -525,68 +422,53 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>EXPIRE</guibutton></term>
-
       <listitem>
         <para>Highlight a component and then select this button to expire the
         item from the BOM.</para>
-
         <tip>
           <para><indexterm significance="normal">
               <primary>bills of materials</primary>
-
               <secondary>deleting items from</secondary>
             </indexterm>If your site is configured to allow the deletion of
-          BOM items, you will see a <guilabel>Delete</guilabel> option in the
-          right-click menu on this screen.</para>
+          BOM items, you will see a <guimenuitem>Delete</guimenuitem> option
+          in the right-click menu on this screen.</para>
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>ATTACH</guibutton></term>
-
       <listitem>
         <para>Select to associate a component with the operation.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>DETACH</guibutton></term>
-
       <listitem>
         <para>Highlight a component and then select this button to break the
         link between the item and the operation.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To associate instructions with an operation, select the
   <guimenuitem>Instructions</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem_instructions.png"/>
+          <imagedata fileref="images/booItem_instructions.png" />
         </imageobject>
-
         <caption>Operational Instructions</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When associating instructions with an operation, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Instructions</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         instructions related to the operation. If you are using a standard
@@ -597,10 +479,8 @@
         lost if you change standard operations for any reason.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Use Fixed-Width Font</term>
-
       <listitem>
         <para>Select to display text in the <guilabel>Instructions</guilabel>
         field in fixed-width font. This is a useful feature for displaying
@@ -608,37 +488,30 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>You may associate images with an operation, thereby making these
   images available to be printed on routings. To associate an image with an
   operation, select the <guimenuitem>Images</guimenuitem> tab. The following
   screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/booItem_booimage.png"/>
+          <imagedata fileref="images/booItem_booimage.png" />
         </imageobject>
-
         <caption>Operation Images</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When associating images with an operation, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Images</term>
-
       <listitem>
         <para>Display lists stored images available for association with the
         specified operation.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="../widgets/imageAssignment.xml"
               xpointer="imageAssignmentWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
 </section>

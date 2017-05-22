@@ -5,79 +5,61 @@
 <section id="itemGroup">
   <title><indexterm significance="normal">
       <primary>item groups</primary>
-
       <secondary>creating new</secondary>
     </indexterm>Item Group</title>
-
   <para>To create a new item group, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemGroup.png"/>
+          <imagedata fileref="images/itemGroup.png" />
         </imageobject>
-
-        <caption>Create New Item Group</caption>
+        <caption>Create new Item Group</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>Create your item groups using a logical, hierarchical structure.
     This will make it easier to retrieve item group information in the
     future.</para>
   </tip>
-
   <para>When creating a new item group, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Name</term>
-
       <listitem>
         <para>Enter a unique name for the item group.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Enter a description to further identify the item group.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Product Catalog</term>
-
       <listitem>
         <para>Select this option to have the group included in the product
         catalog.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Parent Groups</term>
-
       <listitem>
         <para>Display lists parent groups that belong to the item group.
         Adding another parent group will also add that parent group's member
         items to the item group.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Group</term>
-
       <listitem>
         <para>Select a new parent group to include in the item group.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Member Items</term>
-
       <listitem>
         <para>Display lists member items of the item group.<note>
             <para>Only member items of the item group defined in this window
@@ -85,65 +67,50 @@
           </note></para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter an item number you want to include as a member item in the
         item group.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Displays the unit of measure for the item.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>DELETE PARENT</guibutton></term>
-
       <listitem>
         <para>Highlight a parent group and then select this button to remove
         the selected parent group from the item group.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>NEW PARENT</guibutton></term>
-
       <listitem>
         <para>Select to insert the selected item group as a parent group. It
         will be listed under parent groups.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>DELETE ITEM</guibutton></term>
-
       <listitem>
         <para>Click to remove a member item from the item group. Once deleted,
         it will no longer display under member items.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>NEW ITEM</guibutton></term>
-
       <listitem>
         <para>Select to insert the entered item as a member item. It will be
         listed under member items.</para>

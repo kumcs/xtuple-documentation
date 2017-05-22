@@ -5,75 +5,60 @@
 <section role="distribution">
   <title><indexterm significance="normal">
       <primary>commodity codes</primary>
-
       <secondary>creating new</secondary>
     </indexterm>External Vendor Commodity Code</title>
-
   <para>To create a new external vendor commodity code, select the
   <guibutton>NEW</guibutton> button. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/catComm.png"/>
+          <imagedata fileref="images/catComm.png" />
         </imageobject>
-
-        <caption>Create New Commodity Code</caption>
+        <caption>Create new Commodity Code</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating a new external vendor commodity code, you are presented
   with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Provider</term>
-
       <listitem>
         <para>By default when expanding the external vendor commodity codes,
-        the provider will be set to <guilabel>Internal</guilabel> to denote it
-        is custom.</para>
+        the provider will be set to <guimenuitem>Internal</guimenuitem> to
+        denote it is custom.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Code</term>
-
       <listitem>
         <para>Enter a code to help create a sequence and structure for the
         commodity codes. Using codes breaks the items into groups and sub
         groups based on the numbering structure you define.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Description</term>
-
       <listitem>
         <para>Enter a description for the code to identify the item or group
         structure it relates to.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Parent</term>
-
       <listitem>
         <para>Select an already-existing code from the drop-down list to
         create your custom structure. Codes will be displayed as nested within
         the parent codes you specify.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Level</term>
-
       <listitem>
         <para>The level will increment as you create your structure. For
         example, when you add your first commodity code it will assume level
-        1. If you return to the Commodity Codes screen and select
-        <guibutton>NEW</guibutton> again, the level will increment to 2, based
-        on the parent selected.</para>
+        one. If you return to the Commodity Codes screen and select
+        <guibutton>NEW</guibutton> again, the level will increment to two,
+        based on the parent selected.</para>
       </listitem>
     </varlistentry>
   </variablelist>
