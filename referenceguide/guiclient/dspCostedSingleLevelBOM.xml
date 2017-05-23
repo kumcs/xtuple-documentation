@@ -5,63 +5,49 @@
 <section id="dspCostedSingleLevelBOM">
   <title><indexterm significance="normal">
       <primary>costing</primary>
-
       <secondary>for single level BOMs</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>bills of materials</primary>
-
       <secondary>costed single level view of</secondary>
     </indexterm>Costed Single Level BOM</title>
-
   <para>To view costs for a single level bill of materials (BOM), go to
   <guimenuitem>Products &gt; Costing &gt; Reports &gt; Costed
   BOM</guimenuitem><guimenuitem> &gt; Single Level</guimenuitem>. The
   following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspCostedSingleLevelBOM.png"/>
+          <imagedata fileref="images/dspCostedSingleLevelBOM.png" />
         </imageobject>
-
         <caption>Costed Single Level Bill of Materials</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When displaying costs for a single level BOM, you are presented with
   the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Enter the item number of the manufactured item whose associated
         costs you would like to view using a single level BOM.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Revision</term>
-
       <listitem>
         <para>If revision control is enabled at your site, specify the BOM
         revision number you want to view. If none exists, simply enter a value
         to create one. The status of the revision will also be displayed. The
         following statuses apply to revisions:</para>
-
         <variablelist>
           <varlistentry>
             <term>Active</term>
-
             <listitem>
               <para>This is the current, default revision used for costing and
               material requirements planning (MRP). Only one revision can be
@@ -73,10 +59,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Use Standard Costs</term>
-
       <listitem>
         <para>Select to display standard costs for the specified item. Both
         the unit cost and extended cost for each component item, expressed in
@@ -85,7 +69,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>When labor and overhead are posted to the general ledger, they are
     posted using their actual cost. This is a departure from the rule which
@@ -95,11 +78,9 @@
     production or operations are posted. You can address these variances if
     and when they occur by posting your actual costs to standard.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term>Use Actual Costs</term>
-
       <listitem>
         <para>Select to display actual costs for the specified item. Both the
         unit cost and extended cost for each component item, expressed in
@@ -108,35 +89,28 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>The totals displayed on the screen are derived as follows:</para>
-
     <variablelist>
       <varlistentry>
         <term>Total Cost</term>
-
         <listitem>
-          <para>This total is pulled from the <guilabel>Extended
-          Cost</guilabel> column—and reflects the real time total cost for the
-          specified item. The total cost may differ from the actual or
-          standard totals in cases where real time cost updates have not yet
-          been rolled up into the specified parent item.</para>
+          <para>This total is pulled from the <guilabel>Ext. Cost</guilabel>
+          column—and reflects the real time total cost for the specified item.
+          The total cost may differ from the actual or standard totals in
+          cases where real time cost updates have not yet been rolled up into
+          the specified parent item.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Actual Cost</term>
-
         <listitem>
           <para>This value represents the actual cost for the parent item
           whose costed indented BOM is being displayed.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>Standard Cost</term>
-
         <listitem>
           <para>This value represents the standard cost for the parent item
           whose costed indented BOM is being displayed.</para>
@@ -144,11 +118,9 @@
       </varlistentry>
     </variablelist>
   </note>
-
   <variablelist>
     <varlistentry>
       <term>Costed Bill of Materials</term>
-
       <listitem>
         <para>Display lists costed BOM components, using the specified
         parameters. The total cost, actual cost, and standard cost will be

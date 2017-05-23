@@ -5,92 +5,73 @@
 <section id="postStandCostsByClassCode">
   <title><indexterm significance="normal">
       <primary>standard costs</primary>
-
       <secondary>updating by class code</secondary>
     </indexterm><indexterm significance="normal">
       <primary>class codes</primary>
-
       <secondary>updating standard costs for</secondary>
     </indexterm>Post Standard Costs by Class Code</title>
-
   <para>Posting standard costs is <emphasis>not</emphasis> the same process as
   updating actual costs or posting actual costs to standard. It is an entirely
   different process—and in most cases, it will only be used in rare
   circumstances.</para>
-
   <para>Standard costs are the costs which are recorded in the general ledger
   whenever transactions are posted. As such, they are the costs of record.
   Typically, a company will update its standard costs on a periodic basis—for
   example, annually or quarterly. However, if you introduce new products into
   production between standard cost updates, you may want to roll up existing
   standard costs into the cost of your new manufactured items.</para>
-
   <tip>
     <para>For best performance and results, you should run this utility by all
-    class codes—and don't select the <guilabel>Roll Up</guilabel> option. This
-    will ensure your costs are updated properly for any items which cross
-    class code lines.</para>
+    class codes—and don't select the <guilabel>Roll Up Standard
+    Costs</guilabel> option. This will ensure your costs are updated properly
+    for any items which cross class code lines.</para>
   </tip>
-
   <para>To update standard costs by class code, go to <guimenuitem>Products
   &gt; Costing &gt; Post Standard Costs &gt; </guimenuitem><guimenuitem>by
   Class Code</guimenuitem>. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/postStandCostsByClassCode.png"/>
+          <imagedata fileref="images/postStandCostsByClassCode.png" />
         </imageobject>
-
         <caption>Update Standard Costs by Class Code</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When updating standard costs by class code, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>All Class Codes</term>
-
       <listitem>
         <para>Select to update standard costs for all class codes. Running the
         utility by all class codes is the preferred method.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Selected</term>
-
       <listitem>
         <para>Specify class code whose standard costs you want to
         update.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Pattern</term>
-
       <listitem>
         <para>Enter a class code pattern to select a range of class codes.
         Refine your search using regular expressions.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <tip>
     <para>For manufactured items, rolling up standard costs ensures that lower
     level costs are reflected in the cost for the parent item.</para>
   </tip>
-
   <variablelist>
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>standard costs</primary>
-
           <secondary>rolling up of</secondary>
         </indexterm>Roll Up Standard Costs</term>
-
       <listitem>
         <para>Select this option if you are updating a selected class code or
         class code pattern. Do not use this option if you are updating by all
@@ -105,41 +86,32 @@
         current level.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>material costs</primary>
-
           <secondary>updating of</secondary>
         </indexterm><indexterm significance="normal">
           <primary>costing</primary>
-
           <secondary>updating of material costs</secondary>
         </indexterm><indexterm significance="normal">
           <primary>standard costs</primary>
-
           <secondary>updating material costs</secondary>
         </indexterm>Update Lower Level Material Costs</term>
-
       <listitem>
         <para>Select to update lower level material costs. Not selecting means
         lower level material costs will not be included in the cost
         update.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="manufacturing">
       <term>Update Direct Labor Cost</term>
-
       <listitem>
         <para>Select to update direct labor cost. Not selecting means the
         direct labor cost will not be included in the cost update.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="manufacturing">
       <term>Update Lower Level Direct Labor Cost</term>
-
       <listitem>
         <para>Select to update lower level direct labor cost. Not selecting
         means the lower level direct labor cost will not be included in the
@@ -147,98 +119,77 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <note>
     <para>You have the flexibility of updating all or only a subset of the
     listed costs. Updating a subset might be desirable if only material or
     user costs have changed, for example.</para>
   </note>
-
   <variablelist>
     <varlistentry role="manufacturing">
       <term>Update Overhead Cost</term>
-
       <listitem>
         <para>Select to update overhead cost. Not selecting means the overhead
         cost will not be included in the cost update.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="manufacturing">
       <term>Update Lower Level Overhead Cost</term>
-
       <listitem>
         <para>Select to update lower level overhead cost. Not selecting means
         the lower level overhead cost will not be included in the cost
         update.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="manufacturing">
       <term>Update Machine Overhead</term>
-
       <listitem>
         <para>Select to update machine overhead cost. This option is selected
         by default.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="manufacturing">
       <term>Update Lower Machine Overhead</term>
-
       <listitem>
         <para>Select to update lower level machine overhead cost. This option
         is selected by default.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>user costs</primary>
-
           <secondary>updating of</secondary>
         </indexterm><indexterm significance="normal">
           <primary>costing</primary>
-
           <secondary>updating of user costs</secondary>
         </indexterm><indexterm significance="normal">
           <primary>standard costs</primary>
-
           <secondary>updating user costs</secondary>
         </indexterm>Update User Costs</term>
-
       <listitem>
         <para>Select to update user costs. Not selecting means user costs will
         not be included in the cost update.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Update Lower Level User Costs</term>
-
       <listitem>
         <para>Select to update lower level user costs. Not selecting means
         lower level user costs will not be included in the cost update.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>UPDATE</guibutton></term>
-
       <listitem>
         <para>Updates all selected costs for the specified item. If the option
         <guilabel>Roll Up Standard Costs</guilabel> has been selected, the
         total standard cost for the specified item will be updated.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>SELECT ALL COSTS</guibutton></term>
-
       <listitem>
         <para>Selects all costs for updating. Use this option to save time
         when selecting all costs for updating. The option <guilabel>Roll Up
