@@ -1,6 +1,6 @@
 # xTuple Release Notes
 
-## Version 4.10.1 - May, 2017
+## Version 4.11.0Beta - May, 2017
 
 These are the release notes for the 4.11.0Beta xTuple ERP release.
 Thanks to all who contributed to make this release possible. See below for more information about
@@ -9,7 +9,7 @@ Thanks to all who contributed to make this release possible. See below for more 
 ### Summary
 
 A large number of features and bug fixes have been added to the
-application since the 4.10.0 release. Our focus has been on improving
+application since the 4.10.1 release. Our focus has been on improving
 the desktop client and preparing for upcoming xTupleCommerce features.
 
 Of particular interest are the following:
