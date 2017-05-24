@@ -20,7 +20,7 @@ Of particular interest are the following:
 - Continued performance improvements
 - Rudimentary (undocumented) widget scripting (issue #[28225](http://www.xtuple.org/xtincident/view/bugs/28225) WIP)
 
-**Note:** This release is compatible with PostgreSQL 9.3 through 9.6.
+**Note:** See the xTuple ERP [Compatibility Matrix](https://xtupleuniversity.xtuple.com/library/articles/compatibility-matrix).
 You will need the following two PostgreSQL extensions:
 
 - plv8 -
