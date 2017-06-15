@@ -14,7 +14,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer.png" />
+          <imagedata fileref="images/customer.png"/>
         </imageobject>
         <caption>Create new Customer</caption>
       </mediaobject>
@@ -85,7 +85,7 @@
         information. If a new contact is manually entered here, that contact
         will be added automatically to the master list of contacts. For
         additional documentation related to creating contacts, see <xref
-        linkend="contact" />.</para>
+        linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -98,7 +98,7 @@
         additional contact information. If a new contact is manually entered
         here, that contact will be added automatically to the master list of
         contacts. For additional documentation related to creating contacts,
-        see <xref linkend="contact" />.</para>
+        see <xref linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -119,7 +119,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/shipTo.png" />
+          <imagedata fileref="images/shipTo.png"/>
         </imageobject>
         <caption>Ship-To Address</caption>
       </mediaobject>
@@ -178,7 +178,7 @@
         information. If a new address is manually entered here, that address
         will be added automatically to the master list of addresses. For
         additional documentation related to creating addresses, see <xref
-        linkend="address" />.</para>
+        linkend="address"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -194,7 +194,7 @@
         label. If a new contact is manually entered here, that contact will be
         added automatically to the master list of contacts. For additional
         documentation related to creating contacts, see <xref
-        linkend="contact" />.</para>
+        linkend="contact"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -301,7 +301,7 @@
         <para>To associate documents with a ship-to address, select the
         <guimenuitem>Documents</guimenuitem> tab.</para>
         <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
       </listitem>
     </varlistentry>
     <varlistentry role="xtconnect">
@@ -320,7 +320,7 @@
         </note>
         <xi:include href="../widgets/edirelation.xml"
                     xpointer="edirelationWidget"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -330,7 +330,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab.png" />
+          <imagedata fileref="images/customer_settingsTab.png"/>
         </imageobject>
         <caption>Customer Settings tab</caption>
       </mediaobject>
@@ -516,7 +516,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_termsButton.png" />
+          <imagedata fileref="images/customer_settingsTab_termsButton.png"/>
         </imageobject>
         <caption>Customer Terms options</caption>
       </mediaobject>
@@ -709,7 +709,7 @@
         customer, to override the global grace period defined at the system
         level in the <guimenu>Accounting</guimenu> configuration. To learn
         more about configuring grace days, see <xref
-        linkend="configureGL" />.</para>
+        linkend="configureGL"/>.</para>
         <variablelist>
           <varlistentry>
             <term>Grace Days</term>
@@ -729,7 +729,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_taxButton.png" />
+          <imagedata fileref="images/customer_settingsTab_taxButton.png"/>
         </imageobject>
         <caption>Customer Tax options</caption>
       </mediaobject>
@@ -768,7 +768,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/taxRegistration.png" />
+          <imagedata fileref="images/taxRegistration.png"/>
         </imageobject>
         <caption>Customer Tax Registration Information</caption>
       </mediaobject>
@@ -860,7 +860,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_settingsTab_creditcardsButton.png" />
+          <imagedata fileref="images/customer_settingsTab_creditcardsButton.png"/>
         </imageobject>
         <caption>Customer Credit Cards</caption>
       </mediaobject>
@@ -885,6 +885,15 @@
   <para>The following buttons are unique to this screen:</para>
   <variablelist>
     <varlistentry>
+      <term><guibutton>DELETE</guibutton></term>
+      <listitem>
+        <para>Highlight a credit card and then select this button to delete
+        the credit card from the list. If the card has transaction history, it
+        will not be deleted but will be expired and made inactive,
+        instead.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term><guibutton>MOVE UP</guibutton></term>
       <listitem>
         <para>Highlight a credit card and then select this button to move the
@@ -906,7 +915,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/creditCard.png" />
+          <imagedata fileref="images/creditCard.png"/>
         </imageobject>
         <caption>Create new Credit Card record</caption>
       </mediaobject>
@@ -958,7 +967,7 @@
         However, you may specify an alternate billing address for the credit
         card record using the address lookup feature located in the lower
         right-hand corner of the screen. For additional documentation related
-        to creating addresses, see <xref linkend="address" />.</para>
+        to creating addresses, see <xref linkend="address"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -998,7 +1007,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_tabCharacteristics.png" />
+          <imagedata fileref="images/customer_tabCharacteristics.png"/>
         </imageobject>
         <caption>Customer Characteristics</caption>
       </mediaobject>
@@ -1016,14 +1025,14 @@
   </tip>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>Every customer record is linked to a CRM account. To view information
   related to the customer's CRM account, select the
   <guimenuitem>CRM</guimenuitem> tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_crmTab.png" />
+          <imagedata fileref="images/customer_crmTab.png"/>
         </imageobject>
         <caption>CRM Information</caption>
       </mediaobject>
@@ -1039,7 +1048,7 @@
         adding new contacts or attaching/detaching contacts from the account.
         Any changes made here also update the CRM account record. For
         additional documentation related to managing a contacts associated
-        with a CRM account, see <xref linkend="crmaccount" />.</para>
+        with a CRM account, see <xref linkend="crmaccount"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1049,7 +1058,7 @@
         this screen you can manage all of the to-dos, opportunities, and
         incidents related to the account. Any changes made here also update
         the main to-do list. For additional documentation related to managing
-        the to-do list, see <xref linkend="todoList" />.</para>
+        the to-do list, see <xref linkend="todoList"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1059,7 +1068,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_salesTab.png" />
+          <imagedata fileref="images/customer_salesTab.png"/>
         </imageobject>
         <caption>Customer Sales information</caption>
       </mediaobject>
@@ -1086,7 +1095,7 @@
         may also view historical quotes converted to sales orders or invoices
         if your <guimenu>Sales</guimenu> module is configured to allow this.
         For additional documentation related to entering quotes for customers,
-        please see <xref linkend="quote" />.</para>
+        please see <xref linkend="quote"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1095,7 +1104,7 @@
         <para>Select to view the list of sales orders associated with the
         customer. On this screen you can create new sales orders or edit
         existing ones. For additional documentation related to entering sales
-        orders for customers, please see <xref linkend="salesOrder" />.</para>
+        orders for customers, please see <xref linkend="salesOrder"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="standard">
@@ -1105,7 +1114,7 @@
         screen you can manage most aspects of the returns process—from
         creating new return authorizations to processing credit memos. For
         additional documentation related to managing return authorizations,
-        please see <xref linkend="returnAuthorization" />.</para>
+        please see <xref linkend="returnAuthorization"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1115,7 +1124,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_accountingTab.png" />
+          <imagedata fileref="images/customer_accountingTab.png"/>
         </imageobject>
         <caption>Customer Accounting information</caption>
       </mediaobject>
@@ -1131,7 +1140,7 @@
         receivables process—from creating new receivable documents (e.g.,
         invoices, credit memos, etc.) to printing out customer statements. For
         additional documentation related to managing customer receivables, see
-        <xref linkend="dspAROpenItems" />.</para>
+        <xref linkend="dspAROpenItems"/>.</para>
         <tip>
           <para>You can void posted invoices and returns on the open
           receivables screen—as long as they are unapplied.</para>
@@ -1145,9 +1154,9 @@
         customer. On this screen you can view cash receipt and cash
         application history, as well as enter new cash receipts for the
         customer. For additional documentation related to cash receipt
-        history, see <xref linkend="dspCashReceipts" />. And for detailed
+        history, see <xref linkend="dspCashReceipts"/>. And for detailed
         information about entering cash receipts, see <xref
-        linkend="cashReceipt" />.</para>
+        linkend="cashReceipt"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -1158,7 +1167,7 @@
         transaction history, authorize credit card pre-authorizations, and
         print credit card receipts. For additional documentation related to
         credit card history and the method for processing pre-authorizations,
-        see <xref linkend="arWorkBench" />.</para>
+        see <xref linkend="arWorkBench"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -1172,19 +1181,19 @@
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/customer_documentsTab.png" />
+        <imagedata fileref="images/customer_documentsTab.png"/>
       </imageobject>
       <caption><para>Customer Documents</para></caption>
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To enter remarks (e.g., notes and comments) related to the customer,
   select the <guimenuitem>Remarks</guimenuitem> tab. The following screen will
   appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_tabRemarks.png" />
+          <imagedata fileref="images/customer_tabRemarks.png"/>
         </imageobject>
         <caption>Customer Remarks</caption>
       </mediaobject>
@@ -1211,7 +1220,7 @@
     </varlistentry>
   </variablelist>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para role="xtconnect">The electronic data interchange (EDI) system enables
   you to send quotes, sales orders, credit memos, receivables statements, and
   invoices electronically to your customers. To establish a customer's EDI
@@ -1220,7 +1229,7 @@
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_transmitTab.png" />
+          <imagedata fileref="images/customer_transmitTab.png"/>
         </imageobject>
         <caption>Transmission Information for EDI</caption>
       </mediaobject>
@@ -1231,12 +1240,12 @@
     customer, save the customer and edit it again.</para>
   </note>
   <xi:include href="../widgets/edirelation.xml" xpointer="edirelationWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To view email associated with the customer, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para role="standard"><indexterm significance="normal">
       <primary>dashboards</primary>
       <secondary>for customers</secondary>
@@ -1246,7 +1255,7 @@
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/customer_dashboardTab.png" />
+          <imagedata fileref="images/customer_dashboardTab.png"/>
         </imageobject>
         <caption>Customer Dashboard</caption>
       </mediaobject>
@@ -1308,5 +1317,5 @@
       </varlistentry>
     </variablelist></para>
   <xi:include href="../widgets/dashboardPane.xml" xpointer="dashboardsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
