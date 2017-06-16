@@ -11,13 +11,13 @@
       <secondary>application of</secondary>
     </indexterm>Receivables Applications</title>
   <para>To view details concerning the application of cash receipts and credit
-  memos to open receivables, go to <guimenuitem>Accounting &gt; Accounts
-  Receivable &gt; Reports &gt; Applications</guimenuitem>. The following
-  screen will appear:</para>
+  memos to open receivables, or to reverse unwanted applications, go to
+  <guimenuitem>Accounting &gt; Accounts Receivable &gt; Reports &gt;
+  Applications</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspARApplications.png" />
+          <imagedata fileref="images/dspARApplications.png"/>
         </imageobject>
         <caption>Receivables Applications</caption>
       </mediaobject>
@@ -92,8 +92,14 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>When you see the term Other in the <guilabel>Apply-To</guilabel>
-    column, this typically refers to a misc. Application made while entering a
-    cash receipt.</para>
+    <para>Use the <guimenuitem>Reverse Application</guimenuitem> option in the
+    right-click menu to un-apply cash or credit memos which have been applied
+    incorrectly to invoices. Once reversed, the documents can then be
+    re-applied elsewhere.</para>
   </tip>
+  <note>
+    <para>When you see the term Other in the <guilabel>Apply-To</guilabel>
+    column, this typically refers to a miscellaneous application made while
+    entering a cash receipt.</para>
+  </note>
 </section>

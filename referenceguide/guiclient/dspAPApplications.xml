@@ -5,79 +5,61 @@
 <section id="dspAPApplications">
   <title><indexterm significance="normal">
       <primary>checks</primary>
-
       <secondary>application of</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>credit memos</primary>
-
       <secondary>application of</secondary>
     </indexterm>Payables Applications</title>
-
   <para>To view details concerning the application of checks and credit memos
-  to open payables, go to <guimenuitem>Accounting &gt; Accounts Payable &gt;
-  Reports &gt; Payables Applications</guimenuitem>. The following screen will
-  appear:</para>
-
+  to open payables, or to reverse unwanted applications, go to
+  <guimenuitem>Accounting &gt; Accounts Payable &gt; Reports &gt; Payables
+  Applications</guimenuitem>. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/dspAPApplications.png"/>
         </imageobject>
-
         <caption>A/P Applications</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing payables application details, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Vendor</term>
-
       <listitem>
         <para>Select all or specific vendors whose payables applications you
         would like to view.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Start Date</term>
-
       <listitem>
         <para>Payables applications made on and after this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>End Date</term>
-
       <listitem>
         <para>Payables applications made on and before this date will be
         displayed.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Checks</term>
-
       <listitem>
         <para>Select to display only check application details.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Show Credit Memos</term>
-
       <listitem>
         <para>Select to display only credit memo application details.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Accounts Payable Applications</term>
-
       <listitem>
         <para>Display lists payables application details, using the specified
         parameters. The amount of each payables application is displayed in
@@ -88,4 +70,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
+  <tip>
+    <para>Use the <guimenuitem>Reverse Application</guimenuitem> option in the
+    right-click menu to un-apply checks or credit memos which have been
+    applied incorrectly to vouchers. Once reversed, the documents can then be
+    re-applied elsewhere.</para>
+  </tip>
 </section>

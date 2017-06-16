@@ -5,49 +5,38 @@
 <section id="arWorkBench">
   <title><indexterm significance="normal">
       <primary>accounts receivable</primary>
-
       <secondary>workbench for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>workbenches</primary>
-
       <secondary>for accounts receivable</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>accounts receivable</primary>
-
       <secondary>workbench for</secondary>
     </indexterm> <indexterm significance="normal">
       <primary>workbenches</primary>
-
       <secondary>for accounts receivable</secondary>
     </indexterm>Receivables Workbench</title>
-
   <para>The Receivable workbench is designed to consolidate on one screen the
   functions performed by accounts receivable personnel. To view the
   Receivables workbench, go to <guimenuitem>Accounting &gt; Accounts
   Receivable &gt; Workbench</guimenuitem>. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/arWorkBench.png"/>
         </imageobject>
-
         <caption>Receivables Workbench</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When viewing the Receivables workbench, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Customer</term>
-
       <listitem>
         <para>Select all or specific customers whose receivables information
         you want to display.</para>
-
         <tip>
           <para>To generate results in the display you first have to select
           the <guibutton>QUERY</guibutton> button. If you are not seeing any
@@ -55,76 +44,58 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Debits</term>
-
       <listitem>
         <para>Select to include only invoices and debit memos in the
         display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credits</term>
-
       <listitem>
         <para>Select to include only credit memos in the display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Both</term>
-
       <listitem>
         <para>Select to include both debits and credits in the display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Unposted</term>
-
       <listitem>
         <para>Select to include unposted invoices in the display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Find Document #</term>
-
       <listitem>
         <para>Enter the number of the document you want to locate. The record
         you are looking for will be highlighted in the display.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Due Date</term>
-
       <listitem>
         <para>Specify one of the following document due date options:</para>
-
         <variablelist>
           <varlistentry>
             <term>All</term>
-
             <listitem>
               <para>Select to include all due dates in the display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>On or before</term>
-
             <listitem>
               <para>Select to include only documents having due dates on or
               before the date you specify.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Between</term>
-
             <listitem>
               <para>Select to include documents having due dates falling
               between the dates you specify.</para>
@@ -133,24 +104,23 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Receivables</term>
-
       <listitem>
         <para>Displays the current list of receivable open items for the
         specified customer, based on the parameters you specify. Documents in
         the display may include invoices, debit memos, and credit memos. You
-        can change the color for the following document types using the locale
-        settings: customer deposit (alternate) and credit memo
-        (emphasis).</para>
-
+        can also void posted invoices and sales credits from the right-click
+        menu—as long as they are unapplied. To un-apply documents, use the
+        <guimenuitem>Reverse Application</guimenuitem> option on the
+        Receivables Application screen. You can change the color for the
+        following document types using the locale settings: customer deposit
+        (alternate) and credit memo (emphasis).</para>
         <note>
           <para>You can refund credit card charges using the right-click menu.
           This option only works for credit memos specifically created from
           credit card transactions.</para>
         </note>
-
         <tip>
           <para>If you are using the Authorize.Net payment gateway, refunds
           must be processed at least one day after the original charge.
@@ -160,32 +130,25 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To manage cash receipts on the Receivables workbench, select the
   <guimenuitem>Cash Receipts</guimenuitem> tab. The following screen will
   appear:</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
         <imagedata fileref="images/arWorkBench_cashRecptTab.png"/>
       </imageobject>
-
       <caption>Receivables Workbench Cash Receipts</caption>
     </mediaobject>
   </screenshot>
-
   <para>When managing cash receipts on the Receivables workbench, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Cash Receipts</term>
-
       <listitem>
         <para>Displays the current list of unposted cash receipts for the
         specified customer.</para>
-
         <note>
           <para>Once a cash receipt is posted, it will no longer appear in the
           cash receipts list.</para>
@@ -193,41 +156,32 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To process pre-authorized credit card payments on the Receivables
   workbench, select the <guimenuitem>Credit Card</guimenuitem> tab. The
   following screen will appear:</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
         <imagedata fileref="images/arWorkBench_creditCardTab.png"/>
       </imageobject>
-
       <caption>Receivables Workbench Credit Card</caption>
     </mediaobject>
   </screenshot>
-
   <variablelist>
     <varlistentry>
       <term>Show</term>
-
       <listitem>
         <para>Select from the following options to include in the
         display:</para>
-
         <variablelist>
           <varlistentry>
             <term>Expired</term>
-
             <listitem>
               <para>Lists all credit cards, including expired cards.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Valid Days</term>
-
             <listitem>
               <para>Displays credit cards which expire on after the number of
               days selected.</para>
@@ -236,10 +190,8 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Credit Card</term>
-
       <listitem>
         <para>Displays the current list of pre-authorized credit card charges
         for the specified customer. Pre-authorizations are generated from the
@@ -248,13 +200,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>POST</guibutton></term>
-
       <listitem>
         <para>Highlight a pre-authorized credit card charge amount and then
         select this button to authorize the charge. When a pre-authorization
@@ -262,7 +211,6 @@
         created, posted, and automatically applied to a credit memo or
         customer deposit (if customer deposits are enabled at your
         site).</para>
-
         <tip>
           <para>You only get one chance to post a credit card
           pre-authorization. Once a pre-authorization is post-authorized, it
@@ -271,19 +219,15 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>VOID</guibutton></term>
-
       <listitem>
         <para>Highlight a pre-authorized credit card charge amount and then
         select this button to void the pre-authorization.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>AMOUNT</guibutton></term>
-
       <listitem>
         <para>Specify the amount of the post-authorization. By default, the
         pre-authorized amount will display here. However, you may override the
@@ -293,47 +237,37 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para role="standard"><indexterm significance="normal">
       <primary>dashboards</primary>
-
       <secondary>for receivables</secondary>
     </indexterm>To view the dashboard associated with your receivables, select
   the <guimenuitem>Dashboard</guimenuitem> tab. The following screen will
   appear:</para>
-
   <para role="standard"><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/arWorkBench_dashboardTab.png"/>
         </imageobject>
-
         <caption>Receivables Workbench Dashboard</caption>
       </mediaobject>
     </screenshot></para>
-
   <para role="standard">The Receivables dashboard includes the following
   pre-loaded dashboard panes, which you can either remove or supplement with
   additional panes at any time:</para>
-
   <para role="standard"><variablelist>
       <varlistentry>
         <term>AR Customer Balances</term>
-
         <listitem>
           <para>Displays the customer's receivable balances.</para>
         </listitem>
       </varlistentry>
-
       <varlistentry>
         <term>AR Sales By Month</term>
-
         <listitem>
           <para>Displays customer sales by month.</para>
         </listitem>
       </varlistentry>
     </variablelist></para>
-
   <xi:include href="../widgets/dashboardPane.xml" xpointer="dashboardsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
