@@ -4,13 +4,11 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="woTimeClock" role="manufacturing">
   <title>Shop Floor Workbench</title>
-
   <para>The Shop Floor workbench offers enhanced labor tracking and
   streamlined work order processing for either operations or production
   posting environments. Its built-in time clock functionality ensures precise
   run-time reporting, as workbench users are required to clock-in to and
   clock-out of work orders.</para>
-
   <para>When posting operations, users have the option to post either standard
   or specified times—and the run time recorded will vary depending on the
   option chosen. The standard times are drawn from the routing item
@@ -19,114 +17,91 @@
   complicated by the fact that users can be clocked into more than one work
   order at a time. In this case, the users' effort will be spread across the
   various work orders they have clocked into.</para>
-
   <para><tip>
       <para>The clock-in requirement applies only to Shop Floor workbench
       users. If you don't use the workbench, no clock-in is required.</para>
     </tip></para>
-
   <para>Some users may be Shop Floor workbench only users, meaning the only
   screen they see when they log in to xTuple is the Shop Floor workbench.
   These users do not require any privileges to run the Shop Floor workbench.
   The ability to post production or post operations is <emphasis>baked
   into</emphasis> the Shop Floor workbench only user functionality.</para>
-
   <para>However, if your site is configured to use the post
   <guilabel>Production</guilabel> style for the Shop Floor workbench, the
   following privileges may be used to enhance the capabilities of Shop Floor
   workbench users:</para>
-
   <itemizedlist>
     <listitem>
       <para><literal>AlterTransactionDates</literal></para>
     </listitem>
-
     <listitem>
       <para><literal>CloseWorkOrders</literal></para>
     </listitem>
-
     <listitem>
       <para><literal>ChangeNonPickItems</literal></para>
     </listitem>
   </itemizedlist>
-
   <para>By contrast, if you are configured to use the post
   <guilabel>Operations</guilabel> style, the following privileges are
   available:</para>
-
   <itemizedlist>
     <listitem>
       <para><literal>OverrideWOTCTime</literal></para>
     </listitem>
-
     <listitem>
       <para><literal>CloseWorkOrders</literal></para>
     </listitem>
-
     <listitem>
       <para><literal>AlterTransactionDates</literal></para>
     </listitem>
-
     <listitem>
       <para><literal>ChangeReceiveInventory</literal></para>
     </listitem>
   </itemizedlist>
-
   <para>In addition, the following privileges may be assigned to allow for
   accessing Shop Floor workbench features and reports from the main
   application menu:</para>
-
   <itemizedlist>
     <listitem>
       <para><literal>woTimeClock</literal> to open the Shop Floor workbench
       from the <guimenu>Manufacture</guimenu> menu</para>
     </listitem>
-
     <listitem>
       <para><literal>ViewWoTimeClock</literal> to run the display/report
       windows to see the data (such as production time clock)</para>
     </listitem>
-
     <listitem>
       <para><literal>MaintainWoTimeClock</literal> to turn on the ability to
       change the clocked times</para>
     </listitem>
   </itemizedlist>
-
   <para>To access the Shop Floor workbench, go to <guimenuitem>Manufacture
   &gt; Transaction &gt; Shop Floor Workbench</guimenuitem>. The following
   screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/woTimeClock.png"/>
         </imageobject>
-
-        <caption>Shop floor workbench</caption>
+        <caption>Shop Floor Workbench</caption>
       </mediaobject>
     </screenshot></para>
-
   <note>
     <para>The Shop Floor workbench must be configured for either operations
     posting or production posting. You may not use the workbench for both
     methods simultaneously. To configure the method used by the Shop Floor
     workbench, use the Configure Manufacture screen.</para>
   </note>
-
   <para>When accessing the Shop Floor workbench, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>User</term>
-
       <listitem>
         <para>Enter the name of the user wanting to clock-in or clock-out of a
         work order. Once a username is entered, the display at the bottom of
         the screen will show all the work orders the user is currently
         clocked-in to.</para>
-
         <tip>
           <para>In <guimenuitem>Manufacture &gt; Setup</guimenuitem>, you can
           restrict a user's privileges so the Shop Floor workbench is the only
@@ -134,10 +109,8 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Work Order #</term>
-
       <listitem>
         <para>Enter the work order number of the work order the user wants to
         clock-in to or clock-out of. Only released (R) and in-process (I) work
@@ -148,36 +121,28 @@
           </note></para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Site</term>
-
       <listitem>
         <para>Displays site code automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Item Number</term>
-
       <listitem>
         <para>Displays item number automatically when work order number is
         entered into <guilabel>Work Order #</guilabel> field.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>UOM</term>
-
       <listitem>
         <para>Inventory unit of measure.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Status</term>
-
       <listitem>
         <para>Displays work order status automatically when work order number
         is entered into <guilabel>Work Order #</guilabel> field. Only released
@@ -185,19 +150,15 @@
         Floor workbench.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Method</term>
-
       <listitem>
         <para>Indicates work order method is either assembly or
         disassembly.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Operation</term>
-
       <listitem>
         <para>If the workbench is configured for operations-posting, select an
         operation from the list of operations. Users are required to clock-in
@@ -210,13 +171,10 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>CLOCK IN</guibutton></term>
-
       <listitem>
         <para>Select to clock-in to the specified work order. When a user
         clocks-in to a work order, the run-time clock starts running from that
@@ -228,10 +186,8 @@
         each clock-out stops it.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>CLOCK OUT</guibutton></term>
-
       <listitem>
         <para>Select to clock-out of the specified work order. When selected,
         the run-time clock stops for the specified work order. The time
@@ -244,7 +200,6 @@
         OUT</guibutton> button is selected. By default, the Scrap Work Order
         Material screen will immediately follow the Post Operations
         screen.</para>
-
         <tip>
           <para>Shop Floor workbench users should only scrap top-level items
           after they have posted production sufficient to cover the scrap
@@ -255,10 +210,8 @@
         </tip>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>POST PRODUCTION</guibutton></term>
-
       <listitem>
         <para>If the workbench is configured for production-posting, the Post
         Production screen will be presented immediately after this button is
