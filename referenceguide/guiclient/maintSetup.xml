@@ -19,50 +19,46 @@
     <varlistentry>
       <term>Next Maintenance Order #</term>
       <listitem>
-        <para>The number of an upcoming maintenance order will be in this
-        field.</para>
+        <para>Define the maintenance order number range, or use the
+        default.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Maintenance Parts Expense</term>
       <listitem>
-        <para>When a company has assets that come from sources outside its
-        usual profits (i.e. selling a machine such as a copier or a forklift
-        used), that profit will be listed in the maintenance parts expense.
-        The Maintenance Parts Expense section lists the options that control
-        where the charge for maintenance parts and other related miscellaneous
-        charges gets assigned to.</para>
+        <para>Indicate how you want parts to be expensed when posting these
+        parts against a maintenance order:</para>
         <variablelist>
           <varlistentry>
             <term>Use Item Cost Category Expense</term>
             <listitem>
-              <para>Select to add maintenance parts expenses to the item cost
-              category.</para>
+              <para>Select to use the expense account defined on the item's
+              cost category.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Use Item Cost Category Expense (with Manual Override)</term>
             <listitem>
-              <para>Select to add maintenance parts expenses to the item cost
-              category, with the option to change the cost category per
-              maintenance order.</para>
+              <para>Select to use the expense account defined on the item's
+              cost category, but allow for manual overrides of that
+              account.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Use Default Expense Category</term>
             <listitem>
-              <para>Select to use and set the default expense category for the
-              system.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Default Expense Category</term>
-            <listitem>
-              <para>Click on the magnifying glass icon to search through the
-              expense categories in the database. The selected expense
-              category will become the default expense category for the
-              system. This field is only enabled when the <guilabel>Default
-              Expense Category</guilabel> option is selected.</para>
+              <para>Select to use a default expense category.</para>
+              <variablelist>
+                <varlistentry>
+                  <term>Default Expense Category</term>
+                  <listitem>
+                    <para>Click on the magnifying glass to locate the desired
+                    expense category. The default expense category is used
+                    when posting any parts to the ledger and defines which
+                    ledger account parts are expensed to when consumed.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
             </listitem>
           </varlistentry>
         </variablelist>
