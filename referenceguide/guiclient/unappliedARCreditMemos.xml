@@ -5,16 +5,13 @@
 <section id="unappliedARCreditMemos">
   <title><indexterm significance="normal">
       <primary>credit memos</primary>
-
       <secondary>list of unapplied</secondary>
     </indexterm>List Unapplied Credit Memos</title>
-
   <para>Whenever a credit memo amount has not been applied to a specific
   invoice or debit memo—either in whole or in part—that credit memo will
   appear on the list of unapplied credit memos. Both miscellaneous receivables
   credit memos and unapplied credit memos generated from the billing section
   may appear on the list.</para>
-
   <note>
     <para>A newly-entered miscellaneous credit memo is an unapplied credit
     memo by default. However, credit memos generated from the billing section
@@ -24,44 +21,36 @@
     of unapplied credit memos. However, if a sales credit is not applied when
     it is created, it will subsequently appear on the unapplied list.</para>
   </note>
-
   <para>To access the master list of unapplied credit memos, go to
   <guimenuitem>Accounting &gt; Accounts Receivable &gt; Memos &gt; List
   Unapplied Credit Memos</guimenuitem>. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/unappliedARCreditMemos.png"/>
         </imageobject>
-
         <caption>Unapplied A/R Credit Memos master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The master list of unapplied credit memos displays basic information
   on all existing unapplied credit memos, including document number, customer
-  name, document amount, applied amount, and amount available to apply.</para>
-
+  number, customer name, document amount, applied amount, balance, currency,
+  and amount available to apply.</para>
   <note>
     <para>Once the full amount of a credit memo has been applied, the credit
     memo will be removed from the unapplied credit memos list.</para>
   </note>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>APPLY</guibutton></term>
-
       <listitem>
         <para>Highlight an unapplied credit memo and then select this button
         to apply an amount.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="applyARCreditMemo.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
