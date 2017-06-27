@@ -21,7 +21,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/user.png" />
+          <imagedata fileref="images/user.png"/>
         </imageobject>
         <caption>User Account Information</caption>
       </mediaobject>
@@ -120,7 +120,7 @@
         displayed on a user account's screen. Only user accounts who have been
         granted the <literal>MaintainLocales</literal> privilege can define
         and maintain locale settings. For more information on locales and
-        locale settings, see <xref linkend="locales" />.</para>
+        locale settings, see <xref linkend="locales"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -219,7 +219,7 @@
         order. This option will override any other privileges which may have
         been assigned previously to the user account. For more information
         about the simple sales order, please see <xref
-        linkend="salesOrderSimple" />.</para>
+        linkend="salesOrderSimple"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry role="manufacturing">
@@ -235,7 +235,7 @@
         may have been assigned previously to the user account. For more
         information on related privileges and other aspects of using and
         configuring the Shop Floor workbench, please see <xref
-        linkend="woTimeClock" />.</para>
+        linkend="woTimeClock"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -392,7 +392,7 @@
   have the option to add user account privileges by user account role. Adding
   user account privileges by user account role can dramatically speed up the
   process of adding new user accounts. You can learn more about user account
-  roles here <xref linkend="groupsTitle" />.</para>
+  roles here <xref linkend="groupsTitle"/>.</para>
   <tip>
     <para>If individual user account privileges appear to be disabled, that
     means the user account is assigned to a user account role. The only way to
@@ -404,7 +404,7 @@
   screen:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/user_groupTab.png" />
+        <imagedata fileref="images/user_groupTab.png"/>
       </imageobject>
       <caption>User Account Information Roles</caption>
     </mediaobject>When adding user account role privileges to a user account
@@ -473,7 +473,7 @@
   following screen:</para>
   <para role="standard"><mediaobject>
       <imageobject>
-        <imagedata fileref="images/user_siteTab.png" />
+        <imagedata fileref="images/user_siteTab.png"/>
       </imageobject>
       <caption>User Account Information Sites security</caption>
     </mediaobject></para>
@@ -542,4 +542,9 @@
         </listitem>
       </varlistentry>
     </variablelist></para>
+  <para>The menus and toolbars a user sees can be customized. To define menu
+  preferences, select the <guimenuitem>Menus</guimenuitem> tab. The following
+  options will appear:</para>
+  <xi:include href="../widgets/preferences.xml" xpointer="preferencesWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

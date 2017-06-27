@@ -15,7 +15,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/userPreferences.png" />
+          <imagedata fileref="images/userPreferences.png"/>
         </imageobject>
         <caption>User Account Preferences</caption>
       </mediaobject>
@@ -142,7 +142,7 @@
               current translation file available. A message will alert you if
               no translation is available for your language. To learn more
               about defining a language in your locale settings, please see
-              <xref linkend="locale" />.</para>
+              <xref linkend="locale"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -193,7 +193,7 @@
               (instead of in the desktop) when you log in to xTuple. If not
               selected, the My Dashboard will launch in the desktop. For more
               information about the dashboard feature, please see <xref
-              linkend="myDashboardDesktop" />.</para>
+              linkend="myDashboardDesktop"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry role="standard">
@@ -327,149 +327,8 @@
   to see. To define your menu preference, select the
   <guimenuitem>Menu</guimenuitem> tab. The following screen will
   appear:</para>
-  <para><mediaobject>
-      <imageobject>
-        <imagedata fileref="images/userPreferences_menu.png" />
-      </imageobject>
-      <caption>User Preferences Menu tab</caption>
-    </mediaobject></para>
-  <para>When specifying a preferred menu style, you are presented with the
-  following options:</para>
-  <note>
-    <para>For a complete list of all the toolbar buttons available for each
-    module, see <xref linkend="Section476479" />.</para>
-  </note>
-  <variablelist>
-    <varlistentry>
-      <term>Show Inventory Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Inventory</guimenu> module menu
-        on the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Inventory Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Inventory</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Show Products Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Products</guimenu> module menu on
-        the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Products Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Products</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry role="standard">
-      <term>Show Schedule Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Schedule</guimenu> module menu on
-        the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Schedule Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Schedule</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Show Purchase Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Purchase</guimenu> module menu on
-        the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Purchase Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Purchase</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Show Manufacture Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Manufacture</guimenu> module menu
-        on the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Manufacture Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Manufacture</guimenu>
-              module toolbar buttons on the user's main application
-              window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Show CRM Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>CRM</guimenu> module menu on the
-        user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show CRM Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>CRM</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Show Sales Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Sales</guimenu> module menu on
-        the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Sales Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Sales</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Show Accounting Menu</term>
-      <listitem>
-        <para>Select to display the <guimenu>Accounting</guimenu> module menu
-        on the user's main application window.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Show Accounting Toolbar</term>
-            <listitem>
-              <para>Select to display the <guimenu>Accounting</guimenu> module
-              toolbar buttons on the user's main application window.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-  </variablelist>
+  <xi:include href="../widgets/preferences.xml" xpointer="preferencesWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para><indexterm significance="normal">
       <primary>hot keys</primary>
       <secondary>master list of</secondary>
@@ -480,13 +339,13 @@
   screen will appear:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/userPreferences_hotkeys.png" />
+        <imagedata fileref="images/userPreferences_hotkeys.png"/>
       </imageobject>
       <caption>User Preferences Hot Keys</caption>
     </mediaobject></para>
   <para>The <guimenuitem>Hot Keys</guimenuitem> tab displays information on
   all existing hot keys, including keyboard keystroke and related action. For
-  more information, please see <xref linkend="hotkey" />.</para>
+  more information, please see <xref linkend="hotkey"/>.</para>
   <para><indexterm significance="normal">
       <primary>events</primary>
       <secondary>user notification of</secondary>
@@ -498,11 +357,11 @@
   appear:</para>
   <note>
     <para>For a complete list of user-defined events see <xref
-    linkend="Section461282" />.</para>
+    linkend="Section461282"/>.</para>
   </note>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/userPreferences_events.png" />
+        <imagedata fileref="images/userPreferences_events.png"/>
       </imageobject>
       <caption>User Preferences Events</caption>
     </mediaobject></para>
@@ -554,7 +413,7 @@
   appear:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/userPreferences_alarms.png" />
+      <imagedata fileref="images/userPreferences_alarms.png"/>
     </imageobject>
     <caption>User Preferences Alarms</caption>
   </mediaobject>
@@ -590,7 +449,7 @@
   appear:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/userPreferences_password.png" />
+      <imagedata fileref="images/userPreferences_password.png"/>
     </imageobject>
     <caption>User Preferences Password</caption>
   </mediaobject>
@@ -628,7 +487,7 @@
   appear:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/userPreferences_advancedTab.png" />
+      <imagedata fileref="images/userPreferences_advancedTab.png"/>
     </imageobject>
     <caption>Advanced User Preferences</caption>
   </mediaobject>
@@ -658,7 +517,7 @@
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/userPreferences_email.png" />
+          <imagedata fileref="images/userPreferences_email.png"/>
         </imageobject>
         <caption>User Preferences Email</caption>
       </mediaobject>
@@ -700,5 +559,5 @@
       </varlistentry>
     </variablelist></para>
   <xi:include href="hotkey.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
