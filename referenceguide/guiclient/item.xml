@@ -12,7 +12,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item.png" />
+          <imagedata fileref="images/item.png"/>
         </imageobject>
         <caption>Create new Item</caption>
       </mediaobject>
@@ -122,7 +122,7 @@
               manufactured items. Use the job costing option at the item site
               level to distinguish job items from regular manufactured items.
               For more information about the job costing option, please see
-              <xref linkend="itemSiteJobItem" />.</para>
+              <xref linkend="itemSiteJobItem"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -166,7 +166,7 @@
               value for a costing element. When a user-defined costing element
               is linked to a costing item, the costing element assumes the
               costs associated with the costing item. For more information,
-              see <xref linkend="costingElements" />.</para>
+              see <xref linkend="costingElements"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -244,7 +244,7 @@
                 components inherit the same COS account used by the parent kit
                 item. You can read more about configuring your system for COS
                 inheritance for kit items here: <xref
-                linkend="configureIM" />.</para>
+                linkend="configureIM"/>.</para>
               </note>
             </listitem>
           </varlistentry>
@@ -402,7 +402,7 @@
               </indexterm>List Price</term>
             <listitem>
               <para>Specify the list price for the item, based on the selling
-              UOM (i.e., Per UOM). List prices may also be created and
+              UOM (i.e., per UOM). List prices may also be created and
               modified in the item pricing section of the
               <guimenu>Sales</guimenu> module. Changes made to the list price
               in either location will be updated system-wide.</para>
@@ -417,7 +417,7 @@
               <para>Specify the wholesale price for the item. The wholesale
               price may be used as the unit cost for markup purposes,
               depending on your pricing configuration. For more information,
-              please see <xref linkend="WholesaleMarkup" />.</para>
+              please see <xref linkend="WholesaleMarkup"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -591,7 +591,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_characteristicsTab.png" />
+        <imagedata fileref="images/item_characteristicsTab.png"/>
       </imageobject>
       <caption>Item Characteristics</caption>
     </mediaobject>
@@ -605,7 +605,45 @@
     </tip></para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>If you have the Time &amp; Expense package running in your ERP, you'll
+  see the <guimenuitem>Project</guimenuitem> tab in the Item screen. In most
+  cases the <guimenuitem>Project</guimenuitem> tab will be disabled on the
+  Item screen unless the item's type is <guimenuitem>Reference</guimenuitem>.
+  Select the Project tab to see the following screen:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/item_projectTab.png"/>
+      </imageobject>
+      <caption>Item Project</caption>
+    </mediaobject>
+  </screenshot>
+  <para>You are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Allow use as an Expense Item on Projects</term>
+      <listitem>
+        <para>You must select this option—and also define an Expense Category
+        or Account—for the Item to be available to users who are entering Time
+        &amp; Expense Sheets.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Account</term>
+      <listitem>
+        <para>Define which ledger account number the item will belong
+        to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Expense Category</term>
+      <listitem>
+        <para>Specify the expense category you want to assign the item
+        to.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
   <para>For visibility into costs and BOMs associated with items—and to
   perform routine cost and BOM maintenance—select the
   <guimenuitem>Cost</guimenuitem> tab. The following screen will
@@ -613,19 +651,19 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_costTab.png" />
+        <imagedata fileref="images/item_costTab.png"/>
       </imageobject>
       <caption>Item Cost</caption>
     </mediaobject>
   </screenshot>
-  <para>You are presenting with the following options:</para>
+  <para>You are presented with the following options:</para>
   <variablelist>
     <varlistentry>
       <term>Elements</term>
       <listitem>
         <para>Select this option to maintain item cost elements. For more
         information on maintaining item costs, please see <xref
-        linkend="maintainItemCosts" />.</para>
+        linkend="maintainItemCosts"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -633,7 +671,7 @@
       <listitem>
         <para>Select this option to maintain the BOM. For more detailed
         information on maintaining BOMs, please see <xref
-        linkend="boms" />.</para>
+        linkend="boms"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -666,7 +704,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_tabUOM.png" />
+        <imagedata fileref="images/item_tabUOM.png"/>
       </imageobject>
       <caption><para>Item Conversions</para></caption>
     </mediaobject>
@@ -677,7 +715,7 @@
       <listitem>
         <para>Display lists the UOM conversions defined for the item (if any)
         and where these conversions are used. Global conversion ratios are
-        defined in <xref linkend="uomConv" />.</para>
+        defined in <xref linkend="uomConv"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -692,7 +730,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/itemUOM.png" />
+        <imagedata fileref="images/itemUOM.png"/>
       </imageobject>
       <caption><para>Unit of Measure definition</para></caption>
     </mediaobject>
@@ -866,7 +904,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item_itemsitesTab.png" remap="" />
+          <imagedata fileref="images/item_itemsitesTab.png" remap=""/>
         </imageobject>
         <caption>Item Sites for the Item</caption>
       </mediaobject>
@@ -876,7 +914,7 @@
       <term>Item Sites</term>
       <listitem>
         <para>Display lists item sites for the specified item. For more
-        information, see <xref linkend="itemSite" />.</para>
+        information, see <xref linkend="itemSite"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -884,7 +922,7 @@
   <guimenuitem>Sources</guimenuitem> tab.</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/item_sourcesTab.png" remap="" />
+      <imagedata fileref="images/item_sourcesTab.png" remap=""/>
     </imageobject>
     <caption>Sources for the Item</caption>
   </mediaobject>
@@ -895,7 +933,7 @@
         <para>Displays list of item sources and associated vendors. You may
         also add new item sources for an item on this screen. For additional
         documentation related to setting up item sources for an item, see
-        <xref linkend="itemSource" />.</para>
+        <xref linkend="itemSource"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -906,7 +944,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item_taxtypesTab.png" />
+          <imagedata fileref="images/item_taxtypesTab.png"/>
         </imageobject>
         <caption>Item Tax Types</caption>
       </mediaobject>
@@ -928,7 +966,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemtax.png" />
+          <imagedata fileref="images/itemtax.png"/>
         </imageobject>
         <caption>Create new tax type</caption>
       </mediaobject>
@@ -991,7 +1029,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/item_relationshipsTab.png" />
+          <imagedata fileref="images/item_relationshipsTab.png"/>
         </imageobject>
         <caption>Item Relationships</caption>
       </mediaobject>
@@ -1016,7 +1054,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemAlias.png" />
+          <imagedata fileref="images/itemAlias.png"/>
         </imageobject>
         <caption>Create new Item Alias</caption>
       </mediaobject>
@@ -1108,7 +1146,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/itemSubstitute.png" />
+          <imagedata fileref="images/itemSubstitute.png"/>
         </imageobject>
         <caption>Create new Item Substitute</caption>
       </mediaobject>
@@ -1196,10 +1234,10 @@
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:<mediaobject>
       <imageobject>
-        <imagedata fileref="images/item_documentsTab.png" />
+        <imagedata fileref="images/item_documentsTab.png"/>
       </imageobject>
       <caption><para>Item Documents</para></caption>
     </mediaobject></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
