@@ -607,10 +607,12 @@
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>If you have the Time &amp; Expense package running in your ERP, you'll
-  see the <guimenuitem>Project</guimenuitem> tab in the Item screen. In most
-  cases the <guimenuitem>Project</guimenuitem> tab will be disabled on the
-  Item screen unless the item's type is <guimenuitem>Reference</guimenuitem>.
-  Select the Project tab to see the following screen:</para>
+  see the <guimenuitem>Project</guimenuitem> tab in the Item screen. The
+  <guimenuitem>Project</guimenuitem> tab will only be enabled if the item is a
+  reference item, because reference items act as expense items through the
+  time and expense system. If the tab is disabled, then it's likely the item
+  in question is not a reference type item. Select the
+  <guimenuitem>Project</guimenuitem> tab to see the following screen:</para>
   <screenshot>
     <mediaobject>
       <imageobject>
@@ -619,14 +621,15 @@
       <caption>Item Project</caption>
     </mediaobject>
   </screenshot>
-  <para>You are presented with the following options:</para>
+  <para>When viewing item project information, you are presented with the
+  following options:</para>
   <variablelist>
     <varlistentry>
       <term>Allow use as an Expense Item on Projects</term>
       <listitem>
-        <para>You must select this option—and also define an Expense Category
-        or Account—for the Item to be available to users who are entering Time
-        &amp; Expense Sheets.</para>
+        <para>You must select this option—and also define an expense category
+        or account—for the item to be available to users who are entering time
+        &amp; expense sheets.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
