@@ -19,7 +19,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediProfile.png" />
+          <imagedata fileref="images/ediProfile.png"/>
         </imageobject>
         <caption><para>Create new EDI Profile for email
         delivery</para></caption>
@@ -160,7 +160,7 @@
         the EDI profile does not have a form for a document type, that
         document type cannot be sent using this EDI profile. Forms also
         control the names and values of replacement tokens (see <xref
-        linkend="ediForm" />).</para>
+        linkend="ediForm"/>).</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -181,33 +181,12 @@
         for that profile using the <guimenuitem>Batching</guimenuitem> tab.
         When the EDIBatch job runs, it creates individual scheduled jobs for
         each EDI file to be created and sent.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Send Batch Status Notices</term>
-            <listitem>
-              <para>Whenever an EDIBatch job runs, the xTuple Connect batch
-              manager will use the provided email address properties to send
-              email about the EDIBatch job itself. This email tells the
-              recipients how many RunReport, FTPReport, EmailCSV, FTPCSV, etc.
-              jobs were generated but does not give information about the
-              success or failure of the individual jobs.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/ediProfile_batchTab.png" />
-        </imageobject>
-        <caption><para>Batch processing options</para></caption>
-      </mediaobject>
-    </screenshot></para>
   <xi:include href="../widgets/recurrencewidget.xml"
               xpointer="recurrenceWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <variablelist>
     <varlistentry>
       <term>Send Batch Status Notices</term>
@@ -236,7 +215,7 @@
   build your EDI profile. You can enter these EDI tokens in any of the text
   input fields on the EDI Profile window (except the Name, of course). You can
   also define your own tokens by writing database queries (see <xref
-  linkend="ediForm" />). The system defines the following tokens:</para>
+  linkend="ediForm"/>). The system defines the following tokens:</para>
   <variablelist>
     <varlistentry>
       <term><literal>&lt;/docid&gt;</literal></term>
@@ -345,7 +324,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/ediProfile_ftp.png" />
+          <imagedata fileref="images/ediProfile_ftp.png"/>
         </imageobject>
         <caption>Create new EDI Profile for FTP delivery</caption>
       </mediaobject>
@@ -418,5 +397,5 @@
     </varlistentry>
   </variablelist>
   <xi:include href="ediForm.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

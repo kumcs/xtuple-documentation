@@ -55,7 +55,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_mappingTab.png" />
+        <imagedata fileref="images/configureIE_mappingTab.png"/>
       </imageobject>
       <caption><para>Configure XSLT </para></caption>
     </mediaobject>
@@ -108,7 +108,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/xsltMap.png" />
+        <imagedata fileref="images/xsltMap.png"/>
       </imageobject>
       <caption><para>XSLT Map</para></caption>
     </mediaobject>
@@ -182,7 +182,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_dirTab.png" />
+        <imagedata fileref="images/configureIE_dirTab.png"/>
       </imageobject>
       <caption><para>XML Import</para></caption>
     </mediaobject>
@@ -214,7 +214,7 @@
   <para role="xtconnect"><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/importsrc.png" />
+          <imagedata fileref="images/importsrc.png"/>
         </imageobject>
         <caption><para>Import Source screen</para></caption>
       </mediaobject>
@@ -274,7 +274,7 @@
           successfully.</para>
           <xi:include href="../widgets/filemoveselector.xml"
                       xpointer="fileMoveSelector"
-                      xmlns:xi="http://www.w3.org/2001/XInclude" />
+                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -284,44 +284,54 @@
           connect to the FTP server and try to download files.</para>
           <xi:include href="../widgets/recurrencewidget.xml"
                       xpointer="recurrenceWidget"
-                      xmlns:xi="http://www.w3.org/2001/XInclude" />
+                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term>From</term>
+        <term>Email Import Status (only saved if Recurring)</term>
         <listitem>
-          <para>This is the email address of the person sending the status of
-          the download processing email.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Reply To</term>
-        <listitem>
-          <para>This is the reply-to address that will be set on the outgoing
-          email message relating to the status of the download processing
-          email.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>To</term>
-        <listitem>
-          <para>Enter the email address to be used as the default recipient
-          address for the status of the download processing email.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Cc</term>
-        <listitem>
-          <para>Enter the email address to be used as the default carbon copy
-          address whenever the status of the download processing emails are
-          sent.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Bcc</term>
-        <listitem>
-          <para>Enter the email address to which copies of the status of the
-          download processing email will be sent.</para>
+          <para>Use the following fields to specify email notification
+          rules:</para>
+          <variablelist>
+            <varlistentry>
+              <term>From</term>
+              <listitem>
+                <para>This is the email address of the person sending the
+                status of the download processing email.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Reply To</term>
+              <listitem>
+                <para>This is the reply-to address that will be set on the
+                outgoing email message relating to the status of the download
+                processing email.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>To</term>
+              <listitem>
+                <para>Enter the email address to be used as the default
+                recipient address for the status of the download processing
+                email.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Cc</term>
+              <listitem>
+                <para>Enter the email address to be used as the default carbon
+                copy address whenever the status of the download processing
+                emails are sent.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Bcc</term>
+              <listitem>
+                <para>Enter the email address to which copies of the status of
+                the download processing email will be sent.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
           <note>
             <para>Importing downloaded files with the xTuple Connect batch
             manager is a two-step process. The FTP download and the file
@@ -338,7 +348,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_xmlImportTab.png" />
+        <imagedata fileref="images/configureIE_xmlImportTab.png"/>
       </imageobject>
       <caption><para>General Import Options</para></caption>
     </mediaobject>
@@ -353,7 +363,7 @@
         imported should be handled after the import is complete.</para>
         <xi:include href="../widgets/filemoveselector.xml"
                     xpointer="fileMoveSelector"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -364,7 +374,7 @@
         complete.</para>
         <xi:include href="../widgets/filemoveselector.xml"
                     xpointer="fileMoveSelector"
-                    xmlns:xi="http://www.w3.org/2001/XInclude" />
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -397,7 +407,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_csvImportTab.png" />
+        <imagedata fileref="images/configureIE_csvImportTab.png"/>
       </imageobject>
       <caption><para>CSV Import Options</para></caption>
     </mediaobject>
@@ -425,7 +435,7 @@
   will appear:<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/atlasMap.png" />
+          <imagedata fileref="images/atlasMap.png"/>
         </imageobject>
         <caption><para>CSV File to Atlas Map</para></caption>
       </mediaobject>
@@ -487,7 +497,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_scheduleTab.png" />
+        <imagedata fileref="images/configureIE_scheduleTab.png"/>
       </imageobject>
       <caption><para>Scheduling options</para></caption>
     </mediaobject>
@@ -503,44 +513,54 @@
           in that directory</para>
           <xi:include href="../widgets/recurrencewidget.xml"
                       xpointer="recurrenceWidget"
-                      xmlns:xi="http://www.w3.org/2001/XInclude" />
+                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term>From</term>
+        <term>Import Notification Email Settings</term>
         <listitem>
-          <para>This is the email address of the person sending the status of
-          the import processing email.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Reply To</term>
-        <listitem>
-          <para>This is the reply-to address that will be set on the outgoing
-          email message relating to the status of the import processing
-          email.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>To</term>
-        <listitem>
-          <para>Enter the email address to be used as the default recipient
-          address for the status of the import processing email.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Cc</term>
-        <listitem>
-          <para>Enter the email address to be used as the default carbon copy
-          address whenever the status of the import processing emails are
-          sent.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Bcc</term>
-        <listitem>
-          <para>Enter the email address to which copies of the status of the
-          import processing email will be sent.</para>
+          <para>Use the following fields to specify email notification
+          rules:</para>
+          <variablelist>
+            <varlistentry>
+              <term>From</term>
+              <listitem>
+                <para>This is the email address of the person sending the
+                status of the import processing email.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Reply To</term>
+              <listitem>
+                <para>This is the reply-to address that will be set on the
+                outgoing email message relating to the status of the import
+                processing email.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>To</term>
+              <listitem>
+                <para>Enter the email address to be used as the default
+                recipient address for the status of the import processing
+                email.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Cc</term>
+              <listitem>
+                <para>Enter the email address to be used as the default carbon
+                copy address whenever the status of the import processing
+                emails are sent.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Bcc</term>
+              <listitem>
+                <para>Enter the email address to which copies of the status of
+                the import processing email will be sent.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist>
           <note>
             <para>Importing downloaded files with the xTuple Connect batch
             manager is a two-step process. The FTP download and the file
@@ -557,7 +577,7 @@
   <screenshot>
     <mediaobject>
       <imageobject>
-        <imagedata fileref="images/configureIE_exportTab.png" />
+        <imagedata fileref="images/configureIE_exportTab.png"/>
       </imageobject>
       <caption><para>XML Export</para></caption>
     </mediaobject>

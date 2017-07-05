@@ -9,7 +9,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/batchItem.png" />
+          <imagedata fileref="images/batchItem.png"/>
         </imageobject>
         <caption>Scheduled Job</caption>
       </mediaobject>
@@ -74,10 +74,15 @@
         completed.</para>
       </listitem>
     </varlistentry>
+    <varlistentry>
+      <term>Recurrence</term>
+      <listitem>
+        <xi:include href="../widgets/recurrencewidget.xml"
+                    xpointer="recurrenceWidget"
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      </listitem>
+    </varlistentry>
   </variablelist>
-  <xi:include href="../widgets/recurrencewidget.xml"
-              xpointer="recurrenceWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
   <para>In addition to the single parameter described above, individual jobs
   usually require additional details to execute successfully. For example the
   user might have requested that a report be run showing information about a
@@ -89,7 +94,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/batchItem_parameterList.png" />
+          <imagedata fileref="images/batchItem_parameterList.png"/>
         </imageobject>
         <caption><para>Parameter details passed to a Scheduled
         Job</para></caption>
@@ -101,7 +106,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/batchItem_emailTab.png" />
+          <imagedata fileref="images/batchItem_emailTab.png"/>
         </imageobject>
         <caption><para>Email Details passed to a Scheduled
         Job</para></caption>
