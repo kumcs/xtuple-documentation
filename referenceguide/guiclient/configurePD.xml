@@ -13,7 +13,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configurePD.png" />
+          <imagedata fileref="images/configurePD.png"/>
         </imageobject>
         <caption>Configure Products module</caption>
       </mediaobject>
@@ -70,6 +70,13 @@
       </listitem>
     </varlistentry>
     <varlistentry>
+      <term>Enforce Unique Item Bar Codes</term>
+      <listitem>
+        <para>Select if you want items to have their own uniquely generated
+        bar codes.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
       <term>Defaults</term>
       <listitem>
         <para>Specify preferences for the following defaults:</para>
@@ -82,6 +89,13 @@
             <listitem>
               <para>Select to mark all sold items as exclusive by default
               whenever a new item is created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Default Cost Element for Freight</term>
+            <listitem>
+              <para>Select the cost element freight items will default
+              to.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
