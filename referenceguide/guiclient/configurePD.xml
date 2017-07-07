@@ -72,8 +72,14 @@
     <varlistentry>
       <term>Enforce Unique Item Bar Codes</term>
       <listitem>
-        <para>Select if you want items to have their own uniquely generated
-        bar codes.</para>
+        <para>Select to ensure that each item will have its own unique
+        barcode. If duplicate barcodes already exist in your database, you
+        will receive an error message upon enabling this option. You can check
+        the barcodes for items in <guimenuitem>Products &gt; Item &gt;
+        List</guimenuitem> and enabling the <guilabel>UPC</guilabel> column.
+        Once you successfully enable this option, if you try to create or edit
+        an item with the same barcode as another item you will not be allowed
+        to save that item until the barcode is changed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
