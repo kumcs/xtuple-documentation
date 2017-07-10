@@ -3,7 +3,7 @@
 
 ## Version 4.11.0RC - July, 2017
 
-These are the release notes for the 4.11.0Beta xTuple ERP release.
+These are the release notes for the 4.11.0RC xTuple ERP release.
 Thanks to all who contributed to make this release possible, including
 [Daniel Pocock](https://forums.xtuple.com/u/pocock),
 [Scott Moore](https://forums.xtuple.com/u/discountscott),
