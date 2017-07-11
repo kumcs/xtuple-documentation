@@ -103,7 +103,8 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[30456](http://www.xtuple.org/xtincident/view/bugs/30456) _*‘Error Issuing Item’ dialog is  displayed when issuing the sales order for both  ‘Lot’ & ‘Serial’ items._
 - Fixed issue #[30469](http://www.xtuple.org/xtincident/view/bugs/30469) _Post Operation when the user / server in different timezone:  wooperpost - wrong date and time_
 - Fixed issue #[30471](http://www.xtuple.org/xtincident/view/bugs/30471) _*Quality tests are not created when doing partial post production with sampling frequency ‘Last Item’._
-- Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
+- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
+- Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_
 
 ## Version 4.11.0Beta - May, 2017
 
