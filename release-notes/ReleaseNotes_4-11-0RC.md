@@ -46,6 +46,7 @@ These need to be installed on the database server, not client machines.
 ### Features added in 4.11.0RC
 
 - Features issue #[25491](http://www.xtuple.org/xtincident/view/bugs/25491) _Check Amount (Pre Discount)_
+- Features issue #[25861](http://www.xtuple.org/xtincident/view/bugs/25861) _Add handling of Quality Tests when source document deleted/cancelled_
 - Features issue #[28349](http://www.xtuple.org/xtincident/view/bugs/28349) _Make script-extensible implementation of VirtualCluster and VirtualClusterLineEdit_
 - Features issue #[29702](http://www.xtuple.org/xtincident/view/bugs/29702) _Create Item Taxation template_
 - Features issue #[30175](http://www.xtuple.org/xtincident/view/bugs/30175) _Add Customer Type as a search option with list_
@@ -53,6 +54,7 @@ These need to be installed on the database server, not client machines.
 
 ### Bug fixes in 4.11.0RC
 
+- Fixed issue #[26057](http://www.xtuple.org/xtincident/view/bugs/26057) _SQL Error when creating Quality Tests_
 - Fixed issue #[26880](http://www.xtuple.org/xtincident/view/bugs/26880) _Cannot delete vendor commodity codes_
 - Fixed issue #[28020](http://www.xtuple.org/xtincident/view/bugs/28020) _Print Report for 'List Site Locations' is not displayed all Site Locations information_
 - Fixed issue #[28089](http://www.xtuple.org/xtincident/view/bugs/28089) _Deleted Sales Order Items when CC payment applied_
@@ -62,6 +64,8 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[29409](http://www.xtuple.org/xtincident/view/bugs/29409) _Purchase Requistion by Item - disabled Item Number when creating new PR_
 - Fixed issue #[29694](http://www.xtuple.org/xtincident/view/bugs/29694) _xTupleCommerce: Change DB ShipVia Code for Fedex_
 - Fixed issue #[29720](http://www.xtuple.org/xtincident/view/bugs/29720) _""Update Inventory"" checkbox on Credit Memo item ignores interfaceToGL metric_
+- Fixed issue #[29860](http://www.xtuple.org/xtincident/view/bugs/29860) _*Quality Reports for US Letter_
+- Fixed issue #[29872](http://www.xtuple.org/xtincident/view/bugs/29872) _*Database error is displayed on clicking 'OK' button in 'Data Missing' dialog box of 'Quality Plan' screen._
 - Fixed issue #[29907](http://www.xtuple.org/xtincident/view/bugs/29907) _Wrong Check Number Printed and Updated_
 - Fixed issue #[29931](http://www.xtuple.org/xtincident/view/bugs/29931) _A user with a . in their username is unable to copy financial reports_
 - Fixed issue #[29960](http://www.xtuple.org/xtincident/view/bugs/29960) _Inactive Items still show up under pricing by customer type_
@@ -96,7 +100,10 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[30424](http://www.xtuple.org/xtincident/view/bugs/30424) _Bank Reconciliation Very Slow_
 - Fixed issue #[30437](http://www.xtuple.org/xtincident/view/bugs/30437) _Attach Quality Plan/Test Doc causes client to crash_
 - Fixed issue #[30439](http://www.xtuple.org/xtincident/view/bugs/30439) _Bom revision changes not captured correctly on comments_
-- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
+- Fixed issue #[30456](http://www.xtuple.org/xtincident/view/bugs/30456) _*‘Error Issuing Item’ dialog is  displayed when issuing the sales order for both  ‘Lot’ & ‘Serial’ items._
+- Fixed issue #[30469](http://www.xtuple.org/xtincident/view/bugs/30469) _Post Operation when the user / server in different timezone:  wooperpost - wrong date and time_
+- Fixed issue #[30471](http://www.xtuple.org/xtincident/view/bugs/30471) _*Quality tests are not created when doing partial post production with sampling frequency ‘Last Item’._
+- Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
 
 ## Version 4.11.0Beta - May, 2017
 
