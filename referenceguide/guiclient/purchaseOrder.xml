@@ -5,30 +5,23 @@
 <section id="purchaseOrder">
   <title><indexterm significance="normal">
       <primary>purchase orders</primary>
-
       <secondary>creating new</secondary>
     </indexterm>Enter New Purchase Order</title>
-
   <para>To create a new purchase order, go to <guimenuitem>Purchase Order &gt;
   New</guimenuitem>. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/purchaseOrder.png"/>
         </imageobject>
-
         <caption>Purchase Order</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When entering a new purchase order, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Order #</term>
-
       <listitem>
         <para>Next available purchase order number will automatically display,
         unless your system requires you to enter purchase order numbers
@@ -36,30 +29,23 @@
         numbers are configurable at the system level.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Order Date</term>
-
       <listitem>
         <para>Displays current day's date.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Release Date</term>
-
       <listitem>
         <para>Displays the date the purchase order was released.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vendor #</term>
-
       <listitem>
         <para>Enter the vendor number of the vendor you are issuing the
         purchase order to.</para>
-
         <note>
           <para>A valid vendor number must be entered in the <guilabel>Vendor
           #</guilabel> field before line items can be added to the purchase
@@ -68,41 +54,32 @@
         </note>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Terms</term>
-
       <listitem>
         <para>Specify the billing terms for the order. Default billing terms
         for a vendor are defined on the Vendor master. You may select
         alternate terms on the purchase order header.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>tax zones</primary>
-
           <secondary>for purchase orders</secondary>
         </indexterm>Tax Zone</term>
-
       <listitem>
         <para>Specify the tax zone associated with the purchase order. By
         default, the tax zone associated with the vendor will be used.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Status</term>
-
       <listitem>
         <para>The status of the purchase order will display here.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Purchasing Agent</term>
-
       <listitem>
         <para>Specify the name of the agent assigned to the order. By default,
         the name of the logged-in user will be entered as purchasing
@@ -111,10 +88,8 @@
         list of purchasing agents will be entered.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Print on Save</term>
-
       <listitem>
         <para>Check <guilabel>Print on Save</guilabel> to automatically print
         the purchase order when the <guibutton>SAVE</guibutton> button is
@@ -123,34 +98,26 @@
         printing the purchase order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Sales Order #</term>
-
       <listitem>
         <para>Displays information about linked sales orders. This field is
         only used if the purchase order was created from a sales order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Purchase Type</term>
-
       <listitem>
         <para>Specify a purchase type for reporting purposes.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vendor Address</term>
-
       <listitem>
         <para>Specify the vendor address information:</para>
-
         <variablelist>
           <varlistentry>
             <term>Main Address</term>
-
             <listitem>
               <para>Displays the vendor's main address. You may manually
               override the displayed address information in the fields
@@ -161,10 +128,8 @@
               linkend="address"/>.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Primary Contact</term>
-
             <listitem>
               <para>Displays the vendor's primary contact. You may manually
               override the displayed contact information in the fields
@@ -178,27 +143,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ship To</term>
-
       <listitem>
         <para>Specify the ship-to address information:</para>
-
         <variablelist>
           <varlistentry role="standard">
             <term>Receiving Site</term>
-
             <listitem>
               <para>Specify the site where materials from the purchase order
               will be received. By default, all active sites are available for
               selection as receiving sites.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry role="standard">
             <term>Drop Ship</term>
-
             <listitem>
               <para>If the purchase order was created as a drop ship order
               from a sales order, this option will be selected. This option is
@@ -206,20 +165,16 @@
               orders.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Name</term>
-
             <listitem>
               <para>The name that is associated with the ship-to address. A
               purchase order created from a drop ship sales order item will
               have the ship-to address name displayed in this field.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Ship-To Address</term>
-
             <listitem>
               <para>Displays either the site address for the specified
               receiving site or, for drop ship orders, the customer ship-to
@@ -232,10 +187,8 @@
               linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Shipping Contact</term>
-
             <listitem>
               <para>Displays either the contact information for the specified
               receiving site or, for drop ship orders, the contact for the
@@ -251,19 +204,15 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>F.O.B.</term>
-
       <listitem>
         <para>Enter the free on board (F.O.B.) location for the shipping
         site.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ship Via</term>
-
       <listitem>
         <para>Enter the preferred ship via method for this vendor. By default,
         the ship via entered on the Vendor master will populate this
@@ -271,125 +220,102 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para><indexterm significance="normal">
       <primary>purchase orders</primary>
-
       <secondary>adding line items to</secondary>
     </indexterm>To create or modify purchase order line items, select the
   <guimenuitem>Line Items</guimenuitem> tab at the top of the Purchase Order
   screen. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/purchaseOrder_lineItems.png"/>
         </imageobject>
-
         <caption>Purchase Order Line Items</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When creating or modifying purchase order line items, you are
   presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Line Items</term>
-
       <listitem>
         <para>Display lists line items for this purchase order. A valid vendor
         number must be entered in the <guilabel>Vendor #</guilabel> field
         before line items can be added to the order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Total Quantity</term>
-
       <listitem>
         <para>Displays the total of all line item quantities on the
         order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Total Weight (LB)</term>
-
       <listitem>
         <para>Displays the total weight for all line item quantities on the
         order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Subtotal</term>
-
       <listitem>
         <para>Displays the subtotal for the purchase order line items.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Misc. Freight</term>
-
       <listitem>
         <para>Enter the amount of any miscellaneous freight charges to be
         added to the order.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><indexterm significance="normal">
           <primary>freight</primary>
-
           <secondary>on purchase orders</secondary>
         </indexterm><indexterm significance="normal">
           <primary>purchase orders</primary>
-
           <secondary>freight charges on</secondary>
         </indexterm>Total P/O Freight</term>
-
       <listitem>
         <para>Displays the total amount of freight charges. The amount
         displayed includes the sum of all line item freight and miscellaneous
         freight charges.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax</term>
-
       <listitem>
-        <para>Displays the calculated tax amount, if applicable.</para>
+        <para>Displays the calculated tax amount, if applicable. Purchase tax
+        is calculated at the purchase order line item level. The tax amount
+        displayed here represents the total for all line item tax amounts. It
+        will also include tax on freight, if a matching freight tax type
+        assignment is found. To get a detailed view of the tax calculation,
+        click on the <guibutton>Tax</guibutton> link using your mouse.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Total</term>
-
       <listitem>
         <para>Displays the total value of the purchase order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry role="standard">
       <term><guibutton>MOVE UP</guibutton></term>
-
       <listitem>
         <para>Highlight a purchase order line item and then select this button
         to move the line item up the list of line items. Sequence numbers are
         automatically adjusted to reflect the change in position.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term><guibutton>MOVE DOWN</guibutton></term>
-
       <listitem>
         <para>Highlight a purchase order line item and then select this button
         to move the line item down the list of line items. Sequence numbers
@@ -397,47 +323,37 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>Purchase order characteristics are user-defined definitions which may
   be used to provide additional layers of description about purchase orders.
   These descriptions are static and not processed by the system, but are
   useful for informational purposes. To enter characteristics associated with
   a purchase order, select the <guimenuitem>Characteristics</guimenuitem> tab.
   The following screen will appear:</para>
-
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/purchaseOrder_characteristics.png"/>
     </imageobject>
-
     <caption><para>Purchase Order Characteristics</para></caption>
   </mediaobject>
-
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
   <para>To add notes to a purchase order, select the
   <guimenuitem>Notes</guimenuitem> tab at the top of the Purchase Order
   screen. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/purchaseOrder_notesPage.png"/>
         </imageobject>
-
         <caption>Purchase Order Notes</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When adding notes to a purchase order, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the purchase order. If the vendor has order notes
@@ -446,24 +362,19 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To add comments to a purchase order—or to view system-generated
   comments—select the <guimenuitem>Comments</guimenuitem> tab at the top of
   the Purchase Order screen. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/purchaseOrder_TabPage.png"/>
         </imageobject>
-
         <caption>Purchase Order Comments</caption>
       </mediaobject>
     </screenshot></para>
-
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
   <para>If you want to speed up your data entry of purchase order line items,
   you can use the quick entry interface. This screen allows you to enter
   multiple line items in one session. It also simplifies the process by
@@ -471,49 +382,39 @@
   quick entry interface, select the <guimenuitem>Quick Entry</guimenuitem> tab
   at the top of the Purchase Order screen. The following screen will
   appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/purchaseOrder_quickEntry.png"/>
         </imageobject>
-
         <caption>Purchase Order Quick Entry</caption>
       </mediaobject>
     </screenshot></para>
-
   <tip>
     <para>To get started entering line items, place your cursor in the
     <guilabel>Item</guilabel> field. You can then move from field-to-field
     using the <guibutton>TAB</guibutton> key on your keyboard.</para>
   </tip>
-
   <para>When entering purchase order line items using the quick entry
   interface, you are presented with the following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Item</term>
-
       <listitem>
         <para>Enter an inventory item number. This field is used for entering
         items stored in inventory. Use the <guilabel>Vend. Item #</guilabel>
         field for entering non-inventory items.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry role="standard">
       <term>Supplying Site</term>
-
       <listitem>
         <para>Select a supplying site from the list of available options. By
         default, the user's preferred site will be presented first.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vend. Item #</term>
-
       <listitem>
         <para>Use this field for entering non-inventory item numbers. If not
         used to handle non-inventory items, this field will display vendor
@@ -521,62 +422,48 @@
         defined.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Vend Description</term>
-
       <listitem>
         <para>Enter the vendor description for the item being ordered.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Expense Cat.</term>
-
       <listitem>
         <para>Enter the expense category you want your non-inventory quantity
         to be assigned to. Use this option for non-inventory line items
         only.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Qty.</term>
-
       <listitem>
         <para>Enter the quantity you want to purchase.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Unit Price</term>
-
       <listitem>
         <para>Enter the unit price for the line item. If an item source is
         defined, this information may fill in automatically.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Ext. Price</term>
-
       <listitem>
         <para>Displays the extended price. This is a calculated field and is
         shaded to indicate that it may not be edited.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Freight</term>
-
       <listitem>
         <para>Enter the freight amount, if any.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Due Date</term>
-
       <listitem>
         <para>Enter the due date. If an item source is defined, this
         information may fill in automatically. For drop ship orders, the due
@@ -585,49 +472,38 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>SAVE QUICK ENTRIES</guibutton></term>
-
       <listitem>
         <para>Select to save all the line items entered using the quick entry
         interface.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>DELETE QUICK ENTRY</guibutton></term>
-
       <listitem>
         <para>Highlight a line item and then select this button to remove the
         item from the list.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view the documents associated with a purchase order, select the
   <guimenuitem>Documents</guimenuitem> tab. The following screen will
   appear:<mediaobject>
       <imageobject>
         <imagedata fileref="images/purchaseOrder_documents.png"/>
       </imageobject>
-
       <caption><para>Purchase Order Documents</para></caption>
     </mediaobject></para>
-
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
   <para>To view email associated with a purchase order, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
-
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
-
   <xi:include href="purchaseOrderItem.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

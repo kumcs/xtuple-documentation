@@ -14,7 +14,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder.png" />
+          <imagedata fileref="images/salesOrder.png"/>
         </imageobject>
         <caption>Create new Sales Order</caption>
       </mediaobject>
@@ -384,7 +384,7 @@
               new address is manually entered here, that address will be added
               automatically to the master list of addresses. For additional
               documentation related to creating addresses, see <xref
-              linkend="address" />.</para>
+              linkend="address"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -396,7 +396,7 @@
               new contact is manually entered here, that contact will be added
               automatically to the master list of contacts. For additional
               documentation related to creating addresses, see <xref
-              linkend="contact" />.</para>
+              linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -428,7 +428,7 @@
               new address is manually entered here, that address will be added
               automatically to the master list of addresses. For additional
               documentation related to creating addresses, see <xref
-              linkend="contact" />.</para>
+              linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -440,7 +440,7 @@
               contact. If a new contact is manually entered here, that contact
               will be added automatically to the master list of contacts. For
               additional documentation related to creating addresses, see
-              <xref linkend="contact" />.</para>
+              <xref linkend="contact"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -488,7 +488,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder_lineItemsPage.png" />
+          <imagedata fileref="images/salesOrder_lineItemsPage.png"/>
         </imageobject>
         <caption>Sales Order Line Items</caption>
       </mediaobject>
@@ -695,7 +695,7 @@
         a sales order—or at the time of shipment. The system can be configured
         to automatically calculate freight amounts per quantity and shipment.
         To learn more about freight configuration, see <xref
-        linkend="configureSO_freightPricing" />.</para>
+        linkend="configureSO_freightPricing"/>.</para>
         <note>
           <para>If you are manually entering freight, all freight charges will
           be added to the initial shipment for an order. Any subsequent
@@ -709,8 +709,10 @@
         <para>Displays the total amount of tax to be charged on the sales
         order. Sales tax is calculated at the sales order line item level. The
         tax amount displayed here represents the total for all line item tax
-        amounts. To get a detailed view of the tax calculation, click on the
-        <guibutton>Tax</guibutton> link using your mouse.</para>
+        amounts. It will also include tax on freight, if a matching freight
+        tax type assignment is found. To get a detailed view of the tax
+        calculation, click on the <guibutton>Tax</guibutton> link using your
+        mouse.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -937,14 +939,14 @@
   </variablelist>
   <xi:include href="../widgets/allocateARCreditMemo.xml"
               xpointer="allocateARCMs"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To define or maintain relationships for sales orders, select the
   <guimenuitem>Relationships</guimenuitem> tab. The following will be
   displayed:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder_relationshipsTab.png" />
+          <imagedata fileref="images/salesOrder_relationshipsTab.png"/>
         </imageobject>
         <caption>Sales Order Relationships</caption>
       </mediaobject>
@@ -1015,26 +1017,26 @@
   displayed:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/salesOrder_characteristics.png" />
+        <imagedata fileref="images/salesOrder_characteristics.png"/>
       </imageobject>
       <caption><para>Sales Order Characteristics</para></caption>
     </mediaobject></para>
   <xi:include href="../widgets/characteristic.xml"
               xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To add comments related to a sales order, select the
   <guimenuitem>Comments</guimenuitem> tab. The following will be
   displayed:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder_comments.png" />
+          <imagedata fileref="images/salesOrder_comments.png"/>
         </imageobject>
         <caption>Sales Order Comments</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>Order notes added to a sales order are used for internal purposes
   only. If an invoice results from the sales order, these notes will be
   transferred to the invoice. To add notes to a sales order, select the
@@ -1043,7 +1045,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder_orderNotes.png" />
+          <imagedata fileref="images/salesOrder_orderNotes.png"/>
         </imageobject>
         <caption>Sales Order Notes</caption>
       </mediaobject>
@@ -1080,13 +1082,13 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder_documents.png" />
+          <imagedata fileref="images/salesOrder_documents.png"/>
         </imageobject>
         <caption>Sales Order Documents</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para><indexterm significance="normal">
       <primary>credit cards</primary>
       <secondary>sales orders and</secondary>
@@ -1101,7 +1103,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrder_paymentCredit.png" />
+          <imagedata fileref="images/salesOrder_paymentCredit.png"/>
         </imageobject>
         <caption>Customer Credit Card Payment</caption>
       </mediaobject>
@@ -1184,7 +1186,7 @@
   in the Payments window. The following screen will be displayed:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/salesOrder_paymentCash.png" />
+        <imagedata fileref="images/salesOrder_paymentCash.png"/>
       </imageobject>
       <caption><para>Customer Cash Payment</para></caption>
     </mediaobject>When posting cash to the sales order, you are presented with
@@ -1313,7 +1315,7 @@
   displayed:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/salesOrder_shipments.png" />
+        <imagedata fileref="images/salesOrder_shipments.png"/>
       </imageobject>
       <caption><para>Sales Order Shipments</para></caption>
     </mediaobject></para>
@@ -1364,7 +1366,7 @@
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="salesOrderItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

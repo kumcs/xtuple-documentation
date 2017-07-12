@@ -5,29 +5,34 @@
 <section id="taxTypes">
   <title><indexterm significance="normal">
       <primary>tax types</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Tax Types</title>
-
   <para>Tax types provide a system for classifying goods and services into
-  taxable categories. For example, using the Item master you can associate an
-  item with a particular tax type. To access the master list of tax types, go
-  to <guimenuitem>Accounting &gt; Tax &gt; Tax Types</guimenuitem>. The
-  following screen will appear:</para>
-
+  taxable categories. The primary implementation of tax types is on the Item
+  master, where items may be linked to tax types. For example, if you have a
+  tax type called "Taxable," you would want to associate this tax type with
+  all your taxable items. The tax type makes up one third of the three-way
+  match on tax assignments, which includes tax zone, tax code, and tax type.
+  When all three of these match for a particular order, then tax will be
+  calculated appropriately.</para>
+  <note>
+    <para>If you need to calculate tax on freight, make sure that your tax
+    assignment matrix includes a match using the system-defined Freight tax
+    type.</para>
+  </note>
+  <para>To access the master list of tax types, go to <guimenuitem>Accounting
+  &gt; Tax &gt; Tax Types</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/taxTypes.png"/>
         </imageobject>
-
         <caption>Tax Types master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Tax Types screen displays information on all existing tax types,
   including tax type name and description.</para>
-
   <xi:include href="taxType.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>

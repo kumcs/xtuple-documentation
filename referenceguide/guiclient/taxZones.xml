@@ -5,29 +5,27 @@
 <section id="taxZones">
   <title><indexterm significance="normal">
       <primary>tax zones</primary>
-
       <secondary>master list of</secondary>
     </indexterm>Tax Zones</title>
-
   <para>Tax zones are geographic areas that have a specific tax jurisdiction
-  and tax assignment. Tax assignments are assigned on a tax zone and tax type
-  basis to determine what tax structure to apply to a given item. To access
-  the master list of tax zones, go to <guimenuitem>Accounting &gt; Tax &gt;
-  Tax Zones</guimenuitem>. The following screen will appear:</para>
-
+  and tax assignment. The Tax zone is typically defined at the order header
+  level, although ship-to addresses may also have separate tax zones. The tax
+  zone makes up one third of the three-way match on tax assignments, which
+  includes tax code, tax type, and tax zone. When all three of these match for
+  a particular order, then tax will be calculated appropriately.</para>
+  <para>To access the master list of tax zones, go to <guimenuitem>Accounting
+  &gt; Tax &gt; Tax Zones</guimenuitem>. The following screen will
+  appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/taxZones.png"/>
         </imageobject>
-
         <caption>Tax Zones master list</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>The Tax Zones screen displays information on all existing tax zones,
   including tax zone area and tax zone description.</para>
-
   <xi:include href="taxZone.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
