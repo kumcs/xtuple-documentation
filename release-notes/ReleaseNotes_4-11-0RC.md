@@ -54,16 +54,26 @@ These need to be installed on the database server, not client machines.
 
 ### Bug fixes in 4.11.0RC
 
+- Fixed issue #[22868](http://www.xtuple.org/xtincident/view/bugs/22868) _Locking issues on transactions_
 - Fixed issue #[26057](http://www.xtuple.org/xtincident/view/bugs/26057) _SQL Error when creating Quality Tests_
+- Fixed issue #[26348](http://www.xtuple.org/xtincident/view/bugs/26348) _DB log error is displayed on selecting to print Order Activity By Project list from Project screen_
 - Fixed issue #[26880](http://www.xtuple.org/xtincident/view/bugs/26880) _Cannot delete vendor commodity codes_
+- Fixed issue #[27330](http://www.xtuple.org/xtincident/view/bugs/27330) _User is able to save operation Type with blank spaces_
+- Fixed issue #[27708](http://www.xtuple.org/xtincident/view/bugs/27708) _Costing warning appears multiple times on releasing P/R_
 - Fixed issue #[28020](http://www.xtuple.org/xtincident/view/bugs/28020) _Print Report for 'List Site Locations' is not displayed all Site Locations information_
 - Fixed issue #[28089](http://www.xtuple.org/xtincident/view/bugs/28089) _Deleted Sales Order Items when CC payment applied_
 - Fixed issue #[28622](http://www.xtuple.org/xtincident/view/bugs/28622) _Received DropShip PO linked to deleted SO_
 - Fixed issue #[29224](http://www.xtuple.org/xtincident/view/bugs/29224) _Can't Migrate to 4.10 - avg costing and negative inventory problems after upgrade_
+- Fixed issue #[29225](http://www.xtuple.org/xtincident/view/bugs/29225) _Vendor AP History does not display detail when AP Item is void_
 - Fixed issue #[29233](http://www.xtuple.org/xtincident/view/bugs/29233) _Site Transfer does not respect Lot/Serial in all situations_
+- Fixed issue #[29285](http://www.xtuple.org/xtincident/view/bugs/29285) _User can view pricing schedules even though ViewPricingSchedules privilege is not assigned_
+- Fixed issue #[29304](http://www.xtuple.org/xtincident/view/bugs/29304) _Packing List Batch allows the addition of orders that do not display_
+- Fixed issue #[29317](http://www.xtuple.org/xtincident/view/bugs/29317) _Db log error is observed instead of alert box in 'General Ledger Transactions' screen_
 - Fixed issue #[29409](http://www.xtuple.org/xtincident/view/bugs/29409) _Purchase Requistion by Item - disabled Item Number when creating new PR_
+- Fixed issue #[29435](http://www.xtuple.org/xtincident/view/bugs/29435) _'Description' column is not being updated in 'Relationships' tab of 'Item' screen._
 - Fixed issue #[29694](http://www.xtuple.org/xtincident/view/bugs/29694) _xTupleCommerce: Change DB ShipVia Code for Fedex_
 - Fixed issue #[29720](http://www.xtuple.org/xtincident/view/bugs/29720) _""Update Inventory"" checkbox on Credit Memo item ignores interfaceToGL metric_
+- Fixed issue #[29772](http://www.xtuple.org/xtincident/view/bugs/29772) _'New' button is in enabled mode under 'Quotes' tab in 'Prospect' screen when creating New prospect._
 - Fixed issue #[29860](http://www.xtuple.org/xtincident/view/bugs/29860) _*Quality Reports for US Letter_
 - Fixed issue #[29872](http://www.xtuple.org/xtincident/view/bugs/29872) _*Database error is displayed on clicking 'OK' button in 'Data Missing' dialog box of 'Quality Plan' screen._
 - Fixed issue #[29907](http://www.xtuple.org/xtincident/view/bugs/29907) _Wrong Check Number Printed and Updated_
@@ -81,8 +91,11 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[30134](http://www.xtuple.org/xtincident/view/bugs/30134) _Issue to Ship Line Item Right Click Menu Shows Reservation Items for Transfer Orders_
 - Fixed issue #[30138](http://www.xtuple.org/xtincident/view/bugs/30138) _'SSL error' dialog is displayed when credit card settings are saved in credit card setup configuration screen_
 - Fixed issue #[30157](http://www.xtuple.org/xtincident/view/bugs/30157) _Post dated AR Cash receipts display issue_
+- Fixed issue #[30158](http://www.xtuple.org/xtincident/view/bugs/30158) _workflow module not working_
 - Fixed issue #[30161](http://www.xtuple.org/xtincident/view/bugs/30161) _Able to create duplicate 'Purchase Type' in 'Purchase Types' screen._
+- Fixed issue #[30166](http://www.xtuple.org/xtincident/view/bugs/30166) _[qt-client] createLotSerial.cpp tries to look up expiration/warranty using incorrect ids_
 - Fixed issue #[30171](http://www.xtuple.org/xtincident/view/bugs/30171) _xt.ver error due to unexpected trigger order in web-enabled databases_
+- Fixed issue #[30183](http://www.xtuple.org/xtincident/view/bugs/30183) _npm install failes with npm ERR! 404 'types/node' is not in the npm registry._
 - Fixed issue #[30183](http://www.xtuple.org/xtincident/view/bugs/30183) _npm install fails with npm ERR! 404 'types/node' is not in the npm registry._
 - Fixed issue #[30185](http://www.xtuple.org/xtincident/view/bugs/30185) _Issues with blank UPC codes when Unique Barcode setting is active_
 - Fixed issue #[30186](http://www.xtuple.org/xtincident/view/bugs/30186) _disable triggers when updating schema_
@@ -94,16 +107,32 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[30250](http://www.xtuple.org/xtincident/view/bugs/30250) _Critical Error alert is displayed on clicking 'New' button in 'Workflow' screen._
 - Fixed issue #[30251](http://www.xtuple.org/xtincident/view/bugs/30251) _'Error' dialog box is displayed on adding a 'Available Successors:' in 'On Completion' tab of 'Workflow step' screen_
 - Fixed issue #[30252](http://www.xtuple.org/xtincident/view/bugs/30252) _Price Schedules linked to exclusive items do not calculate price_
+- Fixed issue #[30299](http://www.xtuple.org/xtincident/view/bugs/30299) _Able to ship the sales order for multiple times._
 - Fixed issue #[30301](http://www.xtuple.org/xtincident/view/bugs/30301) _'Failed post List' error dialog is displayed while posting the Invoice for sales order._
 - Fixed issue #[30363](http://www.xtuple.org/xtincident/view/bugs/30363) _Documents attached to vouchers missing_
 - Fixed issue #[30378](http://www.xtuple.org/xtincident/view/bugs/30378) _Characteristic Value Choices Are Not Sequenced in Search_
+- Fixed issue #[30422](http://www.xtuple.org/xtincident/view/bugs/30422) _unable to delete 'WH1' & 'WH2' item sites from 'Item screen when a new item is created by copying 'YTRUCK1'_
 - Fixed issue #[30424](http://www.xtuple.org/xtincident/view/bugs/30424) _Bank Reconciliation Very Slow_
+- Fixed issue #[30434](http://www.xtuple.org/xtincident/view/bugs/30434) _In ‘User Account Information’ screen, ‘Employee’ label name is not visible properly._
 - Fixed issue #[30437](http://www.xtuple.org/xtincident/view/bugs/30437) _Attach Quality Plan/Test Doc causes client to crash_
 - Fixed issue #[30439](http://www.xtuple.org/xtincident/view/bugs/30439) _Bom revision changes not captured correctly on comments_
 - Fixed issue #[30456](http://www.xtuple.org/xtincident/view/bugs/30456) _*‘Error Issuing Item’ dialog is  displayed when issuing the sales order for both  ‘Lot’ & ‘Serial’ items._
+- Fixed issue #[30463](http://www.xtuple.org/xtincident/view/bugs/30463) _On entering ‘Vendor:’ in ‘Buy Card’ screen, purchase history of vendor part number is not displayed by default._
+- Fixed issue #[30466](http://www.xtuple.org/xtincident/view/bugs/30466) _Database Log Error is displayed after editing the Incident Recurring details and Incidents list is also not updated_
 - Fixed issue #[30469](http://www.xtuple.org/xtincident/view/bugs/30469) _Post Operation when the user / server in different timezone:  wooperpost - wrong date and time_
 - Fixed issue #[30471](http://www.xtuple.org/xtincident/view/bugs/30471) _*Quality tests are not created when doing partial post production with sampling frequency ‘Last Item’._
+- Fixed issue #[30472](http://www.xtuple.org/xtincident/view/bugs/30472) _Existing Vendors payment information is displayed in ‘Checks’ screen under ‘Accounting’ tab of new vendor screen._
+- Fixed issue #[30482](http://www.xtuple.org/xtincident/view/bugs/30482) _Logged in user who is not a ‘Purchasing Agent’ is displayed as ‘Purchasing Agent’ in Purchase Order screen._
+- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
+- Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_
 - Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
+- Fixed issue #[30512](http://www.xtuple.org/xtincident/view/bugs/30512) _ ‘Error Receiving P/O Line Items’ is displayed while receiving the Return Authorization._
+- Fixed issue #[30517](http://www.xtuple.org/xtincident/view/bugs/30517) _System does not use conversions when changing the quantity of a sales order item tied to a generated purchase order item_
+- Fixed issue #[30524](http://www.xtuple.org/xtincident/view/bugs/30524) _REGRESSION: Database error is displayed while creating ‘Time’ Worksheet._
+- Fixed issue #[30528](http://www.xtuple.org/xtincident/view/bugs/30528) _REGRESSION: On activating 'Pending' Revision of Location Controlled Item, error message is being displayed._
+- Fixed issue #[30537](http://www.xtuple.org/xtincident/view/bugs/30537) _REGRESSION: ‘Error Occurred’ dialog is displayed while creating recurring Invoice in PostBooks edition_
+- Fixed issue #[30547](http://www.xtuple.org/xtincident/view/bugs/30547) _411 Main Top Menu Window Sector Fails_
+- Fixed issue #[30575](http://www.xtuple.org/xtincident/view/bugs/30575) _Customer widget has numerous issues_
 
 ## Version 4.11.0Beta - May, 2017
 
