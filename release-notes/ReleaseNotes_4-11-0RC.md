@@ -125,7 +125,6 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[30482](http://www.xtuple.org/xtincident/view/bugs/30482) _Logged in user who is not a ‘Purchasing Agent’ is displayed as ‘Purchasing Agent’ in Purchase Order screen._
 - Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
 - Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_
-- Fixed issue #[30494](http://www.xtuple.org/xtincident/view/bugs/30494) _4.11 beta - certain items unable to save bar code_- Fixed issue #[30486](http://www.xtuple.org/xtincident/view/bugs/30486) _deleteitemlocdist(integer) Performance is terrible_
 - Fixed issue #[30512](http://www.xtuple.org/xtincident/view/bugs/30512) _ ‘Error Receiving P/O Line Items’ is displayed while receiving the Return Authorization._
 - Fixed issue #[30517](http://www.xtuple.org/xtincident/view/bugs/30517) _System does not use conversions when changing the quantity of a sales order item tied to a generated purchase order item_
 - Fixed issue #[30524](http://www.xtuple.org/xtincident/view/bugs/30524) _REGRESSION: Database error is displayed while creating ‘Time’ Worksheet._
