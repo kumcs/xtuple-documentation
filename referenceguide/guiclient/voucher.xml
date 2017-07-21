@@ -84,27 +84,43 @@
             <term>Method</term>
             <listitem>
               <para>Select one of the following to determine what method the
-              freight pricing will be distributed based on.</para>
+              freight pricing distribution will be based on.</para>
               <variablelist>
                 <varlistentry>
                   <term>Quantity</term>
                   <listitem>
-                    <para>The freight cost will be based on number of
-                    items.</para>
+                    <para>The quantity to distribute for a given line is
+                    divided by the total quantity for all lines and multiplied
+                    by the amount entered in the <guilabel>Freight</guilabel>
+                    field on the header of the voucher. The corresponding
+                    result for each line is distributed to the user defined
+                    costing element selected in the header of the
+                    voucher.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
                   <term>Value</term>
                   <listitem>
-                    <para>The freight cost will be based on the value of the
-                    items.</para>
+                    <para>The total value to distribute for a given line is
+                    divided by the total value for all lines and multiplied by
+                    the amount entered in the <guilabel>Freight</guilabel>
+                    field on the header of the voucher. The corresponding
+                    result for each line is distributed to the user defined
+                    costing element selected in the header of the
+                    voucher.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
                   <term>Weight</term>
                   <listitem>
-                    <para>The freight cost will be based on the weight of the
-                    items.</para>
+                    <para>The product weight (as defined in the Item master)
+                    multiplied by the quantity to distribute for a given line
+                    is then divided by the total weight for all lines. That
+                    result is multiplied by the amount entered in the
+                    <guilabel>Freight</guilabel> field on the header of the
+                    voucher. The corresponding result for each line is
+                    distributed to the user defined costing element selected
+                    in the header of the voucher.</para>
                   </listitem>
                 </varlistentry>
               </variablelist>
