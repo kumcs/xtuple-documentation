@@ -57,65 +57,76 @@
     <varlistentry>
       <term>Freight</term>
       <listitem>
-        <para>Enter the amount of any freight charges that are not being
-        recorded at the line item level.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Cost Element</term>
-      <listitem>
-        <para>Specify the costing element you want to distribute purchasing
-        costs to. The material costing element will be selected by default
-        once line item quantity has been tagged. You may distribute costs to
-        more than one costing element per voucher item. The list of available
-        costing elements includes the system-defined material costing element,
-        as well as any user-defined costing elements designated as available
-        to accept purchase order distributions.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Method</term>
-      <listitem>
-        <para>Select one of the following to determine what method the freight
-        pricing will be distributed based on. </para>
+        <para>Use the following fields for specifying freight
+        information:</para>
         <variablelist>
           <varlistentry>
-            <term>Quantity</term>
+            <term>Freight</term>
             <listitem>
-              <para>The freight cost will be based on number of items.</para>
+              <para>Enter the amount of any freight charges that are not being
+              recorded at the line item level.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Value</term>
+            <term>Cost Element</term>
             <listitem>
-              <para>The freight cost will be based on the value of the
-              items.</para>
+              <para>Specify the costing element you want to distribute
+              purchasing costs to. The material costing element will be
+              selected by default once line item quantity has been tagged. You
+              may distribute costs to more than one costing element per
+              voucher item. The list of available costing elements includes
+              the system-defined material costing element, as well as any
+              user-defined costing elements designated as available to accept
+              purchase order distributions.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Weight</term>
+            <term>Method</term>
             <listitem>
-              <para>The freight cost will be based on the weight of the
-              items.</para>
+              <para>Select one of the following to determine what method the
+              freight pricing will be distributed based on.</para>
+              <variablelist>
+                <varlistentry>
+                  <term>Quantity</term>
+                  <listitem>
+                    <para>The freight cost will be based on number of
+                    items.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Value</term>
+                  <listitem>
+                    <para>The freight cost will be based on the value of the
+                    items.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Weight</term>
+                  <listitem>
+                    <para>The freight cost will be based on the weight of the
+                    items.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><guibutton>DISTRIBUTE</guibutton></term>
+            <listitem>
+              <para>Select to distribute freight to the voucher.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Freight Exp. Category</term>
+            <listitem>
+              <para>If the <guilabel>Distribute Freight</guilabel> check box
+              option is not enabled, you will see the <guilabel>Freight Exp.
+              Category</guilabel> field. Specify the expense category you want
+              to assign header level freight charges to, if you are tracking
+              freight expenses at the line item level.</para>
             </listitem>
           </varlistentry>
         </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term><guibutton>DISTRIBUTE</guibutton></term>
-      <listitem>
-        <para>Select to distribute freight to the voucher. </para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Freight Exp. Category</term>
-      <listitem>
-        <para>If the <guilabel>Distribute Freight</guilabel> check box option
-        is not enabled, you will see the <guilabel>Freight Exp.
-        Category</guilabel> field. Specify the expense category you want to
-        assign header level freight charges to, if you are tracking freight
-        expenses at the line item level.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
