@@ -11,9 +11,9 @@
       <secondary>configuration for</secondary>
     </indexterm>Credit Card</title>
   <para>The system supports several credit card verification services,
-  including YourPay (now First Data), Authorize.Net, and CyberSource. The
-  recording of credit card transactions is also supported, even if an approved
-  verification service is not being used.</para>
+  including Authorize.Net and CyberSource. The recording of credit card
+  transactions is also supported, even if an approved verification service is
+  not being used.</para>
   <para><tip>
       <para>Once you've confirmed with your bank which payment gateway you
       want to use, contact the gateway to set up a merchant account. The
@@ -25,7 +25,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureCC.png" />
+          <imagedata fileref="images/configureCC.png"/>
         </imageobject>
         <caption>Configure general Credit Card options</caption>
       </mediaobject>
@@ -91,14 +91,6 @@
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>YourPay (now First Data)</term>
-            <listitem>
-              <para>Select if you will be using the YourPay payment gateway
-              for handling credit card transactions. Specific YourPay options
-              will be enabled on the screen if you select this service.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
             <term>CyberSource</term>
             <listitem>
               <para>Select if you will be using the CyberSource payment
@@ -117,7 +109,7 @@
               information will be sent to outside credit card processors. You
               can learn more about the interface used to collect external
               credit card transactions in <xref
-              linkend="externalCCTransaction" />.</para>
+              linkend="externalCCTransaction"/>.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -278,22 +270,22 @@
   </variablelist>
   <para>Fraud detection methods vary depending on the payment gateway used.
   Authorize.Net requires fraud settings to be configured on the gateway
-  server. Other services, like YourPay (now First Data), send fraud detection
-  results back to the client software and require the client to decide whether
-  to accept the transaction or void it. To configure client-side fraud
-  detections settings, if required, select the <guimenuitem>Fraud
-  Detection</guimenuitem> tab. The following screen will appear:</para>
+  server. Other services send fraud detection results back to the client
+  software and require the client to decide whether to accept the transaction
+  or void it. To configure client-side fraud detections settings, if required,
+  select the <guimenuitem>Fraud Detection</guimenuitem> tab. The following
+  screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureCC_fraudPage.png" />
+          <imagedata fileref="images/configureCC_fraudPage.png"/>
         </imageobject>
         <caption>Configure Credit Card Fraud Detection</caption>
       </mediaobject>
     </screenshot><tip>
-      <para>If the YourPay or CyberSource services are being used, the options
-      on the <guimenuitem>Fraud Detection</guimenuitem> tab will be enabled
-      and selections should be made. These options will be disabled if the
+      <para>If the CyberSource service is being used, the options on the
+      <guimenuitem>Fraud Detection</guimenuitem> tab will be enabled and
+      selections should be made. These options will be disabled if the
       Authorize.Net gateway is being used. Fraud detection settings for
       Authorize.Net must be configured through the Merchant Interface.</para>
     </tip>When configuring client-side fraud detection settings, if required,
@@ -324,7 +316,8 @@
             <listitem>
               <para>Select if the xTuple application should tell the user if
               the CVV result sent by the payment gateway fails based on the
-              criteria checked in the "Fail CVV Check If" section.</para>
+              criteria checked in the <guilabel>Fail CVV Check If</guilabel>
+              section.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -332,8 +325,8 @@
             <listitem>
               <para>Select if the xTuple application should void the
               transaction and tell the user if the CVV result sent by the
-              payment gateway fails based on the criteria checked in the "Fail
-              CVV Check If" section.</para>
+              payment gateway fails based on the criteria checked in the
+              <guilabel>Fail CVV Check If</guilabel> section.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -464,7 +457,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureCC_serverPage.png" />
+          <imagedata fileref="images/configureCC_serverPage.png"/>
         </imageobject>
         <caption>Configure Credit Card Server</caption>
       </mediaobject>
@@ -497,9 +490,8 @@
     <varlistentry>
       <term>Login</term>
       <listitem>
-        <para>YourPay does not require login information to be entered in this
-        field. For Authorize.Net, use your API Login here, not your merchant
-        interface Login, which may differ.</para>
+        <para>For Authorize.Net, use your API login here, not your merchant
+        interface login, which may differ.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -559,138 +551,12 @@
   configuration, select the <guimenuitem>Service Options</guimenuitem> tab.
   The options will vary depending on the payment gateway being used. For
   example, the CyberSource and external methods do not require service options
-  to be entered. However, if YourPay (now First Data) is being used, the
-  following screen will appear:</para>
+  to be entered. However, if Authorize.Net is being used, the screen will
+  appear as follows:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureCC_optionsPage_yourPayStack.png" />
-        </imageobject>
-        <caption>YourPay Service Options</caption>
-      </mediaobject>
-    </screenshot></para>
-  <para>When establishing the service option settings for your YourPay (now
-  First Data) configuration, you are presented with the following
-  options:</para>
-  <note>
-    <para>Please be advised that <ulink
-    url="https://www.firstdata.com/yourpay/">YourPay is now called First
-    Data</ulink>.</para>
-  </note>
-  <variablelist>
-    <varlistentry>
-      <term>Link Shield</term>
-      <listitem>
-        <para>LinkShield is a risk-scoring service provided by YourPay at an
-        additional fee. If you have purchased this service then check the
-        <guilabel>Enabled</guilabel> box and set the desired cut-off
-        score.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Reject if Score Exceeds</term>
-            <listitem>
-              <para>Set your risk tolerance by selecting a value between zero
-              and 100 using the arrows located to the right of the field or by
-              typing a number in this field. A Link Shield score of zerio
-              indicates that this transaction has an extremely low risk, while
-              a score of 100 indicates a high risk transaction.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Store Number</term>
-      <listitem>
-        <para>Enter the number of your YourPay store. Store numbers are
-        assigned when you register with the YourPay verification
-        service.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Digital Certificate (PEM File) Location:</term>
-      <listitem>
-        <para>Specify the physical location of the digital certificate (i.e.,
-        PEM file) according to your operating system:</para>
-        <variablelist>
-          <varlistentry>
-            <term>Windows</term>
-            <listitem>
-              <para>Specify the directory path any Windows machine on your
-              system would use to access the YourPay PEM file. The PEM file
-              may be stored locally for use by individual machines, or on a
-              network drive for wider distribution.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Linux</term>
-            <listitem>
-              <para>Specify the directory path any Linux machine on your
-              system would use to access the YourPay PEM file. The PEM file
-              may be stored locally for use by individual machines, or on a
-              network drive for wider distribution.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Mac</term>
-            <listitem>
-              <para>Specify the directory path any Mac machine on your system
-              would use to access the YourPay PEM file. The PEM file may be
-              stored locally for use by individual machines, or on a network
-              drive for wider distribution.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>In Test Mode, transactions should</term>
-      <listitem>
-        <para>The YourPay test gateway allows testing the client application's
-        ability to handle failed transactions. The client application can
-        build transaction messages and then indicate whether the test gateway
-        should return an error or not.</para>
-        <variablelist>
-          <varlistentry>
-            <term>Always Fail (Be Declined or Marked as Duplicates)</term>
-            <listitem>
-              <para>If this is selected then the test gateway will always
-              return a message indicating that the transaction failed.
-              Sometimes it will send a message saying the transaction was
-              declined and sometimes it will send a message saying the
-              transaction failed because it is a duplicate of a prior
-              transaction.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Sometimes Fail</term>
-            <listitem>
-              <para>This is similar to <guilabel>Always Fail</guilabel> but
-              about 80% of the transactions attempted by the application will
-              be sent unaltered and should be expected to succeed.
-              Approximately 10% of the transactions sent to the test server
-              should be marked as declined and approximately 10% should be
-              marked as duplicates.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Always Succeed If Possible</term>
-            <listitem>
-              <para>This option does not inject failure requests in the
-              transaction stream. This allows testing normal flow of all
-              credit card transactions in the application.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>If Authorize.Net is being used, the following screen will
-  appear:</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/configureCC_optionsPage_authorizeDotNetStack.png" />
+          <imagedata fileref="images/configureCC_optionsPage_authorizeDotNetStack.png"/>
         </imageobject>
         <caption>Authorize.Net Service Options</caption>
       </mediaobject>
@@ -859,7 +725,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/configureCC_keyPage.png" />
+          <imagedata fileref="images/configureCC_keyPage.png"/>
         </imageobject>
         <caption>Configure Credit Card Key File</caption>
       </mediaobject>
@@ -913,7 +779,7 @@
     </varlistentry>
   </variablelist>
   <tip>
-    <para>If you name the key file "OpenMFG.key" and place it in the
+    <para>If you name the key file "xTuple.key" and place it in the
     installation directory, then you do not need to enter the path.</para>
   </tip>
   <variablelist>
@@ -937,5 +803,5 @@
     </varlistentry>
   </variablelist>
   <xi:include href="externalCCTransaction.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
