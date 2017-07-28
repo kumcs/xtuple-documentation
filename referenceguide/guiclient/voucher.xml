@@ -63,73 +63,85 @@
           <varlistentry>
             <term>Freight</term>
             <listitem>
-              <para>Enter the amount of any freight charges that are not being
-              recorded at the line item level.</para>
+              <para>Enter the amount of any freight charges. This amount will
+              be distributed at the header level (when using a freight expense
+              category) or at the line item level (when the
+              <guilabel>Distribute Freight</guilabel> option is
+              selected).</para>
             </listitem>
           </varlistentry>
           <varlistentry>
-            <term>Cost Element</term>
+            <term>Distribute Freight</term>
             <listitem>
-              <para>Specify the costing element you want to distribute
-              purchasing costs to. The material costing element will be
-              selected by default once line item quantity has been tagged. You
-              may distribute costs to more than one costing element per
-              voucher item. The list of available costing elements includes
-              the system-defined material costing element, as well as any
-              user-defined costing elements designated as available to accept
-              purchase order distributions.</para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Method</term>
-            <listitem>
-              <para>Select one of the following to determine what method the
-              freight pricing distribution will be based on.</para>
+              <para>Select to have the freight charge amount distributed among
+              the line items, using the specified costing element and
+              distribution method.</para>
               <variablelist>
                 <varlistentry>
-                  <term>Quantity</term>
+                  <term>Cost Element</term>
                   <listitem>
-                    <para>The quantity to distribute for a given line is
-                    divided by the total quantity for all lines and multiplied
-                    by the amount entered in the <guilabel>Freight</guilabel>
-                    field on the header of the voucher. The corresponding
-                    result for each line is distributed to the user defined
-                    costing element selected in the header of the
-                    voucher.</para>
+                    <para>Specify the costing element you want to distribute
+                    freight charges to. If you have defined a default cost
+                    element for freight under <guimenuitem>Products &gt; Setup
+                    &gt; Configure</guimenuitem>, then that element will be
+                    displayed here.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
-                  <term>Value</term>
+                  <term>Method</term>
                   <listitem>
-                    <para>The total value to distribute for a given line is
-                    divided by the total value for all lines and multiplied by
-                    the amount entered in the <guilabel>Freight</guilabel>
-                    field on the header of the voucher. The corresponding
-                    result for each line is distributed to the user defined
-                    costing element selected in the header of the
-                    voucher.</para>
+                    <para>Select one of the following methods to determine how
+                    you want the freight charges to be distributed among the
+                    line items:</para>
+                    <variablelist>
+                      <varlistentry>
+                        <term>Quantity</term>
+                        <listitem>
+                          <para>The quantity to distribute for a given line
+                          will be divided by the total quantity for all lines.
+                          This fractional quantity is then multiplied by the
+                          amount entered in the <guilabel>Freight</guilabel>
+                          field. The corresponding result for each line is
+                          then distributed to the specified costing
+                          element.</para>
+                        </listitem>
+                      </varlistentry>
+                      <varlistentry>
+                        <term>Value</term>
+                        <listitem>
+                          <para>The total value to distribute for a given line
+                          will be divided by the total value for all lines.
+                          This fractional value is then multiplied by the
+                          amount entered in the <guilabel>Freight</guilabel>
+                          field. The corresponding result for each line is
+                          distributed to the specified costing element.</para>
+                        </listitem>
+                      </varlistentry>
+                      <varlistentry>
+                        <term>Weight</term>
+                        <listitem>
+                          <para>The product weight (as defined in the Item
+                          master) will be multiplied by the quantity to
+                          distribute for a given line. That total line item
+                          weight is then divided by the total weight for all
+                          lines. This fractional weight is then multiplied by
+                          the amount entered in the
+                          <guilabel>Freight</guilabel> field. The
+                          corresponding result for each line is distributed to
+                          the specified costing element.</para>
+                        </listitem>
+                      </varlistentry>
+                    </variablelist>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
-                  <term>Weight</term>
+                  <term><guibutton>DISTRIBUTE</guibutton></term>
                   <listitem>
-                    <para>The product weight (as defined in the Item master)
-                    multiplied by the quantity to distribute for a given line
-                    is then divided by the total weight for all lines. That
-                    result is multiplied by the amount entered in the
-                    <guilabel>Freight</guilabel> field on the header of the
-                    voucher. The corresponding result for each line is
-                    distributed to the user defined costing element selected
-                    in the header of the voucher.</para>
+                    <para>Select to distribute the entered freight charge
+                    among the line items, using the specified method.</para>
                   </listitem>
                 </varlistentry>
               </variablelist>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term><guibutton>DISTRIBUTE</guibutton></term>
-            <listitem>
-              <para>Select to distribute freight to the voucher.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -138,8 +150,10 @@
               <para>If the <guilabel>Distribute Freight</guilabel> check box
               option is not enabled, you will see the <guilabel>Freight Exp.
               Category</guilabel> field. Specify the expense category you want
-              to assign header level freight charges to, if you are tracking
-              freight expenses at the line item level.</para>
+              to assign header level freight charges to. For line item level
+              freight, use the <guilabel>Distribute Freight</guilabel> option
+              or manually enter charges using costing elements on the line
+              distribution screen.</para>
             </listitem>
           </varlistentry>
         </variablelist>
