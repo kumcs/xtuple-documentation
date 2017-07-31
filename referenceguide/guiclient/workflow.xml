@@ -4,15 +4,17 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="calendars">
   <title><indexterm significance="normal">
-      <primary>workflow</primary>
+      <primary>workflow, master list of</primary>
     </indexterm>Workflow</title>
   <para>Paragraph 1<screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="../../Documents/xtupledocs/referenceguide/guiclient/images/calendars.png"/>
+          <imagedata fileref="images/workflow.png"/>
         </imageobject>
         <caption>Workflow master list</caption>
       </mediaobject>
     </screenshot></para>
   <para>Paragraph 2</para>
+  <xi:include href="workflowStep.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
