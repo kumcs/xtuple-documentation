@@ -6,7 +6,15 @@
   <title><indexterm significance="normal">
       <primary>workflow profiles, creating new</primary>
     </indexterm>Workflow Email/Printer Profile</title>
-  <para>Paragraph 1<screenshot>
+  <para>The workflow email/printer profile has a profile name and description.
+  Here, you can turn on or off email notifications. There are option that
+  define all of the possible variables and what they are used for. When a
+  workflow gets triggered, there is an owner and an assigned user(s). The
+  workflow will look up those user email addresses and send them out. The
+  email content is based on tokens. You can not build your own infinite tokens
+  at this time. You can turn on a print option, in which case a report will be
+  generated. The notifications are for steps that are in "in process" and need
+  another action to be taken.<screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/workflowProfile.png"/>
@@ -20,19 +28,20 @@
     <varlistentry>
       <term>Profile Name</term>
       <listitem>
-        <para/>
+        <para>The name of the profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para/>
+        <para>A brief summary of the profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Email Options</term>
       <listitem>
-        <para/>
+        <para>Identify the sender and recipients of the email as well as the
+        subject and content of the email in the following fields: </para>
         <variablelist>
           <varlistentry>
             <term>From</term>
