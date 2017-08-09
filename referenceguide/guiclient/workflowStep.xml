@@ -55,13 +55,13 @@
     <varlistentry>
       <term>Priority</term>
       <listitem>
-        <para>Identifies the level of importance. </para>
+        <para>Identifies the level of importance.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Sequence</term>
       <listitem>
-        <para>Identifies the level of importance. </para>
+        <para>Identifies the level of importance.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -86,19 +86,21 @@
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para/>
+        <para>Identifies the current state of the workflow. </para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Start</term>
       <listitem>
-        <para/>
+        <para>Dates are used to define when a subsequent step must
+        begin.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>End</term>
       <listitem>
-        <para/>
+        <para>Dates are used to define when a subsequent step must be
+        completed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -110,7 +112,7 @@
     </varlistentry>
   </variablelist>
   <para>You are able to define next steps for when a workflow is complete and
-  has passed any requirements.</para>
+  has passed or finished any requirements.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -123,21 +125,21 @@
     <varlistentry>
       <term>Available Successors</term>
       <listitem>
-        <para/>
+        <para>All the possible steps for once the workflow is
+        completed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Successors</term>
       <listitem>
-        <para/>
+        <para>The next steps once the workflow is completed. </para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>You are able to define next steps for when a workflow has failed. If
-  it fails, the next step may be that the material goes to scrap. You can
-  string multiple tests together. So, if it fails, do another test. If that
-  fails, scrap it. The multiple steps can be chained together. The options are
-  dependent only on your business process.</para>
+  <para>You are able to define next steps for when a workflow has not been
+  successfully completed or has failed. If it fails, there may be a next step.
+  Multiple steps can be chained together. The options are dependent only on
+  your business process.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -150,13 +152,13 @@
     <varlistentry>
       <term>Available Successors</term>
       <listitem>
-        <para/>
+        <para>All the possible steps for once the workflow is deferred.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Successors</term>
       <listitem>
-        <para/>
+        <para>The next steps once the workflow is deferred. </para>
       </listitem>
     </varlistentry>
   </variablelist>
