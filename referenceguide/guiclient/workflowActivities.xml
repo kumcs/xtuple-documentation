@@ -3,17 +3,167 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section>
   <title>Workflow Activities</title>
-  <para>A report is generated to show the Workflow Activities. This is a list
-  of activities where you can filter by user in order to see what that user
-  has to do. It brings together everything that the worker is scheduled to do
-  right now. Other filters include Module, Status, Assigned To, and Owner.
-  Double clicking the line will take you straight to the screen that you need
-  to do the task.</para>
+  <para>Workflow Activities are generated from Workflow configuration steps
+  based on the trigger actions occurring. This is a list of activities where
+  you can filter by user in order to see what that user has to do. It brings
+  together everything that the worker is scheduled to do right now. Other
+  filters include Module, Status, Assigned To, and Owner. Double clicking the
+  line will take you straight to the screen that you need to do the
+  task.</para>
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/workflowActivities.png"/>
     </imageobject>
     <caption>Workflow Activities</caption>
   </mediaobject>
-  <para>Paragraph 2</para>
+  <para>By right-clicking the workflow activity, you are able to Receive/Post
+  Receipt, Edit Activity, or Delete Activity. When editing or viewing a
+  Workflow Activity screen, you'll notice that it is very similar to the
+  Workflow Step screen. </para>
+  <para>Below are the fields you will see on the Workflow Activities
+  screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Module</term>
+      <listitem>
+        <para>The module for the workflow. This field can not be modified in
+        this screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Type</term>
+      <listitem>
+        <para>Type is for each module. This field can not be modified in this
+        screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Action</term>
+      <listitem>
+        <para>Standard actions are used to drive the activity list and open up
+        screens automatically. This field can not be modified in this
+        screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Name</term>
+      <listitem>
+        <para>Name of the workflow.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>A brief statement summarizing the purpose of the
+        workflow.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Priority</term>
+      <listitem>
+        <para>Identifies the level of importance.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sequence</term>
+      <listitem>
+        <para>Identifies the level of importance.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Owner</term>
+      <listitem>
+        <para>The system will send notifications to these people.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Assigned To</term>
+      <listitem>
+        <para>The system will send notifications to these people.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Notification Profile</term>
+      <listitem>
+        <para>This is the profile that is attached to the workflow
+        step.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Identifies the current state of the workflow.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start</term>
+      <listitem>
+        <para>Dates are used to define when a subsequent step must
+        begin.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End</term>
+      <listitem>
+        <para>Dates are used to define when a subsequent step must be
+        completed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Assigned Date</term>
+      <listitem>
+        <para/>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Completed Date</term>
+      <listitem>
+        <para/>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Notes</term>
+      <listitem>
+        <para>An open text field for additional notes relating to the
+        workflow</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>You are able to view the next steps for the workflow once it is
+  complete and has passed or finished any requirements.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/workflowStepTabCompletion.png"/>
+        </imageobject>
+        <caption>On Completion tab</caption>
+      </mediaobject>
+    </screenshot></para>
+  <variablelist>
+    <varlistentry>
+      <term>Successors</term>
+      <listitem>
+        <para>The next steps once the workflow is completed.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>You are able to view the next steps for the workflow once it has been
+  determined that it has failed or has not successfully been completed.
+  </para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/workflowStepTabDeferred.png"/>
+        </imageobject>
+        <caption>On Deferred tab</caption>
+      </mediaobject>
+    </screenshot></para>
+  <variablelist>
+    <varlistentry>
+      <term>Successors</term>
+      <listitem>
+        <para>The next steps once the workflow is deferred.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
 </section>
