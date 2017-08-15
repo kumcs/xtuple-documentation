@@ -7,14 +7,15 @@
       <primary>workflow profiles, creating new</primary>
     </indexterm>Workflow Email/Printer Profile</title>
   <para>The workflow email/printer profile has a profile name and description.
-  Here, you can turn on or off email notifications. There are option that
+  Here, you can turn email notifications on or off. There are options that
   define all of the possible variables and what they are used for. When a
   workflow gets triggered, there is an owner and an assigned user(s). The
   workflow will look up those user email addresses and send them out. The
   email content is based on tokens. You can not build your own infinite tokens
   at this time. You can turn on a print option, in which case a report will be
-  generated. The notifications are for steps that are in "in process" and need
-  another action to be taken.<screenshot>
+  generated. The notifications are for steps that are in
+  <emphasis>in-process</emphasis> and need another action to be
+  taken.<screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/workflowProfile.png"/>
@@ -48,7 +49,7 @@
             <listitem>
               <para>This is the email address of the person sending the email.
               It can be set to a particular person's email address or to a
-              generic address (e.g. "sales@xtuple.com").</para>
+              generic address (e.g. sales@xtuple.com).</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -73,7 +74,7 @@
               <para>Enter the email address to which copies of the email will
               be sent using this profile. BCC differs from CC in that none of
               the recipients will see the BCC addresses. It is a good idea to
-              set this to an address that will have its Inbox archived or to
+              set this to an address that will have its inbox archived or to
               an email address shared by a department. This way there is a
               history of the transmission or the entire department knows what
               has happened.</para>
