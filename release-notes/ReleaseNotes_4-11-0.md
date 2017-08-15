@@ -21,6 +21,7 @@ Of particular interest are the following:
 
 - Completed support for Landed Cost
 - Continued improvements in desktop client support for the Quality extension
+- Continued improvements in desktop client support of the workflow engine
 - Simplified reversal of A/R application
 - Continued performance improvements
 - Rudimentary (undocumented) widget scripting (issue #[28225](http://www.xtuple.org/xtincident/view/bugs/28225) WIP)
