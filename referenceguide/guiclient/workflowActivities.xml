@@ -1,115 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<section>
+<section role="standard">
   <title>Workflow Activities</title>
-  <para>Workflow Activities are generated from workflow configuration steps
-  based on the trigger actions occurring. You can navigate to the Workflow
-  Activities screen via <guimenuitem>System &gt; Workflow
-  Activities</guimenuitem>. This is a list of activities where you can filter
-  by user in order to see what that user has to do. It brings together
-  everything that the worker is scheduled to do right now. Other filters
-  include module, status, assigned to, and owner. Double-clicking the line
-  will take you straight to the screen that you need to do the task.</para>
+  <para>Workflow activities are generated based on your workflow
+  configuration. From the activities list, you can both view your activities
+  and take action on them. To view your current workflow activities, go to
+  <guimenuitem>System &gt; Workflow Activities</guimenuitem>. </para>
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/workflowActivities.png"/>
     </imageobject>
     <caption>Workflow Activities</caption>
   </mediaobject>
-  <para>By right-clicking the workflow activity, you are able to receive or
-  post the receipt, edit the activity, or delete the activity. The Workflow
-  Activity screen is very similar to the Workflow Step screen.</para>
+  <para>To edit an activity, right-click on the activity and choose the
+  <guimenuitem>Edit Activity</guimenuitem> option. The following screen will
+  appear:</para>
   <mediaobject>
     <imageobject>
       <imagedata fileref="images/workflowActivity.png"/>
     </imageobject>
     <caption>Workflow Activity</caption>
   </mediaobject>
-  <para>Below are the fields you will see on the Workflow Activity
-  screen:</para>
+  <para>When editing a workflow activity, you are presented with the following
+  options:</para>
   <variablelist>
     <varlistentry>
       <term>Module</term>
       <listitem>
-        <para>The module for the workflow. This field can not be modified in
-        this screen.</para>
+        <para>Displays the module the workflow is configured for.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Type</term>
       <listitem>
-        <para>Type is for each module. This field can not be modified in this
-        screen.</para>
+        <para>Displays the workflow type.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Number</term>
+      <listitem>
+        <para>Displays the related order number.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Action</term>
       <listitem>
-        <para>Standard actions are used to drive the activity list and open up
-        screens automatically. This field can not be modified in this
-        screen.</para>
+        <para>Displays the standard action defined in the workflow
+        configuration.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Name of the workflow.</para>
+        <para>Displays the workflow name.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>A brief statement summarizing the purpose of the
+        <para>Displays a brief statement summarizing the purpose of the
         workflow.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Priority</term>
       <listitem>
-        <para>Identifies the level of importance.</para>
+        <para>Specifies the activity's level of importance.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Sequence</term>
       <listitem>
-        <para>Identifies the level of importance.</para>
+        <para>Specifies the sequence order of the activity.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Owner</term>
       <listitem>
-        <para>The system will send notifications to these people.</para>
+        <para>Identifies the owner of the activity.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Assigned To</term>
       <listitem>
-        <para>The system will send notifications to these people.</para>
-      </listitem>
-    </varlistentry>
-    <varlistentry>
-      <term>Notification Profile</term>
-      <listitem>
-        <para>This is the profile that is attached to the workflow
-        step.</para>
+        <para>Identifies the person the activity is assigned to.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Identifies the current state of the workflow.</para>
+        <para>Identifies the current status of the activity.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Start</term>
+      <term>Start Date</term>
       <listitem>
         <para>Dates are used to define when a subsequent step must
         begin.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>End</term>
+      <term>Due Date</term>
       <listitem>
         <para>Dates are used to define when a subsequent step must be
         completed.</para>
@@ -118,25 +110,25 @@
     <varlistentry>
       <term>Assigned Date</term>
       <listitem>
-        <para>Date the activity should take place.</para>
+        <para>Enter the date the activity should take place.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Completed Date</term>
       <listitem>
-        <para>Date of the completed activity.</para>
+        <para>Enter the date the activity is completed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Notes</term>
       <listitem>
-        <para>An open text field for additional notes relating to the
-        workflow</para>
+        <para>This is an open text field for additional notes relating to the
+        activity.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>You are able to view the next steps for the workflow once it is
-  complete and has passed or finished any requirements.</para>
+  <para>To view the next steps for the workflow once the activity is completed
+  and has passed or finished any requirements.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>

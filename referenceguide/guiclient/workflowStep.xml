@@ -2,7 +2,7 @@
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<section id="workflowStep">
+<section id="workflowStep" role="standard">
   <title><indexterm significance="normal">
       <primary>workflow step, creating new</primary>
     </indexterm>Workflow Step</title>
@@ -15,7 +15,8 @@
         <caption>Workflow Step</caption>
       </mediaobject>
     </screenshot></para>
-  <para>You can use workflow to build up complex process flows.</para>
+  <para>When defining workflow steps, you are presented with the following
+  options:</para>
   <variablelist>
     <varlistentry>
       <term>Module</term>
@@ -26,67 +27,66 @@
     <varlistentry>
       <term>Type</term>
       <listitem>
-        <para>Type is for each module. The type changes to reflect the module.
-        For example, the Sales will impact the Sales Type. For Quality module,
-        you use the Quality Type.</para>
+        <para>Specify the type for step. The type will change depending on the
+        module selected.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Action</term>
       <listitem>
-        <para>Standard actions are used to drive the activity list and open up
-        screens automatically. The different modules will show different
-        options in the dropdown.</para>
+        <para>Select a standard action from the list of available actions.
+        Standard actions are used to drive the activity list and open up
+        screens automatically. The choices will vary depending on the module
+        selected.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Name of the workflow.</para>
+        <para>Enter a name to describe the step.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>A brief statement summarizing the purpose of the
-        workflow.</para>
+        <para>Enter a brief description of the step.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Priority</term>
       <listitem>
-        <para>Identifies the level of importance.</para>
+        <para>Specify the priority the step should be given.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Sequence</term>
       <listitem>
-        <para>Identifies the level of importance.</para>
+        <para>Specify the sequence order for the step.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Owner</term>
       <listitem>
-        <para>The system will send notifications to these people.</para>
+        <para>Specify the owner of the step.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Assigned To</term>
       <listitem>
-        <para>The system will send notifications to these people.</para>
+        <para>Specify the person the step should be assigned to.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Notification Profile</term>
       <listitem>
-        <para>This is the profile that is attached to the workflow
-        step.</para>
+        <para>Select the EDI profile to be used for sending notifications to
+        users when workflow activities are generated from the step.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Status</term>
       <listitem>
-        <para>Identifies the current state of the workflow.</para>
+        <para>Specify the initial status of the step.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -94,6 +94,20 @@
       <listitem>
         <para>Dates are used to define when a subsequent step must
         begin.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Calculate</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Offset Days</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -101,6 +115,20 @@
       <listitem>
         <para>Dates are used to define when a subsequent step must be
         completed.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Calculate</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Offset Days</term>
+            <listitem>
+              <para/>
+            </listitem>
+          </varlistentry>
+        </variablelist>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -108,6 +136,12 @@
       <listitem>
         <para>An open text field for additional notes relating to the
         workflow</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>On Completion</term>
+      <listitem>
+        <para/>
       </listitem>
     </varlistentry>
   </variablelist>
