@@ -4,8 +4,8 @@
 <section role="standard">
   <title>Workflow Activities</title>
   <para>Workflow activities are generated based on your workflow
-  configuration. From the activities list, you can both view your activities
-  and take action on them. To view your current workflow activities, go to
+  configuration. From the activities list, you can both view and also take
+  action on your activities. To view your current workflow activities, go to
   <guimenuitem>System &gt; Workflow Activities</guimenuitem>.</para>
   <mediaobject>
     <imageobject>
@@ -53,14 +53,14 @@
     <varlistentry>
       <term>Name</term>
       <listitem>
-        <para>Displays the workflow name.</para>
+        <para>Displays the activity name.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
         <para>Displays a brief statement summarizing the purpose of the
-        workflow.</para>
+        activity.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -96,15 +96,13 @@
     <varlistentry>
       <term>Start Date</term>
       <listitem>
-        <para>Dates are used to define when a subsequent step must
-        begin.</para>
+        <para>Specifies when a subsequent step must begin.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Due Date</term>
       <listitem>
-        <para>Dates are used to define when a subsequent step must be
-        completed.</para>
+        <para>Specifies when a subsequent step must be completed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -126,27 +124,17 @@
         activity.</para>
       </listitem>
     </varlistentry>
-  </variablelist>
-  <para>To view the next steps for the workflow once the activity is completed
-  and has passed or finished any requirements.</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/workflowActivityTabCompletion.png"/>
-        </imageobject>
-        <caption>On Completion tab</caption>
-      </mediaobject>
-    </screenshot></para>
-  <variablelist>
     <varlistentry>
-      <term>Successors</term>
+      <term>On Completion</term>
       <listitem>
-        <para>The next steps once the workflow is completed.</para>
+        <para>Display lists any activities to be started once the current
+        activity is completed.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>You are able to view the next steps for the workflow once it has been
-  determined that it has failed or has not successfully been completed.</para>
+  <para>To view successor activities to be started when the current activity
+  is deferred, select the <guimenuitem>On Deferred</guimenuitem> tab. The
+  following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -155,12 +143,4 @@
         <caption>On Deferred tab</caption>
       </mediaobject>
     </screenshot></para>
-  <variablelist>
-    <varlistentry>
-      <term>Successors</term>
-      <listitem>
-        <para>The next steps once the workflow is deferred.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
 </section>

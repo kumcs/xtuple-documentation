@@ -6,7 +6,7 @@
   <title><indexterm significance="normal">
       <primary>workflow step, creating new</primary>
     </indexterm>Workflow Step</title>
-  <para>To create a new workflow item, select the <guibutton>NEW</guibutton>
+  <para>To create a new workflow step, select the <guibutton>NEW</guibutton>
   button. The following screen will appear:<screenshot>
       <mediaobject>
         <imageobject>
@@ -27,7 +27,7 @@
     <varlistentry>
       <term>Type</term>
       <listitem>
-        <para>Specify the type for step. The type will change depending on the
+        <para>Specify the step's type. The type will change depending on the
         module selected.</para>
       </listitem>
     </varlistentry>
@@ -98,13 +98,15 @@
           <varlistentry>
             <term>Calculate</term>
             <listitem>
-              <para/>
+              <para>Select to have the start date calculated
+              automatically.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Offset Days</term>
             <listitem>
-              <para/>
+              <para>Select to have the start date determined by a specified
+              number of offset days.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -119,13 +121,15 @@
           <varlistentry>
             <term>Calculate</term>
             <listitem>
-              <para/>
+              <para>Select to have the end date calculated
+              automatically.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Offset Days</term>
             <listitem>
-              <para/>
+              <para>Select to have the end date determined by a specified
+              number of offset days.</para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -141,32 +145,16 @@
     <varlistentry>
       <term>On Completion</term>
       <listitem>
-        <para/>
+        <para>Use this tab to specify the next step(s) in the workflow once
+        the current step is completed. With the <guibutton>ADD</guibutton>
+        button you can add available successor steps or remove them using the
+        <guibutton>REMOVE</guibutton> button.</para>
       </listitem>
     </varlistentry>
   </variablelist>
-  <para>You are able to define next steps for when a workflow is complete and
-  has passed or finished any requirements.</para>
-  <para><screenshot>
-      <mediaobject>
-        <imageobject>
-          <imagedata fileref="images/workflowStepTabCompletion.png"/>
-        </imageobject>
-        <caption>On Completion tab</caption>
-      </mediaobject>
-    </screenshot></para>
-  <variablelist>
-    <varlistentry>
-      <term>Successors</term>
-      <listitem>
-        <para>The next step once the workflow is completed.</para>
-      </listitem>
-    </varlistentry>
-  </variablelist>
-  <para>You are able to define next steps for when a workflow has failed or
-  has not been successfully completed. If it fails, there may be a next step.
-  Multiple steps can be chained together. The options are dependent only on
-  your business process.</para>
+  <para>To define successor steps to take when the current workflow step has
+  failed or has not been successfully completed, select the <guimenuitem>On
+  Deferred</guimenuitem> tab. The following screen will appear:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
@@ -175,11 +163,23 @@
         <caption>On Deferred tab</caption>
       </mediaobject>
     </screenshot></para>
+  <para>Use the <guimenuitem>On Deferred</guimenuitem> tab to add or remove
+  successor steps to be taken when the current workflow step has failed or has
+  not been successfully completed. </para>
+  <para>The following buttons are unique to this screen:</para>
   <variablelist>
     <varlistentry>
-      <term>Successors</term>
+      <term><guibutton>ADD</guibutton></term>
       <listitem>
-        <para>The next step once the workflow is deferred.</para>
+        <para>Highlight an available successor and then select this button to
+        move the item to the Successors list.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>REMOVE</guibutton></term>
+      <listitem>
+        <para>Highlight a successor and then select this button to remove the
+        item from the Successors list.</para>
       </listitem>
     </varlistentry>
   </variablelist>

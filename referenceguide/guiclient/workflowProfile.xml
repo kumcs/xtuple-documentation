@@ -2,20 +2,14 @@
 <!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
 <!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
-<section id="workflowProfile" role="standard">
+<section id="workflowProfile" role="xtconnect">
   <title><indexterm significance="normal">
       <primary>workflow profiles, creating new</primary>
     </indexterm>Workflow Email/Printer Profile</title>
-  <para>The workflow email/printer profile has a profile name and description.
-  Here, you can turn email notifications on or off. There are options that
-  define all of the possible variables and what they are used for. When a
-  workflow gets triggered, there is an owner and an assigned user(s). The
-  workflow will look up those user email addresses and send them out. The
-  email content is based on tokens. You can not build your own infinite tokens
-  at this time. You can turn on a print option, in which case a report will be
-  generated. The notifications are for steps that are in
-  <emphasis>in-process</emphasis> and need another action to be
-  taken.<screenshot>
+  <para>The workflow profile provides a token-based method for notifying users
+  about workflow activities, either by email or in print form. You can create
+  as many profiles as needed to fit your workflow requirements.</para>
+  <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/workflowProfile.png"/>
@@ -29,27 +23,32 @@
     <varlistentry>
       <term>Profile Name</term>
       <listitem>
-        <para>The name of the profile.</para>
+        <para>Enter a name for the profile.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Description</term>
       <listitem>
-        <para>A brief summary of the profile.</para>
+        <para>Enter a brief summary of the profile.</para>
+        <tip>
+          <para>Hover your mouse over the <guilabel>Body</guilabel> field to
+          see a list of tokens available for use when building
+          profiles.</para>
+        </tip>
       </listitem>
     </varlistentry>
     <varlistentry>
       <term>Email Options</term>
       <listitem>
-        <para>Identify the sender and recipients of the email as well as the
-        subject and content of the email in the following fields:</para>
+        <para>Select to enable email notification, then specify the following
+        email details for the profile:</para>
         <variablelist>
           <varlistentry>
             <term>From</term>
             <listitem>
               <para>This is the email address of the person sending the email.
               It can be set to a particular person's email address or to a
-              generic address (e.g. sales@xtuple.com).</para>
+              generic company address.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
@@ -100,19 +99,21 @@
     <varlistentry>
       <term>Print Options</term>
       <listitem>
-        <para>Select the printer and report for the workflow.</para>
+        <para>Select to enable printing, then specify the following print
+        details for the profile:</para>
         <variablelist>
           <varlistentry>
             <term>Printer</term>
             <listitem>
-              <para>A print queue, which is company specific.</para>
+              <para>Choose where you want the notification to be
+              printed.</para>
             </listitem>
           </varlistentry>
           <varlistentry>
             <term>Report</term>
             <listitem>
-              <para>A report to be run showing information about a particular
-              workflow.</para>
+              <para>Specify the report definition to be used for printing the
+              notification.</para>
             </listitem>
           </varlistentry>
         </variablelist>
