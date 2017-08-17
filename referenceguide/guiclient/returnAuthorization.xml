@@ -25,7 +25,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/returnAuthorization.png" />
+          <imagedata fileref="images/returnAuthorization.png"/>
         </imageobject>
         <caption>Create new Return Authorization</caption>
       </mediaobject>
@@ -173,7 +173,7 @@
               of lot/serial numbers can be simplified if you link authorized
               line items with existing lot/serial numbers at the line item
               level. For more information, please see <xref
-              linkend="returnAuthItemLotSerial" />.</para>
+              linkend="returnAuthItemLotSerial"/>.</para>
               <note>
                 <para>Money to be billed for service or repair should be set
                 at the new sales order.</para>
@@ -294,7 +294,7 @@
         select the <guibutton>SAVE</guibutton> button. You must have a form
         <emphasis>keyed on</emphasis> return authorizations for this option to
         work. The keyed on process is described here: <xref
-        linkend="form" />.</para>
+        linkend="form"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -394,7 +394,7 @@
         the lookup feature to select another address. If a new address is
         manually entered here, that address will be added automatically to the
         master list of addresses. For additional documentation related to
-        creating addresses, see <xref linkend="address" />.</para>
+        creating addresses, see <xref linkend="address"/>.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -403,7 +403,7 @@
         <para>Select to copy contents of billing address into
         <guilabel>Ship-To Address</guilabel> field. This option is enabled if
         the Customer master for the specified customer indicates that
-        free-form ship-to's are allowed.</para>
+        free-form ship-tos are allowed.</para>
       </listitem>
     </varlistentry>
     <varlistentry>
@@ -411,9 +411,9 @@
       <listitem>
         <para>Enter the number of the preferred ship-to address. Customers may
         maintain multiple ship-to addresses. If the Customer master for the
-        specified customer indicates that free-form ship-to's are allowed,
-        then any address may be entered. If free-form ship-to's are not
-        allowed, then the ship-to address must be entered using the
+        specified customer indicates that free-form ship-tos are allowed, then
+        any address may be entered. If free-form ship-tos are not allowed,
+        then the ship-to address must be entered using the
         <guibutton>BROWSE</guibutton> button located to the right of the
         field.</para>
       </listitem>
@@ -441,7 +441,7 @@
         the lookup feature to select another address. If a new address is
         manually entered here, that address will be added automatically to the
         master list of addresses. For additional documentation related to
-        creating addresses, see <xref linkend="address" />.</para>
+        creating addresses, see <xref linkend="address"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -470,7 +470,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/returnAuthorization_lineItemsPage.png" />
+          <imagedata fileref="images/returnAuthorization_lineItemsPage.png"/>
         </imageobject>
         <caption>Return Authorization Line Items</caption>
       </mediaobject>
@@ -554,7 +554,7 @@
         modification of a return authorization—or at the time of shipment. The
         system can be configured to automatically calculate freight amounts
         per quantity and shipment. To learn more about freight configuration,
-        see <xref linkend="configureSO_freightPricing" />.</para>
+        see <xref linkend="configureSO_freightPricing"/>.</para>
         <note>
           <para>If you are manually entering freight, all freight charges will
           be added to the initial shipment for an order. Any subsequent
@@ -679,7 +679,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/returnAuthorization_authCommentsPage.png" />
+          <imagedata fileref="images/returnAuthorization_authCommentsPage.png"/>
         </imageobject>
         <caption>Return Authorization Notes</caption>
       </mediaobject>
@@ -702,30 +702,30 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/returnAuthorization_commentsPage.png" />
+          <imagedata fileref="images/returnAuthorization_commentsPage.png"/>
         </imageobject>
         <caption>Return Authorization Comments</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To associate documents with a return authorization item, select the
   <guimenuitem>Documents</guimenuitem> tab.</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/returnAuthorization_documentsPage.png" />
+          <imagedata fileref="images/returnAuthorization_documentsPage.png"/>
         </imageobject>
         <caption>Return Authorization Documents</caption>
       </mediaobject>
     </screenshot></para>
   <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To view email associated with the return authorization, select the
   <guimenuitem>Email</guimenuitem> tab. The following screen will
   appear:</para>
   <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <xi:include href="returnAuthorizationItem.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
