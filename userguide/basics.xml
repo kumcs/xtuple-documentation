@@ -4,9 +4,8 @@
 <chapter>
   <title id="i570955">Report Writer Basics</title>
   <para>This chapter is designed to orient you to some of the basic properties
-  of the xTuple report writer&mdash;whether you're running the version
-  embedded within the xTuple ERP Suite, or the standalone OpenRPT
-  application.</para>
+  of the xTuple report writer—whether you're running the version embedded
+  within the xTuple ERP suite, or the standalone OpenRPT application.</para>
   <section id="i550316">
     <title>xTuple Report Writer</title>
     <para>To open the report writer embedded within the xTuple application,
@@ -16,30 +15,31 @@
     <para><screenshot>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/C01_50_ReportSubmenu.png" />
+            <imagedata fileref="images/C01_50_ReportSubmenu.png"/>
           </imageobject>
-          <caption>Opening the Embedded xTuple Report Writer</caption>
+          <caption>Opening the embedded xTuple report writer</caption>
         </mediaobject>
       </screenshot></para>
-    <para>After you select the “Reports” option, the report definitions master
-    list will appear, as shown below. The report definitions master list
-    serves as the starting point for working with xTuple reports.</para>
+    <para>After you select the <guimenuitem>Reports</guimenuitem> option, the
+    Report Definitions master list will appear, as shown below. The Report
+    Definitions master list serves as the starting point for working with
+    xTuple reports.</para>
     <para><screenshot>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/C01_100_ReportDefs.png" />
+            <imagedata fileref="images/C01_100_ReportDefs.png"/>
           </imageobject>
-          <caption>xTuple Report Definitions Master List</caption>
+          <caption>xTuple Report Definitions master list</caption>
         </mediaobject>
       </screenshot></para>
-    <para>The report definitions master list displays information on all
+    <para>The Report Definitions master list displays information on all
     existing xTuple reports, including report name, grade, and
     description.</para>
     <tip>
       <para>Standard xTuple report definitions are delivered with a grade of
-      “0”. By default, the xTuple client runs the highest numbered grade. To
+      "0". By default, the xTuple client runs the highest numbered grade. To
       ensure that you can always return to the baseline version of a report,
-      save your report definitions with a grade higher than 0.</para>
+      save your report definitions with a grade higher than "0".</para>
     </tip>
   </section>
   <section>
@@ -51,9 +51,9 @@
     <para><screenshot>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/C01_75_OpenRPTMain.png" />
+            <imagedata fileref="images/C01_75_OpenRPTMain.png"/>
           </imageobject>
-          <caption>OpenRPT Application Desktop</caption>
+          <caption>OpenRPT Application desktop</caption>
         </mediaobject>
       </screenshot></para>
     <para>The basic functionality of the standalone OpenRPT application is
@@ -71,17 +71,18 @@
     chapters, we will explain how to modify existing reports and also how to
     create new reports.</para>
     <para>To see the toolbar using the xTuple report writer, we must first
-    open a report definition. The term “report definition” refers to the files
-    created by the report writer. Page layout, database queries, and so on are
-    all parts of a report definition. For this exercise, we’ll open a new
-    report by selecting the NEW button from the report definitions master
-    list. The following screen will appear:</para>
+    open a report definition. The term <emphasis>report definition</emphasis>
+    refers to the files created by the report writer. Page layout, database
+    queries, and so on are all parts of a report definition. For this
+    exercise, we’ll open a new report by selecting the
+    <guibutton>NEW</guibutton> button from the Report Definitions master list.
+    The following screen will appear:</para>
     <para><screenshot>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/C01_110_NewRept.png" />
+            <imagedata fileref="images/C01_110_NewRept.png"/>
           </imageobject>
-          <caption>Blank Report Definition Featuring Toolbar</caption>
+          <caption>Blank report definition featuring toolbar</caption>
         </mediaobject>
       </screenshot></para>
     <note>
@@ -94,126 +95,132 @@
     <para><screenshot>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/C01_200_ToolbarAll.png" />
+            <imagedata fileref="images/C01_200_ToolbarAll.png"/>
           </imageobject>
-          <caption>Report Writer Toolbar Options</caption>
+          <caption>Report writer toolbar options</caption>
         </mediaobject>
       </screenshot></para>
     <para>As we look at the functionality related to each toolbar option, we
-    will be moving from left to right&mdash;beginning with the New File
-    option.</para>
+    will be moving from left to right—beginning with the <guibutton>New
+    File</guibutton> icon.</para>
     <section id="i543954">
       <title>New File</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_SaveFile.png" />
+            <imagedata fileref="images/Toolbar_SaveFile.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>Clicking the “New File” option opens a new instance of the report
-      writer. Select this option to create a new report definition. We will
-      discuss creating new report definitions in the Advanced Topics
-      chapter.</para>
+      <para>Clicking the <guibutton>New File</guibutton> icon opens a new
+      instance of the report writer. Select this option to create a new report
+      definition. We will discuss creating new report definitions in the
+      Advanced Topics chapter.</para>
     </section>
     <section>
       <title>Open File</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_OpenFile.png" />
+            <imagedata fileref="images/Toolbar_OpenFile.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>Use the “Open File” option to open a report definition stored on
-      your local or network drive. Reports may be stored on local or network
-      drives for backup or editing purposes. If you want to open a report
-      stored in your xTuple Database, use the EDIT button found on the report
-      definitions master list. For details on editing existing reports, see
-      the Getting Started chapter.</para>
+      <para>Use the <guibutton>Open File</guibutton> icon to open a report
+      definition stored on your local or network drive. Reports may be stored
+      on local or network drives for backup or editing purposes. If you want
+      to open a report stored in your xTuple database, use the
+      <guibutton>EDIT</guibutton> button found on the Report Definitions
+      master list. For details on editing existing reports, see the Getting
+      Started chapter.</para>
     </section>
     <section>
       <title>Save File</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_SaveFile.png" />
+            <imagedata fileref="images/Toolbar_SaveFile.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Save File” option enables you to save report definitions to
-      your local or network drive, where they may be stored for backup or
-      editing purposes. This option will not save report definitions to a
-      database. To learn more about saving reports to a database, see the
-      <xref linkend="i552942" /> section. Report definitions are saved using
-      the Extensible Markup Language (XML) format.</para>
+      <para>The <guibutton>Save File</guibutton> icon enables you to save
+      report definitions to your local or network drive, where they may be
+      stored for backup or editing purposes. This option will not save report
+      definitions to a database. To learn more about saving reports to a
+      database, see the <xref linkend="i552942"/> section. Report definitions
+      are saved using the extensible markup language (XML) format.</para>
     </section>
     <section id="i544927">
       <title>Cut</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Cut.png" />
+            <imagedata fileref="images/Toolbar_Cut.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Cut” option enables you to click on an object in a report
-      definition, remove it, and then, using the “Paste” option, insert it to
-      another part of the report.</para>
+      <para>The <guibutton>Cut</guibutton> icon enables you to click on an
+      object in a report definition, remove it, and then, using the
+      <guibutton>Paste</guibutton> icon, insert it to another part of the
+      report.</para>
     </section>
     <section id="i544010">
       <title>Copy</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Copy.png" />
+            <imagedata fileref="images/Toolbar_Copy.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Copy” option enables you to click on an object in a report,
-      copy it (leaving the original in place), and then, using the “Paste”
-      option, insert it into another part of the report.</para>
+      <para>The <guibutton>Copy</guibutton> icon enables you to click on an
+      object in a report, copy it (leaving the original in place), and then,
+      using the <guibutton>Paste</guibutton> icon, insert it into another part
+      of the report.</para>
     </section>
     <section id="i544019">
       <title>Paste</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Paste.png" />
+            <imagedata fileref="images/Toolbar_Paste.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Paste” option enables you to insert into the report
-      definition an object that has been cut or copied using the “Cut” option
-      or the “Copy” option.</para>
+      <para>The <guibutton>Paste</guibutton> icon enables you to insert into
+      the report definition an object that has been cut or copied using the
+      <guibutton>Cut</guibutton> icon or the <guibutton>Copy</guibutton>
+      icon.</para>
     </section>
     <section id="i544028">
       <title>Show Grid</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_ShowGrid.png" />
+            <imagedata fileref="images/Toolbar_ShowGrid.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Show Grid” option enables you to turn grid lines on for
-      visual reference when aligning objects in a report definition. This
-      option is a toggle, meaning grid lines may be turned on or off using
-      this option.</para>
-      <para>Clicking the “Show Grid” option turns grid lines on. The following
-      screenshot shows a report definition with grid lines turned on:</para>
+      <para>The <guibutton>Show Grid</guibutton> icon enables you to turn grid
+      lines on for visual reference when aligning objects in a report
+      definition. This option is a toggle, meaning grid lines may be turned on
+      or off using this option.</para>
+      <para>Clicking the <guibutton>Show Grid</guibutton> icon turns grid
+      lines on. The following screenshot shows a report definition with grid
+      lines turned on:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_265_GridShowing.png" />
+              <imagedata fileref="images/C01_265_GridShowing.png"/>
             </imageobject>
-            <caption>Grid Lines On</caption>
+            <caption>Grid lines on</caption>
           </mediaobject>
         </screenshot></para>
-      <para>Clicking the “Show Grid” option a second time turns grid lines
-      off, as shown in the following screenshot:</para>
+      <para>Clicking the <guibutton>Show Grid</guibutton> icon a second time
+      turns grid lines off, as shown in the following screenshot:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_267_GridNotShowing.png" />
+              <imagedata fileref="images/C01_267_GridNotShowing.png"/>
             </imageobject>
-            <caption>Grid Lines Off</caption>
+            <caption>Grid lines off</caption>
           </mediaobject>
         </screenshot></para>
       <para>If you want to change the properties of your grid lines, the
       report writer gives you the ability to do so. To change your grid line
-      settings, select the “Preferences” option from the Edit menu. The
-      following screen will appear:</para>
+      settings, select the <guimenuitem>Preferences</guimenuitem> option from
+      the <guimenu>Edit</guimenu> menu. The following screen will
+      appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_269_GridPrefsEdit.png" />
+              <imagedata fileref="images/C01_269_GridPrefsEdit.png"/>
             </imageobject>
             <caption>Report Preferences</caption>
           </mediaobject>
@@ -225,11 +232,12 @@
           <term>Default Font</term>
           <listitem>
             <para>Select the default font to be used in the report definition
-            by clicking on the FONT button located to the right of the field.
-            Selecting the FONT button will bring up the “Select Font” screen,
-            where you may specify font name, font style, font size, and font
-            effects. Even though a default font is specified, you may override
-            the default font on an object-by-object basis.</para>
+            by clicking on the <guibutton>FONT</guibutton> button located to
+            the right of the field. Selecting the <guibutton>FONT</guibutton>
+            button will bring up the Select Font screen, where you may specify
+            font name, font style, font size, and font effects. Even though a
+            default font is specified, you may override the default font on an
+            object-by-object basis.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -243,7 +251,8 @@
                 <listitem>
                   <para>Selecting this option turns grid lines on. If this
                   option is not selected, grid lines will be turned off. The
-                  “Show Grid” option accomplishes the same result.</para>
+                  <guibutton>Show Grid</guibutton> icon accomplishes the same
+                  result.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
@@ -251,8 +260,8 @@
                 <listitem>
                   <para>Selecting this option aligns objects to the grid. If
                   this option is not selected, grid lines will not be aligned
-                  to the grid. The “Snap to Grid” option accomplishes the same
-                  results.</para>
+                  to the grid. The <guibutton>Snap to Grid</guibutton> icon
+                  accomplishes the same results.</para>
                 </listitem>
               </varlistentry>
             </variablelist>
@@ -303,7 +312,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -312,58 +321,59 @@
       <title>Snap to Grid</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_SnapGrid.png" />
+            <imagedata fileref="images/Toolbar_SnapGrid.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Snap to Grid” option forces objects to align to the grid when
-      grid lines are turned on. This option is a toggle, meaning snap to grid
-      functionality may be turned on or off using this option.</para>
+      <para>The <guibutton>Snap to Grid</guibutton> icon forces objects to
+      align to the grid when grid lines are turned on. This option is a
+      toggle, meaning snap to grid functionality may be turned on or off using
+      this option.</para>
     </section>
     <section>
       <title>Labels</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Label.png" />
+            <imagedata fileref="images/Toolbar_Label.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Label” option enables you to create new Label objects. Label
-      objects are used to display descriptive information on a report
-      definition, such as titles, headings, etc.</para>
-      <para>To create a new Label object, first select the "Label" option.
-      Then click in the section of the report definition where you want the
-      Label to be located. Doing so will create the Label object in that
-      section.</para>
+      <para>The <guibutton>Label</guibutton> icon enables you to create new
+      label objects. Label objects are used to display descriptive information
+      on a report definition, such as titles, headings, etc.</para>
+      <para>To create a new label object, first select the
+      <guibutton>Label</guibutton> icon. Then click in the section of the
+      report definition where you want the label to be located. Doing so will
+      create the label object in that section.</para>
       <note>
-        <para>For more information on using Label objects in report
+        <para>For more information on using label objects in report
         definitions, see the Getting Started chapter.</para>
       </note>
-      <para>Once the Label object has been created, you may then define the
-      Label object’s properties. To define a Label object’s properties,
-      double-click on the Label object. The following screen will
+      <para>Once the label object has been created, you may then define the
+      label object’s properties. To define a label object’s properties,
+      double-click on the label object. The following screen will
       appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_280_LabelDialogue.png" />
+              <imagedata fileref="images/C01_280_LabelDialogue.png"/>
             </imageobject>
             <caption>Label Properties</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When defining the properties of a Label object, you are presented
+      <para>When defining the properties of a label object, you are presented
       with the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Text</term>
           <listitem>
-            <para>Enter the text of the Label. Text entered here will display
-            in the “Preview” section of the screen.</para>
+            <para>Enter the text of the label. Text entered here will display
+            in the <guilabel>Preview</guilabel> section of the screen.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>HAlign</term>
           <listitem>
             <para>Specify how you want text to be aligned horizontally within
-            the Label object:</para>
+            the label object:</para>
             <variablelist>
               <varlistentry>
                 <term>None</term>
@@ -397,7 +407,7 @@
           <term>VAlign</term>
           <listitem>
             <para>Specify how you want text to be aligned vertically within
-            the Label object:</para>
+            the label object:</para>
             <variablelist>
               <varlistentry>
                 <term>None</term>
@@ -430,20 +440,20 @@
         <varlistentry>
           <term>Position/Size</term>
           <listitem>
-            <para>Specify how you want the Label object to be positioned and
+            <para>Specify how you want the label object to be positioned and
             sized within the section where it is located.<variablelist>
                 <varlistentry>
                   <term>X</term>
                   <listitem>
                     <para>Specify the distance, measured in inches, from the
                     section’s left border to the upper-left-hand corner of the
-                    Label object.</para>
+                    label object.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
                   <term>Width</term>
                   <listitem>
-                    <para>Specify the width of the Label object, measured in
+                    <para>Specify the width of the label object, measured in
                     inches.</para>
                   </listitem>
                 </varlistentry>
@@ -452,16 +462,16 @@
                   <listitem>
                     <para>Specify the distance, measured in inches, from the
                     section’s top border to the upper-left-hand corner of the
-                    Label object.</para>
+                    label object.</para>
                   </listitem>
                 </varlistentry>
                 <varlistentry>
                   <term>Height</term>
                   <listitem>
-                    <para>Specify the height of the Label object, measured in
+                    <para>Specify the height of the label object, measured in
                     inches.</para>
                     <tip>
-                      <para>The position and size of a Label object may be
+                      <para>The position and size of a label object may be
                       modified manually when editing a report
                       definition.</para>
                     </tip>
@@ -473,10 +483,10 @@
         <varlistentry>
           <term>Preview</term>
           <listitem>
-            <para>Displays a preview of the Label text, using the specified
-            font. Selecting the FONT button will bring up the “Select Font”
-            screen, where you may specify font name, font style, font size,
-            and font effects.</para>
+            <para>Displays a preview of the label text, using the specified
+            font. Selecting the <guibutton>FONT</guibutton> button will bring
+            up the Select Font screen, where you may specify font name, font
+            style, font size, and font effects.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -493,7 +503,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -502,41 +512,41 @@
       <title>Fields</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Field.png" />
+            <imagedata fileref="images/Toolbar_Field.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Field” option enables you to create new Field objects. Field
-      objects are used for pulling dynamically generated data into a report
-      from the database the report writer is connected to. For example, a
-      Field object may be used to include running totals in a report. By
-      definition, Field objects are designed to handle a single line of data.
-      For multiple lines of data, use a Text Area object.</para>
-      <para>To create a new Field object, first select the "Field" option.
-      Then click in the section of the report definition where you want the
-      Field to be located. Doing so will create the Field object in that
-      section.</para>
+      <para>The <guibutton>Field</guibutton> icon enables you to create new
+      field objects. Field objects are used for pulling dynamically generated
+      data into a report from the database the report writer is connected to.
+      For example, a field object may be used to include running totals in a
+      report. By definition, field objects are designed to handle a single
+      line of data. For multiple lines of data, use a text area object.</para>
+      <para>To create a new field object, first select the
+      <guibutton>Field</guibutton> icon. Then click in the section of the
+      report definition where you want the field to be located. Doing so will
+      create the field object in that section.</para>
       <note>
-        <para>For more information on using Field objects in report
+        <para>For more information on using field objects in report
         definitions, see the Getting Started chapter.</para>
       </note>
-      <para>Once the Field object has been created, you may then define the
-      Field object’s properties. To define a Field object’s properties,
-      double-click on the Field object. The following screen will
+      <para>Once the field object has been created, you may then define the
+      field object’s properties. To define a field object’s properties,
+      double-click on the field object. The following screen will
       appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_295_FieldDialogue.png" />
+              <imagedata fileref="images/C01_295_FieldDialogue.png"/>
             </imageobject>
             <caption>Field Properties</caption>
           </mediaobject>
         </screenshot></para>
       <note>
-        <para>By definition, Field objects are designed to handle a single
-        line of data. For multiple lines of data, use a Text Area
+        <para>By definition, field objects are designed to handle a single
+        line of data. For multiple lines of data, use a text area
         object.</para>
       </note>
-      <para>When defining the properties of a Field object, you are presented
+      <para>When defining the properties of a field object, you are presented
       with the following options:</para>
       <variablelist>
         <varlistentry>
@@ -572,16 +582,17 @@
             this option is not selected.</para>
             <note>
               <para>When running totals are calculated for columns designated
-              as Boolean, the “true” values are assigned a value of “1,” while
-              “false” values are assigned a value of “0.”</para>
+              as Boolean, the "true" values are assigned a value of "1", while
+              "false" values are assigned a value of "0".</para>
             </note>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Total Format</term>
           <listitem>
-            <para>If the “Display as Running Total” option is selected,
-            specify one of the following formatting options:</para>
+            <para>If the <guilabel>Display as Running Total</guilabel> option
+            is selected, specify one of the following formatting
+            options:</para>
             <variablelist>
               <varlistentry>
                 <term>String Format</term>
@@ -595,7 +606,7 @@
                 <listitem>
                   <para>Select this option and then choose one of the
                   available options from the drop-down menu by clicking on the
-                  arrow to the right of the field. Built-in Locale Formats may
+                  arrow to the right of the field. Built-in locale formats may
                   only be available in some installations.</para>
                 </listitem>
               </varlistentry>
@@ -613,7 +624,7 @@
           <term>HAlign</term>
           <listitem>
             <para>Specify how you want text to be aligned horizontally within
-            the Field object:</para>
+            the field object:</para>
             <variablelist>
               <varlistentry>
                 <term>None</term>
@@ -647,7 +658,7 @@
           <term>VAlign</term>
           <listitem>
             <para>Specify how you want text to be aligned vertically within
-            the Field object:</para>
+            the field object:</para>
             <variablelist>
               <varlistentry>
                 <term>None</term>
@@ -680,7 +691,7 @@
         <varlistentry>
           <term>Position/Size</term>
           <listitem>
-            <para>Specify how you want the Field object to be positioned and
+            <para>Specify how you want the field object to be positioned and
             sized within the section where it is located.</para>
             <variablelist>
               <varlistentry>
@@ -688,13 +699,13 @@
                 <listitem>
                   <para>Specify the distance, measured in inches, from the
                   section’s left border to the upper-left-hand corner of the
-                  Field object.</para>
+                  field object.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Width</term>
                 <listitem>
-                  <para>Specify the width of the Field object, measured in
+                  <para>Specify the width of the field object, measured in
                   inches.</para>
                 </listitem>
               </varlistentry>
@@ -703,16 +714,16 @@
                 <listitem>
                   <para>Specify the distance, measured in inches, from the
                   section’s top border to the upper-left-hand corner of the
-                  Field object.</para>
+                  field object.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Height</term>
                 <listitem>
-                  <para>Specify the height of the Field object, measured in
+                  <para>Specify the height of the field object, measured in
                   inches.</para>
                   <tip>
-                    <para>The position and size of a Field object may be
+                    <para>The position and size of a field object may be
                     modified manually when editing a report definition.</para>
                   </tip>
                 </listitem>
@@ -723,10 +734,10 @@
         <varlistentry>
           <term>Preview</term>
           <listitem>
-            <para>Displays a preview of the Field, using the specified font.
-            Selecting the FONT button will bring up the “Select Font” screen,
-            where you may specify font name, font style, font size, and font
-            effects.</para>
+            <para>Displays a preview of the field, using the specified font.
+            Selecting the <guibutton>FONT</guibutton> button will bring up the
+            Select Font screen, where you may specify font name, font style,
+            font size, and font effects.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -743,7 +754,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -752,39 +763,39 @@
       <title>Text Areas</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_TextArea.png" />
+            <imagedata fileref="images/Toolbar_TextArea.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Text Area” option enables you to create new Text Area
-      objects. Text Area objects are used for pulling dynamically generated,
-      multi-line data into a report from the database the report writer is
-      connected to. By definition, Text Area objects are designed to handle
-      multiple lines of data.</para>
-      <para>To create a new Text Area object, first select the "Text Area"
-      option. Then click in the section of the report definition where you
-      want the Text Area to be located. Doing so will create the Text Area
-      object in that section.</para>
+      <para>The <guibutton>Text Area</guibutton> icon enables you to create
+      new text area objects. Text area objects are used for pulling
+      dynamically generated, multi-line data into a report from the database
+      the report writer is connected to. By definition, text area objects are
+      designed to handle multiple lines of data.</para>
+      <para>To create a new text area object, first select the <guibutton>Text
+      Area</guibutton> icon. Then click in the section of the report
+      definition where you want the text area to be located. Doing so will
+      create the text area object in that section.</para>
       <note>
-        <para>For more information on using Text Area objects in report
+        <para>For more information on using text area objects in report
         definitions, see the Getting Started chapter.</para>
       </note>
-      <para>Once the Text Area object has been created, you may then define
-      the Text Area object’s properties. To define a Text Area object’s
-      properties, double-click on the Text Area object. The following screen
+      <para>Once the text area object has been created, you may then define
+      the text area object’s properties. To define a text area object’s
+      properties, double-click on the text area object. The following screen
       will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_305_TextAreaDialogue.png" />
+              <imagedata fileref="images/C01_305_TextAreaDialogue.png"/>
             </imageobject>
-            <caption>Text Area Properties</caption>
+            <caption>Text area Properties</caption>
           </mediaobject>
         </screenshot></para>
       <note>
-        <para>By definition, Text Area objects are designed to handle multiple
+        <para>By definition, text area objects are designed to handle multiple
         lines of data.</para>
       </note>
-      <para>When defining the properties of a Text Area object, you are
+      <para>When defining the properties of a text area object, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
@@ -816,8 +827,8 @@
           <term>Bottom Padding</term>
           <listitem>
             <para>Specify the minimum amount of space between the last line of
-            text in the Text Area object and the end of the section where the
-            Text Area object is located, measured in inches. The amount of
+            text in the text area object and the end of the section where the
+            text area object is located, measured in inches. The amount of
             space between the last line of text and the end of a section will
             always be equal to at least the bottom padding value.</para>
           </listitem>
@@ -826,7 +837,7 @@
           <term>HAlign</term>
           <listitem>
             <para>Specify how you want text to be aligned horizontally within
-            the Text Area object:</para>
+            the text area object:</para>
             <variablelist>
               <varlistentry>
                 <term>None</term>
@@ -860,7 +871,7 @@
           <term>VAlign</term>
           <listitem>
             <para>Specify how you want text to be aligned vertically within
-            the Text Area object:</para>
+            the text area object:</para>
             <variablelist>
               <varlistentry>
                 <term>None</term>
@@ -893,7 +904,7 @@
         <varlistentry>
           <term>Position/Size</term>
           <listitem>
-            <para>Specify how you want the Text Area object to be positioned
+            <para>Specify how you want the text area object to be positioned
             and sized within the section where it is located.</para>
             <variablelist>
               <varlistentry>
@@ -901,13 +912,13 @@
                 <listitem>
                   <para>Specify the distance, measured in inches, from the
                   section’s left border to the upper-left-hand corner of the
-                  Text Area object.</para>
+                  text area object.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Width</term>
                 <listitem>
-                  <para>Specify the width of the Text Area object, measured in
+                  <para>Specify the width of the text area object, measured in
                   inches.</para>
                 </listitem>
               </varlistentry>
@@ -916,16 +927,16 @@
                 <listitem>
                   <para>Specify the distance, measured in inches, from the
                   section’s top border to the upper-left-hand corner of the
-                  Text Area object.</para>
+                  text area object.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Height</term>
                 <listitem>
-                  <para>Specify the height of the Text Area object, measured
+                  <para>Specify the height of the text area object, measured
                   in inches.</para>
                   <tip>
-                    <para>The position and size of a Text Area object may be
+                    <para>The position and size of a text area object may be
                     modified manually when editing a report definition.</para>
                   </tip>
                 </listitem>
@@ -936,10 +947,10 @@
         <varlistentry>
           <term>Preview</term>
           <listitem>
-            <para>Displays a preview of the Text Area object, using the
-            specified font. Selecting the FONT button will bring up the
-            “Select Font” screen, where you may specify font name, font style,
-            font size, and font effects.</para>
+            <para>Displays a preview of the text area object, using the
+            specified font. Selecting the <guibutton>FONT</guibutton> button
+            will bring up the Select Font screen, where you may specify font
+            name, font style, font size, and font effects.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -956,7 +967,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -965,46 +976,47 @@
       <title>Lines</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Line.png" />
+            <imagedata fileref="images/Toolbar_Line.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Line” option enables you to create new Line objects. Line
-      objects are used for drawing vertical, horizontal, and diagonal
-      lines.</para>
-      <para>To create a new Line object, first select the "Line" option. Then
-      click in the section of the report definition where you want the Line to
-      be located. Doing so will create the Line object in that section. Once
-      the Line object has been created, click on the object and drag it with
-      your mouse. As you will see, dragging the Line object draws the Line in
-      any direction and to any length you wish.</para>
+      <para>The <guibutton>Line</guibutton> icon enables you to create new
+      line objects. Line objects are used for drawing vertical, horizontal,
+      and diagonal lines.</para>
+      <para>To create a new line object, first select the
+      <guibutton>Line</guibutton> icon. Then click in the section of the
+      report definition where you want the line to be located. Doing so will
+      create the line object in that section. Once the line object has been
+      created, click on the object and drag it with your mouse. As you will
+      see, dragging the line object draws the line in any direction and to any
+      length you wish.</para>
       <tip>
-        <para>If you hold down the SHIFT key on your keyboard when you are
-        dragging a Line object, this will force the Line to straighten out.
-        Also, once a Line has been inserted, you may change its orientation by
-        clicking and dragging the whole Line or either one of its end
-        points.</para>
+        <para>If you hold down the <guibutton>SHIFT</guibutton> key on your
+        keyboard when you are dragging a line object, this will force the line
+        to straighten out. Also, once a line has been inserted, you may change
+        its orientation by clicking and dragging the whole line or either one
+        of its end points.</para>
       </tip>
-      <para>After you have inserted a Line object into a report definition,
-      you may then define the width of the Line object. To define the width of
-      a Line object, double-click on the Line object. The following screen
+      <para>After you have inserted a line object into a report definition,
+      you may then define the width of the line object. To define the width of
+      a line object, double-click on the line object. The following screen
       will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_320_LineDialogue.png" />
+              <imagedata fileref="images/C01_320_LineDialogue.png"/>
             </imageobject>
             <caption>Line Width</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When defining the width of a Line object, you are presented with
+      <para>When defining the width of a line object, you are presented with
       the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Width</term>
           <listitem>
-            <para>Specify the width of the Line, measured in pixels, by
+            <para>Specify the width of the line, measured in pixels, by
             entering a number either manually or by using the arrows to the
-            right of the field. The maximum Line width is 100 pixels.</para>
+            right of the field. The maximum line width is 100 pixels.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -1021,7 +1033,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -1030,16 +1042,16 @@
       <title>Bar Codes</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Barcode.png" />
+            <imagedata fileref="images/Toolbar_Barcode.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Bar Code” option enables you to create new bar code objects.
-      Bar code objects are used to represent dynamic information stored in a
-      database in bar code format.</para>
-      <para>To create a new bar code object, first select the "Bar Code"
-      option. Then click in the section of the report definition where you
-      want the bar code to be located. Doing so will create the bar code
-      object in that section.</para>
+      <para>The <guibutton>Bar Code</guibutton> icon enables you to create new
+      bar code objects. Bar code objects are used to represent dynamic
+      information stored in a database in bar code format.</para>
+      <para>To create a new bar code object, first select the <guibutton>Bar
+      Code</guibutton> icon. Then click in the section of the report
+      definition where you want the bar code to be located. Doing so will
+      create the bar code object in that section.</para>
       <note>
         <para>For more information on using bar code objects in report
         definitions, see the Getting Started and Advanced Topics
@@ -1052,9 +1064,9 @@
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_330_BarcodeDialogue.png" />
+              <imagedata fileref="images/C01_330_BarcodeDialogue.png"/>
             </imageobject>
-            <caption>Bar Code Properties</caption>
+            <caption>Barcode Properties</caption>
           </mediaobject>
         </screenshot></para>
       <para>When defining the properties of a bar code object, you are
@@ -1215,7 +1227,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -1224,36 +1236,36 @@
       <title>Images</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Image.png" />
+            <imagedata fileref="images/Toolbar_Image.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Image” option enables you to create new Image objects. Image
-      objects are used to insert either static or dynamic Images into a report
-      definition. Static Images&mdash;a company logo displayed in the Report
-      Header, for example&mdash;are embedded within the report definition.
-      Dynamic Images&mdash;pictures of products, for example&mdash;are pulled
+      <para>The <guibutton>Image</guibutton> icon enables you to create new
+      image objects. Image objects are used to insert either static or dynamic
+      images into a report definition. Static images—a company logo displayed
+      in the report header, for example—are embedded within the report
+      definition. Dynamic images—pictures of products, for example—are pulled
       from the database the report writer is connected to.</para>
-      <para>To create a new Image object, first select the "Image" option.
-      Then click in the section of the report definition where you want the
-      Image to be located. Doing so will create the Image object in that
-      section.</para>
+      <para>To create a new image object, first select the
+      <guibutton>Image</guibutton> icon. Then click in the section of the
+      report definition where you want the image to be located. Doing so will
+      create the image object in that section.</para>
       <note>
-        <para>For more information on using Image objects in report
+        <para>For more information on using image objects in report
         definitions, see the Advanced Topics chapter.</para>
       </note>
-      <para>Once the Image object has been created, you may then edit the
-      Image object’s properties. To edit an Image object’s properties,
-      double-click on the Image object. The following screen will
+      <para>Once the image object has been created, you may then edit the
+      image object’s properties. To edit an image object’s properties,
+      double-click on the image object. The following screen will
       appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_345_ImageEditor.png" />
+              <imagedata fileref="images/C01_345_ImageEditor.png"/>
             </imageobject>
             <caption>Image Editor</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When editing the properties of an Image object, you are presented
+      <para>When editing the properties of an image object, you are presented
       with the following options:</para>
       <variablelist>
         <varlistentry>
@@ -1264,17 +1276,17 @@
               <varlistentry>
                 <term>Clip</term>
                 <listitem>
-                  <para>Select to have the Image imported as-is into the Image
-                  object. If selected, no resizing of the Image will
+                  <para>Select to have the image imported as-is into the image
+                  object. If selected, no resizing of the image will
                   occur.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Stretch</term>
                 <listitem>
-                  <para>Select to enable manual resizing of the Image once it
-                  has been imported into the Image object. When manually
-                  resizing an Image, the Image’s aspect ratio will be
+                  <para>Select to enable manual resizing of the image once it
+                  has been imported into the image object. When manually
+                  resizing an image, the image's aspect ratio will be
                   maintained.</para>
                 </listitem>
               </varlistentry>
@@ -1284,17 +1296,17 @@
         <varlistentry>
           <term>Static Image</term>
           <listitem>
-            <para>Select if the Image you are importing is a static Image.
-            Static Images are Images which are embedded within a report
+            <para>Select if the image you are importing is a static image.
+            Static images are images which are embedded within a report
             definition. They are not pulled dynamically from a database. An
-            example of a static Image would be a company logo inserted on the
-            top of a standard Form.</para>
+            example of a static image would be a company logo inserted on the
+            top of a standard form.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Database</term>
           <listitem>
-            <para>Specify the following information if the Image you are
+            <para>Specify the following information if the image you are
             importing will be pulled dynamically from a database the report
             writer is connect to:</para>
             <variablelist>
@@ -1324,7 +1336,7 @@
                   Other columns appearing in the <literal>SELECT</literal>
                   statement will be ignored.</para>
                   <note>
-                    <para>xTuple users can store Images in an xTuple Database
+                    <para>xTuple users can store images in an xTuple database
                     using the client interface. Images imported this way are
                     stored in the <literal>image_data</literal> column of the
                     <literal>images</literal> table, using the UU encoding
@@ -1335,7 +1347,7 @@
               <varlistentry>
                 <term>Position/Size</term>
                 <listitem>
-                  <para>Specify how you want the Image object to be positioned
+                  <para>Specify how you want the image object to be positioned
                   and sized within the section where it is located.</para>
                   <variablelist>
                     <varlistentry>
@@ -1343,7 +1355,7 @@
                       <listitem>
                         <para>Specify the distance, measured in inches, from
                         the section’s left border to the upper-left-hand
-                        corner of the Image object.</para>
+                        corner of the image object.</para>
                       </listitem>
                     </varlistentry>
                     <varlistentry>
@@ -1358,16 +1370,16 @@
                       <listitem>
                         <para>Specify the distance, measured in inches, from
                         the section’s top border to the upper-left-hand corner
-                        of the Image object.</para>
+                        of the image object.</para>
                       </listitem>
                     </varlistentry>
                     <varlistentry>
                       <term>Height</term>
                       <listitem>
-                        <para>Specify the height of the Image object, measured
+                        <para>Specify the height of the image object, measured
                         in inches.</para>
                         <note>
-                          <para>The position and size of an Image object may
+                          <para>The position and size of an image object may
                           be modified manually when editing a report
                           definition.</para>
                         </note>
@@ -1393,7 +1405,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -1402,33 +1414,34 @@
       <title>Graph Editor</title>
       <para><inlinemediaobject>
           <imageobject>
-            <imagedata fileref="images/Toolbar_Graph.png" />
+            <imagedata fileref="images/Toolbar_Graph.png"/>
           </imageobject>
         </inlinemediaobject></para>
-      <para>The “Graph” option enables you to create new Graph objects. Graph
-      objects are used to insert Graphs into a report definition using dynamic
-      data stored in a database the report writer is connected to.</para>
-      <para>To create a new Graph object, first select the "Graph" option.
-      Then click in the section of the report definition where you want the
-      Graph to be located. Doing so will create the Graph object in that
-      section.</para>
+      <para>The <guibutton>Graph</guibutton> icon enables you to create new
+      graph objects. Graph objects are used to insert graphs into a report
+      definition using dynamic data stored in a database the report writer is
+      connected to.</para>
+      <para>To create a new graph object, first select the
+      <guibutton>Graph</guibutton> icon. Then click in the section of the
+      report definition where you want the graph to be located. Doing so will
+      create the graph object in that section.</para>
       <note>
-        <para>For more information on using Graph objects in report
+        <para>For more information on using graph objects in report
         definitions, see the Advanced Topics chapter.</para>
       </note>
-      <para>Once the Graph object has been created, you may then edit the
-      Graph object’s properties. To edit a Graph object’s properties,
-      double-click on the Graph object. The following screen will
+      <para>Once the graph object has been created, you may then edit the
+      graph object’s properties. To edit a graph object’s properties,
+      double-click on the graph object. The following screen will
       appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_355_GraphDialogue.png" />
+              <imagedata fileref="images/C01_355_GraphDialogue.png"/>
             </imageobject>
             <caption>Graph Editor</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When editing the general properties of a Graph object, you are
+      <para>When editing the general properties of a graph object, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
@@ -1448,7 +1461,7 @@
         <varlistentry>
           <term>Position/Size</term>
           <listitem>
-            <para>Specify how you want the Image object to be positioned and
+            <para>Specify how you want the image object to be positioned and
             sized within the section where it is located.</para>
             <variablelist>
               <varlistentry>
@@ -1456,13 +1469,13 @@
                 <listitem>
                   <para>Specify the distance, measured in inches, from the
                   section’s left border to the upper-left-hand corner of the
-                  Image object.</para>
+                  image object.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Width</term>
                 <listitem>
-                  <para>Specify the width of the Image object, measured in
+                  <para>Specify the width of the image object, measured in
                   inches.</para>
                 </listitem>
               </varlistentry>
@@ -1471,16 +1484,16 @@
                 <listitem>
                   <para>Specify the distance, measured in inches, from the
                   section’s top border to the upper-left-hand corner of the
-                  Image object.</para>
+                  image object.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Height</term>
                 <listitem>
-                  <para>Specify the height of the Image object, measured in
+                  <para>Specify the height of the image object, measured in
                   inches.</para>
                   <tip>
-                    <para>The position and size of a Graphic object may be
+                    <para>The position and size of a graphic object may be
                     modified manually when editing a report definition.</para>
                   </tip>
                 </listitem>
@@ -1491,25 +1504,25 @@
         <varlistentry>
           <term>Base Font</term>
           <listitem>
-            <para>Select the base font to be used in the Graph object by
-            clicking on the FONT button located to the right of the field.
-            Selecting the FONT button will bring up the “Select Font” screen,
-            where you may specify font name, font style, font size, and font
-            effects. The base font may be used throughout the Graph
-            object.</para>
+            <para>Select the base font to be used in the graph object by
+            clicking on the <guibutton>FONT</guibutton> button located to the
+            right of the field. Selecting the <guibutton>FONT</guibutton>
+            button will bring up the Select Font screen, where you may specify
+            font name, font style, font size, and font effects. The base font
+            may be used throughout the graph object.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Title</term>
           <listitem>
-            <para>Specify the following details for the Graph object’s
+            <para>Specify the following details for the graph object’s
             title:</para>
             <variablelist>
               <varlistentry>
                 <term>Title</term>
                 <listitem>
                   <para>Enter the title you want to appear centered at the top
-                  of the Graph.</para>
+                  of the graph.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
@@ -1522,11 +1535,12 @@
               <varlistentry>
                 <term>Title Font</term>
                 <listitem>
-                  <para>Specify the font to be used for the Graph object’s
-                  title by clicking on the FONT button located to the right of
-                  the field. Selecting the FONT button will bring up the
-                  “Select Font” screen, where you may specify font name, font
-                  style, font size, and font effects.</para>
+                  <para>Specify the font to be used for the graph object’s
+                  title by clicking on the <guibutton>FONT</guibutton> button
+                  located to the right of the field. Selecting the
+                  <guibutton>FONT</guibutton> button will bring up the Select
+                  Font screen, where you may specify font name, font style,
+                  font size, and font effects.</para>
                 </listitem>
               </varlistentry>
             </variablelist>
@@ -1550,19 +1564,19 @@
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>To define the properties of the Graph object’s data
-      axis&mdash;that is, the horizontal axis running along the bottom of the
-      Graph&mdash;select the “Data Axis” tab at the top of the “Graph Editor”
+      <para>To define the properties of the graph object’s data axis—that is,
+      the horizontal axis running along the bottom of the Graph—select the
+      <guimenuitem>Data Axis</guimenuitem> tab at the top of the Graph Editor
       screen. The following screen will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_356_GraphDatAxis.png" />
+              <imagedata fileref="images/C01_356_GraphDatAxis.png"/>
             </imageobject>
-            <caption>Graph Editor Data Axis</caption>
+            <caption>Graph Editor Data Axis tab</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When editing the data axis properties of a Graph object, you are
+      <para>When editing the data axis properties of a graph object, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
@@ -1582,12 +1596,12 @@
                   Other columns appearing in the <literal>SELECT</literal>
                   statement will be ignored.</para>
                   <note>
-                    <para>The term “data axis labels” refers to the
-                    identifying information which describes each of the items
-                    in a Graph’s series. For example, if a Graph displays
-                    information about a series of Item Numbers, then data axis
-                    labels would be used to identify each of the Items in the
-                    series.</para>
+                    <para>The term <emphasis>data axis labels</emphasis>
+                    refers to the identifying information which describes each
+                    of the items in a graph’s series. For example, if a graph
+                    displays information about a series of item numbers, then
+                    data axis labels would be used to identify each of the
+                    items in the series.</para>
                   </note>
                 </listitem>
               </varlistentry>
@@ -1602,9 +1616,10 @@
                 <term>Data Axis Font</term>
                 <listitem>
                   <para>Specify the font to be used for the data axis labels
-                  by clicking on the FONT button located to the right of the
-                  field. Selecting the FONT button will bring up the “Select
-                  Font” screen, where you may specify font name, font style,
+                  by clicking on the <guibutton>FONT</guibutton> button
+                  located to the right of the field. Selecting the
+                  <guibutton>FONT</guibutton> button will bring up the Select
+                  Font screen, where you may specify font name, font style,
                   font size, and font effects.</para>
                 </listitem>
               </varlistentry>
@@ -1621,7 +1636,7 @@
                 <term>Title</term>
                 <listitem>
                   <para>Enter the title you want to appear centered along the
-                  bottom of the Graph’s data axis.</para>
+                  bottom of the graph’s data axis.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
@@ -1635,9 +1650,10 @@
                 <term>Data Axis Title Font</term>
                 <listitem>
                   <para>Specify the font to be used for the data axis title by
-                  clicking on the FONT button located to the right of the
-                  field. Selecting the FONT button will bring up the “Select
-                  Font” screen, where you may specify font name, font style,
+                  clicking on the <guibutton>FONT</guibutton> button located
+                  to the right of the field. Selecting the
+                  <guibutton>FONT</guibutton> button will bring up the Select
+                  Font screen, where you may specify font name, font style,
                   font size, and font effects.</para>
                 </listitem>
               </varlistentry>
@@ -1658,43 +1674,43 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>To define the properties of the Graph object’s value
-      axis&mdash;that is, the vertical axis running along the left-hand side
-      of the Graph&mdash;select the “Value Axis” tab at the top of the “Graph
-      Editor” screen. The following screen will appear:</para>
+      <para>To define the properties of the graph object’s value axis—that is,
+      the vertical axis running along the left-hand side of the graph—select
+      the <guimenuitem>Value Axis</guimenuitem> tab at the top of the Graph
+      Editor screen. The following screen will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_357_GraphValAxis.png" />
+              <imagedata fileref="images/C01_357_GraphValAxis.png"/>
             </imageobject>
-            <caption>Graph Editor Value Axis</caption>
+            <caption>Graph Editor Value Axis tab</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When editing the value axis properties of a Graph object, you are
+      <para>When editing the value axis properties of a graph object, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Min</term>
           <listitem>
             <para>Specify the minimum value you want to have appear on the
-            Graph object’s value axis.</para>
+            graph object’s value axis.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Max</term>
           <listitem>
             <para>Specify the maximum value you want to have appear on the
-            Graph object’s value axis.</para>
+            graph object’s value axis.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Expand Min/Max if needed</term>
           <listitem>
-            <para>Select to allow data represented in the Graph to expand
+            <para>Select to allow data represented in the graph to expand
             beyond the minimum and maximum values specified if needed. If not
             selected, data will be restricted to the limits specified for the
             minimum and maximum values.</para>
@@ -1711,10 +1727,10 @@
           <term>Value Axis Font</term>
           <listitem>
             <para>Specify the font to be used for values in the value axis by
-            clicking on the FONT button located to the right of the field.
-            Selecting the FONT button will bring up the “Select Font” screen,
-            where you may specify font name, font style, font size, and font
-            effects.</para>
+            clicking on the <guibutton>FONT</guibutton> button located to the
+            right of the field. Selecting the <guibutton>FONT</guibutton>
+            button will bring up the Select Font screen, where you may specify
+            font name, font style, font size, and font effects.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -1727,7 +1743,7 @@
                 <term>Title</term>
                 <listitem>
                   <para>Enter the title you want to appear centered along the
-                  left-hand margin of the Graph’s value axis.</para>
+                  left-hand margin of the graph’s value axis.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
@@ -1741,9 +1757,10 @@
                 <term>Value Axis Title Font</term>
                 <listitem>
                   <para>Specify the font to be used for the value axis title
-                  by clicking on the FONT button located to the right of the
-                  field. Selecting the FONT button will bring up the “Select
-                  Font” screen, where you may specify font name, font style,
+                  by clicking on the <guibutton>FONT</guibutton> button
+                  located to the right of the field. Selecting the
+                  <guibutton>FONT</guibutton> button will bring up the Select
+                  Font screen, where you may specify font name, font style,
                   font size, and font effects.</para>
                 </listitem>
               </varlistentry>
@@ -1768,32 +1785,33 @@
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>To define the properties of Graph object series, select the
-      “Series” tab at the top of the “Graph Editor” screen. The following
-      screen will appear:</para>
+      <para>To define the properties of graph object series, select the
+      <guimenuitem>Series</guimenuitem> tab at the top of the Graph Editor
+      screen. The following screen will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_358_GraphSeries.png" />
+              <imagedata fileref="images/C01_358_GraphSeries.png"/>
             </imageobject>
-            <caption>Graph Editor Series</caption>
+            <caption>Graph Editor Series tab</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When editing the properties of a Graph object series, you are
+      <para>When editing the properties of a graph object series, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Series</term>
           <listitem>
             <para>Select a series from the drop-down menu by clicking on the
-            arrow to the right of the field. Each Graph must contain at least
-            one series&mdash;and may contain multiple series. Using multiple
-            series enables you to compare and contrast information from
-            different database columns within a single Graph. To create a new
-            series, select the NEW button. By default, a new series will be
-            given the name “New Series.” You may edit this default name within
-            the “Name” field below. To remove a series from the list of
-            series, select the REMOVE button.</para>
+            arrow to the right of the field. Each graph must contain at least
+            one series—and may contain multiple series. Using multiple series
+            enables you to compare and contrast information from different
+            database columns within a single graph. To create a new series,
+            select the <guibutton>NEW</guibutton> button. By default, a new
+            series will be given the name "New Series." You may edit this
+            default name within the <guilabel>Name</guilabel> field below. To
+            remove a series from the list of series, select the
+            <guibutton>REMOVE</guibutton> button.</para>
             <note>
               <para>You may assign different properties to each series in a
               graph (e.g., different colors) to make a clear visual
@@ -1831,18 +1849,19 @@
                 <term>Color</term>
                 <listitem>
                   <para>Specify the color you want to use to represent data in
-                  the series. Selecting the EDIT button will bring up several
-                  color definition screens. You have the ability to specify
-                  multiple colors, using either the included color wheel or
-                  standard RGB values.</para>
+                  the series. Selecting the <guibutton>EDIT</guibutton> button
+                  will bring up several color definition screens. You have the
+                  ability to specify multiple colors, using either the
+                  included color wheel or standard RGB values.</para>
                 </listitem>
               </varlistentry>
               <varlistentry>
                 <term>Style</term>
                 <listitem>
                   <para>Specify one of the following options to be used for
-                  representing items in the series: “Bars,” “Lines,” or
-                  “Points.”</para>
+                  representing items in the series: <guilabel>Bars</guilabel>,
+                  <guilabel>Lines</guilabel>, or
+                  <guilabel>Points</guilabel>.</para>
                 </listitem>
               </varlistentry>
             </variablelist>
@@ -1862,7 +1881,7 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
@@ -1871,68 +1890,72 @@
   <section>
     <title>Managing Report Definitions</title>
     <para>Report definitions created using the report writer are saved in
-    Extensible Markup Language (XML) format. This is a universal standard file
+    extensible markup language (XML) format. This is a universal standard file
     format, which simplifies the process of file sharing. Report definitions
     may be loaded into the report writer from a database, saved locally as
     XML, transferred via email or other method, and then uploaded for use in a
     different database. In this section, we will describe how to manage report
-    definitions&mdash;moving them from a database to a local drive and back to
-    a database again.</para>
+    definitions—moving them from a database to a local drive and back to a
+    database again.</para>
     <section>
       <title>Loading Reports from a Database</title>
       <para>For the purposes of this exercise, we will assume we are
-      connecting to an xTuple Database, using the xTuple report writer.
+      connecting to an xTuple database, using the xTuple report writer.
       However, you would follow similar steps using the standalone OpenRPT
       application connected to a different database.</para>
       <para>To begin with, let’s load an existing report definition into the
-      report writer from an xTuple Database. From the Master Information
-      section of the System Module, select the “Reports” option. The master
-      list of report definitions will appear, as shown below:</para>
+      report writer from an xTuple database. From the Master Information
+      section of the <guimenu>System</guimenu> module, select the
+      <guimenuitem>Reports</guimenuitem> option. The master list of report
+      definitions will appear, as shown below:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_395_RepMastList.png" />
+              <imagedata fileref="images/C01_395_RepMastList.png"/>
             </imageobject>
-            <caption>Master List of Report Definitions in xTuple
-            Database</caption>
+            <caption>Master list of Report Definitions in xTuple
+            database</caption>
           </mediaobject>
         </screenshot></para>
       <para>We will be working with an xTuple report definition called
-      “UsersMasterList.” This is a report which details information about
-      xTuple user accounts. We can load the report definition into the report
-      writer simply by opening it. To open the report definition, double-click
-      on it&mdash;or highlight it and then select the EDIT button. The
-      following screen will appear:</para>
+      <guilabel>UsersMasterList</guilabel>. This is a report which details
+      information about xTuple user accounts. We can load the report
+      definition into the report writer simply by opening it. To open the
+      report definition, double-click on it—or highlight it and then select
+      the <guibutton>EDIT</guibutton> button. The following screen will
+      appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_400_LoadFrmDB.png" />
+              <imagedata fileref="images/C01_400_LoadFrmDB.png"/>
             </imageobject>
-            <caption>Load Report Definition from Database</caption>
+            <caption>Load report definition from database</caption>
           </mediaobject>
         </screenshot></para>
-      <para>The “UsersMasterList” is now loaded into the report writer. Our
-      next step will be to save the report definition to a local drive.</para>
+      <para>The <guilabel>UsersMasterList</guilabel> is now loaded into the
+      report writer. Our next step will be to save the report definition to a
+      local drive.</para>
     </section>
     <section id="i547117">
       <title>Saving to XML</title>
-      <para>Now that we have loaded the “UsersMasterList” report definition
-      into the report writer, let’s save it to our local drive in XML format.
-      To do so, select the “Save As” option from the “File” drop-down menu.
+      <para>Now that we have loaded the <guilabel>UsersMasterList</guilabel>
+      report definition into the report writer, let’s save it to our local
+      drive in XML format. To do so, select the <guimenuitem>Save
+      As</guimenuitem> option from the <guimenu>File</guimenu> drop-down menu.
       The following screen will appear:</para>
       <para id="i565231"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_405_SaveAsXML.png" />
+              <imagedata fileref="images/C01_405_SaveAsXML.png"/>
             </imageobject>
-            <caption>Save Report Definition to XML Format</caption>
+            <caption>Save report definition to XML format</caption>
           </mediaobject>
         </screenshot></para>
       <para>As you can see, our operating system prompts us to name the file
       and also specify a storage location. We navigate to a directory where
       other report definitions are stored and then give the file the same name
-      it had when it was stored in the database. We also add the “.xml”
-      extension to the end of the file name.</para>
+      it had when it was stored in the database. We also add the
+      <emphasis>.xml</emphasis> extension to the end of the file name.</para>
       <tip>
         <para>The names of report definition files are case-sensitive. To
         ensure accuracy, keep this in mind when sharing report definition
@@ -1944,9 +1967,9 @@
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_410_XMLBrowser.png" />
+              <imagedata fileref="images/C01_410_XMLBrowser.png"/>
             </imageobject>
-            <caption>Report Definition XML Rendered in a Browser</caption>
+            <caption>Report definition XML rendered in a browser</caption>
           </mediaobject>
         </screenshot></para>
       <para>So, we have stored the report definition on our local drive in the
@@ -1959,14 +1982,15 @@
       <para>Before we can save a locally-stored report definition to another
       database, we must first load the XML file into the report writer. To
       load a locally-stored report definition into the report writer, select
-      either the “Open File” button or the “Open” option from the “File”
+      either the <guibutton>Open File</guibutton> icon or the
+      <guimenuitem>Open</guimenuitem> option from the <guimenu>File</guimenu>
       drop-down menu. The following screen will appear:</para>
       <para id="i565202"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_417_ChooseFile.png" />
+              <imagedata fileref="images/C01_417_ChooseFile.png"/>
             </imageobject>
-            <caption>Loading XML File into the Report Writer</caption>
+            <caption>Loading XML file into the report writer</caption>
           </mediaobject>
         </screenshot></para>
       <para>Our operating system prompts us to locate the file we want to load
@@ -1975,40 +1999,40 @@
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_420_LoadedRptDefXML.png" />
+              <imagedata fileref="images/C01_420_LoadedRptDefXML.png"/>
             </imageobject>
-            <caption>Report Definition Loaded from XML File</caption>
+            <caption>Report definition loaded from XML file</caption>
           </mediaobject>
         </screenshot></para>
       <para>Now that the report definition has been loaded into the report
-      writer, we can transfer it to a database&mdash;which we will do in our
-      next step.</para>
+      writer, we can transfer it to a database—which we will do in our next
+      step.</para>
     </section>
     <section id="i552942">
       <title>Saving to a Database</title>
-      <para>Next we will save the XML report definition to an xTuple Database.
+      <para>Next we will save the XML report definition to an xTuple database.
       With the report definition loaded into the report writer, select the
-      “Save to DB” option from the “Database” drop-down menu, as shown
-      below:</para>
+      <guimenuitem>Save to DB</guimenuitem> option from the
+      <guimenu>Database</guimenu> drop-down menu, as shown below:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_425_SaveToDb.png" />
+              <imagedata fileref="images/C01_425_SaveToDb.png"/>
             </imageobject>
-            <caption>Saving Report Definition to Database</caption>
+            <caption>Saving report definition to database</caption>
           </mediaobject>
         </screenshot></para>
-      <para>Because in this example we are connected to an xTuple Database, a
-      large number of report definitions are already stored on the database.
-      The complete list of stored report definitions appears in the next
-      screen, which appears after we select the “Save to DB” option from the
-      “Database” drop-down menu:</para>
+      <para>In this example we are connected to an xTuple database, a large
+      number of report definitions are already stored on the database. The
+      complete list of stored report definitions appears in the next screen,
+      which appears after we select the <guimenuitem>Save to DB</guimenuitem>
+      option from the <guimenu>Database</guimenu> drop-down menu:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_430_LoadDBGrade50.png" />
+              <imagedata fileref="images/C01_430_LoadDBGrade50.png"/>
             </imageobject>
-            <caption>Save Report to Database with a Higher Grade</caption>
+            <caption>Save Report to Database with a higher grade</caption>
           </mediaobject>
         </screenshot></para>
       <para>xTuple can only generate reports using report definitions which
@@ -2017,26 +2041,28 @@
       xTuple uses the report definition with the highest grade.</para>
       <tip>
         <para>Standard xTuple report definitions are delivered with a grade of
-        “0”. By default, the xTuple client runs the highest numbered grade. To
+        "0". By default, the xTuple client runs the highest numbered grade. To
         ensure that you can always return to the baseline version of a report,
-        save your report definitions with a grade higher than 0.</para>
+        save your report definitions with a grade higher than "0".</para>
       </tip>
-      <para>Because our xTuple Database already contains one version of the
-      “UsersMasterList” report definition, let’s save our current version with
-      a grade of 50. This will clearly mark our current version as the default
-      version xTuple should use. To see the two versions with their different
-      grades, open the “Load from DB” option from the “Database” drop-down
+      <para>Because our xTuple database already contains one version of the
+      <guilabel>UsersMasterList</guilabel> report definition, let’s save our
+      current version with a grade of 50. This will clearly mark our current
+      version as the default version xTuple should use. To see the two
+      versions with their different grades, open the <guimenuitem>Load from
+      DB</guimenuitem> option from the <guimenu>Database</guimenu> drop-down
       menu. The following screen will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_435_ListReportsGrades.png" />
+              <imagedata fileref="images/C01_435_ListReportsGrades.png"/>
             </imageobject>
-            <caption>Note Multiple Grades for a Single Report</caption>
+            <caption>Note multiple grades for a single report</caption>
           </mediaobject>
         </screenshot></para>
-      <para>Keep in mind once again that xTuple will use the “UsersMasterList”
-      report definition with grade 50 when executing this report.</para>
+      <para>Keep in mind once again that xTuple will use the
+      <guilabel>UsersMasterList</guilabel> report definition with grade 50
+      when executing this report.</para>
     </section>
   </section>
   <section id="i547397">
@@ -2054,17 +2080,16 @@
           <term>Headers</term>
           <listitem>
             <para>Headers are frequently used for titles, column headings, and
-            key report information&mdash;such as Customer contact information
-            on an Invoice. Headers may contain queries, but unlike the Detail
-            sections of a report, Headers will only display the first row
+            key report information—such as customer contact information on an
+            invoice. Headers may contain queries, but unlike the detail
+            sections of a report, headers will only display the first row
             returned for a query.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Footers</term>
           <listitem>
-            <para>Footers often contain summary data&mdash;such as
-            totals.</para>
+            <para>Footers often contain summary data—such as totals.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -2079,322 +2104,338 @@
       </variablelist>
       <para>To add sections to or remove sections from a report definition,
       use the section editor. To access the section editor, open a report
-      definition and select the “Section Editor” option from the “Document”
-      drop-down menu. The following screen will appear:</para>
+      definition and select the <guimenuitem>Section Editor</guimenuitem>
+      option from the <guimenu>Document</guimenu> drop-down menu. The
+      following screen will appear:</para>
       <para id="i566833"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_500_SectionEditor.png" />
+              <imagedata fileref="images/C01_500_SectionEditor.png"/>
             </imageobject>
             <caption>Section Editor</caption>
           </mediaobject>
         </screenshot></para>
       <para>As you can see, the section editor contains controls for each of
       the three basic section types. In the following examples, we will
-      discuss all the controls found on the section editor screen.</para>
+      discuss all the controls found on the Section Editor screen.</para>
     </section>
     <section id="i570960">
       <title>Report Headers</title>
-      <para>Report Headers are commonly used to create report titles. Report
-      Headers have the following characteristics:</para>
+      <para>Report headers are commonly used to create report titles. Report
+      headers have the following characteristics:</para>
       <itemizedlist>
         <listitem>
-          <para>Always print on the report</para>
+          <para>Always print on the report.</para>
         </listitem>
         <listitem>
-          <para>Always print at the top of the page, directly below Page
-          Headers</para>
+          <para>Always print at the top of the page, directly below page
+          headers.</para>
         </listitem>
         <listitem>
-          <para>Directly precede first Detail section</para>
+          <para>Directly precede first detail section.</para>
         </listitem>
         <listitem>
-          <para>Only print on the first page</para>
+          <para>Only print on the first page.</para>
         </listitem>
         <listitem>
-          <para>Only display the first row of data returned by a query</para>
+          <para>Only display the first row of data returned by a query.</para>
         </listitem>
       </itemizedlist>
       <para>For the purposes of this exercise, we will assume we are working
       with a blank report definition having no sections currently defined. To
-      add a Report Header to a report definition, select the “Report Header”
-      option from the section editor screen. The Report Header section will be
-      added to the report definition, as shown in the following screen:</para>
+      add a report header to a report definition, select the <guilabel>Report
+      Header</guilabel> option from the Section Editor screen. The report
+      header section will be added to the report definition, as shown in the
+      following screen:</para>
       <para id="i566952"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_501_ReportHeader.png" />
+              <imagedata fileref="images/C01_501_ReportHeader.png"/>
             </imageobject>
-            <caption>Report Header Section</caption>
+            <caption>Report header section</caption>
           </mediaobject>
         </screenshot></para>
       <para>When a section is added to a report definition, the name of the
       section appears in the upper-left-hand corner of the section. As you can
-      see, our newly-added section is clearly labeled “Report Header.”</para>
-      <para>To remove a Report Header from a report definition, simply uncheck
-      the “Report Header” option on the section editor screen.</para>
+      see, our newly-added section is clearly labeled <guilabel>Report
+      Header</guilabel>.</para>
+      <para>To remove a report header from a report definition, simply uncheck
+      the <guilabel>Report Header</guilabel> option on the Section Editor
+      screen.</para>
     </section>
     <section id="i571060">
       <title>Page Headers</title>
-      <para>Page Headers are commonly used to contain column headings. Page
-      Headers have the following characteristics:</para>
+      <para>Page headers are commonly used to contain column headings. Page
+      headers have the following characteristics:</para>
       <itemizedlist>
         <listitem>
-          <para>Always print at the top of a page</para>
+          <para>Always print at the top of a page.</para>
         </listitem>
         <listitem>
-          <para>Always contain the first information printed on a page</para>
+          <para>Always contain the first information printed on a page.</para>
         </listitem>
         <listitem>
-          <para>Directly precede Report Headers</para>
+          <para>Directly precede report headers.</para>
         </listitem>
         <listitem>
-          <para>Only display the first row of data returned by a query</para>
+          <para>Only display the first row of data returned by a query.</para>
         </listitem>
         <listitem>
-          <para>Allow multiple types for different pages</para>
+          <para>Allow multiple types for different pages.</para>
         </listitem>
         <listitem>
-          <para>Only one allowed per page</para>
+          <para>Only one allowed per page.</para>
         </listitem>
       </itemizedlist>
       <para>To accommodate the requirements of multi-page reports, the report
-      writer supports the following five different types of Page
-      Headers:</para>
+      writer supports the following five different types of page
+      headers:</para>
       <variablelist>
         <varlistentry>
           <term>First Page</term>
           <listitem>
-            <para>Prints at the top of the first page of a report</para>
+            <para>Prints at the top of the first page of a report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Even Page(s)</term>
           <listitem>
-            <para>Prints at the top of even pages of a report</para>
+            <para>Prints at the top of even pages of a report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Any Page(s)</term>
           <listitem>
             <para>May be used to print at the top of any page of a
-            report</para>
+            report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Last Page</term>
           <listitem>
-            <para>Prints at the top of the last page of a report</para>
+            <para>Prints at the top of the last page of a report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Odd Page(s)</term>
           <listitem>
-            <para>Prints at the top of odd pages of a report</para>
+            <para>Prints at the top of odd pages of a report.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>Again, only one Page Header may be printed per page. When a report
-      definition contains more than one Page Header, the report writer
-      recognizes the Page Headers in the following order of precedence: 1)
-      First Page; 2) Last Page; 3) Even Page(s); 4) Odd Page(s); 5) Any
-      Page(s).</para>
+      <para>Again, only one page header may be printed per page. When a report
+      definition contains more than one page header, the report writer
+      recognizes the page headers in the following order of precedence: 1)
+      <guilabel>First Page</guilabel>; 2) <guilabel>Last Page</guilabel>; 3)
+      <guilabel>Even Page</guilabel>(s); 4) <guilabel>Odd Page</guilabel>(s);
+      5) <guilabel>Any Page</guilabel>(s).</para>
       <tip>
-        <para>If your report definition includes both “Even Page” and “Odd
-        Page” Page Headers, don’t include an “Any Page” Header. Based on the
-        report writer’s precedence rules, the “Any Page” Header would never
-        print in this scenario.</para>
+        <para>If your report definition includes both <guilabel>Even Page
+        </guilabel>and <guilabel>Odd Page</guilabel> page headers, don't
+        include an <guilabel>Any Page</guilabel> header. Based on the report
+        writer’s precedence rules, the <guilabel>Any Page</guilabel> header
+        would never print in this scenario.</para>
       </tip>
-      <para>To add a Page Header to a report definition using the section
-      editor, select the type of Page Header you want to add from the “Page
-      Header” section of the screen. For this exercise, we will add a first
-      Page Header, as shown in the following screen:</para>
+      <para>To add a page header to a report definition using the section
+      editor, select the type of page header you want to add from the
+      <guilabel>Page Header</guilabel> section of the screen. For this
+      exercise, we will add a first page header, as shown in the following
+      screen:</para>
       <para id="i567243"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_502_PageHeader.png" />
+              <imagedata fileref="images/C01_502_PageHeader.png"/>
             </imageobject>
-            <caption>First Page Header Section</caption>
+            <caption>First page header section</caption>
           </mediaobject>
         </screenshot></para>
-      <para>As you can see, the Page Header section is added above the Report
-      Header section. If subsequent Page Header sections are added, they will
-      also be placed above the Report Header section, but below the “First
-      Page” Header.</para>
-      <para>To remove a Page Header from a report definition, simply uncheck
-      the Page Header option you selected on the section editor screen.</para>
+      <para>As you can see, the <guilabel>Page Header</guilabel> section is
+      added above the <guilabel>Report Header</guilabel> section. If
+      subsequent page header sections are added, they will also be placed
+      above the <guilabel>Report Header</guilabel> section, but below the
+      <guilabel>First Page</guilabel> header.</para>
+      <para>To remove a page header from a report definition, simply uncheck
+      the <guilabel>Page Header</guilabel> option you selected on the Section
+      Editor screen.</para>
     </section>
     <section id="i571059">
       <title>Report Footers</title>
-      <para>Report Footers are commonly used to display report totals. Report
-      Footers have the following characteristics:</para>
+      <para>Report footers are commonly used to display report totals. Report
+      footers have the following characteristics:</para>
       <itemizedlist>
         <listitem>
-          <para>Always print on the report</para>
+          <para>Always print on the report.</para>
         </listitem>
         <listitem>
-          <para>Always print at the bottom of the page, directly above Page
-          Headers</para>
+          <para>Always print at the bottom of the page, directly above page
+          headers.</para>
         </listitem>
         <listitem>
-          <para>Directly follow the last Detail section</para>
+          <para>Directly follow the last detail section.</para>
         </listitem>
         <listitem>
-          <para>Only print on the first page</para>
+          <para>Only print on the first page.</para>
         </listitem>
         <listitem>
-          <para>Only display the first row of data returned by a query</para>
+          <para>Only display the first row of data returned by a query.</para>
         </listitem>
       </itemizedlist>
-      <para>To add a Report Footer to a report definition, select the “Report
-      Footer” option from the section editor screen. The Report Footer section
-      will be added to the report definition, as shown in the following
-      screen:</para>
+      <para>To add a report footer to a report definition, select the
+      <guilabel>Report Footer</guilabel> option from the Section Editor
+      screen. The <guilabel>Report Footer</guilabel> section will be added to
+      the report definition, as shown in the following screen:</para>
       <para id="i567574"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_503_ReportFooter.png" />
+              <imagedata fileref="images/C01_503_ReportFooter.png"/>
             </imageobject>
-            <caption>Report Footer Section</caption>
+            <caption>Report Footer section</caption>
           </mediaobject>
         </screenshot></para>
-      <para>As you can see, the Report Footer section is added below the
-      Report Header section. To remove a Report Footer from a report
-      definition, simply uncheck the “Report Footer” option on the section
-      editor screen.</para>
+      <para>As you can see, the <guilabel>Report Footer</guilabel> section is
+      added below the <guilabel>Report Header</guilabel> section. To remove a
+      report footer from a report definition, simply uncheck the
+      <guilabel>Report Footer</guilabel> option on the Section Editor
+      screen.</para>
     </section>
     <section>
       <title>Page Footers</title>
-      <para>Page Footers are commonly used to contain report totals. Page
-      Footers have the following characteristics:</para>
+      <para>Page footers are commonly used to contain report totals. Page
+      footers have the following characteristics:</para>
       <itemizedlist>
         <listitem>
-          <para>Always print at the bottom of a page</para>
+          <para>Always print at the bottom of a page.</para>
         </listitem>
         <listitem>
-          <para>Always contain the last information printed on a page</para>
+          <para>Always contain the last information printed on a page.</para>
         </listitem>
         <listitem>
-          <para>Directly follow Report Footers</para>
+          <para>Directly follow report footers.</para>
         </listitem>
         <listitem>
-          <para>Only display the first row of data returned by a query</para>
+          <para>Only display the first row of data returned by a query.</para>
         </listitem>
         <listitem>
-          <para>Allow multiple types for different pages</para>
+          <para>Allow multiple types for different pages.</para>
         </listitem>
         <listitem>
-          <para>Only one allowed per page</para>
+          <para>Only one allowed per page.</para>
         </listitem>
       </itemizedlist>
       <para>To accommodate the requirements of multi-page reports, the report
-      writer supports the following five different types of Page
-      Footers:</para>
+      writer supports the following five different types of page
+      footers:</para>
       <variablelist>
         <varlistentry>
           <term>First Page</term>
           <listitem>
-            <para>Prints at the bottom of the first page of a report</para>
+            <para>Prints at the bottom of the first page of a report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Even Page(s)</term>
           <listitem>
-            <para>Prints at the bottom of even pages of a report</para>
+            <para>Prints at the bottom of even pages of a report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Any Page(s)</term>
           <listitem>
             <para>May be used to print at the bottom any page of a
-            report</para>
+            report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Last Page</term>
           <listitem>
-            <para>Prints at the bottom of the last page of a report</para>
+            <para>Prints at the bottom of the last page of a report.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Odd Page(s)</term>
           <listitem>
-            <para>Prints at the bottom of odd pages of a report</para>
+            <para>Prints at the bottom of odd pages of a report.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>Again, only one Page Footer may be printed per page. When a report
-      definition contains more than one Page Footer, the report writer
-      recognizes the Page Footers in the following order of precedence: 1)
-      Last Page; 2) First Page; 3) Even Page(s); 4) Odd Page(s); 5) Any
-      Page(s).</para>
+      <para>Again, only one page footer may be printed per page. When a report
+      definition contains more than one page footer, the report writer
+      recognizes the page footers in the following order of precedence: 1)
+      <guilabel>Last Page</guilabel>; 2) <guilabel>First Page</guilabel>; 3)
+      <guilabel>Even Page</guilabel>(s); 4) <guilabel>Odd Page</guilabel>(s);
+      5) <guilabel>Any Page</guilabel>(s).</para>
       <tip>
-        <para>If your report definition includes both “Even Page” and “Odd
-        Page” Page Footers, don’t include an “Any Page” Footer. Based on the
-        report writer’s precedence rules, the “Any Page” Footer would never
-        print in this scenario.</para>
+        <para>If your report definition includes both <guilabel>Even
+        Page</guilabel> and <guilabel>Odd Page</guilabel> page footers, don’t
+        include an <guilabel>Any Page</guilabel> footer. Based on the report
+        writer’s precedence rules, the <guilabel>Any Page</guilabel> footer
+        would never print in this scenario.</para>
       </tip>
-      <para>To add a Page Footer to a report definition using the section
-      editor, select the type of Page Footer you want to add from the “Page
-      Footer” section of the screen. For this exercise, we will add a first
-      Page Footer, as shown in the following screen:</para>
+      <para>To add a page footer to a report definition using the section
+      editor, select the type of page footer you want to add from the page
+      footer section of the screen. For this exercise, we will add a first
+      page footer, as shown in the following screen:</para>
       <para id="i567523"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_504_PageFooter.png" />
+              <imagedata fileref="images/C01_504_PageFooter.png"/>
             </imageobject>
-            <caption>Page Footer Section</caption>
+            <caption>Page Footer section</caption>
           </mediaobject>
         </screenshot></para>
-      <para>As you can see, the Page Footer section is added below the Report
-      Footer section. If subsequent Page Footer sections are added, they will
-      also be placed below the Report Footer section, but above the “First
-      Page” Footer.</para>
-      <para>To remove a Page Footer from a report definition, simply uncheck
-      the Page Header option you selected on the section editor screen.</para>
+      <para>As you can see, the <guilabel>Page Footer</guilabel> section is
+      added below the <guilabel>Report Footer</guilabel> section. If
+      subsequent page footer sections are added, they will also be placed
+      below the <guilabel>Report Footer</guilabel> section, but above the
+      <guilabel>First Page</guilabel> footer.</para>
+      <para>To remove a page footer from a report definition, simply uncheck
+      the <guilabel>Page Header</guilabel> option you selected on the Section
+      Editor screen.</para>
     </section>
     <section>
       <title>Detail Sections</title>
-      <para>The core information in a report is displayed in its Detail
-      section. Detail sections have the following characteristics:</para>
+      <para>The core information in a report is displayed in its
+      <guilabel>Detail</guilabel> section. Detail sections have the following
+      characteristics:</para>
       <itemizedlist>
         <listitem>
-          <para>Generally print in the middle of a page</para>
+          <para>Generally print in the middle of a page.</para>
         </listitem>
         <listitem>
-          <para>Always contain the core information for a report</para>
+          <para>Always contain the core information for a report.</para>
         </listitem>
         <listitem>
-          <para>Display multiple rows of data returned by a query</para>
+          <para>Display multiple rows of data returned by a query.</para>
         </listitem>
         <listitem>
-          <para>Unlimited allowed</para>
+          <para>Unlimited allowed.</para>
         </listitem>
       </itemizedlist>
       <note>
         <para>The report writer allows you to incorporate an unlimited number
-        of Detail sections into a report definition, although most contain
+        of detail sections into a report definition, although most contain
         just one.</para>
       </note>
-      <para>The section editor handles Detail sections differently than it
-      handles Header and Footer sections&mdash;that is, the process for adding
-      and managing Detail sections is more involved. The following screen
-      shows the section editor with a Detail section added:</para>
+      <para>The section editor handles detail sections differently than it
+      handles header and footer sections—that is, the process for adding and
+      managing detail sections is more involved. The following screen shows
+      the section editor with a <guilabel>Detail</guilabel> section
+      added:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_506_DetailSecEditor.png" />
+              <imagedata fileref="images/C01_506_DetailSecEditor.png"/>
             </imageobject>
-            <caption>Section Editor with Detail Sections Added</caption>
+            <caption>Section Editor with detail sections added</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When adding a Detail section to a report definition, you are
+      <para>When adding a detail section to a report definition, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Detail Sections</term>
           <listitem>
-            <para>Displays the names of Detail sections added to the report
+            <para>Displays the names of detail sections added to the report
             definition. Detail sections may be added, edited, removed, or
             moved up and down.</para>
           </listitem>
@@ -2406,38 +2447,38 @@
         <varlistentry>
           <term>ADD</term>
           <listitem>
-            <para>Opens screen for adding a new Detail section to the report
+            <para>Opens screen for adding a new detail section to the report
             definition, as described below.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>EDIT</term>
           <listitem>
-            <para>Enables you to edit highlighted Detail section. The edit
-            screen is the same as that for adding a new Detail
-            section&mdash;except that when editing, the fields will contain
-            Detail section information.</para>
+            <para>Enables you to edit highlighted detail section. The edit
+            screen is the same as that for adding a new detail section—except
+            that when editing, the fields will contain detail section
+            information.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>DELETE</term>
           <listitem>
-            <para>Highlight a Detail section and then select this button to
-            remove the Detail section from the list.</para>
+            <para>Highlight a detail section and then select this button to
+            remove the detail section from the list.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>MOVE UP</term>
           <listitem>
-            <para>Highlight a Detail section and then select this button to
-            move the Detail section up the list.</para>
+            <para>Highlight a detail section and then select this button to
+            move the detail section up the list.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>MOVE DOWN</term>
           <listitem>
-            <para>Highlight a Detail section and then select this button to
-            move the Detail section down the list.</para>
+            <para>Highlight a detail section and then select this button to
+            move the detail section down the list.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -2448,23 +2489,24 @@
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>To add a new Detail section to a report definition, select the ADD
-      button. The following screen will appear:</para>
+      <para>To add a new detail section to a report definition, select the
+      <guibutton>ADD</guibutton> button. The following screen will
+      appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_507_AddDetail.png" />
+              <imagedata fileref="images/C01_507_AddDetail.png"/>
             </imageobject>
-            <caption>Add New Detail Section</caption>
+            <caption>Add new Detail Section</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When adding a new Detail section to a report definition, you are
+      <para>When adding a new detail section to a report definition, you are
       presented with the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Section Name</term>
           <listitem>
-            <para>Enter a name to identify the Detail section.</para>
+            <para>Enter a name to identify the detail section.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -2493,7 +2535,7 @@
         <varlistentry>
           <term>Group Sections</term>
           <listitem>
-            <para>Displays the names of Group sections added to the report
+            <para>Displays the names of group sections added to the report
             definition. Group sections may be added, edited, removed, or moved
             up and down.</para>
           </listitem>
@@ -2505,34 +2547,34 @@
         <varlistentry>
           <term>ADD</term>
           <listitem>
-            <para>Opens screen for adding a new Group section to the report
+            <para>Opens screen for adding a new group section to the report
             definition, as described below.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>EDIT</term>
           <listitem>
-            <para>Enables you to edit highlighted Group section. The edit
-            screen is the same as that for adding a new Group
-            section&mdash;except that when editing, the fields will contain
-            Group section information.</para>
+            <para>Enables you to edit highlighted group section. The edit
+            screen is the same as that for adding a new group section—except
+            that when editing, the fields will contain group section
+            information.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>DELETE</term>
           <listitem>
-            <para>Highlight a Group section and then select this button to
-            remove the Group section from the list.</para>
+            <para>Highlight a group section and then select this button to
+            remove the group section from the list.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>MOVE UP</term>
           <listitem>
-            <para>Highlight a Group section and then select this button to
-            move the Group section up the list.</para>
+            <para>Highlight a group section and then select this button to
+            move the group section up the list.</para>
             <tip>
-              <para>The Group section appearing at the top of the list is
-              considered the first, or outermost Group section. During
+              <para>The group section appearing at the top of the list is
+              considered the first, or outermost group section. During
               processing, the outermost section is handled first, followed by
               the next innermost section, and then the next innermost,
               etc.</para>
@@ -2542,11 +2584,11 @@
         <varlistentry>
           <term>MOVE DOWN</term>
           <listitem>
-            <para>Highlight a Group section and then select this button to
-            move the Group section down the list.</para>
+            <para>Highlight a group section and then select this button to
+            move the group section down the list.</para>
             <tip>
-              <para>The Group section appearing at the top of the list is
-              considered the first, or outermost Group section. During
+              <para>The group section appearing at the top of the list is
+              considered the first, or outermost group section. During
               processing, the outermost section is handled first, followed by
               the next innermost section, and then the next innermost,
               etc.</para>
@@ -2556,80 +2598,81 @@
         <varlistentry>
           <term>CLOSE</term>
           <listitem>
-            <para>Closes the screen, returning you to the application
+            <para>Closes the screen, returning you to the Application
             desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>When a Detail section has been added using the section editor, the
-      report writer incorporates the Detail section into the report
+      <para>When a detail section has been added using the section editor, the
+      report writer incorporates the detail section into the report
       definition, as shown in the following screen:</para>
       <para id="i569340"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_508_DetailSections.png" />
+              <imagedata fileref="images/C01_508_DetailSections.png"/>
             </imageobject>
-            <caption>Detail Section</caption>
+            <caption>Detail section</caption>
           </mediaobject>
         </screenshot></para>
-      <para>As you can see, the Detail section has been added to the report
-      definition. The Detail section appears in the middle of the page,
-      sandwiched between the Report Header and Report Footer.</para>
+      <para>As you can see, the detail section has been added to the report
+      definition. The detail section appears in the middle of the page,
+      sandwiched between the <guilabel>Report Header</guilabel> and
+      <guilabel>Report Footer</guilabel>.</para>
     </section>
     <section>
       <title>Group Sections</title>
-      <para>While most reports can be defined using a single Detail section
+      <para>While most reports can be defined using a single detail section
       having multiple columns and rows of data, others require summary
-      data&mdash;such as subtotals. For reports requiring summary data, the
-      report writer supports Group sections. Group sections have the following
+      data—such as subtotals. For reports requiring summary data, the report
+      writer supports group sections. Group sections have the following
       characteristics:</para>
       <itemizedlist>
         <listitem>
-          <para>Always associated with Detail sections</para>
+          <para>Always associated with detail sections.</para>
         </listitem>
         <listitem>
-          <para>Defined by Group Headers and Group Footers</para>
+          <para>Defined by group headers and group footers.</para>
         </listitem>
         <listitem>
-          <para>Group Headers always print above Detail sections</para>
+          <para>Group headers always print above detail sections.</para>
         </listitem>
         <listitem>
-          <para>Group Footers always print below Detail sections</para>
+          <para>Group footers always print below detail sections.</para>
         </listitem>
         <listitem>
-          <para>Reference database column on which Group Headers and Group
-          Footers will break</para>
+          <para>Reference database column on which group headers and group
+          footers will break.</para>
         </listitem>
         <listitem>
-          <para>Force new Group Header each time the value of the referenced
-          column changes</para>
+          <para>Force new group header each time the value of the referenced
+          column changes.</para>
         </listitem>
         <listitem>
-          <para>Force a new Group Footer each time the value of the referenced
-          column changes</para>
+          <para>Force a new group footer each time the value of the referenced
+          column changes.</para>
         </listitem>
         <listitem>
-          <para>Unlimited allowed</para>
+          <para>Unlimited allowed.</para>
         </listitem>
       </itemizedlist>
-      <para>To add a Group section to a report definition, select the ADD
-      button from the “Detail Section Properties” screen. The following screen
-      will appear:</para>
+      <para>To add a group section to a report definition, select the
+      <guibutton>ADD</guibutton> button from the <guilabel>Detail</guilabel>
+      section Properties screen. The following screen will appear:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_525_GroupSections.png" />
+              <imagedata fileref="images/C01_525_GroupSections.png"/>
             </imageobject>
             <caption>Group Section Editor</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When adding a Group section to a Detail section, you are presented
+      <para>When adding a group section to a detail section, you are presented
       with the following options:</para>
       <variablelist>
         <varlistentry>
           <term>Group Name</term>
           <listitem>
-            <para>Enter a name to identify the Group section.</para>
+            <para>Enter a name to identify the group section.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -2651,13 +2694,13 @@
         <varlistentry>
           <term>Show Group Header</term>
           <listitem>
-            <para>Select to include a Group Header in the report definition.
-            The Group Header will print above the Detail section. If not
-            selected, no Group Header will be included in the report
-            definition.</para>
+            <para>Select to include a group header in the report definition.
+            The group header will print above the <guilabel>Detail</guilabel>
+            section. If not selected, no group header will be included in the
+            report definition.</para>
             <tip>
-              <para>Be sure to specify a Group Header and/or a Group Footer.
-              Without either, no Group section will print on the report
+              <para>Be sure to specify a group header and/or a group footer.
+              Without either, no group section will print on the report
               definition.</para>
             </tip>
           </listitem>
@@ -2665,10 +2708,10 @@
         <varlistentry>
           <term>Show Group Footer</term>
           <listitem>
-            <para>Select to include a Group Footer in the report definition.
-            The Group Header will print below the Detail section. If not
-            selected, no Group Footer will be included in the report
-            definition.</para>
+            <para>Select to include a group footer in the report definition.
+            The group header will print below the <guilabel>Detail</guilabel>
+            section. If not selected, no group footer will be included in the
+            report definition.</para>
           </listitem>
         </varlistentry>
         <varlistentry>
@@ -2695,96 +2738,96 @@
           <term>CANCEL</term>
           <listitem>
             <para>Closes the screen without saving any changes, returning you
-            to the application desktop.</para>
+            to the Application desktop.</para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>When a Group Header and Group Footer have been added using the
-      section editor, the report writer incorporates both sections into the
+      <para>When a group header and group footer have been added using the
+      Section Editor, the report writer incorporates both sections into the
       report definition, as shown in the following screen:</para>
       <para id="i570362"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_523_GroupHeadFoot.png" />
+              <imagedata fileref="images/C01_523_GroupHeadFoot.png"/>
             </imageobject>
-            <caption>Group Headers and Footers</caption>
+            <caption>Group headers and footers</caption>
           </mediaobject>
         </screenshot></para>
-      <para>As you can see, the Group Header has been added above the Detail
-      section, and the Group Footer has been added below the Detail
-      section.</para>
-      <para>To better understand the relationship between Detail sections and
-      Group Headers and Group Footers, let’s look at a sample report generated
-      from data in an xTuple Database. The following Sales Analysis report is
-      called “Time Phased Sales History by Customer by Item”:</para>
+      <para>As you can see, the group header has been added above the
+      <guilabel>Detail</guilabel> section, and the group footer has been added
+      below the <guilabel>Detail</guilabel> section.</para>
+      <para>To better understand the relationship between detail sections and
+      group headers and group footers, let’s look at a sample report generated
+      from data in an xTuple database. The following sales analysis report is
+      called "Time Phased Sales History by Customer by Item":</para>
       <para id="i568052"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_520_GroupSectionsReportExample.png" />
+              <imagedata fileref="images/C01_520_GroupSectionsReportExample.png"/>
             </imageobject>
-            <caption>Sample Report Showing Group Headers and Group
-            Footers</caption>
+            <caption>Sample report showing group headers and group
+            footers</caption>
           </mediaobject>
         </screenshot></para>
-      <para>The “Time-Phased Sales History by Customer by Item” report
-      contains a Detail section with two Group sections associated with it.
-      The outermost Group section refers to Customer information. The second,
-      innermost Group section refers to Item information. Basically, if you
+      <para>The "Time-Phased Sales History by Customer by Item" report
+      contains a detail section with two group sections associated with it.
+      The outermost group section refers to customer information. The second,
+      innermost group section refers to item information. Basically, if you
       study the report you will see that the sections are printed in the
       following descending order:</para>
       <orderedlist>
         <listitem>
-          <para>Group Header (Customers</para>
+          <para>Group header (customers)</para>
         </listitem>
         <listitem>
-          <para>Group Header (Items</para>
+          <para>Group header (items)</para>
         </listitem>
         <listitem>
-          <para>Detail Section (Dates/Amounts)</para>
+          <para>Detail section (dates/amounts)</para>
         </listitem>
         <listitem>
-          <para>Group Footer (Items)</para>
+          <para>Group footer (items)</para>
         </listitem>
         <listitem>
-          <para>Group Footer (Customers)</para>
+          <para>Group footer (customers)</para>
         </listitem>
       </orderedlist>
-      <para>Because the report contains data for two Customers, you can see in
+      <para>Because the report contains data for two customers, you can see in
       the screenshot that the sequence of sections repeats itself twice. You
-      can also see that Group Footers are used to provide both Item and
-      Customer subtotals. As we mentioned earlier, Group sections are commonly
+      can also see that group footers are used to provide both item and
+      customer subtotals. As we mentioned earlier, group sections are commonly
       used for summary information.</para>
       <note>
-        <para>Group Headers and Group Footers are powerful features which
+        <para>Group headers and group footers are powerful features which
         enable you to generate reports which provide multiple levels of detail
         and roll-up values. However, you will find that most report
         definitions will conform to the following basic structure:</para>
         <itemizedlist>
           <listitem>
-            <para>Page Header: Any Page(s)</para>
+            <para>Page header: any page(s)</para>
           </listitem>
           <listitem>
-            <para>Detail Section</para>
+            <para>Detail section</para>
           </listitem>
           <listitem>
-            <para>Page Footer: Any Page(s)</para>
+            <para>Page footer: any page(s)</para>
           </listitem>
         </itemizedlist>
       </note>
       <para>The report shown is the actual report printed from data in an
-      xTuple Database. The following screenshot shows the report definition
+      xTuple database. The following screenshot shows the report definition
       used to generate the sample report.</para>
       <para id="i570712"><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C01_530_SampleRepDef.png" />
+              <imagedata fileref="images/C01_530_SampleRepDef.png"/>
             </imageobject>
-            <caption>Report Definition Used for Sample Report</caption>
+            <caption>Report definition used for sample report</caption>
           </mediaobject>
         </screenshot></para>
       <para>If some aspects of the report definition shown seem confusing,
-      don’t worry. We will be covering the mechanics of report writing in
-      subsequent chapters</para>
+      don't worry. We will be covering the mechanics of report writing in
+      subsequent chapters.</para>
     </section>
   </section>
 </chapter>
