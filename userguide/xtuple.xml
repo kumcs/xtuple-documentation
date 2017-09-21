@@ -19,14 +19,14 @@
         <term>Step 1 - Report Definition</term>
         <listitem>
           <para>Define the label or form's report definition with the xTuple
-          report writer</para>
+          report writer.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Step 2 - Report Definition Link</term>
         <listitem>
           <para>Link the label or form to the report definition. For forms,
-          link the form to one or more customers</para>
+          link the form to one or more customers.</para>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -34,13 +34,13 @@
         <listitem>
           <para>Generate labels or forms from the xTuple client using options
           on <guimenuitem>Inventory &gt; Shipping &gt; Forms</guimenuitem>
-          menu</para>
+          menu.</para>
         </listitem>
       </varlistentry>
     </variablelist>
     <para>There are six sessions that generate labels of forms and they are
     accessed through the <guimenuitem>Inventory &gt; Shipping &gt;
-    Forms</guimenuitem> menu: They are:</para>
+    Forms</guimenuitem> menu. They are:</para>
     <itemizedlist>
       <listitem>
         <para>Print Packing List</para>
@@ -68,9 +68,9 @@
     <para><screenshot>
         <mediaobject>
           <imageobject>
-            <imagedata fileref="images/C03_300_LabelFrmsMenu.png" />
+            <imagedata fileref="images/C03_300_LabelFrmsMenu.png"/>
           </imageobject>
-          <caption>xTuple Forms Menu</caption>
+          <caption>xTuple forms menu</caption>
         </mediaobject>
       </screenshot></para>
     <para>In the next few sections we will examine the setup for producing
@@ -86,23 +86,25 @@
       <para>The cross referencing capability in xTuple is a very powerful
       feature that makes if possible to, for example, to define report
       definitions that are unique to a customer or types of customers.</para>
-      <para>When you define a Customer (see below) you will assign the
-      customer a Customer Type and a preferred Shipping Form:</para>
+      <para>When you define a customer (see below) you will assign the
+      customer a <guilabel>Customer Type</guilabel> and a preferred
+      <guilabel>Shipping Form</guilabel>:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_307_CustomersForms.png" />
+              <imagedata fileref="images/C03_307_CustomersForms.png"/>
             </imageobject>
-            <caption>Customer Master</caption>
+            <caption>Customer master</caption>
           </mediaobject>
         </screenshot></para>
-      <para>The entries that display in the Shipping Form choice field are
-      first defined using the session Shipping Forms located on the
-      <guimenuitem>Sales &gt; Master Information</guimenuitem> menu:</para>
+      <para>The entries that display in the <guilabel>Shipping Form</guilabel>
+      choice field are first defined using the session Shipping Forms located
+      on the <guimenuitem>Sales &gt; Master Information</guimenuitem>
+      menu:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_305_ShippingForms.png" />
+              <imagedata fileref="images/C03_305_ShippingForms.png"/>
             </imageobject>
             <caption>Shipping Forms</caption>
           </mediaobject>
@@ -110,20 +112,20 @@
       <para>This session enables the creation of a unique form name that is
       linked to an xTuple report definition. Running the session Print
       Shipping Form from the <guimenuitem>Inventory &gt; Shipping &gt;
-      Forms</guimenuitem> menu causes xTuple to display the customer’s
+      Forms</guimenuitem> menu causes xTuple to display the customer's
       preferred shipping form in the field Shipping Form.</para>
       <para>This technique makes it possible to create logical form names that
       are tied to specific report definitions and to one or more
       customers.</para>
       <para>Referring back to the Customer master you will also note the
-      Customer Type field. This also controls the printing of forms. The
-      following session enables you to define, by Customer Type, the report
-      definition that is used to generate the specific documents
-      listed:</para>
+      <guilabel>Customer Type</guilabel> field. This also controls the
+      printing of forms. The following session enables you to define, by
+      customer type, the report definition that is used to generate the
+      specific documents listed:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_309_CustomerFormAssign.png" />
+              <imagedata fileref="images/C03_309_CustomerFormAssign.png"/>
             </imageobject>
             <caption>Customer Form Assignments</caption>
           </mediaobject>
@@ -133,9 +135,9 @@
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_309_ZZZCustFormAssignFlow.png" />
+              <imagedata fileref="images/C03_309_ZZZCustFormAssignFlow.png"/>
             </imageobject>
-            <caption>Linking Customers to Customer Form Assignments</caption>
+            <caption>Linking customers to customer form assignments</caption>
           </mediaobject>
         </screenshot></para>
       <para>We have also looked at the screens that link a customer to a
@@ -143,16 +145,16 @@
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_309_YYYCustFormAssignFlow.png" />
+              <imagedata fileref="images/C03_309_YYYCustFormAssignFlow.png"/>
             </imageobject>
-            <caption>Linking Report Definitions to Sales Orders</caption>
+            <caption>Linking report definitions to sales orders</caption>
           </mediaobject>
         </screenshot></para>
       <para>Later in this section we will look at the parameters values that
       are passed to the report definition when Print Shipping Form and Print
       Packing List are run from the <guimenuitem>Inventory &gt; Shipping &gt;
-      Forms</guimenuitem> menu. But first, let’s look at how xTuple enables
-      you to define unique label definitions.</para>
+      Forms</guimenuitem> menu. First, let's look at how xTuple enables you to
+      define unique label definitions.</para>
     </section>
     <section>
       <title>Linking a Label to a Name and Report Definition</title>
@@ -170,24 +172,26 @@
         </listitem>
       </itemizedlist>
       <para>The cross-reference to the report definition for these three is a
-      little simpler. On the System menu's Master Information a sub-menu is
-      the Label Forms option:</para>
+      little simpler. On the <guimenu>System</guimenu> menu's Master
+      Information a sub-menu is the <guilabel>Label Forms</guilabel>
+      option:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_350_LabelFormLink.png" />
+              <imagedata fileref="images/C03_350_LabelFormLink.png"/>
             </imageobject>
             <caption>Label Forms</caption>
           </mediaobject>
         </screenshot></para>
-      <para>When one of the three options label options on the S/R - Forms
-      menu (listed in the table below) is run, the user is presented with a
-      drop down choice field called Report Name in which is displayed the form
-      name linked to a report definition using the session Label Form.</para>
-      <simpara>System - Master Information: Label Forms: Enables the creation
-      of a unique form name that is linked to an xTuple report definition. The
-      report name displays in the Report Name field on the following label
-      reports:</simpara>
+      <para>When one of the three options label options on the <guimenu>S/R -
+      Forms</guimenu> menu (listed in the table below) is run, the user is
+      presented with a drop down choice field called <guimenuitem>Report
+      Name</guimenuitem> in which is displayed the form name linked to a
+      report definition using the session Label Form window.</para>
+      <simpara><guimenu>System</guimenu> - Master Information: Label Forms:
+      Enables the creation of a unique form name that is linked to an xTuple
+      report definition. The report name displays in the <guilabel>Report
+      Name</guilabel> field on the following label reports:</simpara>
       <itemizedlist>
         <listitem>
           <para>Print Shipping Labels by S/O #</para>
@@ -205,17 +209,17 @@
       <para>When a user runs generates a form or a label from an option on
       <guimenuitem>Inventory &gt; Shipping &gt; Forms</guimenuitem> menu, the
       xTuple client passes parameter values to the selected form's definition
-      (more on this shortly) based on the user’s entries. These parameter
-      values can be used by the report’s SQL to retrieve information from the
+      (more on this shortly) based on the user's entries. These parameter
+      values can be used by the report's SQL to retrieve information from the
       database.</para>
       <para>The tables below identify fields on the sessions that are
       available on the <guimenuitem>Inventory &gt; Shipping &gt;
       Forms</guimenuitem> menu. The parameters column provides the name of the
       parameter that corresponds to the field if it is in fact a parameter
-      (not all are). Also provided, in the Table Reference column is the name
-      of a table that the author of the report may choose to query to locate
-      information in the database based on the parameter value provided by the
-      user.</para>
+      (not all are). Also provided, in the <guilabel>Table
+      Reference</guilabel> column is the name of a table that the author of
+      the report may choose to query to locate information in the database
+      based on the parameter value provided by the user.</para>
       <para>It is important to note that some fields are not parameters and
       some parameters do not correspond to tables. For example the parameters
       <literal>labelTo</literal> and <literal>labelFrom</literal> pass
@@ -224,17 +228,18 @@
       table.</para>
       <section>
         <title>Print Packing List</title>
-        <para>The option Print Packing List, located on the S/R - Forms menu,
-        enables you to generate a packing list by entering a sales order
-        number (see the section Linking a Form Name to a Report Definition and
-        Customer to see how this is setup). At run-time, the order's internal
-        reference number is passed to the report definition as the value for
-        the parameter <literal>sohead_id</literal>. This parameter can be
-        employed in a query that derives information from a join on the tables
-        cohead and shipto to retrieve information pertinent to shipping
-        labels.</para>
+        <para>The option <guimenuitem>Print Packing List</guimenuitem>,
+        located on the <guimenu>S/R - Forms</guimenu> menu, enables you to
+        generate a packing list by entering a sales order number (see the
+        section <link linkend="???">Linking a Form Name to a Report Definition
+        and Customer</link> to see how this is setup). At run-time, the
+        order's internal reference number is passed to the report definition
+        as the value for the parameter <literal>sohead_id</literal>. This
+        parameter can be employed in a query that derives information from a
+        join on the tables cohead and shipto to retrieve information pertinent
+        to shipping labels.</para>
         <para><table>
-            <title>Parameters passed to the Packing List report</title>
+            <title>Parameters passed to the packing list report</title>
             <tgroup cols="3">
               <tbody>
                 <row rowsep="1">
@@ -253,11 +258,12 @@
       </section>
       <section>
         <title>Print Shipping Form</title>
-        <para>The option Print Shipping Forms, located on the S/R - Forms
-        menu, enables you to see a customer’s default Shipping Form by
-        entering a sales order number (see the section Linking a Form Name to
-        a Report Definition and Customer to see how this is setup) and
-        override it if you chose.</para>
+        <para>The option <guimenuitem>Print Shipping Forms</guimenuitem>,
+        located on the <guimenu>S/R - Forms</guimenu> menu, enables you to see
+        a customer's default shipping form by entering a sales order number
+        (see the section <link linkend="???">Linking a Form Name to a Report
+        Definition and Customer</link> to see how this is setup) and override
+        it if you chose.</para>
         <para>At run-time, the order's internal reference number is passed to
         the report definition in the value of the parameter
         <literal>cosmisc_id</literal>. This parameter can be employed in a
@@ -267,11 +273,11 @@
         <para>The table below shows these and other parameters that are passed
         to the report definition and may be used to query other tables (if
         applicable) or display their value on the report. For example, the
-        user’s input for Watermark is passed in the parameter watermark and
-        may be referenced in a report’s Properties and displayed as a dynamic
+        user's input for watermark is passed in the parameter watermark and
+        may be referenced in a report's properties and displayed as a dynamic
         watermark.</para>
         <para><table>
-            <title>Parameters passed to the Shipping Forms reports</title>
+            <title>Parameters passed to the shipping forms reports</title>
             <tgroup cols="3">
               <tbody>
                 <row rowsep="1">
@@ -315,23 +321,25 @@
       </section>
       <section>
         <title>Print Shipping Forms</title>
-        <para>The session Print Shipping Forms prints all orders that are at
-        shipping and have not yet had shipping forms printed or for which a
-        shipping change has been recorded. You can see orders at shipping and
-        the status of their shipping forms by going to the session Maintain
-        Shipping Contents on the menu S/R - Shipping. The column
-        <literal>Prnt'ed</literal> indicates the status of shipping
+        <para>The session <guimenuitem>Print Shipping Forms</guimenuitem>
+        prints all orders that are at shipping and have not yet had shipping
+        forms printed or for which a shipping change has been recorded. You
+        can see orders at shipping and the status of their shipping forms by
+        going to the session <guimenuitem>Maintain Shipping
+        Contents</guimenuitem> on the menu <guimenu>S/R - Shipping</guimenu>.
+        The column <literal>Prnt'ed</literal> indicates the status of shipping
         forms.</para>
-        <para>Using Print Shipping Forms an order's shipping forms may only be
-        printed once unless the shipment has been changed and then the field
-        Print Shipping Forms for Changed Shipments must be checked. Note, the
-        session Print Shipping Form (the second option on the S/R - Forms
-        menu) will always enable you to print a specific sales order's
-        shipping form.</para>
+        <para>Using <guimenuitem>Print Shipping Forms</guimenuitem>, an
+        order's shipping forms may only be printed once unless the shipment
+        has been changed and then the field <guilabel>Print Shipping Forms for
+        Changed Shipments</guilabel> must be checked. Note, the session
+        <guimenuitem>Print Shipping Form</guimenuitem> (the second option on
+        the <guimenu>S/R - Forms</guimenu> menu) will always enable you to
+        print a specific sales order's shipping form.</para>
         <para>The table below identifies fields, parameters, and a table
-        reference to assist you in printing Shipping Forms:</para>
+        reference to assist you in printing shipping forms:</para>
         <para><table>
-            <title>Field descriptions for Printing Shipping Forms</title>
+            <title>Field descriptions for printing shipping forms</title>
             <tgroup cols="3">
               <tbody>
                 <row rowsep="1">
@@ -372,13 +380,14 @@
       </section>
       <section>
         <title>Print Shipping Labels by S/O #</title>
-        <para>The Print Shipping Labels by SO # session is found on the S/R -
-        Forms menu. The is user prompted to enter a Sales Order number, select
-        a label form (remember that these were defined in the System - Master
-        Information: Label Forms session) in the Report Name field, and enter
-        a range in the Labels: from and to fields to control the number of
-        labels printed. This approach enables you to pre-define a variety of
-        label formats.</para>
+        <para>The <guimenuitem>Print Shipping Labels by SO #</guimenuitem>
+        session is found on the <guimenu>S/R - Forms</guimenu> menu. The is
+        user prompted to enter a sales order number, select a label form
+        (remember that these were defined in the <guimenu>System</guimenu> -
+        Master Information: Label Forms session) in the <guilabel>Report
+        Name</guilabel> field, and enter a range in the labels: from and to
+        fields to control the number of labels printed. This approach enables
+        you to pre-define a variety of label formats.</para>
         <para>The table below identifies screen literals, parameters, and a
         table reference to assist you in creating your report definitions for
         labels. Note that address information for orders that are destined for
@@ -388,9 +397,9 @@
         passed by the parameter <literal>sohead_id</literal>.</para>
         <para>The table below identifies screen literals, parameters, and a
         table reference to assist you in creating your report definitions for
-        Sales Order labels:</para>
+        sales order labels:</para>
         <para><table>
-            <title>Screen Literals for Printing Sales Order Labels</title>
+            <title>Screen literals for printing sales order labels</title>
             <tgroup cols="3">
               <tbody>
                 <row rowsep="1">
@@ -424,19 +433,20 @@
       </section>
       <section>
         <title>Print Shipping Labels by Invoice</title>
-        <para>The Print Shipping Labels by Invoice session is found on the
-        <guimenuitem>Inventory &gt; Forms</guimenuitem> menu. The user is
-        prompted to enter an Invoice Number, select a label form (remember
-        that these were defined in the <guimenuitem>System &gt; Master
-        Information &gt; Label Forms</guimenuitem> session) in the Report Name
-        field, and enter a range in the Labels: from and to fields to control
+        <para>The <guimenuitem>Print Shipping Labels by Invoice</guimenuitem>
+        session is found on the <guimenuitem>Inventory &gt;
+        Forms</guimenuitem> menu. The user is prompted to enter an invoice
+        number, select a label form (remember that these were defined in the
+        <guimenuitem>System &gt; Master Information &gt; Label
+        Forms</guimenuitem> session) in the <guilabel>Report Name</guilabel>
+        field, and enter a range in the labels: from and to fields to control
         the number of labels printed. This approach enables you to pre-define
         a variety of label formats.</para>
         <para>The table below identifies screen literals, parameters, and a
         table reference to assist you in creating your report definitions for
-        Invoice labels:</para>
+        invoice labels:</para>
         <para><table>
-            <title>Screen Literals for Printing Invoice Labels</title>
+            <title>Screen literals for printing invoice labels</title>
             <tgroup cols="3">
               <tbody>
                 <row rowsep="1">
@@ -469,13 +479,14 @@
           </table></para>
       </section>
       <section>
-        <title>Print Receiving Labels by PO #</title>
+        <title>Print Receiving Labels by P/O #</title>
         <para>The Print Receiving Labels by PO # session is found on the
         <guimenuitem>Inventory &gt; Shipping &gt; Forms</guimenuitem> menu.
-        The user is prompted to enter an Purchase Order number, select a label
+        The user is prompted to enter an purchase order number, select a label
         form (remember that these were defined in the <guimenuitem>System &gt;
         Master Information &gt; Label Forms</guimenuitem> screen) in the
-        Report Name field, and enter a range in the Labels: from and to fields
+        <guilabel>Report Name</guilabel> field, and enter a range in the
+        labels: <guilabel>From</guilabel> and <guilabel>To</guilabel> fields
         to control the number of labels printed. This approach enables you to
         pre-define a variety of label formats.</para>
         <para>The table below identifies screen literals, parameters, and a
@@ -483,14 +494,15 @@
         labels. Note that receiving line item information is contained in the
         table <literal>porecv</literal> and can be accessed with a join to
         information in the table <literal>pohead</literal> using the value
-        passed by the parameter pohead_id. In this way, receiving labels that
-        contain item, description, quantity and other information pertinent to
-        receiving and putaway can be generated.</para>
+        passed by the parameter <emphasis>pohead_id</emphasis>. In this way,
+        receiving labels that contain item, description, quantity and other
+        information pertinent to receiving and putaway can be
+        generated.</para>
         <para>The table below identifies screen literals, parameters, and a
         table reference to assist you in creating your report definitions for
-        Receiving labels:</para>
+        receiving labels:</para>
         <para><table>
-            <title>Screen Literals for Printing Receiving Labels</title>
+            <title>Screen literals for printing receiving labels</title>
             <tgroup cols="3">
               <tbody>
                 <row rowsep="1">
@@ -532,66 +544,70 @@
       general and the sample label shown.</para>
       <section>
         <title>Generating a Label Sheet</title>
-        <para>Before we begin, let’s see how the custom label was printed and
-        what it looks like. The customer label was printed through the Print
-        Labels by Sales Order option found on the S/R, Forms menu:</para>
+        <para>Before we begin, let's see how the custom label was printed and
+        what it looks like. The customer label was printed through the
+        <guimenuitem>Print Labels by Sales Order</guimenuitem> option found on
+        the <guimenu>S/R, Forms</guimenu> menu:</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/C03_310_GenLabelReport.png" />
+                <imagedata fileref="images/C03_310_GenLabelReport.png"/>
               </imageobject>
-              <caption>Custom Shipping Labels by Sales Order</caption>
+              <caption>Custom shipping labels by sales order</caption>
             </mediaobject>
           </screenshot></para>
-        <para>Note that the user enters the Sales Order for which the labels
-        are to be generated, selects a Report Name, and enters a value for
-        Labels From and To - this controls the number of labels
+        <para>Note that the user enters the sales order for which the labels
+        are to be generated, selects a report name, and enters a value for
+        <guilabel>Labels</guilabel> <guilabel>From</guilabel> and
+        <guilabel>To</guilabel>: this controls the number of labels
         printed.</para>
-        <para>The Sales Order number is passed to the report definition as a
-        parameter called sohead_id which can be used in an SQL query to look
-        up additional information about the order in the table
-        <literal>cohead</literal>.</para>
-        <para>Likewise the values entered for Label From and Label To are
-        passed as the parameters <literal>labelFrom</literal> and
-        <literal>labelTo</literal>. These parameters do not correspond to a
-        specific table, but later we will learn how to use them in conjunction
-        with the sequence table to create multiple labels.</para>
-        <para>The Report Name choice field lists all of the Reports Names that
-        have been linked to a report definition using the session Forms found
-        on the System, Master Information menu. Only Report Names linked to
-        report definitions using the Forms session will display in this choice
-        field.</para>
+        <para>The <guilabel>Sales Order #</guilabel> is passed to the report
+        definition as a parameter called <emphasis>sohead_id</emphasis> which
+        can be used in an SQL query to look up additional information about
+        the order in the table <literal>cohead</literal>.</para>
+        <para>Likewise the values entered for label <guilabel>From</guilabel>
+        and label <guilabel>To</guilabel> are passed as the parameters
+        <literal>labelFrom</literal> and <literal>labelTo</literal>. These
+        parameters do not correspond to a specific table, but later we will
+        learn how to use them in conjunction with the sequence table to create
+        multiple labels.</para>
+        <para>The <guilabel>Report Name</guilabel> choice field lists all of
+        the reports names that have been linked to a report definition using
+        the session forms found on the <guimenu>System</guimenu>, Master
+        Information menu. Only report names linked to report definitions using
+        the forms session will display in this choice field.</para>
         <para>The report definition we will look at generates the following
         labels:</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/C03_315_SampleLabelsSheet.png" />
+                <imagedata fileref="images/C03_315_SampleLabelsSheet.png"/>
               </imageobject>
-              <caption>Custom Labels with Bar Codes</caption>
+              <caption>Custom labels with bar codes</caption>
             </mediaobject>
           </screenshot></para>
         <para>Note that three labels were generated based on a user entry for
-        Label From of 1 and Label To of 3.</para>
+        label <guilabel>From</guilabel> of "1" and label
+        <guilabel>To</guilabel> of "3".</para>
       </section>
       <section>
         <title>Label Report Definition</title>
-        <para>Let’s take a look at the report definition that generated these
+        <para>Let's take a look at the report definition that generated these
         labels.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/C03_320_LabelReportDef.png" />
+                <imagedata fileref="images/C03_320_LabelReportDef.png"/>
               </imageobject>
-              <caption>Sample Report Definition for a Shipping Label</caption>
+              <caption>Sample report definition for a shipping label</caption>
             </mediaobject>
           </screenshot></para>
         <para>As noted earlier, the xTuple report writer supports several
         standard label sizes. This report uses an Avery 5263 label size. The
-        Page Setup session is used to select a label size.</para>
+        page setup session is used to select a label size.</para>
         <note>
-          <para>The report writer supports Avery Standard Labels. It also
-          supports portrait or landscape, Letter, Legal, and A4
+          <para>The report writer supports Avery Standard labels. It also
+          supports portrait or landscape, letter, legal, and A4
           documents.</para>
         </note>
       </section>
@@ -601,22 +617,24 @@
       <para>To open the Page Setup session, in the report writer:</para>
       <itemizedlist>
         <listitem>
-          <para>Pull down the Document menu</para>
+          <para>Pull down the <guimenu>Document</guimenu> menu.</para>
         </listitem>
         <listitem>
-          <para>Click on the “Page Setup” option</para>
+          <para>Click on the <guimenuitem>Page Setup</guimenuitem>
+          option.</para>
         </listitem>
       </itemizedlist>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C03_330_RepDefPageSetup.png" />
+              <imagedata fileref="images/C03_330_RepDefPageSetup.png"/>
             </imageobject>
-            <caption>Selecting Label Type</caption>
+            <caption>Selecting label type</caption>
           </mediaobject>
         </screenshot></para>
-      <para>Labels use a Paper Size type of "Labels." The following
-      pre-defined Label Types are supported:</para>
+      <para>Labels use a <guilabel>Paper Size</guilabel> type of
+      <guimenuitem>Labels</guimenuitem>. The following pre-defined label types
+      are supported:</para>
       <itemizedlist>
         <listitem>
           <para>Avery 5263</para>
@@ -631,24 +649,26 @@
           <para>CILS ALPI-9200-1</para>
         </listitem>
       </itemizedlist>
-      <para>This controls the size of the Detail section of the report which
+      <para>This controls the size of the detail section of the report which
       is the only portion of the report definition that should be used for a
       label report definition.</para>
       <section>
         <title>Displaying a Parameter Value</title>
         <para>We noted earlier that one of the parameters passed to the report
         definition at run-time was <literal>labelTo</literal>. You may have
-        noticed that the labels show the value of the user’s input for this
+        noticed that the labels show the value of the user's input for this
         parameter in the lower right corner of each label. This was
-        accomplished by creating a special Properties field that references
-        “Parameter Query” in the query source field and the name of the
-        parameter <literal>labelTo</literal> in the Column field.</para>
+        accomplished by creating a special properties field that references
+        <guimenuitem>Parameter Query</guimenuitem> in the <guilabel>Query
+        Source</guilabel> field and the name of the parameter
+        <literal>labelTo</literal> in the <guilabel>Column</guilabel>
+        field.</para>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/C03_340_DisplayParamValue.png" />
+                <imagedata fileref="images/C03_340_DisplayParamValue.png"/>
               </imageobject>
-              <caption>Parameter Values for Label</caption>
+              <caption>Parameter values for label</caption>
             </mediaobject>
           </screenshot></para>
         <para>The other values for fields on this report definition were
@@ -666,7 +686,7 @@ FROM public.cohead cohead, public.shipto shipto, public.sequence
 WHERE cohead.cohead_shipto_id = shipto.shipto_id
   AND ((cohead.cohead_id=&lt;? value("sohead_id") ?&gt;)
   AND (sequence.sequence_value BETWEEN &lt;? value("labelFrom") ?&gt; AND &lt;? value("labelTo") ?&gt;));</programlisting>
-        <para>Let’s take a look at each section of this query:</para>
+        <para>Let's take a look at each section of this query:</para>
         <variablelist>
           <varlistentry>
             <term>SELECT Section</term>
@@ -674,7 +694,7 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
               <para>This portion of the SQL retrieves column values from three
               tables: <literal>sequence</literal>, <literal>cohead</literal>,
               and <literal>shipto</literal>. The values retrieved are used to
-              define the Columns in the Property (Fields) session which
+              define the columns in the Property (Fields) session which
               controls what and how dynamic information is displayed on the
               label. The descriptions of these fields are self
               explanatory.</para>
@@ -686,25 +706,25 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
               <para>This portion of the SQL specifies the tables from which
               the query retrieves the data:</para>
               <table>
-                <title>Tables Used in FROM Section</title>
+                <title>Tables used in FROM section</title>
                 <tgroup cols="2">
                   <tbody>
                     <row rowsep="1">
                       <entry colname="1"><literal>cohead</literal></entry>
-                      <entry colname="2">This table contains Header
-                      information for Sales Orders</entry>
+                      <entry colname="2">This table contains header
+                      information for sales orders.</entry>
                     </row>
                     <row rowsep="1">
                       <entry colname="1"><literal>shipto</literal></entry>
                       <entry colname="2">This table contains customer shipping
-                      addresses</entry>
+                      addresses.</entry>
                     </row>
                     <row rowsep="0">
                       <entry colname="1"><literal>sequence</literal></entry>
                       <entry colname="2">This table contains a sequence of
                       numbers from 1 to 1000 and facilitates the execution of
                       the SQL multiple times in order to generate multiple
-                      labels</entry>
+                      labels.</entry>
                     </row>
                   </tbody>
                 </tgroup>
@@ -732,15 +752,16 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
                   <literal>shipto_id</literal>.</para>
                 </listitem>
                 <listitem>
-                  <para>Causes the SQL to “fire” multiple times to print
-                  multiple labels. The table <literal>sequence</literal>
-                  contains a sequential list of integers from 1 to 1000 and is
-                  used by the query such that it repeats for the number of
-                  times contained in the range defined by the
-                  <literal>labelFrom</literal> and <literal>labelTo</literal>
-                  parameters. The information returned is the same each time
-                  but by design the report writer generates one label each
-                  time the SQL returns a row of information.</para>
+                  <para>Causes the SQL to <emphasis>fire</emphasis> multiple
+                  times to print multiple labels. The table
+                  <literal>sequence</literal> contains a sequential list of
+                  integers from 1 to 1000 and is used by the query such that
+                  it repeats for the number of times contained in the range
+                  defined by the <literal>labelFrom</literal> and
+                  <literal>labelTo</literal> parameters. The information
+                  returned is the same each time but by design the report
+                  writer generates one label each time the SQL returns a row
+                  of information.</para>
                 </listitem>
               </itemizedlist>
             </listitem>
@@ -753,100 +774,105 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
         <note>
           <para>Finally, for the sake of simplicity, this sample label's SQL
           only generates labels for orders in which the shipping address is
-          selected from the list of Ship-To's by customer. In this case this
+          selected from the list of ship-to's by customer. In this case this
           scenario the shipping address is contained in the table
           <literal>shipto</literal>. For orders where the ship to address is
-          merely copied using the COPY TO SHIP-TO -&gt; button, the address
-          information is contained in the table <literal>cohead</literal>. A
-          more sophisticated query, leveraging MetaSQL could test for this
-          condition (the value of column <literal>cohead_shipto_id =
-          -1</literal> in table <literal>cohead</literal>) and retrieve the
-          shipping information directly from <literal>cohead</literal>. If you
-          decide to re-create this label, make certain to test it against a
-          Sales Order that uses an address from the list of pre-defined
-          customer Ship-To's.</para>
+          merely copied using the <guibutton>COPY TO SHIP-TO -&gt;</guibutton>
+          button, the address information is contained in the table
+          <literal>cohead</literal>. A more sophisticated query, leveraging
+          MetaSQL could test for this condition (the value of column
+          <literal>cohead_shipto_id = -1</literal> in table
+          <literal>cohead</literal>) and retrieve the shipping information
+          directly from <literal>cohead</literal>. If you decide to re-create
+          this label, make certain to test it against a sales order that uses
+          an address from the list of pre-defined customer ship-to's.</para>
         </note>
       </section>
       <section>
         <title>Linking Label Name to Report Definition</title>
         <para>Once the report definition is created, it is time to link it to
-        a user defined Form Name:</para>
+        a user defined form name:</para>
         <itemizedlist>
           <listitem>
-            <para>Pull down the xTuple System menu</para>
+            <para>Pull down the xTuple <guimenu>System</guimenu> menu.</para>
           </listitem>
           <listitem>
-            <para>Click on the Master Information menu</para>
+            <para>Click on the <guimenu>Master Information</guimenu>
+            menu.</para>
           </listitem>
           <listitem>
-            <para>Select the option “Forms”</para>
+            <para>Select the option <guimenuitem>Forms</guimenuitem>.</para>
           </listitem>
           <listitem>
-            <para>Click the NEW button</para>
+            <para>Click the <guibutton>NEW</guibutton> button.</para>
           </listitem>
         </itemizedlist>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/C03_350_LabelFormLink.png" />
+                <imagedata fileref="images/C03_350_LabelFormLink.png"/>
               </imageobject>
-              <caption>Linking Label Names to Report Definitions</caption>
+              <caption>Linking label names to report definitions</caption>
             </mediaobject>
           </screenshot></para>
-        <para>The Form Name field is a user friendly description of the label
-        displayed to the user when the user is selecting a label type to
-        print. It could, for instance, link to a special report definition in
-        the Report field that is unique to a specific customer. The # of
-        Labels per Page field is not used.</para>
-        <para>To print your labels, first create a Sales Order that uses a
+        <para>The <guilabel>Form Name</guilabel> field is a user friendly
+        description of the label displayed to the user when the user is
+        selecting a label type to print. It could, for instance, link to a
+        special report definition in the <guilabel>Report</guilabel> field
+        that is unique to a specific customer. The <guilabel># of Labels per
+        Page</guilabel> field is not used.</para>
+        <para>To print your labels, first create a sales order that uses a
         pre-defined customer ship-to address. Then:</para>
         <itemizedlist>
           <listitem>
-            <para>Pull down the xTuple Inventory menu</para>
+            <para>Pull down the xTuple <guimenu>Inventory</guimenu>
+            menu.</para>
           </listitem>
           <listitem>
-            <para>Click on the Forms menu</para>
+            <para>Click on the <guimenu>Forms</guimenu> menu.</para>
           </listitem>
           <listitem>
-            <para>Select the option Print Shipping Labels by SO #</para>
+            <para>Select the option <guimenuitem>Print Shipping Labels by
+            Sales Order Number</guimenuitem>.</para>
           </listitem>
         </itemizedlist>
         <para><screenshot>
             <mediaobject>
               <imageobject>
-                <imagedata fileref="images/C03_310_GenLabelReport.png" />
+                <imagedata fileref="images/C03_310_GenLabelReport.png"/>
               </imageobject>
-              <caption>Generating Custom Shipping Labels</caption>
+              <caption>Generating custom shipping labels</caption>
             </mediaobject>
           </screenshot></para>
         <itemizedlist>
           <listitem>
-            <para>In the field Sales Order #, enter the order number sales
-            order you just created</para>
+            <para>In the field <guilabel>Sales Order #</guilabel>, enter the
+            order number sales order you just created.</para>
           </listitem>
           <listitem>
-            <para>In the choice field Report Name, select the name of the
-            label you just liked to your report definition using the Forms
-            session</para>
+            <para>In the choice field <guilabel>Report Name</guilabel>, select
+            the name of the label you just liked to your report definition
+            using the forms session.</para>
           </listitem>
           <listitem>
-            <para>Set the Label from field to 1 and the To field to 3</para>
+            <para>Set the label <guilabel>From</guilabel> field to "1" and the
+            <guilabel>To</guilabel> field to "3".</para>
           </listitem>
           <listitem>
-            <para>Click the PRINT button</para>
+            <para>Click the <guibutton>PRINT</guibutton> button.</para>
           </listitem>
         </itemizedlist>
-        <para>xTuple will print 3 labels, based on the unique report
-        definition you linked to the Report Name selected, that contain
-        information for the customer’s ship-to address tied to the order you
-        entered.</para>
+        <para>xTuple will print three labels, based on the unique report
+        definition you linked to the <guilabel>Report Name</guilabel>
+        selected, that contain information for the customer's ship-to address
+        tied to the order you entered.</para>
       </section>
     </section>
   </section>
   <section>
     <title>Report Importing Tools</title>
-    <para>In Chapter One we learned how to save a report definition to an XML
-    (Extensible Markup Language) file that is external to the xTuple database.
+    <para>In chapter one we learned how to save a report definition to an XML
+    (extensible markup language) file that is external to the xTuple database.
     These files may be used as a backup and as a means to share reports
     definitions throughout the xTuple community.</para>
     <para>In this chapter we will learn about two tools that facilitate the
@@ -861,42 +887,44 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
       <para>The first tool we will look at is the Report Import Tool. This
       tool runs on all supported client platforms and provides a simple, easy
       to use graphical user interface importation capability. The name of the
-      binary file that you execute from a command line to start the Report
-      Import Tool is importrptgui (note that on the Windows platform you will
-      include the ‘.exe’ suffix).</para>
+      binary file that you execute from a command line to start the report
+      import tool is <emphasis>importrptgui</emphasis> (note that on the
+      Windows platform you will include the '.exe' suffix).</para>
       <para>The Report Import Tool is designed to simplify the process of
       uploading multiple reports to an xTuple database. For optimal
-      performance, the importrptgui file should be placed in the same
-      directory as the xTuple (‘.exe’ on Windows) client file.</para>
+      performance, the <emphasis>importrptgui</emphasis> file should be placed
+      in the same directory as the xTuple ('.exe' on Windows) client
+      file.</para>
       <para>When you open the utility, you will notice that you are brought to
-      the standard xTuple log in screen. Log in to the database where you want
+      the standard xTuple Log In screen. Log in to the database where you want
       to upload your reports. As with the xTuple client, you may click the
-      OPTIONS button to change these settings.</para>
+      <guibutton>OPTIONS</guibutton> button to change these settings.</para>
       <para>From the command line, and in the directory where the xTuple
-      client files and the importrptgui binary files are co-located, run
-      importrptgui. You will see:</para>
+      client files and the <emphasis>importrptgui</emphasis> binary files are
+      co-located, run <emphasis>importrptgui</emphasis>. You will see:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_100_RptImportTool.png" />
+              <imagedata fileref="images/C04_100_RptImportTool.png"/>
             </imageobject>
-            <caption>Main Screen of importrptgui Tool</caption>
+            <caption>Main screen of importrptgui tool</caption>
           </mediaobject>
         </screenshot></para>
       <para>The definitions that you import with this tool may be newly
       created reports, or, updated versions of already existing
       reports.</para>
-      <para>Using the ADD button on the GUI screen, browse for the directory
-      where you have saved your report definition .xml files. Once you have
-      located and opened the directory where the files are stored, you may add
-      them individually by double-clicking on them one-at-a-time. Or, you may
-      select all or a subset of the total using your window manager.</para>
+      <para>Using the <guibutton>ADD</guibutton> button on the GUI screen,
+      browse for the directory where you have saved your report definition
+      .xml files. Once you have located and opened the directory where the
+      files are stored, you may add them individually by double-clicking on
+      them one-at-a-time. Or, you may select all or a subset of the total
+      using your window manager.</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_110_RptImportToolSelectFiles.png" />
+              <imagedata fileref="images/C04_110_RptImportToolSelectFiles.png"/>
             </imageobject>
-            <caption>Importing Report Definitions in XML Format</caption>
+            <caption>Importing report definitions in XML format</caption>
           </mediaobject>
         </screenshot></para>
       <para>As you load reports into the list, you will see a number in
@@ -909,54 +937,57 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_120_RptImportToolEditGrade.png" />
+              <imagedata fileref="images/C04_120_RptImportToolEditGrade.png"/>
             </imageobject>
-            <caption>Report Grading</caption>
+            <caption>Report grading</caption>
           </mediaobject>
         </screenshot></para>
       <para>It is important to remember that when running a report, xTuple
-      uses the report definition with the highest grade (for example, 10 runs
-      before 9). xTuple recommends that you never overwrite the report
-      definition with grade 0, reserving this for the definition provided by
+      uses the report definition with the highest grade (for example, "10"
+      runs before "9"). xTuple recommends that you never overwrite the report
+      definition with grade "0", reserving this for the definition provided by
       xTuple.</para>
       <para>If after you are done adding reports to the list you find a report
       which you do not want to upload, simply highlight the report and select
-      the REMOVE button. The report will be removed from the list, and it will
-      not be uploaded.</para>
+      the <guibutton>REMOVE</guibutton> button. The report will be removed
+      from the list, and it will not be uploaded.</para>
       <para>Once you are satisfied with your list of reports and the grades
-      you have assigned, highlight individual reports or use the SELECT ALL
-      button to select all of the reports for importing. After the desired
-      reports have been highlighted, select the IMPORT button. The highlighted
-      reports will be uploaded to the database you logged into when you
-      started your session.</para>
+      you have assigned, highlight individual reports or use the
+      <guibutton>SELECT ALL</guibutton> button to select all of the reports
+      for importing. After the desired reports have been highlighted, select
+      the <guibutton>IMPORT</guibutton> button. The highlighted reports will
+      be uploaded to the database you logged into when you started your
+      session.</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_130_RptImpTlSelectAll_Import.png" />
+              <imagedata fileref="images/C04_130_RptImpTlSelectAll_Import.png"/>
             </imageobject>
-            <caption>Selecting Reports To Be Imported</caption>
+            <caption>Selecting reports to be imported</caption>
           </mediaobject>
         </screenshot></para>
-      <para>The Messages section of the Report import Tool shows the status of
-      your import. To exit, select the EXIT option from the “File” menu―or
-      click on the “X” in the upper-right hand corner of the screen.</para>
+      <para>The <guilabel>Messages</guilabel> section of the Report Import
+      Tool shows the status of your import. To exit, select the
+      <guimenuitem>EXIT</guimenuitem> option from the <guimenu>File</guimenu>
+      menu―or click on the <guibutton>X</guibutton> in the upper-right hand
+      corner of the screen.</para>
       <para>After importing report definitions, you may want to open the
       xTuple report writer and view the report definitions you
       imported.</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_140_RptImpToolResult.png" />
+              <imagedata fileref="images/C04_140_RptImpToolResult.png"/>
             </imageobject>
-            <caption>Updated Grade After Import</caption>
+            <caption>Updated grade after import</caption>
           </mediaobject>
         </screenshot></para>
       <para>While report definitions can be loaded from the .xml definition
       file through the report writer itself, the Report Import Tool expedites
       this process when multiple report definitions require
       importation.</para>
-      <para>Now let’s look at a tool that enables you to import from the
-      operating system’s command line on a client computer.</para>
+      <para>Now let's look at a tool that enables you to import from the
+      operating system's command line on a client computer.</para>
     </section>
     <section>
       <title>importrpt</title>
@@ -972,12 +1003,12 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_200_RptImpCMDLine.png" />
+              <imagedata fileref="images/C04_200_RptImpCMDLine.png"/>
             </imageobject>
-            <caption>Using importrpt Tool</caption>
+            <caption>Using importrpt tool</caption>
           </mediaobject>
         </screenshot></para>
-      <para>The name of the binary is importrpt (with the ‘.exe’ extension on
+      <para>The name of the binary is importrpt (with the '.exe' extension on
       Windows) and should be collocated with the xTuple client application
       files. The listing below shows the command, as executed above, in a more
       readable fashion:</para>
@@ -988,10 +1019,11 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
 -f=C:\xTuple\report_xml\Routing.xml
 -grade=10
 </programlisting>
-      <para>Let’s take a look at all of the options available in importrpt to
-      understand each a little better:</para>
+      <para>Let's take a look at all of the options available in
+      <emphasis>importrpt</emphasis> to understand each a little
+      better:</para>
       <para><table>
-          <title>Options Available to importrpt</title>
+          <title>Options available to importrpt</title>
           <tgroup cols="2">
             <thead>
               <row>
@@ -1004,15 +1036,15 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
                 <entry colname="1"><literal>-databaseURL=&lt;connection
                 URL&gt;</literal></entry>
                 <entry colname="2">Specify the connection information that
-                importrpt should use when loading a report definition. The
-                connection URL is in the following format:
-                <literal>psql://servername/database[:port]</literal>. In the
-                connection URL, the <literal>servername</literal> is the host
-                or IP address of the server where the database is running. For
-                example: <literal>somehost.xTuple.com</literal>. The
-                <literal>database</literal> is the name of the actual database
-                you want to connect to on the specified server. For example:
-                <literal>mydb</literal>. The last option,
+                <emphasis>importrpt</emphasis> should use when loading a
+                report definition. The connection URL is in the following
+                format: <literal>psql://servername/database[:port]</literal>.
+                In the connection URL, the <literal>servername</literal> is
+                the host or IP address of the server where the database is
+                running. For example: <literal>somehost.xTuple.com</literal>.
+                The <literal>database</literal> is the name of the actual
+                database you want to connect to on the specified server. For
+                example: <literal>mydb</literal>. The last option,
                 <literal>port</literal>, is optional. If included, it must
                 follow a colon and be a valid port number. If the port is not
                 specified, the default port of '5432' is used. For example, if
@@ -1048,10 +1080,10 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
                 <entry
                 colname="1"><literal>-grade=&lt;number&gt;</literal></entry>
                 <entry colname="2">The grade used to load a report into the
-                database. A numeric value from 0 to 99 is valid. The default
-                value is 0 if this option is not specified. Grade 0 should
-                generally be reserved for the baseline report definition
-                supplied by xTuple.</entry>
+                database. A numeric value from "0" to "99" is valid. The
+                default value is "0" if this option is not specified. Grade
+                "0" should generally be reserved for the baseline report
+                definition supplied by xTuple.</entry>
               </row>
               <row rowsep="0">
                 <entry colname="1"><literal>-f=&lt;report
@@ -1059,30 +1091,30 @@ WHERE cohead.cohead_shipto_id = shipto.shipto_id
                 <entry colname="2">The name of the report definition file (as
                 it appears on your disk) that you are loading into the
                 database. The path may be included if the file is located in a
-                directory that is different from the one in which importrpt is
-                located and the syntax for the path will vary by operating
-                system.</entry>
+                directory that is different from the one in which
+                <emphasis>importrpt</emphasis> is located and the syntax for
+                the path will vary by operating system.</entry>
               </row>
             </tbody>
           </tgroup>
         </table></para>
       <para>You may have noticed that the report definition loaded in our
-      example above was for the Routing report and that grade was assigned a
-      value of 20. If, after running importrpt, we start the xTuple report
+      example above was for the routing report and that grade was assigned a
+      value of "20". If, after running importrpt, we start the xTuple report
       writer and browse the report definitions, we will find that we now have
-      an additional report definition for the Routing:</para>
+      an additional report definition for the routing:</para>
       <para><screenshot>
           <mediaobject>
             <imageobject>
-              <imagedata fileref="images/C04_210_RptImpCMDLineResult.png" />
+              <imagedata fileref="images/C04_210_RptImpCMDLineResult.png"/>
             </imageobject>
-            <caption>Report Grade Updated</caption>
+            <caption>Report grade updated</caption>
           </mediaobject>
         </screenshot></para>
-      <para>We can see that Routing has 3 definitions: 0, 10, and 20. When a
-      user runs the Routing report, xTuple will use the definition with grade
-      20: the definition we just imported using the importrpt command line
-      tool.</para>
+      <para>We can see that routing has three definitions: "0", "10", and
+      "20". When a user runs the routing report, xTuple will use the
+      definition with grade "20": the definition we just imported using the
+      importrpt command line tool.</para>
     </section>
   </section>
 </chapter>
