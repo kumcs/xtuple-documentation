@@ -5,138 +5,110 @@
 <section id="apOpenItemDebit">
   <title><indexterm significance="normal">
       <primary>debit memos</primary>
-
       <secondary>entering new</secondary>
     </indexterm><indexterm significance="normal">
       <primary>accounts receivable</primary>
-
       <secondary>entering debit memos for</secondary>
     </indexterm>Enter Miscellaneous Debit Memo</title>
-
   <para>A miscellaneous debit memo is like a voucher—the main difference being
   that a miscellaneous debit memo is not necessarily linked to a purchase
   order. To enter a miscellaneous debit memo, go to <guimenuitem>Accounting
   &gt; Accounts Payable &gt; Memos &gt; New Misc. Debit Memo</guimenuitem>.
   The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/apOpenItemDebitNotes.png"/>
         </imageobject>
-
         <caption>Enter Miscellaneous Debit Memo Notes</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When entering a miscellaneous debit memo, you are presented with the
   following options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Vendor #</term>
-
       <listitem>
         <para>Enter the vendor number of the vendor you want to enter a
         miscellaneous debit memo for.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Document Date</term>
-
       <listitem>
         <para>Specify a date to associate with the miscellaneous debit
         memo.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Due Date</term>
-
       <listitem>
         <para>Displays the due date for the miscellaneous debit memo.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Document Type</term>
-
       <listitem>
         <para>Displays the document type, namely <guilabel>Debit
         Memo</guilabel>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Document #</term>
-
       <listitem>
         <para>Displays the next available miscellaneous debit memo
         number.</para>
-
         <para>The value for the next available debit memo number can be
         configured at the system level.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>P/O #</term>
-
       <listitem>
         <para>Enter a purchase order number to associate with the credit memo.
         You may leave this field blank if you do not want to enter an
         associated purchase order number.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Journal #</term>
-
       <listitem>
         <para>Displays the journal number if any amount has been
         applied.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Use Prepaid Account</term>
-
       <listitem>
         <para>If you select this option, the default prepaid account defined
         for the vendor type under the payables assignments will be
         used.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Distribution Account</term>
-
       <listitem>
         <para>Specify an alternate account to use in place of the default
-        prepaid account.</para>
+        prepaid account. Note that you will have to manually type in the
+        account number to the alternate account. A message box will come up
+        asking, "This account is not normally used here, are you sure?", click
+        <guibutton>YES</guibutton>.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Terms</term>
-
       <listitem>
         <para>By default, the terms defined on the Vendor master for the
         specified vendor will be used here.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Status</term>
-
       <listitem>
         <para>Choose from the following status options:</para>
-
         <variablelist>
           <varlistentry>
             <term>Open</term>
-
             <listitem>
               <para>Select to allow normal processing for the open payable. If
               open items are placed on hold, they may not be selected for
@@ -145,10 +117,8 @@
               an open item is closed, it cannot be reopened.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>On Hold</term>
-
             <listitem>
               <para>Select to place the open payable on hold. If open items
               are on hold, they may not be selected for payment. You can take
@@ -160,45 +130,35 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Amount</term>
-
       <listitem>
         <para>Specify the amount of the miscellaneous debit memo.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Paid</term>
-
       <listitem>
         <para>Displays the amount applied to date for the miscellaneous debit
         memo.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Balance</term>
-
       <listitem>
         <para>Displays the remaining amount still available to apply for the
         miscellaneous debit memo.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax Zone</term>
-
       <listitem>
         <para>Displays the tax zone associated with the specified
         vendor.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Tax</term>
-
       <listitem>
         <para>Tax will be calculated automatically if the associated tax code
         is configured to calculate tax on memos. You can link a tax code to
@@ -211,25 +171,20 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <variablelist>
     <varlistentry>
       <term>Notes</term>
-
       <listitem>
         <para>This is a scrolling text field with word-wrapping for entering
         notes related to the miscellaneous debit memo.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Print on post</term>
-
       <listitem>
         <para>Select if you want to print a copy of the debit memo after the
         <guibutton>POST</guibutton> button is selected. Debit memos may also
         be reprinted from, among other places, the Vendor screen.</para>
-
         <para role="xtconnect"><note>
             <para>If the vendor specified on the debit memo has an EDI profile
             attached, you may encounter an EDI processing interface when
@@ -238,25 +193,20 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To view applications, select the
   <guimenuitem>Applications</guimenuitem> tab at the bottom of the screen. The
   following screen will appear:</para>
-
   <screenshot>
     <mediaobject>
       <imageobject>
         <imagedata fileref="images/apOpenItemDebitApplications.png"/>
       </imageobject>
-
       <caption>Enter Miscellaneous Debit Memo Applications</caption>
     </mediaobject>
   </screenshot>
-
   <variablelist>
     <varlistentry>
       <term>Applications</term>
-
       <listitem>
         <para>Display lists the history of applications related to the
         miscellaneous debit memo, if any.</para>
