@@ -12,7 +12,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderItem.png" />
+          <imagedata fileref="images/salesOrderItem.png"/>
         </imageobject>
         <caption>Create new Sales Order Line Item</caption>
       </mediaobject>
@@ -191,14 +191,14 @@
       </listitem>
     </varlistentry>
     <varlistentry>
-      <term>Qty. UOM</term>
+      <term>Selling UOM</term>
       <listitem>
         <para>Specify the unit of measure (UOM) to be used when selling the
-        line item. Sold items may be assigned multiple Selling UOMs. These
+        line item. Sold items may be assigned multiple selling UOMs. These
         alternate UOMs may be defined on the Item master. You may also select
         a global conversion ratio here. Global conversions have the label
         <literal>Global</literal> appended to them. If a line item has no
-        Selling UOM defined, then the inventory UOM will be used here by
+        selling UOM defined, then the inventory UOM will be used here by
         default.<tip>
             <para>When sales orders are entered, the system will search for
             quantity break matches between the sales order item and any
@@ -475,7 +475,7 @@
         Order</guimenuitem> option on the <guimenuitem>Supply</guimenuitem>
         tab. The following will be displayed:<mediaobject>
             <imageobject>
-              <imagedata fileref="images/salesOrderItem_availabilitySupply.png" />
+              <imagedata fileref="images/salesOrderItem_availabilitySupply.png"/>
             </imageobject>
             <caption><para>Supply Order information for manufactured
             item</para></caption>
@@ -643,7 +643,7 @@
   item:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/salesOrderItem_availabilitySupply2.png" />
+      <imagedata fileref="images/salesOrderItem_availabilitySupply2.png"/>
     </imageobject>
     <caption><para>Supply Order information for bought item</para></caption>
   </mediaobject>
@@ -671,7 +671,7 @@
   Available item sources will be displayed:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/salesOrderItem_availabilityItemSources.png" />
+      <imagedata fileref="images/salesOrderItem_availabilityItemSources.png"/>
     </imageobject>
     <caption><para>Available Item Sources</para></caption>
   </mediaobject>
@@ -681,7 +681,7 @@
   displayed:</para>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="images/salesOrderItem_availabilitySubstitutes.png" />
+      <imagedata fileref="images/salesOrderItem_availabilitySubstitutes.png"/>
     </imageobject>
     <caption><para>Available Substitutes</para></caption>
   </mediaobject>
@@ -716,7 +716,7 @@
   appear:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/salesOrderItem_costsHistory.png" />
+        <imagedata fileref="images/salesOrderItem_costsHistory.png"/>
       </imageobject>
       <caption><para>Costs History</para></caption>
     </mediaobject></para>
@@ -763,7 +763,7 @@
   appear:</para>
   <para><mediaobject>
       <imageobject>
-        <imagedata fileref="images/salesOrderItem_salesHistory.png" />
+        <imagedata fileref="images/salesOrderItem_salesHistory.png"/>
       </imageobject>
       <caption><para>Sales History</para></caption>
     </mediaobject></para>
@@ -837,7 +837,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderItem_itemCharacteristicsTab.png" />
+          <imagedata fileref="images/salesOrderItem_itemCharacteristicsTab.png"/>
         </imageobject>
         <caption>Sales Order line item Characteristics</caption>
       </mediaobject>
@@ -877,7 +877,7 @@
         the item may increase. The base price shows the price before any
         characteristic list prices have been added to the net unit price. To
         learn more about adding price characteristics to configured items, see
-        <xref linkend="configItemChar" />.</para>
+        <xref linkend="configItemChar"/>.</para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -897,7 +897,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderItem_costs.png" />
+          <imagedata fileref="images/salesOrderItem_costs.png"/>
         </imageobject>
         <caption>Sales Order line item Detail</caption>
       </mediaobject>
@@ -997,7 +997,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderItem_notesTab.png" />
+          <imagedata fileref="images/salesOrderItem_notesTab.png"/>
         </imageobject>
         <caption>Sales Order line item Notes</caption>
       </mediaobject>
@@ -1025,7 +1025,7 @@
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderItem_commentsTab.png" />
+          <imagedata fileref="images/salesOrderItem_commentsTab.png"/>
         </imageobject>
         <caption>Sales Order line item Comments</caption>
       </mediaobject>
@@ -1036,14 +1036,14 @@
     appear in the list of line item comments.</para>
   </note>
   <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
   <para>To define an alternate cost of sales account for a sales order line
   item, select the <guimenuitem>Accounting</guimenuitem> tab at the bottom of
   the screen, as shown below:</para>
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/salesOrderItem_costofsalesTab.png" />
+          <imagedata fileref="images/salesOrderItem_costofsalesTab.png"/>
         </imageobject>
         <caption>Sales Order line item Accounting</caption>
       </mediaobject>
@@ -1070,5 +1070,5 @@
     </varlistentry>
   </variablelist>
   <xi:include href="priceList.xml" xpointer="element(/1)"
-              xmlns:xi="http://www.w3.org/2001/XInclude" />
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
