@@ -367,9 +367,40 @@
     </imageobject>
     <caption><para>Invoice Characteristics</para></caption>
   </mediaobject>
-  <xi:include href="../widgets/characteristic.xml"
-              xpointer="characteristiclWidget"
-              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To create a new characteristic for your invoice, select the
+  <guibutton>NEW</guibutton> button in the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/invoice_characteristic.png"/>
+        </imageobject>
+        <caption>Characteristic: Invoice</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new characteristic, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Characteristic</term>
+      <listitem>
+        <para>Select a characteristic from the list of characteristics
+        available for your current context. To learn more about how
+        characteristics are linked to specific contexts, please see <xref
+        linkend="characteristic"/>.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Value</term>
+      <listitem>
+        <para>Enter a value to associate with the characteristic.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>Invoice characteristics are copied in from the sales order,
+  miscellaneous invoices can have characteristics added in from this window.
+  </para>
   <para>To add notes to an invoice, select the
   <guimenuitem>Notes</guimenuitem> tab at the top of the Invoice screen. If
   the invoice was created from a sales order, any sales order notes will be
