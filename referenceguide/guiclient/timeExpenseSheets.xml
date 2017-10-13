@@ -5,29 +5,23 @@
 <section id="timeExpenseSheets" role="xtte">
   <title><indexterm significance="normal">
       <primary>worksheets</primary>
-
       <secondary>management of</secondary>
     </indexterm>Worksheets</title>
-
   <para>Worksheets are documents used to capture time and expenses for
   employees and contractors. When worksheets are created, they appear on this
   Worksheets screen where managers can review and approve them all in one
   place.</para>
-
   <note>
     <para>For more information on using worksheets to help manage projects,
     please see the eBook <ulink
     url="https://www.xtuple.org/sites/default/files/prodguide/project/index.html">Managing
     Projects with xTuple</ulink>.</para>
   </note>
-
   <para>The following set up information will help ensure your worksheets are
   complete when you process them:</para>
-
   <variablelist>
     <varlistentry>
       <term>Employees</term>
-
       <listitem>
         <para>Should have compensation rate defined, but billing rate is
         optional. The compensation rate is used to determine the labor cost of
@@ -39,10 +33,8 @@
         system.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Contractors</term>
-
       <listitem>
         <para>Should also have compensation rate, but billing rate is
         optional. For contractors, the compensation rate is used to determine
@@ -58,53 +50,41 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>To review worksheets, go to <guimenuitem>CRM &gt; Project &gt;
   Worksheets</guimenuitem>. The following screen will appear:</para>
-
   <para><screenshot>
       <mediaobject>
         <imageobject>
           <imagedata fileref="images/timeExpenseSheets.png"/>
         </imageobject>
-
         <caption>Worksheets</caption>
       </mediaobject>
     </screenshot></para>
-
   <para>When reviewing worksheets, you are presented with the following
   options:</para>
-
   <variablelist>
     <varlistentry>
       <term>Employees</term>
-
       <listitem>
         <para>Specify which employee worksheets you want to include in the
         display, using the specified date range:</para>
-
         <variablelist>
           <varlistentry>
             <term>All</term>
-
             <listitem>
               <para>Select to include worksheets for all employees in the
               display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Selected</term>
-
             <listitem>
               <para>Select to include a specific employee's worksheets in the
               display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Direct Reports</term>
-
             <listitem>
               <para>Select to include employee worksheets for a specific
               manager in the display. Managers are linked to employees on the
@@ -114,27 +94,21 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Week of</term>
-
       <listitem>
         <para>Specify a date range for the worksheets you want to
         review:</para>
-
         <variablelist>
           <varlistentry>
             <term>Start Date</term>
-
             <listitem>
               <para>Worksheets dated on and after this date will be included
               in the display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>End Date</term>
-
             <listitem>
               <para>Worksheets dated on and before this date will be included
               in the display.</para>
@@ -143,35 +117,27 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Status</term>
-
       <listitem>
         <para>Specify which worksheet statuses you want to include in the
         display:</para>
-
         <variablelist>
           <varlistentry>
             <term>Open</term>
-
             <listitem>
               <para>Select to include open worksheets in the display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Approved</term>
-
             <listitem>
               <para>Select to include approved worksheets in the
               display.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Closed</term>
-
             <listitem>
               <para>Select to include closed worksheets in the display.</para>
             </listitem>
@@ -179,28 +145,26 @@
         </variablelist>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>Worksheets</term>
-
       <listitem>
         <para>Display will list worksheets based on the specified parameters.
         By right-clicking on a worksheet, you can perform several actions,
-        including edit, print, delete, and approve.</para>
+        including <guimenuitem>edit</guimenuitem>,
+        <guimenuitem>print</guimenuitem>, and
+        <guimenuitem>delete</guimenuitem>. Depending on a worksheet's status,
+        it's right-click options can vary. Open worksheets can be approved
+        while closed worksheets can be re-opened.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term>When Processing</term>
-
       <listitem>
         <para>Select one or more of the following options to be performed
         automatically when processing worksheets:</para>
-
         <variablelist>
           <varlistentry>
             <term>Invoice</term>
-
             <listitem>
               <para>Select to generate an invoice to bill the specified
               customer for their billable time and/or expense entries on the
@@ -208,10 +172,8 @@
               entries.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Voucher</term>
-
             <listitem>
               <para>Select to generate a voucher to reimburse contractor type
               employees for their expenses. In the case of contractors,
@@ -219,10 +181,8 @@
               hours worked. Regular employees are not paid in this way.</para>
             </listitem>
           </varlistentry>
-
           <varlistentry>
             <term>Post Time</term>
-
             <listitem>
               <para>Select to post employee labor and overhead costs to the
               general ledger. This step applies to employees only and does not
@@ -233,30 +193,23 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <para>The following buttons are unique to this screen:</para>
-
   <variablelist>
     <varlistentry>
       <term><guibutton>NEW</guibutton></term>
-
       <listitem>
         <para>Select this button to create a new worksheet.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>APPROVE</guibutton></term>
-
       <listitem>
         <para>Highlight one or multiple open worksheets and then select this
         button to approve the highlighted worksheets.</para>
       </listitem>
     </varlistentry>
-
     <varlistentry>
       <term><guibutton>PROCESS</guibutton></term>
-
       <listitem>
         <para>Highlight one or multiple open worksheets and then select this
         button to process the highlighted worksheets, using the processing
@@ -264,7 +217,6 @@
       </listitem>
     </varlistentry>
   </variablelist>
-
   <xi:include href="timeExpenseSheet.xml" xpointer="element(/1)"
               xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </section>
