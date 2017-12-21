@@ -55,7 +55,7 @@ These need to be installed on the database server, not client machines.
 - Features issue #[31560](http://www.xtuple.org/xtincident/view/bugs/31560) _Support Multiple Column Order By on XTreeWidget_
 - Features issue #[31636](http://www.xtuple.org/xtincident/view/bugs/31636) _support multi-select in CRM lists to process multiple objects_
 
-### Bug fixes in 4.11.1
+### Bug fixes in 4.11.2
 
 - Fixed issue #[18973](http://www.xtuple.org/xtincident/view/bugs/18973) _Key entered January dates not saved correctly using DD/MM/YY dates_
 - Fixed issue #[19108](http://www.xtuple.org/xtincident/view/bugs/19108) _Extensions load in random order_
@@ -87,6 +87,7 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[31118](http://www.xtuple.org/xtincident/view/bugs/31118) _4.11.1 upgrade breaks inventory availability report_
 - Fixed issue #[31126](http://www.xtuple.org/xtincident/view/bugs/31126) _New Purchase Orders take almost a minute to open_
 - Fixed issue #[31133](http://www.xtuple.org/xtincident/view/bugs/31133) _AR Workbench Customer Type Pattern Query Fails_
+- Fixed issue #[31140](http://www.xtuple.org/xtincident/view/bugs/31140) _Inconsistent item cluster_
 - Fixed issue #[31166](http://www.xtuple.org/xtincident/view/bugs/31166) _"Issue Batch" not working_
 - Fixed issue #[31168](http://www.xtuple.org/xtincident/view/bugs/31168) _View Costing Detail reports repeated lines_
 - Fixed issue #[31170](http://www.xtuple.org/xtincident/view/bugs/31170) _Work order routing and pick list do not show revision_
@@ -119,6 +120,7 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[31679](http://www.xtuple.org/xtincident/view/bugs/31679) _‘Error Retrieving Shipment Information’ dialog occurs while returning the stock issued to shipping._
 - Fixed issue #[31701](http://www.xtuple.org/xtincident/view/bugs/31701) _catCost screen Typo's_
 - Fixed issue #[31709](http://www.xtuple.org/xtincident/view/bugs/31709) _User is unable to edit the ‘Prototype’ Type of comments by double clicking on it._
+- Fixed issue #[31799](http://www.xtuple.org/xtincident/view/bugs/31799) _importing csv files through **System > Utilities > Import Data** sometimes fails with %4 error_
 
 ## Deployment Notes
 
