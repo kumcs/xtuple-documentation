@@ -1,7 +1,7 @@
 
 # xTuple Release Notes
 
-## Version 4.11.2 - November, 2017
+## Version 4.11.2 - December, 2017
 
 These are the release notes for the 4.11.2 xTuple ERP release.
 Thanks to all who contributed to make this release possible,
@@ -120,6 +120,8 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[31679](http://www.xtuple.org/xtincident/view/bugs/31679) _‘Error Retrieving Shipment Information’ dialog occurs while returning the stock issued to shipping._
 - Fixed issue #[31701](http://www.xtuple.org/xtincident/view/bugs/31701) _catCost screen Typo's_
 - Fixed issue #[31709](http://www.xtuple.org/xtincident/view/bugs/31709) _User is unable to edit the ‘Prototype’ Type of comments by double clicking on it._
+- Fixed issue #[31735](http://www.xtuple.org/xtincident/view/bugs/31735) _Unable to delete bad email and add correct email to Contact via copy/paste_
+- Fixed issue #[31798](http://www.xtuple.org/xtincident/view/bugs/31798) _EDIT LIST option missing from contact email_
 - Fixed issue #[31799](http://www.xtuple.org/xtincident/view/bugs/31799) _importing csv files through **System > Utilities > Import Data** sometimes fails with %4 error_
 
 ## Deployment Notes
