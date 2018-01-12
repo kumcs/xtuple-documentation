@@ -123,6 +123,9 @@ These need to be installed on the database server, not client machines.
 - Fixed issue #[31735](http://www.xtuple.org/xtincident/view/bugs/31735) _Unable to delete bad email and add correct email to Contact via copy/paste_
 - Fixed issue #[31798](http://www.xtuple.org/xtincident/view/bugs/31798) _EDIT LIST option missing from contact email_
 - Fixed issue #[31799](http://www.xtuple.org/xtincident/view/bugs/31799) _importing csv files through **System > Utilities > Import Data** sometimes fails with %4 error_
+- Fixed issue #[31960](http://www.xtuple.org/xtincident/view/bugs/31960) _*Transform function failing in 4.11_
+- Fixed issue #[31983](http://www.xtuple.org/xtincident/view/bugs/31983) _Receipt of Lot/Location Controlled item results in unbalanced inventory_
+- Fixed issue #[31984](http://www.xtuple.org/xtincident/view/bugs/31984) _Unnecessary change to postinvtrans() in 4.11.2_
 
 ## Deployment Notes
 
