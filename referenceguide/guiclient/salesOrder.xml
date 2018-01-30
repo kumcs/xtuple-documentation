@@ -516,34 +516,8 @@
         <note>
           <para>Sales order line items may exist in any of the following
           statuses:</para>
-          <itemizedlist>
-            <listitem>
-              <para>O = Open</para>
-            </listitem>
-            <listitem>
-              <para>C = Closed</para>
-            </listitem>
-            <listitem>
-              <para>X = Cancelled</para>
-            </listitem>
-            <listitem>
-              <para>R = Ready for shipment (i.e., quantity available)</para>
-            </listitem>
-            <listitem>
-              <para>I = Invoiced</para>
-            </listitem>
-            <listitem>
-              <para>P = Partially-invoiced</para>
-            </listitem>
-            <listitem>
-              <para>H = On credit hold (added to others, for example,
-              OH)</para>
-            </listitem>
-            <listitem>
-              <para>F = Firm (added to others, for example, OF, IF,
-              etc.)</para>
-            </listitem>
-          </itemizedlist>
+          <xi:include href="../appendixa.xml" xpointer="element(/1/6/4)"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
         </note>
       </listitem>
     </varlistentry>

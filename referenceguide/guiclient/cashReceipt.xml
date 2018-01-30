@@ -146,12 +146,9 @@
       <term>Funds Type</term>
       <listitem>
         <para>Specify the type of funds being used for the cash receipt.
-        Choose from the following types (the corresponding letter code for
-        each is also shown): check (C), certified check (T), cash (K), wire
-        transfer (W), and other (O). If you are using xTuple's credit card
-        processing functionality at your site, the following additional funds
-        types options will be available: Master Card (M), Visa (V), American
-        Express (A), Discover Card (D).</para>
+        Choose from the following types: <xi:include href="../appendixa.xml"
+        xpointer="element(/1/6/3)"
+        xmlns:xi="http://www.w3.org/2001/XInclude"/></para>
       </listitem>
     </varlistentry>
   </variablelist>
@@ -160,7 +157,9 @@
     process credit cards from the system, then you must select a valid credit
     card using the <guimenuitem>Credit Card</guimenuitem> tab below. The
     charge transaction will begin processing once you select the
-    <guibutton>SAVE</guibutton> button.</para>
+    <guibutton>SAVE</guibutton> button. If you are using xTuple's credit card
+    processing functionality at your site you'll see additional funds type
+    options.</para>
   </note>
   <tip>
     <para>You can use the funds type, <guilabel>Other</guilabel>, for entering
