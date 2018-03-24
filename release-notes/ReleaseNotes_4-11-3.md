@@ -13,7 +13,7 @@ Martinez, and Scott Zuke.  See below for more information about
 
 A handful of features have been added and a number of bugs fixed since the 4.11.2 release. Our focus has been on xTupleCommerce infrastructure and enhancing the capabilities of CRM.
 
-Of particular interst are the following:
+Of particular interest are the following:
 
 - Problems opening CRM accounts, opportunities, projects, etc. using the widget menu (▼) have been fixed
 - The effects of changing shared addresses have been clarified, which should simplify CRM usage
