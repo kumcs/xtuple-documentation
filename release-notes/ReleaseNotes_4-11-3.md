@@ -1,7 +1,7 @@
 
 # xTuple Release Notes
 
-## Version 4.11.3 - ?????, 2018
+## Version 4.11.3 - March, 2018
 
 These are the release notes for the 4.11.3 xTuple ERP release.
 Thanks to all who contributed to make this release possible, including
