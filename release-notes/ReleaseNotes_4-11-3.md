@@ -69,7 +69,9 @@ Of particular interest are the following:
 - Fixed issue #[32534](http://www.xtuple.org/xtincident/view/bugs/32534) _Entering new PostBooks License Key at ""Expired Key"" Login pop-up does not also update database_
 - Fixed issue #[32550](http://www.xtuple.org/xtincident/view/bugs/32550) _`ccbank_ccbank_ccard_type_check` prevents upgrades once `B` for ACH Bank Account is added_
 - Fixed issue #[32629](http://www.xtuple.org/xtincident/view/bugs/32629) _Process/Locks Manager not nesting properly_
-
+- Fixed issue #[32700](http://www.xtuple.org/xtincident/view/bugs/32675) _4.11.x updater packages can fail when upgrading databases missing selected primary keys_
+- Fixed issue #[32700](http://www.xtuple.org/xtincident/view/bugs/32687) _Wrong cost when void with alt UOM_
+- Fixed issue #[32700](http://www.xtuple.org/xtincident/view/bugs/32700) _When webenabling a demo mfg database, it is possible to create duplicate `xt.sordtype` records_
 
 
 **Note:** See the xTuple ERP [Compatibility Matrix](https://xtupleuniversity.xtuple.com/library/articles/compatibility-matrix).
