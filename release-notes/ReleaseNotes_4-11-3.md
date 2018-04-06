@@ -1,7 +1,7 @@
 
 # xTuple Release Notes
 
-## Version 4.11.3 - March, 2018
+## Version 4.11.3 - April, 2018
 
 These are the release notes for the 4.11.3 xTuple ERP release.
 Thanks to all who contributed to make this release possible, including
@@ -91,14 +91,6 @@ You will need the following two PostgreSQL extensions:
   for details.
 
 These need to be installed on the database server, not client machines.
-
-### Features added in 4.11.3
-
-- Features issue #[?????](http://www.xtuple.org/xtincident/view/bugs/?????) _?????_
-
-### Bug fixes in 4.11.3
-
-- Fixed issue #[??????](http://www.xtuple.org/xtincident/view/bugs/??????) _??????_
 
 ## Deployment Notes
 
