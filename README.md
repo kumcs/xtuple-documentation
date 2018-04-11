@@ -1,4 +1,4 @@
 xtuple-documentation
 ====================
 
-Release notes and possibly other materials regarding the xTuple application.
+This repository contains the _xTuple ERP Reference Guide_, release notes for xTuple ERP, DocBook and XXE support files, and miscellaneous other information.
