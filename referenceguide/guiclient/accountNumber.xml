@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="accountNumber">
+  <title><indexterm significance="normal">
+      <primary>general ledger</primary>
+
+      <secondary>adding new accounts to</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>ledger account numbers</primary>
+
+      <secondary>adding new to g/l</secondary>
+    </indexterm>Ledger Account Number</title>
+
+  <para>To add a new ledger account number, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/accountNumber.png"/>
+        </imageobject>
+
+        <caption>Create new Ledger Account Number</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new ledger account number, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Number</term>
+
+      <listitem>
+        <para>Enter an account number for the account. Depending on how your
+        system is configured, you may add the following segments to an account
+        number in the following order: company segment (optional), profit
+        center segment (optional), main segment (required), and subaccount
+        number (optional). Once a main segment number has been entered and
+        saved, it may not be edited.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Description</term>
+
+      <listitem>
+        <para>Enter a brief description of the account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Ext. Reference</term>
+
+      <listitem>
+        <para>Enter an optional external reference to associate with the
+        account number. Typically this field is left blank. However, this
+        field is useful during a data conversion when the account number is
+        reformatted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>account types</primary>
+
+          <secondary>assignment of</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>account numbers</primary>
+
+          <secondary>assigning types to</secondary>
+        </indexterm>Type</term>
+
+      <listitem>
+        <para>Specify the account type you want to assign the account number
+        to. The following selections are available:
+        <guilabel>Asset</guilabel>, <guilabel>Liability</guilabel>,
+        <guilabel>Expense</guilabel>, <guilabel>Revenue</guilabel>, and
+        <guilabel>Equity</guilabel>. Once an account number has been used in a
+        G/L transaction, you may no longer change the account type.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>subaccount types</primary>
+
+          <secondary>assignment of</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>account numbers</primary>
+
+          <secondary>subaccount types and</secondary>
+        </indexterm>Sub Type</term>
+
+      <listitem>
+        <para>Specify the subaccount type you want to assign the account
+        number to. This is an optional selection.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Active</term>
+
+      <listitem>
+        <para>Select to mark the account as active. Not selecting means the
+        account is inactive. You can only make an account inactive if it has a
+        zero balance. Before deactivating an account, be sure to transfer any
+        balance out of the account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>general ledger</primary>
+
+          <secondary>trial balances and</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>trial balances</primary>
+
+          <secondary>forward-updating of</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>account numbers</primary>
+
+          <secondary>forward-updating and</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>forward-updating</primary>
+
+          <secondary>performed automatically</secondary>
+        </indexterm>Automatically Forward Update Trial Balances</term>
+
+      <listitem>
+        <para>If your site is configured to control trial balance updates on a
+        manual basis, then this option will be visible—allowing you to set
+        forward-updating capability on an account-by-account basis.
+        Conversely, if your site is configured to automatically forward-update
+        accounts in the <guimenuitem>Accounting</guimenuitem> configuration,
+        then this option will be hidden from view. For more information see
+        <xref linkend="configureGL"/>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Comments</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        comments related to the account number.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

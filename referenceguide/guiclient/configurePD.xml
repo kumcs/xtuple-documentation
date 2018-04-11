@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="configurePD">
+  <title><indexterm significance="normal">
+      <primary>configuration</primary>
+      <secondary>of products module</secondary>
+    </indexterm>Configure Products</title>
+  <para>To configure the <guimenu>Products</guimenu> module, go to
+  <guimenuitem>Products &gt; Setup &gt; Configure &gt; Products</guimenuitem>.
+  The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configurePD.png"/>
+        </imageobject>
+        <caption>Configure Products module</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When configuring the <guimenu>Products</guimenu> module, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry role="standard">
+      <term>Enable Transforms</term>
+      <listitem>
+        <para>Select to enable the system's item transformation capability. If
+        not selected, users will be prevented from performing tasks related to
+        item transformations.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Enable Revision Control</term>
+      <listitem>
+        <para>Select to enable the revision control system. If selected,
+        privileged users will be able to maintain revisions for bills of
+        material (BOM) and operations. Revisions may also be used in
+        manufacturing and purchasing processes.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Post Item Changes to the Change Log</term>
+      <listitem>
+        <para>Select to post to the change log any changes made to Item
+        masters.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Allow Inactive Items to be Added to BOMs</term>
+      <listitem>
+        <para>Select to allow inactive items to be added to BOMs.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Allow deletion of Items from Bill of Material</term>
+      <listitem>
+        <para>Select if you want to globally allow users to delete items from
+        BOMs. The <guimenuitem>Delete</guimenuitem> option will be found in
+        the right-click menu on the BOM header screen. If you do not select
+        this option, users will be able to expire but not delete BOM
+        items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Item Search when no results found</term>
+      <listitem>
+        <para>Select if you want an Item Search window to open during sales
+        order entry if users are entering item numbers but not finding any
+        exact matches.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Enforce Unique Item Bar Codes</term>
+      <listitem>
+        <para>Select to ensure that each item will have its own unique
+        barcode. If duplicate barcodes already exist in your database, you
+        will receive an error message upon enabling this option. You can check
+        for duplicates on the Items list screen, sorting on the
+        <guilabel>UPC</guilabel> column. Once you successfully enable this
+        option, users will be prevented from entering duplicate bar code
+        numbers.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Defaults</term>
+      <listitem>
+        <para>Specify preferences for the following defaults:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Set Sold Items as <indexterm significance="normal">
+                <primary>exclusive</primary>
+                <secondary>as default configuration</secondary>
+              </indexterm>Exclusive</term>
+            <listitem>
+              <para>Select to mark all sold items as exclusive by default
+              whenever a new item is created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Default Cost Element for Freight</term>
+            <listitem>
+              <para>Select the user-defined costing element you want to be
+              used by default when freight charges are distributed to voucher
+              line items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>W/O Material Issue Method</term>
+            <listitem>
+              <para>Select one of the available default issue methods.</para>
+              <variablelist>
+                <varlistentry>
+                  <term>Push</term>
+                  <listitem>
+                    <para>Select to issue materials to a work order by a
+                    specific material issue transaction.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Pull</term>
+                  <listitem>
+                    <para>Select to issue materials to a work order by a
+                    material backflush.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Mixed</term>
+                  <listitem>
+                    <para>Select to issue materials to a work order based on
+                    the issue method applied to the materials initially—that
+                    is, either pull or push.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <tip>
+          <para><indexterm significance="normal">
+              <primary>bills of materials</primary>
+              <secondary>deleting items from</secondary>
+            </indexterm>The default settings <guilabel>Set Sold Items as
+          Exclusive </guilabel>and <guilabel>W/O Material Issue
+          Method</guilabel> only apply to newly-created items. They cannot be
+          used to retroactively update already existing items.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term>Enable Work Center Routings</term>
+      <listitem>
+        <para>Select to enable work center routings. De-select to disable
+        routings.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Track Machine Overhead</term>
+            <listitem>
+              <para>If work center routings are enabled, select one of the
+              following methods for tracking machine overhead:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>as Machine Overhead</term>
+                  <listitem>
+                    <para>Select to track machine overhead separately from
+                    other overhead costs, using the machine overhead rate
+                    specified in a Work Center master. Any associated costs
+                    will display in the system-defined machine overhead
+                    costing element.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>with General Overhead</term>
+                  <listitem>
+                    <para>Select to track machine overhead in the same
+                    category as other overhead costs. Any associated costs
+                    will display in the system-defined overhead costing
+                    element. (This is the default setting.)</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term>Enable Breeder Bills of Materials</term>
+      <listitem>
+        <para>Select to enable the system's breeder BOM capability. If not
+        selected, users will be prevented from entering breeder BOMs or
+        performing any tasks related to posting production for breeder BOMs,
+        etc.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Change BOM/Routing Active revision to Substitute when activating a
+      Pending revision</term>
+      <listitem>
+        <para>Select to keep deactivated revisions as Substitutes on routings
+        and BOM. If not selected, deactivated revisions will not be available
+        for future use.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section>
+  <title>Ledger Control</title>
+
+  <para>The ledger control report is designed to help you validate your
+  accounting during the month-end closing process. The report provides a
+  summarized overview of the key ledger control points, comparing the
+  difference between ledger and sub ledger amounts. This information can help
+  you identify (at a high level) areas in the accounting system that require
+  further investigation. To learn more about how to use the ledger control
+  report as a starting point for further action, please see the <ulink
+  url="https://xtupleuniversity.xtuple.com/library/articles/validating-your-ledger-accounts">Validating
+  your ledger control accounts</ulink> article.</para>
+
+  <para>To access the ledger control report, go to <guimenuitem>Accounting
+  &gt; General Ledger &gt; Reports &gt; Ledger Control</guimenuitem>. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/ledgerControl.png"/>
+        </imageobject>
+
+        <caption>Ledger Control report</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>As you can see in the screenshot, the report groups the ledger control
+  points into six core categories:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>Payables</para>
+    </listitem>
+
+    <listitem>
+      <para>Uninvoiced receipts</para>
+    </listitem>
+
+    <listitem>
+      <para>Receivables</para>
+    </listitem>
+
+    <listitem>
+      <para>Inventory</para>
+    </listitem>
+
+    <listitem>
+      <para>WIP</para>
+    </listitem>
+
+    <listitem>
+      <para>Shipping assets</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>Within each category, the report shows the difference between
+  summarized ledger and sub ledger activity. The goal, of course, is to show a
+  difference of $0 for each category. If the difference does not equal to $0,
+  that means you have work to do analyzing the reason(s) for the difference
+  and taking action to correct it. Keep in mind that these figures are
+  summarized. In most, if not all, cases, the information shown is drawn from
+  multiple accounts and document types.</para>
+</section>

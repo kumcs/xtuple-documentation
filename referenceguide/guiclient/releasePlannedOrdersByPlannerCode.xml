@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="releasePlannedOrdersByPlannerCode">
+  <title>Release Planned Orders by Planner Code</title>
+  <para>To release planned orders by planner code, go to <guimenuitem>Schedule
+  &gt; Scheduling &gt; Release Planned Orders</guimenuitem>. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/releasePlannedOrdersByPlannerCode.png" />
+        </imageobject>
+        <caption>Release Planned Orders by Planner Code</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When releasing planned orders by planner code, you are presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Planner Codes</term>
+      <listitem>
+        <para>Select to release planned orders for all planner codes.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify planner code whose planned orders you want to
+        release.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a planner code pattern to select a range of planner codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cutoff Date</term>
+      <listitem>
+        <para>Indicates the last date when planned orders by planner code may
+        be released.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Only Release Firmed</term>
+      <listitem>
+        <para>Select to release only those planned orders which have been
+        firmed. If selected, non-firmed planned orders will not be
+        released.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to release planned orders by planner code for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose planned orders by planner code you want to
+        release.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>RELEASE</guibutton></term>
+      <listitem>
+        <para>Releases the planned orders by planner code. The type of order
+        created is based on the planned order supply type (purchase request,
+        work order, or transfer order). If unreleased transfer orders exists
+        with the appropriate <guilabel>From Site</guilabel> and <guilabel>To
+        Site</guilabel> then planned transfer orders will be appended to the
+        existing orders.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

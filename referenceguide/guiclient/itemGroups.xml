@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="itemGroups">
+  <title><indexterm significance="normal">
+      <primary>item groups</primary>
+
+      <secondary>master list of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>items</primary>
+
+      <secondary>item groups</secondary>
+    </indexterm>Item Groups</title>
+
+  <para>Item groups provide an alternate means for sorting items into
+  categories. The advantage to item groups is that a single item may belong to
+  multiple item groups. This is in contrast to class codes and product
+  categories, in that single items may belong to only one of each of these
+  categories. Item groups can include other item groups and member items. To
+  access the master list of item groups, go to <guimenuitem>Products &gt;
+  Items &gt; Groups</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/itemGroups.png"/>
+        </imageobject>
+
+        <caption>Item Groups</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The Item Groups screen displays an alphabetical list of all existing
+  item groups and their description. To see a list of item groups and member
+  items that belong to a group, expand the group by clicking on the arrow to
+  the left of the group.</para>
+
+  <xi:include href="itemGroup.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

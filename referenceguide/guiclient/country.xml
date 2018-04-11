@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="country">
+  <title><indexterm significance="normal">
+      <primary>countries</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Country</title>
+  <para>To create a new country definition, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/country.png" />
+        </imageobject>
+        <caption>Create new Country</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new country definition, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Country Name</term>
+      <listitem>
+        <para>Enter a unique country name.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Country Abbreviation</term>
+      <listitem>
+        <para>Enter a short abbreviation for the country.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>Defining currency information for countries helps standardize the
+    process of defining currencies.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Currency Name</term>
+      <listitem>
+        <para>Enter a name to identify the country's currency.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Currency Symbol</term>
+      <listitem>
+        <para>Enter a symbol to identify the country's currency. Use special
+        keyboard characters to enter special currency symbols. For example,
+        under Windows, you can create the symbol for Japanese yen by using the
+        following keys: <guibutton>ALT + 0165</guibutton>.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Currency Abbreviation</term>
+      <listitem>
+        <para>Enter a short abbreviation for the country's currency.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Currency Number</term>
+      <listitem>
+        <para>Enter a number to uniquely identify the currency. For example,
+        in the standard currencies defined in the default countries table, the
+        currency number used is the ISO-assigned currency number.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

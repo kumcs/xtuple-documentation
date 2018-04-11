@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section>
+  <title>Purchase Request</title>
+  <para id="purchaseRequest"><informalexample>
+      <para>To create a new purchase request, select the
+      <guibutton>NEW</guibutton> button. The following screen will
+      appear:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/purchaseRequest.png" />
+            </imageobject>
+            <caption>Create new Purchase Request</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>When creating a new purchase request, you are presented with the
+      following options:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Purchase Request #</term>
+          <listitem>
+            <para>Next available purchase request number will automatically
+            display, unless your system requires you to enter purchase request
+            numbers manually. Default values and input parameters for purchase
+            request numbers are configurable at the <guimenu>System</guimenu>
+            level.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Item Number</term>
+          <listitem>
+            <para>Enter the item number of the item you want to create a
+            purchase request for.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>UOM</term>
+          <listitem>
+            <para>Inventory unit of measure.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry role="standard">
+          <term>Site</term>
+          <listitem>
+            <para>Specify the site the purchase request should be created for.
+            If an item is located in more than one site, be sure to specify
+            the correct site for the purchase request.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Qty. Ordered</term>
+          <listitem>
+            <para>Specify the order quantity for the purchase request.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Due Date</term>
+          <listitem>
+            <para>Specify the due date for the purchase request.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Project #</term>
+          <listitem>
+            <para>Specify the associated project number, if any.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Notes</term>
+          <listitem>
+            <para>Enter any notes related to the purchase request.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>The following buttons are unique to this screen:</para>
+      <variablelist>
+        <varlistentry>
+          <term>CREATE</term>
+          <listitem>
+            <para>Select to create the purchase request.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </informalexample></para>
+</section>

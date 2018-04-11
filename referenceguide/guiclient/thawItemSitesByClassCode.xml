@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="thawItemSitesByClassCode">
+  <title><indexterm significance="normal">
+      <primary>item sites</primary>
+
+      <secondary>thawing by class code</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>item sites</primary>
+
+      <secondary>thawing by site</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>thawing</primary>
+
+      <secondary>of item sites</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>physical inventory</primary>
+
+      <secondary>thawing item sites</secondary>
+    </indexterm>Thaw Item Sites by Class Code/Site</title>
+
+  <para>To thaw previously frozen item sites by class code and site, go to
+  <guimenuitem>Inventory &gt; Physical Inventory &gt; Thaw Item
+  Sites</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/thawItemSitesByClassCode.png"/>
+        </imageobject>
+
+        <caption>Thaw Item Sites by Class Code/Site</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When thawing previously frozen item sites by class code and site, you
+  are presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Class Codes</term>
+
+      <listitem>
+        <para>Select to thaw item sites by site for all class codes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify class code whose item sites by site you want to
+        thaw.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pattern</term>
+
+      <listitem>
+        <para>Enter a class code pattern to select a range of class codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Specify site whose item sites are to be thawed.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>THAW</guibutton></term>
+
+      <listitem>
+        <para>Thaws previously frozen item sites by specified class code(s)
+        and site.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="contact">
+  <title><indexterm significance="normal">
+      <primary>contacts</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>customer relationship management</primary>
+
+      <secondary>creating new contacts for</secondary>
+    </indexterm>New Contact</title>
+
+  <para>Contacts are people who may be associated directly with CRM accounts,
+  customers, ship-to addresses, vendors, vendor addresses, and sites. To
+  create a new contact, go to <guimenuitem>CRM &gt; Contact &gt;
+  New</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/contact.png"/>
+        </imageobject>
+
+        <caption>Create new Contact</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new contact, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Number</term>
+
+      <listitem>
+        <para>Displays the system-defined number used to identify the
+        contact.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Active</term>
+
+      <listitem>
+        <para>Select if you are actively doing business with this contact. Not
+        selecting makes the contact inactive.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter the following details for the contact's name:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Title</term>
+
+            <listitem>
+              <para>Select a title from the list of available titles.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>First Name</term>
+
+            <listitem>
+              <para>Enter the contact's first name.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Last Name</term>
+
+            <listitem>
+              <para>Enter the contact's last name.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Initials</term>
+
+            <listitem>
+              <para>Enter the contact's initials.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Job Title</term>
+
+      <listitem>
+        <para>Enter the contact's job title.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Voice</term>
+
+      <listitem>
+        <para>Enter the contact's phone number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Alternate</term>
+
+      <listitem>
+        <para>Enter an alternate phone number for the contact.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Fax</term>
+
+      <listitem>
+        <para>Enter the contact's fax number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>E-Mail</term>
+
+      <listitem>
+        <para>Enter the contact's e-mail address. If the contact has more than
+        one email address, you can enter them by clicking on the arrow and
+        selecting the <guilabel>Edit List</guilabel> option. This will bring
+        up the Contact Email Addresses screen, as shown in the following
+        screenshot:</para>
+
+        <para><screenshot>
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="images/contactemail.png"/>
+              </imageobject>
+
+              <caption>Contact Email Addresses</caption>
+            </mediaobject>
+          </screenshot></para>
+
+        <para>If you use the Contact Merge utility to merge duplicate contact
+        records, multiple email addresses can be preserved and displayed on
+        the Contact Email Addresses list. To learn more about the Contact
+        Merge utility, please see <xref linkend="contactMerge"/>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Web</term>
+
+      <listitem>
+        <para>Enter the contact's website address.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>If a new address is manually entered here, that address will be
+    added automatically to the master list of addresses.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Address</term>
+
+      <listitem>
+        <para>Manually enter address information in the fields below—or use
+        the lookup feature to select pre-existing address information. If a
+        new address is manually entered here, that address will be added
+        automatically to the master list of addresses. For additional
+        documentation related to creating addresses, see <xref
+        linkend="address"/>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Account #</term>
+
+      <listitem>
+        <para>Specify the CRM account the contact is associated with (if any).
+        Contacts may also be attached to a CRM account on the Account
+        master.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Owner</term>
+
+      <listitem>
+        <para>Specify the user who is the owner of the contact (if
+        any).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the contact. Any notes entered on this screen are for
+        internal purposes only.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To add comments to a contact, select the
+  <guimenuitem>Comments</guimenuitem> tab at the bottom of the Contact screen.
+  The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/contact_tabComments.png"/>
+        </imageobject>
+
+        <caption>Contact Comments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>Contact characteristics are user-defined definitions of a contact
+  which may be used to provide additional layers of description. To enter
+  <indexterm significance="normal">
+      <primary>characteristics</primary>
+
+      <secondary>creating new for contacts</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>characteristics</primary>
+
+      <secondary>contacts having</secondary>
+    </indexterm>characteristics associated with a contact, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/contact_tabCharacteristics.png"/>
+        </imageobject>
+
+        <caption>Contact Characteristics</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>Use contact characteristics, for example, to record and remember a
+    contact's birthday—or similar personal information.</para>
+  </tip>
+
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To locate where in the application the contact is used, select the
+  <guimenuitem>Uses of the Contact</guimenuitem> tab. The following screen
+  will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/contact_usesTab.png"/>
+        </imageobject>
+
+        <caption>Uses of the Contact</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The uses of the contact list displays information on all contact
+  cross-references, including used-at reference, CRM account number, CRM
+  account name, role, and active status.</para>
+
+  <para>To view the documents associated with a contact, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
+      <imageobject>
+        <imagedata fileref="images/contact_documentsTab.png"/>
+      </imageobject>
+
+      <caption><para>Contact Documents</para></caption>
+    </mediaobject></para>
+
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To view email associated with a contact, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

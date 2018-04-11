@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="voidChecks">
+  <title><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>voiding of</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>accounts payable</primary>
+
+      <secondary>voiding payment runs for</secondary>
+    </indexterm>Void Payment Run</title>
+
+  <para>You may occasionally have a need to void an entire payment run—if, for
+  example, you print the payment run on the wrong kind of paper, etc. To void
+  a payment run, go to <guimenuitem>Accounting &gt; Accounts Payable &gt;
+  Payments &gt; Void Payment Run</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/voidChecks.png"/>
+        </imageobject>
+
+        <caption>Void Payments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When voiding a payment run, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Bank Account</term>
+
+      <listitem>
+        <para>Specify the bank account whose associated payment run you want
+        to void.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>First Payment #</term>
+
+      <listitem>
+        <para>Displays the first payment number in the payment run for the
+        specified bank account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term># of Payments to Void</term>
+
+      <listitem>
+        <para>Indicates the number of payments in the payment run to be
+        voided. Payment numbers increment in intervals of one (1) beginning
+        with the first payment number displayed above.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>payments</primary>
+
+          <secondary>replacing voided</secondary>
+        </indexterm>Issue Replacement Payments</term>
+
+      <listitem>
+        <para>Select to issue replacement payments for the payments being
+        voided.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>VOID</guibutton></term>
+
+      <listitem>
+        <para>Voids the payment run, using the specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

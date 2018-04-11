@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="poType" role="standard">
+  <title><indexterm significance="normal">
+      <primary>purchase types</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Purchase Type</title>
+  <para>To create a new purchase type, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/poType.png" />
+        </imageobject>
+        <caption>Create new Purchase Type</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new purchase type, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Code</term>
+      <listitem>
+        <para>Enter a unique code to identify the purchase type.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a description to further identify the purchase
+        type.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select to indicate the purchase type is active. If not selected,
+        the purchase type will be considered inactive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Email Profile</term>
+      <listitem>
+        <para>Specify the default EDI email delivery profile you want to
+        associate with the purchase type.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

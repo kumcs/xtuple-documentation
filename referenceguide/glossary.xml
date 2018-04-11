@@ -1,0 +1,3596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE glossary PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<glossary id="glossary">
+  <title>Glossary of Terms</title>
+
+  <para>This glossary contains definitions for manufacturing and technical
+  terms used within the xTuple ERP user guide. If a definition below contains
+  unfamiliar terms, please look elsewhere in the glossary for additional
+  information. To see terms used in context, consult the index.</para>
+
+  <!--
+  <glosslist>
+  -->
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>abc class</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>ABC Classification</glossterm>
+
+    <glossdef>
+      <para>A method for grouping together items having similar transaction
+      value. Those items having the greatest transaction value are considered
+      class A items, while those having the least transaction value are
+      considered class C items. The acronym ABC stands for activity-based
+      costing.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>absolute calendars</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Absolute Calendar</glossterm>
+
+    <glossdef>
+      <para>A type of calendar consisting of fixed time periods with specific
+      dates defining the periods. Distinguished from a relative calendar,
+      whose periods are not fixed but are defined in relation to a point in
+      time. The following example illustrates the kind of fixed time period to
+      be found in an absolute calendar: 01/01/2002 to 03/31/2002.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>accounts payable</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Accounts Payable</glossterm>
+
+    <glossdef>
+      <para>Refers to amounts due to vendors for credit purchases.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>accounts receivable</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Accounts Receivable</glossterm>
+
+    <glossdef>
+      <para>Refers to amounts due from customers for credit sales.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>actual costs</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Actual Cost</glossterm>
+
+    <glossdef>
+      <para>The real-time cost associated with an item, including current
+      material and production charges. The actual cost of an item may
+      fluctuate given changes in the cost for materials, or other costs
+      related to changes in bills of materials or routings. The actual cost
+      provides a current record of charges actually incurred by an item. By
+      comparing the actual cost to the standard cost, managers can determine
+      whether costing and production goals are being met.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>xtuple administrators</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Administrator</glossterm>
+
+    <glossdef>
+      <para>An administrator is a person charged with maintaining the correct
+      functioning of an xTuple ERP installation. Sometimes called a systems
+      administrator, an xTuple ERP administrator monitors the software,
+      maintains users, and performs other important technical tasks.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item aliases</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Alias</glossterm>
+
+    <glossdef>
+      <para>Also known as an item alias, an alias provides a means for
+      cross-referencing internal and external customer item information. For
+      example, a customer may refer to an item by a different item number than
+      you do. To avoid confusion and to simplify item lookups you can create
+      an item alias linking the customer's external item number to your own
+      internal item number. The item alias acts as a substitute or alternate
+      identifier. In this way, items may be located using either internal or
+      external item information. Multiple aliases can be assigned to one item,
+      allowing you to cross-reference an item using many different item
+      numbers.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>alignment pages</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Alignment Page</glossterm>
+
+    <glossdef>
+      <para>A formatted grid template printed from within the
+      <guimenu>System</guimenu> module. Alignment pages are used during the
+      creation of report definitions to ensure reports print correctly on your
+      local or network printer.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>allocation</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>inventory</primary>
+
+        <secondary>allocation defined</secondary>
+      </indexterm>Allocation</glossterm>
+
+    <glossdef>
+      <para>A term used to describe the status of inventory quantity. Quantity
+      in an item site is considered allocated if either of the following two
+      conditions exist: 1) The quantity is required by an unissued work order
+      material requirement, or 2) the quantity is required by an unissued
+      sales order line item. Once either requirement is issued, the quantity
+      is no longer considered allocated; instead, the quantity is considered
+      to be relieved.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>allowable parts</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Allowable Part</glossterm>
+
+    <glossdef>
+      <para>Designation given to an item that may be stored in a restricted
+      site location.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm>APICS</glossterm>
+
+    <glossdef>
+      <para>Originally an acronym for the American Production and Inventory
+      Control Society, the organization is now known as APICS: The Educational
+      Society for Resource Management.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>application programming interfaces</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>API</primary>
+
+        <see>application programming interfaces</see>
+      </indexterm>Application Programming Interface (API)</glossterm>
+
+    <glossdef>
+      <para>A set of tools and protocols used by software programmers to
+      enable disparate software applications to communicate with each
+      other.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>ARBL</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>ARBL</glossterm>
+
+    <glossdef>
+      <para>A naming convention designed to maximize specificity in the naming
+      of site locations. The acronym stands for aisle, rack, bin,
+      location.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>available to promise</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>ATP</primary>
+
+        <see>available to promise</see>
+      </indexterm>Available to Promise</glossterm>
+
+    <glossdef>
+      <para>Uncommitted inventory quantity available to support new sales
+      orders or the difference between sales orders already booked and the
+      quantity that operations is planning to produce.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>available qoh</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>inventory</primary>
+
+        <secondary>available qoh defined</secondary>
+      </indexterm>Available QOH</glossterm>
+
+    <glossdef>
+      <para>A term used to describe inventory that is available immediately to
+      satisfy work order and sales order demand. Available quantity on hand
+      (QOH) is the same as usable QOH.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>available qty</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>Inventory</primary>
+
+        <secondary>available qty defined</secondary>
+      </indexterm>Available Qty.</glossterm>
+
+    <glossdef>
+      <para>Also known as availability, this term describes inventory that
+      considers future demands and orders. The following formula can be used
+      to define available qty.:</para>
+
+      <para>Usable QOH + (future supplies within the time horizon) - (demands
+      within the time horizon).</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>authentication</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Authentication</glossterm>
+
+    <glossdef>
+      <para>A computer security measure used in networked settings to verify
+      the identity of users attempting to connect to a system.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>average costing</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Average Cost</glossterm>
+
+    <glossdef>
+      <para>A costing approach where cost distribution is based on an average
+      of all costs accumulated.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>backflush</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Backflush</glossterm>
+
+    <glossdef>
+      <para>The automatic deduction from inventory of component item
+      quantities executed at the time production is posted for a work order.
+      In xTuple ERP, backflushing is synonymous with the pull issue method.
+      Issue methods are assigned to component items within a bill of
+      materials.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>backlog</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Backlog</glossterm>
+
+    <glossdef>
+      <para>Refers to sales orders that have either not yet been shipped or
+      have been shipped but are not yet invoiced.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>backorders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Backorder</glossterm>
+
+    <glossdef>
+      <para>Refers to unshipped line items on a shipped sales order. For
+      example, if a customer orders three line items, but only one of the line
+      items is shipped, the remaining two line items would be on
+      backorder.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>bar codes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Bar Code</glossterm>
+
+    <glossdef>
+      <para>An alternating series of vertical bars and white spaces of varying
+      widths used to encode information that can be read by electronic
+      scanners. Bar codes increase efficiency and greatly limit data entry
+      errors. Standard bar code formats supported by xTuple ERP include the
+      following: Code 3of9, Code 3of9 Extended, Code 128, UPC-A, UPC-E, EAN-8,
+      EAN-13.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>batch manager</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Batch Manager</glossterm>
+
+    <glossdef>
+      <para>A utility within the <guimenu>System</guimenu> module which
+      enables users to manage server-intensive requests, including, for
+      example, database queries, reorder level updates, and large print
+      jobs.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>bills of lading</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Bill of Lading (BOL)</glossterm>
+
+    <glossdef>
+      <para>A document issued by a carrier to a shipper which lists and
+      acknowledges the contents of a shipment to be transported by the
+      carrier. A bill of lading (BOL) specifies terms of delivery and serves
+      as a contract between carrier and shipper.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>bills of materials</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Bill of Materials (BOM)</glossterm>
+
+    <glossdef>
+      <para>A list of component parts and specified quantities required to
+      manufacture an item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>bills of operations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Routing</glossterm>
+
+    <glossdef>
+      <para>A sequential list of operations required to manufacture an
+      item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>bill-to names</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Bill-To Name</glossterm>
+
+    <glossdef>
+      <para>The name of the customer to be billed for a sales order. In some
+      cases, the bill-to name on a sales order will differ from the ship-to
+      name on the same order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>purchase orders</primary>
+
+        <secondary>blanket defined</secondary>
+      </indexterm>Blanket P/O</glossterm>
+
+    <glossdef>
+      <para>A term used to describe customer purchase orders which may be used
+      for more than one sales order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>bookings</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Booking</glossterm>
+
+    <glossdef>
+      <para>Any open, invoiced, or closed sales order line item. Because
+      bookings represent both active and past customer demand, sales order
+      line items that have been deleted before any activity is registered are
+      not considered bookings.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>breeder bills of materials</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Breeder Bill of Materials</glossterm>
+
+    <glossdef>
+      <para>A bill of materials for a breeder item, showing a list of
+      by-products and any associated co-products.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>breeder items</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Breeder Item</glossterm>
+
+    <glossdef>
+      <para>A logical item from which co-products and by-products are
+      produced. An example use for a breeder item is the screening of raw
+      gravel to produce different sizes of gravel. The breeder item's bill of
+      materials (BOM) defines the inputs in this case raw gravel and the
+      outputs are defined on its breeder BOM (i.e., small, medium and large
+      gravel). A work order is created for the breeder item, but this item is
+      never stocked or produced; again, it is a logical item. Instead, raw
+      gravel is consumed by the breeder's work order, along with labor, and
+      the resulting quantities of co-products and by-products are
+      recorded.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>buy cards</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Buy Card</glossterm>
+
+    <glossdef>
+      <para>A list, formerly recorded on a card, showing an historical record
+      of items bought from specified vendors.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>by-products</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>By-Product</glossterm>
+
+    <glossdef>
+      <para>An item of value that is produced as a result of operations being
+      performed on a breeder item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>capacity buffer</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>buffers</primary>
+
+        <secondary>capacity defined</secondary>
+      </indexterm>Capacity Buffer</glossterm>
+
+    <glossdef>
+      <para>The relative load of a resource compared to the desired lead time
+      of items coming out of that resource. For example, suppose we have a
+      shop with a typical lead time of two weeks that has a milling department
+      heavily loaded. Perhaps we have identified milling as our shop's
+      bottleneck and will use the buffer management system to monitor it. The
+      capacity buffer would be two-weeks worth of load, meaning that the
+      milling department can be loaded with up to two-weeks worth of work
+      before it is considered fully-consumed. The capacity buffer size is
+      entered as <guilabel>Max Days Load</guilabel> by the user when they run
+      the capacity buffer status report. When the <guilabel>Buffer</guilabel>
+      column in the display for milling equals 100 we know it is fully
+      consumed.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>capacity planning</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Capacity Planning</glossterm>
+
+    <glossdef>
+      <para>The process used to determine how much labor, machinery, and other
+      resources will be required to manufacture current products and/or new
+      products in the future.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>carriers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Carrier</glossterm>
+
+    <glossdef>
+      <para>A transportation company responsible for transporting shipments
+      from one location to another.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm>Character</glossterm>
+
+    <glossdef>
+      <para>Any alphanumeric character both upper and lower case including
+      punctuation marks, white space, and other keyboard symbols.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>characteristics</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Characteristic</glossterm>
+
+    <glossdef>
+      <para>User-defined definition of an item which may be used to provide
+      additional layers of description to an item. For example, item
+      characteristics might be used to specify season or primary vendor. These
+      constitute static descriptions which are not processed by xTuple ERP,
+      but are useful for informational purposes.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>child items</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Child Item</glossterm>
+
+    <glossdef>
+      <para>A synonym for component item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>class codes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Class Code</glossterm>
+
+    <glossdef>
+      <para>An inventory control mechanism used for categorizing items
+      regardless of item type. Distinguished from product category, which
+      categorizes sold items only.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>commissions</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Commission</glossterm>
+
+    <glossdef>
+      <para>The percentage of a sales order's value paid to a sales
+      representative for services rendered.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>components</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Component</glossterm>
+
+    <glossdef>
+      <para>An item that is required for the production of another item.
+      Components are the items listed on a bill of materials. Also known as
+      component item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>items</primary>
+
+        <secondary>configured defined</secondary>
+      </indexterm>Configured Item</glossterm>
+
+    <glossdef>
+      <para>A manufactured item that may have item options added to it.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>control methods</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Control Method</glossterm>
+
+    <glossdef>
+      <para>A designation which regulates how an item site handles inventory
+      transactions. Item sites may be controlled by the following methods:
+      regular, lot number, serial number, or none.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>co-products</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Co-Product</glossterm>
+
+    <glossdef>
+      <para>An item that is processed at the same time as a breeder item,
+      leading to the production of by-products. Co-products may absorb some of
+      the costs associated with the production of by-products.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>cost categories</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Cost Category</glossterm>
+
+    <glossdef>
+      <para>A classification applied to item sites which specifies how costs
+      should be distributed to the general ledger whenever inventory is
+      received, moved, consumed, produced, shipped, scrapped, or
+      returned.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>costing elements</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Costing Element</glossterm>
+
+    <glossdef>
+      <para>A term used to describe a specific type of cost incurred by items.
+      The following costing elements exemplify some of these specific costs:
+      material, labor, overhead. Costing elements may be system-defined or
+      user-defined.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>count slips</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Count Slip</glossterm>
+
+    <glossdef>
+      <para>A tool used to contribute inventory count totals to a count
+      tag.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>count tags</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Count Tag</glossterm>
+
+    <glossdef>
+      <para>The tool used to spearhead inventory counts. A count tag collects
+      inventory count totals either independently or from affiliated count
+      slips to determine the actual quantity on hand (QOH) for an individual
+      item. When posted, the count tag total replaces the QOH balance
+      displayed in the system.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>credit memos</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Credit Memo</glossterm>
+
+    <glossdef>
+      <para>An accounting mechanism used to confirm that items have been
+      returned by a customer or that an allowance has been made to a customer.
+      Confirmation results in a debit to the customer's accounts receivable
+      account. Sales order credit memos are used to issue credit for sold
+      inventory. Receivables credit memos are miscellaneous, meaning they are
+      not tied to a specific sales order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>cumulative schedules</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Cumulative Schedules (MPS)</glossterm>
+
+    <glossdef>
+      <para>Cumulative schedules allow the forced accumulation of inventory in
+      a discontinuous, or lumpy, demand situation where load leveling or
+      continuous production is desired. With this setting, MPS may release
+      more, but never less, than the quantity dictated in a cumulative MPS
+      schedule.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>customers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Customer</glossterm>
+
+    <glossdef>
+      <para>A purchaser who buys the items and services you sell.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>cycle counts</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Cycle Count</glossterm>
+
+    <glossdef>
+      <para>A cycle count is a periodic issue of a count tag to count
+      inventory quantity within an item site. The frequency of cycle counts is
+      defined at the item site level. Because cycle counts may be conducted
+      frequently, they provide better visibility into inventory levels than
+      annual inventory counts.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>cycle counters</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>cycle counts</primary>
+
+        <secondary>cycle counters defined</secondary>
+      </indexterm>Cycle Counter</glossterm>
+
+    <glossdef>
+      <para>An employee whose job it is to perform cycle counts.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>cycle count tags</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>cycle counts</primary>
+
+        <secondary>cycle count tags defined</secondary>
+      </indexterm>Cycle Count Tags</glossterm>
+
+    <glossdef>
+      <para>The count tags created when a cycle count is performed.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>data caches</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Data Cache</glossterm>
+
+    <glossdef>
+      <para>A computer storage area where commonly used information can be
+      stored to facilitate the retrieval and use of that information.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm>Data Entry</glossterm>
+
+    <glossdef>
+      <para>The process of typing information into fields found on xTuple ERP
+      screens.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>data entry formats</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Data Entry Format</glossterm>
+
+    <glossdef>
+      <para>Refers to the combination of keyboard characters supported by
+      xTuple ERP data entry fields. Any data entered into a field must
+      correspond to the format supported by that field. For example, date
+      formats must be entered into date fields. Monetary formats must be
+      entered into monetary fields. Some fields have no format restrictions
+      and allow an unlimited number of alphanumeric characters. Data entry
+      formats may differ from locale to locale.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>databases</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Database</glossterm>
+
+    <glossdef>
+      <para>A collection of electronic information that is organized to allow
+      for the rapid storage and retrieval of information. A digital filing
+      system.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>debit memos</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Debit Memo</glossterm>
+
+    <glossdef>
+      <para>An accounting mechanism used to debit a customer's accounts
+      receivable accounts. Debit memos are not tied to a specific sales order.
+      They may be used as miscellaneous receivables invoices.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>destinations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Destination</glossterm>
+
+    <glossdef>
+      <para>The geographic location where a shipment is received.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm>Display</glossterm>
+
+    <glossdef>
+      <para>An on-screen representation of an xTuple ERP report.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>dispositions</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Disposition</glossterm>
+
+    <glossdef>
+      <para>The method in which a return material authorization will be
+      handled.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id="glossary.DTD">
+    <glossterm><indexterm>
+        <primary>DTD</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>DTD</glossterm>
+
+    <glossdef>
+      <para>A DTD is a document type definition. It is the part of the world
+      wide web consortium's standard definition of XML which is used to
+      describe valid XML document formats.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>effectivity</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Effectivity</glossterm>
+
+    <glossdef>
+      <para>The period of time within which an item is considered valid. An
+      effectivity period is usually defined by effective and expiration dates.
+      Effectivity applies to components in a bill of materials, operations in
+      a routing, and prices on a pricing schedule.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>effort</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Effort</glossterm>
+
+    <glossdef>
+      <para>The amount of time a user spends clocked-in to a work order
+      divided by the number of work orders the user is working on at the same
+      time.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>electronic data interchange</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Electronic Data Interchange (EDI)</glossterm>
+
+    <glossdef>
+      <para>A system for exchanging information electronically between
+      businesses, using the Internet.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>engineering change notices</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Engineering Change Notice (ECN)</glossterm>
+
+    <glossdef>
+      <para>Notification given by product engineers signifying that changes
+      have been made to the design or configuration of a manufactured
+      item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>event fences</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Event Fence</glossterm>
+
+    <glossdef>
+      <para>A setting on the Item Site master specifying the period of time,
+      measured in days, within which event notifications related to the item
+      site should be issued. If an event affecting the item site occurs within
+      the event fence, then the system will issue a notification.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>events</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Event</glossterm>
+
+    <glossdef>
+      <para>Any one of a limited set of possible occurrences precipitated by
+      user activity which xTuple ERP defines as having special importance. For
+      example, an event has occurred if QOH for an item falls below zero, if a
+      work order is created, if a sales order line item is cancelled, etc. An
+      event may trigger an event notification, depending on a user's
+      preference settings. For a complete list of system-defined events, see
+      <xref linkend="appendixa"/>.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>event notification</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Event notification</glossterm>
+
+    <glossdef>
+      <para>A system-generated alert sent to a user whenever an event the user
+      subscribes to occurs.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>event manager</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Event Manager</glossterm>
+
+    <glossdef>
+      <para>A utility within the <guimenu>System</guimenu> module which
+      enables users to view and manage their event notifications.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>execution days</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Execution Day</glossterm>
+
+    <glossdef>
+      <para>A setting within an Operation screen associated with either a
+      routing or a work order which defines when the specified operation
+      should begin. For example, if the value "1" is entered in the
+      <guilabel>Execution Day</guilabel> field, the operation will begin on
+      the first day of the manufacturing process. If "2" is entered, the
+      operation will begin on the second day, etc.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>expedite exceptions</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Expedite Exception</glossterm>
+
+    <glossdef>
+      <para>An indication that an order is late. These late orders need to be
+      acted on or expedited. Examples of late orders would include a work
+      order whose start date is past due or a planned purchase order which has
+      not yet been released.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>expense categories</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Expense Category</glossterm>
+
+    <glossdef>
+      <para>A classification used for assigning purchasing expenses to
+      specified general ledger accounts. Expense categories are only used for
+      non-inventory items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>explosion</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Explosion</glossterm>
+
+    <glossdef>
+      <para>The process whereby work order material requirements and work
+      order operations are created for a work order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>fields</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Field</glossterm>
+
+    <glossdef>
+      <para>Refers to those areas found on xTuple ERP screens where data can
+      be entered. Examples include item number fields, date fields, comment
+      fields, etc.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>firming</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Firm</glossterm>
+
+    <glossdef>
+      <para>A process whereby planned orders are solidified in the schedule.
+      When you specify that a planned order is firm, you are indicating that
+      material requirements planning (MRP) should not delete it when running
+      planned replenishment orders unless specifically told to do so.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>firmed orders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Firmed Order</glossterm>
+
+    <glossdef>
+      <para>A planned order that has been firmed in the schedule. Also known
+      as firm planned order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>fiscal years</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Fiscal Year</glossterm>
+
+    <glossdef>
+      <para>The accounting year for a company. May or may not coincide with
+      the calendar year.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>forward-updating</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Forward-Update</glossterm>
+
+    <glossdef>
+      <para>A process either automatic or manual which carries the ending
+      balance for an accounting period forward through to the current account
+      period.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>free on board</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Free On Board (FOB)</glossterm>
+
+    <glossdef>
+      <para>The point at which ownership of goods being shipped transfers from
+      the seller to the buyer. Also the point at which the buyer assumes
+      responsibility for transportation costs and risks.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>freezing</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Freezing</glossterm>
+
+    <glossdef>
+      <para>A mechanism for temporarily locking quantity on hand (QOH) values
+      at item sites to facilitate inventory counting and ensure accurate
+      totals. When an item site is frozen, any inventory transactions entered
+      against that item site including work orders will not affect the QOH for
+      that item site. Because of this, inventory counting can proceed using a
+      fixed baseline total. When the item site is thawed, any post-freeze
+      activity is reconciled, bringing the QOH total to its correct value. The
+      freezing/thawing mechanism is designed to ensure you get accurate
+      inventory counts without having to shut down operations. Term is also
+      applied to accounting periods. When an accounting period is frozen, only
+      users granted the privilege of posting to a frozen period can do so.
+      Once an accounting period is closed it can no longer be posted
+      into.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>freight</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Freight</glossterm>
+
+    <glossdef>
+      <para>The contents of a shipment.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>general ledger</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>General Ledger (GL)</glossterm>
+
+    <glossdef>
+      <para>The accounting record which lists all the accounts used by a
+      company.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>hold</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Hold</glossterm>
+
+    <glossdef>
+      <para>A sales order control which enables agents to delay the packing or
+      shipping of sales order line items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>implosion</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Implosion</glossterm>
+
+    <glossdef>
+      <para>The process whereby a work order's material requirements and work
+      order operations are deleted. Only work orders with exploded (E) status
+      can be imploded. Released (R) or in-process (I) work orders cannot be
+      imploded. When a work order is imploded, its status changes to open
+      (O).</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>input mask</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Input Mask</glossterm>
+
+    <glossdef>
+      <para>A template typically featuring separator characters used to guide
+      users doing data entry. A form of light data validation.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>insufficient Inventory</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>Inventory</primary>
+
+        <secondary>insufficiency defined</secondary>
+      </indexterm>Insufficient Inventory</glossterm>
+
+    <glossdef>
+      <para>Inventory is considered insufficient if existing quantity on hand
+      (QOH) will not meet the specified demand; however, replenishment orders
+      do exist in the system—and, once these replenishment orders are
+      received, the demand will be satisfied. Insufficient inventory will have
+      positive availability, distinguishing it from short inventory, whose
+      availability is negative.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>Inventory</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Inventory</glossterm>
+
+    <glossdef>
+      <para>Refers to items a company owns and expects to either sell or
+      consume as part of its normal operations.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>invoices</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Invoice</glossterm>
+
+    <glossdef>
+      <para>A printed list of items sold to a customer. Also serves as a bill
+      sent to the customer.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>issue methods</primary>
+
+        <secondary>term defined</secondary>
+      </indexterm>Issue Method</glossterm>
+
+    <glossdef>
+      <para>The means by which component items are deducted from inventory for
+      work order processing. The issue method a component item assumes is
+      determined at the bill of materials level. xTuple ERP recognizes three
+      issue methods: pull, push, and mixed.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>items</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item</glossterm>
+
+    <glossdef>
+      <para>Any unique product, material, subassembly, or part, whether
+      purchased or manufactured.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item controls</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item Controls</glossterm>
+
+    <glossdef>
+      <para>A series of specifications applied to an item at the item site
+      level. Examples of item controls include ABC class designation, cycle
+      count frequency, and reorder level limits.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item images</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item Image</glossterm>
+
+    <glossdef>
+      <para>An electronic graphics file which may be linked with an item in
+      the Item master. An item image may be a visual representation (i.e.,
+      photograph) of an item or any related graphic. xTuple ERP supports the
+      following image file types: .PNG, .XPM, .JPG, or .GIF.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item options</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item Option</glossterm>
+
+    <glossdef>
+      <para>An add-on, attribute, or quantity which may be assigned to a
+      configured item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item sites</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item Site</glossterm>
+
+    <glossdef>
+      <para>An item site identifies and defines the methods and controls used
+      when maintaining a given item within a given site.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item sources</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item Source</glossterm>
+
+    <glossdef>
+      <para>A vendor who supplies a given item to a company. Because multiple
+      vendors may supply a single item, a single item may have multiple item
+      sources.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>item substitutes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Item Substitute</glossterm>
+
+    <glossdef>
+      <para>An item which may be used as a replacement for another
+      item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>job items</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Job Item</glossterm>
+
+    <glossdef>
+      <para>A manufactured item used specifically for make-to-order scenarios
+      where simplified production is required. The <guilabel>Job
+      Costing</guilabel> option at the item site level is used to distinguish
+      job items from regular manufactured items. Job items cannot be
+      maintained in inventory. And they also have no concept of standard cost
+      or cost variances. All costs for job items are actual. The work orders
+      which create job items can only be created via a sales order. The costs
+      for job work orders are accumulated to WIP, and then transferred
+      directly to cost of sales when the job is shipped. Bill of material and
+      routing items may be assigned to job items; however, they will not roll
+      up to a standard cost for job items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>keyboard shortcuts</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Keyboard Shortcut</glossterm>
+
+    <glossdef>
+      <para>An alternative method for performing computer operations using the
+      keyboard instead of the mouse. An example of a keyboard shortcut would
+      be <guibutton>CTRL + S</guibutton>. Selecting the
+      <guibutton>CTRL</guibutton> key on the keyboard followed by the
+      <guibutton>S</guibutton> key will in many cases perform a
+      <guibutton>SAVE</guibutton> operation. This same operation could be
+      handled by pulling down the <guibutton>FILE</guibutton> menu and
+      selecting <guibutton>SAVE</guibutton>, using the mouse.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>key files</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Key File</glossterm>
+
+    <glossdef>
+      <para>A service-independent encryption seed file, which enables you to
+      read encrypted credit card information.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>kits</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Kit</glossterm>
+
+    <glossdef>
+      <para>An item type that automatically explodes bill of material items on
+      to a sales order for shipping.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>label forms</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Label Form</glossterm>
+
+    <glossdef>
+      <para>A report definition that prints supported label types.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>labor rates</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Labor Rate</glossterm>
+
+    <glossdef>
+      <para>The cost charged by a work center per hour for labor. A setup
+      labor rate is charged for preparing a work center to run an operation,
+      and a run labor rate is charged for executing the operation. Routinely
+      performed operations may be assigned a standard labor rate.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>lead times</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Lead Time</glossterm>
+
+    <glossdef>
+      <para>An item control which specifies the number of days required to
+      either procure or manufacture an item. For purchased items, lead time
+      refers to days required to procure. For manufactured items, lead time
+      refers to days required to produce. Lead times are specified at the item
+      site level.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>list prices</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>List Price</glossterm>
+
+    <glossdef>
+      <para>The stated selling price for a sold item. Also known as the
+      catalog price.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>locales</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Locale</glossterm>
+
+    <glossdef>
+      <para>A mechanism for defining certain display formats based on
+      linguistic and cultural conventions. For example, the manner in which
+      currency, date, and price formats are displayed is controlled by locale
+      settings. xTuple ERP supports multiple locales.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>locations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Location</glossterm>
+
+    <glossdef>
+      <para>A physical location within a site for example, a bin, shelf,
+      aisle, etc. Also known as site location.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>lots</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>lots</primary>
+
+        <secondary>numbering of defined</secondary>
+      </indexterm>Lot Number</glossterm>
+
+    <glossdef>
+      <para>A unique identifier assigned to a series or batch of items
+      produced at the same time which share the same specifications.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>lower level</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Lower Level</glossterm>
+
+    <glossdef>
+      <para>The component level. For example, lower level costs are associated
+      with component items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>make-to-order</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>items</primary>
+
+        <secondary>make-to-order defined</secondary>
+      </indexterm>Make-to-Order</glossterm>
+
+    <glossdef>
+      <para>An adjective describing a production process in which an item is
+      manufactured after a sales order requests the item. If an item is
+      make-to-order, the <guilabel>Stocked At</guilabel> flag in the Item Site
+      master is turned off. When sales orders are issued for make-to-order
+      items, Purchase requests or work orders will automatically be generated
+      to meet sales order demand.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>make-to-stock</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>items</primary>
+
+        <secondary>make-to-stock defined</secondary>
+      </indexterm>Make-to-Stock</glossterm>
+
+    <glossdef>
+      <para>An adjective describing a production process in which an item is
+      typically manufactured before sales orders for the item are received. If
+      an item is make-to-order, the <guilabel>Stocked At</guilabel> flag in
+      the Item Site master is turned on. When sales orders are issued for
+      make-to-stock items, purchase requests will not be generated.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>man hours</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Man Hour</glossterm>
+
+    <glossdef>
+      <para>The labor of one worker for one hour.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>manufactured</primary>
+
+        <secondary>item type defined</secondary>
+      </indexterm>Manufactured Item</glossterm>
+
+    <glossdef>
+      <para>An item that is made, assembled, or otherwise produced.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>master production scheduling</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Master Production Scheduling (MPS)</glossterm>
+
+    <glossdef>
+      <para>The process of planning production to meet the demands of current
+      and forecasted orders.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>master scheduling</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Master Scheduling</glossterm>
+
+    <glossdef>
+      <para>A synonym for master production scheduling.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>material receipts</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Material Receipt</glossterm>
+
+    <glossdef>
+      <para>An inventory transaction that records the receiving of items into
+      inventory.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>material requirements planning</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Material Requirements Planning (MRP)</glossterm>
+
+    <glossdef>
+      <para>A time-phased approach used to calculate the materials required to
+      fulfill the master production schedule (MPS). The MRP calculation is
+      made by exploding the material requirements for current and planned
+      orders, with adjustments made for both existing quantity on hand (QOH)
+      and specified lead times. Where shortages are found or anticipated,
+      replenishment orders are recommended. Also, orders are recommended for
+      rescheduling wherever inventory is found to be insufficient to meet the
+      MPS.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>metacharacters</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Metacharacter</glossterm>
+
+    <glossdef>
+      <para>Special keyboard character used to facilitate pattern matching.
+      Sometimes referred to as a wildcard.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>mixed</primary>
+
+        <secondary>issue method defined</secondary>
+      </indexterm>Mixed</glossterm>
+
+    <glossdef>
+      <para>A material issue method which declares that a component item is
+      expected to take upon itself the issue method applied to it initially at
+      the time of work order explosion. If the component item is pulled to a
+      work order initially, then the issue method for that item will remain
+      pull in the work order material requirements. If the item is initially
+      pushed to a work order, its issue method will remain push. The mixed
+      issue method allows for flexibility in the building of work order
+      material requirements.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>multiple location control</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Multiple Location Control (MLC)</glossterm>
+
+    <glossdef>
+      <para>A setting defined at the item site level which indicates that item
+      quantities for an item may be maintained in more than a single site
+      location.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>netable qoh</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Netable QOH</glossterm>
+
+    <glossdef>
+      <para>A term used to describe inventory that is allowed to be used for
+      inventory planning purposes (i.e., MRP). All quantities (usable and
+      non-usable) outside of non-netable locations are considered part of
+      netable quantity on hand (QOH).</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>netable location</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Netable Location</glossterm>
+
+    <glossdef>
+      <para>A term for a location where the inventory is considered
+      netable.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>non-netable qoh</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Non-Netable QOH</glossterm>
+
+    <glossdef>
+      <para>A term used to describe inventory that is not to be used for
+      inventory planning purposes (i.e., MRP). Only quantities located in
+      non-netable locations are considered part of non-netable quantity on
+      hand (QOH).</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>non-netable location</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Non-Netable Location</glossterm>
+
+    <glossdef>
+      <para>A term for a location where the inventory is considered
+      non-netable.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>non-usable qoh</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Non-Usable QOH</glossterm>
+
+    <glossdef>
+      <para>A term used to describe inventory which is not available for
+      issuing to sales orders or work orders. For example, inventory waiting
+      to be scrapped may be flagged as non-usable.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>on order</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>Inventory</primary>
+
+        <secondary>on order defined</secondary>
+      </indexterm>On Order</glossterm>
+
+    <glossdef>
+      <para>A term used to describe the status of inventory quantity. Quantity
+      in an item site is considered on order if either of the following two
+      conditions exist: 1.) the quantity is expected via an unreceived
+      purchase order line item, or 2.) the quantity is expected via an
+      unreceived work order. Once either quantity is received, the quantity is
+      no longer considered on order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>operations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Operation</glossterm>
+
+    <glossdef>
+      <para>A job, task, or process required for the production of an item.
+      Operations are defined sequentially in a routing. The routing may be
+      modified at the work order stage, where work order operations may be
+      defined. Operations are performed in work centers.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>opportunities</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Opportunity</glossterm>
+
+    <glossdef>
+      <para>A favorable chance for booking sales revenue.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>order parameters</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Order Parameter</glossterm>
+
+    <glossdef>
+      <para>A series of specifications applied to an item at the item site
+      level which are used by material requirements planning (MRP) when
+      generating MRP planned replenishment orders. Examples of order
+      parameters include reorder level, order up to level, and lead
+      time.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>order up to levels</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Order Up To Level (OUT)</glossterm>
+
+    <glossdef>
+      <para>Indicates the level of planned availability an item site should be
+      replenished up to when material requirements planning (MRP) is run. In
+      cases where the reorder level for an item site exceeds the order up to
+      (OUT) level, MRP will replenish the item site up to the reorder level.
+      OUT levels are defined on the Item Site master.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>outside processes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Outside Process</glossterm>
+
+    <glossdef>
+      <para>An external process or service that is performed by someone (i.e.,
+      a vendor) outside your company. An item type. Outside process items are
+      treated by the system in much the same way as purchased items are. For
+      example, outside process items will be handled in the same way as
+      purchased items are when material requirements planning (MRP) is
+      run.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>overhead</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Overhead</glossterm>
+
+    <glossdef>
+      <para>The costs associated with the provision and maintenance of a
+      manufacturing facility. These costs include but are not limited to costs
+      related to building rental, utilities, machinery, supervision,
+      maintenance, etc.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>packages</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Packages</glossterm>
+
+    <glossdef>
+      <para>Compressed files which may contain either a.) custom software
+      designed to extend the functionality of xTuple ERP without touching the
+      core xTuple ERP source code or b.) upgrade bundles designed to migrate
+      xTuple ERP databases from one version to the next.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>packing lists</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Packing List</glossterm>
+
+    <glossdef>
+      <para>A document indicating the items that need to be picked for a sales
+      order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>parameters</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Parameter</glossterm>
+
+    <glossdef>
+      <para>A definition or limit used to shape a query. See also, order
+      parameter.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>parent items</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Parent Item</glossterm>
+
+    <glossdef>
+      <para>A top-level manufactured item. Refers to both root items and also
+      the top-level items in subassemblies. Component items are the children
+      of the parent item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>shipping</primary>
+
+        <secondary>partial defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>partial shipments</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Partial Shipment</glossterm>
+
+    <glossdef>
+      <para>A shipped order having a line item whose full quantity is not
+      included in the shipment. For example, if customer ABC orders 20 units
+      of item XYZ, but only 10 units are shipped, that partial line item
+      quantity (10) would constitute a partial shipment of the ordered
+      item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>pattern matching</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Pattern Matching</glossterm>
+
+    <glossdef>
+      <para>A method for shaping database queries using regular expressions to
+      improve the precision of results. xTuple ERP supports pattern matching
+      using regular expressions in accordance with the portable operating
+      system interface (POSIX) standard.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>phantoms</primary>
+
+        <secondary>item type defined</secondary>
+      </indexterm>Phantom Item</glossterm>
+
+    <glossdef>
+      <para>An item type used to classify items that are commonly used
+      together during a manufacturing process.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>pick lists</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Pick List</glossterm>
+
+    <glossdef>
+      <para>A printed list showing the work order material requirements for a
+      specified work order. A pick list is part of a bill of materials.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>planned availability</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Planned Availability</glossterm>
+
+    <glossdef>
+      <para>A synonym for availability.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>planned expenses</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Planned Expense</glossterm>
+
+    <glossdef>
+      <para>A projected cost arising from the master production schedule
+      (MPS).</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>planned orders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Planned Order</glossterm>
+
+    <glossdef>
+      <para>Planned orders are a vehicle used by master production scheduling
+      (MPS) and material requirements planning (MRP) to create soft demands
+      for materials and capacity required to meet the production plan. These
+      planned orders are converted to actual work orders or purchase orders as
+      their lead time approaches.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>planned revenues</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Planned Revenue</glossterm>
+
+    <glossdef>
+      <para>Projected income arising from the master production schedule
+      (MPS).</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>planners</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Planner</glossterm>
+
+    <glossdef>
+      <para>Those employees of a company responsible for planning, scheduling,
+      or procurement.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>planner codes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Planner Code</glossterm>
+
+    <glossdef>
+      <para>A planning mechanism designed to categorize items within
+      designated codes.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>ports</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Port</glossterm>
+
+    <glossdef>
+      <para>An entrance to or exit from a data network.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>POSIX</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Portable Operating System Interface (POSIX)</glossterm>
+
+    <glossdef>
+      <para>An international standard defining how applications obtain the
+      basic services of an operating system.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>postgresql</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>PostgreSQL</glossterm>
+
+    <glossdef>
+      <para>An enterprise-class object-oriented relational database management
+      system (ORDBMS). The premiere open source database.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>pricing schedules</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Pricing Schedule</glossterm>
+
+    <glossdef>
+      <para>A grouping of sold items indicating the prices assigned for
+      specified quantity breaks. Pricing schedules may be assigned to
+      individual customers or to groups of customers by customer type.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>privileges</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Privilege</glossterm>
+
+    <glossdef>
+      <para>A security measure designed to regulate through authorization the
+      activity of users connected to a computer network or system. Typically,
+      a user is able to perform an action if the privilege to perform that
+      action has been granted to the user. If not granted the privilege, the
+      user will be prevented from performing the action. Sometimes referred to
+      as permission.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>product categories</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Product Category</glossterm>
+
+    <glossdef>
+      <para>A classification used to categorize sold items. Distinguished from
+      class code, which categorizes items regardless of item type.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>production</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Production</glossterm>
+
+    <glossdef>
+      <para>The process whereby subcomponents are converted into manufactured
+      items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>production plans</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Production Plan</glossterm>
+
+    <glossdef>
+      <para>A mechanism used for loading sales forecasts into the system. The
+      master production scheduling (MPS) system accounts for production plans
+      when MPS is run.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>prospects</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Prospect</glossterm>
+
+    <glossdef>
+      <para>A potential customer.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>proximo</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Proximo</glossterm>
+
+    <glossdef>
+      <para>A billing term used to specify that payment is expected on a
+      certain day of the month as in the 15th or the last day of the
+      month.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>pull</primary>
+
+        <secondary>issue method defined</secondary>
+      </indexterm>Pull</glossterm>
+
+    <glossdef>
+      <para>An inventory issue method in which component items are
+      automatically deducted from inventory at the time of work order
+      explosion. Synonymous with backflushing.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>pull-through</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Pull-through</glossterm>
+
+    <glossdef>
+      <para>A term used to describe the backflushing of work order
+      operations.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>purchase orders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Purchase Order</glossterm>
+
+    <glossdef>
+      <para>A written authorization used to formalize purchase transactions
+      with vendors.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>purchase requests</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Purchase Request</glossterm>
+
+    <glossdef>
+      <para>An internal notification used to alert purchasing agents of the
+      need to purchase materials.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>purchased</primary>
+
+        <secondary>item type defined</secondary>
+      </indexterm>Purchased Item</glossterm>
+
+    <glossdef>
+      <para>An item that is bought from vendors.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>push</primary>
+
+        <secondary>issue method defined</secondary>
+      </indexterm>Push</glossterm>
+
+    <glossdef>
+      <para>An inventory issue method in which component items must be
+      specifically selected for issuance to a work order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>quantity on hand</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Quantity on Hand (QOH)</glossterm>
+
+    <glossdef>
+      <para>The total of all inventory regardless of status. Quantity on hand
+      (QOH) includes usable, non-usable, netable, and non-netable
+      inventory.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>quotes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Quote</glossterm>
+
+    <glossdef>
+      <para>A statement issued to a customer indicating pricing and sales
+      terms for specified quantities of sold items. Often a precursor to a
+      sales order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>quantity breaks</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Quantity Break</glossterm>
+
+    <glossdef>
+      <para>The minimum quantity of an item that must be purchased in order to
+      receive a specified price. Quantity breaks are used in both sales order
+      and purchase order pricing.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>queries</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Query</glossterm>
+
+    <glossdef>
+      <para>A request for information issued to a database.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>receiving</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Receiving</glossterm>
+
+    <glossdef>
+      <para>The business function responsible for the receipt of materials
+      into inventory.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>regular expressions</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Regular Expression</glossterm>
+
+    <glossdef>
+      <para>A combination of characters and metacharacters used in pattern
+      matching to shape database queries. Also known as Regex.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>reject codes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Reject Code</glossterm>
+
+    <glossdef>
+      <para>A means for labeling purchased items when and if they are returned
+      to the vendor who supplied them. A reject code explains why an item is
+      being returned.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>relative calendars</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Relative Calendar</glossterm>
+
+    <glossdef>
+      <para>A type of calendar in which periods are defined in relation to a
+      point in time. Examples of points in time that a relative calendar
+      period might be defined in relation to include the following:
+      <guilabel>Current Day</guilabel> or <guilabel>Beginning of Current Month
+      </guilabel>or <guilabel>Beginning of Next Quarter</guilabel>. Relative
+      calendars are considered more flexible than absolute calendars because
+      their periods do not describe static, fixed points in time.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>Inventory</primary>
+
+        <secondary>relief of defined</secondary>
+      </indexterm>Relieved</glossterm>
+
+    <glossdef>
+      <para>A term used to describe the status of allocated inventory
+      quantity. Allocated quantity is considered relieved if either of the
+      following two conditions exist: 1) quantity allocated to a work order
+      material requirement has been issued, or 2) quantity allocated to a
+      sales order line item has been issued.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>reorder exceptions</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Reorder Exception</glossterm>
+
+    <glossdef>
+      <para>An indication that an item site's projected availability will drop
+      below the reorder level for the item site—or to zero or below if no
+      reorder level exists. Reorder exceptions are a type of event.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>reorder levels</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Reorder Level</glossterm>
+
+    <glossdef>
+      <para>Specifies when a planned replenishment order should be created for
+      an item site. If planned availability falls below the reorder level,
+      then a replenishment order will be created when material requirements
+      planning (MRP) is run. The quantity of the replenishment order will be
+      enough to restore planned availability back to the reorder level or to
+      the order up to (OUT) level, if the OUT level is greater. Reorder levels
+      are defined on the Item Site master.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>replenishment orders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Replenishment Order</glossterm>
+
+    <glossdef>
+      <para>A planned order issued by material requirements planning (MRP) to
+      resupply an item whose available quantity has fallen below its reorder
+      level at the point when MRP is run.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>reports</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Report</glossterm>
+
+    <glossdef>
+      <para>Printed information showing the results of a query run against a
+      database.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>restricted</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Restricted</glossterm>
+
+    <glossdef>
+      <para>A term used to describe site locations. If a location is
+      restricted, only items specifically assigned to the location may be
+      stored there. If a location is not restricted, it will accept any items
+      from the same site.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>revision</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Revision</glossterm>
+
+    <glossdef>
+      <para>An independent, historical snapshot of an entire bill of materials
+      or routing that will be permanently saved.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm>RMA Hold</glossterm>
+
+    <glossdef>
+      <para>A hold status for replacement sales orders that prevents items
+      from being issued to shipping if the receipt of all original goods is
+      required first.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>root items</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Root Item</glossterm>
+
+    <glossdef>
+      <para>An item that is not the child of another other item. A top-level
+      manufactured item, for example.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><glossterm><indexterm significance="normal">
+        <primary>rough-cut capacity plans</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Rough-Cut Capacity Plan</glossterm></glossterm>
+
+    <glossdef>
+      <para>The plan that results when the master production schedule is
+      converted into specific requirements.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>routings</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Routing</glossterm>
+
+    <glossdef>
+      <para>A printed list showing the work order operations for a specified
+      work order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>run time</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Run Time</glossterm>
+
+    <glossdef>
+      <para>The amount of time required to complete an operation for a
+      manufactured item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>safety stock</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Safety Stock</glossterm>
+
+    <glossdef>
+      <para>The quantity of stock for an item you want to keep in inventory to
+      protect against unplanned, unforeseeable trends in your order
+      forecasts.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>sales orders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Sales Order</glossterm>
+
+    <glossdef>
+      <para>An order placed by a customer for the purchase of sold
+      items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>sales representatives</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Sales Representative</glossterm>
+
+    <glossdef>
+      <para>A representative to whom sales orders may be credited and
+      commissions paid.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>scrap</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Scrap</glossterm>
+
+    <glossdef>
+      <para>Inventory that is damaged and cannot be used. Also, work order
+      material that cannot be used during the production of a work
+      order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>serial numbers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Serial Number</glossterm>
+
+    <glossdef>
+      <para>A unique number used to identify a particular item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>servers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Server</glossterm>
+
+    <glossdef>
+      <para>A computer or process which provides resources and services to
+      other computers connected to the network.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>service Item</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Service Item</glossterm>
+
+    <glossdef>
+      <para>An item type used for situations where the cost is variable. Work
+      orders for service items are always linked to sales orders. They are not
+      received into inventory or closed via the manufacturing interface, but
+      rather closed when linked sales order lines are shipped. WIP accumulated
+      for service work will be posted to cost of sales at shipping.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>setup time</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Setup Time</glossterm>
+
+    <glossdef>
+      <para>The amount of time required to prepare a work center for the
+      performance of an operation. Setup time is charged only once per
+      operation, regardless of the quantity ordered.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>shipping</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Shipping</glossterm>
+
+    <glossdef>
+      <para>The business function responsible for the outgoing shipment of
+      goods.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>shipping contents</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Shipping Contents</glossterm>
+
+    <glossdef>
+      <para>The inventory contained in the shipping WIP for a given
+      site.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>shipping zones</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Shipping Zone</glossterm>
+
+    <glossdef>
+      <para>A defined geographic region, which can be used to perform sales
+      analysis.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>ship-to addresses</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Ship-To Address</glossterm>
+
+    <glossdef>
+      <para>An address to which sales order items are shipped. Customers may
+      maintain multiple ship-to addresses.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>ship vias</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Ship Via</glossterm>
+
+    <glossdef>
+      <para>The means to be used for shipping a sales order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>shortage</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>Inventory</primary>
+
+        <secondary>shortage defined</secondary>
+      </indexterm>Shortage</glossterm>
+
+    <glossdef>
+      <para>A term used to describe inventory whose availability is
+      negative.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>sites</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Site</glossterm>
+
+    <glossdef>
+      <para>A physical production or storage facility.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>site locations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Site Location</glossterm>
+
+    <glossdef>
+      <para>A physical location within a site for example, a bin, shelf,
+      aisle, etc. Also known as a location.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>site zones</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Site Zone</glossterm>
+
+    <glossdef>
+      <para>A defined section or area within a site. For example, separate
+      site zones might be designated to define areas where orders are
+      selected, picked, and packed.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm>Sold Item</glossterm>
+
+    <glossdef>
+      <para>An item that can be sold to customers.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>sold ranking</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Sold Ranking</glossterm>
+
+    <glossdef>
+      <para>Specifies the order in which item sites will be chosen during
+      sales order and quote creation.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>ssl</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>SSL</glossterm>
+
+    <glossdef>
+      <para>An acronym for secure sockets layer. SSL is a security protocol
+      designed to provide communications privacy for client/server
+      applications like xTuple ERP which communicate over the Internet.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>standard costs</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Standard Cost</glossterm>
+
+    <glossdef>
+      <para>The cost used for posting general ledger transactions. Standard
+      cost is distinguished from actual cost in the sense that standard cost
+      is fixed, whereas actual cost is subject to fluctuations arising from
+      material or production changes. The two costs may diverge. However, they
+      can be brought back into alignment by posting actual cost to standard.
+      Differences between standard and actual costs can be used by managers to
+      determine whether costing and production goals are being met.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>standard journals</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Standard Journal</glossterm>
+
+    <glossdef>
+      <para>Used to define reoccurring general ledger (G/L) entries.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>standard journal groups</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Standard Journal Group</glossterm>
+
+    <glossdef>
+      <para>Used to define groups of standard journals that are often posted
+      together, such as during period end.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>standard labor rates</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Standard Labor Rate</glossterm>
+
+    <glossdef>
+      <para>A labor rate used by work centers for standard, defined job
+      positions.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>standard operations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Standard Operation</glossterm>
+
+    <glossdef>
+      <para>A template that describes an operation which may be used in
+      multiple routings.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>stock buffer</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>buffers</primary>
+
+        <secondary>stock defined</secondary>
+      </indexterm>Stock Buffer</glossterm>
+
+    <glossdef>
+      <para>An accumulation of items stored in inventory that act as a hedge
+      against demand where the required service time is shorter than a time
+      buffer for that item would allow. For example: If we have a standard
+      part that takes two weeks to produce, but which we must be able to ship
+      in one day, we would stock that item to ensure the one-day service
+      level. In another case, we may be able to produce the item in a day, but
+      sometimes seasonal load changes result in a production bottleneck where
+      the backlog on a critical resource for that item is greater than a day.
+      The stock buffer allows us to continue shipping the item under those
+      circumstances. It is important to note that due dates are irrelevant for
+      orders with stock buffers. The buffer size is determined by the reorder
+      level at the item site.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>subassemblies</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Subassembly</glossterm>
+
+    <glossdef>
+      <para>A manufactured component item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>tax authorities</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Tax Authority</glossterm>
+
+    <glossdef>
+      <para>Any entity legally-authorized to collect taxes for example, city,
+      county, state, or federal government agencies.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>tax codes</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Tax Code</glossterm>
+
+    <glossdef>
+      <para>The rate used when taxes are applied to a transaction. Tax codes
+      may contain one or multiple layers of taxation. For example, a single
+      tax code might include only the rate for state tax; whereas, another tax
+      code might combine both city, county, and state tax rates.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>tax registrations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Tax Registration</glossterm>
+
+    <glossdef>
+      <para>The registration number used by tax authorities to identify
+      businesses and/or individuals. An employer identification numbers (EIN)
+      is an example of a tax registration number.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>tax selections</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Tax Selection</glossterm>
+
+    <glossdef>
+      <para>A matrix used to find the tax code to apply to an item given the
+      item's tax type and the tax authority with jurisdiction over the
+      transaction.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>tax types</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Tax Type</glossterm>
+
+    <glossdef>
+      <para>A system for classifying goods and services into taxable
+      categories.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>terms</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Terms</glossterm>
+
+    <glossdef>
+      <para>Determines payment details for accounts payable and accounts
+      receivable.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>thawing</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Thawing</glossterm>
+
+    <glossdef>
+      <para>The process of unlocking QOH values at item sites that have been
+      frozen for inventory counting purposes. See
+      <emphasis>freeze</emphasis>.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>this level</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>This Level</glossterm>
+
+    <glossdef>
+      <para>The parent item level. For example, this level costs are
+      associated with the parent item they refer to.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>throughput</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Throughput</glossterm>
+
+    <glossdef>
+      <para>Indicates the number of units, in the given item's inventory unit
+      of measure (UOM), that can be produced in a minute and also the number
+      of minutes that are required to produce one unit, expressed in the given
+      item's inventory UOM.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>time buffer</primary>
+
+        <secondary>defined</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>buffers</primary>
+
+        <secondary>time defined</secondary>
+      </indexterm>Time Buffer</glossterm>
+
+    <glossdef>
+      <para>The lead time, measured in working days, of a supply order for an
+      item that is not stocked. By working days we mean the days that the shop
+      is available to work, which may exclude weekends or holidays. For
+      example: If a shop typically has a three-week lead time, but does not
+      work weekends, then the time buffer for that shop would typically be 15
+      working days. The xTuple ERP constraint management system looks at the
+      start and finish dates of a discrete purchase order or work order,
+      removes non-working days for the order's site, and then calculates the
+      time buffer.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>time fence</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Time Fence</glossterm>
+
+    <glossdef>
+      <para>The time fence (also known as the demand fence) is used by the
+      master production scheduling (MPS) system to evaluate when forecasted
+      demand (i.e., from production plans) should be used in place of actual
+      demand (i.e., from sales orders) and vice versa. Measured in days, the
+      demand time fence is the period of time extending from the current day
+      to the number of days into the future as specified in this field. The
+      demand time fence option applies only to those items which currently
+      appear on a released production plan. If demand for these items falls
+      within the demand time fence period, then the forecast will be ignored.
+      If demand falls outside the demand time fence, then the larger of actual
+      or forecasted demand will be used. MPS responds to the demand it locates
+      by creating firm planned orders for the required quantities.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>time-phased</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Time-Phased</glossterm>
+
+    <glossdef>
+      <para>A reference to certain displays and reports which represent data
+      in relation to specified calendar periods.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>toolbars</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Toolbar</glossterm>
+
+    <glossdef>
+      <para>The row of icons or buttons near the top of the application
+      desktop which activate functions when selected.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>tooling</primary>
+
+        <secondary>item type defined</secondary>
+      </indexterm>Tooling Item</glossterm>
+
+    <glossdef>
+      <para>A material resource used in the manufacturing process that is
+      returned upon completion of a work order—for example, a reusable mold,
+      apparatus, fixture, or tool. It may be included on a bill of materials
+      (BOM) for an item, usually specifying a fixed quantity. Tooling items
+      can be purchased, manufactured, or sold. A manufactured tool can have a
+      routing, a BOM, and a work order. As with other material items, tools
+      can be tracked as serialized items. The cost of a tooling item is not
+      included in the overall cost of the parent item where it is used.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>transactions</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Transaction</glossterm>
+
+    <glossdef>
+      <para>Any event involving a change in inventory value or status, and the
+      resulting recording of such events in the general ledger (G/L). xTuple
+      ERP recognizes both inventory transactions and G/L transactions. For a
+      complete list of inventory transaction types, see <xref
+      linkend="appendixa"/>.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>transit sites</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>sites</primary>
+
+        <secondary>transit defined</secondary>
+      </indexterm>Transit Site</glossterm>
+
+    <glossdef>
+      <para>A special site used by transfer orders used to account for
+      in-transit inventory.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>transformations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Transformation</glossterm>
+
+    <glossdef>
+      <para>The process of converting quantity of one item into quantity of
+      another item.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>travelers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Traveler</glossterm>
+
+    <glossdef>
+      <para>A collection of printed documents which accompanies a work order.
+      Traveler documents may include the pick list, routing, or packing list.
+      Also known as a work order traveler or shop traveler.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>unallocated</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Unallocated</glossterm>
+
+    <glossdef>
+      <para>Describes the quantity on hand (QOH) remaining after allocations
+      have been accounted for, as in:</para>
+
+      <para>QOH - Allocated Qty. = Unallocated Qty.</para>
+
+      <para>See also: Allocation.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>units of measure</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Unit of Measure (UOM)</glossterm>
+
+    <glossdef>
+      <para>The standard amount in which quantities of an item are managed
+      (e.g., each, pounds, gallons, etc.). In addition to its inventory unit
+      of measure (UOM), an item may be maintained in multiple other UOMs,
+      including shipping UOM, purchasing UOM, etc.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>usable qoh</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Usable QOH</glossterm>
+
+    <glossdef>
+      <para>A term used to describe inventory that is available immediately to
+      satisfy work order and sales order demand. Usable quantity on hand (QOH)
+      is the same as available QOH.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>usage statistics</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Usage Statistics</glossterm>
+
+    <glossdef>
+      <para>Records indicating inventory transaction activity.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>user preferences</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>User Preferences</glossterm>
+
+    <glossdef>
+      <para>Controls found within the <guimenu>System</guimenu> module which
+      users can manipulate to customize their interaction with xTuple ERP. For
+      example, users may customize the appearance of their application desktop
+      or specify the events they are subscribed to.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>utilities</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Utility</glossterm>
+
+    <glossdef>
+      <para>A software tool designed to perform a specific function.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>validator</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Validator</glossterm>
+
+    <glossdef>
+      <para>A formatting requirement used to strictly enforce data entry
+      rules. If you specify a validator for a field, then users will have to
+      conform to the format when entering data. Any data which does not
+      conform will not be accepted.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>variances</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Variance</glossterm>
+
+    <glossdef>
+      <para>The difference between an expected result and an actual
+      result.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>vendor ranking</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Vendor Ranking</glossterm>
+
+    <glossdef>
+      <para>Specifies the order in which item sources will be chosen during
+      purchase order creation.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>vendors</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Vendor</glossterm>
+
+    <glossdef>
+      <para>A supplier of purchased items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>vouchers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Voucher</glossterm>
+
+    <glossdef>
+      <para>A document authorizing payment to vendors who have either
+      performed services or supplied goods. A voucher vouches for the fact
+      that these goods or services have been provided.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>work in process</primary>
+
+        <secondary>defined</secondary>
+      </indexterm><indexterm significance="normal">
+        <primary>WIP</primary>
+
+        <see>work in process</see>
+      </indexterm>WIP</glossterm>
+
+    <glossdef>
+      <para>An acronym for work in process. Refers to inventory in various
+      stages of completion ranging from work order material requirements in
+      production to packaged inventory awaiting shipment.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>work centers</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Work Center</glossterm>
+
+    <glossdef>
+      <para>A collection of machines or labor that performs a specific task
+      when building a manufactured item. Work centers are used by the routing
+      to determine the amount of available and required manufacturing capacity
+      to produce the manufactured item. Work centers also determine per-minute
+      run and setup time costs. A single site may contain multiple work
+      centers.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>work orders</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Work Order</glossterm>
+
+    <glossdef>
+      <para>A document which demands the production of manufactured
+      items.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>work order material requirements</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Work Order Material Requirement</glossterm>
+
+    <glossdef>
+      <para>Indicates the quantity of a given component item that is required
+      to complete the parent work order. A material requirement is derived by
+      multiplying the work order quantity times the specifications set forth
+      in the parent item's bill of materials (BOM). The BOM specifications may
+      be altered at the work order level to fulfill the requirements of a
+      particular work order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>work order operations</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Work Order Operation</glossterm>
+
+    <glossdef>
+      <para>Indicates the amount of run and setup time at a given work center
+      that is required to complete the parent work order. An operation is
+      derived by multiplying the work order quantity times the specifications
+      set forth in the parent item's routing. The routing specifications may
+      be altered at the work order level to fulfill the requirements of a
+      particular work order.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry id="glossary.XSLT">
+    <glossterm><indexterm>
+        <primary>XSLT</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>XSLT</glossterm>
+
+    <glossdef>
+      <para>An XML transformation language designed by the World Wide Web
+      consortium as part of the extensible stylesheet language. This is
+      supported by xTuple as a mechanism for importing data from XML files
+      into the database. Files containing XSLT are often called
+      <wordasword>stylesheets</wordasword>.</para>
+    </glossdef>
+  </glossentry>
+
+  <glossentry>
+    <glossterm><indexterm significance="normal">
+        <primary>zones</primary>
+
+        <secondary>defined</secondary>
+      </indexterm>Zone</glossterm>
+
+    <glossdef>
+      <para>A defined geographic region or specific site area. See shipping
+      zone or site zone.</para>
+    </glossdef>
+  </glossentry>
+
+  <!--
+  </glosslist>
+  -->
+</glossary>

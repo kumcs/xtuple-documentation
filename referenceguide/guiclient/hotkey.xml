@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="hotkey">
+  <title><indexterm significance="normal">
+      <primary>hot keys</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Hot Key</title>
+  <para>Hot keys are designed to create user-defined shortcuts, by linking
+  particular screens with keyboard keystrokes. For example, you might link the
+  <guibutton>F1</guibutton> key to the Customer list. Using this hot key, you
+  could open the Customer list by simply selecting <guibutton>F1</guibutton>.
+  You may create up to 42 hot keys using the available keystroke options. The
+  hot keys you create will also be displayed as shortcuts on the xTuple
+  desktop.</para>
+  <para>To create a new hot key, select the <guibutton>NEW</guibutton> button.
+  The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/hotkey.png" />
+        </imageobject>
+        <caption>Create new Hot Key</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new hot key, you are presented with the following
+  options:</para>
+  <note>
+    <para>Hot keys also appear as shortcuts on the xTuple desktop.</para>
+  </note>
+  <variablelist>
+    <varlistentry>
+      <term>Keystroke</term>
+      <listitem>
+        <para>Select a keyboard keystroke from the list of available
+        keystrokes. The list includes <guibutton>F1-F9</guibutton>,
+        <guibutton>CTRL+B-Z</guibutton> (with some exceptions), and
+        <guibutton>CTRL+0-9</guibutton>. Each screen (or action) in the
+        available list may be assigned only once, to a single
+        keystroke.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Actions</term>
+      <listitem>
+        <para>Display lists the screens which may be associated with
+        keystrokes.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

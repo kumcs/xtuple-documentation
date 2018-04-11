@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspDetailedInventoryHistoryByLocation">
+  <title><indexterm significance="normal">
+      <primary>inventory history</primary>
+
+      <secondary>detailed by location</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>locations</primary>
+
+      <secondary>detailed inventory history of</secondary>
+    </indexterm>Detailed Inventory History by Location</title>
+
+  <para>To view detailed inventory history by location, go to
+  <guimenuitem>Inventory &gt; Reports &gt; History by Location</guimenuitem>.
+  The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspDetailedInventoryHistoryByLocation.png"/>
+        </imageobject>
+
+        <caption>Detailed Inventory History by Location</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>The display will only list inventory history for multiple location
+    control items. Items without multiple location control turned on will not
+    be listed in the display. Multiple location control is set in the item
+    site record.</para>
+  </note>
+
+  <para>When displaying detailed inventory history by location, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Location</term>
+
+      <listitem>
+        <para>Specify the location whose detailed inventory history you want
+        to display. Displays detailed inventory history for selected
+        location.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Netable</term>
+
+      <listitem>
+        <para>Indicates whether the location is netable or not.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Restricted</term>
+
+      <listitem>
+        <para>Indicates whether the location is restricted or not.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Start Date</term>
+
+      <listitem>
+        <para>Inventory transactions conducted on and after this date will be
+        displayed. Start date and end date must be entered for calculation to
+        proceed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>End Date</term>
+
+      <listitem>
+        <para>Inventory transactions conducted on and before this date will be
+        displayed. Start date and end date must be entered for calculation to
+        proceed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Trans. Types</term>
+
+      <listitem>
+        <para>Select one of the available transaction types:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>All Transactions</term>
+
+            <listitem>
+              <para>Displays all inventory transactions.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Receipts</term>
+
+            <listitem>
+              <para>Displays receipts into inventory from manufacturing,
+              purchases, or miscellaneous receipts.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Issues</term>
+
+            <listitem>
+              <para>Displays issues from inventory to manufacturing.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Shipments</term>
+
+            <listitem>
+              <para>Displays shipments to customers.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Adjustments and Counts</term>
+
+            <listitem>
+              <para>Displays inventory adjustments and counts.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry role="standard">
+            <term>Transfers</term>
+
+            <listitem>
+              <para>Displays inter-site transfers and location and lot/serial
+              number reassignments.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Scraps</term>
+
+            <listitem>
+              <para>Displays scrap removed from inventory.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to display detailed inventory history by location for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site whose detailed inventory history by location you
+        want to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Inventory History</term>
+
+      <listitem>
+        <para>Display lists detailed inventory history by location, using the
+        specified parameters.</para>
+
+        <note>
+          <para>The system prefixes order numbers with letters indicating the
+          order type. For example, work orders are prefixed with WO, purchase
+          orders with PO, and sales orders with SO. These letters are for
+          display purposes only and are not considered part of the order
+          number.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

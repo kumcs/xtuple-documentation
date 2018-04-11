@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section>
+  <title>Allocate A/R Credit Memos</title>
+  <para id="allocateARCMs"><informalexample>
+      <para>When processing sales orders or invoices, you have the option to
+      allocate open A/R credit memos to the document. To allocate open credit
+      memos, select the <guibutton>Allocated Credit</guibutton> link on the
+      <guimenuitem>Line Items</guimenuitem> tab. The following screen will
+      appear:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/allocateARCreditMemo.png" />
+            </imageobject>
+            <caption>Allocate A/R Credit Memos</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>When allocating credit memos, you are presented with the following
+      options:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Document Total</term>
+          <listitem>
+            <para>Displays the total amount of the document being applied
+            to.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Unallocated Balance</term>
+          <listitem>
+            <para>Displays the open balance of the document being applied to.
+            When credit memos are allocated to the document, the open balance
+            will go down by the amount of the allocations. The balance will go
+            back up if those allocations are cleared.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Credits</term>
+          <listitem>
+            <para>Display lists the customer's open credit memos. When a
+            credit memo is applied to the document, the list will indicate the
+            relationship between the two. If the allocation is cleared, the
+            list will update to remove the relationship.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>The following buttons are unique to this screen:</para>
+      <variablelist>
+        <varlistentry>
+          <term>ALLOCATE</term>
+          <listitem>
+            <para>Highlight a credit memo and then select this button to
+            allocate the credit memo to the document. Partial credit memo
+            amounts may be allocated if the document's open balance is less
+            than the full credit memo amount.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </informalexample></para>
+</section>

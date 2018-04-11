@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspTimePhasedOpenARItems">
+  <title><indexterm significance="normal">
+      <primary>open items</primary>
+
+      <secondary>aging report for receivables</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>accounts receivable</primary>
+
+      <secondary>aging report for</secondary>
+    </indexterm>Receivables Aging</title>
+
+  <para>The receivables aging report gives you the ability to view open
+  receivables in a bucketed, time-phased perspective. An open item is
+  recognized by the receivables aging report <emphasis>as-of</emphasis> the
+  item's document or distribution date, depending on your preference. In the
+  case of invoices, the document date is the invoice date. The distribution
+  date is the date the invoice shows up in the general ledger (G/L). For
+  example, if you post an invoice on January 1, but the invoice date is
+  February 15, then the as-of document date will be February 15. This means,
+  if you run the receivables aging report with an as-of document date in
+  January, the open item with an invoice date of February 15 will not appear
+  in the report. In fact, it will not appear in the report until an as-of
+  document date of February 15 or later is specified. Conversely, using the
+  distribution date option, the invoice would appear as-of January 1.</para>
+
+  <tip>
+    <para>You can view the document date for an open item by right-clicking on
+    a line in the Receivables Aging display. You can also find open item
+    details on other screens—for example, Receivables workbench, customer
+    history, open items by customer, etc.</para>
+  </tip>
+
+  <para>The grouping of open items into time-phased buckets is driven by a
+  document's due date. In other words, if a due date falls within 0-30 days of
+  the as-of date specified when the report is run, then the open item will
+  appear in the first bucket. If the due date falls 31-60 days past the
+  specified as-of date, then the open item will appear in the second bucket.
+  And so on. But again, keep in mind that the document date for an open
+  receivable (e.g., invoice date) must be on or before the specified as-of
+  date for the item to be recognized by the report. To view open receivables
+  from an aging perspective, go to <guimenuitem>Accounting &gt; Accounts
+  Receivable &gt; Reports &gt; Aging</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspTimePhasedOpenARItems.png"/>
+        </imageobject>
+
+        <caption>Receivables Aging</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying aging open receivables, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Customer</term>
+
+      <listitem>
+        <para>Select all or specific customers whose receivables information
+        you want to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>As of</term>
+
+      <listitem>
+        <para>Specify the date you want the open receivables to be relative
+        to. The report will include any receivable items which were open—that
+        is, not yet paid—as of the specified date. This feature provides
+        <emphasis>point in time</emphasis> open balance functionality. But
+        again, keep in mind that the document date for an open receivable
+        (e.g., invoice date) must be on or before the specified as-of date for
+        the item to be recognized by the report.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Use Custom Calendar</term>
+
+      <listitem>
+        <para>Select if you want to display open receivables using a custom
+        calendar of your choosing.</para>
+
+        <para>If selected, the screen will present a series of different
+        options, including the option to select a calendar and associated
+        periods.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Use</term>
+
+      <listitem>
+        <para>Specify the date preference you want to use:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Document Date</term>
+
+            <listitem>
+              <para>Select to include open items as of their document
+              date.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Distribution Date</term>
+
+            <listitem>
+              <para>Select to include open items as of their document
+              date.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Report</term>
+
+      <listitem>
+        <para>Specify your preference for the printed report. This option
+        impacts the printed report <emphasis>only</emphasis> and will not
+        change the information displayed on the screen.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Detailed Report</term>
+
+            <listitem>
+              <para>Select if you want to print a detailed aging report. This
+              option will not change the screen display.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Summary Report</term>
+
+            <listitem>
+              <para>Select if you want to print a summarized aging report.
+              This option will not change the screen display.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Receivables Open Items</term>
+
+      <listitem>
+        <para>Display lists aging open receivables, using the specified
+        parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para><indexterm significance="normal">
+      <primary>open items</primary>
+
+      <secondary>time-phased for receivables</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>accounts receivable</primary>
+
+      <secondary>time-phased open items for</secondary>
+    </indexterm>To view open receivables using a custom calendar, select the
+  <guimenuitem>Use Custom Calendar</guimenuitem> option above. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspTimePhasedOpenARItems_custom.png"/>
+        </imageobject>
+
+        <caption>Custom Receivables Aging calendar</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>If a customer's open receivables balance exceeds their credit limit,
+    the customer will automatically be placed on credit warning. In addition,
+    any new or open sales orders for the customer will also be placed on
+    credit hold.</para>
+  </note>
+
+  <para>When displaying open receivables using a custom calendar, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Calendar</term>
+
+      <listitem>
+        <para>Select the calendar you want to use for the report.</para>
+
+        <para>Associated calendar periods will be displayed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Name/Selected Periods</term>
+
+      <listitem>
+        <para>Select as many periods as you want to display. Selected periods
+        correspond to calendar specified in the <guilabel>Calendar</guilabel>
+        field. Select individual periods or groups of periods together. To
+        select an individual period, highlight the period using your mouse
+        button. The period is now selected. To select a sequence of periods,
+        highlight the first in the sequence using your mouse button. Then,
+        holding down the <guibutton>SHIFT</guibutton> key on your keyboard,
+        highlight the last period in the sequence. The entire sequence is now
+        selected. To select periods that are out of sequence (e.g., January,
+        April, July, October), highlight the first period in the group. Then,
+        holding down the <guibutton>CTRL</guibutton> key on your keyboard,
+        highlight the next period you want to select. Continue highlighting
+        periods with the <guibutton>CTRL</guibutton> key depressed until all
+        desired periods are selected. The entire group is now selected.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Open Receivables</term>
+
+      <listitem>
+        <para>Display lists time-phased open receivables, using the specified
+        parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

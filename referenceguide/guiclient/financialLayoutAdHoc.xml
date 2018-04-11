@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="financialLayoutAdHoc">
+  <title><indexterm significance="normal">
+      <primary>financial reports</primary>
+
+      <secondary>ad hoc type</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>ad hoc reports</primary>
+    </indexterm><emphasis>Ad Hoc</emphasis> Report</title>
+
+  <para><emphasis>Ad hoc</emphasis> reports are completely free-form and
+  user-defined. They give you the flexibility to create financial reports
+  which do not fit neatly within the three standard statement formats.</para>
+
+  <note>
+    <para>Any financial reports created in the system prior to version 2.1.0
+    are considered to be <emphasis>ad hoc</emphasis> reports.</para>
+  </note>
+
+  <tip>
+    <para>Exercise caution before converting an <emphasis>ad hoc</emphasis>
+    report to another report type. The process removes <emphasis>ad
+    hoc</emphasis> group definitions, replacing them with standard statement
+    format settings.</para>
+  </tip>
+
+  <para>To create an <emphasis>ad hoc</emphasis> Report, select the
+  <guilabel>Ad Hoc</guilabel> report type. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutAdHoc.png"/>
+        </imageobject>
+
+        <caption>Ad Hoc financial report</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new <emphasis>ad hoc</emphasis> report, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Row Layout</term>
+
+      <listitem>
+        <para>Display lists groups and account numbers for the specified
+        financial report.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ADD TOP LEVEL GROUP</guibutton></term>
+
+      <listitem>
+        <para>Select to add a top level group to the report.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>ADD GROUP</guibutton></term>
+
+      <listitem>
+        <para>Select to add a group to the report.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>ADD ACCOUNT</guibutton></term>
+
+      <listitem>
+        <para>Select to add G/L account(s) to a financial report group.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>ADD SPECIAL</guibutton></term>
+
+      <listitem>
+        <para>Select to add a financial report special item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>MOVE UP</guibutton></term>
+
+      <listitem>
+        <para>Highlight a group or account and then select this button to move
+        the group or account up the list.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>MOVE DOWN</guibutton></term>
+
+      <listitem>
+        <para>Highlight a group or account and then select this button to move
+        the group or account up the list.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="financialLayoutGroup.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <xi:include href="financialLayoutSpecial.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <xi:include href="financialLayoutOptions.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

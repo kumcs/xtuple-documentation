@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="classCode">
+  <title><indexterm significance="normal">
+      <primary>class codes</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Class Code</title>
+  <para>To create a new class code, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/classCode.png"/>
+        </imageobject>
+        <caption>Create new Class Code</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>Create your class codes using a logical, hierarchical structure.
+    This will make it easier to retrieve class code information in the
+    future.</para>
+  </tip>
+  <para>When creating a new class code, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Class Code</term>
+      <listitem>
+        <para>Enter a unique code to identify the class code.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a description to further identify the class code.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Default Item Tax Types</term>
+      <listitem>
+        <para>Lists the tax zone defaults for different tax types.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>When you create a default item tax type, this will be the tax type
+  that will be automatically assigned to a newly created item. Items that have
+  already been created and are in the database will not have their tax types
+  changed even if you edit the default. To create a default tax type, select
+  the <guibutton>NEW</guibutton> button. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/itemtax.png"/>
+        </imageobject>
+        <caption>Create new tax type</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new item tax type default, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>tax zones</primary>
+          <secondary>for sales orders</secondary>
+        </indexterm>Tax Zone</term>
+      <listitem>
+        <para>Specify the tax zone you want to associate with the specified
+        tax type. Creating a relationship between a tax zone and a tax type
+        enables you to determine how tax will be applied when processing
+        transactions using the item. If you select the
+        <guilabel>Any</guilabel> option, this means any defined tax zone is a
+        possible match.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>Consider creating separate tax types for any groups or classes of
+    items which are taxed at different rates.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Tax Types</term>
+      <listitem>
+        <para>Specify the tax type you want to associate with the specified
+        tax zone. Tax types provide a system for classifying goods and
+        services into taxable categories. Creating a relationship between a
+        tax zone and a tax type enables you to determine how tax will be
+        applied when processing transactions using the item. If you select the
+        <guilabel>Any</guilabel> option, this means any defined tax type is a
+        possible match.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

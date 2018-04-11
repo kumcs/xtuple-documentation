@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="arCreditMemoApplication">
+  <title><indexterm significance="normal">
+      <primary>credit memos</primary>
+
+      <secondary>applying unapplied</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>debit memos</primary>
+
+      <secondary>applying unapplied</secondary>
+    </indexterm>Apply Credit Memo Amount</title>
+
+  <para>To apply a credit memo amount to an open receivable, select the
+  <guibutton>APPLY</guibutton> button. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/arCreditMemoApplication.png"/>
+        </imageobject>
+
+        <caption>Apply credit memo amount to open receivable</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When applying a credit memo amount to an open receivable, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Customer #</term>
+
+      <listitem>
+        <para>Displays the customer number of the customer whose open
+        receivable the amount is being applied to. The customer name and
+        billing address will also display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc. Number</term>
+
+      <listitem>
+        <para>Displays the document number associated with the open
+        receivable.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc. Type</term>
+
+      <listitem>
+        <para>Displays the document type of the document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc. Date</term>
+
+      <listitem>
+        <para>Displays the document's origination date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Due Date</term>
+
+      <listitem>
+        <para>Displays the date the document is due.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount</term>
+
+      <listitem>
+        <para>Displays the original amount due for the selected
+        document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Paid</term>
+
+      <listitem>
+        <para>Displays the amount paid to date toward the original document
+        amount.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pending</term>
+
+      <listitem>
+        <para>Displays the total amount of any pending receivable
+        applications. Pending applications include unposted cash receipts, as
+        well as credit allocations to uninvoiced sales orders. To clear the
+        pending amounts, post the related cash receipts and/or invoice the
+        related sales orders.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Balance</term>
+
+      <listitem>
+        <para>Displays the remaining balance due.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount Available to Apply</term>
+
+      <listitem>
+        <para>Displays the amount of the referring credit memo available to be
+        applied.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount to Apply</term>
+
+      <listitem>
+        <para>Specify the amount to apply to the open receivable.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

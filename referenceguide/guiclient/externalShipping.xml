@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="externalShipping">
+  <title>External Shipping Maintenance</title>
+
+  <para>To create or maintain shipping data exported to external shipping
+  packages like UPS WorldShip, select the <guibutton>NEW</guibutton> button.
+  The following screen will appear:</para>
+
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/externalShipping.png"/>
+      </imageobject>
+
+      <caption>External Shipping Maintenance</caption>
+    </mediaobject>
+  </screenshot>
+
+  <para>When entering new shipping data you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Order #</term>
+
+      <listitem>
+        <para>Enter the order number of the sales order you want to maintain.
+        The lookup feature located to the right of the field leads to a
+        searchable list of sales orders available for maintenance.</para>
+
+        <note>
+          <para>The text below the <guilabel>Order #</guilabel> column
+          represents the order type (i.e., SO) and status (i.e., C). Below
+          this text us the customer name (i.e., Tremendous Toys
+          Incorporated).</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipment #</term>
+
+      <listitem>
+        <para>Enter the shipment number of the internal shipment order created
+        to ship sales order. The lookup feature located to the right of the
+        field leads to a searchable list of shipment numbers.</para>
+
+        <note>
+          <para>The text below shipment number identifies the tracking number
+          entered on the shipment order.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipper</term>
+
+      <listitem>
+        <para>Select the external third party shipper shipping this order
+        (i.e., UPS, FedEx, etc.).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Package Tracking Number</term>
+
+      <listitem>
+        <para>Enter the package tracking number that represents the external
+        shippers tracking number for the individual package, which could be
+        comprised of one of many or one of one.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tracking Number</term>
+
+      <listitem>
+        <para>Specify the tracking number that represents external shipper's
+        tracking number for the entire order, which can be a group of
+        packages.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Package Type</term>
+
+      <listitem>
+        <para>Select the package type identified on the</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Void</term>
+
+      <listitem>
+        <para>Select the <guilabel>List</guilabel> option if the shipment has
+        been voided.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Billing Option</term>
+
+      <listitem>
+        <para>Enter the <guilabel>Billing</guilabel> option which identifies
+        how the shipment was billed by the external shipper (i.e., prepaid,
+        COD, etc.).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Weight</term>
+
+      <listitem>
+        <para>Specify weight of shipment reported to external shipper.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Base Freight</term>
+
+      <listitem>
+        <para>Enter the amount of the base freight charge to be charged to the
+        specified order. Freight charges may be entered during the creation or
+        modification of an order—or at the time of shipment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Total Freight</term>
+
+      <listitem>
+        <para>Enter the amount of the total freight charge to be charged to
+        the complete order including taxes and surcharges.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Last Updated</term>
+
+      <listitem>
+        <para>Review automatic timestamp which identifies last modification to
+        record.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="uoms">
+  <title><indexterm significance="normal">
+      <primary>units of measure</primary>
+      <secondary>master list of</secondary>
+    </indexterm>Units of Measure</title>
+  <para>Units of measure (UOM) represent the standard amount in which
+  quantities of an item are managed (e.g., EACH, POUNDS, GALLONS, etc.). To
+  access the master list of UOM, go to <guimenuitem>Products &gt; Setup &gt;
+  Master Information &gt; Units of Measure</guimenuitem>. The following screen
+  will appear.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/uoms.png" />
+        </imageobject>
+        <caption>Units of Measure master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Units of Measure screen displays information on all existing UOM,
+  including UOM name and description.</para>
+  <note>
+    <para>Users may also enter free-form UOMs wherever UOM definitions are
+    required—for example, in the Item master. The ability to enter free-form
+    UOMs provides flexibility so that all the UOMs your site requires do not
+    need to be previously added to the UOM master list.</para>
+  </note>
+  <xi:include href="uom.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

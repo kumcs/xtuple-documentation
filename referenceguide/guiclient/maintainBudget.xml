@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="maintainBudget">
+  <title><indexterm significance="normal">
+      <primary>budgets</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>New Budget</title>
+
+  <para>The Budget utility is designed to store budgetary information, by
+  account number, in a table format. Once stored, this information may then be
+  accessed and viewed using the financial report engine. The financial
+  reporting engine specifically includes options for generating reports
+  showing budget information. To access the Budget utility, go to
+  <guimenuitem>Accounting &gt; Budget &gt; New Budget</guimenuitem>. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/maintainBudget.png"/>
+        </imageobject>
+
+        <caption>Maintain Budget</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>While all budget amounts entered in the generated table are stored
+    in the database, the particular groupings of accounts and accounting
+    periods are used only during the current session. If you want to
+    re-generate a particular budget table, the accounts and accounting periods
+    must be manually entered again.</para>
+  </note>
+
+  <para>When creating or maintaining budget information, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to identify the budget.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Description</term>
+
+      <listitem>
+        <para>Enter a brief line to describe the budget.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Project #</term>
+
+      <listitem>
+        <para>If your system is configured to use projects, select a project
+        number to associate with the budget.</para>
+
+        <para role="xtprjaccnt">When you have the xTuple Project Accounting
+        package installed—and you link a project to the budget—the project
+        number will be added as the final segment of all G/L account numbers
+        used by the budget.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Table Parameters</term>
+
+      <listitem>
+        <para>Select from the following options to determine which accounts
+        and accounting periods you want to enter budgetary information
+        for:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Accounts</term>
+
+            <listitem>
+              <para>Select one or multiple accounts to include when generating
+              a budget table.</para>
+
+              <variablelist>
+                <varlistentry>
+                  <term><guibutton>ADD</guibutton></term>
+
+                  <listitem>
+                    <para>Select to add accounts from your chart of
+                    accounts.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term><guibutton>REMOVE</guibutton></term>
+
+                  <listitem>
+                    <para>Highlight an account and then select this button to
+                    remove the account from the list.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Accounting Periods</term>
+
+            <listitem>
+              <para>Using your mouse in conjunction with the
+              <guibutton>SHIFT</guibutton> and/or <guibutton>CRTL</guibutton>
+              keys, select one or multiple accounting periods to include when
+              generating the budget table.</para>
+
+              <variablelist>
+                <varlistentry>
+                  <term><guibutton>SELECT ALL</guibutton></term>
+
+                  <listitem>
+                    <para>Select to include all accounting periods in the
+                    table.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term><guibutton>INVERT</guibutton></term>
+
+                  <listitem>
+                    <para>Selecting this option will cause the inverse of any
+                    selected accounting periods to be selected.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term><guibutton>UNSELECT ALL</guibutton></term>
+
+                  <listitem>
+                    <para>Select to de-select all accounting periods.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term><guibutton>GENERATE TABLE</guibutton></term>
+
+                  <listitem>
+                    <para>Select to generate the budget table using the
+                    specified parameters.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Table</term>
+
+      <listitem>
+        <para>Enter budget amounts in the fields provided. The table will
+        consist of a grid, showing the specified account numbers listed down
+        the left side—and the indicated accounting periods across the top.
+        Simply click in a field to begin entering or editing budget
+        information. The <guibutton>TAB</guibutton> key may be used to move
+        from field to field. Any budget information you save in the table will
+        be stored in the database for future reference. You may view budget
+        information by account and accounting period using the financial
+        reporting engine. You may also edit budget information by regenerating
+        a budget table.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

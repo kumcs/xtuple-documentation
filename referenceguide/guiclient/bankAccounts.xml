@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="bankAccounts">
+  <title><indexterm significance="normal">
+      <primary>bank accounts</primary>
+      <secondary>master list of</secondary>
+    </indexterm>Bank Accounts</title>
+  <para>Bank accounts are established to define the asset account to be used
+  when receiving or making payments. To access the master list of bank
+  accounts, go to <guimenuitem>Accounting &gt; Setup &gt; Accounting Mappings
+  &gt; Bank Accounts</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/bankAccounts.png"
+                     id="bankAccounts.imagedata" />
+        </imageobject>
+        <caption>Bank Accounts master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Bank Accounts screen displays information on all existing bank
+  accounts, including period start date, period end date, and closed
+  status.</para>
+  <xi:include href="bankAccount.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

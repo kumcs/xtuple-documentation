@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspSlowMovingInventoryByClassCode">
+  <title><indexterm significance="normal">
+      <primary>slow moving inventory</primary>
+    </indexterm><indexterm significance="normal">
+      <primary>inventory</primary>
+
+      <secondary>slow moving</secondary>
+    </indexterm>Slow Moving Inventory</title>
+
+  <para>Slow moving inventory is inventory that has not been used since the
+  specified cutoff date. Inventory is considered to have been used whenever it
+  is issued, received, returned, counted, etc. To view slow moving inventory,
+  go to <guimenuitem>Inventory &gt; Reports &gt; Slow Moving
+  Inventory</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspSlowMovingInventoryByClassCode.png"/>
+        </imageobject>
+
+        <caption>Slow Moving Inventory</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>The <guilabel>Cutoff Date</guilabel> is a required field. If you
+    don't enter a cutoff date, no data will be displayed.</para>
+  </tip>
+
+  <para>When displaying slow moving inventory, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Class Codes</term>
+
+      <listitem>
+        <para>Select to display slow moving inventory for all class
+        codes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify class code whose slow moving inventory you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pattern</term>
+
+      <listitem>
+        <para>Enter a class code pattern to select a range of class codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Cutoff Date</term>
+
+      <listitem>
+        <para>Any inventory that has not been moved since this date will be
+        displayed. This is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tolerance</term>
+
+      <listitem>
+        <para>Enter an optional tolerance percentage to further refine the
+        definition of slow moving inventory. For example, you might want to
+        look at inventory where 10% of the quantity has not moved since the
+        cutoff date. You can change the tolerance percentage up or down to
+        adjust the results.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to display slow moving inventory for all sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site whose slow moving inventory you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show Inventory Value</term>
+
+      <listitem>
+        <para>Select to include the inventory value of slow moving inventory
+        in the display. Once selected, specify one of the following costing
+        options:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Use Posted Costs</term>
+
+            <listitem>
+              <para>Select to show inventory value based on the costing method
+              defined for the item site. Item sites may use the following
+              costing methods, depending on the item type: standard, average,
+              job (i.e., job items), and none (i.e., reference items and any
+              items having a control method = none).</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Use Standard Costs</term>
+
+            <listitem>
+              <para>Select to show inventory value based on standard
+              costs.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Use Actual Costs</term>
+
+            <listitem>
+              <para>Select to show inventory value based on actual
+              costs.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Quantities on Hand</term>
+
+      <listitem>
+        <para>Display lists quantities on hand (QOH) for slow moving
+        inventory, using the specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

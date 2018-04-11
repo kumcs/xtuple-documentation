@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="taxAuthority">
+  <title><indexterm significance="normal">
+      <primary>tax authorities</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>Tax Authority</title>
+
+  <para>To create a new tax authority, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/taxAuthority.png"/>
+        </imageobject>
+
+        <caption>Create new Tax Authority</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new tax authority, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Code</term>
+
+      <listitem>
+        <para>Enter a code to identify the tax authority.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to describe the tax authority.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Ext. Ref</term>
+
+      <listitem>
+        <para>Use this field to record any external accounting references for
+        the tax authority—if applicable.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Currency</term>
+
+      <listitem>
+        <para>Specify the currency to be used for tax calculations when
+        transactions are governed by the tax authority.</para>
+
+        <para>The currency selection affects only tax calculations for
+        transactions governed by the tax authority. It has no impact on the
+        currency used for line items, etc. on an order. If the tax authority
+        requires tax to be collected in the base currency, then do not make a
+        selection; leave this field blank. This option won't even be available
+        if your site does not have multiple currencies defined.</para>
+
+        <tip>
+          <para>If a tax authority collects tax in your base currency, then
+          leave the currency selection blank.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>County</term>
+
+      <listitem>
+        <para>Enter the county which the tax authority has jurisdiction
+        over—if applicable.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Default Ledger Account</term>
+
+      <listitem>
+        <para>Specify the G/L account to credit when payment (check) to tax
+        authority is posted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Address</term>
+
+      <listitem>
+        <para>Manually enter tax authority's address information in the fields
+        below—or use the lookup feature to select pre-existing address
+        information. If a new address is manually entered here, that address
+        will be added automatically to the master list of addresses. For
+        additional documentation related to creating addresses, see <xref
+        linkend="address"/>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ACCOUNT</guibutton></term>
+
+      <listitem>
+        <para>Select to open the tax authority's account.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

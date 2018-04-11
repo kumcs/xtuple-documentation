@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="applyAPCreditMemo">
+  <title><indexterm significance="normal">
+      <primary>credit memos</primary>
+
+      <secondary>applying unapplied</secondary>
+    </indexterm>Apply Payables Credit Memo</title>
+
+  <para>To apply a credit memo amount, select the <guibutton>APPLY</guibutton>
+  button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/applyAPCreditMemo.png"/>
+        </imageobject>
+
+        <caption>Apply A/P Credit Memo</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>Credit memo amounts may be applied to either open vouchers or open
+    miscellaneous debit memos.</para>
+  </note>
+
+  <para>When applying a credit memo amount, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Vendor #</term>
+
+      <listitem>
+        <para>Displays the vendor number of the vendor associated with the
+        unapplied credit memo amount. The vendor name will also
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Available to Apply</term>
+
+      <listitem>
+        <para>Displays the credit memo amount which is available to be
+        applied.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Applied</term>
+
+      <listitem>
+        <para>Displays the amount of the credit memo applied to the specified
+        document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Balance</term>
+
+      <listitem>
+        <para>Displays the amount of the credit memo remaining to be applied,
+        if any.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document #</term>
+
+      <listitem>
+        <para>Displays the credit memo number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Distribution Date</term>
+
+      <listitem>
+        <para>Displays the date the credit memo applied amount was
+        applied.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Items</term>
+
+      <listitem>
+        <para>Display lists open payables for the specified customer.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>APPLY TO BALANCE</guibutton></term>
+
+      <listitem>
+        <para>Select to apply the available balance to any open payables which
+        have not been applied-to yet. Open items having a pre-existing
+        application will be skipped. When making the application, if the
+        applied balance exceeds the amount due on an open payable, the
+        remaining balance will be applied to the next open amount.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>APPLY</guibutton></term>
+
+      <listitem>
+        <para>Highlight an item and then select this button to apply an amount
+        to the item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>CLEAR APPLICATION</guibutton></term>
+
+      <listitem>
+        <para>Highlight an item and then select this button to remove any
+        amount applied toward the item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="apCreditMemoApplication.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

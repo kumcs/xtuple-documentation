@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="timeExpenseSheet" role="xtte">
+  <title><indexterm significance="normal">
+      <primary>worksheets</primary>
+      <secondary>management of</secondary>
+    </indexterm>Worksheet</title>
+  <para>The worksheet is the weekly container for holding time and expenses
+  entered by employees. As employees enter time and expense sheets during the
+  course of a week, the worksheet organizes those entries. When the next week
+  arrives, a new worksheet is created and employee time and expense entries
+  are contained there. Typically, worksheets are approved on a weekly
+  basis.</para>
+  <para>To review an already-existing worksheet, select the <guibutton>EDIT</guibutton> option on the
+  main Worksheets workbench. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/timeExpenseSheet.png" />
+        </imageobject>
+        <caption>Worksheet</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>For more information on using worksheets to help manage projects,
+    please see the eBook <ulink
+    url="https://www.xtuple.org/sites/default/files/prodguide/project/index.html">Managing
+    Projects with xTuple</ulink>.</para>
+  </note>
+  <para>When reviewing a worksheet, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Sheet #</term>
+      <listitem>
+        <para>Displays the system-generated number of the worksheet.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Week of Date</term>
+      <listitem>
+        <para>Displays the date for the week contained by the worksheet. The
+        date is set manually when creating a new worksheet.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays the site associated with the work. The site is chosen
+        manually when creating a new worksheet.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Employee</term>
+      <listitem>
+        <para>Displays the name of the employee associated with the worksheet.
+        The employee is entered manually when creating a new worksheet.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Print on Save</term>
+      <listitem>
+        <para>Select to automatically print the worksheet whenever it is
+        saved.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>NEW</guibutton></term>
+      <listitem>
+        <para>Select to add a new time or expense entry to the
+        worksheet.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To enter notes related to a worksheet, select the <guimenuitem>Notes</guimenuitem> tab. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/timeExpenseSheet_notesTab.png" />
+        </imageobject>
+        <caption>Worksheet Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The <guimenuitem>Notes</guimenuitem> tab provides a text area where you can add miscellaneous
+  notes related to the worksheet.</para>
+  <para>To associate documents with a worksheet, select the <guimenuitem>Documents</guimenuitem> tab.
+  The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/timeExpenseSheet_customerTab.png" />
+        </imageobject>
+        <caption>Worksheet Documents</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="timeExpenseSheetItem.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

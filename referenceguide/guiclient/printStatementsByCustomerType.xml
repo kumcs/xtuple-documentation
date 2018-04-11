@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printStatementsByCustomerType">
+  <title>Print Statements by Customer Type</title>
+
+  <para>Customer statements show past due information for open receivables. To
+  print customer statements by customer type, go to <guimenuitem>Accounting
+  &gt; Accounts Receivable &gt; Forms &gt; Print Statements by Customer
+  Type</guimenuitem>.</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printStatementsByCustomerType.png"/>
+        </imageobject>
+
+        <caption>Print Statements by Customer Type</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When printing customer statements by customer type, you are presented
+  with the following options:</para>
+
+  <para role="xtconnect"><tip>
+      <para>If some customers have EDI profiles attached, you may encounter an
+      EDI processing interface when printing particular customer
+      statements.</para>
+    </tip></para>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Customer Types</term>
+
+      <listitem>
+        <para>Select to print customer statements for all customer
+        types.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify the customer type you want to print customer statements
+        for.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pattern</term>
+
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>As of</term>
+
+      <listitem>
+        <para>Specify the point-in-time date you want the statement to be
+        relative to.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Grace Period</term>
+
+      <listitem>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 990. The grace period extends backwards in time from
+        the current day, covering the number of days specified here. If the
+        due dates for a customer's open receivables fall within the grace
+        period, a statement will not be printed for that customer. Statements
+        will only be printed for customers having overdue balances—that is,
+        open receivables which fall outside the grace period.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Only Print Customers with Past Due Amounts</term>
+
+      <listitem>
+        <para>Select if you only want to print statements for customers who
+        have past due amounts. If not selected, you will get statements for
+        all customers.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

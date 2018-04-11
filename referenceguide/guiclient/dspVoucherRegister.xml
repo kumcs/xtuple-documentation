@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspVoucherRegister">
+  <title><indexterm significance="normal">
+      <primary>vouchers</primary>
+
+      <secondary>register for</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>registers</primary>
+
+      <secondary>for vouchers</secondary>
+    </indexterm>Voucher Register</title>
+
+  <para>To view the register of voucher transactions, go to
+  <guimenuitem>Accounting &gt; Accounts Payable &gt; Reports &gt; Voucher
+  Register</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspVoucherRegister.png"/>
+        </imageobject>
+
+        <caption>Voucher Register</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>If you need to void a posted voucher, you can do this from the
+    right-click menu on the Vendor History screen. Voiding a voucher reverses
+    all ledger transactions created by the original voucher. Only open
+    vouchers may be voided. Vouchers with apply-to records cannot be voided.
+    You will be given the option to specify a void date when voiding a
+    voucher. Apply-to records will also be reversed on the void date you
+    specify.</para>
+  </tip>
+
+  <para>When displaying the voucher Register, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Accounts</term>
+
+      <listitem>
+        <para>Select to display voucher transactions for all G/L
+        accounts.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected Account</term>
+
+      <listitem>
+        <para>Specify G/L account whose voucher transactions you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Start Date</term>
+
+      <listitem>
+        <para>Vouchers posted on and after this date will be displayed. This
+        is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>End Date</term>
+
+      <listitem>
+        <para>Vouchers posted on and before this date will be displayed. This
+        is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Vouchers</term>
+
+      <listitem>
+        <para>Display lists voucher transactions based on the specified
+        parameters. The totals for the included transactions will appear at
+        the bottom of the screen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show Username</term>
+
+      <listitem>
+        <para>Select to display the username of users associated with
+        transactions.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

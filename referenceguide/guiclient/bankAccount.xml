@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="bankAccount">
+  <title><indexterm significance="normal">
+      <primary>bank accounts</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>Bank Account</title>
+
+  <para>A bank account can be set up for use by either accounts receivable
+  (A/R), accounts payable (A/P), or both. To create a new bank account, select
+  the <guibutton>NEW</guibutton> button. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/bankAccount.png"/>
+        </imageobject>
+
+        <caption>Create new Bank Account</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new bank account, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to describe the bank account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Description</term>
+
+      <listitem>
+        <para>Enter a description to further describe the bank account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Bank Name</term>
+
+      <listitem>
+        <para>Enter the name of the bank where the bank account is
+        held.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Account Number</term>
+
+      <listitem>
+        <para>Enter the account number for the bank account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Type</term>
+
+      <listitem>
+        <para>Specify whether the bank account is a checking, cash, or credit
+        card account. The choice you make here is informational only.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Currency</term>
+
+      <listitem>
+        <para>Specify what type of currency to use for this bank
+        account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>bank accounts</primary>
+
+          <secondary>used for payables</secondary>
+        </indexterm>Used in Accounts Payable</term>
+
+      <listitem>
+        <para>Select if the bank account is used for accounts payable. If
+        selected, the bank account will be available for use when making
+        payments. Not selecting means the bank account is not used for
+        accounts payable. Payment specifications will be disabled if this
+        option is not selected.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Next Payment #</term>
+
+            <listitem>
+              <para>Indicate the next payment number to be issued from the
+              bank account. Payment numbers will increment in intervals of one
+              (1) beginning with the payment number entered here. By default,
+              the next available number will display.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Print Checks/EFT Payments</term>
+
+            <listitem>
+              <para>Select if you want to require that payments issued against
+              the bank account must be printed. Not selecting this option
+              means you want to by-pass printing and post payments directly
+              for the bank account.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Check Format</term>
+
+            <listitem>
+              <para>Specify the payment format to be used when payments from
+              the bank account are printed.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>bank accounts</primary>
+
+          <secondary>used for receivables</secondary>
+        </indexterm>Used in Accounts Receivable</term>
+
+      <listitem>
+        <para>Select if the bank account is used for accounts receivable. If
+        selected, the bank account will be available for use when receiving
+        money. Not selecting means the bank account is not used for accounts
+        receivable.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Asset Account</term>
+
+      <listitem>
+        <para>Specify the asset account to be credited when payments are made
+        from the bank account.</para>
+
+        <note>
+          <para>By default, the screen will limit your account number choices
+          to only those accounts having the correct account type for the
+          chosen context. However, privileged users may override this default
+          behavior by manually entering any account number listed in the chart
+          of accounts.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the bank account.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To add transmission details to an account, select the
+  <guimenuitem>Transmissions</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/bankAccount_transmitTab.png"/>
+    </imageobject>
+
+    <caption>Create new Bank Account Transmission</caption>
+  </mediaobject>
+
+  <para>When adding transmission details to the bank account, you are
+  presented with the following options:</para>
+
+  <para><variablelist>
+      <varlistentry>
+        <term>Enable EFT Payments</term>
+
+        <listitem>
+          <para>Select to enable online processing or electronic funds
+          transfer (EFT) payment printing.</para>
+
+          <variablelist>
+            <varlistentry>
+              <term>Routing Number</term>
+
+              <listitem>
+                <para>Bank account routing number.</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Settlement Lead Time</term>
+
+              <listitem>
+                <para>Number of days prior to funds transfer.</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Create Payment Number for EFT File</term>
+
+              <listitem>
+                <para>Select to create payment number for automated
+                transactions.</para>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Immediate Origin Name and Number</term>
+
+              <listitem>
+                <para>Number used by the financial institution of origin,
+                either routing or other, specified by the EFT gateway.</para>
+
+                <variablelist>
+                  <varlistentry>
+                    <term>Company</term>
+
+                    <listitem>
+                      <para>Select if you want your company name and company
+                      ID to be used. This information is defined on the
+                      Accounts Payable configuration screen. For more
+                      information, please see <xref
+                      linkend="configureGL_AP"/>.</para>
+                    </listitem>
+                  </varlistentry>
+
+                  <varlistentry>
+                    <term>Bank Account</term>
+
+                    <listitem>
+                      <para>Select if you want your bank account name and
+                      routing number to be used.</para>
+                    </listitem>
+                  </varlistentry>
+
+                  <varlistentry>
+                    <term>Custom</term>
+
+                    <listitem>
+                      <para>Select if you want to define a custom name and
+                      number.</para>
+                    </listitem>
+                  </varlistentry>
+                </variablelist>
+              </listitem>
+            </varlistentry>
+
+            <varlistentry>
+              <term>Immediate Destination Name and Number</term>
+
+              <listitem>
+                <para>Number used by the destination financial institution,
+                routing or other, specified by EFT gateway.</para>
+
+                <variablelist>
+                  <varlistentry>
+                    <term>Bank Account</term>
+
+                    <listitem>
+                      <para>Select if you want your bank account name and
+                      routing number to be used.</para>
+                    </listitem>
+                  </varlistentry>
+
+                  <varlistentry>
+                    <term>Federal Reserve</term>
+
+                    <listitem>
+                      <para>Select if you want the federal reserve to be
+                      used.</para>
+                    </listitem>
+                  </varlistentry>
+
+                  <varlistentry>
+                    <term>Custom</term>
+
+                    <listitem>
+                      <para>Select if you want to define a custom name and
+                      number.</para>
+                    </listitem>
+                  </varlistentry>
+                </variablelist>
+              </listitem>
+            </varlistentry>
+          </variablelist>
+        </listitem>
+      </varlistentry>
+    </variablelist></para>
+</section>

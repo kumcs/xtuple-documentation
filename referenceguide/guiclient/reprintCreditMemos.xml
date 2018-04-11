@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="reprintCreditMemos">
+  <title><indexterm significance="normal">
+      <primary>sales credits</primary>
+      <secondary>re-printing of</secondary>
+    </indexterm>Re-Print Sales Credits</title>
+  <para>To print a sales credit that was previously printed, go to
+  <guimenuitem>Sales &gt; Billing &gt; Forms &gt;</guimenuitem><guimenuitem>
+  Re-Print Sales Credits</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/reprintCreditMemos.png" />
+        </imageobject>
+        <caption>Re-Print Sales Credits</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When re-printing a sales credit, you are presented with the following
+  options:</para>
+  <para role="xtconnect"><note>
+      <para>If the customer specified on a sales credit has an EDI profile
+      attached, you may encounter an EDI processing interface when printing
+      it.</para>
+    </note></para>
+  <variablelist>
+    <varlistentry>
+      <term>Select Documents to reprint</term>
+      <listitem>
+        <para>Display lists previously printed sales credits. To select a
+        sequence of sales credits, highlight the first in the sequence using
+        your mouse button. Then, holding down the <guibutton>SHIFT</guibutton>
+        key on your keyboard, highlight the last sales credit in the sequence.
+        The entire sequence is now selected. To select sales credits that are
+        out of sequence, highlight the first sales credit in the group. Then,
+        holding down the <guibutton>CTRL</guibutton> key on your keyboard,
+        highlight the next sales credit you want to select. Continue
+        highlighting sales credits with the <guibutton>CTRL</guibutton> key
+        depressed until all desired sales credits are selected. The entire
+        group is now ready for re-printing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Copies</term>
+      <listitem>
+        <para>Specify details for the sales credit copies you want to
+        print.</para>
+        <variablelist>
+          <varlistentry>
+            <term># of Copies</term>
+            <listitem>
+              <para>Specify the number of copies you want to print. To add a
+              watermark or show/hide prices on the printed form, double-click
+              on a copy line.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/watermarks.xml" xpointer="watermarksWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

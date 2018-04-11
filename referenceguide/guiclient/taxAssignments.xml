@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="taxAssignments">
+  <title><indexterm significance="normal">
+      <primary>tax assignments</primary>
+
+      <secondary>master list of</secondary>
+    </indexterm>Tax Assignments</title>
+
+  <para>Tax assignments create a matrix used to find the tax codes to apply to
+  an item given the item's tax type and the tax zone with jurisdiction over
+  the transaction. Nested tax codes, whose calculations are based on other tax
+  codes are shown as indented. To access the master list of tax assignments,
+  go to <guimenuitem>Accounting &gt; Tax &gt; Tax Assignments</guimenuitem>.
+  The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/taxAssignments.png"/>
+        </imageobject>
+
+        <caption>Tax Assignments master list</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a tax assignment, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Show All Tax Zones</term>
+
+      <listitem>
+        <para>Select to include all tax zones in the display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show Specific Tax Zone</term>
+
+      <listitem>
+        <para>Select to include a specific tax zone in the display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show All Tax Types</term>
+
+      <listitem>
+        <para>Select to include all tax types in the display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show Specific Tax Type</term>
+
+      <listitem>
+        <para>Select to include a specific tax type in the display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tax Assignments</term>
+
+      <listitem>
+        <para>Display lists tax assignments based on the specified
+        parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="taxAssignment.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

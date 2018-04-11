@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspExpediteExceptionsByPlannerCode" role="standard">
+  <title>Expedite Exceptions by Planner Code</title>
+  <para>An expedite exception is an indication that an order is late. These
+  late orders need to be acted on—or expedited. Examples of late orders would
+  include a work order whose start date is past due or a planned purchase
+  order which has not yet been released. To view a list of late orders
+  requiring action, go to <guimenuitem>Schedule &gt; Reports &gt; Expedite
+  Exceptions</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspExpediteExceptionsByPlannerCode.png" />
+        </imageobject>
+        <caption>Expedite Exceptions by Planner Code</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When displaying expedite exceptions by planner code, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Planner Codes</term>
+      <listitem>
+        <para>Select to display expedite exceptions for all planner
+        codes.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify planner code whose expedite exceptions you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a planner code pattern to select a range of planner codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to display expedite exceptions by planner code for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose expedite exceptions by planner code you want
+        to display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Look Ahead Days</term>
+      <listitem>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 1000. Expedite exceptions by planner code will be
+        displayed based on the value entered here.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Expedite Exceptions</term>
+      <listitem>
+        <para>Display lists expedite exceptions by planner code, using the
+        specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="itemPricingSchedules">
+  <title><indexterm significance="normal">
+      <primary>pricing schedules</primary>
+      <secondary>master list of</secondary>
+    </indexterm>Pricing Schedules</title>
+  <para>A pricing schedule is a grouping of sold items indicating special
+  prices for specified quantity breaks. Pricing schedules may be assigned to
+  individual customers or to groups of customers by customer type. To access
+  the master list of pricing schedules, go to <guimenuitem>Sales &gt; Pricing
+  &gt; Pricing Schedules</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/itemPricingSchedules.png" />
+        </imageobject>
+        <caption>Pricing Schedules master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>At the top of the screen is a <guilabel>Search for</guilabel> field.
+  To search for a pricing schedule, begin typing in the search field. As you
+  type, the list will automatically scroll toward the pricing schedule you are
+  typing. You can also search for pricing schedules manually by scrolling
+  through the list. The following filters can also be applied to your
+  search:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Show Expired Pricing Schedules</term>
+      <listitem>
+        <para>Select to display expired pricing schedules.</para>
+        <note>
+          <para>The effectivity and expiration dates for pricing schedules
+          correspond to the created date for sales orders. Changes to line
+          item quantities or scheduled dates for already-created sales orders
+          can also cause pricing schedule effectivity to be recalculated as of
+          the date the changes occur.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Future Pricing Schedules</term>
+      <listitem>
+        <para>Select to display future pricing schedules.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Pricing Schedules</term>
+      <listitem>
+        <para>Display lists item pricing schedules.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>DELETE EXPIRED</guibutton></term>
+      <listitem>
+        <para>Select to delete expired pricing schedules.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="itemPricingSchedule.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

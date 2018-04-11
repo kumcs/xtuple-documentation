@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="quotes">
+  <title><indexterm significance="normal">
+      <primary>quotes</primary>
+      <secondary>master list of</secondary>
+    </indexterm>List Quotes</title>
+  <para>The Quotes screen lists all your quotes—both open and expired. In
+  addition to providing the list of quotes, this screen can also be used to
+  build quote reports. Use the search filter options to sort the information
+  into categories you want to look at.</para>
+  <para>Here are some tips for using this screen:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Quotes can be created for customers and prospects. But you cannot
+      convert a prospect quote to a sales order without first converting the
+      prospect to a customer.</para>
+    </listitem>
+    <listitem>
+      <para>Use the right-click menu to convert a quote to a sales order. By
+      default, the quote number will be assumed by the sales order when a
+      quote is converted to a sales order.</para>
+    </listitem>
+    <listitem>
+      <para>Also use the right-click menu to convert the quote to an
+      invoice.</para>
+    </listitem>
+    <listitem>
+      <para>All quote line items must have valid item sites for a quote to be
+      converted successfully. Also, you may not convert quotes written for
+      prospects.</para>
+    </listitem>
+    <listitem>
+      <para>To copy a quote, use the <guimenuitem>Copy</guimenuitem> option in
+      the right-click menu. The <guimenuitem>Copy to
+      Cust./Prospect</guimenuitem> option allows you to copy the quote to a
+      new customer or prospect, as shown in the following screenshot:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/copyQuote.png" />
+            </imageobject>
+            <caption>Quotes master list</caption>
+          </mediaobject>
+        </screenshot></para>
+    </listitem>
+    <listitem>
+      <para>Quotes may not be converted to sales orders for customers who are
+      on credit warning or credit hold. Only users with special privileges may
+      override these credit settings.</para>
+    </listitem>
+  </itemizedlist>
+  <para>To get to the Quotes screen, go to <guimenuitem>Sales &gt; Quotes &gt;
+  List</guimenuitem>. The following screenshot shows the Quotes screen:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/quotes.png" />
+        </imageobject>
+        <caption>Quotes master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The default filter on the Quotes screen shows all open quotes. You can
+  build your own search criteria using the following options:</para>
+  <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="scrapTrans">
+  <title><indexterm significance="normal">
+      <primary>scrap</primary>
+
+      <secondary>as inventory transaction</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>inventory transactions</primary>
+
+      <secondary>scrapping</secondary>
+    </indexterm>Scrap</title>
+
+  <para>To scrap items from inventory, go to <guimenuitem>Inventory &gt;
+  Transactions &gt; Scrap</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/scrapTrans.png"/>
+        </imageobject>
+
+        <caption>Enter Scrap Transaction</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When entering a scrap transaction, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Transaction Date</term>
+
+      <listitem>
+        <para>Specify the date you want the transaction to be posted to the
+        general ledger. The current day's date will display by default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Enter the item number of the item you want to enter a scrap
+        transaction for.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Specify site where the item site for the scrap transaction is
+        located.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Scrap Qty.</term>
+
+      <listitem>
+        <para>Enter the quantity of the specified item you want to scrap.
+        Positive and negative values are permitted. Non-netable quantity on
+        hand (QOH) is not included in the before and after totals.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document #</term>
+
+      <listitem>
+        <para>Creates a user-defined reference for the scrap transaction. The
+        document reference will be posted with the general ledger (G/L)
+        transaction record when the scrap transaction is generated. This field
+        may be used for internal tracking and auditing purposes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Comments</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        comments related to the scrap transaction.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

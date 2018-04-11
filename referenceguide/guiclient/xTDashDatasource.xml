@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section role="standard">
+  <title>Dashboard Datasource</title>
+  <para>To create new a datasource, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/xTDashDatasource.png" />
+        </imageobject>
+        <caption>Dashboard Datasource</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new datasource, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Title</term>
+      <listitem>
+        <para>Enter a title to identify the datasource.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a brief description to describe the datasource.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Type</term>
+      <listitem>
+        <para>The type indicates how the datasource will retrieve the data
+        used to populate the charts. The following choices are available:
+        MetaSQL, query item, or URL. Depending on which type you choose, the
+        related on-screen options will change, as follows:</para>
+        <variablelist>
+          <varlistentry>
+            <term>MetaSQL Datasource Settings</term>
+            <listitem>
+              <para>In most cases, datasources will be generated from
+              previously written MetaSQL queries. This is the most common
+              type. Choose the group and name of an existing MetaSQL query to
+              define that as the source.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Query Item Datasource Settings</term>
+            <listitem>
+              <para>Query sets are defined in the import/export area of
+              xTuple. To use one of these query sets as a datasource, choose
+              the head name and item.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>URL Datasource Settings</term>
+            <listitem>
+              <para>The URL datasource will allow the datasource data and
+              formatting to be downloaded from an external web source/service.
+              This will allow information external to xTuple to be included in
+              dashboards. <emphasis role="bold">This feature has not been
+              implemented yet</emphasis>.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Chart Options</term>
+      <listitem>
+        <para>Specify the chart display options you want to make available
+        when dashboard panes are created using the datasource.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Chart Types</term>
+            <listitem>
+              <para>Data can be displayed in a number of different graphical
+              formats. The following options are available: bar, line, spline,
+              step, area, area spline, area step, scatter, pie, donut, and
+              gauge. To make a chart type available for the datasource, simply
+              add the chart type(s) to the <guilabel>Granted Types</guilabel>
+              column.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Layout Grids</term>
+            <listitem>
+              <para>Dashboard panes can be created to display in varying
+              widths per row. Each dashboard row can contain either one, two,
+              or three panes across, depending on the options allowed by the
+              datasource. To specify the grid layout options available for the
+              datasource, simply add the layout grid(s) to the
+              <guilabel>Granted Layout Grids</guilabel> column, as shown in
+              the following screenshot:</para>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceLayoutGridsTab.png" />
+                    </imageobject>
+                    <caption>Chart Options Layout Grids</caption>
+                  </mediaobject>
+                </screenshot></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select to indicate the datasource is active. If not selected,
+        the datasource will be considered inactive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Public Access</term>
+      <listitem>
+        <para>Select to indicate the datasource should be available to all
+        users. If not selected, the datasource will be considered private and
+        will require users to have the appropriate privileges to access
+        it.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Private Access Settings</term>
+      <listitem>
+        <para>If the datasource is private (i.e., not public), then you will
+        need to specify how users will gain access to the information.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Privileges</term>
+            <listitem>
+              <para>Control access using system privileges. Any users having
+              the specified privilege(s) will be able to use the datasource
+              when adding dashboard panes. To specify the desired system
+              privileges, simply add the privilege(s) to the <guilabel>Granted
+              Privileges</guilabel> column.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Users</term>
+            <listitem>
+              <para>Control access by user. Any user who has been granted
+              access will have access to the datasource. To give access to
+              users, simply add the user(s) to the <guilabel>Granted
+              Users</guilabel> column, as shown in the following
+              screenshot:</para>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceUsersTab.png" />
+                    </imageobject>
+                    <caption>Private Access Settings Users tab</caption>
+                  </mediaobject>
+                </screenshot></para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Roles</term>
+            <listitem>
+              <para>Control access by role. Any users assigned to the
+              specified role(s) will have access to the datasource. To grant
+              access by role, simply add the role(s) to the <guilabel>Granted
+              Roles</guilabel> column, as shown in the following
+              screenshot:</para>
+              <para><screenshot>
+                  <mediaobject>
+                    <imageobject>
+                      <imagedata fileref="images/xTDashDatasourceRolesTab.png" />
+                    </imageobject>
+                    <caption>Private Access Settings Roles tab</caption>
+                  </mediaobject>
+                </screenshot></para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ADD-&gt;</guibutton></term>
+      <listitem>
+        <para>Highlight a specific source in the <guilabel>Available
+        Sources</guilabel> column, then select this button to transfer the
+        source to the <guilabel>Granted Sources</guilabel> column.
+        Double-clicking on an available source will also transfer it to the
+        <guilabel>Granted Sources</guilabel> column.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>&lt;-REVOKE</guibutton></term>
+      <listitem>
+        <para>Highlight a specific source in the <guilabel>Granted
+        Sources</guilabel> column, then select this button to remove the
+        source from the <guilabel>Granted Sources</guilabel> column.
+        Double-clicking on a granted source will also remove it from the
+        <guilabel>Granted Sources</guilabel> column.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

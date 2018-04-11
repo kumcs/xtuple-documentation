@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="catConfig" role="distribution">
+  <title><indexterm significance="normal">
+      <primary>vendor catalogs</primary>
+      <secondary>conversion of</secondary>
+    </indexterm>Vendor Catalog Conversion</title>
+  <para>Each external vendor catalog conversion specifies the default values
+  you want to assign to vendor items when they are converted to become
+  inventory items in xTuple. Conversions may vary from provider to provider,
+  depending on the nature of the catalog and your own particular needs.</para>
+  <para>To create a new vendor catalog conversion, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catConfig.png" />
+        </imageobject>
+        <caption>Vendor Catalog Conversion Configuration</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new vendor catalog conversion, you are presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Provider</term>
+      <listitem>
+        <para>Enter the provider code (e.g., TSE, TSP) in the first field and
+        the name of the provider in the second field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item</term>
+      <listitem>
+        <para>Specify the following default item information you want
+        converted items to assume in xTuple:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Inventory UOM</term>
+            <listitem>
+              <para>Specify the default inventory unit of measure you want to
+              assign to converted items (e.g., EA).</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Class Code</term>
+            <listitem>
+              <para>Specify the default class code you want to assign to
+              converted items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Create Item Sites</term>
+      <listitem>
+        <para>Specify the following default item site information:</para>
+        <note>
+          <para>For more information about item site settings, please see
+          <xref linkend="itemSite" />.</para>
+        </note>
+        <variablelist>
+          <varlistentry>
+            <term>All Sites</term>
+            <listitem>
+              <para>Select if you want to create item sites for converted
+              items in all sites.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Selected</term>
+            <listitem>
+              <para>Specify the site where you want item sites for converted
+              items to reside.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Vendor</term>
+      <listitem>
+        <para>Specify the following default vendor information to be used if
+        vendor records from the catalog don't already exist in xTuple and need
+        to be created:</para>
+        <note>
+          <para>For more information about vendor records, please see <xref
+          linkend="vendor" />.</para>
+        </note>
+        <variablelist>
+          <varlistentry>
+            <term>Vendor Type</term>
+            <listitem>
+              <para>Specify the default vendor type you want to assign to any
+              vendor records that need to be created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Terms</term>
+            <listitem>
+              <para>Specify the default vendor terms you want to assign to any
+              vendor records that need to be created.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Tax</term>
+      <listitem>
+        <para>Specify the following tax information for newly-created vendor
+        and item records:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Tax Zone</term>
+            <listitem>
+              <para>Specify the default tax zone you want to assign to any
+              vendor records that need to be created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Tax Type</term>
+            <listitem>
+              <para>Specify the default tax type you want to assign to
+              converted items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Inventory Control</term>
+      <listitem>
+        <para>Specify the following default inventory control information you
+        want converted items to assume:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Cost Method</term>
+            <listitem>
+              <para>Specify the default item costing method you want to assign
+              to converted items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Control Method</term>
+            <listitem>
+              <para>Specify the default inventory control method you want to
+              assign to converted items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Planner Code</term>
+            <listitem>
+              <para>Specify the default planner code you want to assign to
+              converted items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Cost Category</term>
+            <listitem>
+              <para>Specify the default cost category you want to assign to
+              converted items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Settings</term>
+      <listitem>
+        <para>Specify the following additional inventory settings:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Stocked</term>
+            <listitem>
+              <para>Select to make creating a purchase order or purchase
+              request optional when entering sales orders for converted
+              items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Allow Automatic ABC Updates</term>
+            <listitem>
+              <para>Select to make ABC updates automatic for converted
+              items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>ABC Class</term>
+            <listitem>
+              <para>Specify the default ABC class for converted items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Cycl. Cnt. Freq</term>
+            <listitem>
+              <para>Specify the default cycle count frequency for converted
+              items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Event Fence</term>
+            <listitem>
+              <para>Specify the default event fence for converted
+              items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To define location control information for converted items, select the
+  <guimenuitem>Location</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catConfig_restrictedLocations.png" />
+        </imageobject>
+        <caption>Location settings</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When defining location control information for converted items, you
+  are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Multiple Location Control</term>
+      <listitem>
+        <para>This is an optional setting which allows items to be stored in
+        multiple locations in a single site. If selected, converted items will
+        use multiple location control (MLC).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Use Default Location</term>
+      <listitem>
+        <para>If MLC is enabled, you will also have the option to store
+        converted items in a default location. Choose from the following
+        default location options:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Location</term>
+            <listitem>
+              <para>Select if you want to specify default receiving, stocking,
+              and issuing locations for the converted items.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>User-Defined</term>
+            <listitem>
+              <para>Select if you want to specify a user-defined default
+              location for the converted items.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To define the settings the material requirements planning (MRP) system
+  will use to plan for converted items, select the
+  <guimenuitem>Planning</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catConfig_planningTab.png" />
+        </imageobject>
+        <caption>Planning settings</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When defining the planning settings for converted items, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Enforce Order Parameters</term>
+      <listitem>
+        <para>Select to define the following parameters MRP will use when
+        planning for converted items:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Reorder Level</term>
+            <listitem>
+              <para>Specify the level inventory availability must fall to
+              before triggering a planned replenishment order.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Order Up To</term>
+            <listitem>
+              <para>Specify the quantity planned orders should replenish up
+              to.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Minimum Order</term>
+            <listitem>
+              <para>Specify the minimum planned order quantity.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Maximum Order</term>
+            <listitem>
+              <para>Specify the maximum planned order quantity.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Order Multiple</term>
+            <listitem>
+              <para>Specify the multiple to be used for planned orders (e.g.,
+              order in multiples of 10, 100, etc.).</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Enforce on Manual Orders</term>
+            <listitem>
+              <para>Select to also enforce the specified order parameters when
+              entering manual orders, such as sales orders.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Scheduling</term>
+      <listitem>
+        <para>The following additional scheduling options can be defined for
+        converted items:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Planning System</term>
+            <listitem>
+              <para>Specify which planning system the converted items should
+              belong to by default (i.e., MRP, MPS).</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Safety Stock</term>
+            <listitem>
+              <para>Specify the safety stock quantity you want to always have
+              available on hand.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Group Planned Orders Every</term>
+            <listitem>
+              <para>Specify the group setting for planned orders.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Lead Time</term>
+            <listitem>
+              <para>Specify the item site lead time.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>First Group</term>
+            <listitem>
+              <para>Select to include a special first group when grouping
+              planned orders with MRP.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

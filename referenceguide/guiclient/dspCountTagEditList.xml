@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspCountTagEditList">
+  <title><indexterm significance="normal">
+      <primary>count tags</primary>
+
+      <secondary>edit list for</secondary>
+    </indexterm>Count Tag Edit List</title>
+
+  <para>The count tag edit list displays the unposted count tags currently
+  available in your system. From this list, you can manage current count tags
+  and their associated count slips. By default, the system allows only one
+  unposted count tag per item site.</para>
+
+  <tip>
+    <para>The count tag edit list supports multiple-select, using the
+    <guibutton>SHIFT</guibutton> and/or <guibutton>CTRL</guibutton> keys. This
+    is helpful when posting or deleting multiple count tags. This feature only
+    works, however, when the <guilabel>Show Count Slips</guilabel> option is
+    turned off.</para>
+  </tip>
+
+  <para>To display available count tags, go to <guimenuitem>Inventory &gt;
+  Physical Inventory &gt; Reports &gt; Count Tag Edit List</guimenuitem>. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspCountTagEditList.png"/>
+        </imageobject>
+
+        <caption>Count Tag Edit List</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying the count tag edit list, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Item Sites by</term>
+
+      <listitem>
+        <para>Specify which of the following codes you want to have count tag
+        displayed for:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Class Code</term>
+
+            <listitem>
+              <para>If selected, you will be presented with class code
+              options.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Planner Code</term>
+
+            <listitem>
+              <para>If selected, you will be presented with planner code
+              options.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>One way to manage count slips associated with a count tag is by
+    using the right-click menu options available from the count tag edit
+    list.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to display count tags for all sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site whose count tags you want to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>No Highlighting</term>
+
+      <listitem>
+        <para>Select to not highlight count tags with variances.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Highlight Count Tag when Variance Value Exceeds</term>
+
+      <listitem>
+        <para>Select to highlight count tags whose dollar amount variance
+        exceeds the value entered. In addition to checking the box, you must
+        also enter a value in the field. Once the value is entered, select the
+        <guibutton>QUERY</guibutton> button. Count tags meeting your criteria
+        will automatically be highlighted in red.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>Count tags showing both positive and negative variances will be
+    highlighted. For example, if you enter "100" in the field
+    <guilabel>Highlight Count Tag When Variance Value Exceeds</guilabel>, all
+    dollar amount variances greater than $100 will be highlighted, but so too
+    will negative variances exceeding -$100. The same principle holds true if
+    a percentage value is entered.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Highlight Count Tag when Variance Exceeds %</term>
+
+      <listitem>
+        <para>Select to highlight count tags whose variance exceeds a
+        user-defined percentage. In addition to checking the box, you must
+        also enter a percentage in the <guilabel>Percentage</guilabel> field.
+        Once the percentage is entered, select the
+        <guibutton>QUERY</guibutton> button. Count tags meeting your criteria
+        will automatically be highlighted in red.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Search For</term>
+
+      <listitem>
+        <para>To search for a count tag in the edit list, begin typing in the
+        <guilabel>Search</guilabel> field. As you type, the list will
+        automatically scroll toward the count tag you are typing. You can also
+        search for count tags manually by scrolling through the list.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show Count Slips</term>
+
+      <listitem>
+        <para>Select to display count slips associated with count tags. Count
+        slips will display in a nested manner beneath their associated count
+        tag. Look for a plus sign (+) in the first column to determine if
+        count slips are associated. Select the plus sign to reveal the count
+        slips. To hide the count slips, select the minus sign (-).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Count Tags</term>
+
+      <listitem>
+        <para>Display lists count tag edit list, using the specified
+        parameters. If the count quantity displays in blue type, this means
+        the item has not been counted.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>Count tags may be created to count an entire item site—or a specific
+    site location within an item site.</para>
+  </tip>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>POST</guibutton></term>
+
+      <listitem id="dspCountTagEditListPOST">
+        <para>Highlight an individual count tag—or group of count tags using
+        the <guibutton>SHIFT</guibutton> and/or <guibutton>CTRL</guibutton>
+        keys—and then select this button to post the count tag(s). Posts count
+        tag quantities to the quantity on hand (QOH) for the associated item
+        site(s). If an item site was frozen when its count tag was created,
+        then both the inventory count and the corresponding general ledger
+        (G/L) transactions will use the count tag created (i.e., frozen) date
+        when the count tag is posted. On the other hand, if the item site was
+        not frozen, the inventory and G/L transactions will use the count tag
+        posted date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>ENTER SLIP</guibutton></term>
+
+      <listitem id="dspCountTagEditListENTERSLIP">
+        <para>Select to enter a count slip.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printChecks">
+  <title><indexterm significance="normal">
+      <primary>payment runs</primary>
+
+      <secondary>printing of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>printing multiple</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>accounts payable</primary>
+
+      <secondary>printing payments for</secondary>
+    </indexterm>Print Payment Run</title>
+
+  <para>To print a payment run, go to <guimenuitem>Accounting &gt; Accounts
+  Payable &gt; Forms &gt; Print Payment Run</guimenuitem>. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printChecks.png"/>
+        </imageobject>
+
+        <caption>Print Payments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>If payments being printed contain reference lines which spill over
+    and exceed one standard page, then consider using the report definition
+    CheckMultiPage.xml. This payment form is designed to support multiple
+    pages for one payment number.</para>
+  </tip>
+
+  <para>When printing a payment run, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Bank Account</term>
+
+      <listitem>
+        <para>Specify the bank account associated with the payment run you
+        want to print. Only bank accounts which require printing will have
+        payments to print. If the specified bank account is configured to use
+        electronic funds transfer (EFT), the <guibutton>CREATE EFT
+        FILE</guibutton> button will be enabled on this screen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Next Payment #</term>
+
+      <listitem>
+        <para>Displays the first available payment number in the payment run
+        for the specified bank account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term># of Payments to Print</term>
+
+      <listitem>
+        <para>Specify how many payments should be printed in the payment run.
+        Payment numbers increment in intervals of one (1) beginning with the
+        first payment number displayed above. The maximum possible selection
+        indicates the maximum number of payments in the payment run. Selecting
+        a number less than the maximum will cause that number of payments to
+        be printed, leaving the remaining number still to be printed.</para>
+
+        <note>
+          <para>Payments will automatically print by recipient type (vendor,
+          tax authority, customer) then alphabetically by the recipients
+          number.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Order Payments by Name</term>
+
+      <listitem>
+        <para>Select to print payments in alphabetical order by vendor,
+        customer, or tax authority name.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CREATE EFT FILE</guibutton></term>
+
+      <listitem>
+        <para>Select to create an EFT file. This button will be enabled only
+        for bank accounts which are configured to use EFT.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>problems when printing</secondary>
+    </indexterm>If for some reason you experience printing problems when
+  printing a payment run, select the <guibutton>NO</guibutton> button from the
+  following screen:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printChecksSuccess.png"/>
+        </imageobject>
+
+        <caption>Print message</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>If you select the <guibutton>NO</guibutton> button at the end of
+  printing a payment run, the following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printChecksReview.png"/>
+        </imageobject>
+
+        <caption>Review Printed Payments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The Review Printed Payments screen lists all the payments which were
+  included in the payment run.</para>
+
+  <note>
+    <para>The default action listed for all payments in a payment run is
+    <guilabel>printed</guilabel>. Each payment will be marked as printed when
+    you select the <guibutton>COMPLETE</guibutton> button, unless you specify
+    one of the other possible actions: void, replace, etc.</para>
+  </note>
+
+  <para>When reviewing the list of payments included in a payment run, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>COMPLETE</term>
+
+      <listitem>
+        <para>Select to perform the specified action associated with each of
+        the listed payments. This should be the last option selected at the
+        conclusion of your payment run review. Selecting this option
+        terminates the review process. If no action is specified for a
+        payment, the status of the payment will remain as it was prior to
+        printing the payment run.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>EDIT NUMBER</guibutton></term>
+
+      <listitem>
+        <para>Select to reprint a payment if the payment was reported as
+        having been printed incorrectly. This option only works for payments
+        whose printing has been specifically reported as unsuccessful.
+        Successfully printed payments may not be reprinted. The ability to
+        reprint badly printed payments is an <guimenu>Accounting</guimenu>
+        module configuration. For more information, please see <xref
+        linkend="reprintPayments"/>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UNMARK</term>
+
+      <listitem>
+        <para>Highlight a payment number and then select this option to remove
+        any action associated with the payment. If no action is specified for
+        a payment, the status of the payment will remain as it was prior to
+        printing the payment run.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>You may select multiple payments for marking using the
+    <guibutton>SHIFT</guibutton> or <guibutton>CTRL</guibutton> key and your
+    mouse.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>MARK AS PRINTED</guibutton></term>
+
+      <listitem>
+        <para>Highlight a payment number and then select this option to mark
+        the payment as printed. By default, all payments in a payment run are
+        marked as printed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>VOID</term>
+
+      <listitem>
+        <para>Highlight a payment number and then select this option to mark
+        the payment as voided. Before a payment can be replaced, it must first
+        be voided.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>VOID &amp; REPLACE</term>
+
+      <listitem>
+        <para>Highlight a payment number and then select this option to mark
+        the payment as voided and then replace the payment with a new payment.
+        Using this option, you can both void and replace a payment in one
+        step.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>SELECT ALL</term>
+
+      <listitem>
+        <para>Use this option to automatically select all payments for
+        marking, or unmarking.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

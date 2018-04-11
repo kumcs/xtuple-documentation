@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="updateReorderLevels">
+  <title><indexterm significance="normal">
+      <primary>reorder levels</primary>
+
+      <secondary>updating by planner code</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>planner codes</primary>
+
+      <secondary>updating reorder levels using</secondary>
+    </indexterm>Update Reorder Levels by Planner Code</title>
+
+  <para>To update reorder levels by planner code, go to <guimenuitem>Inventory
+  &gt; Utilities &gt; Update Item Controls &gt; Reorder Levels &gt; by Planner
+  Code</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/updateReorderLevels.png"/>
+        </imageobject>
+
+        <caption>Update Reorder Levels by Planner Code</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>This utility does <emphasis>not</emphasis> update reorder levels for
+    items located in transit sites when it is run.</para>
+  </note>
+
+  <para>When updating reorder levels by planner code, you are presented with
+  the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Planner Codes</term>
+
+      <listitem>
+        <para>Select to update reorder levels for all planner codes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify planner code whose reorder levels you want to
+        update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pattern</term>
+
+      <listitem>
+        <para>Enter a planner code pattern to select a range of planner codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Site Selection</term>
+
+      <listitem>
+        <para>Select what sites you want to query.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>All Sites</term>
+
+            <listitem>
+              <para>Select to update reorder levels by planner code for all
+              sites.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Selected</term>
+
+            <listitem>
+              <para>Specify site where reorder levels by planner code are to
+              be updated.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Options</term>
+
+      <listitem>
+        <para>Select whether you would prefer to review results of analysis
+        before updating reorder levels or update immediately.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Preview Results</term>
+
+            <listitem>
+              <para>Review results of analysis prior to updating reorder
+              levels.</para>
+
+              <para role="xtconnect">The <guibutton>SCHEDULE</guibutton>
+              button will be disabled in this mode.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Update Immediately</term>
+
+            <listitem>
+              <para>Update reorder levels without previewing analysis
+              first.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Days of Stock at Reorder Level</term>
+
+      <listitem>
+        <para>Specify number of days using one of the following
+        options:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Item Site Lead Time +</term>
+
+            <listitem>
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 99. Average daily usage calculated
+              using selected calendar periods will be multiplied by this value
+              to determine reorder level.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Fixed Days</term>
+
+            <listitem>
+              <para>Select a number using the arrows, or manually enter a
+              value up to a maximum of 999. Average daily usage calculated
+              using selected calendar periods will be multiplied by this value
+              to determine reorder level.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Periods to Include in Analysis</term>
+
+      <listitem>
+        <para>Specify the periods to include in the analysis using the
+        following calendar options:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Calendar</term>
+
+            <listitem>
+              <para>Select the calendar you want to use for the
+              analysis.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Name/Selected Periods</term>
+
+            <listitem>
+              <para>Select as many periods as you want to include in the
+              analysis. Selected periods correspond to calendar specified in
+              the <guilabel>Calendar</guilabel> field. Select individual
+              periods or groups of periods together. To select an individual
+              period, highlight the period using your mouse button. The period
+              is now selected. To select a sequence of periods, highlight the
+              first in the sequence using your mouse button. Then, holding
+              down the <guibutton>SHIFT</guibutton> key on your keyboard,
+              highlight the last period in the sequence. The entire sequence
+              is now selected. To select periods that are out of sequence
+              (e.g., January, April, July, October), highlight the first
+              period in the group. Then, holding down the
+              <guibutton>CTRL</guibutton> key on your keyboard, highlight the
+              next period you want to select. Continue highlighting periods
+              with the <guibutton>CTRL</guibutton> key depressed until all
+              desired periods are selected. The entire group is now
+              selected.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>UPDATE</term>
+
+      <listitem>
+        <para>The initial <guibutton>QUERY</guibutton> button converts to an
+        <guibutton>UPDATE</guibutton> button once results have been queried
+        and the data is ready to be updated. Select this button to update
+        reorder levels, using the specified criteria.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To view results of query, select the
+  <guimenuitem>Results</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/updateReorderLevels_resultsTab.png"/>
+      </imageobject>
+
+      <caption>Update Reorder Levels by Planner Code</caption>
+    </mediaobject>
+  </screenshot>
+
+  <para>Upon selecting results a list of analysis results will appear on the
+  screen.</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Total Days Analyzed</term>
+
+      <listitem>
+        <para>Shows how many days were analyzed in your analysis and also
+        lists affected item sites.</para>
+
+        <note>
+          <para>Item sites subject to constraint management must always have a
+          minimum reorder level of at least one. If your results indicate a
+          new level of zero for one of these item sites, you will get an error
+          message preventing the update. Item sites having the
+          <guilabel>Stocked</guilabel> flag turned on are subject to
+          constraint management.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspInvoiceRegister">
+  <title><indexterm significance="normal">
+      <primary>invoices</primary>
+
+      <secondary>register of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>registers</primary>
+
+      <secondary>for invoices</secondary>
+    </indexterm>Invoice Register</title>
+
+  <para>To view daily invoice and credit memo transactions, go to
+  <guimenuitem>Accounting &gt; Accounts Receivable &gt; Reports &gt; Invoice
+  Register</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspInvoiceRegister.png"/>
+        </imageobject>
+
+        <caption>Invoice Register</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying the invoice register, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Accounts</term>
+
+      <listitem>
+        <para>Select to display invoice and credit memo transactions for all
+        G/L accounts.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected Account</term>
+
+      <listitem>
+        <para>Specify G/L account whose invoice and credit memo transactions
+        you want to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Start Date</term>
+
+      <listitem>
+        <para>Invoices and credit memos posted on and after this date will be
+        displayed. This is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>End Date</term>
+
+      <listitem>
+        <para>Invoices and credit memos posted on and before this date will be
+        displayed. This is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Transactions</term>
+
+      <listitem>
+        <para>Display lists daily invoice and credit memo transactions based
+        on the specified parameters. This display is a nested list, with a
+        plus sign (<guibutton>+</guibutton>) located to the far left of the
+        display next to each date. By clicking your mouse on a plus sign, you
+        reveal lower levels of information related to transactions on that
+        date. In addition, the totals for the included transactions will
+        appear at the bottom of the screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>If a ship-to address was used for an invoice, the ship-to address
+    will appear in the <guilabel>Reference</guilabel> column of the
+    <guilabel>Transactions</guilabel> display.</para>
+  </tip>
+</section>

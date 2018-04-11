@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="incidentWorkbench">
+  <title><indexterm significance="normal">
+      <primary>incidents</primary>
+
+      <secondary>workbench for</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>customer relationship management</primary>
+
+      <secondary>incident workbench and</secondary>
+    </indexterm>List Incidents</title>
+
+  <para>The list of incidents enables you to monitor and take action on the
+  full range of incidents entered in your system. To see the list of
+  incidents, go to <guimenuitem>CRM &gt; Incident &gt; List</guimenuitem>. The
+  screen is extremely versatile and can be used by many different functional
+  groups within your organization.</para>
+
+  <para>Here are some tips for using this screen:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para>The rows in the workbench can be color-coded based on their
+      status. To learn more about color-coding for the incident list, see:
+      <xref linkend="configureCRM"/>.</para>
+    </listitem>
+
+    <listitem>
+      <para>Build and save custom filters to make it easy for different
+      functional groups to access the information they need to work on.</para>
+    </listitem>
+
+    <listitem>
+      <para>Enter search terms in the Search window, then select the
+      <guibutton>QUERY</guibutton> button to quickly locate the incidents you
+      are looking for.</para>
+    </listitem>
+
+    <listitem>
+      <para>Sort the data on the screen by the columns you use the most. The
+      sort order will be remembered every time you return to the
+      screen.</para>
+    </listitem>
+
+    <listitem>
+      <para>If you have incident characteristics defined, you can search and
+      report on these characteristics using the search filter options and also
+      the column headers.</para>
+    </listitem>
+  </itemizedlist>
+
+  <para>The following screenshot shows the Incidents screen:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/incidentWorkbench.png"/>
+        </imageobject>
+
+        <caption>Incidents list</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The default filter on the Incidents screen shows incidents assigned to
+  the logged-in user having a status above <guilabel>Resolved</guilabel>. You
+  can build your own search criteria using the following options:</para>
+
+  <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

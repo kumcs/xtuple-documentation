@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printShippingForm">
+  <title><indexterm significance="normal">
+      <primary>bills of lading</primary>
+
+      <secondary>printing of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>shipping forms</primary>
+
+      <secondary>printing of</secondary>
+    </indexterm>Print Shipping Form</title>
+
+  <para>A bill of lading is an example of a shipping form. To print a shipping
+  form, go to <guimenuitem>Inventory &gt; Shipping &gt; Form &gt; Shipping
+  Form</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printShippingForm.png"/>
+        </imageobject>
+
+        <caption>Print Shipping Form</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When printing a shipping form, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Sales Order #</term>
+
+      <listitem>
+        <para>Enter the order number of the sales order or transfer order
+        whose shipping form you want to print.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipment #</term>
+
+      <listitem>
+        <para>Specify the shipment number you want to print a packing list
+        for. Shipment numbers are assigned to orders when line item quantity
+        is issued to shipping. A single order may have multiple shipments
+        associated with it. If no stock has ever been issued to shipping for
+        an order, then no shipment number will be associated with it.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Ship To</term>
+
+      <listitem>
+        <para>Displays the ship-to address for the specified order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipping Form</term>
+
+      <listitem>
+        <para>Specify the name of the shipping form you want to print.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipping Charges</term>
+
+      <listitem>
+        <para>Specify the shipping charges associated with the order</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipping Form Copies</term>
+
+      <listitem>
+        <para>Specify details for the shipping form copies you want to
+        print.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term># of Copies</term>
+
+            <listitem>
+              <para>Specify the number of copies you want to print. To add a
+              watermark or show/hide prices on the printed form, double-click
+              on a copy line.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="../widgets/watermarks.xml" xpointer="watermarksWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

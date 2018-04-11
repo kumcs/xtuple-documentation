@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printPackingList">
+  <title><indexterm significance="normal">
+      <primary>packing lists</primary>
+      <secondary>printing of</secondary>
+    </indexterm>Print Packing List</title>
+  <para>To print a packing list or sales order pick list, go to
+  <guimenuitem>Print Packing List</guimenuitem>. If the order has a shipment
+  number, the packing list form should be used. If there is no shipment
+  number—that is, if no line item quantity has been issued to shipping—then
+  the sales order pick list form should be used. Both forms are defined under
+  <guimenuitem>Sales &gt; Master Information &gt; Customer Form
+  Assignments</guimenuitem>.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printPackingList.png"/>
+        </imageobject>
+        <caption>Print Packing List</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When printing a packing list, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <variablelist>
+          <varlistentry>
+            <term>All Sites</term>
+            <listitem>
+              <para>Select to include packing lists for all sites.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Selected</term>
+            <listitem>
+              <para>Specify the site you want to print packing lists
+              for.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Form</term>
+      <listitem>
+        <para>Specify which type of packing list form you want to
+        print:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Auto Select</term>
+            <listitem>
+              <para>Select to have the system automatically determine which
+              form should be used, based on the state of the order at the time
+              the report is printed.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Packing List</term>
+            <listitem>
+              <para>Select to have the defined packing list form printed. This
+              form will be used if an order has a shipment number.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Pick List</term>
+            <listitem>
+              <para>Select to have the sales order pick list form printed. If
+              the order does not have a shipment number, this form will be
+              used.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Reprint</term>
+      <listitem>
+        <para>Select this option if you want to print a packing list which has
+        already been printed. Once a packing list has been printed, you must
+        use this option if you want to print it again.</para>
+        <note>
+          <para>A sales order pick list will be printed if the sales order
+          does not yet have a shipment number associated with it—that is, if
+          no line item quantity has been issued to shipping. If stock has been
+          issued to shipping, then the packing list report definition will be
+          used.</para>
+          <para>The system includes two alternate sales order pick list report
+          definitions:</para>
+          <itemizedlist>
+            <listitem>
+              <para>PickingListSOClosedLines.xml</para>
+            </listitem>
+            <listitem>
+              <para>PickingListNoClosedLines.xml</para>
+            </listitem>
+          </itemizedlist>
+          <para>The first includes already closed sales order line items in
+          the report; the other excludes closed line items.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order #</term>
+      <listitem>
+        <para>Enter the order number of the order whose packing list you want
+        to print. The order may be either a sales order or a transfer
+        order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Shipment #</term>
+      <listitem>
+        <para>Specify the shipment number you want to print a packing list
+        for. Shipment numbers are assigned to orders when line item quantity
+        is issued to shipping. A single order may have multiple shipments
+        associated with it. If no stock has ever been issued to shipping for
+        an order, then no shipment number will be associated with it.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Name</term>
+      <listitem>
+        <para>Displays the customer's name.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Phone</term>
+      <listitem>
+        <para>Displays the customer's phone number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Purchase Order Number</term>
+      <listitem>
+        <para>Displays the customer's purchase order number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Date</term>
+      <listitem>
+        <para>Displays the order date for the sales order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

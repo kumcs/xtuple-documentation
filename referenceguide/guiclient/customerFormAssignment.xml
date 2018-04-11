@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="customerFormAssignment">
+  <title><indexterm significance="normal">
+      <primary>customer forms</primary>
+      <secondary>creating new assignment for</secondary>
+    </indexterm>Customer Form Assignment</title>
+  <para>To create a new customer form assignment, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/customerFormAssignment.png" />
+        </imageobject>
+        <caption>Create new Customer Form Assignment</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new customer form assignment, you are presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Selected Customer Type</term>
+      <listitem>
+        <para>Specify the customer type you want to associate with the listed
+        customer forms.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Type Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Invoice Form</term>
+      <listitem>
+        <para>Specify the invoice form you want to assign to the customer
+        type(s).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sales Credit Form</term>
+      <listitem>
+        <para>Specify the sales credit form you want to assign to the customer
+        type(s).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Statement Form</term>
+      <listitem>
+        <para>Specify the statement form you want to assign to the customer
+        type(s).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Quote Form</term>
+      <listitem>
+        <para>Specify the quote form you want to assign to the customer
+        type(s).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Packing List Form</term>
+      <listitem>
+        <para>Specify the packing list form you want to assign to the customer
+        type(s). The packing list selection is used after sales order line
+        item quantity has been issued to shipping.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sales Order Pick List Form</term>
+      <listitem>
+        <para>Specify the sales order pick list form you want to assign to the
+        customer type(s). The sales order pick list selection is used before
+        sales order line item quantity has been issued to shipping.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>The system includes two alternate sales order pick list report
+    definitions:</para>
+    <itemizedlist>
+      <listitem>
+        <para><literal>PickingListSOClosedLines.xml</literal></para>
+      </listitem>
+      <listitem>
+        <para><literal>PickingListNoClosedLines.xml</literal></para>
+      </listitem>
+    </itemizedlist>
+    <para>The first includes already closed sales order line items in the
+    report; the other excludes closed line items. Report definitions (i.e.,
+    forms) are assigned by customer type.</para>
+  </tip>
+</section>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="updateItemSiteLeadTimes">
+  <title><indexterm significance="normal">
+      <primary>item sites</primary>
+
+      <secondary>lead times in</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>lead times</primary>
+
+      <secondary>updating for item sites</secondary>
+    </indexterm>Update Item Site Lead Times</title>
+
+  <para>To update the lead times associated with item sites, go to
+  <guimenuitem>Inventory &gt; Utilities &gt; Update Item Controls &gt; Item
+  Site Lead Times</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/updateItemSiteLeadTimes.png"/>
+        </imageobject>
+
+        <caption>Update Item Site Lead Time Days</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When updating item site lead times, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to update item site lead times for all sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site where item site lead times are to be
+        updated.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>All Class Codes</term>
+
+      <listitem>
+        <para>Select to update item site lead times for all class
+        codes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify class code whose item site lead times you want to
+        update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pattern</term>
+
+      <listitem>
+        <para>Enter a class code pattern to select a range of class codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pad Lead Time by (Days)</term>
+
+      <listitem>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 99. Value entered specifies the number of days you
+        want to pad item site lead times by.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>UPDATE</guibutton></term>
+
+      <listitem>
+        <para>Updates the item site lead times, using the specified
+        parameters. Item sites are updated in item type and bill of material
+        (BOM) level sequence so that the lead times of lower level items are
+        calculated before the lead times of dependent items.</para>
+
+        <para>The following formulas describe how lead times for different
+        item types are handled:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para><emphasis role="bold">Manufactured Items:</emphasis> The
+            utility first scans the BOM for the item and finds the component
+            item having the longest lead time. It then scans the routing for
+            the item and finds the operation having the latest execution day.
+            Finally it performs the following calculation:</para>
+
+            <informalexample>
+              <para>Longest Component Item Lead Time + Latest Execution Day +
+              Pad Days = New Item Site Lead Time</para>
+            </informalexample>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">Purchased Items (with Item
+            Source):</emphasis> The utility scans any item sources and finds
+            the longest lead time. Then if performs the following
+            calculation:</para>
+
+            <informalexample>
+              <para>Longest Item Source Lead Time + Pad Days = New Item Site
+              Lead Time</para>
+            </informalexample>
+          </listitem>
+
+          <listitem>
+            <para><emphasis role="bold">All Others:</emphasis> The utility
+            does the following calculation:</para>
+
+            <informalexample>
+              <para>Pad Days = New Item Site Lead Time</para>
+            </informalexample>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

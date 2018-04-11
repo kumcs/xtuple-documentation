@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspSalesOrders">
+  <title><indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>search for</secondary>
+    </indexterm>Search Orders</title>
+  <para>You are able to quickly and easily locate the sales orders you're
+  looking for on the Sales Order screen. Use the search filter options to
+  narrow down your search.</para>
+  <para>Here are some tips for using this screen:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Narrow your search using a date range. By default, the date range
+      is set to the current date.</para>
+    </listitem>
+    <listitem>
+      <para>Use the customer's original P/O number to locate a sales
+      order.</para>
+    </listitem>
+    <listitem>
+      <para>Find all orders related to a specific sales rep.</para>
+    </listitem>
+    <listitem>
+      <para>Hide closed orders to only show open orders during a date range
+      you specify.</para>
+    </listitem>
+    <listitem>
+      <para>Search for sales orders created by specific users, with the
+      <guilabel>Created By</guilabel> filter option.</para>
+    </listitem>
+  </itemizedlist>
+  <para>To search for a sales order, go to <guimenuitem>Sales &gt; Sales Order
+  &gt; Search Orders</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspSalesOrders.png" />
+        </imageobject>
+        <caption>Search Sales Orders</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The default filter on the Sales Orders screen shows all sales orders
+  created on the current date. You can build your own search criteria using
+  the following options:</para>
+  <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspFreightPricesByCustomer">
+  <title><indexterm significance="normal">
+      <primary>freight pricing</primary>
+      <secondary>by customer</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>customers</primary>
+      <secondary>freight pricing for</secondary>
+    </indexterm>Freight Prices by Customer</title>
+  <para>To display a list of freight prices by customer, go to
+  <guimenuitem>Sales &gt; Pricing &gt; Reports &gt;</guimenuitem><guimenuitem>
+  Freight Prices by Customer</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspFreightPricesByCustomer.png" />
+        </imageobject>
+        <caption>Freight Prices by Customer</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When displaying freight prices by customer, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Customer #</term>
+      <listitem>
+        <para>Enter the customer number of the customer whose freight prices
+        you want to view. The lookup feature located to the right of the field
+        leads to a searchable customers list. You may also access this list
+        using the keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a
+        customer number is entered, the customer name and billing address will
+        display. Select the <guibutton>?</guibutton> or
+        <guibutton>$</guibutton> symbol to view customer information for the
+        specified customer. If a customer's credit is good, the button will
+        feature a black question mark (<guibutton>?</guibutton>) icon. If the
+        customer is on credit warning, the icon will turn into an orange
+        dollar sign (<guibutton>$</guibutton>). A red dollar sign
+        (<guibutton>$</guibutton>) indicates the customer is on credit
+        hold.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Expired Prices</term>
+      <listitem>
+        <para>Select to display expired freight prices.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Future Prices</term>
+      <listitem>
+        <para>Select to display future freight prices.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Freight Prices</term>
+      <listitem>
+        <para>Display lists freight prices for the specified customer.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

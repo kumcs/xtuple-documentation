@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="salesOrderItem">
+  <title><indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>adding line items to</secondary>
+    </indexterm>Sales Order Item</title>
+  <para>To add a new sales order line item, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderItem.png"/>
+        </imageobject>
+        <caption>Create new Sales Order Line Item</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new sales order line item, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Order #</term>
+      <listitem>
+        <para>Displays the sales order number specified on the sales order
+        header.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Line #</term>
+      <listitem>
+        <para>Displays the line item number for the current line item.</para>
+        <note>
+          <para>If the sales order was generated from a return authorization,
+          the return authorization number and corresponding line number will
+          also be displayed at the top of the screen.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Refresh Order</term>
+      <listitem>
+        <para>Select to indicate you want the sales order header to be
+        refreshed immediately in the background. When the header is refreshed
+        immediately, you will be able to see the rows of line items being
+        added to the order. However, this feature can impact performance when
+        entering sales order line items. If you are experiencing performance
+        issues, you should not select this option. The sales order will be
+        refreshed when you close the Sales Order Line Item screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Return Auth.#</term>
+      <listitem>
+        <para>Displays the return authorization number associated with the
+        sales order, if any.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Line #</term>
+      <listitem>
+        <para>Displays the line number for the item listed on the return
+        authorization, if any.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Enter the item number of the item you want to sell. The item
+        list will contain sold items available for sale to the specified
+        customer. The list of available items may vary from customer to
+        customer, depending on how pricing schedules are implemented at your
+        site. Once an item number is entered, the inventory unit of measure
+        and item description will automatically appear.</para>
+        <note>
+          <para><indexterm significance="normal">
+              <primary>job items</primary>
+              <secondary>creating demand for</secondary>
+            </indexterm><indexterm significance="normal">
+              <primary>sales orders</primary>
+              <secondary>job items and</secondary>
+            </indexterm>If the item is a job item, a linked work order will
+          automatically be created. Creating a sales order for job items is
+          the only way to create a job item work order. Production for job
+          item work orders is posted automatically when the linked sales order
+          item is linked to shipping.</para>
+        </note>
+        <tip>
+          <para>Kit items must be shipped complete before they can be
+          invoiced.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer P/N</term>
+      <listitem>
+        <para>Displays the customer part number (i.e., item alias) that
+        corresponds to the item number entered in the <guilabel>Item
+        Number</guilabel> field. If the alias is associated with a particular
+        customer account, then the alias will only be displayed for sales
+        orders and quotes entered for that customer. Item aliases are defined
+        on the Item master.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Substitute for</term>
+      <listitem>
+        <para>Optional selection used solely for gathering information related
+        to sales order line item substitutions. This feature can be used, for
+        example, to gather information about inventory shortages or customer
+        first preferences. There is no impact on the system of using this
+        feature. Its function is simply to store information in the database,
+        where it may be accessed for reporting purposes.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term><indexterm significance="normal">
+          <primary>sites</primary>
+          <secondary>sold from for sales orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>selling sites for</secondary>
+        </indexterm>Site</term>
+      <listitem>
+        <para>Specify the site the sales order item is sold from. Items may be
+        supplied to sales orders from multiple item sites. After an item
+        number is entered above, the system checks for available item sites
+        for the item. Any item sites having the <guilabel>Sold From</guilabel>
+        flag set on them will be selectable from this site list. By default,
+        the item site having the highest ranking will be selected as the first
+        available site. If more than one item site share a ranking of "1," the
+        sites will be sorted in alphabetical order. Item site rankings are set
+        on the Item Site master.</para>
+        <tip>
+          <para>If a <guilabel>Preferred Selling Site</guilabel> is specified
+          for the customer, then that site will be selected here by default.
+          If the <guilabel>Preferred Selling Site</guilabel> is not
+          selected—and you think it should be—verify that the Item Site master
+          for the line item in question is marked as a <guilabel>Sold
+          From</guilabel> site.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term>ADV. ITEM SEARCH</term>
+      <listitem>
+        <para>Advanced item search (AIS) is a feature designed specifically
+        with distribution in mind. This feature allows distributors and end
+        users to quickly search for both items and item aliases—as well as
+        current inventory levels—filtering every keystroke. From this screen
+        you also have the ability to create an item alias.</para>
+        <note>
+          <para>When using the AIS, you must enter at least three characters
+          (i.e., numbers, letters or a combination of both) before any search
+          results will be returned. This is for speed of performance
+          reasons.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term>VENDOR CATALOG</term>
+      <listitem>
+        <para>Select to use the External Vendor Catalog screen to view items
+        as they appear within the various vendor catalogs you are subscribed
+        to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term>VIEW IMAGE</term>
+      <listitem>
+        <para>Select to view an item image, if available.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term>VIEW SPEC</term>
+      <listitem>
+        <para>Select to view a specification sheet for the item, if
+        available.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty. Ordered</term>
+      <listitem>
+        <para>Enter the quantity of the specified item being ordered.</para>
+        <para role="standard"><note>
+            <para>If the sales order item is being edited and the quantity
+            ordered is reduced then all reservations for the line item will be
+            removed.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selling UOM</term>
+      <listitem>
+        <para>Specify the unit of measure (UOM) to be used when selling the
+        line item. Sold items may be assigned multiple selling UOMs. These
+        alternate UOMs may be defined on the Item master. You may also select
+        a global conversion ratio here. Global conversions have the label
+        <literal>Global</literal> appended to them. If a line item has no
+        selling UOM defined, then the inventory UOM will be used here by
+        default.<tip>
+            <para>When sales orders are entered, the system will search for
+            quantity break matches between the sales order item and any
+            relevant pricing schedule. If duplicate quantity breaks are found,
+            the lowest price for the given quantity will be used.</para>
+          </tip></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty. Shipped</term>
+      <listitem>
+        <para>Displays the line item quantity shipped to date, if any.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>List Price</term>
+      <listitem>
+        <para>Displays either the list price found on the Item master or the
+        alternate list price, if alternate list pricing is being used. To
+        learn more about how alternate list pricing works, please see the
+        <ulink
+        url="https://xtupleuniversity.xtuple.com/library/articles/alternate-list-pricing">Alternate
+        List Pricing article</ulink> at xTupleU.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Discount %</term>
+      <listitem>
+        <para>If standard list pricing is being used, this field will display
+        the default discount percentage (if any) for the specified customer,
+        as defined on the Customer master. On the other hand, if alternate
+        list pricing is being used, the field will display the percentage
+        difference between the alternate list price and the net unit price.
+        You also have the option to manually override the discount
+        percentage.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Price</term>
+      <listitem>
+        <para>Displays the best applicable price from all available pricing
+        schedules.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Discount %</term>
+      <listitem>
+        <para>Displays the percentage difference between the customer price
+        and the net unit price.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>line item pricing for</secondary>
+        </indexterm>Net Unit Price</term>
+      <listitem>
+        <para>Displays either the list price minus the customer discount or
+        the price from any applicable pricing schedule or sale. If a pricing
+        schedule is in effect, the <emphasis>most specific</emphasis> pricing
+        schedule assignment will be used. The specificity of pricing schedule
+        assignments is determined in the following descending order: by
+        customer ship-to address (most specific), by customer, by customer
+        type, by customer type pattern, by all customers. The lookup feature
+        located to the right of the field leads to a Price List screen.</para>
+        <tip>
+          <para>The system can be configured to prevent users from editing the
+          net unit price. If your system is configured that way, the
+          <guilabel>Net Unit Price</guilabel> field will not be editable. The
+          unit cost and unit cost markup % values on the
+          <guimenuitem>Details</guimenuitem> tab can also be configured to be
+          editable with permission settings. These values, if changed, will
+          adjust the net unit price.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Price UOM</term>
+      <listitem>
+        <para>The price unit of measure is the same as the selling UOM. If an
+        item has selling UOMs defined, then the item may be sold and priced in
+        these alternate UOMs. You may also select a global conversion ratio
+        here. Global conversions have the label <literal>Global</literal>
+        appended to them. If no selling UOMs are defined, then the inventory
+        UOM will be used here by default.</para>
+        <itemizedlist>
+          <listitem>
+            <para>If your pricing schedule has multiple UOMs on it (or if
+            several pricing schedules share the same level of price
+            specificity, but they have different UOMs) then the UOM which
+            matches the selected UOM will be chosen—that is, as long as the
+            quantity break does not exceed the quantity being priced. If no
+            entry matches the UOM with a quantity break less than the quantity
+            being priced, then the lowest value price for any UOM will be
+            chosen. To make sure a specific UOM is always chosen at the
+            desired level of price specificity, then your pricing schedules
+            should include at least one UOM with a quantity break of 0.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Extended Price</term>
+      <listitem>
+        <para>Displays the extended price. The extended price for a line item
+        is based on the quantity ordered multiplied by the net unit
+        price.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Scheduled Date</term>
+      <listitem>
+        <para>The scheduled date is the date when the line item quantity
+        should be shipped. The user who enters the line item is responsible
+        for determining the scheduled date. After entering the scheduled date,
+        hit the <guibutton>TAB</guibutton> key on your keyboard to display
+        values in the remaining display only fields.</para>
+        <note>
+          <para>The sales order item having the earliest scheduled date will
+          determine the ship date for the sales order.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Promised Date</term>
+      <listitem>
+        <para>Enter the date when you promised delivery of the line item. This
+        is an optional field. It will only be displayed on the screen if your
+        system is configured to enable promise dates.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Warranty</term>
+      <listitem>
+        <para>Select if the line item is a warranty item. If selected, the
+        cost of warranty account will be used when shipping the line item,
+        instead of the cost of sales account. It will also be used when
+        receiving warranty items through a return authorization, instead of
+        the P/O liability clearing account.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>When entering sales orders you have the ability to view current supply
+  considerations, including item availability and dependencies. You may also
+  create replenishment orders (if they are needed) and change work order
+  materials and operations.</para>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>availability of items for</secondary>
+        </indexterm>Show Availability</term>
+      <listitem>
+        <para>Select to display availability information for the sales order
+        item in the following categories. If the feature is turned on, the
+        availability totals will display only after a scheduled date has been
+        entered for the line item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Inventory</term>
+      <listitem>
+        <para>Select option to view inventory availability. The display lists
+        item availability for dependencies.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Available QOH</term>
+            <listitem>
+              <para>Displays the current available quantity on hand (QOH)
+              value.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Allocated</term>
+            <listitem>
+              <para>Displays the quantity allocated to current sales orders
+              and/or work orders in the system. An item is considered
+              allocated to a sales order if a sales order line item exists for
+              the item—and that line item has not yet been issued to shipping.
+              An item is considered allocated to a work order if the item is a
+              material requirement—and the material has not yet been issued to
+              the work order. Once the current sales order line item is saved,
+              the allocated value will increase by the quantity
+              ordered.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Unallocated</term>
+            <listitem>
+              <para>Displays the QOH remaining after allocations have been
+              accounted for, as in: QOH - Allocated Qty. = Unallocated
+              Qty.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>On Order</term>
+            <listitem>
+              <para>If the sales order item is a manufactured item, the
+              quantity ordered by current work orders will be displayed. If
+              the sales order item is a purchased item, the quantity ordered
+              by current purchase orders will be displayed.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Available</term>
+            <listitem>
+              <para>Displays the available quantity. Available quantity is
+              determined using the following formula: Unallocated Qty. + On
+              Order Qty. = Available Qty.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="standard">
+            <term>Reserved</term>
+            <listitem>
+              <para>Displays the item quantity already reserved.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="standard">
+            <term>Reservable</term>
+            <listitem>
+              <para>Displays the available item quantity remaining to be
+              reserved.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Lead Time</term>
+            <listitem>
+              <para>Displays the item site lead time for the specified line
+              item.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>As Of</term>
+            <listitem>
+              <para>Show availability using one of the following
+              criteria:</para>
+              <variablelist>
+                <varlistentry>
+                  <term>Scheduled Date</term>
+                  <listitem>
+                    <para>Select to show projected availability based on the
+                    scheduled date.</para>
+                  </listitem>
+                </varlistentry>
+                <varlistentry>
+                  <term>Lead Time</term>
+                  <listitem>
+                    <para>Select to show projected availability based on the
+                    lead time specified in the Item Site master.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Show Dependencies as Indented BOM</term>
+            <listitem>
+              <para>Displays component items associated with sold manufactured
+              items in a nested list with a plus (<guibutton>+</guibutton>)
+              sign located to the far left of the screen next to each line
+              that may be expanded to lower levels. By clicking your mouse on
+              a plus sign, you reveal lower levels of information related to
+              the line item.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Supply Order</term>
+      <listitem>
+        <para>If you wish to maintain work order materials and operations for
+        a manufactured item, select the <guimenuitem>Supply
+        Order</guimenuitem> option on the <guimenuitem>Supply</guimenuitem>
+        tab. The following will be displayed:<mediaobject>
+            <imageobject>
+              <imagedata fileref="images/salesOrderItem_availabilitySupply.png"/>
+            </imageobject>
+            <caption><para>Supply Order information for manufactured
+            item</para></caption>
+          </mediaobject><note>
+            <para>Supply orders are created as soon as a valid item, order
+            quantity, and scheduled date are entered.</para>
+          </note></para>
+        <variablelist>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>sales orders</primary>
+                <secondary>work orders generated by</secondary>
+              </indexterm><indexterm significance="normal">
+                <primary>work orders</primary>
+                <secondary>generated by sales orders</secondary>
+              </indexterm><indexterm significance="normal">
+                <primary>purchase requests</primary>
+                <secondary>generated by sales orders</secondary>
+              </indexterm><indexterm significance="normal">
+                <primary>sales orders</primary>
+                <secondary>purchase requests generated by</secondary>
+              </indexterm>Create Work Order</term>
+            <listitem>
+              <para>If the line item is a manufactured item, select this
+              option to automatically create a work order for the specified
+              quantity. For make-to-order manufactured items, this option will
+              be selected automatically—as long as the item site's
+              <guilabel>Stocked</guilabel> flag is set to
+              <literal>False</literal>. The work order will be created once
+              you save the sales order line item. Work orders created
+              automatically from a sales order will assume the same order
+              number as the sales order—even if that order number has already
+              been used by a previous work order.</para>
+              <para>For purchased items, the following two different options
+              may appear, depending on how the item site for the item is set
+              up: <guilabel>Create Purchase Request</guilabel> or
+              <guilabel>Create Purchase Order</guilabel>. In either case, you
+              will be given the option to override any item source price(s)
+              which are in place. Also, linked purchase orders will be updated
+              when sales order details are changed. If your site is configured
+              to use drop shipping, an additional <guilabel>Drop
+              Ship</guilabel> flag will also be shown for linked purchase
+              orders. The drop ship function will search for an existing
+              purchase order linked to the sales order with a matching ship-to
+              address and add the line item to that order—or create a new
+              order if none exists. Drop ship purchase orders inherit the
+              ship-to address and contact information from the sales order.
+              Item sources must be defined for drop ship items—including each
+              component of a kit item.</para>
+              <tip>
+                <para>This option will not be selected by default if the
+                relevant item site has the <guilabel>Stocked</guilabel>
+                setting selected.</para>
+              </tip>
+              <note>
+                <para>When changing an existing sales order line item, you
+                will be asked for confirmation before the work order is
+                rescheduled.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order #</term>
+      <listitem>
+        <para>The number of the newly created work order is displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Line #</term>
+      <listitem>
+        <para>Displays the line item number for the work order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>The work order status is displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty.</term>
+      <listitem>
+        <para>The quantity ordered by the sales order line item will display
+        here. If the line item is a purchased item, purchase quantity
+        information will appear instead. Whenever sales order line item
+        quantity is changed, the change will also be reflected in any linked
+        work orders, purchase orders, or purchase requests.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Due Date</term>
+      <listitem>
+        <para>The scheduled date of the sales order line item will display
+        here. If the line item is a purchased item, the purchasing due dates
+        will appear instead.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><indexterm significance="normal">
+          <primary>sites</primary>
+          <secondary>for make-to-order</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>supplying sites and</secondary>
+        </indexterm>Supplying Site</term>
+      <listitem>
+        <para>Specify the site a corresponding work order would be supplied
+        from. Work orders may only be created for manufactured items having a
+        supplying site. Sites designated as <guilabel>Supplied from
+        Site</guilabel> in the Item Site master for an item are considered
+        supplying sites. If no supplying site exists for an item, a work order
+        may not be created for the item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>W/O Materials and Operations</term>
+      <listitem>
+        <para>Display lists an exploded view of the materials and operations
+        for the work order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>NEW MATL.</guibutton></term>
+      <listitem>
+        <para>Select to add materials to the BOM for the work order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>NEW OPER.</guibutton></term>
+      <listitem>
+        <para>Select to add operations to the routing for this order
+        item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>EDIT</guibutton></term>
+      <listitem>
+        <para>The materials and operations can be changed from this screen
+        while placing the order. To do this, click the
+        <guibutton>EDIT</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>DELETE</guibutton></term>
+      <listitem>
+        <para>To remove materials or operations from the work order, highlight
+        the line in the exploded work order view and click the
+        <guibutton>DELETE</guibutton> button. Repeat for every line that needs
+        to be removed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Rollup Prices</term>
+      <listitem>
+        <para>If this option is selected, the price will be based on the price
+        of all materials and operations. These material and operations prices
+        can be edited from the Sales Order Item screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following will be displayed when the item is a purchased
+  item:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/salesOrderItem_availabilitySupply2.png"/>
+    </imageobject>
+    <caption><para>Supply Order information for bought item</para></caption>
+  </mediaobject>
+  <variablelist>
+    <varlistentry>
+      <term>Override Price</term>
+      <listitem>
+        <para>If your site has enabled the <guilabel>Allow Inventory Receipt
+        Cost Override</guilabel> option in the
+        <guimenuitem>Inventory</guimenuitem> setup, then you will be able to
+        override the default unit price here. This option applies only to
+        average cost items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Drop Ship</term>
+      <listitem>
+        <para>Select this option if the item should be automatically shipped
+        when the purchase order receipt is posted.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To see a list of item sources, select the <guilabel>Item
+  Sources</guilabel> option on the <guimenuitem>Supply</guimenuitem> tab.
+  Available item sources will be displayed:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/salesOrderItem_availabilityItemSources.png"/>
+    </imageobject>
+    <caption><para>Available Item Sources</para></caption>
+  </mediaobject>
+  <para>To display a list of substitutes for the selected item or site with
+  availability information, select the <guimenuitem>Substitutes</guimenuitem>
+  option on the <guimenuitem>Supply</guimenuitem> tab. The following will be
+  displayed:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/salesOrderItem_availabilitySubstitutes.png"/>
+    </imageobject>
+    <caption><para>Available Substitutes</para></caption>
+  </mediaobject>
+  <note>
+    <para>Substitutes are defined on the Item master. Right-click on an item
+    in the list and select <guimenuitem>Substitute</guimenuitem> to set the
+    selected item as a line item substitute. The original line item will be
+    moved to the <guilabel>Substitute For</guilabel> field.</para>
+  </note>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>PREVIOUS</guibutton></term>
+      <listitem>
+        <para>Select to view previous line items associated with the sales
+        order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>CANCEL ITEM</guibutton></term>
+      <listitem>
+        <para>Select to cancel the current sales order line item. Records of
+        canceled line items will be retained for informational purposes. To
+        view canceled line items associated with a sales order, select the
+        <guilabel>Show Canceled Line Items</guilabel> option on the sales
+        order header's <guimenuitem>Line Items</guimenuitem> tab.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view historical information related to the sales order line item,
+  select the <guimenuitem>History</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><mediaobject>
+      <imageobject>
+        <imagedata fileref="images/salesOrderItem_costsHistory.png"/>
+      </imageobject>
+      <caption><para>Costs History</para></caption>
+    </mediaobject></para>
+  <para>When viewing costing history for the sales order line item, you will
+  be presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Purchase orders entered on or after this date will be included
+        in the display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Purchase orders entered on or before this date will be included
+        in the display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Inventory Costing Method:</term>
+      <listitem>
+        <para>Displays the item's inventory costing method (i.e., standard,
+        average, or job).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Inventory Unit Cost</term>
+      <listitem>
+        <para>Displays the item's inventory unit cost.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Purchase Orders</term>
+      <listitem>
+        <para>Display lists purchase orders for the item, using the specified
+        date range.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view sales history for the sales order line item, select the
+  <guimenuitem>Sales History</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><mediaobject>
+      <imageobject>
+        <imagedata fileref="images/salesOrderItem_salesHistory.png"/>
+      </imageobject>
+      <caption><para>Sales History</para></caption>
+    </mediaobject></para>
+  <para>When viewing sales history for the sales order line item, you will be
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Invoices entered on or after this date will be included in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Invoices entered on or before this date will be included in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Orders</term>
+      <listitem>
+        <para>Displays the total number of historical sales orders for the
+        item, within the date range specified.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty. per Order</term>
+      <listitem>
+        <para>Displays the calculated average quantity per historical sales
+        order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Inventory Costing Method:</term>
+      <listitem>
+        <para>Displays the item's inventory costing method (i.e., standard,
+        average, or job).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Inventory Unit Cost</term>
+      <listitem>
+        <para>Displays the item's inventory unit cost.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Purchase Orders</term>
+      <listitem>
+        <para>Display lists invoices for the item, using the specified date
+        range.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>If an item has characteristics associated with it, you have the option
+  of linking those characteristics to a sales order line item. And, in the
+  case where sales order demand automatically generates either a purchase
+  request or a work order, the characteristics defined here will be inherited
+  by those subsequent orders.</para>
+  <tip>
+    <para>For configured items, an additional pricing field will be available
+    on the Item Characteristic screen. This pricing information will be passed
+    to sales order line items when particular configurations are sold. The
+    price for configured items may vary depending on the characteristics
+    selected at sales order entry time.</para>
+  </tip>
+  <para>To associate characteristics with a sales order line item, select the
+  <guimenuitem>Characteristics</guimenuitem> tab at the bottom of the screen,
+  as shown below:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderItem_itemCharacteristicsTab.png"/>
+        </imageobject>
+        <caption>Sales Order line item Characteristics</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When selecting or editing characteristics for a sales order line item,
+  you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+      <listitem>
+        <para>Displays the name of any item characteristics associated with
+        the item. Characteristics defined as item characteristics may be
+        associated with items on the Item master.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Value</term>
+      <listitem>
+        <para>Displays the default value associated with an item
+        characteristic, but permits you to specify an alternate value. When
+        associating characteristic values with a sales order line item, you
+        have four options: 1) Select the default value; 2) select an alternate
+        pre-defined value; 3) manually enter a new value in place of the
+        pre-defined value; or 4) make no selection. Making no selection means
+        the characteristics will not be associated with the sales order line
+        item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Base Price</term>
+      <listitem>
+        <para>If the sales order item is a configured item (i.e., job or
+        reference item), the <guilabel>Base Price</guilabel> option will be
+        shown. Characteristics associated with configured items may have
+        additional list prices associated with them. As a result, when
+        characteristics are added to a sales order item, the overall price of
+        the item may increase. The base price shows the price before any
+        characteristic list prices have been added to the net unit price. To
+        learn more about adding price characteristics to configured items, see
+        <xref linkend="configItemChar"/>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>During the creation of a new sales order for a configured item, the
+    work order is imploded and the characteristics will remain enabled and may
+    be edited. When the <guibutton>SAVE</guibutton> button is clicked, the
+    work order characteristics are updated and the work order is exploded. To
+    edit the sales order item for a configured item, the work order needs to
+    be manually imploded first. This will enable the characteristics and allow
+    editing. When the <guibutton>SAVE</guibutton> button is clicked, the work
+    order characteristics will be updated and the work order exploded.</para>
+  </note>
+  <para>To view costs or adjust tax information for a sales order line item,
+  select the <guimenuitem>Detail</guimenuitem> tab at the bottom of the
+  screen, as shown below:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderItem_costs.png"/>
+        </imageobject>
+        <caption>Sales Order line item Detail</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When viewing costs or adjusting tax information for a sales order line
+  item, you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Unit Cost</term>
+      <listitem>
+        <para>Depending on configuration settings, the unit cost displays the
+        wholesale price or the standard or average inventory cost. For average
+        cost items having zero QOH, the standard cost will be used instead of
+        the average cost, if it exists.<note>
+            <para>This value can be changed if the user has the necessary
+            permissions. A change in this value will result in a new net unit
+            price.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>List Price</term>
+      <listitem>
+        <para>Displays the sales list price per unit.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Price</term>
+      <listitem>
+        <para>Displays the price given to the specified customer. Special
+        customer prices can be set for individual customers or customer groups
+        by using a pricing schedule.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>discount percentages for</secondary>
+        </indexterm>List Price Discount %</term>
+      <listitem>
+        <para>Displays the percentage discount off the list price. Indicates
+        the difference between the list price for an item and the net unit
+        price as a percentage. This is the margin between the net unit price
+        and the list price.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Unit Cost Markup %</term>
+      <listitem>
+        <para>Displays the effective markup which is based on the unit cost
+        and net unit price values.<note>
+            <para>Like the unit cost, this value can be changed by a user with
+            sufficient permissions and such a change will adjust net unit
+            price.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Margin</term>
+      <listitem>
+        <para>Displays the difference between extended price and extended
+        cost.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <variablelist>
+    <varlistentry>
+      <term>Tax</term>
+      <listitem>
+        <para>The following tax options are available, should you need to
+        override the tax selection settings for the line item:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Tax Type</term>
+            <listitem>
+              <para>Specify the tax type for the sales order item.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <variablelist>
+          <varlistentry>
+            <term>Tax</term>
+            <listitem>
+              <para>Displays the amount of tax to be charged for the sales
+              order line item quantity. To get a detailed view of the tax
+              calculation, click on the <guibutton>Tax</guibutton> link using
+              your mouse.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To enter notes related to a sales order line item, select the
+  <guimenuitem>Notes</guimenuitem> tab at the bottom of the screen, as shown
+  below:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderItem_notesTab.png"/>
+        </imageobject>
+        <caption>Sales Order line item Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When adding notes related to a sales order line item, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        general notes related to the sales order line item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>If a sales order item is marked to create a work order, the
+    production notes for the created work order will contain the sales order
+    number, the customer name, and any additional sales order line item
+    notes.</para>
+  </tip>
+  <para>To add comments related to a sales order line item, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderItem_commentsTab.png"/>
+        </imageobject>
+        <caption>Sales Order line item Comments</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>Whenever sales order line items are created or their quantities are
+    changed, the system will automatically generate a comment, which will
+    appear in the list of line item comments.</para>
+  </note>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To define an alternate cost of sales account for a sales order line
+  item, select the <guimenuitem>Accounting</guimenuitem> tab at the bottom of
+  the screen, as shown below:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderItem_costofsalesTab.png"/>
+        </imageobject>
+        <caption>Sales Order line item Accounting</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When defining an alternate cost of sales account or alternate revenue
+  account for a sales order line item, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Alternate Cost of Sales Account</term>
+      <listitem>
+        <para>Specify an alternate account to be used for the cost of sales.
+        This account will be used instead of the typical account pre-defined
+        in the sales accounts assignments.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Alternate Revenue Account</term>
+      <listitem>
+        <para>Specify an alternate account to be used as the revenue account.
+        This account will be used instead of the typical account predefined in
+        the receivables assignments.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="priceList.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

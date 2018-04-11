@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspInventoryAvailabilityBySalesOrder">
+  <title><indexterm significance="normal">
+      <primary>inventory</primary>
+      <secondary>availability by sales order</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>inventory availability for</secondary>
+    </indexterm>Inventory Availability by Sales Order</title>
+  <para>To view inventory availability by sales order, go to
+  <guimenuitem>Sales &gt; Reports &gt; Availability by Sales
+  Order</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspInventoryAvailabilityBySalesOrder.png" />
+        </imageobject>
+        <caption>Inventory Availability by Sales Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When displaying inventory availability by sales order, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Sales Order #</term>
+      <listitem>
+        <para>Enter the sales order number of the sales order whose
+        availability you want to view.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Date</term>
+      <listitem>
+        <para>Displays the date the sales order was placed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cust. Name</term>
+      <listitem>
+        <para>Displays customer name.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cust. Phone</term>
+      <listitem>
+        <para>Phone: displays customer phone number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>P/O Number</term>
+      <listitem>
+        <para>Displays purchase order number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Only Show Shortages</term>
+      <listitem>
+        <para>Select to only show inventory shortages in display. A shortage
+        describes inventory quantity whose availability is negative.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>reservations for</secondary>
+        </indexterm>Use Reservation Netting</term>
+      <listitem>
+        <para>Select to show sales order reservations (if any) for the sales
+        order items included in the display. When selected, the <guilabel>This
+        Availability</guilabel> column will dynamically change to
+        <guilabel>This Reservation</guilabel> and the quantity reserved for
+        each sales order item (if any) will be shown. This option will not be
+        visible if sales order reservations are not enabled at your
+        site.</para>
+        <tip>
+          <para>To manipulate Sales Order Reservations by Line Item, use the
+          right-click options found on this screen.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show W/O Supply</term>
+      <listitem>
+        <para>Select to include current work orders for the sales order items
+        shown in the display. If current work orders exist, they will appear
+        nested below each relevant sales order item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Availability</term>
+      <listitem>
+        <para>Display lists inventory availability by sales order, using the
+        specified parameters. If an available quantity value displays in the
+        color orange, this means the actual or projected quantity on hand
+        (QOH) is at or below the reorder level. If the color is red, the
+        current or projected QOH is below zero.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>The display features additional color-coding to help easily identify
+    the sales order reservation status of individual orders and also line
+    items. The following color conventions are used:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Green (line item level): Line item quantity is
+        fully-reserved.</para>
+      </listitem>
+      <listitem>
+        <para>Green (Header level): Sales order has been added to the packing
+        list batch.</para>
+      </listitem>
+      <listitem>
+        <para>Blue: Line item quantity is partially-reserved.</para>
+      </listitem>
+      <listitem>
+        <para>Black: Line item has no sales order reservations.</para>
+      </listitem>
+    </itemizedlist>
+  </note>
+</section>

@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="item">
+  <title><indexterm significance="normal">
+      <primary>items</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Enter New Item</title>
+  <para>To enter a new item into your system, go to <guimenuitem>Products &gt;
+  Item &gt; New</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/item.png"/>
+        </imageobject>
+        <caption>Create new Item</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new item, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Enter a number to uniquely identify the item. Duplicate item
+        numbers will not be accepted.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select if item is active. Select this option if you intend to
+        use the item within the application. If you don't select this option,
+        the item will be unavailable for use. To activate an inactive item,
+        simply open the Item master and mark the item as active.</para>
+        <note>
+          <para>An inactive item may still be used in a sales order, work
+          order, or purchase order if the item was de-activated after the
+          order was created.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description #1</term>
+      <listitem>
+        <para>The Item master features two description lines. The first line
+        is typically used for entering the name used to describe the item. In
+        printed reports or other printouts, the first line will appear on a
+        separate line above the second line. However, the two lines will be
+        concatenated (i.e., joined together) when they are displayed on-screen
+        within the application.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description #2</term>
+      <listitem>
+        <para>Use the second description line to provide additional
+        information about the item. The second line might include product,
+        packaging, or any other descriptive information. In printed reports or
+        other printouts, the second line will appear on a separate line below
+        the first line. However, the two lines will be concatenated (i.e.,
+        joined together) when they are displayed on-screen within the
+        application.</para>
+        <tip>
+          <para>Develop a logical, hierarchical numbering strategy before
+          assigning numbers to your items. Using an hierarchical approach will
+          greatly enhance your ability to display and search for information
+          within the database. An hierarchical numbering scheme might look
+          something like the following:</para>
+          <itemizedlist>
+            <listitem>
+              <para>MB-26-1</para>
+            </listitem>
+            <listitem>
+              <para>MB-26-2</para>
+            </listitem>
+            <listitem>
+              <para>MB-26-3</para>
+            </listitem>
+          </itemizedlist>
+          <para>In this case, similar items have been assigned sequential item
+          numbers. By extension, similar categories of items may be identified
+          by similar numbers.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>item types</primary>
+          <secondary>master list of</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>items</primary>
+          <secondary>list of types</secondary>
+        </indexterm>Item Type</term>
+      <listitem>
+        <para>Select one of the available item types:</para>
+        <variablelist>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>purchased</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Purchased</term>
+            <listitem>
+              <para>Select if the item is an item you purchase. A purchase
+              order is the normal supply order. However, you may enter a work
+              order for this item type.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry id="manufacturedItemType">
+            <term><indexterm significance="normal">
+                <primary>manufactured</primary>
+                <secondary>as item type</secondary>
+              </indexterm><indexterm significance="normal">
+                <primary>job items</primary>
+                <secondary>as manufactured items</secondary>
+              </indexterm>Manufactured</term>
+            <listitem>
+              <para>Select if the item is an item you make. A work order is
+              the normal supply order. However, you may also enter a purchase
+              order for this item type. Job items are considered to be
+              manufactured items. Use the job costing option at the item site
+              level to distinguish job items from regular manufactured items.
+              For more information about the job costing option, please see
+              <xref linkend="itemSiteJobItem"/>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>phantoms</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Phantom</term>
+            <listitem>
+              <para>A transient subassembly containing component items
+              commonly used together during a manufacturing process. Phantom
+              items require a bill of materials (BOM), but not separate work
+              orders. Since they are not stock items, material requirements
+              planning (MRP) logic blows through phantom items and only plans
+              for their component items. Phantom items should be used to
+              simplify complex BOMs.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>reference</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Reference</term>
+            <listitem>
+              <para>Select if the item is an item you sell—but you neither
+              manufacture nor purchase it. Services are an example of
+              reference item. The company sells consulting services, but it
+              doesn't manufacture or purchase them. Reference items may be
+              configured. This means you can add list prices to any reference
+              item characteristics. These characteristic prices are then added
+              to the base price of sales order items when the characteristic
+              is selected at sales order entry.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>costing</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Costing</term>
+            <listitem>
+              <para>A kind of pseudo-item used solely to provide a costed
+              value for a costing element. When a user-defined costing element
+              is linked to a costing item, the costing element assumes the
+              costs associated with the costing item. For more information,
+              see <xref linkend="costingElements"/>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>tooling</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Tooling</term>
+            <listitem>
+              <para>A material resource used in the manufacturing process that
+              is returned upon completion of a work order—for example, a
+              reusable mold, apparatus, fixture, or tool. It may be included
+              on a BOM for an item, usually specifying a fixed quantity.
+              Tooling items can be purchased, manufactured, or sold. A
+              manufactured tool can have a routing, a BOM, and a work order.
+              As with other material items, tools can be tracked as serialized
+              items. The cost of a tooling item is not included in the overall
+              cost of the parent item where it is used.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>outside processes</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Outside Process</term>
+            <listitem>
+              <para>Select if the item is an external process or service that
+              is performed by someone outside your company. Outside process
+              items are treated by the system in much the same way as
+              purchased items are. For example, outside process items will be
+              handled in the same way as purchased items are when MRP is
+              run.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>planning</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Planning</term>
+            <listitem>
+              <para>An item whose BOM groups together other items so that a
+              production plan may be defined for the planning item—and then
+              exploded down to the lower level items during a master
+              production scheduling (MPS) run. Planning items are frequently
+              used to group together product families or product lines of MPS
+              items. MPS items are typically top-level saleable items. By
+              grouping together MPS items under a planning item, the family
+              may be forecasted through with a production plan for the
+              planning item, thereby simplifying the planning process. The
+              system automatically sets the planning system as
+              <guilabel>MPS</guilabel> by default when a planning item is
+              created.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>kits</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Kit</term>
+            <listitem>
+              <para>Kit items automatically explode their BOM components on to
+              sales orders for shipping. When kit items appear on sales orders
+              and return authorizations, sub line numbers are generated for
+              kit components because kit children are sub line items of the
+              parent line item. Kit components are displayed as an indented
+              tree on the sales order or return authorization—and they are
+              view-only. Also, kit components will appear on the pick list
+              report. Kit components may be issued to shipping, whereas the
+              parent kit item may not be. The automatic <guilabel>Select for
+              Billing</guilabel> option takes effect for kit items when all
+              kit items are shipped.</para>
+              <note>
+                <para>The cost of sales (COS) account for kit items is
+                directed to the sales account assignment mappings of the kit's
+                child items—unless your system is configured to have the kit
+                components inherit the same COS account used by the parent kit
+                item. You can read more about configuring your system for COS
+                inheritance for kit items here: <xref
+                linkend="configureIM"/>.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>breeder items</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Breeder</term>
+            <listitem>
+              <para>A logical item from which co-products and by-products are
+              produced. An example use for a breeder item is the screening of
+              raw gravel to produce different sizes of gravel. The breeder
+              item's BOM defines the inputs—in this case raw gravel—and the
+              outputs are defined on its breeder BOM (i.e., small, medium and
+              large gravel). A work order is created for the breeder item, but
+              this item is never stocked or produced; again, it is a logical
+              item. Instead, raw gravel is consumed by the breeder's work
+              order, along with labor, and the resulting quantities of
+              co-products and by-products are recorded.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>co-products</primary>
+                <secondary>as item type</secondary>
+              </indexterm>Co-Product</term>
+            <listitem>
+              <para>Co-products are items that you keep and which absorb
+              costs. They are produced during a manufacturing process. (See
+              breeder item type.)</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term><indexterm significance="normal">
+                <primary>by-products</primary>
+                <secondary>as item type</secondary>
+              </indexterm>By-Product</term>
+            <listitem>
+              <para>By-products are things that you throw away and incur costs
+              doing so during a manufacturing process. (See breeder item
+              type.)</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Maximum Desired Cost</term>
+      <listitem>
+        <para>This is an optional field to be used for entering the maximum
+        cost desired for the item. If used, you will be warned whenever
+        entering purchase orders if the purchased cost exceeds the maximum
+        desired cost value.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Class Code</term>
+      <listitem>
+        <para>Specify a class code to associate with the item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>units of measure</primary>
+          <secondary>at item level</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>pricing</primary>
+          <secondary>item list price</secondary>
+        </indexterm>Inventory UOM</term>
+      <listitem>
+        <para>Specify the item's primary unit of measure (UOM)—or enter a
+        free-form UOM. The inventory UOM is the UOM in which inventory is
+        maintained. All inventory transactions, sales transactions, and
+        general ledger transactions reflect movement in inventory UOMs. The
+        inventory UOM is also the base reference for all UOM conversion
+        ratios.</para>
+        <note>
+          <para>Once transactions have been posted using an item's inventory
+          UOM, you may no longer change the inventory UOM for the item.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pick List</term>
+      <listitem>
+        <para>Select if you want the item to be included on pick lists when
+        the item is used. Pick lists are printed lists showing the work order
+        material requirements for a specified work order. You may decide not
+        to include an item on pick lists if the item is insignificant or if it
+        is not stored in a stock room but, for example, in a work center
+        instead.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Fractional</term>
+      <listitem>
+        <para>Select if the item may be maintained in fractional quantities.
+        If not selected, the system will assume the item is maintained in its
+        inventory UOM, which is by definition a whole number. This means you
+        may never use fractional quantities of the item (e.g., in
+        manufacturing or purchasing) unless this option is selected.</para>
+        <tip>
+          <para>If you will ever use the item in fractional quantities, then
+          the <guilabel>Fractional</guilabel> option must be selected. If it
+          is not selected, the system will never let you use fractional
+          quantities of the item.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Configured</term>
+      <listitem>
+        <para>If the item is a manufactured or reference item, then you will
+        have the option to configure the item for assemble to order (ATO)
+        scenarios. This option will be disabled for all other item types. To
+        learn more about product configuration, see our <ulink
+        url="http://www.xtuple.org/AssembleToOrderConfigurator">ATO
+        Configurator Topic</ulink>.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Freight Class</term>
+      <listitem>
+        <para>Select the freight class for the item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Bar Code</term>
+      <listitem>
+        <para>Enter the bar code for the item.</para>
+        <note>
+          <para>Standard bar code formats supported by the system include the
+          following: Code 3of9, Code 3of9 Extended, Code 128, UPC-A, UPC-E,
+          EAN-8, EAN-13.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item is Sold</term>
+      <listitem>
+        <para>Select if the item is an item you sell. If not selected, the
+        associated fields will be disabled.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Product Category</term>
+            <listitem>
+              <para>Specify the product category if the item is sold. All sold
+              items must be assigned a product category.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>pricing</primary>
+                <secondary>item list price</secondary>
+              </indexterm>List Price</term>
+            <listitem>
+              <para>Specify the list price for the item, based on the selling
+              UOM (i.e., per UOM). List prices may also be created and
+              modified in the item pricing section of the
+              <guimenu>Sales</guimenu> module. Changes made to the list price
+              in either location will be updated system-wide.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>pricing</primary>
+                <secondary>wholesale price</secondary>
+              </indexterm>Wholesale Price</term>
+            <listitem>
+              <para>Specify the wholesale price for the item. The wholesale
+              price may be used as the unit cost for markup purposes,
+              depending on your pricing configuration. For more information,
+              please see <xref linkend="WholesaleMarkup"/>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm>
+                <primary>units of measure</primary>
+                <secondary>selling specified</secondary>
+              </indexterm>Unit Price UOM</term>
+            <listitem>
+              <para>Specify the selling UOM for the item. The list price
+              should be based on this selection. By default, the inventory UOM
+              will be used here. You will not be able to select a different
+              UOM until you first manually create a selling UOM using the
+              options found under the <guimenuitem>UOM</guimenuitem> tab on
+              the Item master.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm significance="normal">
+                <primary>exclusive</primary>
+                <secondary>item master control</secondary>
+              </indexterm><indexterm significance="normal">
+                <primary>items</primary>
+                <secondary>exclusive for customers</secondary>
+              </indexterm><indexterm significance="normal">
+                <primary>customers</primary>
+                <secondary>exclusive items for</secondary>
+              </indexterm>Exclusive</term>
+            <listitem>
+              <para>Select if the item is sold exclusively. If a sold item is
+              marked as exclusive, it may only be sold to specified customers
+              or customer types. To link exclusive items to customers, you
+              would first include the item on a pricing schedule—indicating
+              relevant prices and quantity breaks. You would then assign the
+              pricing schedule to specified customers or customer types, using
+              the pricing schedule assignment functionality found in the item
+              pricing section of the <guimenu>Sales</guimenu> module.</para>
+              <note>
+                <para>Sold items can be configured as exclusive by default at
+                the <guimenu>System</guimenu> level.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Warranty</term>
+            <listitem>
+              <para>If the item is sold with a warranty, specify the number of
+              days the warranty extends for. The warranty period begins on the
+              date the item is sold and ends on the specified number of days
+              afterward. Setting this option to "0" days indicates the item
+              does not come with a warranty.</para>
+              <tip>
+                <para>The sold warranty should not be confused with the
+                purchased warranty, which is defined at the <guimenuitem>Item
+                Site</guimenuitem> level.</para>
+              </tip>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Weight in LB</term>
+      <listitem>
+        <para>Enter details related to the weight of the item, measured in
+        pounds.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Product</term>
+            <listitem>
+              <para>Specify the pre-packaging weight of the product, in
+              pounds.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Packaging</term>
+            <listitem>
+              <para>Specify the weight of the product packaging, in
+              pounds.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Remarks</term>
+      <listitem>
+        <para>Enter additional details related to the item.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Notes</term>
+            <listitem>
+              <para>This is a scrolling text field with word-wrapping for
+              entering notes related to the item. Any notes entered on this
+              screen are for internal purposes only.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Extended Description</term>
+            <listitem>
+              <para>The <guilabel>Extended Description</guilabel> field is for
+              entering descriptive item information, which may be printed on
+              sales and/or purchasing documents. You would add the extended
+              description to printed documents using the report writer. The
+              report writer enables you to customize forms to include data
+              stored in the database. To enter an extended description of an
+              item, select the <guilabel>Extended Description</guilabel>
+              option.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Comments</term>
+            <listitem>
+              <para>To view system-generated comments associated with an
+              item—or to add new and edit comments of your own—select the
+              <guilabel>Comments</guilabel> option.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>MATERIALS</guibutton></term>
+      <listitem>
+        <para>Select to open the BOM for the specified item. If no BOM exists,
+        you will have the option to create a new routing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term><guibutton>ROUTING</guibutton></term>
+      <listitem>
+        <para>Select to open the routing for the specified item. If no routing
+        exists, you will have the option to create a new routing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>WORKBENCH</guibutton></term>
+      <listitem>
+        <para>Select to open the Item Availability workbench for the specified
+        item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>Item characteristics are user-defined definitions of an item which may
+  be used to provide additional layers of description to items. For example,
+  item characteristics might be used to specify <guilabel>Season</guilabel> or
+  <guilabel>Primary Vendor</guilabel>. These constitute static descriptions
+  which are not processed by the application, but are useful for informational
+  purposes. For configured items (i.e., job or reference items),
+  characteristics are used to store pricing information for the options
+  available on configured items. That pricing by characteristic is then passed
+  to sales order line items when particular configurations are sold.</para>
+  <tip>
+    <para>Item characteristics can be associated with sales order, purchase
+    order, and work order items.</para>
+  </tip>
+  <para>To enter <indexterm significance="normal">
+      <primary>characteristics</primary>
+      <secondary>creating new for item</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>characteristics</primary>
+      <secondary>items having</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>items</primary>
+      <secondary>characteristics for</secondary>
+    </indexterm> characteristics associated with an item, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/item_characteristicsTab.png"/>
+      </imageobject>
+      <caption>Item Characteristics</caption>
+    </mediaobject>
+  </screenshot>
+  <para id="configItemChar"><tip>
+      <para>For configured items, an additional pricing field will be
+      available on the Item Characteristic screen. This pricing information
+      will be passed to sales order line items when particular configurations
+      are sold. The price for configured items may vary depending on the
+      characteristics selected at sales order entry time.</para>
+    </tip></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>If you have the Time &amp; Expense package running in your ERP, you'll
+  see the <guimenuitem>Project</guimenuitem> tab in the Item screen. The
+  <guimenuitem>Project</guimenuitem> tab will only be enabled if the item is a
+  reference item, because reference items act as expense items through the
+  time and expense system. If the tab is disabled, then it's likely the item
+  in question is not a reference type item. Select the
+  <guimenuitem>Project</guimenuitem> tab to see the following screen:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/item_projectTab.png"/>
+      </imageobject>
+      <caption>Item Project</caption>
+    </mediaobject>
+  </screenshot>
+  <para>When viewing item project information, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Allow use as an Expense Item on Projects</term>
+      <listitem>
+        <para>You must select this option—and also define an expense category
+        or account—for the item to be available to users who are entering time
+        &amp; expense sheets.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Account</term>
+      <listitem>
+        <para>Define which ledger account number the item will belong
+        to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Expense Category</term>
+      <listitem>
+        <para>Specify the expense category you want to assign the item
+        to.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>For visibility into costs and BOMs associated with items—and to
+  perform routine cost and BOM maintenance—select the
+  <guimenuitem>Cost</guimenuitem> tab. The following screen will
+  appear:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/item_costTab.png"/>
+      </imageobject>
+      <caption>Item Cost</caption>
+    </mediaobject>
+  </screenshot>
+  <para>You are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Elements</term>
+      <listitem>
+        <para>Select this option to maintain item cost elements. For more
+        information on maintaining item costs, please see <xref
+        linkend="maintainItemCosts"/>.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Materials</term>
+      <listitem>
+        <para>Select this option to maintain the BOM. For more detailed
+        information on maintaining BOMs, please see <xref
+        linkend="boms"/>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>In addition to the inventory UOM, which is defined on the Item master,
+  you also have the option to convert UOMs for an item. The following
+  alternate UOMs may be defined:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Alternate capacity</para>
+    </listitem>
+    <listitem>
+      <para>Capacity</para>
+    </listitem>
+    <listitem>
+      <para>Material issue</para>
+    </listitem>
+    <listitem>
+      <para>Selling</para>
+    </listitem>
+  </itemizedlist>
+  <para>Unless you define an alternate UOM, an item will always be stored and
+  used in its inventory UOM. For example, you must define a selling UOM if you
+  want to enable an item to be sold in a UOM other than the inventory UOM. To
+  enter <indexterm significance="normal">
+      <primary>units of measure</primary>
+      <secondary>associating with items</secondary>
+    </indexterm> UOMs associated with an item, select the
+  <guimenuitem>Conversions</guimenuitem> tab. The following screen will
+  appear:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/item_tabUOM.png"/>
+      </imageobject>
+      <caption><para>Item Conversions</para></caption>
+    </mediaobject>
+  </screenshot>
+  <variablelist>
+    <varlistentry>
+      <term>Conversions/Where Used</term>
+      <listitem>
+        <para>Display lists the UOM conversions defined for the item (if any)
+        and where these conversions are used. Global conversion ratios are
+        defined in <xref linkend="uomConv"/>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para><indexterm significance="normal">
+      <primary>units of measure</primary>
+      <secondary>alternates for items</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>items</primary>
+      <secondary>alternate uoms for</secondary>
+    </indexterm>To define an alternate item UOM, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/itemUOM.png"/>
+      </imageobject>
+      <caption><para>Unit of Measure definition</para></caption>
+    </mediaobject>
+  </screenshot>
+  <para>When defining an alternate item UOM, you are presented with the
+  following options:</para>
+  <tip>
+    <para>By default, the available types list will be empty—until you specify
+    either a source or per UOM. Once a source or per UOM is selected, the
+    available types list will be populated with the available options. An item
+    may have multiple selling UOMs but only one of each of the other
+    types.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Source UOM</term>
+      <listitem>
+        <para>By default the inventory UOM will be displayed here. However,
+        you may select an alternate UOM. If an alternate UOM is selected, then
+        the per UOM will be the inventory UOM.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Value</term>
+            <listitem>
+              <para>Enter a value for the source UOM to be used in the
+              conversion ratio for the alternate item UOM.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Per UOM</term>
+      <listitem>
+        <para>By default the inventory UOM will be displayed here. However,
+        you may select an alternate UOM. If an alternate UOM is selected, then
+        the source UOM will be the inventory UOM.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Value</term>
+            <listitem>
+              <para>Enter a value for the per UOM to be used in the conversion
+              ratio for the alternate item UOM.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Fractional</term>
+      <listitem>
+        <para>Specify whether this alternate item UOM may be maintained in
+        fractional quantities. If not selected, transaction quantities using
+        this alternate item UOM may not be maintained in fractional
+        quantities.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Specify whether the conversion is active or not.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Available Types</term>
+      <listitem>
+        <para>Once a source or per UOM has been specified, you may select one
+        of the available UOM types. Once a UOM type has been used, you may not
+        create a conversion ratio for it again—with the exception of the
+        selling UOM, which may be defined multiple times for a single
+        item.</para>
+        <tip>
+          <para>Double-clicking on an available UOM type will move it to the
+          selected types list.</para>
+        </tip>
+        <variablelist>
+          <varlistentry>
+            <term>Alternate Capacity</term>
+            <listitem>
+              <para>The alt. capacity UOM should be used to provide an
+              alternate UOM for viewing inventory details. For example, a
+              sales manager may be satisfied looking at a group of items
+              normalized to their selling or inventory UOM, but a production
+              manager may need to look at the same items normalized to a
+              production UOM—say, cubic feet (CuFt).</para>
+              <note>
+                <para>The alternate capacity UOM has no impact on BOMs. It is
+                used solely for capacity planning and sales analysis
+                purposes.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Capacity</term>
+            <listitem>
+              <para>In capacity planning and sales analysis reports, the
+              capacity UOM enables you to make apples-to-apples comparisons of
+              items that use different inventory UOMs. For example, let's say
+              that item A is a carton containing 24 item B's—and that you sell
+              both items. However, item A and item B use different inventory
+              UOMs. Item A is measured by the (CASE [24]), and item B is
+              measured by (EACH). By utilizing the capacity UOM, you have the
+              ability to track total load and total sales for item B—even
+              though the inventory UOM for item A obscures the quantity of
+              item B's contained therein. If, when you query the database, you
+              request data to be displayed in capacity UOMs, then the system
+              will normalize the quantities of item A to (EACH), allowing you
+              to see the total quantity of item Bs.</para>
+              <note>
+                <para>The capacity UOM has no impact on BOMs. It is used
+                solely for capacity planning and sales analysis
+                purposes.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Material Issue</term>
+            <listitem>
+              <para>The material issue UOM defines an alternate UOM for use
+              when creating BOM items. On the BOM Item screen, you have the
+              ability to select an issue UOM. This issue UOM is used whenever
+              the specified component item is issued to a work order. If you
+              define a material issue UOM on the Item master, then that UOM
+              will be available for selection whenever the item is used in a
+              BOM.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term><indexterm>
+                <primary>units of measure</primary>
+                <secondary>selling specified</secondary>
+              </indexterm><indexterm>
+                <primary>items</primary>
+                <secondary>selling UOM for</secondary>
+              </indexterm>Selling</term>
+            <listitem>
+              <para>If an item is sold, its list price will be based on the
+              selling UOM. While the selling UOM may often mirror the
+              inventory UOM, in some scenarios the two UOMs will be different.
+              For example, cans of soda may be stocked in inventory as
+              individual units (EACH), but sold by the case (CASE24). In this
+              example, inventory transactions will be recorded using the
+              inventory UOM (EACH), but all pricing—including list price and
+              pricing schedules—will reflect the selling UOM (CASE24). An item
+              may also have multiple selling UOMs (for example SIX-PACK,
+              CASE24, PALLET, etc.). You specify the selling UOM you want to
+              use at sales order entry time.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected Types</term>
+      <listitem>
+        <para>Lists the UOM types you have selected for the specified UOM
+        conversion ratio. You may add multiple different UOM types for each
+        conversion ratio. However, if a UOM type (except the selling UOM) has
+        already been used in another conversion ratio, you may not be able to
+        select it.</para>
+        <tip>
+          <para>Double-clicking on a selected UOM type will remove it from the
+          list, returning it to the available types list.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view, add, or edit item sites associated with an item, select the
+  <guimenuitem>Sites</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/item_itemsitesTab.png" remap=""/>
+        </imageobject>
+        <caption>Item Sites for the Item</caption>
+      </mediaobject>
+    </screenshot></para>
+  <variablelist>
+    <varlistentry>
+      <term>Item Sites</term>
+      <listitem>
+        <para>Display lists item sites for the specified item. For more
+        information, see <xref linkend="itemSite"/>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view the vendor item sources for an item select the
+  <guimenuitem>Sources</guimenuitem> tab.</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/item_sourcesTab.png" remap=""/>
+    </imageobject>
+    <caption>Sources for the Item</caption>
+  </mediaobject>
+  <variablelist>
+    <varlistentry>
+      <term>Sources</term>
+      <listitem>
+        <para>Displays list of item sources and associated vendors. You may
+        also add new item sources for an item on this screen. For additional
+        documentation related to setting up item sources for an item, see
+        <xref linkend="itemSource"/>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The tax policy for an item is determined by how its tax type settings
+  are configured. To associate tax types with an item, select the
+  <guimenuitem>Tax Types</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/item_taxtypesTab.png"/>
+        </imageobject>
+        <caption>Item Tax Types</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>To mark an item as non-taxable, simply do not associate any tax
+    types with the item.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Tax Types</term>
+      <listitem>
+        <para>Display lists tax types for the specified item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To create a new tax type definition, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/itemtax.png"/>
+        </imageobject>
+        <caption>Create new tax type</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new tax type definition, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>tax zones</primary>
+          <secondary>for sales orders</secondary>
+        </indexterm>Tax Zone</term>
+      <listitem>
+        <para>Specify the tax zone you want to associate with the specified
+        tax type. Creating a relationship between a tax zone and a tax type
+        enables you to determine how tax will be applied when processing
+        transactions using the item. If you select the
+        <guilabel>Any</guilabel> option, this means any defined tax zone is a
+        possible match.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>Consider creating separate tax types for any groups or classes of
+    items which are taxed at different rates.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Tax Types</term>
+      <listitem>
+        <para>Specify the tax type you want to associate with the specified
+        tax zone. Tax types provide a system for classifying goods and
+        services into taxable categories. Creating a relationship between a
+        tax zone and a tax type enables you to determine how tax will be
+        applied when processing transactions using the item. If you select the
+        <guilabel>Any</guilabel> option, this means any defined tax type is a
+        possible match.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para><indexterm significance="normal">
+      <primary>item relationships</primary>
+      <secondary>for cross-referencing</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>items</primary>
+      <secondary>relationships for</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>relationships</primary>
+      <see>item aliases</see>
+    </indexterm>Item relationships are assigned to items as a means for
+  cross-referencing internal and external item information. For example, a
+  customer may refer to an item by a different item number than you do. To
+  avoid confusion—and to simplify item lookups—you can create an item alias
+  linking the customer's external part number to your own internal item
+  number. The item alias acts as an alternate identifier. In this way, items
+  may be located using either internal or external item information. To
+  associate an item alias with an item, select the
+  <guimenuitem>Relationships</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/item_relationshipsTab.png"/>
+        </imageobject>
+        <caption>Item Relationships</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When associating alias relationships with an item, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Alias</term>
+      <listitem>
+        <para>Display lists item alias numbers and related comments.</para>
+        <tip>
+          <para>Multiple item aliases can be assigned to a single item,
+          allowing you to cross-reference an item using many different item
+          numbers.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To create an item alias, select the <guibutton>NEW</guibutton> button.
+  The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/itemAlias.png"/>
+        </imageobject>
+        <caption>Create new Item Alias</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new item alias, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Item number entered into previous screen will be
+        displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Alias Number</term>
+      <listitem>
+        <para>This is the alias number for the item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Associated Account</term>
+      <listitem>
+        <para>You have the option to link a CRM account to the item alias. If
+        linked, the alias will only be used on quotes and sales orders related
+        to the specified customer. If no customer is specified, the alias will
+        be displayed for all customers you sell the item to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>item aliases</primary>
+          <secondary>related to billing</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>item aliases</primary>
+          <secondary>related to shipping</secondary>
+        </indexterm>Use an Alias Description on Billing and Shipping
+      Paperwork</term>
+      <listitem>
+        <para>Select to include an item alias description on billing and
+        shipping paperwork.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a description of the item alias for inclusion on billing
+        and shipping paperwork.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Comments</term>
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        comments related to the item alias. This field may be useful for
+        explaining why an item alias was created (e.g., customer XYZ, Inc.
+        refers to this item alias whenever they place an order.).</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To associate item substitutes with an item, select the
+  <guilabel>Substitutes</guilabel> radio button. The following options will
+  appear:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Substitutes</term>
+      <listitem>
+        <para><indexterm significance="normal">
+            <primary>items</primary>
+            <secondary>substitutes for</secondary>
+          </indexterm>Display lists item substitutes, including rank and item
+        description.</para>
+        <tip>
+          <para>Multiple item substitutes can be assigned to a single item,
+          allowing you to cross-reference an item using many different item
+          numbers.</para>
+        </tip>
+        <note>
+          <para>There is a difference between item substitutes and
+          substitutions defined in a BOM. The difference is that BOM-defined
+          substitutions may be implemented on the fly during work order
+          processing—item substitutes cannot be.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To create a new item substitute, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/itemSubstitute.png"/>
+        </imageobject>
+        <caption>Create new Item Substitute</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new item substitute, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Item Number (Root Item)</term>
+      <listitem>
+        <para>Item number entered into previous screen will be
+        displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number (Substitution)</term>
+      <listitem>
+        <para>Enter the item number of the substitute item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Substitute/Parent UOM Ratio</term>
+      <listitem>
+        <para>Specifies the ratio between the root item's inventory UOM and
+        the substitute item's inventory UOM.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>item substitutes</primary>
+          <secondary>ranking of</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>ranking</primary>
+          <secondary>of item substitutes</secondary>
+        </indexterm>Ranking</term>
+      <listitem>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 9 to specify the rank of the item substitute. The
+        ranking determines the order in which the item substitute will appear
+        in the substitute list accessed from the Maintain Work Order Materials
+        screen. The item substitute having the highest rank will appear at the
+        top of list, and so on in descending order. You may assign the same
+        ranking to multiple items, if this is appropriate.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para role="standard">To associate transformation options for an item,
+  select the <guilabel>Transformations</guilabel> radio button. The following
+  options will appear:</para>
+  <para role="standard"><variablelist>
+      <varlistentry>
+        <term>Transformations</term>
+        <listitem>
+          <para>Display lists items which may be chosen as target items during
+          transformation transactions.</para>
+          <note>
+            <para>You may only transform an item if the source item is located
+            in the same site as the target item.</para>
+          </note>
+        </listitem>
+      </varlistentry>
+    </variablelist></para>
+  <para>To <indexterm significance="normal">
+      <primary>item documents</primary>
+      <secondary>associate with items</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>documents</primary>
+      <secondary>items associated with</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>items</primary>
+      <secondary>documents associated with</secondary>
+    </indexterm> associate documents with an item, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
+      <imageobject>
+        <imagedata fileref="images/item_documentsTab.png"/>
+      </imageobject>
+      <caption><para>Item Documents</para></caption>
+    </mediaobject></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

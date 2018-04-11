@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="returnAuthItemLotSerial">
+  <title><indexterm significance="normal">
+      <primary>return authorizations</primary>
+      <secondary>lot/serial selection and</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>lots</primary>
+      <secondary>return authorizations and</secondary>
+    </indexterm>Return Authorization Item Lot/Serial</title>
+  <para>To authorize specific lot/serial quantities and simplify the process
+  for receiving lot/serial controlled items on a return authorization, select
+  the <guibutton>NEW</guibutton> button. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/returnAuthItemLotSerial.png" />
+        </imageobject>
+        <caption>Return Authorization Item Lot/Serial</caption>
+      </mediaobject>
+    </screenshot>When authorizing specific lot/serial quantities, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays the item number specified for the return authorization
+        item. The inventory unit of measure and item description will
+        automatically appear.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Lot/Serial #</term>
+      <listitem>
+        <para>Select a pre-existing lot/serial number for the item. Or create
+        a new lot/serial number manually.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <variablelist>
+    <varlistentry>
+      <term>Qty. Auth.</term>
+      <listitem>
+        <para>Enter the quantity of the specified lot/serial quantity you want
+        to authorize.</para>
+        <note>
+          <para>The quantity authorized is based on the quantity UOM.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty. UOM</term>
+      <listitem>
+        <para>Displays the UOM for the authorized quantity.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <variablelist>
+    <varlistentry>
+      <term>Qty. Registered</term>
+      <listitem>
+        <para>Displays the lot/serial quantity already registered. To learn
+        more about lot/serial registration, see <xref
+        linkend="lotSerialRegistration" />.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty. Received</term>
+      <listitem>
+        <para>Displays the quantity received against the return authorization
+        line item to date, if any.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

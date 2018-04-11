@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="arOpenItemDebit">
+  <title><indexterm significance="normal">
+      <primary>debit memos</primary>
+
+      <secondary>entering new</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>accounts receivable</primary>
+
+      <secondary>entering debit memos for</secondary>
+    </indexterm>New Misc. Debit Memo</title>
+
+  <para>A miscellaneous debit memo is like an invoice—the main difference
+  being that a miscellaneous debit memo is not necessarily linked to a sales
+  order. To enter a miscellaneous debit memo, go to <guimenuitem>Accounting
+  &gt; Accounts Receivable &gt; Memos &gt; New Misc. Debit Memo</guimenuitem>.
+  The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/arOpenItemDebitNotes.png"/>
+        </imageobject>
+
+        <caption>Enter Miscellaneous Debit Memo</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When entering a miscellaneous debit memo, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Customer #</term>
+
+      <listitem>
+        <para>Enter the customer number of the customer you want to enter a
+        miscellaneous debit memo for. The lookup feature located to the right
+        of the field leads to a searchable customers list. You may also access
+        this list using the keyboard shortcut <guibutton>CTRL + L</guibutton>
+        . Once a customer number is entered, the customer name and billing
+        address will display. Select the <guibutton>?</guibutton> or
+        <guibutton>$</guibutton> symbol to view customer information for the
+        specified customer. If a customer's credit is good, the button will
+        feature a black question mark (<guibutton>?</guibutton>) icon. If the
+        customer is on credit warning, the icon will turn into an orange
+        dollar sign (<guibutton>$</guibutton>). A red dollar sign
+        (<guibutton>$</guibutton>) indicates the customer is on credit
+        hold.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document Date</term>
+
+      <listitem>
+        <para>Specify a date to associate with the miscellaneous debit
+        memo.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Due Date</term>
+
+      <listitem>
+        <para>Displays the due date for the miscellaneous debit memo.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document Type</term>
+
+      <listitem>
+        <para>Displays the document type, namely <guilabel>Debit
+        Memo</guilabel>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document #</term>
+
+      <listitem>
+        <para>Displays the next available miscellaneous debit memo number. The
+        value for the next available debit memo number is configured at the
+        system level.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Order #</term>
+
+      <listitem>
+        <para>Enter the order number you want to associate with the debit
+        memo. You may leave this field blank if you do not want to enter an
+        associated order number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Journal #</term>
+
+      <listitem>
+        <para>Displays the journal number if any amount has been
+        applied.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Reason Code</term>
+
+      <listitem>
+        <para>Specify the reason for the debit memo. Reason codes are used to
+        explain why an adjustment is being made to a customer's
+        account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Terms</term>
+
+      <listitem>
+        <para>Displays invoice terms if any amount has been applied to an
+        invoice.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Sales Rep.</term>
+
+      <listitem>
+        <para>Displays the sales representative associated with the invoice if
+        any amount has been applied to an invoice.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount</term>
+
+      <listitem>
+        <para>Specify the amount of the miscellaneous debit memo.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Paid</term>
+
+      <listitem>
+        <para>Displays the amount applied to date for the miscellaneous debit
+        memo.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Balance</term>
+
+      <listitem>
+        <para>Displays the remaining amount still available to apply for the
+        miscellaneous debit memo.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tax Zone</term>
+
+      <listitem>
+        <para>Displays the tax zone associated with the specified
+        customer.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tax</term>
+
+      <listitem>
+        <para>Tax will be calculated automatically if the associated tax code
+        is configured to calculate tax on memos. You can link a tax code to
+        memos with a tax assignment that matches the tax code, the tax zone,
+        and the system-defined <guilabel>Adjustment</guilabel> tax type. To
+        manually enter tax, select the blue <guibutton>Tax</guibutton> link
+        which serves as the label for this field. If tax is entered manually,
+        the amount will be charged to the general ledger account for the
+        relevant tax code.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Commission Due</term>
+
+      <listitem>
+        <para>Displays the amount of the commission due to the associated
+        sales representative.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the miscellaneous debit memo.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Print on post</term>
+
+      <listitem>
+        <para>Select if you want to print a copy of the debit memo after the
+        <guibutton>POST</guibutton> button is selected. Debit memos may also
+        be reprinted from, among other places, the Customer screen.</para>
+
+        <para role="xtconnect"><note>
+            <para>If the customer specified on the credit memo has an EDI
+            profile attached, you may encounter an EDI processing interface
+            when printing it.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To assign an alternate prepaid account, select the
+  <guimenuitem>Account</guimenuitem> tab at the bottom of the screen. The
+  following screen will appear:</para>
+
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/arOpenItemDebitAccount.png"/>
+      </imageobject>
+
+      <caption>Enter Miscellaneous Debit Memo Account</caption>
+    </mediaobject>
+  </screenshot>
+
+  <variablelist>
+    <varlistentry>
+      <term>Use Alternate Prepaid Account</term>
+
+      <listitem>
+        <para>Select one of the following optional prepaid accounts:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>From Sales Category</term>
+
+            <listitem>
+              <para>Specify a sales category whose prepaid account option you
+              want to use instead of the default prepaid account.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Account Number</term>
+
+            <listitem>
+              <para>Specify an alternate account number to use for the
+              transaction.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>If an alternate prepaid account is not specified, the system will
+    use the default prepaid account specified for the customer type under
+    receivables account assignments.</para>
+  </note>
+
+  <para>To view applications, select the
+  <guimenuitem>Applications</guimenuitem> tab at the bottom of the screen. The
+  following screen will appear:</para>
+
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/arOpenItemDebitApplications.png"/>
+      </imageobject>
+
+      <caption>Enter Miscellaneous Debit Memo Applications</caption>
+    </mediaobject>
+  </screenshot>
+
+  <variablelist>
+    <varlistentry>
+      <term>Applications</term>
+
+      <listitem>
+        <para>Display lists the history of applications related to the
+        miscellaneous debit memo, if any.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

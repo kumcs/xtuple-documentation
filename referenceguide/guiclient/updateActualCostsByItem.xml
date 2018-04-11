@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="updateActualCostsByItem">
+  <title><indexterm significance="normal">
+      <primary>actual costs</primary>
+
+      <secondary>updating by item</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>items</primary>
+
+      <secondary>updating actual costs for</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>actual costs</primary>
+
+      <secondary>updating by item</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>items</primary>
+
+      <secondary>updating actual costs for</secondary>
+    </indexterm>Update Actual Costs by Item</title>
+
+  <para>Actual costs are the real-time costs associated with an item,
+  including current material and production costs. The actual cost of an item
+  may fluctuate given changes in the cost for materials, or other costs
+  related to changes in bills of materials (BOMs) or routings. For example,
+  the actual costs for purchased items may be updated whenever vouchers are
+  posted for those items. Actual costs provide a current record of costs
+  actually incurred by an item.</para>
+
+  <tip>
+    <para>Cost roll ups in xTuple are performed from the bottom up. In other
+    words, to update the costs for a parent item you need to roll the costs
+    for all the child items up into the parent item. For this reason, updating
+    costs by class code is the generally preferred method. That way you can
+    guarantee all the required costs are updated—and none are missed.</para>
+  </tip>
+
+  <para>To update actual costs individually by item, go to
+  <guimenuitem>Products &gt; Costing &gt; Update Actual Costs &gt; by
+  Item</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/updateActualCostsByItem.png"/>
+        </imageobject>
+
+        <caption>Update Actual Costs by Item</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <warning>
+    <para>If you are blending the average cost method with the standard cost
+    method, your results may vary.</para>
+  </warning>
+
+  <para>When updating actual costs by item, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Enter the item number of the item whose actual costs you want to
+        update. The lookup feature located to the right of the field leads to
+        a searchable list of make and buy items.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>For manufactured items, rolling up actual costs ensures that lower
+    level costs are reflected in the cost for the parent item.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>actual costs</primary>
+
+          <secondary>rolling up of</secondary>
+        </indexterm>Roll Up Actual Costs</term>
+
+      <listitem>
+        <para>Select to roll up actual costs. When this option is specified,
+        all selected costs will be added together to establish a revised total
+        actual cost for the item. This revised total goes into effect after
+        the <guibutton>UPDATE</guibutton> button is selected. If all costs are
+        selected, all costs will be rolled up. If a subset of all costs is
+        selected, only the subset will be rolled up. If the <guilabel>Roll Up
+        Actual Costs</guilabel> option is not specified, the selected cost
+        updates will not be valid above their current level.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>material costs</primary>
+
+          <secondary>updating of</secondary>
+        </indexterm> <indexterm significance="normal">
+          <primary>costing</primary>
+
+          <secondary>updating of material costs</secondary>
+        </indexterm> <indexterm significance="normal">
+          <primary>actual costs</primary>
+
+          <secondary>updating material costs</secondary>
+        </indexterm>Update Lower Level Material Costs</term>
+
+      <listitem>
+        <para>Select to update lower level material costs. Not selecting means
+        lower level material costs will not be included in the cost
+        update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="manufacturing">
+      <term>Update Direct Labor Cost</term>
+
+      <listitem>
+        <para>Select to update direct labor cost. Not selecting means the
+        direct labor cost will not be included in the cost update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="manufacturing">
+      <term>Update Lower Level Direct Labor Cost</term>
+
+      <listitem>
+        <para>Select to update lower level direct labor cost. Not selecting
+        means the lower level direct labor cost will not be included in the
+        cost update.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>You have the flexibility of updating all or only a subset of the
+    listed costs. Updating a subset might be desirable if only material or
+    user costs have changed, for example.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry role="manufacturing">
+      <term>Update Overhead Cost</term>
+
+      <listitem>
+        <para>Select to update overhead cost. Not selecting means the overhead
+        cost will not be included in the cost update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="manufacturing">
+      <term>Update Lower Level Overhead Cost</term>
+
+      <listitem>
+        <para>Select to update lower level overhead cost. Not selecting means
+        the lower level overhead cost will not be included in the cost
+        update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="manufacturing">
+      <term>Update Machine Overhead</term>
+
+      <listitem>
+        <para>Select to update machine overhead cost. This option is selected
+        by default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="manufacturing">
+      <term>Update Lower Machine Overhead</term>
+
+      <listitem>
+        <para>Select to update lower level machine overhead cost. This option
+        is selected by default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>user costs</primary>
+
+          <secondary>updating of</secondary>
+        </indexterm> <indexterm significance="normal">
+          <primary>costing</primary>
+
+          <secondary>updating of user costs</secondary>
+        </indexterm> <indexterm significance="normal">
+          <primary>actual costs</primary>
+
+          <secondary>updating user costs</secondary>
+        </indexterm>Update User Costs</term>
+
+      <listitem>
+        <para>Select to update user costs. Not selecting means user costs will
+        not be included in the cost update.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Update Lower Level User Costs</term>
+
+      <listitem>
+        <para>Select to update lower level user costs. Not selecting means
+        lower level user costs will not be included in the cost update.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>UPDATE</guibutton></term>
+
+      <listitem>
+        <para>Updates all selected costs for the specified item. If the option
+        <guilabel>Roll Up Actual Costs</guilabel> has been selected, the total
+        actual cost for the specified item will be updated.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>SELECT ALL COSTS</guibutton></term>
+
+      <listitem>
+        <para>Selects all costs for updating. Use this option to save time
+        when selecting all costs for updating. The option <guilabel>Roll Up
+        Actual Costs</guilabel> must be selected separately if you want to
+        include a rolled up total for the parent item in the cost
+        update.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

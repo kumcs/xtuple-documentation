@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="resetQOHBalances">
+  <title><indexterm significance="normal">
+      <primary>quantity on hand</primary>
+
+      <secondary>resetting QOH balances</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>inventory transactions</primary>
+
+      <secondary>resetting QOH balances</secondary>
+    </indexterm>Reset QOH Balances</title>
+
+  <para>To avoid the unnecessary confusion that can occur if negative quantity
+  on hand (QOH) balances are used for planning purposes, the system gives you
+  the ability to quickly and easily reset negative QOH values to zero. To
+  reset negative QOH balances to zero, either globally or locally, go to
+  <guimenuitem>Inventory &gt; Transactions &gt; Reset QOH
+  Balances</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/resetQOHBalances.png"/>
+        </imageobject>
+
+        <caption>Reset QOH Balances</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>Be sure to thaw any item site whose negative QOH balance you want to
+    reset to zero. An item site must be unfrozen before its QOH balance can be
+    reset.</para>
+  </tip>
+
+  <para>When resetting QOH balances, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to reset QOH balances for all sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site where QOH balances are to be reset.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>All Class Codes</term>
+
+      <listitem>
+        <para>Select to reset QOH balances for all class codes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify class code whose QOH you want to reset.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Pattern</term>
+
+      <listitem>
+        <para>Enter a class code pattern to select a range of class codes.
+        Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Transaction Date</term>
+
+      <listitem>
+        <para>Specify the date you want the transaction to be posted to the
+        general ledger. The current day's date will display by default.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>RESET</guibutton></term>
+
+      <listitem>
+        <para>Resets QOH balances for sites and class codes specified
+        above.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>Additional steps will be necessary if any items within the specified
+    class code(s) are stored in multiple locations.</para>
+  </note>
+</section>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspTaxReturn">
+  <title><indexterm significance="normal">
+      <primary>taxes</primary>
+
+      <secondary>history report</secondary>
+    </indexterm>Tax Return</title>
+
+  <para>The tax return report provides a summarized listing of both taxable
+  and zero-rated sales and purchases needed for reporting to tax authorities.
+  The report is ideally suited to value added tax (VAT) scenarios, where tax
+  liability is based on the difference between taxes paid on sales vs. taxes
+  paid on purchases. To view the tax return report, go to
+  <guimenuitem>Accounting &gt; Tax &gt; Reports &gt; Tax Return</guimenuitem>.
+  The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspTaxReturn.png"/>
+        </imageobject>
+
+        <caption>Tax Return</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying a tax return, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Tax Authority</term>
+
+      <listitem>
+        <para>Specify the tax authority you want to display return information
+        for. Display will summarize any sales or purchases where the tax
+        code(s) used is specifically linked to the tax authority.</para>
+
+        <note>
+          <para>For transaction information to be included in the tax return
+          report, the tax authority must be linked to one or more tax
+          codes.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Date Range</term>
+
+      <listitem>
+        <para>Specify the date range, based on the chosen date basis:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Start Date</term>
+
+            <listitem>
+              <para>Taxes posted on and after this date will be included in
+              the report.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>End Date</term>
+
+            <listitem>
+              <para>Taxes posted on and before this date will be included in
+              the report.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Basis</term>
+
+      <listitem>
+        <para>Specify a date basis to use for the report:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Document date</term>
+
+            <listitem>
+              <para>Select to use the document date as the basis for the
+              report.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Distribution date</term>
+
+            <listitem>
+              <para>Select to use the G/L distribution date as the basis for
+              the report.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tax Return</term>
+
+      <listitem>
+        <para>Display lists summarized tax return information, using the
+        specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>For detailed tax information, please see the <xref
+    linkend="dspTaxHistory"/> report.</para>
+  </note>
+</section>

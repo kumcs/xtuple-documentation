@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="financialLayoutCashFlow">
+  <title><indexterm significance="normal">
+      <primary>financial reports</primary>
+
+      <secondary>cash flow type</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>cash flow reports</primary>
+    </indexterm> Cash Flow Report</title>
+
+  <para>Because cash flow statements can vary so widely, there is no
+  system-defined cash flow template. To create your own cash flow statement,
+  select the <guilabel>Cash Flow</guilabel> report type. The following screen
+  will appear:</para>
+
+  <para role="xtprjaccnt"><note>
+      <para>If the xTuple Project Accounting package is installed, you will
+      have the option to make the cash flow report available to
+      projects.</para>
+    </note></para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutCashFlow.png"/>
+        </imageobject>
+
+        <caption>Cash flow financial report</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>To create the row layouts for a cash flow report, you would follow the
+  same basic steps as described in <xref linkend="financialLayoutAdHoc"/>. The
+  only difference is you won't need to specify which balances to calculate
+  (e.g., beginning, ending, etc.). Because the cash flow report is one of
+  three standard statement formats, the system determines which calculations
+  will be done.</para>
+
+  <tip>
+    <para>To build row layouts for the three standard report types—income
+    statement, balance sheet, and cash flow—use the same techniques as when
+    building <emphasis>ad hoc</emphasis> report row layouts. The only
+    difference is you won't need to specify which balances to calculate (e.g.,
+    beginning, ending, etc.). The system determines which calculations will be
+    done for the standard statement formats.</para>
+  </tip>
+
+  <para>In addition to row layouts, you may also define column layouts for
+  your cash flow report. Column layouts are used to specify the time buckets
+  financial information will be sorted into. You specify a column layout to
+  use when viewing or printing financial reports. You may define any number of
+  column layouts. Each layout will be linked to either a pre-defined report
+  definition or a custom report definition you create yourself.</para>
+
+  <para>To create column layouts for a cash flow report, select the
+  <guimenuitem>Column Layouts</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutCashFlowCols.png"/>
+        </imageobject>
+
+        <caption>Cash flow report Column Layouts</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating column layouts for a cash flow report, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Column Layouts</term>
+
+      <listitem>
+        <para>Display lists column layouts defined for the cash flow
+        report.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ADD</guibutton></term>
+
+      <listitem>
+        <para>Select to add a column layout.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To create a new column layout, select the <guibutton>ADD</guibutton>
+  button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutCashFlowColNew.png"/>
+        </imageobject>
+
+        <caption>Add new Column Layout</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When adding a new column layout, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to identify the column layout.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Description</term>
+
+      <listitem>
+        <para>Enter a brief description of the column layout.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Report Template</term>
+
+      <listitem>
+        <para>Specify the report definition you want to associate with the
+        column layout.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>When creating a column layout, you can choose from the following
+    standard report templates:</para>
+
+    <para>FinancialReport (used by all <emphasis>ad hoc</emphasis>
+    reports)</para>
+
+    <para>FinancialReportMonth</para>
+
+    <para>FinancialReportMonthBudget</para>
+
+    <para>FinancialReportMonthDbCr</para>
+
+    <para>FinancialReportMonthPriorMonth</para>
+
+    <para>FinancialReportMonthPriorQuarter</para>
+
+    <para>FinancialReportMonthPriorYear</para>
+
+    <para>FinancialReportMonthQuarter</para>
+
+    <para>FinancialReportMonthYear</para>
+
+    <para>FinancialReportQuarter</para>
+
+    <para>FinancialReportQuarterBudget</para>
+
+    <para>FinancialReportQuarterPriorQuarter</para>
+
+    <para>FinancialReportYear</para>
+
+    <para>FinancialReportYearBudget</para>
+
+    <para>FinancialReportYearPriorYear</para>
+
+    <para>FinancialTrend (used by non-ad-hoc trend reports)</para>
+
+    <para>If for some reason these templates don't meet your needs, you can
+    always use OpenRPT to a) modify them or b) create your own custom report
+    templates.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry>
+      <term>Selected Period</term>
+
+      <listitem>
+        <para>Select the time period(s) you want to have included in the
+        column layout:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Month</term>
+
+            <listitem>
+              <para>Select to have the current month included as one of the
+              columns in the layout. The month used as the basis for the
+              reporting is specified when the report is run. If selected, you
+              will also have the option to include the prior month in the
+              layout.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Quarter</term>
+
+            <listitem>
+              <para>Select to have the current quarter included as one of the
+              columns in the layout. The month used as the basis for the
+              reporting is specified when the report is run. If selected, you
+              will also have the option to include the prior quarter in the
+              layout.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Year</term>
+
+            <listitem>
+              <para>Select to have the current fiscal year-to-date included as
+              one of the columns in the layout. The month used as the basis
+              for the reporting is specified when the report is run. If
+              selected, you will also have the option to include the prior
+              fiscal year in the layout.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Show Debits and Credits</term>
+
+            <listitem>
+              <para>Select to have debits and credits included as columns for
+              each of the time periods (month, quarter, year) specified for
+              the layout.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>% of Group Total</term>
+
+            <listitem>
+              <para>Select to have the percentage of group total included as a
+              column for each of the time periods (month, quarter, year)
+              specified for the layout. This information will only be shown
+              for groups and accounts whose row definition specifies Show % of
+              Group Total.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>There is no relationship between the selected time periods in a
+    column layout and the trend report options available when viewing a
+    financial report. Trend reporting ignores column layouts.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Prior</term>
+
+      <listitem>
+        <para>Select to include prior time period information in the column
+        layout by selecting from the following options:</para>
+
+        <itemizedlist>
+          <listitem>
+            <para>Period: Will include information for the accounting period
+            immediately prior to the period specified when the financial
+            report is run. You must also select at least one of the
+            time-period check boxes below (<guilabel>Full Month</guilabel> or
+            <guilabel>Full Quarter</guilabel>) for prior information to be
+            included.</para>
+          </listitem>
+
+          <listitem>
+            <para>Year: Will include information for the fiscal year
+            immediately prior to the current year specified when the financial
+            report is run. You must also select at least one of the
+            time-period check boxes below (<guilabel>Full Month</guilabel>,
+            <guilabel>Full Quarter</guilabel>, etc.) for prior information to
+            be included.</para>
+          </listitem>
+
+          <listitem>
+            <para>Full Month: If selected, a full month's worth of information
+            will be included when the report is run—depending on the prior
+            time period specified above. If the <guilabel>Period</guilabel>
+            option is specified, then the month immediately prior to the
+            selected accounting period will be included. If the
+            <guilabel>Year</guilabel> option is specified, then the selected
+            month in the prior fiscal year will be included.</para>
+          </listitem>
+
+          <listitem>
+            <para>Full Quarter: If selected, a full quarter's worth of
+            information will be included when the report is run—depending on
+            the prior time period specified above. If the
+            <guilabel>Period</guilabel> option is specified, then the quarter
+            immediately prior to the selected accounting period's quarter will
+            be included. If the <guilabel>Year</guilabel> option is specified,
+            then the selected quarter in the prior fiscal year will be
+            included.</para>
+          </listitem>
+
+          <listitem>
+            <para>Full Year: If selected, the full prior fiscal year's worth
+            of information will be included when the report is run.</para>
+
+            <tip>
+              <para>The <guilabel>Full Year</guilabel> and <guilabel>Year To
+              Date</guilabel> check boxes are not affected by the
+              <guilabel>Period</guilabel> or <guilabel>Year</guilabel>
+              selections.</para>
+            </tip>
+          </listitem>
+
+          <listitem>
+            <para>Year To Date: If selected, the current fiscal year to date's
+            worth of information will be included when the report is
+            run.</para>
+          </listitem>
+
+          <listitem>
+            <para>% of Group Total: If selected, the percentage of the group
+            total for the prior time period will be included when the report
+            is run. This information will only be shown for groups and
+            accounts whose row definition specifies Show % of Group
+            Total.</para>
+          </listitem>
+
+          <listitem>
+            <para>Difference: If selected, the amount of difference between
+            the selected accounting period and the prior time period will be
+            included when the report is run.</para>
+          </listitem>
+
+          <listitem>
+            <para>% of Difference: If selected, the percentage difference
+            between the selected accounting period and the prior time period
+            will be included when the report is run.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Budget</term>
+
+      <listitem>
+        <para>Select to include budget information in the column layout. If
+        selected, the following additional options will be available:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>% of Group Total</term>
+
+            <listitem>
+              <para>If selected, the budget percentage of the group total will
+              be included when the report is run. This information will only
+              be shown for groups and accounts whose row definition specifies
+              Show % of Group Total.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Difference</term>
+
+            <listitem>
+              <para>If selected, the amount of difference between the selected
+              accounting period and the budget for the period will be included
+              when the report is run.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>% of Difference</term>
+
+            <listitem>
+              <para>If selected, the percentage difference between the
+              selected accounting period and the budget for the period will be
+              included when the report is run.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To specify additional configuration options for the layout of your
+  cash flow report, select the <guimenuitem>Options</guimenuitem> tab. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutCashFlowOpts.png"/>
+        </imageobject>
+
+        <caption>Cash flow report Options</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When specifying additional configuration options for the layout of
+  your cash flow report, you are presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Show Grand Total</term>
+
+      <listitem>
+        <para>Select if you want to include a grand total in the financial
+        report.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Alternate Labels</term>
+
+      <listitem>
+        <para>You have the option to substitute alternate text for the
+        following column headers or row labels when viewing or printing your
+        financial report:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Alternate Debits</term>
+
+            <listitem>
+              <para>Specify an alternate label to use as the header text for
+              the debits column. If not specified, the default text will be
+              used.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Alternate Credits</term>
+
+            <listitem>
+              <para>Specify an alternate label to use as the header text for
+              the credits column. If not specified, the default text will be
+              used.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Alternate Budget</term>
+
+            <listitem>
+              <para>Specify an alternate label to use as the header text for
+              the budget column. If not specified, the default text will be
+              used.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Alternate Grand Total</term>
+
+            <listitem>
+              <para>Specify an alternate label to use as the text for the
+              grand total row. If not specified, the default text will be
+              used.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>Any notes you add to a financial report definition will appear at
+    the bottom of the financial report when the financial report is
+    printed.</para>
+  </note>
+</section>

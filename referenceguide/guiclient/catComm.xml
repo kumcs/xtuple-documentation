@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section role="distribution">
+  <title><indexterm significance="normal">
+      <primary>commodity codes</primary>
+      <secondary>creating new</secondary>
+    </indexterm>External Vendor Commodity Code</title>
+  <para>To create a new external vendor commodity code, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/catComm.png" />
+        </imageobject>
+        <caption>Create new Commodity Code</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new external vendor commodity code, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Provider</term>
+      <listitem>
+        <para>By default when expanding the external vendor commodity codes,
+        the provider will be set to <guimenuitem>Internal</guimenuitem> to
+        denote it is custom.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Code</term>
+      <listitem>
+        <para>Enter a code to help create a sequence and structure for the
+        commodity codes. Using codes breaks the items into groups and sub
+        groups based on the numbering structure you define.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a description for the code to identify the item or group
+        structure it relates to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Parent</term>
+      <listitem>
+        <para>Select an already-existing code from the drop-down list to
+        create your custom structure. Codes will be displayed as nested within
+        the parent codes you specify.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Level</term>
+      <listitem>
+        <para>The level will increment as you create your structure. For
+        example, when you add your first commodity code it will assume level
+        one. If you return to the Commodity Codes screen and select
+        <guibutton>NEW</guibutton> again, the level will increment to two,
+        based on the parent selected.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

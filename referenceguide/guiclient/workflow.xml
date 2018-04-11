@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="workflow" role="standard">
+  <title><indexterm significance="normal">
+      <primary>workflow, master list of</primary>
+    </indexterm>Workflow</title>
+  <para>Workflow is a feature in xTuple that allows you to link activities
+  together into dependent sequences (workflows), and to assign activities to
+  specific users. For example, you can create workflow for fulfilling sales
+  orders. When a new sales order comes into the system, it can generate
+  activities for picking and shipping the order, and assign these activities
+  to users to perform.</para>
+  <para>To set up workflow, go to <guimenuitem>System &gt;
+  Setup</guimenuitem><guimenuitem>&gt; Master Information &gt;
+  Workflow</guimenuitem>. The following screen will appear:<screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/workflow.png"/>
+        </imageobject>
+        <caption>Workflow master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="workflowStep.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="todoItem">
+  <title><indexterm significance="normal">
+      <primary>to-do lists</primary>
+      <secondary>creating new to-dos</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>customer relationship management</primary>
+      <secondary>creating to-dos for</secondary>
+    </indexterm>New To-Do List Item</title>
+  <para>To enter a new to-do item, go to <guimenuitem>CRM &gt; To-Do &gt;
+  New</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/todoItem.png"/>
+        </imageobject>
+        <caption>To-Do List Item</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When entering a new to-do item, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Task Name</term>
+      <listitem>
+        <para>Enter a name to describe the task. Duplicate task names are
+        allowed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select to indicate the to-do item is active.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a brief description of the to-do item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Priority</term>
+      <listitem>
+        <para>Enter a priority from the drop down list to help you prioritize
+        your to-do items. Priority options include, <guilabel>Very
+        High</guilabel>, <guilabel>High</guilabel>,
+        <guilabel>Normal</guilabel>, <guilabel>Low</guilabel>, <guilabel>Very
+        Low</guilabel>.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Owner</term>
+      <listitem>
+        <para>By default, a new to-do item is owned by the user who creates
+        it. Once a to-do item has been created, it may be reassigned to
+        another user.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Assigned to</term>
+      <listitem>
+        <para>To assign a to-do item to another user, use the lookup feature
+        located to the right of the field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Due</term>
+      <listitem>
+        <para>Specify the date when the to-do item is due.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Assigned</term>
+      <listitem>
+        <para>Specify the date when the to-do item was assigned—or
+        reassigned.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Started</term>
+      <listitem>
+        <para>Specify the date when work on the to-do item was started.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Completed</term>
+      <listitem>
+        <para>Specify the date when work on the to-do item was
+        completed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pending Input</term>
+      <listitem>
+        <para>Select to indicate the to-do item is pending input. To-do items
+        having this status will display a "P" in the
+        <guilabel>Status</guilabel> column when they appear on the to-do
+        list.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Deferred</term>
+      <listitem>
+        <para>Select to indicate the to-do item is deferred. To-do items
+        having this status will display a "D" in the
+        <guilabel>Status</guilabel> column when they appear on the to-do
+        list.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Neither</term>
+      <listitem>
+        <para>Select to indicate the to-do item is neither pending input nor
+        deferred. To-do items having this status will display an "I" in the
+        <guilabel>Status</guilabel> column when they appear on the to-do
+        list.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Recurring</term>
+      <listitem>
+        <xi:include href="../widgets/recurrencewidget.xml"
+                    xpointer="recurrenceWidget"
+                    xmlns:xi="http://www.w3.org/2001/XInclude"/>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To associate a contact with a to-do item, select the
+  <guimenuitem>Contact</guimenuitem> tab. The following screen will
+  appear:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/todoItem_contactTab.png"/>
+    </imageobject>
+    <caption>To-Do List Item Contact</caption>
+  </mediaobject>
+  <variablelist>
+    <varlistentry>
+      <term>Contact</term>
+      <listitem>
+        <para>Enter the name of the contact—or select a name from the contacts
+        list. Details for the contact will be shown after selection.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To enter notes for a to-do item, select the
+  <guimenuitem>Notes</guimenuitem> tab at the bottom of the screen, as shown
+  below:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/todoItem_notes.png"/>
+    </imageobject>
+    <caption>To-Do List Item Notes</caption>
+  </mediaobject>
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the to-do item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To create associations for a to-do item to other records, select the
+  <guimenuitem>Relationships</guimenuitem> tab at the bottom of the screen, as
+  shown below:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/todoItem_relationships.png"/>
+    </imageobject>
+    <caption>To-Do List Item Relationships</caption>
+  </mediaobject>
+  <para>When defining to-do item relationships, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Account</term>
+      <listitem>
+        <para>Specify the CRM account the to-do item is associated with (if
+        any).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Opportunity</term>
+      <listitem>
+        <para>Select an opportunity (if applicable) to associate with the
+        to-do item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Incident</term>
+      <listitem>
+        <para>Select an incident (if applicable) to associate with the to-do
+        item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To create reminder alarms for a to-do item, select the
+  <guimenuitem>Alarms</guimenuitem> tab at the bottom of the screen, as shown
+  below:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/todoItem_alarms.png"/>
+    </imageobject>
+    <caption>To-Do List Item Alarms</caption>
+  </mediaobject>
+  <xi:include href="../widgets/alarmMaint.xml" xpointer="alarmMaint"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To add comments to a to-do item, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/todoItem_commentsTab.png"/>
+    </imageobject>
+    <caption>To-Do List Item Comments</caption>
+  </mediaobject>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To view the documents associated with a to-do item, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
+      <imageobject>
+        <imagedata fileref="images/todoItem_documentsTab.png"/>
+      </imageobject>
+      <caption><para>To-Do List Item Documents</para></caption>
+    </mediaobject></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To view email associated with a to-do item, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

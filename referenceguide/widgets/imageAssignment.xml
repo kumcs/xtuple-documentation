@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section>
+  <title>Image Assignment Widget</title>
+  <para id="imageAssignmentWidget"><informalexample>
+      <para><indexterm significance="normal">
+          <primary>images</primary>
+          <secondary>assignment</secondary>
+        </indexterm>To specify an assignment for an image, select the NEW
+      button. The following screen will appear:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/itemImage.png" />
+            </imageobject>
+            <caption>Image Assignments</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>When assigning an image to a purpose, you are presented with the
+      following options:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Purpose</term>
+          <listitem>
+            <para>Select one of the available purposes an image might
+            serve:</para>
+            <variablelist>
+              <varlistentry>
+                <term>Inventory Description</term>
+                <listitem>
+                  <para>Select if the image describes inventory.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>Product Description</term>
+                <listitem>
+                  <para>Select if the image describes a product.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>Engineering Reference</term>
+                <listitem>
+                  <para>Select if the image serves as an engineering
+                  reference.</para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>Miscellaneous</term>
+                <listitem>
+                  <para>Select if the image is a miscellaneous image.</para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para><note>
+          <para>You may create multiple image assignments, but only one image
+          assignment per purpose.</para>
+        </note></para>
+      <para>The following buttons are available:</para>
+      <variablelist>
+        <varlistentry>
+          <term>CLOSE</term>
+          <listitem>
+            <para>Closes the screen, returning you to the previous
+            screen.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>SAVE</term>
+          <listitem>
+            <para>Highlight an image, then select the
+            <guibutton>SAVE</guibutton> button to associate the image with the
+            specified item and purpose.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>NEW</term>
+          <listitem>
+            <para>Opens screen for adding a new image to the master list of
+            stored images.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>VIEW</term>
+          <listitem>
+            <para>Allows user to view image.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para><indexterm significance="normal">
+          <primary>images</primary>
+          <secondary>adding new</secondary>
+        </indexterm>To add a new image to the master list of stored images,
+      select the <guibutton>NEW</guibutton> button. The following screen will
+      appear:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/image.png" />
+            </imageobject>
+            <caption>Create new Image</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>When adding a new image to the master list of stored images, you
+      are presented with the following options:</para>
+      <variablelist>
+        <varlistentry>
+          <term>File Name</term>
+          <listitem>
+            <para>Enter the physical directory location of the image. The
+            lookup feature enables you to search your system for the physical
+            directory location of the image file. Once you locate the file,
+            simply select it to have it entered into the <guilabel>File
+            Name</guilabel> field.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Name</term>
+          <listitem>
+            <para>Enter a unique name for the image.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Description</term>
+          <listitem>
+            <para>Enter a description to further identify the image.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>The following buttons are available:</para>
+      <variablelist>
+        <varlistentry>
+          <term>CANCEL</term>
+          <listitem>
+            <para>Closes the screen without adding a new image to the master
+            list of stored images.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>SAVE</term>
+          <listitem>
+            <para>Creates the image and adds it to the master list of stored
+            images.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Files</term>
+          <listitem>
+            <para>Display lists the title and URL for any files related to the
+            item. To enter files associated with an item, select the
+            <guilabel>Files</guilabel> option.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </informalexample></para>
+</section>

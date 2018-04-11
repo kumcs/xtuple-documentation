@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="selectedPayments">
+  <title><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>list of selected</secondary>
+    </indexterm>List Approved Payments</title>
+
+  <para>To access the master list of selected payments, go to
+  <guimenuitem>Accounting &gt; Accounts Payable &gt; Payments &gt; List
+  Approved</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/selectedPayments.png"/>
+        </imageobject>
+
+        <caption>List Approved Payments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The Approved Payments screen displays information on all existing
+  selected payments, including bank account to be paid from, vendor name,
+  document type, document number, invoice number, purchase order number,
+  amount selected for payment, and running total.</para>
+
+  <tip>
+    <para>Vendors can be filtered by type and there is an option to select all
+    bank accounts or a specific bank account.</para>
+  </tip>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CLEAR APPROVAL</guibutton></term>
+
+      <listitem>
+        <para>Highlight an approved payment and then select this button to
+        clear the approval. Because an item that has been cleared is no longer
+        approved for payment, this option removes the item from the master
+        list of approved payments.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

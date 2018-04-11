@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="postProduction">
+  <title><indexterm significance="normal">
+      <primary>production</primary>
+
+      <secondary>posting of</secondary>
+    </indexterm>Post Production</title>
+
+  <para>Work order progress can be posted in terms of materials used or
+  operations completed. When you post production, you are using the
+  materials-driven process for reporting progress. To post production for a
+  work order, go to <guimenuitem>Manufacture &gt; Transactions &gt;
+  Post</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/postProduction.png"/>
+        </imageobject>
+
+        <caption>Post Production</caption>
+      </mediaobject>
+    </screenshot>When posting production for a work order, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Transaction Date</term>
+
+      <listitem>
+        <para>Specify the date you want the transaction to be posted to the
+        general ledger (G/L). The current day's date will display by
+        default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Work Order #</term>
+
+      <listitem>
+        <para>Enter the work order number of the work order whose production
+        you want to post.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Displays item number automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Status</term>
+
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Method</term>
+
+      <listitem>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Ordered</term>
+
+      <listitem>
+        <para>Display the quantity of the component item required per parent
+        item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Received</term>
+
+      <listitem>
+        <para>Displays the quantity required to fulfill the specified work
+        order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Balance Due</term>
+
+      <listitem>
+        <para>Displays the quantity issued in fulfillment of the specified
+        work order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. to Post</term>
+
+      <listitem>
+        <para>Enter the quantity of the component items you want to
+        post.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Backflush Materials</term>
+
+      <listitem>
+        <para>Select to indicate that the amount of materials indicated by the
+        associated work order material requirement record will be issued to
+        the selected work order for all pull or mixed component items. If
+        there are any pull component items on the requirements list, this
+        option will be selected and disabled (you must backflush pull items).
+        If there are any mixed component items on the requirements list, this
+        option will be selected and enabled (you can choose whether to
+        backflush or not). If there are no pull or mixed component items on
+        the requirements list, this option will not be selected and disabled
+        (push items are not backflushed).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Backflush Operations</term>
+
+      <listitem>
+        <para>Select to indicate that the amount of time and labor indicated
+        by the associated work order operation record will be issued to the
+        selected work order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Setup By</term>
+
+      <listitem>
+        <para>Enter the name of the user who performed the set up.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Run By</term>
+
+      <listitem>
+        <para>Enter the name of the user who performed the production
+        run.</para>
+
+        <note>
+          <para>If the <guilabel>Backflush Operations</guilabel> option is not
+          selected, the <guilabel>Setup</guilabel> and <guilabel>Run
+          Time</guilabel> options will be disabled.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Close Work Order after Posting</term>
+
+      <listitem>
+        <para>Select to close the work order after posting. If you are posting
+        partial production and want to keep the work order open, you should
+        not select this option.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Production Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        production posting notes related to the work order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Immediate Transfer to Site</term>
+
+      <listitem>
+        <para>Select to transfer work order production to specified site.
+        Specify the site you want to transfer production to.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Scrap on Post</term>
+
+      <listitem>
+        <para>Select to open the Scrap Work Order Material screen
+        automatically when posting production.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>POST</guibutton></term>
+
+      <listitem>
+        <para>Select to post production for the work order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="issueToShipping">
+  <title><indexterm significance="normal">
+      <primary>shipping</primary>
+
+      <secondary>issuing stock to</secondary>
+    </indexterm>Issue to Shipping</title>
+
+  <para>Once sales order (or transfer order) line items are ready to be
+  shipped, they must be issued to shipping. Shipping is a two-step process.
+  Quantity is first issued to shipping, and then it is shipped.</para>
+
+  <para><indexterm significance="normal">
+      <primary>job items</primary>
+
+      <secondary>posting production for</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>shipping</primary>
+
+      <secondary>job items and</secondary>
+    </indexterm>For job items linked to sales order items, the act of issuing
+  to shipping serves a dual purpose. On the one hand, quantity is issued to
+  shipping. But at the same time, production for the linked job item work
+  order is also posted. Issuing to shipping is the only way to post production
+  for a job item work order. If the job item is lot/serial controlled, you
+  will be prompted to assign lot/serial numbers when quantity is issued to
+  shipping.</para>
+
+  <para><indexterm significance="normal">
+      <primary>kits</primary>
+
+      <secondary>issuing to shipping</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>shipping</primary>
+
+      <secondary>kits and</secondary>
+    </indexterm>When kit items appear on a sales order, the kit components may
+  be issued to shipping. However, the parent kit item may not be. The
+  automatic <guilabel>Select for Billing</guilabel> option takes effect for
+  kit items when all kit items are shipped.</para>
+
+  <para>To issue stock to shipping, go to <guimenuitem>Inventory &gt; Shipping
+  &gt; Issue to Shipping</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/issueToShipping.png"/>
+        </imageobject>
+
+        <caption id="issueToShippingStockToShipping">Issue to
+        Shipping</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>Before a sales order can be shipped successfully, sales account and
+    receivables assignments for the specified customer must be in
+    place.</para>
+  </tip>
+
+  <para>When issuing stock to shipping, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Select the site you wish to issue from.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Transaction Date</term>
+
+      <listitem>
+        <para>Specify the date you want the transaction to be posted to the
+        general ledger. The current day's date will display by default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Order #</term>
+
+      <listitem>
+        <para>Enter the order number of the order whose stock you want to
+        issue to shipping. Sales orders and transfer orders may be issued to
+        shipping.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipment #</term>
+
+      <listitem>
+        <para>Displays the shipment number for the order, if any.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Require sufficient Inventory</term>
+
+      <listitem>
+        <para>Select to ensure you have enough quantity on hand (QOH) of a
+        line item prior to issuing to shipping. If selected, this option will
+        prevent you from issuing line item quantity to shipping if doing so
+        would force QOH for the item site to fall below zero. Not selecting
+        this option means issuing stock to shipping may drive item site QOH
+        negative.</para>
+
+        <note>
+          <para>If your site is configured to enable sales order reservations,
+          which, by definition, require sufficient inventory before items may
+          be shipped, then the <guilabel>Require sufficient
+          Inventory</guilabel> option will selected and disabled.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Line Items with Reservations</term>
+
+      <listitem>
+        <para>Display lists sales order line items available for shipping with
+        expanded view of reserved items. If the scheduled date for an
+        unshipped line item is in the future, the line will display in green
+        text. If the scheduled date for an unshipped line item is not in the
+        future, the line will display in red text. Once shipped, all line
+        items revert to black text. To manually reserve or unreserve stock for
+        an order item, right click on reserved item quantity in the expanded
+        view.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Issue Items Using Bar Code</term>
+
+      <listitem>
+        <para>This is an optional field which allows you to issue stock to
+        shipping using a bar code scanner. Enter a bar code for a sales order
+        line item using a bar code scanner—or manually enter the bar code. The
+        bar code for an item is stored on the Item master. Once the code is
+        entered, specify a quantity and then select the
+        <guibutton>FIND</guibutton> button to issue the line item quantity to
+        shipping. You may also hit the <guibutton>ENTER</guibutton> key on
+        your keyboard to select the <guibutton>FIND</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>Most scanners allow you to change a setting that automatically sends
+    the <guibutton>ENTER</guibutton> command after a scan. This allows
+    keyboard-free entry.</para>
+  </tip>
+
+  <note>
+    <para>The issue to shipping window will accept a variety of xTuple
+    formatted bar codes that print on standard paperwork including sales order
+    header number, line number, work order number, and item number. These
+    specially formatted bar codes allow xTuple to recognize the bar code input
+    regardless of where the cursor is on the window. Bar codes, however, do
+    not have the necessary prefix embedded in the code to explicitly tell the
+    window it is a bar code, which is why xTuple requires the cursor to be
+    focused on the bar code field if bar codes are being scanned.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Qty.</term>
+
+      <listitem>
+        <para>Specify the quantity of line items to be issued using a bar
+        code. To issue the line item quantity to shipping, select the
+        <guibutton>FIND</guibutton> button—or hit the
+        <guibutton>ENTER</guibutton> key on your keyboard to select the
+        <guibutton>FIND</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>If the <guilabel>Require Reservations</guilabel> setting is selected
+    under <guimenuitem>Sales Order &gt; Setup</guimenuitem>, you will not be
+    able to issue more than what is reserved.</para>
+  </note>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>SHIP</guibutton></term>
+
+      <listitem>
+        <para>Select to ship the specified sales order, as described in <xref
+        linkend="shipOrder"/>.</para>
+
+        <note>
+          <para>If an order is marked <guilabel>Ship Complete</guilabel>, you
+          will be prevented from shipping the order until all line item
+          quantities are issued to shipping.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>ISSUE STOCK</guibutton></term>
+
+      <listitem>
+        <para>Highlight a line item, then select this button to issue stock to
+        shipping. You may also double-click on a line item to reach the Issue
+        Stock screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>If an item issued to shipping is a <indexterm significance="normal">
+        <primary>multiple location control</primary>
+
+        <secondary>impact on shipping</secondary>
+      </indexterm> <indexterm significance="normal">
+        <primary>shipping</primary>
+
+        <secondary>MLC impact on</secondary>
+      </indexterm>multiple location control (MLC) item, you will be prompted
+    to specify the location you want to issue stock from.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ISSUE LINE</guibutton></term>
+
+      <listitem>
+        <para>Highlight a line item, then select this button to issue the
+        balance of the line to shipping.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>RETURN STOCK</guibutton></term>
+
+      <listitem>
+        <para>Highlight a line item, then select this button to remove the
+        line quantity from shipping, returning the stock to inventory. This
+        button will only be enabled only if there is line item quantity at
+        shipping. If the original line item you shipped was either lot/serial
+        or multiple location controlled, the system will automatically put the
+        inventory back where it came from.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>If your site integrates UPS WorldShip with the system, you should
+    process orders in WorldShip after they have been issued to shipping—but
+    before they have been shipped.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ISSUE ALL</guibutton></term>
+
+      <listitem>
+        <para>Select to issue all line items to shipping simultaneously. If
+        some line items have insufficient quantity to ship, these will be
+        prevented; however, all line items with sufficient quantity will be
+        issued.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>FIND</guibutton></term>
+
+      <listitem>
+        <para>Compares the bar code entered in the <guilabel>Issue Items Using
+        Bar code</guilabel> field with the bar codes for the listed sales
+        order line items, then issues to shipping the quantity specified in
+        the <guilabel>Qty.</guilabel> field. The <guibutton>FIND</guibutton>
+        button may be selected using your mouse—or by hitting the
+        <guibutton>ENTER</guibutton> key, which corresponds to the
+        <guibutton>FIND</guibutton> button. Because the
+        <guibutton>FIND</guibutton> button corresponds to the
+        <guibutton>ENTER</guibutton> key, you can scan in a bar code and then
+        hit <guibutton>ENTER</guibutton> to issue a quantity of one to
+        shipping. If you prefer, you can scan in a bar code and then specify a
+        different quantity before hitting <guibutton>ENTER</guibutton>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="issueLineToShipping.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

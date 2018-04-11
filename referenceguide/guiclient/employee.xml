@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="employee">
+  <title><indexterm significance="normal">
+      <primary>employees</primary>
+      <secondary>creating new</secondary>
+    </indexterm>New Employee</title>
+  <para>Employees are people who work for your company. An employee may or may
+  not be an xTuple ERP system user. To create a new employee navigate to
+  <guimenuitem>System &gt; Employees &gt; New</guimenuitem>. You'll see the
+  following screen:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee.png" />
+        </imageobject>
+        <caption>Create new Employee</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new employee, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Employee</term>
+      <listitem>
+        <para>Enter a code to identify the employee. This is the same as the
+        employee's CRM account number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Employee Number</term>
+      <listitem>
+        <para>Enter a number to uniquely identify the employee. This is the
+        same as a badge number for the employee.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Employee Name</term>
+      <listitem>
+        <para>Enter the full name of the employee. This is the same as the
+        employee's CRM account name.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select if the employee is currently active. Not selecting makes
+        the employee inactive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Contact</term>
+      <listitem>
+        <para>Manually enter employee contact information in the fields
+        below—or use the lookup features to select pre-existing contact and
+        address information.</para>
+        <note>
+          <para>If new contact or address information is manually entered
+          here, that information will be added automatically to the master
+          list of Contacts and/or Addresses.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ACCOUNT</guibutton></term>
+      <listitem>
+        <para>Select to open the employee's account.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To associate an image with an employee, select the
+  <guimenuitem>Image</guimenuitem> tab. The following screen will
+  appear:</para>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="images/employee_imageTab.png" />
+    </imageobject>
+    <caption>Employee Image</caption>
+  </mediaobject>
+  <para>When associating an image with an employee, you will be presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Picture</term>
+      <listitem>
+        <para>Select an image from the list of available images to associate
+        with the employee. You can learn more about adding images to the
+        database here <xref linkend="images" />.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To specify administrative details related to an employee, select the
+  <guimenuitem>Detail</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee_detailTab.png" />
+        </imageobject>
+        <caption>Employee Details</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When specifying administrative details related to an employee, you
+  will be presented with the following options:</para>
+  <variablelist>
+    <varlistentry role="standard">
+      <term>Site</term>
+      <listitem>
+        <para>Specify the site (i.e., site, store location, etc.) where the
+        employee is principally located.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Manager</term>
+      <listitem>
+        <para>Enter the name of the employee's manager.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Dept.</term>
+      <listitem>
+        <para>Specify the employee's department.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="manufacturing">
+      <term>Shift</term>
+      <listitem>
+        <para>Specify the shift the employee generally works.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>User</term>
+      <listitem>
+        <para>If you have the ability to create new xTuple ERP system users,
+        then select this option to create the employee as a system user. If
+        the employee is already a system user, then this option will already
+        be checked.</para>
+        <tip>
+          <para>To ensure correspondence between the employee record and the
+          system user record, the employee name should match the employee's
+          system username.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sales Rep</term>
+      <listitem>
+        <para>Select if the employee is a sales representative. If the
+        employee is already listed as a sales rep., then this option will
+        already by checked.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view financial information related to an employee, select the
+  <guimenuitem>Financial</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee_financialTab.png" />
+        </imageobject>
+        <caption>Employee Financial information</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When viewing financial information related to an employee, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Type</term>
+      <listitem>
+        <para>Specify whether the employee is paid hourly or on a salary
+        basis.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Compensation</term>
+      <listitem>
+        <para>Enter the amount of the employee's compensation. The amount may
+        be specified per hour, day, week, bi-weekly, or year.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Contractor</term>
+      <listitem>
+        <para>Check this option if the employee is a contractor.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>External Billing Rate</term>
+      <listitem>
+        <para>Enter the rate used when billing customers for the employee's
+        time. The rate may be specified per hour, day, week, bi-weekly, or
+        year.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To add notes to an employee record, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee_notesTab.png" />
+        </imageobject>
+        <caption>Employee Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When adding notes to an employee, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the employee. Any notes entered on this screen are
+        for internal purposes only.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To add comments to an employee, select the
+  <guimenuitem>Comments</guimenuitem> tab at the bottom of the Employee
+  screen. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee_commentsTab.png" />
+        </imageobject>
+        <caption>Employee Comments</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <para>Employee characteristics are user-defined definitions of an employee
+  which may be used to provide additional layers of description. To enter
+  <indexterm significance="normal">
+      <primary>characteristics</primary>
+      <secondary>creating new for employees</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>employees</primary>
+      <secondary>characteristics for</secondary>
+    </indexterm>characteristics associated with an employee, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee_charactersticsTab.png" />
+        </imageobject>
+        <caption>Employee Characteristics</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <para>To associate group memberships with an employee, select the
+  <guimenuitem>Groups</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/employee_groupTab.png" />
+        </imageobject>
+        <caption>Employee Groups</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When associating group memberships with an employee, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>EDIT</guibutton></term>
+      <listitem>
+        <para>Enables you to edit highlighted employee groups. The edit screen
+        is the same as that for creating a new employee group—except that when
+        editing, the fields will contain employee group information.
+        Double-clicking on an employee group will also bring you to the
+        editing screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>VIEW</guibutton></term>
+      <listitem>
+        <para>Highlight an employee group and then select this button to reach
+        a read-only view of the Edit screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>DETACH</guibutton></term>
+      <listitem>
+        <para>Highlight an employee group and then select this button to
+        remove the association between the employee group and the
+        employee.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>ATTACH</guibutton></term>
+      <listitem>
+        <para>Select to associate a new employee group with the
+        employee.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view email associated with the employee, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

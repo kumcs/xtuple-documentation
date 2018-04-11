@@ -1,0 +1,816 @@
+====================================================================
+NEW REPORTS:
+1096Form
+1099Form
+1099Info
+APOpenItem
+GLSimple
+QOHByZone
+StatementbyCustomerGroup
+TaxReturn
+====================================================================
+CHANGED REPORTS:
+APCheck
+ARApplications
+AROpenItem
+CCReceipt
+CashReceiptsEditList
+CharacteristicsMasterList
+CheckMultiPage
+CreditMemo
+CustomerInformation
+GLTransactions
+InvoiceInformation
+PurchaseOrder
+TaxHistoryDetail
+TaxHistorySummary
+UnpostedGlSeries
+UnpostedReturnsForPO
+
+
+   ====================================================================
+   REPORT: APCheck
+   QUERY: Head
+   SELECT
+   checkhead_id, checkhead_number, checkhead_for AS memo,
+   formatDate(checkhead_checkdate) AS f_checkdate,
+   formatMoney(checkhead_amount) AS f_amount,
+-  INITCAP(spellAmount(checkhead_amount, curr_id)) AS f_words,
++  spellAmount(checkhead_amount, curr_id) AS f_words,
+   CASE WHEN(checkhead_void) THEN TEXT('V O I D')
+        ELSE TEXT('')
+   END AS f_void,
+   CASE WHEN checkhead_recip_type = 'C' THEN (SELECT cust_number
+                                              FROM custinfo
+                                              WHERE (cust_id=checkhead_recip_id))
+        WHEN checkhead_recip_type = 'T' THEN (SELECT taxauth_code
+                                              FROM taxauth
+                                              WHERE (taxauth_id=checkhead_recip_id))
+        WHEN checkhead_recip_type = 'V' THEN (SELECT vend_number
+                                              FROM vendinfo
+                                              WHERE (vend_id=checkhead_recip_id))
+        ELSE 'Unknown Recipient Type'
+   END AS recip_number,
+   formatAddr(CASE WHEN checkhead_recip_type = 'C' THEN
+                                            (SELECT cntct_addr_id
+                                             FROM cntct, custinfo
+                                             WHERE ((cust_cntct_id=cntct_id)
+                                               AND  (cust_id=checkhead_recip_id)))
+                   WHEN checkhead_recip_type = 'T' THEN
+                                            (SELECT taxauth_addr_id
+                                             FROM taxauth
+                                             WHERE (taxauth_id=checkhead_recip_id))
+                   WHEN checkhead_recip_type = 'V' THEN
+                           COALESCE((SELECT vendaddr_addr_id
+                                     FROM vendaddrinfo
+                                     WHERE ((UPPER(vendaddr_code)='REMIT')
+                                       AND  (vendaddr_vend_id=checkhead_recip_id))),
+                                    (SELECT vend_addr_id
+                                     FROM vendinfo
+                                     WHERE (vend_id=checkhead_recip_id)))
+              END) AS check_address,
+   CASE WHEN checkhead_recip_type = 'C' THEN (SELECT cust_name
+                                              FROM custinfo
+                                              WHERE cust_id=checkhead_recip_id)
+        WHEN checkhead_recip_type = 'T' THEN (SELECT taxauth_name
+                                              FROM taxauth
+                                              WHERE taxauth_id=checkhead_recip_id)
+        WHEN checkhead_recip_type = 'V' THEN
+                            COALESCE((SELECT vendaddr_name
+                                      FROM vendaddrinfo
+                                      WHERE ((UPPER(vendaddr_code)='REMIT')
+                                        AND  (vendaddr_vend_id=checkhead_recip_id))),
+                                     (SELECT vend_name
+                                      FROM vendinfo
+                                      WHERE (vend_id=checkhead_recip_id)))
+   END AS recip_name,
+   curr_symbol, curr_abbr, curr_name
+   FROM checkhead, curr_symbol
+   WHERE ((checkhead_curr_id = curr_id)
+      AND (checkhead_id=<? value("checkhead_id") ?>) );
+
+   ====================================================================
+   REPORT: ARApplications
+   QUERY: detail
+   SELECT arapply_id,
+          formatDate(arapply_postdate) AS f_postdate,
+          formatMoney(arapply_applied) AS f_applied,
+          cust_number, cust_name,
+         (CASE WHEN (arapply_source_doctype='C') THEN <? value("creditMemo") ?>
+               WHEN (arapply_source_doctype='R') THEN <? value("cashdeposit") ?>
+-              WHEN (arapply_fundstype='C') THEN <? value("check") ?>
+-              WHEN (arapply_fundstype='T') THEN <? value("certifiedCheck") ?>
+-              WHEN (arapply_fundstype='M') THEN <? value("masterCard") ?>
+-              WHEN (arapply_fundstype='V') THEN <? value("visa") ?>
+-              WHEN (arapply_fundstype='A') THEN <? value("americanExpress") ?>
+-              WHEN (arapply_fundstype='D') THEN <? value("discoverCard") ?>
+-              WHEN (arapply_fundstype='R') THEN <? value("otherCreditCard") ?>
+-              WHEN (arapply_fundstype='K') THEN <? value("cash") ?>
+-              WHEN (arapply_fundstype='W') THEN <? value("wireTransfer") ?>
+-              WHEN (arapply_fundstype='O') THEN <? value("other") ?>
++              ELSE getFundsTypeName(arapply_fundstype)
+          END || ' ' ||
+          CASE WHEN (arapply_source_doctype IN ('C','R')) THEN TEXT(arapply_source_docnumber)
+               ELSE arapply_refnumber
+          END) AS source,
+         (CASE WHEN (arapply_target_doctype='D') THEN <? value("debitMemo") ?>
+               WHEN (arapply_target_doctype='I') THEN <? value("invoice") ?>
+               WHEN (arapply_target_doctype='K') THEN <? value("apcheck") ?>
+               ELSE <? value("other") ?>
+          END || ' ' ||
+          TEXT(arapply_target_docnumber)) AS target,
+          currConcat(arapply_curr_id) AS currAbbr,
+          currtobase(arapply_curr_id,arapply_applied,arapply_postdate) AS base_applied
+   FROM arapply, custinfo
+   WHERE ( (arapply_cust_id=cust_id)
+     AND   (arapply_postdate BETWEEN <? value("startDate") ?> AND <? value("endDate") ?>)
+     AND   (arapply_source_doctype IN (
+   <? if exists("includeCreditMemos") ?>
+     <? if exists("includeCashReceipts") ?>
+               'K', 'C', 'R'
+     <? else ?>
+               'C', 'R'
+     <? endif ?>
+   <? else ?>
+               'K'
+   <? endif ?> ))
+   <? if exists("cust_id") ?>
+     AND   (cust_id=<? value("cust_id") ?>)
+   <? elseif exists("custtype_id") ?>
+     AND   (cust_custtype_id=<? value("custtype_id") ?>)
+   <? elseif exists("custtype_pattern") ?>
+     AND   (cust_custtype_id IN (SELECT custtype_id FROM custtype
+                                 WHERE (custtype_code ~ <? value("custtype_pattern") ?>)))
+   <? endif ?>
+         )
+   ORDER BY arapply_postdate, source;
+
+   ====================================================================
+   REPORT: AROpenItem
+   QUERY: head
+   SELECT aropen_cust_id, aropen_docdate, aropen_duedate,
+   aropen_doctype,
+   CASE WHEN (aropen_doctype = 'C' AND ((SELECT COUNT(*) AS num_rows FROM cmhead, aropen WHERE cmhead_number = aropen_ordernumber AND aropen_id = <? value("aropen_id") ?> ) = 0)) THEN 'Misc. Credit Memo'
+        WHEN (aropen_doctype = 'D' AND ((SELECT COUNT(*) AS num_rows FROM cmhead, aropen WHERE cmhead_number = aropen_ordernumber AND aropen_id = <? value("aropen_id") ?> ) = 0)) THEN 'Misc. Debit Memo'
+        WHEN (aropen_doctype = 'C' AND ((SELECT COUNT(*) AS num_rows FROM cmhead, aropen WHERE cmhead_number = aropen_ordernumber AND aropen_id = <? value("aropen_id") ?> ) > 0)) THEN 'Credit Memo'
+        WHEN (aropen_doctype = 'D' AND ((SELECT COUNT(*) AS num_rows FROM cmhead, aropen WHERE cmhead_number = aropen_ordernumber AND aropen_id = <? value("aropen_id") ?> ) > 0)) THEN 'Debit Memo'
+        END AS doc_name,
+   aropen_docnumber,
+   aropen_ordernumber, aropen_journalnumber,
+   aropen_amount, aropen_amount,
+   aropen_paid,
+   (aropen_amount - aropen_paid) AS f_balance,
+   aropen_terms_id, aropen_salesrep_id,
+   aropen_commission_due,
+   aropen_notes, aropen_rsncode_id, aropen_salescat_id,
+   aropen_accnt_id, aropen_curr_id, cust_name, salesrep_name, terms_code,
+   rsncode_code, formatboolyn(aropen_commission_paid) AS commission_paid
+   FROM aropen
+   JOIN custinfo ON(cust_id = aropen_cust_id)
+   LEFT OUTER JOIN salesrep ON(aropen_salesrep_id = salesrep_id)
+   LEFT OUTER JOIN terms ON(terms_id = aropen_terms_id)
+   LEFT OUTER JOIN rsncode ON(rsncode_id = aropen_rsncode_id)
+   WHERE (aropen_id=<? value("aropen_id") ?>)
+   --------------------------------------------------------------------
+
+   QUERY: applications
+   <? if exists("docTypeID") ?>
+   SELECT arapply_id, arapply_source_aropen_id,
+        CASE WHEN (arapply_source_doctype = 'C') THEN <? value("creditMemo") ?>
+          WHEN (arapply_source_doctype = 'R') THEN <? value("cashdeposit") ?>
+-         WHEN (arapply_fundstype='C') THEN <? value("check") ?>
+-         WHEN (arapply_fundstype='T') THEN <? value("certifiedCheck") ?>
+-         WHEN (arapply_fundstype='M') THEN <? value("masterCard") ?>
+-         WHEN (arapply_fundstype='V') THEN <? value("visa") ?>
+-         WHEN (arapply_fundstype='A') THEN <? value("americanExpress") ?>
+-         WHEN (arapply_fundstype='D') THEN <? value("discoverCard") ?>
+-         WHEN (arapply_fundstype='R') THEN <? value("otherCreditCard") ?>
+-         WHEN (arapply_fundstype='K') THEN <? value("cash") ?>
+-         WHEN (arapply_fundstype='W') THEN <? value("wireTransfer") ?>
+-         WHEN (arapply_fundstype='O') THEN <? value("other") ?>
++         ELSE getFundsTypeName(arapply_fundstype)
+        END AS doctype,
+        CASE WHEN (arapply_source_doctype IN ('C','R')) THEN arapply_source_docnumber
+        WHEN (arapply_source_doctype = 'K') THEN arapply_refnumber
+        ELSE 'Other'
+        END AS docnumber,
+   arapply_postdate, arapply_applied,
+   currConcat(arapply_curr_id) AS currabbr,
+   currToBase(arapply_curr_id, arapply_applied, arapply_postdate) AS baseapplied,
+   'curr' AS arapply_applied_xtnumericrole,
+   'curr' AS baseapplied_xtnumericrole
+   FROM arapply
+   WHERE (arapply_target_aropen_id=<? value("aropen_id") ?> )
+   ORDER BY arapply_postdate
+
+   <? elseif exists("docTypeRC") ?>
+
+   SELECT arapply_id, arapply_target_aropen_id,
+        CASE WHEN (arapply_target_doctype = 'I') THEN <? value("invoice") ?>
+         WHEN (arapply_target_doctype = 'D') THEN <? value("debitMemo") ?>
+         WHEN (arapply_target_doctype = 'K') THEN <? value("apcheck") ?>
+         WHEN (arapply_target_doctype = 'R') THEN <? value("cashreceipt") ?>
+         ELSE <? value("other") ?>
+        END AS doctype,
+   arapply_target_docnumber AS docnumber,
+   arapply_postdate, arapply_applied,
+   currConcat(arapply_curr_id) AS currabbr,
+   currToBase(arapply_curr_id, arapply_applied, arapply_postdate) AS baseapplied,
+   'curr' AS arapply_applied_xtnumericrole,
+   'curr' AS baseapplied_xtnumericrole
+   FROM arapply
+   WHERE (arapply_source_aropen_id=<? value("aropen_id") ?> )
+   ORDER BY arapply_postdate
+
+   <? endif ?>
+
+   ====================================================================
+   REPORT: CCReceipt
+   QUERY: detail
+-  SELECT *,
++  SELECT ccpay.*,
++         cust_name,
+          formatbytea(decrypt(setbytea(ccard_name),
+                              setbytea(<? value("key") ?>),
+                              'bf')) AS holder,
+          formatccnumber(decrypt(setbytea(ccard_number),
+                                 setbytea(<? value("key") ?>),
+                                 'bf')) AS xxxx,
+          CASE WHEN (ccpay_type='A') THEN <? value("preauth") ?>
+               WHEN (ccpay_type='C') THEN <? value("charge") ?>
+               WHEN (ccpay_type='R') THEN <? value("refund") ?>
+               ELSE ccpay_type
+          END AS type,
+          CASE WHEN (ccpay_status='A') THEN <? value("authorized") ?>
+               WHEN (ccpay_status='C') THEN <? value("approved") ?>
+               WHEN (ccpay_status='D') THEN <? value("declined") ?>
+               WHEN (ccpay_status='R') THEN <? value("reversed") ?>
+               WHEN (ccpay_status='V') THEN <? value("voided") ?>
+               WHEN (ccpay_status='X') THEN <? value("noapproval") ?>
+               ELSE ccpay_status
+          END AS status
+
+   FROM ccpay JOIN
+        ccard ON (ccpay_ccard_id=ccard_id) JOIN
+        custinfo ON (ccard_cust_id=cust_id)
+   WHERE (ccpay_id=<? value("ccpay_id") ?>);
+
+   ====================================================================
+   REPORT: CashReceiptsEditList
+   QUERY: detail
+   SELECT cashrcpt_id, 1 AS orderBy,
+          cust_number, cust_name,
+          formatDate(cashrcpt_distdate) AS f_distdate,
+-         CASE WHEN (cashrcpt_fundstype = 'C') THEN <? value("check") ?>
+-              WHEN (cashrcpt_fundstype = 'T') THEN <? value("certifiedCheck") ?>
+-              WHEN (cashrcpt_fundstype = 'M') THEN <? value("masterCard") ?>
+-              WHEN (cashrcpt_fundstype = 'V') THEN <? value("visa") ?>
+-              WHEN (cashrcpt_fundstype = 'A') THEN <? value("americanExpress") ?>
+-              WHEN (cashrcpt_fundstype = 'D') THEN <? value("discoverCard") ?>
+-              WHEN (cashrcpt_fundstype = 'R') THEN <? value("otherCreditCard") ?>
+-              WHEN (cashrcpt_fundstype = 'K') THEN <? value("cash") ?>
+-              WHEN (cashrcpt_fundstype = 'W') THEN <? value("wireTransfer") ?>
+-              ELSE <? value("other") ?>
+-         END AS f_fundstype,
++         getFundsTypeName(cashrcpt_fundstype) AS f_fundstype,
+          'C/R' AS doctype,
+          cashrcpt_docnumber AS docnumber,
+          cashrcpt_amount AS amount,
+          formatMoney(cashrcpt_amount) AS f_amount,
+          0 AS detailedamount,
+          formatMoney(0) AS f_detailedamount,
+          bankaccnt_name
+   FROM cashrcpt, bankaccnt, custinfo
+   WHERE ( (cashrcpt_bankaccnt_id=bankaccnt_id)
+     AND   (cashrcpt_cust_id=cust_id)
+     AND   (NOT cashrcpt_posted)
+     AND   (NOT cashrcpt_void) )
+
+   UNION
+   SELECT cashrcpt_id, 2 AS orderBy,
+          '' AS cust_number, '' AS cust_name,
+          '' AS f_distdate,
+          '' AS f_fundstype,
+          aropen_doctype AS doctype,
+          aropen_docnumber AS docnumber,
+          0 AS amount,
+          formatMoney(0) AS f_amount,
+          cashrcptitem_amount AS detailedamount,
+          formatMoney(cashrcptitem_amount) AS f_detailedamount,
+          '' AS bankaccnt_name
+   FROM cashrcptitem, cashrcpt, aropen
+   WHERE ( (cashrcptitem_cashrcpt_id=cashrcpt_id)
+     AND   (cashrcptitem_aropen_id=aropen_id)
+     AND   (NOT cashrcpt_posted)
+     AND   (NOT cashrcpt_void) )
+
+   UNION
+   SELECT cashrcpt_id, 3 AS orderBy,
+          '' AS cust_number, '' AS cust_name,
+          '' AS f_distdate,
+          '' AS f_fundstype,
+          'Misc.' AS doctype,
+          (formatGLAccount(accnt_id) || '-' || accnt_descrip) AS docnumber,
+          0 AS amount,
+          formatMoney(0) AS f_amount,
+          cashrcptmisc_amount AS detailedamount,
+          formatMoney(cashrcptmisc_amount) AS f_detailedamount,
+          '' AS bankaccnt_name
+   FROM cashrcptmisc, cashrcpt, accnt
+   WHERE ( (cashrcptmisc_cashrcpt_id=cashrcpt_id)
+     AND   (cashrcptmisc_accnt_id=accnt_id)
+     AND   (NOT cashrcpt_posted)
+     AND   (NOT cashrcpt_void) )
+
+   ORDER BY cashrcpt_id, orderBy;
+
+   ====================================================================
+   REPORT: CharacteristicsMasterList
+   QUERY: detail
+   SELECT char_id,
+          char_name,
+-         formatBoolYN(char_items) AS f_items,
+-         formatBoolYN(char_options) AS f_options,
+-         formatBoolYN(char_attributes) AS f_attributes,
+-         formatBoolYN(char_lotserial) AS f_lotserial,
++         string_agg(source_charass, ', ') AS abbrs,
++         string_agg(source_descrip, ', ') AS names,
+          char_notes
+     FROM char
++    LEFT OUTER JOIN charuse ON char_id = charuse_char_id
++    LEFT OUTER JOIN source  ON charuse_target_type = source_charass                                                                                        GROUP BY char_id, char_name, char_notes
+   ORDER BY char_name;
+
+   ====================================================================
+   REPORT: CheckMultiPage
+   QUERY: Head
+   SELECT
+   checkhead_id, checkhead_number, checkhead_for AS memo,
+   formatDate(checkhead_checkdate) AS f_checkdate,
+   formatMoney(checkhead_amount) AS f_amount,
+-  INITCAP(spellAmount(checkhead_amount, curr_id)) AS f_words,
++  spellAmount(checkhead_amount, curr_id) AS f_words,
+   CASE WHEN(checkhead_void) THEN TEXT('V O I D')
+        ELSE TEXT('')
+   END AS f_void,
+   CASE WHEN checkhead_recip_type = 'C' THEN (SELECT cust_number
+                                              FROM custinfo
+                                              WHERE (cust_id=checkhead_recip_id))
+        WHEN checkhead_recip_type = 'T' THEN (SELECT taxauth_code
+                                              FROM taxauth
+                                              WHERE (taxauth_id=checkhead_recip_id))
+        WHEN checkhead_recip_type = 'V' THEN (SELECT vend_number
+                                              FROM vendinfo
+                                              WHERE (vend_id=checkhead_recip_id))
+        ELSE 'Unknown Recipient Type'
+   END AS recip_number,
+   formatAddr(CASE WHEN checkhead_recip_type = 'C' THEN
+                                            (SELECT cntct_addr_id
+                                             FROM cntct, custinfo
+                                             WHERE ((cust_cntct_id=cntct_id)
+                                               AND  (cust_id=checkhead_recip_id)))
+                   WHEN checkhead_recip_type = 'T' THEN
+                                            (SELECT taxauth_addr_id
+                                             FROM taxauth
+                                             WHERE (taxauth_id=checkhead_recip_id))
+                   WHEN checkhead_recip_type = 'V' THEN
+                           COALESCE((SELECT vendaddr_addr_id
+                                     FROM vendaddrinfo
+                                     WHERE ((UPPER(vendaddr_code)='REMIT')
+                                       AND  (vendaddr_vend_id=checkhead_recip_id))),
+                                    (SELECT vend_addr_id
+                                     FROM vendinfo
+                                     WHERE (vend_id=checkhead_recip_id)))
+              END) AS check_address,
+   CASE WHEN checkhead_recip_type = 'C' THEN (SELECT cust_name
+                                              FROM custinfo
+                                              WHERE cust_id=checkhead_recip_id)
+        WHEN checkhead_recip_type = 'T' THEN (SELECT taxauth_name
+                                              FROM taxauth
+                                              WHERE taxauth_id=checkhead_recip_id)
+        WHEN checkhead_recip_type = 'V' THEN
+                            COALESCE((SELECT vendaddr_name
+                                      FROM vendaddrinfo
+                                      WHERE ((UPPER(vendaddr_code)='REMIT')
+                                        AND  (vendaddr_vend_id=checkhead_recip_id))),
+                                     (SELECT vend_name
+                                      FROM vendinfo
+                                      WHERE (vend_id=checkhead_recip_id)))
+   END AS recip_name,
+   curr_symbol, curr_abbr, curr_name
+   FROM checkhead, curr_symbol
+   WHERE ((checkhead_curr_id = curr_id)
+      AND (checkhead_id=<? value("checkhead_id") ?>) );
+
+   ====================================================================
+   REPORT: CreditMemo
+   QUERY: Detail
+   SELECT cmitem_linenumber,
+          formatQty(cmitem_qtycredit) AS qtycredit,
+          formatQty(cmitem_qtyreturned) AS qtyreturned,
+          uom_name,
+-         item_number,
+-         item_descrip1,
++         COALESCE(item_number, cmitem_number) AS item_number,
++         COALESCE(item_descrip1, cmitem_descrip) AS item_descrip1,
+          item_descrip2,
+          formatSalesPrice(cmitem_unitprice) AS unitprice,
+          formatMoney((cmitem_qtycredit * cmitem_qty_invuomratio) * (cmitem_unitprice / cmitem_price_invuomratio)) AS extprice,
+          cmitem_comments
+-    FROM cmitem, itemsite, item, uom
+-   WHERE ((cmitem_itemsite_id=itemsite_id)
+-     AND (itemsite_item_id=item_id)
+-     AND (item_inv_uom_id=uom_id)
+-     AND (cmitem_cmhead_id=<? value("cmhead_id") ?>))
++    FROM cmitem
++    LEFT OUTER JOIN itemsite ON (cmitem_itemsite_id=itemsite_id)
++    LEFT OUTER JOIN item ON (itemsite_item_id=item_id)
++    LEFT OUTER JOIN uom ON (item_inv_uom_id=uom_id)
++  WHERE (cmitem_cmhead_id=<? value("cmhead_id") ?>)
+   ORDER BY cmitem_linenumber;
+   --------------------------------------------------------------------
+
+   QUERY: GroupFoot
+   SELECT formatExtPrice(SUM((cmitem_qtycredit * cmitem_qty_invuomratio) * cmitem_unitprice / cmitem_price_invuomratio)) AS extprice
+-    FROM cmhead, cmitem, itemsite, item
+-   WHERE ((cmitem_cmhead_id=cmhead_id)
+-     AND (cmitem_itemsite_id=itemsite_id)
+-     AND (itemsite_item_id=item_id)
+-     AND (cmhead_id=<? value("cmhead_id") ?>));
++    FROM cmhead
++    LEFT OUTER JOIN cmitem ON (cmitem_cmhead_id=cmhead_id)
++    LEFT OUTER JOIN itemsite ON (cmitem_itemsite_id=itemsite_id)
++    LEFT OUTER JOIN item ON (itemsite_item_id=item_id)
++  WHERE (cmhead_id=<? value("cmhead_id") ?>);
+
+   ====================================================================
+   REPORT: CustomerInformation
+   QUERY: History
+   SELECT aropen_cust_id AS cust_id,
+          aropen_id AS aropenid, -1 AS applyid,
+          aropen_docnumber AS sortnumber,
+          aropen_docnumber AS docnumber,
+          formatBoolYN(aropen_open) AS f_open,
+          CASE WHEN (aropen_doctype='I') THEN text('Invoice')
+               WHEN (aropen_doctype='C') THEN text('C/M')
+               WHEN (aropen_doctype='D') THEN text('D/M')
+               WHEN (aropen_doctype='R') THEN text('C/D')
+               ELSE text('Other')
+          END AS documenttype,
+          formatDate(aropen_docdate) AS f_docdate,
+          formatDate(aropen_duedate) AS f_duedate,
+          formatMoney(aropen_amount) AS f_amount,
+          formatMoney((aropen_amount - aropen_paid)) AS f_balance
+   FROM aropen
+   WHERE (aropen_cust_id=<? value("cust_id") ?>)
+
+   UNION
+   SELECT aropen_cust_id AS cust_id,
+          -1 AS aropenid, arapply_source_aropen_id AS applyid,
+          aropen_docnumber AS sortnumber,
+          CASE WHEN (arapply_source_doctype='C') THEN arapply_source_docnumber
+               WHEN (arapply_source_doctype='K') THEN arapply_refnumber
+               ELSE :error
+          END AS docnumber,
+          '' AS f_open,
+          CASE WHEN (arapply_source_doctype='C') THEN text('C/M')
+-              WHEN (arapply_fundstype='C') THEN text('Check')
+-              WHEN (arapply_fundstype='T') THEN text('Certified Check')
+-              WHEN (arapply_fundstype='M') THEN text('Master Card')
+-              WHEN (arapply_fundstype='V') THEN text('Visa')
+-              WHEN (arapply_fundstype='A') THEN text('American Express')
+-              WHEN (arapply_fundstype='D') THEN text('Discover Card')
+-              WHEN (arapply_fundstype='R') THEN text('Other Credit Card')
+-              WHEN (arapply_fundstype='K') THEN text('Cash')
+-              WHEN (arapply_fundstype='W') THEN text('Wire Transfer')
+-              WHEN (arapply_fundstype='O') THEN text('Other')
++              ELSE getFundsTypeName(arapply_fundstype)
+          END AS documenttype,
+          formatDate(arapply_postdate) AS f_docdate,
+          '' AS f_duedate,
+          formatMoney(arapply_applied) AS f_amount,
+          '' AS f_balance
+   FROM arapply, aropen
+   WHERE ( (arapply_target_doctype IN ('I', 'D'))
+    AND (arapply_target_doctype=aropen_doctype)
+    AND (arapply_target_docnumber=aropen_docnumber)
+    AND (arapply_cust_id=<? value("cust_id") ?>)
+    AND (aropen_cust_id=<? value("cust_id") ?>) )
+
+   UNION
+   SELECT aropen_cust_id AS cust_id,
+          -1 AS aropenid, arapply_target_aropen_id AS applyid,
+          aropen_docnumber AS sortnumber,
+          arapply_target_docnumber AS docnumber,
+          '' AS f_open,
+          CASE WHEN (arapply_target_doctype='I') THEN text('Invoice')
+               WHEN (arapply_target_doctype='D') THEN text('D/M')
+               ELSE text('Other')
+          END AS documenttype,
+          formatDate(arapply_postdate) AS f_docdate,
+          '' AS f_duedate,
+          formatMoney(arapply_applied) AS f_amount,
+          '' AS f_balance
+   FROM arapply, aropen
+   WHERE ( (arapply_source_doctype IN ('K', 'C'))
+    AND (arapply_source_doctype=aropen_doctype)
+    AND (arapply_source_docnumber=aropen_docnumber)
+    AND (arapply_cust_id=<? value("cust_id") ?>)
+    AND (aropen_cust_id=<? value("cust_id") ?>) )
+
+   ORDER BY sortnumber, applyid;
+   --------------------------------------------------------------------
+
+   ====================================================================
+   REPORT: GLTransactions
+   QUERY: detail
+   <? if exists("beginningBalance") ?>
+   SELECT -1 AS gltrans_id,
+          <? value("startDate") ?> AS gltrans_created, formatDate(<? value("startDate") ?>) AS transdate,
+          '' AS gltrans_source, '' AS gltrans_doctype, '' AS gltrans_docnumber, '' AS invhist_docnumber,
+          'Beginning Balance' AS transnotes,
+          (formatGLAccount(accnt_id) || ' - ' || accnt_descrip) AS account,
+          '' AS f_debit,
+          0.0 AS debit_amt,
+          '' AS f_credit,
+          0.0 AS credit_amt,
+          <? value("beginningBalance") ?> AS balance_amt,
+          <? value("beginningBalance") ?> AS gltrans_amount,
+          <? value("beginningBalance") ?> AS running,
+          NULL AS f_posted,
+          NULL AS f_deleted,
+-         NULL AS f_username,
++         NULL::TEXT AS f_username,
+          -1 AS gltrans_sequence
+    FROM accnt
+    WHERE (accnt_id=<? value("accnt_id") ?>)
+   UNION
+   <? endif ?>
+
+   SELECT gltrans_id,
+          gltrans_created, formatDate(gltrans_date) AS transdate,
+          gltrans_source, gltrans_doctype, gltrans_docnumber, invhist_docnumber,
+          firstLine(gltrans_notes) AS transnotes,
+          (formatGLAccount(accnt_id) || ' - ' || accnt_descrip) AS account,
+   -- Debits:
+          CASE WHEN (gltrans_amount < 0 AND NOT gltrans_deleted) THEN formatMoney(ABS(gltrans_amount))
+               ELSE ''
+          END AS f_debit,
+          CASE WHEN (gltrans_amount < 0 AND NOT gltrans_deleted) THEN ABS(gltrans_amount)
+               ELSE 0
+          END AS debit_amt,
+   --Credits:
+          CASE WHEN (gltrans_amount > 0 AND NOT gltrans_deleted) THEN formatMoney(gltrans_amount)
+               ELSE ''
+          END AS f_credit,
+          CASE WHEN (gltrans_amount > 0 AND NOT gltrans_deleted) THEN gltrans_amount
+               ELSE 0
+          END AS credit_amt,
+   --Balance:
+          CASE WHEN (accnt_type IN ('A','E') AND NOT gltrans_deleted) THEN
+            gltrans_amount * -1
+          WHEN (NOT gltrans_deleted) THEN
+            gltrans_amount
+          ELSE 0 END AS balance_amt,
+          gltrans_amount,
+          CASE WHEN (accnt_type IN ('A','E') AND NOT gltrans_deleted) THEN
+            gltrans_amount * -1
+          WHEN (NOT gltrans_deleted) THEN
+            gltrans_amount
+          ELSE 0 END AS running,
+          formatBoolYN(gltrans_posted) AS f_posted,
+          formatBoolYN(gltrans_deleted) AS f_deleted,
++         <? if exists("showUsernames") ?>
+          gltrans_username AS f_username,
++         <? else ?>
++           NULL::TEXT AS f_username,
++         <? endif ?>
+          gltrans_sequence
+   FROM gltrans JOIN accnt ON (gltrans_accnt_id=accnt_id)
+        LEFT OUTER JOIN invhist ON (gltrans_misc_id=invhist_id
+                               AND gltrans_docnumber='Misc.')
+   <? if exists("company_id") ?>
+        JOIN company ON (accnt_company=company_number)
+   <? endif ?>
+   <? if exists("prfcntr_id") ?>
+        JOIN prftcntr ON (accnt_profit=prftcntr_number)
+   <? endif ?>
+   <? if exists("subaccnt_id") ?>
+        JOIN subaccnt ON (accnt_sub=subaccnt_number)
+   <? endif ?>
+   <? if exists("subType") ?>
+        JOIN subaccnttype ON (subaccnttype_code=accnt_subaccnttype_code)
+   <? endif ?>
+   WHERE (
+   <? if exists("startDate") ?>
+     <? if exists("endDate") ?>
+          (gltrans_date BETWEEN <? value("startDate") ?>
+                            AND <? value("endDate") ?>)
+     <? else ?>
+          (gltrans_date BETWEEN <? value("startDate") ?>
+                            AND endoftime())
+     <? endif ?>
+   <? else ?>
+     <? if exists("endDate") ?>
+          (gltrans_date BETWEEN startoftime()
+                            AND <? value("endDate") ?>)
+     <? else ?>
+          (gltrans_date BETWEEN startoftime()
+                            AND endoftime())
+     <? endif ?>
+   <? endif ?>
+   <? if not exists("showDeleted") ?>
+      AND (NOT gltrans_deleted)
+   <? endif ?>
+   <? if exists("company_id") ?>
+      AND (company_id=<? value("company_id") ?>)
+   <? endif ?>
+   <? if exists("prfcntr_id") ?>
+      AND (prftcntr_id=<? value("prfcntr_id") ?>)
+   <? endif ?>
+   <? if exists("accnt_number") ?>
+      AND (accnt_number=<? value("accnt_number") ?>)
+   <? endif ?>
+   <? if exists("subaccnt_id") ?>
+      AND (subaccnt_id=<? value("subaccnt_id") ?>)
+   <? endif ?>
+   <? if exists("subType") ?>
+      AND (subaccnttype_id=<? value("subType") ?>)
+   <? endif ?>
+   <? if exists("accntType") ?>
+      AND (accnt_type= <? value("accntType") ?>)
+   <? endif ?>
+   <? if exists("accnt_id") ?>
+      AND (gltrans_accnt_id=<? value("accnt_id") ?>)
+   <? endif ?>
+   <? if exists("docnum") ?>
+      AND (gltrans_docnumber = case when <? value("docnum") ?> = '' then
+    gltrans_docnumber else
+   <? value("docnum") ?> end )
+   <? endif ?>
+   <? if exists("source") ?>
+      AND (gltrans_source=<? value("source") ?>)
+   <? endif ?>
++
++  <? if exists("transamt") ?>
++  AND (abs(gltrans_amount)=<? value("transamt") ?>)
++  <? endif ?>
++  <? if exists("journalnum") ?>
++  AND (gltrans_journalnumber::text) ~* <? value("journalnum") ?>)
++  <? endif ?>
++  <? if exists("doctype") ?>
++  AND (gltrans_doctype = 'zz'
++  <? foreach("doctype") ?>
++  OR gltrans_doctype = <? value("doctype") ?>
++  <?endforeach ?>
++  )
++  <? endif ?>
++
+          )
+   ORDER BY gltrans_created <? if not exists("beginningBalance") ?> DESC <? endif ?>,
+           gltrans_sequence, gltrans_amount
+
+   ;
+
+   ====================================================================
+   REPORT: InvoiceInformation
+   QUERY: Details
+   SELECT 1 as grpnum,
+          arapply_id,
+          CASE WHEN (arapply_source_doctype = 'C') THEN text('C/M')
+-              WHEN (arapply_fundstype='C') THEN text('Check')
+-              WHEN (arapply_fundstype='T') THEN text('Certified Check')
+-              WHEN (arapply_fundstype='M') THEN text('Master Card')
+-              WHEN (arapply_fundstype='V') THEN text('Visa')
+-              WHEN (arapply_fundstype='A') THEN text('American Express')
+-              WHEN (arapply_fundstype='D') THEN text('Discover Card')
+-              WHEN (arapply_fundstype='R') THEN text('Other Credit Card')
+-              WHEN (arapply_fundstype='K') THEN text('Cash')
+-              WHEN (arapply_fundstype='W') THEN text('Wire Transfer')
+-              WHEN (arapply_fundstype='O') THEN text('Other')
++              ELSE getFundsTypeName(arapply_fundstype)
+          END AS documenttype,
+          CASE WHEN (arapply_source_doctype = 'C') THEN arapply_source_docnumber
+               WHEN (arapply_source_doctype = 'R') THEN arapply_source_docnumber
+               WHEN (arapply_source_doctype = 'K') THEN arapply_refnumber
+               ELSE text('Error')
+          END AS docnumber,
+          formatDate(arapply_postdate) AS f_postdate,
+          formatMoney(arapply_applied) AS f_amount
+     FROM arapply, invchead
+    WHERE ( (arapply_target_doctype='I')
+      AND (arapply_target_docnumber=invchead_invcnumber)
+      AND (invchead_id=<? value("invchead_id") ?>) )
+   ORDER BY arapply_postdate;
+   --------------------------------------------------------------------
+
+   ====================================================================
+   REPORT: PurchaseOrder
+   QUERY: Detail
+   SELECT poitem_linenumber,
+          poitem_comments,
+          poitem_linenumber AS f_line,
+-         item_number,
++         COALESCE(item_number, expcat_code) AS item_number,
+          poitem_vend_item_number,
+-         CASE WHEN (LENGTH(TRIM(BOTH '	' FROM poitem_vend_item_descrip)) <= 0) THEN
++         COALESCE(CASE WHEN (LENGTH(TRIM(BOTH '	' FROM poitem_vend_item_descrip)) <= 0) THEN
+             (item_descrip1 || '' || item_descrip2)
+          ELSE (poitem_vend_item_descrip)
+-         END AS itemdescription,
++         END, expcat_descrip) AS itemdescription,
+          formatQty(poitem_qty_ordered) AS f_ordered,
+          CASE WHEN (poitem_vend_uom LIKE '') THEN (uom_name)
+               ELSE (poitem_vend_uom)
+          END AS itemuom,
+-         formatPurchPrice(poitem_unitprice) AS f_price,
+-         formatExtPrice(poitem_unitprice * poitem_qty_ordered) AS f_extended,
++         CASE WHEN (<? value("showcosts") ?>=FALSE) THEN '---'
++              ELSE formatPurchPrice(poitem_unitprice) END AS f_price,
++         CASE WHEN (<? value("showcosts") ?>=FALSE) THEN '---'
++              ELSE  formatExtPrice(poitem_unitprice * poitem_qty_ordered) END AS f_extended,
+          formatDate(poitem_duedate) AS f_duedate,
+          characteristicsToString('PI', poitem_id, '=', ', ') AS poitem_characteristics
+   FROM poitem
+   	LEFT OUTER JOIN itemsite ON (poitem_itemsite_id = itemsite_id)
+   	LEFT OUTER JOIN (item JOIN uom ON (item_inv_uom_id=uom_id)) ON (itemsite_item_id = item_id)
++            LEFT OUTER JOIN expcat ON (poitem_expcat_id=expcat_id)
+   WHERE 	(poitem_pohead_id=<? value("pohead_id") ?>)
+   ORDER BY poitem_linenumber;
+   --------------------------------------------------------------------
+
+   ====================================================================
+   REPORT: TaxHistoryDetail
+   QUERY: detail
++  == MetaSQL statement taxHistory-detail
+
+   ====================================================================
+   REPORT: TaxHistorySummary
+   QUERY: detail
++  == MetaSQL statement taxHistory-detail
+
+   ====================================================================
+   REPORT: UnpostedGlSeries
+   QUERY: detail
+-  SELECT *, glseries_sequence,
++  SELECT glseries.*,
+          (formatGLAccount(glseries_accnt_id) || ' - ' ||
+                           accnt_descrip) AS account,
+          CASE WHEN (glseries_amount < 0) THEN
+              formatMoney(glseries_amount * -1)
+          ELSE '' END AS debit,
+          CASE WHEN (glseries_amount >= 0) THEN
+              formatMoney(glseries_amount)
+          ELSE '' END AS credit
+-  FROM glseries, accnt
+-  WHERE (glseries_accnt_id=accnt_id)
++         FROM glseries
++         JOIN accnt ON (glseries_accnt_id=accnt_id)
+   ORDER BY glseries_distdate, glseries_sequence, glseries_amount;
+
+   ====================================================================
+   REPORT: UnpostedReturnsForPO
+   QUERY: detail
+   SELECT poitem_linenumber,
+          COALESCE(item_number, 'Non-Inventory') AS item_number,
+          COALESCE(uom_name, 'N/A') AS uom_name,
+          poitem_vend_item_number, poitem_vend_uom,
+          formatQty(poitem_qty_ordered)  AS f_poitem_qty_ordered,
+          formatQty(poitem_qty_received) AS f_poitem_qty_received,
+          formatQty(poitem_qty_returned) AS f_poitem_qty_returned,
+          formatQty(SUM(COALESCE(poreject_qty, 0))) AS f_poreject_qty,
+-         rjctcode_code
++         rjctcode_code,
++         poreject_rma
+   FROM poreject LEFT OUTER JOIN rjctcode ON (poreject_rjctcode_id=rjctcode_id),
+        poitem LEFT OUTER JOIN
+        ( itemsite JOIN item
+          ON (itemsite_item_id=item_id) JOIN uom ON (item_inv_uom_id=uom_id)
+        ) ON (poitem_itemsite_id=itemsite_id)
+   WHERE ((poreject_poitem_id=poitem_id)
+     AND  (NOT poreject_posted)
+     AND  (poitem_pohead_id=<? value("pohead_id") ?>))
+   GROUP BY
+           poitem_linenumber,
+           item_number,
+           uom_name,
+           poitem_vend_item_number,
+           poitem_vend_uom,
+           poitem_qty_ordered,
+           poitem_qty_received,
+           poitem_qty_returned,
+-          rjctcode_code
++          rjctcode_code,
++          poreject_rma
+   ORDER BY poitem_linenumber;
+   --------------------------------------------------------------------
+
+   QUERY: pohead
+-  SELECT *
+-  FROM pohead, vendinfo
+-  WHERE ((pohead_vend_id=vend_id)
+-    AND  (pohead_id=<? value("pohead_id") ?>));
++  SELECT pohead_number vend_number
++      FROM pohead
++      JOIN vendinfo ON (pohead_vend_id=vend_id)
++      WHERE (pohead_id=<? value("pohead_id") ?>);

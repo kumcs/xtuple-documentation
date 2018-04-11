@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="deletePlannedOrder">
+  <title>Delete Planned Order</title>
+  <para>To delete a planned order, go to <guimenuitem>Schedule &gt; Scheduling
+  &gt; Delete Planned Order</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/deletePlannedOrder.png" />
+        </imageobject>
+        <caption>Delete Planned Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>Planned orders that have been firmed in the system will not be
+    deleted when this utility is run.</para>
+  </note>
+  <para>When deleting a planned order, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Planned Order #</term>
+      <listitem>
+        <para>Enter the planned order number of the planned order you want to
+        delete.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Indicates item whose planned order will be deleted.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Indicates planned order status.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Delete Child Orders</term>
+      <listitem>
+        <para>Select to simultaneously delete child orders for the parent
+        planned order. Child planned orders having a clearly defined
+        relationship to their parent planned order will be deleted.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>In some cases, the <guilabel>Delete Child Orders</guilabel> option
+    will not remove all the records you may assume it should. To ensure all
+    child orders are deleted after a parent planned order is deleted, re-run
+    MRP by planner code. Doing so will delete any remaining orphan
+    orders.</para>
+  </tip>
+</section>
