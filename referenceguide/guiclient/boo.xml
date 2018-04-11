@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="boo">
+  <title>Enter New Routing</title>
+  <para>To enter a new routing, go to <guimenuitem>Products &gt; Routing &gt;
+  New</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/boo.png" />
+        </imageobject>
+        <caption>Create new Routing</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new routing, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Enter the item number of the manufactured item you want to
+        create a routing for.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>operations</primary>
+          <secondary>expired from routings</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>routings</primary>
+          <secondary>expired operations in</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>expiration</primary>
+          <secondary>of operations in routings</secondary>
+        </indexterm>Show Expired Operations</term>
+      <listitem>
+        <para>Select to display expired operations in the Routing display.
+        Expired operations are operations that have been expired from the
+        routing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>operations</primary>
+          <secondary>adding to routings in future</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>routings</primary>
+          <secondary>future operations in</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>future</primary>
+          <secondary>of operations in routings</secondary>
+        </indexterm>Show Future Operations</term>
+      <listitem>
+        <para>Select to display future operations in the Routing display.
+        Future operations are operations that will be added to the routing at
+        a future point in time.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>routings</primary>
+          <secondary>revisions for</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>revisions</primary>
+          <secondary>in routings</secondary>
+        </indexterm>Revision</term>
+      <listitem>
+        <para>If revision control is enabled at your site, specify the routing
+        revision number you want to view. If none exists, simply enter a value
+        to create one. The status of the revision will also be displayed. The
+        following statuses apply to revisions:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Active</term>
+            <listitem>
+              <para>This is the current, default revision used for costing and
+              material requirements planning (MRP). Only one revision can be
+              active at the same time. Active revisions may be modified.
+              However, once a revision has been deactivated, it may only be
+              reactivated if you have enabled the configuration option to
+              allow for substitute revisions.</para>
+              <tip>
+                <para>The active revision becomes inactive when a pending or
+                substitute revision is activated. To activate a pending or
+                substitute revision, right-click on the magnifying glass next
+                to the item number and select
+                <guimenuitem>Activate</guimenuitem>. Inactive revisions cannot
+                be modified.</para>
+              </tip>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Pending</term>
+            <listitem>
+              <para>This is a revision that has never been used, but is under
+              development or consideration. You may store multiple pending
+              revisions. When a pending revision is entered in the
+              <guilabel>Revision</guilabel> field, an option to activate the
+              item will dynamically appear in the context menu after you
+              right-click on the magnifying glass next to the item number.
+              Select <guimenuitem>Activate</guimenuitem> from this context
+              menu to convert a pending revision to the active
+              revision.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Substitute</term>
+            <listitem>
+              <para>If you have enabled the configuration option to allow for
+              substitute revisions, this status will be available. If enabled,
+              any active revision will become a substitute revision when it is
+              deactivated. Substitute revisions serve as alternate revisions
+              which can be activated at a later date.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Inactive</term>
+            <listitem>
+              <para>This is a formerly active revision. Inactive revisions
+              cannot be modified—only viewed. They are stored to provide
+              historical, point-in-time build information, which may be used
+              for various purposes throughout the application. For example,
+              privileged users may select inactive revisions when processing
+              work orders or purchase orders. There is no limit to the number
+              of inactive revisions you may save.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Document #</term>
+      <listitem>
+        <para>If desired, enter a document number to further identify the bill
+        of materials (BOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Revision Date</term>
+      <listitem>
+        <para>Indicates the date of the revision. This field updates every
+        time the routing is saved.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>Once a revision date has been entered, the date field cannot be
+    erased. The specific date may be updated to reflect subsequent revisions,
+    but the field will never be null as long as the BOM exists.</para>
+  </note>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>work in process</primary>
+          <secondary>boo-defined locations for</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>bills of operations</primary>
+          <secondary>wip locations and</secondary>
+        </indexterm>Final Location</term>
+      <listitem>
+        <para>Select a final work-in-process (WIP) location. This is an
+        optional selection which may be used for tracking the site locations
+        of finished goods inventory as it moves through the manufacturing
+        process. The feature applies only to top-level, multiple location
+        control (MLC) items whose production is posted through work order
+        operations posting. If you choose to track finished MLC goods using
+        this feature, then the final location is the location where inventory
+        will be located when operations posting for the work order is
+        completed. If you do not wish to track WIP locations for finished MLC
+        goods, then you can ignore this option.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>bills of operations</primary>
+          <secondary>production lead times in</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>lead times</primary>
+          <secondary>in routings</secondary>
+        </indexterm>Production Lead Time</term>
+      <listitem>
+        <para>Lead time: Displays production lead time for the specified item.
+        The production lead time value is equal to the maximum execution day
+        value specified for listed operations. Each operation must have an
+        execution day specified. Based on values entered for all listed
+        operations, whichever execution day value is the maximum, that value
+        will be displayed as the production lead time for the routing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Close Work Order when full Qty. Posted</term>
+      <listitem>
+        <para>Select to automatically close work orders when the full work
+        order quantity is posted when posting operations.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Routing</term>
+      <listitem>
+        <para>Display lists all operations for the selected routing.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ACTIVATE</guibutton></term>
+      <listitem>
+        <para>Select to activate a pending revision. This button will only be
+        visible when a pending revision number is entered in the
+        <guilabel>Revision</guilabel> field.</para>
+        <tip>
+          <para>When you activate a pending revision, the currently active
+          revision will become inactive. Inactive revisions cannot be
+          modified.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>DEACTIVATE</guibutton></term>
+      <listitem>
+        <para>Select to deactivate a substitute revision. This button will
+        only be visible when a substitute revision number is entered in the
+        <guilabel>Revision</guilabel> field. Once the revision is inactive, it
+        cannot be modified.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>EXPIRE</guibutton></term>
+      <listitem id="booEXPIRE">
+        <para>Highlight an operation and then select this button to expire the
+        operation, causing it to be hidden from view on the list—unless the
+        <guilabel>Show Expired Operations</guilabel> option is specifically
+        chosen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>If the operation is expired on the current day, the operation will
+    still appear as an option when selecting <guilabel>Used At</guilabel>
+    operations on a bill of materials (BOM) if done during the same current
+    day. Once a day passes, however, the expired operation will no longer
+    appear as a <guilabel>Used At</guilabel> option on the BOM.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>MOVE UP</guibutton></term>
+      <listitem id="booMOVEUP">
+        <para>Highlight an operation and then select this button to move the
+        operation up the routing list. Sequence numbers, which are incremented
+        in multiples of ten, are automatically adjusted to reflect the change
+        in position.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>MOVE DOWN</guibutton></term>
+      <listitem id="booMOVEDOWN">
+        <para>Highlight an operation and then select this button to move the
+        operation down the routing list. Sequence numbers, which are
+        incremented in multiples of ten, are automatically adjusted to reflect
+        the change in position.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="booItem.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="opportunity">
+  <title><indexterm significance="normal">
+      <primary>opportunities</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>New Opportunity</title>
+
+  <para><indexterm significance="normal">
+      <primary>opportunities</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>To create a new opportunity, go to <guimenuitem>CRM &gt;
+  Opportunity &gt; New</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunity.png"/>
+        </imageobject>
+
+        <caption>Create new Opportunity</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new opportunity, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Number</term>
+
+      <listitem>
+        <para>Displays the system-defined number used to identify the
+        opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to identify the opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Active</term>
+
+      <listitem>
+        <para>Select to specify the opportunity is active. If not selected,
+        the opportunity will be marked as inactive, causing it to be hidden in
+        some lists.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Account</term>
+
+      <listitem>
+        <para>Specify the account the opportunity is associated with.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount</term>
+
+      <listitem>
+        <para>Enter the monetary value of the opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Probability</term>
+
+      <listitem>
+        <para>Project the likelihood the opportunity will be closed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Owner</term>
+
+      <listitem>
+        <para>Specify the user who owns the opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Assigned to</term>
+
+      <listitem>
+        <para>Specify the user the opportunity is assigned to.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Stage</term>
+
+      <listitem>
+        <para>Specify the current stage of the opportunity. It's possible an
+        opportunity will be automatically marked as inactive when it reaches a
+        certain stage, depending on how your system is configured. To learn
+        more about configuring your system to automatically mark opportunities
+        as inactive when they reach a certain stage, see <xref
+        linkend="opportunityStage"/>.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Priority</term>
+
+      <listitem>
+        <para>Specify the priority level for the opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Lead Source</term>
+
+      <listitem>
+        <para>Specify the source which generated the opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Opp. Type</term>
+
+      <listitem>
+        <para>Specify the type of opportunity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Contact</term>
+
+      <listitem>
+        <para>Enter the name of the contact—or select a name from the contacts
+        list. Details for the contact will be shown after selection.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Dates</term>
+
+      <listitem>
+        <para>Enter dates for the following:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Started</term>
+
+            <listitem>
+              <para>Specify the date when the opportunity was first
+              identified. This date will be auto-populated when the
+              opportunity is created.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Assigned</term>
+
+            <listitem>
+              <para>Specify the date when the opportunity was assigned. This
+              date will be auto-populated when the opportunity is
+              assigned.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Target Close</term>
+
+            <listitem>
+              <para>Specify the date you expect the opportunity will
+              close.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Actual Close</term>
+
+            <listitem>
+              <para>Specify the date when the opportunity closed.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To add notes related to the opportunity, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunity_notes.png"/>
+        </imageobject>
+
+        <caption>Adding Notes to opportunities</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the opportunity. Any notes entered on this screen are
+        for internal purposes only.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para><indexterm significance="normal">
+      <primary>characteristics</primary>
+
+      <secondary>opportunities and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>opportunities</primary>
+
+      <secondary>characteristics and</secondary>
+    </indexterm>To associate characteristics with an opportunity, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunity_charass.png"/>
+        </imageobject>
+
+        <caption>Adding Characteristics to opportunities</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para><indexterm significance="normal">
+      <primary>to-do lists</primary>
+
+      <secondary>opportunities and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>opportunities</primary>
+
+      <secondary>to-do items and</secondary>
+    </indexterm>To associate to-do list items with an opportunity, select the
+  <guimenuitem>To-Do's</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunity_todos.png"/>
+        </imageobject>
+
+        <caption>Adding To-Do items to Opportunities</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When associating to-do items with an opportunity, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>To-Do List</term>
+
+      <listitem>
+        <para>Display lists to-dos related to the opportunity.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To manage and track quotes and sales orders associated with an
+  opportunity, select the <guimenuitem>Sales</guimenuitem> tab. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunity_salesTab.png"/>
+        </imageobject>
+
+        <caption>Opportunity Sales</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When managing and tracking quotes and sales orders associated with an
+  opportunity, you are presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Sales</term>
+
+      <listitem>
+        <para>Display lists quotes and sales orders associated with the
+        opportunity.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CONVERT</guibutton></term>
+
+      <listitem id="listitemN0x180ac00N0x18fba5c">
+        <para>Select to convert a customer quote to a sales order. All quote
+        line items must have valid item sites for a quote to be converted
+        successfully. Also, you may not convert quotes written for
+        prospects.</para>
+
+        <note>
+          <para>By default, the quote number will be assumed by the sales
+          order when a quote is converted to a sales order.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>ATTACH</guibutton></term>
+
+      <listitem>
+        <para>Select to associate a quote or sales order with the
+        opportunity.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To add comments to an opportunity, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunity_comment.png"/>
+        </imageobject>
+
+        <caption>Opportunity Comments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To view the documents associated with an opportunity, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following screen will
+  appear:<mediaobject>
+      <imageobject>
+        <imagedata fileref="images/todoItem_documentsTab.png"/>
+      </imageobject>
+
+      <caption><para>Opportunity Documents</para></caption>
+    </mediaobject></para>
+
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <para>To view email associated with an opportunity, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="salesOrderSimple">
+  <title><indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>creating new simple</secondary>
+    </indexterm>New Simple Sales Order</title>
+  <para>To support environments where you don't need complex sales orders
+  (e.g., counter sales, retail, etc.), xTuple offers a simple sales order. As
+  its name implies, the simple sales order provides an easy-to-use interface
+  for quickly processing simple sales orders. The screen provides an
+  alternative to the regular Sales Order Entry screen and may be used in
+  conjunction with it. Because the simple sales order is optional, it must be
+  specifically enabled in the <guimenu>Sales</guimenu> module configuration
+  before it can be used.</para>
+  <para>To create a new simple sales order, go to <guimenuitem>Sales &gt;
+  Sales Order &gt; New Simple</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderSimple.png" />
+        </imageobject>
+        <caption>Create new Simple Sales Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new simple sales order, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Order #</term>
+      <listitem>
+        <para>Next available sales order number will automatically display,
+        unless your system requires you to enter sales order numbers manually.
+        Default values and input parameters for sales order numbers are
+        configurable it the <guimenu>System</guimenu> menu.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cust. PO #</term>
+      <listitem>
+        <para>Enter a customer purchase order number, as needed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Specify the supplied from site for the order. By default, the
+        logged in user's preferred site will be used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Tax Zone</term>
+      <listitem>
+        <para>Specify the tax zone for the order. If the default customer (or
+        other specified customer) does not have a default ship-to address and
+        associated tax zone, then the tax zone for the site will be
+        used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer</term>
+      <listitem>
+        <para>Specify the customer associated with the sales order. By
+        default, the cash-paying customer defined in your
+        <guimenu>Sales</guimenu> module configuration will be displayed here.
+        However, you may easily select a different, pre-existing customer—or
+        enter a new customer record—during order entry.</para>
+        <note>
+          <para>If the specified customer has exceeded their credit limit, the
+          screen will revert to using the default cash-paying customer.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Ship To</term>
+      <listitem>
+        <para>Enter the number of the preferred ship-to address. Customers may
+        maintain multiple ship-to addresses.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Enter the item number of the item you want to sell. The item
+        list will contain sold items available for sale to the specified
+        customer. The list of available items may vary from customer to
+        customer, depending on how pricing schedules are implemented at your
+        site.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty</term>
+      <listitem>
+        <para>Enter the quantity of the specified item being ordered. By
+        default, the quantity entered will be "1." However, you may manually
+        override the default quantity.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>HOLD ORDER</guibutton></term>
+      <listitem>
+        <para>Select to save the order and save it for processing later. You
+        may be prompted to print a sales order acknowledgement form if your
+        <guimenu>Sales</guimenu> module is configured to do so.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>NEW ORDER</guibutton></term>
+      <listitem>
+        <para>Select to enter a new simple sales order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To process payment for the order, select the
+  <guimenuitem>Payment</guimenuitem> tab. The following screen will
+  appear:</para>
+  <screenshot>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="images/salesOrderSimpleCCPay.png" />
+      </imageobject>
+      <caption>Credit Card Payment tab</caption>
+    </mediaobject>
+  </screenshot>
+  <para>When processing a credit card payment for the order, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Credit Card</term>
+      <listitem>
+        <para>List will display credit cards already on file for the customer,
+        if any. Highlight the credit card you want to use for the transaction
+        prior to selecting the <guibutton>CHARGE</guibutton> button. If none
+        exist, you can create a new credit card record by selecting the
+        <guibutton>NEW</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Amount</term>
+      <listitem>
+        <para>The order total will be displayed here.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>CVV Code</term>
+      <listitem>
+        <para>Enter the card verification value (CVV) code found on the back
+        of the specified credit card. This may be an optional feature at your
+        site. Contact your systems administrator for details.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>NEW</guibutton></term>
+      <listitem>
+        <para>Select to create a new credit card record for the
+        customer.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>VIEW</guibutton></term>
+      <listitem>
+        <para>Highlight a credit card record on file and then select this
+        button to view the credit card information.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>CHARGE CC AND COMPLETE ORDER</guibutton></term>
+      <listitem>
+        <para>Select to charge the highlighted credit card and complete the
+        order. You may be prompted to print a shipping packing list and/or an
+        invoice if your <guimenu>Sales</guimenu> module is configured to do
+        so.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To process a cash payment for the order, select the
+  <guimenuitem>Cash</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrderSimpleCashPay.png" />
+        </imageobject>
+        <caption>Cash Payment tab</caption>
+      </mediaobject>
+    </screenshot>When processing a cash receipt for the order, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Order Total</term>
+      <listitem>
+        <para>Displays the total for the order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Balance</term>
+      <listitem>
+        <para>Displays the balance due for the order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Available Credit</term>
+      <listitem>
+        <para>Displays the value of the customer's outstanding credits, if
+        any.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Amount Received</term>
+      <listitem>
+        <para>Enter the amount of cash being received against the order. If
+        the customer's credit status is good and the funds type is set to
+        <guilabel>On Account</guilabel>, this field will be disabled.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Funds Type</term>
+      <listitem>
+        <para>Specify the type of funds being used for the cash receipt.
+        Choose from the following types: on account, cash, check, certified
+        check, wire transfer, and other.</para>
+        <note>
+          <para>The <guilabel>On Account</guilabel> funds type will only be
+          shown if the specified customer has not exceeded their credit limit.
+          If they have, the type will be hidden and the default cash-paying
+          customer will be used instead.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Payment/Document #</term>
+      <listitem>
+        <para>Use this field to enter the customer's payment number,
+        transaction number, credit card number, or any other document number
+        you wish to associate with the cash receipt.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Payment/Document Date</term>
+      <listitem>
+        <para>Use this field to specify the date on the payment you received.
+        This is the document date used when running the receivables aging
+        report.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Post To</term>
+      <listitem>
+        <para>Select the bank account you want to post the cash receipt to.
+        The asset account used for the selected bank account is specified on
+        the Bank Account master.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following button is unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>POST PAYMENT AND COMPLETE ORDER</guibutton></term>
+      <listitem>
+        <para>Select to post the cash receipt and complete the order. You may
+        be prompted to print a shipping packing list and/or an invoice if your
+        <guimenu>Sales</guimenu> module is configured to do so.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

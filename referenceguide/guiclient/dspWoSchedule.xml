@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspWoSchedule">
+  <title><indexterm significance="normal">
+      <primary>work orders</primary>
+      <secondary>scheduling for</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>scheduling</primary>
+      <secondary>for work orders</secondary>
+    </indexterm>Work Order Schedule</title>
+  <para>The Work Order Schedule screen is an essential workbench where you can
+  both view the status of current work orders and also perform any work that
+  needs to be done on work orders.</para>
+  <para>Here are some tips for using this screen:</para>
+  <itemizedlist>
+    <listitem>
+      <para>The following codes describe the various work order statuses: open
+      (O), exploded (E), released (R), in-process (I), closed (C).</para>
+    </listitem>
+    <listitem>
+      <para>To edit a work order after it has been created, use the
+      <guimenuitem>Edit</guimenuitem> option in the right-click menu.</para>
+    </listitem>
+    <listitem>
+      <para>Use the right-click menu to locate any of the actions that can be
+      performed on work orders.</para>
+    </listitem>
+    <listitem>
+      <para>To locate a specific work order, enter the work order number (or a
+      portion of it) in the Search window.</para>
+    </listitem>
+    <listitem>
+      <para>The start dates and end dates are color-coded for ease of use.
+      Both dates will display in red type if the work order is not yet
+      in-process and is also past due. Once a work order's status is changed
+      to in-process (I), the start date will automatically revert to black
+      type.</para>
+    </listitem>
+    <listitem>
+      <para>If you use the <guilabel>Show Only Top Level</guilabel> search
+      parameter, this refers to work orders that have not been created to meet
+      the component demands of a parent work order.</para>
+    </listitem>
+    <listitem>
+      <para>To view open work orders whose parent sales orders are closed,
+      select the <guilabel>Open Work Orders with Closed Parent Sales
+      Orders</guilabel> option.</para>
+    </listitem>
+    <listitem>
+      <para>To see the relationship between sales orders and the open work
+      orders they are associated with, select the <guilabel>Open Work Orders
+      with Parent Sales Orders</guilabel> option.</para>
+    </listitem>
+  </itemizedlist>
+  <para>To view the Work Order Schedule screen, go to <guimenuitem>Manufacture
+  &gt; Reports &gt; Work Order Schedule</guimenuitem>. The following screen
+  will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspWoSchedule.png" />
+        </imageobject>
+        <caption>Work Order Schedule</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The default filter on the Work Order Schedule screen shows all open
+  work orders. You can build your own search criteria using the following
+  options:</para>
+  <xi:include href="../widgets/parameterwidget.xml" xpointer="parameterwidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

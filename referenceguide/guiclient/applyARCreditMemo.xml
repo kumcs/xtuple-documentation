@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="applyARCreditMemo">
+  <title><indexterm significance="normal">
+      <primary>credit memos</primary>
+
+      <secondary>applying unapplied</secondary>
+    </indexterm>Apply Receivables Credit Memo</title>
+
+  <para>To apply a credit memo to either open invoices or open debit memos,
+  select the <guibutton>APPLY</guibutton> button on the List Unapplied
+  Receivables Credit Memos screen. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/applyARCreditMemo.png"/>
+        </imageobject>
+
+        <caption>Apply A/R Credit Memo</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When applying a credit memo amount, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Customer #</term>
+
+      <listitem>
+        <para>Displays the customer number of the customer associated with the
+        unapplied credit memo amount. The customer name and billing address
+        will also display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Available to Apply</term>
+
+      <listitem>
+        <para>Displays the credit memo amount which is available to be
+        applied.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Applied</term>
+
+      <listitem>
+        <para>Displays the amount of the credit memo applied to the specified
+        document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Balance</term>
+
+      <listitem>
+        <para>Displays the amount of the credit memo remaining to be applied,
+        if any.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document #</term>
+
+      <listitem>
+        <para>Displays the credit memo number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Distribution Date</term>
+
+      <listitem>
+        <para>Displays the date the credit memo applied amount was
+        applied.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Find Document</term>
+
+      <listitem>
+        <para>To search for an invoice in the open items display, begin typing
+        an invoice number into this field. As you type, the list will
+        automatically scroll toward the invoice number you are typing. You can
+        also search for invoices manually by scrolling through the
+        list.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Items</term>
+
+      <listitem>
+        <para>Display lists open receivables for the specified
+        customer.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>APPLY TO BALANCE</guibutton></term>
+
+      <listitem>
+        <para>Select to apply the available balance to the open receivables.
+        If the applied balance exceeds the amount due on an open item, the
+        remaining balance will be applied to the next open amount.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>APPLY LINE BAL.</guibutton></term>
+
+      <listitem>
+        <para>Highlight an open item and then select this button to apply the
+        credit to the balance for the line.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>APPLY</guibutton></term>
+
+      <listitem>
+        <para>Highlight an item and then select this button to apply an amount
+        to the item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>CLEAR APPLICATION</guibutton></term>
+
+      <listitem>
+        <para>Highlight an item and then select this button to remove any
+        amount applied toward the item. If you encounter pending amounts you
+        cannot clear, check for unposted cash receipts or uninvoiced sales
+        orders having credit allocations on them. To clear the pending
+        amounts, post the related cash receipts and/or invoice the related
+        sales orders.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="arCreditMemoApplication.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

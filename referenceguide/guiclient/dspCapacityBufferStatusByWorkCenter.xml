@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspCapacityBufferStatusByWorkCenter" role="manufacturing">
+  <title>Capacity Buffer Status by Work Center</title>
+  <para>The Capacity Buffer Status display provides information on your
+  current capacity buffer levels. Capacity buffers apply to work centers. The
+  Capacity Buffer screen enables us to view the current load in relation to a
+  definable number of days of capacity. Keep in mind that buffer status
+  information will only be displayed on days when the constraint management
+  system is run. If you find your displays show no information, this probably
+  means constraint management has not been run.</para>
+  <para>To view capacity buffer status by work center, go to
+  <guimenuitem>Status &gt; Capacity</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspCapacityBufferStatusByWorkCenter.png" />
+        </imageobject>
+        <caption>Capacity Buffer Status by Work Center</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>When the buffer status for a work center hits 66 or higher, the
+    status number will become red. By highlighting lines which are
+    <emphasis>red hot</emphasis>, the system is informing you which should be
+    acted on immediately. The best remedy for red hot item sites is to
+    expedite any associated work orders or purchase orders.</para>
+  </note>
+  <para>When displaying capacity buffer statuses by work center, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Show Work Centers</term>
+      <listitem>
+        <para>Specify which work centers you want to include in the
+        display:</para>
+        <variablelist>
+          <varlistentry>
+            <term>All Work Centers</term>
+            <listitem>
+              <para>Select to display capacity buffer statuses for all work
+              centers.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Selected</term>
+            <listitem>
+              <para>Specify work center whose inventory buffer status you want
+              to display.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Tooling</term>
+      <listitem>
+        <para>Select if you want to include tooling capacity information in
+        the display. The following options are available:</para>
+        <variablelist>
+          <varlistentry>
+            <term>All Tooling</term>
+            <listitem>
+              <para>Select to include capacity information about all tooling
+              items in the display.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Selected Tooling</term>
+            <listitem>
+              <para>Specify tooling item whose capacity information you want
+              to include in the display.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to display capacity buffer statuses for all sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose capacity buffer statuses you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Max Days Load</term>
+      <listitem>
+        <para>Specify the maximum number of days worth of work center load you
+        want to view, using the arrows to the right of the field. This is
+        required information. You must enter a value greater than zero to
+        generate buffer status information. The system uses the following
+        equation to determine the capacity buffer status for a work
+        center:</para>
+        <informalexample>
+          <para>(Total Setup + Total Run) / (Max Days Load x Daily Capacity) =
+          Buffer (%)</para>
+        </informalexample>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>By default, the display will sort work centers by buffer status in
+    descending order. In other words, work centers with the highest buffer
+    status will appear at the top of the list; work centers with the lowest
+    buffer status will appear at the bottom.</para>
+  </note>
+  <variablelist>
+    <varlistentry>
+      <term>Buffer Status by Work Center</term>
+      <listitem>
+        <para>Display lists capacity buffer status by work center, using the
+        specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

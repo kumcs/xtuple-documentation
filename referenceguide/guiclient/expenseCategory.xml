@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="expenseCategory">
+  <title><indexterm significance="normal">
+      <primary>expense categories</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Expense Category</title>
+  <para>To create a new expense category, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/expenseCategory.png" />
+        </imageobject>
+        <caption>Create new Expense Category</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new expense category, you are presented with the
+  following options:</para>
+  <tip>
+    <para>The account numbers assigned to cost categories should not all be
+    the inventory account. Instead, they should be individual accounts
+    selected specifically for each cost-tracking purpose. This will increase
+    your visibility into your inventory costs and valuation.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Category</term>
+      <listitem>
+        <para>Enter the expense category name.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a brief description of the expense category.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select to show the expense category as active. Not selecting
+        means the expense category will be considered inactive. To re-activate
+        an expense category, simply select this option.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Expense</term>
+      <listitem>
+        <para>Identify a general ledger (G/L) account to distribute purchasing
+        expenses to. This is an expense account. It will be debited when
+        transactions using expense categories are posted.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Purchase Price Variance</term>
+      <listitem>
+        <para>Identify a G/L account to distribute purchase price variances
+        to. This is an asset account. It will be credited or debited with the
+        value of any variance that may arise when a voucher is posted for
+        non-inventory items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>P/O Liability Clearing</term>
+      <listitem>
+        <para>Identify a G/L account to distribute purchase order liability
+        clearing to. This is a liability account. It will be credited when
+        non-inventory items are received, and debited when a voucher for these
+        items is posted.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>PO Line Freight Expense</term>
+      <listitem>
+        <para>Identify a G/L account to distribute freight expense to. This is
+        an expense account. It will be debited when line freight expenses are
+        posted.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

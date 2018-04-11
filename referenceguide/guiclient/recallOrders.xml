@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="recallOrders">
+  <title><indexterm significance="normal">
+      <primary>shipping</primary>
+
+      <secondary>recalling orders to</secondary>
+    </indexterm>Recall Orders to Shipping</title>
+
+  <para>If a sales order or transfer order has been shipped in error—or if
+  changes need to be made to an order prior to final billing—you may recall
+  the order to shipping. However, once an invoice has been posted (or a
+  transfer order has been closed), it may no longer be recalled to shipping.
+  To recall orders to shipping, go to <guimenuitem>Inventory &gt; Shipping
+  &gt; Recall Orders to Shipping</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/recallOrders.png"/>
+        </imageobject>
+
+        <caption>Recall Orders to Shipping</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When recalling an order to shipping, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Show Invoiced</term>
+
+      <listitem>
+        <para>Select to include invoiced orders in the display. By default,
+        only unposted invoices will be shown. However, you can see all
+        invoices—unposted <emphasis>and</emphasis> posted—if you have the
+        <guilabel>RecallInvoicedShipment</guilabel> privilege. An order is
+        considered <emphasis>invoiced </emphasis>after an invoice has been
+        created from a billing selection. In some cases, it may be desirable
+        to completely back out an invoice using the following steps:</para>
+
+        <orderedlist>
+          <listitem>
+            <para>Void or delete invoice</para>
+          </listitem>
+
+          <listitem>
+            <para>Cancel billing selection</para>
+          </listitem>
+
+          <listitem>
+            <para>Recall order to shipping</para>
+          </listitem>
+
+          <listitem>
+            <para>Return stock to inventory</para>
+          </listitem>
+        </orderedlist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Customer #</term>
+
+      <listitem>
+        <para>Enter the customer number of the customer whose orders you want
+        to recall to shipping. A customer number is required if the
+        <guilabel>Show Invoiced</guilabel> option is selected.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Start Date</term>
+
+      <listitem>
+        <para>Orders shipped on or after this date will be included in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>End Date</term>
+
+      <listitem>
+        <para>Orders shipped on or before this date will be included in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Shipped Orders</term>
+
+      <listitem>
+        <para>Display lists shipped sales orders available for recall.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>RECALL</guibutton></term>
+
+      <listitem>
+        <para>Highlight a sales order then select this button to recall the
+        order to shipping. The order will now display on the Ship Orders
+        screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

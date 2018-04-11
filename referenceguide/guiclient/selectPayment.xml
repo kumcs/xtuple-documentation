@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="selectPayment">
+  <title><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>selection of</secondary>
+    </indexterm>Approve Payment</title>
+
+  <para>To approve an individual open payable for payment, choose the
+  <guibutton>SELECT</guibutton> button. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/selectPayment.png"/>
+        </imageobject>
+
+        <caption>Approve open payable for payment</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When specifying payment details for an approved open payable, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Vendor #</term>
+
+      <listitem>
+        <para>Displays the name of the vendor who is owed payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document #</term>
+
+      <listitem>
+        <para>Displays the document number of the document being approved for
+        payment.</para>
+
+        <para>Valid document types include posted vouchers and miscellaneous
+        payables debit memos.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>P/O #</term>
+
+      <listitem>
+        <para>Displays the purchase order number (if any) of the purchase
+        order associated with the document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc. Date</term>
+
+      <listitem>
+        <para>Displays the document's origination date.</para>
+
+        <para>In the case of a voucher, the document date is the same as the
+        invoice date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Due Date</term>
+
+      <listitem>
+        <para>Displays the date payment is due.</para>
+
+        <para>The due date is determined based on the billing terms selected
+        at the time the document is posted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Terms</term>
+
+      <listitem>
+        <para>Displays the billing terms selected at the time the document was
+        posted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Total Owed</term>
+
+      <listitem>
+        <para>Displays the total amount due to the vendor.</para>
+
+        <para>The total owed is equal to the vouchered amount—or to the amount
+        of the miscellaneous payables credit memo at the time of
+        posting.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Balance Owed</term>
+
+      <listitem>
+        <para>Displays the balance due to the vendor.</para>
+
+        <para>The balance owed will differ from the total owed if discounts
+        are applied based on the specified billing terms.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Payment Amount</term>
+
+      <listitem>
+        <para>Specify the amount to be paid to the vendor. If a billing terms
+        discount is applied, the payment amount will be reduced automatically
+        by the discount amount.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>The payment amount is the amount which appears on checks when they
+    are created.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Bank Account</term>
+
+      <listitem>
+        <para>Specify the bank account to be used for paying the open
+        payable.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>APPLY DISCOUNT</guibutton></term>
+
+      <listitem>
+        <para>Select to apply any billing terms discount you may be eligible
+        for.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="applyDiscount.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="applyDiscount">
+  <title><indexterm significance="normal">
+      <primary>discounts</primary>
+
+      <secondary>applying to open payables</secondary>
+    </indexterm>Apply Discount</title>
+
+  <para>To apply a billing terms discount and have the discount amount
+  deducted from the total owed, select the <guibutton>APPLY
+  DISCOUNT</guibutton> button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/applyDiscount.png"/>
+        </imageobject>
+
+        <caption>Apply A/P Discount</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>Discounts are posted to the general ledger (G/L) when the check they
+    are associated with is posted. Any time prior to the posting of the check,
+    the discount can be edited or reversed.</para>
+  </note>
+
+  <para>When applying a billing terms discount, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Vendor</term>
+
+      <listitem>
+        <para>Displays the name of the vendor who is owed payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc. Type</term>
+
+      <listitem>
+        <para>Displays the document type. Valid document types include posted
+        vouchers and miscellaneous payables debit memos.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc #</term>
+
+      <listitem>
+        <para>Displays the document number of the document being selected for
+        payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Doc. Date</term>
+
+      <listitem>
+        <para>Displays the document's origination date. In the case of a
+        voucher, the document date is the same as the invoice date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Terms</term>
+
+      <listitem>
+        <para>Displays the billing terms selected at the time the document was
+        posted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Discount Date</term>
+
+      <listitem>
+        <para>Displays the expiration date for the billing terms discount
+        period. The discount date will display in red type once the discount
+        period has expired. Once the discount period has expired, the system
+        will no longer automatically update the <guilabel>Discount
+        Amount</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Discount %</term>
+
+      <listitem>
+        <para>Displays the discount percentage, as specified in the billing
+        terms.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Total Owed</term>
+
+      <listitem>
+        <para>Displays the total amount from the original document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Total Discountable Owed</term>
+
+      <listitem>
+        <para>Displays the total amount due of voucher line items marked as
+        discountable. If line items are not marked as discountable, they will
+        not appear in this total.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Discounts Applied</term>
+
+      <listitem>
+        <para>Displays the amount of any discounts previously applied to the
+        selected document.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Discount Amount</term>
+
+      <listitem>
+        <para>Enter the amount of the discount to be applied to the total
+        owed. As long as the discount period has not expired, the system will
+        automatically calculate the discount amount for you. The discount
+        amount will be equal to the total owed multiplied by the discount
+        percentage. The account used for posting discounts to the G/L is
+        defined on the Payables Assignments screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>OK</guibutton></term>
+
+      <listitem>
+        <para>Select to apply the entered discount amount to the selected
+        document.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

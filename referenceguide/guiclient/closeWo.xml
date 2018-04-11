@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="closeWo">
+  <title><indexterm significance="normal">
+      <primary>work orders</primary>
+      <secondary>closing of</secondary>
+    </indexterm>Close Work Order</title>
+  <para>A work order can be closed at any point. To close a work order, go to
+  <guimenuitem>Manufacture &gt; Transactions &gt; Close Work
+  Order</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/closeWo.png" />
+        </imageobject>
+        <caption>Close Work Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>Work order materials and operations history is saved in the database
+    after a work order is closed. Reports can be written to retrieve this
+    information.</para>
+  </note>
+  <para>When closing a work order, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Transaction Date</term>
+      <listitem>
+        <para>Specify the date when you want the work order closing to be
+        posted. The default is the current date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Work Order #</term>
+      <listitem>
+        <para>Enter the work order number of the work order you want to
+        close.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays item number automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates work order method is either assembly or
+        disassembly.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>variances</primary>
+          <secondary>relation to w/o</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>work orders</primary>
+          <secondary>variances related to</secondary>
+        </indexterm>Post Material Usage Variances</term>
+      <listitem>
+        <para>Select to post material usage variances resulting from the work
+        order. Variance information can be found in the work order
+        reports.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Post Labor Variances</term>
+      <listitem>
+        <para>Select to post labor variances resulting from the work order.
+        Variance information can be found in the work order reports.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CLOSE W/O</guibutton></term>
+      <listitem>
+        <para>Closes the selected work order.</para>
+        <note>
+          <para>Any tooling items issued to a work order must be returned
+          before the work order can be closed.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

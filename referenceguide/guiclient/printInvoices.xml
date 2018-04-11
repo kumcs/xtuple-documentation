@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printInvoices">
+  <title><indexterm significance="normal">
+      <primary>invoices</primary>
+      <secondary>printing of</secondary>
+    </indexterm>Print Invoices</title>
+  <para>Although the system does not require you to print invoices before
+  posting them individually (i.e., one-at-a-time), you are required to print
+  invoices before posting them in batch mode. To print unposted invoices, go
+  to <guimenuitem>Forms &gt; Print Invoices</guimenuitem>. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printInvoices.png" />
+        </imageobject>
+        <caption>Print Invoices</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When printing invoices, you are presented with the following
+  options:</para>
+  <para role="xtconnect"><note>
+      <para>If the customer specified on the invoice has an EDI profile
+      defined, you may encounter an EDI processing interface when printing
+      individual invoices.</para>
+    </note></para>
+  <variablelist>
+    <varlistentry>
+      <term>All Ship Vias</term>
+      <listitem>
+        <para>Select if you want to print invoices for any and all ship
+        vias.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Ship Via</term>
+      <listitem>
+        <para>Specify the ship via whose invoices you want to print.</para>
+        <tip>
+          <para>The system supports up-to-date shipment tracking with links to
+          the websites of many leading shipping companies (i.e., ship
+          vias).</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Post Invoices after Printing</term>
+      <listitem>
+        <para>Select to automatically post invoices after they have been
+        printed.</para>
+        <note>
+          <para>Invoices are posted effective on the date they are
+          distributed, not on the date they are posted—as might be
+          assumed.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Invoice Copies</term>
+      <listitem>
+        <para>Specify details for the invoice copies you want to print:</para>
+        <variablelist>
+          <varlistentry>
+            <term># of Copies</term>
+            <listitem>
+              <para>Specify the number of copies you want to print. To add a
+              watermark or show/hide prices on the printed form, double-click
+              on a copy line.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/watermarks.xml" xpointer="watermarksWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

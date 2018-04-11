@@ -1,0 +1,1346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="salesOrder">
+  <title><indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>creating new</secondary>
+    </indexterm>New Sales Order</title>
+  <para>Creating a new sales order requires a detailed mix of customer, sales
+  representative, and shipping information. To access the sales order area, go
+  to <guimenuitem>Sales &gt; Sales Order &gt; New</guimenuitem>. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder.png"/>
+        </imageobject>
+        <caption>Create new Sales Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>Be sure to close all sales order windows before exiting the system.
+    This will prevent the creation of orphaned sales order records.</para>
+  </tip>
+  <para>When creating a new sales order, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Order #</term>
+      <listitem>
+        <para>Next available sales order number will automatically display,
+        unless your system requires you to enter sales order numbers manually.
+        Default values and input parameters for sales order numbers are
+        configurable at the <guimenu>System</guimenu> level.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Date</term>
+      <listitem>
+        <para>Displays current day's date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Scheduled Date</term>
+      <listitem>
+        <para>Displays the order's earliest scheduled date. The scheduled date
+        corresponds to the earliest scheduled date for an included sales order
+        item. If there are no existing line items, the date entered here will
+        become the default schedule date for the first one. If line items do
+        exist and the date is changed, you will be asked whether you want all
+        editable lines to change. If the change affects pricing, you will be
+        asked whether you want prices to be updated as well. If hidden, this
+        field can be viewed by selecting the <guibutton>MORE</guibutton>
+        button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>pack dates</primary>
+          <secondary>for sales orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>pack dates for</secondary>
+        </indexterm>Pack Date</term>
+      <listitem>
+        <para>The pack date is the same date as the ship date. Because the
+        field can be edited, you have the ability to change the pack date and
+        make it different from the ship date. This field can be viewed by
+        selecting the <guibutton>MORE</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Print on Save</term>
+      <listitem>
+        <para>Select to automatically print the sales order when it is
+        saved.</para>
+        <para role="xtconnect"><note>
+            <para>If the customer specified on the sales order has an EDI
+            profile attached, you may encounter an EDI processing interface
+            when printing the sales order.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer #</term>
+      <listitem>
+        <para>Enter the customer number of the customer to be billed for the
+        sale. The lookup feature located to the right of the field leads to a
+        searchable customers list. You may also access this list using the
+        keyboard shortcut <guibutton>CTRL + L</guibutton>. Once a customer
+        number is entered, the customer name and billing address will display.
+        Select the <guibutton>?</guibutton> or <guibutton>$</guibutton> symbol
+        to view customer information for the specified customer. If a
+        customer's credit is good, the button will feature a black question
+        mark (<guibutton>?</guibutton>) icon. If the customer is on credit
+        warning, the icon will turn into an orange dollar sign
+        (<guibutton>$</guibutton>). A red dollar sign
+        (<guibutton>$</guibutton>) indicates the customer is on credit hold.
+        You may also create a new customer record by selecting the
+        <guibutton>+</guibutton> button.</para>
+        <tip>
+          <para>A valid customer number must be entered in the
+          <guilabel>Customer #</guilabel> field before line items can be added
+          to a sales order. If no valid customer number is entered, you will
+          not be able to add line items to the sales order. Additionally,
+          sales orders may only be entered for active customers.</para>
+        </tip>
+        <note>
+          <para>Sales orders may not be entered for customers who are on
+          credit warning or credit hold. Only users with special privileges
+          may override these credit settings.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Name</term>
+      <listitem>
+        <para>The customer name is displayed in an editable text field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Ship-To #</term>
+      <listitem>
+        <para>Enter the number of the preferred ship-to address. Customers may
+        maintain multiple ship-to addresses. If the Customer master for the
+        specified customer indicates that free-form ship-tos are allowed, then
+        any address may be entered. If free-form ship-tos are not allowed,
+        then the ship-to address must be entered using the BROWSE button
+        located to the right of the field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Name</term>
+      <listitem>
+        <para>The ship-to name is displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cust. PO #</term>
+      <listitem>
+        <para>Enter a customer purchase order number, as needed.</para>
+        <note>
+          <para>You will be required to enter a customer purchase order number
+          for customers who require them. If required, duplicate numbers will
+          only be allowed if the customer uses blanket purchase orders. All
+          customer requirements are specified on the Customer master.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>hold types</primary>
+          <secondary>for sales orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>hold types for</secondary>
+        </indexterm>Hold Type</term>
+      <listitem>
+        <para>Specify a hold type (if any) from the available options:</para>
+        <variablelist>
+          <varlistentry>
+            <term>None</term>
+            <listitem>
+              <para>Indicates no hold is applied, meaning the order may be
+              processed and shipped.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Credit</term>
+            <listitem>
+              <para>Indicates the open balance for the customer has exceeded
+              the credit limit defined on their Customer master record. Users
+              will be prevented from issuing stock to shipping with this hold
+              type.</para>
+              <note>
+                <para>If the sales order is paid in full, as in a counter
+                sales scenario for cash-only customers, the order may be
+                issued to shipping.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Shipping</term>
+            <listitem>
+              <para>Indicates a shipping hold has been placed on the order.
+              Users who attempt to ship an order on shipping hold will be
+              prevented from doing so.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Packing</term>
+            <listitem>
+              <para>Indicates a packing hold has been placed on the order.
+              Users who attempt to issue stock to shipping for an order on
+              packing hold will be prevented from doing so.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="standard">
+            <term>Return</term>
+            <listitem>
+              <para>This hold type is set automatically when a sales order is
+              created from a return authorization and the disposition requires
+              inventory to be received before the replacement order can be
+              shipped.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Specify the shipping site associated with the sales order. The
+        site selected here acts as the default free-on-board (FOB) location. A
+        site may be designated as a shipping site on the Site master. This
+        field can be viewed upon selecting the <guibutton>MORE</guibutton>
+        button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sale Type</term>
+      <listitem>
+        <para>Specify the sales type. Sales account assignments by sales type
+        are available.</para>
+        <note>
+          <para>If the sales order setup setting <guilabel>Display Sales Order
+          Line Items Tab by Default</guilabel> is checked, the
+          <guimenuitem>Line Items</guimenuitem> tab will be displayed on the
+          opening window for sales order entry.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>setting terms for</secondary>
+        </indexterm>Terms</term>
+      <listitem>
+        <para>Specify the billing terms associated with the order. By default,
+        the customer's standard billing terms will appear in the field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales representatives</primary>
+          <secondary>commissions for</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>commissions on</secondary>
+        </indexterm>Sales Rep.</term>
+      <listitem>
+        <para>Specify the sales representative—or outside rep, in the
+        distribution edition—associated with the order. Sales representatives
+        are linked to a customer on the Customer master—either by a default
+        setting or through the assignment of ship-to addresses. Each ship-to
+        address may have a different sales representative associated with it.
+        Consequently, the name of the sales representative appearing on the
+        sales order header will be the same as specified for the ship-to
+        address being used. If you are using the enhanced commissions package,
+        the sales rep information is moved to a separate tab.</para>
+        <note>
+          <para>When creating a new sales order, only active sales reps will
+          be available for selection. For future changes to an existing sales
+          order, all sales reps (active and inactive) will be listed to ensure
+          that the original sales rep will still appear.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Commission</term>
+      <listitem>
+        <para>By default, the commission percentage recorded on the Customer
+        master will be automatically entered in this field. If for some reason
+        you select a non-default sales representative at order entry, the
+        commission rate will not change. To adjust the commission rate, you
+        must make the change manually. This field can be viewed by selecting
+        the <guibutton>MORE</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>tax zones</primary>
+          <secondary>for sales orders</secondary>
+        </indexterm>Tax Zone</term>
+      <listitem>
+        <para>Specify the tax zone associated with the sales order. The tax
+        zone for the specified ship-to address will be entered here by
+        default. Otherwise, the primary tax zone for the customer will be
+        entered. This field can be viewed upon selecting the
+        <guibutton>MORE</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>F.O.B.</term>
+      <listitem>
+        <para>Enter free on board terms for the order. By default, FOB. Terms
+        entered on the Shipping Site master will appear in this field. The
+        default terms may be changed during order entry—and also at later
+        stages during the billing cycle.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Ship Via</term>
+      <listitem>
+        <para>The preferred ship via method for the customer will appear in
+        the field. You may change the default ship via using the list. You may
+        also enter a free-form ship via simply by typing the name of the ship
+        via into the field.</para>
+        <tip>
+          <para>The system supports up-to-date shipment tracking with links to
+          the websites of many leading shipping companies (i.e., ship
+          vias).</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Shipping Form</term>
+      <listitem>
+        <para>Specify the shipping form associated with the order. The
+        preferred shipping form for the customer will appear in the field.
+        This field is optional and can be viewed upon selecting the
+        <guibutton>MORE</guibutton> button.</para>
+        <note>
+          <para>Shipping defaults specified on the Customer master will
+          transfer to the sales order header when a new sales order is entered
+          for a customer.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>shipping charges on</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>shipping</primary>
+          <secondary>charges on sales orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>shipping forms on</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>shipping forms</primary>
+          <secondary>selecting on sales orders</secondary>
+        </indexterm>Shipping Chgs.</term>
+      <listitem>
+        <para>Specify the shipping charges associated with the order. The
+        preferred shipping charges type for the customer will appear in the
+        field. This field can be viewed upon selecting the
+        <guibutton>MORE</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Shipping Zone</term>
+      <listitem>
+        <para>Specify the shipping zone. Sales account assignments by shipping
+        zone are available.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Ship Complete</term>
+      <listitem>
+        <para>Select to require that all sales order line item quantities be
+        issued to shipping before the order is shipped. This feature is
+        designed to prevent partial shipments. If selected, users will be
+        prevented from shipping the order unless all line item quantities have
+        been issued to shipping. If not selected, partial shipments for the
+        order will be allowed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>billing information for</secondary>
+        </indexterm>Bill-To</term>
+      <listitem>
+        <para>Specify the customer billing information below:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Address</term>
+            <listitem>
+              <para>Displays the customer's bill-to address. You may manually
+              override the displayed address information in the fields
+              below—or use the lookup feature to select another address. If a
+              new address is manually entered here, that address will be added
+              automatically to the master list of addresses. For additional
+              documentation related to creating addresses, see <xref
+              linkend="address"/>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Billing Contact</term>
+            <listitem>
+              <para>Displays the customer's billing contact. You may manually
+              override the displayed contact information in the fields
+              below—or use the lookup feature to select another contact. If a
+              new contact is manually entered here, that contact will be added
+              automatically to the master list of contacts. For additional
+              documentation related to creating addresses, see <xref
+              linkend="contact"/>.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Copy to Ship-to -&gt;</term>
+      <listitem>
+        <para>Select to copy contents of billing address into
+        <guilabel>Ship-To Address</guilabel> field. This option is enabled if
+        the Customer master for the specified customer indicates that
+        free-form ship-tos are allowed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>ship-to details for</secondary>
+        </indexterm>Ship-To</term>
+      <listitem>
+        <para>Specify shipping details below:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Address</term>
+            <listitem>
+              <para>Displays the specified ship-to address. You may manually
+              override the displayed address information in the fields
+              below—or use the lookup feature to select another address. If a
+              new address is manually entered here, that address will be added
+              automatically to the master list of addresses. For additional
+              documentation related to creating addresses, see <xref
+              linkend="contact"/>.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Shipping Contact</term>
+            <listitem>
+              <para>Displays the shipping contact for the ship-to address. You
+              may manually override the displayed contact information in the
+              fields below—or use the lookup feature to select another
+              contact. If a new contact is manually entered here, that contact
+              will be added automatically to the master list of contacts. For
+              additional documentation related to creating addresses, see
+              <xref linkend="contact"/>.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CLEAR</guibutton></term>
+      <listitem>
+        <para>Select to refresh the Sales Order screen so that you can enter a
+        new sales order. Using the <guibutton>CLEAR</guibutton> button does
+        not erase or in any way change the information on the sales order you
+        are clearing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>SAVE AND ADD TO PACKING LIST BATCH</guibutton></term>
+      <listitem>
+        <para>Creates the sales order, saves it, and adds it to the list of
+        orders available for printing on the packing list batch.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>MORE</guibutton></term>
+      <listitem>
+        <para>Select to display extra information related to the sales order.
+        To hide the extra information, simply select the
+        <guibutton>MORE</guibutton> button again.</para>
+        <para role="xtconnect"><note>
+            <para>If the customer specified on the sales order has an EDI
+            profile attached, you may encounter an EDI processing interface
+            when printing the sales order.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para><indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>adding line items to</secondary>
+    </indexterm>To create or modify sales order line items, select the
+  <guimenuitem>Line Items</guimenuitem> tab at on the Sales Order screen. The
+  following will be displayed:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder_lineItemsPage.png"/>
+        </imageobject>
+        <caption>Sales Order Line Items</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating or modifying sales order line items, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Line Items</term>
+      <listitem>
+        <para>Display lists line items for this sales order. A valid customer
+        number must be entered in the <guilabel>Customer #</guilabel> field
+        before line items can be added to the order. The shipping-related
+        columns will not be visible if the system is configured to hide
+        shipping options at sales order entry. However, if the shipping
+        options are enabled, the line items may display in different colors,
+        depending on their scheduling. If the scheduled date for an unshipped
+        line item is in the future, the date will display in green text. If
+        the scheduled date for an unshipped line item is not in the future,
+        the date will display in red text. Once shipped, all line items revert
+        to black text. For kit items, the kit components will be given sub
+        line numbers which will be displayed in an indented view. If a line
+        item is firmed, that means it cannot be edited. Firmed line items must
+        be softened before they can be edited.</para>
+        <note>
+          <para>Sales order line items may exist in any of the following
+          statuses:</para>
+          <xi:include href="../appendixa.xml" xpointer="element(/1/6/4/2)"
+                      xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Require sufficient Inventory</term>
+      <listitem>
+        <para>Select to ensure you have enough quantity on hand (QOH) in stock
+        of a line item prior to issuing stock to shipping. If selected, this
+        option will prevent you from issuing line item quantity to shipping if
+        doing so would force QOH for the item site to fall below zero. Not
+        selecting this option means issuing stock to shipping may drive item
+        site QOH negative. This option will not be visible if the system is
+        configured to hide shipping options at sales order entry.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Canceled Line Items</term>
+      <listitem>
+        <para>Select to include in the line items display sales order line
+        items which have been specifically canceled. Displaying canceled line
+        items can provide useful customer and order history
+        information.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Misc. Charge Description</term>
+      <listitem>
+        <para>Enter a description to identify the miscellaneous charge.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Misc. Charge Sales Account</term>
+      <listitem>
+        <para>Enter a sales account to assign the miscellaneous charge
+        to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Allocated CM/Invoice</term>
+      <listitem>
+        <para>Displays the monetary value of any credit memos and/or credit
+        card charges which have been specifically allocated to the sales
+        order. If your system is configured to automatically allocate open
+        credit memo balances to new sales orders, then the monetary value of
+        these allocated credit memos—plus any credit card charges applied to
+        the order—will display here. You can also select the
+        <guibutton>Allocated Credit</guibutton> link to manually allocate
+        credit memos to the sales order.</para>
+        <note>
+          <para>The automatic allocation of available credit memos occurs only
+          once—when a sales order is saved for the first time. After that
+          first save, any additional allocations will need to be applied
+          manually.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Outstanding Credit</term>
+      <listitem>
+        <para>Displays the total monetary value of all unallocated credit
+        memos for the customer.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Authorized CC Payments</term>
+      <listitem>
+        <para>Displays the monetary value of any credit card
+        pre-authorizations for the order. Credit card charges may be
+        pre-authorized using the options found under the
+        <guimenuitem>Payment</guimenuitem> tab. When a credit card charge is
+        pre-authorized, the authorization is stored and may later be posted as
+        a completed charge using the Receivables workbench.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Freight Weight</term>
+      <listitem>
+        <para>Displays the combined weight of all sales order line items.
+        Freight weight represents the sum of an item's product weight and
+        packaging weight, both of which are defined on the Item master. The
+        per unit freight weight multiplied by the quantity per gives you the
+        line item freight weight. The sum of all line item freight weights is
+        the combined weight for the order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Margin</term>
+      <listitem>
+        <para>Displays the total profit margin for the order. The profit
+        margin is based on the following formula:</para>
+        <para>Order Subtotal - Total Standard Costs for all line items</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Margin %</term>
+      <listitem>
+        <para>Displays the profit margin percentage for the order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>At Shipping</term>
+      <listitem>
+        <para>Displays the monetary value of sales order line items at
+        shipping. The shipment value represents the total of the extended
+        prices for all items included in the shipment. The amount does not
+        include freight or tax. This displayed information will not be visible
+        if the system is configured to hide shipping options at sales order
+        entry.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Subtotal</term>
+      <listitem>
+        <para>Displays the subtotal for the sales order line items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Misc. Charge</term>
+      <listitem>
+        <para>Enter the amount of any miscellaneous charge. Examples of
+        miscellaneous charges include palletization costs, co-op refund, etc.
+        Before entering a miscellaneous charge amount, you must first assign
+        the charge to a sales account and also enter a description of the
+        charge.</para>
+        <tip>
+          <para>If you do not use miscellaneous charges at your site, you can
+          hide these fields so they are not visible when entering sales
+          orders. To do so, simply select the <guilabel>Hide Misc.
+          Charges</guilabel> option in the <guimenu>System</guimenu>-level
+          configuration.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>freight</primary>
+          <secondary>on sales orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>freight charges on</secondary>
+        </indexterm>Freight</term>
+      <listitem>
+        <para>Manually enter the amount of freight charges to be added to the
+        specified order, unless the freight amount is automatically
+        calculated. The freight amount displayed here represents the total for
+        all line items. To get a detailed view of the freight calculation,
+        click on the <guibutton>Freight</guibutton> link using your mouse.
+        Freight charges may be entered during the creation or modification of
+        a sales order—or at the time of shipment. The system can be configured
+        to automatically calculate freight amounts per quantity and shipment.
+        To learn more about freight configuration, see <xref
+        linkend="configureSO_freightPricing"/>.</para>
+        <note>
+          <para>If you are manually entering freight, all freight charges will
+          be added to the initial shipment for an order. Any subsequent
+          backorder shipments will not include freight.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Tax</term>
+      <listitem>
+        <para>Displays the total amount of tax to be charged on the sales
+        order. Sales tax is calculated at the sales order line item level. The
+        tax amount displayed here represents the total for all line item tax
+        amounts. It will also include tax on freight, if a matching freight
+        tax type assignment is found. To get a detailed view of the tax
+        calculation, click on the <guibutton>Tax</guibutton> link using your
+        mouse.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Total</term>
+      <listitem>
+        <para>Displays the total amount of the sales order.</para>
+        <tip>
+          <para>If the sales order is paid in full, the order can be shipped
+          even though the customer may be on credit hold. This is to
+          accommodate cash customers who do not typically have a credit
+          limit.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Balance</term>
+      <listitem>
+        <para>Displays the projected total due for the sales order. The
+        outstanding balance represents the amount the customer would owe if
+        all allocated and outstanding credit memos and credit card
+        pre-authorizations were applied to the order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term>Quick Item Entry</term>
+      <listitem>
+        <para>Distribution edition users will have the option to enter line
+        items quickly on this screen, without having to first open the Sales
+        Order Item screen:</para>
+        <para><variablelist>
+            <varlistentry>
+              <term>Item Number</term>
+              <listitem>
+                <para>Enter the item number of the item you want to sell. The
+                item list will contain sold items available for sale to the
+                specified customer. The list of available items may vary from
+                customer to customer, depending on how pricing schedules are
+                implemented at your site. Once an item number is entered, the
+                inventory unit of measure and item description will
+                automatically appear.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Site</term>
+              <listitem>
+                <para>Specify the site the sales order item is sold from.
+                Items may be supplied to sales orders from multiple item
+                sites. After an item number is entered above, the system
+                checks for available item sites for the item. Any item sites
+                having the <guilabel>Sold From</guilabel> flag set on them
+                will be selectable from this site list. By default, the item
+                site having the highest ranking will be selected as the first
+                available site. If more than one item site share a ranking of
+                <literal>1</literal>, the sites will be sorted in alphabetical
+                order. Item site rankings are set on the Item Site
+                master.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Qty. Ordered</term>
+              <listitem>
+                <para>Enter the quantity of the specified item being ordered.
+                The quantity will be set to <literal>1</literal> by
+                default.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Scheduled Date</term>
+              <listitem>
+                <para>The scheduled date is the date when the line item
+                quantity should be shipped. The user who enters the line item
+                is responsible for determining the scheduled date. After
+                entering the scheduled date, hit the
+                <guibutton>TAB</guibutton> key on your keyboard to display
+                values in the remaining display only fields.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Net Unit Price</term>
+              <listitem>
+                <para>Displays the unit price for the sales order item. By
+                default, the system will choose the lower of the following two
+                prices: A) The most-specific pricing schedule assignment or B)
+                any sale in effect at the time of order entry. The specificity
+                of pricing schedule assignments is determined in the following
+                descending order: By customer ship-to address (most specific),
+                by customer, by customer type, by customer type pattern, by
+                all customers. The lookup feature located to the right of the
+                field leads to a Price List screen.</para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>ADD ITEM</term>
+              <listitem>
+                <para>Select to add another line item to the order.</para>
+              </listitem>
+            </varlistentry>
+          </variablelist></para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry role="distribution">
+      <term><guibutton>FAVORITES</guibutton></term>
+      <listitem>
+        <para>Select this button to bring up an interactive screen showing a
+        list of items the customer has purchased in the past. On the Favorites
+        screen you'll have the option to add one or multiple items from the
+        customer's traditional favorite items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>CLOSE</guibutton></term>
+      <listitem id="salesOrderCLOSE1">
+        <para>Highlight a sales order line item and then select this button to
+        close the sales order line item. If the highlighted line item is
+        already closed, this button will revert to an
+        <guibutton>OPEN</guibutton> button, which may be used to open the
+        closed line item. Closing the sales order line item will remove all
+        existing reservations.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term><guibutton>MOVE UP</guibutton></term>
+      <listitem>
+        <para>Highlight a sales order line item and then select this button to
+        move the line item up the list of line items. Sequence numbers are
+        automatically adjusted to reflect the change in position.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term><guibutton>MOVE DOWN</guibutton></term>
+      <listitem>
+        <para>Highlight a sales order line item and then select this button to
+        move the line item down the list of line items. Sequence numbers are
+        automatically adjusted to reflect the change in position.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="distribution">
+      <term><guibutton>SMOOTH MARGIN</guibutton></term>
+      <listitem>
+        <para>Highlight one or multiple sales order line items and then select
+        this button to reach the Margin Smoothing screen. On the Smooth Margin
+        screen you will be given the option to smooth the margin for the
+        selected items by a percentage you determine.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><guibutton>RESERVE STOCK</guibutton></term>
+      <listitem>
+        <para>Highlight a sales order line item and then select this button to
+        reserve inventory quantity for the line item.<note>
+            <para>In order to manually reserve or unreserve stock for a line
+            item, the Sales Configuration option <guilabel>Allow Manual
+            Reservations</guilabel> must be selected.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><guibutton>RES. LINE BAL.</guibutton></term>
+      <listitem>
+        <para>Highlight a sales order line item and then select this button to
+        reserve inventory quantity for the remaining line item balance.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>shipping</primary>
+          <secondary>issuing stock to</secondary>
+        </indexterm><guibutton>ISSUE STOCK</guibutton></term>
+      <listitem id="salesOrderISSUE1STOCK">
+        <para>Highlight a sales order line item and then select this button to
+        issue quantity to shipping. This button will not be visible if the
+        system is configured to hide shipping options at sales order
+        entry.</para>
+        <tip>
+          <para>You may select multiple line items for issuing to shipping by
+          highlighting them using your mouse—or a combination of your mouse
+          and either the <guibutton>SHIFT</guibutton> or
+          <guibutton>CTRL</guibutton> key.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>ISSUE LINE BAL.</guibutton></term>
+      <listitem>
+        <para>Highlight a sales order line item and then select this button to
+        issue the balance of the line item quantity to shipping. This button
+        will not be visible if the system is configured to hide shipping
+        options at sales order entry.</para>
+        <note>
+          <para>The shipping-related options will not be visible if the system
+          is configured to hide shipping options at sales order entry.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><guibutton>ISSUE ORDER AVAILABLE</guibutton></term>
+      <listitem>
+        <para>Select this button to issue all material available to fill the
+        current sales order. Only stock that is available to be issued to
+        shipping will be issued. If an item is on backorder, that stock will
+        have to be issued at a future point.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>SHIP ORDER</guibutton></term>
+      <listitem>
+        <para>Highlight a sales order line item and then select this button to
+        ship the order. This button will not be visible if the system is
+        configured to hide shipping options at sales order entry.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><guibutton>ISSUE AVAILABLE AND SHIP</guibutton></term>
+      <listitem>
+        <para>Select this button to issue all material available and then ship
+        the sales order, all in one step. Only stock that is available to be
+        issued to shipping will be issued. If an item is on backorder, that
+        stock will have to be issued at a future point.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/allocateARCreditMemo.xml"
+              xpointer="allocateARCMs"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To define or maintain relationships for sales orders, select the
+  <guimenuitem>Relationships</guimenuitem> tab. The following will be
+  displayed:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder_relationshipsTab.png"/>
+        </imageobject>
+        <caption>Sales Order Relationships</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When defining relationships for sales orders, you are presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Project #</term>
+      <listitem>
+        <para>If your system is configured to use projects, select a project
+        number to associate with the sales order. If a sales order is created
+        from a converted quote—and the quote had a project number associated
+        with it—then the project number from the originating quote will
+        automatically be entered here. Once a project number is associated
+        with a sales order, any work orders or purchase orders created by the
+        sales order demand will automatically be linked to the same project
+        number as the sales order. In this way, sales orders, work orders, and
+        purchase orders may be linked to the same project.</para>
+        <para role="xtprjaccnt">When you have the xTuple Project Accounting
+        package installed—and you link a project to the sales
+        order—transactions related to the sales order will include the project
+        number as the final segment of affected G/L account numbers. Account
+        numbers related to the following transactions will include the project
+        number as the final segment: issue to shipping, return stock, ship
+        shipment, recall shipment, and post invoice.</para>
+        <tip>
+          <para>If your site is configured to create projects automatically
+          whenever new sales orders or quotes are entered, the projects
+          generated in this way will assume the number of the sales order or
+          quote which caused their creation.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Opportunity</term>
+      <listitem>
+        <para>Select an opportunity to associate with the sales order, using
+        the lookup feature located to the right of the field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>From Quote</term>
+      <listitem>
+        <para>If a sales order was converted from a quote, the originating
+        quote number will display here.</para>
+        <para role="standard"><note>
+            <para>If the sales order was generated from a return
+            authorization, the return authorization number will display
+            here.</para>
+          </note></para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>Sales order characteristics are user-defined definitions which may be
+  used to provide additional layers of description about sales orders. These
+  descriptions are static and not processed by the system, but are useful for
+  informational purposes.</para>
+  <tip>
+    <para>For configured items, an additional pricing field will be available
+    on the Item Characteristic screen. This pricing information will be passed
+    to sales order line items when particular configurations are sold. The
+    price for configured items may vary depending on the characteristics
+    selected at sales order entry time.</para>
+  </tip>
+  <para>To enter characteristics associated with a sales order, select the
+  <guimenuitem>Characteristics</guimenuitem> tab. The following will be
+  displayed:</para>
+  <para><mediaobject>
+      <imageobject>
+        <imagedata fileref="images/salesOrder_characteristics.png"/>
+      </imageobject>
+      <caption><para>Sales Order Characteristics</para></caption>
+    </mediaobject></para>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>To add comments related to a sales order, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following will be
+  displayed:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder_comments.png"/>
+        </imageobject>
+        <caption>Sales Order Comments</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para>Order notes added to a sales order are used for internal purposes
+  only. If an invoice results from the sales order, these notes will be
+  transferred to the invoice. To add notes to a sales order, select the
+  <guimenuitem>Order Notes</guimenuitem> tab on the Sales Order screen. The
+  following will be displayed:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder_orderNotes.png"/>
+        </imageobject>
+        <caption>Sales Order Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When adding notes to a sales order, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Order Notes</term>
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        general notes related to the sales order. These notes are for internal
+        use only.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Shipping Notes</term>
+      <listitem>
+        <para>Shipping notes are drawn from the Customer master—specifically
+        from the <guimenuitem>Shipping Notes</guimenuitem> tab on the Ship-To
+        Address master. The notes may vary depending on the ship-to address
+        specified for the order. These notes provide a mechanism for
+        transferring shipping information from the Customer master to the
+        sales order. Ultimately, shipping notes may be printed on shipping
+        paperwork. While shipping notes content may originate from the
+        Customer master, you can edit the notes to fit the requirements of an
+        order. Shipping notes may be printed on shipping paperwork.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To associate documents with a sales order, select the
+  <guimenuitem>Documents</guimenuitem> tab. The following will be
+  displayed:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder_documents.png"/>
+        </imageobject>
+        <caption>Sales Order Documents</caption>
+      </mediaobject>
+    </screenshot></para>
+  <xi:include href="../widgets/documents.xml" xpointer="documentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <para><indexterm significance="normal">
+      <primary>credit cards</primary>
+      <secondary>sales orders and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>credit cards and</secondary>
+    </indexterm>To receive payments for the sales order, select the
+  <guimenuitem>Payment</guimenuitem> tab at the top of the Sales Order screen.
+  To authorize or charge customer credit cards, select the <guimenuitem>Credit
+  Card</guimenuitem> tab in the window. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/salesOrder_paymentCredit.png"/>
+        </imageobject>
+        <caption>Customer Credit Card Payment</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When authorizing or charging customer credit cards, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Payment</term>
+      <listitem>
+        <para>Display lists credit card information for the specified
+        customer.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>MOVE UP</guibutton></term>
+      <listitem>
+        <para>Highlight a credit card and then select this button to move the
+        credit card up in the sequence of credit cards. Sequence numbers are
+        automatically adjusted to reflect the change in position.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>MOVE DOWN</guibutton></term>
+      <listitem>
+        <para>Highlight a credit card and then select this button to move the
+        credit card down the sequence of credit cards. Sequence numbers are
+        automatically adjusted to reflect the change in position.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>AUTHORIZE</guibutton></term>
+      <listitem>
+        <para>After entering an amount below, highlight an active credit card
+        and then select this button to pre-authorize the credit card charge
+        for the amount specified. Pre-authorized credit card charges will be
+        displayed in the <guilabel>Authorized CC Payments</guilabel> field on
+        the <guimenuitem>Line Items</guimenuitem> tab. After a credit card
+        charge has been pre-authorized, the charge may then be post-authorized
+        using the Receivables workbench—thereby completing the credit card
+        transaction.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>CHARGE</guibutton></term>
+      <listitem>
+        <para>After entering an amount below, highlight an active credit card
+        and then select this button to charge the credit card for the amount
+        specified. When a credit card is charged, both a credit memo and a
+        cash receipt are posted for the charge amount. The total due from the
+        customer will be automatically adjusted on the invoice to reflect the
+        amount of any credit card charges. If, by chance, you charge a
+        customer's credit card but fail to save the sales order, the link
+        between the order and the charge will be broken; however, the
+        transactions resulting from the charge will remain in the
+        system.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Amount</term>
+      <listitem>
+        <para>Enter the amount of the credit card pre-authorization or charge.
+        By default, the outstanding balance due will be displayed here.
+        However, you may edit the default amount.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>CVV Code</term>
+      <listitem>
+        <para>Enter the card verification value (CVV) code found on the back
+        of the specified credit card. This may be an optional feature at your
+        site. Contact your systems administrator for details.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To post a cash payment, select the <guimenuitem>Cash</guimenuitem> tab
+  in the Payments window. The following screen will be displayed:</para>
+  <para><mediaobject>
+      <imageobject>
+        <imagedata fileref="images/salesOrder_paymentCash.png"/>
+      </imageobject>
+      <caption><para>Customer Cash Payment</para></caption>
+    </mediaobject>When posting cash to the sales order, you are presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Order Total</term>
+      <listitem>
+        <para>Displays the sales order total.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Balance</term>
+      <listitem>
+        <para>Displays the difference between the sales order total and any
+        payments that have been applied.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Amount Received</term>
+      <listitem>
+        <para>Enter the cash payment amount that should be applied to the
+        sales order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Funds Type</term>
+      <listitem>
+        <para>Specify the type of the cash receipt. Choose from following
+        funds types: check, certified check, cash, wire transfer, and
+        other.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>You can use the funds type <guilabel>Other</guilabel> for entering
+    credit card information if you are not using xTuple's credit card
+    processing functionality at your site.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Payment/Document #</term>
+      <listitem>
+        <para>Use this field to enter the customer's check number, transaction
+        number, credit card number, or any other document number associated
+        with the cash receipt.</para>
+        <para role="distribution">The username of the logged-in user will
+        display as the default document number, when the XWD package is
+        enabled. This value can be changed, if desired.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Payment/Document Date</term>
+      <listitem>
+        <para>Use this field to specify the date on the check you received.
+        This is the document date used when running the receivables aging
+        report.</para>
+        <para role="distribution">The current date will display here, when the
+        XWD package is enabled. This date can be changed, if desired.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Post to</term>
+      <listitem>
+        <para>Select the bank account you want to post the cash receipt to.
+        The asset account used for the selected bank account is specified on
+        the Bank Account master.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>If your site uses a unique bank account for receiving credit card
+    payments, make sure to select the appropriate bank account when entering
+    payments from a credit card.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Distribution Date</term>
+      <listitem>
+        <para>Specify the date of the cash distribution. This is the date the
+        cash receipt will hit the general ledger (G/L). By default, the
+        current day's date will appear. If the distribution date precedes the
+        application date, the label <guilabel>Apply Balance As</guilabel> will
+        change to <guilabel>Record Receipt as</guilabel> to clarify that the
+        cash will be recorded as a credit memo or customer deposit until the
+        application date arrives. On the application date, the credit memo or
+        customer deposit will automatically be applied to its specified
+        receivable document(s).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Application Date</term>
+      <listitem>
+        <para>Specify the date you want the cash to be applied to the selected
+        receivables. By default, the current day's date will appear. To
+        prevent receivable aging and G/L balance mismatches, you may not enter
+        an application date prior to the earliest document date of receivables
+        the cash is being applied to.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Use Alternate Receivables Account From Sales Category</term>
+      <listitem>
+        <para>Select one of the following optional receivables
+        accounts:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Sales Category</term>
+            <listitem>
+              <para>Specify a sales category whose <guilabel>Receivables
+              Account</guilabel> option you want to use instead of the default
+              receivables account.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>If an alternate receivables account is not specified, the system
+    will use the default receivables account specified for the customer type
+    under receivables account assignments.</para>
+  </note>
+  <para>To view shipments associated with the order, select the
+  <guimenuitem>Shipments</guimenuitem> tab. The following will be
+  displayed:</para>
+  <para><mediaobject>
+      <imageobject>
+        <imagedata fileref="images/salesOrder_shipments.png"/>
+      </imageobject>
+      <caption><para>Sales Order Shipments</para></caption>
+    </mediaobject></para>
+  <para>When viewing shipments associated with the order, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Sales Order #</term>
+      <listitem>
+        <para>Displays the sales order number of the current sales
+        order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Date</term>
+      <listitem>
+        <para>Displays the order date of the current sales order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cust. Name</term>
+      <listitem>
+        <para>Displays the customer name associated with the specified sales
+        order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Cust. Phone</term>
+      <listitem>
+        <para>Displays the customer's phone number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>P/O Number</term>
+      <listitem>
+        <para>Displays the purchase order number associated with the specified
+        sales order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Shipments</term>
+      <listitem>
+        <para>Display lists shipments for the sales order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view email associated with the sales order, select the
+  <guimenuitem>Email</guimenuitem> tab. The following screen will
+  appear:</para>
+  <xi:include href="../widgets/emailWidget.xml" xpointer="emailWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+  <xi:include href="salesOrderItem.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

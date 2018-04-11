@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="archivesalesHistory">
+  <title><indexterm significance="normal">
+      <primary>sales history</primary>
+      <secondary>archiving of</secondary>
+    </indexterm>Archive sales History</title>
+  <para>If your system contains older sales history information which you no
+  longer need for sales analysis purposes, you may archive that
+  history—effectively removing it from view. Any archived sales history will
+  not be shown in sales analysis reports. If you ever want to view archived
+  sales history again, you may restore it at any point. For more information,
+  see <xref linkend="restoreSalesHistory" />.</para>
+  <para>To archive sales history, go to <guimenuitem>Sales &gt; Utilities &gt;
+  Archive Sales History</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/archivesalesHistory.png" />
+        </imageobject>
+        <caption>Archive Sales History</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>Archiving sales history does not delete sales history. Rather, the
+    historical data is simply relocated to a storage archive on the database.
+    You may restore sales history from the archive at any time.</para>
+  </note>
+  <para>When archiving sales history, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Customer Types</term>
+      <listitem>
+        <para>Select to archive sales history for all customer types.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify customer type whose sales history you want to
+        archive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>All Product Categories</term>
+      <listitem>
+        <para>Select to archive sales history for all product
+        categories.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify product category whose sales history you want to
+        archive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a product category pattern to select a range of product
+        categories. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Archive Freight, sales Tax and Misc. Items</term>
+      <listitem>
+        <para>Select to archive all the sales information which is not
+        directly related to the item sites for a sales order—that is, freight
+        charges, tax, etc.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to archive sales history for all sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose sales history you want to archive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>sales history generated on or after this date will be
+        archived.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Sales history by shipping zone by item generated on or before
+        this date will be archived.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>OK</guibutton></term>
+      <listitem>
+        <para>Archives sales history using the specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

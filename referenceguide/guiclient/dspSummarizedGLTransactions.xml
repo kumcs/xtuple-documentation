@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspSummarizedGLTransactions">
+  <title><indexterm significance="normal">
+      <primary>general ledger</primary>
+
+      <secondary>summarized transactions in</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>transactions</primary>
+
+      <secondary>summarized in general ledger</secondary>
+    </indexterm>Summarized G/L Transactions</title>
+
+  <para>To view summarized general ledger transactions, go to
+  <guimenuitem>Accounting &gt; General Ledger &gt; Reports &gt; Summarized
+  Transactions</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspSummarizedGLTransactions.png"/>
+        </imageobject>
+
+        <caption>Summarized G/L Transactions</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying summarized general ledger transactions, you are
+  presented with the following options:</para>
+
+  <tip>
+    <para>Start date and end date must be entered for request to proceed.
+    Results will be displayed in the <guilabel>Summarized G/L
+    Transactions</guilabel> list.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry>
+      <term>All Sources</term>
+
+      <listitem>
+        <para>Select to display summarized G/L transactions from all source
+        modules.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify source module whose summarized G/L transactions you want
+        to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Start Date</term>
+
+      <listitem>
+        <para>G/L transactions posted on and after this date will be
+        summarized in the display. This is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>End Date</term>
+
+      <listitem>
+        <para>G/L transactions posted on and before this date will be
+        summarized in the display. This is a required field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Transactions</term>
+
+      <listitem>
+        <para>Select one of the following display options:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>All</term>
+
+            <listitem>
+              <para>Select to summarize all transactions in the
+              display.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+
+        <variablelist>
+          <varlistentry>
+            <term>Unposted</term>
+
+            <listitem>
+              <para>Select to summarize only unposted transactions in the
+              display.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Posted</term>
+
+            <listitem>
+              <para>Select to summarize only posted transactions in the
+              display.</para>
+
+              <note>
+                <para>An unposted transaction is a transaction involving
+                accounts whose trial balances have not yet been updated with
+                the transaction information. Unposted transactions exist in a
+                kind of limbo state. They are posted to the general ledger
+                (G/L), but not yet to the trial balance. This type of
+                transaction occurs when users attempt to post transactions
+                into frozen, or non-existent accounting periods. Thawing
+                frozen periods is one method for correcting this situation;
+                offsetting G/L journal entries may also be used.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <variablelist>
+    <varlistentry>
+      <term>Transactions</term>
+
+      <listitem>
+        <para>This display is a nested list, with a plus sign
+        (<guibutton>+</guibutton>) located to the far left of the display next
+        to each transaction that may be expanded to lower levels. By clicking
+        your mouse on a plus sign, you reveal lower levels of information
+        related to the transaction.</para>
+
+        <note>
+          <para>If the transaction refers to an invoice, purchase order, or
+          voucher, you may also drill down to view the original
+          document.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

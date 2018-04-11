@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspPOsByVendor">
+  <title><indexterm significance="normal">
+      <primary>purchase orders</primary>
+      <secondary>summarized by date</secondary>
+    </indexterm>P/Os by Vendor</title>
+  <para>To see a summarized view of purchase orders by vendor, go to
+  <guimenuitem>Purchase &gt; Lookup &gt; Purchase Orders &gt; by
+  Vendor</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspPOsByVendor.png" />
+        </imageobject>
+        <caption>Purchase Orders by Vendor</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>A purchase order will remain open if at least one of its line items
+    is open. Once all line items are closed, the purchase order will also be
+    closed. To reopen a closed purchase order, simply open one of its closed
+    line items.</para>
+  </tip>
+  <para>When displaying a summarized view of purchase orders by date, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Vendors</term>
+      <listitem>
+        <para>Select to display purchase orders for all vendors.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Select to display purchase orders for a selected vendor.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to display purchase orders in all sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose purchase orders you want to display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Enter a start date based on the corresponding date filter you
+        choose. The following three date filters are available: order date,
+        due date, or receipt date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Enter an end date based on the corresponding date filter you
+        choose. The following three date filters are available: order date,
+        due date, or receipt date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Order Date</term>
+      <listitem>
+        <para>Select to display results by the order date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Due Date</term>
+      <listitem>
+        <para>Select to display results by the due date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Receipt Date</term>
+      <listitem>
+        <para>Select to display results by the receipt date.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show</term>
+      <listitem>
+        <para>Select from the following additional report options:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Closed</term>
+            <listitem>
+              <para>Select to display only closed purchase orders.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Where Item Description contains</term>
+            <listitem>
+              <para>Select to display purchase orders whose item description
+              matches the value entered in the corresponding field. This field
+              supports pattern matching with regular expressions.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Purchase Orders</term>
+      <listitem>
+        <para>Display lists purchase orders by vendor, using the specified
+        parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printWoRouting" role="manufacturing">
+  <title>Print Routing</title>
+  <para>A routing is a list showing the work order operations for a specified
+  work order. To print a work order routing, go to <guimenuitem>Manufacture
+  &gt; Forms &gt; Print Routing</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printWoRouting.png" />
+        </imageobject>
+        <caption>Print W/O Routing</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When printing a work order routing, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Work Order #</term>
+      <listitem>
+        <para>Enter the work order number of the work order whose routing you
+        want to print.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays item number automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates work order method is either assembly or
+        disassembly.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Copies</term>
+      <listitem>
+        <para>Select a number using the arrows or manually enter a value up to
+        a maximum of 99. Specify the number of copies of the work order
+        routing you want to print.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

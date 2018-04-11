@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="customerType">
+  <title><indexterm significance="normal">
+      <primary>customer types</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Customer Type</title>
+  <para id="Para573436">To create a new customer type, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+  <para id="Para573440"><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/customerType.png" />
+        </imageobject>
+        <caption>Create new Customer Type</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para id="Para573443">Create your customer types using a logical,
+    hierarchical structure. This will make it easier to retrieve customer type
+    information in the future.</para>
+  </tip>
+  <para id="Para573447">When creating a new customer type, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term id="Para573448">Code</term>
+      <listitem>
+        <para>Enter a code number to identify the customer type.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term id="Para573449">Description</term>
+      <listitem>
+        <para>Enter a description to identify the customer type.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Enable Characteristics Profile</term>
+      <listitem>
+        <para>Select to enforce the use of a characteristics template for any
+        customer assigned to the specified customer type. If characteristics
+        profiles are used, the full slate of characteristics and corresponding
+        values will be presented in the
+        <guimenuitem>Characteristics</guimenuitem> tab of the Customer master
+        for every customer assigned to the customer type. If not selected, the
+        template approach will not be used—and users will have the ability to
+        create <emphasis>ad hoc</emphasis> characteristics for
+        customers.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/characteristic.xml"
+              xpointer="characteristiclWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

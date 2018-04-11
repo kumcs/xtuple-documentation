@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="maintainShipping">
+  <title><indexterm significance="normal">
+      <primary>shipping</primary>
+
+      <secondary>maintaining contents at</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>shipping contents</primary>
+
+      <secondary>maintenance of</secondary>
+    </indexterm>Maintain Shipping Contents</title>
+
+  <para>When items have been issued to shipping, you have the ability to
+  maintain these shipping contents in one central location, by site. To
+  maintain shipping contents, go to <guimenuitem>Inventory &gt; Shipping &gt;
+  Maintain Shipping Contents</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/maintainShipping.png"/>
+        </imageobject>
+
+        <caption id="maintainShippingContents">Maintain Shipping</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When maintaining shipping contents, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to maintain shipping contents for all sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site whose shipping contents you want to
+        maintain.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Stock at Shipping</term>
+
+      <listitem>
+        <para>Display lists stock at shipping based on the specified
+        parameters. This display is a nested list, with a plus (+) sign
+        located to the far left of the display next to each line that may be
+        expanded to lower levels. By clicking your mouse on a plus sign, you
+        reveal lower levels of information related to the documents.</para>
+
+        <note>
+          <para>The printed status for a sales order at shipping may be either
+          <guilabel>No</guilabel>, <guilabel>Yes</guilabel>, or
+          <guilabel>Dirty</guilabel>. The first two options indicate whether
+          shipping forms have been printed for the order or not. The
+          <guilabel>Dirty</guilabel> status indicates shipping contents have
+          changed since shipping forms were printed for the order.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="shippingInformation.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

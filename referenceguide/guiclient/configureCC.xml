@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="configureCC">
+  <title><indexterm significance="normal">
+      <primary>configuration</primary>
+      <secondary>for credit cards</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>credit cards</primary>
+      <secondary>configuration for</secondary>
+    </indexterm>Credit Card</title>
+  <para>The system supports several credit card verification services,
+  including Authorize.Net and CyberSource. The recording of credit card
+  transactions is also supported, even if an approved verification service is
+  not being used.</para>
+  <para><tip>
+      <para>Once you've confirmed with your bank which payment gateway you
+      want to use, contact the gateway to set up a merchant account. The
+      merchant account details are needed before you can configure xTuple to
+      use payment gateways.</para>
+    </tip>To configure your system to process credit cards, go to
+  <guimenuitem>System &gt; Setup &gt; </guimenuitem><guimenuitem>Configure
+  &gt; Credit Card</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configureCC.png"/>
+        </imageobject>
+        <caption>Configure general Credit Card options</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When establishing the general settings for your credit card
+  configuration, you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Accept Credit Cards</term>
+      <listitem>
+        <para>Select to indicate the system is configured to accept credit
+        card payments. If selected, the credit card processing functionality
+        will be enabled throughout the system. For example, users will be able
+        to store customer credit card information on the Customer master—and
+        receive credit card payments when processing sales orders. If this
+        option is not selected, credit card functionality will be
+        disabled.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Work in Test Mode</term>
+      <listitem>
+        <para>Select if your site is testing the credit card configuration and
+        functionality. If selected, the system will verify that the server
+        specified under the <guimenuitem>Server</guimenuitem> tab is in fact
+        the correct test server. If this option is not selected, the system
+        will verify that the correct production server is specified.</para>
+        <warning>
+          <para>Make sure that you <emphasis>uncheck</emphasis> this option as
+          soon as you are ready to put the application into production. Most
+          credit card transactions will appear to succeed whether running in
+          test mode or live mode but there will be no actual charges made if
+          in test mode.</para>
+          <para>If you are using Authorize.Net then you should also make sure
+          that the Merchant Interface is configured to run in live mode
+          instead of test mode. Both xTuple ERP and the Authorize.Net gateway
+          allow sending test transactions to the live server but both
+          applications must be set to run in live mode for real transactions
+          to occur.</para>
+        </warning>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>credit cards</primary>
+          <secondary>selecting verification service</secondary>
+        </indexterm>Verification Service</term>
+      <listitem>
+        <para>Specify the credit card verification service you will be
+        using:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Authorize.Net</term>
+            <listitem>
+              <para>Select if you will be using the Authorize.Net payment
+              gateway for handling credit card transactions. If selected,
+              specific Authorize.Net options will be enabled on the screen.
+              Please be aware that xTuple only supports the card not present
+              (CNP) account type through Authorize.Net. The card present (CP)
+              account type is not currently supported. Authorize.Net has also
+              deprecated its support for multiple currencies per
+              account.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>CyberSource</term>
+            <listitem>
+              <para>Select if you will be using the CyberSource payment
+              gateway for handling credit card transactions. Specific
+              CyberSource options will be enabled on the screen if you select
+              this service.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>External</term>
+            <listitem>
+              <para>Select if you will be using tools outside of xTuple ERP to
+              communicate with your credit card company. If selected, you may
+              still process credit card transactions in xTuple ERP—and this
+              information will be stored in your xTuple database. However, no
+              information will be sent to outside credit card processors. You
+              can learn more about the interface used to collect external
+              credit card transactions in <xref
+              linkend="externalCCTransaction"/>.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Confirm Transaction</term>
+      <listitem>
+        <para>Specify when you want to application users to confirm
+        transactions before they are processed:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Pre-Authorization</term>
+            <listitem>
+              <para>Select if you want confirmation before pre-authorizing
+              charges on a credit card.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Direct Charge</term>
+            <listitem>
+              <para>Select if you want confirmation before directly charging a
+              credit card.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Charge Pre-Authorization</term>
+            <listitem>
+              <para>Select if you want confirmation before posting
+              pre-authorized charges.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Credit</term>
+            <listitem>
+              <para>Select if you want confirmation before crediting back
+              charges on a credit card.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Enable Transaction on sales Order</term>
+      <listitem>
+        <para>Select which of the following options should be enabled under
+        the <guimenuitem>Payments</guimenuitem> tab of the sales order header.
+        This setting does not affect the Receivables workbench or any other
+        window in the application.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Pre-Authorization</term>
+            <listitem>
+              <para>If selected, only the <guibutton>AUTHORIZE</guibutton>
+              button will be enabled.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Direct Charge</term>
+            <listitem>
+              <para>If selected, only the <guibutton>CHARGE</guibutton> button
+              will be enabled.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>pre-authorizations</primary>
+          <secondary>for credit card transactions</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>credit cards</primary>
+          <secondary>pre-auth limits</secondary>
+        </indexterm>Number of days Pre-Authorizations are valid for</term>
+      <listitem>
+        <para>Select a value between one and 30 using the arrows located to
+        the right of the field. Value entered specifies the number of days
+        pre-authorizations will remain valid from the date they were entered.
+        Once a pre-authorization expires, it will no longer be visible in the
+        system and will be unavailable for post-authorization.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>bank accounts</primary>
+          <secondary>for credit card transactions</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>credit cards</primary>
+          <secondary>bank accounts and</secondary>
+        </indexterm>Default Bank Accounts</term>
+      <listitem>
+        <para>Specify the default bank accounts to be used when receiving cash
+        from customers using the following types of credit cards:</para>
+        <variablelist>
+          <varlistentry>
+            <term>American Express</term>
+            <listitem>
+              <para>Select a bank account to use for American Express
+              transactions. This selection allows you to track American
+              Express transactions and reconcile them against statements
+              provided by your credit card processing company.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Discover</term>
+            <listitem>
+              <para>Select a bank account to use for Discover transactions.
+              This selection allows you to track Discover transactions and
+              reconcile them against statements provided by your credit card
+              processing company.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Master Card</term>
+            <listitem>
+              <para>Select a bank account to use for Master Card transactions.
+              This selection allows you to track Master Card transactions and
+              reconcile them against statements provided by your credit card
+              processing company.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Visa</term>
+            <listitem>
+              <para>Select a bank account to use for Visa transactions. This
+              selection allows you to track Visa transactions and reconcile
+              them against statements provided by your credit card processing
+              company.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Other</term>
+            <listitem>
+              <para>Select if you want to specify a different default bank
+              account than those listed.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <variablelist>
+    <varlistentry>
+      <term>General Options</term>
+      <listitem>
+        <variablelist>
+          <varlistentry>
+            <term>Print Receipts</term>
+            <listitem>
+              <para>Select if you want the ability to print credit card
+              receipts.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>Fraud detection methods vary depending on the payment gateway used.
+  Authorize.Net requires fraud settings to be configured on the gateway
+  server. Other services send fraud detection results back to the client
+  software and require the client to decide whether to accept the transaction
+  or void it. To configure client-side fraud detections settings, if required,
+  select the <guimenuitem>Fraud Detection</guimenuitem> tab. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configureCC_fraudPage.png"/>
+        </imageobject>
+        <caption>Configure Credit Card Fraud Detection</caption>
+      </mediaobject>
+    </screenshot><tip>
+      <para>If the CyberSource service is being used, the options on the
+      <guimenuitem>Fraud Detection</guimenuitem> tab will be enabled and
+      selections should be made. These options will be disabled if the
+      Authorize.Net gateway is being used. Fraud detection settings for
+      Authorize.Net must be configured through the Merchant Interface.</para>
+    </tip>When configuring client-side fraud detection settings, if required,
+  you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Require Card Verification Value/Code (CVV)</term>
+      <listitem>
+        <para>Select if you want to require users to enter a credit card
+        verification value (CVV) code when processing credit cards.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Card Verification</term>
+      <listitem>
+        <para>Specify how you want to handle credit card verification
+        processing:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Do not check</term>
+            <listitem>
+              <para>Select if the xTuple application should ignore the CVV
+              result sent by the payment gateway.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Warn if failure</term>
+            <listitem>
+              <para>Select if the xTuple application should tell the user if
+              the CVV result sent by the payment gateway fails based on the
+              criteria checked in the <guilabel>Fail CVV Check If</guilabel>
+              section.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Reject if failure</term>
+            <listitem>
+              <para>Select if the xTuple application should void the
+              transaction and tell the user if the CVV result sent by the
+              payment gateway fails based on the criteria checked in the
+              <guilabel>Fail CVV Check If</guilabel> section.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Fail CVV Check If:</term>
+      <listitem>
+        <para>Specify how you want to handle CVV check failures:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Code Does Not Match</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the CVV does not match the credit card number.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>CVV Was Not Processed</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the credit card company, such as Visa or American Express,
+              could not process the CVV for the payment gateway.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Card Had No Code</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the credit card does not have a CVV but is expected to have
+              one.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Card Issuer Is Not Certified</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the financial institution that issued the credit card is not
+              certified.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Address Verification Service</term>
+      <listitem>
+        <para>Specify how you want to handle address verification:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Do not check</term>
+            <listitem>
+              <para>Select if the xTuple application should ignore the AVS
+              result sent by the payment gateway.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Warn on Failed AVS Check</term>
+            <listitem>
+              <para>Select if the xTuple application should tell the user if
+              the AVS result sent by the payment gateway fails based on the
+              criteria checked in the <guilabel>Fail AVS Check If</guilabel>
+              section.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Reject on Failed AVS Check</term>
+            <listitem>
+              <para>Select if the xTuple application should void the
+              transaction and tell the user if the AVS result sent by the
+              payment gateway fails based on the criteria checked in the
+              <guilabel>Fail AVS Check If</guilabel> section.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Fail AVS check if:</term>
+      <listitem>
+        <para>Specify how you want to handle address verification check
+        failures:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Address Does Not Match</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the address stored by the xTuple application does not match
+              the credit card company's recorded billing address for the
+              credit card.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Address Comparison Not Available</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the credit card company could not process the street address
+              information for the payment gateway.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>ZIP Does Not Match</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the postal code stored by the xTuple application does not
+              match the credit card company's recorded billing address for the
+              credit card.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>ZIP Comparison Not Available</term>
+            <listitem>
+              <para>Select if the transaction should be treated as fraudulent
+              if the credit card company could not process the postal code
+              information for the payment gateway.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To establish the server settings for your credit card configuration,
+  <indexterm significance="normal">
+      <primary>servers</primary>
+      <secondary>for credit card companies</secondary>
+    </indexterm>select the <guimenuitem>Server</guimenuitem> tab. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configureCC_serverPage.png"/>
+        </imageobject>
+        <caption>Configure Credit Card Server</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When establishing the server settings for your credit card
+  configuration, you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>servers</primary>
+          <secondary>for credit card service</secondary>
+        </indexterm>Server Name</term>
+      <listitem>
+        <para>Enter the URL for the specified verification service's
+        server—or, leave this field blank to automatically use the correct
+        default URL. If you manually enter a URL, keep in mind that the
+        address needed may vary depending on whether you are working in test
+        mode or production mode. By leaving this field blank, you can be
+        assured the correct default path will always be used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Port</term>
+      <listitem>
+        <para>Enter the port number for the specified verification service's
+        server. If this is left empty then the application will use the
+        default port for this verification service.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Login</term>
+      <listitem>
+        <para>For Authorize.Net, use your API login here, not your merchant
+        interface login, which may differ.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Password/Transaction Key</term>
+      <listitem>
+        <para>Enter either the password or transaction key for the selected
+        verification service. The label for this field will change depending
+        on the verification service being used.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Use Proxy Server</term>
+      <listitem>
+        <para>Select if your site uses a proxy server.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Server Name</term>
+            <listitem>
+              <para>Specify the IP address for your proxy server.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Port</term>
+            <listitem>
+              <para>Specify the port used by your proxy server.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Login</term>
+            <listitem>
+              <para>Specify the login name for your proxy server.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Password</term>
+            <listitem>
+              <para>Specify the password for your proxy server.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>You can leave the <guilabel>Server Name</guilabel> and
+    <guilabel>Port</guilabel> fields blank if you desire. This is the easiest
+    way to switch between test mode and production mode, as you won't have to
+    change these values every time you switch modes.</para>
+    <para>Some payment gateways, such as Authorize.Net, allow testing against
+    the live, production server. If you want to run test transactions against
+    the live payment gateway then you must set the server name explicitly to
+    the live payment gateway's URL. You will get a warning from the
+    application when you click the <guibutton>SAVE</guibutton> button if you
+    do this.</para>
+  </tip>
+  <para>To establish the service option settings for your credit card
+  configuration, select the <guimenuitem>Service Options</guimenuitem> tab.
+  The options will vary depending on the payment gateway being used. For
+  example, the CyberSource and external methods do not require service options
+  to be entered. However, if Authorize.Net is being used, the screen will
+  appear as follows:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configureCC_optionsPage_authorizeDotNetStack.png"/>
+        </imageobject>
+        <caption>Authorize.Net Service Options</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When establishing the service option settings for your Authorie.Net
+  configuration, you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Transaction Version</term>
+      <listitem>
+        <para>Authorize.Net supports three different versions of the
+        communications protocol at this time, with the potential for more to
+        be added in the future. The xTuple application builds transaction
+        requests which conform to version 3.1 of the Authorize.Net protocol.
+        This field is a placeholder to allow for future expansion by both
+        xTuple and Authorize.Net.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Delimiting Character</term>
+      <listitem>
+        <para>This field allows overriding the default character used by
+        Authorize.Net to separate parts of the messages sent by the gateway to
+        the client application. If this field is blank then Authorize.Net will
+        use the comma (,) to separate message fields. If you expect your data
+        to contain commas as part of their content, such as street addresses,
+        then you should change the delimiting character.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Encapsulating Character</term>
+      <listitem>
+        <para>This field allows setting the character used by Authorize.Net to
+        enclose individual parts of the messages sent by the gateway to the
+        client application. If this field is blank then Authorize.Net will not
+        use any character for this purpose.</para>
+        <warning>
+          <para>You should set the encapsulating character to a value.
+          Otherwise some transactions may fail with an error reporting that
+          the response from the payment gateway has the wrong number of
+          fields.</para>
+          <para>Several of these configuration options may be set through the
+          Authorize.Net merchant interface. If you set any of these options
+          there, you <emphasis>must</emphasis> use exactly the same values
+          here in the <guimenuitem>Service Options</guimenuitem> tab. If you
+          do not then most or all of your credit card transactions will fail,
+          often with mysterious errors.</para>
+          <para>If you want to use the MD5 Hash feature, you must set it to
+          exactly the same value here and on the merchant interface, including
+          spaces and capitalization.</para>
+          <para>You may set the delimiting character, encapsulating character,
+          duplicate window, and currency of transactions in the xTuple
+          application without setting them through the Authorize.Net merchant
+          interface.</para>
+        </warning>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Duplicate Window</term>
+      <listitem>
+        <para>Use this field to indicate a time window to Authorize.Net for
+        checking for duplicate transactions. If similar transactions are sent
+        to Authorize.Net within this window then it may reject them as
+        duplicates. This is a value in seconds.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>MD5 Hash</term>
+      <listitem>
+        <para>If you want an additional sense of security, set the
+        <guilabel>MD5 Hash</guilabel> field to a short string and set the same
+        value on the merchant interface. This shared secret can be used to
+        assure that the payment gateway is actually Authorize.Net's server and
+        not an imposter. The value of the <guilabel>MD5 Hash</guilabel> field
+        and a few other fields in the transaction request are processed with
+        the MD5 algorithm by the payment gateway and the resulting string is
+        returned to the xTuple application. The xTuple application performs
+        the same processing and compares the result with the value sent by the
+        payment gateway.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Set on Gateway</term>
+      <listitem>
+        <para>Specify how you want the gateway to respond if the MD5 hash
+        fails:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Warn if MD5 check fails</term>
+            <listitem>
+              <para>If the comparison of the MD5 value fails then warn the
+              user.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Fail if MD5 check fails</term>
+            <listitem>
+              <para>If the comparison of the MD5 values fails then treat the
+              transaction as failed, regardless of apparent success or
+              failure, and tell the user. This transaction is not
+              voided.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Currency of Transactions</term>
+      <listitem>
+        <para>Specify how you want to handle foreign currency
+        transactions:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Same as Order</term>
+            <listitem>
+              <para>Always process credit card transactions using the same
+              currency as the sales order, cash deposit, or credit
+              memo.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Always Use</term>
+            <listitem>
+              <para>Select to always use the currency specified here for all
+              credit card transactions.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Additional Options</term>
+      <listitem>
+        <variablelist>
+          <para>You have the option to specify the following additional
+          options:</para>
+          <varlistentry>
+            <term>Using Wells Fargo SecureSource</term>
+            <listitem>
+              <para>Check this box if you are using Authorize.Net with Wells
+              Fargo SecureSource. Wells Fargo SecureSource requires that
+              transaction requests be built slightly differently than pure
+              Authorize.Net transactions and this configuration option tells
+              the xTuple application to construct the transactions to work
+              with this service.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Ignore SSL Errors</term>
+            <listitem>
+              <para>Select if you want xTuple ERP to ignore Secure Sockets
+              Layer (SSL) errors when connecting to the Authorize.Net
+              gateway.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para><indexterm>
+      <primary>credit cards</primary>
+      <secondary>key files and</secondary>
+    </indexterm>To establish the key file settings for your credit card
+  configuration, select the <guimenuitem>Key File</guimenuitem> tab. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/configureCC_keyPage.png"/>
+        </imageobject>
+        <caption>Configure Credit Card Key File</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>All users on your system who need access to credit card information
+    must use the same key file. The key file can be a simple text file with
+    any contents whatsoever. It should be stored at the same level as the
+    xTuple executable file. For Mac users, this would be within the MacOS
+    directory inside the package contents for your xTuple executable. The key
+    file is not stored in the database.</para>
+  </tip>
+  <caution>
+    <para>It is very important that you keep a backup copy of your encryption
+    key in a safe location. If you lose your encryption key and do not have a
+    backup copy, you risk losing access to your encrypted data.</para>
+  </caution>
+  <para>When establishing the key file settings for your credit card
+  configuration, you are presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Key File Name</term>
+      <listitem>
+        <para>Enter the name of your key file. The encryption key information
+        may be entered on this screen, or on the Encryption screen—and vice
+        versa. The key file is an encryption seed file, which enables you to
+        read encrypted credit card information. The key file is required
+        regardless of the verification service used at your site. The contents
+        of the key file should be at least 16 characters long and use a
+        combination of upper and lower case letters and numbers. Special
+        characters should not be used.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>If you change the contents of your key file after it has already
+    been in production, steps must be taken to convert any data encrypted up
+    to that point. The function "alterencrypt" must be used to handle the
+    conversion. Please contact your systems administrator for more
+    information.</para>
+  </note>
+  <variablelist>
+    <varlistentry>
+      <term>Windows Location</term>
+      <listitem>
+        <para>Specify the directory path any Windows machine on your system
+        would use to access the key file. All users and machines on the system
+        must use the same key file. To ensure consistency and security, the
+        file should be stored in a central location.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>If you name the key file "xTuple.key" and place it in the
+    installation directory, then you do not need to enter the path.</para>
+  </tip>
+  <variablelist>
+    <varlistentry>
+      <term>Linux Location</term>
+      <listitem>
+        <para>Specify the directory path any Linux machine on your system
+        would use to access the key file. All users and machines on the system
+        must use the same key file. To ensure consistency and security, the
+        file should be stored in a central location.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Mac Location</term>
+      <listitem>
+        <para>Specify the directory path any Mac machine on your system would
+        use to access the key file. All users and machines on the system must
+        use the same key file. To ensure consistency and security, the file
+        should be stored in a central location.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="externalCCTransaction.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

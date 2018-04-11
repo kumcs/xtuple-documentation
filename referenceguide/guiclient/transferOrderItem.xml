@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="transferOrderItem">
+  <title><indexterm significance="normal">
+      <primary>transfer orders</primary>
+
+      <secondary>adding line items to</secondary>
+    </indexterm>Transfer Order Item</title>
+
+  <para>To add a new transfer order line item, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/transferOrderItem.png"/>
+        </imageobject>
+
+        <caption>Create new Transfer Order Item</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new transfer order line item, you are presented with
+  the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Order #</term>
+
+      <listitem>
+        <para>Displays the transfer order number specified on the Transfer
+        Order header screen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Line #</term>
+
+      <listitem>
+        <para>Displays the line item number for the current line item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Enter the item number of the item you want to sell. The item
+        list will contain items having valid item sites in the from (i.e.,
+        source) site.</para>
+
+        <note>
+          <para>Because kit items are non-stock items, they may not be added
+          to transfer orders.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sites</primary>
+
+          <secondary>source for transfer orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>sales orders</primary>
+
+          <secondary>selling sites for</secondary>
+        </indexterm>From Site</term>
+
+      <listitem>
+        <para>Displays the source site specified on the Transfer Order header
+        screen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Ordered</term>
+
+      <listitem>
+        <para>Enter the quantity of the specified item to be
+        transferred.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Shipped</term>
+
+      <listitem>
+        <para>Shipped to date: Displays the total quantity shipped of the
+        specified line item to date.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <variablelist>
+    <varlistentry>
+      <term>Standard Cost</term>
+
+      <listitem>
+        <para>Displays the standard cost per unit.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Line Item Freight</term>
+
+      <listitem>
+        <para>Enter the amount of freight charges for the entire line item
+        quantity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tax</term>
+
+      <listitem>
+        <para>Displays the amount of tax to be charged for the transfer order
+        line item quantity. Sales tax is calculated at the transfer order line
+        item level. To get a detailed view of the tax calculation, click on
+        the <guibutton>Tax</guibutton> link using your mouse.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Scheduled Date</term>
+
+      <listitem>
+        <para>The scheduled date is the date when the line item should be
+        shipped. The user who enters the line item is responsible for
+        determining the scheduled date. After entering the scheduled date, hit
+        the <guibutton>TAB</guibutton> key on your keyboard to display values
+        in the remaining display only fields.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>The transfer order item having the earliest scheduled date will
+    determine the ship date for the transfer order.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Promise Date</term>
+
+      <listitem>
+        <para>An additional informational date that can be used for a user
+        defined purpose.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>PREVIOUS</guibutton></term>
+
+      <listitem>
+        <para>Select to view previous line items associated with the transfer
+        order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>CANCEL ITEM</guibutton></term>
+
+      <listitem>
+        <para>Select to cancel the current transfer order line item. Records
+        of canceled line items will be retained for informational purposes. To
+        view canceled line items associated with a transfer order, select the
+        <guilabel>Show Canceled Line Items</guilabel> option on the Transfer
+        Order header's <guimenuitem>Line Items</guimenuitem> tab.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>If there is no item site for the item in the destination site, you
+    will automatically be presented with an Item Site screen. Simply enter the
+    required information to create an item site in the destination site. An
+    item site must exist in the destination site before material can be
+    received successfully.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+
+          <secondary>availability of items for</secondary>
+        </indexterm>Show Availability</term>
+
+      <listitem>
+        <para>Select to display availability supply information for the
+        transfer order item in the following categories:</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Inventory</term>
+
+      <listitem>
+        <para>Select option to view available inventory.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>On Hand</term>
+
+            <listitem>
+              <para>Displays the current quantity on hand (QOH) value.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Allocated</term>
+
+            <listitem>
+              <para>Displays the quantity allocated to current sales orders,
+              transfer orders, and/or work orders in the system. An item is
+              considered allocated to a sales order/transfer order if a
+              transfer order line item exists for the item—and that line item
+              has not yet been issued to shipping. An item is considered
+              allocated to a work order if the item is a material
+              requirement—and the material has not yet been issued to the work
+              order. Once the current transfer order line item is saved, the
+              <guilabel>Allocated</guilabel> value will increase by the
+              quantity ordered.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Unallocated</term>
+
+            <listitem>
+              <para>Displays the QOH remaining after allocations have been
+              accounted for, as in:</para>
+
+              <para>QOH - Allocated Qty. = Unallocated Qty.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>On Order</term>
+
+            <listitem>
+              <para>If the transfer order item is a manufactured item, the
+              quantity ordered by current work orders will be displayed. If
+              the transfer order item is a purchased item, the quantity
+              ordered by current purchase orders will be displayed.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Available</term>
+
+            <listitem>
+              <para>Displays the available quantity. Available quantity is
+              determined using the following formula:</para>
+
+              <para>Unallocated Qty. + On Order Qty. = Available Qty.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Dependencies</term>
+
+      <listitem>
+        <para>Select option to review any components dependent on manufactured
+        line item.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Show Dependencies as Indented BOM</term>
+
+            <listitem>
+              <para>Displays components items associated with sold
+              manufactured item in a nested list with a plus
+              (<guibutton>+</guibutton>) sign located to the far left of the
+              screen next to each line that may be expanded to lower levels.
+              By clicking your mouse on a plus sign, you reveal lower levels
+              of information related to the line item.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>When selecting or editing characteristics for a transfer order line
+  item, you are presented with the following options:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/transferOrderItem_itemCharacteristicsTab.png"/>
+        </imageobject>
+
+        <caption>Transfer Order Item Characteristics</caption>
+      </mediaobject>
+    </screenshot><variablelist>
+      <varlistentry>
+        <term>Name</term>
+
+        <listitem>
+          <para>Displays the name of any item characteristics associated with
+          the item. Characteristics defined as item characteristics may be
+          associated with items on the Item master.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>Value</term>
+
+        <listitem>
+          <para>Displays the default value associated with an item
+          characteristic, but permits you to specify an alternate value. When
+          associating characteristic values with a transfer order line item,
+          you have four options: 1) Select the default value; 2) select an
+          alternate pre-defined value from the list; 3) manually enter a new
+          value in place of the pre-defined value; or 4) make no selection.
+          Making no selection means the characteristics will not be associated
+          with the transfer order line item.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist><tip>
+      <para>You can link characteristics and values to an item by using the
+      Item master. Once entered, these characteristics and values will be
+      available to users entering transfer order line items.</para>
+    </tip></para>
+
+  <para>To enter notes related to a transfer order line item, select the
+  <guimenuitem>Notes</guimenuitem> tab at the bottom of the screen, as shown
+  below:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/transferOrderItem_notesTab.png"/>
+        </imageobject>
+
+        <caption>Transfer Order Item Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When adding notes to a transfer order line item, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        general notes related to the transfer order line item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To add comments related to a transfer order line item, select the
+  <guimenuitem>Comments</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/transferOrderItem_commentsTab.png"/>
+        </imageobject>
+
+        <caption>Transfer Order Item Comments</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>Whenever transfer order line items are created or their quantities
+    are changed, the system will automatically generate a comment, which will
+    appear in the list of line item comments.</para>
+  </note>
+
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

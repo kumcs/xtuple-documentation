@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspARApplications">
+  <title><indexterm significance="normal">
+      <primary>cash receipts</primary>
+      <secondary>application of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>credit memos</primary>
+      <secondary>application of</secondary>
+    </indexterm>Receivables Applications</title>
+  <para>To view details concerning the application of cash receipts and credit
+  memos to open receivables, or to reverse unwanted applications, go to
+  <guimenuitem>Accounting &gt; Accounts Receivable &gt; Reports &gt;
+  Applications</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspARApplications.png"/>
+        </imageobject>
+        <caption>Receivables Applications</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When viewing receivables application details, you are presented with
+  the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Customers</term>
+      <listitem>
+        <para>Select to display receivables application details for all
+        customers.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected Customer</term>
+      <listitem>
+        <para>Select to display receivables application details for a selected
+        customer.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected Customer Type</term>
+      <listitem>
+        <para>Specify customer type whose receivables application details you
+        want to display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Customer Type Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Receivables applications made on and after this date will be
+        displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Receivables applications made on and before this date will be
+        displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Cash Receipts</term>
+      <listitem>
+        <para>Select to display only cash receipt application details.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Credit Memos</term>
+      <listitem>
+        <para>Select to display only credit memo application details.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>A/R Applications</term>
+      <listitem>
+        <para>Display lists receivables application details, using the
+        specified parameters. The amount of each receivables application is
+        displayed in the document's currency. The total amount of all
+        applications during the period will display, normalized to the base
+        currency using the currency exchange rate effective on the document's
+        posting date, at the bottom of the screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <tip>
+    <para>Use the <guimenuitem>Reverse Application</guimenuitem> option in the
+    right-click menu to un-apply cash or credit memos which have been applied
+    incorrectly to invoices. Once reversed, the documents can then be
+    re-applied elsewhere.</para>
+  </tip>
+  <note>
+    <para>When you see the term Other in the <guilabel>Apply-To</guilabel>
+    column, this typically refers to a miscellaneous application made while
+    entering a cash receipt.</para>
+  </note>
+</section>

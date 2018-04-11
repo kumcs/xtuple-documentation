@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="currencies">
+  <title><indexterm significance="normal">
+      <primary>currencies</primary>
+      <secondary>master list of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>multi-currency</primary>
+      <secondary>currency definitions for</secondary>
+    </indexterm>Currencies</title>
+  <para>The system support for multi-currency begins with the definition of
+  multiple currencies. In fact, the way to turn on multi-currency support is
+  to define two or more currencies on the master list of currencies. Once two
+  currencies are defined, you will see multi-currency support integrated
+  throughout the application. If you prefer not to use multi-currency at your
+  site, then simply define a base currency only—and no secondary
+  currencies.</para>
+  <caution>
+    <para>You must define a base currency, even if you do not plan to use
+    multi-currency. System administrators must ensure that a base currency is
+    defined—and that it is defined accurately.</para>
+  </caution>
+  <para>The base currency is the currency used for all general ledger (G/L)
+  transactions. Only one base currency may be defined per each database. Any
+  transactions conducted in a foreign currency will be converted automatically
+  to the base currency (using the prevailing exchange rate) before they are
+  posted to the G/L.</para>
+  <warning>
+    <para>Once you post a transaction using multi-currency support, you cannot
+    turn off multi-currency from that point forward. Either you implement
+    multi-currency or you don't. There is no middle ground. System-level
+    privileges are available to prevent users from accessing currency and
+    exchange rate functionality.</para>
+  </warning>
+  <para>To access the master list of currencies, go to <guimenuitem>System
+  &gt; Setup &gt;</guimenuitem><guimenuitem> Master Information &gt;
+  Currencies</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/currencies.png" />
+        </imageobject>
+        <caption>Currencies master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>Currency information for most countries can be found as part of the
+    country set up. For more information, please see <xref
+    linkend="countries" />.</para>
+  </tip>
+  <para>The Currencies master list displays information on all currencies,
+  including base currency indicator, currency name, currency symbol, and
+  currency abbreviation. Beneath the list of currencies, you will find another
+  list showing exchange rate comments. Whenever the exchange rate for a
+  currency is updated, the change will be recorded here as a comment. You may
+  also add your own manual comments, by currency.</para>
+  <note>
+    <para>To add comments, you must first select a currency from the list of
+    currencies. Exchange rate comments are linked to the currency they relate
+    to.</para>
+  </note>
+  <xi:include href="../widgets/comments.xml" xpointer="commentsWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+  <xi:include href="currency.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printWoTraveler">
+  <title><indexterm significance="normal">
+      <primary>travelers</primary>
+      <secondary>printing of</secondary>
+    </indexterm>Print Traveler</title>
+  <para>A traveler is a collection of printed documents which accompanies a
+  work order. Traveler documents may include the pick list, routing, or
+  packing list. To print a work order traveler, go to <guimenuitem>Manufacture
+  &gt; Forms &gt; Print Traveler</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printWoTraveler.png" />
+        </imageobject>
+        <caption>Print W/O Traveler</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When printing a traveler, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Work Order #</term>
+      <listitem>
+        <para>Enter the work order number of the work order you want to print
+        a traveler for.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays item number automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates work order method is either assembly or
+        disassembly.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Release Work Order</term>
+      <listitem>
+        <para>Select to release the work order. Selecting this option causes
+        the work order status to change from exploded (E) to released
+        (R).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Documents</term>
+      <listitem>
+        <para>Select the documents you want to print.</para>
+        <variablelist>
+          <varlistentry>
+            <term>Print Pick List</term>
+            <listitem>
+              <para>Select to print a pick list. A pick list is a printed list
+              showing the work order material requirements for a specified
+              work order. Not selecting means a pick list will not be printed
+              with the traveler.</para>
+              <tip>
+                <para>At least one of the document options must be selected
+                for the <guibutton>PRINT</guibutton> button to be
+                enabled.</para>
+              </tip>
+            </listitem>
+          </varlistentry>
+          <varlistentry role="manufacturing">
+            <term>Print Routing</term>
+            <listitem>
+              <para>Select to print a routing. A routing is a list showing the
+              work order operations for a specified work order. Not selecting
+              means a routing will not be printed with the traveler.</para>
+              <note>
+                <para>The routing pulls its information from the list of work
+                order operations for the work order item, not from the item's
+                routing.</para>
+              </note>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Print Packing List</term>
+            <listitem>
+              <para>Select to print a packing list. This option is only
+              enabled when a work order is driven by a sales order. The option
+              is not available for manually generated work orders. Not
+              selecting means a packing list will not be printed with the
+              traveler.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Print Work Order Label</term>
+            <listitem>
+              <para>Select to print work order labels. If selected, the
+              quantity of work order labels printed will equal the quantity of
+              items ordered by the work order. Not selecting means work order
+              labels will not be printed with the traveler.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>By default, the system will print work order labels in the same
+    quantity as the quantity ordered by the work order. If you want to print
+    fewer than the quantity ordered, use the <guimenuitem>Manufacture &gt;
+    Forms &gt; Print Work Order Form</guimenuitem> option.</para>
+  </note>
+</section>

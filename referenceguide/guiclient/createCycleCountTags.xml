@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="createCycleCountTags">
+  <title><indexterm significance="normal">
+      <primary>cycle count tags</primary>
+
+      <secondary>creating by site</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>cycle counts</primary>
+
+      <secondary>creating tags for</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>physical inventory</primary>
+
+      <secondary>creating cycle count tags</secondary>
+    </indexterm>Create Cycle Count Tags by Site</title>
+
+  <para>Cycle count tags are used to count inventory on a frequent basis, with
+  the rate of frequency defined in the Item Site master. The following
+  criteria are used to determine the order in which cycle count tags will be
+  created for a specified site(s):</para>
+
+  <orderedlist continuation="restarts" inheritnum="ignore">
+    <listitem>
+      <para>The system scans the Item Site masters in the specified site(s),
+      specifically targeting cycle count frequency settings.</para>
+    </listitem>
+
+    <listitem>
+      <para>The frequency settings are then compared to the last counted dates
+      for each item site to determine which item sites have last counted dates
+      most out of sync with their count frequency rate; item sites whose last
+      counted dates are most out of sync with their stated frequency rate will
+      have cycle count tags created for them first.</para>
+    </listitem>
+
+    <listitem>
+      <para>After frequency and last counted date parameters have been
+      considered, the item site's ABC class is used—with A class item sites
+      having cycle count tags created first.</para>
+    </listitem>
+
+    <listitem>
+      <para>Then, finally, cycle count tags are created based on the item
+      numbers for the item sites in ascending order (i.e., 1, 2, 3 ... A, B,
+      C).</para>
+    </listitem>
+
+    <listitem>
+      <para>The total number of cycle count tags to be created is determined
+      beforehand.</para>
+    </listitem>
+  </orderedlist>
+
+  <para>The difference between cycle count tags and count tags is that cycle
+  count tags are generated dynamically, using the criteria listed above. Count
+  tags are generated manually, on demand.</para>
+
+  <tip>
+    <para>To monitor the frequency of item site cycle counts, view the
+    <guilabel>Last Counted</guilabel> column in any of the item site reports:
+    by item, by class code, etc. The last counted date represents the date a
+    count tag was last posted (not simply issued) for the item site.</para>
+  </tip>
+
+  <para>To create cycle count tags by site, go to <guimenuitem>Inventory &gt;
+  Physical Inventory &gt; Create Cycle Count Tags</guimenuitem>. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/createCycleCountTags.png"/>
+        </imageobject>
+
+        <caption>Create Cycle Count Tags by site</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating cycle count tags by site, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Item Sites in</term>
+
+      <listitem>
+        <para>Specify which of the following codes you want to have cycle
+        count tags created for:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Class Code</term>
+
+            <listitem>
+              <para>If selected, you will be presented with class code
+              options.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Planner Code</term>
+
+            <listitem>
+              <para>If selected, you will be presented with planner code
+              options.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Specify site where cycle count will be conducted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Mark Created Count Tag as Priority</term>
+
+      <listitem>
+        <para>Select to give priority status to count tag. Count tags marked
+        as having priority status are listed first in any prioritized lists.
+        For example, priority count tags will appear at the top of the count
+        tag edit list; whereas, non-priority count tags will appear at the
+        bottom of the list.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>freezing</primary>
+
+          <secondary>of inventory</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>inventory</primary>
+
+          <secondary>freezing during cycle counts</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>cycle counts</primary>
+
+          <secondary>freezing inventory during</secondary>
+        </indexterm>Freeze Inventory</term>
+
+      <listitem>
+        <para>Select to freeze inventory. The quantity on hand (QOH) value is
+        not updated when a transaction is posted against a frozen item site.
+        Instead, inventory transactions are pooled and then posted later when
+        the item site is unfrozen—or thawed. The QOH is updated when the item
+        site is thawed.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>When an item site is frozen, any site activity entered against that
+    item site—including work orders—will use the QOH shown at the time of
+    freezing.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Ignore Zero Balance Item Sites</term>
+
+      <listitem>
+        <para>Select to ignore item sites which have a QOH balance of zero. If
+        selected, count tags will not be created for any item site having a
+        QOH balance of zero.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Maximum Number of Tags to Create</term>
+
+      <listitem>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 1,000.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Only for Specified Location</term>
+
+      <listitem>
+        <para>Select if you want to create count tags for an individual site
+        location. If selected, you will have the option to specify which site
+        location you want to have count tags created for. This option enables
+        you to count individual site locations separately, without having to
+        post counts for an entire site all at once.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>cycle counters</primary>
+
+          <secondary>creating instructions for</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>cycle counts</primary>
+
+          <secondary>creating instructions for</secondary>
+        </indexterm>Comments</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        comments related to the cycle count. Use the
+        <guilabel>Comments</guilabel> field to enter any instructions or other
+        comments that need to reach and be read by the cycle counters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CREATE TAGS</guibutton></term>
+
+      <listitem>
+        <para>Creates cycle count tags. Cycle count tag numbers are generated
+        automatically in an ordered sequence.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

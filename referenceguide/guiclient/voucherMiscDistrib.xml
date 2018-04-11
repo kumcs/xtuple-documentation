@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="voucherMiscDistrib">
+  <title><indexterm significance="normal">
+      <primary>vouchers</primary>
+
+      <secondary>miscellaneous distributions for</secondary>
+    </indexterm>Voucher Misc. Distribution</title>
+
+  <para>In addition to line item specific distributions, you may also enter
+  miscellaneous distributions to affect the voucher as a whole. To enter a
+  miscellaneous distribution, select the <guibutton>NEW</guibutton> button
+  from the main Voucher screen. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/voucherMiscDistrib.png"/>
+        </imageobject>
+
+        <caption>Miscellaneous Voucher Distribution</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When entering a miscellaneous voucher distribution, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Distribution Options</term>
+
+      <listitem>
+        <para>Select one of the following distribution options:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Account</term>
+
+            <listitem>
+              <para>Select a general ledger account to use for the
+              distribution.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry role="xtprjaccnt">
+            <term>Project</term>
+
+            <listitem>
+              <para>Select a project to associate with the transaction. The
+              project number will be added as the final segment of the G/L
+              account number.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Expense Category</term>
+
+            <listitem>
+              <para>Select an expense category to use for the
+              distribution.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Tax Code</term>
+
+            <listitem>
+              <para>Select a tax code to use for the distribution. When using
+              this option, the distribution amount will be charged to the
+              general ledger account associated with the tax code. To have tax
+              calculated automatically for the distribution, use the <guimenuitem>Tax Type</guimenuitem>
+              option.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount to Distribute</term>
+
+      <listitem>
+        <para>Specify the amount of the miscellaneous distribution. If there
+        is a balance still to be distributed once all voucher items have been
+        distributed, then that remaining amount will be entered here by
+        default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Tax Type</term>
+
+      <listitem>
+        <para>Select a tax type to associate with the distribution. Tax will
+        be calculated automatically if a tax assignment matches both the tax
+        type and the specified tax zone.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Discountable</term>
+
+      <listitem>
+        <para>Select if the voucher item is entitled to a terms discount. This
+        option may be used on a line-by-line basis—all within one voucher. For
+        example, purchased items may be discountable; however, freight charges
+        may not be. When selecting a voucher for payment within the discount
+        period, only discountable items will be discounted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        general notes related to the voucher. These notes are for internal use
+        only.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

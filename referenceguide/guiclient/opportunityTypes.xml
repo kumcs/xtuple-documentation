@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="opportunityTypes">
+  <title><indexterm significance="normal">
+      <primary>opportunities</primary>
+      <secondary>types for</secondary>
+    </indexterm>Opportunity Types</title>
+  <para>Opportunity types are used by the opportunity management system to
+  categorize kinds of opportunities. When opportunity types are entered in the
+  <guimenuitem>Master Information</guimenuitem> section, these types are then
+  available for use when entering or updating opportunities.</para>
+  <tip>
+    <para>You must manually create opportunity types if you want the ability
+    to assign them to opportunities. If no opportunity types are defined, then
+    none will be available when entering opportunities.</para>
+  </tip>
+  <para>To access the master list of opportunity types, go to <guimenuitem>CRM
+  &gt; Setup &gt; Master Information &gt; Opportunity Types</guimenuitem>. The
+  following screen will appear.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/opportunityTypes.png" />
+        </imageobject>
+        <caption>Opportunity Types master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Opportunity Types screen displays information on all existing
+  opportunity types, including opportunity type code and description.</para>
+  <xi:include href="opportunityType.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

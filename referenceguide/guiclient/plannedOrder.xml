@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="plannedOrder">
+  <title>New Planned Order</title>
+  <para>To create a planned order, select the <guimenuitem>Schedule &gt;
+  Scheduling &gt; New Planned Order</guimenuitem> option. The following screen
+  will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/plannedOrder.png" />
+        </imageobject>
+        <caption>New Planned Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a planned order, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Planned Order #</term>
+      <listitem>
+        <para>Displays system-defined planned order number.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Enter the item number of the item you want to create a planned
+        order for.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Specify site for planned order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Supply Type</term>
+      <listitem>
+        <para>Specify the supply type of the planned order: purchase order,
+        work order, or transfer order. If you specify transfer order then you
+        must specify the <guilabel>From Site</guilabel>.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Qty. Ordered</term>
+      <listitem>
+        <para>Enter the quantity of the specified item required for the
+        planned order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Due Date</term>
+      <listitem>
+        <para>Enter the date the planned order must be completed by.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>This date will be equal to the due date less the lead time. The
+        start date may be changed by altering the <guilabel>Lead
+        Time</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>lead times</primary>
+          <secondary>in planned orders</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>planned orders</primary>
+          <secondary>lead times for</secondary>
+        </indexterm>Lead Time (Days)</term>
+      <listitem>
+        <para>Select a number using the arrows, or manually enter a value up
+        to a maximum of 999. Value entered specifies the lead time required
+        between the <guilabel>Due Date</guilabel> and the <guilabel>Start
+        Date</guilabel>.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To enter notes related to the planned order, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/plannedOrder_notesTab.png" />
+        </imageobject>
+        <caption>Create Planned Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When adding notes to a planned order, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        general notes related to the planned order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CREATE</guibutton></term>
+      <listitem>
+        <para>Creates the planned order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,366 @@
+====================================================================
+NEW REPORTS:
+PurchaseOrderTypes
+ReturnAuthorizations
+itemLabel
+====================================================================
+CHANGED REPORTS:
+CreditMemo
+GLTransactions
+ItemSources
+WarehouseLocationMasterList
+
+
+   ====================================================================
+   REPORT: CreditMemo
+   QUERY: GroupHead
+   SELECT remitto.*,
+          cmhead_number,
+          formatDate(cmhead_docdate) AS docdate,
+          cust_number,
+          cust_name,
+          formatAddr(cmhead_billtoaddress1, cmhead_billtoaddress2, cmhead_billtoaddress3,
+                     COALESCE(cmhead_billtocity,'') || '  ' || COALESCE(cmhead_billtostate,'') || '  ' || COALESCE(cmhead_billtozip,''),
+                      cmhead_billtocountry)
+          AS f_custaddr,
+          cntct_phone AS cust_phone,
+          cmhead_shipto_name,
+          formatAddr(cmhead_shipto_address1, cmhead_shipto_address2, cmhead_shipto_address3,
+                     COALESCE(cmhead_shipto_city,'') ||'  '|| COALESCE(cmhead_shipto_state,'') || '  '|| COALESCE(cmhead_shipto_zipcode,''),
+                     cmhead_shipto_country)
+                     AS f_shiptoaddr,
+          CASE
+            WHEN (cmhead_invcnumber='-1') THEN ''
+            --note: must now set explicit type for Postgres 8.3+
+            --add ' '
+            ELSE text(cmhead_invcnumber)
+          END AS invcnumber,
+          cmhead_custponumber,
+          cmhead_comments,
+          cmhead_misc_descrip,
+          curr_symbol,
+-         curr_name
+-    FROM remitto, cmhead, curr_symbol, custinfo
++         curr_name,
++         rsncode_descrip
++    FROM cmhead
++    JOIN curr_symbol ON (cmhead_curr_id = curr_id)
++    JOIN custinfo ON (cmhead_cust_id=cust_id)
+     LEFT OUTER JOIN cntct ON (cust_cntct_id=cntct_id)
+-   WHERE ((cmhead_cust_id=cust_id)
+-         AND (cmhead_curr_id = curr_id)
+-         AND (cmhead_id=<? value("cmhead_id") ?>))
++    LEFT OUTER JOIN rsncode ON (cmhead_rsncode_id = rsncode_id)
++    JOIN remitto ON (1=1)
++   WHERE (cmhead_id=<? value("cmhead_id") ?>)
+   ORDER BY cmhead_number;
+   --------------------------------------------------------------------
+
+   QUERY: Detail
+   SELECT cmitem_linenumber,
+          formatQty(cmitem_qtycredit) AS qtycredit,
+          formatQty(cmitem_qtyreturned) AS qtyreturned,
+          uom_name,
+          COALESCE(item_number, cmitem_number) AS item_number,
+          COALESCE(item_descrip1, cmitem_descrip) AS item_descrip1,
+          item_descrip2,
+          formatSalesPrice(cmitem_unitprice) AS unitprice,
+          formatMoney((cmitem_qtycredit * cmitem_qty_invuomratio) * (cmitem_unitprice / cmitem_price_invuomratio)) AS extprice,
+-         cmitem_comments
++         cmitem_comments,
++         rsncode_descrip
+     FROM cmitem
+     LEFT OUTER JOIN itemsite ON (cmitem_itemsite_id=itemsite_id)
+     LEFT OUTER JOIN item ON (itemsite_item_id=item_id)
+     LEFT OUTER JOIN uom ON (item_inv_uom_id=uom_id)
++    LEFT OUTER JOIN rsncode ON (cmitem_rsncode_id = rsncode_id)
+   WHERE (cmitem_cmhead_id=<? value("cmhead_id") ?>)
+   ORDER BY cmitem_linenumber;
+   --------------------------------------------------------------------
+
+   ====================================================================
+   REPORT: GLTransactions
+   QUERY: detail
+   <? if exists("beginningBalance") ?>
+-  SELECT -1 AS gltrans_id,
++  SELECT -1 AS gltrans_id, 0 AS srt1, <? value("startDate") ?> AS gltrans_date,
+          <? value("startDate") ?> AS gltrans_created, formatDate(<? value("startDate") ?>) AS transdate,
+          '' AS gltrans_source, '' AS gltrans_doctype, '' AS gltrans_docnumber, '' AS invhist_docnumber,
+          'Beginning Balance' AS transnotes,
+          (formatGLAccount(accnt_id) || ' - ' || accnt_descrip) AS account,
+          '' AS f_debit,
+          0.0 AS debit_amt,
+          '' AS f_credit,
+          0.0 AS credit_amt,
+          <? value("beginningBalance") ?> AS balance_amt,
+          <? value("beginningBalance") ?> AS gltrans_amount,
+          <? value("beginningBalance") ?> AS running,
+          NULL AS f_posted,
+          NULL AS f_deleted,
+          NULL::TEXT AS f_username,
+          -1 AS gltrans_sequence
+    FROM accnt
+    WHERE (accnt_id=<? value("accnt_id") ?>)
+   UNION
+   <? endif ?>
+
+-  SELECT gltrans_id,
++  SELECT gltrans_id, 1 AS srt1, gltrans_date,
+          gltrans_created, formatDate(gltrans_date) AS transdate,
+          gltrans_source, gltrans_doctype, gltrans_docnumber, invhist_docnumber,
+          firstLine(gltrans_notes) AS transnotes,
+          (formatGLAccount(accnt_id) || ' - ' || accnt_descrip) AS account,
+   -- Debits:
+          CASE WHEN (gltrans_amount < 0 AND NOT gltrans_deleted) THEN formatMoney(ABS(gltrans_amount))
+               ELSE ''
+          END AS f_debit,
+          CASE WHEN (gltrans_amount < 0 AND NOT gltrans_deleted) THEN ABS(gltrans_amount)
+               ELSE 0
+          END AS debit_amt,
+   --Credits:
+          CASE WHEN (gltrans_amount > 0 AND NOT gltrans_deleted) THEN formatMoney(gltrans_amount)
+               ELSE ''
+          END AS f_credit,
+          CASE WHEN (gltrans_amount > 0 AND NOT gltrans_deleted) THEN gltrans_amount
+               ELSE 0
+          END AS credit_amt,
+   --Balance:
+          CASE WHEN (accnt_type IN ('A','E') AND NOT gltrans_deleted) THEN
+            gltrans_amount * -1
+          WHEN (NOT gltrans_deleted) THEN
+            gltrans_amount
+          ELSE 0 END AS balance_amt,
+          gltrans_amount,
+          CASE WHEN (accnt_type IN ('A','E') AND NOT gltrans_deleted) THEN
+            gltrans_amount * -1
+          WHEN (NOT gltrans_deleted) THEN
+            gltrans_amount
+          ELSE 0 END AS running,
+          formatBoolYN(gltrans_posted) AS f_posted,
+          formatBoolYN(gltrans_deleted) AS f_deleted,
+          <? if exists("showUsernames") ?>
+            gltrans_username AS f_username,
+          <? else ?>
+            NULL::TEXT AS f_username,
+          <? endif ?>
+          gltrans_sequence
+   FROM gltrans JOIN accnt ON (gltrans_accnt_id=accnt_id)
+        LEFT OUTER JOIN invhist ON (gltrans_misc_id=invhist_id
+                               AND gltrans_docnumber='Misc.')
+   <? if exists("company_id") ?>
+        JOIN company ON (accnt_company=company_number)
+   <? endif ?>
+   <? if exists("prfcntr_id") ?>
+        JOIN prftcntr ON (accnt_profit=prftcntr_number)
+   <? endif ?>
+   <? if exists("subaccnt_id") ?>
+        JOIN subaccnt ON (accnt_sub=subaccnt_number)
+   <? endif ?>
+   <? if exists("subType") ?>
+        JOIN subaccnttype ON (subaccnttype_code=accnt_subaccnttype_code)
+   <? endif ?>
+   WHERE (
+   <? if exists("startDate") ?>
+     <? if exists("endDate") ?>
+          (gltrans_date BETWEEN <? value("startDate") ?>
+                            AND <? value("endDate") ?>)
+     <? else ?>
+          (gltrans_date BETWEEN <? value("startDate") ?>
+                            AND endoftime())
+     <? endif ?>
+   <? else ?>
+     <? if exists("endDate") ?>
+          (gltrans_date BETWEEN startoftime()
+                            AND <? value("endDate") ?>)
+     <? else ?>
+          (gltrans_date BETWEEN startoftime()
+                            AND endoftime())
+     <? endif ?>
+   <? endif ?>
+   <? if not exists("showDeleted") ?>
+      AND (NOT gltrans_deleted)
+   <? endif ?>
+   <? if exists("company_id") ?>
+      AND (company_id=<? value("company_id") ?>)
+   <? endif ?>
+   <? if exists("prfcntr_id") ?>
+      AND (prftcntr_id=<? value("prfcntr_id") ?>)
+   <? endif ?>
+   <? if exists("accnt_number") ?>
+      AND (accnt_number=<? value("accnt_number") ?>)
+   <? endif ?>
+   <? if exists("subaccnt_id") ?>
+      AND (subaccnt_id=<? value("subaccnt_id") ?>)
+   <? endif ?>
+   <? if exists("subType") ?>
+      AND (subaccnttype_id=<? value("subType") ?>)
+   <? endif ?>
+   <? if exists("accntType") ?>
+      AND (accnt_type= <? value("accntType") ?>)
+   <? endif ?>
+   <? if exists("accnt_id") ?>
+      AND (gltrans_accnt_id=<? value("accnt_id") ?>)
+   <? endif ?>
+   <? if exists("docnum") ?>
+      AND (gltrans_docnumber = case when <? value("docnum") ?> = '' then
+    gltrans_docnumber else
+   <? value("docnum") ?> end )
+   <? endif ?>
+   <? if exists("source") ?>
+      AND (gltrans_source=<? value("source") ?>)
+   <? endif ?>
+
+   <? if exists("transamt") ?>
+   AND (abs(gltrans_amount)=<? value("transamt") ?>)
+   <? endif ?>
+   <? if exists("journalnum") ?>
+   AND (gltrans_journalnumber::text) ~* <? value("journalnum") ?>)
+   <? endif ?>
+   <? if exists("doctype") ?>
+   AND (gltrans_doctype = 'zz'
+   <? foreach("doctype") ?>
+   OR gltrans_doctype = <? value("doctype") ?>
+   <?endforeach ?>
+   )
+   <? endif ?>
+
+   )
+-  ORDER BY gltrans_created <? if not exists("beginningBalance") ?> DESC <? endif ?>,
++  ORDER BY srt1, gltrans_date <? if not exists("beginningBalance") ?> DESC <? endif ?>,
+           gltrans_sequence, gltrans_amount
+
+   ;
+   --------------------------------------------------------------------
+
+   ====================================================================
+   REPORT: ItemSources
+   QUERY: detail
+   SELECT item_number, vend_name,
+          item_descrip1, item_descrip2,
+          uom_name,
+          itemsrc_vend_item_number as f_venditem,
+          itemsrc_vend_uom as f_venduom,
+          formatQty(itemsrc_invvendoruomratio) as f_uomratio
+-  FROM itemsrc, vendinfo, item, uom
+-  WHERE ((itemsrc_vend_id=vend_id)
+-    AND (itemsrc_item_id=item_id)
+-    AND (item_inv_uom_id=uom_id)
++  FROM itemsrc
++  JOIN vendinfo ON itemsrc_vend_id=vend_id
++  JOIN item ON itemsrc_item_id=item_id
++  JOIN uom ON item_inv_uom_id=uom_id
++  LEFT OUTER JOIN itemsrcp ON itemsrc_id=itemsrcp_itemsrc_id
++  LEFT OUTER JOIN contrct ON itemsrc_contrct_id=contrct_id
++  WHERE (TRUE
++  <? if not exists("showInactive") ?>
++    AND (itemsrc_active)
++  <? endif ?>
+   <? if exists("item_id") ?>
+     AND (itemsrc_item_id=<? value("item_id") ?>)
+   <? endif ?>
+   <? if exists("vend_id") ?>
+     AND (itemsrc_vend_id=<? value("vend_id") ?>)
+   <? endif ?>
++  <? if exists("warehous_id") ?>
++    AND (itemsrcp_warehous_id=<? value("warehous_id") ?>)
++  <? endif ?>
++  <? if exists("showDropShip") ?>
++     AND (itemsrcp_dropship)
++  <? endif ?>
++  <? if exists("item_number_pattern") ?>
++    AND (item_number ~* <? value("item_number_pattern") ?>)
++  <? endif ?>
++  <? if exists("item_descrip_pattern") ?>
++    AND (COALESCE(item_descrip1,'') || COALESCE(item_descrip2,'') ~* <? value("item_descrip_pattern") ?>)
++  <? endif ?>
++  <? if exists("contrct_id") ?>
++    AND (itemsrc_contrct_id=<? value("contrct_id") ?>)
++  <? endif ?>
++  <? if exists("contract_number_pattern") ?>
++    AND (contrct_number ~* <? value("contract_number_pattern") ?>)
++  <? endif ?>
++  <? if exists("vend_name_pattern") ?>
++    AND (vend_name ~* <? value("vend_name_pattern") ?>)
++  <? endif ?>
++  <? if exists("vend_item_number_pattern") ?>
++    AND (itemsrc_vend_item_number ~* <? value("vend_item_number_pattern") ?>)
++  <? endif ?>
++  <? if exists("manuf_pattern") ?>
++    AND (itemsrc_manuf_name ~* <? value("manuf_pattern") ?>)
++  <? endif ?>
++  <? if exists("manuf_item_number_pattern") ?>
++    AND (itemsrc_manuf_item_number ~* <? value("manuf_item_number_pattern") ?>)
++  <? endif ?>
++  <? if exists("effectiveStartDate") ?>
++    AND (COALESCE(contrct_effective, itemsrc_effective) >= <? value("effectiveStartDate") ?>)
++  <? endif ?>
++  <? if exists("effectiveEndDate") ?>
++    AND (COALESCE(contrct_effective, itemsrc_effective) = <? value("effectiveEndDate") ?>)
++  <? endif ?>
++  <? if exists("expireStartDate") ?>
++    AND (COALESCE(contrct_expires, itemsrc_expires) >= <? value("expireStartDate") ?>)
++  <? endif ?>
++  <? if exists("expireEndDate") ?>
++    AND (COALESCE(contrct_expires, itemsrc_expires) <= <? value("expireEndDate") ?>)
++  <? endif ?>
+   )
+-  ORDER By item_number, vend_name;
++  ORDER BY item_number, vend_name;
+   --------------------------------------------------------------------
+
+   ====================================================================
+   REPORT: WarehouseLocationMasterList
+   QUERY: detail
+-  SELECT (warehous_code || ' ' || location_name) AS whs_bin,
++  SELECT (warehous_code || ' ' || formatLocationName(location_id)) AS whs_bin,
+          warehous_code,
+          formatLocationName(location_id) AS locationname,
+          location_descrip,
+          formatBoolYN(location_netable) AS f_netable,
+          formatBoolYN(location_restrict) AS f_restrict,
+          item_number,
+          (item_descrip1 || ' ' || item_descrip2) AS itemdesc
+     FROM location LEFT OUTER JOIN
+          (SELECT locitem_location_id,
+                  item_number,
+                  item_descrip1,
+                  item_descrip2
+             FROM locitem, item
+            WHERE locitem_item_id=item_id) AS itemlocation
+          ON (locitem_location_id=location_id and location_restrict=true), whsinfo
+    WHERE ((location_warehous_id=warehous_id)
+-  <? if exists("warehous_id") ?>
+-     AND (warehous_id=<? value("warehous_id") ?>)
++   <? if exists('warehous_id') ?>
++      AND (warehous_id=<? value('warehous_id') ?>)
++   <? endif ?>
++   <? if exists('zone_id') ?>
++      AND (location_whsezone_id=<? value('zone_id') ?>)
++   <? endif ?>
++   <? if not exists('showInactive') ?>
++      AND (location_active)
+   <? endif ?>
+   ) ORDER BY warehous_code, location_name;
+   --------------------------------------------------------------------
+
+   QUERY: head
+   SELECT <? if exists("warehous_id") ?>
+            text('Warehouse:') AS f_text,
+            ( SELECT warehous_code
+                FROM whsinfo
+               WHERE (warehous_id=<? value("warehous_id") ?>) ) AS f_value
+          <? else ?>
+            text('') AS f_text,
+            text('') AS f_value
+          <? endif ?>
++         <? if exists("zone_id") ?>
++          text('Zone:') AS zone_text,
++          ( SELECT whsezone_name||' - '||whsezone_descrip
++              FROM whsezone
++              WHERE whsezone_id = <? value("zone_id") ?>) AS zone_value
++         <? else ?>
++          text('') AS zone_text,
++          text('') AS zone_value
++         <? endif ?>
+   --------------------------------------------------------------------
+

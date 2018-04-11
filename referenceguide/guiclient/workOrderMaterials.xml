@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="workOrderMaterials">
+  <title><indexterm significance="normal">
+      <primary>work orders</primary>
+      <secondary>maintenance of materials in</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>work order material requirements</primary>
+      <secondary>maintenance involving</secondary>
+    </indexterm>Maintain Work Order Material Requirements</title>
+  <para>To maintain work order material requirements, go to
+  <guimenuitem>Manufacture &gt; Materials &gt; Maintain</guimenuitem>. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/workOrderMaterials.png" />
+        </imageobject>
+        <caption>Maintain Work Order Material Requirements</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>If you are using the <guimenuitem>Substitute</guimenuitem> option
+    found on the right-click menu, keep in mind that this utility applies only
+    to BOM-defined substitutions, as specified on the BOM for the item in
+    question.</para>
+  </note>
+  <para>When maintaining work order material requirements, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Work Order #</term>
+      <listitem>
+        <para>Enter the work order number of the work order whose material
+        requirements you want to maintain.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays item number automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates work order method is either assembly or
+        disassembly.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Material Requirements</term>
+      <listitem>
+        <para>Display lists material requirements associated with specified
+        work order. If the due date is past due, the date will display in
+        red.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pick List Items</term>
+      <listitem>
+        <para>Displays the total number of component items which are also pick
+        list items. Items may be marked as pick list items on the Item
+        master.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Non-Pick List Items</term>
+      <listitem>
+        <para>Displays the total number of component items which are not pick
+        list items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Totals</term>
+      <listitem>
+        <para>Displays the total number of component items.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Current Std. Material Cost</term>
+      <listitem>
+        <para>Displays the current standard cost for the component items. The
+        displayed cost includes all standard costs associated with the
+        component items. Any non-material costs associated with manufactured
+        subcomponents (e.g., labor and overhead) would also be included in
+        this total.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Current Act. Material Cost</term>
+      <listitem>
+        <para>Displays the current actual cost for the component items. The
+        displayed cost includes all actual costs associated with the component
+        items. Any non-material costs associated with manufactured
+        subcomponents (e.g., labor and overhead) would also be included in
+        this total.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Maximum Desired Cost</term>
+      <listitem>
+        <para>Displays the maximum desired cost for the component items. The
+        maximum desired cost is defined on the Item master. It provides a
+        visual guide to help determine whether component item costs—either
+        standard or actual—have exceeded the maximum desired cost.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

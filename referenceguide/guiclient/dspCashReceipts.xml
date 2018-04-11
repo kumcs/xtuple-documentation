@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspCashReceipts">
+  <title><indexterm significance="normal">
+      <primary>cash receipts</primary>
+
+      <secondary>history of</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>customers</primary>
+
+      <secondary>cash received from</secondary>
+    </indexterm>Cash Receipts</title>
+
+  <para>The Cash Receipts screen provides historical information about cash
+  receipts and their applied-to documents. To view cash receipt information,
+  go to <guimenuitem>Accounting &gt; Accounts Receivable &gt; Reports &gt;
+  Cash Receipts</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspCashReceipts.png"/>
+        </imageobject>
+
+        <caption>Cash Receipts</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying cash receipts, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Customer</term>
+
+      <listitem>
+        <para>Select all customers, a specific customer, customer type, or
+        customer group whose cash receipts you want to display. To generate
+        results in the display you must first select the
+        <guibutton>QUERY</guibutton> button. If you are not seeing any
+        results, this is probably the reason why.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Funds Type</term>
+
+      <listitem>
+        <para>Specify the type of funds you want to include in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Distribution</term>
+
+      <listitem>
+        <para>Specify a date range for cash receipt history you want to
+        display:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Start Date</term>
+
+            <listitem>
+              <para>Cash receipts entered on and after this date will be
+              displayed.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>End Date</term>
+
+            <listitem>
+              <para>Cash receipts entered on and before this date will be
+              displayed.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Display By</term>
+
+      <listitem>
+        <para>Choose one of the following display options:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Cash Receipts</term>
+
+            <listitem>
+              <para>Select to order the results by the cash receipt
+              applications.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Applications</term>
+
+            <listitem>
+              <para>Select to order the results by cash receipt. Only cash
+              receipts entered in or after xTuple ERP version 3.3.0 will be
+              shown. For older cash receipt history, see the Receivables
+              Applications screen.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

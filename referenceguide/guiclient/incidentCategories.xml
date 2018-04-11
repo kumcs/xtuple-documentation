@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="incidentCategories">
+  <title><indexterm significance="normal">
+      <primary>crm</primary>
+      <secondary>incident categories and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>incidents</primary>
+      <secondary>categories for</secondary>
+    </indexterm>Incident Categories</title>
+  <para>Incident categories are used by the incident management system to
+  categorize incidents. When incident categories are entered in the
+  <guimenuitem>Master Information</guimenuitem> section, these categories are
+  then available for use when entering or updating incidents.</para>
+  <tip>
+    <para>You must manually create incident categories if you want the ability
+    to assign them to incidents. If no incident categories are defined, then
+    none will be available when entering incidents.</para>
+  </tip>
+  <para>To access the master list of incident categories, go to
+  <guimenuitem>CRM &gt; Setup &gt; Master Information &gt; Incident
+  Categories</guimenuitem>. The following screen will appear.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/incidentCategories.png" />
+        </imageobject>
+        <caption>Incident Categories master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Incident Categories screen displays information on all existing
+  incident categories, including incident category order, name, and
+  description.</para>
+  <xi:include href="incidentCategory.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

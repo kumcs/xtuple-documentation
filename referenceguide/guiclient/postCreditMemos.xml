@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="postCreditMemos">
+  <title><indexterm significance="normal">
+      <primary>sales credits</primary>
+      <secondary>posting of</secondary>
+    </indexterm>Post Sales Credits</title>
+  <para>To post sales credits in batch mode, go to <guimenuitem>Sales &gt;
+  Billing &gt; Sales Credit &gt; Post</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/postCreditMemos.png" />
+        </imageobject>
+        <caption>Post Sales Credits</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>Sales credits are posted effective on the date they are distributed,
+    not on the date they are posted—as might be assumed.</para>
+  </note>
+  <para>When posting sales credits, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Post Unprinted Sales Credits</term>
+      <listitem>
+        <para>Select to include unprinted sales credits in the list of sales
+        credits to be posted. If not selected—and if there are unprinted sales
+        credits waiting to be posted—you will be prompted to print the
+        unprinted sales credits before posting may occur.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Print Sales Credit Journal</term>
+      <listitem>
+        <para>Select to print the sales credit journal in addition to posting
+        the sales credits. Sales credit journals are assigned a unique
+        identification number, which corresponds to the sales credit batch and
+        the date the batch was posted.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>A sales credit journal will also be created for sales credits that
+    are posted individually—that is, not in batch mode, but one at a time. As
+    with batch postings, the sales credit journals for individually-posted
+    sales credits are assigned a unique identification number.</para>
+  </note>
+</section>

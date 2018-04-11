@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="workflowProfile" role="xtconnect">
+  <title><indexterm significance="normal">
+      <primary>workflow profiles, creating new</primary>
+    </indexterm>Workflow Email/Printer Profile</title>
+  <para>The workflow profile provides a token-based method for notifying users
+  about workflow activities, either by email or in print form. You can create
+  as many profiles as needed to fit your workflow requirements.</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/workflowProfile.png"/>
+        </imageobject>
+        <caption>Workflow Profile</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new workflow profile, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Profile Name</term>
+      <listitem>
+        <para>Enter a name for the profile.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a brief summary of the profile.</para>
+        <tip>
+          <para>Hover your mouse over the <guilabel>Body</guilabel> field to
+          see a list of tokens available for use when building
+          profiles.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Email Options</term>
+      <listitem>
+        <para>Select to enable email notification, then specify the following
+        email details for the profile:</para>
+        <variablelist>
+          <varlistentry>
+            <term>From</term>
+            <listitem>
+              <para>This is the email address of the person sending the email.
+              It can be set to a particular person's email address or to a
+              generic company address.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>To</term>
+            <listitem>
+              <para>Enter the email address to be used as the default
+              recipient address whenever documents are emailed using this
+              profile.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>CC</term>
+            <listitem>
+              <para>Enter the email address to be used as the default carbon
+              copy address whenever documents are emailed using this
+              profile.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>BCC</term>
+            <listitem>
+              <para>Enter the email address to which copies of the email will
+              be sent using this profile. BCC differs from CC in that none of
+              the recipients will see the BCC addresses. It is a good idea to
+              set this to an address that will have its inbox archived or to
+              an email address shared by a department. This way there is a
+              history of the transmission or the entire department knows what
+              has happened.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Subject</term>
+            <listitem>
+              <para>Enter a default email subject line to be used whenever
+              documents are emailed using this profile.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Body</term>
+            <listitem>
+              <para>Use this text field to enter the default message that will
+              accompany any documents emailed using this profile.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Print Options</term>
+      <listitem>
+        <para>Select to enable printing, then specify the following print
+        details for the profile:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Printer</term>
+            <listitem>
+              <para>Choose where you want the notification to be
+              printed.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Report</term>
+            <listitem>
+              <para>Specify the report definition to be used for printing the
+              notification.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

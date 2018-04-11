@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="correctPoReceipt">
+  <title><indexterm significance="normal">
+      <primary>receipts</primary>
+
+      <secondary>correction of</secondary>
+    </indexterm>Correct P/O Receipt</title>
+
+  <para>To make corrections to a purchase order receipt, select the
+  <guilabel>Correct Receiving</guilabel> option from the right-click menu. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/correctPoReceipt.png"/>
+        </imageobject>
+
+        <caption>Correct Item Receipt</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When correcting a purchase order receipt, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Order Type</term>
+
+      <listitem>
+        <para>Display the type of order received (e.g., purchase order,
+        transfer order).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Order Number</term>
+
+      <listitem>
+        <para>Displays the order number of the selected order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Line #</term>
+
+      <listitem>
+        <para>Displays the selected line item number from the specified
+        order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Displays item number associated with the specified line item
+        number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Vend. Item Number</term>
+
+      <listitem>
+        <para>Displays the item number the vendor uses.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Vendor Item Description</term>
+
+      <listitem>
+        <para>Displays the description for the vendor item number.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. to Receive in Inv. UOM</term>
+
+      <listitem>
+        <para>Displays the quantity received in its inventory UOM.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Vendor UOM Ratio</term>
+
+      <listitem>
+        <para>Displays the ratio between your inventory UOM and the vendor's
+        UOM. For example, if you store an item in single units, but a vendor
+        sells you the item in cases of 12, then the ratio would be 12—or 12:1.
+        When a vendor ratio is specified, the system allows you to purchase
+        items using the vendor's UOM; however, when the items are received,
+        the system will automatically convert the inventory to your inventory
+        UOM.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Correct Qty. to</term>
+
+      <listitem>
+        <para>Enter the quantity you want to correct the received quantity to.
+        This correction will create adjusting general ledger entries when the
+        <guibutton>CORRECT</guibutton> button is selected.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Vendor UOM</term>
+
+      <listitem>
+        <para>Displays the UOM the vendor uses for the specified item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Ordered</term>
+
+      <listitem>
+        <para>Displays the original line item quantity ordered.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Received</term>
+
+      <listitem>
+        <para>Displays the total line item quantity received to date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. Returned</term>
+
+      <listitem>
+        <para>Displays the total line item quantity returned to date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Unit Purchase Cost</term>
+
+      <listitem>
+        <para>Displays the per unit cost for the line item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Extended Purchase Cost</term>
+
+      <listitem>
+        <para>Displays the extended cost for the line item quantity.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>freight</primary>
+
+          <secondary>correcting for purchasing</secondary>
+        </indexterm>Correct Freight to</term>
+
+      <listitem>
+        <para>Enter the amount you want to correct the line item freight to.
+        This correction will create adjusting general ledger entries when the
+        <guibutton>CORRECT</guibutton> button is selected.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Due Date</term>
+
+      <listitem>
+        <para>Displays the date when the line item is due.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Date Received</term>
+
+      <listitem>
+        <para>Displays the date when the line item was received.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>Select the <guimenuitem>Notes</guimenuitem> tab to reach a
+        scrolling text field with word-wrapping for entering notes related to
+        the correction.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>OK</guibutton></term>
+
+      <listitem>
+        <para>Select to post the correction. This action will result in
+        adjusting general ledger transactions.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Print Label</term>
+
+      <listitem>
+        <para>Select to print a receiving label at the time when you select
+        the <guibutton>OK</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

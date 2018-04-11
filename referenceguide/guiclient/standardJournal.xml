@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="standardJournal">
+  <title><indexterm significance="normal">
+      <primary>standard journals</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>New Standard Journal</title>
+
+  <para>Standard journals are designed to handle G/L series transactions which
+  must be repeated frequently on a recurring basis. For example, standard
+  journals can be used for recording the payment of monthly utility bills—or
+  any other transactions which must be posted regularly. Once a standard
+  journal is set up, the posting of the standard journal can then be automated
+  using the batch manager. In this way, standard journal postings can be
+  scheduled at daily, weekly, or monthly intervals.</para>
+
+  <para>To create a new standard journal, go to <guimenuitem>Accounting &gt;
+  General Ledger &gt; Standard Journals &gt; New</guimenuitem>. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/standardJournal.png"/>
+        </imageobject>
+
+        <caption>Create new Standard Journal</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new standard journal, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to describe the journal.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Description</term>
+
+      <listitem>
+        <para>Enter a description to further describe the journal.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Transactions</term>
+
+      <listitem>
+        <para>Display lists transactions affiliated with the journal.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Totals</term>
+
+      <listitem>
+        <para>Displays the following information:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Debits</term>
+
+            <listitem>
+              <para>Displays total debits associated with the journal. Totals
+              will display in red if debits and credits do not balance.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Credits</term>
+
+            <listitem>
+              <para>Displays total credits associated with the journal. Totals
+              will display in red if debits and credits do not balance.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the journal.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <xi:include href="standardJournalItem.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

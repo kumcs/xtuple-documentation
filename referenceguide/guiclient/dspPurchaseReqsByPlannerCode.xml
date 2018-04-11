@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspPurchaseReqsByPlannerCode">
+  <title><indexterm significance="normal">
+      <primary>purchase requests</primary>
+      <secondary>by planner code</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>planner codes</primary>
+      <secondary>purchase requests for</secondary>
+    </indexterm>Purchase Requests by Planner Code</title>
+  <para>To view purchase requests by planner code or to create new manual
+  purchase requests, go to <guimenuitem>Purchase &gt; Purchase Requests &gt;
+  by Planner Code</guimenuitem>. The following screen will appear:</para>
+  <note>
+    <para>Purchase requests are considered to be a valid source of supply by
+    the planning systems.</para>
+  </note>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspPurchaseReqsByPlannerCode.png" />
+        </imageobject>
+        <caption>Purchase Requests by Planner Code</caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>Use the <guibutton>NEW</guibutton> button to create a manual
+    purchase request. Or use the right-click option on the Inventory
+    Availability and Planned Order screens.</para>
+  </tip>
+  <para>When displaying purchase requests by planner code, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Planner Codes</term>
+      <listitem>
+        <para>Select to display purchase requests for all planner
+        codes.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify planner code whose purchase requests you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a planner code pattern to select a range of planner codes.
+        Refine your search using regular expressions.</para>
+        <note>
+          <para>Purchase request quantities are based on the inventory unit of
+          measure (UOM). However, some vendor item sources may specify an
+          alternate UOM. If this is the case, the system will automatically
+          convert the requirement to the vendor's UOM when the purchase
+          request is released.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to display purchase requests by planner code for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose purchase requests by planner code you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Purchase requests by planner code entered on and after this date
+        will be displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Purchase requests by planner code entered on and before this
+        date will be displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sort by Vendor</term>
+      <listitem>
+        <para>Select to force the results to be sorted by vendor.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Purchase Requests</term>
+      <listitem>
+        <para>Display lists purchase requests for the specified planner code,
+        using the specified parameters. You may multi-select purchase requests
+        in the list, but when doing so each request will be processed
+        individually.</para>
+        <note>
+          <para>When a purchase request is released, the requested item will
+          automatically populate a Purchase Order Item screen. If item sources
+          have been defined for the item, then item source prices will be
+          used—that is, unless the vendor price has been specifically
+          overridden for purchase requests generated from sales orders.
+          Project numbers may also be transferred from sales orders. In this
+          way, sales orders and purchase order line items may be linked to the
+          same project.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>NEW</guibutton></term>
+      <listitem>
+        <para>Select to create a manual purchase request.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <xi:include href="../widgets/purchaseRequest.xml" xpointer="purchaseRequest"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

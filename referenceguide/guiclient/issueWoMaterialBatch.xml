@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="issueWoMaterialBatch">
+  <title><indexterm significance="normal">
+      <primary>work orders</primary>
+      <secondary>issuing materials in batch mode</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>batch mode</primary>
+      <secondary>issuing w/o materials in</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>work order material requirements</primary>
+      <secondary>issuing in batch mode</secondary>
+    </indexterm>Issue W/O Material Batch</title>
+  <para>To issue work order material requirement items simultaneously in a
+  batch, go to <guimenuitem>Manufacture &gt; Transactions &gt; Issue Material
+  &gt; Batch</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/issueWoMaterialBatch.png" />
+        </imageobject>
+        <caption>Issue Work Order Material Batch</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>Unless your system is configured to allow material issues to
+    exploded work orders, you may only issue materials to released or
+    in-process work orders. For more information about issuing to exploded
+    work orders, please see <xref linkend="AllowIssue" />.</para>
+  </note>
+  <para>When issuing work order material requirement items in a batch, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Transaction Date</term>
+      <listitem>
+        <para>Specify the date you want the transaction to be posted to the
+        general ledger. The current day's date will display by default.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Work Order #</term>
+      <listitem>
+        <para>Enter the work order number of the work order whose component
+        items you want to issue in a batch.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays work order item number automatically when work order
+        number is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Method</term>
+      <listitem>
+        <para>Indicates whether selected work order is an assembly or
+        disassembly work order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Issue Items not on Pick List</term>
+      <listitem>
+        <para>Select to indicate that non-pick list items should also be
+        issued to the work order. Items are defined as pick list items on the
+        Item master screen.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>W/O Material Requirements</term>
+      <listitem>
+        <para>Display lists work order material requirements. The display is
+        color-coded for ease of use. If an item's issue method is pull, then
+        that item—and the entire row it sits on—will appear in blue type. The
+        blue type indicates that the batch issue utility will not affect these
+        items. By definition, pulled items are backflushed, not issued.
+        However, if an item's issue method is push, then that item—and the row
+        it sits on—will appear in black type. Rows with black type are
+        affected by the batch issue utility. One other color may also appear.
+        If the quantity required by the work order exceeds the quantity on
+        hand (QOH)—meaning there is an inventory shortage—the value in the
+        <guilabel>Short</guilabel> column will display in red.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>If you are issuing lot/serial items to a work order, these cannot be
+    issued automatically from a default location. You must individually select
+    and then distribute the desired lot/serial quantity.</para>
+  </note>
+</section>

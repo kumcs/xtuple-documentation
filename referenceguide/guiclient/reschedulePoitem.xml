@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="reschedulePoitem">
+  <title>Reschedule Purchase Order Item</title>
+  <section id="Section940909">
+    <title>Reschedule Purchase Order Item(s)</title>
+    <para>To reschedule a purchase order item, go to <guimenuitem>Purchase
+    &gt; Purchase Order &gt; Reschedule</guimenuitem>. The following screen
+    will appear:</para>
+    <para><screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/reschedulePoitem.png" />
+          </imageobject>
+          <caption>Reschedule Purchase Order Item(s)</caption>
+        </mediaobject>
+      </screenshot></para>
+    <note>
+      <para>You may reschedule a purchase order line item after a purchase
+      order has been posted—as long as the line item has not been
+      closed.</para>
+    </note>
+    <para>When rescheduling a purchase order line item, you are presented with
+    the following options:</para>
+    <variablelist>
+      <varlistentry>
+        <term>Order #</term>
+        <listitem>
+          <para>Enter the purchase order number of the purchase order whose
+          line item you want to reschedule.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Vendor</term>
+        <listitem>
+          <para>Displays the name of the vendor associated with the purchase
+          order.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Reschedule All Open P/O Items</term>
+        <listitem>
+          <para>Select to reschedule all line items on the purchase
+          order.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Line Item</term>
+        <listitem>
+          <para>Specify the purchase order line item you want to
+          reschedule.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Due Date (Current)</term>
+        <listitem>
+          <para>Displays the current due date for the purchase order line
+          item.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Due Date (Rescheduled)</term>
+        <listitem>
+          <para>Enter the new rescheduled due date.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+    <para>The following buttons are unique to this screen:</para>
+    <variablelist>
+      <varlistentry>
+        <term><guibutton>RESCHEDULE</guibutton></term>
+        <listitem>
+          <para>Reschedules the purchase order line item using the specified
+          rescheduled date.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+</section>

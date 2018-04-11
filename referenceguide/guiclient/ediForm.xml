@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="ediForm">
+  <title>EDI Form</title>
+  <para><indexterm significance="normal">
+      <primary>electronic data interchange</primary>
+      <secondary>creating new forms for</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>forms</primary>
+      <secondary>creating new for edi</secondary>
+    </indexterm>EDI forms specify the file format an EDI profile will use.
+  They also define replacement tokens to fill in email or FTP details and to
+  use when running reports or queries. To associate an EDI form with a
+  profile, select the <guibutton>NEW</guibutton> button. For this example, we
+  will choose the <guimenuitem>Report</guimenuitem> format, as shown in the
+  following screenshot:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/ediForm_report.png" />
+        </imageobject>
+        <caption><para>Create new EDI Form using report
+        format</para></caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new EDI form using the
+  <guimenuitem>Report</guimenuitem> format, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Document Type</term>
+      <listitem>
+        <para>Select the type of document the form will be used for. The
+        following document types are supported: A/P memo, A/R memo, A/R
+        statement, sales credit, incident, invoice, MetaSQL statement, packing
+        list, pick list, purchase order, query set, quote, and sales
+        order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Output Format</term>
+      <listitem>
+        <para>For this example, we have selected the
+        <guimenuitem>Report</guimenuitem> output format. Selecting the
+        <guimenuitem>Report</guimenuitem> option indicates that document
+        information will be written using the report definition specified
+        below. Documents will be forwarded to EDI recipients in .PDF format.
+        The following output formats are supported: report, CSV, HTML, and
+        XML.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Include Header Lines</term>
+      <listitem>
+        <para>When selecting CSV or HTML as the <guilabel>Output
+        Format</guilabel>, check this box to include a line containing column
+        headings.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>File Name</term>
+      <listitem>
+        <para>Enter a standard file name to be used when documents are
+        forwarded to EDI recipients using this EDI form. You may enter tags to
+        generate dynamic file names using information stored in your database.
+        In the example shown, the file name will include the specific invoice
+        number of each invoice being forwarded to EDI recipients, the customer
+        number, and the date the EDI is generated.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm>
+          <primary>electronic data interchange</primary>
+          <secondary>tokens</secondary>
+        </indexterm><indexterm>
+          <primary>tokens</primary>
+          <secondary>electronic data interchange</secondary>
+        </indexterm>Query</term>
+      <listitem>
+        <para>This is an optional field to be used if you want to define your
+        own replacement tokens. The example uses a SQL statement to select the
+        customer number for this invoice and the current date as year, month,
+        and date separated by underscores (_). You will note in the
+        <literal>WHERE</literal> clause that MetaSQL is used to dynamically
+        capture the specific customer number using the system-defined
+        <literal>docid</literal> token (the <code>"&lt;/&gt;"</code> wrapper
+        is replaced by the MetaSQL <code>&lt;? value("") ?&gt;</code>). For
+        more information on writing queries using MetaSQL, please see the
+        Report Writer User Guide.</para>
+        <para>Tokens defined in this query can also be used on the EDI Profile
+        screen. For example, the query in the example above also retrieves the
+        sales rep's name and email address. The message body on the EDI
+        Profile window could be changed to end with the token
+        "<literal>&lt;/salesrep_name&gt;</literal>" and the From address could
+        be set to <literal>&lt;/usr_email&gt;</literal>. If you do this,
+        invoice emails will always be signed with the name of the sales rep
+        and sent from the sales rep's email address if s/he is also defined as
+        a user and employee.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Report</term>
+      <listitem>
+        <para>Specify the report definition you want to associate with the EDI
+        form.</para>
+        <note>
+          <para>The Use Query Set feature is not used with the report output
+          format.</para>
+        </note>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para><indexterm significance="normal">
+      <primary>electronic data interchange</primary>
+      <secondary>creating new forms for</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>forms</primary>
+      <secondary>creating new for edi</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>comma separated value</primary>
+      <secondary>format for edi</secondary>
+    </indexterm>To create a new EDI form using <indexterm
+      significance="normal">
+      <primary>CSV</primary>
+      <see>comma separated value</see>
+    </indexterm>comma separated value (CSV) format, select the
+  <guibutton>NEW</guibutton> button from the EDI Profiles master list. Once
+  the new Profile screen opens, choose the <guimenuitem>CSV</guimenuitem>
+  option. As the following screenshot shows, the screen options change when
+  <guimenuitem>CSV</guimenuitem> is selected:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/ediForm_csv.png" />
+        </imageobject>
+        <caption><para>Create new EDI Form using CSV format</para></caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new EDI form using the CSV format, you are presented
+  with the many of the same options as for reports. However, the
+  <guimenuitem>Report</guimenuitem> option is replaced with the
+  following:</para>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>comma separated value</primary>
+          <secondary>delimiter options for edi</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>electronic data interchange</primary>
+          <secondary>file delimiter options for</secondary>
+        </indexterm>Delimiter</term>
+      <listitem>
+        <para>Select one of the following delimiter options:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Comma</term>
+            <listitem>
+              <para>Select to generated comma-delimited CSV files.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Tab</term>
+            <listitem>
+              <para>Select to generated tab-delimited CSV files.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>You may also define your own delimiter. It must be a single,
+        non-space, printing character (e.g. * or : ).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Use Query Set</term>
+      <listitem>
+        <para>Displays a list of all the query sets currently defined. Select
+        the query set you want to run to generate the CSV data. If there is
+        more than one SQL statement in the query set, each query will be run
+        in the order specified in the query set and the data will be written
+        to the CSV file in the same order.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Destination Format</term>
+      <listitem>
+        <para>If the selected output format is XML, you can either accept the
+        default xTuple XML output or transform this with an XSLT stylesheet.
+        If you need to transform the output, create an XSLT stylesheet,
+        register it in the system (see <xref linkend="configureIE" />), and
+        select it from the alternate XML list.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>HTML and XML are also supported as an output format. HTML output is
+  much like CSV output, with the data presented as rows and columns in HTML
+  tables instead of separated by line breaks and a single delimiting
+  character. For XML, you will be given the option to send using either xTuple
+  XML or an alternate XML.</para>
+  <xi:include href="ediFormDetail.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

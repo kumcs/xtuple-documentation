@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printStatementByCustomer">
+  <title>Print Statement by Customer</title>
+
+  <para>A customer statement shows past due information for open receivables.
+  To print a customer statement, go to <guimenuitem>Accounting &gt; Accounts
+  Receivable &gt; Forms &gt; Print Statement by Customer</guimenuitem>. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printStatementByCustomer.png"/>
+        </imageobject>
+
+        <caption>Print Statement by Customer</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When printing a customer statement, you are presented with the
+  following options:</para>
+
+  <para role="xtconnect"><note>
+      <para>If the specified customer has an EDI profile attached, you may
+      encounter an EDI processing interface when printing the customer
+      statement.</para>
+    </note></para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Customer #</term>
+
+      <listitem>
+        <para>Enter the customer number of the customer whose statement you
+        want to print. The lookup feature located to the right of the field
+        leads to a searchable customers list. You may also access this list
+        using the keyboard shortcut <guibutton>CTRL + L</guibutton> . Once a
+        customer number is entered, the customer name and billing address will
+        display. Select the <guibutton>?</guibutton> or
+        <guibutton>$</guibutton> symbol to view customer information for the
+        specified customer. If a customer's credit is good, the button will
+        feature a black question mark (<guibutton>?</guibutton>) icon. If the
+        customer is on credit warning, the icon will turn into an orange
+        dollar sign (<guibutton>$</guibutton>). A red dollar sign
+        (<guibutton>$</guibutton>) indicates the customer is on credit
+        hold.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>As of</term>
+
+      <listitem>
+        <para>Specify the point-in-time date you want the statement to be
+        relative to.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

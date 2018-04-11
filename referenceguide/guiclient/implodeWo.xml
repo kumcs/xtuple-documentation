@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="implodeWo">
+  <title><indexterm significance="normal">
+      <primary>work orders</primary>
+      <secondary>implosion of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>implosion</primary>
+      <secondary>of work orders</secondary>
+    </indexterm>Implode Work Order</title>
+  <para>When you implode a work order, you delete the work order's material
+  requirements and work order operations. Only work orders with exploded (E)
+  status can be imploded. If the work order has been released (R) or is
+  in-process (I), it may not be imploded. Implosion changes a work order's
+  status from exploded (E) back to open (O). To implode a work order, go to
+  <guimenuitem>Manufacture &gt; Work Order &gt; Implode</guimenuitem>. The
+  following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/implodeWo.png" />
+        </imageobject>
+        <caption>Implode Work Order</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When imploding a work order, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Work Order #</term>
+      <listitem>
+        <para>Enter the work order number of the work order you want to
+        implode.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Displays site code automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Item Number</term>
+      <listitem>
+        <para>Displays item number automatically when work order number is
+        entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>UOM</term>
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Status</term>
+      <listitem>
+        <para>Displays work order status automatically when work order number
+        is entered into <guilabel>Work Order #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>IMPLODE</guibutton></term>
+      <listitem>
+        <para>Implodes the work order.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

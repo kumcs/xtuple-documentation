@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="materialReceiptTrans">
+  <title><indexterm significance="normal">
+      <primary>material receipts</primary>
+
+      <secondary>as inventory transaction</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>inventory transactions</primary>
+
+      <secondary>receiving materials</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>receiving</primary>
+
+      <secondary>as inventory transaction</secondary>
+    </indexterm>Material Receipt</title>
+
+  <para>To record the receipt of materials into inventory, go to
+  <guimenuitem>Inventory &gt; Transactions &gt; Material
+  Receipt</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/materialReceiptTrans_tabCost.png"/>
+        </imageobject>
+
+        <caption>Enter Material Receipt</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>If an item is lot/serial number controlled, you will be given the
+    opportunity to assign a lot/serial number to incoming material during the
+    receiving process.</para>
+  </note>
+
+  <para>When entering a material receipt, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Transaction Date</term>
+
+      <listitem>
+        <para>Specify the date you want the transaction to be posted to the
+        general ledger. The current day's date will display by default.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Enter the item number of the material you are receiving into
+        inventory.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Specify site where material is being received.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Receipt Qty.</term>
+
+      <listitem>
+        <para>Record the quantity of the item being received. The item's
+        quantity on hand (QOH) before and after the material receipt will also
+        be displayed. Non-netable QOH is not included in these values. If the
+        material is issued directly to a work order, the before and after
+        display will be bypassed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Immediate Issue to Work Order</term>
+
+      <listitem>
+        <para>Check to issue material immediately to a work order. Any work
+        order material requirements having an issue method of either mixed or
+        push may be issued to a work order using this option. Because pull
+        items are issued to work orders using a material backflush, they may
+        not be issued from this screen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>The full quantity being received will be issued to the work order if
+    the <guilabel>Immediate Issue</guilabel> option is selected. This means
+    the quantity issued may exceed or fall short of the work order material
+    requirement quantity. In such cases, adjustments at the work order level
+    may have to be made to bring the issued quantity into alignment with the
+    required quantity. To avoid having to manage discrepancies, do not select
+    this option. Instead, consider issuing materials manually.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Work Order #</term>
+
+      <listitem>
+        <para>Enter the work order number of the work order you want to issue
+        the received materials to. The lookup feature located to the right of
+        the field leads to a searchable work orders list. The list will
+        include work orders whose supplying site matches the site the
+        materials are being received into.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Specifies supplying site for the work order's parent
+        item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Displays item number for the work order's parent item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Status</term>
+
+      <listitem>
+        <para>Displays the status of the selected work order.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Document #</term>
+
+      <listitem>
+        <para>Creates a user-defined reference for the material receipt. The
+        document reference will be posted with the general ledger (G/L)
+        transaction record when the material receipt is generated. This field
+        may be used for internal tracking and auditing purposes.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Adjust Value</term>
+
+      <listitem>
+        <para>The <guimenuitem>Cost</guimenuitem> tab will be visible only if
+        average costing is enabled on the Configure Inventory screen. The
+        <guimenuitem>Cost</guimenuitem> tab will be enabled only if average
+        costing is the cost method selected for the item site being adjusted.
+        If adjust value is checked then the transaction will affect the value
+        of perpetual inventory using the following costs:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Calculated</term>
+
+            <listitem>
+              <para>Use the average cost calculation to determine perpetual
+              inventory value and distribute costs for this
+              transaction.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Manual</term>
+
+            <listitem>
+              <para>Use the total cost entered to determine perpetual
+              inventory value and distribute costs for this
+              transaction.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>To enter notes related to the material receipt, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/materialReceiptTrans_tabNotes.png"/>
+        </imageobject>
+
+        <caption>Material Receipt Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When entering notes related to a material receipt, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the material receipt.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

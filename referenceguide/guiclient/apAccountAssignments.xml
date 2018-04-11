@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="apAccountAssignments">
+  <title><indexterm significance="normal">
+      <primary>account assignments</primary>
+      <secondary>for payables</secondary>
+    </indexterm>Payables Assignments</title>
+  <para>Payables assignments represent the default general ledger (G/L)
+  accounts used by the system when processing the following:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Vouchers</para>
+    </listitem>
+    <listitem>
+      <para>Payment discounts</para>
+    </listitem>
+    <listitem>
+      <para>Miscellaneous payables credit memos</para>
+    </listitem>
+    <listitem>
+      <para>Miscellaneous payables debit memos</para>
+    </listitem>
+  </itemizedlist>
+  <para>The account assignments are made by vendor type. This means that
+  transactions involving a vendor will follow the assignments established for
+  the vendor type—unless otherwise specified. To access the Payables
+  Assignments master list, go to <guimenuitem>Payables
+  Assignments</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/apAccountAssignments_purchasing.png"/>
+        </imageobject>
+        <caption>Payables Assignments master list</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Payables Assignments screen displays information on all existing
+  payables account assignments.</para>
+  <xi:include href="apAccountAssignment.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

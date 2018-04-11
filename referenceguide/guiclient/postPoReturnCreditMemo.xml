@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="postPoReturnCreditMemo">
+  <title><indexterm significance="normal">
+      <primary>returns</primary>
+
+      <secondary>credit memos and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>credit memos</primary>
+
+      <secondary>for returns</secondary>
+    </indexterm>Post PO Return Credit Memo</title>
+
+  <para>To post a credit memo offsetting a purchase order return, select the
+  <guilabel>Create Credit Memo</guilabel> option from the right-click menu.
+  The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/postPoReturnCreditMemo.png"/>
+        </imageobject>
+
+        <caption>Post PO Return Credit Memo</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>The offsetting credit memo may also be created and posted at the
+    time when the return is posted.</para>
+  </note>
+
+  <para>When posting a credit memo for a purchase order return, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Line Item</term>
+
+      <listitem>
+        <para>Displays the item number of the item being returned.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Reject Qty.</term>
+
+      <listitem>
+        <para>Displays the quantity of the item being returned.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount</term>
+
+      <listitem>
+        <para>Shows the extended unit price for the line item quantity, as
+        indicated on the originating purchase order. Before you post the
+        credit memo, you have the option to override the amount if you want
+        to.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>POST</guibutton></term>
+
+      <listitem>
+        <para>Select to post the credit memo to the ledger.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

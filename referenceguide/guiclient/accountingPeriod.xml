@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="accountingPeriod">
+  <title><indexterm significance="normal">
+      <primary>accounting periods</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>Accounting Period</title>
+
+  <para>To create a new accounting period, select the
+  <guibutton>NEW</guibutton> button. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/accountingPeriod.png"/>
+        </imageobject>
+
+        <caption>Create new Accounting Period</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a new accounting period, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Name</term>
+
+      <listitem>
+        <para>Enter a name to describe the accounting period. This name will
+        be used as the period's column header text when a financial report is
+        generated. If not specified, then the period's start and end dates
+        will be used as the column header text. When a new period is added,
+        the beginning and end dates default to the next logical month. Dates
+        are not editable on periods with adjacent periods or when trial
+        balance activity exists.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Start Date</term>
+
+      <listitem>
+        <para>Specify the start date for the accounting period. The start date
+        is only editable if all periods are open—and the date must fall before
+        the end date.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>End Date</term>
+
+      <listitem>
+        <para>Specify the end date for the accounting period. The end date is
+        only editable on a period when it is the last period and there is no
+        trial balance activity in it.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Fiscal Year</term>
+
+      <listitem>
+        <para>Select a fiscal year from the drop down list.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Number</term>
+
+      <listitem>
+        <para>Select the accounting period number. This feature provides the
+        ability to customize your accounting periods so you're not limited to
+        monthly accounting periods. For example, this feature adds support for
+        4-4-5 Accounting.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Quarter</term>
+
+      <listitem>
+        <para>Select which quarter the accounting period belongs to.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Closed</term>
+
+      <listitem>
+        <para>Select to indicate the accounting period is closed. You may not
+        close an accounting period until a subsequent period has been created.
+        Once a period is closed, transactions cannot be posted into it—unless
+        the period is reopened first.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <note>
+    <para>The trial balances for an accounting period will automatically
+    forward-update at the moment when an accounting period is either closed or
+    created. Also, the system will automatically reset the beginning balances
+    for revenue and expense accounts to $0 at the start of a new fiscal
+    year.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry>
+      <term>Frozen</term>
+
+      <listitem>
+        <para>Select to indicate the accounting period is frozen. Trial
+        balances may not be updated for accounting periods which are frozen
+        except where the permission to post to frozen periods is granted. This
+        restriction applies to all accounts. If this option is not selected,
+        the accounting period is considered not frozen.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspPoPriceVariancesByVendor">
+  <title><indexterm significance="normal">
+      <primary>price variances</primary>
+      <secondary>by vendor</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>variances</primary>
+      <secondary>price by vendor</secondary>
+    </indexterm>Price Variances by Vendor</title>
+  <para>To view purchase price variances by vendor, go to
+  <guimenuitem>Purchase &gt; Reports &gt; Price Variance &gt; by
+  Vendor</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspPoPriceVariancesByVendor.png" />
+        </imageobject>
+        <caption>Price Variances by Vendor</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When displaying purchase price variances by vendor, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Vendor</term>
+      <listitem>
+        <para>Enter the vendor number of the vendor whose price variances you
+        want to view.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Only show variances not equal to zero</term>
+      <listitem>
+        <para>Select if you want to include only non-zero variances in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to display price variances by vendor for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose price variances by vendor you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>All Purchasing Agents</term>
+      <listitem>
+        <para>Select to display price variances by vendor for all purchasing
+        agents.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify purchasing agent whose price variances by vendor you
+        want to display. Users may be designated as purchasing agents at the
+        <guimenu>System</guimenu> level.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Voucher Distribution</term>
+      <listitem>
+        <para>Specify a date range indicating when price variances were posted
+        to the general ledger:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Start Date</term>
+            <listitem>
+              <para>Price variances by vendor entered on and after this date
+              will be displayed.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>End Date</term>
+            <listitem>
+              <para>Price variances by vendor entered on and before this date
+              will be displayed.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Currency</term>
+      <listitem>
+        <para>Specify preferred currency for the display:</para>
+        <variablelist>
+          <varlistentry>
+            <term>Base</term>
+            <listitem>
+              <para>Select if you want to see price variances displayed in the
+              base currency.</para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Voucher</term>
+            <listitem>
+              <para>Select if you want to see price variances displayed in the
+              currency of the voucher.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Price Variances</term>
+      <listitem>
+        <para>Display lists purchase price variances by vendor, using the
+        specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

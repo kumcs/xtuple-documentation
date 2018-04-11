@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="financialLayoutIncStatement">
+  <title><indexterm significance="normal">
+      <primary>financial reports</primary>
+
+      <secondary>income statement type</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>income statement reports</primary>
+    </indexterm>Income Statement Report</title>
+
+  <para>The system ships with a basic income statement designed to generate
+  financial reports using your revenue and expense account data. In this
+  section, we will examine this basic income statement.</para>
+
+  <note>
+    <para>Because the basic income statement is a system-defined financial
+    report, it may not be modified (except to make it active or inactive).
+    However, you may copy the report and modify the copy. You can think of the
+    basic income statement as a template for building other, similar financial
+    reports.</para>
+
+    <para role="xtprjaccnt">If the xTuple Project Accounting package is
+    installed, the basic income statement will be available to
+    projects.</para>
+  </note>
+
+  <para>To view the basic income statement, select it for editing from the
+  master list of financial reports. A message will alert you that this is a
+  system-defined report which may only be viewed, not edited. Select the
+  <guibutton>OK</guibutton> button to reach the following screen:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutIncStatement.png"/>
+        </imageobject>
+
+        <caption>Basic income statement system-defined</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The <guimenuitem>Row Layout</guimenuitem> tab displays information on
+  all the account groups and account numbers which make up the basic income
+  statement. If this were a custom report you were creating, you would be able
+  to add/remove account groups and account numbers to meet your specific
+  needs.</para>
+
+  <tip>
+    <para>To build row layouts for the three standard report types—income
+    statement, balance sheet, and cash flow—use the same techniques as when
+    building <emphasis>ad hoc</emphasis> report row layouts. The only
+    difference is you won't need to specify which balances to calculate (e.g.,
+    beginning, ending, etc.). The system determines which calculations will be
+    done for the standard statement formats.</para>
+  </tip>
+
+  <para>When viewing row layouts for the basic income statement, you are
+  presented with the following columns:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para><emphasis role="bold">Group/Account Name</emphasis>: Lists the
+      account groups and account types used in the report. The two main groups
+      are <guilabel>REVENUE</guilabel> and <guilabel>EXPENSES</guilabel>. All
+      accounts having <guilabel>Type=Revenue</guilabel> are included in the
+      <guilabel>REVENUE</guilabel> group. And within the
+      <guilabel>EXPENSES</guilabel> group all accounts having
+      <guilabel>Type=Expense</guilabel> are included.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Sub./Summ.</emphasis>: Indicates whether
+      group information will be presented as a subtotal or summary line when
+      the report is run. In the basic income statement, all account groups are
+      subtotaled.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Oper.</emphasis>: Specifies whether a group
+      will be added to (<guibutton>+</guibutton>) or subtracted from
+      (<guibutton>-</guibutton>) the group total. In the basic income
+      statement, <guilabel>REVENUE</guilabel> is added to and
+      <guilabel>EXPENSES</guilabel> are subtracted from the
+      <guilabel>INCOME</guilabel> group.</para>
+    </listitem>
+  </itemizedlist>
+
+  <note>
+    <para>Select the <guibutton>VIEW</guibutton> button to see the
+    system-defined settings for each account group and account type used in
+    the basic income statement. When creating your own reports, you may choose
+    to either imitate or alter these default settings.</para>
+  </note>
+
+  <para>In addition to row layouts, you may also define column layouts for
+  your financial reports. Column layouts are used to specify the time buckets
+  financial information will be sorted into. You specify a column layout to
+  use when viewing or printing financial reports. You may define any number of
+  column layouts. Each layout will be linked to either a pre-defined report
+  definition or a custom report definition you create yourself.</para>
+
+  <para>On the basic income statement, select the <guimenuitem>Column
+  Layouts</guimenuitem> tab to view all the time buckets available for the
+  report. If this were a custom report you were creating, you would be able to
+  add/remove column layouts to meet your specific needs.</para>
+
+  <tip>
+    <para>See <xref linkend="financialLayoutCashFlow"/> for specific examples
+    describing the various column layout options.</para>
+  </tip>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutIncStatementCols.png"/>
+        </imageobject>
+
+        <caption>Basic income statement Column Layouts</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When viewing column layouts for the basic income statement, you are
+  presented with the following column definitions—each of which defines a
+  different time bucket available for viewing income statement
+  information:</para>
+
+  <itemizedlist>
+    <listitem>
+      <para><emphasis role="bold">Month</emphasis>: Displays data for the
+      current month (i.e., accounting period). The month used as the basis for
+      the reporting is specified when the report is run. Uses the
+      <literal>FinancialReportMonth</literal> report definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Month, Budget</emphasis>: Displays data for
+      the current month, compared to budget information for the current month.
+      The month used as the basis for the reporting is specified when the
+      report is run. Uses the <literal>FinancialReportMonthBudget</literal>
+      report definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Month, Prior Month</emphasis>: Displays data
+      for the current month, compared to the prior month. The month used as
+      the basis for the reporting is specified when the report is run. Uses
+      the <literal>FinancialReportMonthPriorMonth</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Month, Prior Year Month</emphasis>: Displays
+      data for the current month, compared to the same month in the prior
+      fiscal year. The month used as the basis for the reporting is specified
+      when the report is run. Uses the
+      <literal>FinancialReportMonthPriorMonth</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Month, QTD</emphasis>: Displays data for the
+      current month, compared to the current quarter to-date. The month used
+      as the basis for the reporting is specified when the report is run. Uses
+      the <literal>FinancialReportMonthQuarter</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">Month, YTD</emphasis>: Displays data for the
+      current month, compared to the current fiscal year to-date. The month
+      used as the basis for the reporting is specified when the report is run.
+      Uses the <literal>FinancialReportMonthYear</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">QTD</emphasis>: Displays data for the
+      current quarter to-date. The month used as the basis for the reporting
+      is specified when the report is run. Uses the
+      <literal>FinancialReportQuarter</literal> report definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">QTD, Budget</emphasis>: Displays data for
+      the current quarter to-date, compared to budget information for the
+      current quarter. The month used as the basis for the reporting is
+      specified when the report is run. Uses the
+      <literal>FinancialReportQuarterBudget</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">QTD, Prior Quarter</emphasis>: Displays data
+      for the current quarter to-date, compared to the prior quarter. The
+      month used as the basis for the reporting is specified when the report
+      is run. Uses the <literal>FinancialReportQuarterPriorQuarter</literal>
+      report definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">QTD, Prior Year Quarter</emphasis>: Displays
+      data for the current quarter to-date, compared to the same quarter in
+      the prior fiscal year. The month used as the basis for the reporting is
+      specified when the report is run. Uses the
+      <literal>FinancialReportQuarterPriorQuarter</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">YTD</emphasis>: Displays data for the
+      current fiscal year to-date. The month used as the basis for the
+      reporting is specified when the report is run. Uses the
+      <literal>FinancialReportYear</literal> report definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">YTD, Budget</emphasis>: Displays data for
+      the current fiscal year to-date, compared to budget information for the
+      current fiscal year to-date. The month used as the basis for the
+      reporting is specified when the report is run. Uses the
+      <literal>FinancialReportYearBudget</literal> report definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">YTD, Prior Full Year</emphasis>: Displays
+      data for the current fiscal year to-date, compared to information for
+      the entire prior fiscal year. The month used as the basis for the
+      reporting is specified when the report is run. Uses the
+      <literal>FinancialReportYearPriorYear</literal> report
+      definition.</para>
+    </listitem>
+
+    <listitem>
+      <para><emphasis role="bold">YTD, Prior Year YTD</emphasis>: Displays
+      data for the current fiscal year to-date, compared to the prior fiscal
+      year to-date. The month used as the basis for the reporting is specified
+      when the report is run. Uses the
+      <literal>FinancialReportYearPriorYear</literal> report
+      definition.</para>
+    </listitem>
+  </itemizedlist>
+
+  <note>
+    <para>Select the <guibutton>VIEW</guibutton> button to see the
+    system-defined settings for each account group and account type used in
+    the basic income statement. When creating your own reports, you may choose
+    to either imitate or alter these default settings.</para>
+  </note>
+
+  <tip>
+    <para>When creating a column layout, you can choose from the following
+    standard report templates:</para>
+
+    <para>FinancialReport (used by all <emphasis>ad hoc</emphasis>
+    reports)</para>
+
+    <para>FinancialReportMonth</para>
+
+    <para>FinancialReportMonthBudget</para>
+
+    <para>FinancialReportMonthDbCr</para>
+
+    <para>FinancialReportMonthPriorMonth</para>
+
+    <para>FinancialReportMonthPriorQuarter</para>
+
+    <para>FinancialReportMonthPriorYear</para>
+
+    <para>FinancialReportMonthQuarter</para>
+
+    <para>FinancialReportMonthYear</para>
+
+    <para>FinancialReportQuarter</para>
+
+    <para>FinancialReportQuarterBudget</para>
+
+    <para>FinancialReportQuarterPriorQuarter</para>
+
+    <para>FinancialReportYear</para>
+
+    <para>FinancialReportYearBudget</para>
+
+    <para>FinancialReportYearPriorYear</para>
+
+    <para>FinancialTrend (used by non-ad-hoc trend reports)</para>
+
+    <para>If for some reason these templates don't meet your needs, you can
+    always use OpenRPT to a) modify them or b) create your own custom report
+    templates.</para>
+  </tip>
+
+  <para>To view additional configuration options for the layout of the basic
+  income statement, select the <guimenuitem>Options</guimenuitem> tab. The
+  following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/financialLayoutIncStatementOpt.png"/>
+        </imageobject>
+
+        <caption>Basic income statement Options</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The layout for the basic income statement does not use any extra
+  configuration options. However, if you were creating your own income
+  statement layout, you could choose to a) include a grand total row and b)
+  use alternate labels for budget and grand total rows when viewing and/or
+  printing the financial report.</para>
+
+  <note>
+    <para>Any notes you add to a financial report definition will appear at
+    the bottom of the financial report when the financial report is
+    printed.</para>
+  </note>
+</section>

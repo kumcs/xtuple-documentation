@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="printCheck">
+  <title><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>printing individual</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>accounts payable</primary>
+
+      <secondary>printing payments for</secondary>
+    </indexterm>Print Payment</title>
+
+  <para>To print an individual payment, go to <guimenuitem>Accounting &gt;
+  Accounts Payable &gt; Forms &gt; Print Payment</guimenuitem>. The following
+  screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printCheck.png"/>
+        </imageobject>
+
+        <caption>Print Payment</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <tip>
+    <para>If payments being printed contain reference lines which spill over
+    and exceed one standard page, then consider using the report definition
+    CheckMultiPage.xml. This payment form is designed to support multiple
+    pages for one payment number.</para>
+  </tip>
+
+  <para>When printing an individual payment, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Bank Account</term>
+
+      <listitem>
+        <para>Specify the bank account for the payment you want to print. Only
+        bank accounts which require printing will have payments to print. If
+        the specified bank account is configured to use electronic funds
+        transfer (EFT), the <guibutton>CREATE EFT FILE</guibutton> button will
+        be enabled on this screen.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Payment</term>
+
+      <listitem>
+        <para>Specify the payment number you want to print. Menu will list
+        payments from prepared payment runs associated with the specified bank
+        account.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Next Payment #</term>
+
+      <listitem>
+        <para>Specify the next payment number.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ALREADY PRINTED/PAID</guibutton></term>
+
+      <listitem>
+        <para>Select if you want to mark the payment as already printed or
+        paid. By marking a payment in this way, you can manually bypass the
+        print requirement and move straight to posting the payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><guibutton>CREATE EFT FILE</guibutton></term>
+
+      <listitem>
+        <para>Select to create an EFT file. This button will be enabled only
+        for bank accounts which are configured to use EFT.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>problems when printing</secondary>
+    </indexterm>If for some reason you experience printing problems when
+  printing a payment, select the <guibutton>NO</guibutton> button from the
+  following screen:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/printChecksSuccess.png"/>
+        </imageobject>
+
+        <caption>Print message</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>If you select the <guibutton>NO</guibutton> button, you will have the
+  option to reprint the payment using the same payment number—assuming your
+  <guimenu>Accounting</guimenu> module is configured to allow the reprinting
+  of badly printed payments. Successfully printed payments may not be
+  reprinted. For more information, please see <xref
+  linkend="reprintPayments"/>.</para>
+</section>

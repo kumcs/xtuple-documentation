@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspOrderActivityByProject">
+  <title><indexterm significance="normal">
+      <primary>projects</primary>
+
+      <secondary>order activity for</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>sales orders</primary>
+
+      <secondary>projects and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>work orders</primary>
+
+      <secondary>projects and</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>purchase orders</primary>
+
+      <secondary>projects and</secondary>
+    </indexterm>Order Activity by Project</title>
+
+  <para>To view order activity by project, go to <guimenuitem>CRM &gt; Reports
+  &gt; Order Activity by Project</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspOrderActivityByProject.png"
+                     id="dspOrderActivityByProject.imagedata"/>
+        </imageobject>
+
+        <caption>Order Activity by Project</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying order activity by project, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Project #</term>
+
+      <listitem>
+        <para>Select a project number whose order activity you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Show Types</term>
+
+      <listitem>
+        <para>Specify which order type information you want to include in the
+        display:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Sales Orders</term>
+
+            <listitem>
+              <para>Select to include details for any sales orders linked to
+              the project.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Work Orders</term>
+
+            <listitem>
+              <para>Select to include details for any work orders linked to
+              the project.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Purchase Orders</term>
+
+            <listitem>
+              <para>Select to include details for any purchase orders linked
+              to the project.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>Some projects may not allow all order types to be assigned to them.
+    If that is the case, you will not see information displayed for all order
+    types.</para>
+  </tip>
+
+  <variablelist>
+    <varlistentry>
+      <term>Orders</term>
+
+      <listitem>
+        <para>Display lists orders associated with the selected project, using
+        the specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

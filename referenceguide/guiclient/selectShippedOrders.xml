@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="selectShippedOrders">
+  <title><indexterm significance="normal">
+      <primary>billing</primary>
+      <secondary>approve shipped orders for</secondary>
+    </indexterm>Approve Shipped Orders for Billing</title>
+  <para>This utility enables you to approve groups of shipped orders for
+  billing in one operation. When used, the full order quantity of shipped
+  orders will be approved for billing. You may later change the billing
+  details for individual line items using the right-click menu on the billing
+  edit list. All approved orders will appear on the billing edit list after
+  the Approve Shipped Orders for Billing utility is run. This approach differs
+  from the approach used by the Approve Order for Billing utility, which
+  requires you to manually enter billing details for individual orders. To
+  approve multiple shipped orders for billing, go to <guimenuitem>Sales &gt;
+  Billing &gt; Invoice &gt; </guimenuitem><guimenuitem>Approve Shipped Orders
+  for Billing</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/selectShippedOrders.png" />
+        </imageobject>
+        <caption>Approve Shipped Orders for Billing</caption>
+      </mediaobject>
+    </screenshot></para>
+  <note>
+    <para>When you approve an order for billing, you are indicating that you
+    wish to create an invoice for the order.</para>
+  </note>
+  <para>When approving multiple shipped orders for billing, you are presented
+  with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Customer Types</term>
+      <listitem>
+        <para>Choose to select all customer types for billing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify the customer type you want to approve for
+        billing.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+      <listitem>
+        <para>Choose to approve all shipped orders for billing for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose shipped orders you want to approve for
+        billing.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

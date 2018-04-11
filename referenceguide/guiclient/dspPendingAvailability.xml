@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspPendingAvailability">
+  <title><indexterm significance="normal">
+      <primary>work orders</primary>
+
+      <secondary>pending material availability for</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>materials</primary>
+
+      <secondary>pending w/o availability</secondary>
+    </indexterm>Pending W/O Material Availability</title>
+
+  <para>To view the pending availability for work order material requirements
+  associated with a work order, go to <guimenuitem>Manufacture &gt; Reports
+  &gt; Pending Material Availability</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspPendingAvailability.png"/>
+        </imageobject>
+
+        <caption>Pending W/O Material Availability</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <note>
+    <para>This display shows pending availability for work order material
+    requirements associated with the manufactured parent item.</para>
+  </note>
+
+  <para>When displaying pending work order material availability, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Enter the item number of the item whose pending material
+        availability you want to view.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure (UOM).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Specify site whose pending work order material availability you
+        want to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Qty. to Build</term>
+
+      <listitem>
+        <para>Enter the quantity ordered for the hypothetical work order item.
+        The pending availability for material requirements will vary depending
+        on the quantity entered.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Effective</term>
+
+      <listitem>
+        <para>Pending work order material availability on or after this date
+        will be displayed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Build Date</term>
+
+      <listitem>
+        <para>Enter the date you need to begin building the item.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Only Show Shortages</term>
+
+      <listitem>
+        <para>Select to only show shortages in the display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Material Requirements</term>
+
+      <listitem>
+        <para>Display lists pending work order material availability, using
+        the specified parameters. The display is color-coded for ease of use.
+        Orange text indicates the item has fallen below its reorder level. Red
+        text indicates the quantity on hand (QOH) or availability has fallen
+        below zero. This display also features a nested list, with a plus
+        (<guibutton>+</guibutton>) sign located to the far left of any
+        subcomponents. By clicking your mouse on a plus sign, you reveal an
+        indented bill of materials (BOM).</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

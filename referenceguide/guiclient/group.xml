@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="group">
+  <title><indexterm significance="normal">
+      <primary>roles</primary>
+      <secondary>creating new</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>xtuple administrators</primary>
+      <secondary>new roles created by</secondary>
+    </indexterm><indexterm significance="normal">
+      <primary>administrators</primary>
+      <see>xtuple administrators</see>
+    </indexterm><indexterm significance="normal">
+      <primary>system administrators</primary>
+      <see>xtuple administrators</see>
+    </indexterm>Role</title>
+  <para>To create a new user role, select the <guibutton>NEW</guibutton>
+  button. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/group.png" />
+        </imageobject>
+        <caption>User Role information</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating a new user role, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>roles</primary>
+          <secondary>creating names for</secondary>
+        </indexterm>Name</term>
+      <listitem>
+        <para>Enter a name for the user role. For example, you might name a
+        role according to a specific functional area (e.g., sales, purchasing,
+        etc.).</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Description</term>
+      <listitem>
+        <para>Enter a brief description to describe the user role.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <variablelist>
+    <varlistentry>
+      <term>Module</term>
+      <listitem>
+        <para>Select an individual module to assign privileges for that
+        module. Assign privileges to the user role on a module-by-module
+        basis. Select one module, assign the appropriate privileges, and then
+        repeat for each subsequent module users in the role will need access
+        to. All application modules are included in the list.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>privileges</primary>
+          <secondary>list of available</secondary>
+        </indexterm>Available Privileges</term>
+      <listitem>
+        <para>Select appropriate privileges from the list of available
+        privileges. Descriptions of each privilege will be shown. The
+        privileges listed in this column represent the full range of
+        privileges available for the specified module. The list of available
+        privileges will change as different modules are specified. To grant
+        privileges to a user role, highlight an available privilege and then
+        click the <guibutton>ADD</guibutton> button. The highlighted privilege
+        will be added to the user role's list of granted privileges.
+        Double-clicking on a privilege will also move it to the
+        <guilabel>Granted Privileges</guilabel> column. You can grant all
+        privileges for a specified module by clicking on the <guibutton>ADD
+        ALL</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>privileges</primary>
+          <secondary>list of granted</secondary>
+        </indexterm>Granted Privileges</term>
+      <listitem>
+        <para>Displays granted privileges for the specified user role. To
+        remove a user role's granted privileges for a specified module,
+        highlight a granted privilege and then click the
+        <guibutton>REVOKE</guibutton> button. The highlighted privilege will
+        be removed from the user role's list of granted privileges.
+        Double-clicking on a privilege will also remove it from the
+        <guilabel>Granted Privileges</guilabel> column. You can remove all
+        granted privileges for a specified module by clicking on the
+        <guibutton>REVOKE ALL</guibutton> button.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are located between the <guilabel>Available
+  Privileges</guilabel> and <guilabel>Granted Privileges</guilabel>
+  columns:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ADD-&gt;</guibutton></term>
+      <listitem>
+        <para>Highlight a specific privilege in the <guilabel>Available
+        Privileges</guilabel> column, then select this button to transfer the
+        privilege to the <guilabel>Granted Privileges</guilabel> column.
+        Double-clicking on an available privilege will also transfer it to the
+        <guilabel>Granted Privileges</guilabel> column.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>ADD ALL-&gt;&gt;</guibutton></term>
+      <listitem>
+        <para>Select this button to automatically transfer all available
+        privileges to the <guilabel>Granted Privileges</guilabel>
+        column.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>&lt;-REVOKE</guibutton></term>
+      <listitem>
+        <para>Highlight a specific privilege in the <guilabel>Granted
+        Privileges</guilabel> column, then select this button to remove the
+        privilege from the <guilabel>Granted Privileges</guilabel> column.
+        Double-clicking on a granted privilege will also remove it from the
+        <guilabel>Granted Privileges</guilabel> column.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><guibutton>&lt;&lt;-REVOKE ALL</guibutton></term>
+      <listitem>
+        <para>Select this button to automatically remove all granted
+        privileges from the <guilabel>Granted Privileges</guilabel>
+        column.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To view a list of users assigned to the role, select the
+  <guimenuitem>Assignment</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/group_assignmentTab.png" />
+        </imageobject>
+        <caption>Users Assignment</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The assignments list displays information about users assigned to the
+  role, including username and proper name.</para>
+</section>

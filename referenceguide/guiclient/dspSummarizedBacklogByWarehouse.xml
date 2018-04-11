@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspSummarizedBacklogByWarehouse">
+  <title><indexterm significance="normal">
+      <primary>backlog</primary>
+      <secondary>summarized by site</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>sites</primary>
+      <secondary>backlog summarized by</secondary>
+    </indexterm>Summarized Backlog</title>
+  <para>To view summarized backlog by site, go to <guimenuitem>Sales &gt;
+  Reports &gt; Summarized Backlog</guimenuitem>. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspSummarizedBacklogByWarehouse.png" />
+        </imageobject>
+        <caption>Summarized Backlog by Site</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When displaying summarized backlog by site, you are presented with the
+  following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Customer Types</term>
+      <listitem>
+        <para>Select to display summarized backlog by site for all customer
+        types.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify customer type whose backlog by site you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+      <listitem>
+        <para>Select to display summarized backlog for all sites.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Selected</term>
+      <listitem>
+        <para>Specify site whose summarized backlog you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Start Date</term>
+      <listitem>
+        <para>Summarized backlog by site entered on and after this date will
+        be displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>End Date</term>
+      <listitem>
+        <para>Summarized backlog by site entered on and before this date will
+        be displayed.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show Prices and Costs</term>
+      <listitem>
+        <para>Select to include pricing and cost information in the
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Backlog</term>
+      <listitem>
+        <para>Display lists summarized backlog by site, using the specified
+        parameters. The display is a nested list, with a plus
+        (<guibutton>+</guibutton>) sign located to the far left of the screen
+        next to each line that may be expanded to lower levels. By clicking
+        your mouse on a plus sign, you reveal lower levels of information
+        related to the order. If the <guilabel>Show Prices and
+        Costs</guilabel> option is selected, additional columns showing sales
+        price, cost, and margin will display.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>The Summarized Backlog By Site display is color-coded for ease of
+    use. The following colors are used to describe the backlog status of sales
+    order line items:</para>
+    <variablelist>
+      <varlistentry>
+        <term>Blue</term>
+        <listitem>
+          <para>Order is at shipping but is not yet shipped.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Green</term>
+        <listitem>
+          <para>Order has been shipped complete, but has not yet been selected
+          for billing.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Red</term>
+        <listitem>
+          <para>Part of the order has been shipped and selected for billing,
+          but backorder items still need to be shipped and billed.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Black</term>
+        <listitem>
+          <para>None of the above conditions is true.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </note>
+  <variablelist>
+    <varlistentry>
+      <term>Total Sales Orders</term>
+      <listitem>
+        <para>Displays the total number of sales orders on backlog.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Total line items</term>
+      <listitem>
+        <para>Displays the total number of sales order line items on
+        backlog.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Total Qty (Inventory UOM)</term>
+      <listitem>
+        <para>Displays the total number of unshipped sales order line items on
+        backlog.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section role="xtconnect">
+  <title>EDI Relation Pseudo-widget</title>
+
+  <para><remark>This should really be part of the xtbatch docs</remark></para>
+
+  <para id="edirelationWidget"><informalexample role="xtconnect">
+      <para>When associating EDI profiles with EDI recipients, such as
+      customers, ship-to addresses, and vendors, you are presented with the
+      following options:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>EDI Profiles</term>
+
+          <listitem>
+            <para>Display lists EDI profiles associated with this recipient
+            (e.g., current customer) for a particular document type. It also
+            shows whether EDI will be sent via email or FTP.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>The following buttons are unique to this screen:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>ATTACH</term>
+
+          <listitem>
+            <para>Connect an existing EDI profile to this EDI recipient for a
+            particular document type.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>DETACH</term>
+
+          <listitem>
+            <para>Detach the selected EDI profile from the recipient for the
+            selected document type.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para><note>
+          <para>Selecting the <guibutton>EDIT</guibutton> button will open the
+          EDI profile so you can change it. All EDI recipients who share this
+          EDI profile will be affected by changes.</para>
+        </note>To attach an existing EDI profile to the current recipient,
+      select the <guibutton>ATTACH</guibutton> button. The following screen
+      will appear:</para>
+
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/edirelation_attach.png"/>
+            </imageobject>
+
+            <caption>Attach an EDI Profile</caption>
+          </mediaobject>
+        </screenshot></para>
+
+      <para>This screen lets you attach an existing EDI profile to the
+      currently selected recipient for a particular document type. This tells
+      xTuple Connect which documents should be sent by EDI and the EDI profile
+      to use when sending documents of that type to a particular recipient.
+      The recipient and recipient type are displayed for your information
+      while attaching the EDI profile.</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>Recipient</term>
+
+          <listitem>
+            <para>This shows the number of the customer, vendor, etc. which
+            will receive EDI using the selected EDI profile.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Recipient Type</term>
+
+          <listitem>
+            <para>This shows whether the recipient is a customer, vendor, etc.
+            This reduces confusion in cases where a customer and vendor have
+            the same number (i.e., the same CRM account is both a customer and
+            vendor).</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Document Type</term>
+
+          <listitem>
+            <para>Choose from this list the type of document you want to use
+            the EDI profile for. The list of available document types changes
+            depending on the recipient type. For example, if the recipient
+            type is vendor, the document type list will not contain "Sales
+            Order."</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>Show All EDI Profiles</term>
+
+          <listitem>
+            <para>The list of EDI profiles shows only those EDI profiles that
+            have an EDI form for the currently selected document type by
+            default. If this box is checked, all EDI profiles will be listed.
+            You may attach an EDI profile without an appropriate EDI form but
+            it will not be used until the right EDI form is added to the EDI
+            profile.</para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+          <term>EDI Profiles</term>
+
+          <listitem>
+            <para>Choose from this list the EDI profile you want to attach for
+            the selected document type.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>The following buttons are unique to this screen:</para>
+
+      <variablelist>
+        <varlistentry>
+          <term>ATTACH</term>
+
+          <listitem>
+            <para>Attaches the EDI profile to the recipient and closes the
+            screen, returning you to the previous screen.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+
+      <para>If there is no existing EDI profile that suits your needs, you can
+      create a new one by selecting the <guibutton>NEW</guibutton> button.
+      This does the same thing as clicking the <guibutton>NEW</guibutton>
+      button on the EDI Profiles window (see <xref linkend="ediProfiles"/>).
+      After you have created the new EDI profile and saved it, the Attach EDI
+      Profile window will appear with the new EDI profile selected. Now you
+      can select the document type and click <guibutton>ATTACH</guibutton>. If
+      you click <guibutton>CANCEL</guibutton>, the new EDI profile will still
+      be saved but will not be attached to the recipient.</para>
+    </informalexample></para>
+</section>

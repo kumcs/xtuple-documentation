@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="warehouses">
+  <title><indexterm significance="normal">
+      <primary>sites</primary>
+
+      <secondary>master list of</secondary>
+    </indexterm>Sites</title>
+
+  <para>Sites typically describe physical production and storage facilities.
+  Work centers, item sites, and site locations belong to sites. To access the
+  master list of sites, go to <guimenuitem>Inventory &gt; Site &gt;
+  List</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/warehouses.png"/>
+        </imageobject>
+
+        <caption>Sites master list</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>The Sites screen displays information on all existing sites, including
+  site code, site description, and site address. To include inactive sites in
+  the display, select the <guilabel>Show Inactive Sites</guilabel>
+  option.</para>
+
+  <xi:include href="warehouse.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

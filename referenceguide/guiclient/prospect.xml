@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="prospect">
+  <title><indexterm significance="normal">
+      <primary>prospects</primary>
+      <secondary>creating new</secondary>
+    </indexterm>Enter New Prospect</title>
+  <para>Prospects are potential customer accounts. The system allows you to
+  maintain information on prospects—and then, when the time is right, it
+  enables you to convert prospect accounts to customer accounts.</para>
+  <tip>
+    <para>To convert a prospect to a customer, simply select the
+    <guibutton>CUSTOMER</guibutton> button on the prospect's CRM account. This
+    will prompt you to convert the prospect information—and also give you the
+    chance to convert any existing prospect quotes to customer quotes.</para>
+  </tip>
+  <para>To create a new prospect, go to <guimenuitem>Sales &gt; Prospect &gt;
+  New</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/prospect.png" />
+        </imageobject>
+        <caption><para>Create new Prospect</para></caption>
+      </mediaobject>
+    </screenshot></para>
+  <tip>
+    <para>Prospects can also be created from the CRM Account screen. Simply
+    enter a new CRM account, selecting the <guilabel>Prospect</guilabel>
+    relationship option.</para>
+  </tip>
+  <para>When creating a new prospect, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>Prospect #</term>
+      <listitem>
+        <para>Enter a code to identify the prospect.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Prospect Name</term>
+      <listitem>
+        <para>Enter a name to describe the prospect.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Active</term>
+      <listitem>
+        <para>Select to indicate the prospect is active. Not selecting this
+        option means the prospect is inactive.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Site</term>
+      <listitem>
+        <para>Specify the site the prospect is associated with.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Sales Rep</term>
+      <listitem>
+        <para>Specify the sales representative associated with the
+        prospect.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>tax zones</primary>
+          <secondary>for prospects</secondary>
+        </indexterm>Tax Zone</term>
+      <listitem>
+        <para>Specify the tax zone you want to associate with the
+        prospect.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>contact</term>
+      <listitem>
+        <para>Manually enter contact information in the fields below—or use
+        the lookup feature to select pre-existing contact information.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>ACCOUNT</guibutton></term>
+      <listitem>
+        <para>Select to open the prospect's account.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>To add notes related to a prospect, select the
+  <guimenuitem>Notes</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/prospect_notesTab.png" />
+        </imageobject>
+        <caption>Prospect Notes</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The system allows you to enter quotes for prospects. To view the list
+  of existing prospect quotes—or to enter a new quote for a prospect—select
+  the <guimenuitem>Quotes</guimenuitem> tab at the bottom of the Prospect
+  screen. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/prospect_quotesTab.png" />
+        </imageobject>
+        <caption>List of Prospect Quotes</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>The Quotes screen displays information on all existing prospect
+  quotes, including quote number and quote date.</para>
+  <para role="xtconnect"><note>
+      <para>If the prospect specified on the quote has an EDI profile attached
+      or has an email address for the contact, you may encounter an EDI
+      processing interface when printing the quote.</para>
+    </note></para>
+  <para role="xtconnect">The electronic data interchange (EDI) system enables
+  you to send quotes electronically to your prospects. To establish a
+  prospect's EDI preferences, select the
+  <guimenuitem>Transmission</guimenuitem> tab. The following screen will
+  appear:</para>
+  <para role="xtconnect"><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/prospect_ediTab.png" />
+        </imageobject>
+        <caption><para>Transmission information for EDI</para></caption>
+      </mediaobject>
+    </screenshot></para>
+  <para role="xtconnect"><note>
+      <para>If you do not set EDI preferences for a prospect but do enter an
+      email address for the contact, you may see an EDI processing interface
+      when you print quotes for the prospect.</para>
+    </note></para>
+  <xi:include href="../widgets/edirelation.xml" xpointer="edirelationWidget"
+              xmlns:xi="http://www.w3.org/2001/XInclude" />
+</section>

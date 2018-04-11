@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspTimePhasedUsageStatisticsByItem">
+  <title><indexterm significance="normal">
+      <primary>item usage statistics</primary>
+
+      <secondary>time-phased by item</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>items</primary>
+
+      <secondary>time-phased usage statistics for</secondary>
+    </indexterm>Time-Phased Item Usage Statistics by Item</title>
+
+  <para>To view time-phased item usage statistics by item, go to
+  <guimenuitem>Inventory &gt; Reports &gt; Time-Phased Item Usage
+  Statistics</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspTimePhasedUsageStatisticsByItem.png"/>
+        </imageobject>
+
+        <caption>Time-Phased Item Usage Statistics by Item</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying time-phased item usage statistics by item, you are
+  presented with the following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Enter the item number of the item whose usage statistics you
+        want to display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to display time-phased item usage statistics for all
+        sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site whose time-phased item usage statistics you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Calendar</term>
+
+      <listitem>
+        <para>Select the calendar you want to use for the report. Associated
+        calendar periods will be displayed.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Name/Selected Periods</term>
+
+      <listitem>
+        <para>Select as many periods as you want to display. Selected periods
+        correspond to calendar specified in the <guilabel>Calendar</guilabel>
+        field. Select individual periods or groups of periods together. To
+        select an individual period, highlight the period using your mouse
+        button. The period is now selected. To select a sequence of periods,
+        highlight the first in the sequence using your mouse button. Then,
+        holding down the <guibutton>SHIFT</guibutton> key on your keyboard,
+        highlight the last period in the sequence. The entire sequence is now
+        selected. To select periods that are out of sequence (e.g., January,
+        April, July, October), highlight the first period in the group. Then,
+        holding down the <guibutton>CTRL</guibutton> key on your keyboard,
+        highlight the next period you want to select. Continue highlighting
+        periods with the <guibutton>CTRL</guibutton> key depressed until all
+        desired periods are selected. The entire group is now selected.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Usage</term>
+
+      <listitem>
+        <para>Display lists time-phased item usage statistics by item, using
+        the specified parameters. The transaction types include the following:
+        received, issued, sold, scrap percentage, and adjustments. If multiple
+        sites are involved, statistics for each will be displayed.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

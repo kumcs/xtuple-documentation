@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspUninvoicedReceivings">
+  <title><indexterm significance="normal">
+      <primary>receipts</primary>
+
+      <secondary>uninvoiced</secondary>
+    </indexterm>Uninvoiced Receipts and Returns</title>
+
+  <para>To view uninvoiced receipts and returns, go to <guimenuitem>Reports
+  &gt; Uninvoiced Receipts and Returns</guimenuitem>. The following screen
+  will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspUninvoicedReceivings.png"/>
+        </imageobject>
+
+        <caption>Uninvoiced P/O Receipts and Returns</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When displaying uninvoiced receipts and returns, you are presented
+  with the following options:</para>
+
+  <variablelist>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to display uninvoiced receipts and returns for all sites.
+        You must select this option to include non-inventory receipt
+        information in the display. Because non-inventory items, by
+        definition, do not have item sites, you cannot report on them by
+        individual site(s).</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site whose uninvoiced receipts and returns you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>All Purchasing Agents</term>
+
+      <listitem>
+        <para>Select to display uninvoiced receipts and returns for all
+        purchasing agents.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify purchasing agent whose uninvoiced receipts and returns
+        you want to display. Users may be designated as purchasing agents in
+        the <guimenu>System</guimenu> menu.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Purchase Order Receipts</term>
+
+      <listitem>
+        <para>Display lists uninvoiced receipts and returns, using the
+        specified parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <tip>
+    <para>The primary path for marking purchase order line items as invoiced
+    is on the Voucher Item screen. If received (or returned) quantity is
+    tagged as <guilabel>Yes</guilabel> on the Voucher Item screen—and the
+    voucher is then posted—the quantity will no longer appear on the
+    Uninvoiced Receipts and Returns screen.</para>
+  </tip>
+
+  <xi:include href="poLiabilityDistrib.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <xi:include href="correctPoReceipt.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+
+  <xi:include href="postPoReturnCreditMemo.xml" xpointer="element(/1)"
+              xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</section>

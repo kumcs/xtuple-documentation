@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="createInvoices">
+  <title><indexterm significance="normal">
+      <primary>invoices</primary>
+      <secondary>creation of</secondary>
+    </indexterm>New Invoice</title>
+  <para>Invoices are created from sales orders that have been selected for
+  billing. To create invoices for orders which have been selected for billing,
+  go to <guimenuitem>Sales &gt; Billing &gt; Invoice &gt;
+  </guimenuitem><guimenuitem>Create Invoices</guimenuitem>. The following
+  screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/postBillingSelections.png" />
+        </imageobject>
+        <caption>Create Invoices</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When creating invoices, you are presented with the following
+  options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Customer Types</term>
+      <listitem>
+        <para>Select to create invoices for all customer types.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify customer type whose invoices you want to create.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Consolidate by Customer</term>
+      <listitem>
+        <para>Select to cause all sales orders selected for billing to be
+        consolidated on one invoice by customer. Keep in mind, though, that to
+        be consolidated the orders must have matching criteria (e.g., billing,
+        tax, sales rep information). If the criteria do not match, then
+        non-conforming orders will not be consolidated. (Separate invoices
+        will be created for them instead.) If only a single order exists, at
+        all or in a group, then it will be posted as a single invoice.
+        Consolidated orders are given a combined header, and the line items
+        are attached to the invoice in no particular order. Line items
+        themselves are never consolidated (i.e., you can have two lines for
+        the same item). In addition, invoice line items have a reference back
+        to their original sales order item.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <para>The following buttons are unique to this screen:</para>
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CREATE INVOICES</guibutton></term>
+      <listitem>
+        <para>Select this button to create invoices for all orders selected
+        for billing.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

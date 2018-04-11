@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="dspInventoryAvailabilityByCustomerType">
+  <title><indexterm significance="normal">
+      <primary>inventory</primary>
+      <secondary>availability by customer type</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>sales orders</primary>
+      <secondary>inventory availability for</secondary>
+    </indexterm>Inventory Availability by Customer Type</title>
+  <para>If sales order reservations are enabled at your site, this screen may
+  be considered a useful workbench for processing sales order reservations.
+  While other screens support this functionality, the inventory availability
+  by customer type report consolidates several useful functions in one
+  location.</para>
+  <para>To view inventory availability by customer type, go to
+  <guimenuitem>Sales &gt; Reports &gt; </guimenuitem><guimenuitem>Availability
+  by Customer Type</guimenuitem>. The following screen will appear:</para>
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/dspInventoryAvailabilityByCustomerType.png" />
+        </imageobject>
+        <caption>Inventory Availability by Customer Type</caption>
+      </mediaobject>
+    </screenshot></para>
+  <para>When displaying inventory availability by customer type, you are
+  presented with the following options:</para>
+  <variablelist>
+    <varlistentry>
+      <term>All Customer Types</term>
+      <listitem>
+        <para>Select to display inventory availability for all customer
+        types.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Selected</term>
+      <listitem>
+        <para>Specify customer type whose inventory availability you want to
+        display.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Pattern</term>
+      <listitem>
+        <para>Enter a customer type pattern to select a range of customer
+        types. Refine your search using regular expressions.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Only Show Shortages</term>
+      <listitem>
+        <para>Select to only show inventory shortages in display. A shortage
+        describes inventory quantity whose availability is negative.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term>Only Show Available to Ship</term>
+      <listitem>
+        <para>Select to include only inventory that is available to
+        ship.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry role="standard">
+      <term><indexterm significance="normal">
+          <primary>sales orders</primary>
+          <secondary>reservations for</secondary>
+        </indexterm>Use Reservation Netting</term>
+      <listitem>
+        <para>Select to show sales order reservations (if any) for the sales
+        order items included in the display. When selected, the <guilabel>This
+        Availability</guilabel> column will dynamically change to
+        <guilabel>This Reservation</guilabel> and the quantity reserved for
+        each sales order item (if any) will be shown. This option will not be
+        visible if <guilabel>Sales Order Reservations</guilabel> are not
+        enabled at your site.</para>
+        <tip>
+          <para>To manipulate sales order reservations by line item, use the
+          right-click options found on this screen.</para>
+        </tip>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Show W/O Supply</term>
+      <listitem>
+        <para>Select to include current work orders for the sales order items
+        shown in the display. If current work orders exist, they will appear
+        nested below each relevant sales order item.</para>
+      </listitem>
+    </varlistentry>
+    <varlistentry>
+      <term>Availability</term>
+      <listitem>
+        <para>Display lists inventory availability by customer type, using the
+        specified parameters. If an available quantity value displays in the
+        color orange, this means the actual or projected quantity on hand
+        (QOH) is at or below the reorder level. If the color is red, the
+        current or projected QOH is below zero.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+  <note>
+    <para>The display features additional color-coding to help easily identify
+    the sales order reservation status of individual orders and also line
+    items. The following color conventions are used:</para>
+    <itemizedlist>
+      <listitem>
+        <para>Green (line item level): Line item quantity is
+        fully-reserved.</para>
+      </listitem>
+      <listitem>
+        <para>Green (Header level): Sales order has been added to the packing
+        list batch.</para>
+      </listitem>
+      <listitem>
+        <para>Blue: Line item quantity is partially-reserved.</para>
+      </listitem>
+      <listitem>
+        <para>Black: Line item has no sales order reservations.</para>
+      </listitem>
+    </itemizedlist>
+  </note>
+</section>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="postCountTags">
+  <title><indexterm significance="normal">
+      <primary>count tags</primary>
+
+      <secondary>posting by site</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>sites</primary>
+
+      <secondary>posting count tags in</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>physical inventory</primary>
+
+      <secondary>posting count tags</secondary>
+    </indexterm>Post Count Tags</title>
+
+  <para>To post count tag totals (i.e., inventory counts) to the quantity on
+  hand (QOH) for their respective item sites for an entire site, go to
+  <guimenuitem>Inventory &gt; Physical Inventory &gt; Post Count
+  Tags</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/postCountTags.png"/>
+        </imageobject>
+
+        <caption>Post Count Tags</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When posting count tags, you are presented with the following
+  options:</para>
+
+  <note>
+    <para>If an item site was frozen when its count tag was created, then both
+    the inventory count and the corresponding general ledger (G/L)
+    transactions will use the count tag created (i.e., frozen) date when the
+    count tag is posted. On the other hand, if the item site was not frozen,
+    the inventory and G/L transactions will use the count tag posted
+    date.</para>
+  </note>
+
+  <variablelist>
+    <varlistentry role="standard">
+      <term>All Sites</term>
+
+      <listitem>
+        <para>Select to post count tags for all sites.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry role="standard">
+      <term>Selected</term>
+
+      <listitem>
+        <para>Specify site where count tags are to be posted.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Sites by</term>
+
+      <listitem>
+        <para>Specify which of the following codes you want to have count tags
+        posted for:</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Class Code</term>
+
+            <listitem>
+              <para>If selected, you will be presented with class code
+              options.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Planner Code</term>
+
+            <listitem>
+              <para>If selected, you will be presented with planner code
+              options.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>thawing</primary>
+
+          <secondary>of inventory</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>thawing</primary>
+
+          <secondary>at count tag posting</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>count tags</primary>
+
+          <secondary>thawing at posting</secondary>
+        </indexterm>Thaw Frozen Inventory</term>
+
+      <listitem>
+        <para>Select to thaw all previously frozen inventory in specified
+        site(s).</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

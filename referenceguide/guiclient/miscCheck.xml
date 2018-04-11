@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="miscCheck">
+  <title><indexterm significance="normal">
+      <primary>payments</primary>
+
+      <secondary>creating miscellaneous</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>miscellaneous payments</primary>
+
+      <secondary>creating new</secondary>
+    </indexterm>Miscellaneous Payment</title>
+
+  <para>For payments related to non-inventory goods or services, you have the
+  ability to create miscellaneous payments. You can write payments to vendors,
+  customers, or tax authorities. To create a miscellaneous payment, go to
+  <guimenuitem>Accounting &gt; Accounts Payable &gt; Payments &gt; Create
+  Miscellaneous Payment</guimenuitem>. The following screen will
+  appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/miscCheck.png"/>
+        </imageobject>
+
+        <caption>Miscellaneous Payment</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When creating a miscellaneous payment, you are presented with the
+  following options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Write Payment To</term>
+
+      <listitem>
+        <para>Specify which type of recipient you want to write the
+        miscellaneous payment to. Your options will vary depending on which
+        type you select.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Vendor</term>
+
+            <listitem>
+              <para>Select if you want to write a payment to a vendor. Once
+              selected, you must also specify the vendor.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Customer</term>
+
+            <listitem>
+              <para>Select if you want to write a payment to a customer. Once
+              selected, you must also specify the customer.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Tax Authority</term>
+
+            <listitem>
+              <para>Select if you want to write a payment to a tax authority.
+              Once selected, you must also specify the tax authority.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Charge To:</term>
+
+      <listitem>
+        <para>Specify how you want to handle the accounting for the
+        miscellaneous payment. Your options will vary depending on the
+        recipient type you choose.</para>
+
+        <variablelist>
+          <varlistentry>
+            <term>Expense Category</term>
+
+            <listitem>
+              <para>Specify the expense category you want to distribute the
+              payment to. This option is available for all recipient
+              types.</para>
+
+              <variablelist>
+                <varlistentry>
+                  <term>Tax Zone</term>
+
+                  <listitem>
+                    <para>Displays the tax zone associated with the specified
+                    vendor or customer.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term>Tax Type</term>
+
+                  <listitem>
+                    <para>Select a tax type to indicate you want to calculate
+                    tax for the payment. Tax will be calculated automatically
+                    if a tax assignment matches both the tax type and the
+                    specified tax zone. By not selecting a tax type, you can
+                    avoid calculating tax.</para>
+                  </listitem>
+                </varlistentry>
+
+                <varlistentry>
+                  <term>Tax</term>
+
+                  <listitem>
+                    <para>Displays the amount of calculated tax, if
+                    any.</para>
+                  </listitem>
+                </varlistentry>
+              </variablelist>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Apply to Credit Memo</term>
+
+            <listitem>
+              <para>This option is available only for payments to customers.
+              If selected, you can choose a credit memo from the customer's
+              open balance. Then, when the miscellaneous payment is posted,
+              the open credit memo will automatically be closed. Use this
+              feature for paying off and closing open customer
+              balances.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Create Credit Memo</term>
+
+            <listitem>
+              <para>This option is available only for payments to vendors.
+              Once the miscellaneous payment is posted, a credit memo in the
+              payment amount will be created. This credit memo will offset
+              your accounts payable for the specified vendor. You would use
+              this option, for example, to handle prepayments made to
+              vendors.</para>
+            </listitem>
+          </varlistentry>
+
+          <varlistentry>
+            <term>Create Debit Memo</term>
+
+            <listitem>
+              <para>This option is available only for payments to customers.
+              You would use this in the case where you lent a customer money,
+              with the expectation of billing them later.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <variablelist>
+    <varlistentry>
+      <term>Date</term>
+
+      <listitem>
+        <para>Specify the date to appear on the miscellaneous payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Amount</term>
+
+      <listitem>
+        <para>Specify the amount of the miscellaneous payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Memo</term>
+
+      <listitem>
+        <para>Enter a memo line to be included on the bottom portion of the
+        printed miscellaneous payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Bank Account</term>
+
+      <listitem>
+        <para>Specify the bank account you want to use for the miscellaneous
+        payment.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Notes</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        notes related to the miscellaneous payment.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+
+  <para>The following buttons are unique to this screen:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term><guibutton>CREATE</guibutton></term>
+
+      <listitem>
+        <para>Creates the miscellaneous payment, using the specified
+        parameters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>

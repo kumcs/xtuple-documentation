@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 1998-2013 by xTuple. All rights reserved. -->
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+<section id="countTag">
+  <title><indexterm significance="normal">
+      <primary>count tags</primary>
+
+      <secondary>entering of</secondary>
+    </indexterm> <indexterm significance="normal">
+      <primary>physical inventory</primary>
+
+      <secondary>entering count tags</secondary>
+    </indexterm>Enter Count Tag</title>
+
+  <para>Once a count tag has been created, the count tag is ready to have
+  inventory quantities entered into it. To enter a count tag, go to
+  <guimenuitem>Inventory &gt; Physical Inventory &gt; Enter Count
+  Tag</guimenuitem>. The following screen will appear:</para>
+
+  <para><screenshot>
+      <mediaobject>
+        <imageobject>
+          <imagedata fileref="images/countTag.png"/>
+        </imageobject>
+
+        <caption>Enter Count Tag</caption>
+      </mediaobject>
+    </screenshot></para>
+
+  <para>When entering a count tag, you are presented with the following
+  options:</para>
+
+  <variablelist>
+    <varlistentry>
+      <term>Count Tag #</term>
+
+      <listitem>
+        <para>Enter the count tag number of the count tag you want to enter
+        details for.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Item Number</term>
+
+      <listitem>
+        <para>Displays item number automatically when count tag number is
+        entered into <guilabel>Count Tag #</guilabel> field.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>UOM</term>
+
+      <listitem>
+        <para>Inventory unit of measure.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Site</term>
+
+      <listitem>
+        <para>Displays site where count will take place.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Count Qty.</term>
+
+      <listitem>
+        <para>Enter the physical count total.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term>Current Comments</term>
+
+      <listitem>
+        <para>Display lists all comments added prior to the current
+        session.</para>
+      </listitem>
+    </varlistentry>
+
+    <varlistentry>
+      <term><indexterm significance="normal">
+          <primary>cycle counters</primary>
+
+          <secondary>creating instructions for</secondary>
+        </indexterm><indexterm significance="normal">
+          <primary>cycle counts</primary>
+
+          <secondary>creating instructions for</secondary>
+        </indexterm>New Comments</term>
+
+      <listitem>
+        <para>This is a scrolling text field with word-wrapping for entering
+        comments related to the count tag. Use the
+        <guilabel>Comments</guilabel> field to enter any instructions or other
+        comments that need to reach and be read by the cycle counters.</para>
+      </listitem>
+    </varlistentry>
+  </variablelist>
+</section>
