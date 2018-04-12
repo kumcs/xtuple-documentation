@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+"http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd">
+<chapter>
+  <title id="i580465">OpenRPT and ODBC</title>
+  <para>OpenRPT and its suite of tools enable you to connect natively to the
+  PostgreSQL database. However, OpenRPT can also be used to connect to other
+  databases using an ODBC (open database connectivity) connection. In this
+  chapter we will examine how to connect to an alternate database—for our
+  example, an access database—using ODBC. We will be showing you how to build
+  a new report from the ground up, as we address the following steps:</para>
+  <itemizedlist>
+    <listitem>
+      <para>Look at the access database tables.</para>
+    </listitem>
+    <listitem>
+      <para>Configure settings for the ODBC connection.</para>
+    </listitem>
+    <listitem>
+      <para>Use the MetaSQL editor to create the query.</para>
+    </listitem>
+    <listitem>
+      <para>Use OpenRPT to create the report definition.</para>
+    </listitem>
+    <listitem>
+      <para>Use the report renderer to view the report's output.</para>
+    </listitem>
+  </itemizedlist>
+  <section>
+    <title>The Access Database</title>
+    <para>An access database was chosen to demonstrate the ODBC connectivity
+    capability of OpenRPT because it is widely used and easy to understand.
+    The contacts database used in the example is in fact one of the sample
+    databases delivered with Access 2000. Below we see two of the tables we
+    will be accessing throughout the example in this chapter:</para>
+    <para><screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/ODBC_100_AccessTables.png"/>
+          </imageobject>
+          <caption>Contacts and Calls tables in sample access
+          database</caption>
+        </mediaobject>
+      </screenshot></para>
+    <para>We will generate a report that connects to the access database
+    through ODBC, performs a SQL query that joins these two tables grouping
+    all calls by caller, and displays <guilabel>Call Duration</guilabel>,
+    <guilabel>Subject</guilabel>, and <guilabel>Note</guilabel> fields. The
+    report output will look like this:</para>
+    <para><screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/ODBC_110_SampleOut.png"/>
+          </imageobject>
+          <caption>Sample report generated with report renderer</caption>
+        </mediaobject>
+      </screenshot></para>
+    <para>This report was generated using the Report Renderer (RPTRender) and
+    a connection to the access database using ODBC.</para>
+  </section>
+  <section>
+    <title>Sample ODBC Connection</title>
+    <para>It is important to keep in mind that ODBC drivers have differing
+    levels of capability. For example, SQL written against one database using
+    a specific driver may not function the same way when accessing the same
+    database using an ODBC driver. OpenRPT was developed with a native
+    connection to PostgreSQL. It can also connect to other databases using
+    ODBC, but you should temper your expectations by the limitations of the
+    ODBC driver you implement.</para>
+    <para>Below we see the ODBC settings used to establish the connection to
+    the access database we will use throughout this chapter:</para>
+    <para><screenshot>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="images/ODBC_120_Connection.png"/>
+          </imageobject>
+          <caption>ODBC connection settings</caption>
+        </mediaobject>
+      </screenshot></para>
+    <para>The name of this connection is "contacts", and as you will see, this
+    is the reference we will use when connecting OpenRPT tools to the
+    database. The connection also identifies the location and name of the
+    access database file ("CONTACTS.MDB"), which is the file that physically
+    contains the database.</para>
+    <note>
+      <para>Some ODBC connections require database usernames and passwords for
+      authentication. Authentication is implemented by the ODBC driver; not by
+      OpenRPT.</para>
+    </note>
+    <para>The first step when creating any OpenRPT report is to create the
+    report's SQL. We will use the MetaSQL editor to accomplish this.</para>
+  </section>
+  <section>
+    <title>Creating the Report’s SQL with the MetaSQL Editor</title>
+    <para>In an earlier chapter you learned about the MetaSQL Editor and
+    MetaSQL. In this section we will connect the MetaSQL Editor to our
+    database using the ODBC connection 'contacts' and then craft the SQL we
+    will use in the report's definition.</para>
+    <section>
+      <title>Connecting Through the ODBC Driver</title>
+      <para>Upon starting the MetaSQL Editor, we should next connect to the
+      database by clicking the <guimenu>File</guimenu> drop down menu option.
+      Next, select <guimenuitem>Database</guimenuitem> and finally
+      <guimenuitem>Connect</guimenuitem>. You will see the standard OpenRPT
+      Connection screen:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_130_MetaSQL_Connect.png"/>
+            </imageobject>
+            <caption>OpenRPT Connection screen</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>Before proceeding, set the connection options by clicking on the
+      <guibutton>OPTIONS</guibutton> button. You will see:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_140_MetaSQL_ConnectOptions.png"/>
+            </imageobject>
+            <caption>Login Options for an ODBC connection</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>You will need to set the fields as follows:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Driver</term>
+          <listitem>
+            <para>Select the ODBC option.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Database</term>
+          <listitem>
+            <para>Enter the name you gave to your ODBC connection.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Server</term>
+          <listitem>
+            <para>Leave blank. This is only used when connecting to
+            PostgreSQL.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Port</term>
+          <listitem>
+            <para>Leave blank. This only used when connecting to
+            PostgreSQL.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Click the <guibutton>SAVE</guibutton> button, and then on the Log
+      In screen click the <guibutton>LOGIN</guibutton> button. Remember that
+      the ODBC connection handles user authentication, so the
+      <guilabel>Username</guilabel> and <guilabel>Password</guilabel> fields
+      are normally not required when using this connection methodology.</para>
+    </section>
+    <section>
+      <title>MetaSQL Parameters</title>
+      <para>Earlier you learned about passing parameters to a report's query
+      using MetaSQL. For this report we will need two parameters:
+      <literal>All_ID</literal> and <literal>Caller_ID</literal>. Use the
+      drop-down menu option <guimenuitem>Tools</guimenuitem> and then
+      <guimenuitem>Parameter List</guimenuitem> to create these two
+      parameters:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_150_MetaSQL_Params.png"/>
+            </imageobject>
+            <caption>MetaSQL parameters</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>The values for the parameters are unimportant. As you will see in
+      the query, just the existence of the <literal>All_ID</literal> parameter
+      will cause the query to display data for all callers in the
+      database.</para>
+    </section>
+    <section>
+      <title>The Query</title>
+      <para>Now we will create the query. Below is the SQL used in our
+      query:</para>
+      <programlisting>SELECT contacts.FirstName, contacts.LastName, calls.Subject, calls.Notes, calls.Duration
+FROM calls, contacts
+WHERE
+&lt;? if exists("All_ID") ?&gt;
+  contacts.ContactID = calls.ContactID
+&lt;? elseif exists("Caller_ID") ?&gt; contacts.ContactID = &lt;? value("Caller_ID") ?&gt;
+  AND contacts.ContactID = calls.ContactID
+&lt;? endif ?&gt;
+ORDER BY contacts.LastName;</programlisting>
+      <para>This query joins the <literal>calls</literal> table and the
+      <literal>contacts</literal> table on the <literal>contactID</literal>.
+      The MetaSQL checks for the existence of the <literal>All_ID</literal>
+      parameter. If it exists then the <literal>WHERE</literal> clause
+      displays all calls. If the <literal>All_ID</literal> parameter does not
+      exist then the <literal>WHERE</literal> clause displays all calls where
+      the <literal>contacts.ContactID</literal> equals the value of the
+      parameter <literal>Caller_ID</literal>.</para>
+      <para>If we select the <guimenu>Tools</guimenu> drop down menu and click
+      <guimenuitem>Execute Query</guimenuitem> we see:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_160_MetaSQL_ExecQry.png"/>
+            </imageobject>
+            <caption>MetaSQL Results Output</caption>
+          </mediaobject>
+        </screenshot></para>
+      <tip>
+        <para>Remember that you can use the <guimenu>View</guimenu> menu
+        option <guimenuitem>Log Output</guimenuitem> to troubleshoot your
+        query.</para>
+      </tip>
+      <para>Once we have a working query, we may save it to a text file by
+      using the <guimenu>File</guimenu> menu option <guimenuitem>Save
+      As</guimenuitem>. In the next section, we will copy and paste this SQL
+      into the report definition's query source.</para>
+    </section>
+  </section>
+  <section>
+    <title>Report Definition</title>
+    <para>Now that we have a working query for our report, we will create the
+    report's definition. Again, you learned how to do this in previous
+    chapters of this user guide.</para>
+    <note>
+      <para>The report definition we will be building introduces the group
+      section concept, which was not covered in depth in previous
+      chapters.</para>
+    </note>
+    <para>We will begin by running OpenRPT. Note that OpenRPT opens
+    automatically. It does not require authentication to a database. Unless
+    your report definition resides in a PostgreSQL database (such as xTuple),
+    you will save the reports locally as XML definition files.</para>
+    <para>First let's define our report's properties. Then we will create our
+    query source with the SQL we validated using the MetaSQL editor. Next we
+    will use the section editor to create our report's sections. Then we will
+    define the report's parameters (we will use the ones tested with the
+    MetaSQL editor and embedded in our query). Finally, we will save our
+    report to the XML definition file.</para>
+    <section>
+      <title>Report Properties</title>
+      <para>Start a new report by selecting the <guimenuitem>New</guimenuitem>
+      option from the <guimenu>File</guimenu> menu. Then, define the report's
+      name, title, and description using the
+      <guimenuitem>Properties</guimenuitem> option under the
+      <guimenu>Document</guimenu> menus, as shown below:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_170_RptProps.png"/>
+            </imageobject>
+            <caption>Report Properties</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>Click <guibutton>OK</guibutton> after defining the report's
+      properties.</para>
+    </section>
+    <section>
+      <title>Creating the Query Source</title>
+      <para>Before proceeding to the next step, open the query you created in
+      the last section using the MetaSQL Editor. Select the query and copy it
+      to the copy buffer. Then, in OpenRPT, use the
+      <guimenu>Document</guimenu> drop down menu and select the
+      <guimenuitem>Query Sources</guimenuitem> option. Click the
+      <guibutton>ADD</guibutton> button and place your cursor in the
+      <guilabel>Query</guilabel> portion of the screen. Right-click and paste
+      your query here. In the <guilabel>Name</guilabel> field enter "detail".
+      When you are done the screen should look as follows:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_180_QrySrc.png"/>
+            </imageobject>
+            <caption>Query Source "detail" in OpenRPT report
+            definition</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>Click the <guibutton>OK</guibutton> button and
+      <guibutton>CLOSE</guibutton> the Query List screen.</para>
+    </section>
+    <section>
+      <title>Establishing Report Sections</title>
+      <para>Earlier in the user guide you learned about report sections. Next
+      we will activate our report's sections. From the
+      <guimenu>Document</guimenu> menu, select the <guimenuitem>Section
+      Editor</guimenuitem> option. The following screen will appear:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_190_SectionEdNew.png"/>
+            </imageobject>
+            <caption>Initial Section Editor settings</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>Select the following options using your mouse:</para>
+      <itemizedlist>
+        <listitem>
+          <para>Report Header</para>
+        </listitem>
+        <listitem>
+          <para>Report Footer</para>
+        </listitem>
+        <listitem>
+          <para>Page Footer, Any Page(s)</para>
+        </listitem>
+        <listitem>
+          <para>Page Footer, Last Page</para>
+        </listitem>
+      </itemizedlist>
+      <para>You'll see later that we will leave the contents of the
+      <guilabel>Page Footer</guilabel>, <guilabel>Last Page</guilabel> blank,
+      as this will suppress the printing of the <guilabel>Page
+      Footer</guilabel>, <guilabel>Any Page(s)</guilabel> so that only the
+      report footer will print at the end of the report and we will not have a
+      redundant section. This technique also applies to report headers, but
+      not in this case as this report will contain only a report header and a
+      group header, which we are about to define:</para>
+      <para>From the <guilabel>Detail Sections</guilabel> display, select the
+      unnamed detail section and click the <guibutton>EDIT</guibutton> button.
+      Set the following:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Section Name</term>
+          <listitem>
+            <para>Change to "group".</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Query Source</term>
+          <listitem>
+            <para>Select the one you just entered called
+            <guimenuitem>detail</guimenuitem>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Insert Page Break At End of Last Section</term>
+          <listitem>
+            <para>Leave unchecked. We will only have one section and will
+            chose not to set a page break.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Group Sections</term>
+          <listitem>
+            <para>Click the <guibutton>ADD</guibutton> button to add a new
+            group.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>You will now see a Group Section Editor screen that you will fill
+      in with the following values as shown below:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_200_SectionGroup.png"/>
+            </imageobject>
+            <caption>Group Section Editor</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>A group section enables you to identify a column in the query by
+      which we will organize the display of the information. In this example
+      we have call reports filed by several people. By grouping on the
+      <literal>LastName</literal> column, we will have a report that organizes
+      calls by caller. The options available to us include the
+      following:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Show Group Header</term>
+          <listitem>
+            <para>Creates a group header section. Frequently used to display
+            the column by which the report is grouped (in this case the
+            caller's last name) and report column descriptions.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Show Group Footer</term>
+          <listitem>
+            <para>Creates a group footer section in which footer information,
+            such as sub-total and total query results, may be
+            displayed.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Insert Page Break After the Footer</term>
+          <listitem>
+            <para>When selected, a page break is inserted between the end of
+            one set of groups and the beginning of the next.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Upon clicking <guibutton>OK</guibutton> on the Group Section
+      Editor and then the Detail Section Properties screens, you will find
+      that your Section Editor screen now has a Detail Section called "group",
+      as shown below:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_210_SectionsEditor2.png"/>
+            </imageobject>
+            <caption>Section Editor screen after Detail Section
+            added</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>Closing the Section Editor screen now returns you to the report's
+      layout. This will now include space for all of the sections you have
+      created, as shown below:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_220_ReportSections.png"/>
+            </imageobject>
+            <caption>Sections Added to Report Definition</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>The example shown above has been populated with the following
+      information defined by section:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Report Header</term>
+          <listitem>
+            <para>The report's title and a line. This appears on the first
+            page only.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>contact Group Header</term>
+          <listitem>
+            <para>This is the header for the group you just created called
+            "contact". It will display the caller's first and last names from
+            the query. Note that while the query may return many rows for a
+            caller, the caller's first and last name will be displayed only
+            from the first row for each group. It will also display the column
+            headers above each set of calls grouped by caller.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>group Detail</term>
+          <listitem>
+            <para>This section displays the rows returned for each caller. In
+            the group header we display the caller's name. Here we display the
+            details for one or more calls made by this caller.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>contact Group Footer</term>
+          <listitem>
+            <para>The contents of this section display at the end of each set
+            of calls for each caller.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Report Footer</term>
+          <listitem>
+            <para>The context query called "page_number" is used here to
+            display a page number on the bottom the last page of the
+            report.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Page Footer (Last)</term>
+          <listitem>
+            <para>The next section is a <guilabel>Page Footer (Any)</guilabel>
+            which will put a page number on every page, including the report
+            footer—which would be redundant if we take no action. A blank
+            <guilabel>Page Footer (Last)</guilabel> serves to override the
+            <guilabel>Page Footer (Any)</guilabel> with a blank footer on the
+            last page so that the only page number displayed on this page is
+            the one from the report footer.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Page Footer (Any)</term>
+          <listitem>
+            <para>This places a page number on every page of the report. We
+            suppress this on the last page of the report with a blank
+            <guilabel>Page Footer (Last)</guilabel> so that only the report
+            footer is used.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>Next we will define the parameters that will be used at run time
+      when the report is generated with the report renderer.</para>
+    </section>
+    <section>
+      <title>Defining Parameters</title>
+      <para>For our example we will create two parameters. One of them, if
+      present, will cause the report to display call information for all
+      callers. The other enables the user to select a specific caller for whom
+      to display information. We already identified these parameters when we
+      created the report's query using the MetaSQL Editor.</para>
+      <para>To define parameters click on the <guimenu>Document</guimenu> menu
+      and select the <guimenuitem>Defined Parameters</guimenuitem> option.
+      Then click the <guibutton>ADD</guibutton> button to add a parameter
+      called <literal>All_ID</literal>. Below is an example of the
+      <literal>All_ID</literal> parameter:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_230_Parameter1.png"/>
+            </imageobject>
+            <caption>Static Parameter example</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>The information we entered for the <literal>All_ID</literal>
+      parameter is explained below:</para>
+      <variablelist>
+        <varlistentry>
+          <term>Name</term>
+          <listitem>
+            <para>The name of the MetaSQL parameter as it appears in the
+            report's query.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Type</term>
+          <listitem>
+            <para>The format of the parameter. The following formats are
+            possible: <literal>String</literal>, <literal>Integer</literal>,
+            <literal>Double</literal>, and <literal>Boolean</literal>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Active</term>
+          <listitem>
+            <para>Specifies whether the parameter is active by default at run
+            time in the report renderer.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Default</term>
+          <listitem>
+            <para>The default value for the parameter at run time.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Description</term>
+          <listitem>
+            <para>A description of the parameter for use internally.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Defined List</term>
+          <listitem>
+            <para>A static or dynamic list of options which the user.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <para>The next parameter, <literal>Caller_ID</literal>, uses the
+      <guilabel>Dynamic</guilabel> option for the <guimenuitem>Defined
+      List</guimenuitem> capability:</para>
+      <para id="i579620"><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_230_Parameter2.png"/>
+            </imageobject>
+            <caption>Dynamic Parameter example</caption>
+          </mediaobject>
+        </screenshot></para>
+      <note>
+        <para>A static defined list enables you to define a discrete list of
+        options which the user may chose from at run time. A dynamic defined
+        list utilizes a SQL query that is executed at run time so that the
+        user can see a dynamic list of options.</para>
+      </note>
+      <para>In the example shown, you can see the query we have entered will
+      return the key value (i.e., <literal>ContactID</literal>) in the first
+      column and the last name in the second column. Ultimately, the user will
+      not see the <literal>ContactID</literal>. It is the second column that
+      is the label the user can click on at run time to determine the value of
+      the parameter sent to the report definition when the report output is
+      generated.</para>
+      <para>So, the Parameter List screen now includes two parameters, as
+      shown below:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_240_ParameterList.png"/>
+            </imageobject>
+            <caption>Parameter List</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>It is now time to save the report definition.</para>
+    </section>
+    <section>
+      <title>Saving the Report’s XML Definition File</title>
+      <para>To save a report definition for use with the report renderer,
+      select the <guimenuitem>Save As</guimenuitem> option from the
+      <guimenu>File</guimenu> menu. This will enable you to save the report
+      definition in XML, which is the standard file format for OpenRPT report
+      definitions.</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_250_SaveAsXML.png"/>
+            </imageobject>
+            <caption>Saving report definition to XML format</caption>
+          </mediaobject>
+        </screenshot></para>
+      <tip>
+        <para>By saving to a shared drive you can easily make your reports
+        available to others who have access to the report renderer.</para>
+      </tip>
+      <para>Now that we have saved our report definition, we can close OpenRPT
+      and use the report renderer to generate the report's output.</para>
+    </section>
+  </section>
+  <section>
+    <title>Generating Reports with RPTRender</title>
+    <para>RPTRender is a report rendering tool that enables users to open an
+    OpenRPT report's XML definition, select or edit parameter values, and then
+    generate the report's output.</para>
+    <section>
+      <title>Connecting Through ODBC to the Database</title>
+      <para>The report renderer connection to the database through your ODBC
+      connection works similarly to the connection you established with the
+      MetaSQL Editor earlier in this chapter:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_260_RPTrenderConnect.png"/>
+            </imageobject>
+            <caption>Connecting report renderer with an ODBC
+            connection</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>To connect, simply click on the <guibutton>OPTIONS</guibutton>
+      button, select <guimenuitem>ODBC</guimenuitem> under
+      <guilabel>Driver</guilabel>, and then enter the name of the connection
+      in the <guilabel>Database</guilabel> field. Click
+      <guibutton>SAVE</guibutton> and then <guibutton>LOGIN</guibutton>. All
+      other fields may be left blank.</para>
+    </section>
+    <section>
+      <title>Opening the XML Report Definition</title>
+      <para>From the Report Renderer main screen, select the
+      <guimenuitem>Open</guimenuitem> option from the <guimenu>File</guimenu>
+      menu to load the XML report definition:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_270_RPTrenderOpen.png"/>
+            </imageobject>
+            <caption>Report loaded in OpenRPT Renderer</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>If we are satisfied with the parameter settings—which in this
+      example means printing call detail for all callers—we can simply select
+      the <guimenuitem>Print</guimenuitem> option from the
+      <guimenu>File</guimenu> menu to generate the following report:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_280_CallOutput1_All.png"/>
+            </imageobject>
+            <caption>Report output for all callers</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>In the next section, we will see how it is possible to change the
+      parameters and generate the report again.</para>
+    </section>
+    <section>
+      <title>Setting Parameters at Run Time</title>
+      <para>The MetaSQL for our report generates rows for all callers if the
+      <literal>All_ID</literal> parameter exists. Its value is not a factor.
+      In our next example, we want to generate a report for a single
+      caller—not all callers. This means that at run time we will want to
+      delete the <literal>All_ID</literal> parameter. To do this we must first
+      click on it and then use the <guibutton>DELETE</guibutton>
+      button.</para>
+      <note>
+        <para>Deleting a parameter at run time only deletes it temporarily—for
+        the one time the report is being rendered. The parameter will still be
+        present in the report's XML definition the next time you open
+        it.</para>
+      </note>
+      <para>Once the <literal>All_ID</literal> parameter has been temporarily
+      removed, we will use the <guibutton>LIST</guibutton> button to select a
+      specific caller for whom we want to generate the report.</para>
+      <para id="i579967"><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_290_ParamList.png"/>
+            </imageobject>
+            <caption>Setting the caller_ID parameter value</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>As you can see, we have indicated we want to run a report on the
+      caller named "Fuller". We are now ready to print the report. The
+      following shows the results we get:</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_300_CallOutput2_Fuller.png"/>
+            </imageobject>
+            <caption>Report output after setting dynamic parameter's
+            value</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>To generate this report we first created a connection to an ODBC
+      data source, in this case an access database. Then we used the OpenRPT
+      MetaSQL editor to create the SQL Query source with MetaSQL parameters
+      that enabled the user to specify all callers or a specific caller. We
+      then used OpenRPT to create the report's definition, in which we
+      specified a group in the detail section to organize calls together by
+      caller. We saved the definition to an XML definition file. Finally, we
+      opened the XML report definition with the report renderer, set the
+      embedded parameter values, and generated two versions of the report.
+      This is the normal development cycle for an OpenRPT report.</para>
+    </section>
+    <section>
+      <title>RPTRender Run Time Switches</title>
+      <para>The Report Renderer supports switches that enable values to be
+      passed to it at run time. These switches and a description of their use
+      are provided below:</para>
+      <variablelist>
+        <varlistentry>
+          <term>-databaseURL=</term>
+          <listitem>
+            <para>Establishes the connection to the database.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-databaseURL=odbc:///</term>
+          <listitem>
+            <para>Contacts connects to the database through the ODBC
+            connection called <emphasis>contacts</emphasis>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-noAuth</term>
+          <listitem>
+            <para>Indicates that no username and password are required as is
+            typically the case when this information is defined in the ODBC
+            connection.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-username=</term>
+          <listitem>
+            <para>The database username.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-passwd=</term>
+          <listitem>
+            <para>The database user's password.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-param=</term>
+          <listitem>
+            <para>Establishes a parameter, its type and its value. For example
+            <literal>-param=Caller_ID:string='3'</literal> establishes a
+            parameter called <literal>Caller_ID</literal> of type
+            <literal>string</literal> with a value of <literal>3</literal>.
+            This example, <literal>-param=show_inactive:bool='Y'</literal>
+            establishes a parameter called <literal>showInactive</literal> of
+            type <literal>boolean</literal> with a value of
+            <literal>Y</literal>.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-print</term>
+          <listitem>
+            <para>The presence of this switch simply opens the operating
+            system's print dialogue immediately upon opening the report
+            renderer.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-printerName=</term>
+          <listitem>
+            <para>The value of this switch is the name of the printer that is
+            selected automatically when the operating system's print dialogue
+            is opened. This example, -printerName="Laser6l" will automatically
+            select the client computer's printer with the name Laser6l.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>-close</term>
+          <listitem>
+            <para>The presence of this switch simply closes the report
+            renderer after the user prints or cancels printing.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+      <tip>
+        <para>When saving parameters to a report definition, the last position
+        should contain the location and name of the OpenRPT report definition
+        file. For example, on Windows this would look like this:
+        <literal>c:\xTuple\Contacts-Calls-Report.xml</literal></para>
+      </tip>
+      <para>Below are two examples of scripts that call the report renderer,
+      passing to it switch settings for a specified report definition.</para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_310_ExampleScriptODBC.png"/>
+            </imageobject>
+            <caption>Example script that connects to an ODBC data
+            source</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para><screenshot>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="images/ODBC_320_ExampleScriptPostgres.png"/>
+            </imageobject>
+            <caption>Example script that connects to a PostgreSQL data
+            source</caption>
+          </mediaobject>
+        </screenshot></para>
+      <para>The switches that the report renderer enables make it possible for
+      you to store OpenRPT XML report definition files on a shared drive and
+      script end user access to them for <emphasis>ad hoc</emphasis> reporting
+      capability.</para>
+    </section>
+  </section>
+</chapter>
