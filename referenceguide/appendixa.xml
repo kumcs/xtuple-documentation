@@ -4,34 +4,44 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <appendix id="appendixa">
   <title>Additional References</title>
+
   <para>This appendix contains reference information that applies to many of
   the modules found within xTuple ERP. The following topics are referenced in
   this appendix:</para>
+
   <itemizedlist>
     <listitem>
       <para>Inventory transaction types</para>
     </listitem>
+
     <listitem>
       <para>General ledger (G/L) document types</para>
     </listitem>
+
     <listitem>
       <para>System-defined events</para>
     </listitem>
+
     <listitem>
       <para>Comment source types</para>
     </listitem>
+
     <listitem>
       <para>Right-click menu options</para>
     </listitem>
   </itemizedlist>
+
   <section id="Section461282">
     <title><indexterm significance="normal">
         <primary>inventory</primary>
+
         <secondary>transaction types listed</secondary>
       </indexterm> <indexterm significance="normal">
         <primary>transactions</primary>
+
         <secondary>listing of inventory types</secondary>
       </indexterm>Inventory Transaction Codes</title>
+
     <para>Inventory transactions are associated with inventory transaction
     types. These transaction types appear in various displays throughout the
     application—most notably in the <guimenu>Inventory</guimenu> module. The
@@ -39,365 +49,540 @@
     additional information about the relationship between these types and
     their corresponding <indexterm significance="normal">
         <primary>general ledger</primary>
+
         <secondary>inventory transaction types and</secondary>
       </indexterm>general ledger (G/L) transactions.</para>
+
     <table id="Table462844">
       <title>Inventory Transaction Types</title>
+
       <tgroup cols="3">
         <thead>
           <row>
             <entry><para>Transaction Type Code</para></entry>
+
             <entry><para>Description</para></entry>
+
             <entry><para>G/L Transaction</para></entry>
           </row>
         </thead>
+
         <tbody>
           <row>
             <entry><para>AD</para></entry>
+
             <entry><para>Miscellaneous adjustment</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>CC</para></entry>
+
             <entry><para>Cycle count</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>EX</para></entry>
+
             <entry><para>Material expense</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>IB</para></entry>
+
             <entry><para>Issue inventory to breeder
             manufacturing</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>IM</para></entry>
+
             <entry><para>Issue inventory to manufacturing</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>IT</para></entry>
+
             <entry><para>Issue item transformation</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>NN</para></entry>
+
             <entry><para>Change to non-netable quantity</para></entry>
+
             <entry><para>No</para></entry>
           </row>
+
           <row>
             <entry><para>RB</para></entry>
+
             <entry><para>Receive inventory from breeder
             manufacturing</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry>RI</entry>
+
             <entry>Receive inventory to WIP from return authorization</entry>
+
             <entry>Yes</entry>
           </row>
+
           <row>
             <entry><para>RL</para></entry>
+
             <entry><para>Relocate inventory items</para></entry>
+
             <entry><para>No</para></entry>
           </row>
+
           <row>
             <entry><para>RM</para></entry>
+
             <entry><para>Receive inventory from manufacturing</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>RP</para></entry>
+
             <entry><para>Receive inventory from purchasing</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry>RR</entry>
+
             <entry>Return authorization return</entry>
+
             <entry>Yes</entry>
           </row>
+
           <row>
             <entry><para>RS</para></entry>
+
             <entry><para>Return inventory to stock</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>RT</para></entry>
+
             <entry><para>Receive item transformation</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>RX</para></entry>
+
             <entry><para>Miscellaneous inventory receipt</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry>SC</entry>
+
             <entry>Standard cost change</entry>
+
             <entry>Yes</entry>
           </row>
+
           <row>
             <entry><para>SH</para></entry>
+
             <entry><para>Ship inventory to customer</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>SI</para></entry>
+
             <entry><para>Scrap inventory</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>SV</para></entry>
+
             <entry><para>Ship inventory to vendor</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>TR</para></entry>
+
             <entry><para>Transfer order receipt</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>TS</para></entry>
+
             <entry><para>Transfer order shipment</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
+
           <row>
             <entry><para>TW</para></entry>
+
             <entry><para>Inter-site transfer</para></entry>
+
             <entry><para>Yes</para></entry>
           </row>
         </tbody>
       </tgroup>
     </table>
   </section>
+
   <section id="Section463202">
     <title><indexterm significance="normal">
         <primary>general ledger</primary>
+
         <secondary>transaction types listed</secondary>
       </indexterm> <indexterm significance="normal">
         <primary>transactions</primary>
+
         <secondary>listing of g/l types</secondary>
       </indexterm>General Ledger Codes</title>
+
     <para>Many of the transactions which hit the ledger are assigned a
     system-defined document type. The following list details the various
     document types used by the system to identify ledger transactions.</para>
+
     <table id="Table462982">
       <title>General Ledger Transactions</title>
+
       <tgroup cols="2">
         <thead>
           <row>
             <entry><para>DocType</para></entry>
+
             <entry><para>Description</para></entry>
           </row>
         </thead>
+
         <tbody>
           <row>
             <entry><para>AD</para></entry>
+
             <entry><para>Bank adjustment</para></entry>
           </row>
+
           <row>
             <entry>CD</entry>
+
             <entry>Cash deposit</entry>
           </row>
+
           <row>
             <entry><para>CK</para></entry>
+
             <entry><para>Check posted</para></entry>
           </row>
+
           <row>
             <entry><para>CM</para></entry>
+
             <entry><para>Credit memo posted</para></entry>
           </row>
+
           <row>
             <entry><para>CR</para></entry>
+
             <entry><para>Cash receipt posted</para></entry>
           </row>
+
           <row>
             <entry><para>CT</para></entry>
+
             <entry><para>Count tag posted</para></entry>
           </row>
+
           <row>
             <entry><para>DM</para></entry>
+
             <entry><para>Debit memo posted</para></entry>
           </row>
+
           <row>
             <entry><para>DS</para></entry>
+
             <entry><para>Payables discount posted</para></entry>
           </row>
+
           <row>
             <entry>EX</entry>
+
             <entry>Inventory expense transaction</entry>
           </row>
+
           <row>
             <entry>F/A</entry>
+
             <entry>Fixed asset depreciation posted</entry>
           </row>
+
           <row>
             <entry>FA</entry>
+
             <entry>Purchase of fixed asset posted</entry>
           </row>
+
           <row>
             <entry><para>IN</para></entry>
+
             <entry><para>Invoice posted</para></entry>
           </row>
+
           <row>
             <entry>IT</entry>
+
             <entry>Inventory transformation posted</entry>
           </row>
+
           <row>
             <entry><para>JE</para></entry>
+
             <entry><para>Journal entry posted</para></entry>
           </row>
+
           <row>
             <entry>JP</entry>
+
             <entry>Journal posting</entry>
           </row>
+
           <row>
             <entry><para>PO</para></entry>
+
             <entry><para>Purchase order receipt posted</para></entry>
           </row>
+
           <row>
             <entry>RA</entry>
+
             <entry>Return authorization</entry>
           </row>
+
           <row>
             <entry>RT</entry>
+
             <entry>Inventory transformation receipt posted</entry>
           </row>
+
           <row>
             <entry>SH</entry>
+
             <entry>Ship order posted</entry>
           </row>
+
           <row>
             <entry><para>SO</para></entry>
+
             <entry><para>Issue stock to shipping posted</para></entry>
           </row>
+
           <row>
             <entry>TE</entry>
+
             <entry>Time sheet posted</entry>
           </row>
+
           <row>
             <entry>TO</entry>
+
             <entry>Transfer order</entry>
           </row>
+
           <row>
             <entry><para>VO</para></entry>
+
             <entry><para>Voucher posted</para></entry>
           </row>
+
           <row>
             <entry><para>WO</para></entry>
+
             <entry><para>Work order posted</para></entry>
           </row>
         </tbody>
       </tgroup>
     </table>
   </section>
+
   <section>
     <title>Other Document Codes</title>
+
     <para>This section contains information about other document codes found
     in various areas of xTuple ERP.</para>
+
     <section>
       <title>Cash Receipt Codes</title>
+
       <table id="Table462982">
         <title>Cash Receipt Codes</title>
+
         <tgroup cols="2">
           <thead>
             <row>
               <entry><para>Code</para></entry>
+
               <entry><para>Description</para></entry>
             </row>
           </thead>
+
           <tbody>
             <row>
               <entry><para>C</para></entry>
+
               <entry><para>Check</para></entry>
             </row>
+
             <row>
               <entry>T</entry>
+
               <entry>Certified Check</entry>
             </row>
+
             <row>
               <entry><para>M</para></entry>
+
               <entry><para>Master Card</para></entry>
             </row>
+
             <row>
               <entry><para>V</para></entry>
+
               <entry><para>Visa</para></entry>
             </row>
+
             <row>
               <entry><para>A</para></entry>
+
               <entry><para>American Express</para></entry>
             </row>
+
             <row>
               <entry><para>D</para></entry>
+
               <entry><para>Discover Card</para></entry>
             </row>
+
             <row>
               <entry><para>O</para></entry>
+
               <entry><para>Other Credit Card</para></entry>
             </row>
+
             <row>
               <entry><para>K</para></entry>
+
               <entry><para>Cash</para></entry>
             </row>
+
             <row>
               <entry>W</entry>
+
               <entry>Wire Transfer</entry>
             </row>
+
             <row>
               <entry>R</entry>
+
               <entry>Other</entry>
             </row>
           </tbody>
         </tgroup>
       </table>
     </section>
+
     <section>
       <title>Sales Order Item Statuses</title>
+
       <table id="Table462982">
         <title>Sales Order Item Statuses</title>
+
         <tgroup cols="2">
           <thead>
             <row>
               <entry><para>Code</para></entry>
+
               <entry><para>Description</para></entry>
             </row>
           </thead>
+
           <tbody>
             <row>
               <entry><para>O</para></entry>
+
               <entry><para>Open</para></entry>
             </row>
+
             <row>
               <entry>C</entry>
+
               <entry>Closed</entry>
             </row>
+
             <row>
               <entry><para>X</para></entry>
+
               <entry><para>Cancelled</para></entry>
             </row>
+
             <row>
               <entry><para>R</para></entry>
+
               <entry><para>Ready for shipment (i.e., quantity
               available)</para></entry>
             </row>
+
             <row>
               <entry><para>I</para></entry>
+
               <entry><para>Invoiced (fully)</para></entry>
             </row>
+
             <row>
               <entry><para>P</para></entry>
+
               <entry><para>Partially invoiced</para></entry>
             </row>
+
             <row>
               <entry><para>H</para></entry>
+
               <entry><para>On credit hold (added to others, for example,
               OH)</para></entry>
             </row>
+
             <row>
               <entry><para>F</para></entry>
+
               <entry><para>Firm (added to others, for example, OF, IF,
               etc.)</para></entry>
             </row>
@@ -405,44 +590,58 @@
         </tgroup>
       </table>
     </section>
+
     <section>
       <title>Purchase Order Statuses</title>
+
       <para><table id="Table462982">
           <title>Purchase Order Statuses</title>
+
           <tgroup cols="2">
             <thead>
               <row>
                 <entry><para>Code</para></entry>
+
                 <entry><para>Description</para></entry>
               </row>
             </thead>
+
             <tbody>
               <row>
                 <entry><para>Closed</para></entry>
+
                 <entry><para>The final state of a purchase order after it has
                 been closed.</para></entry>
               </row>
+
               <row>
                 <entry><para>Unposted</para></entry>
+
                 <entry><para>This is the initial state a purchase order
                 receives when it is first created. As long as a purchase order
                 is unposted, it may continue to have additional line items
                 added to it. The List Unposted Purchase Orders screen will
                 display all unposted purchase orders.</para></entry>
               </row>
+
               <row>
                 <entry><para>Open</para></entry>
+
                 <entry><para>The status of a purchase order after it has been
                 posted.</para></entry>
               </row>
+
               <row>
                 <entry><para>Partial</para></entry>
+
                 <entry><para>The status of an open purchase order line item
                 when only part of the full quantity has been
                 received.</para></entry>
               </row>
+
               <row>
                 <entry><para>Received (in full)</para></entry>
+
                 <entry><para>The status of an open purchase order line item
                 when the full quantity has been received.</para></entry>
               </row>
@@ -451,18 +650,23 @@
         </table></para>
     </section>
   </section>
+
   <section id="systemDefinedEvents">
     <title><indexterm significance="normal">
         <primary>events</primary>
+
         <secondary>system-defined</secondary>
       </indexterm> <indexterm significance="normal">
         <primary>events</primary>
+
         <secondary>complete list of</secondary>
       </indexterm>System-Defined Events</title>
+
     <para>The following table identifies the complete list of system-defined
     events. The table includes the name that xTuple ERP assigns to the event,
     a brief description of the event, and the name of the module where the
     event originates.</para>
+
     <note>
       <para>The system will also alert users whenever a database error is
       detected. While not technically events, these error log messages are
@@ -470,606 +674,996 @@
       exclamation point will be shown, and, when selected, the user will see
       the content of the database log.</para>
     </note>
+
     <table id="Table462070">
       <title>System-Defined Events</title>
+
       <tgroup cols="3">
         <thead>
           <row>
             <entry><para>Event Name</para></entry>
+
             <entry><para>Event Description</para></entry>
+
             <entry><para>Module</para></entry>
           </row>
         </thead>
+
         <tbody>
           <row>
             <entry><para>ClosedIncident</para></entry>
+
             <entry><para>Incident closed</para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>IncidentAlarm</para></entry>
+
             <entry><para>Alarm for incident</para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>NewIncident</para></entry>
+
             <entry><para>New incident created</para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>ReopenedIncident</para></entry>
+
             <entry><para>Incident which had been closed previously is being
             reopened</para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>TaskAlarm</para></entry>
+
             <entry><para>Alarm for task</para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>TodoAlarm</para></entry>
+
             <entry><para>Alarm for to-do </para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>UpdatedIncident</para></entry>
+
             <entry><para>Incident modified</para></entry>
+
             <entry><para>CRM</para></entry>
           </row>
+
           <row>
             <entry><para>CannotDistributeTransToGL</para></entry>
+
             <entry><para>Cannot distribute an inventory transaction to the
             G/L</para></entry>
+
             <entry><para>G/L</para></entry>
           </row>
+
           <row>
             <entry>CashReceiptPosted</entry>
+
             <entry>Cash receipt posted</entry>
+
             <entry>G/L</entry>
           </row>
+
           <row>
             <entry><para>QOHBelowZero</para></entry>
+
             <entry><para>QOH dropped to a negative value</para></entry>
+
             <entry><para>Inventory (I/M)</para></entry>
           </row>
+
           <row>
             <entry>ToitemCancelled</entry>
+
             <entry>Transfer order item cancelled</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>ToitemCreated</entry>
+
             <entry>Transfer order item created</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>ToitemNoDestItemSite</entry>
+
             <entry>Transfer order item created without an item site at the
             destination site</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>ToitemNoTransitItemSite</entry>
+
             <entry>Transfer order item created without an item site at the
             transit site</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>ToitemQtyChanged</entry>
+
             <entry>Transfer order item qty. changed</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>ToitemSchedDateChanged</entry>
+
             <entry>Transfer order item ship date changed</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>ToNotesChanged</entry>
+
             <entry>Transfer order comments changed</entry>
+
             <entry>Inventory</entry>
           </row>
+
           <row>
             <entry>CostExceedsMaxDesired</entry>
+
             <entry>Cost exceeds max desired</entry>
+
             <entry>Product (P/D)</entry>
           </row>
+
           <row>
             <entry>POitemCreate</entry>
+
             <entry>Purchase order purchased item line added</entry>
+
             <entry>Purchase (P/O)</entry>
           </row>
+
           <row>
             <entry>PoitemCreatedBySo</entry>
+
             <entry>Purchase order item created by sales order</entry>
+
             <entry>Purchase</entry>
           </row>
+
           <row>
             <entry>PoitemDropShipped</entry>
+
             <entry>Purchase order item drop shipped</entry>
+
             <entry>Purchase</entry>
           </row>
+
           <row>
             <entry>PoitemSoCancelled</entry>
+
             <entry>Purchase order item linked sales order cancelled</entry>
+
             <entry>Purchase</entry>
           </row>
+
           <row>
             <entry>PoitemUpdatedBySo</entry>
+
             <entry>Purchase order item updated by linked sales order</entry>
+
             <entry>Purchase</entry>
           </row>
+
           <row>
             <entry><para>CannotConvertQuote</para></entry>
+
             <entry><para>Cannot convert a quote to a sales
             order</para></entry>
+
             <entry><para>Sales (S/O)</para></entry>
           </row>
+
           <row>
             <entry><para>DetachCCPayFromSO</para></entry>
+
             <entry><para>Detach credit card payment from S/O</para></entry>
+
             <entry><para>Sales</para></entry>
           </row>
+
           <row>
             <entry>NewCustomer</entry>
+
             <entry>New customer created</entry>
+
             <entry>Sales</entry>
           </row>
+
           <row>
             <entry>QuoteConvertedToInvoice</entry>
+
             <entry>Quote converted to invoice</entry>
+
             <entry>Sales</entry>
           </row>
+
           <row>
             <entry>QuoteConvertedToSO</entry>
+
             <entry>Quote converted to sales order</entry>
+
             <entry>Sales</entry>
           </row>
+
           <row>
             <entry><para>SoitemCancelled</para></entry>
+
             <entry><para>Sales order item canceled</para></entry>
+
             <entry><para>Sales</para></entry>
           </row>
+
           <row>
             <entry><para>SoitemCreated</para></entry>
+
             <entry><para>Sales order item added</para></entry>
+
             <entry><para>Sales</para></entry>
           </row>
+
           <row>
             <entry><para>SoitemQtyChanged</para></entry>
+
             <entry><para>Sales order qty. changed</para></entry>
+
             <entry><para>Sales</para></entry>
           </row>
+
           <row>
             <entry><para>SoitemSchedDateChanged</para></entry>
+
             <entry><para>Sales order item ship date changed</para></entry>
+
             <entry><para>Sales</para></entry>
           </row>
+
           <row>
             <entry>SoNotesChanged</entry>
+
             <entry>Sales order notes changed</entry>
+
             <entry>Sales</entry>
           </row>
+
           <row>
             <entry><para>SoReleased</para></entry>
+
             <entry><para>Sales order released from credit hold</para></entry>
+
             <entry><para>Sales</para></entry>
           </row>
+
           <row>
             <entry><para>RWoDueDateRequestChange</para></entry>
+
             <entry><para>Request to change released due date</para></entry>
+
             <entry><para>Manufacture (W/O)</para></entry>
           </row>
+
           <row>
             <entry><para>RWoQtyRequestChange</para></entry>
+
             <entry><para>Request to change released W/O qty.</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>RWoRequestCancel</para></entry>
+
             <entry><para>Request to cancel released W/O</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WoCancelled</para></entry>
+
             <entry><para>Work order canceled</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WOClockInOnClosedJob</para></entry>
+
             <entry><para>User clocked in to a closed work order</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WOClockOutWNoClockIn</para></entry>
+
             <entry><para>User clocked out of a work order on which s/he was
             not clocked in</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WoCreated</para></entry>
+
             <entry><para>Work order created</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WODoubleClockIn</para></entry>
+
             <entry><para>User clocked in to a work order without having
             previously clocked out</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WODoubleClockOut</para></entry>
+
             <entry><para>User clocked out of a work order without having
             previously clocked in</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WoDueDateChanged</para></entry>
+
             <entry><para>Work order due date changed</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
+
           <row>
             <entry><para>WoQtyChanged</para></entry>
+
             <entry><para>Work order qty. changed</para></entry>
+
             <entry><para>Manufacture</para></entry>
           </row>
         </tbody>
       </tgroup>
     </table>
   </section>
+
   <section id="Section463309">
     <title><indexterm significance="normal">
         <primary>comments</primary>
+
         <secondary>source types for</secondary>
       </indexterm>Comment Sources</title>
+
     <para>Comments may be added manually or automatically from several modules
     throughout the application. Once entered, these comments are stored in the
     comments table of the xTuple ERP database.</para>
+
     <table id="Table463311">
       <title>Comment Source Types</title>
+
       <tgroup cols="2">
         <thead>
           <row>
             <entry><para>Comment Source</para></entry>
+
             <entry><para>Description</para></entry>
           </row>
         </thead>
+
         <tbody>
           <row>
+            <entry>ADDR</entry>
+
+            <entry>Address</entry>
+          </row>
+
+          <row>
+            <entry>BBH</entry>
+
+            <entry>Breeder bill of materials header</entry>
+          </row>
+
+          <row>
+            <entry>BBI</entry>
+
+            <entry>Breeder bill of materials item</entry>
+          </row>
+
+          <row>
+            <entry>BMH</entry>
+
+            <entry>Bill of materials header</entry>
+          </row>
+
+          <row>
             <entry><para>BMI</para></entry>
+
             <entry><para>Bill of materials item</para></entry>
           </row>
+
+          <row>
+            <entry>BOH</entry>
+
+            <entry>Routing header</entry>
+          </row>
+
+          <row>
+            <entry>BOI</entry>
+
+            <entry>Routing item</entry>
+          </row>
+
+          <row>
+            <entry>CRMA</entry>
+
+            <entry>CRM account</entry>
+          </row>
+
+          <row>
+            <entry>T</entry>
+
+            <entry>Contact</entry>
+          </row>
+
           <row>
             <entry><para>C</para></entry>
+
             <entry><para>Customer master</para></entry>
           </row>
+
+          <row>
+            <entry>EMP</entry>
+
+            <entry>Employee </entry>
+          </row>
+
+          <row>
+            <entry>FX</entry>
+
+            <entry>Exchange rate</entry>
+          </row>
+
+          <row>
+            <entry>INCDT</entry>
+
+            <entry>Incident</entry>
+          </row>
+
           <row>
             <entry><para>I</para></entry>
+
             <entry><para>Item master</para></entry>
           </row>
+
           <row>
             <entry><para>IS</para></entry>
-            <entry><para>Item Source master</para></entry>
+
+            <entry><para>Item site</para></entry>
           </row>
+
           <row>
-            <entry><para>O</para></entry>
-            <entry><para>Lot/Serial comment</para></entry>
+            <entry>IR</entry>
+
+            <entry>Item source</entry>
           </row>
+
+          <row>
+            <entry>L</entry>
+
+            <entry>Location</entry>
+          </row>
+
+          <row>
+            <entry>LS</entry>
+
+            <entry>Lot serial</entry>
+          </row>
+
+          <row>
+            <entry><para>OPP</para></entry>
+
+            <entry><para>Opportunity</para></entry>
+          </row>
+
+          <row>
+            <entry>J</entry>
+
+            <entry>Project</entry>
+          </row>
+
           <row>
             <entry><para>P</para></entry>
-            <entry><para>Purchase order header</para></entry>
+
+            <entry><para>Purchase order</para></entry>
           </row>
+
           <row>
             <entry><para>PI</para></entry>
+
             <entry><para>Purchase order item</para></entry>
           </row>
+
+          <row>
+            <entry>RA</entry>
+
+            <entry>Return authorization</entry>
+          </row>
+
+          <row>
+            <entry>RI</entry>
+
+            <entry>Return authorization item</entry>
+          </row>
+
           <row>
             <entry><para>Q</para></entry>
-            <entry><para>Quote header</para></entry>
+
+            <entry><para>Quote master</para></entry>
           </row>
+
           <row>
             <entry><para>QI</para></entry>
+
             <entry><para>Quote item</para></entry>
           </row>
+
           <row>
             <entry><para>S</para></entry>
+
             <entry><para>Sales order header</para></entry>
           </row>
+
           <row>
             <entry><para>SI</para></entry>
+
             <entry><para>Sales order item</para></entry>
           </row>
+
+          <row>
+            <entry>TA</entry>
+
+            <entry>Task</entry>
+          </row>
+
+          <row>
+            <entry>TATC</entry>
+
+            <entry>Time attendance</entry>
+          </row>
+
+          <row>
+            <entry>TD</entry>
+
+            <entry>ToDo item</entry>
+          </row>
+
+          <row>
+            <entry>TO</entry>
+
+            <entry>Transfer order</entry>
+          </row>
+
+          <row>
+            <entry>TI</entry>
+
+            <entry>Transfer order item</entry>
+          </row>
+
           <row>
             <entry><para>V</para></entry>
+
             <entry><para>Vendor master</para></entry>
           </row>
+
           <row>
             <entry><para>W</para></entry>
+
             <entry><para>Work order</para></entry>
           </row>
+
           <row>
             <entry><para>WH</para></entry>
-            <entry><para>Site master</para></entry>
+
+            <entry><para>Warehouse</para></entry>
           </row>
         </tbody>
       </tgroup>
     </table>
   </section>
+
   <section id="rightClickMenuOptions">
     <title><indexterm significance="normal">
         <primary>menus</primary>
+
         <secondary>right-click options</secondary>
       </indexterm>Right-Click Menu Options</title>
+
     <para>This section contains explanations for the full range of right-click
     menu options found throughout the xTuple applications. The information is
     organized by functional area.</para>
+
     <section>
       <title>All</title>
+
       <para>The following options are used wherever right-click menus are
       found:</para>
+
       <xi:include href="widgets/xtreewidget.xml"
                   xpointer="xtreewidget.menu.exportcontents"
                   xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </section>
+
     <section>
       <title>General</title>
+
       <para>These generic right-click options may appear in any functional
       area of the application:</para>
+
       <variablelist>
         <varlistentry>
           <term>Delete</term>
+
           <listitem>
             <para>Select to delete the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit</term>
+
           <listitem>
             <para>Select to edit the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>New</term>
+
           <listitem>
             <para>Select to create a new item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post</term>
+
           <listitem>
             <para>Select to post the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View</term>
+
           <listitem>
             <para>Select to view the specified item.</para>
           </listitem>
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Manufacturing</title>
+
       <variablelist>
         <varlistentry>
           <term>Change W/O Quantity</term>
+
           <listitem>
             <para>Select to change the quantity of the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Close W/O</term>
+
           <listitem>
             <para>Select to close the specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Correct Operations Posting</term>
+
           <listitem>
             <para>Select to correct operations posting for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Correct Production Posting</term>
+
           <listitem>
             <para>Select to correct production posting for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete Operation</term>
+
           <listitem>
             <para>Select to delete the specified operation.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete W/O</term>
+
           <listitem>
             <para>Select to delete the specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Operation</term>
+
           <listitem>
             <para>Select to edit the specified operation.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit W/O</term>
+
           <listitem>
             <para>Select to edit the specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Explode W/O</term>
+
           <listitem>
             <para>Select to explode the specified work order. Applies only to
             open work orders.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Implode W/O</term>
+
           <listitem>
             <para>Select to implode the specified work order. Applies only to
             exploded work orders.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Inventory Availability by Work Order</term>
+
           <listitem>
             <para>Select to view inventory availability for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue Material Item</term>
+
           <listitem>
             <para>Select to issue a work order material item to the specified
             work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Operations</term>
+
           <listitem>
             <para>Select to post operations for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Production</term>
+
           <listitem>
             <para>Select to post production for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Pick Lists</term>
+
           <listitem>
             <para>Select to print a pick list(s) for the specified work
             order(s).</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Traveler</term>
+
           <listitem>
             <para>Select to print a traveler for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Production Time Clock by Work Order</term>
+
           <listitem>
             <para>Select to view the production time clock for the specified
             work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Recall W/O</term>
+
           <listitem>
             <para>Select to recall the specified work order to an exploded
             state. Applies only to released work orders.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Release W/O</term>
+
           <listitem>
             <para>Select to release the specified work order. Applies only to
             exploded work orders.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reprioritize W/O</term>
+
           <listitem>
             <para>Select to change the priority for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reschedule W/O</term>
+
           <listitem>
             <para>Select to reschedule the specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Substitute</term>
+
           <listitem>
             <para>Select to choose a BOM-defined substitute item, if
             any.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Allocations</term>
+
           <listitem>
             <para>Select to view all the orders where the specified item is
             allocated.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item-Defined Substitute Availability</term>
+
           <listitem>
             <para>Select to view availability of substitute items defined at
             the item level, if any.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Operation</term>
+
           <listitem>
             <para>Select to view the specified operation detail.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Requirement</term>
+
           <listitem>
             <para>Select to view the specified work order material requirement
             detail.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View W/O</term>
+
           <listitem>
             <para>Select to view the specified work order detail.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View W/O Material Availability</term>
+
           <listitem>
             <para>Select to view work order material availability for the
             specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View W/O Material Requirements</term>
+
           <listitem>
             <para>Select to view work order material requirements for the
             specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View W/O Operations</term>
+
           <listitem>
             <para>Select to view work order operations for the specified work
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Parent Sales Order Information</term>
+
           <listitem>
             <para>Select to view the parent sales order information for the
             specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Parent Work Order Information</term>
+
           <listitem>
             <para>Select to view the parent work order information for the
             specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Work Order Schedule</term>
+
           <listitem>
             <para>Select to view the work order schedule for the specified
             work order.</para>
@@ -1077,11 +1671,14 @@
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Planning Systems</title>
+
       <variablelist>
         <varlistentry>
           <term>Change Order Type</term>
+
           <listitem>
             <para>Select to change the order type of the specified order.
             Changing the order type will delete and recreate the order then
@@ -1089,65 +1686,85 @@
             type P/O to W/O.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete Order</term>
+
           <listitem>
             <para>Select to delete the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Firm Order</term>
+
           <listitem>
             <para>Select to firm the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>MPS Detail</term>
+
           <listitem>
             <para>Select to view the master production scheduling detail for
             the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Release Order</term>
+
           <listitem>
             <para>Select to release the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Running Availability</term>
+
           <listitem>
             <para>Select to view running availability for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Soften Order</term>
+
           <listitem>
             <para>Select to soften the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Usage Statistics</term>
+
           <listitem>
             <para>Select to view usage statistics for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Demand</term>
+
           <listitem>
             <para>Select to view the demand on the specified site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Load</term>
+
           <listitem>
             <para>Select to view the load on the specified work center.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Running Availability</term>
+
           <listitem>
             <para>Select to view running availability for the specified item
             site.</para>
@@ -1155,65 +1772,84 @@
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Shipping</title>
+
       <variablelist>
         <varlistentry>
           <term>Issue Line Balance</term>
+
           <listitem>
             <para>Select to issue the specified line item quantity balance to
             shipping.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue Stock</term>
+
           <listitem>
             <para>Select to issue quantity to shipping for the specified line
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue to Shipping</term>
+
           <listitem>
             <para>Select to issue the specified line item to shipping.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Shipping Form</term>
+
           <listitem>
             <para>Select to print a shipping form for the specified
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Query Shipment Status</term>
+
           <listitem>
             <para>Select to track the specified order using the supported
             carrier's website (e.g. UPS).</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Return ALL Stock Issued to Order</term>
+
           <listitem>
             <para>Select to return all issued line item quantity to
             inventory.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Return Stock</term>
+
           <listitem>
             <para>Select to return some or all of the specified line item
             quantity to inventory.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Ship Order</term>
+
           <listitem>
             <para>Select to ship the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Shipping Information</term>
+
           <listitem>
             <para>Select to view detailed shipment information for the
             specified order.</para>
@@ -1221,613 +1857,799 @@
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Sales</title>
+
       <variablelist>
         <varlistentry>
           <term>Add to Packing List Batch</term>
+
           <listitem>
             <para>Select to add the specified order to the packing list
             batch.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Cancel Billing</term>
+
           <listitem>
             <para>Select to cancel the specified billing selection.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Convert to Invoice</term>
+
           <listitem>
             <para>Select to convert the specified quote to an invoice.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Convert to S/O</term>
+
           <listitem>
             <para>Select to convert the specified quote to a sales
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Billing</term>
+
           <listitem>
             <para>Select to edit the specified billing selection.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Characteristic</term>
+
           <listitem>
             <para>Select to edit the characteristic associated with the
             specified record.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Credit Memo</term>
+
           <listitem>
             <para>Select to edit the specified credit memo.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Customer</term>
+
           <listitem>
             <para>Select to edit the Customer master for the specified
             customer.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Item</term>
+
           <listitem>
             <para>Select to edit the specified order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit New Order</term>
+
           <listitem>
             <para>Select to edit the new sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit New Order Line</term>
+
           <listitem>
             <para>Select to edit the new sales order line item</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Order</term>
+
           <listitem>
             <para>Select to edit the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Sales Order</term>
+
           <listitem>
             <para>Select to edit the specified sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Email Order Acknowledgement</term>
+
           <listitem>
             <para>Select to schedule the sales order for email
             delivery.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Firm Line</term>
+
           <listitem>
             <para>Allows you to firm items on the sales order. A firmed sales
             order line item cannot be edited, unless it is softened
             first.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Inventory Availability by Sales Order</term>
+
           <listitem>
             <para>Select to display inventory availability for the specified
             sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Invoice Information</term>
+
           <listitem>
             <para>Select to view details for the specified invoice.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>New Order Shipments</term>
+
           <listitem>
             <para>Select to view shipments for the new sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>New Order Shipment Status</term>
+
           <listitem>
             <para>Select to view shipment statuses for the new sales
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Open Line</term>
+
           <listitem>
             <para>Select to re-open the specified sales order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Packing List</term>
+
           <listitem>
             <para>Select to print a packing list for the specified
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Return Authorization Form</term>
+
           <listitem>
             <para>Select to print a copy of the return authorization.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Receipt</term>
+
           <listitem>
             <para>Select to print a credit card receipt.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Sales Order Form</term>
+
           <listitem>
             <para>Select to print a sales order form for the specified
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reassign Customer Type</term>
+
           <listitem>
             <para>Select to reassign the specified customer to a different
             customer type.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reschedule</term>
+
           <listitem>
             <para>Select to reschedule the specified sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reserve Line Balance</term>
+
           <listitem>
             <para>Select to reserve inventory quantity for the entire line
             item balance.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reserve Stock</term>
+
           <listitem>
             <para>Select to reserve inventory quantity for the specified sales
             order item either by total quantity on hand (QOH) or by location
             depending on configure sales settings.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Send Electronic Acknowledgement</term>
+
           <listitem>
             <para>Select to email an order acknowledgement to the specified
             customer.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Select This Order for Billing</term>
+
           <listitem>
             <para>Select to choose the specified order for billing.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Shipments</term>
+
           <listitem>
             <para>Select to view all shipments for the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Shipment Status</term>
+
           <listitem>
             <para>Select to view the status of shipments for the specified
             order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Show Reservations</term>
+
           <listitem>
             <para>Show sales order reservations for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Soften Line</term>
+
           <listitem>
             <para>Allows you to soften items on the sales order. Firmed sales
             order line items must be softened before they can be
             edited.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Unreserve Stock</term>
+
           <listitem>
             <para>Select to remove inventory reservations for the specified
             sales order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Bookings</term>
+
           <listitem>
             <para>Select to view sales bookings for the specified line.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Customer</term>
+
           <listitem>
             <para>Select to view the Customer master for the specified
             customer.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item</term>
+
           <listitem>
             <para>Select to view the specified order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View New Order</term>
+
           <listitem>
             <para>Select to view the new sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View New Order Line</term>
+
           <listitem>
             <para>Select to view the new sales order line item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Order</term>
+
           <listitem>
             <para>Select to view the specified order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Original Order</term>
+
           <listitem>
             <para>Select to view the original sales order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Sales Detail</term>
+
           <listitem>
             <para>Select to view sales history for the specified line.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Sales Order</term>
+
           <listitem>
             <para>Select to view the specified sales order.</para>
           </listitem>
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Inventory</title>
+
       <variablelist>
         <varlistentry>
           <term>Adjust this QOH</term>
+
           <listitem>
             <para>Select to enter a miscellaneous adjustment for the specified
             item site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Balance Item Site</term>
+
           <listitem>
             <para>Select to balance the QOH for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Count Slip Edit List</term>
+
           <listitem>
             <para>Select to display the count slip edit list for the specified
             count tag, if any.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create P/O</term>
+
           <listitem>
             <para>Select to create a purchase order for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create P/R</term>
+
           <listitem>
             <para>Select to create a purchase request for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create W/O</term>
+
           <listitem>
             <para>Select to create a work order for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create Work Order</term>
+
           <listitem>
             <para>Select to create a work order for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete Line</term>
+
           <listitem>
             <para>Select to delete the specified line item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete Site Type</term>
+
           <listitem>
             <para>Select to delete the specified site type.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Count Slip</term>
+
           <listitem>
             <para>Select to edit the specified count Slip.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Item Site</term>
+
           <listitem>
             <para>Select to edit the specified item site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Line</term>
+
           <listitem>
             <para>Select to edit the specified line item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Enter Misc. Count</term>
+
           <listitem>
             <para>Select to enter a miscellaneous inventory count for the
             specified item site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Site Type</term>
+
           <listitem>
             <para>Select to edit the specified site type.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Transaction Information</term>
+
           <listitem>
             <para>Select to edit information related to the specified
             transaction.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue Count Tag</term>
+
           <listitem>
             <para>Select to create a count tag for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue P/O</term>
+
           <listitem>
             <para>Select to create a purchase order for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue P/R</term>
+
           <listitem>
             <para>Select to create a purchase request for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue Purchase Order</term>
+
           <listitem>
             <para>Select to create a purchase order for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue W/O</term>
+
           <listitem>
             <para>Select to create a work order for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Issue Work Order</term>
+
           <listitem>
             <para>Select to create a work order for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>List Items in this Inventory Cost Category</term>
+
           <listitem>
             <para>Select to display item sites using the specified cost
             category</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>List Item Sites</term>
+
           <listitem>
             <para>Select to display a list of item sites for the specified
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Count Slip</term>
+
           <listitem>
             <para>Select to post the specified count slip.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Misc. Production</term>
+
           <listitem>
             <para>Select to post miscellaneous production for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Relocate</term>
+
           <listitem>
             <para>Select to relocated the specified MLC item from one location
             to another.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reset this QOH to 0</term>
+
           <listitem>
             <para>Select to change the QOH for the specified item site to
             zero.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Substitute Availability</term>
+
           <listitem>
             <para>Select to view availability of substitute items, if
             any.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Thaw</term>
+
           <listitem>
             <para>Select to thaw the specified item site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Transfer to another Site</term>
+
           <listitem>
             <para>Select to transfer inventory from the specified site to
             another site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Site Type</term>
+
           <listitem>
             <para>Select to view the specified site type.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View All Transactions</term>
+
           <listitem>
             <para>Select to view all inventory transactions for the specified
             item site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Allocations</term>
+
           <listitem>
             <para>Select to view orders the specified item site is allocated
             to.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Availability</term>
+
           <listitem>
             <para>Select to view inventory availability for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Availability Detail</term>
+
           <listitem>
             <para>Select to view inventory availability for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Count Tag</term>
+
           <listitem>
             <para>Select to view the specified count tag.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Inventory Availability</term>
+
           <listitem>
             <para>Select to view inventory availability for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Inventory History</term>
+
           <listitem>
             <para>Select to view inventory history for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item Inventory History</term>
+
           <listitem>
             <para>Select to view inventory history for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item Site</term>
+
           <listitem>
             <para>Select to view the specified item site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Location/Lot/Serial # Detail</term>
+
           <listitem>
             <para>Select to view detailed information for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Orders</term>
+
           <listitem>
             <para>Select to view all the pending orders for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Pending Inventory History</term>
+
           <listitem>
             <para>Select to view inventory transactions for the item site
             since the date the specified count tag was created.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Substitute Availability</term>
+
           <listitem>
             <para>Select to view availability of substitute items, if
             any.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Transactions</term>
+
           <listitem>
             <para>Select to view transactions for the specified item
             site.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Transaction Information</term>
+
           <listitem>
             <para>Select to view details for the specified transaction.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Work Order Details</term>
+
           <listitem>
             <para>Select to view details for the specified work order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Work Order Information</term>
+
           <listitem>
             <para>Select to view information about the specified work
             order.</para>
@@ -1835,353 +2657,463 @@
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Products</title>
+
       <variablelist>
         <varlistentry>
           <term>Create BOM</term>
+
           <listitem>
             <para>Select to create a bill of materials (BOM) for the specified
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create Routing</term>
+
           <listitem>
             <para>Select to create a routing for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create Component Item Site</term>
+
           <listitem>
             <para>Select to create an item site for the specified
             component.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create User Cost</term>
+
           <listitem>
             <para>Select to create a user-defined costing element.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete Product Category</term>
+
           <listitem>
             <para>Select to delete the specified product category</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Actual Cost</term>
+
           <listitem>
             <para>Select to edit the specified actual cost.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Routing</term>
+
           <listitem>
             <para>Select to edit the routing for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit BOM</term>
+
           <listitem>
             <para>Select to edit the BOM for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit BOM Item</term>
+
           <listitem>
             <para>Select to edit the specified BOM item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Routing</term>
+
           <listitem>
             <para>Select to edit the routing for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Item Master</term>
+
           <listitem>
             <para>Select to edit the item master for the selected item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Operation</term>
+
           <listitem>
             <para>Select to edit the specified routing item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Parent Item</term>
+
           <listitem>
             <para>Select to edit the parent item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Parent Item Site</term>
+
           <listitem>
             <para>Select to edit the item site for the parent item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Product Category</term>
+
           <listitem>
             <para>Select to edit the specified product category.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Standard Operation</term>
+
           <listitem>
             <para>Select to edit the specified standard operation.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Maintain Item Costs</term>
+
           <listitem>
             <para>Select to maintain costs for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Actual Costs</term>
+
           <listitem>
             <para>Select to post actual costs to standard cost for the
             specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Actual Cost to Standard</term>
+
           <listitem>
             <para>Select to post the specified actual cost to standard
             cost.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Replace</term>
+
           <listitem>
             <para>Select to replace the specified component with another
             Item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Update Actual Cost</term>
+
           <listitem>
             <para>Select to update the specified actual cost.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Update Actual Costs</term>
+
           <listitem>
             <para>Select to update actual costs for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Bill of Materials</term>
+
           <listitem>
             <para>Select to view the BOM for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Routing</term>
+
           <listitem>
             <para>Select to view the routing for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View BOM</term>
+
           <listitem>
             <para>Select to view the BOM for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View BOM Item</term>
+
           <listitem>
             <para>Select to view the specified BOM item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Routing</term>
+
           <listitem>
             <para>Select to view the routing for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Costing Detail</term>
+
           <listitem>
             <para>Select to view detailed costing information for the
             specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item Costing</term>
+
           <listitem>
             <para>Select to view detailed costing information for the
             specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item Costing Summary</term>
+
           <listitem>
             <para>Select to view summarized costing information for the
             specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item Master</term>
+
           <listitem>
             <para>Select to edit the Item master for the selected item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Operation</term>
+
           <listitem>
             <para>Select to view the routing for the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Standard Operation</term>
+
           <listitem>
             <para>Select to view the specified standard operation.</para>
           </listitem>
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Purchasing</title>
+
       <variablelist>
         <varlistentry>
           <term>Change Qty</term>
+
           <listitem>
             <para>Select to change the line item quantity for the specified
             purchase order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Close Item</term>
+
           <listitem>
             <para>Select to close the specified purchase order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Correct Receipt</term>
+
           <listitem>
             <para>Select to correct the received quantity for the specified
             receipt.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Correct Receiving</term>
+
           <listitem>
             <para>Select to correct the received quantity for the specified
             receipt.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create Credit Memo</term>
+
           <listitem>
             <para>Select to create a credit memo for the specified
             return.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Create Voucher</term>
+
           <listitem>
             <para>Select to create a voucher for the specified receipt</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete P/R</term>
+
           <listitem>
             <para>Select to delete the specified purchase request.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Deliver</term>
+
           <listitem>
             <para>Select to schedule the specified purchase order for email
             delivery.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit P/O Item</term>
+
           <listitem>
             <para>Select to edit the specified purchase order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Enter Receipt</term>
+
           <listitem>
             <para>Select to enter a purchase order receipt for the specified
             line item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Mark as Invoiced</term>
+
           <listitem>
             <para>Select to mark the specified receipt as invoiced.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Open Item</term>
+
           <listitem>
             <para>Select to open the specified purchase order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Label</term>
+
           <listitem>
             <para>Select to print a receiving label for the specified line
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Release P/R</term>
+
           <listitem>
             <para>Select to release the specified purchase request to
             purchasing.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reschedule</term>
+
           <listitem>
             <para>Select to reschedule the specified purchase order
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Split Receipt</term>
+
           <listitem>
             <para>Select to split the specified receipt into smaller
             quantities.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Buy Card</term>
+
           <listitem>
             <para>Select to view the buy card for the specified item
             source.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Item</term>
+
           <listitem>
             <para>Select to view the specified purchase order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Order</term>
+
           <listitem>
             <para>Select to view the parent purchase order.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View P/O Item</term>
+
           <listitem>
             <para>Select to view the specified purchase order item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View P/Os</term>
+
           <listitem>
             <para>Select to view purchase orders for the specified item
             source.</para>
@@ -2189,278 +3121,366 @@
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>Accounting</title>
+
       <variablelist>
         <varlistentry>
           <term>Edit A/R Open Item</term>
+
           <listitem>
             <para>Select to edit limited aspects of the specified open
             item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Invoice</term>
+
           <listitem>
             <para>Select to edit the specified invoice.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Open Item</term>
+
           <listitem>
             <para>Select to edit the specified open item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Receivable Item</term>
+
           <listitem>
             <para>Select to edit the specified A/R item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Forward Update</term>
+
           <listitem>
             <para>Select to forward update the specified account.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>New Cash Receipt</term>
+
           <listitem>
             <para>Select to create a new cash receipt.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>On Hold</term>
+
           <listitem>
             <para>Select to place the specified payable item on hold.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Open</term>
+
           <listitem>
             <para>Select to open the specified item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Post Cash Receipt</term>
+
           <listitem>
             <para>Select to post the specified cash receipt.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Print Statement</term>
+
           <listitem>
             <para>Select to print a statement for the specified
             customer.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Reverse Journal</term>
+
           <listitem>
             <para>Select to reverse the specified journal posting.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View A/P Open</term>
+
           <listitem>
             <para>Select to view the AP open item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Apply to Debit Memo</term>
+
           <listitem>
             <para>Select to view the debit memo the specified document was
             applied to.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Apply to Invoice</term>
+
           <listitem>
             <para>Select to view the invoice the specified document was
             applied to.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Apply to Voucher</term>
+
           <listitem>
             <para>Select to view the voucher the specified document was
             applied to.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View A/R Open Item</term>
+
           <listitem>
             <para>Select to view the specified open item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Cash Receipt</term>
+
           <listitem>
             <para>Select to view the specified cash receipt.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Credit Memo</term>
+
           <listitem>
             <para>Select to view the specified credit memo.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View G/L Series</term>
+
           <listitem>
             <para>Select to view G/L series information for the specified
             document.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View G/L Transactions</term>
+
           <listitem>
             <para>Select to view general ledger transactions for the specified
             account.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Invoice</term>
+
           <listitem>
             <para>Select to view the specified invoice.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Invoice Details</term>
+
           <listitem>
             <para>Select to view detailed invoice information.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Open Item</term>
+
           <listitem>
             <para>Select to view the specified open item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Open Items</term>
+
           <listitem>
             <para>Select to view open items for the specified account.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Receivable Item</term>
+
           <listitem>
             <para>Select to view the specified A/R item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Source</term>
+
           <listitem>
             <para>Select to view the source document detail.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Source Credit Memo</term>
+
           <listitem>
             <para>Select to view details for the specified credit memo.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Voucher</term>
+
           <listitem>
             <para>Select to view the specified voucher.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Void</term>
+
           <listitem>
             <para>Select to void the specified document.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Void Posted Cash Receipt</term>
+
           <listitem>
             <para>Select to void the specified posted cash receipt. You may
             only void cash receipts entered in xTuple ERP version 3.3.0 or
             later.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Void Posted Check</term>
+
           <listitem>
             <para>Select to void the specified posted check.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Void Posted Credit Memo</term>
+
           <listitem>
             <para>Select to void the specified sales order credit memo. Does
             not apply to miscellaneous A/R credit memos.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Void Posted Invoice</term>
+
           <listitem>
             <para>Select to void the specified posted invoice.</para>
           </listitem>
         </varlistentry>
       </variablelist>
     </section>
+
     <section>
       <title>CRM</title>
+
       <variablelist>
         <varlistentry>
           <term>Create Incident</term>
+
           <listitem>
             <para>Select to create a new incident.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Deactivate</term>
+
           <listitem>
             <para>Select to de-activate the selected item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Delete To-Do</term>
+
           <listitem>
             <para>Select to delete the specified to-do item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit Incident</term>
+
           <listitem>
             <para>Select to edit the specified incident.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Edit To-Do</term>
+
           <listitem>
             <para>Select to edit the specified to-do item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>New Incident</term>
+
           <listitem>
             <para>Select to create a new incident.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>New To-Do</term>
+
           <listitem>
             <para>Select to create a new to-do item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View Incident</term>
+
           <listitem>
             <para>Select to view the specified incident.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>View To-Do</term>
+
           <listitem>
             <para>Select to view the specified to-do item.</para>
           </listitem>
         </varlistentry>
+
         <varlistentry>
           <term>Customer Workbench</term>
+
           <listitem>
             <para>Select to open the Customer Information workbench for the
             specified customer.</para>
