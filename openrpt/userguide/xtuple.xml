@@ -81,7 +81,7 @@
     customer. This is appropriate when a customer has a unique label
     requirement and you want the name of the report definition to reflect
     this.</para>
-    <section>
+    <section id="link-form-name">
       <title>Linking a Form Name to a Report Definition and Customer</title>
       <para>The cross referencing capability in xTuple is a very powerful
       feature that makes if possible to, for example, to define report
@@ -230,14 +230,13 @@
         <title>Print Packing List</title>
         <para>The option <guimenuitem>Print Packing List</guimenuitem>,
         located on the <guimenu>S/R - Forms</guimenu> menu, enables you to
-        generate a packing list by entering a sales order number (see the
-        section <link linkend="???">Linking a Form Name to a Report Definition
-        and Customer</link> to see how this is setup). At run-time, the
-        order's internal reference number is passed to the report definition
-        as the value for the parameter <literal>sohead_id</literal>. This
-        parameter can be employed in a query that derives information from a
-        join on the tables cohead and shipto to retrieve information pertinent
-        to shipping labels.</para>
+        generate a packing list by entering a sales order number. (To see how
+        this is set up, please see <xref linkend="link-form-name"/>.) At
+        run-time, the order's internal reference number is passed to the
+        report definition as the value for the parameter
+        <literal>sohead_id</literal>. This parameter can be employed in a
+        query that derives information from a join on the tables cohead and
+        shipto to retrieve information pertinent to shipping labels.</para>
         <para><table>
             <title>Parameters passed to the packing list report</title>
             <tgroup cols="3">
@@ -260,10 +259,9 @@
         <title>Print Shipping Form</title>
         <para>The option <guimenuitem>Print Shipping Forms</guimenuitem>,
         located on the <guimenu>S/R - Forms</guimenu> menu, enables you to see
-        a customer's default shipping form by entering a sales order number
-        (see the section <link linkend="???">Linking a Form Name to a Report
-        Definition and Customer</link> to see how this is setup) and override
-        it if you chose.</para>
+        a customer's default shipping form by entering a sales order number,
+        and override it if you chose. (To see how this is set up, please see
+        <xref linkend="link-form-name"/>.) </para>
         <para>At run-time, the order's internal reference number is passed to
         the report definition in the value of the parameter
         <literal>cosmisc_id</literal>. This parameter can be employed in a
