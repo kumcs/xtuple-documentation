@@ -2,17 +2,6 @@
 
 These are the combined release notes for OpenRPT 3.3.0 through 3.3.14.
 
-## Version 3.3.15 - March 2018
-
-### Changes
-
-- Fixed issue #[20302](http://www.xtuple.org/xtincident/view/bugs/20302) - _Updated OpenRPT splash screen and icons_
-- _Normalized the Qt .pro files_
-- _Replaced third-party regular expression code with calls to the standard C++11 library_
-- _Fixed an obscure bug in the MetaSQL parser_
-- _Fixed Mac problem on high resolution displays_
-- _Updated translation handling_
-
 ## Version 3.3.14 - October 2017
 
 ### Features
