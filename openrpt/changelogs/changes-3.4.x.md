@@ -12,8 +12,8 @@ These are the release notes for OpenRPT 3.4.0.
 
 ### Bug Fixes
 
-- Fixed issue #[32725](http://www.xtuple.org/xtincident/view/bugs/32725) _Incidents Contact search is not working (shows all results)_
 - Fixed issue #[20302](http://www.xtuple.org/xtincident/view/bugs/20302) - _Updated OpenRPT splash screen and icons_
+- Fixed issue #[32725](http://www.xtuple.org/xtincident/view/bugs/32725) _Incidents Contact search is not working (shows all results)_
 
 ## Changes
 
