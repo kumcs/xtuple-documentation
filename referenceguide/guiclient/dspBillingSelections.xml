@@ -4,6 +4,7 @@
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <section id="dspBillingSelections">
   <title>Billing Approvals</title>
+
   <para>When you convert an order approved for billing to an invoice, you
   create an unposted invoice. Unposted invoices must in turn be posted to
   generate associated general ledger (G/L) transaction records. You can
@@ -12,48 +13,61 @@
   to <guimenuitem>Sales &gt; Billing &gt; Invoice &gt;
   </guimenuitem><guimenuitem>Billing Approvals</guimenuitem>. The following
   screen will appear:</para>
+
   <para><screenshot>
       <mediaobject>
         <imageobject>
-          <imagedata fileref="images/dspBillingSelections.png" />
+          <imagedata fileref="images/dspBillingSelections.png"/>
         </imageobject>
+
         <caption>Billing Approvals</caption>
       </mediaobject>
     </screenshot></para>
-  <para>The billing approvals list displays orders approved for
-  billing.</para>
+
+  <para>The billing approvals list displays orders approved for billing.
+  Multiple billing approvals can be selected to create invoices for selected
+  approvals.</para>
+
   <tip>
     <para>Because less detailed information is shown, the billing approvals
     list will load more quickly than the billing edit list. The amount of
     detail is the only difference between the two lists. Both show the same
     orders approved for billing.</para>
   </tip>
+
   <para>The following buttons are unique to this screen:</para>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE ALL</guibutton></term>
+
       <listitem>
         <para>Select to create invoices for all orders on the list.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CREATE INVOICE</guibutton></term>
+
       <listitem id="listitemN0x180ac00N0x190b630">
         <para>Highlight an individual order, then select this button to create
         an invoice for the selected order.</para>
       </listitem>
     </varlistentry>
   </variablelist>
+
   <tip>
     <para>Users may be restricted from editing billing approvals if they are
     granted the privilege
     <literal>RestrictSelectOrderEditing</literal>.</para>
   </tip>
+
   <variablelist>
     <varlistentry>
       <term><guibutton>CANCEL</guibutton></term>
+
       <listitem id="listitemN0x180ac00N0x190b750">
         <para>Highlight an order and then select this button to cancel the
         billing for the selected order. Canceled billing approvals may be
