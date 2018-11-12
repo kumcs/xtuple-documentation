@@ -1,8 +1,8 @@
 # OpenRPT Release Notes - 3.4.x
 
-These are the release notes for OpenRPT 3.4.0.
+These are the release notes for OpenRPT 3.4.0-alpha.
 
-## Version 3.4.0 - November 2018
+## Version 3.4.0-alpha - November 2018
 
 ### Features
 
