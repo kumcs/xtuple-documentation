@@ -23,7 +23,6 @@ Of particular interest are the following:
 
 ### Features added in 4.12.0-alpha
 
-- Prof. Services issue #[33735](http://www.xtuple.org/xtincident/view/bugs/33735) _Need to stop recording history on actual cost posting_
 - Implemented issue #[3445](http://www.xtuple.org/xtincident/view/bugs/3445) _Add Work Order Operations by Work Center_
 - Implemented issue #[9924](http://www.xtuple.org/xtincident/view/bugs/9924) _Trim White Space at Start and End of Text Entry Fields on update_
 - Implemented issue #[10370](http://www.xtuple.org/xtincident/view/bugs/10370) _Need ability to Search Addresses_
