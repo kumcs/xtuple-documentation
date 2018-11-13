@@ -44,6 +44,7 @@ Of particular interest are the following:
 - Implemented issue #[33430](http://www.xtuple.org/xtincident/view/bugs/33430) _Receive PO from Open PO list_
 - Implemented issue #[33551](http://www.xtuple.org/xtincident/view/bugs/33551) _Add Documents and Characteristics to the Item Group window in core_
 - Implemented issue #[33786](http://www.xtuple.org/xtincident/view/bugs/33786) _Add multi-select to billing approvals_
+- Implemented issue #[34081](http://www.xtuple.org/xtincident/view/bugs/34081) _Add Expiration date to Tax registration numbers_
 
 ### Bug fixes in 4.12.0-alpha
 
