@@ -125,6 +125,7 @@ Of particular interest are the following:
 - Fixed issue #[33271](http://www.xtuple.org/xtincident/view/bugs/33271) _Puts current date in Started Date in a project_
 - Fixed issue #[33279](http://www.xtuple.org/xtincident/view/bugs/33279) _4.11 incompatible with lot serial_
 - Fixed issue #[33298](http://www.xtuple.org/xtincident/view/bugs/33298) _WO associated to SO closes automatically when the invoice in created_
+- Fixed issue #[33376](http://www.xtuple.org/xtincident/view/bugs/33376) _AP issue - Voucher Distribution Lost_
 - Fixed issue #[33431](http://www.xtuple.org/xtincident/view/bugs/33431) _Inconsistencies with Inability to delete electronically transmitted check_
 - Fixed issue #[33447](http://www.xtuple.org/xtincident/view/bugs/33447) _Project Completed date set to current day automatically._
 - Fixed issue #[33448](http://www.xtuple.org/xtincident/view/bugs/33448) _Contact Email Addresses problem with capital letters_
